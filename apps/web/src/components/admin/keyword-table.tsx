@@ -12,7 +12,21 @@ type KeywordTableProps = {
   targetOrigin: string;
 };
 
-type SortOption = "keyword" | "page" | "priority" | "volume";
+type SortKey =
+  | "keyword"
+  | "priority"
+  | "page"
+  | "volume"
+  | "difficulty"
+  | "trafficPotential"
+  | "dataState";
+
+type SortDirection = "asc" | "desc";
+
+type SortState = {
+  key: SortKey;
+  direction: SortDirection;
+};
 
 const numberFormatter = new Intl.NumberFormat("en-US");
 
@@ -23,6 +37,22 @@ const pageTypeLabels: Record<string, string> = {
   hymn_collection_hub: "Collection hub",
   instrumentalist_hub: "Instrument hub",
   instrument_preset: "Instrument preset",
+};
+
+const dataStateOrder: Record<KeywordDataState, number> = {
+  complete: 0,
+  partial: 1,
+  unresearched: 2,
+};
+
+const defaultSortDirections: Record<SortKey, SortDirection> = {
+  keyword: "asc",
+  priority: "asc",
+  page: "asc",
+  volume: "desc",
+  difficulty: "desc",
+  trafficPotential: "desc",
+  dataState: "asc",
 };
 
 function ahrefsKeywordUrl(keyword: string): string {
@@ -36,6 +66,59 @@ function ahrefsPageUrl(targetOrigin: string, targetPath: string): string {
 
 function formatMetric(value: number | null): string {
   return value === null ? "—" : numberFormatter.format(value);
+}
+
+function compareNullableNumbers(
+  left: number | null,
+  right: number | null,
+  direction: SortDirection,
+): number {
+  if (left === null && right === null) return 0;
+  if (left === null) return 1;
+  if (right === null) return -1;
+  return direction === "asc" ? left - right : right - left;
+}
+
+function SortableHeader({
+  align = "left",
+  column,
+  label,
+  onSort,
+  sort,
+}: {
+  align?: "left" | "right";
+  column: SortKey;
+  label: string;
+  onSort: (column: SortKey) => void;
+  sort: SortState;
+}) {
+  const isActive = sort.key === column;
+  const ariaSort = isActive
+    ? sort.direction === "asc"
+      ? "ascending"
+      : "descending"
+    : "none";
+
+  return (
+    <th
+      aria-sort={ariaSort}
+      className={`px-4 py-3.5 font-medium ${align === "right" ? "text-right" : "text-left"}`}
+    >
+      <button
+        type="button"
+        onClick={() => onSort(column)}
+        className={`group inline-flex w-full items-center gap-1.5 rounded-md outline-none transition hover:text-white/65 focus-visible:ring-2 focus-visible:ring-coral ${align === "right" ? "justify-end" : "justify-start"}`}
+      >
+        {label}
+        <span
+          aria-hidden="true"
+          className={isActive ? "text-coral" : "text-white/20"}
+        >
+          {isActive ? (sort.direction === "asc" ? "↑" : "↓") : "↕"}
+        </span>
+      </button>
+    </th>
+  );
 }
 
 function DataBadge({ state }: { state: KeywordDataState }) {
@@ -63,7 +146,21 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
   const [query, setQuery] = useState("");
   const [priority, setPriority] = useState("all");
   const [dataState, setDataState] = useState("all");
-  const [sort, setSort] = useState<SortOption>("priority");
+  const [sort, setSort] = useState<SortState>({
+    key: "dataState",
+    direction: "asc",
+  });
+
+  const handleSort = (column: SortKey) => {
+    setSort((current) =>
+      current.key === column
+        ? {
+            key: column,
+            direction: current.direction === "asc" ? "desc" : "asc",
+          }
+        : { key: column, direction: defaultSortDirections[column] },
+    );
+  };
 
   const keywordOccurrences = useMemo(() => {
     const counts = new Map<string, number>();
@@ -88,17 +185,52 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
     });
 
     return filtered.toSorted((left, right) => {
-      if (sort === "keyword") return left.keyword.localeCompare(right.keyword);
-      if (sort === "page") return left.targetPath.localeCompare(right.targetPath);
-      if (sort === "volume") {
-        return (right.volume ?? -1) - (left.volume ?? -1);
+      const directionMultiplier = sort.direction === "asc" ? 1 : -1;
+      let comparison = 0;
+
+      if (sort.key === "keyword") {
+        comparison = left.keyword.localeCompare(right.keyword);
+      } else if (sort.key === "priority") {
+        comparison = left.priority - right.priority;
+      } else if (sort.key === "page") {
+        comparison = left.targetPath.localeCompare(right.targetPath);
+      } else if (sort.key === "volume") {
+        comparison = compareNullableNumbers(
+          left.volume,
+          right.volume,
+          sort.direction,
+        );
+      } else if (sort.key === "difficulty") {
+        comparison = compareNullableNumbers(
+          left.difficulty,
+          right.difficulty,
+          sort.direction,
+        );
+      } else if (sort.key === "trafficPotential") {
+        comparison = compareNullableNumbers(
+          left.trafficPotential,
+          right.trafficPotential,
+          sort.direction,
+        );
+      } else {
+        comparison =
+          dataStateOrder[left.dataState] - dataStateOrder[right.dataState];
       }
 
+      if (
+        comparison !== 0 &&
+        !["volume", "difficulty", "trafficPotential"].includes(sort.key)
+      ) {
+        return comparison * directionMultiplier;
+      }
+      if (comparison !== 0) return comparison;
+
       return (
+        dataStateOrder[left.dataState] - dataStateOrder[right.dataState] ||
         left.priority - right.priority ||
         Number(left.role === "Supporting") -
           Number(right.role === "Supporting") ||
-        (right.volume ?? -1) - (left.volume ?? -1)
+        left.keyword.localeCompare(right.keyword)
       );
     });
   }, [dataState, priority, query, rows, sort]);
@@ -173,19 +305,6 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
               </select>
             </label>
 
-            <label>
-              <span className="sr-only">Sort keyword rows</span>
-              <select
-                value={sort}
-                onChange={(event) => setSort(event.target.value as SortOption)}
-                className="h-10 w-full rounded-xl border border-white/10 bg-[#0c1217] px-3 text-xs text-white/70 outline-none focus:border-coral/60 focus:ring-2 focus:ring-coral/15 xl:w-auto"
-              >
-                <option value="priority">Sort: Priority</option>
-                <option value="volume">Sort: Volume</option>
-                <option value="keyword">Sort: Keyword</option>
-                <option value="page">Sort: Target page</option>
-              </select>
-            </label>
           </div>
         </div>
       </div>
@@ -194,13 +313,51 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
         <table className="w-full min-w-[1120px] border-collapse text-left">
           <thead>
             <tr className="border-b border-white/10 bg-black/10 font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
-              <th className="px-6 py-3.5 font-medium">Keyword</th>
-              <th className="px-4 py-3.5 font-medium">Priority</th>
-              <th className="px-4 py-3.5 font-medium">Target page</th>
-              <th className="px-4 py-3.5 text-right font-medium">Volume</th>
-              <th className="px-4 py-3.5 text-right font-medium">KD</th>
-              <th className="px-4 py-3.5 text-right font-medium">Traffic potential</th>
-              <th className="px-4 py-3.5 font-medium">Metrics</th>
+              <SortableHeader
+                column="keyword"
+                label="Keyword"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                column="priority"
+                label="Priority"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                column="page"
+                label="Target page"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="volume"
+                label="Volume"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="difficulty"
+                label="KD"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="trafficPotential"
+                label="Traffic potential"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                column="dataState"
+                label="Metrics"
+                onSort={handleSort}
+                sort={sort}
+              />
               <th className="px-6 py-3.5 text-right font-medium">Open</th>
             </tr>
           </thead>
