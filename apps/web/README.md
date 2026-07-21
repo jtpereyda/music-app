@@ -15,6 +15,25 @@ npm run dev
 
 Open <http://localhost:3000>.
 
+## SEO admin dashboard
+
+The private keyword dashboard is served at `/admin`. It reads the current
+keyword-to-page plan from `../../docs/2026-07-21-keyword-targeting.json`,
+including the Ahrefs metrics already captured there.
+
+Create a Google OAuth web client and add these authorized redirect URIs:
+
+```text
+http://localhost:3000/api/auth/callback/google
+https://transposify.com/api/auth/callback/google
+```
+
+Then set `AUTH_SECRET`, `AUTH_GOOGLE_ID`, and `AUTH_GOOGLE_SECRET` in
+`.env.local` (or the deployment environment). Generate the secret with
+`npx auth secret`. Google sign-in is allowlisted to
+`joshua.t.pereyda@gmail.com` in the server-side Auth.js callback, and the
+protected layout rechecks that email on every dashboard request.
+
 ## Render API contract
 
 Set `RENDER_API_URL` to the render service base URL. The browser

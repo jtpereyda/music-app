@@ -1,0 +1,532 @@
+{
+  "schema_version": "1.0",
+  "market": "United States",
+  "language": "en",
+  "research_date": "2026-07-20",
+  "site_name": "Transposify",
+  "common_capabilities": [
+    "Live score preview",
+    "Print-ready PDF",
+    "Any supported major key",
+    "Full SATB",
+    "Soprano, alto, tenor, or bass extraction",
+    "Treble, bass, alto, tenor, or treble 8vb clef",
+    "Selectable octave placement",
+    "US Letter or A4"
+  ],
+  "indexing": {
+    "environment_flag": "SITE_INDEXABLE=true",
+    "default_enabled": false,
+    "site_url_environment_variable": "SITE_URL",
+    "sitemap": "/sitemap.xml",
+    "robots": "/robots.txt",
+    "notes": [
+      "Indexing is disabled until publication review is complete.",
+      "Only the six Priority 0 hymn pages and curated Priority 1 presets enter the initial index set.",
+      "Other catalog hymn pages remain noindex even after launch.",
+      "Unvalidated key, clef, and voice combinations use query parameters and canonicalize to their parent landing page."
+    ]
+  },
+  "pages": [
+    {
+      "priority": 0,
+      "page_type": "hymn_collection_hub",
+      "path": "/hymns",
+      "primary_keyword": "hymn sheet music",
+      "supporting_keywords": [
+        "free hymn sheet music",
+        "printable hymn sheet music",
+        "SATB hymn sheet music"
+      ],
+      "keyword_metrics": {
+        "hymn sheet music": {
+          "us_volume_monthly": 150,
+          "kd": 2,
+          "traffic_potential": 3300
+        },
+        "free hymn sheet music": {
+          "us_volume_monthly": 60,
+          "kd": 3,
+          "traffic_potential": 150
+        }
+      },
+      "title": "Free Hymn Sheet Music in Any Key & Clef · Transposify",
+      "h1": "Traditional hymns, in the key and clef you need.",
+      "canonical": "/hymns",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "instrumentalist_hub",
+      "path": "/hymns/sheet-music-for-instrumentalists",
+      "primary_keyword": "sheet music for instrumentalists",
+      "supporting_keywords": [
+        "hymn sheet music by key",
+        "bass clef hymns",
+        "hymns in bass clef",
+        "hymn melody parts"
+      ],
+      "keyword_metrics": {},
+      "title": "Sheet Music for Instrumentalists — Keys, Clefs & Melody Parts · Transposify",
+      "h1": "Sheet music shaped for instrumentalists.",
+      "canonical": "/hymns/sheet-music-for-instrumentalists",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "generic_tool",
+      "path": "/uses/hymn-transposer",
+      "primary_keyword": "sheet music transposer",
+      "supporting_keywords": [
+        "transpose sheet music",
+        "music transposer",
+        "transpose sheet music online free",
+        "hymn transposer",
+        "hymn key transposer",
+        "hymn sheet music transposer"
+      ],
+      "keyword_metrics": {
+        "sheet music transposer": {
+          "us_volume_monthly": 250,
+          "kd": 0,
+          "traffic_potential": 400
+        },
+        "transpose sheet music": {
+          "us_volume_monthly": 300,
+          "kd": 0,
+          "traffic_potential": 350
+        },
+        "music transposer": {
+          "us_volume_monthly": 300,
+          "kd": 0,
+          "traffic_potential": 900
+        },
+        "transpose sheet music online free": {
+          "us_volume_monthly": 150,
+          "kd": 0,
+          "traffic_potential": 250
+        }
+      },
+      "title": "Free Sheet Music Transposer for Hymns · Transposify",
+      "h1": "The hymn you need, in the key you need.",
+      "canonical": "/uses/hymn-transposer",
+      "product_constraint": "Transposes hymns from the fixed catalog; arbitrary score uploads are not supported.",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "canonical_hymn",
+      "path": "/hymns/amazing-grace",
+      "primary_keyword": "amazing grace sheet music",
+      "supporting_keywords": [
+        "free amazing grace sheet music",
+        "printable amazing grace sheet music",
+        "amazing grace SATB sheet music"
+      ],
+      "keyword_metrics": {
+        "amazing grace sheet music": {
+          "us_volume_monthly": 1800,
+          "kd": 2,
+          "traffic_potential": 500
+        }
+      },
+      "title": "Amazing Grace Sheet Music in Any Key & Clef · Transposify",
+      "h1": "Amazing Grace sheet music in the key and clef you need",
+      "tune_disambiguation": "NEW BRITAIN",
+      "default_state": {
+        "key": "G major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/amazing-grace",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "canonical_hymn",
+      "path": "/hymns/it-is-well-with-my-soul",
+      "primary_keyword": "it is well with my soul sheet music",
+      "supporting_keywords": [
+        "it is well hymn sheet music",
+        "VILLE DU HAVRE sheet music",
+        "it is well with my soul SATB"
+      ],
+      "keyword_metrics": {
+        "it is well with my soul sheet music": {
+          "us_volume_monthly": 450,
+          "kd": 0,
+          "traffic_potential": 450
+        }
+      },
+      "title": "It Is Well With My Soul Sheet Music in Any Key & Clef · Transposify",
+      "h1": "It Is Well With My Soul sheet music in the key and clef you need",
+      "tune_disambiguation": "VILLE DU HAVRE",
+      "default_state": {
+        "key": "D-flat major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/it-is-well-with-my-soul",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "canonical_hymn",
+      "path": "/hymns/come-thou-fount-of-every-blessing",
+      "primary_keyword": "come thou fount sheet music",
+      "supporting_keywords": [
+        "come thou fount of every blessing sheet music",
+        "NETTLETON sheet music",
+        "come thou fount SATB"
+      ],
+      "keyword_metrics": {
+        "come thou fount sheet music": {
+          "us_volume_monthly": 250,
+          "kd": 0,
+          "traffic_potential": 200
+        }
+      },
+      "title": "Come Thou Fount Of Every Blessing Sheet Music in Any Key & Clef · Transposify",
+      "h1": "Come Thou Fount Of Every Blessing sheet music in the key and clef you need",
+      "tune_disambiguation": "NETTLETON",
+      "default_state": {
+        "key": "E-flat major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/come-thou-fount-of-every-blessing",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "canonical_hymn",
+      "path": "/hymns/blessed-assurance",
+      "primary_keyword": "blessed assurance sheet music",
+      "supporting_keywords": [
+        "free blessed assurance sheet music",
+        "blessed assurance SATB",
+        "ASSURANCE hymn tune"
+      ],
+      "keyword_metrics": {
+        "blessed assurance sheet music": {
+          "us_volume_monthly": 200,
+          "kd": 0,
+          "traffic_potential": 50
+        }
+      },
+      "title": "Blessed Assurance Sheet Music in Any Key & Clef · Transposify",
+      "h1": "Blessed Assurance sheet music in the key and clef you need",
+      "tune_disambiguation": "ASSURANCE",
+      "default_state": {
+        "key": "D major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/blessed-assurance",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "canonical_hymn",
+      "path": "/hymns/o-for-a-thousand-tongues",
+      "primary_keyword": "o for a thousand tongues to sing sheet music",
+      "supporting_keywords": [
+        "o for a thousand tongues sheet music",
+        "AZMON sheet music",
+        "o for a thousand tongues SATB"
+      ],
+      "keyword_metrics": {
+        "o for a thousand tongues to sing sheet music": {
+          "us_volume_monthly": 30,
+          "kd": 0,
+          "traffic_potential": 10
+        }
+      },
+      "title": "O For A Thousand Tongues Sheet Music in Any Key & Clef · Transposify",
+      "h1": "O For A Thousand Tongues sheet music in the key and clef you need",
+      "tune_disambiguation": "AZMON",
+      "default_state": {
+        "key": "A-flat major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/o-for-a-thousand-tongues",
+      "index_when_launched": true
+    },
+    {
+      "priority": 0,
+      "page_type": "canonical_hymn",
+      "path": "/hymns/beneath-the-cross-of-jesus",
+      "primary_keyword": "beneath the cross of jesus sheet music",
+      "supporting_keywords": [
+        "ST CHRISTOPHER hymn sheet music",
+        "beneath the cross of jesus SATB"
+      ],
+      "keyword_metrics": {
+        "beneath the cross of jesus sheet music": {
+          "us_volume_monthly": 10,
+          "kd": null,
+          "traffic_potential": null
+        }
+      },
+      "title": "Beneath The Cross Of Jesus Sheet Music in Any Key & Clef · Transposify",
+      "h1": "Beneath The Cross Of Jesus sheet music in the key and clef you need",
+      "tune_disambiguation": "ST. CHRISTOPHER",
+      "default_state": {
+        "key": "D-flat major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/beneath-the-cross-of-jesus",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "exact_key_preset",
+      "path": "/hymns/it-is-well-with-my-soul/key-of-c",
+      "primary_keyword": "it is well with my soul sheet music key of c",
+      "keyword_metrics": {
+        "it is well with my soul sheet music key of c": {
+          "us_volume_monthly": 30,
+          "kd": null,
+          "traffic_potential": null
+        }
+      },
+      "title": "It Is Well with My Soul Sheet Music in C — SATB & Any Clef · Transposify",
+      "h1": "It Is Well with My Soul sheet music in C major",
+      "default_state": {
+        "key": "C major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/it-is-well-with-my-soul/key-of-c",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "exact_key_preset",
+      "path": "/hymns/it-is-well-with-my-soul/key-of-g",
+      "primary_keyword": "it is well with my soul sheet music key of g",
+      "keyword_metrics": {
+        "it is well with my soul sheet music key of g": {
+          "us_volume_monthly": 20,
+          "kd": null,
+          "traffic_potential": null
+        }
+      },
+      "title": "It Is Well with My Soul Sheet Music in G — SATB & Any Clef · Transposify",
+      "h1": "It Is Well with My Soul sheet music in G major",
+      "default_state": {
+        "key": "G major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/it-is-well-with-my-soul/key-of-g",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "exact_key_preset",
+      "path": "/hymns/it-is-well-with-my-soul/key-of-d",
+      "primary_keyword": "it is well with my soul sheet music key of d",
+      "keyword_metrics": {
+        "it is well with my soul sheet music key of d": {
+          "us_volume_monthly": 10,
+          "kd": null,
+          "traffic_potential": null
+        }
+      },
+      "title": "It Is Well with My Soul Sheet Music in D — SATB & Any Clef · Transposify",
+      "h1": "It Is Well with My Soul sheet music in D major",
+      "default_state": {
+        "key": "D major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/it-is-well-with-my-soul/key-of-d",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "exact_key_preset",
+      "path": "/hymns/amazing-grace/key-of-c",
+      "primary_keyword": "amazing grace sheet music key of c",
+      "keyword_metrics": {
+        "amazing grace sheet music key of c": {
+          "us_volume_monthly": 20,
+          "kd": null,
+          "traffic_potential": null
+        }
+      },
+      "title": "Amazing Grace Sheet Music in C — SATB & Any Clef · Transposify",
+      "h1": "Amazing Grace sheet music in C major",
+      "default_state": {
+        "key": "C major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/amazing-grace/key-of-c",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "exact_key_preset",
+      "path": "/hymns/blessed-assurance/key-of-c",
+      "primary_keyword": "blessed assurance sheet music key of c",
+      "keyword_metrics": {
+        "blessed assurance sheet music key of c": {
+          "us_volume_monthly": 20,
+          "kd": null,
+          "traffic_potential": null
+        }
+      },
+      "title": "Blessed Assurance Sheet Music in C — SATB & Any Clef · Transposify",
+      "h1": "Blessed Assurance sheet music in C major",
+      "default_state": {
+        "key": "C major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/blessed-assurance/key-of-c",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "exact_key_preset",
+      "path": "/hymns/come-thou-fount-of-every-blessing/key-of-c",
+      "primary_keyword": "come thou fount sheet music key of c",
+      "keyword_metrics": {
+        "come thou fount sheet music key of c": {
+          "us_volume_monthly": 10,
+          "kd": null,
+          "traffic_potential": null
+        }
+      },
+      "title": "Come Thou Fount Sheet Music in C — SATB & Any Clef · Transposify",
+      "h1": "Come Thou Fount sheet music in C major",
+      "default_state": {
+        "key": "C major",
+        "part": "Full SATB",
+        "clef": "Original",
+        "octave": "Original",
+        "page_size": "US Letter"
+      },
+      "canonical": "/hymns/come-thou-fount-of-every-blessing/key-of-c",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "instrument_preset",
+      "path": "/hymns/amazing-grace/cello",
+      "primary_keyword": "amazing grace cello sheet music",
+      "supporting_keywords": [
+        "amazing grace for cello",
+        "amazing grace cello melody",
+        "amazing grace bass clef"
+      ],
+      "keyword_metrics": {
+        "amazing grace cello sheet music": {
+          "us_volume_monthly": 150,
+          "kd": 0,
+          "traffic_potential": 70
+        },
+        "amazing grace bass clef": {
+          "us_volume_monthly": 20,
+          "kd": 0,
+          "traffic_potential": 10
+        }
+      },
+      "title": "Amazing Grace Cello Sheet Music — Free Melody Part · Transposify",
+      "h1": "Amazing Grace sheet music for cello",
+      "default_state": {
+        "key": "G major",
+        "part": "Soprano melody line",
+        "clef": "Bass",
+        "octave": "Automatic comfortable register",
+        "page_size": "US Letter"
+      },
+      "product_constraint": "Concert-pitch melody part, not a cello-and-piano arrangement.",
+      "canonical": "/hymns/amazing-grace/cello",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
+      "page_type": "instrument_preset",
+      "path": "/hymns/amazing-grace/trombone",
+      "primary_keyword": "amazing grace trombone sheet music",
+      "supporting_keywords": [
+        "amazing grace for trombone",
+        "amazing grace bass clef",
+        "amazing grace trombone melody"
+      ],
+      "keyword_metrics": {
+        "amazing grace trombone sheet music": {
+          "us_volume_monthly": 70,
+          "kd": 0,
+          "traffic_potential": 30
+        }
+      },
+      "title": "Amazing Grace Trombone Sheet Music — Bass Clef Melody · Transposify",
+      "h1": "Amazing Grace sheet music for trombone",
+      "default_state": {
+        "key": "Concert B-flat major",
+        "part": "Soprano melody line",
+        "clef": "Bass",
+        "octave": "Automatic comfortable register",
+        "page_size": "US Letter"
+      },
+      "product_constraint": "Concert-pitch melody part, not a trombone-and-piano arrangement.",
+      "canonical": "/hymns/amazing-grace/trombone",
+      "index_when_launched": true
+    }
+  ],
+  "supporting_keywords_without_dedicated_pages": [
+    {
+      "keyword": "amazing grace bass clef",
+      "us_volume_monthly": 20,
+      "handling": "Supported by the cello and trombone pages and the instrumentalist hub; no separate canonical page initially."
+    },
+    {
+      "keyword": "bass clef hymns",
+      "us_volume_monthly": null,
+      "handling": "Supporting language on the instrumentalist hub; no separately indexed collection yet."
+    },
+    {
+      "keyword": "hymns in bass clef",
+      "us_volume_monthly": null,
+      "handling": "Supporting language on the instrumentalist hub."
+    },
+    {
+      "keyword": "o for a thousand tongues to sing in d bass clef",
+      "us_volume_monthly": 0,
+      "handling": "Shareable query-string preset on the canonical hymn page; not indexable."
+    },
+    {
+      "keyword": "unvalidated hymn and key combinations",
+      "us_volume_monthly": null,
+      "handling": "Selectable and shareable through query parameters; canonicalized to the parent hymn page."
+    }
+  ]
+}

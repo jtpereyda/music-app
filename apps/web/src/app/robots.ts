@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: canIndex ? "/" : undefined,
-      disallow: canIndex ? ["/api/"] : "/",
+      disallow: canIndex ? ["/admin/", "/api/"] : "/",
     },
     sitemap: new URL("/sitemap.xml", getSiteUrl()).toString(),
   };
