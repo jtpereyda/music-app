@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import type { Hymn } from "@/lib/catalog";
 
 interface HymnSearchProps {
@@ -15,25 +15,48 @@ export function HymnSearch({
   onSelect,
 }: HymnSearchProps) {
   const listId = useId();
+  const listRef = useRef<HTMLDivElement>(null);
   const [query, setQuery] = useState(selectedHymn.title);
   const [isOpen, setIsOpen] = useState(false);
+  const [showAll, setShowAll] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const normalizedQuery = query.trim().toLocaleLowerCase();
-  const matches = catalog
-    .filter((hymn) => {
-      if (!normalizedQuery) {
-        return true;
-      }
+  const matches = showAll
+    ? catalog
+    : catalog.filter((hymn) => {
+        if (!normalizedQuery) {
+          return true;
+        }
 
-      return [hymn.title, hymn.textAuthor, hymn.tuneName].some((value) =>
-        value.toLocaleLowerCase().includes(normalizedQuery),
-      );
-    })
-    .slice(0, 6);
+        return [hymn.title, hymn.textAuthor, hymn.tuneName].some((value) =>
+          value.toLocaleLowerCase().includes(normalizedQuery),
+        );
+      });
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const activeOption = listRef.current?.querySelector(
+      `[data-option-index="${activeIndex}"]`,
+    );
+    activeOption?.scrollIntoView({ block: "nearest" });
+  }, [activeIndex, isOpen]);
+
+  function openCatalog() {
+    const selectedIndex = catalog.findIndex(
+      (hymn) => hymn.id === selectedHymn.id,
+    );
+    setActiveIndex(Math.max(selectedIndex, 0));
+    setShowAll(true);
+    setIsOpen(true);
+  }
 
   function chooseHymn(hymn: Hymn) {
     setQuery(hymn.title);
     setIsOpen(false);
+    setShowAll(false);
     onSelect(hymn);
   }
 
@@ -79,17 +102,24 @@ export function HymnSearch({
           onChange={(event) => {
             setQuery(event.target.value);
             setActiveIndex(0);
+            setShowAll(false);
             setIsOpen(true);
           }}
           onFocus={(event) => {
             event.currentTarget.select();
-            setActiveIndex(0);
-            setIsOpen(true);
+            openCatalog();
+          }}
+          onClick={(event) => {
+            if (!isOpen) {
+              event.currentTarget.select();
+              openCatalog();
+            }
           }}
           onKeyDown={(event) => {
             if (event.key === "Escape") {
               setQuery(selectedHymn.title);
               setIsOpen(false);
+              setShowAll(false);
             }
 
             if (event.key === "ArrowDown" && matches.length > 0) {
@@ -118,42 +148,58 @@ export function HymnSearch({
 
       {isOpen ? (
         <div
-          id={listId}
-          role="listbox"
-          className="absolute z-30 mt-2 max-h-80 w-full overflow-auto rounded-xl border border-ink/10 bg-white p-1.5 shadow-[0_18px_50px_rgba(29,39,50,0.18)]"
+          className="absolute z-30 mt-2 w-full overflow-hidden rounded-xl border border-ink/10 bg-white shadow-[0_18px_50px_rgba(29,39,50,0.18)]"
         >
-          {matches.length > 0 ? (
-            matches.map((hymn, index) => (
-              <button
-                key={hymn.id}
-                id={`${listId}-option-${index}`}
-                type="button"
-                role="option"
-                aria-selected={hymn.id === selectedHymn.id}
-                onMouseDown={(event) => event.preventDefault()}
-                onClick={() => chooseHymn(hymn)}
-                className={`flex w-full items-start justify-between gap-4 rounded-lg px-3 py-2.5 text-left outline-none transition hover:bg-cream focus-visible:bg-cream ${
-                  index === activeIndex ? "bg-cream" : ""
-                }`}
-              >
-                <span>
-                  <span className="block text-sm font-medium leading-5 text-ink">
-                    {hymn.title}
+          <div className="flex items-center justify-between border-b border-ink/8 px-3.5 py-2 font-mono text-[9px] uppercase tracking-[0.12em] text-ink/40">
+            <span>
+              {showAll || !normalizedQuery
+                ? `${catalog.length} hymns`
+                : `${matches.length} ${matches.length === 1 ? "match" : "matches"}`}
+            </span>
+            {matches.length > 6 ? <span>Scroll to browse</span> : null}
+          </div>
+          <div
+            id={listId}
+            ref={listRef}
+            role="listbox"
+            className="max-h-[min(28rem,60vh)] overflow-y-auto p-1.5 overscroll-contain"
+          >
+            {matches.length > 0 ? (
+              matches.map((hymn, index) => (
+                <button
+                  key={hymn.id}
+                  id={`${listId}-option-${index}`}
+                  data-option-index={index}
+                  type="button"
+                  role="option"
+                  tabIndex={-1}
+                  aria-selected={hymn.id === selectedHymn.id}
+                  onMouseDown={(event) => event.preventDefault()}
+                  onMouseEnter={() => setActiveIndex(index)}
+                  onClick={() => chooseHymn(hymn)}
+                  className={`flex w-full items-start justify-between gap-4 rounded-lg px-3 py-2.5 text-left outline-none transition hover:bg-cream focus-visible:bg-cream ${
+                    index === activeIndex ? "bg-cream" : ""
+                  }`}
+                >
+                  <span>
+                    <span className="block text-sm font-medium leading-5 text-ink">
+                      {hymn.title}
+                    </span>
+                    <span className="mt-0.5 block text-xs text-ink/50">
+                      {hymn.textAuthor} · {hymn.tuneName}
+                    </span>
                   </span>
-                  <span className="mt-0.5 block text-xs text-ink/50">
-                    {hymn.textAuthor} · {hymn.tuneName}
+                  <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.12em] text-ink/35">
+                    {hymn.meter}
                   </span>
-                </span>
-                <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.12em] text-ink/35">
-                  {hymn.meter}
-                </span>
-              </button>
-            ))
-          ) : (
-            <p className="px-3 py-6 text-center text-sm text-ink/50">
-              No hymns match “{query}”.
-            </p>
-          )}
+                </button>
+              ))
+            ) : (
+              <p className="px-3 py-6 text-center text-sm text-ink/50">
+                No hymns match “{query}”.
+              </p>
+            )}
+          </div>
         </div>
       ) : null}
     </div>
