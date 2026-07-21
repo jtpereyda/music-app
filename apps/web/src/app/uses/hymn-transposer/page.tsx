@@ -9,9 +9,17 @@ import {
 } from "@/lib/catalog.server";
 
 export const metadata: Metadata = {
-  title: "Hymn Transposer — Sheet music in the key and clef you need",
+  title: "Free Sheet Music Transposer for Hymns",
   description:
-    "Choose a hymn, target key, full SATB or individual voice line, clef, and page size, then preview and download a freshly engraved PDF.",
+    "Transpose sheet music online from Transposify’s hymn catalog. Choose a key, full SATB or one voice, clef, range, and page size, then download a fresh PDF.",
+  alternates: { canonical: "/uses/hymn-transposer" },
+  openGraph: {
+    title: "Free Sheet Music Transposer for Hymns",
+    description:
+      "Choose a catalog hymn, key, voice, clef, and page size, then preview and download a newly engraved PDF.",
+    type: "website",
+    url: "/uses/hymn-transposer",
+  },
 };
 
 export const dynamic = "force-dynamic";

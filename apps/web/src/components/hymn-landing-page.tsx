@@ -61,7 +61,7 @@ export function HymnLandingPage({
     "@type": "MusicComposition",
     name: hymn.title,
     alternateName: `${hymn.title} (${tuneName})`,
-    composer: {
+    lyricist: {
       "@type": "Person",
       name: hymn.textAuthor,
     },
@@ -275,9 +275,8 @@ export function HymnLandingPage({
               </li>
             </ul>
             <p className="mt-6 border-t border-ink/10 pt-5 text-xs leading-5 text-ink/42">
-              Source: {hymn.sourceLabel}. The current technical-preview catalog
-              remains non-indexed until its per-score publication review is
-              complete.
+              Source notation: {hymn.sourceLabel}. Score publication status and
+              source provenance are tracked separately in the catalog.
             </p>
           </aside>
         </div>

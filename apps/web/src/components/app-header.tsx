@@ -32,12 +32,18 @@ export function AppHeader() {
           </span>
         </Link>
 
-        <nav className="flex items-center gap-2 text-sm" aria-label="Main navigation">
+        <nav className="flex items-center gap-1 text-sm" aria-label="Main navigation">
           <Link
-            href="/uses/hymn-transposer"
+            href="/hymns"
             className="hidden rounded-full px-4 py-2 text-ink/65 transition-colors hover:bg-white/65 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral sm:block"
           >
-            Hymn transposer
+            Hymns
+          </Link>
+          <Link
+            href="/hymns/sheet-music-for-instrumentalists"
+            className="hidden rounded-full px-4 py-2 text-ink/65 transition-colors hover:bg-white/65 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral lg:block"
+          >
+            For instrumentalists
           </Link>
           <Link
             href="/uses/hymn-transposer#make-an-edition"

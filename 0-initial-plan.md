@@ -22,10 +22,10 @@ todos:
     status: completed
   - id: seo-preset-pages
     content: Add demand-validated key and instrument landing pages with server-rendered preset score states
-    status: pending
+    status: completed
   - id: seo-canary-pages
     content: Add the hymn catalog canary page and optimize the generic sheet-music-transposer page
-    status: pending
+    status: completed
   - id: payments
     content: "Add auth + Stripe: free download quota, then annual subscription"
     status: pending

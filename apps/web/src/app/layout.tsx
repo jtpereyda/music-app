@@ -3,9 +3,11 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";
+import { getSiteUrl, indexingEnabled } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: getSiteUrl(),
   title: {
     default: "Transposify — Practical music, shaped to fit",
     template: "%s · Transposify",
@@ -23,8 +25,16 @@ export const metadata: Metadata = {
     "bass clef hymn",
   ],
   robots: {
-    index: false,
-    follow: false,
+    index: indexingEnabled(),
+    follow: indexingEnabled(),
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Transposify",
+    title: "Transposify — Practical music, shaped to fit",
+    description:
+      "Printable hymn sheet music in the key, voice, and clef your musician needs.",
+    url: "/",
   },
 };
 

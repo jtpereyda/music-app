@@ -14,9 +14,10 @@ export function LandingIntro() {
             <span className="text-coral">in the key you need.</span>
           </h1>
           <p className="mt-7 max-w-2xl text-pretty text-base leading-7 text-ink/62 sm:text-lg sm:leading-8">
-            Choose a hymn from the technical-preview catalog, transpose it,
+            Choose a traditional hymn from the fixed catalog, transpose it,
             select any SATB line and clef, then download a clean edition built
-            for the musicians in front of you.
+            for the musicians in front of you. Arbitrary score uploads are not
+            supported yet.
           </p>
         </div>
         <div className="hidden pb-2 lg:block" aria-hidden="true">
