@@ -22,6 +22,7 @@ from music21 import (
     tempo,
 )
 from pypdf import PdfReader, PdfWriter
+from pypdf.generic import ArrayObject, NumberObject, RectangleObject
 import verovio
 
 from hymn_render import __version__
@@ -54,6 +55,16 @@ PAGE_SIZES = {
         "css_width": 793.7008,
         "css_height": 1122.5197,
     },
+}
+PDF_BRAND_NAME = "Transposify"
+PDF_SITE_LABEL = "hymn-transposer.vercel.app"
+PDF_SITE_URL = f"https://{PDF_SITE_LABEL}"
+PDF_FOOTER_STYLE = "transposify-v1"
+PDF_FOOTER = {
+    "brand": PDF_BRAND_NAME,
+    "site_label": PDF_SITE_LABEL,
+    "site_url": PDF_SITE_URL,
+    "style": PDF_FOOTER_STYLE,
 }
 _VEROVIO_TOOLKIT: verovio.toolkit | None = None
 _VEROVIO_LOCK = Lock()
@@ -418,7 +429,9 @@ def render_svg_pages(
         "header": "auto",
         "lyricWordSpace": 2.2,
         "pageHeight": size["verovio_height"],
-        "pageMarginBottom": 80,
+        # Reserve a quiet strip for the PDF-only brand footer. The SVG preview
+        # remains unbranded, but uses the same notation geometry as the PDF.
+        "pageMarginBottom": 110,
         "pageMarginLeft": 80,
         "pageMarginRight": 80,
         "pageMarginTop": 80,
@@ -471,7 +484,30 @@ def svg_pages_to_pdf(
         raise RenderError("Cannot create a PDF without SVG pages.")
     size = PAGE_SIZES[page_size]
     writer = PdfWriter()
-    for svg_path in svg_paths:
+    footer_y = size["css_height"] - 44
+    footer_text_y = size["css_height"] - 20
+    footer_svg = f"""\
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="{size['css_width']}" height="{size['css_height']}"
+     viewBox="0 0 {size['css_width']} {size['css_height']}">
+  <line x1="48" y1="{footer_y}" x2="{size['css_width'] - 48}" y2="{footer_y}"
+        stroke="#1d2732" stroke-opacity="0.16" stroke-width="0.75"/>
+  <line x1="48" y1="{footer_y}" x2="72" y2="{footer_y}"
+        stroke="#e7684d" stroke-width="1.5"/>
+  <text x="48" y="{footer_text_y}"
+        fill="#1d2732" font-family="Arial, Helvetica, sans-serif"
+        font-size="10" font-weight="600" letter-spacing="0.5">{PDF_BRAND_NAME}</text>
+  <text x="{size['css_width'] - 48}" y="{footer_text_y}" text-anchor="end"
+        fill="#1d2732" fill-opacity="0.58"
+        font-family="Arial, Helvetica, sans-serif" font-size="8.75">{PDF_SITE_LABEL}</text>
+</svg>
+"""
+    footer_pdf = cairosvg.svg2pdf(bytestring=footer_svg.encode("utf-8"))
+    footer_reader = PdfReader(BytesIO(footer_pdf))
+    if len(footer_reader.pages) != 1:
+        raise RenderError("Expected the PDF footer overlay to contain one page.")
+
+    for page_number, svg_path in enumerate(svg_paths):
         page_pdf = cairosvg.svg2pdf(
             bytestring=svg_path.read_bytes(),
             output_width=size["css_width"],
@@ -481,6 +517,25 @@ def svg_pages_to_pdf(
         if len(reader.pages) != 1:
             raise RenderError(f"Expected one PDF page for {svg_path.name}.")
         writer.add_page(reader.pages[0])
+        page = writer.pages[-1]
+        page.merge_page(footer_reader.pages[0])
+
+        pdf_width = float(page.mediabox.width)
+        writer.add_uri(
+            page_number,
+            PDF_SITE_URL,
+            RectangleObject((pdf_width - 180, 8, pdf_width - 34, 27)),
+            border=ArrayObject(
+                [NumberObject(0), NumberObject(0), NumberObject(0)]
+            ),
+        )
+
+    writer.add_metadata(
+        {
+            "/Creator": PDF_BRAND_NAME,
+            "/Subject": f"Sheet music generated at {PDF_SITE_LABEL}",
+        }
+    )
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("wb") as output:
         writer.write(output)
@@ -512,6 +567,7 @@ def run_pipeline(
         transformed_path, output_dir, page_size=page_size
     )
     svg_pages_to_pdf(svg_paths, pdf_path, page_size=page_size)
+    render_metadata["pdf_footer"] = PDF_FOOTER
 
     manifest = {
         "generator": {"name": "hymn_render", "version": __version__},

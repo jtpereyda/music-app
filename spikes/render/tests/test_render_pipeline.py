@@ -221,6 +221,26 @@ def test_verovio_svg_and_letter_pdf(tmp_path: Path) -> None:
     first = reader.pages[0]
     assert round(float(first.mediabox.width)) == 612
     assert round(float(first.mediabox.height)) == 792
+    assert "Transposify" in first.extract_text()
+    assert "hymn-transposer.vercel.app" in first.extract_text()
+    assert first["/Annots"][0].get_object()["/A"]["/URI"] == (
+        "https://hymn-transposer.vercel.app"
+    )
+    assert reader.metadata.creator == "Transposify"
+
+
+def test_pipeline_manifest_records_pdf_footer(tmp_path: Path) -> None:
+    source = tmp_path / "source.musicxml"
+    write_satb_fixture(source)
+    manifest = run_pipeline(source, tmp_path / "output")
+
+    assert manifest["render"]["options"]["pageMarginBottom"] == 110
+    assert manifest["render"]["pdf_footer"] == {
+        "brand": "Transposify",
+        "site_label": "hymn-transposer.vercel.app",
+        "site_url": "https://hymn-transposer.vercel.app",
+        "style": "transposify-v1",
+    }
 
 
 def test_verovio_can_render_repeatedly_in_one_process(tmp_path: Path) -> None:
