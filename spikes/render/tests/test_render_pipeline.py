@@ -222,9 +222,9 @@ def test_verovio_svg_and_letter_pdf(tmp_path: Path) -> None:
     assert round(float(first.mediabox.width)) == 612
     assert round(float(first.mediabox.height)) == 792
     assert "Transposify" in first.extract_text()
-    assert "hymn-transposer.vercel.app" in first.extract_text()
+    assert "transposify.com" in first.extract_text()
     assert first["/Annots"][0].get_object()["/A"]["/URI"] == (
-        "https://hymn-transposer.vercel.app"
+        "https://transposify.com"
     )
     assert reader.metadata.creator == "Transposify"
 
@@ -237,8 +237,8 @@ def test_pipeline_manifest_records_pdf_footer(tmp_path: Path) -> None:
     assert manifest["render"]["options"]["pageMarginBottom"] == 110
     assert manifest["render"]["pdf_footer"] == {
         "brand": "Transposify",
-        "site_label": "hymn-transposer.vercel.app",
-        "site_url": "https://hymn-transposer.vercel.app",
+        "site_label": "transposify.com",
+        "site_url": "https://transposify.com",
         "style": "transposify-v1",
     }
 

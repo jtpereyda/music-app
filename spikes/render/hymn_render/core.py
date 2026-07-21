@@ -57,7 +57,7 @@ PAGE_SIZES = {
     },
 }
 PDF_BRAND_NAME = "Transposify"
-PDF_SITE_LABEL = "hymn-transposer.vercel.app"
+PDF_SITE_LABEL = "transposify.com"
 PDF_SITE_URL = f"https://{PDF_SITE_LABEL}"
 PDF_FOOTER_STYLE = "transposify-v1"
 PDF_FOOTER = {
