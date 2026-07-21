@@ -4,21 +4,27 @@ overview: Build a freemium web app that renders public-domain hymns in any key a
 todos:
   - id: spike-render
     content: "Spike A: pilot ABC → MusicXML → music21 transpose/clef → Verovio PDF on 5–10 real hymns, judge print quality"
-    status: pending
+    status: completed
   - id: spike-ingest
     content: "Spike B: bulk-convert Open Hymnal (~300 hymns) to MusicXML, measure failure/cleanup rate"
-    status: pending
+    status: completed
   - id: scaffold
     content: Scaffold Next.js app + Python FastAPI render service with deploy targets
-    status: pending
+    status: completed
   - id: catalog-mvp
     content: Build MVP catalog (~50–100 hymns) with per-hymn PD provenance records
     status: pending
   - id: core-flow
-    content: Implement search → key/clef picker → Verovio WASM live preview → PDF download
-    status: pending
+    content: Implement search → key/line/clef picker → Verovio live SVG preview → PDF download
+    status: completed
   - id: seo-pages
     content: Add programmatic SEO pages per hymn
+    status: completed
+  - id: seo-preset-pages
+    content: Add demand-validated key and instrument landing pages with server-rendered preset score states
+    status: pending
+  - id: seo-canary-pages
+    content: Add the hymn catalog canary page and optimize the generic sheet-music-transposer page
     status: pending
   - id: payments
     content: "Add auth + Stripe: free download quota, then annual subscription"
@@ -57,9 +63,19 @@ Use sub-agents generously as you see fit for research tasks and other tasks.
 
 All four major unknowns came back favorable:
 
-- **Data exists**: Open Hymnal Project (~300 vetted-PD SATB hymns in ABC notation, bulk-downloadable, includes both test hymns) as the seed catalog; Cyber Hymnal NWC archives (16,800+ hymns, attribution-only terms) to scale later. No scraping or OMR needed for launch.
-- **Tech is proven**: MusicXML canonical format → music21 (transpose + clef change, correct enharmonic spelling, keeps key signatures within 6 sharps/flats) → Verovio (engrave to SVG → PDF). Verovio WASM in the browser gives a live preview that pixel-matches the PDF. Sub-second renders, no queue. All licenses (BSD/LGPL) are safe for commercial SaaS.
-- **Legal is manageable**: pre-1931 publication = US public domain; must verify text + tune + harmonization separately per hymn. Re-rendering from our own notation data avoids engraving-copyright and terms-of-use issues entirely.
+- **Data exists, with a provenance gate**: the pinned Open Hymnal snapshot
+  contains 293 structured SATB records and 275 exact public-domain-declaration
+  candidates. It is sufficient for the technical pipeline, but its mutable
+  unauthenticated source and record-level rights claims are not a production
+  allowlist. No PDF scraping or OMR is needed for the curated MVP.
+- **Tech is proven**: MusicXML is canonical; music21 selects voices,
+  transposes pitches and key signatures, and changes clef representation;
+  Verovio engraves SVG; and the same server pipeline creates exact Letter/A4
+  PDFs. The live preview and download share that semantic pipeline.
+- **Legal is a catalog workflow**: text, translation, tune, and setting require
+  independent evidence and review per hymn. Re-rendering canonical notation
+  avoids depending on a scan as the product's data model, but does not replace
+  the underlying composition/arrangement rights review.
   - **Market gap is real but not empty**: Hymnary FlexScore ($39.99/yr) is the incumbent; we win on UX (instant preview, clean checkout) and SEO (programmatic pages per hymn/key/clef, which no one does). Target ~$24–29/yr, 5–10 free downloads, optional ~$2.99 single purchase.
 
 ## Architecture
@@ -94,7 +110,15 @@ If Spike A fails on Verovio quality, fall back to a LilyPond render path (best-i
 - Repo scaffold: Next.js frontend + Python (FastAPI) render service, both deployable to Vercel (container functions) or the Python service on Fly.io/Cloud Run if cold starts hurt.
 - Catalog of ~50–100 best-known hymns from Open Hymnal, each with recorded PD provenance (text/tune/harmonization dates).
 - Core flow: search hymn → pick key + clef (and optionally melody-only vs SATB) → live preview → download PDF.
-- Programmatic SEO pages: one indexable page per hymn (with key/clef variants handled on-page, not as thin separate URLs).
+- Programmatic SEO pages: one substantial indexable page per hymn, plus only
+  demand-validated key or instrument preset URLs. Initial instrument pages are
+  Amazing Grace for cello (G major, bass clef, comfortable lower octave) and
+  trombone (concert B-flat major, bass clef). Other combinations remain
+  shareable on-page states rather than thin indexable URLs.
+- Generic SEO canaries: an indexable `/hymns` catalog targeting “hymn sheet
+  music” and the existing `/uses/hymn-transposer` tool page targeting “sheet
+  music transposer.” Keep the latter explicit that the first version transposes
+  catalog hymns rather than arbitrary uploads.
 
 ## Phase 2 — Monetization + catalog growth
 
@@ -113,5 +137,3 @@ If Spike A fails on Verovio quality, fall back to a LilyPond render path (best-i
 - **Copyright of harmonizations**: only ingest sources with vetted PD status (Open Hymnal marks these); record provenance per hymn; never source from MuseScore.com or copyrighted hymnal scans.
 - **Incumbent (Hymnary FlexScore)**: compete on UX and SEO, not catalog size; their pages don't rank for exactly the searches you tried.
 - **NWC conversion fidelity (phase 2)**: known weak spots (chord symbols, grace notes); measure on a sample before committing.
-
-

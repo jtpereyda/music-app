@@ -1,0 +1,119 @@
+from __future__ import annotations
+
+from enum import StrEnum
+
+from pydantic import BaseModel, ConfigDict, Field
+
+
+HYMN_ID_PATTERN = r"^[a-z0-9]+(?:-[a-z0-9]+)*$"
+
+
+class RenderLine(StrEnum):
+    SATB = "satb"
+    SOPRANO = "soprano"
+    ALTO = "alto"
+    TENOR = "tenor"
+    BASS = "bass"
+
+
+class ClefChoice(StrEnum):
+    ORIGINAL = "original"
+    TREBLE = "treble"
+    BASS = "bass"
+    ALTO = "alto"
+    TENOR = "tenor"
+    TREBLE_8VB = "treble-8vb"
+
+
+class PageSize(StrEnum):
+    LETTER = "letter"
+    A4 = "a4"
+
+
+class OctavePlacement(StrEnum):
+    AUTO = "auto"
+    ORIGINAL = "original"
+    UP = "up"
+    DOWN = "down"
+
+
+class KeyChoice(StrEnum):
+    ORIGINAL = "original"
+
+    C_FLAT_MAJOR = "c-flat-major"
+    G_FLAT_MAJOR = "g-flat-major"
+    D_FLAT_MAJOR = "d-flat-major"
+    A_FLAT_MAJOR = "a-flat-major"
+    E_FLAT_MAJOR = "e-flat-major"
+    B_FLAT_MAJOR = "b-flat-major"
+    F_MAJOR = "f-major"
+    C_MAJOR = "c-major"
+    G_MAJOR = "g-major"
+    D_MAJOR = "d-major"
+    A_MAJOR = "a-major"
+    E_MAJOR = "e-major"
+    B_MAJOR = "b-major"
+    F_SHARP_MAJOR = "f-sharp-major"
+    C_SHARP_MAJOR = "c-sharp-major"
+
+
+KEY_TO_MUSIC21: dict[KeyChoice, str | None] = {
+    KeyChoice.ORIGINAL: None,
+    # The canonical technical-preview hymns are all major. Passing only the
+    # tonic lets the shared pipeline preserve that source mode.
+    KeyChoice.C_FLAT_MAJOR: "C-",
+    KeyChoice.G_FLAT_MAJOR: "G-",
+    KeyChoice.D_FLAT_MAJOR: "D-",
+    KeyChoice.A_FLAT_MAJOR: "A-",
+    KeyChoice.E_FLAT_MAJOR: "E-",
+    KeyChoice.B_FLAT_MAJOR: "B-",
+    KeyChoice.F_MAJOR: "F",
+    KeyChoice.C_MAJOR: "C",
+    KeyChoice.G_MAJOR: "G",
+    KeyChoice.D_MAJOR: "D",
+    KeyChoice.A_MAJOR: "A",
+    KeyChoice.E_MAJOR: "E",
+    KeyChoice.B_MAJOR: "B",
+    KeyChoice.F_SHARP_MAJOR: "F#",
+    KeyChoice.C_SHARP_MAJOR: "C#",
+}
+
+
+class HymnRecord(BaseModel):
+    model_config = ConfigDict(use_enum_values=True)
+
+    id: str = Field(pattern=HYMN_ID_PATTERN)
+    title: str
+    available: bool
+    original_key: str | None = None
+    available_lines: list[str]
+    lyrics_scope: str | None = None
+    rights_status: str | None = None
+
+
+class RenderChoices(BaseModel):
+    keys: list[str]
+    lines: list[str]
+    clefs: list[str]
+    octaves: list[str]
+    page_sizes: list[str]
+
+
+class CatalogResponse(BaseModel):
+    hymns: list[HymnRecord]
+    render_choices: RenderChoices
+
+
+class HealthResponse(BaseModel):
+    status: str
+    catalog_entries: int
+    catalog_sources_available: int
+
+
+class RenderParameters(BaseModel):
+    hymn_id: str = Field(pattern=HYMN_ID_PATTERN)
+    key: KeyChoice
+    line: RenderLine
+    clef: ClefChoice
+    octave: OctavePlacement
+    page_size: PageSize

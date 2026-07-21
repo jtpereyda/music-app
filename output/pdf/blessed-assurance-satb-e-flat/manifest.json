@@ -1,0 +1,60 @@
+{
+  "generator": {
+    "name": "hymn_render",
+    "version": "0.1.0"
+  },
+  "input": {
+    "path": "/tmp/openhymnal-ingest-report/musicxml/0174-x195-blessed-assurance.musicxml",
+    "sha256": "fca907e43f55445604041a667f001e97a2d24004582468d06bd4557905af436b"
+  },
+  "output": {
+    "musicxml": {
+      "path": "score.musicxml",
+      "sha256": "564e897e5bc162df218844304708f0a2d4b9df598613342de99ba5a839b59fa6"
+    },
+    "pdf": {
+      "path": "score.pdf",
+      "sha256": "cd001feb425b0b28a812f3caa2d543d745de7de45f06e84e9c5de56ac901310a"
+    },
+    "svg_pages": [
+      {
+        "path": "page-001.svg",
+        "sha256": "535bf7417ff4fcffe00129a7f0b69aefa1ecae57da3f569cdc15eaccb66400f4"
+      }
+    ]
+  },
+  "render": {
+    "options": {
+      "adjustPageHeight": false,
+      "adjustPageWidth": false,
+      "breaks": "auto",
+      "footer": "none",
+      "header": "auto",
+      "lyricWordSpace": 2.2,
+      "pageHeight": 2718,
+      "pageMarginBottom": 80,
+      "pageMarginLeft": 80,
+      "pageMarginRight": 80,
+      "pageMarginTop": 80,
+      "pageWidth": 2100,
+      "scale": 40,
+      "svgViewBox": true,
+      "xmlIdSeed": 1
+    },
+    "page_count": 1,
+    "page_size": "letter",
+    "verovio_version": "6.2.1-8d42439"
+  },
+  "transform": {
+    "clef": "original",
+    "clef_pitch_invariant": true,
+    "interval": "m2",
+    "line": "satb",
+    "pitch_count_after_selection": 292,
+    "pitch_count_after_transform": 292,
+    "pitch_fingerprint_after_selection": "14b8b4ec2688a06cb4b956524421f59eea8dfe08213159af4053476b99bc6762",
+    "pitch_fingerprint_after_transform": "08de80c732bc64d9a180455b6eea2eb3cd6ec9eab1d97a20be7ee717af953d17",
+    "source_key": "D major",
+    "target_key": "E- major"
+  }
+}

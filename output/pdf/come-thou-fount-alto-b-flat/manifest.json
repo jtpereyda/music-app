@@ -1,0 +1,60 @@
+{
+  "generator": {
+    "name": "hymn_render",
+    "version": "0.1.0"
+  },
+  "input": {
+    "path": "/tmp/openhymnal-ingest-report/musicxml/0203-x224-come-thou-fount-of-every-blessing.musicxml",
+    "sha256": "d5ad6306bab14cfd7dda9e27a1f1f5d6a2e6222882c7a7371c9b44ea8034b813"
+  },
+  "output": {
+    "musicxml": {
+      "path": "score.musicxml",
+      "sha256": "549ebf0c53a04a189160a561fcc47ceb7f89eec74cb99f2326b1b78a887062fb"
+    },
+    "pdf": {
+      "path": "score.pdf",
+      "sha256": "dfbe3745808e18950de542cf12e5ef9c85b94f48316889d6d7cc7e2cee1430a5"
+    },
+    "svg_pages": [
+      {
+        "path": "page-001.svg",
+        "sha256": "45ac7019fc1cd4e8647e7f0fa96af8aa254fa9809ff96fbaa5625afcfca58cc3"
+      }
+    ]
+  },
+  "render": {
+    "options": {
+      "adjustPageHeight": false,
+      "adjustPageWidth": false,
+      "breaks": "auto",
+      "footer": "none",
+      "header": "auto",
+      "lyricWordSpace": 2.2,
+      "pageHeight": 2718,
+      "pageMarginBottom": 80,
+      "pageMarginLeft": 80,
+      "pageMarginRight": 80,
+      "pageMarginTop": 80,
+      "pageWidth": 2100,
+      "scale": 40,
+      "svgViewBox": true,
+      "xmlIdSeed": 1
+    },
+    "page_count": 1,
+    "page_size": "letter",
+    "verovio_version": "6.2.1-8d42439"
+  },
+  "transform": {
+    "clef": "alto",
+    "clef_pitch_invariant": true,
+    "interval": "P-4",
+    "line": "alto",
+    "pitch_count_after_selection": 60,
+    "pitch_count_after_transform": 60,
+    "pitch_fingerprint_after_selection": "e9f10788329dcab6dd9dd0e82dfd06b52afe585358895680ce42185c34fe2e30",
+    "pitch_fingerprint_after_transform": "5d9baf0683312d05365806cf5fe45a99a54fbf7af911dfa80654341e589365a1",
+    "source_key": "E- major",
+    "target_key": "B- major"
+  }
+}

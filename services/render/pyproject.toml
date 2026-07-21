@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hymn-render-service"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.116.1",
+  "hymn-render-spike==0.1.0",
+  "uvicorn[standard]==0.35.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "httpx==0.28.1",
+  "pytest==8.4.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.vercel]
+entrypoint = "render_service.app:app"
+
+[tool.setuptools.packages.find]
+include = ["render_service*"]

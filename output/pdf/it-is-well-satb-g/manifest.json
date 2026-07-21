@@ -1,0 +1,60 @@
+{
+  "generator": {
+    "name": "hymn_render",
+    "version": "0.1.0"
+  },
+  "input": {
+    "path": "/tmp/openhymnal-ingest-report/musicxml/0177-x198-it-is-well-with-my-soul.musicxml",
+    "sha256": "2fcbe542e8deccbf219b22c16dbce67a69fa0b6ca33c047f72543150a2cfb06b"
+  },
+  "output": {
+    "musicxml": {
+      "path": "score.musicxml",
+      "sha256": "d5eb9ddf842d0d4a07a76fc9f9bf9b35c26913f273753eeecad632c844079640"
+    },
+    "pdf": {
+      "path": "score.pdf",
+      "sha256": "791a0518dff081b034abdcee0502d193a2a8ca5ecd14f1d9b6dc2757a0ca942c"
+    },
+    "svg_pages": [
+      {
+        "path": "page-001.svg",
+        "sha256": "80423a42214a3dc1b1d1c47f4c0d5c57b26e003793fa49a19d3e57653bc76417"
+      }
+    ]
+  },
+  "render": {
+    "options": {
+      "adjustPageHeight": false,
+      "adjustPageWidth": false,
+      "breaks": "auto",
+      "footer": "none",
+      "header": "auto",
+      "lyricWordSpace": 2.2,
+      "pageHeight": 2718,
+      "pageMarginBottom": 80,
+      "pageMarginLeft": 80,
+      "pageMarginRight": 80,
+      "pageMarginTop": 80,
+      "pageWidth": 2100,
+      "scale": 40,
+      "svgViewBox": true,
+      "xmlIdSeed": 1
+    },
+    "page_count": 1,
+    "page_size": "letter",
+    "verovio_version": "6.2.1-8d42439"
+  },
+  "transform": {
+    "clef": "original",
+    "clef_pitch_invariant": true,
+    "interval": "d-5",
+    "line": "satb",
+    "pitch_count_after_selection": 221,
+    "pitch_count_after_transform": 221,
+    "pitch_fingerprint_after_selection": "c46871f5df3bc8cc453d1adefd7be33039d98261a2f06c0c298781786d1a36cd",
+    "pitch_fingerprint_after_transform": "ed63b0d9f82d9d60837bd3f6a13818185216b070fb2641b4abbae12d7056ab8a",
+    "source_key": "D- major",
+    "target_key": "G major"
+  }
+}

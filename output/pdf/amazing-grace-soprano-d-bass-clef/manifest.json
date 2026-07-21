@@ -1,0 +1,60 @@
+{
+  "generator": {
+    "name": "hymn_render",
+    "version": "0.1.0"
+  },
+  "input": {
+    "path": "/tmp/openhymnal-ingest-report/musicxml/0171-x192-amazing-grace.musicxml",
+    "sha256": "faa50c924c42676faf8cb2275b82fc128e2f950be58a03957d12bfd3aaa94a49"
+  },
+  "output": {
+    "musicxml": {
+      "path": "score.musicxml",
+      "sha256": "a90b1b9a4ec48a220115b53aeb79918534e1142eb7272c88b822143bfad17c6c"
+    },
+    "pdf": {
+      "path": "score.pdf",
+      "sha256": "6ff3b4850b83d4fccbbf92d28fdfd04072356d9935e8e8ce0b3220e1ed4d7e9d"
+    },
+    "svg_pages": [
+      {
+        "path": "page-001.svg",
+        "sha256": "ed16d0c78952464c2cc09110b27f64980590fe8165669a54d64e085a431f4547"
+      }
+    ]
+  },
+  "render": {
+    "options": {
+      "adjustPageHeight": false,
+      "adjustPageWidth": false,
+      "breaks": "auto",
+      "footer": "none",
+      "header": "auto",
+      "lyricWordSpace": 2.2,
+      "pageHeight": 2718,
+      "pageMarginBottom": 80,
+      "pageMarginLeft": 80,
+      "pageMarginRight": 80,
+      "pageMarginTop": 80,
+      "pageWidth": 2100,
+      "scale": 40,
+      "svgViewBox": true,
+      "xmlIdSeed": 1
+    },
+    "page_count": 1,
+    "page_size": "letter",
+    "verovio_version": "6.2.1-8d42439"
+  },
+  "transform": {
+    "clef": "bass",
+    "clef_pitch_invariant": true,
+    "interval": "P-4",
+    "line": "soprano",
+    "pitch_count_after_selection": 37,
+    "pitch_count_after_transform": 37,
+    "pitch_fingerprint_after_selection": "a3186eaa5228e10f291fd52bc48ed079f0f9a64ab54c09c5a1f862f47c7813ee",
+    "pitch_fingerprint_after_transform": "866f5b7434ab278ad7173692a66983fba5c8f2ecaafd43deb015f4c7b65f6ea4",
+    "source_key": "G major",
+    "target_key": "D major"
+  }
+}

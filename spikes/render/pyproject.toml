@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hymn-render-spike"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "CairoSVG==2.9.0",
+  "music21==10.5.0",
+  "pypdf>=6,<7",
+  "verovio==6.2.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

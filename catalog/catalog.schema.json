@@ -1,0 +1,312 @@
+{
+  "$id": "https://hymn-transposer.invalid/schemas/technical-catalog-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "catalog_id": {
+      "const": "hymn-transposer-technical-preview"
+    },
+    "catalog_revision": {
+      "pattern": "^[1-9][0-9]*$",
+      "type": "string"
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/item"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "source_collections": {
+      "items": {
+        "$ref": "#/$defs/sourceCollection"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "catalog_id",
+    "catalog_revision",
+    "items",
+    "schema_version",
+    "source_collections"
+  ],
+  "title": "Hymn Transposer technical-preview catalog",
+  "type": "object",
+  "$defs": {
+    "generator": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "const": "abc2xml"
+        },
+        "version": {
+          "const": "268"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "type": "object"
+    },
+    "item": {
+      "additionalProperties": false,
+      "properties": {
+        "available_lines": {
+          "const": [
+            "SATB",
+            "S",
+            "A",
+            "T",
+            "B"
+          ],
+          "type": "array"
+        },
+        "display": {
+          "$ref": "#/$defs/display"
+        },
+        "id": {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "lyrics": {
+          "$ref": "#/$defs/lyrics"
+        },
+        "original_key": {
+          "$ref": "#/$defs/originalKey"
+        },
+        "rights": {
+          "$ref": "#/$defs/rights"
+        },
+        "score": {
+          "$ref": "#/$defs/score"
+        },
+        "source": {
+          "$ref": "#/$defs/sourceRecord"
+        },
+        "title": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "available_lines",
+        "display",
+        "id",
+        "lyrics",
+        "original_key",
+        "rights",
+        "score",
+        "source",
+        "title"
+      ],
+      "type": "object"
+    },
+    "display": {
+      "additionalProperties": false,
+      "properties": {
+        "meter": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "text_author": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "tune_name": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "meter",
+        "text_author",
+        "tune_name"
+      ],
+      "type": "object"
+    },
+    "lyrics": {
+      "additionalProperties": false,
+      "properties": {
+        "available": {
+          "const": true
+        },
+        "scope": {
+          "const": "soprano_only"
+        },
+        "verse_ids": {
+          "items": {
+            "pattern": "^[1-9][0-9]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "available",
+        "scope",
+        "verse_ids"
+      ],
+      "type": "object"
+    },
+    "originalKey": {
+      "additionalProperties": false,
+      "properties": {
+        "abc": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "fifths": {
+          "maximum": 7,
+          "minimum": -7,
+          "type": "integer"
+        },
+        "mode": {
+          "enum": [
+            "major",
+            "minor"
+          ]
+        },
+        "name": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "abc",
+        "fifths",
+        "mode",
+        "name"
+      ],
+      "type": "object"
+    },
+    "rights": {
+      "additionalProperties": false,
+      "properties": {
+        "source_attribution": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "source_declaration": {
+          "pattern": "^copyright: public domain\\.",
+          "type": "string"
+        },
+        "source_music_reference": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "status": {
+          "const": "technical_candidate_not_production_approved"
+        }
+      },
+      "required": [
+        "source_attribution",
+        "source_declaration",
+        "source_music_reference",
+        "status"
+      ],
+      "type": "object"
+    },
+    "score": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_state": {
+          "const": "untransposed"
+        },
+        "generator": {
+          "$ref": "#/$defs/generator"
+        },
+        "media_type": {
+          "const": "application/vnd.recordare.musicxml+xml"
+        },
+        "path": {
+          "pattern": "^scores/[a-z0-9]+(?:-[a-z0-9]+)*\\.musicxml$",
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "canonical_state",
+        "generator",
+        "media_type",
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "sourceCollection": {
+      "additionalProperties": false,
+      "properties": {
+        "encoding": {
+          "const": "windows-1252"
+        },
+        "id": {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "normalized_utf8_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "raw_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "source_url": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "encoding",
+        "id",
+        "normalized_utf8_sha256",
+        "raw_sha256",
+        "source_url"
+      ],
+      "type": "object"
+    },
+    "sourceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "collection_id": {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "record_ordinal": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "x_reference": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_sha256",
+        "collection_id",
+        "record_ordinal",
+        "x_reference"
+      ],
+      "type": "object"
+    }
+  }
+}

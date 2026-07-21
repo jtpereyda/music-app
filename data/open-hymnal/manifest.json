@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "dataset_id": "open-hymnal",
+  "audit_timestamp_utc": "2026-07-20T02:46:11Z",
+  "upstream": {
+    "name": "The Open Hymnal Project",
+    "maintainer": "Brian J. Dumont",
+    "homepage_url": "http://openhymnal.org/",
+    "copying_url": "http://openhymnal.org/copying.html",
+    "release_label": "2014.06",
+    "accessibility_observed": {
+      "http_homepage": {
+        "status": 200,
+        "observed_at_utc": "2026-07-20T02:49:19Z",
+        "last_modified": "Sat, 11 Jul 2026 13:05:31 GMT"
+      },
+      "http_copying_page": {
+        "status": 200,
+        "observed_at_utc": "2026-07-20T02:49:19Z",
+        "last_modified": "Sat, 11 Jul 2026 13:05:26 GMT"
+      },
+      "https": {
+        "usable": false,
+        "reason": "TLS certificate subject does not match openhymnal.org or www.openhymnal.org"
+      }
+    }
+  },
+  "raw_artifacts": [
+    {
+      "role": "combined_abc",
+      "source_url": "http://openhymnal.org/OpenHymnal2014.06.abc",
+      "path": "data/open-hymnal/raw/OpenHymnal2014.06.abc",
+      "retrieved_at_utc": "2026-07-20T02:46:11Z",
+      "transport_authenticated": false,
+      "http_status": 200,
+      "content_type": "text/plain",
+      "server_last_modified": "Sat, 18 Mar 2017 19:02:00 GMT",
+      "etag": "\"1d7cfd-54b05edd316d7\"",
+      "sha256": "f75551ce21cfe9439545f3c0d97b4e737a4689ca4c4594a5a51f76fb164daa46",
+      "bytes": 1932541,
+      "lines": 41264,
+      "encoding_detected": "ISO-8859",
+      "inventory": {
+        "abc_records": 293,
+        "title_fields": 371,
+        "unique_primary_titles": 281,
+        "unique_x_values": 288,
+        "duplicate_x_values": {
+          "1": 6
+        },
+        "rights_summary": {
+          "exact_public_domain_declaration_candidates": 275,
+          "clearly_restricted_or_non_public_domain": 17,
+          "ambiguous_manual_review": 1
+        }
+      },
+      "restricted_record_x_values": [
+        38,
+        82,
+        114,
+        138,
+        139,
+        146,
+        174,
+        183,
+        186,
+        199,
+        205,
+        237,
+        245,
+        247,
+        268,
+        276,
+        305
+      ],
+      "ambiguous_record_x_values": [
+        72
+      ]
+    },
+    {
+      "role": "split_abc_zip",
+      "source_url": "http://openhymnal.org/OpenHymnal2014.06-abc.zip",
+      "path": "data/open-hymnal/raw/OpenHymnal2014.06-abc.zip",
+      "retrieved_at_utc": "2026-07-20T02:49:07Z",
+      "transport_authenticated": false,
+      "http_status": 200,
+      "content_type": "application/zip",
+      "server_last_modified": "Sat, 18 Mar 2017 19:34:09 GMT",
+      "etag": "\"f2042-54b0660cf14fd\"",
+      "sha256": "407ec5ab7ec6b27f698245c3b4b2c7bea1488fabbb56f7ff190849e11fe472cd",
+      "bytes": 991298,
+      "zip_integrity_test": "passed",
+      "inventory": {
+        "zip_entries": 306,
+        "abc_files": 306,
+        "abc_records": 306,
+        "title_fields": 388,
+        "rights_summary": {
+          "exact_public_domain_declaration_candidates": 285,
+          "clearly_restricted_or_non_public_domain": 20,
+          "ambiguous_manual_review": 1
+        },
+        "explicit_post_2014_revision_files": 6
+      },
+      "restricted_entries": [
+        "Ascribe_To_The_Lord_Honor-Iyin_Oluwa.abc",
+        "At_The_Lambs_High_Feast-Sonne_Der_Gerechtigkeit.abc",
+        "Author_of_All_Life-Beach_Spring.abc",
+        "Awake_My_Soul_An_Offering_Bring-Melismata_22.abc",
+        "Canon-Kanon.abc",
+        "Christ_My_King_On_High-Christ_My_King_On_High.abc",
+        "Have_Mercy_On_Me_O_My_God-Third_Mode_Melody.abc",
+        "His_Gifts-Simple_Gifts.abc",
+        "How_Shall_We_Answer_Terrors_Cry-Melita.abc",
+        "Magnificat-Uffingham.abc",
+        "My_Neighbor-Tallis_Canon.abc",
+        "My_Song_Shall_Be_Of_Jesus-Sondance-Choral.abc",
+        "My_Song_Shall_Be_Of_Jesus-Sondance.abc",
+        "O_Be_Glad_All_Nations_on_Earth-Gwalia.abc",
+        "O_Lord_My_God_I_Thirst_For_You-Kingsfold.abc",
+        "The_Apostle_Looked_And_Heard_A_Voice-London-Addisons.abc",
+        "The_Cloud_Received_Christ_From_Their_Sight-Azmon.abc",
+        "The_Lords_Prayer-Erfyniad.abc",
+        "Yet_Before_We_See_Your_Plans-Holy_Manna.abc",
+        "You_People_Who_Now_Are_Baptized-Es_ist_Gewisslich_an_der_Zeit.abc"
+      ],
+      "ambiguous_entries": [
+        "Twas_In_The_Moon_Of_Wintertime-Huron_Carol-Jesous_Ahatonhia-Une_Jeune_Pucelle.abc"
+      ]
+    }
+  ],
+  "corroborating_artifacts_not_stored": [
+    {
+      "role": "official_pdf",
+      "url": "http://openhymnal.org/OpenHymnal2014.06.pdf",
+      "sha256_observed": "9fa0f21f2845e1ba50c1986402fe82526247524000b3a6a3979d6ca6e625f0a5",
+      "bytes": 7902986
+    },
+    {
+      "role": "https_pdf_mirror",
+      "url": "https://openscriptures.net/wp-content/uploads/2021/04/OpenHymnal2014.06.pdf",
+      "sha256_observed": "9fa0f21f2845e1ba50c1986402fe82526247524000b3a6a3979d6ca6e625f0a5",
+      "bytes": 7902986,
+      "byte_identical_to_official_pdf": true
+    }
+  ],
+  "release_integrity": {
+    "immutable_upstream_release": false,
+    "combined_and_split_payloads_agree": false,
+    "combined_record_count": 293,
+    "split_record_count": 306,
+    "warning": "The URLs are labeled 2014.06 but the server reports 2017 modification dates. The combined file contains a 2017 revision and the split ZIP contains five 2015 revisions plus one 2017 revision.",
+    "technical_spike_approved": true,
+    "production_catalog_approved": false,
+    "production_blockers": [
+      "ABC downloads are available only over unauthenticated HTTP",
+      "No upstream checksum, signed release, or immutable versioned snapshot was located",
+      "The two official 2014.06 ABC payloads disagree",
+      "Per-component publication evidence has not yet been independently verified"
+    ]
+  },
+  "rights_filter": {
+    "jurisdiction_claimed_by_upstream": "United States",
+    "separate_components": [
+      "melody",
+      "setting_or_harmony",
+      "words",
+      "translation"
+    ],
+    "candidate_rule": "A record may enter the technical PD candidate set only when its record-local rights declaration begins exactly with `C: copyright: public domain.` and no other record-local line asserts copyright, permission-only use, no-alteration terms, notice requirements, all-rights-reserved terms, or an unresolved third-party license.",
+    "always_hold_tokens_case_insensitive": [
+      "all rights reserved",
+      "provided they are not altered",
+      "provided it is not altered",
+      "for Christian worship",
+      "copyright 19",
+      "copyright 20",
+      "used by permission",
+      "CPDL"
+    ],
+    "notes": [
+      "The exact-public-domain rule produces candidates, not final production approvals.",
+      "Each candidate still needs independent text, translation, melody, and setting provenance.",
+      "Do not use X fields as stable identifiers; X=1 occurs six times in the combined payload.",
+      "Preserve the source artifact hash, entry filename or record ordinal, all C and S fields, and transformation hashes."
+    ]
+  }
+}

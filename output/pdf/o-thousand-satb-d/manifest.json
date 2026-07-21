@@ -1,0 +1,60 @@
+{
+  "generator": {
+    "name": "hymn_render",
+    "version": "0.1.0"
+  },
+  "input": {
+    "path": "/tmp/openhymnal-ingest-report/musicxml/0154-x175-o-for-a-thousand-tongues.musicxml",
+    "sha256": "f19e8340f57d10f2f09ebaf0ab774e1f442431f24fe8b75f50d35a40ab82b564"
+  },
+  "output": {
+    "musicxml": {
+      "path": "score.musicxml",
+      "sha256": "483824684566caf1e3674a44bf94e486f02832deafb73fd885bc4201bea02279"
+    },
+    "pdf": {
+      "path": "score.pdf",
+      "sha256": "7efddd77d69f784ec95e6582aeaa8c2d524e0dab801c096e80f687332619ae95"
+    },
+    "svg_pages": [
+      {
+        "path": "page-001.svg",
+        "sha256": "8188fd6d95574221d624921d09c0936e60945877d7e43de2cfc85c2ac02c6540"
+      }
+    ]
+  },
+  "render": {
+    "options": {
+      "adjustPageHeight": false,
+      "adjustPageWidth": false,
+      "breaks": "auto",
+      "footer": "none",
+      "header": "auto",
+      "lyricWordSpace": 2.2,
+      "pageHeight": 2718,
+      "pageMarginBottom": 80,
+      "pageMarginLeft": 80,
+      "pageMarginRight": 80,
+      "pageMarginTop": 80,
+      "pageWidth": 2100,
+      "scale": 40,
+      "svgViewBox": true,
+      "xmlIdSeed": 1
+    },
+    "page_count": 1,
+    "page_size": "letter",
+    "verovio_version": "6.2.1-8d42439"
+  },
+  "transform": {
+    "clef": "original",
+    "clef_pitch_invariant": true,
+    "interval": "d-5",
+    "line": "satb",
+    "pitch_count_after_selection": 114,
+    "pitch_count_after_transform": 114,
+    "pitch_fingerprint_after_selection": "f82f0f94d491d2a560498f34a9bccfcce65b94c44a1922b7cc82b72a3cdf9bf7",
+    "pitch_fingerprint_after_transform": "dec4676ddb18af786ac6c425b3572f2b187585f26e115c90839baf11da492a75",
+    "source_key": "A- major",
+    "target_key": "D major"
+  }
+}

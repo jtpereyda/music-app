@@ -1,0 +1,60 @@
+{
+  "generator": {
+    "name": "hymn_render",
+    "version": "0.1.0"
+  },
+  "input": {
+    "path": "/tmp/openhymnal-ingest-report/musicxml/0173-x194-beneath-the-cross-of-jesus.musicxml",
+    "sha256": "fe792c1681a67955fe248a43751df8bf14c5000f017e4beadf4aab58f5ef561d"
+  },
+  "output": {
+    "musicxml": {
+      "path": "score.musicxml",
+      "sha256": "75a8bab78b5a21d3f25826217971aa2117dfec7098ee5298c9c4f113584b0789"
+    },
+    "pdf": {
+      "path": "score.pdf",
+      "sha256": "6320c077843461f891965f490a330bd2925ac740640e0011a1a4c7cd43ea10c4"
+    },
+    "svg_pages": [
+      {
+        "path": "page-001.svg",
+        "sha256": "c79b2b327d209bf2a0628ed82c2c9b220b35372821632e4622653b3e05c469e6"
+      }
+    ]
+  },
+  "render": {
+    "options": {
+      "adjustPageHeight": false,
+      "adjustPageWidth": false,
+      "breaks": "auto",
+      "footer": "none",
+      "header": "auto",
+      "lyricWordSpace": 2.2,
+      "pageHeight": 2718,
+      "pageMarginBottom": 80,
+      "pageMarginLeft": 80,
+      "pageMarginRight": 80,
+      "pageMarginTop": 80,
+      "pageWidth": 2100,
+      "scale": 40,
+      "svgViewBox": true,
+      "xmlIdSeed": 1
+    },
+    "page_count": 1,
+    "page_size": "letter",
+    "verovio_version": "6.2.1-8d42439"
+  },
+  "transform": {
+    "clef": "original",
+    "clef_pitch_invariant": true,
+    "interval": "M3",
+    "line": "satb",
+    "pitch_count_after_selection": 228,
+    "pitch_count_after_transform": 228,
+    "pitch_fingerprint_after_selection": "314d3ee557f68cd2f0482473d760ca4ff03fd2392197f1b12a89160965da39fd",
+    "pitch_fingerprint_after_transform": "e6b81231fd4132607b365d61056d04b721059f2f628c42781276c874d4a43980",
+    "source_key": "D- major",
+    "target_key": "F major"
+  }
+}
