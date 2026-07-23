@@ -111,9 +111,8 @@ function formatCheckedAt(value: string | null): string {
 function indexingSortValue(indexing: TargetPageIndexing): number {
   const verdict = indexing.verdict?.toUpperCase();
   if (verdict === "PASS") return 0;
-  if (indexing.checkedAt && verdict === "FAIL") return 1;
-  if (indexing.checkedAt) return 2;
-  return 3;
+  if (indexing.checkedAt) return 1;
+  return 2;
 }
 
 function IndexingBadge({ indexing }: { indexing: TargetPageIndexing }) {
@@ -121,19 +120,15 @@ function IndexingBadge({ indexing }: { indexing: TargetPageIndexing }) {
   const label =
     verdict === "PASS"
       ? "Indexed"
-      : verdict === "FAIL"
+      : indexing.checkedAt
         ? "Not indexed"
-        : indexing.checkedAt
-          ? "Needs review"
-          : "Not checked";
+        : "Not checked";
   const classes =
     verdict === "PASS"
       ? "border-emerald-300/15 bg-emerald-300/10 text-emerald-200"
-      : verdict === "FAIL"
+      : indexing.checkedAt
         ? "border-amber-300/15 bg-amber-300/10 text-amber-200"
-        : indexing.checkedAt
-          ? "border-violet-300/15 bg-violet-300/10 text-violet-200"
-          : "border-white/10 bg-white/[0.035] text-white/35";
+        : "border-white/10 bg-white/[0.035] text-white/35";
 
   return (
     <span
