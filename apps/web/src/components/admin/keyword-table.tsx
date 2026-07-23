@@ -2,7 +2,14 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import {
+  type Ref,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
+import { createPortal } from "react-dom";
 import type {
   KeywordDataState,
   KeywordProgressStage,
@@ -38,6 +45,45 @@ type SortState = {
   key: SortKey;
   direction: SortDirection;
 };
+
+type StickyHeaderGeometry = {
+  columnWidths: number[];
+  headerHeight: number;
+  left: number;
+  scrollLeft: number;
+  tableWidth: number;
+  width: number;
+};
+
+const keywordTableColumns: Array<{
+  align?: "left" | "right";
+  key: SortKey;
+  label: string;
+}> = [
+  { key: "keyword", label: "Keyword" },
+  { key: "priority", label: "Priority" },
+  { key: "page", label: "Target page" },
+  { key: "stage", label: "Progress" },
+  { key: "indexing", label: "Google index" },
+  { align: "right", key: "position", label: "Position" },
+  { align: "right", key: "change7d", label: "Δ 7d" },
+  { align: "right", key: "impressions28d", label: "Impr. 28d" },
+  { align: "right", key: "clicks28d", label: "Clicks 28d" },
+  {
+    align: "right",
+    key: "organicSessions28d",
+    label: "Organic sessions",
+  },
+  { align: "right", key: "keyEvents28d", label: "Key events" },
+  { align: "right", key: "volume", label: "Volume" },
+  { align: "right", key: "difficulty", label: "KD" },
+  {
+    align: "right",
+    key: "trafficPotential",
+    label: "Traffic potential",
+  },
+  { key: "dataState", label: "Metrics" },
+];
 
 const numberFormatter = new Intl.NumberFormat("en-US");
 
@@ -178,12 +224,14 @@ function compareNullableNumbers(
 function SortableHeader({
   align = "left",
   column,
+  interactive = true,
   label,
   onSort,
   sort,
 }: {
   align?: "left" | "right";
   column: SortKey;
+  interactive?: boolean;
   label: string;
   onSort: (column: SortKey) => void;
   sort: SortState;
@@ -197,23 +245,68 @@ function SortableHeader({
 
   return (
     <th
-      aria-sort={ariaSort}
+      aria-sort={interactive ? ariaSort : undefined}
       className={`px-4 py-3.5 font-medium ${align === "right" ? "text-right" : "text-left"}`}
     >
-      <button
-        type="button"
-        onClick={() => onSort(column)}
-        className={`group inline-flex w-full items-center gap-1.5 rounded-md outline-none transition hover:text-white/65 focus-visible:ring-2 focus-visible:ring-coral ${align === "right" ? "justify-end" : "justify-start"}`}
-      >
-        {label}
-        <span
-          aria-hidden="true"
-          className={isActive ? "text-coral" : "text-white/20"}
+      {interactive ? (
+        <button
+          type="button"
+          onClick={() => onSort(column)}
+          className={`group inline-flex w-full items-center gap-1.5 rounded-md outline-none transition hover:text-white/65 focus-visible:ring-2 focus-visible:ring-coral ${align === "right" ? "justify-end" : "justify-start"}`}
         >
-          {isActive ? (sort.direction === "asc" ? "↑" : "↓") : "↕"}
+          {label}
+          <span
+            aria-hidden="true"
+            className={isActive ? "text-coral" : "text-white/20"}
+          >
+            {isActive ? (sort.direction === "asc" ? "↑" : "↓") : "↕"}
+          </span>
+        </button>
+      ) : (
+        <span
+          className={`inline-flex w-full items-center gap-1.5 ${align === "right" ? "justify-end" : "justify-start"}`}
+        >
+          {label}
+          <span className={isActive ? "text-coral" : "text-white/20"}>
+            {isActive ? (sort.direction === "asc" ? "↑" : "↓") : "↕"}
+          </span>
         </span>
-      </button>
+      )}
     </th>
+  );
+}
+
+function KeywordTableHead({
+  interactive = true,
+  onSort,
+  rowRef,
+  sort,
+}: {
+  interactive?: boolean;
+  onSort: (column: SortKey) => void;
+  rowRef?: Ref<HTMLTableRowElement>;
+  sort: SortState;
+}) {
+  return (
+    <thead>
+      <tr
+        ref={rowRef}
+        className="border-b border-white/10 bg-[#10171d] font-mono text-[8px] uppercase tracking-[0.14em] text-white/30"
+      >
+        {keywordTableColumns.map(({ align, key, label }) => (
+          <SortableHeader
+            key={key}
+            align={align}
+            column={key}
+            interactive={interactive}
+            label={label}
+            onSort={onSort}
+            sort={sort}
+          />
+        ))}
+        <th className="px-6 py-3.5 text-right font-medium">Open</th>
+      </tr>
+    </thead>
   );
 }
 
@@ -268,10 +361,15 @@ function ProgressBadge({ stage }: { stage: KeywordProgressStage }) {
 
 export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
   const router = useRouter();
+  const tableHeaderRowRef = useRef<HTMLTableRowElement>(null);
+  const tableRef = useRef<HTMLTableElement>(null);
+  const tableViewportRef = useRef<HTMLDivElement>(null);
   const [query, setQuery] = useState("");
   const [priority, setPriority] = useState("all");
   const [dataState, setDataState] = useState("all");
   const [indexingState, setIndexingState] = useState("all");
+  const [stickyHeader, setStickyHeader] =
+    useState<StickyHeaderGeometry | null>(null);
   const [checkStatus, setCheckStatus] = useState<
     "idle" | "running" | "success" | "error"
   >("idle");
@@ -476,8 +574,118 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
     dataState !== "all" ||
     indexingState !== "all";
 
+  useEffect(() => {
+    const table = tableRef.current;
+    const headerRow = tableHeaderRowRef.current;
+    const viewport = tableViewportRef.current;
+    if (!table || !headerRow || !viewport) return;
+
+    let animationFrame: number | null = null;
+
+    const updateStickyHeader = () => {
+      animationFrame = null;
+
+      const headerRect = headerRow.getBoundingClientRect();
+      const tableRect = table.getBoundingClientRect();
+      const viewportRect = viewport.getBoundingClientRect();
+      const shouldShow =
+        headerRect.top < 0 && tableRect.bottom > headerRect.height;
+
+      if (!shouldShow) {
+        setStickyHeader(null);
+        return;
+      }
+
+      const nextGeometry: StickyHeaderGeometry = {
+        columnWidths: Array.from(headerRow.cells, (cell) => {
+          return cell.getBoundingClientRect().width;
+        }),
+        headerHeight: headerRect.height,
+        left: viewportRect.left,
+        scrollLeft: viewport.scrollLeft,
+        tableWidth: tableRect.width,
+        width: viewport.clientWidth,
+      };
+
+      setStickyHeader((current) => {
+        const unchanged =
+          current !== null &&
+          Math.abs(current.headerHeight - nextGeometry.headerHeight) < 0.5 &&
+          Math.abs(current.left - nextGeometry.left) < 0.5 &&
+          Math.abs(current.scrollLeft - nextGeometry.scrollLeft) < 0.5 &&
+          Math.abs(current.tableWidth - nextGeometry.tableWidth) < 0.5 &&
+          Math.abs(current.width - nextGeometry.width) < 0.5 &&
+          current.columnWidths.length === nextGeometry.columnWidths.length &&
+          current.columnWidths.every(
+            (width, index) =>
+              Math.abs(width - nextGeometry.columnWidths[index]) < 0.5,
+          );
+
+        return unchanged ? current : nextGeometry;
+      });
+    };
+
+    const scheduleUpdate = () => {
+      if (animationFrame !== null) return;
+      animationFrame = window.requestAnimationFrame(updateStickyHeader);
+    };
+
+    updateStickyHeader();
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    viewport.addEventListener("scroll", scheduleUpdate, { passive: true });
+
+    const resizeObserver = new ResizeObserver(scheduleUpdate);
+    resizeObserver.observe(table);
+    resizeObserver.observe(viewport);
+
+    return () => {
+      if (animationFrame !== null) {
+        window.cancelAnimationFrame(animationFrame);
+      }
+      resizeObserver.disconnect();
+      viewport.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+      window.removeEventListener("scroll", scheduleUpdate);
+    };
+  }, [visibleRows.length]);
+
   return (
     <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.035] shadow-[0_20px_70px_rgba(0,0,0,0.16)]">
+      {stickyHeader && typeof document !== "undefined"
+        ? createPortal(
+            <div
+              aria-hidden="true"
+              className="fixed top-0 z-50 overflow-hidden border-b border-white/10 bg-[#10171d] shadow-[0_14px_30px_rgba(0,0,0,0.38)]"
+              style={{
+                height: stickyHeader.headerHeight,
+                left: stickyHeader.left,
+                width: stickyHeader.width,
+              }}
+            >
+              <table
+                className="min-w-[2380px] border-collapse text-left"
+                style={{
+                  tableLayout: "fixed",
+                  transform: `translateX(-${stickyHeader.scrollLeft}px)`,
+                  width: stickyHeader.tableWidth,
+                }}
+              >
+                <colgroup>
+                  {stickyHeader.columnWidths.map((width, index) => (
+                    <col key={index} style={{ width }} />
+                  ))}
+                </colgroup>
+                <KeywordTableHead
+                  interactive={false}
+                  onSort={handleSort}
+                  sort={sort}
+                />
+              </table>
+            </div>,
+            document.body,
+          )
+        : null}
       <div className="border-b border-white/10 p-5 sm:p-6">
         <div className="mb-6 flex flex-col gap-4 rounded-2xl border border-blue/15 bg-blue/[0.055] p-4 sm:p-5 lg:flex-row lg:items-center lg:justify-between">
           <div>
@@ -620,112 +828,16 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
         </div>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="w-full min-w-[2380px] border-collapse text-left">
-          <thead>
-            <tr className="border-b border-white/10 bg-black/10 font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
-              <SortableHeader
-                column="keyword"
-                label="Keyword"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                column="priority"
-                label="Priority"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                column="page"
-                label="Target page"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                column="stage"
-                label="Progress"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                column="indexing"
-                label="Google index"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="position"
-                label="Position"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="change7d"
-                label="Δ 7d"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="impressions28d"
-                label="Impr. 28d"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="clicks28d"
-                label="Clicks 28d"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="organicSessions28d"
-                label="Organic sessions"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="keyEvents28d"
-                label="Key events"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="volume"
-                label="Volume"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="difficulty"
-                label="KD"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                align="right"
-                column="trafficPotential"
-                label="Traffic potential"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <SortableHeader
-                column="dataState"
-                label="Metrics"
-                onSort={handleSort}
-                sort={sort}
-              />
-              <th className="px-6 py-3.5 text-right font-medium">Open</th>
-            </tr>
-          </thead>
+      <div ref={tableViewportRef} className="overflow-x-auto">
+        <table
+          ref={tableRef}
+          className="w-full min-w-[2380px] border-collapse text-left"
+        >
+          <KeywordTableHead
+            onSort={handleSort}
+            rowRef={tableHeaderRowRef}
+            sort={sort}
+          />
           <tbody>
             {visibleRows.map((row) => {
               const targetCount = keywordOccurrences.get(row.keyword) ?? 1;
