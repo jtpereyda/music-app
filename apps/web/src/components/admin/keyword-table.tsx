@@ -42,6 +42,7 @@ type SortState = {
 const numberFormatter = new Intl.NumberFormat("en-US");
 
 const pageTypeLabels: Record<string, string> = {
+  brand_homepage: "Brand homepage",
   canonical_hymn: "Hymn page",
   clef_preset: "Clef preset",
   exact_key_preset: "Key preset",
