@@ -75,6 +75,78 @@ function uniqueTargets(rows: KeywordTargetRow[]) {
   };
 }
 
+function decodeHtmlEntities(value: string): string {
+  const namedEntities: Record<string, string> = {
+    amp: "&",
+    apos: "'",
+    gt: ">",
+    lt: "<",
+    nbsp: " ",
+    quot: '"',
+  };
+  return value.replace(
+    /&(#x[\da-f]+|#\d+|[a-z]+);/gi,
+    (entity, code: string) => {
+      if (code.startsWith("#x")) {
+        return String.fromCodePoint(Number.parseInt(code.slice(2), 16));
+      }
+      if (code.startsWith("#")) {
+        return String.fromCodePoint(Number.parseInt(code.slice(1), 10));
+      }
+      return namedEntities[code.toLowerCase()] ?? entity;
+    },
+  );
+}
+
+function cleanHtmlText(value: string | undefined): string | null {
+  if (!value) return null;
+  const text = decodeHtmlEntities(
+    value
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
+      .replace(/<!--[\s\S]*?-->/g, " ")
+      .replace(/<[^>]+>/g, " "),
+  )
+    .replace(/\s+/g, " ")
+    .trim();
+  return text || null;
+}
+
+function extractAttribute(tag: string, name: string): string | null {
+  const match = tag.match(
+    new RegExp(`\\b${name}\\s*=\\s*(?:\"([^\"]*)\"|'([^']*)')`, "i"),
+  );
+  return cleanHtmlText(match?.[1] ?? match?.[2]);
+}
+
+function extractSeoCopy(html: string) {
+  const title = cleanHtmlText(
+    html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1],
+  );
+  const metaDescriptionTag = html
+    .match(/<meta\b[^>]*>/gi)
+    ?.find(
+      (tag) => extractAttribute(tag, "name")?.toLowerCase() === "description",
+    );
+  const h1Match = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
+  const h1 = cleanHtmlText(h1Match?.[1]);
+  const afterH1 = h1Match?.index === undefined
+    ? html
+    : html.slice(h1Match.index + h1Match[0].length);
+  const firstParagraph = cleanHtmlText(
+    afterH1.match(/<p\b[^>]*>([\s\S]*?)<\/p>/i)?.[1],
+  );
+
+  return {
+    title,
+    metaDescription: metaDescriptionTag
+      ? extractAttribute(metaDescriptionTag, "content")
+      : null,
+    h1,
+    firstParagraph,
+  };
+}
+
 async function fetchJson<T>(
   url: string,
   accessToken: string,
@@ -110,6 +182,12 @@ async function runSiteChecks(
       let status: number | null = null;
       let isLive = false;
       let finalUrl: string | null = null;
+      let seoCopy = {
+        title: null as string | null,
+        metaDescription: null as string | null,
+        h1: null as string | null,
+        firstParagraph: null as string | null,
+      };
       try {
         const response = await fetch(new URL(targetPath, origin), {
           method: "GET",
@@ -121,15 +199,15 @@ async function runSiteChecks(
         status = response.status;
         finalUrl = response.url;
         isLive = response.status >= 200 && response.status < 400;
-        await response.body?.cancel();
+        seoCopy = extractSeoCopy(await response.text());
       } catch {
         // The failed check is still recorded so it remains visible in history.
       }
-      return { finalUrl, isLive, status, targetPath };
+      return { finalUrl, isLive, seoCopy, status, targetPath };
     }),
   );
   const queries = results.map(
-    ({ finalUrl, isLive, status, targetPath }) => sql`
+    ({ finalUrl, isLive, seoCopy, status, targetPath }) => sql`
         INSERT INTO app.seo_page_snapshots (
           snapshot_date,
           target_path,
@@ -145,7 +223,7 @@ async function runSiteChecks(
           'site_check',
           ${status},
           ${isLive},
-          ${JSON.stringify({ finalUrl })}::jsonb,
+          ${JSON.stringify({ finalUrl, ...seoCopy })}::jsonb,
           now()
         )
         ON CONFLICT (snapshot_date, target_path, source) DO UPDATE SET

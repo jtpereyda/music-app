@@ -5,6 +5,7 @@ import type {
   KeywordProgress,
   KeywordProgressStage,
   KeywordTargetRow,
+  TargetPageSeo,
 } from "@/lib/keyword-targets";
 
 type KeywordSnapshotRow = {
@@ -28,6 +29,7 @@ type PageSnapshotRow = {
   index_verdict: string | null;
   organic_sessions: string | number | null;
   key_events: string | number | null;
+  metadata: unknown;
   collected_at: string | Date;
 };
 
@@ -97,6 +99,31 @@ function isoDate(value: string | Date): string {
 
 function isoTimestamp(value: string | Date): string {
   return new Date(value).toISOString();
+}
+
+function metadataObject(value: unknown): Record<string, unknown> {
+  if (value && typeof value === "object" && !Array.isArray(value)) {
+    return value as Record<string, unknown>;
+  }
+  if (typeof value === "string") {
+    try {
+      const parsed = JSON.parse(value) as unknown;
+      if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+        return parsed as Record<string, unknown>;
+      }
+    } catch {
+      return {};
+    }
+  }
+  return {};
+}
+
+function metadataText(
+  metadata: Record<string, unknown>,
+  key: string,
+): string | null {
+  const value = metadata[key];
+  return typeof value === "string" && value.trim() ? value.trim() : null;
 }
 
 function startOfDayDaysAgo(days: number): Date {
@@ -377,6 +404,31 @@ function progressForRow(
   };
 }
 
+function seoForRow(
+  row: KeywordTargetRow,
+  pageSnapshots: PageSnapshotRow[],
+): TargetPageSeo {
+  const latestSite = pageSnapshots
+    .filter((snapshot) => snapshot.source === "site_check")
+    .toSorted(
+      (left, right) =>
+        new Date(right.collected_at).getTime() -
+        new Date(left.collected_at).getTime(),
+    )[0];
+  if (!latestSite) return row.seo;
+
+  const metadata = metadataObject(latestSite.metadata);
+  return {
+    title: metadataText(metadata, "title") ?? row.seo.title,
+    metaDescription:
+      metadataText(metadata, "metaDescription") ?? row.seo.metaDescription,
+    h1: metadataText(metadata, "h1") ?? row.seo.h1,
+    firstParagraph:
+      metadataText(metadata, "firstParagraph") ?? row.seo.firstParagraph,
+    checkedAt: isoTimestamp(latestSite.collected_at),
+  };
+}
+
 export async function getTrackedKeywordDashboard(
   rows: KeywordTargetRow[],
 ): Promise<TrackedKeywordDashboard> {
@@ -433,6 +485,7 @@ export async function getTrackedKeywordDashboard(
             index_verdict,
             organic_sessions,
             key_events,
+            metadata,
             collected_at
           FROM app.seo_page_snapshots
           WHERE snapshot_date >= current_date - 120
@@ -487,14 +540,18 @@ export async function getTrackedKeywordDashboard(
       pagesByTarget.set(snapshot.target_path, current);
     }
 
-    const enrichedRows = rows.map((row) => ({
-      ...row,
-      progress: progressForRow(
-        row,
-        snapshotsByTarget.get(`${row.keyword}\u0000${row.targetPath}`) ?? [],
-        pagesByTarget.get(row.targetPath) ?? [],
-      ),
-    }));
+    const enrichedRows = rows.map((row) => {
+      const pageSnapshotsForTarget = pagesByTarget.get(row.targetPath) ?? [];
+      return {
+        ...row,
+        progress: progressForRow(
+          row,
+          snapshotsByTarget.get(`${row.keyword}\u0000${row.targetPath}`) ?? [],
+          pageSnapshotsForTarget,
+        ),
+        seo: seoForRow(row, pageSnapshotsForTarget),
+      };
+    });
     for (const row of enrichedRows) {
       stageCounts[row.progress.stage] += 1;
     }

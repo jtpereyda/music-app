@@ -1,13 +1,58 @@
 import { KeywordTable } from "@/components/admin/keyword-table";
 import { SeoSyncButton } from "@/components/admin/seo-sync-button";
 import { SeoTrendChart } from "@/components/admin/seo-trend-chart";
-import { getKeywordDashboard } from "@/lib/keyword-targets";
+import {
+  getKeywordDashboard,
+  type KeywordProgressStage,
+} from "@/lib/keyword-targets";
 import { getTrackedKeywordDashboard } from "@/lib/seo-tracking.server";
 
 const compactNumberFormatter = new Intl.NumberFormat("en-US", {
   notation: "compact",
   maximumFractionDigits: 1,
 });
+
+const progressStages = [
+  {
+    key: "planned",
+    label: "Planned",
+    description: "Mapped as a target; a live page has not been confirmed.",
+  },
+  {
+    key: "live",
+    label: "Live",
+    description: "The target URL responds successfully.",
+  },
+  {
+    key: "indexed",
+    label: "Indexed",
+    description: "Google Search Console confirms the URL is indexed.",
+  },
+  {
+    key: "visible",
+    label: "Visible",
+    description: "The keyword has an impression or measured position.",
+  },
+  {
+    key: "top20",
+    label: "Top 20",
+    description: "The latest measured position is 20 or better.",
+  },
+  {
+    key: "page1",
+    label: "Page 1",
+    description: "The latest measured position is 10 or better.",
+  },
+  {
+    key: "top3",
+    label: "Top 3",
+    description: "The latest measured position is 3 or better.",
+  },
+] as const satisfies ReadonlyArray<{
+  key: KeywordProgressStage;
+  label: string;
+  description: string;
+}>;
 
 function getTargetOrigin(): string {
   const configured = process.env.SITE_URL ?? "https://transposify.com";
@@ -152,33 +197,37 @@ export default async function AdminDashboardPage() {
                 {tracking.summary.trackedKeywords} tracked
               </span>
             </div>
-            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4 xl:grid-cols-7">
-              {(
-                [
-                  ["planned", "Planned"],
-                  ["live", "Live"],
-                  ["indexed", "Indexed"],
-                  ["visible", "Visible"],
-                  ["top20", "Top 20"],
-                  ["page1", "Page 1"],
-                  ["top3", "Top 3"],
-                ] as const
-              ).map(([key, label]) => (
-                <div
-                  key={key}
-                  className="rounded-xl border border-white/[0.07] bg-black/10 px-3 py-3"
+            <ol className="mt-5 grid gap-2 sm:grid-cols-2 xl:grid-cols-7">
+              {progressStages.map((stage, index) => (
+                <li
+                  key={stage.key}
+                  className="relative rounded-xl border border-white/[0.07] bg-black/10 px-3 py-3"
                 >
-                  <p className="font-mono text-xl tabular-nums text-white/75">
-                    {tracking.summary.stageCounts[key]}
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="text-[10px] font-medium text-white/50">
+                      {stage.label}
+                    </p>
+                    <p className="font-mono text-lg tabular-nums text-white/75">
+                      {tracking.summary.stageCounts[stage.key]}
+                    </p>
+                  </div>
+                  <p className="mt-2 text-[9px] leading-4 text-white/28">
+                    {stage.description}
                   </p>
-                  <p className="mt-1 text-[10px] text-white/30">{label}</p>
-                </div>
+                  {index < progressStages.length - 1 ? (
+                    <span
+                      aria-hidden="true"
+                      className="absolute -right-[9px] top-1/2 z-10 hidden -translate-y-1/2 font-mono text-xs text-coral/55 xl:block"
+                    >
+                      →
+                    </span>
+                  ) : null}
+                </li>
               ))}
-            </div>
+            </ol>
             <p className="mt-3 text-xs leading-5 text-white/30">
-              Stages are derived from live-page checks, Search Console index
-              verdicts and impressions, then the latest Ahrefs or Google
-              position. Research coverage remains a separate table column.
+              A mapping shows its highest earned state. The flow moves left to
+              right; research coverage remains a separate table column.
             </p>
           </div>
 

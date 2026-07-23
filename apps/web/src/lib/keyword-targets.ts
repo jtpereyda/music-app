@@ -14,6 +14,8 @@ type KeywordPage = {
   supporting_keywords?: string[] | null;
   keyword_metrics: Record<string, KeywordMetric>;
   index_when_launched: boolean;
+  title?: string;
+  h1?: string;
 };
 
 type KeywordResearch = {
@@ -52,6 +54,14 @@ export type KeywordProgress = {
   lastUpdated: string | null;
 };
 
+export type TargetPageSeo = {
+  title: string | null;
+  metaDescription: string | null;
+  h1: string | null;
+  firstParagraph: string | null;
+  checkedAt: string | null;
+};
+
 export type KeywordTargetRow = {
   id: string;
   keyword: string;
@@ -64,6 +74,7 @@ export type KeywordTargetRow = {
   trafficPotential: number | null;
   dataState: KeywordDataState;
   indexWhenLaunched: boolean;
+  seo: TargetPageSeo;
   progress?: KeywordProgress;
 };
 
@@ -128,6 +139,13 @@ export function getKeywordDashboard(): KeywordDashboard {
         trafficPotential: metric?.traffic_potential ?? null,
         dataState: getDataState(metric),
         indexWhenLaunched: page.index_when_launched,
+        seo: {
+          title: page.title ?? null,
+          metaDescription: null,
+          h1: page.h1 ?? null,
+          firstParagraph: null,
+          checkedAt: null,
+        },
       };
     };
 

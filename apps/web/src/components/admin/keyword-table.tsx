@@ -93,6 +93,30 @@ function formatMetric(value: number | null): string {
   return value === null ? "—" : numberFormatter.format(value);
 }
 
+function SeoCopyValue({
+  label,
+  value,
+}: {
+  label: string;
+  value: string | null;
+}) {
+  return (
+    <div className="grid grid-cols-[72px_minmax(0,1fr)] gap-2">
+      <dt className="font-mono text-[8px] uppercase tracking-[0.11em] text-white/25">
+        {label}
+      </dt>
+      <dd
+        className={`line-clamp-2 text-[10px] leading-4 ${
+          value ? "text-white/50" : "italic text-white/20"
+        }`}
+        title={value ?? undefined}
+      >
+        {value ?? "Not captured"}
+      </dd>
+    </div>
+  );
+}
+
 function compareNullableNumbers(
   left: number | null,
   right: number | null,
@@ -230,7 +254,13 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
         !normalizedQuery ||
         row.keyword.toLowerCase().includes(normalizedQuery) ||
         row.targetPath.toLowerCase().includes(normalizedQuery) ||
-        row.pageType.toLowerCase().includes(normalizedQuery);
+        row.pageType.toLowerCase().includes(normalizedQuery) ||
+        [
+          row.seo.title,
+          row.seo.metaDescription,
+          row.seo.h1,
+          row.seo.firstParagraph,
+        ].some((value) => value?.toLowerCase().includes(normalizedQuery));
       const matchesPriority =
         priority === "all" || row.priority === Number(priority);
       const matchesData = dataState === "all" || row.dataState === dataState;
@@ -401,7 +431,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[1840px] border-collapse text-left">
+        <table className="w-full min-w-[2100px] border-collapse text-left">
           <thead>
             <tr className="border-b border-white/10 bg-black/10 font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
               <SortableHeader
@@ -542,7 +572,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                       P{row.priority}
                     </span>
                   </td>
-                  <td className="max-w-[330px] px-4 py-4 align-top">
+                  <td className="w-[480px] max-w-[480px] px-4 py-4 align-top">
                     <Link
                       href={row.targetPath}
                       target="_blank"
@@ -553,6 +583,18 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                     <p className="mt-1.5 text-[10px] text-white/28">
                       {pageTypeLabels[row.pageType] ?? row.pageType}
                     </p>
+                    <dl className="mt-3 space-y-1.5 rounded-xl border border-white/[0.065] bg-black/10 p-3">
+                      <SeoCopyValue label="Title" value={row.seo.title} />
+                      <SeoCopyValue
+                        label="Meta desc."
+                        value={row.seo.metaDescription}
+                      />
+                      <SeoCopyValue label="H1" value={row.seo.h1} />
+                      <SeoCopyValue
+                        label="First para."
+                        value={row.seo.firstParagraph}
+                      />
+                    </dl>
                   </td>
                   <td className="px-4 py-4 align-top">
                     <ProgressBadge stage={progress?.stage ?? "planned"} />
