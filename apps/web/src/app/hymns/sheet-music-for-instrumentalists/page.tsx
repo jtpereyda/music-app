@@ -22,8 +22,8 @@ export const dynamic = "force-dynamic";
 
 export default async function InstrumentalistSheetMusicPage() {
   const snapshot = await getCatalogSnapshot();
-  const instrumentPresets = curatedPresets.filter(
-    (preset) => preset.kind === "instrument",
+  const melodyPresets = curatedPresets.filter(
+    (preset) => preset.kind !== "key",
   );
   const keyPresets = curatedPresets.filter((preset) => preset.kind === "key");
   const hymnBySlug = new Map(snapshot.hymns.map((hymn) => [hymn.slug, hymn]));
@@ -60,13 +60,13 @@ export default async function InstrumentalistSheetMusicPage() {
       <section className="bg-paper px-5 py-16 sm:px-8 sm:py-24 lg:px-10">
         <div className="mx-auto w-full max-w-[1440px]">
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-coral">
-            Instrument melody parts
+            Clef and instrument editions
           </p>
           <h2 className="mt-3 text-3xl font-medium tracking-[-0.045em] text-ink sm:text-5xl">
-            Open with a musician-friendly range.
+            Open in bass clef or a musician-friendly range.
           </h2>
           <div className="mt-9 grid gap-4 lg:grid-cols-2">
-            {instrumentPresets.map((preset) => {
+            {melodyPresets.map((preset) => {
               const hymn = hymnBySlug.get(preset.hymnSlug);
               if (!hymn) return null;
               return (
@@ -85,7 +85,9 @@ export default async function InstrumentalistSheetMusicPage() {
                     {preset.intro}
                   </p>
                   <span className="mt-7 inline-flex text-sm font-semibold text-blue underline decoration-blue/25 underline-offset-4 transition group-hover:decoration-blue">
-                    Preview the melody part →
+                    {preset.kind === "clef"
+                      ? "Preview the bass-clef edition →"
+                      : "Preview the melody part →"}
                   </span>
                 </Link>
               );

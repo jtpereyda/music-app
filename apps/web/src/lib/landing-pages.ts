@@ -34,7 +34,7 @@ const landingTuneNames: Readonly<Record<string, string>> = {
 export interface CuratedPreset {
   hymnSlug: string;
   slug: string;
-  kind: "key" | "instrument";
+  kind: "key" | "clef" | "instrument";
   shortLabel: string;
   title: string;
   heading: string;
@@ -149,6 +149,24 @@ export const curatedPresets: readonly CuratedPreset[] = [
       outputPart: "satb",
       clef: "original",
       octavePlacement: "original",
+      pageSize: "letter",
+    },
+  },
+  {
+    hymnSlug: "amazing-grace",
+    slug: "bass-clef",
+    kind: "clef",
+    shortLabel: "Bass clef melody",
+    title: "Amazing Grace Bass Clef Sheet Music — Free Printable",
+    heading: "Amazing Grace sheet music in bass clef",
+    eyebrow: "NEW BRITAIN · bass clef · G major",
+    intro:
+      "Print the traditional NEW BRITAIN melody for Amazing Grace in bass clef. Start in G major, then change the key, hymn voice, register, or page size.",
+    edition: {
+      targetKey: "g-major",
+      outputPart: "soprano",
+      clef: "bass",
+      octavePlacement: "auto",
       pageSize: "letter",
     },
   },

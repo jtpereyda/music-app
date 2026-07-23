@@ -438,24 +438,43 @@
     },
     {
       "priority": 1,
+      "page_type": "clef_preset",
+      "path": "/hymns/amazing-grace/bass-clef",
+      "primary_keyword": "amazing grace bass clef",
+      "keyword_metrics": {
+        "amazing grace bass clef": {
+          "us_volume_monthly": 20,
+          "kd": 0,
+          "traffic_potential": 10
+        }
+      },
+      "title": "Amazing Grace Bass Clef Sheet Music — Free Printable · Transposify",
+      "h1": "Amazing Grace sheet music in bass clef",
+      "default_state": {
+        "key": "G major",
+        "part": "Soprano melody line",
+        "clef": "Bass",
+        "octave": "Automatic comfortable register",
+        "page_size": "US Letter"
+      },
+      "product_constraint": "Concert-pitch bass-clef melody page, not an instrument-specific arrangement.",
+      "canonical": "/hymns/amazing-grace/bass-clef",
+      "index_when_launched": true
+    },
+    {
+      "priority": 1,
       "page_type": "instrument_preset",
       "path": "/hymns/amazing-grace/cello",
       "primary_keyword": "amazing grace cello sheet music",
       "supporting_keywords": [
         "amazing grace for cello",
-        "amazing grace cello melody",
-        "amazing grace bass clef"
+        "amazing grace cello melody"
       ],
       "keyword_metrics": {
         "amazing grace cello sheet music": {
           "us_volume_monthly": 150,
           "kd": 0,
           "traffic_potential": 70
-        },
-        "amazing grace bass clef": {
-          "us_volume_monthly": 20,
-          "kd": 0,
-          "traffic_potential": 10
         }
       },
       "title": "Amazing Grace Cello Sheet Music — Free Melody Part · Transposify",
@@ -478,7 +497,6 @@
       "primary_keyword": "amazing grace trombone sheet music",
       "supporting_keywords": [
         "amazing grace for trombone",
-        "amazing grace bass clef",
         "amazing grace trombone melody"
       ],
       "keyword_metrics": {
@@ -503,11 +521,6 @@
     }
   ],
   "supporting_keywords_without_dedicated_pages": [
-    {
-      "keyword": "amazing grace bass clef",
-      "us_volume_monthly": 20,
-      "handling": "Supported by the cello and trombone pages and the instrumentalist hub; no separate canonical page initially."
-    },
     {
       "keyword": "bass clef hymns",
       "us_volume_monthly": null,

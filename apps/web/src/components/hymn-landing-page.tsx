@@ -85,7 +85,7 @@ export function HymnLandingPage({
             <Link className="transition hover:text-ink" href="/hymns">
               Hymns
             </Link>
-            {preset?.kind === "instrument" ? (
+            {preset?.kind === "instrument" || preset?.kind === "clef" ? (
               <>
                 <span aria-hidden="true">/</span>
                 <Link
@@ -247,6 +247,13 @@ export function HymnLandingPage({
                   This instrument page provides the hymn melody as a flexible,
                   concert-pitch part. It does not include a separately composed
                   piano accompaniment or imply a published solo arrangement.
+                </p>
+              ) : null}
+              {preset?.kind === "clef" ? (
+                <p className="rounded-2xl border border-blue/15 bg-blue/[0.05] p-5 text-ink/65">
+                  This bass-clef page starts with the traditional hymn melody
+                  in a readable register. It is not tied to one instrument, so
+                  you can keep bass clef while changing the key or octave.
                 </p>
               ) : null}
             </div>
