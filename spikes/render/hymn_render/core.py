@@ -132,8 +132,15 @@ def _target_key(value: str, source: key.Key) -> key.Key:
     lower = normalized.lower()
     if lower.endswith(" major") or lower.endswith(" minor"):
         tonic_name, mode = normalized.rsplit(maxsplit=1)
-        return key.Key(tonic_name, mode.lower())
-    return key.Key(normalized, source.mode)
+        destination = key.Key(tonic_name, mode.lower())
+    else:
+        destination = key.Key(normalized, source.mode)
+    if destination.mode != source.mode:
+        raise RenderError(
+            "Target key mode must match the source mode; "
+            f"cannot transpose {source.name} to {destination.name}."
+        )
+    return destination
 
 
 def _nearest_transposition(source: key.Key, destination: key.Key) -> interval.Interval:

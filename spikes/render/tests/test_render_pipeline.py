@@ -27,7 +27,7 @@ VOICE_PITCHES = (
 )
 
 
-def write_satb_fixture(path: Path) -> None:
+def write_satb_fixture(path: Path, *, mode: str = "major") -> None:
     score = stream.Score()
     score.metadata = metadata.Metadata()
     score.metadata.title = "Synthetic SATB"
@@ -35,7 +35,7 @@ def write_satb_fixture(path: Path) -> None:
         part = stream.Part()
         measure = stream.Measure(number=1)
         measure.insert(0, staff_clef)
-        measure.insert(0, key.Key("C"))
+        measure.insert(0, key.Key("C", mode))
         measure.insert(0, meter.TimeSignature("4/4"))
         for voice_index in range(2):
             voice = stream.Voice(id=str(voice_index + 1))
@@ -94,6 +94,35 @@ def test_explicit_target_mode_parses(tmp_path: Path) -> None:
     result = transform_musicxml(source, line_name="soprano", target_key_name="D major")
     assert result.target_key == "D major"
     assert result.pitches_after_transform == ("D5", "E5")
+
+
+def test_minor_transposition_preserves_mode(tmp_path: Path) -> None:
+    source = tmp_path / "source.musicxml"
+    write_satb_fixture(source, mode="minor")
+    tonic_only = transform_musicxml(
+        source, line_name="soprano", target_key_name="D"
+    )
+    explicit = transform_musicxml(
+        source, line_name="soprano", target_key_name="D minor"
+    )
+    for result in (tonic_only, explicit):
+        assert result.source_key == "C minor"
+        assert result.target_key == "D minor"
+        assert result.pitches_after_transform == ("D5", "E5")
+        assert result.interval_name == "M2"
+
+
+@pytest.mark.parametrize(
+    ("source_mode", "target"),
+    (("major", "D minor"), ("minor", "D major")),
+)
+def test_transposition_rejects_mode_conversion(
+    tmp_path: Path, source_mode: str, target: str
+) -> None:
+    source = tmp_path / "source.musicxml"
+    write_satb_fixture(source, mode=source_mode)
+    with pytest.raises(RenderError, match="mode must match"):
+        transform_musicxml(source, target_key_name=target)
 
 
 def test_auto_octave_uses_final_key_and_effective_bass_clef(tmp_path: Path) -> None:

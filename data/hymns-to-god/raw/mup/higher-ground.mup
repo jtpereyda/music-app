@@ -1,0 +1,309 @@
+// Mup vs. 7.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+
+// Hymn Source: Hymns Of The Heart
+//		For public worship, evangelistic
+//		campaigns, prayer meetings, young
+//		people's services, etc.
+//		Compilerd by: Joseph F. Berry and
+//		Charles H, Gabriel
+//		Publisher: The Methodist Book concern
+//		New York  Cincinnati
+//		Copyright: 1914
+//		Hymn No. 111
+	
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 03/31/2014
+
+// Revisions:
+//	01/25/2025 [1] Updated mup code
+
+// HymnsToGod.org
+
+
+
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Higher Ground" ""
+   title (2)""
+   title (11) "" "\f(TI)I press on toward the goal unto the prize of the high" ""   
+   title (11) "" "\f(TI)calling of God in Christ Jesus. - Phil. 3:14" ""   
+   title (11) "A \(flat) - 3 - SOL"  ""  "" 
+   title (13) "Johnson Oatman, Jr." "" "Charles H. Gabriel, 1898"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// Set midi
+	midi all: 0 "tempo=85";
+
+//=========================
+
+//Verse
+
+//1
+1: 8ec;; ac; 4.s;
+2: 8aa-;;; 4.s;
+
+	VS 8; 8; 8; 4.s; "<1. >-1|I'm press-ing";
+	VS 8; 8; 8; 4.s; "<2. >-1|My heart has";
+	VS 8; 8; 8; 4.s; "<3. >-1|I want to";
+	VS 8; 8; 8; 4.s; "<4. >-1|I want to";
+bar
+
+//2
+1: 4.c+e; 8; be; ae;
+2: 4.aa-; 8; gb-; ac;
+
+	VS "on the up-ward";
+	VS "no de-sire to";
+	VS "live a-bove the";
+	VS "scale the ut-most";
+bar
+
+//3
+1: 4.fd; 8bf; af; fd;
+2: 4.ad; 8;;;
+
+	VS "way, New heights I'm";
+	VS "stay Where doubts a-";
+	VS "world, Tho' Sa-tan's";
+	VS "height, And catch a";
+bar
+
+//4
+1: 4.ec; 8ac; c+e; ae;
+2: 4.aa-; 8;; ac;
+
+	VS "gain-ing ev-'ry";
+	VS "rise and fears dis-";
+	VS "darts at me are";
+	VS "gleam of glo-ry";
+bar
+
+//5
+1 1: 4.be; 8e; ec; ac;
+1 2: 4.s; 8d; s;;
+2: 4.ge; 8ge; aa-;;
+
+	VS "day; Still pray-ing";
+	VS "may; Tho' some may";
+	VS "hurl'd; For faith has";
+	VS "bright; But still I'll";
+bar
+
+//6
+1: 4.c+e; 8; be; ae;
+2: 4.aa-; 8; gb; ac;
+
+	VS "as I on-ward";
+	VS "dwell where these a-";
+	VS "caught the joy-ful";
+	VS "pray till heav'n I've";
+bar
+
+//7
+1: 4.fd; 8bf; af; fd;
+2: 4.ad; 8;;;
+
+	VS "bound, \"Lord, plant my";
+	VS "bound, My pray'r, my";
+	VS "sound, The song of";
+	VS "found, \"Lord, lead me";
+bar
+
+//8
+1: 8ec; ac; 4c+e; bd;
+2: 8ae;; 4; ge;
+
+	VS "feet on high-er";
+	VS "aim is high-er";
+	VS "saints on high-er";
+	VS "on to high-er";
+bar
+
+//9
+1: 4.ac; s;
+2: 4.aa-; s;
+
+	VS "ground.\"";
+	VS "ground.";
+	VS "ground.";
+	VS "ground.\"";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 8ec; ac; c+e; 4.s;
+2 1: 8a;;; 4.s;
+2 2: 8a;;; 4.s;
+
+	VS "Lord, lift me";
+bar
+
+//11
+1: 4.e+e; 8; d+e; c+e;
+2 1: 4.c+a; 8; b; a;
+2 2: 4.s; 8; a;;
+
+	VS "up and let me";
+bar
+
+//12
+1 1: 4.d+e; 8e; ge; bg;
+1 2: 4.s; 8e; s;;
+2: 4.be; 8ge; be; e+e;
+
+	VS "stand, By faith, on";
+bar
+
+//13
+1: 4.d+b; 8; c+a; bg;
+2: 4.e+e; 8;;;
+
+	VS "heav-en's ta-ble";
+bar
+
+//14
+1: 4.c+a; 8e+e;; c+e;
+2: 4.e+a; 8c+a;; e+a;
+
+	VS "land; A high-er";
+bar
+
+//15
+1: 4.ae; 8c+e; be; ae;
+2: 4.c+a; 8aa-; gb-; ac;
+
+	VS "plane than I have";
+bar
+
+//16
+1: 4.fd; 8bf; af; fd;
+2: 4.ad; 8;;;
+
+	VS "found, Lord, plant my";
+bar
+
+//17
+1: 8ec; ac; 4c+e; bd;
+2: 8ae;; 4; ge;
+
+	VS "feet on high-er";
+bar
+
+//18
+1: 4.ac; s;
+2: 4.aa-; s;
+
+	VS "ground.";
+endbar
+	

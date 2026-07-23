@@ -1,0 +1,473 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Make His Praise Glorious
+//		For The Sunday School
+//		Editor: E. O. Excell
+//		Lakeside Building, Chicago
+//		Date: 1900
+//		Hymn No. 52
+
+
+// Transcribed by: Ted Gatza, Jr. 10/01/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+
+staffs=2
+	time=2/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Count Your Blessings" ""
+   title (2) ""
+   title (11) "" "\f(TI)A faithful man shall abound with blessings... - Prov. 28:20 " "" 
+   title (11) "" 
+   title (11) "E\(flat) - 2 - MI" "" ""
+   title (13) "Johnson Oatman, Jr." "" "Edwin O. Excell, 1897"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define SLOWLY ital (15) above 1: 1 "Slowly"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+     //Misc. Texts
+	 define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+	 define ATEMPO(COUNT)
+           ital (15) above 1: COUNT "a tempo";@
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1: 8eg; ; ; fa;
+2: 8eb; ; ; ;
+
+	VS "<1. >-1|When up-on life's";
+	VS "<2. >-1|Are you ev-er";
+	VS "<3. >-1|So a-mid the";
+
+bar
+
+//2
+1: 8gb; ; ; eg;
+2: 8ee+; 4.eb;
+
+	VS "bil-lows you are";
+	VS "bur-doned with a";
+	VS "con-flict, wheth-er";
+bar
+
+//3
+1: 4fa; eng;
+2: 8b-b; ; ; ;
+
+	VS "tem-pest";
+	VS "load of";
+	VS "great or";
+	BVS21 "<1. >-1|you are temp-est";
+//	BVS21 "with a load of";
+//	BVS21 "wheth-er great or";
+bar
+
+//4
+1: 2fa;
+2: 2b-b;
+
+	VS "tossed,";
+	VS "care?";
+	VS "small,";
+	BVS21 "tossed,";
+//	BVS21 "care,";
+//	VSS21 "small.";
+bar
+
+//5
+1: 8df; eg; fa; gb;
+2: 8b-b; ; ; ;
+
+	VS "When you are dis-";
+	VS "Does the cross seem";
+	VS "Do not be dis-";
+bar
+
+//6
+1: 8bd+; ac+; gb; fa;
+2: 8b-b; 4.;
+
+	VS "cour-aged, think-ing";
+	VS "heav-y you are";
+	VS "cour-aged, God is";
+bar
+
+//7
+1: 4eg; fa;
+2: 8eb; ; ee+; ;
+
+	VS "all is";
+	VS "called to";
+	VS "o-ver";
+	BVS21 "think-ing all is";
+//	BVS21 "you are called to";
+//	BVS21 "God is o-ver";
+bar
+
+//8
+1: 2gb;
+2: 2ee+;
+
+	VS "lost,";
+	VS "bear?";
+	VS "all;";
+	BVS21 "lost,";
+//	BVS21 "bear,";
+//	BVS21 "all;";
+bar
+
+//9
+1: 8eg; ; ; fa;
+2: 8eb; ; ; ;
+
+	VS "Count your man-y";
+	VS "Count your man-y";
+	VS "Count your man-y";
+
+bar
+
+//10
+1: 8gb; ; ; eg;
+2: 8ee+; 4.eb;
+
+	VS "bless-ings, name them";
+	VS "bless-ings, ev-'ry";
+	VS "bless-ings, an-gels";
+bar
+
+//11
+1: 4fa; eng;
+2: 8b-b; ; ; ;
+
+	VS "one by";
+	VS "doubt will";
+	VS "will at-";
+	BVS21 "name them one by";
+//	BVS21 "ev-'ry doubt will";
+//	BVS21 "an-gels will at-";
+bar
+
+//12
+1: 2fa;
+2: 2b-b;
+
+	VS "one,";
+	VS "fly,";
+	VS "tend,";
+	BVS21 "one,";
+//	BVS21 "fly,";
+//	BVS21 "tend,";
+bar
+
+//13
+1: 8df; eg; fa; gb;
+2: 8b-b; ; ; ;
+
+	VS "And it will sur-";
+	VS "And you will be";
+	VS "Help and com-fort";
+bar
+
+//14
+1: 8bd+; ac+; gb; fa;
+2: 8b-b; 4.;
+
+	VS "prise you what the";
+	VS "sing-ing as the";
+	VS "give you to your";
+bar
+
+//15
+1: 4eg; df;
+2: 8b-b; ; b-a; ;
+
+	VS "Lord hath";
+	VS "days go";
+	VS "jour-ney's";
+	BVS21 "what the Lord hath";
+//	BVS21 "as the days go";
+//	BVS21 "to your jour-neys";
+bar
+
+//16
+1 1: 2e;
+1 2: 2e;
+2: 2eg;
+
+	VS "done.";
+	VS "by";
+	VS "end.";
+	BVS21 "done.";
+//	BVS21 "by.";
+//	BVS21 "end.";
+dblbar
+newscore
+
+CHORUS
+
+//17
+
+1: 4.gb; 8;
+2: 8ee+; ; ; ;
+
+	VS "Count your";
+	VS21 "Count your man-y";
+bar
+
+//18
+1: 8ge+; gb; ; eg;
+2: 8eb; ; 4r;
+
+	VS "bless-ings, name them";
+	VS21 "bless-ings,";
+bar
+
+//19
+1 1: 4a; ;
+1 2: 8f bm; e ebm; d bm; c ebm;
+2: 8b-b; ; ; ;
+
+	VS "one by";
+	VS21 "name them one by";
+bar
+
+//20
+
+1: 2b-a;
+2: 2b-b;
+
+	VS "one;";
+	VS "one;";
+bar
+
+//21
+1: 4.fa; 8;
+2: 8b-b; ; ; ;
+
+	VS "Count your";
+	VS21 "Count your man-y";
+bar
+
+//22
+1: 8bd+; ac+; gb; fa;
+2: 8b-b; ; 4r;
+
+	VS "bless-ings, see what";
+	VS21 "bless-ings,";
+bar
+
+//23
+1: 4eg; fa;
+2: 8eb; ; ; ;
+
+	VS "God hath";
+	VS21 "see what God hath";
+bar
+
+//24
+1: 2gb;
+2: 2ee+;
+
+	VS "done;";
+	VS "done;";
+bar
+
+//25
+1: 4.ge+; 8;
+2: 8eb; ; ; ee+;
+
+	VS "Count your";
+
+	VS21 "Count your man-y";
+bar
+
+//26
+1: 8bd+; ac+; 4r;
+2: 8ae+; ; 4r;
+
+	VS "bless-ings,";
+	VS "bless-ings,";
+bar
+
+//27
+RIT(1)
+1: 8ad+; ; ac+; ;
+2: 8bf+; ; be+; ;
+
+	VS "Name them one by";
+bar
+
+//28
+1 1: 2b;
+1 2: 2a;
+FST(1)
+2: 2bd+;
+FBB(1)
+
+	VS "one;";
+bar
+
+//29
+ATEMPO(1)
+1: 8ge+; ; gd+; ge+;
+2: 8ee+; ; ; ;
+
+	VS "Count your man-y";
+bar
+
+//30
+1: 8bd+; ac+; fb; fa;
+2: 8ae+; ; ac+; ;
+
+	VS "bless-ings, see what";
+bar
+
+//31
+1: 4eg; df; 
+2 1: 4b; b-a;
+2 2: 4b; s;
+
+	VS "God hath";
+bar
+
+//32
+1 1: 2e;
+1 2: 2e;
+2: 2eg;
+
+	VS "done.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

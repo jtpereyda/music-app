@@ -1,0 +1,273 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Northfield Hymnal No. 2
+//		Author: Charles M. Alexander
+//		Publisher: Fleming H. Revell Company
+//		New York: 158 Fifth Avenue
+//		Chcago: 125 N. Wabash Avenue
+//		Toronto London Edinburgh
+//		Copyright: 1916
+//		
+// Transcribed by: Ted Gatza, Jr. 12/09/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Rejoice, The Lord Is King" ""
+   title (2)""
+   title (11) "D - 4 - DO" "\s(17)\f(TI)\:Rejoice\ in\ the\ Lord\ always:\ again\ I\ will\ say,\ Rejoice.\ -\ Phil.\ 4:4 \(space)" ""   
+   title (13) "Charles Wesley, 1744" "" "John Darwall, 1770"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+	define VERSE11 lyrics between 1&2 using 1 1: @
+	define VERSE12 lyrics between 1&2 using 1 2: @
+	define VERSE21 lyrics between 1&2 using 2 1: @
+	define VERSE22 lyrics between 1&2 using 2 2: @
+
+midi all: 0 "tempo=105";
+
+//1
+1 1: 4d; 2.s;
+1 2: 4d; 2.s;
+2: 4fd; 2.s;
+
+	VERSE "<1. >-1|Re-";
+	VERSE "<2. >-1|Je-";
+	VERSE "<3. >-1|His";
+	VERSE "<4. >-1|He";
+	VERSE "<5. >-1|Re-";
+//	VERSE "<4. >-1|He";
+//	VERSE "<5. >-1|He";
+//	VERSE "<6. >-1|Re-";
+bar
+//2
+1 1: 4fd; d; ae; fd;
+1 2: 4s; d; s;;
+2: 4ad; fd; ac; ad;
+
+	VERSE "joice, the Lord is";
+	VERSE "sus the Sav-iour";
+	VERSE "king-dom can-not";
+//	VERSE "sits at Gods right";
+	VERSE "all His foes shall";
+	VERSE "joice in glo-rious";
+bar
+//3
+1: 2.d+f; 4;
+2: 2.d+b; 4d+a;
+
+	VERSE "King, Your";
+	VERSE "reigns, The";
+	VERSE "fail, He";
+//	VERSE "hand till";
+	VERSE "quell, Shall";
+	VERSE "hope; Je-";
+bar
+//4
+1: 4bg; ad; gc; fd;
+2: 4d+g; af; ae; ad;
+
+	VERSE "Lord and King a-";
+	VERSE "God of truth and";
+	VERSE "rules o'er earth and";
+//	VERSE "all His foes sub-";
+	VERSE "all our sins de-";
+	VERSE "sus the judge shall";
+bar
+//5
+1: 2.ec; 4;
+2: 2.aa-; 4;
+
+	VERSE "dore; Mor-";
+	VERSE "love; When";
+	VERSE "heaven; The";
+//	VERSE "mit, And";
+	VERSE "stroy, And";
+	VERSE "come, And";
+bar
+//6
+1 1: 4fd; d; bf; ae;
+1 2: 4s; d; s;;
+2 1: 4ad; fd; d+b-; c+;
+2 2: 4s;;; 8c bm; d ebm;
+
+	VERSE "tals, give thanks and";
+	VERSE "He had purged our";
+	VERSE "keys of death and";
+//	VERSE "bow at His com-";
+	VERSE "ev-ery bos-om";
+	VERSE "take His serv-ants";
+bar
+//7
+1 1: 4g#e; e; e+e; d+f;
+1 2: 4s; e; s;;
+2: 4be; g#d; ac; ad;
+
+	VERSE "sing, And tri-umph";
+	VERSE "stains, He took His";
+	VERSE "hell Are to our";
+//	VERSE "mand, And fall be-";
+	VERSE "swell With pure se-";
+	VERSE "up To their e-";
+bar
+//8
+1 1: 2c+; b;
+1 2: 2.e; 4d;
+2: 2ae; g#e;
+
+	VERSE "ev-er-";
+	VERSE "seat a-";
+	VERSE "Je-sus";
+//	VERSE "neath His";
+	VERSE "raph-ic";
+	VERSE "ter-nal";
+bar
+//9
+1: 2.ac; 4ad;
+2: 2.aa-; 4fd;
+
+	VERSE "more; Lift";
+	VERSE "bove; Lift";
+	VERSE "given; Lift";
+//	VERSE "feet; Lift";
+	VERSE "joy; Lift";
+	VERSE "home; We";
+bar
+//10
+1: 2bd; c+g;
+2 1: 2g; ae;
+2 2: 2g; s;
+
+	VERSE "up your";
+	VERSE "up your";
+	VERSE "up your";
+//	VERSE "up your";
+	VERSE "up your";
+	VERSE "soon shall";
+bar
+//11
+1 1: 2.d+f; 4d;
+1 2: 2.s; 4d;
+2: 2.ad; 4fd;
+
+	VERSE "heart, lift";
+	VERSE "heart, lift";
+	VERSE "heart, lift";
+//	VERSE "heart, lift";
+	VERSE "heart, lift";
+	VERSE "hear the~arc-";
+bar
+//12
+1 1: 4ea-; fd; s;;
+1 2: 4s;; s; s;
+2: 4ac; ad; s;;
+
+	VERSE "up your";
+	VERSE "up your";
+	VERSE "up your";
+//	VERSE "up your";
+	VERSE "up your";
+	VERSE "an-gels";
+invisbar
+newscore
+
+1 1: 4s;; 4g; af;
+1 2: 4s;; 4g; s;
+2: 4s;; 4d+b; d+a;
+
+	VERSE "voice, Re-";
+	VERSE "voice, Re-";
+	VERSE "voice, Re-";
+//	VERSE "voice, Re-";
+	VERSE "voice, Re-";
+	VERSE "voice, The";
+bar
+//13
+1: 4bd; c+f; d+f; e+e;
+2 1: 4bg; a#f; b; bg;
+2 2: 4s;; b; s;
+
+	VERSE "joice, a-gain I";
+	VERSE "joice, a-gain I";
+	VERSE "joice, a-gain I";
+//	VERSE "joice, a-gain I";
+	VERSE "joice, a-gain I";
+	VERSE "trump of God shall";
+bar
+//14
+1 1: 2d+f; c+;
+1 2: 2s; 4e slur; g;
+2 1: 2a; aa-;
+2 2: 2a; s;
+
+	VERSE "say, re-";
+	VERSE "say, re-";
+	VERSE "say, re-";
+//	VERSE "say, re-";
+	VERSE "say, re-";
+	VERSE "sound, Re-";
+bar
+//15
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+	VERSE "joice.";
+	VERSE "joice.";
+	VERSE "joice.";
+//	VERSE "joice.";
+	VERSE "joice.";
+	VERSE "joice.";
+endbar

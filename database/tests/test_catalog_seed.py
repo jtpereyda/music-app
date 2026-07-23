@@ -13,6 +13,8 @@ def test_seed_contains_every_catalog_id() -> None:
     assert sql.count("INSERT INTO app.catalog_hymns") == len(catalog["items"])
     for item in catalog["items"]:
         assert f"'{item['id']}'" in sql
+    assert "'hymns-to-god-public-domain-usa'" in sql
+    assert "'great-is-thy-faithfulness'" in sql
 
 
 def test_seed_is_idempotent_and_does_not_override_publication_status() -> None:

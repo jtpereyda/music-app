@@ -86,6 +86,7 @@ def test_health_and_catalog_report_injected_source(tmp_path: Path) -> None:
         "bass",
     ]
     assert "d-major" in payload["render_choices"]["keys"]
+    assert "d-minor" in payload["render_choices"]["keys"]
     assert payload["render_choices"]["octaves"] == [
         "auto",
         "original",
@@ -127,6 +128,18 @@ def test_svg_preview_passes_validated_options_and_page(tmp_path: Path) -> None:
         "octave": "auto",
         "page_size": "a4",
     }
+
+
+def test_minor_key_choice_is_accepted(tmp_path: Path) -> None:
+    client, renderer = make_client(tmp_path)
+
+    response = client.get(
+        "/v1/hymns/amazing-grace/preview.svg",
+        params={"key": "d-minor"},
+    )
+
+    assert response.status_code == 200
+    assert renderer.calls[0][1].key.value == "d-minor"
 
 
 def test_pdf_is_downloadable(tmp_path: Path) -> None:
@@ -229,3 +242,11 @@ def test_catalog_paths_cannot_escape_root(tmp_path: Path) -> None:
         pass
     else:
         raise AssertionError("Catalog traversal should have been rejected.")
+
+
+def test_default_catalog_loads_all_catalog_additions() -> None:
+    catalog = HymnCatalog()
+
+    assert len(catalog.entries()) == 290
+    assert catalog.entry("rescue-the-perishing").title == "Rescue the Perishing"
+    assert catalog.source_available("rescue-the-perishing")

@@ -18,6 +18,42 @@ ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 EXPECTED_LINES = ["SATB", "S", "A", "T", "B"]
 RIGHTS_STATUS = "technical_candidate_not_production_approved"
+KEY_NAMES_BY_MODE = {
+    "major": (
+        "C-flat",
+        "G-flat",
+        "D-flat",
+        "A-flat",
+        "E-flat",
+        "B-flat",
+        "F",
+        "C",
+        "G",
+        "D",
+        "A",
+        "E",
+        "B",
+        "F-sharp",
+        "C-sharp",
+    ),
+    "minor": (
+        "A-flat",
+        "E-flat",
+        "B-flat",
+        "F",
+        "C",
+        "G",
+        "D",
+        "A",
+        "E",
+        "B",
+        "F-sharp",
+        "C-sharp",
+        "G-sharp",
+        "D-sharp",
+        "A-sharp",
+    ),
+}
 
 
 def _local_name(tag: str) -> str:
@@ -99,6 +135,23 @@ def _validate_score(
             item_id,
             f"MusicXML key {fifths}:{mode} does not match catalog original_key",
         )
+    key_fifths = key.get("fifths")
+    key_mode = key.get("mode")
+    if (
+        isinstance(key_fifths, int)
+        and isinstance(key_mode, str)
+        and key_mode in KEY_NAMES_BY_MODE
+        and -7 <= key_fifths <= 7
+    ):
+        expected_name = (
+            f"{KEY_NAMES_BY_MODE[key_mode][key_fifths + 7]} {key_mode}"
+        )
+        if key.get("name") != expected_name:
+            _error(
+                errors,
+                item_id,
+                f"original_key.name must be {expected_name!r}",
+            )
 
     parts = _direct_children(root, "part")
     voice_locations: set[tuple[int, str]] = set()
@@ -139,10 +192,17 @@ def _validate_score(
     encoders = [
         (element.text or "").strip()
         for element in root.iter()
-        if _local_name(element.tag) == "encoder"
+        if _local_name(element.tag) in {"encoder", "software"}
     ]
-    if "abc2xml version 268" not in encoders:
-        _error(errors, item_id, "score does not declare abc2xml version 268")
+    generator = score.get("generator", {})
+    if generator == {"name": "abc2xml", "version": "268"}:
+        if "abc2xml version 268" not in encoders:
+            _error(errors, item_id, "score does not declare abc2xml version 268")
+    elif generator == {"name": "hymns-to-god-mup-satb", "version": "1"}:
+        if not any(value.startswith("music21 v.") for value in encoders):
+            _error(errors, item_id, "HymnsToGod score does not declare music21")
+    else:
+        _error(errors, item_id, f"unsupported score generator {generator!r}")
 
 
 def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> list[str]:
@@ -168,10 +228,28 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
             errors.append(f"catalog: invalid source collection ID {collection_id!r}")
         else:
             collection_ids.add(collection_id)
-        for field in ("raw_sha256", "normalized_utf8_sha256"):
-            value = collection.get(field)
-            if not isinstance(value, str) or not SHA256_RE.fullmatch(value):
-                errors.append(f"catalog: invalid {field} for {collection_id!r}")
+        raw_hash = collection.get("raw_sha256")
+        normalized_hash = collection.get("normalized_utf8_sha256")
+        manifest_hash = collection.get("manifest_sha256")
+        if manifest_hash is not None:
+            if (
+                raw_hash is not None
+                or normalized_hash is not None
+                or not isinstance(manifest_hash, str)
+                or not SHA256_RE.fullmatch(manifest_hash)
+            ):
+                errors.append(
+                    f"catalog: invalid manifest hash shape for {collection_id!r}"
+                )
+        else:
+            for field, value in (
+                ("raw_sha256", raw_hash),
+                ("normalized_utf8_sha256", normalized_hash),
+            ):
+                if not isinstance(value, str) or not SHA256_RE.fullmatch(value):
+                    errors.append(
+                        f"catalog: invalid {field} for {collection_id!r}"
+                    )
 
     items = data.get("items")
     if not isinstance(items, list) or not items:
@@ -179,7 +257,7 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
         return errors
     seen_ids: set[str] = set()
     seen_paths: set[str] = set()
-    source_records: set[tuple[str, int, str]] = set()
+    source_records: set[tuple[str, int, str, str]] = set()
     for item in items:
         if not isinstance(item, Mapping):
             errors.append("catalog: item must be an object")
@@ -219,9 +297,11 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
             if rights.get("status") != RIGHTS_STATUS:
                 _error(errors, display_id, f"rights.status must be {RIGHTS_STATUS}")
             declaration = rights.get("source_declaration")
-            if not isinstance(declaration, str) or not declaration.startswith(
-                "copyright: public domain."
-            ):
+            valid_declaration = isinstance(declaration, str) and (
+                declaration.startswith("copyright: public domain.")
+                or declaration == "Copyright: Public Domain - USA"
+            )
+            if not valid_declaration:
                 _error(errors, display_id, "missing exact public-domain source declaration")
 
         source = item.get("source")
@@ -238,12 +318,51 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
                 _error(errors, display_id, "invalid source artifact SHA-256")
             ordinal = source.get("record_ordinal")
             x_reference = source.get("x_reference")
+            record_reference = source.get("record_reference")
+            entry_path = source.get("entry_path")
             if not isinstance(ordinal, int) or ordinal < 1:
                 _error(errors, display_id, "record_ordinal must be a positive integer")
-            if not isinstance(x_reference, str) or not x_reference:
+            if x_reference is not None and (
+                not isinstance(x_reference, str) or not x_reference
+            ):
                 _error(errors, display_id, "x_reference must be a non-empty string")
-            if isinstance(ordinal, int) and isinstance(x_reference, str):
-                source_record = (str(collection_id), ordinal, x_reference)
+            if record_reference is not None and (
+                not isinstance(record_reference, str) or not record_reference
+            ):
+                _error(
+                    errors,
+                    display_id,
+                    "record_reference must be a non-empty string",
+                )
+            if not x_reference and not record_reference:
+                _error(
+                    errors,
+                    display_id,
+                    "source must declare x_reference or record_reference",
+                )
+            if collection_id == "open-hymnal-2014-06-split-zip":
+                if not isinstance(entry_path, str) or not entry_path.endswith(".abc"):
+                    _error(
+                        errors,
+                        display_id,
+                        "split-ZIP records must declare their ABC entry_path",
+                    )
+            elif entry_path is not None:
+                _error(
+                    errors,
+                    display_id,
+                    "entry_path is only valid for container source collections",
+                )
+            if isinstance(ordinal, int) and (
+                isinstance(x_reference, str)
+                or isinstance(record_reference, str)
+            ):
+                source_record = (
+                    str(collection_id),
+                    ordinal,
+                    str(x_reference or record_reference),
+                    str(entry_path or ""),
+                )
                 if source_record in source_records:
                     _error(errors, display_id, "duplicate source record")
                 source_records.add(source_record)

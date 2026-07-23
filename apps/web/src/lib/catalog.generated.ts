@@ -10,6 +10,7 @@ export const generatedHymns = [
     tuneName: "Nun Lasst Uns Den Leib Begraben",
     meter: "8 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "70ebc5ea993c0e21fb30041410ee7a0d47dc2d2c600462272e37ef6fdbfe8dc8",
   },
   {
@@ -20,7 +21,19 @@ export const generatedHymns = [
     tuneName: "St. Cross",
     meter: "8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ded93ea68c986977b24ea071ae99d7e0f659f55f5eff958be29cfb5fa4064c14",
+  },
+  {
+    id: "tis-so-sweet-to-trust-in-jesus",
+    slug: "tis-so-sweet-to-trust-in-jesus",
+    title: "'Tis So Sweet To Trust In Jesus",
+    textAuthor: "Louisa M. R. Stead",
+    tuneName: "TRUST IN JESUS",
+    meter: "Irregular",
+    originalKey: "a-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "bc7e2bfea5bcbc19fb44c68b034aa2da45f8b13c8d5a735f305a9cb71dc58aed",
   },
   {
     id: "twas-on-that-dark-that-doleful-night",
@@ -30,7 +43,19 @@ export const generatedHymns = [
     tuneName: "St. Cross",
     meter: "8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "08c6cd942f975a5b01b4bc4465bb4a00aefd43e499ce835b0aa924077d0f5c08",
+  },
+  {
+    id: "a-child-of-the-king",
+    slug: "a-child-of-the-king",
+    title: "A Child of The King",
+    textAuthor: "Harriet Eugenia Peck Buell",
+    tuneName: "Binghamton",
+    meter: "10 11 11 11 11 12",
+    originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "3fbd306c1eaebf377d78a2718f0123b6cf86a65c9b5e983eb74d3a560cb40a0b",
   },
   {
     id: "a-great-and-mighty-wonder",
@@ -40,6 +65,7 @@ export const generatedHymns = [
     tuneName: "Es Ist Ein Ros Entsprungen (Rhythmic)",
     meter: "7 6 7 6 6 7 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "50d70b2f181bd377c494384ded1a5e475c734bc76d284c45a42e6741ea39d3ad",
   },
   {
@@ -50,6 +76,7 @@ export const generatedHymns = [
     tuneName: "An Wasserflüssen Babylon",
     meter: "8 7 8 7 8 8 7 8 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b4377ba2b264045ccb0d22fa7387360e3d4d72053e0131ec580b173954f42fb9",
   },
   {
@@ -60,6 +87,7 @@ export const generatedHymns = [
     tuneName: "Ein Feste Burg (Isorhythmic)",
     meter: "8 7 8 7 6 6 6 6 7",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e60cc48b68a9e72d703f7a75f8366ac43a42a7abf7717c38b55d9b2e3349e048",
   },
   {
@@ -70,6 +98,7 @@ export const generatedHymns = [
     tuneName: "Ein Feste Burg (Rhythmic)",
     meter: "8 7 8 7 5 5 5 6 7",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "22baaf0debc9812de197f4f04e8d0ede6978bb7d0e1ac7a16524c24d2ce9b7d8",
   },
   {
@@ -80,6 +109,7 @@ export const generatedHymns = [
     tuneName: "Eventide",
     meter: "10 10 10 10",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "fcb6d02555db4b16b626823518e6a4c1ee41b234914ee9143bbab120f8a37f26",
   },
   {
@@ -90,6 +120,7 @@ export const generatedHymns = [
     tuneName: "Christus der ist mein Leben",
     meter: "7 6 7 6",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b04cae770de77d84cae1d10b9bfd3ef11702af19c309dce5745c89b8e36e667d",
   },
   {
@@ -100,6 +131,7 @@ export const generatedHymns = [
     tuneName: "Lasst Uns Erfreuen",
     meter: "8 8 8 8 8 8 with Alleluias",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3420aee9173671c96300da10a4cfc1b420d2dd5dbccfd357933a41279c6d5f12",
   },
   {
@@ -110,6 +142,7 @@ export const generatedHymns = [
     tuneName: "Alles ist an Gottes Segen",
     meter: "8 8 7 8 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0e59a5d501483ea4ebf89f6d7d6ad19472b0c802dae9544652f5a91cc42804ca",
   },
   {
@@ -120,6 +153,7 @@ export const generatedHymns = [
     tuneName: "Valet Will Ich Dir Geben",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3039a917aff2769e12454cadf26d08875c2875aa7199ee5a22d53e0de2295837",
   },
   {
@@ -130,6 +164,7 @@ export const generatedHymns = [
     tuneName: "Coronation",
     meter: "8 6 8 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "f18854356455aa3c845b2734f8cbc5a9eae0841d82e14083cfb7c20b7ff13723",
   },
   {
@@ -140,6 +175,7 @@ export const generatedHymns = [
     tuneName: "Ebeling",
     meter: "8 3 3 6 8 3 3 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "674131fec5843abc356b9c23202ed73d08697550b3ea27c2ddb817cba272070b",
   },
   {
@@ -150,6 +186,7 @@ export const generatedHymns = [
     tuneName: "Gelobet Seist Du",
     meter: "8 7 8 8 Alleluia4",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "eafa3c184385e0b0f76a8fd44a8052471df3c98b0f759228e52443f98477249e",
   },
   {
@@ -160,6 +197,7 @@ export const generatedHymns = [
     tuneName: "Tallis` Canon",
     meter: "8 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ae345f29a5bc0b4869094adcca615ac6bd53b6983dc4e46da7926c3cc812e035",
   },
   {
@@ -170,6 +208,7 @@ export const generatedHymns = [
     tuneName: "Es ist das Heil uns Kommen Her",
     meter: "8 7 8 7 8 8 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e2ea9a9b216af1d0ff7897bec4866f8d575b9f536d86125068f5aaa8b4a7b187",
   },
   {
@@ -180,6 +219,7 @@ export const generatedHymns = [
     tuneName: "Ode to Joy",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "bafafcf355e93f9070b7703b9d6f90ede3c4cdf24026ef8bede9396a780f9851",
   },
   {
@@ -190,6 +230,7 @@ export const generatedHymns = [
     tuneName: "HyFrydol",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "31678192c75fedab642c958906afb74d2fe798ade3bf83aaa81142480b0c8704",
   },
   {
@@ -200,6 +241,7 @@ export const generatedHymns = [
     tuneName: "St. Anne",
     meter: "8 6 8 6",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e3c4f174f88bdbffc464f0ad1f20cec30f1f659d80e1a289700e29d714ebfd3b",
   },
   {
@@ -210,6 +252,7 @@ export const generatedHymns = [
     tuneName: "New Britain",
     meter: "8 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8bc7edd3d206cd4976a3c57e3ee369035406ff95a02178631d7f8fee3112b4aa",
   },
   {
@@ -220,6 +263,7 @@ export const generatedHymns = [
     tuneName: "Fillmore",
     meter: "8 8 8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ff44e64fffe769981957dc9b34da5fbc364a1ba0008e64debbce2f18a25af460",
   },
   {
@@ -230,6 +274,7 @@ export const generatedHymns = [
     tuneName: "Angel Voices (Monk)",
     meter: "8 5 8 5 8 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "add780d4b551025e0a9d91f2d3d66a8455b4b0caa22d02f9f19532830fc32613",
   },
   {
@@ -240,6 +285,7 @@ export const generatedHymns = [
     tuneName: "Regent Square",
     meter: "8 7 8 7 8 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8207d8389eb2f6c6266538042208e0805dddc22de0ae69ac82f2aef098120a77",
   },
   {
@@ -250,7 +296,19 @@ export const generatedHymns = [
     tuneName: "Gloria",
     meter: "7 7 7 7 Gloria18",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "20452fdb48af64bae75ff53719f50d712328908e7d2a73fc37573e519d69d341",
+  },
+  {
+    id: "are-you-washed-in-the-blood",
+    slug: "are-you-washed-in-the-blood",
+    title: "Are You Washed In The Blood?",
+    textAuthor: "Elisha A. Hoffman",
+    tuneName: "WASHED IN THE BLOOD",
+    meter: "Irregular",
+    originalKey: "a-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "55688ea7e966de099622aaa0be89c46fbc453e59f7cc4e03757650bd62a60874",
   },
   {
     id: "as-with-gladness-men-of-old",
@@ -260,7 +318,19 @@ export const generatedHymns = [
     tuneName: "Dix",
     meter: "7 7 7 7 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "184ad2c6a5d2973ed26d369b32b3f5e16d6e3d4952ba6442d9bfd124e717c83b",
+  },
+  {
+    id: "at-calvary",
+    slug: "at-calvary",
+    title: "At Calvary",
+    textAuthor: "William R. Newell",
+    tuneName: "CALVARY",
+    meter: "Irregular",
+    originalKey: "c-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "94217f2002aa58e0526f1690c8d5070bad88ce439f60c46af8bf487d4bd8d10f",
   },
   {
     id: "awake-my-heart-with-gladness",
@@ -270,6 +340,7 @@ export const generatedHymns = [
     tuneName: "Auf, Auf, Mein Herz mit Freuden",
     meter: "7 6 7 6 6 6 6 6",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "5ef1435cc7ff1ad01a66b9508c8e18f9f6a2c4a71b2c1bbba1b3b3365915a5d0",
   },
   {
@@ -280,7 +351,19 @@ export const generatedHymns = [
     tuneName: "Old 100th",
     meter: "8 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "178b4f89a6b4d5f3ca1c97a5eba47801eb9cc09ab7a8b94fa463c053a55a9314",
+  },
+  {
+    id: "away-in-a-manger",
+    slug: "away-in-a-manger",
+    title: "Away In A Manger",
+    textAuthor: "anonymous, John T. MacFarland",
+    tuneName: "Mueller",
+    meter: "11 11 11 11",
+    originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "d7cfe1f5075db23fa5f654f9389a02e80cd8914045997d0a329bd23eae301669",
   },
   {
     id: "baptized-into-thy-name-most-holy",
@@ -290,6 +373,7 @@ export const generatedHymns = [
     tuneName: "O Dass Ich Tausend Zungen Hätte (Dretzel)",
     meter: "9 8 9 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "524c68ac6d5c347a6fae04763b0a2344b10086ec4d7cf9abaa052e8d245703e2",
   },
   {
@@ -300,6 +384,7 @@ export const generatedHymns = [
     tuneName: "Finlandia",
     meter: "10 10 10 10 10 10",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "59cc2bee9d80df0c30ad98cf37ceac11c7a83fb43ae34af43f2ac37d36a8af6b",
   },
   {
@@ -310,6 +395,7 @@ export const generatedHymns = [
     tuneName: "Slane",
     meter: "10 10 10 10",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d9be52b0eadaff512b740bcced260d966f745699ef0bf1bb732e0b15ca9c46cd",
   },
   {
@@ -320,6 +406,7 @@ export const generatedHymns = [
     tuneName: "Crusader`s Hymn",
     meter: "5 5 7 5 5 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "cf4ec9b6d1e15613709cc466f329aea40b8eeb4fadf07dba4253cdc7645792ad",
   },
   {
@@ -330,6 +417,7 @@ export const generatedHymns = [
     tuneName: "Den Store Hvide Flok",
     meter: "8 8 4 4 6 8 8 4 4 6 8 8 4 4 6",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "aa1755a286decea7ae73ac3f732981da636843bc6f03e76a70c255b0fe167bd5",
   },
   {
@@ -340,6 +428,7 @@ export const generatedHymns = [
     tuneName: "St. Christopher",
     meter: "7 6 8 6 8 6 8 6",
     originalKey: "d-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "09d164fedb1f5e364cd677a11a01b8c4ba43f1a700bde445488f05df4a7e17e5",
   },
   {
@@ -350,6 +439,7 @@ export const generatedHymns = [
     tuneName: "Blessed Assurance",
     meter: "9 10 9 9 9 9 9 9",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "6687ea7c7cccc7c65f9bb4f2359ceec6ade208b71befce134a05bd28c93f2d28",
   },
   {
@@ -360,6 +450,7 @@ export const generatedHymns = [
     tuneName: "Liebster Jesu wir Sind Hier",
     meter: "7 8 7 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "81f312394d2060f7142ff0d5f548f884753e0cb2b1d7cc4012ad151d3812bdc3",
   },
   {
@@ -370,6 +461,7 @@ export const generatedHymns = [
     tuneName: "Boylston",
     meter: "6 6 8 6",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "85903b1a2f7f991e6398d422f6af0ac0fbb781d6e89a3696c3d49a7aab656509",
   },
   {
@@ -380,6 +472,7 @@ export const generatedHymns = [
     tuneName: "Dennis",
     meter: "6 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "36440afa149cbae65fc00846a694a8abd83e49da1e80ca17b53df84c5305a70c",
   },
   {
@@ -390,7 +483,19 @@ export const generatedHymns = [
     tuneName: "Fillmore",
     meter: "8 8 8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b5062c13b9e4752a36daeaf17535c30af65369fba889cc8b67fbc6afa430cfd7",
+  },
+  {
+    id: "bonus-carol-good-king-wenceslas",
+    slug: "bonus-carol-good-king-wenceslas",
+    title: "Bonus Carol: Good King Wenceslas",
+    textAuthor: "John Mason Neale",
+    tuneName: "Tempus Adest Floridum",
+    meter: "Irregular",
+    originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "45e2cf07c0803b3ec38b7337b42cbe4b87d1e752809e745c78e2baa3cba00dc9",
   },
   {
     id: "breathe-on-me-breath-of-god",
@@ -400,6 +505,7 @@ export const generatedHymns = [
     tuneName: "Aylesbury",
     meter: "6 6 8 6",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "cabafe9203d2220b1513e8a3c4dce68d1069d2c3ba5423b9f0f61cfa11b8cc6c",
   },
   {
@@ -410,6 +516,7 @@ export const generatedHymns = [
     tuneName: "Kirken Den Er Et Gammelt Hus",
     meter: "8 8 8 8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "52cc9d1ee4910850a36822a25e36d320e9ec5ef26bdfa2c1c4bca5940947faa7",
   },
   {
@@ -420,6 +527,7 @@ export const generatedHymns = [
     tuneName: "O Dass Ich Tansend Zungen",
     meter: "9 8 9 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9aab7d539b17b30aa036b49c19a27f23419579b21aa10932a3fdf327c8f0b8b3",
   },
   {
@@ -430,6 +538,7 @@ export const generatedHymns = [
     tuneName: "Christ Arose",
     meter: "Irregular",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3073057ab93f002d66e297d2d77aac5328885dd3d277cc5620afcf052f026642",
   },
   {
@@ -440,6 +549,7 @@ export const generatedHymns = [
     tuneName: "Christ lag in Tobes Banden",
     meter: "8 7 8 7 7 8 7 Alleluia4",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "cdc5ce75284d3ca2695044787590a962d091c5266e530b10c122dd6210441959",
   },
   {
@@ -450,6 +560,7 @@ export const generatedHymns = [
     tuneName: "Christ Returneth",
     meter: "12 12 12 7 14 14 6",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "f8f78affd21e03206ae4652605fbd037ada17891934fb160bf05ca222ed65399",
   },
   {
@@ -460,6 +571,7 @@ export const generatedHymns = [
     tuneName: "Llanfair",
     meter: "7 7 7 7 with Alleluias",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e36d066fe008ae110843154e4f80e61dbdbfe09fe3b3af0b6d1fc3b3751f1722",
   },
   {
@@ -470,6 +582,7 @@ export const generatedHymns = [
     tuneName: "Orientis Partibus",
     meter: "7 7 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b5eaccd0742ba087f4a38b585249504d1a1d350ed9f93f1c368b4c15db3232b2",
   },
   {
@@ -480,6 +593,7 @@ export const generatedHymns = [
     tuneName: "Down Ampney",
     meter: "6 6 11 6 6 11",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "281e79b5945e0fdd95f638828591d0ac8d614046bef4a14f02b52fc02156f6fb",
   },
   {
@@ -490,6 +604,7 @@ export const generatedHymns = [
     tuneName: "Komm Heiliger Geist, Herre Gott",
     meter: "8 8 9 7 8 8 9 9 Alleluia8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "cfb0fa32bfd3b3906f6832e6a9c0322d9e37ac8616abe4bb5764b918d47d2ad3",
   },
   {
@@ -500,6 +615,7 @@ export const generatedHymns = [
     tuneName: "Nettleton",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "21e74fe55cc3b3ff028729798bdada0defe00892d1b25e663e66545f85080640",
   },
   {
@@ -510,6 +626,7 @@ export const generatedHymns = [
     tuneName: "Komm, Gott Schoepfer Heiliger Geist",
     meter: "8 8 8 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0ee36c215550e39d8ee6b8378df2df2bf586ac6e763f304c9f75365a0af5dd1e",
   },
   {
@@ -520,6 +637,7 @@ export const generatedHymns = [
     tuneName: "Consolator (Webbe)",
     meter: "11 10 11 10",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "feda75c9e28dbf15775b133cb9d7a3fb01e7f694702164c78680f5a0b87e04ea",
   },
   {
@@ -530,6 +648,7 @@ export const generatedHymns = [
     tuneName: "Quem Pastores",
     meter: "8 8 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e4ed93909939f71990c5bacdca45fffa7942210f61221b6f66273a63a8cba743",
   },
   {
@@ -540,7 +659,19 @@ export const generatedHymns = [
     tuneName: "Freu dich sehr, o meine Seele",
     meter: "8 7 8 7 7 7 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "fb5be961ac34a75a402042137bce42540d585bab77ad2e809bdbc8041adf6a1f",
+  },
+  {
+    id: "count-your-blessings",
+    slug: "count-your-blessings",
+    title: "Count Your Blessings",
+    textAuthor: "Johnson Oatman, Jr.",
+    tuneName: "BLESSINGS",
+    meter: "Irregular",
+    originalKey: "e-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "41f765ce4829d25605c2ed15c1b5a5828c75e198f4d5827a46fa98a25f2b5575",
   },
   {
     id: "crown-him-with-many-crowns",
@@ -550,6 +681,7 @@ export const generatedHymns = [
     tuneName: "Diademata",
     meter: "6 6 8 6 6 6 8 6",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "25aaa11274094e59db7028d0dc767f784156de36844a51c173a9dcce9272683d",
   },
   {
@@ -560,6 +692,7 @@ export const generatedHymns = [
     tuneName: "Dies Irae (Dykes)",
     meter: "8 8 8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e6986db03ac49867c28de4e5bfa95e3dd94c37b1bb977c740efd330baf971cfd",
   },
   {
@@ -570,6 +703,7 @@ export const generatedHymns = [
     tuneName: "Es ist Gewisslich an der Zeit",
     meter: "8 7 8 7 8 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "428873c1669fd2443c80f2cfe73f909c84de591b17ad1331a54cfc25d698c9a0",
   },
   {
@@ -580,6 +714,7 @@ export const generatedHymns = [
     tuneName: "Nun Freut Euch",
     meter: "8 7 8 7 8 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0041268f16fee5b5e1f121cd0db778f0c0884ec784c4c2a64c67f9dbfa0d7642",
   },
   {
@@ -590,7 +725,19 @@ export const generatedHymns = [
     tuneName: "Iam Moesta",
     meter: "9 9 9 9",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d64ffb595fc9ee623eaf458160cb6f336702d78aa1f625aec4091d75fb8baf42",
+  },
+  {
+    id: "did-you-think-to-pray",
+    slug: "did-you-think-to-pray",
+    title: "Did You Think To Pray?",
+    textAuthor: "Mary Ann Pepper Kidder",
+    tuneName: "Stockbridge",
+    meter: "8 5 8 8 5 8 7 8 5",
+    originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "f92c973a13651fdc9220a2390e8297ed90d94ab2325f6b2ed4fa122d184defe3",
   },
   {
     id: "every-morning-mercies-new",
@@ -600,6 +747,7 @@ export const generatedHymns = [
     tuneName: "Kelso",
     meter: "7 7 7 7 7 7",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "35553d49793b8e9c5c46f6afd24b41f3abbb326bbb7ffdb4b16f391284d2dc93",
   },
   {
@@ -610,6 +758,7 @@ export const generatedHymns = [
     tuneName: "St. Catherine",
     meter: "8 8 8 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c76d39bb1e51d5d3e3f9e49d19c81e1ecf4c4cf44ac20d35bc8bd7b992b6927b",
   },
   {
@@ -620,6 +769,7 @@ export const generatedHymns = [
     tuneName: "Far, Far Away On Judea`s Plains",
     meter: "9 9 8 8 7 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a35c78bed51fc13f5797307c83238d6ece12f79a341f3ded1a07a42a5fa4cfa4",
   },
   {
@@ -630,6 +780,7 @@ export const generatedHymns = [
     tuneName: "Kommt her zu mir, spricht Gottes Sohn",
     meter: "8 8 6 8 8 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "737b25a3d7bb55130d8a41144370bb477294cb75a1ef70686f4123dede3b23e2",
   },
   {
@@ -640,6 +791,7 @@ export const generatedHymns = [
     tuneName: "Dix",
     meter: "7 7 7 7 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c246180872f6f004d5fb94377df019956a44de4eba16a2a0b18d0fc5c07491e7",
   },
   {
@@ -650,6 +802,7 @@ export const generatedHymns = [
     tuneName: "Vom Himmel Hoch",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d469949052072ee0171b6387da209f1832b2958b1219d1c9c961dc4e11998a06",
   },
   {
@@ -660,6 +813,7 @@ export const generatedHymns = [
     tuneName: "Puer Nobis Nascitur",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "46e8afb43c779a673a4ff84c889b7eff07dfbebc135cbe97c82d8dea94f4b104",
   },
   {
@@ -670,6 +824,7 @@ export const generatedHymns = [
     tuneName: "Gabriel`s Message",
     meter: "10 10 12 7 3",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "910be6afaa45a4ba5257255158cc13c7f7a39348ee9241c2236a5a4d305abfff",
   },
   {
@@ -680,6 +835,7 @@ export const generatedHymns = [
     tuneName: "Tempus Adest Floridum",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e37943a25f2f0c224d9252c79c725c4b89b1a16900836289a5d8b9af86fba94c",
   },
   {
@@ -690,6 +846,7 @@ export const generatedHymns = [
     tuneName: "Austria (Haydn)",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e673fd9fdec2f53b81aa052448865e57a0d04d763b1ff8052f59730ee601893f",
   },
   {
@@ -700,6 +857,7 @@ export const generatedHymns = [
     tuneName: "Gethsemane",
     meter: "7 7 7 7 7 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "f4932d3ae833b5d12f912105145a7d132379503490bd51b8aa869c3bc38c8798",
   },
   {
@@ -710,6 +868,7 @@ export const generatedHymns = [
     tuneName: "Wunderbarer König",
     meter: "6 6 8 6 6 8 6 6 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "fe4cdd21101bada7d66a1bdd82c4e6d3d4f23394fda0ac62b314c01dadd5b280",
   },
   {
@@ -720,6 +879,7 @@ export const generatedHymns = [
     tuneName: "God Rest Ye Merry Gentlemen",
     meter: "8 6 7 6 8 6 8 4 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "1f7eacc16c45d5815c8b0efa18b4ba56ce42af452b2e6e3d89e16fa529bba916",
   },
   {
@@ -730,6 +890,7 @@ export const generatedHymns = [
     tuneName: "Gott Der Vater, Wohn Uns Bei",
     meter: "7 7 7 7 7 7 7 7 7 7 7 7 7 7",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d4cca9192a16b0713cc98e9ddc9bdb6617d1e1f65709cb5c757fd2492494ba25",
   },
   {
@@ -740,6 +901,7 @@ export const generatedHymns = [
     tuneName: "Martin",
     meter: "8 6 8 6 6 8 6 6",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "2117d5ed62086d2ea4622d8fbcda0c400cd9dfd3690498651bac62dd7cbb6caf",
   },
   {
@@ -750,6 +912,7 @@ export const generatedHymns = [
     tuneName: "Ar Hyd Y Nos",
     meter: "8 4 8 4 8 8 8 4",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "be749a04d6c874e4dd6e3e12f94d54f1642ebe64c67ff4ba5d64a48a273acaca",
   },
   {
@@ -760,7 +923,19 @@ export const generatedHymns = [
     tuneName: "Italian Hymn",
     meter: "6 6 4 6 6 6 4",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3c63f103fbf68c15ab6811f02460dae43da96d7c4b42dbd6984ba7a99a6515bb",
+  },
+  {
+    id: "great-is-thy-faithfulness",
+    slug: "great-is-thy-faithfulness",
+    title: "Great Is Thy Faithfulness",
+    textAuthor: "Thomas O. Chisholm",
+    tuneName: "FAITHFULNESS",
+    meter: "Irregular",
+    originalKey: "e-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "75b0e29bbb6b0dba1a48457e366130cd36fcb767b5913cd3dc179301ff1a5deb",
   },
   {
     id: "guide-me-o-thou-great-jehovah",
@@ -770,6 +945,7 @@ export const generatedHymns = [
     tuneName: "Cwm Rhondda",
     meter: "8 7 8 7 8 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8f98fab1d0d53a5276798e770731ac2a4be62e0f3c28b31845bb0fd5742860e9",
   },
   {
@@ -780,6 +956,7 @@ export const generatedHymns = [
     tuneName: "Hallelujah What a Savior",
     meter: "7 7 7 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "36b98d1341cc5c9414e88952e6f06bf852ec11341b0b066fafe52ae49cfdd84f",
   },
   {
@@ -790,6 +967,7 @@ export const generatedHymns = [
     tuneName: "Wo Gott Zum Haus (Walter)",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0b3d50154e6c1fa150ce23393f65d4095415b16db4bdc60ad99c166e83f43c9e",
   },
   {
@@ -800,6 +978,7 @@ export const generatedHymns = [
     tuneName: "Wo Gott Zum Haus",
     meter: "8 8 8 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0e9648ab81cff62a9594c97ec91ce1f13ccd940f3044e0a7193e43c0d16e54be",
   },
   {
@@ -810,6 +989,7 @@ export const generatedHymns = [
     tuneName: "Mendelssohn",
     meter: "7 7 7 7 7 7 7 7 7 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b17df744975a8275cc21f9e218ad6287fcb88049e73c09f61e85298870d5ebd3",
   },
   {
@@ -820,6 +1000,7 @@ export const generatedHymns = [
     tuneName: "Finlandia",
     meter: "10 10 10 10 10 10",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "5e9b3039945cbed3e373b1c760ff17c487ae338660cf343d25f91d50f002f555",
   },
   {
@@ -830,7 +1011,30 @@ export const generatedHymns = [
     tuneName: "Galilean",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e88b05a427c966ac23b497f6a5a6bab49b6546f1672f93fbc689a4354a3395e7",
+  },
+  {
+    id: "have-thine-own-way-lord",
+    slug: "have-thine-own-way-lord",
+    title: "Have Thine Own Way, Lord",
+    textAuthor: "Adelaide A. Pollard",
+    tuneName: "ADELAIDE",
+    meter: "Irregular",
+    originalKey: "e-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "0e236b2d579b216b84b8e0445c496cd1e97d2743c1a7224b972957c8189ebd89",
+  },
+  {
+    id: "he-keeps-me-singing",
+    slug: "he-keeps-me-singing",
+    title: "He Keeps Me Singing",
+    textAuthor: "Luther Burgess Bridgers",
+    tuneName: "He Keeps Me Singing",
+    meter: "9 7 9 7 6 5 6 7",
+    originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "2458a2a1ca1dff5ddf0f551b2303ebdc36e83cc7f625b7a16fcd4a35c69daadf",
   },
   {
     id: "he-leadeth-me",
@@ -840,6 +1044,7 @@ export const generatedHymns = [
     tuneName: "He Leadeth Me",
     meter: "8 8 8 8 8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e1afc2be5240d2c50a9dc7663f68bdf30e9e36d4240c542f089c771bb9ecd0c7",
   },
   {
@@ -850,6 +1055,7 @@ export const generatedHymns = [
     tuneName: "He Was Not Willing",
     meter: "11 10 11 10 11 10 11 10",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "4728a138e6ce5522b5b41fd1a046f47aac597315896cc7be10ebcf57a1d2d999",
   },
   {
@@ -860,7 +1066,19 @@ export const generatedHymns = [
     tuneName: "Monks Gate",
     meter: "11 11 12 11",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "68793d21c2645ccfe361d6f7d272c7ea192965936fc278e551a7be2006c7f7c3",
+  },
+  {
+    id: "higher-ground",
+    slug: "higher-ground",
+    title: "Higher Ground",
+    textAuthor: "Johnson Oatman, Jr.",
+    tuneName: "HIGHER GROUND",
+    meter: "Irregular",
+    originalKey: "a-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "d4ac55042ccc5ccd29461b58608d9e76f51490efd7f5712ed42f205ca54f3049",
   },
   {
     id: "holy-ghost-with-light-divine",
@@ -870,6 +1088,7 @@ export const generatedHymns = [
     tuneName: "Canterbury",
     meter: "7 7 7 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "72a740f2ffa20b615a5ecdcc713d3ab4770659b8260798b5d52be0f9f9f8a5ae",
   },
   {
@@ -880,6 +1099,7 @@ export const generatedHymns = [
     tuneName: "Te Deum",
     meter: "7 8 7 8 7 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "300ead55f5791633facfd07a40296092ebce1cbcda2a72ef89e4a69a01ccc293",
   },
   {
@@ -890,6 +1110,7 @@ export const generatedHymns = [
     tuneName: "Ebenezer",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "55dd1829254389436488ed68e3a76d2161b05a794a6cb0baf9e8f1832175b5d2",
   },
   {
@@ -900,6 +1121,7 @@ export const generatedHymns = [
     tuneName: "Nicaea",
     meter: "6 6 6 6 6 6 5 5",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "afc136f752139cb714fb41106dbf2bf6c5e680939ff11353d198241809357a61",
   },
   {
@@ -910,6 +1132,7 @@ export const generatedHymns = [
     tuneName: "Ellacombe",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ec504b5fe9256993c659393f1d331aea78f8bf789d8ee0d5e71448e7475564ed",
   },
   {
@@ -920,6 +1143,7 @@ export const generatedHymns = [
     tuneName: "Foundation (Funk)",
     meter: "11 11 11 11",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "7f5e716c225685d09b207df8dd77987f50550de67b8c5b4cc810bb60a598822d",
   },
   {
@@ -930,6 +1154,7 @@ export const generatedHymns = [
     tuneName: "Weil Ich Jesu Schäflein Bin",
     meter: "7 7 8 8 7 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "4ca76eab0a4e49171e956d0d3ce10ea6ec4b7265ced9bf056d0ea781887e2ed6",
   },
   {
@@ -940,6 +1165,7 @@ export const generatedHymns = [
     tuneName: "Ich Sterbe Täglich",
     meter: "9 8 9 8 8 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a6722ee7e98ee03499d448f5bd7b74c68bd982e644e2634ca779f4455004f577",
   },
   {
@@ -950,6 +1176,7 @@ export const generatedHymns = [
     tuneName: "Waltham (Calkin)",
     meter: "8 8 8 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b4b216d2d534c8ce1c3cb3df675d74f55023eca730b60bfdbfc2332fe9be8cc4",
   },
   {
@@ -960,6 +1187,7 @@ export const generatedHymns = [
     tuneName: "Duke Street",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8ea33db1f9c7685f811960cbd55b94fb43399c00fb9b61185da002d16241d71f",
   },
   {
@@ -970,6 +1198,7 @@ export const generatedHymns = [
     tuneName: "I Know Whom I Have Believed",
     meter: "8 6 8 6 9 10 8 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "654636751eb972bd1a23d3357590bee87ae695d67b7498cfd7c3128599f89216",
   },
   {
@@ -980,6 +1209,7 @@ export const generatedHymns = [
     tuneName: "I Need Thee Every Hour",
     meter: "10 10 7 6 11",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "eaca5c80628fa62f206adcc4413bfcdad3dd389049ec388bbec943f257b14338",
   },
   {
@@ -990,6 +1220,7 @@ export const generatedHymns = [
     tuneName: "Haly - Trust",
     meter: "8 8 8 8 8 9 8 8",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "976e684ea4966fb53747f6d6b9bfe5b22a29ee7b4cc2e21c15197896352789eb",
   },
   {
@@ -1000,6 +1231,7 @@ export const generatedHymns = [
     tuneName: "Ellacombe",
     meter: "8 6 8 6 8 6 8 6",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "7bf4630d4dae3e94da1b85a32129cd4213003b9d178bf784407425b2dc9b016d",
   },
   {
@@ -1010,6 +1242,7 @@ export const generatedHymns = [
     tuneName: "St. Edmund (Sullivan)",
     meter: "6 4 6 4 6 6 6 4",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "2a7d0c44e089dd0be0fb623567a90926aa12080502417e6b9acb8e93b45a1c0e",
   },
   {
@@ -1020,6 +1253,7 @@ export const generatedHymns = [
     tuneName: "Wär Gott nicht mit uns diese Zeit (1524)",
     meter: "8 7 8 7 8 8 7",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "14db81167afef7f6f0a84f28342bbc36c604a6801b30f14af073331c7759eb5a",
   },
   {
@@ -1030,6 +1264,7 @@ export const generatedHymns = [
     tuneName: "Wär Gott nicht mit uns diese Zeit (1537)",
     meter: "8 7 8 7 8 8 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a125b69829a412405191748b9a706d8f6df545f2985a83f067a785db0aade6b6",
   },
   {
@@ -1040,6 +1275,7 @@ export const generatedHymns = [
     tuneName: "Woodbird",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "4d9a3fdec1f6e45f943f6df3c644b5016e889a427b69c395047009590460023f",
   },
   {
@@ -1050,6 +1286,7 @@ export const generatedHymns = [
     tuneName: "St. Denio",
     meter: "11 11 11 11",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "840e253e3e7ab0b8cce27b14d32e66f36a40c2e6cc4cfc3e46fe3292bc45bd01",
   },
   {
@@ -1060,6 +1297,7 @@ export const generatedHymns = [
     tuneName: "Westminster Abbey",
     meter: "8 7 8 7 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d1059172e0a99ea1dfdfe111caf98734a0e4279f445ee86023055dac0e23d5b0",
   },
   {
@@ -1070,6 +1308,7 @@ export const generatedHymns = [
     tuneName: "Mit Fried und Freud ich Far Dahin",
     meter: "8 5 8 4 7 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "060f817bdbf1dad3d205c5fd8c6034cf109b90fbb8d86b8bfbf681f7c7105b47",
   },
   {
@@ -1080,6 +1319,7 @@ export const generatedHymns = [
     tuneName: "Cranham",
     meter: "Irregular",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "acb38f7c8aad00f76a3443fedd645dad90e4299e56f86965f6f8e6776bca0ca4",
   },
   {
@@ -1090,6 +1330,7 @@ export const generatedHymns = [
     tuneName: "Verleih uns Frieden Gnädiglich",
     meter: "8 7 8 7 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "47da6e223cad81b89f97a50cfb2476cb7fc36400f7ef68b079430e35f070e38f",
   },
   {
@@ -1100,6 +1341,7 @@ export const generatedHymns = [
     tuneName: "Jesaia Dem Propheten das Geschah",
     meter: "10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "383dce371779c1ee7f74628ebb79fcbbeff9a97ac92725a7074efc0aad42aafc",
   },
   {
@@ -1110,6 +1352,7 @@ export const generatedHymns = [
     tuneName: "Carol",
     meter: "8 6 8 6 8 6 8 6",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "1c039f549f4a39609c5a5c297e1660a58c67548c91bbe0de3a570e3a3310438f",
   },
   {
@@ -1120,6 +1363,7 @@ export const generatedHymns = [
     tuneName: "It Is Well",
     meter: "11 8 11 9 6 9",
     originalKey: "d-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "4d30a5ba466c3152f2e1ccbf1636e81ede13faef49285c43a012b3a52b51b4dc",
   },
   {
@@ -1130,6 +1374,7 @@ export const generatedHymns = [
     tuneName: "Ewing",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "61c74b1988c90a83c21596188dd9674be8c6aad088f065338d5bbefa28affe1d",
   },
   {
@@ -1140,6 +1385,7 @@ export const generatedHymns = [
     tuneName: "Sieh, hier bin ich, Ehrenkoenig",
     meter: "8 7 8 7 8 7",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "53fc08f8659f25452664ad9d7d822716746a4b04296fa2e7e6bfc00af49fc75b",
   },
   {
@@ -1150,6 +1396,7 @@ export const generatedHymns = [
     tuneName: "Easter Hymn",
     meter: "7 7 7 7 with Alleluias",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "bcdffa1c64af06cb0dc4474fbb1d55716eca8472478a316ea194e9e8b2cc9341",
   },
   {
@@ -1160,6 +1407,7 @@ export const generatedHymns = [
     tuneName: "Jesus Christus Unser Heiland, Der Den Tod (Klug)",
     meter: "7 6 5 7 5",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d5ad3a1f7741c61abc5c9924ae5e3717ad650d42efc01a5462f116128b018f54",
   },
   {
@@ -1170,6 +1418,7 @@ export const generatedHymns = [
     tuneName: "Jesus Christus Unser Heiland, Der Von Uns (Walter)",
     meter: "8 8 7 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "2e59cb2377561ef87619d847b1075948a8368042a4df943a4ff184ac2605ebe8",
   },
   {
@@ -1180,6 +1429,7 @@ export const generatedHymns = [
     tuneName: "Jesus Christus Unser Heiland, Der Von Uns (Klug)",
     meter: "8 8 7 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ae3ac21b6a1053992dab1c0313a0f5d431226eec581e1947344fda8cba405fc2",
   },
   {
@@ -1190,7 +1440,30 @@ export const generatedHymns = [
     tuneName: "Der Am Kreuz",
     meter: "8 7 8 7 7 7 8 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "64d6b3c7090e4791b950fea59211c7be1c8b135f9dc1cb90c9b44fbcb16fad30",
+  },
+  {
+    id: "jesus-is-all-the-world-to-me",
+    slug: "jesus-is-all-the-world-to-me",
+    title: "Jesus Is All the World To Me",
+    textAuthor: "Will Lamartine Thompson",
+    tuneName: "Jesus Is All the World To Me",
+    meter: "8 6 8 6 8 8 8 3",
+    originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "f230f1ce67f9add21a8ec39c770f6645a14f68ccb36c4ced5cbdf886a4b5957b",
+  },
+  {
+    id: "jesus-loves-me",
+    slug: "jesus-loves-me",
+    title: "Jesus Loves Me",
+    textAuthor: "Anna B. Warner",
+    tuneName: "untitled",
+    meter: "7 7 7 7 10 11",
+    originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "1d984a0c9787dd977eaeed282baee99b30af02d59f19144c94c56e0945562918",
   },
   {
     id: "jesus-shall-reign",
@@ -1200,6 +1473,7 @@ export const generatedHymns = [
     tuneName: "Duke Street",
     meter: "8 8 8 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e54ce1b50393093eb7ad201dc62d5dea8d608684d76e4029dc071b020a5e57e9",
   },
   {
@@ -1210,6 +1484,7 @@ export const generatedHymns = [
     tuneName: "Meinen Jesum Lass` Ich Nicht (Darmstadt)",
     meter: "7 8 7 8 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "903033dc9a41f6b6baefb41b2578a2d57ba7c1d6ae7aceb49b02856a5e187917",
   },
   {
@@ -1220,6 +1495,7 @@ export const generatedHymns = [
     tuneName: "Blessed Are They",
     meter: "8 5 8 5",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "cae9486c9b765a99fabeb389ad0c3b68823d1d23fdb2dda313b9b3855ed40175",
   },
   {
@@ -1230,6 +1506,7 @@ export const generatedHymns = [
     tuneName: "Words on the Cross - The Litany",
     meter: "7 7 7 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "703b1c0fce02f2d3d983d0741c877f095d8f8485120c95a94221e70660928f7a",
   },
   {
@@ -1240,6 +1517,7 @@ export const generatedHymns = [
     tuneName: "St. Alban",
     meter: "6 5 6 5 6 5 6 5 6 5 6 5",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c91d15559d90f1bf668d74f783088bb28007da45abc8455ce736aaff96fa6cb1",
   },
   {
@@ -1250,6 +1528,7 @@ export const generatedHymns = [
     tuneName: "Evening Prayer",
     meter: "8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "5e03f345ca95b6e03a18801ffdddf1797539b3a430052634988cc03a0c64c606",
   },
   {
@@ -1260,6 +1539,7 @@ export const generatedHymns = [
     tuneName: "Yoakley",
     meter: "8 8 8 8 8 8",
     originalKey: "e-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "6917e6bcbaefbf441c0ca67a0fbf1c4912dea104ffc9aa3cd28a0c8b882798ab",
   },
   {
@@ -1270,6 +1550,7 @@ export const generatedHymns = [
     tuneName: "Antioch",
     meter: "8 6 8 6 6 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "6f42d77a1a7dad8cdba5bfd516b95c10d2a929acf8dfdc45a6c83c512ff7d3ff",
   },
   {
@@ -1280,6 +1561,7 @@ export const generatedHymns = [
     tuneName: "Ode to Joy",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9f9ef886e27aacf53c323d779e315b3dad6634d967f85cd31a4860ca1703aea1",
   },
   {
@@ -1290,6 +1572,7 @@ export const generatedHymns = [
     tuneName: "St. Agnes",
     meter: "8 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "7d16da87ef9a368a81f0d6a7fcbfcb1db39380be76fdde6460ff5e8ee0a0eec5",
   },
   {
@@ -1300,6 +1583,7 @@ export const generatedHymns = [
     tuneName: "Picardy",
     meter: "8 7 8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e45bc01e2523e68fd3ba590510172ecaaf7669f395f9d266a35231af84df2f11",
   },
   {
@@ -1310,6 +1594,7 @@ export const generatedHymns = [
     tuneName: "Lea",
     meter: "8 6 8 6",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c570384b6478606f5462667cdfeb9bfc7b986e0eecabf8b59443903595606f8b",
   },
   {
@@ -1320,6 +1605,7 @@ export const generatedHymns = [
     tuneName: "Narodil se Kristus Pán",
     meter: "7 7 6 6 6 with Alleluias",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "571672216c5df91feece812cb2307eb39ebed19b91ca6a97c51e1174f1d9f2c8",
   },
   {
@@ -1330,6 +1616,7 @@ export const generatedHymns = [
     tuneName: "Crucifier",
     meter: "10 10 10 10",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "146b44156adebc928d1484369711e7a74fc7a281da50e674cac043ea43bccfe2",
   },
   {
@@ -1340,6 +1627,7 @@ export const generatedHymns = [
     tuneName: "Milwaukee",
     meter: "8 8 8 8 8 8 6 6",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "bf280545eca943b68087da6502fbe7f45e9ba03372d7f17bdc668a0b0c49a25c",
   },
   {
@@ -1350,6 +1638,7 @@ export const generatedHymns = [
     tuneName: "Helmsley",
     meter: "8 7 8 7 12 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "68381006d72a75beb2616c283bc0adc2d86ec5b52130c5ac966ee1c68aaa7f15",
   },
   {
@@ -1360,6 +1649,7 @@ export const generatedHymns = [
     tuneName: "Von Gott will ich Nicht Lazen",
     meter: "7 6 7 6 6 7 7 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "5ea58526d100c6e93332b3d0a1f3fda08f35900db0f88300f6312114ef113625",
   },
   {
@@ -1370,6 +1660,7 @@ export const generatedHymns = [
     tuneName: "Es Ist Ein Ros Entsprungen (Rhythmic)",
     meter: "7 6 7 6 6 7 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "42287628b6c34e2d26dec326e6fb670cf28016f26935a1011446a1490ec06b0e",
   },
   {
@@ -1380,6 +1671,7 @@ export const generatedHymns = [
     tuneName: "Ach Gott vom Himmel",
     meter: "8 7 8 7 8 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "419eb9859bd831e78f1228ed6c3e4ac4409766e6ee854bd28fa630c12c37127d",
   },
   {
@@ -1390,6 +1682,7 @@ export const generatedHymns = [
     tuneName: "Es ist das Heil uns Kommen Her",
     meter: "8 7 8 7 8 8 7",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "65c62af65106b465d7c014b05e701a93473e96206fe5d222cbfd4de8aa6c03f4",
   },
   {
@@ -1400,6 +1693,7 @@ export const generatedHymns = [
     tuneName: "Southwell",
     meter: "6 6 8 6",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "95f4b124391eea114aa6dcf072ec10a056002bf6e43d676f8091ab84299cd2ba",
   },
   {
@@ -1410,6 +1704,7 @@ export const generatedHymns = [
     tuneName: "HyFrydol",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b97d44df81e1e68872b22b844672b8e379c16264deb8cc43bbf4c8b147518c31",
   },
   {
@@ -1420,7 +1715,19 @@ export const generatedHymns = [
     tuneName: "HyFrydol",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b58b5572707ccddfdcba10a7cc35330a42ff24c54acb17ae9c89ad6df2ad3a3d",
+  },
+  {
+    id: "lord-of-our-life",
+    slug: "lord-of-our-life",
+    title: "Lord Of Our Life",
+    textAuthor: "Matthäus Apelles von Löwenstern",
+    tuneName: "Iste Confessor",
+    meter: "11 11 11 5",
+    originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "587eb36635bfb576c9034c7598b19de54fe0e176403f52750765f98bad5d2045",
   },
   {
     id: "lord-who-throughout-these-forty-days",
@@ -1430,6 +1737,7 @@ export const generatedHymns = [
     tuneName: "St. Flavian",
     meter: "8 6 8 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b30d5219c81fe08e33b4665cb56b113b1fa99a5a0a0a8c923597853caef2326d",
   },
   {
@@ -1440,6 +1748,7 @@ export const generatedHymns = [
     tuneName: "Regent Square",
     meter: "8 7 8 7 8 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "259c6be43122868b72d373cca4214afc4de687f48618b7082ee2762e68e806df",
   },
   {
@@ -1450,6 +1759,7 @@ export const generatedHymns = [
     tuneName: "Bryn Calfaria",
     meter: "8 7 8 7 Alleluia12 7 7",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "02970919992b9fb83ccdf8003a8bc7ff206c427845e7e1d8d8e3a2823d8499d8",
   },
   {
@@ -1460,6 +1770,7 @@ export const generatedHymns = [
     tuneName: "Erhalt Uns, Herr, bei deinem Wort",
     meter: "8 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "478bf296b9c1643e2ec3cd74c9189f98f24ea5be80baa86d064bacbc0ad0df5a",
   },
   {
@@ -1470,6 +1781,7 @@ export const generatedHymns = [
     tuneName: "Herzlich Lieb hab ich Dich O Herr",
     meter: "8 8 7 8 8 7 8 8 8 8 8 4 8",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c7f178835ae7795e8026902bddbde8bbbbc20eb0dd2c89fabd2f9a6c17a63276",
   },
   {
@@ -1480,6 +1792,7 @@ export const generatedHymns = [
     tuneName: "St. Ursula",
     meter: "8 6 8 6 8 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "87dc96b2cb0a11ece004b8e9e031dbe2f029607ded508fc18c91357723d4f6f9",
   },
   {
@@ -1490,7 +1803,30 @@ export const generatedHymns = [
     tuneName: "Es Wollt uns Gott Genædig",
     meter: "8 7 8 7 8 7 8 7 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "7271bd235c7c0ea0d9d5d82e7f208a612f20fa04e7bae7ccd2afea276dbbdf78",
+  },
+  {
+    id: "moment-by-moment",
+    slug: "moment-by-moment",
+    title: "Moment By Moment",
+    textAuthor: "Daniel Webster Whittle",
+    tuneName: "Whittle",
+    meter: "10 10 10 10 10 10 10 10",
+    originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "538abab863b3c9051f2b4cfaacbe127226258b6da406924a5af263afcf7a3dcd",
+  },
+  {
+    id: "more-about-jesus",
+    slug: "more-about-jesus",
+    title: "More About Jesus",
+    textAuthor: "Eliza E. Hewitt",
+    tuneName: "SWENEY",
+    meter: "Irregular",
+    originalKey: "a-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "69c93f4864102e10a438bd9f7069b85bc57a7cb883a990789d1b0255bbcd9edf",
   },
   {
     id: "more-love-to-thee",
@@ -1500,6 +1836,7 @@ export const generatedHymns = [
     tuneName: "More Love to Thee",
     meter: "10 10 12 8",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e559749c9b6f965da60ff28d8745ed775703e6d6f22fcacd83edd887d1cbd940",
   },
   {
@@ -1510,6 +1847,7 @@ export const generatedHymns = [
     tuneName: "Olivet",
     meter: "6 6 4 6 6 6 4",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8a232bd962d1c57b9b6a028f7616fcfba908bb64adc4b4a1518cab3f836544c7",
   },
   {
@@ -1520,6 +1858,7 @@ export const generatedHymns = [
     tuneName: "Melita",
     meter: "8 8 8 8 8 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ccea31791b6e0f01380a199c534cd8ecf138dbedfca514a2dbc70a86d7de708e",
   },
   {
@@ -1530,7 +1869,19 @@ export const generatedHymns = [
     tuneName: "Jewett",
     meter: "6 6 6 6 6 6 6 6",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "55400c28892d6466c3c2450511162cf921c3619fa3ba30278ac84f5155c0b07d",
+  },
+  {
+    id: "my-savior-s-love",
+    slug: "my-savior-s-love",
+    title: "My Savior's Love",
+    textAuthor: "Charles Hutchinson Gabriel",
+    tuneName: "My Savior`s Love",
+    meter: "8 7 8 7 4 4 7 4 4 7",
+    originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "5a529af20805e08a1b9a2bcffad23d20bfbb08004f72e025b75f29ed213e4db4",
   },
   {
     id: "my-soul-now-praise-thy-maker",
@@ -1540,7 +1891,19 @@ export const generatedHymns = [
     tuneName: "Nun Lob, Mein Seel",
     meter: "7 8 7 8 7 6 7 6 7 6 7 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0200c39ad32d7c5425ff94d67969c6bba22aabe4ff7848a3257451f686812979",
+  },
+  {
+    id: "near-the-cross",
+    slug: "near-the-cross",
+    title: "Near The Cross",
+    textAuthor: "Fanny J. Crosby",
+    tuneName: "NEAR THE CROSS",
+    meter: "Irregular",
+    originalKey: "f-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "180c047ce1c07a7f25a56b7e358bbce3b62d8435bc734c413208f3dabbc685ea",
   },
   {
     id: "nearer-my-god-to-thee",
@@ -1550,6 +1913,7 @@ export const generatedHymns = [
     tuneName: "Bethany (Mason)",
     meter: "6 4 6 4 6 6 6 4",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "cc06fe8702b8a557f470fc3b48683107b4ecbf43769e61854c659ea65491e918",
   },
   {
@@ -1560,6 +1924,7 @@ export const generatedHymns = [
     tuneName: "No, Not One",
     meter: "10 6 10 6 9 8 10 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "5d4903d38395544eb2ec2284dd067d1ba7d4de17ec61945684a9efdd7dc338b8",
   },
   {
@@ -1570,6 +1935,7 @@ export const generatedHymns = [
     tuneName: "Rossetti",
     meter: "8 10 10 4",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c6b54cb70e54e68a8b64fc99332ad064c4a54721c2ee52588295a3c78fd49c61",
   },
   {
@@ -1580,6 +1946,7 @@ export const generatedHymns = [
     tuneName: "Eventide",
     meter: "10 10 10 10",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "25d23551a495564fee143df7971c4ebc1031d2921a090e422e25c0fe7c2c69f9",
   },
   {
@@ -1590,6 +1957,7 @@ export const generatedHymns = [
     tuneName: "Christum Wir Sollen Loben Schon",
     meter: "8 8 8 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "05f95e142f875e09c5e931a05773e60363f78155e95c2fa971793665d690bd78",
   },
   {
@@ -1600,7 +1968,19 @@ export const generatedHymns = [
     tuneName: "Innsbruck",
     meter: "7 7 6 7 7 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "25eba305c26f56c5f0aae0c44bce1680d543cd4d743a6fd3a88b3db549207481",
+  },
+  {
+    id: "now-thank-we-all-our-god",
+    slug: "now-thank-we-all-our-god",
+    title: "Now Thank We All Our God",
+    textAuthor: "Martin Rinkart",
+    tuneName: "Nun Danket",
+    meter: "6 7 6 7 6 6 6 6",
+    originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "3f1aa6df8ff25a7f1a65663fd75b05a274689914a4672f1f0e0de33e3e73e4a4",
   },
   {
     id: "now-the-light-has-gone-away",
@@ -1610,6 +1990,7 @@ export const generatedHymns = [
     tuneName: "Müde bin ich, geh zur Ruh",
     meter: "7 7 7 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3f7dc547c04753cc657dad95e75892315e0ba8996ca967dfbf57961aac3afedc",
   },
   {
@@ -1620,6 +2001,7 @@ export const generatedHymns = [
     tuneName: "Puer Nobis Nascitur",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d14f6ece28c39c7e28754b054e408920de6fb57821c76a021b76fdf5cf4a4322",
   },
   {
@@ -1630,6 +2012,7 @@ export const generatedHymns = [
     tuneName: "Veni Emmanuel",
     meter: "8 8 8 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8760dd07583aadb442807d2b46e3dd2ebf29bdf77f4aa1c6317e4b4454b439bd",
   },
   {
@@ -1640,6 +2023,7 @@ export const generatedHymns = [
     tuneName: "Adeste Fideles",
     meter: "Irregular",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "aaf65d24021160bbfdc0ef5cdd9302e8781ddc1f3902c6bfcd68f68da88384ab",
   },
   {
@@ -1650,6 +2034,7 @@ export const generatedHymns = [
     tuneName: "Woodbird",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "be51e75d7ff61fe20a816621c1eb9a305380664444e5f5e191e51880cef31302",
   },
   {
@@ -1660,6 +2045,7 @@ export const generatedHymns = [
     tuneName: "Aurelia",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b6453d517d827c69eb3f1493d6dac4e6cff4a74ab0ae48e24b546a22e7547565",
   },
   {
@@ -1670,6 +2056,7 @@ export const generatedHymns = [
     tuneName: "Azmon",
     meter: "8 6 8 6",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "74e9acfc206c26a20cedd00a06d2e083b97f7acbd24bf5b00a04d074400e1092",
   },
   {
@@ -1680,6 +2067,7 @@ export const generatedHymns = [
     tuneName: "Wie Schön Leuchtet",
     meter: "8 8 7 8 8 7 4 8 4 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0336c8fe79bc727fb4ce6d26551a9b7057a274fa5c2aafed37764ed8348d71e1",
   },
   {
@@ -1690,6 +2078,7 @@ export const generatedHymns = [
     tuneName: "O Heilige Dreifaltigkeit",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "2827e6a39a35fbbfa0e9821f3f709ae2cd3429fb56cf0d70b0f3b265e478c845",
   },
   {
@@ -1700,6 +2089,7 @@ export const generatedHymns = [
     tuneName: "St. Louis",
     meter: "8 6 8 6 7 6 8 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b16503c852df422b85a18ef33762165649d19703e11b6f4c8142e457ae1c8202",
   },
   {
@@ -1710,6 +2100,7 @@ export const generatedHymns = [
     tuneName: "Winchester New",
     meter: "8 8 8 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "35e048d03cf0f7f87961bd26c07536262b4702555a1551aa83e2d4658d7f8644",
   },
   {
@@ -1720,6 +2111,7 @@ export const generatedHymns = [
     tuneName: "Es Ist Kein Tag",
     meter: "8 8 8 4",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "732f4ad8d77d6f09ced99fed8a38bf1c667684b4c5d4e0e0c95bc25a467c68e0",
   },
   {
@@ -1730,6 +2122,7 @@ export const generatedHymns = [
     tuneName: "Gott Sei Gelobet und Gebenedeiet",
     meter: "11 8 11 8 5 9 9 6 7 5",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "919e9d0755182daaf4762cbb336df86026f15a448809c8354cfd87ff4ce53cce",
   },
   {
@@ -1740,6 +2133,7 @@ export const generatedHymns = [
     tuneName: "Wie Soll ich Dich Empfange",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e1c8e378058609ae8697f7dfb9bfe3a291f7b411b191a781735848b40873fc45",
   },
   {
@@ -1750,6 +2144,7 @@ export const generatedHymns = [
     tuneName: "Non Dignus",
     meter: "7 6 7 6",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8b836ecacce8b6cf630074525b2e479a9d9bea64f2cf98ebbcc7dd005703339b",
   },
   {
@@ -1760,6 +2155,7 @@ export const generatedHymns = [
     tuneName: "Deo Gracias",
     meter: "8 8 8 8",
     originalKey: "e-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d87e1dd3e412f9733f0b363ee8659c1f34523f8bc9f66b34e10eb063bac18490",
   },
   {
@@ -1770,6 +2166,7 @@ export const generatedHymns = [
     tuneName: "Passion Chorale",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "12e558231d929d7a2519b3c2a69d83fbdaf9d2885e83631ab9fa629085e698cd",
   },
   {
@@ -1780,6 +2177,7 @@ export const generatedHymns = [
     tuneName: "Evan",
     meter: "8 6 8 6",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "7547f6e4b3d12e25a703341e2e50b8fafdcee411b715189a428fb45e342aa495",
   },
   {
@@ -1790,6 +2188,7 @@ export const generatedHymns = [
     tuneName: "Ebenezer",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c89b4c6f2b592cf5e6a6d6ed31a18214f8aac54ec4f11c7b4a92ef5946cce08c",
   },
   {
@@ -1800,6 +2199,7 @@ export const generatedHymns = [
     tuneName: "Deo Gracias",
     meter: "8 8 8 8",
     originalKey: "e-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "f9c5616af08c0f38f8a3722313ecf4863512ec75ac96e0a681cb7abd7a842dbf",
   },
   {
@@ -1810,6 +2210,7 @@ export const generatedHymns = [
     tuneName: "Divinum Mysterium",
     meter: "8 7 8 7 8 7 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "24f3b0b2df9bb0db8936c640f49929b98cb50e0682928e09e32380bd904f19a5",
   },
   {
@@ -1820,6 +2221,7 @@ export const generatedHymns = [
     tuneName: "Wo Gott Zum Haus",
     meter: "8 8 8 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "09929a5c63b1531c443e17a1e10987f3e9460dde42d7b88b4de0719401f6b639",
   },
   {
@@ -1830,6 +2232,7 @@ export const generatedHymns = [
     tuneName: "Puer Nobis Nascitur",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a343e1581f51cf7cc189138cbbf9b71a1eb26f5c54eb9734c5fe824e57fee629",
   },
   {
@@ -1840,6 +2243,7 @@ export const generatedHymns = [
     tuneName: "Darwall`s 148th",
     meter: "6 6 6 6 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "f13cbe192ca49471a33897b8a5747397badd02d893d91b1d818f940b07a7e2d4",
   },
   {
@@ -1850,6 +2254,7 @@ export const generatedHymns = [
     tuneName: "Eins ist Not",
     meter: "8 7 8 7 12 12 11 11",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "0b48e69087ef2295b008ad77375e3d79f103c4713973ae0eef41993b0ecbd243",
   },
   {
@@ -1860,6 +2265,7 @@ export const generatedHymns = [
     tuneName: "Unser Herrscher",
     meter: "8 7 8 7 7 7",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "37be59f9e501ae5098ac39e5510442ef387f35278a21bc232d3932ce5bf9c04a",
   },
   {
@@ -1870,6 +2276,7 @@ export const generatedHymns = [
     tuneName: "Vater Unser im Himmelreich",
     meter: "8 8 8 8 8 8",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a2208d299e73499fba50d7a52bb92d1fc620f6e1bb0318db7cb24d66597f51f1",
   },
   {
@@ -1880,6 +2287,7 @@ export const generatedHymns = [
     tuneName: "St. Anne",
     meter: "8 6 8 6",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "297aa8d24cd8a8d58177c118c891c6a41a40999c4b6e41e5cf775a8316814e04",
   },
   {
@@ -1890,6 +2298,7 @@ export const generatedHymns = [
     tuneName: "Aus Tiefer Not (Luther)",
     meter: "8 7 8 7 8 8 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "31f5c7bc211e7059ef02cc09d1d97f484192ab97e5d0341def1d080c1f581490",
   },
   {
@@ -1900,6 +2309,7 @@ export const generatedHymns = [
     tuneName: "Aus Tiefer Not (Strassburg)",
     meter: "8 7 8 7 8 8 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "eb7d3da32b9787b5edf463b6213b3122a38f203e58a16b4a0c4c081cc010a027",
   },
   {
@@ -1910,6 +2320,7 @@ export const generatedHymns = [
     tuneName: "Over Kedron Jesus Traeder",
     meter: "8 7 8 7 7 7 8 8",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "98223fcf18d30133a4442c0577276fa99b6d81a165b27df0ee8b72293a466380",
   },
   {
@@ -1920,6 +2331,7 @@ export const generatedHymns = [
     tuneName: "Pass Me Not O Gentle Savior",
     meter: "8 5 8 5 9 8 5",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b41f439581597207203498c3b1f73f4066b8c09ffd241a492935a498878be88c",
   },
   {
@@ -1930,7 +2342,30 @@ export const generatedHymns = [
     tuneName: "Old 100th",
     meter: "8 8 8 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "abc2fba69cd49960af775690f59e5edab79c8bc5b190ab3842e6b6c406545167",
+  },
+  {
+    id: "praise-him-praise-him",
+    slug: "praise-him-praise-him",
+    title: "Praise Him! Praise Him!",
+    textAuthor: "Fanny J. Crosby",
+    tuneName: "JOYFUL SONG",
+    meter: "Irregular",
+    originalKey: "a-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "eceabf19d006b6d7e90c3fa2cc401a08a6899631993184289c7e56be379bc6dd",
+  },
+  {
+    id: "praise-my-soul-the-king-of-heaven",
+    slug: "praise-my-soul-the-king-of-heaven",
+    title: "Praise My Soul The King Of Heaven",
+    textAuthor: "Henry F. Lyte",
+    tuneName: "Praise My Soul",
+    meter: "8 7 8 7 8 7",
+    originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "dd7de2144566e79c507afbcdc7aa53545f60698b32d072d75f8f5543d83dd366",
   },
   {
     id: "praise-the-lord-ye-heavens-adore-him",
@@ -1940,6 +2375,7 @@ export const generatedHymns = [
     tuneName: "Austria (Haydn)",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8e50cbe59ce707af9bfdad30f60226b8a412493b8c58f87d64d1a8e34e65bd03",
   },
   {
@@ -1950,6 +2386,7 @@ export const generatedHymns = [
     tuneName: "Lobe den Herren",
     meter: "14 14 4 7 8",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a4f696e6e7e7ae20060e5b8a9378eb214512ae86726cf58fe180da7ba68b6dba",
   },
   {
@@ -1960,6 +2397,7 @@ export const generatedHymns = [
     tuneName: "Ich Singe dir mit Herz",
     meter: "8 6 8 6",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3d054bf444ae6ea1d0a1a3bb096837dc991ea003ed5ea8b07f0cbb63621c56ec",
   },
   {
@@ -1970,7 +2408,30 @@ export const generatedHymns = [
     tuneName: "Marion",
     meter: "6 6 8 6 10",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "e326a00273a989b74f76fc774109ce58a9ada1313a01dfa49009223f0ba59af5",
+  },
+  {
+    id: "rejoice-the-lord-is-king",
+    slug: "rejoice-the-lord-is-king",
+    title: "Rejoice, The Lord Is King",
+    textAuthor: "Charles Wesley",
+    tuneName: "DARWALL'S 148TH",
+    meter: "Irregular",
+    originalKey: "d-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "8fdc213a352b57e30e85bad32e3efdb108c6a1deaef62dbb00a94f9b72dc3b81",
+  },
+  {
+    id: "rescue-the-perishing",
+    slug: "rescue-the-perishing",
+    title: "Rescue the Perishing",
+    textAuthor: "Fanny Jane Crosby",
+    tuneName: "Rescue the Perishing",
+    meter: "11 10 11 10 11 10",
+    originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "8c89d8b7d47edb5322af074cb1fc5b2065e118249e6020aa97bfa84c8a781ce0",
   },
   {
     id: "rock-of-ages",
@@ -1980,6 +2441,7 @@ export const generatedHymns = [
     tuneName: "Toplady",
     meter: "7 7 7 7 7 7",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "46e7e0a5727f378fa410330c49dbd0f19149268502aed19272a4bcda17883604",
   },
   {
@@ -1990,6 +2452,7 @@ export const generatedHymns = [
     tuneName: "Es ist das Heil uns Kommen Her",
     meter: "8 7 8 7 8 8 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "cbb86cc6abcee02c64d2cf0d77e3722eb05945d82401f7a67eccbebd17832556",
   },
   {
@@ -2000,6 +2463,7 @@ export const generatedHymns = [
     tuneName: "Nun Komm, Der Heiden Heiland",
     meter: "7 7 7 7",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b7684ffd75b58104363b14cf8ada38459f55750619c0ae198a51dc2e3502f9f8",
   },
   {
@@ -2010,6 +2474,7 @@ export const generatedHymns = [
     tuneName: "Aberystwyth (Parry)",
     meter: "7 7 7 7 7 7 7 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b5f7dd86377567c190d489bb0e887763cbd2f6a146e6bc22897d5765a606a530",
   },
   {
@@ -2020,6 +2485,7 @@ export const generatedHymns = [
     tuneName: "Bradbury",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "f44d2ae542063037cb9ddfb7632bffdfca393e3365fc6c4ef0ffd3ce4e692e06",
   },
   {
@@ -2030,6 +2496,7 @@ export const generatedHymns = [
     tuneName: "Batty",
     meter: "8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ff9557d85a1af71e31ae31692eb2fa9200f8b0c5328c83dfad421956aef69b21",
   },
   {
@@ -2040,6 +2507,7 @@ export const generatedHymns = [
     tuneName: "Humility",
     meter: "7 7 7 7 7 7 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "46a6e31dbe6067f3fe90f34806bcf2198532718cfa994a5bc655c35e1310aafc",
   },
   {
@@ -2050,6 +2518,7 @@ export const generatedHymns = [
     tuneName: "Rex Gloriae",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "fdebe4384a6db86c33ab9f16d38c69ff7d90747a143a7ede94ce77a5094eb05b",
   },
   {
@@ -2060,6 +2529,7 @@ export const generatedHymns = [
     tuneName: "Stille Nacht",
     meter: "6 6 8 8 6 6",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "36c3aa8f7947b062c4100f31ab6a12d8dc00cd6d361fc420086b54280383ba68",
   },
   {
@@ -2070,6 +2540,7 @@ export const generatedHymns = [
     tuneName: "Nativity",
     meter: "7 7 7 7 7 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "be0b0c74c3cce24424fc7a421506639d84b6d413e9d7d1276090689aca80679a",
   },
   {
@@ -2080,6 +2551,7 @@ export const generatedHymns = [
     tuneName: "St. George`s Windsor",
     meter: "7 7 7 7 7 7 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d85d66a534e3540ccb7741453da7f58f424d59d602ecd882b5498d6911298750",
   },
   {
@@ -2090,6 +2562,7 @@ export const generatedHymns = [
     tuneName: "In Babilone",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c92e37c77b20b2d875f4327892f713caf0fce0ff5c2eedea60a9fb0d05e528f4",
   },
   {
@@ -2100,6 +2573,7 @@ export const generatedHymns = [
     tuneName: "O Mein Jesu, Ich Muss Sterben",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "1efa666ec5f19246bb409ff0b46d54e2f3381af038f51858486e7d82db4c47e6",
   },
   {
@@ -2110,6 +2584,7 @@ export const generatedHymns = [
     tuneName: "Mozart",
     meter: "7 7 7 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "7963c0a3319f353b7c01c6c07d935aff9f0b2bae2e810a5a9b9262df779e0296",
   },
   {
@@ -2120,6 +2595,7 @@ export const generatedHymns = [
     tuneName: "So Nimm Denn Meine Hände",
     meter: "11 11 11 11",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "2ce30286df6932cfc088c1a9247e1b8e480422a94aaa841d9e5c1928c4f797f8",
   },
   {
@@ -2130,6 +2606,7 @@ export const generatedHymns = [
     tuneName: "Dies sind die heil`gen zehu Gebot",
     meter: "8 8 8 7 4",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a876218bf3ef94dc463ab59b0666196de86f3d78df3c56c83fd8c205406a4a64",
   },
   {
@@ -2140,6 +2617,7 @@ export const generatedHymns = [
     tuneName: "St. Thomas",
     meter: "6 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "1db6427a7b9d6d346272b05bba6a850a880c7188cf97525db6ad05f955eb2c7f",
   },
   {
@@ -2150,6 +2628,7 @@ export const generatedHymns = [
     tuneName: "Act Gott Vom Himmelreiche",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "477680f0e46dcb1c16bc5384ef244ad8da531d4be511d0b14b53f710fdd05ac1",
   },
   {
@@ -2160,6 +2639,7 @@ export const generatedHymns = [
     tuneName: "Aurelia",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9638a1e0603d6ee02bbfa762e0be5525cfa0f94f9bb2bc6b26fa70093e3feb81",
   },
   {
@@ -2170,6 +2650,7 @@ export const generatedHymns = [
     tuneName: "The Comforter Has Come",
     meter: "12 12 12 6 12 12 12 6",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c4687883569bee32513f80cadaba443c3b4632c3e7e912e884124a6a68bff1f8",
   },
   {
@@ -2180,6 +2661,7 @@ export const generatedHymns = [
     tuneName: "Es ist Gewisslich an der Zeit",
     meter: "8 7 8 7 8 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a1ccdc44815b52b2d68aeffeebee868c0c291c0283dc1833790019c69d0e2c38",
   },
   {
@@ -2190,6 +2672,7 @@ export const generatedHymns = [
     tuneName: "The First Noel",
     meter: "Irregular",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "59a73a322def91a6f3070362d122f7b1d262341587e87a9eaf63a07e907318ad",
   },
   {
@@ -2200,6 +2683,7 @@ export const generatedHymns = [
     tuneName: "Old 137th",
     meter: "8 6 8 6 8 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "76a890d9d286bab11bfd9fff2a853b24726685c207471ceece1cfc727d69774e",
   },
   {
@@ -2210,6 +2694,7 @@ export const generatedHymns = [
     tuneName: "Yigdal",
     meter: "6 6 12 6 6 12",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "07acfb1ca2433e9a658e20ee9d0199d55419d4f2946963ff403e1701f7cf6b4f",
   },
   {
@@ -2220,6 +2705,7 @@ export const generatedHymns = [
     tuneName: "Herr Jesu Christ, Dict Zu Uns Wend",
     meter: "8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "22d7f3ccc1d4d288a269061da75a235303c83f3c571ba71cbf255c6508a099d6",
   },
   {
@@ -2230,7 +2716,19 @@ export const generatedHymns = [
     tuneName: "Consolation",
     meter: "8 6 8 6",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "632f25c6c674c1c291eea47509e94d9065d088d2cb04b889972e113df0120304",
+  },
+  {
+    id: "the-law-of-god-is-good-and-wise",
+    slug: "the-law-of-god-is-good-and-wise",
+    title: "The Law Of God Is Good And Wise",
+    textAuthor: "Matthias Loy",
+    tuneName: "Erhalt Uns, Herr, bei deinem Wort",
+    meter: "8 8 8 8",
+    originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "f03b19aeb11f0ed0cec3c645a9acb3f838218a87b4eef5fbdf5f754968d9fabc",
   },
   {
     id: "the-lily-of-the-valley",
@@ -2240,6 +2738,7 @@ export const generatedHymns = [
     tuneName: "Salvation",
     meter: "7 6 11 7 6 11 7 6 10 8 6 11",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ae3b2893925d4b8debecfcda566b5706de9970bf3c764f4b0f108cca3e0463b9",
   },
   {
@@ -2250,6 +2749,7 @@ export const generatedHymns = [
     tuneName: "Marosa",
     meter: "8 6 8 6 8 6 8 6",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "fdc82339b0f741bf76e65476e19eb979e174c73d07ee2f156fd8586d81f7a50a",
   },
   {
@@ -2260,6 +2760,7 @@ export const generatedHymns = [
     tuneName: "The Love of God",
     meter: "8 8 8 8 8 8 8 6 8 6 8 6",
     originalKey: "d-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "7cdf42b51dc09dd8ec020de00e8bdc554ae43a4f6fc0dfa549edad1ccaafb272",
   },
   {
@@ -2270,6 +2771,7 @@ export const generatedHymns = [
     tuneName: "Es spricht der Unweisen Mund",
     meter: "8 7 8 7 8 8 7",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9ddfcbf9abb06b0c4e72d1a4f219fe034a407f6c42ff6a6fcb17ba0d443de591",
   },
   {
@@ -2280,6 +2782,7 @@ export const generatedHymns = [
     tuneName: "The Old Rugged Cross",
     meter: "12 8 12 9 9 9 9 9",
     originalKey: "b-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8b03232432b271c05c1e2cf605bab418e81001284de9238ae57355ff24713180",
   },
   {
@@ -2290,6 +2793,7 @@ export const generatedHymns = [
     tuneName: "Lobt Gott, ihr Christen Allzugleich",
     meter: "8 6 8 6 6",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "86537a86ac5b8c864dc3a5554717c9ab7f00e171756c1eb7aaf8dd1f82723525",
   },
   {
@@ -2300,6 +2804,7 @@ export const generatedHymns = [
     tuneName: "Wo Gott Zum Haus",
     meter: "8 8 8 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "805b3acc1e05c5596761030c848d3f7089203f770ba0c9e50b182e054909dab6",
   },
   {
@@ -2310,6 +2815,7 @@ export const generatedHymns = [
     tuneName: "Victory",
     meter: "8 8 8 with Alleluias",
     originalKey: "e-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "41e2050f396660b621d2e0f2c38116da856945f7745c81df4618157c772bcbf6",
   },
   {
@@ -2320,6 +2826,7 @@ export const generatedHymns = [
     tuneName: "Consolation",
     meter: "8 6 8 6",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "563457333a897c4b8ce3956a022b1a8d078f7020f9cd0729e49cc49ce5450b6c",
   },
   {
@@ -2330,6 +2837,7 @@ export const generatedHymns = [
     tuneName: "Theres a Great Day Coming",
     meter: "11 9 14 13 13 13",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "a5d2bb392ad4796488713f1d4bb465677b1595e7b79657c8875cfc4bc0722525",
   },
   {
@@ -2340,6 +2848,7 @@ export const generatedHymns = [
     tuneName: "Kingsfold",
     meter: "8 6 8 6 8 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9bd4ac89a8dd46b22777e475c5b00829fcbb460b76fc8ae0baeb0dd9c654b68f",
   },
   {
@@ -2350,6 +2859,7 @@ export const generatedHymns = [
     tuneName: "Unde Et Memores",
     meter: "10 10 10 10 10 10",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "6d5fed9f4e31f243a92eddfbf7e387619e5ca72e509399e4db1b3bbfde7ca717",
   },
   {
@@ -2360,6 +2870,7 @@ export const generatedHymns = [
     tuneName: "Mitten wir im Leben Sind",
     meter: "Peculiar",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "c5a3d9bdd1b80b2b132920083f914bd847a51ca1f7a382aaba85a84f6a29c0ab",
   },
   {
@@ -2370,6 +2881,7 @@ export const generatedHymns = [
     tuneName: "Rex Gloriae",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "6f903c46e7d1c46fd3e0b0ebbe241ff79324b25deca62af086ba2c66c96dd1c0",
   },
   {
@@ -2380,6 +2892,7 @@ export const generatedHymns = [
     tuneName: "Potsdam",
     meter: "6 6 8 6",
     originalKey: "e-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "463602d1bc4cf379a43c091c877c4a46d454d20d6ae21faa2cc84eb92fa1cd89",
   },
   {
@@ -2390,6 +2903,7 @@ export const generatedHymns = [
     tuneName: "Gethsemane",
     meter: "7 7 7 7 7 7",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3f336afb71449dc016b48565beeaa6681beb1ad36f97f44ba29f95aa3fafb0c2",
   },
   {
@@ -2400,6 +2914,7 @@ export const generatedHymns = [
     tuneName: "To God Be The Glory",
     meter: "11 11 11 11 12 12 11 11",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "84302751f86b4ee730d5d1034d316618daa8a12d6fc800b93b8af1b203f7ce10",
   },
   {
@@ -2410,6 +2925,7 @@ export const generatedHymns = [
     tuneName: "Christ, Unser Herr",
     meter: "8 7 8 7 8 7 8 7 7",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "65b6cc005e8e7b72fa00a136198ea1f3074c3d834da5f2d2eb4b4cad7fb99bcd",
   },
   {
@@ -2420,6 +2936,7 @@ export const generatedHymns = [
     tuneName: "Vom Himmel Hoch",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "41884015cb8b80c1f0f0807578bf21e220ffcd0d0bdbe9053c05a93bc77869e1",
   },
   {
@@ -2430,6 +2947,7 @@ export const generatedHymns = [
     tuneName: "Anthes",
     meter: "7 6 7 6 7 6 7 6",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9dcb3e3704fc4e73c09c2d58996448279192ceb361de5f566dbb7344be9bf54c",
   },
   {
@@ -2440,6 +2958,7 @@ export const generatedHymns = [
     tuneName: "Under His Wings",
     meter: "11 10 11 10 8 7 9 7",
     originalKey: "d-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "67197919f42e91afb3e2878fb75778871e75dea23873ad291e006d2afe2adbfe",
   },
   {
@@ -2450,6 +2969,7 @@ export const generatedHymns = [
     tuneName: "Wachet Auf",
     meter: "8 9 8 8 9 8 6 6 4 8 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9a2d9f774ff75276498b3906a5f4ab255481f0e625aa9ab638506616e18a5153",
   },
   {
@@ -2460,6 +2980,7 @@ export const generatedHymns = [
     tuneName: "Wir Glauben all an Einen Gott, Schoepfer",
     meter: "8 8 8 8 8 8 8 8 8 8",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "5bafd8d6569e7ced178c4bd693d0f9223fecae2d792f11ef37bddfd0cb1ec62e",
   },
   {
@@ -2470,6 +2991,7 @@ export const generatedHymns = [
     tuneName: "Kremser",
     meter: "6 6 6 5 6 6 6 5",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "23a4241630afe6f7ee5842eeba4ac3103a4304092c277fd34ae0eaa7915289b1",
   },
   {
@@ -2480,6 +3002,7 @@ export const generatedHymns = [
     tuneName: "Energy",
     meter: "6 6 8 6",
     originalKey: "g-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "3786afd6cf5ecb14bd281ca8d19ce0496ffbb2abfd5dbae09d81dab13dadddeb",
   },
   {
@@ -2490,6 +3013,7 @@ export const generatedHymns = [
     tuneName: "Sellinge",
     meter: "6 6 8 6",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "8da81c31ee57d54556358d42905ae1499e49120fbcca380416cd3527bdc998fe",
   },
   {
@@ -2500,6 +3024,7 @@ export const generatedHymns = [
     tuneName: "Nun Bitten wir den Heiligen Geist",
     meter: "9 9 11 10 4",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "33c187884af899e777557a0954e42e6cfbe47d261b06289bfd00500202bf4ca8",
   },
   {
@@ -2510,6 +3035,7 @@ export const generatedHymns = [
     tuneName: "Were You There",
     meter: "10 10 14 10",
     originalKey: "e-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "90f43ee1e202594cbb068e69fc496a55a1dd37e3034d4a1d0c051be5a30bacd0",
   },
   {
@@ -2520,6 +3046,7 @@ export const generatedHymns = [
     tuneName: "untitled",
     meter: "8 7 8 7 8 7 8 7",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "9be244a387e10b5c3a3876d09b75c1f3abb8f9b89dfc75104025003d57b3b59d",
   },
   {
@@ -2530,6 +3057,7 @@ export const generatedHymns = [
     tuneName: "Greensleeves",
     meter: "8 7 8 7 6 8 6 7",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "70ee1565790f024e7b246049581827a631e184f5308afeba4ad0c9bad0e69574",
   },
   {
@@ -2540,6 +3068,7 @@ export const generatedHymns = [
     tuneName: "Duke Street",
     meter: "8 8 8 8",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "1c4c31fbe9e129bbd9ee6fe08388ee04c8502e5c59d5b7366e85f9bdbf5c4c23",
   },
   {
@@ -2550,6 +3079,7 @@ export const generatedHymns = [
     tuneName: "Hamburg",
     meter: "8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "6b7428679417218eb0f7f8dbb20ff5e9a4b7c5f1c6c81347ffb4beb5c42d108d",
   },
   {
@@ -2560,6 +3090,7 @@ export const generatedHymns = [
     tuneName: "Rockingham Old",
     meter: "8 8 8 8",
     originalKey: "d-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "721064c2bb56316ae087e31885a4729cf03a425c4846b0aa18a2cf75e867f3e1",
   },
   {
@@ -2570,7 +3101,19 @@ export const generatedHymns = [
     tuneName: "When The Roll Is Called Up Yonder",
     meter: "15 11 15 11 8 8 8 11",
     originalKey: "a-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "eaf73b4c13e2c5dc66df2eb81b3d3fe039daaec745219e789f6a6d8fcd2a2294",
+  },
+  {
+    id: "when-we-all-get-to-heaven",
+    slug: "when-we-all-get-to-heaven",
+    title: "When We All Get To Heaven",
+    textAuthor: "Eliza E. Hewitt",
+    tuneName: "HEAVEN",
+    meter: "Irregular",
+    originalKey: "d-flat-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "bfd6f8ebda2c110c4f36033effe49b8aff8f6e43531fc9fa7afd7613086d6636",
   },
   {
     id: "where-he-leads-me",
@@ -2580,6 +3123,7 @@ export const generatedHymns = [
     tuneName: "Blandy",
     meter: "8 8 8 9 8 8 8 9",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "6a32577423b312153afaadc6ba81f1f810c45c1da63c0edcb322437c0f9fffe7",
   },
   {
@@ -2590,6 +3134,7 @@ export const generatedHymns = [
     tuneName: "Federal Street",
     meter: "8 8 8 8",
     originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "b45dcbf70d2be382c47704bd60474c0375ec7b65f419184186f2dadaf7dfa973",
   },
   {
@@ -2600,6 +3145,7 @@ export const generatedHymns = [
     tuneName: "Whiter Than Snow",
     meter: "11 11 11 11 9 11",
     originalKey: "a-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "d05be017b3cbcf1848a0b03094cd42d26ebdd2ff1d057e4e035e2b8aee5c59bf",
   },
   {
@@ -2610,6 +3156,7 @@ export const generatedHymns = [
     tuneName: "Mensch, Willt du Leben Seligich",
     meter: "8 8 8 7 4",
     originalKey: "c-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "ea66fefc074cc862d71c449f6879a22d641df023ba7191fe1429fd01e7cf6545",
   },
   {
@@ -2620,6 +3167,29 @@ export const generatedHymns = [
     tuneName: "Franconia",
     meter: "6 6 8 6",
     originalKey: "e-flat-major",
+    sourceLabel: "Open Hymnal",
     scoreSha256: "34c0b75e4fc1f0ff7d1d01dafa036f8ce6b195427f2b62ab5d6c0c974afa6243",
+  },
+  {
+    id: "wonderful-words-of-life",
+    slug: "wonderful-words-of-life",
+    title: "Wonderful Words Of Life",
+    textAuthor: "Philip P. Bliss",
+    tuneName: "WORDS OF LIFE",
+    meter: "Irregular",
+    originalKey: "g-major",
+    sourceLabel: "HymnsToGod",
+    scoreSha256: "8ce608700ecdcbc01c1d65736b500d1536a4ba068ee6f555b9fa30b7b2e90095",
+  },
+  {
+    id: "you-parents-hear-what-jesus-taught",
+    slug: "you-parents-hear-what-jesus-taught",
+    title: "You Parents Hear What Jesus Taught",
+    textAuthor: "Ludwig Helmbold",
+    tuneName: "Herr Jesu Christ, Dict Zu Uns Wend",
+    meter: "8 8 8 8",
+    originalKey: "f-major",
+    sourceLabel: "Open Hymnal",
+    scoreSha256: "a205faa9ae1c188e784a90caa5246a83fefb4636fa14857a836b61c389308dc7",
   },
 ] as const;

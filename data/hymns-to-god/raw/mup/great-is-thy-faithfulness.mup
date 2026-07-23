@@ -1,0 +1,416 @@
+// !Mup vs. 7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This MUP code is donated to the public domain.
+
+// Hymn Source:	
+//	Victorious Revival Songs
+//	Authorized by The International Federation of Christian Workers
+//	Compiled and Edited by: Albert C Fisher and William M. Runyan
+//	Federation Publishing Company
+//	Siloam Springs, Ark.
+//	Copyright 1925
+//	Hymn no. 70
+				
+// Transcribed by: Ted Gatza, Jr. 07/10/2022
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (19) "" "Great Is Thy Faithfulness" ""
+   title (2)""
+   title (11) "" "\f(TI)It is of Jehovah's lovingkindnesses that we are not consumed" "" 
+   title (11) "" "\f(TI)because his compassions fail not. They are new every morning;" "" 
+   title (11) "" "\f(TI)great is thy faithfulness. - Lam. 3:22-23" ""
+   title (11) "E\(flat) - 3 - MI" "" ""
+   title (13) "T. O. Chisholm" "" "William M. Runyan, 1923"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/4	
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (12) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (12) above 1: 1 "Refrain"; @
+         define RALL ital (12) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+
+//Verse
+
+//1
+1:4eg; ; ;
+2: 4eb; ; ebn;
+
+	VS "<1. >-1|\"Great is Thy";
+	VS "<2. >-1|Sum-mer and";
+	VS "<3. >-1|Par-don for";
+bar
+
+//2
+1 1:4.eg; 8f; 4;
+1 2: 4.s; 8e; 4;
+2: 4.a-c+; 8; 4;
+
+	VS21 "faith-ful-ness,\"";
+	VS21 "win-ter, and";
+	VS21 "sin and a";
+bar
+
+//3
+1: 4da; ea; fa;
+2: 4b-b; b-c+; b-d+;
+
+	VS "O God my";
+	VS "spring-time and";
+	VS "peace that en-";
+bar
+
+//4
+1: 4ea; 2eg;
+2: 4ec+; 2eb;
+
+	VS "Fa-ther,";
+	VS "har-vest,";
+	VS "dur-eth,";
+bar
+
+//5
+1: 4ec+; ed+; ec+;
+2 1: 4a; b; a;
+2 2: 4a; ; ;
+
+	VS "There is no";
+	VS "Sun, moon and";
+	VS "Thy own dear";
+bar
+
+//6
+1: 4.eb; 8da; 4eg;
+2: 4.gb; 8fb; 4eb;
+
+	VS "shad-ow of";
+	VS "stars in their";
+	VS "pres-ence to";
+bar
+
+//7
+1 1: 4f; eng; e&an;
+1 2: 4f; 2s;
+2: 4can; cb; fc+;
+
+	VS21 "turn-ing with";
+	VS21 "cours-es a-";
+	VS21 "cheer and to";
+bar
+
+//8
+1: 2.db;
+2: 2.b-b;
+
+	VS "Thee;";
+	VS "bove,";
+	VS "guide;";
+bar
+
+//9
+1 1:4b; ac+; ad+;
+1 2: 4a; 2s;
+2 1: 4bd+; ; b;
+2 2: 2s; 4b;
+
+
+	VS "Thou chang-est";
+	VS "Join with all";
+	VS "Strength for to-";
+bar
+
+//10
+1: 4.ge+; 8bd+; 4ac+;
+2: 4.eb; 8ec+; 4ed+;
+
+	VS "not, Thy com-";
+	VS "na-ture in";
+	VS "day and bright";
+bar
+
+//11
+1: 4gb; fa; eg;
+2: 4ee+; fc+; gb;
+
+	VS "pas-sion, they";
+	VS "man-i-fold";
+	VS "hope for to-";
+bar
+
+//12
+1 1: 4eg; 2f;
+1 2: 4s; 2e;
+2: 4ac+; 2;
+
+	VS "fail not,";
+	VS "wit-ness";
+	VS "mor-row,";
+bar
+
+//13
+1: 4f#c+; fd+; fe+;
+2: 4ane+; ad+; ac+;
+
+	VS "As Thou hast";
+	VS "To Thy great";
+	VS "Bless-ings all";
+bar
+
+//14
+1: 4.ge+; 8gb; 4;
+2 1: 4.b; 8be; 4;
+2 2: 4.b; 4.s;
+
+	VS "been, Thou for-";
+	VS "faith-ful-ness,";
+	VS "mine, with ten";
+bar
+
+//15
+1: 4eg; dg; b-f;
+2: 4b-c+; b-b; b-a;
+
+	VS "ev-er wilt";
+	VS "mer-cy and";
+	VS "thou-sand be-";
+bar
+
+//16
+1: 2.b-e;
+2: 2.eg;
+
+	VS "be.";
+	VS "love.";
+	VS "side!";
+dblbar
+
+//17
+newscore
+CHORUS
+1: 4db; ; df;
+2: 4b-f; ; b-b;
+
+	VS "\"Great is Thy";
+bar
+
+//18
+1: 8.ea; 16eg; 2;
+2: 8.ec+; 16eb; 2;
+
+	VS "faith-ful-ness!";
+bar
+
+//19
+1: 4enc+; ; eg;
+2: 4cb; cg; cc+;
+
+	VS "Great is Thy";
+bar
+
+//20
+1: 8.fb; 16fa; 2;
+2: 8.fd+&; 16fc+; 2;
+
+	VS "faith-ful-ness!\"";
+bar
+newscore
+
+//21
+1 1: 4b; ac+; ad+;
+1 2: 4a; 2s;
+2 1: 4b-?bd+; ; b;
+2 2: 2s; 4b-?b;
+
+	VS "Morn-ing by";
+bar
+
+//22
+1: 4ge+; gb; g&c+;
+2: 4eb; ; ;
+
+	VS "morn-ing new";
+bar
+
+//23
+1: 4fd+; ge+; ec+;
+2: 4fb; ; fan;
+
+	VS "mer-cies I";
+bar
+
+//24
+1: 2.db;
+2: 2.b-b;
+
+	VS "see;";
+bar
+
+//25
+1 1: 4b; ac+; ad+;
+1 2: 4a; 2s;
+2 1: 4bd+; ; b;
+2 2: 2s; 4b;
+
+	VS "All I have";
+bar
+
+//26
+1: 4.ge+; 8bd+; 4ac+;
+2: 4.eb; 8ec+; 4ed+;
+
+	VS "need-ed Thy";
+bar
+
+//27
+1: 4gb; fa; eg;
+2: 4ee+; fc+; gb;
+
+	VS "hand hath pro-";
+bar
+
+//28
+1 1: 4eg; f; r;
+1 2: 4s; e; s;
+2: 4ac+; ; r;
+
+	VS "vid-ed,\(emdash)";
+bar
+
+//29
+1: 4f#c+; fd+; [up]fe+;
+AST (1)
+AST (2)
+AST (3)
+2: 4ane+; ad+; ac+;
+ABB (1)
+ABB (2)
+ABB (3)
+
+	VS "\"Great is Thy";
+bar
+
+//30 
+1: 4.ge+; 8gb; 4;
+AST (1)
+AST (2.5)
+FST (3)
+2 1: 4.b; 8be+; 4;
+2 2: 4.b; 4.s;
+ABB (1)
+ABB (2.5)
+FBB (3)
+
+	VS "faith-ful-ness,\"";
+bar
+
+//31
+1: 4eg; da; b-d;
+2: 4b-b; b-f; b-a;
+RALL
+	VS "Lord, un-to";
+bar
+
+//32
+1: 2.b-e;
+2: 2.eg;
+
+	VS "me!";
+endbar

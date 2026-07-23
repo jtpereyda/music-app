@@ -1,0 +1,262 @@
+// !Mup vs. 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	The Great Awakening
+//	A choice collection of New
+//	and standard Gospel songs
+//	Editor Sam. P. Jones
+//	Publisher: John Church Company., 
+//	74 W. Fourth St. 
+//	Chicago: Root & Sons Music Co., 200 Wabash Ave.
+//	New York: The J. Church Co., 55 E. 13th St.
+//	Copyright: 1886
+//	Hymn No. 11
+		
+// Transcribed by: Ted Gatza, Jr. 05/27/2014
+
+// Revisions:
+//	09/02/2022
+//	11/25/2025 [1] Updated Mup code.
+//		   [2] Removed Vs. 3.
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4	
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+top
+
+   	title bold (19) "" "Are You Washed In The Blood?" ""
+   	title (2)""
+   	title (11) "" "\f(TI)...they washed their robes, and made them white in the blood of the Lamb. - Rev. 7:14" ""   
+   	title (11) "A \(flat) - 4 - MI" "" ""
+   	title (13) "Elisha A. Hoffman" "" "Elisha A. Hoffman, 1878"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+        define VS lyrics between 1&2: @
+        define DSVS lyrics below 2: @
+
+   //Chorus
+        define CHORUS ital (13) above 1: 1 "Chorus"; @	
+        define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+        define SFERM(COUNT)
+        mussym (9) above 1: COUNT "ferm";
+        @
+        define BFERM(COUNT)
+        mussym (9) below 2: COUNT "uferm";
+	@
+//=========================
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+//1
+1: 8ca-; ec; 2.s;
+2: 8ea-;; 2.s;
+
+	VS "<1. >-1|Have you";
+	VS "<2. >-1|Are you";
+//	VS "<3. >-1|When the";
+	VS "<3. >-1|Lay a-";
+bar
+
+//2
+1 1: 4ac;; 8; ec; c; ec;
+1 2: 4s;; 8;; c; s;
+2: 4ea-;; 8; aa-;;;
+
+	VS "been to Je-sus for the";
+	VS "walk-ing dai-ly by the";
+//	VS "Bride-groom com-eth, will your";
+	VS "side the gar-ments that are";
+bar
+
+//3
+1: 4ac; ad; ac; 8ae; be;
+2: 4aa-; fd; ea-; 8ac; ge;
+
+	VS "cleans-ing pow'r? Are you";
+	VS "Sav-ior's side? Are you";
+//	VS "robes be white, Pure and";
+	VS "stained with sin, And be";
+bar
+
+//4
+1: 4c+e; 8;; 4; 8be; adn;
+2 1: 4a; 8;; 4; 8bg; bf;
+2 2: 4a; 8;; 4; 8s;;
+
+	VS "washed in the blood of the";
+	VS "washed in the blood of the";
+//	VS "white in the blood of the";
+	VS "washed in the blood of the";
+bar
+
+//5
+1: 2.be; 8c+e; bd;
+2 1: 2.ge; 8ae; e;
+2 2: 2.s; 8; e;
+
+	VS "Lamb? Are you";
+	VS "Lamb? Do you";
+//	VS "Lamb? Will your";
+	VS "Lamb; There's a";
+bar
+
+//6
+1: 4ac;; 8; c+e; be; ae;
+2: 4ea-;; 8; aa-; gb-; ac;
+
+	VS "ful-ly trust-ing in his";
+	VS "rest each mo-ment in the";
+//	VS "soul be read-y for the";
+	VS "foun-tain flow-ing for the";
+bar
+
+//7
+1: 4fd;;; 8;;
+2: 4ad;;; 8;;
+
+	VS "grace this hour? Are you";
+	VS "Cru-ci-fied? Are you";
+//	VS "man-sions bright, And be";
+	VS "soul un-clean, Oh, be";
+bar
+
+//8
+1: 4ec; 8;; 4ae; 8gd;;
+2: 4ae; 8;; 4c+e; 8be;;
+
+	VS "washed in the blood of the";
+	VS "washed in the blood of the";
+//	VS "washed in the blood of the";
+	VS "washed in the blood of the";
+bar
+
+//9
+1: 2.ae; 4s;
+2: 2.aa-; 4s;
+
+	VS "Lamb?";
+	VS "Lamb?";
+//	VS "Lamb?";
+	VS "Lamb!";
+dblbar
+newscore
+//10
+CHORUS
+1: 8c+e; bd; 2.s;
+2: 4r; 2.s;
+
+	VS "Are you";
+bar
+
+//11
+1: 2.ac; 8; ge;
+2: 4r; 8aa-;; 4; r;
+
+	VS "washed in the";
+	VS 4s; 8;; 4; 4s; "Are you washed";
+bar
+
+//12
+1: 2.fd; 8ge; fd;
+2: 4r; 8ad;; 4; 8;;
+
+	VS "blood, In the";
+	VS 4s; 8;; 4; 8s; s; "in the blood";
+bar
+newscore
+//13
+1: 4ec; 8ae; be; 4c+e; 8d+e; c+e;
+2 1: 4aa-; 8ac; 8ge; 4a; 8bg; a;
+2 2: 4s; 8;; 4a; 8s;;
+
+	VS "soul cleans-ing blood of the";
+bar
+
+//14
+1: 2.be; 8c+e; bd;
+2 1: 4ge; 8;; 4; 8ae; e;
+2 2: 4s; 8;; 4; 8; e;
+
+	VS "Lamb? Are your";
+	VS 4s; 8; 8; 4; 8s; s; "of the Lamb?";
+bar
+
+//15
+1: 4ac;; 8; c+e; be; ae;
+2: 4ea-;; 8; aa-; gb-; ac;
+
+	VS "gar-ments spot-less? Are they";
+bar
+
+//16
+1: 4fd;;; 8;;
+2: 4ad;;; 8;;
+
+	VS "white as snow? Are you";
+bar
+
+//17
+1: 4ec; 8;; 4ae; 8gd;;
+2: 4ae; 8;; 4c+e; 8be;;
+
+	VS "washed in the blood of the";
+bar
+
+//18 
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+	VS "Lamb?";
+endbar
+

@@ -1,0 +1,229 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	The Best Gospel Songs And Their Composers
+//		By A. J. Showalter
+//		Published by The A. J. Show Alter Co.,
+//		Dalton, Georgia.
+//		The Showalter-Patton Co.,
+//		Dallas, Texas
+//		Copyright 1904
+//		Hymn No. 91
+		
+// Transcribed by: Ted Gatza, Jr. 11/27/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Near The Cross" ""
+   title (2) ""
+   title (11)"" "\f(TI)and might reconcile them both in one body unto God through" ""
+   title (11)"" "\f(TI)the cross, having slain the enmity thereby: - Eph. 2:16" ""
+
+   title (11)"F - 2 - MI" "" ""  
+   title (13) "Fanny J. Crosby, 1869" "" "William H. Doane, 1869"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=1 //2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=f
+
+
+staff 2
+	key=f
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=75";
+
+// Enter music
+//============
+//1
+1: 4fa; 8fb; 4fa; 8eg;
+2: 4fc+; 8fd+; 4fc+; 8cb;
+	
+	VS "<1. >-1|Je-sus, keep me";
+	VS "<2. >-1|Near the cross, a";
+	VS "<3. >-1|Near the cross, O";
+	VS "<4. >-1|Near the cross, I'll";
+bar
+//2
+1 1: 4fd; 8d; 4db-; 8r;
+1 2: 4s; 8d; 4s; 8s;
+2: 4ad; 8bb-; 4fb-; 8r;
+
+	VS "near the cross;";
+	VS "trem-bling soul;";
+	VS "Lamb of God,";
+	VS "watch and wait,";
+bar
+//3
+1 1: 4c; 8cf; 4; 8fa;
+1 2: 4c; 8s; 4; 8;
+2: 4fa; 8; 4ac+; 8fc+;
+
+	VS "There a pre-cious";
+	VS "Love and mer-cy";
+	VS "Bring is scenes be-";
+	VS "Hop-ing, trust-ing";
+bar
+//4
+1: 4.fa; 4eg; 8r;
+2: 4.cc+; 4; 8r;
+
+	VS "foun-tain,";
+	VS "found me;";
+	VS "fore me;";
+	VS "ev-er,";
+bar
+//5
+1: 4fa; 8fb; 4fa; 8eg;
+2: 4fc+; 8fd+; 4fc+; 8cb;
+
+	VS "Free to all\(emdash) a";
+	VS "There the bright and";
+	VS "Help me walk from";
+	VS "Till I reach the";
+bar
+//6
+1 1: 4df; 8d; 4b-d; 8r;
+1 2: 4s; 8d; 4s; 8;
+2: 4da; 8b-b; 4b-f; 8r;
+
+	VS "heal-ing stream\(emdash)";
+	VS "morn-ing star";
+	VS "day to day";
+	VS "gold-en strand,";
+bar
+//7
+1: 4a-c; 8cf; 4; 8ce; 
+2: 4cf; 8ca; 4; 8cg;
+
+	VS "Flows from Cal-v'ry's";
+	VS "Sheds its beams a-";
+	VS "With its shad-ow";
+	VS "Just be-yond the";
+bar
+//8
+1: 4.cg; 4cf; 8r;
+2: 4.cb; 4fa; 8r;
+
+	VS "moun-tain.";
+	VS "round me.";
+	VS "o'er me.";
+	VS "riv-er.";
+dblbar
+//9
+1: 4fa; 8fc+; 4.;
+2: 4fc+; 8fa; 4.;
+REFRAIN
+
+	VS [c]"In the cross,";
+bar
+//10
+1: 4fb; 8fd+; 4.;
+2 1: 4bd+; 8b; 4.;
+2 2: 4s; 8b; 4.;
+
+	VS [c]"in the cross,";
+bar
+//11
+1: 4fc+; 8fd+; 4fc+; 8fa;
+2: 4fa; 8fb; 4fa; 8fc+;
+
+	VS [c]"Be my glo-ry";
+bar
+//12
+1: 4.fa; eg;
+2: 4.cc+;;
+
+	VS [c]"ev-er,";
+bar
+//13
+1: 4ca; 8db; 4ca; 8c#g;
+2 1: 4f; 8; 4; 8a-e;
+2 2: 4f; 8; 4; 8s;
+
+	VS "Till my rap-tured";
+bar
+//14
+1: 4df; 8b-d; 4; 8r;
+2: 4b-d; 8b-f; 4; 8r;
+
+	VS "soul shall find";
+bar
+//15
+1: 4a-c; 8cf; 4; 8ce;
+2: 4cf; 8ca; 4; 8cg;
+
+	VS "Rest be-yond the";
+bar
+//16
+1: 4.cg; 4cf; 8r;
+2: 4.cb; 4fa; 8r;
+
+	VS "riv-er.";
+endbar
+
+
+
+
+
+
+
+

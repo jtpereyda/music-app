@@ -86,6 +86,15 @@ so ingestion must decode it explicitly and preserve the original bytes.
 | Clearly restricted/non-PD | 17 | 20 |
 | Ambiguous/manual review | 1 | 1 |
 
+Catalog revision 5 continues to use the combined ABC for 269 records and adds
+eight compatible, non-duplicate records from the pinned split ZIP. Its other 13
+records come from the separately audited HymnsToGod collection. ZIP
+records retain their exact entry filename and archive ordinal in catalog
+provenance. The split collection's normalized hash
+`245efeb8e0864229f9f9706f4fdb1e23fb7f4ec7f91977d1280da58c075762a7`
+is calculated over every decoded ABC entry in archive order, with the UTF-8
+entry name and content protected by fixed-width length framing.
+
 The combined file contains only 288 unique `X:` values: `X: 1` is reused six
 times. `X:` is not a stable identifier. Use the pinned artifact hash plus entry
 filename (ZIP) or record ordinal (combined file), then assign an internal ID.

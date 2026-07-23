@@ -1,0 +1,338 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+// 	Revival Gems Number Two
+//	For Use In Evangelistic Meetings, Church Services, Mid-Week Meetings,
+//	Sabbath Schools, Young People's Meetings
+//	Published By Samuel W. Beazley & Son
+//	53 W. Jackson Blvd. Chicago, Il
+//	Copyright: 1927
+//	Hymn No.: 10
+
+// Transcribed by: Ted Gatza, Jr. 12/08/2024
+
+// Revisions:
+
+// HymnsToGod.org
+
+//Lyric revision notes. [1] Verse 3 I changed "death beds are nearing" to "life's end is nearing."
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=6/8
+	key=a&
+
+staff 2
+	key=a&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Softly And Tenderly" ""
+   title (2) ""
+   title (11) "" "\f(TI)I come not to call the righteous, but sinners to repentance - Lk. 5:32" "" 
+   title (11) "" 
+   title (11) "A \(flat) - 2 - MI" "" ""
+   title (13) "Will L. Thompson, arr." "" "Will L. Thompson, 1880"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=60";
+
+//=========================
+
+// Verse
+
+//1
+1: 8.ec+; 16db; 8ca; 8ea; dg; ca;
+2: 8.a-a; 16; 8; ca; b-e; a-e;
+
+	VS "<1. >-1|Soft-ly and ten-der-ly";
+	VS "<2. >-1|Why should we tar-ry when";
+	VS "<3. >-1|Time is now fleet-ing, the";
+	VS "<4. >-1|Oh! for the won-der-ful";
+bar
+
+//2
+1: 8db; da; df; ; ce; r;
+2: 8df; ; da; a-a; ; r;
+
+	VS "Je-sus is call-ing,";
+	VS "Je-sus is plead-ing,";
+	VS "mo-ments are pass-ing,";
+	VS "love He has prom-ised,";
+bar
+
+//3
+1: 8ea; ; ; 8.dnc+; 16db; 8da;
+2: 8ac+; ; ; 8.fa; 16; 8fb;
+
+	VS "Call-ing for you and for";
+	VS "Plead-ing for you and for";
+	VS "Pass-ing for you and for";
+	VS "Prom-ised for you and for";
+bar
+
+//4
+1: 4.eb tie; 4; 8r;
+2: 4.eg tie; 4; 8r;
+
+	VS "me;";
+	VS "me;";
+	VS "me;";
+	VS "me;";
+bar
+
+//5
+1: 8.ec+; 16db; 8ca; 8ea; dg; ca;
+2: 8.a-a; 16; 8; ca; b-e; a-e;
+
+	VS "See, on the por-tals He's";
+	VS "Why should we lin-ger and";
+	VS "Shad-ows are gath-er-ing,";
+	VS "Tho' we have sinned, He has";
+bar
+
+//6
+1: 8db; da; df; ; ce; r;
+2: 8df; ; da; a-a; ; r;
+
+
+	VS "wait-ing and watch-ing,";
+	VS "heed not His mer-cies,";
+	VS "life's end is com-ing";
+//	VS "death beds are com-ing,"; // Original lyrics
+	VS "mer-cy and par-don,";
+bar
+
+//7
+1: 8ea; ; fd+; 8.ec+; 16ca; 8db;
+2: 8ca; ; da; 8.ea; 16; 8eg;
+
+	VS "Watch-ing for you and for";
+	VS "Mer-cies for you and for";
+	VS "Com-ing for you and for";
+	VS "Par-don for you and for";
+bar
+
+//8
+1: 4.ca tie; 4; 8s;
+2: 4.a-a tie; 4; 8s;
+
+	VS "me.";
+	VS "me?";
+	VS "me.";
+	VS "me.";
+dblbar
+newscore
+
+REFRAIN
+//9
+1 1: 4.s; 4; 8e;
+1 2: 4.s; 4; 8r;
+2: 4.s; 4; 8r;
+
+	VS "Come";
+bar
+
+//10
+1 1: 4.b tie; 4; 8c+;
+1 2: 4r; 8g; 4; 8r;
+2 1: 4s; 8s; 4; 8e+;
+2 2: 4r; 8ed+; 4; 8r;
+
+	VS "home,_ come";
+	VS22 "Come home,";
+bar
+
+//11
+1 1: 4a; 8b; 4.c+;
+1 2: 4r; 8g; 4.a;
+   phrase above 1: 1 til 6;
+2 1: 4c+; 8e+; 4.;
+2 2: 4r; 8e; 4.a;
+   phrase above 2: 1 til 6;
+
+	VS 4; 8s; 4.s; "home,_";
+	VS22 "come home,";
+bar
+
+//12
+1 1: 8gb; ; b; 16anc+; 8.; 8a&d+n;
+1 2: 8s; ; b; 16s; 8.; 8;
+   < above 1: 1 til 3;
+2 1: 8be+; ; ge+; 16fe+; 8.; 8b;
+2 2: 8s; ; ; 16; 8.; 8b;
+
+	VS "Ye who are wea-ry, come";
+bar
+
+//13
+1: 4ge+; 8ad+n; 4bd+&; 8r;
+   phrase above 1: 1 til 5;
+   phrase below 1: 1 til 5;
+      FST(1)
+      FST(3)
+      FST(4)
+2: 4eb; 8fb; 4ge+; 8r;
+    phrase above 2: 1 til 5;
+    phrase below 2: 1 til 5;
+      FBB(1)
+      FBB(3)
+      FBB(4)
+
+	VS 4; 8s; 4s; 8s;"home!_";
+bar
+newscore
+
+//14
+1: 8.ec+; 16db; 8ca; 8ea; dg; ca;
+   ital(15) dyn above 1: 1 "p";
+2: 8.a-a; 16; 8; ca; b-e; a-e;
+
+	VS "Ear-nest-ly, tend-er-ly,";
+bar
+
+//15
+1: 8db; da; df; ; ce; r;
+2: 8df; ; da; a-a; ; r;
+
+	VS "Je-sus is call-ing,";
+bar
+
+//16
+1: 16ea; 8.; 8fd+; 16ec+; 8.ca; 8db;
+   FST(3)
+   FST(4.5)
+   FST(6)
+   RIT(1);
+      < above 1: 1 til 3;
+2: 16ca; 8.; 8da; 16ea; 8.; 8eg;
+   FBB(3)
+   FBB(4.5)
+   FBB(6)
+
+	VS "Call-ing, O sin-ner, Come";
+bar
+
+//17
+1: 4.ca tie; 4; 8r;
+2: 4.a-a tie; 4; 8r;
+
+	VS "home!";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -36,6 +36,13 @@ def render_seed(catalog_path: Path = DEFAULT_CATALOG) -> str:
         source = item["source"]
         rights = item["rights"]
         lyrics = item["lyrics"]
+        source_reference = source.get("x_reference") or source.get(
+            "record_reference"
+        )
+        if not isinstance(source_reference, str) or not source_reference:
+            raise ValueError(
+                f"Catalog item {item['id']!r} has no source record reference."
+            )
         values = [
             _literal(item["id"]),
             str(revision),
@@ -52,7 +59,7 @@ def render_seed(catalog_path: Path = DEFAULT_CATALOG) -> str:
             _literal(source["collection_id"]),
             _literal(source["artifact_sha256"]),
             str(source["record_ordinal"]),
-            _literal(source["x_reference"]),
+            _literal(source_reference),
             _jsonb(source),
             _jsonb(rights),
             _jsonb(lyrics),

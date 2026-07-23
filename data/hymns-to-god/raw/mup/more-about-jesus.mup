@@ -1,0 +1,265 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 193	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 03/07/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "More About Jesus" ""
+   title (2)""
+   title (11) "" "\f(TI)But grow in the grace and knowledge of our Lord and saviour Jesus Christ." ""
+   title (11) "" "\f(TI)To him be the glory both now and for ever. Amen. - 2 Pet. 3:18?" ""
+   title (10) "A \(flat) - 2 - SOL" "" ""
+   title "Eliza. E. Hewitt" "" "John R. Sweney, 1887"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (13) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (13) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (13) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+//Verse
+
+//1
+1: 8.ce; 16; 8; 4; 8df;
+2: 8.a-a; 16; 8; 4; 8;
+
+
+	VS "<1. >-1|More a-bout Je-sus";
+	VS "<2. >-1|More a-bout Je-sus";
+	VS "<3. >-1|More a-bout Je-sus";
+	VS "<4. >-1|More a-bout Je-sus";
+bar
+
+//2
+1: 4ca; 8; 4.;
+2: 4a-e; 8; 4.;
+
+	VS "would I know,";
+	VS "let me learn,";
+	VS "in His word,";
+	VS "on His throne,";
+bar
+
+//3
+1: 8.eb; 16; 8; 4s; 8;
+2: 8.eg; 16; 8; 4s; 8;
+
+	VS "More of His";
+	VS "More of His";
+	VS "Hold-ing com-";
+	VS "Rich-es in";
+invisbar
+newscore
+
+1: 8.s; 16; 8; 4eb; 8ed+;
+2: 8.s; 16; 8; 4eg; 8eb;
+
+	VS "grace to";
+	VS "ho-ly";
+	VS "mun-ion";
+	VS "glo-ry";
+bar
+
+//4
+1: 4ec+; 8; 4.;
+2 1: 4a; 8; 4.;
+2 2: 4a; 8; 4.;
+
+	VS "oth-ers show;";
+	VS "will dis-cern;";
+	VS "with my Lord;";
+	VS "all His own;";
+bar
+
+//5
+SIGN (1);
+1: 8.ee+; 16; 8; 4; 8ed+;
+2 1: 8.ac+; 16; 8; 4; 8b;
+2 2: 8.s; 16; 8; 4; 8a;
+
+	VS "More of His sav-ing";
+	VS "Spir-it of God my";
+	VS "Hear-ing His voice in";
+	VS "More of His king-dom's";
+	BVS1 "<\f(TI)D.S. - \f(PV)>-8|More of His sav-ing";
+bar
+
+//6
+1: 4ec+; 8; 4.;
+2 1: 4a; 8; 4.;
+2 2: 4a; 8; 4.;
+
+	VS "full-ness see,";
+	VS "teach-er be,";
+	VS "ev-'ry line,";
+	VS "sure in-crease;";
+	BVS "full-ness see,";
+
+bar
+
+//7
+1: 8.db; 16ec+; 8ed+; 4ec+; 8fb;
+2: 8.df; 16 ca; 8b-g; 4ca; 8dd+;
+
+	VS "More of His love who";
+	VS "Show-ing the things of";
+	VS "Mak-ing each faith-ful";
+	VS "More of His com-ing,";
+	BVS1 "More of His love who";
+bar
+
+//18
+
+FINE(4);
+1: 4ea; 8dg; 4.ca;
+2: 4ec+; 8eb; 4.a-a;
+
+	VS "died for me.";
+	VS "Christ to me.";
+	VS "say-ing mine.";
+	VS "Prince of Peace.";
+	BVS "died for me.";
+dblbar
+
+//19
+REFRAIN
+1: 4.ec+; 8.ce; 16df; 8ce;
+2: 4.a-a; 8.; 16; 8;
+
+	VS "More, more a-bout";
+bar
+
+//20
+1: 4.ca; ;
+2: 4.a-e; ;
+
+	VS "Je-sus,";
+bar
+
+//21
+1:4.eb; 8.; 16ec+; 8ed+;
+2: 4.eg; 8.; 16ea; 8eb;
+
+	VS "More, more a-bout";
+bar
+
+//22
+DS(4)
+1: 4.ec+; ;
+2: 4.a-a; ;
+
+	VS "Je-sus;";
+endbar

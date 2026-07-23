@@ -1,0 +1,317 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Eternal Praise
+//		For The Church And Sunday School
+//		Compiled And Edited By Marion Lawrance
+//		General Secretary Of International Sunday School Association
+//		And E. O. Excell
+//		Hope Publishing Company
+//		Chicago
+//		Date: 1917
+//		Hymn No. 117
+
+
+// Transcribed by: Ted Gatza, Jr. 09/25/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=9/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Have Thine Own Way, Lord" ""
+   title (2) ""
+   title (11) "" "\f(TI)But now, O Jehovah, thou art our Father; we are the clay," "" 
+   title (11) "" "\f(TI)and thou our potter; and we all are the work of thy hand. - Isa. 64:8" "" 
+   title (11) "" 
+   title (11) "E\(flat) - 3 - MI" "" ""
+   title (13) "Adelaide Pollard, 1902" "" "George C. Stebbins, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define SLOWLY ital (15) above 1: 1 "Slowly"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=118";
+
+//=========================
+
+// Verse
+
+//1
+SLOWLY
+1 1: 2.s; ; 4eg; f; eg;
+1 2: 2.s; ; 4; 4e; s;
+2: 2.s; ; 4eb; ea; eb;
+
+	VS "<1. >-1|Have Thine own";
+	VS "<2. >-1|Have Thine own";
+	VS "<3. >-1|Have Thine own";
+
+bar
+
+//2a
+1: 2.ea; eg; 4s; ; ;
+2: 2.ec+; eb; 4s; ; ;
+
+
+	VS "way, Lord!";
+	VS "way, Lord!";
+	VS "way, Lord!";
+invisbar
+
+//2b
+1: 2.s; ; 4b-e; b-d; b-e;
+2 1: 2.s; ; 4eg; f; eg;
+2 2: 2.s; ; 4; e; s;
+
+	VS "Have Thine own";
+	VS "Have Thine own";
+	VS "Have Thine own";
+bar
+
+//3
+1: 2.df tie; ; 4s; ; ;
+2: 2.b-b tie; ; 4s; ; ;
+
+	VS "way!";
+	VS "way!";
+	VS "way!";
+invisbar
+
+//4
+1 1: 2.s; ; 4df; en; df;
+1 2: 2.s; ; 4s; d; s;
+2: 2.s; ; 4b-a; b-g; b-a;
+
+	VS "Thou art the";
+	VS "Search me and";
+	VS "Hold o'er my";
+bar
+
+//5a
+1: 2.dg; df; 4s; ; ;
+2: 2.b-b; b-a; 4s; ; ;
+
+	VS "Pot-ter;";
+	VS "try me,";
+	VS "be-ing";
+invisbar
+
+//5b
+1: 2.s; ; 4b-f; b-e; b-d;
+2: 2.s; ; 4b-a; b-g; b-f;
+
+	VS "I am the";
+	VS "Mas-ter, to-";
+	VS "Ab-so-lute";
+bar
+
+//6a
+1: 2.b-e tie; ; 4s; ; ;
+2: 2.eg tie; ; 4s; ; ;
+
+	VS "clay.";
+	VS "day!";
+	VS "sway!";
+invisbar
+
+//6b
+1 1: 2.s; ; 4eg; f; eg;
+1 2: 2.s; ; 4; e; s;
+2: 2.s; ; 4eb; ea; eb;
+
+	VS "Mould me and";
+	VS "Whit-er than";
+	VS "Fill with Thy";
+bar
+
+//7a
+1: 2.ea; eg; 4s; ; ;
+2: 2.ec+; eb; 4s; ; ;
+
+	VS "make me";
+	VS "snow, Lord,";
+	VS "Spir-it";
+invisbar
+
+//7b
+1: 2.s; ; 4d&b; can; db;
+2: 2.s; ; 4eg; ; ;
+
+	VS "Aft-er Thy";
+	VS "Wash me just";
+	VS "Till all shall";
+bar
+
+//8a
+1: 2.ec+ tie; ; 4s; ; ;
+2: 2.a-a tie; ; 4s; ; ;
+
+	VS "will,";
+	VS "now,";
+	VS "see";
+invisbar
+
+1: 2.s; ; 4ec+; ed+; ec+;
+2: 2.s; ; 4a-a; a-b; a-a;
+
+	VS "While I am";
+	VS "As in Thy";
+	VS "Christ on-ly";
+bar
+
+//9a
+1: 2.eb; eg; 4s; ; ;
+2: 2.b-g; b-b; 4s; ; ;
+
+	VS "wait-ing,";
+	VS "pres-ence";
+	VS "al-ways,";
+invisbar
+
+//9b
+1: 2.s; ; 4b-f; b-e; b-f;
+2: 2.s; ; 4b-a; b-g; b-a;
+
+	VS "Yield-ed and";
+	VS "Hum-bly I";
+	VS "Liv-ing in";
+bar
+//10
+1: 2.b-e tie; ; 4s; ; ;
+2: 2.eg tie; ; 4s; ; ;
+
+	VS "still.";
+	VS "bow,";
+	VS "me!";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

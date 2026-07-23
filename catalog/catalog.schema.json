@@ -42,10 +42,16 @@
       "additionalProperties": false,
       "properties": {
         "name": {
-          "const": "abc2xml"
+          "enum": [
+            "abc2xml",
+            "hymns-to-god-mup-satb"
+          ]
         },
         "version": {
-          "const": "268"
+          "enum": [
+            "1",
+            "268"
+          ]
         }
       },
       "required": [
@@ -199,7 +205,7 @@
           "type": "array"
         },
         "source_declaration": {
-          "pattern": "^copyright: public domain\\.",
+          "pattern": "^(copyright: public domain\\.|Copyright: Public Domain - USA)",
           "type": "string"
         },
         "source_music_reference": {
@@ -230,6 +236,9 @@
         "media_type": {
           "const": "application/vnd.recordare.musicxml+xml"
         },
+        "normalization": {
+          "$ref": "#/$defs/scoreNormalization"
+        },
         "path": {
           "pattern": "^scores/[a-z0-9]+(?:-[a-z0-9]+)*\\.musicxml$",
           "type": "string"
@@ -247,6 +256,35 @@
       ],
       "type": "object"
     },
+    "scoreNormalization": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "const": "open-hymnal-satb-normalizer"
+        },
+        "operations": {
+          "items": {
+            "enum": [
+              "align_measure_numbers",
+              "drop_empty_parts",
+              "split_combined_chord_voices"
+            ]
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "version": {
+          "const": "1"
+        }
+      },
+      "required": [
+        "name",
+        "operations",
+        "version"
+      ],
+      "type": "object"
+    },
     "sha256": {
       "pattern": "^[0-9a-f]{64}$",
       "type": "string"
@@ -255,11 +293,17 @@
       "additionalProperties": false,
       "properties": {
         "encoding": {
-          "const": "windows-1252"
+          "enum": [
+            "utf-8",
+            "windows-1252"
+          ]
         },
         "id": {
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
+        },
+        "manifest_sha256": {
+          "$ref": "#/$defs/sha256"
         },
         "normalized_utf8_sha256": {
           "$ref": "#/$defs/sha256"
@@ -275,8 +319,6 @@
       "required": [
         "encoding",
         "id",
-        "normalized_utf8_sha256",
-        "raw_sha256",
         "source_url"
       ],
       "type": "object"
@@ -291,9 +333,21 @@
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
         },
+        "entry_path": {
+          "minLength": 1,
+          "type": "string"
+        },
         "record_ordinal": {
           "minimum": 1,
           "type": "integer"
+        },
+        "record_reference": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "record_url": {
+          "format": "uri",
+          "type": "string"
         },
         "x_reference": {
           "minLength": 1,
@@ -303,8 +357,7 @@
       "required": [
         "artifact_sha256",
         "collection_id",
-        "record_ordinal",
-        "x_reference"
+        "record_ordinal"
       ],
       "type": "object"
     }

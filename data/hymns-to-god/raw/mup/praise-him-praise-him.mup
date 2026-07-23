@@ -1,0 +1,358 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Gospel Hymns Nos. 5 and 6 Combined
+//	For use in Gsopel Meetings and other religious services
+//	By Ira D. Sankey, James McGranahan and Geo. C. Stebbins
+//	Washington, D. C.
+//	Published by The Biglow & Main Co.
+//	76 East NInth st, New York
+//	215 Wabash Ave. Chicage
+//	The John Church Co.,
+//	74 West Fourth Street, Cincinnati
+//	13 East 16th Street, New York
+//	Fillmore Brothers, Publishers
+//	185 Race St,
+//	Published: 1892
+//	Hymn No. 4
+
+
+// Transcribed by:
+//	Ted Gatza, Jr. 12/04/2022
+
+// Revisions:
+	
+// HymnsToGod.org
+
+// ****************************************
+top
+
+   title bold (19) "" "Praise Him! Praise Him!" ""
+   title (2)""
+   title (11)"" "\f(TI)I will sing praises unto my God. - Ps. 146:2" "" 
+   title (11) " A\(flat) - 2 - MI" "" ""
+   title (13) "Fanny J. Crosby" "" "Chester G. Allen, 1869"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=1
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+       define DSV1 lyrics below 2 using 1: @
+       define DSV12 lyrics below 2 using 1 2: @
+       define DSV21 lyrics below 2 using 2 1:@
+       define DSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+       define SIGN mussym (10) above 1: 1 "sign"; @
+       define FINE(COUNT)
+          ital (13) above 1: COUNT "Fine."; @
+	define DS(COUNT)
+	  ital (13) above 1: COUNT "D.S."; @
+
+  //Fermatas
+       define FST(COUNT)
+          mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=110";
+
+//=========================
+//Verse 1
+
+//1
+1: 4.ec+; ee+;
+2 1: 4.a; ac+;
+2 2: 4.s; s;
+
+	VS1 "<1. >-1|Praise Him!";
+	VS1 "<2. >-1|Praise Him";
+	VS1 "<3. >-1|Praise Him";
+bar
+
+//2
+1: 4.ea; ec+;
+2 1: 4.ac+; a;
+2 2: 4.s; a;
+
+	VS1 "praise Him!";
+	VS1 "praise Him!";
+	VS1 "praise Him!";
+bar
+
+//3
+1: 8fb; fc+; fb; fa; eg; df;
+2: 8dd+; ; ; da; ; ;
+
+	VS1 "Je-sus, our bless-ed Re-";
+	VS1 "Je-sus, our bless-ed Re-";
+	VS1 "Je-sus, our bless-ed Re-";
+bar
+
+//4
+1: 4.ce; ca;
+2: 4.a-a; ;
+
+	VS1 "deem-er!";
+	VS1 "deem-er!";
+	VS1 "deem-er!";
+bar
+
+//5
+1: 4.ec+; ee+;
+2: 4.a-a; 4.ca;
+	VS1 "Sing, O";
+	VS1 "For our";
+	VS1 "Heav'n-ly";
+bar
+
+//6
+1: 4.ca; cc+;
+2: 4.fa; ;
+
+	VS1 "earth\(emdash) His";
+	VS1 "sins He";
+	VS1 "por-tals,";
+bar
+
+//7
+1: 8dnc+; db; da; 4db; 8dc+;
+2: 8b-a; ; ; 4b-f; 8b-a;
+
+	VS1 "won-der-ful-love pro-";
+	VS1 "suf-fered, and bled, and";
+	VS1 "loud with ho-san-nas";
+bar
+
+//8
+1: 4.db tie; 4; 8r;
+2: 4.eg tie; 4; 8r;
+
+	VS1 "claim!";
+	VS1 "died!";
+	VS1 "ring!";
+bar
+
+//9
+SIGN
+1: 4.ec+; ee+;
+2 1: 4.a; ac+;
+
+	VS1 "Hail Him!";
+	VS1 "He our";
+	VS1 "Je-sus";
+        DSV1 "<\f(TX)D.S. \f(PV)- >-4|Praise Him!";
+bar
+
+//10
+1: 4.ea; ec+;
+2 1: 4.ac+; a;
+2 2: 4.s; a;
+
+	VS1 "hail Him!";
+	VS1 "rock, our";
+	VS1 "Sav-iour,";
+	DSV1 "praise Him!";
+bar
+
+//11
+1: 8fb; fc+; fb; fa; eg; df;
+2: 8dd+; ; ; da; ; ; 
+
+	VS1 "high-est arch-an-gels in";
+	VS1 "hope of e-ter-nal sal-";
+	VS1 "reign-eth for-ev-er and";
+	DSV1 "tell of His ex-cel-lent";
+bar
+
+//12
+1: 4.ce; ca;
+2: 4.a-a; ;
+
+	VS1 "glo-ry!";
+	VS1 "va-tion,";
+	VS1 "ev-er;";
+	DSV1 "great-ness,";
+bar
+
+//13
+1: 4.ec+; g&e+;
+2: 4.a-a; ca;
+
+	VS1 "Strength and";
+	VS1 "Hail Him!";
+	VS1 "Crown Him!";
+	DSV1 "Praise Him!";
+bar
+
+//14
+1: 4.fd+; fb;
+2: 4.da; dd+;
+
+	VS1 "hon-or";
+	VS1 "hail Him!";
+	VS1 "crown Him!";
+	DSV1 "praise Him!";
+bar
+
+//15
+1: 8ea; eg; ea; 4ac+; 8gb;
+2: 8ec+; eb; ec+; 4ee+; 8ed+;
+
+	VS1 "give to His ho-ly";
+	VS1 "Je-sus, the cru-ci-";
+	VS1 "Proph-et, and Priest, and";
+	DSV1 "ev-er in joy-ful";
+bar
+
+//16
+FINE (6)
+1 1: 4.a tie; 4; 8r;
+1 2: 4.a tie; 4; 8s;
+2: 4.a-c+ tie; 4; 8r;
+
+	VS1 "name!";
+	VS1 "fied.";
+	VS1 "King!";
+	DSV1 "song!";
+dblbar
+
+//17
+1: 4.eb; ec+;
+2: 4.eg; ea;
+
+	VS1 "Like a";
+	VS1 "Sound His";
+	VS1 "Christ is";
+bar
+
+//18
+1 1: 4b slur; 8g; 4.e;
+1 2: 4.e; ;
+2 1: 4g slur; 8b; 4.eg;
+2 2: 4.e; s;
+
+	VS12 "shep-herd,";
+	VS12 "prais-es!";
+	VS12 "com-ing";
+bar
+
+//19
+1: 8ed+; ec+; eb; 4ec+; 8ed+;
+2: 8eb; ea; eg; 4ea; 8eb;
+
+	VS1 "Je-sus will guard His";
+	VS1 "Je-sus who bore our";
+	VS1 "o-ver the world vic-";
+bar
+
+//20
+1: 4.ec+; eb;
+2: 4.ea; eg;
+
+	VS1 "chil-dren,";
+	VS1 "sor-rows,";
+	VS1 "tor-ious";
+bar
+//21
+1: 4.ec+; ee+;
+2: 4.a-a; ca;
+
+	VS1 "In His";
+	VS1 "Love un-";
+	VS1 "Pow'r and";
+bar
+//22
+1: 4.ca; cc+;
+2: 4.fa; ;
+
+	VS1 "arms He";
+	VS1 "bound-ed,";
+	VS1 "glo-ry";
+bar
+
+//23
+1: 8dnc+; db; da; 4db; 8dc+;
+2: 8b-a; ; ; 4b-f; 8b-a;
+
+	VS1 "car-ries them all day";
+	VS1 "won-der-ful, deep and";
+	VS1 "un-to the Lord be-";
+bar
+
+//24
+DS (6)
+1: 4.eb tie; 4; 8r;
+2: 4.eg tie; 4; 8r;
+
+	VS1 "long;";
+	VS1 "strong;";
+	VS1 "long;";
+endbar
+
+
+
+
+
+
+
+

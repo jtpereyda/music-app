@@ -1,12 +1,29 @@
 {
-  "catalog_revision": "2",
+  "catalog_revision": "5",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
       "declared_version": "268",
       "sha256": "76cd2c5c4fc44b28ab2ce923f196d23d09b93fcefa8cfa90a10754d38e15b56e"
     },
-    "selected_cleanup_required": 260
+    "hymns_to_god": {
+      "generator": {
+        "name": "hymns-to-god-mup-satb",
+        "version": "1"
+      },
+      "mup_version": "7.2"
+    },
+    "satb_normalizations": {
+      "name": "open-hymnal-satb-normalizer",
+      "operation_counts": {
+        "align_measure_numbers": 1,
+        "drop_empty_parts": 1,
+        "split_combined_chord_voices": 6
+      },
+      "version": "1"
+    },
+    "selected_cleanup_required": 274,
+    "supplement_cleanup_required": 7
   },
   "excluded": {
     "rights_holds": [
@@ -117,6 +134,12 @@
         "reason": "missing_exact_public_domain_declaration",
         "reference": "305",
         "title": "Awake My Soul, An Offering Bring"
+      },
+      {
+        "collection_id": "hymns-to-god-public-domain-usa",
+        "reason": "individual_page_rights_unknown",
+        "record_ordinal": 7,
+        "title": "I Surrender All"
       }
     ],
     "structure_holds": [
@@ -139,15 +162,6 @@
         "voices": 5
       },
       {
-        "ordinal": 30,
-        "parts": 2,
-        "reason": "unsupported_satb_shape",
-        "reference": "51",
-        "soprano_lyrics": true,
-        "title": "Away In A Manger",
-        "voices": 2
-      },
-      {
         "ordinal": 70,
         "parts": 3,
         "reason": "unsupported_satb_shape",
@@ -166,33 +180,6 @@
         "voices": 7
       },
       {
-        "ordinal": 134,
-        "parts": 2,
-        "reason": "unsupported_satb_shape",
-        "reference": "155",
-        "soprano_lyrics": true,
-        "title": "Jesus Loves Me",
-        "voices": 2
-      },
-      {
-        "ordinal": 138,
-        "parts": 2,
-        "reason": "unsupported_satb_shape",
-        "reference": "159",
-        "soprano_lyrics": true,
-        "title": "The Law Of God Is Good And Wise",
-        "voices": 3
-      },
-      {
-        "ordinal": 157,
-        "parts": 3,
-        "reason": "unsupported_satb_shape",
-        "reference": "178",
-        "soprano_lyrics": true,
-        "title": "Praise My Soul The King Of Heaven",
-        "voices": 4
-      },
-      {
         "ordinal": 197,
         "parts": 3,
         "reason": "unsupported_satb_shape",
@@ -202,33 +189,6 @@
         "voices": 6
       },
       {
-        "ordinal": 223,
-        "parts": 2,
-        "reason": "unsupported_satb_shape",
-        "reference": "244",
-        "soprano_lyrics": true,
-        "title": "Did You Think To Pray?",
-        "voices": 2
-      },
-      {
-        "ordinal": 248,
-        "parts": 2,
-        "reason": "unsupported_satb_shape",
-        "reference": "269",
-        "soprano_lyrics": true,
-        "title": "Now Thank We All Our God",
-        "voices": 3
-      },
-      {
-        "ordinal": 283,
-        "parts": 2,
-        "reason": "unsupported_satb_shape",
-        "reference": "304",
-        "soprano_lyrics": true,
-        "title": "You Parents Hear What Jesus Taught",
-        "voices": 2
-      },
-      {
         "ordinal": 293,
         "parts": 3,
         "reason": "unsupported_satb_shape",
@@ -236,15 +196,57 @@
         "soprano_lyrics": true,
         "title": "O Trinity of Blessed Light",
         "voices": 5
+      },
+      {
+        "collection_id": "hymns-to-god-public-domain-usa",
+        "detail": "The refrain contains a non-monophonic secondary bass voice and falls outside the four-principal-line SATB profile.",
+        "reason": "unsupported_satb_shape",
+        "record_ordinal": 12,
+        "title": "Softly And Tenderly"
+      },
+      {
+        "collection_id": "hymns-to-god-public-domain-usa",
+        "detail": "Two cadences contain three principal pitches on the lower staff and fall outside the four-principal-line SATB profile.",
+        "reason": "unsupported_satb_shape",
+        "record_ordinal": 13,
+        "title": "Stand Up, Stand Up For Jesus!"
+      },
+      {
+        "collection_id": "hymns-to-god-public-domain-usa",
+        "detail": "The final cadence contains three principal pitches on the lower staff and falls outside the four-principal-line SATB profile.",
+        "reason": "unsupported_satb_shape",
+        "record_ordinal": 14,
+        "title": "There Is Power In The Blood"
       }
     ]
   },
   "schema_version": 1,
+  "source_breakdown": {
+    "combined_abc": {
+      "catalog_items": 269,
+      "exact_public_domain_candidates": 275,
+      "source_records": 293
+    },
+    "hymns_to_god": {
+      "catalog_items": 13,
+      "public_domain_page_declarations": 16,
+      "rights_holds": 1,
+      "source_records": 17,
+      "structure_holds": 3
+    },
+    "split_zip": {
+      "archive_exact_public_domain_candidates": 285,
+      "archive_records": 306,
+      "selected_compatible_additions": 8
+    }
+  },
   "summary": {
-    "catalog_items": 262,
-    "exact_public_domain_candidates": 275,
-    "rights_holds": 18,
-    "source_records": 293,
-    "structure_holds": 13
+    "catalog_items": 290,
+    "exact_public_domain_candidates": 299,
+    "hymns_to_god_items": 13,
+    "rights_holds": 19,
+    "source_records": 318,
+    "structure_holds": 9,
+    "supplement_items": 8
   }
 }

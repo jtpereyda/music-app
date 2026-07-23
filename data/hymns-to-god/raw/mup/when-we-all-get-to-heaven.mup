@@ -1,0 +1,305 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Hymns of Praise
+//	For the Church and Sunday School
+//	Compiled by F. G. Kingsbury
+//	Hop Publishing Company
+//	Chicago
+//	Copyright 1922
+//	Hymn No.37
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/26/2023
+
+// Revisions:
+	
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "When We All Get To Heaven" ""
+   title (2)""
+   title (11)"" "\f(TI)In my Father's house are many mansions; if it were not so, " ""
+   title (11)"" "\f(TI)I would have told you; for I go to prepare a place for you. - Jn. 14:2" ""
+   title (11) "D\(flat) - 4 - SOL" "" ""
+   title (13) "E. E. Hewitt" "" "Mrs. J. G. Wilson, 1898"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+   
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=4/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=100";
+
+//=========================
+
+//Verse 1
+
+//1
+1: 4fa; ; ; fd+;
+2: 4dd+; ; ; fa;
+
+	VS "<1. >-1|Sing the won-drous";
+	VS "<2. >-1|While we walk the";
+	VS "<3. >-1|Let us then be";
+	VS "<4. >-1|On-ward to the";
+bar
+
+//2
+1: 8df bm; eg ebm; fa bm; gb ebm; 4fa; df;
+2: 4da; ; dd+; da;
+
+	VS21 "love of Je-sus,";
+	VS21 "pil-grim path-way,";
+	VS21 "true and faith-ful,";
+	VS21 "prize be-fore us!";
+bar
+
+//3
+1: 4eg; ; 8eg bm; df ebm; 8ce bm; df ebm;
+2: 4a-c+; ; a-a; ;
+
+	VS21 "Sing His mer-cy";
+	VS21 "Clouds will o-ver-";
+	VS21 "Trust-ing, serv-ing";
+	VS21 "Soon His beau-ty";
+bar
+
+//4
+1: 4eg; ca; 2df;
+2: 4a-a; ; 2da;
+
+	VS "and His grace;";
+	VS "spread the sky;";
+	VS "ev-'ry day;";
+	VS "we'll be-hold;";
+bar
+
+//5
+1: 4fa; fd+; ; fa;
+2: 4dd+; da; ; dd+;
+
+	VS "In the man-sions";
+	VS "But when trav-'ling";
+	VS "Just one glimpse of";
+	VS "Soon the pearl-y";
+bar
+
+//6
+1: 4gb; gd+; ; enb;
+2: 4gd+; gb; ; gnd+;
+
+	VS "bright and bless-ed,";
+	VS "days are o-ver,";
+	VS "Him in glo-ry,";
+	VS "gates will o-pen,";
+bar
+
+//7
+1 1: 4fa; fd+; 8.d+; 16c+; 8.b; 16c+;
+1 2: 2s; 4g; ;
+2 1: 4ad+; ; ae+; a;
+2 2: 2.s; 4a;
+
+	VS "He'll pre-pare for us a";
+	VS "Not a shad-ow, not a";
+	VS "Will the toils of life re-";
+	VS "We shall tred the streets of";
+	VS 2.s; 4; "for";
+bar
+
+//8
+1 1: 2.d+; 4s;
+1 2: 4f; g; f; s;
+2: 4da; db; da; s;
+
+	VS "place.";
+	VS "sigh.";
+	VS "pay.";
+	VS "gold.";
+	VS21 "us a place.";
+dblbar
+newscore
+
+//9
+CHORUS
+1 1: 2.s; 8.f; 16a;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS "When we";
+bar
+
+//10
+1 1: 2.d+; 8.ac+; 16gb;
+1 2: [dist -4] 4r; 8.f; 16; 4; s;
+2: 4r; 8.da; 16; 4; 8.dd+; 16;
+
+	VS "all get to";
+	VS12 "When we all";
+bar
+
+//11
+1 1: 2fa; 4df; 8.s; 16;
+1 2: 2.s; 4s;
+2: 2dd+; 4da; 4s;
+
+	VS "heav-en,";
+
+invisbar
+1 1: 2s; 4s; 8.a; 16;
+1 2: 2.s; [dist -6] 4r;
+2: 2s; 4s; 4r;
+
+	VS "What a";
+bar
+
+//12
+1 1: 4d+; 8.; 16; 8.; 16; 8.c+; 16d+;
+1 2: 4r; 8.a; 16; 4gn; 8.; 16;
+2: 4r; 8.fa; 16; 4eb; 8.; 16;
+
+	VS "day of re-joic-ing that will";
+	VS21 "What a day of re-";
+bar
+
+//13
+1 1: 2.e+; 4s;
+1 2: 8.g&; 16; 8.; 16; 4; s;
+2: 8.ac+; 16; 8.; 16; 4; s;
+
+	VS "be!_";
+	VS21 "joic-ing that will be!";
+bar
+
+//14
+1 1: 2.s; 8.a; 16d+;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS "When we";
+bar
+
+//15
+1 1: 2.f+; 4ad+;
+1 2: [dist-4] 4r; 8.a; 16; 4; 4s;
+2: 4r; 8.dd+; 16; 4; fc&;
+
+	VS "all see";
+	VS 4s; 8.; 16; 4; 4s; "When we all";
+bar
+
+//16
+1: 2gd+; 4gb; 4s;
+2: 2gb; 4gd+; 4s;
+
+	VS "Je-sus,";
+invisbar
+1: 2.s; 4enb;
+2: 2.s; 4gnd+;
+
+	VS "We'll";
+bar
+
+//17
+1 1: 4fa; fd+; 8.d+; 16c+; 8.b; 16c+;
+1 2: 2s; 4g; ;
+2: 4ad+; ; ae+; ;
+
+	VS "sing and shout the vic-to-";
+	VS 2.s; 4; "and";
+bar
+
+//18
+1 1: 2d+ tie; 2d+;
+1 2: 8.f; 16; 8.g; 16; 2f;
+2: 8.dd+; 16da; 8.db; 16; 2da;
+
+	VS "ry._";
+	VS21 "shout the vic-to-ry.";
+endbar

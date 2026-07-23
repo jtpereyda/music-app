@@ -1,0 +1,326 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//The Gospel Pilot Hymnal
+//	A collection of new and standard hymns for Sunday schools, young peoples' societies, gospel and social meetings
+//	Edited by: D. B. Towner and French E. Oliver
+//	Published by Towner & Oliver 
+//	80 Institute Place, Chicago
+//	Co-yright: 1899
+//	Hymn No.: 12
+
+// Transcribed by: Ted Gatza, Jr. 11/18/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+//	extendlyrics=y
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=c
+
+staff 2
+	key=c
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "At Calvary" ""
+   title (2) ""
+   title (11) "" "\f(TI)Behold, we call them blessed that endured: ye have heard of the patience of Job, and" ""
+   title (11) "" "\f(TI)have seen the end of the Lord, how that the Lord is full of pity, and merciful. - Jms. 5:11" ""
+
+   title (11) "" 
+   title (11) "C - 4 - SOL" "" ""
+   title (13) "William R. Newell" "" "Daniel B. Towner, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=115";
+
+//=========================
+
+// Verse
+
+//1
+1: 4.eg; 8; 8.; 16df; 8.ce; 16df;
+2: 4.cc+; 8; 8.; 16; 8.cg; 16;
+
+
+	VS "<1. >-1|Years I spent in van-i-";
+	VS "<2. >-1|By God's word at last my";
+	VS "<3. >-1|Now I've giv'n to Je-sus";
+	VS "<4. >-1|Oh! the love that drew sal-";
+
+bar
+
+//2
+1: 4eg; fa; 2eg;
+2: 4cc+; ; 2;
+
+	VS "ty and pride,";
+	VS "sin I learned;";
+	VS "ev-'ry thing,";
+	VS "va-tion's plan!";
+bar
+newscore
+
+//3
+1: 4.fb; 8; 8.; 16fa; 8.eg; 16df;
+2 1: 4.gd+; 8; 8.; 16gb; 8.gc+; 16g;
+2 2: 4.s; 8; 8.; 16; 8.; 16g;
+
+	VS "Car-ing not my Lord was";
+	VS "Then I trem-bled at the";
+	VS "Now I glad-ly own Him";
+	VS "Oh! the grace that brought it";
+bar
+
+//4
+1: 4ce; fa; 2eg;
+2: 4cg; cc+; 2;
+
+	VS "cru-ci-fied,";
+	VS "law I'd spurned,";
+	VS "as my King;";
+	VS "down to man,";
+bar
+newscore
+
+//5
+1: 4.eg; 8; 8.; 16df; 8.ce; 16df;
+2: 4.cc+; 8; 8.; 16; 8.cg; 16;
+
+	VS "Know-ing not it was for";
+	VS "Till my guilt-y soul im-";
+	VS "Now my rap-tured soul can";
+	VS "Oh! the might-y gulf that";
+bar
+
+//6
+1: 4eg; fa; eg; gc+;
+2: 4cc+; ; ; ec+;
+
+	VS "me He died on";
+	VS "plor-ing turned to";
+	VS "on-ly sing of";
+	VS "God did span at";
+bar
+
+//7
+1: 2fd+; fb;
+2 1: 2fa; g;
+2 2: 2s; g;
+
+	VS "Cal-va-";
+	VS "Cal-va-";
+	VS "Cal-va-";
+	VS "Cal-va-";
+bar
+
+//8
+1: 2.ec+; 4r;
+2: 2.cg; 4r;
+
+	VS "ry.";
+	VS "ry.";
+	VS "ry.";
+	VS "ry.";
+dblbar
+newscore
+
+CHORUS
+
+//9
+1: 4.ac+; 8g#b; 8.ac+; 16gb; 8.ac+; 16fa;
+2: 4.fc+; 8; 8.; 16; 8.; 16;
+
+	VS "Mer-cy there was great and";
+bar
+
+//10
+1: 4fa; eg; 2;
+2: 4cc+; ; 2;
+
+	VS "grace was free,";
+bar
+newscore
+
+//11
+1: 4.fb; 8fa; 8.fb; 16fa; 8.fb; 16fa;
+2: 4.gd+; 8; 8.; 16; 8.; 16gb;
+
+	VS "Par-don there was mul-ti-";
+bar
+
+//12
+1: 4eg; ec+; 2;
+2: 4cc+; cg; 2cg;
+
+	VS "plied to me,";
+bar
+newscore
+
+//13
+1: 4.ac+; 8g#b; 8.ac+; 16gb; 8.ac+; 16fa;
+2 1: 4.f; 8; 8.; 16; 8.; 16fc+;
+2 2: 4.f; 8; 8.; 16; 8.; 16s;
+
+	VS "There my bur-dened soul found";
+bar
+
+//14
+1: 4fa; eg; ; gc+;
+2: 4cc+; ; ; ec+;
+
+	VS "lib-er-ty, at";
+bar
+
+//15
+1: 2fd+; fb;
+2 1: 2fa; g;
+2 2: 2s; g;
+
+	VS "Cal-va-";
+bar
+
+//16
+1: 2.ec+; 4r;
+2: 2.cg; 4r;
+
+	VS "ry.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 
 Technical-preview web app for producing practical editions from structured
 music data. Its first live use case is a hymn transposer: a user chooses one of
-262 catalog hymns, a target key, full SATB or an individual S/A/T/B line, a
+290 catalog hymn scores, a target key, full SATB or an individual S/A/T/B line, a
 display clef, automatic or manual octave placement, and US Letter or A4 output.
 The app then engraves a live SVG preview and a print-sized PDF.
 
@@ -14,14 +14,14 @@ semantics. SVG and PDF are derived output only: they are not parsed back into
 notes. A PDF-only input would require optical music recognition plus human
 correction.
 
-All 262 records are explicitly marked
+All 290 records are explicitly marked
 `technical_candidate_not_production_approved`. The source and conversion are
 appropriate for product development, but production publication still requires
 independent rights evidence for each text, translation, tune, and setting.
 
 ## Architecture
 
-- `catalog/`: generated 262-hymn catalog and canonical MusicXML
+- `catalog/`: generated 290-score hymn catalog and canonical MusicXML
 - `spikes/ingest/`: reproducible ABC inventory and MusicXML conversion
 - `spikes/render/`: MusicXML line selection, transposition, clef
   representation, SVG engraving, and PDF generation

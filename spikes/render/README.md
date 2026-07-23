@@ -7,7 +7,8 @@ recover notes.
 It can:
 
 - retain the full SATB score or extract soprano, alto, tenor, or bass;
-- transpose the sounding pitches and key signature to an explicit target key;
+- transpose the sounding pitches and key signature while preserving major or
+  minor mode;
 - change the displayed clef without changing any pitches;
 - engrave every Verovio SVG page; and
 - assemble those exact pages into a US Letter or A4 PDF.
@@ -34,6 +35,9 @@ python -m hymn_render.cli \
 
 `--line` accepts `satb`, `soprano`, `alto`, `tenor`, or `bass`. `--clef`
 accepts `original`, `treble`, `bass`, `alto`, `tenor`, or `treble-8vb`.
+A tonic-only `--target-key` inherits the source mode. An explicit destination
+such as `D minor` must match the source mode; this is transposition, not
+major/minor conversion.
 
 The output directory contains:
 
@@ -53,4 +57,3 @@ display-only key-signature edit.
 ```bash
 python -m pytest -q
 ```
-

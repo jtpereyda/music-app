@@ -1,0 +1,231 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Best Hymns
+//		From All The Books And Nes Ones To Be Made The Best	
+//		Elisha A, Hoffman Music Editor
+//		Compiled By Harold F. Sayles
+//		Published by The Evangelical Publishing Co.
+//		51 Lakeside Blvd, Chicago
+//		Copyright 1894
+//		Hymn No.: 45
+//		
+// Transcribed by: Ted Gatza, Jr. 02/20/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "'Tis So Sweet To Trust In Jesus" ""
+   title (2)""
+   title (11)"" "\f(TI)And again, I will put my trust in him. And again, Behold, I" ""
+   title (11)"" "\f(TI)and the children whom God hath given me - Heb. 2:13" ""
+   title (11) "A\(flat) - 4 - MI" "" ""
+   title (13) "Louisa M. R. Stead, 1882" "" "William J. Kirkpatrick, 1882"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=100";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1: 4ec+; 4db; 4.ca; 8eg;
+2: 4a-a; 4a-e; 4.; 8ca;
+
+	VS "<1. >-1|'Tis so sweet to";
+	VS "<2. >-1|O how sweet to";
+	VS "<3. >-1|Yes, 'tis sweet to";
+	VS "<4. >-1|I'm so glad I";
+bar
+//2
+1: 4df; da; df; ce;
+2 1: 4da; fa; a;;
+2 2: 4s;; a; ;
+
+	VS "trust in Je-sus,";
+	VS "trust in Je-sus,";
+	VS "trust in Je-sus,";
+	VS "learned to trust thee,";
+bar
+//3
+1: 4ea; ac+; 4.ae+; 8ac+;
+2: 4ac+; ae+; 4.ac+; 8ae+;
+
+	VS "Just to take him";
+	VS "Just to trust his";
+	VS "Just from sin and";
+	VS "Pre-cious Je-sus";
+bar
+//4
+1: 4eb; dna; 2eb;
+2: 4ge+; fb; 2eg;
+
+	VS "at his word;";
+	VS "cleans-ing blood;";
+	VS "self to cease;";
+	VS "Sav-ior, Friend;";
+bar
+//5
+1: 4ec+; 4db; 4.ca; 8eg;
+2: 4a-a; 4a-e; 4.; 8ca;
+
+	VS "Just to rest up-";
+	VS "Just in sim-ple";
+	VS "Just from Je-sus";
+	VS "And I know that";
+bar
+//6
+1: 4df; da; df; ce;
+2 1: 4da; fa; a;;
+2 2: 4s;; a; ;
+
+	VS "on his prom-ise;";
+	VS "faith to plunge me";
+	VS "sim-ply tak-ing";
+	VS "thou art with me,";
+bar
+//7
+1: 4ca; ec+; 4.df; 8fb;
+2: a-e; a-a; 4.da; 8dd+;
+
+	VS "Just to know, \"Thus";
+	VS "'Neath the heal-ing,";
+	VS "Life and rest, and";
+	VS "Wilt be with me";
+bar
+//8
+1: 4ea; eg; 2ea;
+2: 4ec+; eb; 2a-c+;
+
+	VS "saith the Lord.\"";
+	VS "cleans-ing flood,";
+	VS "joy and peace.";
+	VS "to the end.";
+dblbar
+//9
+1: 4ac+; ae+; ; ac+;
+2: 4ae+; ac+; ; ae+;
+REFRAIN
+
+	VS [c]"Je-sus, Je-sus";
+bar
+//10
+1: 4gb; fa; ac+; gb;
+2: 4ed+; fc+; ee+; ;
+
+	VS "how I trust him!";
+bar
+//11
+1: ac+; ae+; 4.; 8ac+;
+2: 4ae+; ac+; 4.; 8ae+;
+
+	VS "How I've proved him";
+bar
+//12
+1: 4eb; dna; 2eb;
+2: 4ge+; fb; 2eg;
+
+	VS "o'er and o'er!";
+bar
+//13
+1: 4ec+; db; ca; ce;
+2: 4a-a; a-e; ; a-a;
+
+	VS "Je-sus, Je-sus";
+bar
+//14
+1: 4.fd+; 8df; 4; 4ce;
+2: 4.da; 8; 4a-a; ; 
+
+	VS "pre-cious Je-sus!";
+bar
+//15
+1: 4ca; ec+; 4.df; 8fb;
+2: 4a-e; a-a; 4.da; 8dd+;
+
+	VS "O for grace to";
+bar
+//16
+1: 4ea; eg; 2ea;
+2: 4ec+; eb; 2a-c+;
+
+	VS "trust him more.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

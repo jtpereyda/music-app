@@ -19,9 +19,11 @@ is available for isolated voices and evaluates the selected clef after key
 transposition. Full SATB preserves its voicing and rejects manual octave
 shifts. The SVG route also accepts a one-based `page`. OpenAPI documents the
 complete choices at `/docs`; `/v1/catalog` returns them for a frontend without
-duplicating constants. The seed catalog contains major hymns, so the key
-selector intentionally offers `original` plus the 15 conventional major key
-spellings; it does not silently change a hymn's mode.
+duplicating constants. The API offers `original`, 15 conventional major keys,
+and 15 conventional minor keys. The web selector shows only destinations whose
+mode matches the source score, and the shared renderer rejects an explicit
+major-to-minor or minor-to-major request. A minor score therefore transposes
+among minor keys exactly as a major score transposes among major keys.
 
 Example:
 

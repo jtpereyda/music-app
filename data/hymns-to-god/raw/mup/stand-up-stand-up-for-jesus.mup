@@ -1,0 +1,399 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	Sacred Selections for the Church
+//		Acollection of sacred selections featuring 
+//		choice favorites old and new (57th ed)
+//		Editor: Ellis J. Crum
+//		Publisher: Sacred Selections, Kendallville, Ind.
+//		Date 1990
+//		Hymn No. 227
+
+// Transcribed by: Ted Gatza, Jr. 04/28/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.9
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+
+staffs=2
+	time=4/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Stand Up, Stand Up For Jesus!" ""
+   title (2) ""
+   title (11) "" "\f(TI)...endure hardness, as a good soldier of Jesus Christ. - 2 Tim. 2:3" ""
+   title (11) "" 
+   title (11) "B\(flat) - 4 - SOL" "" ""
+   title (13) "George Duffield, Jr., 1858" "" "George J. Webb, 1837"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=110";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 4df;
+2: 2.s; 4b-b;
+
+	VS "<1. >-1|Stand";
+	VS "<2. >-1|Stand";
+	VS "<3. >-1|Stand";
+	VS "<4. >-1|Stand";
+bar
+
+//2
+1: 4.db; 8; 4fd+; fb;
+2: 4.b-f; 8; 4b-b; db;
+
+	VS "up, stand up for";
+	VS "up, stand up for";
+	VS "up, stand up for";
+	VS "up, stand up for";
+bar
+
+//3a
+1: 2gb; 4eg; 4s;
+2: 2eb; 4; 4s;
+
+	VS "Je-sus!";
+	VS "Je-sus!";
+	VS "Je-sus!";
+	VS "Je-sus!";
+invisbar	
+
+//3b
+1: 2s; 4s; 4gb;
+2: 2s; 4; 4eb;
+
+	VS "Ye";
+	VS "The";
+	VS "Stand";
+	VS "The";
+bar
+
+//4	
+1 1: 4f; fb; fc+; dd+;
+1 2: 4f; s; ; ;
+2: 4db; ; ca; b-b;
+
+	VS "sol-diers of the";
+	VS "trump-et call o-";
+	VS "in His strength a-";
+	VS "strife will not be";
+bar
+
+//5a
+1: 2.fc+; 4s;
+2: 2.fa; 4s;
+
+	VS "cross";
+	VS "bey;";
+	VS "lone;";
+	VS "long;";
+invisbar
+newscore
+
+//5b
+1 1: 2.s; 4f;
+1 2: 2.s; 4f;
+2: 2.s; 4fa;
+
+	VS "Lift";
+	VS "Forth";
+	VS "The";
+	VS "This";
+bar
+
+//6
+1: 4.db; 8; 4fd+; fb;
+2: 4.b-b; 8b-f; 4b-b; db;
+
+	VS "high His roy-al";
+	VS "to the might-y";
+	VS "arm of flesh will";
+	VS "day the noise of";
+bar
+
+//7a
+1: 2gb; 4eg; 4s;
+2: 2eb; 4; 4s;
+
+	VS "ban-ner,";
+	VS "con-flict,";
+	VS "fail you;";
+	VS "bat-tle,";
+
+invisbar	
+
+//7b
+1: 2s; 4s; 4gb;
+2: 2s; 4; 4eb;
+
+	VS "It";
+	VS "In";
+	VS "Ye";
+	VS "The";
+bar
+
+//8
+1 1: 4f; db; fd+; ec+;
+1 2: 4f; s; ; ;
+2: 4db; b-b; fb; fa;
+
+	VS "must not suf-fer";
+	VS "this His glo-rious";
+	VS "dare not trust your";
+	VS "next the vic-tor's";
+bar
+
+//9a
+1: 2.db; 4s;
+2: 2.b-fb; 4s;
+
+	VS "loss:";
+	VS "day:";
+	VS "own;";
+	VS "song:";
+invisbar
+newscore
+
+//9b
+1 1: 2.s; 4f;
+1 2: 2.s; 4f;
+2 1: 2.s; 4f;
+2 2: 2.s; 4f;
+
+	VS "From";
+	VS "Ye";
+	VS "Put";
+	VS "To";
+bar
+
+//10
+1: 4.fc+; 8; 4fb; fc+;
+2 1: 4.fa; 8; 4g; fa;
+2 2: 4.s; 8; 4f; s;
+
+	VS "vic-t'ry un-to";
+	VS "that are men now";
+	VS "on the gos-pel";
+	VS "him that o-ver-";
+bar
+
+//11a
+1: 2fd+; 4; s;
+2 1: 2b; 4; s;
+2 2: 2b; 4; s;
+
+	VS "vic-try";
+	VS "serve Him,";
+	VS "ar-mor,";
+	VS "com-eth,";
+invisbar
+
+//11b
+1: 2s; 4; 4fd+;
+2 1: 2s; 4; b;
+2 2: 2s; 4; 8b<a> bm; a ebm;
+
+	VS "His";
+	VS "A-";
+	VS "Each";
+	VS "A";
+bar
+
+//12
+1 1: 4ee+; fd+; g; gc+;
+1 2: 4s; ; g; s;
+2: 4gb; fb; eb; ce+;
+
+	VS "arm-y shall He";
+	VS "gainst un-num-bered";
+	VS "piece put on with";
+	VS "crown of life shall";
+bar
+
+//13a
+1 1: 2b slur; 4a; 4s;
+1 2: 2.f; 4s;
+2 1: 2e+ slur; 4c+; 4s;
+2 2: 2.f; 4s;
+
+	VS "lead,";
+	VS "foes;";
+	VS "pray'r;";
+	VS "be:";
+
+invisbar
+newscore
+
+//13b
+1 1: 2.s; 4f;
+1 2: 2.s; 4e;
+2: 2.s; 4fa;
+
+	VS "Till";
+	VS "Your";
+	VS "Where";
+	VS "He";
+bar
+
+//14	
+1: 4.db; 8; 4fd+; fb;
+2: 4.b-b; 8b-f; 4b-b; db;
+
+	VS "ev-ry foe is";
+	VS "cou-rage rise with";
+	VS "du-ty calls, or";
+	VS "with the King of";
+bar
+
+//15a
+1: 2gb; 4eg; s;
+2: 2eb; 4; s;
+
+	VS "van-quished";
+	VS "dan-ger,";
+	VS "dan-ger,";
+	VS "glo-ry";
+invisbar
+
+//15b
+1: 2s; 4; gb;
+2: 2s; 4; eb;
+
+	VS "And";
+	VS "And";
+	VS "Be";
+	VS "Shall";
+bar
+
+//16
+1 1: 4f; db; fd+; ec+;
+1 2: 4f; s; ; ;
+2: 4db; b-b; fb; fa;
+
+	VS "Christ is Lord In-";
+	VS "strength to strength op-";
+	VS "nev-er want-ing";
+	VS "live e-ter-nal-";
+bar
+
+//17
+1: 2.db; 4s;
+2: 2.b-fb; 4s;
+
+	VS "deed.";
+	VS "pose.";
+	VS "there.";
+	VS "ly.";
+endbar

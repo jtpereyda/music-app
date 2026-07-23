@@ -1,6 +1,7 @@
 import {
   clefOptions,
   keys,
+  getKeyMode,
   octavePlacementOptions,
   outputOptions,
   pageSizes,
@@ -237,7 +238,11 @@ export function editionFromSearchParams(
   const pageSize = singleValue(params.page_size);
 
   return {
-    targetKey: keys.some((option) => option.value === targetKey)
+    targetKey: keys.some(
+      (option) =>
+        option.value === targetKey &&
+        getKeyMode(option.value) === getKeyMode(fallback.targetKey),
+    )
       ? (targetKey as TargetKey)
       : fallback.targetKey,
     outputPart: outputOptions.some((option) => option.value === outputPart)

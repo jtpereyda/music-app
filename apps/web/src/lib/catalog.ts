@@ -16,6 +16,21 @@ export const keys = [
   { value: "b-major", label: "B major" },
   { value: "f-sharp-major", label: "F♯ major" },
   { value: "c-sharp-major", label: "C♯ major" },
+  { value: "a-flat-minor", label: "A♭ minor" },
+  { value: "e-flat-minor", label: "E♭ minor" },
+  { value: "b-flat-minor", label: "B♭ minor" },
+  { value: "f-minor", label: "F minor" },
+  { value: "c-minor", label: "C minor" },
+  { value: "g-minor", label: "G minor" },
+  { value: "d-minor", label: "D minor" },
+  { value: "a-minor", label: "A minor" },
+  { value: "e-minor", label: "E minor" },
+  { value: "b-minor", label: "B minor" },
+  { value: "f-sharp-minor", label: "F♯ minor" },
+  { value: "c-sharp-minor", label: "C♯ minor" },
+  { value: "g-sharp-minor", label: "G♯ minor" },
+  { value: "d-sharp-minor", label: "D♯ minor" },
+  { value: "a-sharp-minor", label: "A♯ minor" },
 ] as const;
 
 export const outputOptions = [
@@ -48,6 +63,7 @@ export const pageSizes = [
 ] as const;
 
 export type TargetKey = (typeof keys)[number]["value"];
+export type KeyMode = "major" | "minor";
 export type OutputPart = (typeof outputOptions)[number]["value"];
 export type Clef = (typeof clefOptions)[number]["value"];
 export type OctavePlacement = (typeof octavePlacementOptions)[number]["value"];
@@ -91,10 +107,10 @@ const sopranoLyrics: readonly OutputPart[] = ["satb", "soprano"];
 export const hymns: readonly Hymn[] = generatedHymns.map((hymn) => ({
   ...hymn,
   originalKey: hymn.originalKey as TargetKey,
-  sourceLabel: "Open Hymnal",
+  sourceLabel: hymn.sourceLabel,
   availableLines: satbLines,
   lyricsAvailableFor: sopranoLyrics,
-  catalogRevision: 2,
+  catalogRevision: 5,
   rightsStatus: "technical_candidate_not_production_approved",
   publicationStatus: "technical_preview",
 }));
@@ -105,6 +121,14 @@ export function getHymnBySlug(slug: string): Hymn | undefined {
 
 export function getKeyLabel(value: TargetKey): string {
   return keys.find((key) => key.value === value)?.label ?? value;
+}
+
+export function getKeyMode(value: TargetKey): KeyMode {
+  return value.endsWith("-minor") ? "minor" : "major";
+}
+
+export function getKeysForMode(mode: KeyMode) {
+  return keys.filter((key) => key.value.endsWith(`-${mode}`));
 }
 
 export function getOctavePlacementLabel(value: OctavePlacement): string {

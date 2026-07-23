@@ -1,0 +1,334 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Songs Of Redemption
+//		Editors:   Joshua Gill, Geo. A McLaughlin,
+//		           William J. Kirkpatrick, H. L. Gilmour
+//		Publisher: The Christian Witness Company
+//			   36 Bromfield Street, Boston MA
+// 		Copyright: 1899
+//		Hymn No.:  185
+
+// Transcribed by: Ted Gatza, Jr. 07/13/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "There Is Power In The Blood" ""
+   title (2) ""
+   title (11) "" "\f(TI)Ye are not redeemed with corruptable things..." ""
+   title (11) "" "\f(TI)but with the precious blood of Christ, as a lamb without blemish... 1 Pet 1:18-19" ""
+   title (11) "" 
+   title (11)" B\(flat) - 4 - SOL" "" ""
+   title (15) "Lewis E. Jones" "" "Lewis E. Jones, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Voices
+	define SA 1: @
+	define S 1 1: @
+	define A 1 2: @
+	define TB 2: @
+	define T 2 1: @
+	define B 2 2: @
+	
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VSS lyrics between 1&2 using 1: @
+         define VSA lyrics between 1&2 using 1 2: @
+         define VST lyrics between 1&2 using 2 1:@
+         define VSB lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+SA 4df; 8; ; 4; 8; ;
+TB 4b-b; 8; ; 4; 8; ;
+ 
+
+	VS "<1. >-1|Would you be free from your";
+	VS "<2. >-1|Would you be free from your";
+	VS "<3. >-1|Would you do ser-vice for";
+bar
+
+//2a
+SA 4eg; 8; ; 4.df; 8s;
+TB 4eb; 8; ; 4.b-b; 8s;
+
+	VS "bur-den of sin?";
+	VS "pas-sion and pride?";
+	VS "Je-sus your King?";
+invisbar
+newscore
+
+//2b
+SA 4s; 8; ; 4.; 8fb;
+TB 4s; 8; ; 4.; 8b-d+;
+
+	VS "There's";
+	VS "There's";
+	VS "There's";
+bar
+
+//3
+S 4fa; 8.fc+; 16fbn; 2c+;
+A 4s; 8.; 16; 4f slur; 4e;
+T 4fc+; 8.fa; 16g#; 2fa;
+B 4s; 8.; 16f; 2s;
+
+	VS "pow'r in the blood,";
+	VS "pow'r in the blood,";
+	VS "pow'r in the blood,";
+bar
+
+//4
+SA 4db; 8.fd+; 16enc+#; 2fd+;
+TB 4b-f; 8.b-b; 16; 2;
+
+	VS "pow'r in the blood;";
+	VS "pow'r in the blood;";
+	VS "pow'r in the blood;";
+bar
+
+//5
+SA 4df; 8; ; 4; 8; ; 
+TB 4b-b; 8; ; 4; 8; ;
+
+	VS "Would you o'er e-vil a";
+	VS "Come for a cleans-ing to";
+	VS "Would you live dai-ly, His";
+bar
+
+//6a
+SA 4eg; 8; ; 4.df; 8s;
+TB 4eb; 8; ; 4.b-b; 8s;
+
+	VS "vic-to-ry win?";
+	VS "Cal-va-ry's tide,";
+	VS "prais-es to sing?";
+invisbar
+newscore
+
+//6b
+SA 4s; 8; ; 4.; 8fb;
+TB 4s; 8; ; 4.; 8b-d+;
+
+	VS "There's";
+	VS "There's";
+	VS "There's";
+bar
+
+//7
+SA 4fa; 8.; 16; 4ec+; 8db; ca;
+T 4fc+; 8.; 16; 4fa; 8f; ;
+B 4s; 8.; 16; 4; 8f; ;
+
+	VS "won-der-ful pow'r in the";
+	VS "won-der-ful pow'r in the";
+	VS "won-der-ful pow'r in the";
+bar
+
+//8
+SA 2.db; 4s;
+TB 2.b-f; 4s;
+
+	VS "blood.";
+	VS "blood.";
+	VS "blood.";
+dblbar
+newscore
+
+CHORUS
+
+//9
+SA 2.s; 8df; db;
+TB 2.s; 8b-b; b-f;
+
+	VS "There is";
+bar
+
+//10
+SA 2fd+; ;
+T 4b-b; 8db; fb; 2b;
+B 4s; 8; ; 2b;
+   AST(1) AST(3) ABT(3)
+
+	VS "pow'r, pow'r,";
+	VST "<> there is pow'r,";
+bar
+
+//11 
+SA 8gc+; gb; ; eg; 4df; 8.ca; 16db;
+TB 8ee+; ; ; eb; 4b-b; 4r;
+
+	VS "Won-der work-ing pow'r in the";
+bar
+
+//12
+SA 2ec+ tie; 4; 8.db; 16ec+;
+TB 4r; 8.fa; 16; 4; r;
+
+	VS "blood of the";
+	VST "in the blood";
+bar
+
+//13a
+SA 2fd+ tie; 4; 8s; ;
+TB 4r; 8.b-b; 16; 4; 8s; ;
+
+	VS "Lamb;";
+	VST "of the Lamb;";
+invisbar
+
+//13b
+SA 2.s; 8df; db;
+TB 4s; 8.; 16; 4; 8b-b; b-f;
+
+	VS "There is";
+bar
+
+//14
+SA 2fd+; ;
+T 4b-b; 8db; fb; 2b;
+B 4s; 8; ; 2b;
+   AST(1) AST(3) ABT(3)
+
+	VS "pow'r, pow'r,";
+	VST "<> There is pow'r,";
+bar
+
+//15a
+SA 8fc+; gb; ; eg; 4df; 8.s; 16;
+TB 8ee+; ; ; eb; 4b-b; 8.s; 16;
+
+	VS "Won-der work-ing pow'r,";
+invisbar
+
+//15b
+SA 8s; ; ; ; 4; 8.ca; 16db;
+TB 8s; ; ; ; 4; 8.f; 16fb;
+B 8s; ; ; ; 4; 8.f; 16s;
+
+	VS "In the";
+bar
+
+//17
+SA 4.ec+; 8ge+; 4fd+; 8.ec+; 16;
+TB 4.fa; 8; 4fb; 8.fa; 16;
+
+	VS "prec-ious blood of the";
+bar
+
+//18
+SA 2.db; 4s;
+TB 2.b-fb; 4s;
+
+	VS "Lamb.";
+endbar

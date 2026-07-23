@@ -12,7 +12,8 @@ import {
 import {
   clefOptions,
   getKeyLabel,
-  keys,
+  getKeyMode,
+  getKeysForMode,
   octavePlacementOptions,
   outputOptions,
   pageSizes,
@@ -103,6 +104,7 @@ export function HymnConfigurator({
   const effectiveOctavePlacement: OctavePlacement = isSatb
     ? "original"
     : singleLineOctavePlacement;
+  const targetKeys = getKeysForMode(getKeyMode(selectedHymn.originalKey));
 
   useEffect(() => {
     if (!urlBaseEdition || selectedHymn.id !== initialHymn.id) {
@@ -317,7 +319,7 @@ export function HymnConfigurator({
                     }
                     className="h-12 w-full appearance-none rounded-xl border border-ink/15 bg-white px-3.5 pr-10 text-sm font-medium text-ink shadow-sm outline-none transition focus:border-blue/60 focus:ring-4 focus:ring-blue/10"
                   >
-                    {keys.map((key) => (
+                    {targetKeys.map((key) => (
                       <option key={key.value} value={key.value}>
                         {key.label}
                       </option>
