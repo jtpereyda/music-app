@@ -42,7 +42,7 @@ export function HymnLandingPage({
     `${hymn.title} sheet music in the key and clef you need`;
   const intro =
     preset?.intro ??
-    `Print the traditional ${tuneName} tune, choose any major key, and use the complete SATB score or an individual soprano, alto, tenor, or bass line in the clef you need.`;
+    `Print the traditional ${tuneName} tune, choose any key, and use the complete SATB score or an individual soprano, alto, tenor, or bass line in the clef you need.`;
   const canonicalPath = preset
     ? `/hymns/${hymn.slug}/${preset.slug}`
     : `/hymns/${hymn.slug}`;

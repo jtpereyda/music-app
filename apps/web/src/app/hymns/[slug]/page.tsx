@@ -39,7 +39,7 @@ export async function generateMetadata({
 
   const tuneName = getLandingTuneName(hymn);
   const title = `${hymn.title} Sheet Music in Any Key & Clef`;
-  const description = `Printable ${hymn.title} sheet music to the traditional ${tuneName} tune. Choose any major key, full SATB or one hymn voice, and treble, bass, alto, or tenor clef.`;
+  const description = `Printable ${hymn.title} sheet music to the traditional ${tuneName} tune. Choose any key, full SATB or one hymn voice, and treble, bass, alto, or tenor clef.`;
 
   return {
     title,
