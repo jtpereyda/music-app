@@ -11,6 +11,8 @@ const googleScopes = [
   "https://www.googleapis.com/auth/analytics.readonly",
 ];
 
+const googleRequestTimeoutMs = 15_000;
+
 function base64Url(value: string | Uint8Array): string {
   const encoded =
     typeof value === "string"
@@ -69,6 +71,7 @@ async function serviceAccountAccessToken(
         grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
       }),
       cache: "no-store",
+      signal: AbortSignal.timeout(googleRequestTimeoutMs),
     },
   );
   const payload = (await response.json()) as {
@@ -97,6 +100,7 @@ async function refreshTokenAccessToken(refreshToken: string): Promise<string> {
       refresh_token: refreshToken,
     }),
     cache: "no-store",
+    signal: AbortSignal.timeout(googleRequestTimeoutMs),
   });
   const payload = (await response.json()) as {
     access_token?: string;

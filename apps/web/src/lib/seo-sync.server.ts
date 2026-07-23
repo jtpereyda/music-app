@@ -44,6 +44,8 @@ type SnapshotResult = {
   message: string;
 };
 
+const externalRequestTimeoutMs = 15_000;
+
 function dateDaysAgo(days: number): string {
   const date = new Date();
   date.setUTCHours(0, 0, 0, 0);
@@ -86,6 +88,7 @@ async function fetchJson<T>(
     },
     body: JSON.stringify(body),
     cache: "no-store",
+    signal: AbortSignal.timeout(externalRequestTimeoutMs),
   });
   const payload = (await response.json()) as T & {
     error?: { message?: string };
@@ -113,6 +116,7 @@ async function runSiteChecks(
           redirect: "follow",
           cache: "no-store",
           headers: { "user-agent": "Transposify SEO monitor/1.0" },
+          signal: AbortSignal.timeout(externalRequestTimeoutMs),
         });
         status = response.status;
         finalUrl = response.url;
@@ -284,15 +288,20 @@ async function runUrlInspection(
   if (!siteUrl) return 0;
   const origin = targetOrigin();
   const today = dateDaysAgo(0);
-  const writes = [];
-  for (const targetPath of paths) {
-    const response = await fetchJson<UrlInspection>(
-      "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
-      accessToken,
-      { inspectionUrl: new URL(targetPath, origin).toString(), siteUrl },
-    );
-    const status = response.inspectionResult?.indexStatusResult;
-    writes.push(sql`
+  const inspections = await Promise.all(
+    paths.map(async (targetPath) => {
+      const response = await fetchJson<UrlInspection>(
+        "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
+        accessToken,
+        { inspectionUrl: new URL(targetPath, origin).toString(), siteUrl },
+      );
+      return {
+        status: response.inspectionResult?.indexStatusResult,
+        targetPath,
+      };
+    }),
+  );
+  const writes = inspections.map(({ status, targetPath }) => sql`
       INSERT INTO app.seo_page_snapshots (
         snapshot_date,
         target_path,
@@ -330,7 +339,6 @@ async function runUrlInspection(
         metadata = excluded.metadata,
         collected_at = now()
     `);
-  }
   if (writes.length > 0) await sql.transaction(writes);
   return writes.length;
 }
@@ -473,6 +481,7 @@ export async function runSeoSnapshot(
   try {
     recordsWritten += await runSiteChecks(sql, targetPaths);
     completed.push("site checks");
+    console.info(`[seo] Completed ${targetPaths.length} live-page checks.`);
   } catch (error) {
     failures.push(
       `site checks: ${error instanceof Error ? error.message : "unknown error"}`,
@@ -497,6 +506,9 @@ export async function runSeoSnapshot(
       );
       recordsWritten += await runUrlInspection(sql, accessToken, targetPaths);
       completed.push("Search Console");
+      console.info(
+        `[seo] Completed Search Console collection for ${keywordMappings.length} keyword mappings.`,
+      );
     } catch (error) {
       failures.push(
         `Search Console: ${error instanceof Error ? error.message : "unknown error"}`,
