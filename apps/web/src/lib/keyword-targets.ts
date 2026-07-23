@@ -62,6 +62,19 @@ export type TargetPageSeo = {
   checkedAt: string | null;
 };
 
+export type TargetPageIndexing = {
+  verdict: string | null;
+  coverageState: string | null;
+  indexingState: string | null;
+  pageFetchState: string | null;
+  robotsTxtState: string | null;
+  userCanonical: string | null;
+  googleCanonical: string | null;
+  lastCrawlTime: string | null;
+  checkedAt: string | null;
+  inspectionResultLink: string | null;
+};
+
 export type KeywordTargetRow = {
   id: string;
   keyword: string;
@@ -75,6 +88,7 @@ export type KeywordTargetRow = {
   dataState: KeywordDataState;
   indexWhenLaunched: boolean;
   seo: TargetPageSeo;
+  indexing: TargetPageIndexing;
   progress?: KeywordProgress;
 };
 
@@ -145,6 +159,18 @@ export function getKeywordDashboard(): KeywordDashboard {
           h1: page.h1 ?? null,
           firstParagraph: null,
           checkedAt: null,
+        },
+        indexing: {
+          verdict: null,
+          coverageState: null,
+          indexingState: null,
+          pageFetchState: null,
+          robotsTxtState: null,
+          userCanonical: null,
+          googleCanonical: null,
+          lastCrawlTime: null,
+          checkedAt: null,
+          inspectionResultLink: null,
         },
       };
     };

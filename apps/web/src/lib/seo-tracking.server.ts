@@ -5,6 +5,7 @@ import type {
   KeywordProgress,
   KeywordProgressStage,
   KeywordTargetRow,
+  TargetPageIndexing,
   TargetPageSeo,
 } from "@/lib/keyword-targets";
 
@@ -27,6 +28,10 @@ type PageSnapshotRow = {
   source: string;
   is_live: boolean | null;
   index_verdict: string | null;
+  robots_verdict: string | null;
+  user_canonical: string | null;
+  google_canonical: string | null;
+  last_crawl_time: string | Date | null;
   organic_sessions: string | number | null;
   key_events: string | number | null;
   metadata: unknown;
@@ -429,6 +434,36 @@ function seoForRow(
   };
 }
 
+function indexingForRow(
+  row: KeywordTargetRow,
+  pageSnapshots: PageSnapshotRow[],
+): TargetPageIndexing {
+  const latestInspection = pageSnapshots
+    .filter((snapshot) => snapshot.source === "google_search_console")
+    .toSorted(
+      (left, right) =>
+        new Date(right.collected_at).getTime() -
+        new Date(left.collected_at).getTime(),
+    )[0];
+  if (!latestInspection) return row.indexing;
+
+  const metadata = metadataObject(latestInspection.metadata);
+  return {
+    verdict: latestInspection.index_verdict,
+    coverageState: metadataText(metadata, "coverageState"),
+    indexingState: metadataText(metadata, "indexingState"),
+    pageFetchState: metadataText(metadata, "pageFetchState"),
+    robotsTxtState: latestInspection.robots_verdict,
+    userCanonical: latestInspection.user_canonical,
+    googleCanonical: latestInspection.google_canonical,
+    lastCrawlTime: latestInspection.last_crawl_time
+      ? isoTimestamp(latestInspection.last_crawl_time)
+      : null,
+    checkedAt: isoTimestamp(latestInspection.collected_at),
+    inspectionResultLink: metadataText(metadata, "inspectionResultLink"),
+  };
+}
+
 export async function getTrackedKeywordDashboard(
   rows: KeywordTargetRow[],
 ): Promise<TrackedKeywordDashboard> {
@@ -483,6 +518,10 @@ export async function getTrackedKeywordDashboard(
             source,
             is_live,
             index_verdict,
+            robots_verdict,
+            user_canonical,
+            google_canonical,
+            last_crawl_time,
             organic_sessions,
             key_events,
             metadata,
@@ -550,6 +589,7 @@ export async function getTrackedKeywordDashboard(
           pageSnapshotsForTarget,
         ),
         seo: seoForRow(row, pageSnapshotsForTarget),
+        indexing: indexingForRow(row, pageSnapshotsForTarget),
       };
     });
     for (const row of enrichedRows) {

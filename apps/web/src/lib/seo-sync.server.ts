@@ -17,6 +17,7 @@ type GscRow = {
 
 type UrlInspection = {
   inspectionResult?: {
+    inspectionResultLink?: string;
     indexStatusResult?: {
       verdict?: string;
       robotsTxtState?: string;
@@ -374,12 +375,15 @@ async function runUrlInspection(
         { inspectionUrl: new URL(targetPath, origin).toString(), siteUrl },
       );
       return {
+        inspectionResultLink:
+          response.inspectionResult?.inspectionResultLink ?? null,
         status: response.inspectionResult?.indexStatusResult,
         targetPath,
       };
     }),
   );
-  const writes = inspections.map(({ status, targetPath }) => sql`
+  const writes = inspections.map(
+    ({ inspectionResultLink, status, targetPath }) => sql`
       INSERT INTO app.seo_page_snapshots (
         snapshot_date,
         target_path,
@@ -405,6 +409,7 @@ async function runUrlInspection(
           coverageState: status?.coverageState,
           indexingState: status?.indexingState,
           pageFetchState: status?.pageFetchState,
+          inspectionResultLink,
         })}::jsonb,
         now()
       )
@@ -416,9 +421,88 @@ async function runUrlInspection(
         last_crawl_time = excluded.last_crawl_time,
         metadata = excluded.metadata,
         collected_at = now()
-    `);
+    `,
+  );
   if (writes.length > 0) await sql.transaction(writes);
   return writes.length;
+}
+
+export async function runIndexingInspection(
+  rows: KeywordTargetRow[],
+): Promise<SnapshotResult> {
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) {
+    return {
+      ok: false,
+      status: "failed",
+      recordsWritten: 0,
+      message: "DATABASE_URL is not configured.",
+    };
+  }
+  if (!process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL) {
+    return {
+      ok: false,
+      status: "failed",
+      recordsWritten: 0,
+      message: "Search Console property is not configured.",
+    };
+  }
+
+  const sql = neon(databaseUrl);
+  const today = dateDaysAgo(0);
+  const runRows = await sql`
+    INSERT INTO app.seo_sync_runs (
+      source,
+      status,
+      range_start,
+      range_end
+    )
+    VALUES ('google_search_console', 'running', ${today}, ${today})
+    RETURNING id
+  `;
+  const runId = String((runRows as unknown as { id: string }[])[0].id);
+  const { targetPaths } = uniqueTargets(rows);
+
+  try {
+    const accessToken = await getGoogleSeoAccessToken();
+    if (!accessToken) {
+      throw new Error("Google credentials are not configured.");
+    }
+    const recordsWritten = await runUrlInspection(sql, accessToken, targetPaths);
+    const message = `Checked Google indexing status for ${recordsWritten} target pages.`;
+    await sql`
+      UPDATE app.seo_sync_runs
+      SET
+        status = 'succeeded',
+        records_written = ${recordsWritten},
+        message = ${message},
+        finished_at = now()
+      WHERE id = ${runId}
+    `;
+    return {
+      ok: true,
+      status: "succeeded",
+      recordsWritten,
+      message,
+    };
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Unknown URL Inspection error.";
+    await sql`
+      UPDATE app.seo_sync_runs
+      SET
+        status = 'failed',
+        message = ${message},
+        finished_at = now()
+      WHERE id = ${runId}
+    `;
+    return {
+      ok: false,
+      status: "failed",
+      recordsWritten: 0,
+      message,
+    };
+  }
 }
 
 async function runGoogleAnalytics(

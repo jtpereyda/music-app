@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import type {
   KeywordDataState,
   KeywordProgressStage,
   KeywordTargetRow,
+  TargetPageIndexing,
 } from "@/lib/keyword-targets";
 
 type KeywordTableProps = {
@@ -18,6 +20,7 @@ type SortKey =
   | "priority"
   | "page"
   | "stage"
+  | "indexing"
   | "position"
   | "change7d"
   | "impressions28d"
@@ -40,6 +43,7 @@ const numberFormatter = new Intl.NumberFormat("en-US");
 
 const pageTypeLabels: Record<string, string> = {
   canonical_hymn: "Hymn page",
+  clef_preset: "Clef preset",
   exact_key_preset: "Key preset",
   generic_tool: "Tool page",
   hymn_collection_hub: "Collection hub",
@@ -68,6 +72,7 @@ const defaultSortDirections: Record<SortKey, SortDirection> = {
   priority: "asc",
   page: "asc",
   stage: "desc",
+  indexing: "asc",
   position: "asc",
   change7d: "desc",
   impressions28d: "desc",
@@ -91,6 +96,52 @@ function ahrefsPageUrl(targetOrigin: string, targetPath: string): string {
 
 function formatMetric(value: number | null): string {
   return value === null ? "—" : numberFormatter.format(value);
+}
+
+function formatCheckedAt(value: string | null): string {
+  if (!value) return "Not checked";
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(new Date(value));
+}
+
+function indexingSortValue(indexing: TargetPageIndexing): number {
+  const verdict = indexing.verdict?.toUpperCase();
+  if (verdict === "PASS") return 0;
+  if (indexing.checkedAt && verdict === "FAIL") return 1;
+  if (indexing.checkedAt) return 2;
+  return 3;
+}
+
+function IndexingBadge({ indexing }: { indexing: TargetPageIndexing }) {
+  const verdict = indexing.verdict?.toUpperCase();
+  const label =
+    verdict === "PASS"
+      ? "Indexed"
+      : verdict === "FAIL"
+        ? "Not indexed"
+        : indexing.checkedAt
+          ? "Needs review"
+          : "Not checked";
+  const classes =
+    verdict === "PASS"
+      ? "border-emerald-300/15 bg-emerald-300/10 text-emerald-200"
+      : verdict === "FAIL"
+        ? "border-amber-300/15 bg-amber-300/10 text-amber-200"
+        : indexing.checkedAt
+          ? "border-violet-300/15 bg-violet-300/10 text-violet-200"
+          : "border-white/10 bg-white/[0.035] text-white/35";
+
+  return (
+    <span
+      className={`inline-flex rounded-full border px-2 py-1 font-mono text-[8px] uppercase tracking-[0.12em] ${classes}`}
+    >
+      {label}
+    </span>
+  );
 }
 
 function SeoCopyValue({
@@ -220,9 +271,15 @@ function ProgressBadge({ stage }: { stage: KeywordProgressStage }) {
 }
 
 export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [priority, setPriority] = useState("all");
   const [dataState, setDataState] = useState("all");
+  const [indexingState, setIndexingState] = useState("all");
+  const [checkStatus, setCheckStatus] = useState<
+    "idle" | "running" | "success" | "error"
+  >("idle");
+  const [checkMessage, setCheckMessage] = useState<string | null>(null);
   const [sort, setSort] = useState<SortState>({
     key: "dataState",
     direction: "asc",
@@ -247,6 +304,56 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
     return counts;
   }, [rows]);
 
+  const indexingSummary = useMemo(() => {
+    const pages = new Map(
+      rows.map((row) => [row.targetPath, row.indexing] as const),
+    );
+    const values = [...pages.values()];
+    return {
+      total: pages.size,
+      indexed: values.filter(
+        (indexing) => indexing.verdict?.toUpperCase() === "PASS",
+      ).length,
+      notIndexed: values.filter(
+        (indexing) =>
+          indexing.checkedAt &&
+          indexing.verdict?.toUpperCase() !== "PASS",
+      ).length,
+      unchecked: values.filter((indexing) => !indexing.checkedAt).length,
+    };
+  }, [rows]);
+
+  const handleCheckAllPages = async () => {
+    setCheckStatus("running");
+    setCheckMessage(null);
+    try {
+      const response = await fetch("/api/admin/seo/indexing/check", {
+        method: "POST",
+      });
+      const payload = (await response.json()) as {
+        error?: string;
+        message?: string;
+        recordsWritten?: number;
+      };
+      if (!response.ok) {
+        throw new Error(
+          payload.error ?? payload.message ?? "Indexing check failed.",
+        );
+      }
+      setCheckStatus("success");
+      setCheckMessage(
+        payload.message ??
+          `Checked ${payload.recordsWritten ?? indexingSummary.total} pages.`,
+      );
+      router.refresh();
+    } catch (error) {
+      setCheckStatus("error");
+      setCheckMessage(
+        error instanceof Error ? error.message : "Indexing check failed.",
+      );
+    }
+  };
+
   const visibleRows = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     const filtered = rows.filter((row) => {
@@ -264,7 +371,15 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
       const matchesPriority =
         priority === "all" || row.priority === Number(priority);
       const matchesData = dataState === "all" || row.dataState === dataState;
-      return matchesQuery && matchesPriority && matchesData;
+      const verdict = row.indexing.verdict?.toUpperCase();
+      const matchesIndexing =
+        indexingState === "all" ||
+        (indexingState === "indexed" && verdict === "PASS") ||
+        (indexingState === "not-indexed" &&
+          row.indexing.checkedAt !== null &&
+          verdict !== "PASS") ||
+        (indexingState === "unchecked" && row.indexing.checkedAt === null);
+      return matchesQuery && matchesPriority && matchesData && matchesIndexing;
     });
 
     return filtered.toSorted((left, right) => {
@@ -281,6 +396,9 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
         comparison =
           progressStageOrder[left.progress?.stage ?? "planned"] -
           progressStageOrder[right.progress?.stage ?? "planned"];
+      } else if (sort.key === "indexing") {
+        comparison =
+          indexingSortValue(left.indexing) - indexingSortValue(right.indexing);
       } else if (sort.key === "position") {
         comparison = compareNullableNumbers(
           left.progress?.currentPosition ?? null,
@@ -354,14 +472,76 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
         left.keyword.localeCompare(right.keyword)
       );
     });
-  }, [dataState, priority, query, rows, sort]);
+  }, [dataState, indexingState, priority, query, rows, sort]);
 
   const filtersActive =
-    query.trim() !== "" || priority !== "all" || dataState !== "all";
+    query.trim() !== "" ||
+    priority !== "all" ||
+    dataState !== "all" ||
+    indexingState !== "all";
 
   return (
     <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.035] shadow-[0_20px_70px_rgba(0,0,0,0.16)]">
       <div className="border-b border-white/10 p-5 sm:p-6">
+        <div className="mb-6 flex flex-col gap-4 rounded-2xl border border-blue/15 bg-blue/[0.055] p-4 sm:p-5 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="text-sm font-semibold text-white/80">
+                Google indexing tools
+              </p>
+              <span className="rounded-full border border-white/10 bg-black/10 px-2 py-1 font-mono text-[8px] uppercase tracking-[0.12em] text-white/40">
+                {indexingSummary.total} unique pages
+              </span>
+            </div>
+            <p className="mt-1.5 max-w-3xl text-xs leading-5 text-white/40">
+              Check every target with Google&apos;s URL Inspection API. Then use
+              a page&apos;s Request indexing button to open its preloaded Search
+              Console inspection in a new tab.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 font-mono text-[9px] tabular-nums">
+              <span className="text-emerald-200/80">
+                {indexingSummary.indexed} indexed
+              </span>
+              <span className="text-amber-200/80">
+                {indexingSummary.notIndexed} not indexed
+              </span>
+              <span className="text-white/30">
+                {indexingSummary.unchecked} not checked
+              </span>
+            </div>
+            {checkMessage ? (
+              <p
+                aria-live="polite"
+                className={`mt-2 text-xs ${
+                  checkStatus === "error"
+                    ? "text-rose-200/80"
+                    : "text-emerald-200/75"
+                }`}
+              >
+                {checkMessage}
+              </p>
+            ) : null}
+          </div>
+          <div className="shrink-0">
+            <button
+              type="button"
+              onClick={handleCheckAllPages}
+              disabled={checkStatus === "running"}
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-blue/25 bg-blue/15 px-4 text-xs font-semibold text-[#bfe8f7] transition hover:border-blue/40 hover:bg-blue/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral disabled:cursor-wait disabled:opacity-55"
+            >
+              {checkStatus === "running"
+                ? "Checking all pages…"
+                : `Check all ${indexingSummary.total} pages`}
+              {checkStatus !== "running" ? (
+                <span aria-hidden="true">↻</span>
+              ) : null}
+            </button>
+            <p className="mt-2 text-center font-mono text-[8px] uppercase tracking-[0.1em] text-white/25">
+              API allowance: 2,000 / day
+            </p>
+          </div>
+        </div>
+
         <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
           <div>
             <div className="flex items-center gap-3">
@@ -378,8 +558,8 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
             </p>
           </div>
 
-          <div className="grid gap-2 sm:grid-cols-2 xl:flex xl:items-center">
-            <label className="relative sm:col-span-2 xl:w-72">
+          <div className="grid gap-2 sm:grid-cols-3 xl:flex xl:items-center">
+            <label className="relative sm:col-span-3 xl:w-72">
               <span className="sr-only">Search keywords and target pages</span>
               <svg
                 viewBox="0 0 24 24"
@@ -426,12 +606,26 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
               </select>
             </label>
 
+            <label>
+              <span className="sr-only">Filter by indexing status</span>
+              <select
+                value={indexingState}
+                onChange={(event) => setIndexingState(event.target.value)}
+                className="h-10 w-full rounded-xl border border-white/10 bg-[#0c1217] px-3 text-xs text-white/70 outline-none focus:border-coral/60 focus:ring-2 focus:ring-coral/15 xl:w-auto"
+              >
+                <option value="all">All indexing states</option>
+                <option value="indexed">Indexed</option>
+                <option value="not-indexed">Not indexed</option>
+                <option value="unchecked">Not checked</option>
+              </select>
+            </label>
+
           </div>
         </div>
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[2100px] border-collapse text-left">
+        <table className="w-full min-w-[2380px] border-collapse text-left">
           <thead>
             <tr className="border-b border-white/10 bg-black/10 font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
               <SortableHeader
@@ -455,6 +649,12 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
               <SortableHeader
                 column="stage"
                 label="Progress"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                column="indexing"
+                label="Google index"
                 onSort={handleSort}
                 sort={sort}
               />
@@ -604,6 +804,33 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                       </p>
                     ) : null}
                   </td>
+                  <td className="w-[230px] max-w-[230px] px-4 py-4 align-top">
+                    <IndexingBadge indexing={row.indexing} />
+                    <p
+                      className="mt-2 line-clamp-2 text-[10px] leading-4 text-white/40"
+                      title={row.indexing.coverageState ?? undefined}
+                    >
+                      {row.indexing.coverageState ?? "No inspection result yet"}
+                    </p>
+                    <p className="mt-1 font-mono text-[8px] uppercase tracking-[0.1em] text-white/25">
+                      {formatCheckedAt(row.indexing.checkedAt)}
+                    </p>
+                    {row.indexing.inspectionResultLink ? (
+                      <a
+                        href={row.indexing.inspectionResultLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-3 inline-flex rounded-lg border border-coral/20 bg-coral/10 px-2.5 py-1.5 text-[10px] font-semibold text-[#ffad9c] transition hover:border-coral/35 hover:bg-coral/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                        title={`Open ${row.targetPath} in Google Search Console to request indexing`}
+                      >
+                        Request indexing ↗
+                      </a>
+                    ) : (
+                      <span className="mt-3 inline-flex rounded-lg border border-white/[0.07] px-2.5 py-1.5 text-[10px] text-white/25">
+                        Check status first
+                      </span>
+                    )}
+                  </td>
                   <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/75">
                     {progress?.currentPosition === null ||
                     progress?.currentPosition === undefined
@@ -705,6 +932,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                 setQuery("");
                 setPriority("all");
                 setDataState("all");
+                setIndexingState("all");
               }}
               className="mt-4 rounded-full border border-white/10 px-4 py-2 text-xs font-medium text-white/60 transition hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
             >
