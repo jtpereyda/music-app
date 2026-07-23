@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type {
   KeywordDataState,
+  KeywordProgressStage,
   KeywordTargetRow,
 } from "@/lib/keyword-targets";
 
@@ -16,6 +17,13 @@ type SortKey =
   | "keyword"
   | "priority"
   | "page"
+  | "stage"
+  | "position"
+  | "change7d"
+  | "impressions28d"
+  | "clicks28d"
+  | "organicSessions28d"
+  | "keyEvents28d"
   | "volume"
   | "difficulty"
   | "trafficPotential"
@@ -45,10 +53,27 @@ const dataStateOrder: Record<KeywordDataState, number> = {
   unresearched: 2,
 };
 
+const progressStageOrder: Record<KeywordProgressStage, number> = {
+  planned: 0,
+  live: 1,
+  indexed: 2,
+  visible: 3,
+  top20: 4,
+  page1: 5,
+  top3: 6,
+};
+
 const defaultSortDirections: Record<SortKey, SortDirection> = {
   keyword: "asc",
   priority: "asc",
   page: "asc",
+  stage: "desc",
+  position: "asc",
+  change7d: "desc",
+  impressions28d: "desc",
+  clicks28d: "desc",
+  organicSessions28d: "desc",
+  keyEvents28d: "desc",
   volume: "desc",
   difficulty: "desc",
   trafficPotential: "desc",
@@ -142,6 +167,34 @@ function DataBadge({ state }: { state: KeywordDataState }) {
   );
 }
 
+function ProgressBadge({ stage }: { stage: KeywordProgressStage }) {
+  const labels: Record<KeywordProgressStage, string> = {
+    planned: "Planned",
+    live: "Live",
+    indexed: "Indexed",
+    visible: "Visible",
+    top20: "Top 20",
+    page1: "Page 1",
+    top3: "Top 3",
+  };
+  const classes: Record<KeywordProgressStage, string> = {
+    planned: "border-white/10 bg-white/[0.035] text-white/35",
+    live: "border-blue/15 bg-blue/10 text-[#9fd2e8]",
+    indexed: "border-violet-300/15 bg-violet-300/10 text-violet-200",
+    visible: "border-cyan-300/15 bg-cyan-300/10 text-cyan-200",
+    top20: "border-amber-300/15 bg-amber-300/10 text-amber-200",
+    page1: "border-emerald-300/15 bg-emerald-300/10 text-emerald-200",
+    top3: "border-coral/20 bg-coral/12 text-[#ffad9c]",
+  };
+  return (
+    <span
+      className={`inline-flex rounded-full border px-2 py-1 font-mono text-[8px] uppercase tracking-[0.12em] ${classes[stage]}`}
+    >
+      {labels[stage]}
+    </span>
+  );
+}
+
 export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
   const [query, setQuery] = useState("");
   const [priority, setPriority] = useState("all");
@@ -194,6 +247,38 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
         comparison = left.priority - right.priority;
       } else if (sort.key === "page") {
         comparison = left.targetPath.localeCompare(right.targetPath);
+      } else if (sort.key === "stage") {
+        comparison =
+          progressStageOrder[left.progress?.stage ?? "planned"] -
+          progressStageOrder[right.progress?.stage ?? "planned"];
+      } else if (sort.key === "position") {
+        comparison = compareNullableNumbers(
+          left.progress?.currentPosition ?? null,
+          right.progress?.currentPosition ?? null,
+          sort.direction,
+        );
+      } else if (sort.key === "change7d") {
+        comparison = compareNullableNumbers(
+          left.progress?.positionChange7d ?? null,
+          right.progress?.positionChange7d ?? null,
+          sort.direction,
+        );
+      } else if (sort.key === "impressions28d") {
+        comparison =
+          (left.progress?.impressions28d ?? 0) -
+          (right.progress?.impressions28d ?? 0);
+      } else if (sort.key === "clicks28d") {
+        comparison =
+          (left.progress?.clicks28d ?? 0) -
+          (right.progress?.clicks28d ?? 0);
+      } else if (sort.key === "organicSessions28d") {
+        comparison =
+          (left.progress?.organicSessions28d ?? 0) -
+          (right.progress?.organicSessions28d ?? 0);
+      } else if (sort.key === "keyEvents28d") {
+        comparison =
+          (left.progress?.keyEvents28d ?? 0) -
+          (right.progress?.keyEvents28d ?? 0);
       } else if (sort.key === "volume") {
         comparison = compareNullableNumbers(
           left.volume,
@@ -219,7 +304,13 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
 
       if (
         comparison !== 0 &&
-        !["volume", "difficulty", "trafficPotential"].includes(sort.key)
+        ![
+          "volume",
+          "difficulty",
+          "trafficPotential",
+          "position",
+          "change7d",
+        ].includes(sort.key)
       ) {
         return comparison * directionMultiplier;
       }
@@ -252,8 +343,8 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
               </span>
             </div>
             <p className="mt-1 text-sm text-white/40">
-              One row per keyword-to-page mapping. Missing metrics are queued
-              for research.
+              Daily search progress plus the original research baseline. Click
+              any heading to sort ascending or descending.
             </p>
           </div>
 
@@ -310,7 +401,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[1120px] border-collapse text-left">
+        <table className="w-full min-w-[1840px] border-collapse text-left">
           <thead>
             <tr className="border-b border-white/10 bg-black/10 font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
               <SortableHeader
@@ -328,6 +419,54 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
               <SortableHeader
                 column="page"
                 label="Target page"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                column="stage"
+                label="Progress"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="position"
+                label="Position"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="change7d"
+                label="Δ 7d"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="impressions28d"
+                label="Impr. 28d"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="clicks28d"
+                label="Clicks 28d"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="organicSessions28d"
+                label="Organic sessions"
+                onSort={handleSort}
+                sort={sort}
+              />
+              <SortableHeader
+                align="right"
+                column="keyEvents28d"
+                label="Key events"
                 onSort={handleSort}
                 sort={sort}
               />
@@ -364,6 +503,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
           <tbody>
             {visibleRows.map((row) => {
               const targetCount = keywordOccurrences.get(row.keyword) ?? 1;
+              const progress = row.progress;
 
               return (
                 <tr
@@ -413,6 +553,51 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                     <p className="mt-1.5 text-[10px] text-white/28">
                       {pageTypeLabels[row.pageType] ?? row.pageType}
                     </p>
+                  </td>
+                  <td className="px-4 py-4 align-top">
+                    <ProgressBadge stage={progress?.stage ?? "planned"} />
+                    {progress?.rankingUrlMatchesTarget === false ? (
+                      <p className="mt-1.5 font-mono text-[8px] uppercase tracking-[0.1em] text-amber-200/75">
+                        Other URL ranks
+                      </p>
+                    ) : null}
+                  </td>
+                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/75">
+                    {progress?.currentPosition === null ||
+                    progress?.currentPosition === undefined
+                      ? "—"
+                      : progress.currentPosition.toFixed(1)}
+                  </td>
+                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums">
+                    {progress?.positionChange7d === null ||
+                    progress?.positionChange7d === undefined ? (
+                      <span className="text-white/25">—</span>
+                    ) : (
+                      <span
+                        className={
+                          progress.positionChange7d > 0
+                            ? "text-emerald-200"
+                            : progress.positionChange7d < 0
+                              ? "text-rose-200"
+                              : "text-white/40"
+                        }
+                      >
+                        {progress.positionChange7d > 0 ? "+" : ""}
+                        {progress.positionChange7d.toFixed(1)}
+                      </span>
+                    )}
+                  </td>
+                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
+                    {numberFormatter.format(progress?.impressions28d ?? 0)}
+                  </td>
+                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
+                    {numberFormatter.format(progress?.clicks28d ?? 0)}
+                  </td>
+                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
+                    {numberFormatter.format(progress?.organicSessions28d ?? 0)}
+                  </td>
+                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
+                    {numberFormatter.format(progress?.keyEvents28d ?? 0)}
                   </td>
                   <td className="px-4 py-4 text-right font-mono text-xs tabular-nums text-white/70">
                     {formatMetric(row.volume)}

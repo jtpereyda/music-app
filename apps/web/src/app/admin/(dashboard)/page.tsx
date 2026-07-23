@@ -1,5 +1,8 @@
 import { KeywordTable } from "@/components/admin/keyword-table";
+import { SeoSyncButton } from "@/components/admin/seo-sync-button";
+import { SeoTrendChart } from "@/components/admin/seo-trend-chart";
 import { getKeywordDashboard } from "@/lib/keyword-targets";
+import { getTrackedKeywordDashboard } from "@/lib/seo-tracking.server";
 
 const compactNumberFormatter = new Intl.NumberFormat("en-US", {
   notation: "compact",
@@ -19,8 +22,9 @@ function getTargetOrigin(): string {
   }
 }
 
-export default function AdminDashboardPage() {
+export default async function AdminDashboardPage() {
   const dashboard = getKeywordDashboard();
+  const tracking = await getTrackedKeywordDashboard(dashboard.rows);
   const { summary } = dashboard;
   const targetOrigin = getTargetOrigin();
   const researchDate = new Intl.DateTimeFormat("en-US", {
@@ -30,6 +34,16 @@ export default function AdminDashboardPage() {
     timeZone: "UTC",
   }).format(new Date(`${dashboard.researchDate}T00:00:00Z`));
   const ahrefsSiteUrl = `https://app.ahrefs.com/site-explorer/overview/v2/subdomains/live?target=${encodeURIComponent(new URL(targetOrigin).hostname)}`;
+  const pageOneKeywords =
+    tracking.summary.stageCounts.page1 + tracking.summary.stageCounts.top3;
+  const lastSynced = tracking.summary.lastSyncedAt
+    ? new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+      }).format(new Date(tracking.summary.lastSyncedAt))
+    : "Not synced yet";
 
   const cards = [
     {
@@ -39,22 +53,22 @@ export default function AdminDashboardPage() {
       accent: "text-[#ffad9c]",
     },
     {
-      label: "Known monthly demand",
-      value: compactNumberFormatter.format(summary.knownMonthlyVolume),
-      detail: `${compactNumberFormatter.format(summary.knownTrafficPotential)} traffic potential`,
+      label: "Ranking on page 1",
+      value: pageOneKeywords.toString(),
+      detail: `${tracking.summary.stageCounts.top3} in the top 3`,
+      accent: "text-emerald-200",
+    },
+    {
+      label: "Search visibility · 28d",
+      value: compactNumberFormatter.format(tracking.summary.impressions28d),
+      detail: `${compactNumberFormatter.format(tracking.summary.clicks28d)} clicks · ${compactNumberFormatter.format(tracking.summary.organicSessions28d)} organic sessions`,
       accent: "text-[#9fd2e8]",
     },
     {
-      label: "Target pages",
-      value: summary.targetPages.toString(),
-      detail: `${summary.priorityZeroPages} P0 · ${summary.priorityOnePages} P1`,
+      label: "Product outcomes · 28d",
+      value: compactNumberFormatter.format(tracking.summary.downloads28d),
+      detail: `${compactNumberFormatter.format(tracking.summary.keyEvents28d)} GA4 key events`,
       accent: "text-white",
-    },
-    {
-      label: "Metric coverage",
-      value: `${summary.measurementCoverage}%`,
-      detail: `${summary.measuredKeywords} of ${summary.uniqueKeywords} researched`,
-      accent: "text-emerald-200",
     },
   ];
 
@@ -76,20 +90,22 @@ export default function AdminDashboardPage() {
               <span className="block text-white/35">without the tab maze.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-6 text-white/45 sm:text-base sm:leading-7">
-              A research baseline for every launch keyword and its target page.
-              Use the Ahrefs shortcuts to refresh SERPs and validate rankings.
+              Daily snapshots connect launch readiness, indexation, search
+              visibility, rankings, clicks, and product outcomes without
+              erasing historical movement.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <div className="rounded-2xl border border-white/10 bg-white/[0.035] px-4 py-3">
               <p className="font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
-                Research snapshot
+                Last tracking sync
               </p>
               <p className="mt-1 text-sm font-medium text-white/70">
-                {researchDate}
+                {lastSynced}
               </p>
             </div>
+            <SeoSyncButton />
             <a
               href={ahrefsSiteUrl}
               target="_blank"
@@ -126,50 +142,81 @@ export default function AdminDashboardPage() {
             <div className="flex items-center justify-between gap-5">
               <div>
                 <p className="font-mono text-[8px] uppercase tracking-[0.15em] text-white/30">
-                  Research completeness
+                  Progress pipeline
                 </p>
                 <p className="mt-2 text-sm font-medium text-white/70">
-                  {summary.measuredKeywords} keywords have at least one metric
+                  Current highest stage for every keyword mapping
                 </p>
               </div>
-              <span className="font-mono text-lg text-emerald-200">
-                {summary.measurementCoverage}%
+              <span className="font-mono text-[10px] text-white/35">
+                {tracking.summary.trackedKeywords} tracked
               </span>
             </div>
-            <div className="mt-5 h-2 overflow-hidden rounded-full bg-white/[0.065]">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-blue to-emerald-300"
-                style={{ width: `${summary.measurementCoverage}%` }}
-              />
+            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4 xl:grid-cols-7">
+              {(
+                [
+                  ["planned", "Planned"],
+                  ["live", "Live"],
+                  ["indexed", "Indexed"],
+                  ["visible", "Visible"],
+                  ["top20", "Top 20"],
+                  ["page1", "Page 1"],
+                  ["top3", "Top 3"],
+                ] as const
+              ).map(([key, label]) => (
+                <div
+                  key={key}
+                  className="rounded-xl border border-white/[0.07] bg-black/10 px-3 py-3"
+                >
+                  <p className="font-mono text-xl tabular-nums text-white/75">
+                    {tracking.summary.stageCounts[key]}
+                  </p>
+                  <p className="mt-1 text-[10px] text-white/30">{label}</p>
+                </div>
+              ))}
             </div>
             <p className="mt-3 text-xs leading-5 text-white/30">
-              Rankings are not synced yet; “complete” currently means volume,
-              keyword difficulty, and traffic potential are present in the
-              source file.
+              Stages are derived from live-page checks, Search Console index
+              verdicts and impressions, then the latest Ahrefs or Google
+              position. Research coverage remains a separate table column.
             </p>
           </div>
 
-          <div className="rounded-3xl border border-amber-200/10 bg-amber-200/[0.045] p-6">
+          <div
+            className={`rounded-3xl border p-6 ${
+              tracking.summary.lastSyncStatus === "failed"
+                ? "border-rose-200/10 bg-rose-200/[0.045]"
+                : "border-amber-200/10 bg-amber-200/[0.045]"
+            }`}
+          >
             <div className="flex items-start gap-3">
               <span className="mt-0.5 grid size-7 shrink-0 place-items-center rounded-full bg-amber-200/10 text-xs text-amber-200">
                 !
               </span>
               <div>
                 <p className="text-sm font-medium text-amber-100/80">
-                  {summary.duplicateMappings} overlapping keyword mapping
-                  {summary.duplicateMappings === 1 ? "" : "s"}
+                  {tracking.summary.connected
+                    ? tracking.summary.lastSyncStatus
+                      ? `Last sync: ${tracking.summary.lastSyncStatus}`
+                      : "Tracking storage connected"
+                    : "Tracking setup needed"}
                 </p>
                 <p className="mt-1 text-xs leading-5 text-white/35">
-                  The table flags keywords assigned to multiple pages so you
-                  can check for search cannibalization early.
+                  {tracking.summary.lastSyncMessage ??
+                    "Apply the SEO migration and configure Search Console credentials. Site checks will work before Google is connected."}
+                </p>
+                <p className="mt-3 font-mono text-[8px] uppercase tracking-[0.12em] text-white/25">
+                  Research baseline {researchDate} · {summary.measurementCoverage}% complete
                 </p>
               </div>
             </div>
           </div>
         </section>
 
+        <SeoTrendChart points={tracking.trend} />
+
         <section className="mt-8">
-          <KeywordTable rows={dashboard.rows} targetOrigin={targetOrigin} />
+          <KeywordTable rows={tracking.rows} targetOrigin={targetOrigin} />
         </section>
       </div>
     </main>

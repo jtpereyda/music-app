@@ -71,3 +71,31 @@ npm audit
 ```
 
 See `services/render/README.md` for the HTTP contract and deployment caveats.
+
+## SEO progress tracking
+
+The private `/admin` dashboard uses
+`docs/2026-07-21-keyword-targeting.json` as its targeting baseline and stores
+daily history in Neon. Apply `database/migrations/0003_seo_tracking.sql` before
+running a sync.
+
+The collector records:
+
+- whether every target page is live;
+- Search Console clicks, impressions, CTR, average position, ranking URL, and
+  URL-inspection index status;
+- optional GA4 organic landing-page sessions, users, and key events; and
+- successful PDF downloads recorded directly by the render proxy.
+
+Configure `CRON_SECRET`, `GOOGLE_SEARCH_CONSOLE_SITE_URL`, and either
+`GOOGLE_SEO_SERVICE_ACCOUNT_JSON` or `GOOGLE_SEO_REFRESH_TOKEN`. Add
+`GOOGLE_ANALYTICS_PROPERTY_ID` to include GA4. The Google principal needs read
+access to the Search Console and GA4 properties. See `apps/web/.env.example`
+for the exact variables.
+
+Vercel runs `/api/cron/seo-snapshot` daily at 11:00 UTC. Search Console data is
+re-read for the last three finalized days so delayed values are safely upserted
+without overwriting older history. An authorized admin can also run the same
+collector with **Sync now**. Ahrefs keyword and page shortcuts remain in every
+row; the snapshot schema reserves Ahrefs as a ranking source when an API or
+export feed is connected.

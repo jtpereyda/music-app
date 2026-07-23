@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { hymns } from "@/lib/catalog";
+import { recordDownloadEvent } from "@/lib/download-events.server";
 
 const renderApiUrl = (
   process.env.RENDER_API_URL ?? process.env.NEXT_PUBLIC_RENDER_API_URL
@@ -23,6 +24,8 @@ interface RouteContext {
 }
 
 export async function GET(request: NextRequest, context: RouteContext) {
+  const startedAt = performance.now();
+  const requestId = crypto.randomUUID();
   const { hymnId, artifact } = await context.params;
   if (!hymnIds.has(hymnId) || !artifacts.has(artifact)) {
     return NextResponse.json({ detail: "Render artifact not found." }, { status: 404 });
@@ -63,11 +66,36 @@ export async function GET(request: NextRequest, context: RouteContext) {
       }
     }
     headers.set("cache-control", "private, max-age=0, must-revalidate");
+    if (artifact === "score.pdf") {
+      const contentLength = upstream.headers.get("content-length");
+      const parsedLength = contentLength === null ? null : Number(contentLength);
+      await recordDownloadEvent({
+        durationMs: performance.now() - startedAt,
+        hymnId,
+        outputBytes:
+          parsedLength !== null && Number.isFinite(parsedLength)
+            ? parsedLength
+            : null,
+        outcome: upstream.ok ? "succeeded" : "failed",
+        parameters: upstreamUrl.searchParams,
+        requestId,
+      });
+    }
     return new NextResponse(upstream.body, {
       status: upstream.status,
       headers,
     });
   } catch {
+    if (artifact === "score.pdf") {
+      await recordDownloadEvent({
+        durationMs: performance.now() - startedAt,
+        hymnId,
+        outputBytes: null,
+        outcome: "failed",
+        parameters: upstreamUrl.searchParams,
+        requestId,
+      });
+    }
     return NextResponse.json(
       { detail: "The render API could not be reached." },
       { status: 502 },

@@ -25,6 +25,33 @@ type KeywordResearch = {
 
 export type KeywordDataState = "complete" | "partial" | "unresearched";
 
+export type KeywordProgressStage =
+  | "planned"
+  | "live"
+  | "indexed"
+  | "visible"
+  | "top20"
+  | "page1"
+  | "top3";
+
+export type KeywordProgress = {
+  stage: KeywordProgressStage;
+  currentPosition: number | null;
+  positionChange7d: number | null;
+  positionChange28d: number | null;
+  bestPosition: number | null;
+  impressions28d: number;
+  clicks28d: number;
+  ctr28d: number | null;
+  organicSessions28d: number;
+  keyEvents28d: number;
+  rankingUrl: string | null;
+  rankingUrlMatchesTarget: boolean | null;
+  indexed: boolean | null;
+  live: boolean | null;
+  lastUpdated: string | null;
+};
+
 export type KeywordTargetRow = {
   id: string;
   keyword: string;
@@ -37,6 +64,7 @@ export type KeywordTargetRow = {
   trafficPotential: number | null;
   dataState: KeywordDataState;
   indexWhenLaunched: boolean;
+  progress?: KeywordProgress;
 };
 
 export type KeywordDashboard = {

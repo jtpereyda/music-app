@@ -26,5 +26,11 @@
         "service": "web"
       }
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/seo-snapshot",
+      "schedule": "0 11 * * *"
+    }
   ]
 }
