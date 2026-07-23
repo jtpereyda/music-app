@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
+  Fragment,
   type Ref,
   useEffect,
   useMemo,
@@ -61,6 +62,7 @@ const keywordTableColumns: Array<{
   label: string;
 }> = [
   { key: "keyword", label: "Keyword" },
+  { align: "right", key: "volume", label: "Volume" },
   { key: "priority", label: "Priority" },
   { key: "page", label: "Target page" },
   { key: "stage", label: "Progress" },
@@ -75,7 +77,6 @@ const keywordTableColumns: Array<{
     label: "Organic sessions",
   },
   { align: "right", key: "keyEvents28d", label: "Key events" },
-  { align: "right", key: "volume", label: "Volume" },
   { align: "right", key: "difficulty", label: "KD" },
   {
     align: "right",
@@ -194,15 +195,14 @@ function SeoCopyValue({
   value: string | null;
 }) {
   return (
-    <div className="grid grid-cols-[72px_minmax(0,1fr)] gap-2">
-      <dt className="font-mono text-[8px] uppercase tracking-[0.11em] text-white/25">
+    <div className="rounded-xl border border-white/[0.065] bg-black/15 p-3.5">
+      <dt className="font-mono text-[8px] uppercase tracking-[0.12em] text-white/30">
         {label}
       </dt>
       <dd
-        className={`line-clamp-2 text-[10px] leading-4 ${
-          value ? "text-white/50" : "italic text-white/20"
+        className={`mt-1.5 text-xs leading-5 ${
+          value ? "text-white/65" : "italic text-white/25"
         }`}
-        title={value ?? undefined}
       >
         {value ?? "Not captured"}
       </dd>
@@ -368,6 +368,9 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
   const [priority, setPriority] = useState("all");
   const [dataState, setDataState] = useState("all");
   const [indexingState, setIndexingState] = useState("all");
+  const [expandedRows, setExpandedRows] = useState<Set<string>>(
+    () => new Set(),
+  );
   const [stickyHeader, setStickyHeader] =
     useState<StickyHeaderGeometry | null>(null);
   const [checkStatus, setCheckStatus] = useState<
@@ -388,6 +391,18 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
           }
         : { key: column, direction: defaultSortDirections[column] },
     );
+  };
+
+  const toggleRow = (rowId: string) => {
+    setExpandedRows((current) => {
+      const next = new Set(current);
+      if (next.has(rowId)) {
+        next.delete(rowId);
+      } else {
+        next.add(rowId);
+      }
+      return next;
+    });
   };
 
   const keywordOccurrences = useMemo(() => {
@@ -758,7 +773,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
             </div>
             <p className="mt-1 text-sm text-white/40">
               Daily search progress plus the original research baseline. Click
-              any heading to sort ascending or descending.
+              a row for its on-page SEO, or a heading to sort.
             </p>
           </div>
 
@@ -842,185 +857,248 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
             {visibleRows.map((row) => {
               const targetCount = keywordOccurrences.get(row.keyword) ?? 1;
               const progress = row.progress;
+              const isExpanded = expandedRows.has(row.id);
 
               return (
-                <tr
-                  key={row.id}
-                  className="border-b border-white/[0.065] text-sm transition-colors last:border-0 hover:bg-white/[0.035]"
-                >
-                  <td className="max-w-[340px] px-6 py-4 align-top">
-                    <p className="font-medium leading-5 tracking-[-0.015em] text-white/90">
-                      {row.keyword}
-                    </p>
-                    <div className="mt-1.5 flex items-center gap-2 font-mono text-[8px] uppercase tracking-[0.12em]">
+                <Fragment key={row.id}>
+                  <tr
+                    className={`cursor-pointer border-b border-white/[0.065] text-sm transition-colors hover:bg-white/[0.035] ${
+                      isExpanded ? "bg-white/[0.025]" : ""
+                    }`}
+                    onClick={(event) => {
+                      const target = event.target as HTMLElement;
+                      if (target.closest("a, button")) return;
+                      toggleRow(row.id);
+                    }}
+                  >
+                    <td className="max-w-[340px] px-6 py-3 align-middle">
+                      <div className="flex items-start gap-2.5">
+                        <button
+                          type="button"
+                          aria-expanded={isExpanded}
+                          aria-label={`${isExpanded ? "Collapse" : "Expand"} SEO details for ${row.keyword}`}
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            toggleRow(row.id);
+                          }}
+                          className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-md border border-white/10 bg-white/[0.035] text-sm text-white/40 transition hover:border-white/20 hover:bg-white/[0.07] hover:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                        >
+                          <span
+                            aria-hidden="true"
+                            className={`transition-transform ${
+                              isExpanded ? "rotate-90" : ""
+                            }`}
+                          >
+                            ›
+                          </span>
+                        </button>
+                        <div className="min-w-0">
+                          <p className="font-medium leading-5 tracking-[-0.015em] text-white/90">
+                            {row.keyword}
+                          </p>
+                          <div className="mt-1 flex items-center gap-2 font-mono text-[8px] uppercase tracking-[0.12em]">
+                            <span
+                              className={
+                                row.role === "Primary"
+                                  ? "text-coral"
+                                  : "text-white/30"
+                              }
+                            >
+                              {row.role}
+                            </span>
+                            {targetCount > 1 ? (
+                              <span className="text-amber-200/70">
+                                {targetCount} target pages
+                              </span>
+                            ) : null}
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
+                      {formatMetric(row.volume)}
+                    </td>
+                    <td className="px-4 py-3 align-middle">
                       <span
                         className={
-                          row.role === "Primary"
-                            ? "text-coral"
-                            : "text-white/30"
+                          row.priority === 0
+                            ? "inline-flex rounded-full bg-coral/12 px-2 py-1 font-mono text-[9px] font-semibold text-[#ffad9c]"
+                            : "inline-flex rounded-full bg-blue/15 px-2 py-1 font-mono text-[9px] font-semibold text-[#9fd2e8]"
                         }
                       >
-                        {row.role}
+                        P{row.priority}
                       </span>
-                      {targetCount > 1 ? (
-                        <span className="text-amber-200/70">
-                          {targetCount} target pages
-                        </span>
-                      ) : null}
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 align-top">
-                    <span
-                      className={
-                        row.priority === 0
-                          ? "inline-flex rounded-full bg-coral/12 px-2 py-1 font-mono text-[9px] font-semibold text-[#ffad9c]"
-                          : "inline-flex rounded-full bg-blue/15 px-2 py-1 font-mono text-[9px] font-semibold text-[#9fd2e8]"
-                      }
-                    >
-                      P{row.priority}
-                    </span>
-                  </td>
-                  <td className="w-[480px] max-w-[480px] px-4 py-4 align-top">
-                    <Link
-                      href={row.targetPath}
-                      target="_blank"
-                      className="block truncate font-mono text-[10px] text-white/65 underline decoration-white/10 underline-offset-4 transition hover:text-white hover:decoration-white/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
-                    >
-                      {row.targetPath}
-                    </Link>
-                    <p className="mt-1.5 text-[10px] text-white/28">
-                      {pageTypeLabels[row.pageType] ?? row.pageType}
-                    </p>
-                    <dl className="mt-3 space-y-1.5 rounded-xl border border-white/[0.065] bg-black/10 p-3">
-                      <SeoCopyValue label="Title" value={row.seo.title} />
-                      <SeoCopyValue
-                        label="Meta desc."
-                        value={row.seo.metaDescription}
-                      />
-                      <SeoCopyValue label="H1" value={row.seo.h1} />
-                      <SeoCopyValue
-                        label="First para."
-                        value={row.seo.firstParagraph}
-                      />
-                    </dl>
-                  </td>
-                  <td className="px-4 py-4 align-top">
-                    <ProgressBadge stage={progress?.stage ?? "planned"} />
-                    {progress?.rankingUrlMatchesTarget === false ? (
-                      <p className="mt-1.5 font-mono text-[8px] uppercase tracking-[0.1em] text-amber-200/75">
-                        Other URL ranks
+                    </td>
+                    <td className="w-[480px] max-w-[480px] px-4 py-3 align-middle">
+                      <Link
+                        href={row.targetPath}
+                        target="_blank"
+                        className="block truncate font-mono text-[10px] text-white/65 underline decoration-white/10 underline-offset-4 transition hover:text-white hover:decoration-white/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                      >
+                        {row.targetPath}
+                      </Link>
+                      <p className="mt-1 text-[10px] text-white/28">
+                        {pageTypeLabels[row.pageType] ?? row.pageType}
                       </p>
-                    ) : null}
-                  </td>
-                  <td className="w-[230px] max-w-[230px] px-4 py-4 align-top">
-                    <IndexingBadge indexing={row.indexing} />
-                    <p
-                      className="mt-2 line-clamp-2 text-[10px] leading-4 text-white/40"
-                      title={row.indexing.coverageState ?? undefined}
-                    >
-                      {row.indexing.coverageState ?? "No inspection result yet"}
-                    </p>
-                    <p className="mt-1 font-mono text-[8px] uppercase tracking-[0.1em] text-white/25">
-                      {formatCheckedAt(row.indexing.checkedAt)}
-                    </p>
-                    {row.indexing.inspectionResultLink ? (
-                      <a
-                        href={row.indexing.inspectionResultLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-3 inline-flex rounded-lg border border-coral/20 bg-coral/10 px-2.5 py-1.5 text-[10px] font-semibold text-[#ffad9c] transition hover:border-coral/35 hover:bg-coral/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
-                        title={`Open ${row.targetPath} in Google Search Console to request indexing`}
+                    </td>
+                    <td className="px-4 py-3 align-middle">
+                      <ProgressBadge stage={progress?.stage ?? "planned"} />
+                      {progress?.rankingUrlMatchesTarget === false ? (
+                        <p className="mt-1.5 font-mono text-[8px] uppercase tracking-[0.1em] text-amber-200/75">
+                          Other URL ranks
+                        </p>
+                      ) : null}
+                    </td>
+                    <td className="w-[230px] max-w-[230px] px-4 py-3 align-middle">
+                      <div className="flex items-center gap-2">
+                        <IndexingBadge indexing={row.indexing} />
+                        {row.indexing.inspectionResultLink ? (
+                          <a
+                            href={row.indexing.inspectionResultLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[9px] font-semibold text-[#ffad9c] underline decoration-coral/20 underline-offset-4 transition hover:decoration-coral/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                            title={`Open ${row.targetPath} in Google Search Console to request indexing`}
+                          >
+                            Request ↗
+                          </a>
+                        ) : (
+                          <span className="text-[9px] text-white/25">
+                            Check first
+                          </span>
+                        )}
+                      </div>
+                      <p
+                        className="mt-1 line-clamp-1 text-[10px] leading-4 text-white/35"
+                        title={row.indexing.coverageState ?? undefined}
                       >
-                        Request indexing ↗
-                      </a>
-                    ) : (
-                      <span className="mt-3 inline-flex rounded-lg border border-white/[0.07] px-2.5 py-1.5 text-[10px] text-white/25">
-                        Check status first
-                      </span>
-                    )}
-                  </td>
-                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/75">
-                    {progress?.currentPosition === null ||
-                    progress?.currentPosition === undefined
-                      ? "—"
-                      : progress.currentPosition.toFixed(1)}
-                  </td>
-                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums">
-                    {progress?.positionChange7d === null ||
-                    progress?.positionChange7d === undefined ? (
-                      <span className="text-white/25">—</span>
-                    ) : (
+                        {row.indexing.coverageState ??
+                          "No inspection result yet"}{" "}
+                        <span className="font-mono text-[8px] uppercase tracking-[0.08em] text-white/20">
+                          · {formatCheckedAt(row.indexing.checkedAt)}
+                        </span>
+                      </p>
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/75">
+                      {progress?.currentPosition === null ||
+                      progress?.currentPosition === undefined
+                        ? "—"
+                        : progress.currentPosition.toFixed(1)}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums">
+                      {progress?.positionChange7d === null ||
+                      progress?.positionChange7d === undefined ? (
+                        <span className="text-white/25">—</span>
+                      ) : (
+                        <span
+                          className={
+                            progress.positionChange7d > 0
+                              ? "text-emerald-200"
+                              : progress.positionChange7d < 0
+                                ? "text-rose-200"
+                                : "text-white/40"
+                          }
+                        >
+                          {progress.positionChange7d > 0 ? "+" : ""}
+                          {progress.positionChange7d.toFixed(1)}
+                        </span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
+                      {numberFormatter.format(progress?.impressions28d ?? 0)}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
+                      {numberFormatter.format(progress?.clicks28d ?? 0)}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
+                      {numberFormatter.format(
+                        progress?.organicSessions28d ?? 0,
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
+                      {numberFormatter.format(progress?.keyEvents28d ?? 0)}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums">
                       <span
                         className={
-                          progress.positionChange7d > 0
-                            ? "text-emerald-200"
-                            : progress.positionChange7d < 0
-                              ? "text-rose-200"
-                              : "text-white/40"
+                          row.difficulty === null
+                            ? "text-white/25"
+                            : row.difficulty <= 3
+                              ? "text-emerald-200"
+                              : "text-white/70"
                         }
                       >
-                        {progress.positionChange7d > 0 ? "+" : ""}
-                        {progress.positionChange7d.toFixed(1)}
+                        {formatMetric(row.difficulty)}
                       </span>
-                    )}
-                  </td>
-                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
-                    {numberFormatter.format(progress?.impressions28d ?? 0)}
-                  </td>
-                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
-                    {numberFormatter.format(progress?.clicks28d ?? 0)}
-                  </td>
-                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
-                    {numberFormatter.format(progress?.organicSessions28d ?? 0)}
-                  </td>
-                  <td className="px-4 py-4 text-right align-top font-mono text-xs tabular-nums text-white/70">
-                    {numberFormatter.format(progress?.keyEvents28d ?? 0)}
-                  </td>
-                  <td className="px-4 py-4 text-right font-mono text-xs tabular-nums text-white/70">
-                    {formatMetric(row.volume)}
-                  </td>
-                  <td className="px-4 py-4 text-right font-mono text-xs tabular-nums">
-                    <span
-                      className={
-                        row.difficulty === null
-                          ? "text-white/25"
-                          : row.difficulty <= 3
-                            ? "text-emerald-200"
-                            : "text-white/70"
-                      }
-                    >
-                      {formatMetric(row.difficulty)}
-                    </span>
-                  </td>
-                  <td className="px-4 py-4 text-right font-mono text-xs tabular-nums text-white/70">
-                    {formatMetric(row.trafficPotential)}
-                  </td>
-                  <td className="px-4 py-4">
-                    <DataBadge state={row.dataState} />
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <div className="flex items-center justify-end gap-2">
-                      <a
-                        href={ahrefsKeywordUrl(row.keyword)}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="rounded-lg border border-white/10 px-2.5 py-1.5 text-[10px] font-medium text-white/55 transition hover:border-white/20 hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
-                        title={`Open “${row.keyword}” in Ahrefs Keywords Explorer`}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
+                      {formatMetric(row.trafficPotential)}
+                    </td>
+                    <td className="px-4 py-3 align-middle">
+                      <DataBadge state={row.dataState} />
+                    </td>
+                    <td className="px-6 py-3 text-right align-middle">
+                      <div className="flex items-center justify-end gap-2">
+                        <a
+                          href={ahrefsKeywordUrl(row.keyword)}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="rounded-lg border border-white/10 px-2.5 py-1.5 text-[10px] font-medium text-white/55 transition hover:border-white/20 hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                          title={`Open “${row.keyword}” in Ahrefs Keywords Explorer`}
+                        >
+                          Keyword ↗
+                        </a>
+                        <a
+                          href={ahrefsPageUrl(targetOrigin, row.targetPath)}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="rounded-lg border border-white/10 px-2.5 py-1.5 text-[10px] font-medium text-white/55 transition hover:border-white/20 hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                          title={`Open ${row.targetPath} in Ahrefs Site Explorer`}
+                        >
+                          Page ↗
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  {isExpanded ? (
+                    <tr className="border-b border-white/[0.065] bg-black/10">
+                      <td
+                        colSpan={keywordTableColumns.length + 1}
+                        className="px-6 pb-5 pt-1"
                       >
-                        Keyword ↗
-                      </a>
-                      <a
-                        href={ahrefsPageUrl(targetOrigin, row.targetPath)}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="rounded-lg border border-white/10 px-2.5 py-1.5 text-[10px] font-medium text-white/55 transition hover:border-white/20 hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
-                        title={`Open ${row.targetPath} in Ahrefs Site Explorer`}
-                      >
-                        Page ↗
-                      </a>
-                    </div>
-                  </td>
-                </tr>
+                        <div className="max-w-[1400px] rounded-2xl border border-white/[0.075] bg-white/[0.025] p-4">
+                          <div className="flex items-center justify-between gap-4">
+                            <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-white/35">
+                              On-page SEO · {row.targetPath}
+                            </p>
+                            <button
+                              type="button"
+                              onClick={() => toggleRow(row.id)}
+                              className="rounded-lg px-2 py-1 text-[10px] text-white/35 transition hover:bg-white/5 hover:text-white/65 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                            >
+                              Collapse
+                            </button>
+                          </div>
+                          <dl className="mt-3 grid gap-3 md:grid-cols-2">
+                            <SeoCopyValue
+                              label="Title"
+                              value={row.seo.title}
+                            />
+                            <SeoCopyValue
+                              label="Meta description"
+                              value={row.seo.metaDescription}
+                            />
+                            <SeoCopyValue label="H1" value={row.seo.h1} />
+                            <SeoCopyValue
+                              label="First paragraph"
+                              value={row.seo.firstParagraph}
+                            />
+                          </dl>
+                        </div>
+                      </td>
+                    </tr>
+                  ) : null}
+                </Fragment>
               );
             })}
           </tbody>
