@@ -44,13 +44,17 @@ export interface CuratedPreset {
   edition: EditionConfig;
 }
 
+function keyPresetTitle(hymnTitle: string, key: string): string {
+  return `${hymnTitle} Sheet Music in ${key} | Free PDF`;
+}
+
 export const curatedPresets: readonly CuratedPreset[] = [
   {
     hymnSlug: "it-is-well-with-my-soul",
     slug: "key-of-c",
     kind: "key",
     shortLabel: "Key of C",
-    title: "It Is Well with My Soul Sheet Music in C — SATB & Any Clef",
+    title: keyPresetTitle("It Is Well with My Soul", "C"),
     heading: "It Is Well with My Soul sheet music in C major",
     eyebrow: "VILLE DU HAVRE · key of C",
     intro:
@@ -68,7 +72,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "key-of-g",
     kind: "key",
     shortLabel: "Key of G",
-    title: "It Is Well with My Soul Sheet Music in G — SATB & Any Clef",
+    title: keyPresetTitle("It Is Well with My Soul", "G"),
     heading: "It Is Well with My Soul sheet music in G major",
     eyebrow: "VILLE DU HAVRE · key of G",
     intro:
@@ -86,7 +90,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "key-of-d",
     kind: "key",
     shortLabel: "Key of D",
-    title: "It Is Well with My Soul Sheet Music in D — SATB & Any Clef",
+    title: keyPresetTitle("It Is Well with My Soul", "D"),
     heading: "It Is Well with My Soul sheet music in D major",
     eyebrow: "VILLE DU HAVRE · key of D",
     intro:
@@ -104,7 +108,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "key-of-c",
     kind: "key",
     shortLabel: "Key of C",
-    title: "Amazing Grace Sheet Music in C — SATB & Any Clef",
+    title: keyPresetTitle("Amazing Grace", "C"),
     heading: "Amazing Grace sheet music in C major",
     eyebrow: "NEW BRITAIN · key of C",
     intro:
@@ -122,7 +126,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "key-of-c",
     kind: "key",
     shortLabel: "Key of C",
-    title: "Blessed Assurance Sheet Music in C — SATB & Any Clef",
+    title: keyPresetTitle("Blessed Assurance", "C"),
     heading: "Blessed Assurance sheet music in C major",
     eyebrow: "ASSURANCE · key of C",
     intro:
@@ -140,7 +144,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "key-of-c",
     kind: "key",
     shortLabel: "Key of C",
-    title: "Come Thou Fount Sheet Music in C — SATB & Any Clef",
+    title: keyPresetTitle("Come Thou Fount", "C"),
     heading: "Come Thou Fount sheet music in C major",
     eyebrow: "NETTLETON · key of C",
     intro:
