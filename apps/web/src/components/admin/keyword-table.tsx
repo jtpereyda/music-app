@@ -137,6 +137,10 @@ function ahrefsKeywordUrl(keyword: string): string {
   return `https://app.ahrefs.com/keywords-explorer/google/us/overview?keyword=${encodeURIComponent(keyword)}`;
 }
 
+function googleSearchUrl(keyword: string): string {
+  return `https://www.google.com/search?q=${encodeURIComponent(keyword)}`;
+}
+
 function ahrefsPageUrl(targetOrigin: string, targetPath: string): string {
   const target = new URL(targetPath, targetOrigin).toString();
   return `https://app.ahrefs.com/site-explorer/overview/v2/exact/live?target=${encodeURIComponent(target)}`;
@@ -893,9 +897,40 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                           </span>
                         </button>
                         <div className="min-w-0">
-                          <p className="font-medium leading-5 tracking-[-0.015em] text-white/90">
-                            {row.keyword}
-                          </p>
+                          <div className="flex items-start gap-2">
+                            <p className="font-medium leading-5 tracking-[-0.015em] text-white/90">
+                              {row.keyword}
+                            </p>
+                            <a
+                              href={googleSearchUrl(row.keyword)}
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label={`Search Google for “${row.keyword}”`}
+                              title={`Search Google for “${row.keyword}”`}
+                              className="mt-0.5 inline-flex size-5 shrink-0 items-center justify-center rounded-md border border-white/10 bg-white/[0.025] text-white/35 transition hover:border-white/20 hover:bg-white/[0.07] hover:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                            >
+                              <svg
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                className="size-3.5"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  d="M8 4.5H5.75A2.25 2.25 0 0 0 3.5 6.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25V12"
+                                  stroke="currentColor"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                />
+                                <path
+                                  d="M10.5 3.5h6v6M9.5 10.5l7-7"
+                                  stroke="currentColor"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                            </a>
+                          </div>
                           <div className="mt-1 flex items-center gap-2 font-mono text-[8px] uppercase tracking-[0.12em]">
                             <span
                               className={
