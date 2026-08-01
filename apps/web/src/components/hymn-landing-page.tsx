@@ -131,7 +131,7 @@ export function HymnLandingPage({
                   href="#make-an-edition"
                   className="inline-flex rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition hover:-translate-y-px hover:bg-ink/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4"
                 >
-                  Preview and download
+                  Configure and download
                 </Link>
               </div>
             </div>
