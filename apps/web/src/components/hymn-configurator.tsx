@@ -560,6 +560,7 @@ export function HymnConfigurator({
             isRendering={isRendering}
             previewUrl={previewUrl}
             previewState={previewState}
+            onDownload={downloadPdf}
             onPreviewReady={(url) =>
               setPreviewResult({ url, state: "ready" })
             }

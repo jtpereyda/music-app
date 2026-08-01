@@ -133,12 +133,6 @@ export function HymnLandingPage({
                 >
                   Preview and download
                 </Link>
-                <Link
-                  href="/hymns/sheet-music-for-instrumentalists"
-                  className="inline-flex rounded-full border border-ink/15 bg-white/50 px-5 py-2.5 text-sm font-medium text-ink transition hover:-translate-y-px hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4"
-                >
-                  Browse keys and parts
-                </Link>
               </div>
             </div>
 

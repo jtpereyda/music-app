@@ -28,6 +28,7 @@ interface PreviewSheetProps {
   isRendering: boolean;
   previewUrl?: string;
   previewState: PreviewState;
+  onDownload: () => void;
   onPreviewReady: (url: string) => void;
   onPreviewError: (url: string) => void;
 }
@@ -45,6 +46,7 @@ export function PreviewSheet({
   isRendering,
   previewUrl,
   previewState,
+  onDownload,
   onPreviewReady,
   onPreviewError,
 }: PreviewSheetProps) {
@@ -62,7 +64,7 @@ export function PreviewSheet({
       className="relative flex min-h-[560px] scroll-mt-4 flex-1 flex-col overflow-hidden rounded-[28px] border border-ink/10 bg-[#dfe4e4] shadow-[0_24px_65px_rgba(29,39,50,0.12)] lg:min-h-[720px]"
     >
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink/10 bg-white/70 px-4 py-3 backdrop-blur sm:px-5">
-        <div className="flex items-center gap-2.5">
+        <div className="flex flex-wrap items-center gap-2.5">
           <span
             className={`size-2 rounded-full ${
               isRendering ? "animate-pulse bg-coral" : "bg-[#4f8e6b]"
@@ -79,6 +81,32 @@ export function PreviewSheet({
                     ? "Preview unavailable"
                     : "Layout preview"}
           </span>
+          <button
+            type="button"
+            onClick={onDownload}
+            disabled={isRendering}
+            className="group inline-flex h-8 items-center gap-1.5 rounded-full bg-coral px-3 text-[11px] font-semibold text-white shadow-[0_5px_14px_rgba(231,104,77,0.24)] outline-none transition hover:-translate-y-px hover:bg-[#d95f45] focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-65 disabled:hover:translate-y-0"
+          >
+            {isRendering ? (
+              <span className="size-3.5 animate-spin rounded-full border-2 border-white/35 border-t-white" />
+            ) : (
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                className="size-3.5 transition-transform group-hover:translate-y-0.5"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            )}
+            {isRendering ? "Rendering…" : "Download PDF"}
+          </button>
           <span className="hidden text-xs text-ink/40 sm:inline">
             {previewState === "ready"
               ? " · generated from canonical MusicXML"
