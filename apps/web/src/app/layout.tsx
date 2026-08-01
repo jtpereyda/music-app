@@ -4,18 +4,24 @@ import { GeistSans } from "geist/font/sans";
 import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";
 import { MicrosoftClarity } from "@/components/microsoft-clarity";
-import { getSiteUrl, indexingEnabled } from "@/lib/site";
+import {
+  defaultSiteTitle,
+  getSiteUrl,
+  indexingEnabled,
+  siteName,
+  siteTitleTemplate,
+} from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
   title: {
-    default: "Transposify — Practical music, shaped to fit",
-    template: "%s · Transposify",
+    default: defaultSiteTitle,
+    template: siteTitleTemplate,
   },
   description:
     "Turn structured scores into practical editions. Try Transposify’s live hymn tool to choose a key, SATB line, clef, and print-ready page size.",
-  applicationName: "Transposify",
+  applicationName: siteName,
   category: "music",
   keywords: [
     "music transposition",
@@ -31,8 +37,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "Transposify",
-    title: "Transposify — Practical music, shaped to fit",
+    siteName,
+    title: defaultSiteTitle,
     description:
       "Printable hymn sheet music in the key, voice, and clef your musician needs.",
     url: "/",

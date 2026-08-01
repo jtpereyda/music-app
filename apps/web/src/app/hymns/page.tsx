@@ -7,15 +7,17 @@ import {
   getPresetsForHymn,
   priorityHymnSlugs,
 } from "@/lib/landing-pages";
-import { getSiteUrl } from "@/lib/site";
+import { getSiteUrl, withSiteName } from "@/lib/site";
+
+const pageTitle = "Free Hymn Sheet Music in Any Key & Clef";
 
 export const metadata: Metadata = {
-  title: "Free Hymn Sheet Music in Any Key & Clef",
+  title: pageTitle,
   description:
     "Browse free printable hymn sheet music by title and tune. Change the key, choose full SATB or an individual voice, select a clef, and download a fresh PDF.",
   alternates: { canonical: "/hymns" },
   openGraph: {
-    title: "Free Hymn Sheet Music in Any Key & Clef",
+    title: withSiteName(pageTitle),
     description:
       "Traditional hymn scores with selectable keys, SATB parts, clefs, live previews, and print-ready PDFs.",
     url: "/hymns",

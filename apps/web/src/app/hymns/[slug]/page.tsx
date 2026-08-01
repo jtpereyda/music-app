@@ -9,7 +9,7 @@ import {
   isPriorityHymn,
   type EditionSearchParams,
 } from "@/lib/landing-pages";
-import { indexingEnabled } from "@/lib/site";
+import { freePdfTitle, indexingEnabled, withSiteName } from "@/lib/site";
 import {
   getCatalogSnapshot,
   renderApiConfigured,
@@ -38,7 +38,7 @@ export async function generateMetadata({
   }
 
   const tuneName = getLandingTuneName(hymn);
-  const title = `${hymn.title} Sheet Music in Any Key & Clef`;
+  const title = freePdfTitle(`${hymn.title} Sheet Music`);
   const description = `Printable ${hymn.title} sheet music to the traditional ${tuneName} tune. Choose any key, full SATB or one hymn voice, and treble, bass, alto, or tenor clef.`;
 
   return {
@@ -48,7 +48,7 @@ export async function generateMetadata({
       canonical: `/hymns/${hymn.slug}`,
     },
     openGraph: {
-      title,
+      title: withSiteName(title),
       description,
       type: "website",
       url: `/hymns/${hymn.slug}`,

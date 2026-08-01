@@ -3,14 +3,18 @@ import Link from "next/link";
 import { getKeyLabel } from "@/lib/catalog";
 import { getCatalogSnapshot } from "@/lib/catalog.server";
 import { curatedPresets, getLandingTuneName } from "@/lib/landing-pages";
+import { withSiteName } from "@/lib/site";
+
+const pageTitle =
+  "Sheet Music for Instrumentalists | Keys, Clefs & Melody Parts";
 
 export const metadata: Metadata = {
-  title: "Sheet Music for Instrumentalists — Keys, Clefs & Melody Parts",
+  title: pageTitle,
   description:
     "Printable hymn sheet music for cello, trombone, and other instrumentalists. Start with an exact key, bass clef, or melody-part preset, then adjust the range.",
   alternates: { canonical: "/hymns/sheet-music-for-instrumentalists" },
   openGraph: {
-    title: "Sheet Music for Instrumentalists — Keys, Clefs & Parts",
+    title: withSiteName(pageTitle),
     description:
       "Configurable hymn melody parts and exact-key editions for instrumentalists.",
     type: "website",

@@ -7,14 +7,17 @@ import {
   getCatalogSnapshot,
   renderApiConfigured,
 } from "@/lib/catalog.server";
+import { withSiteName } from "@/lib/site";
+
+const pageTitle = "Free Sheet Music Transposer for Hymns";
 
 export const metadata: Metadata = {
-  title: "Free Sheet Music Transposer for Hymns",
+  title: pageTitle,
   description:
     "Transpose sheet music online from Transposify’s hymn catalog. Choose a key, full SATB or one voice, clef, range, and page size, then download a fresh PDF.",
   alternates: { canonical: "/uses/hymn-transposer" },
   openGraph: {
-    title: "Free Sheet Music Transposer for Hymns",
+    title: withSiteName(pageTitle),
     description:
       "Choose a catalog hymn, key, voice, clef, and page size, then preview and download a newly engraved PDF.",
     type: "website",

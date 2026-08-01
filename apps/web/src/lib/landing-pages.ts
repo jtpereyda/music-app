@@ -13,6 +13,7 @@ import {
   type PageSize,
   type TargetKey,
 } from "@/lib/catalog";
+import { freePdfTitle } from "@/lib/site";
 
 export const priorityHymnSlugs = [
   "it-is-well-with-my-soul",
@@ -45,7 +46,7 @@ export interface CuratedPreset {
 }
 
 function keyPresetTitle(hymnTitle: string, key: string): string {
-  return `${hymnTitle} Sheet Music in ${key} | Free PDF`;
+  return freePdfTitle(`${hymnTitle} Sheet Music in ${key}`);
 }
 
 export const curatedPresets: readonly CuratedPreset[] = [
@@ -162,7 +163,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "bass-clef",
     kind: "clef",
     shortLabel: "Bass clef melody",
-    title: "Amazing Grace Bass Clef Sheet Music — Free Printable",
+    title: freePdfTitle("Amazing Grace Bass Clef Sheet Music"),
     heading: "Amazing Grace sheet music in bass clef",
     eyebrow: "NEW BRITAIN · bass clef · G major",
     intro:
@@ -180,7 +181,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "cello",
     kind: "instrument",
     shortLabel: "Cello melody part",
-    title: "Amazing Grace Cello Sheet Music — Free Melody Part",
+    title: freePdfTitle("Amazing Grace Cello Sheet Music"),
     heading: "Amazing Grace sheet music for cello",
     eyebrow: "Cello melody part · bass clef · G major",
     intro:
@@ -198,7 +199,7 @@ export const curatedPresets: readonly CuratedPreset[] = [
     slug: "trombone",
     kind: "instrument",
     shortLabel: "Trombone melody part",
-    title: "Amazing Grace Trombone Sheet Music — Bass Clef Melody",
+    title: freePdfTitle("Amazing Grace Trombone Sheet Music"),
     heading: "Amazing Grace sheet music for trombone",
     eyebrow: "Trombone melody part · bass clef · concert B-flat",
     intro:

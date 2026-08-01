@@ -11,7 +11,7 @@ import {
   getCatalogSnapshot,
   renderApiConfigured,
 } from "@/lib/catalog.server";
-import { indexingEnabled } from "@/lib/site";
+import { indexingEnabled, withSiteName } from "@/lib/site";
 
 interface PresetPageProps {
   params: Promise<{ slug: string; preset: string }>;
@@ -44,7 +44,7 @@ export async function generateMetadata({
     description: preset.intro,
     alternates: { canonical },
     openGraph: {
-      title: preset.title,
+      title: withSiteName(preset.title),
       description: preset.intro,
       type: "website",
       url: canonical,
