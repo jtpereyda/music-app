@@ -3,6 +3,7 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";
+import { MicrosoftClarity } from "@/components/microsoft-clarity";
 import { getSiteUrl, indexingEnabled } from "@/lib/site";
 import "./globals.css";
 
@@ -54,6 +55,7 @@ export default function RootLayout({
         <AppHeader />
         <main>{children}</main>
         <AppFooter />
+        <MicrosoftClarity />
       </body>
     </html>
   );

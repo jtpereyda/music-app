@@ -64,10 +64,10 @@ const keywordTableColumns: Array<{
   { key: "keyword", label: "Keyword" },
   { align: "right", key: "volume", label: "Volume" },
   { key: "priority", label: "Priority" },
+  { align: "right", key: "position", label: "Position" },
   { key: "page", label: "Target page" },
   { key: "stage", label: "Progress" },
   { key: "indexing", label: "Google index" },
-  { align: "right", key: "position", label: "Position" },
   { align: "right", key: "change7d", label: "Δ 7d" },
   { align: "right", key: "impressions28d", label: "Impr. 28d" },
   { align: "right", key: "clicks28d", label: "Clicks 28d" },
@@ -964,6 +964,12 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                         P{row.priority}
                       </span>
                     </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/75">
+                      {progress?.currentPosition === null ||
+                      progress?.currentPosition === undefined
+                        ? "—"
+                        : progress.currentPosition.toFixed(1)}
+                    </td>
                     <td className="w-[480px] max-w-[480px] px-4 py-3 align-middle">
                       <Link
                         href={row.targetPath}
@@ -1013,12 +1019,6 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                           · {formatCheckedAt(row.indexing.checkedAt)}
                         </span>
                       </p>
-                    </td>
-                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/75">
-                      {progress?.currentPosition === null ||
-                      progress?.currentPosition === undefined
-                        ? "—"
-                        : progress.currentPosition.toFixed(1)}
                     </td>
                     <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums">
                       {progress?.positionChange7d === null ||

@@ -15,6 +15,20 @@ npm run dev
 
 Open <http://localhost:3000>.
 
+## Microsoft Clarity
+
+Create or open the Transposify project in Microsoft Clarity, then copy its
+project ID from **Settings → Overview**. Set it in the deployment environment:
+
+```text
+NEXT_PUBLIC_CLARITY_PROJECT_ID=your-project-id
+```
+
+The tracking code is included on every route when this variable is present and
+is omitted entirely when it is not. After deployment, verify the installation
+in Clarity or confirm that the browser sends a request to
+`https://www.clarity.ms/collect`.
+
 ## SEO admin dashboard
 
 The private keyword dashboard is served at `/admin`. It reads the current
