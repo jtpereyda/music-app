@@ -128,7 +128,7 @@ export function HymnLandingPage({
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link
-                  href="#make-an-edition"
+                  href={`${canonicalPath}#make-an-edition`}
                   className="inline-flex rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition hover:-translate-y-px hover:bg-ink/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4"
                 >
                   Configure and download

@@ -64,6 +64,14 @@ function artifactUrl(
   return `/api/render/${encodeURIComponent(hymn.id)}/${artifact}?${query}`;
 }
 
+function normalizeToolHash(hash: string): string {
+  const fragments = hash.split("#").filter(Boolean);
+  return fragments.length > 1 &&
+    fragments.every((fragment) => fragment === "make-an-edition")
+    ? "#make-an-edition"
+    : hash;
+}
+
 export function HymnConfigurator({
   initialHymn,
   catalog,
@@ -129,7 +137,8 @@ export function HymnConfigurator({
     }
 
     const query = params.toString();
-    const nextUrl = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`;
+    const hash = normalizeToolHash(window.location.hash);
+    const nextUrl = `${window.location.pathname}${query ? `?${query}` : ""}${hash}`;
     window.history.replaceState(window.history.state, "", nextUrl);
   }, [
     clef,
