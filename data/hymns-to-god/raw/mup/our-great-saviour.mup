@@ -1,0 +1,362 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Northfield Hymnal No. 3
+//		Edite by Charles M. Alexander
+//		And May Whittle Moody
+//		The Bookstore (The Northfield Schools
+//		East Northfield, Massachusetts
+//		Copyright: 1918
+//		
+// Transcribed by: Ted Gatza, Jr. 01/13/2014; Rev. 02/27/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Our Great Saviour" ""
+   title (2)""
+   title (11) "G - 3 - DO" "\s(17)\f(TI)\:And\ my\ spirit\ hath\ rejoiced\ in\ God\ my\ Saviour.\ -\ Lk.\ 1:47 \(space)" ""   
+   title (13) "J. Wilbur Chapman" "" "Arr. by Robert Harkness, 1910"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+midi all: 0 "tempo=105";
+
+//1
+1: 2gd; 4ad;
+2: 2bg; 4c+f;
+
+	VERSE "<1. >-1|Je-sus!";
+	VERSE "<2. >-1|Je-sus!";
+	VERSE "<3. >-1|Je-sus!";
+	VERSE "<4. >-1|Je-sus!";
+	VERSE "<5. >-1|Je-sus!";
+bar
+//2
+1 1: 4g slur; a; bg;
+1 2: 4d slur; g; s;
+2 1: 4b slur; c+; d+g;
+2 2: 2g; 4s;
+
+	VERSE "what a";
+	VERSE "what a";
+	VERSE "what a";
+	VERSE "what a";
+	VERSE "I do";
+bar
+//3
+1 1: 2c+; 4bg;
+1 2: 4f slur; a; s;
+2 1: 2d+; 4d+g;
+2 2: 4a slur; f; s;
+
+	VERSE "Friend for";
+	VERSE "strength in";
+	VERSE "help in";
+	VERSE "guide and";
+	VERSE "now re-";
+bar
+//4
+1: 4af slur; ge; af;
+2 1: 2d+d; 4d+;
+2 2: 2s; 8d+bm; c+ ebm;
+
+	VERSE "sin-ners!";
+	VERSE "weak-ness!";
+	VERSE "sor-row!";
+	VERSE "keep-er!";
+	VERSE "ceive Him,";
+bar
+//5
+1: 2d+g; 4c+g;
+2: 2d+b; 4d+a;
+
+	VERSE "Je-sus!";
+	VERSE "Let me";
+	VERSE "While the";
+	VERSE "While the";
+	VERSE "More than";
+bar
+//6
+1: 2bg; 4bd;
+2: 2d+g; 4gb-;
+
+	VERSE "Lov-er";
+	VERSE "hide my-";
+	VERSE "bil-lows";
+	VERSE "tem-pest";
+	VERSE "all in";
+bar
+//7
+1: 4ae slur; gd; af;
+2: 4ac slur; bd; c+d;
+
+	VERSE "of my";
+	VERSE "self in";
+	VERSE "o'er me";
+	VERSE "still is";
+	VERSE "Him I";
+bar
+//8
+1 1: 2.g;
+1 2: 2.g;
+2: 2.bg;
+
+	VERSE "soul;";
+	VERSE "Him;";
+	VERSE "roll,";
+	VERSE "high,";
+	VERSE "find,";
+bar
+//9
+1: 2gd; 4ad;
+2: 2bg; 4c+f;
+
+	VERSE "Friends may";
+	VERSE "Tempt-ed,";
+	VERSE "Ev-en";
+	VERSE "Storms a-";
+	VERSE "He hath";
+bar
+//10
+1 1: 4g slur; a; bg;
+1 2: 4d slur; g; s;
+2 1: 4b slur; c+; d+g;
+2 2: 2g; 4s;
+
+	VERSE "fail me,";
+	VERSE "tried, and";
+	VERSE "when my";
+	VERSE "bout me,";
+	VERSE "grant-ed";
+bar
+//11
+1 1: 2c+; 4bg;
+1 2: 4f slur; a; s;
+2 1: 2d+; 4d+g;
+2 2: 4a slur; f; s;
+
+	VERSE "foes as-";
+	VERSE "some-times";
+	VERSE "heart is";
+	VERSE "night o'er";
+	VERSE "me for-";
+bar
+//12
+1: 4af slur; ge; af;
+2 1: 2d+d; 4d+;
+2 2: 2s; 8d+bm; c+ ebm;
+
+	VERSE "sail me,";
+	VERSE "fail-ing,";
+	VERSE "break-ing,";
+	VERSE "takes me,";
+	VERSE "give-ness,";
+bar
+//13
+1: 2d+g; 4c+g;
+2: 2d+b; 4d+a;
+
+	VERSE "He, my";
+	VERSE "He, my";
+	VERSE "He, my";
+	VERSE "He, my";
+	VERSE "I am";
+bar
+//14
+1: 2bg; 4bd;
+2: 2d+g; 4gb-;
+
+	VERSE "Sav-iour,";
+	VERSE "strength, my";
+	VERSE "com-fort,";
+	VERSE "pi-lot,";
+	VERSE "His, and";
+bar
+//15
+1: 4ae slur; gd; af;
+2: 4ac slur; bd; c+d;
+
+	VERSE "makes me";
+	VERSE "vict-'ry";
+	VERSE "helps my";
+	VERSE "hears my";
+	VERSE "He is";
+bar
+//16
+1 1: 2.g;
+1 2: 2.g;
+2: 2.bg;
+
+	VERSE "whole.";
+	VERSE "wins.";
+	VERSE "soul.";
+	VERSE "cry.";
+	VERSE "mine.";
+dblbar
+newscore
+//17
+1: 2d+g; 4;
+2: 2bg; 4;
+ital (13) above 1: 1 "Refrain";
+
+	VERSE "Ha-le";
+bar
+//18
+1: 4d+b slur; c+a; bg;
+2 1: 2d+; 4d+g;
+2 2: 4g slur; f; s;
+
+	VERSE "lu-jah!";
+bar
+//19
+1: 2c+a; 4c+f;
+2 1: 2d+; 4d+a;
+2 2: 4d slur; f; s;
+
+	VERSE "what a";
+bar
+//20
+1: 4c+a slur; bg; af;
+2: 2d+d; 4;
+
+	VERSE "Sav-iour!";
+bar
+//21
+1: 2bg; 4;
+2: 2d+g; 4;
+
+	VERSE "Hal-le-";
+bar
+//22
+1: 4bg slur; c+f; d+g;
+2 1: 2d+; 4d+b;
+2 2: 4g slur; a; s;
+
+	VERSE "lu-jah!";
+bar
+//23
+1: 4d+g slur; c+a; bg;
+2 1: 2d+; 4d+g;
+2 2: 4b slur; f; s;
+
+	VERSE "what a";
+bar
+//24
+1: 2.af;
+2: 2.d+d;
+
+	VERSE "friend!";
+bar
+//25
+1 1: 4d+ slur; b; d+g;
+1 2: 2g; 4s;
+2 1: 2d+; 4d+b;
+2 2: 4b slur; g; s;
+
+	VERSE "Sav-ing,";
+bar
+//26
+1 1: 4c+ slur; a; c+f;
+1 2: 2f; 4s;
+2 1: 2d+; 4d+a;
+2 2: 4a slur; f; s;
+
+	VERSE "help-ing";
+bar
+//27
+1 1: 4b slur; g; bg;
+1 2: 2g; 4s;
+2 1: 2d+; 4d+g;
+2 2: 4g slur; b; s;
+
+	VERSE "keep-ing,";
+bar
+//28
+1: 8af bm; bg ebm; c+a bm; bg ebm ; 4af;
+2 1: 4d+d tie;; 4d+;
+2 2: 4s;; 8d+ bm; c+ ebm;
+phrase 1: 1 til 2.5;
+phrase above 1: 1 til 2.5;
+
+	VERSE 8; 8s; 8s; 8s; 4; "lov-ing,";
+bar
+//29
+1 1: 2d+; 4d+g;
+1 2: 4g slur; f; 4s;
+2: 4d+b slur; c+a; bg;
+
+	VERSE "He is";
+bar
+//30
+1 1: 4e+ slur; d+; c+g;
+1 2: 2g; 4s;
+2: 4c+c slur; d+b-; e+c;
+
+	VERSE "with me";
+bar
+//31
+1: 2bg; 4af;
+2: 2d+d; 4c+d;
+
+	VERSE "to the";
+bar
+//32
+1 1: 2.g;
+1 2: 2.g;
+2: 2.bg;
+
+	VERSE "end.";
+endbar

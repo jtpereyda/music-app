@@ -1,0 +1,233 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Praise In Song
+//		A Collection Of Hymns And Sacred Melodies
+//		Adapted For Use By: Sunday Schools,
+//		Endeavor Societies, Epworth leagues,
+//		Evangelists, Pastors, Choristers, Etc.
+//		Editors John R. Sweney, W. J. Kirkpatrick
+//		And H. L. Gilmour
+//		John J. Hood, Publisher
+//		1024 Arch Street, Philadelphia
+//		Copyright: 1893
+//		Hymn No.: 17
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/17/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Not One Forgotten" ""
+   title (2)""
+   title (11) "F - 2 - SOL" "\s(17)\f(TI)\:Are\ not\ five\ sparrows\ sold\ \|for\ two\ pence?\ and\ not\ one\ of them\ is\ forgotten\ in\ th\|e\ sight\ of\ God.\ -\ Lk.\ 12:6" ""
+   title (13) "E. E. Hewitt" " " "H. L. Gilmour, 1893" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=75";
+
+//1
+1: 8.fd; 16ge; 2s;
+2: 8.ad; 16; 2s;
+
+			VERSE "<1. >-1|There's a";
+			VERSE "<2. >-1|Though I'm";
+			VERSE "<3. >-1|Oh, the";
+bar
+//2
+1: 4.af; 8bg; 8.af; 16fd;
+2: 4.d+d; 8; 8.; 16ad;
+
+			VERSE "word of ten-der";
+			VERSE "least of all his";
+			VERSE "wound-ed hands of";
+bar
+//3
+1 1: 8ec; 4.d; 8.af; 16;
+1 2: 8s; 4.d; 8.s; 16;
+2: 8ga-; 4.fd; 8.d+d; 16;
+
+			VERSE "beau-ty In the";
+			VERSE "chil-dren, So un-";
+			VERSE "Je-sus All the";
+bar
+//4
+1: 4.bg; 8d+g; 8.af; 16fd;
+2: 4.d+d; 8bd; 8.d+d; 16ad;
+
+			VERSE "say-ings of our";
+			VERSE "wor-thy of his";
+			VERSE "springs of life con-";
+bar
+//5
+1: 2af; 8.; 16;
+2: 2d+d; 8.; 16;
+
+			VERSE "Lord, How it";
+			VERSE "Love, Yet, for";
+			VERSE "trol, Is there";
+bar
+//6
+1 1: 4.c+g; 8c+g; 8.bg; 16a;
+1 2: 4.s; 8; 8.; 16g;
+2: 4.e+a; 8; 8.d+a; 16c+a;
+
+			VERSE "stirs the heart to";
+			VERSE "me there's kind re-";
+			VERSE "an-y ill can";
+bar
+//7
+1 1: 4d+f; 4af; 8.d; 16ec;
+1 2: 4s;; 8.d; 16s;
+2: 4ad; d+d; 8.af; 16ae;
+
+			VERSE "mu-sic, Wak-ing";
+			VERSE "mem-brance In the";
+			VERSE "harm me While his";
+bar
+//8
+1: 4.fd; 8bd; 8.ad; 16fd;
+2: 4.ad; 8gd; 8.fd; 16ad;
+
+			VERSE "grat-i-tude's sweet";
+			VERSE "Fa-ther-heart a-";
+			VERSE "blood is on my";
+bar
+//9
+1: 2ec; 8.fc; 16ec;
+2: 2aa-; 8.aa-; 16ga-;
+mussym (10) above 1: 3 "sign";
+
+			VERSE "chord; For it";
+			VERSE "bove; He will";
+			VERSE "soul? Let me,";
+			DSVERSE 2s; 8.; 16; "<\f(TI)D.S. Chorus - \f(PV)>-2|In my";
+bar
+//10
+1: 4.da-; 8fd; 8.af; 16;
+2: 4.fd; 8ad; 8.d+d; 16;
+
+			VERSE "tells me that \"Our";
+			VERSE "ev-er save and";
+			VERSE "like the lit-tle";
+			DSVERSE "Fa-ther's bless-ed";
+bar
+//11
+1: 8bg; 4.af; 8.; 16;
+2: 8d+d; 4.; 8.; 16;
+
+			VERSE "Fa-ther,\" From his";
+			VERSE "keep me; He will";
+			VERSE "spar-row, Trust him";
+			DSVERSE "keep-ing I am";
+bar
+//12
+1: 4.d+f; 8d+a; 8.d+g#; 16d+gn;
+2: 4.ad; 8cn+d; 8.bd; 16b&d;
+
+			VERSE "throne of roy-al";
+			VERSE "guide me on the";
+			VERSE "where I can-not";
+			DSVERSE "hap-py, safe, and";
+bar
+//13
+1: 2d+f; 8.c+a; 16bg;
+2: 2ad; 8.d+d; 16;
+
+			VERSE "might, Bends to";
+			VERSE "way, For my";
+			VERSE "see, In the";
+			DSVERSE "free; While his";
+bar
+//14
+1: 4.af; 8; 8.bg; 16af;
+2: 4.d+d; 8; 8.; 16;
+
+			VERSE "note a fall-ing";
+			VERSE "Sav-iour gent-ly";
+			VERSE "sun-shine and the";
+			DSVERSE "eye is on the";
+bar
+//15
+1 1: 8af; 4.fd; 8.d; 16e;
+1 2: 8s; 4.; 8.d; 16;
+2: 8d+d; 4.ad; 8.g#b-; 16;
+
+			VERSE "spar-row, For 'tis";
+			VERSE "whis-pers, \"Are ye";
+			VERSE "shad-ow, Sing-ing,";
+			DSVERSE "spar-row I will";
+bar
+//16
+1 1: 4.fd; 8d; 8.fc; 16ec;
+1 2: 4.s; 8d; 8.s; 16;
+2: 4.aa-; 8fa-; 8.aa-; 16ga-;
+ital (13) above 1: 4 "D. S. Chorus";
+
+
+			VERSE "pre-cious in his";
+			VERSE "not much more than";
+			VERSE "he will care for";
+			DSVERSE "not for-got-ten";
+bar
+//17
+1: 2da-; 4s;
+2: 2fd; 4s;
+
+
+
+			VERSE "sight.";
+			VERSE "they?\"";
+			VERSE "me.";
+			DSVERSE "be.";
+			 
+endbar

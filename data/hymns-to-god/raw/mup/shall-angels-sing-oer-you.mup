@@ -1,0 +1,233 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Master's Call
+//		A colletion of new songs and standard hymns
+//		For the use of sunday-Schools, Young People's
+//		Societies Devotional Meetings, etc.
+//		Edited by E. S. Lorenz
+//		Assisted by Chas. H. Gabriel, J. H. Tenney
+//		M. L. McPhail And Wm. Edie Marks
+//		Publisher: Lorenz & Co. Publishers
+//		Dayton, OH
+//		Copyright: 1901
+//		Hymn No. 39
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 04/28/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Shall Angels Sing O'er You?" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - SOL" "\s(17)\f(TI)\:Even\ so,\ I\ say\ unto\ you,\ ther\^e\ is\ joy\ in\ the\ presence\ of\ the\ angels of\ God\ over\ one\ sinne\|r\ that\ repenteth.\ -\ Lk.\ 15:10" ""   
+   title (13) "William C. Martin, arr." "" "Matthew L. McPhail, 1901"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 8.fd; 16; 2.s;
+2: 8.bb-; 16; 2.s;
+
+	VERSE 8.; 16; 2.s; "<1. >-1|There is";
+	VERSE 8.; 16; 2.s; "<2. >-1|Je-sus";
+	VERSE 8.; 16; 2.s; "<3. >-1|Days of";
+bar
+//2
+1: 4.fd; 8enc#; 4gc; fd;
+2: 4.bb-; 8; 4;;
+
+	VERSE "joy a-mong the";
+	VERSE "sees your heav-y";
+	VERSE "life will soon be";
+//	VERSE "grace will soon be"; // Original lyrics.
+bar
+//3
+1: 4db-; 2bd; 8.; 16;
+2: 4fb-; 2; 8.; 16;
+
+	VERSE "an-gels When a";
+	VERSE "bur-den, Sees you";
+	VERSE "end-ed, Bring your";
+bar
+//4
+1: 4.ae; 8ec; 4ge; fd;
+2: 4.fc; 8af; 4;;
+
+	VERSE "soul is born a-";
+	VERSE "wea-ry and dis-";
+	VERSE "sins to him to-";
+bar
+//5
+1: 2.db-; 8.fd; 16;
+2: 2.fb-; 8.bb-; 16;
+
+	VERSE "new; When a";
+	VERSE "tressed; And he";
+	VERSE "day; Tho' they";
+bar
+//6
+1: 4.fd; 8enc#; 4gc; fd;
+2: 4.bb-; 8; 4;;
+
+	VERSE "sin-ner turns to";
+	VERSE "kind-ly calls you";
+	VERSE "be as red as";
+bar
+//7
+1: 4db-; 2bd; 8.bg; 16;
+2: 4fb-; 2gg-; 8.d+g-; 16;
+
+	VERSE "Je-sus; Shall they";
+	VERSE "to him, Kind-ly";
+	VERSE "crim-son, He will";
+bar
+//8
+1 1: 4.af; 8f; 4gen; ae;
+1 2: 4.s; 8f; 4s;;
+2: 4.c+c; 8ac; 4bc; c+c;
+
+	VERSE "sing in heav'n o'er";
+	VERSE "of-fers peace and";
+	VERSE "wash them all a-";
+bar
+//9
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+	VERSE "you?";
+	VERSE "rest.";
+	VERSE "way.";
+dblbar
+newscore
+//10
+1 1: 8f;; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "Shall they";
+bar
+//11
+1 1: 4.c+ slur; 8bn; 4c+; d+;
+1 2: 8e;;; d; 4e; 8f;;
+2 1: 8af;;; g#; 4af; 8;;
+2 2: 8s;;; f; 4s; 8;;
+
+	VERSE "sing_ o-ver";
+	VERSE 8; 8; 8; 8; 4; 8; 8; "Shall they sing in heav'n, Shall they";
+bar
+//12
+1 1: 2b tie; 4; 8f;;
+1 2: 8d; g; f; e; 4d; r;
+2: 8bb-;; ab-; gb-; 4fb-; r;
+
+	VERSE "you?_ Shall they";
+	VERSE 8;;;; 4; s; "sing in heav'n o'er you";
+bar
+//13
+1 1: 4.c+ slur; 8bn; 4c+; f;
+1 2: 8e;;; d; 4e; 8;;
+2 1: 8af;;; g#; 4af; 8;;
+2 2: 8s;;; f; 4s; 8;;
+
+	VERSE "sing_ o-ver";
+	VERSE 8;;;; 4; 8;; "Shall they sing in heav'n, Shall they";
+bar
+//14
+1 1: 2d+ tie; 4.; 8r;
+1 2: 8f; b; d; g; 4.f; 8s;
+2: 8bb-;;;; 4.; 8r;
+
+	VERSE "you?_";
+	VERSE 8;;;; 4.; 8s; "sing in heav'n o'er you?";
+bar
+//15
+1: 4.d+f; 8; c#+en; 8d+f; e+f; d+f;
+2: 4.bb-; 8;;; ac; bd;
+
+	VERSE "Will you not ac-cept sal-";
+bar
+//16
+1: 4c+e; ge; ac#; gc;
+2: 4ge; be; ben;;
+
+	VERSE "va-tion, While they";
+bar
+//17
+1 1: 4.fd; 8; 4f; c+;
+1 2: 4.s; 8; 4e; 8;;
+2: 4.bf; 8; 4af; 8;;
+
+	VERSE "sing in heav'n o'er";
+	VERSE 4.s; 8s; 4; 8;; "While they sing";
+bar
+//18
+1 1: 2b tie; 4; s;
+1 2: 8d; g; f; e; 4d; s;
+2: 8bb-;; ab-; gb-; 4fb-; s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE "you?_";
+	VERSE 8;;;;4; 4s; "sing in heav'n o'er you?";
+endbar

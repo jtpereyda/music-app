@@ -1,0 +1,196 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 59
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 11/03/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "My Prayer" ""
+   title (2)""
+   title (11)"" "\f(TI)Ye therefore shall be perfect, as your heavenly" ""
+   title (11)"" "\f(TI)Father is perfect. - Matt. 5:48" ""
+   title (11) "D \(flat) - 2 - MI" "" ""
+   title (13) "Philip P. Bliss" "" "Philip P. Bliss"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==== FOR Letter ==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=12/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+
+  //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=75";
+
+//=========================
+//Verse 1
+
+//1
+1: 4.eg; 8; ec+; eb; 4.ean; eb;
+2 1: 4.s; 4.s; 4.f#; 4.s;
+2 2: 4.eb; 8; ea; eg; 4.e; eg;
+
+	VS1 "<1. >-1|More ho-li-ness give me,";
+	VS1 "<2. >-1|More grat-i-tude give me,";
+	VS1 "<3. >-1|More pur-i-ty give me,";
+bar
+
+//2
+1 1: 4.b-e; 8; b-d; 8e; 4.eg slur; df;
+1 2: 4.s; 4s; 8e; 4.s; ;
+2: 4.eg; 8gb; fa; eg; 4.b-b tie; ;
+
+	VS1 "More striv-ings with-in;";
+	VS1 "More trust in the Lord;";
+	VS1 "More strength to o'er-come;";
+bar
+
+//3
+1: 4.eg; 8; ec+; eb; 4.ean; eb;
+2 1: 4.s; 4.s; f#; s;
+2 2: 4.eb; 8; ea; eg; 4.e; eg;
+
+	VS1 "More pa-tience in suff-'ring,";
+	VS1 "More pride in His glo-ry,";
+	VS1 "More free-dom from earth-stains,";
+bar
+
+//3
+1: 4.eb; 8ean; eg; ea; 2.db;
+2 1: 4.s; 8f; ; s; 2.s;
+2 2: 4.cg; 8f; ; fc+; 2.b-b;
+
+	VS1 "More sor-row for sin;";
+	VS1 "More hope in His word;";
+	VS1 "More long-ings for home;";
+bar
+
+//4
+1: 4.da; 8; ea; fa; 4.; eg;
+2: 4.b-b; 8; cb; db; 4.eb; ;
+
+	VS1 "More faith in my Sav-ior,";
+	VS1 "More tears for His sor-rows,";
+	VS1 "More fit for the king-dom,";
+bar
+
+//5
+1: 4.ec+; 8; ; ; 2.eb;
+2: 4.a-a; 8; b-a; ca; 2.eg;
+
+	VS1 "More sense of His care;";
+	VS1 "More pain at His grief;";
+	VS1 "More used would I be;";
+bar
+
+//6
+1: 4.ee+; 8; ; ; 4.; ec+;
+2: 4.eg; 8; fa; gb; 4.ac+; a-a;
+
+	VS1 "More joy in Hi ser-vice,";
+	VS1 "More meek-ness in tri-al,";
+	VS1 "More bless-ed and ho-ly,";
+bar
+
+//7
+RIT
+1 1: 4.eb; 8db; da; df; 2.e;
+1 2: 4.s; 4.s; 2.e;
+2: 4.b-g; 8b-f; ; b-a; 2.eg;
+
+	VS1 "More pur-pose in prayer";
+	VS1 "More praise for re-lief.";
+	VS1 "More Sav-ior like Thee.";
+endbar
+
+
+
+
+
+
+
+
+
+

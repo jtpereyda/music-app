@@ -1,0 +1,228 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs for Work and Worship
+//		For use in Sunday Schools, Young peoples'
+//		Societies, Devotional Meetings, Camp
+//		Meetings, Etc.
+//		By E.S. Lorenz, J.H. Entwisle, Powell G. Fithian,
+//		Adam Geibel, and R.F. Lehman
+//		Published by The Lorenz Publishing Co.
+//		Dayton, Ohio
+//		Copyright 1903
+//		Hymn no. 55
+
+// Transcribed by: Ted Gatza, Jr. 08/07/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come In Thy Love To Me" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(17)\f(TI)\:for\ he\ that\ cometh\ to\ God\ must\|\ believe\ that\ he\ is,\ and\ that\ he is\ a\ rewarder\ of\ them\ that\ s\|eek\ after\ him.\ -\ Heb.\ 11:6" ""
+   title (13) "Ida L. Reed" " " "Powell G.Fithian, 1900"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2bd; 4ac; 4gb-;
+2: 2gg-; 4gg-; 4gg-;
+
+			lyrics 1: "<1. >-1|Come in thy";
+			lyrics 1: "<2. >-1|Come with thy";
+			lyrics 1: "<3. >-1|Come in thy";
+bar
+//2
+1: 4.db-; 8ec; 2db-;
+2: 4.gg-; 8gg-; 2gg-;
+
+			lyrics 1: "love to me,";
+			lyrics 1: "par-don free,";
+			lyrics 1: "love to me,";
+bar
+//3
+1: 2fc; 4ec; 4fc;
+2: 2ad; 4gd; 4ad;
+
+			lyrics 1: "Je-sus my";
+			lyrics 1: "Je-sus my";
+			lyrics 1: "Je-sus my";
+bar
+//4
+1: 2b-~g slur; 2b-d; 
+2: 2gg- tie; 2gg-;
+
+			lyrics 1: "Lord,";
+			lyrics 1: "Lord,";
+			lyrics 1: "Lord,";
+bar
+//5
+1: 2bd; 4s; 4s;
+2 1: 2g; 4s; 4s;
+2 2: 2g; 4s; 4s;
+
+			lyrics 1: "Let";
+			lyrics 1: "Con-";
+			lyrics 1: "Pure";
+invisbar
+newscore
+
+1: 2s; 4ac; 4gb-;
+2 1: 2s; 4g; 4g;
+2 2: 2s; 4g; 4g;
+
+			lyrics 1: "me thy";
+			lyrics 1: "trite I";
+			lyrics 1: "thro' thy";
+
+bar
+//6
+1: 4.c+e; 8c+e; 2bd;
+2 1: 4.g; 8g; 2g;
+2 2: 4.g; 8g; 2g;
+
+			lyrics 1: "glo-ry see,";
+			lyrics 1: "kneel to thee,";
+			lyrics 1: "blood I'd be,";
+bar
+//7
+1: 2ac#; 4bc; 4ac;
+2: 2ge; 4ga-; 4ga-;
+
+			lyrics 1: "Je-sus my";
+			lyrics 1: "Je-sus my";
+			lyrics 1: "Je-sus my";
+bar
+//8
+1: 2.ad; 4r;
+2: 2.fd; 4r;
+
+			lyrics 1: "Lord;";
+			lyrics 1: "Lord.";
+			lyrics 1: "Lord.";
+bar
+//9
+1: 2d+f; 4af; 4c+a;
+2: 2ad; 4ad; 4d+d;
+
+			lyrics 1: "Full-ness of";
+			lyrics 1: "Come with thy";
+			lyrics 1: "Now may its";
+bar
+newscore
+//10
+1: 4.bg; 8c+g; 2d+g;
+2 1: 4.d+g; 8a; 2bg;
+2 2: 4.s; 8g; 2s;
+
+			lyrics 1: "bless-ing give,";
+			lyrics 1: "ten-der grace,";
+			lyrics 1: "cleans-ing pow'r,";
+bar
+//11
+1: 2e+g; 4d+g; 4bg;
+2 1: 2c+; 4bg; 4d+g;
+2 2: 4c slur; 4e; 4s; 4s; 
+
+			lyrics 1: "Cleanse thou each";
+			lyrics 1: "Sav-ior I";
+			lyrics 1: "Sweep o'er my";
+bar
+//12
+1: 2bg slur; 2af;
+2 1: 2d+ tie; 2d+;
+2 2: 2d tie; 4d slur; 4c;
+
+			lyrics 1: "stain,";
+			lyrics 1: "plead,";
+			lyrics 1: "soul,";
+bar
+//13
+1: 2d+g; 4s; 4s;
+2 1: 2d+; 4s; 4s;
+2 2: 4b- slur; 4b; 4s; 4s;
+
+			lyrics 1: "Through";
+			lyrics 1: "Give";
+			lyrics 1: "Make";
+invisbar
+newscore
+
+1: 2s; 4c+f; 4bg;
+2 1: 2s; 4d+a; 4d+g;
+2 2: 4s; 4s; 4s; 4s;
+
+			lyrics 1: "my life";
+			lyrics 1: "me a-";
+			lyrics 1: "me, O";
+
+bar
+//14
+1: 4.be; 8ae; 2ae;
+2: 4.d+c; 8c+c; 2c+c;
+
+			lyrics 1: "speak and live,";
+			lyrics 1: "bid-ing peace,";
+			lyrics 1: "Lord this hour,";
+bar
+//15
+1 1: 4g slur; 4f; 4.bf; 8af;
+1 2: 2d; 4.s; 8s;
+2 1: 4b slur; 4a; 4.d+d; 8c+d;
+2 2: 2d; 4.s; 8s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "In my heart";
+			lyrics 1: "All that I";
+			lyrics 1: "Per-fect-ly";
+bar
+//16
+1: 2.gd; 4r;
+2: 2.bg; 4r;
+
+			lyrics 1: "reign.";
+			lyrics 1: "need.";
+			lyrics 1: "whole.";
+endbar

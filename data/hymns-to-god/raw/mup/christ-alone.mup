@@ -1,0 +1,304 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: The Great Awakening
+// 		A Choice Collection Of New And Standard Gospel Songs
+// 		Prepared Under the Personal Supervision of Sam. P. Jones,
+//		Publisher: 
+//		Cincinnati: The John Church Co., 74 W Fourth St.
+// 		Chicago: Root and Sons Music Co., 200 Wabash Ave.
+//		New York: The J. Church Co. 55 E. 13th St.
+// 		Copyright 1886
+//		Hymn No.: 72
+
+// Transcribed by: Ted Gatza, Jr. 06/30/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Christ Alone" ""
+   title (2) ""
+   title (11) "" "\f(TI)...which is Christ in you, the hope of glory - Col. 1:2" ""
+   title (11) "" 
+   title (11)" G - 4 - MI" "" ""
+   title (13) "Eliza. M. Sherman" "" "James R. Murray, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 4.gb; 8a; 4g; gb;
+1 2: 4.s; 8g; 4g; s; 
+2: 4.gd+; 8gc+; 4gb; gd+;
+ 
+
+	VS "<1. >-1|Christ a-lone shall";
+	VS "<2. >-1|Christ a-lone shall";
+	VS "<3. >-1|Christ a-lone shall";
+	VS "<4. >-1|Christ a-lone shall";
+bar
+
+//2
+1: 4.gd+; 8fc+; 2gb;
+2: 4.bd+; 8ad+; 2gd+;
+
+	VS "be my song,";
+	VS "be my praise,";
+	VS "be my trust,";
+	VS "be my song,";
+bar
+
+//3
+1: 4.ac+; 8gb; 4fa; fd+;
+2: 4.dd+; 8; 4; da;
+
+	VS "Christ a-lone my";
+	VS "For on Cal-v'ry's";	
+	VS "And His love my";
+	VS "He my sure foun-";
+bar
+
+//4
+1: 2gd+; 4gb; r;
+2: 2gb; 4gd+; r;
+
+	VS "sto-ry;";
+	VS "moun-tain";
+	VS "plead-ing";
+	VS "da-tion;";
+bar
+
+//5
+1 1: 4.gb; 8a; 4g; gb;
+1 2: 4.s; 8g; 4g; s; 
+2: 4.gd+; 8gc+; 4gb; gd+;
+
+	VS "From the cross a";
+	VS "From His side in";
+	VS "While He stands be-";
+	VS "Christ my glo-ry";
+bar
+
+//6
+1: 4.gd+; 8fc+; 2gb;
+2: 4.bd+; 8ad+; 2gd+;
+
+	VS "ra-diance shines";
+	VS "liv-ing flood";
+	VS "for God's throne,";
+	VS "and my hope\(emdash)";
+bar
+
+//7
+1: 4.fa; 8fd+; 4af+; fd+;
+2 1: 4.ad+; 8a; 4ad+; a;
+2 2: 4.s; 8a; 4s; a;
+
+	VS "To the God of";
+	VS "Flowed life's pre-cious";
+	VS "For me in-ter-";
+	VS "Christ my soul's sal-";
+bar
+
+//8
+1: 2ge+; 4fd+; r;
+2 1: 2a;4 da; s;
+2 2: 2a; 4s; r;
+
+	VS "glo-ry.";
+	VS "fount-ain.";
+	VS "ced-ing.";
+	VS "va-tion.";
+dblbar
+newscore
+
+CHORUS
+
+//9
+1 1: 4.gd+; 8ge+; 4d+ slur; b;
+1 2: 4.s; 8; 2g;
+2 1: 4.gb; 8gc+; 4b slur; d+;
+2 2: 4.s; 8; 2g;
+
+	VS "Christ a-lone!";
+bar
+
+//10
+1: 4.eg; 8ea; 4eg slur; ce;
+2 1: 4.cc+; 8; 4c+ slur; 4g;
+2 2: 4.s; 8; 2c;
+
+	VS "Christ a-lone!";
+bar
+
+//11
+1 1: 4.bd; 8dg; 4gb; g;
+1 2: 4.s; 8; 4; g;
+2 1: 4.g; 8gb; 4gd+; 4gb;
+2 2: 4.g; 8s; 4; ;
+
+	VS "Christ the hope of";
+bar
+
+//12
+1: 2fa; 4fd+; r;
+2: 2dd+; 4da; r;
+
+	VS "glo-ry;";
+bar
+
+//13
+1 1: 4.gd+; 8ge+; 4d+ slur; b;
+1 2: 4.s; 8; 2g;
+2 1: 4.gb; 8gc+; 4b slur; d+;
+2 2: 4.s; 8; 2g;
+
+	VS "Christ a-lone!";
+bar
+
+//14
+1: 4.eg; 8ea; 4eg slur; ce;
+2 1: 4.cc+; 8; 4c+ slur; 4g;
+2 2: 4.s; 8; 2c;
+
+	VS "Christ a-lone!";
+bar
+
+//15
+1 1: 4.b-d; 8dg; 4gb; g;
+1 2: 4.s; 8s; 4s; g;
+2: 4.dg; 8db; 4dd+; ec#+;
+
+	VS "Praise in song and";
+bar
+
+//16
+1: 2fa; 4dg; r;
+2: 2dc+n; 4gb; r;
+
+	VS "sto-ry.";
+endbar
+
+
+
+
+
+
+
+
+
+

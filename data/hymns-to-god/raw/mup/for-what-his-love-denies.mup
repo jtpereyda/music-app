@@ -1,0 +1,354 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Melodies New and Old
+//		For use In the Universalist Church
+//		Chester Gore Miller, Editor
+//		Boston, Universalist Publishing House
+//		Copyright: 1904
+//		Hymn No.: 101
+//		
+// Transcribed by: Ted Gatza, Jr. 03/21/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "For What His Love Denies" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - MI" "\s(17)\f(TI)\:Concerning\ this\ thing\ I\ be\|sought\ the\ Lord\ thrice,\ that it\ might\ depart\ from\ me.\|\ And\ he\ hath\ said\ unto\ me, My\ grace\ is\ sufficient\ f\|or\ thee:\ -\ 2\ Cor.\ 12:8-9" ""   
+   title (13) "Fanny J. Crosby" "" "Hubert P. Main, 1904" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+//1
+1: 4c+c; bd; c+e;
+2: 4aa-; ga-; g&a-;
+
+			VERSE "<1. >-1|God does not";
+			VERSE "<2. >-1|Some-times I";
+			VERSE "<3. >-1|How ten-der-";
+			
+bar
+//2
+1: 2d+d; 4;
+2: 2fa-; 4;
+
+			VERSE "give me";
+			VERSE "miss a";
+			VERSE "ly He";
+bar
+//3
+1 1: 4d+ slur; a; bd;
+1 2: 2d; 4s;
+2: 2fa-; 4f&a-;
+
+			VERSE "all I";
+			VERSE "treas-ured";
+			VERSE "lead-eth";
+bar
+//4
+1: 2.c<e>c+~;
+2 1: 2.e slur;
+2 2: 2.a- tie;
+phrase below 2: 1 til 1m + 3;
+
+
+			VERSE "ask,";
+			VERSE "link";
+			VERSE "me";
+bar
+//5
+1: 2.c+e;
+2 1: 2.a;
+2 2: 4a-; c; e;
+
+bar
+//6
+1: 4ac; gc; ac;
+2: 4af; bf; af;
+
+			VERSE "Nor an-swer";
+			VERSE "From friend-ship's";
+			VERSE "When earth-ly";
+bar
+//7
+1: 2c+dn; 4af;
+2 1: 4a slur; f; bdn;
+2 2: 2b-; 4s;
+
+			VERSE "as I";
+			VERSE "hal-lowed";
+			VERSE "hopes are";
+bar
+//8
+1: 2.be tie;
+2: 2.ge tie;
+phrase below 2: 1 til 1m + 3;
+
+			VERSE "pray,";
+			VERSE "chain,";
+			VERSE "dim";
+bar
+//9
+1: 2.be;
+2: 4ge ph; bg; d+b eph;
+
+bar
+//10
+1: 4c+e; bnf; c+g&;
+2: 4c+a; d+na; e+a;
+
+			VERSE "But O, my";
+			VERSE "And yet His";
+			VERSE "And when I";
+bar
+//11
+1 1: 2e+g&; 4a;
+1 2: 2s; 4g;
+2: 2c+a; 4e+c+;
+
+			VERSE "cup is";
+			VERSE "smile is";
+			VERSE "falt-er";
+bar
+//12
+1 1: 4a slur; b; c+f;
+1 2: 2f; 4s;
+2 1: 2d+; 4c+an;
+2 2: 4d+ slur; b; 4s;
+
+			VERSE "brim-ming";
+			VERSE "my re-";
+			VERSE "by the";
+bar
+//13
+1: 2d+f; 4e+e;
+2 1: 2b; 4bg;
+2 2: 2b; 4s;
+
+			VERSE "o'er With";
+			VERSE "ward For";
+			VERSE "way He";
+bar
+//14
+1: 4c+e slur; af; d+a;
+2 1: 4a slur; c+; f+b-;
+2 2: 4a slur; 4f; s;
+
+			VERSE "bless-ings";
+			VERSE "ev-'ry";
+			VERSE "bids me";
+bar
+//15
+1 1: 2c+; 4bg;
+1 2: 4a slur; f; 4s;
+2 1: 4e+ slur; a; d+e;
+2 2: 2e; 4s;
+
+			VERSE "day by";
+			VERSE "throb of";
+			VERSE "lean on";
+bar
+//16
+1 1: 2.a tie;
+1 2: 2.a tie;
+2: 2.c+a- tie;
+
+			VERSE "day.";
+			VERSE "pain.";
+			VERSE "Him.";
+bar
+//17
+1 1: 2a; 4r;
+1 2: 2a; 4s;
+2: 2c+a-; 4r;
+
+bar
+//18
+1: 4be; ane; be;
+2 1: 4ge; f#; ge;
+2 2: 4s; e; s;
+
+			VERSE "How oft the";
+			VERSE "I look be-";
+			VERSE "He lifts my";
+bar
+//19
+1: 2c+e; 4;
+2: 2aa-; 4;
+
+			VERSE "joy I";
+			VERSE "yond where";
+			VERSE "soul a-";
+bar
+//20
+1 1: 2c+e; 4f;
+1 2: 2s; 4e;
+2: 2c+a-n; 4;
+
+			VERSE "tho't with-";
+			VERSE "pur-er";
+			VERSE "bove the";
+bar
+//21
+1: 2.d+f tie;
+2: 2.bb- tie;
+
+			VERSE "held,";
+			VERSE "joys,";
+			VERSE "clouds";
+bar
+//22
+1: 2d+f; 4r;
+2: 2bb-; 4r;
+bar
+
+//23
+1: 4adn; gd; ad;
+2: 4bf;; af&;
+
+			VERSE "De-lights my";
+			VERSE "De-light my";
+			VERSE "Where friend-ship";
+bar
+//24
+1 1: 2bd&; 4e;
+1 2: 2s; 4e;
+2: 2ge; 4bg;
+
+			VERSE "long-ing";
+			VERSE "long-ing";
+			VERSE "nev-er";
+bar
+//25
+1: 2.c+e tie;
+2 1: 2.a tie;
+2 2: 2.a tie;
+
+			VERSE "eyes.";
+			VERSE "eyes.";
+			VERSE "dies.";
+bar
+//26
+1: 2c+e; 4r;
+2 1: 2a; 4r;
+2 2: 2a; 4s;
+
+bar
+//27
+1: 4c+e; d+g; e+g&;
+2: 4e+a; e+b; e+c+;
+
+			VERSE "And so I";
+			VERSE "And so I";
+			VERSE "And so I";
+bar
+//28
+1 1: 2af; 4a;
+1 2: 2s; 4a;
+2: 2f+d+; 4f+&d+;
+
+			VERSE "thank Him";
+			VERSE "thank Him";
+			VERSE "thank Him";
+bar
+//29
+1 1: 4a slur; b; c+f;
+1 2: 4g tie; 4g; 4s;
+2: 4e+c+ slur; d+b; 4c+an;
+
+			VERSE "from my";
+			VERSE "from my";
+			VERSE "from my";
+bar
+//30
+1: 2d+f; 4e+e;
+2 1: 2b; 4bg;
+2 2: 2b; 4s;
+
+			VERSE "heart For";
+			VERSE "heart For";
+			VERSE "heart For";
+bar
+//31
+1: 4c+e slur; af; d+a;
+2 1: 4a slur; c+; f+b-;
+2 2: 4a slur; f; 4s;
+
+			VERSE "what His";
+			VERSE "what His";
+			VERSE "what His";
+bar
+//32
+1 1: 2c+; 4bg;
+1 2: 4a slur; f; 4s;
+2 1: 4e+ slur; a; 4d+e;
+2 2: 2e; 4s;
+
+			VERSE "love de-";
+			VERSE "love de-";
+			VERSE "love de-";
+bar
+//33
+1 1: 2.a tie;
+1 2: 2.a tie;
+2: 2.c+a- tie;
+
+			VERSE "nies.";
+			VERSE "nies.";
+			VERSE "nies.";
+bar
+//34
+1 1: 2a; 4r;
+1 2: 2a; 4s;
+2: 2c+a-; 4r;
+
+endbar

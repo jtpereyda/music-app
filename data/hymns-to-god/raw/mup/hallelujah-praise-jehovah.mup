@@ -1,0 +1,226 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No. 2
+//		Compiled and arranged by 
+//		Ira D. Sankey, James McGranahan and Geo. C. Stebbins
+//		Published by the Biglow & Main Co.
+//		New York, Chicago
+//		Copyright 1899
+//		Hymn no. 58 / 65
+
+// Transcribed by: Ted Gatza, Jr. 03/12/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Hallelujah! Praise Jehovah" ""
+   title (2)""
+   title (11) "C - 3 - MI" "\s(17)\f(TI)\:Praise\ ye\ the\ Lord.\ -\ Ps.\ 150:6 \(space)"""
+   title (13) "Psalm 148" " " "H. H. McGranahan, 1899"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=9/8	
+	key=c major
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 4.s; 4.s; 4ec; 8ge;
+2: 4.s; 4.s; 4ge; 8c+c;
+
+			lyrics 1: 4.s; 4.s; 4; 8; "<1. >-1|Hal-le-";
+			lyrics 1: 4.s; 4.s; 4; 8; "<2. >-1|All His";
+			lyrics 1: 4.s; 4.s; 4; 8; "<3. >-1|Let them";
+			lyrics 1: 4.s; 4.s; 4; 8; "<4. >-1|Kings of";
+bar
+//2
+1 1: 4.c+g tie; 4c+g; 8bg; 8d+ bm; 8c+ ebm; 8af;
+1 2: 4.s; 4s; 8s; 4f; 8s;
+2: 4.e+c tie; 4e+c; 8d+e; 4af; 8c+f;
+
+			lyrics 1: 4.; 4s; 8; 4; 8; "lu-jah, Praise Je-";
+			lyrics 1: 4.; 4s; 8; 4; 8; "hosts, to-geth-er";
+			lyrics 1: 4.; 4s; 8; 4; 8; "prais-es give Je-";
+			lyrics 1: 4.; 4s; 8; 4; 8; "earth, and all ye";
+bar
+//3
+1: 4.ge; 4.ec; 4ge; 8c+g;
+2: 4.c+c; 4.gc; 4c+c; 8c+e;
+
+			lyrics 1: "ho-vah, From the";
+			lyrics 1: "praise Him, Sun and";
+			lyrics 1: "ho-vah: They were";
+			lyrics 1: "peo-ple, Prin-ces";
+bar
+//4
+1 1: 4.bf tie; 4bf; 8g; 8g bm; 8a ebm; 8bf;
+1 2: 4.s; 4s; 8f; 4f; 8s;
+2 1: 4.d+g tie; 4d+g; 8d+g; 8b bm; 8c+ ebm; 8d+g;
+2 2: 4.s; 4s; 8s; 4g; 8s;
+
+			lyrics 1: 4.; 4s; 8; 4; 8; "heav-ens praise His";
+			lyrics 1: 4.; 4s; 8; 4; 8; "moon and stars on";
+			lyrics 1: 4.; 4s; 8; 4; 8; "made at His com-";
+			lyrics 1: 4.; 4s; 8; 4; 8; "great, earth's judg-es";
+bar
+//5
+1: 4.c+e tie; 4.c+e; 4ec; 8ge;
+2: 4.c+c tie; 4.c+c; 4gc; 8c+c;
+
+			lyrics 1: "name: Praise Je-";
+			lyrics 1: "high; Praise Him,";
+			lyrics 1: "mand, Them for-";
+			lyrics 1: "all, Praise His";
+bar
+//6
+1 1: 4.c+g tie; 4c+g; 8bg; 8d+ bm; 8c+ ebm; 8af;
+1 2: 4.s; 4s; 8s; 4f; 8s;
+2: 4.e+c tie; 4e+c; 8d+e; 4af; 8c+f;
+
+			lyrics 1: 4.; 4s; 8; 4; 8; "ho-vah in the";
+			lyrics 1: 4.; 4s; 8; 4; 8; "O ye heav'ns of";
+			lyrics 1: 4.; 4s; 8; 4; 8; "ev-er He es-";
+			lyrics 1: 4.; 4s; 8; 4; 8; "name! young men and";
+bar
+//7
+1: 4.ge; 4.ec; 4ge; 8c+g;
+2: 4.c+c; 4.gc; 4c+c; 8c+e;
+
+			lyrics 1: "high-est, All His";
+			lyrics 1: "heav-ens And ye";
+			lyrics 1: "tab-lished; His de-";
+			lyrics 1: "maid-ens, A-ged";
+bar
+//8
+1 1: 4.bg tie; 4bg; 8d+g; 8c+ bm; 8b ebm; 8af;
+1 2: 4.s; 4s; 8s; 4f#; 8s;
+2 1: 4.d+g tie; 4d+g; 8bg; 8a bm; d+ ebm; 8c+d;
+2 2: 4.s; 4s; 8s; 4d; 8s;
+
+			lyrics 1: 4.; 4s; 8; 4; 8; "an-gels, praise pro-";
+			lyrics 1: 4.; 4s; 8; 4; 8; "floods a-bove the";
+			lyrics 1: 4.; 4s; 8; 4; 8; "cree shall ev-er";
+			lyrics 1: 4.; 4s; 8; 4; 8; "men and chil-dren";
+bar
+//9
+1 1: 4.g tie; 4.g; 4.s;
+1 2: 4.g tie; 4.g; 4.s;
+2: 4.bg tie; 4.bg; 4.s;
+
+			lyrics 1: "claim.";
+			lyrics 1: "sky.";
+			lyrics 1: "stand.";
+			lyrics 1: "small.";
+dblbar hidechanges
+
+newscore 
+score time =12/8 ; key = c major
+music
+//9
+1 1: 4g; 8bg; 4.s; 4.s; 4.s;
+1 2: 4g; 8s; 4.s; 4.s; 4.s; 
+2: 4.r; 4.s; 4.s; 4.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "Hal-le-";
+bar
+//10
+1: 2.d+f tie;4d+f; 8d+f; 8d+f bm; 8e+g ebm; 8d+f;
+2 1: 4.s; 4d+; 8d+; 4bg; 8bg; 4.s;
+2 2: 4.r; 8g bm; 8b ebm; 8d+; 4s; 8s; 4.r;
+
+			lyrics 1: 2.; 4s; 8; 8; 8s; 8; "lu-jah! Praise Je-";
+			lyrics 1: 4.s; 4; 8; 4; 8; 4.s; "Ha-le-lu-jah!";
+bar
+//11
+1: 4.c+e; 2.c+e; 4c+g; 8c+g;
+2 1: 4.s; 4c+; 8c+g; 4e+c+; 8e+c+; 4c+e; 8c+e;
+2 2: 4.r; 8c bm; 8e ebm; 8s; 4s; 8s; 4s; 8s; 
+
+			lyrics 1: "ho-vah. For His";
+			lyrics 1: 4.s; 4; 8; 4; 8; 4s; 8s; "Praise Je-ho-vah.";
+bar
+//12
+1 1: 2.c+f tie; 4c+f; 8c+f; 8c+ bm; 8b ebm; 8c+f;
+1 2: 2.s; 4s; 8s; 4f#; 8s;
+2 1: 4.a; 4.a; 4.a; 4.c+a;
+2 2: 4.f tie; 4f; 8e; 4.d; 4.s;
+
+			lyrics 1: 2.; 4s; 8; 4; 8; "name a-lone is";
+			lyrics 1: 4.; 4.; 4.; 4.; "name a-lone, His";
+bar
+//13
+1 1: 2.d+ tie;4.d+; 4g; 8c+e;
+1 2: 4g; 8a; 4g; 8f#; 4.g; 4g; 8s;
+2 1: 4bg; 8af#; 4bg; 8c+e; 4.b; 4c+e; 8c+g;
+2 2: 4s; 8s; 4s; 8s; 4g slur; 8fn; 4s; 8s;
+
+			lyrics 1: "high, And His";
+			lyrics 1: 4; 8; 4; 8; 4.; 4s; 8s; "name a-lone is high";
+bar
+//14
+1: 2.e+g tie; 4e+g; 8d+f; 8c+e bm; d+f ebm; 8e+g;
+2 1: 4.c+; 4.c+; 4.c+a; 4.c+a;
+2 2: 4.c+; 4.b&; 4.s; 4.s;
+
+			lyrics 1: 2.; 4s; 8; 8; 8s; 8; "glo-ry is ex-";
+			lyrics 1: 4.; 4.; 4.; 4.; "glo-ry is, His";
+bar
+//15
+1: 4.f+a; 2.af; 4f+a; 8d+a;
+2: 4c+f; 8c+f; 4c+f; 8c+f; 4c+f; 8c+f; 4c+f; 8f+f;
+
+			lyrics 1: "alt-ed Far a-";
+			lyrics 1: 4; 8; 4; 8; 4; 8; 4s; 8s; "glo-ry is ex-alt-ed";
+bar
+//16
+1: 4.c+g tie; 4c+g; 8d+f; 4.c+e; 4.bf;
+2 1: 4.e+g tie; 4e+g; 8bg; 4.c+g; 4d+ slur; 8g;
+2 2: 4.s; 4s; 8s; 4.s; 4.g;
+
+			lyrics 1: "bove the earth and";
+bar
+//17
+1: 2.c+e tie; 4.c+e; 4.s;
+2: 2.gc tie; 4.gc; 4.s;
+
+			lyrics 1: "sky.";
+endbar

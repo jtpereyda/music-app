@@ -1,0 +1,153 @@
+//!Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		J.D.Brunk, Musical Editor
+//		Mennonite Publishing House
+//		Scottdale, Penna.
+//		Copyright 1902
+//		by J. S. Shoemaker
+//		Freeport, ILL.
+//		Hymn no. 61
+
+// Transcribed by: Ted Gatza, Jr. 03/03/2010; rev. 08/19/14
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Take My Heart, O Father!" ""
+   title (2)""
+   title (11) "F - 3 - MI" "\s(17)\f(TI)\:But\ I\ have\ trusted\ in\ th\|y\ lovingkindness;\ My\ heart shall\ rejoice\ in\ thy\|\ salvation.\ -\ Ps.\ 13:5"""
+   title (13) "Anon." " " "Chas. Edw. Pollock"	
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=65";
+
+//1
+1: 2s; 8af; 8c+f;
+2: 2s; 8c+f; 8af;
+
+			lyrics 1: 2s; 8; 8; "<1. >-1|Take my";
+			lyrics 1: 2s; 8; 8; "<2. >-1|Fa-ther,";
+			lyrics 1: 2s; 8; 8; "<3. >-1|Ev-er";
+			lyrics 1: 2s; 8; 8; "<4. >-1|May the";
+bar
+//2
+1 1: 4c+f; 4af; 8f; 8af;
+1 2: 4s; 4s; 8f; 8s;
+2: 4af; 4c+f; 8c+a; 8c+f;
+
+			lyrics 1: "heart, O Fa-ther!";
+			lyrics 1: "make me pure and";
+			lyrics 1: "let thy grace sur-";
+			lyrics 1: "blood of Je-sus";
+bar
+//3
+1: 4af; 4ge; 8ge; 8af;
+2: 4c+c; 4c+c; 8c+c; 8c+c;
+
+			lyrics 1: "take it; Make and";
+			lyrics 1: "low-ly, Fond of";
+			lyrics 1: "round me, Strength-en";
+			lyrics 1: "heal me, And my";
+bar
+newscore
+//4
+1: 8bg; 8ge; 4c+e; 4bg;
+2: 8c+c; 8c+c; 4c+c; 4c+c;
+
+			lyrics 1: "keep it all thine";
+			lyrics 1: "peace and far from";
+			lyrics 1: "me with pow'r di-";
+			lyrics 1: "sins be all for-";
+bar
+//5
+1: 2af; 8af; 8c+f;
+2: 2c+f; 8c+f; 8af;
+
+			lyrics 1: "own; Let thy";
+			lyrics 1: "strife; Turn-ing";
+			lyrics 1: "vine, Till thy";
+			lyrics 1: "giv'n, Ho-ly";
+bar
+//6
+1 1: 4c+f; 4af; 8f; 8af;
+1 2: 4s; 4s; 8f; 8s;
+2: 4af; 4c+f; 8c+a; 8c+f;
+
+			lyrics 1: "Spir-it melt and";
+			lyrics 1: "from the paths un-";
+			lyrics 1: "cords of love have";
+			lyrics 1: "Spir-it, take and";
+bar
+//7
+1: 4af; 4ge; 8ge; 8bg;
+2: 4c+c; 4c+c; 8c+c; 8c+c;
+
+			lyrics 1: "break it, This proud";
+			lyrics 1: "ho-ly Of this";
+			lyrics 1: "bound me, Make me";
+			lyrics 1: "seal me, Guide me";
+bar
+//8
+1: 8af; 8gd; 4fc; 4ec;
+2 1: 8c+f; 8bb-; 4ac; 8g bm; 8b ebm;
+2 2: 8s; 8s; 4s; 4c;
+
+			lyrics 1: "heart of sin and";
+			lyrics 1: "vain and sin-ful";
+			lyrics 1: "to be whol-ly";
+			lyrics 1: "in the path to";
+bar
+//9
+1: 2fc; 4s;
+2: 2af; 4s;
+
+			lyrics 1: "stone.";
+			lyrics 1: "life.";
+			lyrics 1: "thine.";
+			lyrics 1: "heav'n.";
+endbar
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

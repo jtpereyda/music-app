@@ -1,0 +1,228 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Glad Tidings
+//		A Collection of Hymns New and Old for the Sunday School
+//		Compiled by W.L. Mson
+//		Copyright 1899
+// 		A.S. Barnes &Company
+//		New York
+//		Hymn no. 179
+
+// Transcribed by: Ted Gatza, Jr. 01/28/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Trustingly, Trustingly" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:Blessed\ is\ the\ man\ th\|at\ trusteth\ in\ Jehovah, and\ whose\ trust\ Je\|hovah\ is.\ -\ Jer.\ 17:7"""
+   title (13) "H. Bonar" " " "W. L. Mason, 1899"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/8	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+// ****************************************
+
+music
+
+midi all: 0 "tempo=50";
+
+//1
+1 1: 8d; 8gd; 8bg;
+1 2: 8d; 8s; 8s;
+2: 8bg; 8bg; 8d+g;
+
+			lyrics 1: "<1. >-1|Trust-ing-ly,";
+			lyrics 1: "<2. >-1|Peace-ful-ly,";
+			lyrics 1: "<3. >-1|Whom but Thy-";
+			lyrics 1: "<4. >-1|Hap-pi-ly,";
+			lyrics 1: "<5. >-1|Hope-ful-ly,";
+bar
+//2
+1: 8.bg; 16af; 8af;
+2: 8.d+d; 16d+d; 8d+d;
+
+			lyrics 1: "trust-ing-ly,";
+			lyrics 1: "peace-ful-ly,";
+			lyrics 1: "self, O Lord!";
+			lyrics 1: "hap-pi-ly,";
+			lyrics 1: "hope-ful-ly";
+bar
+//3
+1: 8af; 8bf; 8c+f;
+2 1: 8d+; 8d+b; 8d+a;
+2 2: 8c+; 8s; 8s; 
+
+			lyrics 1: "Je-sus to";
+			lyrics 1: "Walk I with";
+			lyrics 1: "Have I a-";
+			lyrics 1: "Pass I a-";
+			lyrics 1: "On-ward I";
+bar
+//4
+1: 4.bg;
+2: 4.d+g;
+
+			lyrics 1: "Thee";
+			lyrics 1: "Thee;";
+			lyrics 1: "bove?";
+			lyrics 1: "long,";
+			lyrics 1: "go,";
+bar
+newscore
+//5
+1: 8d+g; 8e+g; 8d+g;
+2: 8bg; 8c+g; 8bg;
+
+			lyrics 1: "Come I: Lord,";
+			lyrics 1: "Je-sus, my";
+			lyrics 1: "What have I";
+			lyrics 1: "Ea-ger to";
+			lyrics 1: "Cheer-ful-ly,";
+bar
+//6
+1: 8.d+g; 16c+g; 8bg;
+2: 8.bg; 16e+g; 8d+g;
+
+			lyrics 1: "lov-ing-ly,";
+			lyrics 1: "Lord, Thou art";
+			lyrics 1: "left on earth?";
+			lyrics 1: "work for Thee,";
+			lyrics 1: "cheer-ful-ly,";
+bar
+//7
+1 1: 8bg; 8a; 8bg;
+1 2: 8s; 8g; 8s;
+2: 8c+#a; 8c+a; 8c+a;
+
+			lyrics 1: "Come Thou to";
+			lyrics 1: "All, all to";
+			lyrics 1: "On-ly Thy";
+			lyrics 1: "Earn-est and";
+			lyrics 1: "Meet I the";
+bar
+//8
+1: 4.af;
+2: 4.d+d;
+
+			lyrics 1: "me!";
+			lyrics 1: "me.";
+			lyrics 1: "love!";
+			lyrics 1: "strong.";
+			lyrics 1: "foe.";
+bar
+newscore
+//9
+1: 8c+f; 8c+f; 8c+f;
+2: 8d+d; 8d+d; 8d+d;
+		
+			lyrics 1: "Then shall I";
+			lyrics 1: "Peace Thou hast";
+			lyrics 1: "Come then, O";
+			lyrics 1: "Life is for";
+			lyrics 1: "Crowns are a-";
+bar
+//10
+1: 8.c+f; 16bg; 8af;
+2: 8.d+d; 16d+d; 8d+d;
+
+			lyrics 1: "lov-ing-ly";
+			lyrics 1: "left to us,";
+			lyrics 1: "Fa-ther come!";
+			lyrics 1: "ser-vice true,";
+			lyrics 1: "wait-ing us,";
+bar
+//11
+1: 8bg; 8bg; 8c+a;
+2: 8d+g; 8d+g; 8d+g;
+
+			lyrics 1: "Then shall I";
+			lyrics 1: "Thus, hath Thou";
+			lyrics 1: "Come, then, O";
+			lyrics 1: "Life is to";
+			lyrics 1: "An-gels are";
+bar
+//12
+1: 8.d+b; 16c+a; 8bg;
+2: 8.d+g; 16d+g; 8d+g;
+
+			lyrics 1: "joy-ful-ly,";
+			lyrics 1: "bless-ed us,";
+			lyrics 1: "Sav-iour! come:";
+			lyrics 1: "be and do,";
+			lyrics 1: "watch-ing us,";
+bar
+//13
+1: 8e+g; 8d+g; 8c+g;
+2: 8c+g; 8bg; 8e+g;
+
+			lyrics 1: "Then shall I";
+			lyrics 1: "Thy, peace hast";
+			lyrics 1: "Come then, O";
+			lyrics 1: "Life is for";
+			lyrics 1: "Glo-ry pre-";
+bar
+//14
+1: 8.c+g; 16bg; 8bg;
+2: 8.e+g; 16d+g; 8d+g;
+
+			lyrics 1: "will-ing-ly,";
+			lyrics 1: "giv-en us;";
+			lyrics 1: "Spir-it come:";
+			lyrics 1: "bat-tle too,";
+			lyrics 1: "pared for us;";
+bar
+//15
+1: 8ae; 8c+e; 8fc;
+2: 8c+c; 8c+a-; 8ad; 
+
+			lyrics 1: "Walk here with";
+			lyrics 1: "So let it";
+			lyrics 1: "Heav-en-ly";
+			lyrics 1: "Life is for";
+			lyrics 1: "Joys o-ver-";
+bar
+//16
+1: 4.gb-;
+2: 4.gg-;
+
+			lyrics 1: "Thee.";
+			lyrics 1: "be.";
+			lyrics 1: "Dove.";
+			lyrics 1: "song.";
+			lyrics 1: "flow.";
+endbar

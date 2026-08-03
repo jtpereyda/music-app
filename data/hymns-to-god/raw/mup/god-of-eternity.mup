@@ -1,0 +1,227 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Good News Hymns
+//		Edited and Compiled by
+//		Benjamin Franklin butts
+//		For use in Church and
+//		Evangelistic Services
+//		Published by the Biglow & Main Co.
+//		Madison Terminal Building, Chicago
+//		205-209 West 19th Street, new York
+//		Copyright 1914
+//		Hymn no. 56
+
+// Transcribed by: Ted Gatza, Jr. 11/25/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "God of Eternity" ""
+   title (2)""
+   title (11) "F - 4 - DO" "\s(17)\f(TI)\:the\ high\ and\ lofty\ One\ t\|hat\ inhabiteth\ eternity, whose\ name\ is\ \^Holy\ -\ Is.\ 57:15"""
+   title (13) "Fanny J. Crosby" " " "I. Allan Sankey, 1903"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2fc; 4fc; 4fc;
+2: 2af; 4af; 4ae;
+
+			lyrics 1: "<1. >-1|God of e-";
+			lyrics 1: "<2. >-1|God of e-";
+			lyrics 1: "<3. >-1|God of e-";
+			lyrics 1: "<4. >-1|God of e-";
+bar
+//2
+1: 4.fd; 8fd; 2fd;
+2: 4.ad; 8ad; 4ad slur; 4gb-;
+
+			lyrics 1: "ter-ni-ty,";
+			lyrics 1: "ter-ni-ty,";
+			lyrics 1: "ter-ni-ty,";
+			lyrics 1: "ter-ni-ty,";
+bar
+//3
+1 1: 2fc; 4g; 4ge;
+1 2: 2s; 4f; 4s;
+2 1: 4a slur; 8g bm; 8a ebm; 4bc; 4c+c;
+2 2: 2c; 4s; 4s;
+
+			lyrics 1: "Sav-iour and";
+			lyrics 1: "An-cient of";
+			lyrics 1: "Rul-er di-";
+			lyrics 1: "Love is Thy";
+bar
+//4
+1: 2.af; 4r;
+2: 2.c+f; 4r;
+
+			lyrics 1: "King,";
+			lyrics 1: "Days,";
+			lyrics 1: "vine,";
+			lyrics 1: "name,";
+bar
+newscore
+//5
+1 1: 2c+f; 4bg; 4a;
+1 2: 2s; 4s; 8f bm; 8e& ebm;
+2 1: 2c+a; 4c+e; 4f;
+2 2: 2s; 4s; 4f;
+
+			lyrics 1: "Help us to";
+			lyrics 1: "Glo-rious in";
+			lyrics 1: "Strength of the";
+			lyrics 1: "God of the";
+bar
+//6
+1: 4.ad; 8gd; 2gd;
+2: 4.fb-; 8gb-; 2gb-;
+
+			lyrics 1: "hon-or Thee,";
+			lyrics 1: "maj-es-ty,";
+			lyrics 1: "might-y hills,";
+			lyrics 1: "earth and sea,";
+bar
+//7
+1: 2be; 4ae; 4ge;
+2 1: 4g slur; 4d+; 8c+ bm; 8bn ebm; 4b&c;
+2 2: 2c; 4c; 4s;
+
+			lyrics 1: "Help while we";
+			lyrics 1: "Au-thor of";
+			lyrics 1: "All power is";
+			lyrics 1: "Thee we pro-";
+bar
+//8
+1 1: 2.f; 4r;
+1 2: 2.f; 4s;
+2: 2.af; 4r;
+
+			lyrics 1: "sing;";
+			lyrics 1: "Praise;";
+			lyrics 1: "thine;";
+			lyrics 1: "claim;";
+bar
+newscore
+//9
+1: 2c+e; 4c+f; 4bg;
+2 1: 4c+ slur; 4g; 4c+d; 4c+e;
+2 2: 2c; 4s; 4s; 
+
+			lyrics 1: "Now may the";
+			lyrics 1: "Hear Thou our";
+			lyrics 1: "Bound-less Thy";
+			lyrics 1: "Love, thro' Thine";
+bar
+//10
+1: 4.be; 8af; 2af;
+2: 4.c+g; 8c+f; 2c+f;
+
+			lyrics 1: "clouds of night";
+			lyrics 1: "ear-nest call,";
+			lyrics 1: "reign shall be,";
+			lyrics 1: "on-ly Son,";
+bar
+//11
+1: 2ac#; 4ad; 4ge;
+2 1: 4a slur; 4e; 4ab-n; 4ac#;
+2 2: 2a-; 4s; 4s;
+
+			lyrics 1: "Break in-to";
+			lyrics 1: "While at Thy";
+			lyrics 1: "Won-drous Thy";
+			lyrics 1: "Thy work of";
+bar
+//12
+1: 4.gc#; 8fd; 2fd;
+2: 4.ae; 8ad; 2ad;
+
+			lyrics 1: "splen-dor bright,";
+			lyrics 1: "feet we fall,";
+			lyrics 1: "vic-to-ry,";
+			lyrics 1: "grace hath done;";
+bar
+//13
+1: 2c+c; 4c+f; 4bg;
+2: 4ge slur; 4ec; 4c+d; 4c+e;
+
+			lyrics 1: "Je-sus, our";
+			lyrics 1: "Je-sus, our";
+			lyrics 1: "Earth shall be";
+			lyrics 1: "O bless-ed";
+bar
+//14
+1: 4.af; 8bf; 4c+f; 4d+f;
+2 1: 4.c+f; 8d+b-; 8c+ bm; 8e+& ebm; 8d+ bm; 8g ebm;
+2 2: 4.s; 8s; 4a-; 4b-;
+
+			lyrics 1: "life and light, Our";
+			lyrics 1: "all in all, Our";
+			lyrics 1: "fill'd with Thee, Our";
+			lyrics 1: "Three in One, Our";
+bar
+//15
+1 1: 2af; 2g;
+1 2: 2s; 4f slur; 4e;
+2 1: 4c+ slur; 4a; 4.c+ slur; 8b;
+2 2: 2c; 2c;
+
+			lyrics 1: "Lord and";
+			lyrics 1: "Lord and";
+			lyrics 1: "Lord and";
+			lyrics 1: "Lord and";
+bar
+//16
+1 1: 1f;
+1 2: 1f;
+2: 1af;
+
+			lyrics 1: "King!";
+			lyrics 1: "King!";
+			lyrics 1: "King!";
+			lyrics 1: "King!";
+endbar

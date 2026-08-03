@@ -1,0 +1,230 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No. 2
+//		Compiled and arranged by 
+//		Ira D. Sankey, James McGranahan and Geo. C. Stebbins
+//		Published by the Biglow & Main Co.
+//		New York, Chicago
+//		Copyright 1899
+//		Hymn no. 2
+
+// Transcribed by: Ted Gatza, Jr. 02/03/2010; Rev. 04/24/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Send The Gospel Light" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:O\ send\ out\ thy\ light\ and\ thy\ truth\ -\ Ps.\ 43:3 \(space)"""
+   title (13) "Fanny J. Crosby" " " "Ira D. Sankey, 1899"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1 1: 2s; 8.d; 16gd;
+1 2: 2s; 8.d; 16s;
+2: 2s; 8.bg; 16bg;
+
+			lyrics 1: "<1. >-1|Send the";
+			lyrics 1: "<2. >-1|Send the";
+			lyrics 1: "<3. >-1|Send the";
+
+bar
+//2
+1 1: 4.bg; 8g; 8.c+g; 16bg;
+1 2: 4.s; 8g; 8.s; 16s;
+2: 4.d+g; 8bg; 8.e+g; 16d+g;
+
+			lyrics 1: "Light, O send it";
+			lyrics 1: "Light, where souls are";
+			lyrics 1: "Light; the Lord com-";
+bar
+//3
+1: 4bg; 4af; 8.af; 16bf;
+2: d+d; 4d+d; 8.c+d; 16bd;
+
+			lyrics 1: "quick-ly, Far a-";
+			lyrics 1: "dy-ing In their";
+			lyrics 1: "mands it; To His";
+bar
+//4
+1: 4.c+f; 8af; 8.s; 16s;
+2: 4.ad; 8c+d; 8.s; 16s;
+
+			lyrics 1: "cross the";
+			lyrics 1: "dark-ness,";
+			lyrics 1: "Ho-ly";
+
+
+invisbar
+newscore
+
+1: 4.s; 8s; 8.d+g; 16c+d;
+2: 4.s; 8s; 8.bd; 16af;
+
+			lyrics 1: "heav-ing";
+			lyrics 1: "gloom and";
+			lyrics 1: "Word at-";
+
+bar
+//5
+1 1: 2bd; 8.d; 16gd;
+1 2: 2s; 8.d; 16s;
+2 1: 2g; 8.bg; 16bg;
+2 2: 2g; 8.s; 16s;
+
+			lyrics 1: "main; Speed the";
+			lyrics 1: "night; Haste, O";
+			lyrics 1: "tend; \"Go ye";
+bar
+//6
+1: 4.bg; 8bg; 8.bg; 16d+fn;
+2: 4.d+g; 8d+g; 8.d+g; 16bg;
+
+			lyrics 1: "news of full Sal-";
+			lyrics 1: "haste! the days are";
+			lyrics 1: "forth and preach my";
+bar
+//6
+1: 4d+fn; 4c+e; 8.ec; 16c+e;
+2: 4gb-; 4gc; 8.gc; 16gc;
+
+			lyrics 1: "va-tion Through a";
+			lyrics 1: "fleet-ing, And the";
+			lyrics 1: "gos-pel; Lo, I'm";
+bar
+//7
+1: 4.bd; 8ad; 8.gd; 16fc;
+2: 4.gd; 8c+d; 8.bd; 16ad;
+
+			lyrics 1: "dear Re-deem-er's";
+			lyrics 1: "hours how swift their";
+			lyrics 1: "with you to the";
+bar
+//8
+1: 2gb-; 4s;
+2: 2gg-; 4s;
+
+			lyrics 1: "name.";
+			lyrics 1: "flight!";
+			lyrics 1: "end.\"";
+dblbar
+//9
+1: 8.d+d; 16d+g; 2s;
+2: 8.bg; 16bg; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Send the";
+bar
+//10
+1: 4.d+f; 8fd; 8.gd; 16ad;
+2: 4.ad; 8ac; 8.gb-; 16fd;
+
+			lyrics 1: [c]"light, O send it";
+bar
+//11
+1 1: 4bd; 4bd; 8.s; 16s;
+1 2: 4s; 4s; 8.s; 16s;
+2 1: 4g; 4g; 8.s; 16s;
+2 2: 4g; 4g; 8.s; 16s;
+
+			lyrics 1: [c]"quick-ly,";
+invisbar
+newscore
+
+1 1: 4s; 4s; 8.bg; 16b;
+1 2: 4s; 4s; 8.s; 16a;
+2 1: 4s; 4s; 8.d+g; 16d+#f;
+2 2: 4s; 4s; 8.s; 16s;
+
+			lyrics 1: [c]"To the";
+
+bar
+//12
+1: 4.bg; 8d+g; 8.c+#g; 16c+g;
+2 1: 4.e+e; 8be; 8.a; 16e+a-;
+2 2: 4.s; 8s; 8.a; 16s;
+
+			lyrics 1: [c]"isles be-yond the";
+bar
+//13
+1 1: 2d+f; 8.d; 16gd;
+1 2: 2s; 8.d; 16s;
+2 1: 4d+ slur; 4c+; 8.bg; 16bg;
+2 2: 2d; 8.s; 16s;
+
+			lyrics 1: [c]"sea; Let them";
+bar
+//14
+1: 4.bg; 8bg; 8.s; 16s;
+2: 4.d+g; 8d+g; 8.s; 16s;
+
+			lyrics 1: [c]"hear; the";
+invisbar
+newscore
+
+1: 4.s; 8s; 8.bg; 16d+fn;
+2: 4.s; 8s; 8.d+g; 16bg;
+
+			lyrics 1: [c]"won-drous";
+
+bar
+//15
+1: 4d+fn; 4c+e; 8.ec; 16c+e;
+2: 4gb; 4gc; 8.gc; 16gc;
+
+			lyrics 1: [c]"sto-ry Love is";
+bar
+//16
+1: 4.bd; 8ad; 8.gd; 16fc;
+2: 4.gd; 8c+d; 8.bd; 16ad;
+
+			lyrics 1: [c]"bound-less, grace is";
+bar
+//17
+1: 2gb-; 4s;
+2: 2gg-; 4s;
+
+			lyrics 1: [c]"free.";
+endbar

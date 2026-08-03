@@ -1,0 +1,156 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymnal
+//		Amore Dei
+//		Compiled By
+//		Mrs. Theodore C. Williams
+//		Revised Edition
+//		Boston
+//		George H Ellis 272 Congeress Street
+//		New York 104 Easat 20th Street
+//		Copyright 1905		
+//		Hymn no. 4
+
+// Transcribed by: Ted Gatza, Jr. 01/19/2011; rev. 08/19/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Take My Life, And Let It Be" ""
+   title (2)""
+   title (11) "E - 4 - DO" "\s(17)\f(TI)\:...present\ your\ bodies\ a\ livi\|ng\ sacrifice,\ holy,\ acceptable to\ God,\ which\ is\ your\ spi\|ritual\ service.\ -\ Rom.\ 12:1"""
+   title (13) "Frances R. Havergal, 1874" " " "Georg Christoph Strattner, 1691"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4#
+
+
+staff 2
+	key=4#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1 1: 4eb-; 4eb-; 4ec; 4e;
+1 2: 4s; 4s; 4s; 4e;
+2: 4ge; 4gd; 4gc; 4gb-;
+
+			lyrics 1: "<1. >-1|Take my voice, and";
+			lyrics 1: "<2. >-1|Take my will, and";
+			lyrics 1: "<3. >-1|Take my life, and";
+			lyrics 1: "<4. >-1|Take my love; my";
+bar
+//2
+1 1: 8f bm; 8g ebm; 4ad; 2ge;
+1 2: 4e; 4s; 2s;
+2: 4c+a-; 4bb-; 2be;
+
+			lyrics 1: 4; 4; 2; "let me sing";
+			lyrics 1: 4; 4; 2; "make it Thine;";
+			lyrics 1: 4; 4; 2; "let it be";
+			lyrics 1: 4; 4; 2; "Lord, I pour";
+bar
+//3
+1 1: 4be; 4b; 4bg; 4bf;
+1 2: 4s; 4a; 4s; 4s;
+2: 4bg; 4d+f; 4e+e; 4bd;
+
+			lyrics 1: "Al-ways, On-ly";
+			lyrics 1: "It shall be no";
+			lyrics 1: "Con-se-crat-ed,";
+			lyrics 1: "At Thy feet, its";
+			
+bar
+newscore
+//4
+1 1: 8c+ bm; 8d+ ebm; 4e+f; 2d+f;
+1 2: 4e; 4s; 2s;
+2: 4bc;4a#f; 2bb-;
+
+			lyrics 1: 4; 4; 2; "for my King;";
+			lyrics 1: 4; 4; 2; "long-er mine:";
+			lyrics 1: 4; 4; 2; "Lord, to Thee;";
+			lyrics 1: 4; 4; 2; "treas-ure-store;";
+bar
+//5
+1: 4e+e; 4be; 4c+e; 4be#;
+2 1: 4bg; 4ge; 4a; 4gc;
+2 2: 4s; 4s; 4a; 4s;
+
+			lyrics 1: "Take my lips, and";
+			lyrics 1: "Take my heart, it";
+			lyrics 1: "Take my mo-ments,";
+			lyrics 1: "Take my-self, and";
+bar
+//6
+1 1: 4af; 4gen; 2f;
+1 2: 4s; 4s; 4f slur; 4d;
+2 1: 4af; 4bg; 4c+ slur; 4b;
+2 2: 4s; 4s; 2a;
+
+			lyrics 1: "let them be";
+			lyrics 1: "is Thine own;";
+			lyrics 1: "and my days,";
+			lyrics 1: "I will be";
+bar
+//7
+1 1: 4be; 4e; 8f bm; 8g ebm; 4ae;
+1 2: 4s; 4e; 4e; 4s;
+2: 4bg; 4bg-; 4c+a-; 4ac;
+
+			lyrics 1: 4; 4; 4; 4; "Filled with mes-sag-";
+			lyrics 1: 4; 4; 4; 4; "It shall be Thy";
+			lyrics 1: 4; 4; 4; 4; "Let them flow in";
+			lyrics 1: 4; 4; 4; 4 ;"Ev-er, on-ly,";
+bar
+1 1: 4ge; 4fd; 2e;
+1 2: 4s; 4s; 2e;
+2 1: 4bb-; 8b bm; 8a ebm; 2ge;
+2 2: 4s; 4b-; 2s;
+
+			lyrics 1: "es from Thee.";
+			lyrics 1: "roy-al throne.";
+			lyrics 1: "cease-less praise.";
+			lyrics 1: "all for Thee.";
+endbar
+
+title (11) "";
+title (11) "" "Public Domain" "HymnsToGod.org"

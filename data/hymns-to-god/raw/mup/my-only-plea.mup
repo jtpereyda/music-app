@@ -1,0 +1,255 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Ark of Praise containing songs and hymns for the sabboth 
+//		School, Prayer Meetings, Etc. Ed. by Jno. R. Sweney & WM. J. Kirkpatrick 
+//		Pub.John J. Hood 1018 Arch Street Philadelphia, Copyright 1882
+
+
+// Transcribed by: Ted Gatza, Jr. 09/11/2009
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "My Only Plea" ""
+   title (11) "F-4-MI" "\f(TI)I will in no wise fail thee, neither will I in any wise forsake thee. - Heb. 13:5"""
+   title (13) "Charles Wesley" "T. C. O'Kane, 1882"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4 	
+	key=1&		
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scale = .73
+	topmargin=0.200
+	bottommargin=0.200
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+
+staff 2
+	key=1&
+	clef=bass
+music
+
+midi all: 0 "tempo=90";
+
+// 1
+1 1: 4s; 4s; 4s; 8a<b>; 8b;
+1 2: 4s; 4s; 4s; 4f;
+2 1: 4s; 4s; 4s; 8f<g>; 8g;
+2 2: 4s; 4s; 4s; 4f;
+
+					lyrics 1: "<1. >-1|Fa-";
+					lyrics 1: "<2. >-1|What";
+					lyrics 1: "<3. >-1|O";
+					lyrics 1: "<4. >-1|Au-";
+bar
+
+//2
+1 1: 4c+f; 8c+<d+>; 8d+; 4c+f; 8b<g>g<e>; 8ge;
+1 2: 4s; 4f; 4s; 4s;
+2 1: 4af; 8a<b>; 8b; 4af; 4bc;
+2 2: 4s; 4f; 4s; 4s;
+
+					lyrics 1: "ther, I stretch my";
+					lyrics 1: "did thine on-ly";
+					lyrics 1: "Je-sus, could I";
+					lyrics 1: "thor of faith! to";
+bar
+
+//3
+1 1: 4f; 4ec; 4fc; 4af;
+1 2: 4f; 4s; 4s; 4s;
+2: 4ad; 4bc; 4af; 4c+f;
+
+					lyrics 1: "hands to thee; No";
+					lyrics 1: "Son en-dure, Be-";
+					lyrics 1: "this be-lieve, I";
+					lyrics 1: "thee I lift My";
+bar
+newscore
+//4
+1: 4ge; 4af; 8b<g>g<e>; 8ge; 8c+<b>a<g>; 8bg;
+2: 4c+c; 4c+c; 4c+c; 4c+c;
+
+					lyrics 1: "oth-er help I";
+					lyrics 1: "fore I drew my";
+					lyrics 1: "now should feel thy";
+					lyrics 1: "wea-ry, long-ing";
+bar
+
+//5
+1: 2.af; 4s;
+2: 2.cf; 4s;
+
+					lyrics 1: "know:";
+					lyrics 1: "breath!";
+					lyrics 1: "power;";
+					lyrics 1: "eyes:";
+dblbar
+
+//6
+1 1: 4s; 4s; 4s; 8a<b>; 8b;
+1 2: 4s; 4s; 4s; 4f;
+2 1: 4s; 4s; 4s; 8f<g>; 8g;
+2 2: 4s; 4s; 4s; 4f;
+
+					lyrics 1: "If";
+					lyrics 1: "What";
+					lyrics 1: "And";
+					lyrics 1: "O";
+bar
+
+//7
+1 1: 4c+f; 8c+<d+>; 8d+; 4c+f; 4s;
+1 2: 4s; 4f; 4s;4s;
+2 1: 4af; 8a<b>; 8b; 4af; 4s;
+2 2: 4s; 4f; 4s; 4s;
+
+					lyrics 1: "thou with-draw";
+					lyrics 1: "pain, what la-";
+					lyrics 1: "all my wants";
+					lyrics 1: "let me now";
+invisbar
+newscore
+
+
+1 1: 8b<g>g<e>; 8ge; 4s; 4s; 4s;
+1 2: 8s;8s; 4s; 4s; 4s;
+2 1: 4bb-; 4s; 4s; 4s;
+2 2: 4s; 4s; 4s; 4s; 
+
+					lyrics 1: "thy-";
+					lyrics 1: "bor,";
+					lyrics 1: "thou";
+					lyrics 1: "re-";
+bar
+
+//8
+1 1: 4f; 4ge; 4af; 4af;
+1 2: 4f; 4s; 4s; 4s;
+2: 4c+a-; 4c+c; 4c+f; 4c+f;
+					lyrics 1: "self from me, Ah!";
+					lyrics 1: "to se-cure My";
+					lyrics 1: "wouldst re-lieve, In";
+					lyrics 1: "ceive that gift; My";
+bar
+
+//9
+1: 4ge; 4c+g; 4d+f; 8c+<b>e<d>; 8bnd;
+2 1: 4c+c; 4ge; 4af; 4g;
+2 2: 4s; 4s; 4s; 4g;
+
+					lyrics 1: "whith-er shall I";
+					lyrics 1: "soul from end-less";
+					lyrics 1: "this ac-cept-ed";
+					lyrics 1: "soul with-out it";
+bar
+
+//10
+1: 2.c+e; 4s;
+2: 2.gc; 4s;
+
+					lyrics 1: "go?";
+					lyrics 1: "death!";
+					lyrics 1: "hour.";
+					lyrics 1: "dies.";
+dblbar
+newscore
+//11
+1: 4s; 4s; 4.c+e; 8bg;
+2: 4s; 4s; 4.gc; 8c+c;
+
+					ital (13) above 1: 1 "Chorus";
+					lyrics 1: [c] "I am";
+bar
+
+//12
+1: 16af; 8.af; 8.af; 16af; 4af; 8af; 8af;
+2: 16c+f; 8.c+f; 8.c+f; 16c+f; 4c+f; 8c+f; 8c+f;
+
+					lyrics 1: [c] "com-ing, Lord to thee, 'Tis my";
+bar
+//13
+1: 4be; 4c+f; 4d+f; 4d+f;
+2 1: 4c+g; 4c+a; 4b; 4b;
+2 2: 4s; 4s; 4b; 4b;
+
+					lyrics 1: [c] "on-ly plea, The";
+bar
+newscore
+//14
+1 1: 4c+f; 8c+<d+>; 8d+; 4e+g; 4d+f;
+1 2: 4s; 4g; 4s; 4s;
+2 1: 4c+a; 8g<a>e<f>; 8af; 4c+g; 4g;
+2 2: 4s; 8s; 8s; 4s; 4g;
+	
+					lyrics 1: [c] "Sav-iour died for";
+bar
+
+//15
+1: 2c+e; 4.c+e; 8bg;
+2: 2gc; 4.gc; 8c+c;
+
+					lyrics 1: [c] "me; I am"; 
+
+bar
+
+//17
+1 1: 16af; 8.af; 8.af; 16s; 4s; 8s; 8s;
+1 2: 16s; 8.s; 8.s; 16s; 4s; 8s; 8s;
+2: 16c+f; 8.c+f; 8.c+f; 16s; 4s; 8s; 8s;
+
+					lyrics 1: [c] "com-ing, Lord,";
+
+invisbar
+newscore
+
+1 1: 16s; 8.s; 8.s; 16af; 4af; 8af; 8a;
+1 2: 16s; 8.s; 8.s; 16s; 4s; 8s; 8g;
+2: 16s; 8.s; 8.s; 16c+f; 4c+f; 8c+f; 8c+#e;
+
+					lyrics 1: [c] "to thee, 'Tis my";
+
+
+bar
+
+//18
+1: 4bf; 4c+f; 4d+f; 4d+b;
+mussym (13) above 1: 3 "ferm";
+2: 4d+d; 4e+&c; 4d+b-; 4f+d;
+mussym(13) below 2: 3 "uferm";
+
+					lyrics 1: [c] "on-ly plea, The";
+bar
+
+//19
+1: 4c+a; 4c+f; 8c+<a>a<f>; 8af; 4ge;
+2 1: 4f+f; 4c+a; 4c+; 4bc;
+2 2: 4s; 4s; 4c+; 4s;
+
+					lyrics 1: [c] "Sav-iour died for";
+bar
+
+//20
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+					lyrics 1: [c] "me.";
+endbar

@@ -1,0 +1,217 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No. 2
+//		Compiled and arranged by
+//		Ira D. Sankey, James McGranahan, Geo. C. Stebbins
+//		Published by the Biglow & main Co.
+//		New York, Chicago
+// 		Copyright 1899
+//		Hymn no. 108
+
+// Transcribed by: Ted Gatza, Jr. 02/02/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Thy Hand Upholdeth Me" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17) \f(TI)\:I\ will\ hold\ thy\ hand,\ and\ keep\ thee.\ -\ Isa.\ 42:6 \(space)"""
+   title (13) "F. J. Crosby" " " "Ira D. Sankey, 1899"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+// ****************************************
+
+music
+
+midi all: 0 "tempo=110";
+
+//1
+1: 2.s; 4ec;
+2: 2.s; 4aa-;
+
+			lyrics 1: "<1. >-1|I";
+			lyrics 1: "<2. >-1|I";
+			lyrics 1: "<3. >-1|I";
+			lyrics 1: "<4. >-1|I";
+bar
+//2
+1: 4ae; 4ge; 4ae; 4bg;
+2: 4c+a-; 4d+b-; 4e+c; 4e+e;
+
+			lyrics 1: "know Thy hand up-";
+			lyrics 1: "know Thy hand up-";
+			lyrics 1: "know Thy hand up-";
+			lyrics 1: "know Thy hand up-";
+bar
+//3
+1 1: 4.c+a; 8be; 4ae; 4a;
+1 2: 4.s; 8s; 4s; 4a;
+2: 4.e+a; 8d+a; 4c+a; 4e+c;
+
+			lyrics 1: "hold-eth me, My";
+			lyrics 1: "hold-eth me, When";
+			lyrics 1: "hold-eth me, And";
+			lyrics 1: "hold-eth me, And";
+bar
+//4
+1: 4bf; 4bf; 4ae; 4ge;
+2: 4d+d; 4d+d; 4c+e; 4be;
+
+			lyrics 1: "Sav-iour and my";
+			lyrics 1: "doubt and dan-ger";
+			lyrics 1: "will in safe-ty";
+			lyrics 1: "will my soul de-";
+bar
+//5
+1: 2.ae; 4s;
+2: 2.c+a-; 4s;
+
+			lyrics 1: "God,";
+			lyrics 1: "near";
+			lyrics 1: "keep";
+			lyrics 1: "fend;";
+
+invisbar
+newscore
+
+1: 2.s; 4ec;
+2: 2.s; 4aa-;
+
+			lyrics 1: "And";
+			lyrics 1: "Would";
+			lyrics 1: "My";
+			lyrics 1: "Suf-";
+
+
+bar
+//6
+1: 4ae; 4ge; 4ae; 4bg;
+2: 4c+a-; 4d+b-; 4e+c; 4e+e;
+
+			lyrics 1: "step by step I'll";
+			lyrics 1: "tempt me from the";
+			lyrics 1: "trust-ing heart, though";
+			lyrics 1: "fi-cent is Thy";
+bar
+//7
+1: 4.c+a; 8be; 4ae; 4ae;
+2: 4.e+a; 8d+a; 4c+a; 4e+c;
+
+			lyrics 1: "fol-low Thee Wher-";
+			lyrics 1: "nar-row way, Or";
+			lyrics 1: "I may pass Thro'";
+			lyrics 1: "grace, O Lord, To";
+bar
+//8
+1: 4bf; 4bf; 4ae; 4gd;
+2: 4d+d; 4d+d; 4c+e; 4be;
+
+			lyrics 1: "e'er Thy feet have";
+			lyrics 1: "fill my heart with";
+			lyrics 1: "wa-ters dark and";
+			lyrics 1: "keep me to the";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			lyrics 1: "trod;";
+			lyrics 1: "fear.";
+			lyrics 1: "deep.";
+			lyrics 1: "end.";
+dblbar
+//10
+1: 4c+a; 2.s;
+2: 4e+a; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"I";
+bar
+//11
+1: 4e+a; 4c+a; 4f+a; 4e+a;
+2: 4c+a; 4e+a; 4d+a; 4c+a;
+
+			lyrics 1: [c]"know in whom I";
+bar
+//12
+1: 4.e+g; 8d+g; 4bg; 4d+b;
+2: 4.be; 8be; 4e+e; 4e+g;
+
+			lyrics 1: [c]"have be-lieved, And";
+bar
+//13
+1: 4c+a; 4e+g&; 4d+f; 4bf;
+2: 4e+a; 4c+a; 4bd; 4d+d; 
+
+			lyrics 1: [c]"know-ing I am";
+bar
+newscore
+//14
+1 1: 2a slur; 4g; 4e;
+1 2: 2.e; 4e;
+2 1: 2c+ slur; 4b; 4d+g;
+2 2: 2.e; 4s;
+
+			lyrics 1: [c]"blest; Thou";
+bar
+//15
+1: 4ae; 4ge; 4ae; 4bg;
+2: 4c+a; 4be; 4e+c; 4e+e;
+
+			lyrics 1: [c]"art the An-chor";
+bar
+//16
+1 1: 4.c+a; 8be; 4ae; 4a;
+1 2: 4.s; 8s; 4s; 4a;
+2: 4.e+a; 8d+a; 4c+a; 4e+c;
+
+			lyrics 1: [c]"of my soul, In";
+bar
+//17
+1: 4bf; 4d+b; 4c+a; 4be;
+2: 4d+d; 4f+b-; 4e+e; 4d+e;
+
+			lyrics 1: [c]"Thee my hope shall";
+bar
+//18
+1: 2.ae; 4s;
+2: 2.c+a-; 4s;
+
+			lyrics 1: [c]"rest.";
+endbar

@@ -1,0 +1,275 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The New Evangel
+//		Edited and compiled by Robert H. Coleman
+//		American Baptist Publication Society
+//		Philadelphia, Boston, Chicago, St. Louis
+//		Copyright 1911, by Robert H. Coleman, Dallas Texas
+//		"The sure Foundation" Copyright 1900 by H. H. Lincoln
+
+// Transcribed by: Ted Gatza, Jr. 09/17/2009
+// HymnsToGod.org
+// ****************************************************************************************
+
+
+top
+
+   title bold (19) "" "The Sure Foundation" ""
+   title (11) "A \(flat)-4-TI" "\s(18)\f(TI)\:Behold,\ I\ lay\ in\ Zion\ a\ chief\ co\|rner\ stone,\ elect,\ precious:\ And he\ that\ believeth\ on\ him\ shall\ n\|ot\ be\ put\ to\ shame.\ -\ 1\ Pet.\ 2:6"""
+   title (13) "Luella McCutcheon" "C.L. Chamberlin, 1900"
+
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4 	
+	key=4&
+	packexp = 0.0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=.97
+	scoresep=6,15
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+music
+
+midi all: 0 "tempo=60";
+
+// 1
+1: 4s; 4s; 4s; 8s; 8ec;
+2: 4s; 4s; 4s; 8s; 8a-a;
+
+			lyrics 1: "<1. >-1|Each";
+			lyrics 1: "<2. >-1|Earth's";
+			lyrics 1: "<3. >-1|There";
+
+bar
+
+//2
+1: 8ec; 8ca-; 8ec; 8ae; 8c+e; 4c+e; 8ae;
+2: 8aa-; 8ea-; 8aa-; 8c+a-; 8aa-; 4aa-; 8ca-;
+
+			lyrics 1: "one in life is build-ing A";
+			lyrics 1: "might-iest works shall per-ish, Shall";
+			lyrics 1: "hath been laid in Zi-on A";
+
+bar
+
+//3
+1: 8.af; 16bf; 8af; 8fd; 4.ec; 8s;
+2: 8.d+d; 16d+d; 8d+d; 8ad; 4.aa-; 8s;
+
+			lyrics 1: "tem-ple of his own";
+			lyrics 1: "crum-ble and de-cay";
+			lyrics 1: "sure foun-da-tion stone";
+invisbar
+newscore
+
+1: 4.s; 8ec; 8.s; 16s; 8s; 8s; 
+2: 4.s; 8aa-; 8.s; 16s; 8s; 8s; 
+
+			lyrics 1: "Seek";
+			lyrics 1: "The";
+			lyrics 1: "Build";
+
+bar
+
+//4
+1: 8ec; 8ca-; 8ec; 8ae; 8c+e; 4c+e; 8c+e;
+2: 8aa-; 8ea-; 8aa-; 8c+a-; 8aa-; 4aa-; 8aa-;
+
+			lyrics 1: "then the sure foun-da-tion, Choose";
+			lyrics 1: "piles of brick and gran-ite The";
+			lyrics 1: "then your hopes up-on it, On";
+
+bar
+
+//5
+1: 8.c+dn; 16bd; 8fd; 8c+d; 4.be; 8s;
+2: 8.ab-; 16ab-; 8ab-; 8ab-; 4.ge; 8s;
+
+			lyrics 1: "well the cor-ner-stone.";
+			lyrics 1: "years shall sweep a-way";
+			lyrics 1: "Christ, and Him a-lone";
+
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8s; 4.s; 8e&;
+1 2: 8.s; 16; 8s; 8s; 4.s; 8d;
+2: 8.s; 16s; 8s; 8s; 4.s; 8be;
+
+			lyrics 1: "Trust";
+			lyrics 1: "But";
+			lyrics 1: "When";
+
+bar
+
+//6
+1: 8ec; 8ca-; 8ec; 8ae; 8c+e; 4c+e; 8a;
+1 2: 8s; 8s; 8s; 8s; 8s; 4s; 8g&;
+2: 8aa-; 8ea-; 8aa-; 8c+a-;8aa-; 4aa-; 8c+a-;
+
+			lyrics 1: "not in fame or rich-es, Nor";
+			lyrics 1: "souls live on for-ev-er; In";
+			lyrics 1: "to the fi-nal judg-ment We";
+
+bar
+
+//7
+1: 8.af; 16bf; 8af; 8fd; 4.ec; 8s;
+2: 8.d+d; 16d+d; 8d+d; 8ad; 4.aa-; 8s;
+
+			lyrics 1: "on good works re-ly";
+			lyrics 1: "joy or mis-er-y;";
+			lyrics 1: "come at God's com-mand,";
+
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8s; 4.s; 8ec;
+2: 8.s; 16s; 8s; 8s; 4.s; 8aa-;
+
+			lyrics 1: "Men's";
+			lyrics 1: "And";
+			lyrics 1: "Safe";
+
+bar
+
+//8
+1: 8ec; 8ae; 8be; 8c+e; 8d+f; 4d+f; 8bf&;
+2: 8aa-; 8ac; 8ge; 8a; 8ad; 4ad; 8ad;
+2 2: 8s; 8s; 8s; 8a; 8s; 4s; 8s;
+
+			mussym (9) above 1: 3.5 "ferm";
+			mussym (9) below 2: 3.5 "uferm";
+			lyrics 1: "best acts are im-per-fect In";
+			lyrics 1: "char-ac-ter is des-tined To";
+			lyrics 1: "on the Rock each tem-ple All";			
+
+bar
+
+//9
+1: 8.c+e; 16ae; 8ge; 8be; 4.ae; 8r;
+2: 8.ae; 16c+e; 8be; 8d+e; 4.c+a-; 8r;
+
+			lyrics 1: "God's un-err-ing eye.";
+			lyrics 1: "last e-ter-nal-ly.";
+			lyrics 1: "glo-ri-fied shall stand.";
+
+dblbar
+
+//10
+1: 2c+~e~; 8c+e; 16c+e; 16c+e; 8d+f; 8c+e;
+2 1: 8a; 16a; 16a; 8a; 8a; 4a; 4a;
+2 2: 8a; 16a; 16a; 8a; 8a; 4a; 4a;
+
+			ital (13) above 1: 1 "Chorus";
+			lyrics 1: "Build on the Rock of";
+			lyrics 1: 8; 16; 16; 8; 8; 4; 4; "Build on the Rock of A-ges,";
+
+bar
+
+//11
+1: 4c+e; 2s; 4s;
+2: 8ae; 16ae; 16ae; 8s; 8s; 16s; 8.s; 4s;
+
+			lyrics 1: "A-";
+
+			lyrics 1: 8; 16; 16; "Build on the";
+
+invisbar
+newscore
+
+1: 4s; 2bd; 4r;
+2: 8s; 16s; 16s; 8gd; 8ge; 16ge; 8.ge; 4r;
+
+			lyrics 1: 4s; 2;"ges";
+			lyrics 1: 8s; 16s; 16s; 8; 8; 16; 8.;"Rock of A-ges,";
+
+bar
+
+//12
+1: 2bd; 8bd; 16bd; 16bd; 8c+e; 8bd;
+2: 4eg; 8eg; 16eg; 16eg; 4eg; 4eg;
+
+			lyrics 1: "Build not on the shift-ing";
+			lyrics 1: 4; 8; 16; 16; 4; 4; "Build not on the shift-ing";
+
+bar
+
+//13
+1 1: 2.a; 4r;
+1 2: 2c<e>; 4e; 4s;
+2: 8aa-; 16aa-; 16aa-; 16ae; 8.ac; 4c+a-; 4r;
+
+			lyrics 1: "sand";
+			lyrics 1: 8; 16; 16; 16; 8.; 4; "sand, on the shift-ing sand;";
+
+bar
+
+//14
+1: 2e+~a~; 8e+a;
+2: 8c+a; 16c+a; 16c+a; 8c+a; 8c+a; 4c+a;
+
+			lyrics 1: "So";
+			lyrics 1: 8; 16; 16; 8; 8; 4; "So when the tem-pest ra-";
+
+invisbar
+newscore
+
+
+1: 16e+a; 16e+a; 8f+a; 8e+e;
+2: 16s; 16s; 4ac;
+
+			lyrics 1: 16; 16; 8; 8; "When the tem-pest";
+			lyrics 1: 16s; 16s; 4; "ges";
+
+bar
+
+//15
+1: 4e+f; 2df; 4r;
+2: 8ad; 16ad; 16ad; 8ad; 8ad; 16ad; 8.ad; 4r;
+
+			lyrics 1: "ra-ges";
+			lyrics 1: 8; 16; 16; 8; 8; 16; 8.; "So when the tem-pest ra-ges";
+
+bar
+
+//16
+1: 4c+e; 8bd; 8ac; 4e; 4gd;
+1 2: 4s; 8s; 8s; 4d; 4s;
+2: 4ae; 8ge; 8ae; 4be; 4be;
+
+			lyrics 1: "Safe-ly thy work shall";
+
+bar
+
+//17
+1: 2.a; 8r;
+1 2: 8c; 8c; 16d; 8.d; 4c;
+2 1: 8a; 8e; 16f; 8.f; 4e; 8r;
+
+			lyrics 1: "stand.";
+			lyrics 1: 8s; 8; 16; 8.; 4; "shall sure-ly stand.";
+
+endbar

@@ -1,0 +1,241 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Song Treasury
+//		 A collection of Songs and Music, especially adapted for
+//		 Sunday-Schools, Praise and Prayer Meetings,
+//		 Church Choirs and the Home Circle.
+//		 Also Containing Selections for
+//		 Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		 Together with a
+//		 Complete Course of Elementary Instruction of all the art of
+//		 Reading music at sight
+//		 By J. H. Kursenknabe,
+//		 Publishers: Crider & Brother
+//		 York, PA
+//		 Copyright 1879
+//		 Hymn No.: 50
+//		
+// Transcribed by: Ted Gatza, Jr. 09/19/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "In The Cleft Of The Rock Let Me Hide" ""
+   title (2)""
+   title (11) "A - 4 - SOL" "\s(17)\f(TI)\:Jehovah\ is\ my\ rock\|,\ and\ my\ fortress, and\ my\ deliver\|er;\ -\ Ps.\ 18:2" ""
+   title (13) "Lizzie Ashbach" "" "John H. Kurzenknabe, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 4ec; 2.s;
+2 1: 4a; 2.s;
+2 2: 4a; 2.s;
+
+
+			VERSE "<1. >-1|Oh";
+			VERSE "<2. >-1|Lead";
+			VERSE "<3. >-1|And";
+			VERSE "<4. >-1|Lead";
+			VERSE "<5. >-1|Lead";
+
+bar
+//2
+1: 4ae; 8.ae; 16ae; 4ae; 8ge; 8ae;
+2: 4c+a; 8.c+a; 16c+a; 4c+a; 8e+b; 8c+a;
+
+			VERSE "Fath-er! while here thro' life's";
+			VERSE "me to the rock! in its";
+			VERSE "then tho' the clouds gath-er";
+			VERSE "me to the rock that was";
+			VERSE "me to the rock in my";
+bar
+//3
+1 1: 4bg; 8.bg; 16bg; 4bg; 8a; 8bg;
+1 2: 4s; 8.s; 16s; 4s; 8a; 8s;
+2: 4e+e; 8.e+e; 16e+e; 4e+e; 8e+c; 8e+e;
+
+			VERSE "path-way I stray, With the";
+			VERSE "shade I would rest; When so";
+			VERSE "thick o'er my head, While the";
+			VERSE "smit-ten to show, Where the";
+			VERSE "jour-ney at last, When the";
+bar
+//4
+1 1: 4c+a; 8.c+a; 16c+a; 4c+a; 8bg; 8a;
+1 2: 4s; 8.s; 16s; 4s; 8s; 8a;
+2: 4e+a; 8.e+a; 16e+a; 4e+a; 8e+e; 8c+f;
+
+			VERSE "rays of the sun beat-ing";
+			VERSE "wea-ry of trav-el, when";
+			VERSE "dark-ness en-vel-ops the";
+			VERSE "cool, liv-ing wa-ters for-";
+			VERSE "de-sert's gone ov-er, the";
+bar
+//5
+1: 4bg; 8.bg; 16bg; 4bg; 8ae; 8be;
+2 1: 4e+e; 8.e+e; 16e+e; 4e+; 8ac; 8gb-;
+2 2: 4s; 8.s; 16s; 8e bm; 8d ebm; 8s; 8s;
+
+			VERSE "down on my way While the";
+			VERSE "faint and op-pres'd To that";
+			VERSE "path-way I tread, Then, oh";
+			VERSE "ev-er shall flow; There my";
+			VERSE "wild-er-ness past, Ev-en";
+bar
+//6
+1: 4c+e; 8.c+e; 16c+e; 8d+f bm; 8c+e ebm; 8be; 8ae;
+2: 4aa-; 8.aa-; 16aa-; 4aa-; 8gb-; 8ac;
+
+			VERSE 4; 8.; 16; 4; 8; 8; "sands of the des-ert are";
+			VERSE 4; 8.; 16; 4; 8; 8; "shel-ter I'd haste, to that";
+			VERSE 4; 8.; 16; 4; 8; 8; "Fath-er! when dark-ness and";
+			VERSE 4; 8.; 16; 4; 8; 8; "thirst let me quench in that";
+			VERSE 4; 8.; 16; 4; 8; 8; "then though death's bil-lows be";
+bar
+//7
+1: 4fd; 8.fd; 16fd; 4.af; 8fd;
+2: 4ad; 8.ad; 16ad; 4.ad; 8ad;
+
+			VERSE "scorch-ing and dry, Lead";
+			VERSE "re-fuge I'd fly; Lead";
+			VERSE "tem-pests are nigh, Lead";
+			VERSE "stream flow-ing by; Lead";
+			VERSE "rag-ing and high, Lead";
+bar
+//8
+1 1: 4e; 8.ae; 16be; 4c+e; 8bg; 8a;
+1 2: 4e; 8.s; 16s; 4s; 8s; 8a;
+2 1: 4ac; 8.ac; 16ge; 4a; 8e+e; 8c+f;
+2 2: 4s; 8.s; 16s; 4a; 8s; 8s;
+
+			VERSE "me to the rock that is";
+			VERSE "me to the rock that is";
+			VERSE "me to the rock that is";
+			VERSE "me to the rock that is";
+			VERSE "me to the rock that is";
+bar
+//9
+1: 4bf; 8ae; 8ge; 4ae; 4s;
+2: 4d+d; 8c+e; 8d+e; 4c+a; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "high-er than I.";
+			VERSE "high-er than I.";
+			VERSE "high-er than I.";
+			VERSE "high-er than I.";
+			VERSE "high-er than I.";
+dblbar
+//10
+1: 8c+e; 8d+e; 2.s;
+2 1: 8a; 8b; 2.s;
+2 2: 8a; 8a; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"In the";
+bar
+//11
+1 1: 4e+a; 8.f+a; 16e+a; 4c+a; 8a; 8c+a;
+1 2: 4s; 8.s; 16s; 4s; 8a; 8s;
+2: 4c+a; 8.d+a; 16c+a; 4e+a; 8e+c+; 8e+a;
+
+			VERSE [c]"cleft of the rock let me";
+bar
+newscore
+//12
+1 1: 2.b; 8bg; 8c+a;
+1 2: 4g; 8.g; 16g; 4g; 8s; 8s;
+2: 4e+e; 8.e+e; 16e+e; 4e+e; 8e+e; 8e+e;
+
+			VERSE 4; 8.s; 16s; 4s; 8; 8; "hide, To be";
+			VERSE 4s; 8.; 16; 4; 8s; 8s; "Let me hide";
+bar
+//13
+1: 4d+g; 8.d+g; 16e+g; 4d+g; 8bg; 8d+g;
+2: 4e+e; 8.e+e; 16e+e; 4e+e; 8e+e; 8e+e;
+
+			VERSE "shel-tered from tem-pest and";
+bar
+newscore
+//14
+1 1: 2.c+; 8c+a; 8d+a;
+1 2: 4a; 8.a; 16a; 4a; 8s; 8s;
+2: 4e+a; 8.e+a; 16e+a; 4e+a; 8e+a; 8e+a;
+
+			VERSE "tide, Let me";
+			VERSE 4s; 8.; 16; 4; 8s; 8s; "and the tide;";
+bar
+//15
+1 1: 4e+a; 8.f+a; 16e+a; 4c+a; 8bg; 8a;
+1 2: 4s; 8.s; 16s; 4s; 8s; 8a;
+2: 4c+a; 8.d+a; 16c+a; 4e+a; 8e+e; 8c+f;
+
+			VERSE "rest till the storm pass-es";
+bar
+//16
+1 1: 2.d+; 8c+f; 8bf;
+1 2: 4a; 8.a; 16a; 4a; 8s; 8s;
+2: 4f+d; 8.f+d; 16f+d; 4f+d; 8d+d; 8d+d;
+
+			VERSE "by, 'Neath the";
+			VERSE 4s; 8.; 16; 4; 8s; 8s; "pass-es by,";
+bar
+//17
+1: 4ae; 8.ge; 16ae; 4c+a; 8bg; 8bg;
+2: 4c+e; 8.be; 16c+e; 4e+e; 8d+d; 8d+d;
+
+			VERSE "rock that is high-er than";
+bar
+//18
+1 1: 2.a; 4s;
+1 2: 2.a; 4s;
+2: 2.c+a; 4s;
+
+			VERSE "I.";
+endbar

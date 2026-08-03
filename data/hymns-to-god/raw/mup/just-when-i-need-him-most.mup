@@ -1,0 +1,210 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public  domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+
+// 
+
+// Hymn Source: Hymns And Sacred Songs
+//		E. O. Excell, Editor
+//		G. H. Shorney
+//		F. G. Kingsbury
+//		Associate Edditors
+//		Hope Publishing Company
+//		Chicago	
+//		Copyright: 1918
+//		Hymn No. 77
+
+//		
+// Transcribed by: Ted Gatza, Jr. 07/16/11
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Just When I Need Him Most" ""
+   title (2)""
+   title (11) "D \(flat) - 3 - SOL" "\s(17)\f(TI)\:and\ lo,\ I\ am\ with\ y\|ou\ always,\ even\ unto the\ end\ of\ the\ w\|orld.\ -\ Mat.\ 28:20" ""
+   title (13) "William Poole" "" "Chas. H. Gabriel, 1909"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+music
+
+	midi all: 0 "tempo=100";
+	define VERSE lyrics between 1&2: @
+
+
+//1
+1: 8ad; 8ad; 8ad; 4.ad; 4.fd;
+2: 8fd; 8fd; 8fd; 4.fd; 4.ad;
+
+			VERSE "<1. >-1|Just when I need Him,";
+			VERSE "<2. >-1|Just when I need Him,";
+			VERSE "<3. >-1|Just when I need Him,";
+			VERSE "<4. >-1|Just when I need Him,";
+bar
+//2
+1 1: 8ec; 8d; 8ec; 2.fd;
+1 2: 8s; 8d; 8s; 2.s;
+2: 8ga-; [down]8fa-; 8aa-; 2.ad;
+
+			VERSE "Je-sus is near,";
+			VERSE "Je-sus is true,";
+			VERSE "Je-sus is strong,";
+			VERSE "He is my all,";
+bar
+//3
+1: 8gd; 8ad; 8bd; 4.d+d; 4.bg;
+2 1: 8bg; 8a; 8g; 4.bg; 4.d+g;
+2 2: 8s; 8g; 8g; 4.s; 4.s;
+
+			VERSE "Just when I fal-ter,";
+			VERSE "Nev-er for-sak-ing";
+			VERSE "Bear-ing my bur-dens";
+			VERSE "An-swer-ing when up-";
+bar
+//4
+1: 8bg; 8af; 8fd; 2.ec;
+2: 8d+d; 8d+d; 8ad; 2.aa-;
+
+			VERSE "just when I fear;";
+			VERSE "all the way thro';";
+			VERSE "all the day long;";
+			VERSE "on Him I call;";
+bar
+//5
+1: 8ge; 8ge; 8ge; 4.ge; 4.ec;
+2: 8aa-; 8aa-; 8aa-; 4.aa-; 4.aa-;
+
+			VERSE "Read-y to help me,";
+			VERSE "Giv-ing for bur-dens";
+			VERSE "For all my sor-row";
+			VERSE "Ten-der-ly watch-ing";
+bar
+//6
+1: 8fd; 8gd; 8bd; 2.ad;
+2: 8ad; 8bd; 8ad; 2.fd;
+
+			VERSE "read-y to cheer,";
+			VERSE "pleas-ures a-new,";
+			VERSE "giv-ing a song,";
+			VERSE "lest I should fall,";
+bar
+//7
+1: 8bd; 8c+d; 8d+d; 4.fd; 4.ec;
+2: [down]8gg-; 8ag-; 8bg-; 4.aa-; 4.ga-;
+
+			VERSE "Just when I need Him";
+bar
+//8
+1 1: 2.d tie; 4d; 8r;
+1 2: 2.d tie; 4d; 8s;
+2: 2.fd tie; 4fd; 8r;
+
+			VERSE "most.";
+dblbar hidechanges
+score time=6/8
+music
+
+//9
+1: 8bd; 8bd; 8bd; 4bd; 8gd;
+2 1: 8g; 8g; 8g; 4g; 8bg;
+2 2: 8g; 8g; 8g; 4g; 8s;
+ital above 1: 1 "Chorus";
+
+			VERSE "Just when I need Him";
+bar
+//10
+1: [up]4.d+g tie; [up]4d+g; 8r;
+2: 4.bg tie; 4bg; 8r;
+
+			VERSE "most,";
+bar
+//11
+1: 8af; 8af; 8af; 4af; 8fd;
+2: 8d+d; 8d+d; 8d+d; 4d+d; 8ad;
+
+			VERSE "Just when I need Him";
+bar
+//12
+1: 4.af tie; 4af; 8r;
+2: 4.d+d tie; 4d+d; 8r;
+
+			VERSE "most;";
+bar
+//12
+1 1: 8gnd; 8fd; 8e; 4bd; 8c+e;
+1 2: 8s; 8s; 8d; 4s; 8s;
+2: 8be; 8ge; 8gne; 4ge; 8ge;
+
+			VERSE "Je-sus is near to";
+bar
+//newscore
+//13
+1: 8bd; 8ac; 8bd; 4.c+e;
+2 1: 8a; 8a; 8a; 4.a;
+2 2: 8a; 8a; 8a; 4.g;
+
+			VERSE "com-fort and cheer";
+bar
+//14
+1: 8d+d; 8ad; 8bd; 4fd; 8ec;
+2 1: 8af; 8d+f; 8d+g; 4a; 8ga-;
+2 2: 8s; 8s; 8s; 4a; 8s;
+
+			VERSE "Just when I need Him";
+bar
+//15
+1 1: 4.d tie; 4d; 8r;
+1 2: 4.d tie; 4d; 8s;
+2: 4.fd tie; 4fd; 8r;
+
+			VERSE "most.";
+dblbar
+//16
+1: 2.db-;
+2: [down]2.gg-;
+			VERSE "A-";
+bar
+//17
+1: 2.da-;
+2: 2.fd;
+			VERSE "MEN.";
+endbar

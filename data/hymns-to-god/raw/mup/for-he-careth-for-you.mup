@@ -1,0 +1,238 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Praise in Song
+//		A Collection of
+//		Hymns and Sacred Melodies
+//		Editors: Jno. R. Sweeney, W.J. Kikrpatrick,
+//		and H.L. Gilmour
+//		Philadelphia:
+//		John J. Hood, 
+//		1024 Arch Street
+//		Copyright 1893
+//		Hymn no.: 16
+
+// Transcribed by: Ted Gatza, Jr. 12/19/2009; Rev. 07/17/12
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "For He Careth for You" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - MI" "\s(18)\f(TI)\:casting\ all\ your\ anx\|iety\ upon\ him,\ because he\ careth\ for\ y\|ou.\ -\ 1\ Pet.\ 5:7"""
+   title (13) "H. B. Bengle" " " "Wm. J. Kirkpatrick, 1893"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=3&
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=3&
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4s; 4s; 4s; 8ge; 8af;
+2: 4s; 4s; 4s; 8be; 8be;
+
+			lyrics 1: "<1. >-1|While as";
+			lyrics 1: "<2. >-1|When our";
+			lyrics 1: "<3. >-1|Does the";
+			lyrics 1: "<4. >-1|Though our";
+
+bar
+//2
+1: 4bg; 8.bg; 16c+a; 8bg; 8bg; 8ge; 8af;
+2: 4e+e; 8.e+e; 16e+e; 8e+e; 8e+e; 8be; 8be;
+
+			lyrics 1: "Christ-ians we jour-ney to the";
+			lyrics 1: "bur-dens grow heav-y, and our";
+			lyrics 1: "path-way grow thorn-y are our";
+			lyrics 1: "cross-es are heav-y, and our";
+bar
+//3
+1: 4bg; 8.bg; 16c+a; 4s; 8.s; 16s;
+2: 4e+e; 8.e+e; 16e+e; 4s; 8.s; 16s;
+
+			lyrics 1: "man-sions of";
+			lyrics 1: "strength is all";
+			lyrics 1: "feet bruised and";
+			lyrics 1: "con-flicts se-";
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4bg; 8.e+g; 16e+g;
+2: 4s; 8.s; 16s; 4e+e; 8.be; 16be;
+
+			lyrics 1: "light, Ma-ny";
+			lyrics 1: "spent. And the";
+			lyrics 1: "sore? Do our";
+			lyrics 1: "vere, Till in";
+
+
+bar
+//4
+1: 4d+a; 8.ad; 16ad; 8ad; 8ad; 8c+d; 8c+d;
+2: 4bb-; 8.fb-; 16fb-; 8fb-; 8fb-;8fb-; 8fb-;
+
+			lyrics 1: "tri-als a-wait us, ma-ny";
+			lyrics 1: "way long and wea-ry, and our";
+			lyrics 1: "foes smite and wound us, and our";
+			lyrics 1: "an-guish of spir-it, we are";
+bar
+//5
+1: 4bd; 8.fd; 16fd; 4s; 8s; 8s;
+2: 4fb-; 8.bb-; 16bb-; 4s; 8s; 8s;
+
+			lyrics 1: "bat-tles to";
+			lyrics 1: "cour-age but";
+			lyrics 1: "friends smile no";
+			lyrics 1: "tempt-ed to";
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4ge; 8ge; 8af;
+2: 4s; 8.s; 16s; 4be; 8be; 8be;
+
+			lyrics 1: "fight; But what-";
+			lyrics 1: "faint; Hear the";
+			lyrics 1: "more? He will";
+			lyrics 1: "fear; Let us";
+bar
+//6
+1: 4bg; 8.bg; 16c+a; 8bg; 8bg; 8ge; 8af;
+2: 4e+e; 8.e+e; 16e+e; 8e+e; 8e+e; 8be; 8be;
+
+			lyrics 1: "ev-er may trou-ble, We have";
+			lyrics 1: "words full of com-fort, bring-ing";
+			lyrics 1: "turn all to bless-ing, If but";
+			lyrics 1: "fol-low God's or-der, and be";
+bar
+//7
+1: 4bg; 8.e+g; 16e+g; 4.s; 8s;
+2: 4be; 8.be; 16be; 4.s; 8s;
+
+			lyrics 1: "but this to";
+			lyrics 1: "cour-age a-";
+			lyrics 1: "this we will";
+			lyrics 1: "faith-ful and";
+
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4.e+g; 8bg;
+2: 4s; 8.s; 16s; 4.be; 8e+e;
+
+			lyrics 1: "do; \"Cast";
+			lyrics 1: "new; \"Cast";
+			lyrics 1: "do; \"Cast";
+			lyrics 1: "true, \"Cast";
+
+bar
+//8
+
+1: 8c+a; 8e+a; 8d+a; 8c+a; 8c+a; 8bg; 8ge; 8bd;
+2: 8e+a; 8c+a; 8d+a; 8e+a; 8e+e; 8e+e; 8be; 8ge;
+
+			lyrics 1: "all your care on Je-sus for he";
+			lyrics 1: "all your care on Je-sus for he";
+			lyrics 1: "all your care on Je-sus for he";
+			lyrics 1: "all your care on Je-sus for he";
+bar
+//9
+1: 4bd; 8.fd; 16gd; 4eb-; 4s;
+2: 4fb-; 8.ab-; 16ab-; 4ge; 4s;
+
+			lyrics 1: "car-eth for you.\"";
+			lyrics 1: "car-eth for you.\"";
+			lyrics 1: "car-eth for you.\"";
+			lyrics 1: "car-eth for you.\"";
+
+//10
+repeatstart
+newscore
+1: 4s; 4s; 4s; 8ge; 8af;
+2: 4s; 4s; 4s; 8be; 8be;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "For he";
+bar
+//11
+1 1: 4bg; 8.b; 16b; 4be; 8ge; 8bg;
+1 2: 4s; 8.a; 16a; 4s; 8s; 8s; 
+2: 4e+e; 8.d+f; 16d+f; 4e+g; 8be; 8be;
+
+			lyrics 1: "car-eth for you, He is";
+bar
+//12
+1: 4e+g; 8.e+f#; 16e+f; 4.e+g; 8bg;
+2: 4be; 8.ane; 16c+e; 4.be; 8e+e;
+
+			lyrics 1: "faith-ful and true; \"Cast";
+bar
+//13
+1: 8c+a; 8e+a; 8d+a; 8c+a; 8s; 8s; 8s; 8s;
+2: 8e+a; 8c+a; 8d+a; 8e+a; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "all your care on";
+
+invisbar ending "1st"
+
+1: 8s; 8s; 8s; 8s; 8c+a; 8bg; 8ge; 8bg;
+2: 8s; 8s; 8s; 8s; 8e+e; 8e+e; 8be; 8be;
+
+			lyrics 1: "Je-sus, for he";
+
+bar
+//14
+
+1: 4be; 8ad; 8ge; 4fd; 4s;
+2: 4bg; 8bf; 8be; 4bb-; 4s;
+
+			lyrics 1: "car-eth for you.\"";
+repeatend ending "2nd"
+
+//15
+1: 8c+a; 8bg; 8ge; 8be; 4s; 4s; 
+2: 8e+e; 8e+e; 8be; 8ge; 4s; 4s; 
+
+			lyrics 1: "Je-sus, for he";
+bar
+//16
+1: 4bd; 8.fd; 16gd; 4eb-; 4s;
+2: 4fb-; 8.ab-; 16bb-; 4ge; 4s;
+
+			lyrics 1: "car-eth for you.\"";
+endbar

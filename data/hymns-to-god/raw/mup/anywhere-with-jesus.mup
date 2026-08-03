@@ -1,0 +1,367 @@
+// !Mup 7.1 arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 12
+
+// Transcribed by: Ted Gatza, Jr. 07/04/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Anywhere With Jesus" ""
+   title (2) ""
+   title (11) "" "\f(TI)teaching them to observe all things whatsoever I commanded you: and lo" ""
+   title (11) "" "\f(TI)I am with you always, even unto the end of the world. - Matt. 28:20" ""
+   title (11) "D - 2 - SOL" "" ""
+   title (11) "Jessie Brown Pounds" "" "Daniel B. Towner, 1915"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=125";
+
+//=========================
+
+// Verse
+
+//1
+1: 4fa; 8; 4gb; 8;
+2: 4dd+; 8; 4; 8;
+
+
+	VS "<1. >-1|An-y-where with";
+	VS "<2. >-1|An-y-where with";
+	VS "<3. >-1|An-y-where with";
+	VS "<4. >-1|An-y-where with";
+bar
+
+//2
+1 1: 4fa; 8df; 4d; 8e;
+1 2: 4s; 8; 4d; 8;
+2: 4dd+; 8da; 4df; 8dg;
+
+	VS "Je-sus I can";
+	VS "Je-sus I am";
+	VS "Je-sus, o-ver";
+	VS "Je-sus I can";
+bar
+
+//3
+1: 4.df; eg;
+2: 4.da; ; 
+
+	VS "safe-ly";
+	VS "not a-";
+	VS "land and";
+	VS "go to";
+bar
+
+//4
+1: 4.fa tie; ;
+2: 4.dd+ tie; ;
+
+	VS "go,";
+	VS "lone;";
+	VS "sea;";
+	VS "sleep,";
+bar
+
+//5
+1: 4eg; 8df; 4ce; 8df;
+2 1: 4a; 8; 4; 8;
+2 2: 4a; 8; 4; 8;
+
+	VS "An-y-where He";
+	VS "Oth-er friends may";
+	VS "Tell-ing souls in";
+	VS "When the dark-'ning";
+bar
+
+//6
+1: 4eg; 8ea; 4gc+; 8fb;
+2 1: 4a; 8ac+; 4ae+; 8ac+;
+2 2: 4a; 8s; 4; 8;
+
+	VS "leads me in this";
+	VS "fail me, He is";
+	VS "dark-ness of sal-";
+	VS "shad-ows round a-";
+bar
+
+//7
+1: 4.fa; eg;
+2: 4.a-d+; a-c+;
+
+	VS "world be-";
+	VS "still my";
+	VS "va-tion";
+	VS "bout me";
+bar
+
+//8
+1: 4.df tie; ;
+2: 4.dd+ tie; ;
+
+	VS "low;";
+	VS "own;";
+	VS "free;";
+	VS "creep,";
+bar
+
+//9
+1: 4fa; 8; 4gb; 8;
+2: 4dd+; 8; 4; 8;
+
+	VS "An-y-where with-";
+	VS "Tho' His hand may";
+	VS "Read-y as He";
+	VS "Know-ing I shall";
+bar
+
+//10
+1 1: 4fa; 8df; 4d; 8e;
+1 2: 4s; 8; 4d; 8;
+2: 4dd+; 8da; 4df; 8dg;
+
+	VS "out Him dear-est";
+	VS "lead me o-ver";
+	VS "sum-mons me to ";
+	VS "wak-en nev-er-";
+bar
+
+//11
+1: 4.df; eg;
+2: 4.da; ; 
+
+	VS "joys would";
+	VS "drear-est";
+	VS "go or";
+	VS "more to";
+bar
+
+//12
+1: 4.fa tie; ;
+2: 4.dd+ tie; ;
+
+	VS "fade,";
+	VS "ways,";
+	VS "stay,";
+	VS "roam,";
+
+bar
+//13
+1: 4fd+; 8gd+; 4ad+; 8fa;
+2: 4da; 8ea; 4fd+; 8dd+;
+
+	VS "An-y-where with";
+	VS "An-y-where with";
+	VS "An-y-where with";
+	VS "An-y-where with";
+bar
+
+//14
+1: 4ac+; 8gb; 4fa; 8eg;
+2: 4gd+; 8; 4; 8gb;
+
+	VS "Je-sus I am";
+	VS "Je-sus is a";
+	VS "Je-sus when He";
+	VS "Je-sus will be";
+bar
+
+//15
+1: 4.df; ce;
+2 1: 4.a; 4.a-g;
+2 2: 4.a; s;
+
+	VS "not a-";
+	VS "house of";
+	VS "points the";
+	VS "home, sweet";
+bar
+
+//16
+1 1: 4.d tie; ;
+1 2: 4.d tie; ;
+2: 4.df tie; ;
+
+	VS "fraid.";
+	VS "praise.";
+	VS "way";
+	VS "home.";
+dblbar
+
+CHORUS
+//16
+1: 4ce; 8df; 4.eg;
+2: 4a-a; 8; 4.;
+
+	VS "An-y-where,";
+bar
+
+//17
+1: 4df; 8eg; 4.fa;
+2: 4da; 8; 4.dd+;
+
+	VS "an-y-where!";
+bar
+
+//18
+1: 4fb; 8; 4ea; 8dg#;
+2: 4b-d+; 8; 4ec+; 8eb;
+
+	VS "Fear I can-not";
+bar
+
+//19
+1: 4.ca tie; ;
+2: 4.a-a tie; ;
+
+	VS "know;";
+bar
+
+//20
+1: 4fd+; 8gd+; 4ad+; 8fa;
+2: 4da; 8ea; 4fd+; 8dd+;
+
+	VS "An-y-where with";
+bar
+
+//21
+1: 4ac+; 8gb; 4fa; 8eg;
+2: 4gd+; 8; 4; 8gb;
+
+	VS "Je-sus I can";
+bar
+
+//22
+1: 4.df; ce;
+2 1: 4.a; a-a;
+2 2: 4.a; s;
+
+	VS "safe-ly";
+bar
+
+//23
+1 1: 4.d tie; ;
+1 2: 4.d tie; ;
+2: 4.df tie; ;
+
+	VS "go.";
+endbar

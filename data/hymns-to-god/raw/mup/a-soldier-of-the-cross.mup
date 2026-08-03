@@ -1,0 +1,223 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Best Endeavor Hymns
+//		 Edited and Compiled by
+//		 I. Allen Sankey and John R. Clements
+//		 Especially for Use In
+//		 Christian Endeavor Societies Young People's
+//		 Meetings, Sunday Schools, and General Church Work
+//		 Published by The Biglow and Main Co.
+//		 Lakeside Building, Chicago
+//		 135 Fifth Avenue, New York
+//		 Copyright 1907
+//		 Hymn No.: 157
+//		
+// Transcribed by: Ted Gatza, Jr. 09/12/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "A Soldier Of The Cross" ""
+   title (2)""
+   title (11) "D - 4 - DO" "\s(17)\f(TI)\:Watch\ ye,\ stand\ fas\|t\ in\ the\ faith,\ quit\ you like\ men,\ be\ stro\|ng.\ -\ 1\ Cor.\ 16:13" ""
+   title (13) "Isaac Watts" "" "Ira D. Sankey, 1890"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=105";
+
+//1
+1 1: 4d; 2.s;
+1 2: 4d; 2.s;
+2: 4fd; 2.s;
+
+			VERSE "<1. >-1|Am";
+			VERSE "<2. >-1|Must";
+			VERSE "<3. >-1|Are";
+			VERSE "<4. >-1|Since";
+
+bar
+//2
+1: 4fd; 4fd; 8.gd; 16fd; 8.gd; 16bd;
+2: 4ad; 4ad; 8.bd; 16ad; 8.bd; 16gd;
+
+			VERSE "I a sol-dier of the";
+			VERSE "I be car-ried to the";
+			VERSE "there no foes for me to";
+			VERSE "I must fight if I would";
+bar
+//3
+1: 2.ad; 4fd;
+2: 2.fd; 4ad;
+
+			VERSE "cross\(emdash) A";
+			VERSE "skies, On";
+			VERSE "face? Must";
+			VERSE "reign, In-";
+bar
+//4
+1: 4af; 4d+f; 4c+e; 4bd;
+2: 4d+d; 4ad; 4ae; 4g#e;
+
+			VERSE "fol-lower of the";
+			VERSE "flow-ery beds of";
+			VERSE "I not stem the";
+			VERSE "crease my cour-age,";
+bar
+//5
+1: 2.ac; 4ge;
+2: 2.aa-; 4aa-;
+
+			VERSE "Lamb? And";
+			VERSE "ease, While";
+			VERSE "flood? Is";
+			VERSE "Lord! I'll";
+bar
+//6
+1: 4fd; 4fd; 8.gd; 16fd; 8.gd; 16bg;
+2: 4ad; 4ad; 8.bd; 16ad; 8.bd; 16d+d;
+
+			VERSE "shall I fear to own His";
+			VERSE "oth-ers fought to win the";
+			VERSE "this vile world a friend to";
+			VERSE "bear the toil, en-dure the";
+bar
+//7
+1 1: 2.af; 4d;
+1 2: 2.s; 4d;
+2: 2.d+d; 4fd;
+
+			VERSE "cause, Or";
+			VERSE "prize, And";
+			VERSE "grace, To";
+			VERSE "pain, Sup-";
+bar
+//8
+1 1: 4fd; 4gd; 4.ec; 8d;
+1 2: 4s; 4s; 4.s; 8d;
+2: 4ad; 4bg-; 4.ga-; 8fd;
+
+			VERSE "blush to speak His";
+			VERSE "sailed thro' blood-y";
+			VERSE "help me on to";
+			VERSE "port-ed by Thy";
+bar
+//9
+1 1: 2.d; 4s;
+1 2: 2.d; 4s;
+2: 2.fd; 4s;
+
+			VERSE "name?";
+			VERSE "seas?";
+			VERSE "God?";
+			VERSE "word.";
+dblbar
+//10
+1 1: 8.a; 16d+; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 4; 2.s; "<>";
+			VERSE "In the";
+bar
+//11
+1 1: 4c+ tie; 4c+ tie; 8c+; 8a; 8.b; 16c+;
+1 2: 4r; 8.e; 16e; 8e; 8r; 4r;
+2 1: 4r; 8.a; 16a; 8a; 8r; 4r;
+2 2: 4s; 8.a; 16a; 8a; 8s; 4s;
+
+			VERSE 4; 4s; 8s; 8s; 8.s; 16s; "<>";
+			VERSE "name_ of Christ the";
+			VERSE 4s; 8.; 16; 8; 8s; 4s; "In the name";
+bar
+//12
+1 1: 2.d+; 8c+a; 8d+a;
+1 2: [dist -6]8r; 8f; 8.f; 16f; 4f; 8s; 8s;
+2: 8r; 8ad; 8.ad; 16ad; 4ad; 8ae; 8d+f;
+
+			VERSE "King, Who Hath";
+			VERSE 8s; 8; 8.; 16; 4; 8s; 8s; "of Christ the King,";
+bar
+//13
+1: 4e+g; 4d+g; 4c+a; 4bg;
+2: 4bg; 4bg; 4d+g-; 4d+b-;
+
+			VERSE "pur-chased life for";
+bar
+//14
+1: 2.af; 4ge;
+2: 2.d+d; 4ac;
+
+			VERSE "me, Thro'";
+bar
+//15
+1: 4fd; 4fd; 8.gd; 16fd; 8.gd; 16bg;
+2: 4ad; 4ad; 8.bd; 16ad; 8.bd; 16d+d;
+
+			VERSE "grace I'll win the prom-ised";
+bar
+//16
+1 1: 2.af; 4d;
+1 2: 2.s; 4d;
+2: 2.d+d; 4fd;
+
+			VERSE "crown, What-";
+bar
+//17
+1 1: 4fd; 4gd; 4.ec; 8d;
+1 2: 4s; 4s; 4.s; 8d;
+2: 4ad; 4bg-; 4.ga-; 8fd;
+
+			VERSE "e'er my cross may";
+bar
+//18
+1 1: 2.d; 4s;
+1 2: 2.d; 4s;
+2: 2.fd; 4s;
+
+			VERSE "be.";
+endbar

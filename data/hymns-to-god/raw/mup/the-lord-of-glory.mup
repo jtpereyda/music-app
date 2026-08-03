@@ -1,0 +1,227 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		Compiled and published under the direction of a
+//		Committee appointed by Mennonite conferences
+//		J. D. Brunk, Musical Editor
+// 		Mennonite Publishing House
+//		Scottsdale, Penn.
+//		Copyright 1902
+//		Hymn no. 92
+
+// Transcribed by: Ted Gatza, Jr. 01/19/2010; REv. 04/08/2020
+// HymnsToGod.org
+
+// ***********************************
+
+top
+
+   title bold (19) "" "The Lord of Glory" ""
+   title (2)""
+   title (11) "G - 2 - SOL" "\s(17)\f(TI)\:Thou\ art\ my\ hidin\|g-place;\ Thou\ wilt preserve\ me\ from\|\ trouble\ -\ Ps.\ 32:7"""
+   title (13) "Isaac Watts, arr." " " "T. B. Mosley, 1900"
+
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4s; 8s; 4s; 8d+g;
+2: 4s; 8s; 4s; 8bg;
+
+
+			lyrics 1: "<1. >-1|The";
+			lyrics 1: "<2. >-1|One";
+			lyrics 1: "<3. >-1|There";
+
+bar
+//2
+1: 4d+g; 8bg; 4bg; 8gd;
+2: 4bg; 8d+g; 4d+g; 8bg;
+
+			lyrics 1: "Lord of glo-ry";
+			lyrics 1: "priv-i-lege my";
+			lyrics 1: "shall I of-fer";
+bar
+//3
+1 1: 8a bm; 8g ebm; 8ec; 4db-; 8db-;
+1 2: 4e; 8s; 4s; 8s;
+2 1: 4c+c; 8gc; 4gg-; 8g;
+2 2: 4s; 8s; 4; 8g;
+
+			lyrics 1: 4; 8; 4; 8; "is my light, And";
+			lyrics 1: 4; 8; 4; 8; "heart de-sires, Oh,";
+			lyrics 1: 4; 8; 4; 8; "my re-quest, And";
+bar
+//4
+1 1: 4gd; 8gd; 4bg; 8g;
+1 2: 4s; 8s; 4s; 8g;
+2: 4bg; 8bg; 4d+g; 8d+b-;	
+
+			lyrics 1: "my sal-va-tion";
+			lyrics 1: "grant me an a-";
+			lyrics 1: "see thy beau-ty";
+bar
+//5
+1: 4.af tie; 4af; 8s;
+2: 4.d+d tie; 4d+d; 8s;
+
+			lyrics 1: "too;";
+			lyrics 1: "bode";
+			lyrics 1: "still;";
+
+
+invisbar
+newscore
+
+1: 4.s; 4s; 8d+f;
+2: 4.s; 4s; 8ad;
+mussym (9) above 1: 6 "sign";
+
+			lyrics 1: "God";
+			lyrics 1: "With-";
+			lyrics 1: "Shall ";
+			lyrics 2: 4.s; 4s; 8;"<\f(TX)D.S.\f(TR) - >-5|God";
+
+bar
+//6
+1: 4d+g; 8bg; 4bg; 8bd;
+2: 4bg; 8d+g; 4d+g; 8bg;
+
+			lyrics 1: "is my strength, nor";
+			lyrics 1: "in thy pres-ence";
+			lyrics 1: "hear thy mes-sa-";
+			lyrics 2: "is a strong pa-";
+bar
+//7
+1 1: 8a bm; 8g ebm; 8ec; 4db-; 8c+d;
+1 2: 4e; 8s; 4s; 8s;
+2: 4c+c; 8gc; 4gg-; 8af;
+
+			lyrics 1: 4; 8; 4; 8; "will I fear What";
+			lyrics 1: 4; 8; 4; 8; "with thy saints, The";
+			lyrics 1: 4; 8; 4; 8; "ges of love, And";
+			lyrics 2: 4; 8; 4; 8; "vil-ion, where He";
+bar
+//8
+1 1: 4bd; 8d+g; 4g; 8af;
+1 2: 4s; 8s; 4g; 8s;
+2 1: 4g; 8bg; 4bd; 8c+d;
+2 2: 4g; 8s; 4s; 8s;
+
+			lyrics 1: "all my foes can";
+			lyrics 1: "child-ren of my";
+			lyrics 1: "there in-quire they";
+			lyrics 2: "makes my soul a-";
+bar
+//9
+1 1: 4.g tie; 4g; 8s;
+1 2: 4.g tie; 4g; 8s;
+2: 4.bgg- tie; 4bgg-; 8s;
+boldital above 1: 4 "Fine";
+
+			lyrics 1: "do.";
+			lyrics 1: "God!";
+			lyrics 1: "will.";
+			lyrics 2: "bide.";
+dblbar
+newscore
+//10
+1: 8gd; 4.s; 4s;
+2: 8bg; 4.s; 4s; 
+ital above 1: 1 "Refrain";
+
+			lyrics 1: "When";
+bar
+//11
+1: 4fd; 8af; 4af; 8ad;
+2: 4ad; 8c+d; 4c+d; 8c+d;
+
+
+			lyrics 1: "trou-bles rise and";
+bar
+//12
+1: 4gd; 8bg; 4bg; 8bg;
+2: 4bg; 8d+g; 4d+g; 8d+g;
+
+			lyrics 1: "storms ap-pear, There";
+bar
+//13
+1: 4af; 8bg; 4c+a; 8e+f;
+2: 4d+d; 8d+d; 4d+d; 8c+d;
+
+			lyrics 1: "may his chil-dren";
+bar
+//14
+1: 4.d+g tie; 4d+g; 8s;
+2: 4.bg tie; 4bg; 8s;
+//ital above 1: 5 "D.S.";
+boldital dyn above 1: 5 "D.S.";
+
+			lyrics 1: "hide.";
+endbar
+
+title (8) ""
+title (11) "" "Public Domain" "HymnsToGod.org"
+
+//*************************************
+
+//Original Lyrics:
+
+//The Lord of glory is my light,
+//And my salvation too;
+//God is my strength; nor will I fear
+//What all my foes can do.
+
+//One privilege my heart desires,
+//Oh grant me an abode
+//Among the churches of thy saints,
+//The temples of my God!
+
+//There shall I offer my requests,
+//And see thy beauty still;
+//Shall hear they messages of love, And there inquire thy will.
+
+//When troubles rise and storms ap-pear, 
+//There may his children hide.
+//God has a strong pavilion, 
+//where He makes my soul abide.

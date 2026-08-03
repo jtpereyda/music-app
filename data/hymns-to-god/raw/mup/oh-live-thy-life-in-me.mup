@@ -1,0 +1,353 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns of Consecration and Faith
+//		For use at General Christian Conferences,
+//		Meetings for the deepening of the spiritual life
+//		and Consecration Meetings.
+//		First Edition Compiled and Arranged by J. Mountain
+//		New and Enlarged edition compiled and arranged by Mrs. Evan Hopkins
+//		London:
+//		marshall Brothers, keswick House,
+//		10, Paternoster Row.
+//		Copyright: Pre 1919
+//		Hymn No.: 456
+
+// Transcribed by: Ted Gatza, Jr. 05/24/2010; Rev. 09/20/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Oh, Live Thy Life In Me" ""
+   title (2)""
+   title (11) "G - 3 - MI" "\s(17)\f(TI)\:I\ have\ been\ crucified\ wit\|h\ Christ;\ and\ it\ is\ no\ longer I\ that\ live,\ but\ Christ\ \|living\ in\ me:\ -\ Gal.\ 2:20" ""
+   title (13) "H. Anderson" " " "H. Anderson"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key= 1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=115";
+
+//1
+1: 4bg; 4bg; 4bg;
+2: 4d+g; 4d+g; 4d+g;
+ital (13) above 1: 1 "P Andante";
+
+
+			lyrics 1: "<1. >-1|Sav-iour, I";
+			lyrics 1: "<2. >-1|I want Thy";
+			lyrics 1: "<3. >-1|I want Thy";
+			lyrics 1: "<4. >-1|I want Thy";
+			lyrics 1: "<5. >-1|Then a faith's";
+			
+bar
+//2
+1: 2d+g; 4bg;
+2: 2bg; 4d+g;
+
+			lyrics 1: "want Thy";
+			lyrics 1: "spot-less";
+			lyrics 1: "wis-dom";
+			lyrics 1: "con-stant";
+			lyrics 1: "vi-sion";
+bar
+//3
+1 1: 2af; 4g;
+1 2: 2s; 4g;
+2: 2c+d; 4be;
+
+			lyrics 1: "love to";
+			lyrics 1: "pu-ri-";
+			lyrics 1: "from a-";
+			lyrics 1: "pres-ence";
+			lyrics 1: "Thou shalt";
+bar
+//4
+1 1: 2g; 4ge;
+1 2: 2g; 4s;
+2: 2be; 4be;
+
+			lyrics 1: "know, That";
+			lyrics 1: "ty For";
+			lyrics 1: "bove, That";
+			lyrics 1: "Lord, Then";
+			lyrics 1: "be Ev-";
+bar
+//5
+1 1: 4a slur; 4g; 4ec;
+1 2: 2e; 4s;
+2: 2c+c; 4gc;
+
+			lyrics 1: "I in";
+			lyrics 1: "ev-er";
+			lyrics 1: "I Thy";
+			lyrics 1: "e'en a";
+			lyrics 1: "er a";
+bar
+//6
+1: 2db-; 4gd;
+2: 2gg-; 4gb-;
+
+			lyrics 1: "love may";
+			lyrics 1: "in my";
+			lyrics 1: "per-fect";
+			lyrics 1: "dark ad-";
+			lyrics 1: "bright re-";
+bar
+//7
+1 1: 4b slur; 4d+; 4c+;
+1 2: 2d; 4d;
+2 1: 4g slur; 4b; 4a;
+2 2: 2d; 4d;
+
+			lyrics 1: "be like";
+			lyrics 1: "heart to";
+			lyrics 1: "way may";
+			lyrics 1: "ver-si-";
+			lyrics 1: "al-i-";
+bar
+//8
+1: 2ad; 4d+f;
+2: 2fd; 4c+d;
+
+			lyrics 1: "Thee; Oh";
+			lyrics 1: "be, A";
+			lyrics 1: "see, To";
+			lyrics 1: "ty Will";
+			lyrics 1: "ty, Keep-";
+bar
+//9
+1: 2d+g; 4d+g;
+2: 2bg; 4bg;
+< above 1: 1 til 1m + 1;
+
+			lyrics 1: "let it";
+			lyrics 1: "re-flex";
+			lyrics 1: "fol-low";
+			lyrics 1: "be a";
+			lyrics 1: "ing my";
+bar
+//10
+1: 2e+g#; 4bg;
+2: 2be; 4e+e;
+
+			lyrics 1: "now my";
+			lyrics 1: "of Thy";
+			lyrics 1: "Thee un-";
+			lyrics 1: "bless-ing";
+			lyrics 1: "heart in";
+bar
+//11
+1: 2d+a; 4c+a;
+2: 2e+a; 4e+a;
+
+			lyrics 1: "heart o'er";
+			lyrics 1: "ho-li-";
+			lyrics 1: "blam-a-";
+			lyrics 1: "in dis-";
+			lyrics 1: "pur-i-";
+bar
+//12
+1 1: 2e; 4ae;
+1 2: 2e; 4s;
+2: 2c+a; 4c+c;
+			
+			lyrics 1: "flow, And";
+			lyrics 1: "ness; Oh,";
+			lyrics 1: "ble; Live";
+			lyrics 1: "guise; Live";
+			lyrics 1: "ty, Liv-";
+bar
+newscore
+//13
+1 1: 4g slur; 4f; 4e;
+1 2: 2d; 4d;
+2 1: 4b slur; 4a; 4g;
+2 2: 2d; 4d;
+
+			lyrics 1: "live Thy";
+			lyrics 1: "live Thy";
+			lyrics 1: "Thou Thy";
+			lyrics 1: "Thou Thy";
+			lyrics 1: "ing Thy";
+bar
+//14
+1: 2fc; 4ac;
+2: 2ad; 4fd;
+
+			lyrics 1: "life in";
+			lyrics 1: "life in";
+			lyrics 1: "life in";
+			lyrics 1: "life in";
+			lyrics 1: "life in";
+bar
+//15
+1: 2.gb- tie;
+2: 2.gg- tie;
+
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+bar
+//16
+1: 2gb-; 4s;
+2: 2gg-; 4s;
+
+dblbar
+//17
+1: 4gd; 2s;
+2: 4bg; 2s;
+ital (13) above 1: 1 "mf Refrain";
+
+			lyrics 1: [c]"I";
+bar
+//18
+1: 2af; 4af;
+2:2d+d; 4d+d;
+
+			lyrics 1: [c]"give my";
+bar
+//19
+1 1: 4a slur; 4d+; 4c+;
+1 2: 2f; 4f;
+2: 2d+d; 4d+d;
+
+			lyrics 1: [c]"heart to";
+bar
+newscore
+//20
+1 1: 2.b tie;
+1 2: 2 g; 4g;
+2: 2d+g; 4bg;
+
+			lyrics 1: "Thee,";
+			lyrics 1: 2s; 4; "to";
+bar
+//21
+1 1: 2b; 4d+g#;
+1 2: 2g; 4s;
+2: 2d+g; 4e+e;
+< above 1: 3 til 1m +3;
+			lyrics 1: 2s; 4; "Thy";
+			lyrics 1: 2; 4s; "Thee,";
+bar
+//22
+1:2c+#a; 4c+a;
+2: 2e+a; 4e+a;
+
+			lyrics 1: "dwell-ing";
+bar
+//23
+1 1: 4c+# slur; 4f+; 4e+g;
+1 2: 2a; 4s;
+2 1: 4e+ slur; 4d+; 4c+#a;
+2 2: 2a; 4s;
+
+			lyrics 1: "place to";
+bar
+//24
+1 1: 2.d+ tie;
+1 2: 2f; 4e#;
+2: 2d+d; 4g#d;
+
+			lyrics 1: "be,";
+			lyrics 1: 2s; 4; "to";
+bar
+//25
+1: 2d+f; 4c+f;
+2: 2ad; 4d+d;
+
+			lyrics 1: 2s; 4; "I";
+			lyrics 1: 2; 4s; "be;";
+bar
+//26
+1 1: 2bg; 4a;
+1 2: 2s; 4a;
+2: 2d+g; 4d+f;
+
+			lyrics 1: "want Thee";
+bar
+newscore
+//27
+1: 2c+f; 4bg;
+2: 2d+a; 4d+g;
+
+			lyrics 1: "ev-er";
+bar
+//28
+1: 2d+g; 4d+#g;
+2: 2d+b; 4bg;
+
+			lyrics 1: "in my";
+bar
+//29
+1 1: 2e+g; 8c+ bm; 8a ebm;
+1 2: 2s; 4e;
+2 1: 2c+; 4c+c;
+2 2: 2c+; 4s;
+
+			lyrics 1: 2; 8; 8s; "heart, Oh,";
+bar
+//30
+1: 2gd; 4bd;
+2: 2bd; 4gd;
+> 1: 1 til 1m +1;
+			lyrics 1: "live Thy";
+bar
+//31
+1: 2bd; 4ac;
+2: 2fd; 4fd;
+
+			lyrics 1: "life in";
+bar
+//32
+1: 2.gb- tie;
+2: 2.gg- tie;
+
+			lyrics 1: "me.";
+bar
+//33
+1: 2.gb-;
+2: 2.gg-; 
+
+endbar

@@ -1,0 +1,343 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// According to Hymnary.org, This hymn was written by James H. Fillmore in the early
+// 20th century. No copyright date is available. It is stated to be in the public domain.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Hymns For Worship
+//		EditorsL R. J. Stevens and Dane K. Shepherd
+//		Publisher: Guardian of Truth Foundation
+//		420 Old Morgantown Road
+//		Bowling Green, KY 42102
+//		Copyright 1987
+//		Hymn No. 660
+
+// Transcribed by: Ted Gatza, Jr. 106/20/2025
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "I Will Sing Of The Mercies" ""
+   title (2)""
+   title (11) "" "\f(TI)I will sing of the mercies of the Lord forever - Ps. 89:1"""
+  
+   title (12) "D - 4 - DO" "" ""
+   title (13) "James H. Fillmore" " " "James H. Fillmore"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DC(COUNT)
+	  ital (15) above 1: COUNT "D. C."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+//Verse 
+
+//1
+1 1: 2.s; 8d; e;
+1 2: 2.s; 8d; ;
+2: 2.s; 8df; dg;
+
+	VS "I will";
+
+bar
+
+//2
+1: 4df; 8.; 16; 8; ce; df; eg;
+2 1: 4s; 8.; 16; 8; a; s; ;
+2 2: 4da; 8.; 16; 8; g; fa; ea;
+
+	VS "sing of the mer-cies of the";
+bar
+
+//3a
+1: 4fa; fd+; 8fa; df; s; ;
+2: 4da; ; 8dd+; da; s; ;
+
+	VS "Lord for-ev-er,";
+invisbar
+newscore
+
+//3b
+
+1: 4s; ; 8; ; eg; df;
+2: 4s; ; 8; ; ca; da;
+
+	VS "I will";
+bar
+
+//4
+1: 2.ce; 8ca; eg;
+2 1: 2.a; 8s; ;
+2 2: 4a; 8e; c; 4a-; 8a-a; ca;
+
+	VS "sing, I will";
+	VS22 "<> I will sing, <> <>";
+bar
+
+//5a
+1 1: 2.df; 8s; ;
+1 2: 2.s; 8s; ;
+2 1: 4a; 8c+; b; 4a; 8s; ;
+2 2: 2.d; 8s; ;
+
+
+	VS "sing,";
+	VS21 "<> I will sing,";
+invisbar
+newscore
+
+//5b
+1 1: 2.s; 8d; e;
+1 2: 2.s; 8d; ;
+2 2: 2.s; 8df; dg;
+
+
+	VS "I will";
+bar
+
+//6
+1: 4df; 8.; 16; 8; ce; df; eg;
+2 1: 4s; 8.; 16; 8; a; s; ;
+2 2: 4da; 8.; 16; 8; g; fa; ea;
+
+	VS "sing of the mer-cies of the";
+bar
+
+//7a
+1: 4fa; fd+; 8fa; df; s; ;
+2: 4da; ; 8dd+; da; s; ;
+
+	VS "Lord for-ev-er,";
+invisbar
+newscore
+
+//7b
+
+1: 4s; ; 8; ; eg; df;
+2: 4s; ; 8; ; ca; da;
+
+	VS "I will";
+bar
+
+//8
+1: 4ce; 8.ca; 16; 8; cg; cf; ce;
+2: 4a-a; 8.a-e; 16; 8; 8; a-a; a-g;
+
+	VS "sing of the mer-cies of the";
+bar
+
+FINE(1)
+//9
+1 1: 2.d; 4s;
+1 2: 2.d; 4s;
+2: 2.df; 4s;
+
+	VS "Lord.";
+dblbar
+newscore
+
+//10
+1: 8fa; ; 2.s;
+2: 8dd+; ; 2.s;
+
+	VS "With my";
+bar
+
+//11
+1: 2gb tie; 8; gd+; ac+; gb;
+2: 4gd+; ; 8; gb; gc+; gd+;
+
+	VS "mouth will I make";
+	VS21 "<> my mouth <> <> <>";
+bar
+
+//12a
+1 1: 2.a; 4s;
+1 2: 4f; g; f; s;
+2: 4dd+; ac+; dd+; s;
+
+	VS "known";
+	VS21 "<> make known";
+invisbar
+newscore
+
+//12b
+1: 2.s; 4df;
+2: 4s; ; ; da;
+
+	VS "Thy";
+bar
+
+//13
+1: 8.ce; 16df; 2cg; 4gb;
+2 1: 8.a; 16s; 2; 4;
+2 2: 8.g; 16fa; 2ea; 4a-c+;
+
+	VS "faith-ful-ness, Thy";
+bar
+
+//14a
+1: 8.gb; 16fa; 2; 8s; ;
+2: 8.dd+; 16; 2; 8s; ;
+
+	VS "faith-ful-ness,";
+invisbar
+newscore
+
+//14b
+1: 8.s; 16; 2; 8fa; ;
+2: 8.s; 16; 2; 8dd+; ;
+
+	VS "With my";
+bar
+
+//15
+1: 2gb tie; 8; gd+; ac+; gb;
+2: 4gd+; ; 8; gb; gc+; gd+;
+
+	VS "mouth will I make";
+	VS21 "<> my mouth <> <> <>";
+bar
+
+//16a
+1 1: 2.a; 4s;
+1 2: 4f; g; f; s;
+2: 4dd+; ec+; dd+; s;
+
+	VS "known";
+	VS21 "<> make known";
+invisbar
+newscore
+
+//16b
+1: 2.s; 4df;
+2: 2.s; 4da;
+
+	VS "Thy";
+bar
+
+//17
+1: 8.ce; 16ca; 8ca; cb; 4ec+; 8ea; ec+;
+2: 8.ea; 16; 8; ; 4; 8ec+; ca;
+
+	VS "faith-ful-ness to all gen-er";
+bar
+
+DC(3)
+
+//18
+1 1: 2b; 4ca; 4s;
+1 2: 4e slur; d; 4s; s;
+2: 2eg#; 4a-gn; 4s;
+
+	VS "a-tions.";
+dblbar
+

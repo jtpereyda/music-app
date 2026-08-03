@@ -1,0 +1,241 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gems of Song For The Sunday School
+// 		complied and arranged by Ira D. Sankey and Hybert P. Main 
+//		The Biglow & Main Co. 135 Fifth Avenue, New York
+//		Copyright 1901
+//		Hymn No.: 180
+
+// Transcribed by: Ted Gatza, Jr. 10/16/2009
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "City Of Gold" ""
+   title (2) " "
+   title (11) "A \(flat)-4-SOL" "\f(TI)And the building of the wall thereof was jasper: and the\n city was pure gold, like unto pure glass. - Rev. 21:18"""
+   title (13)"Fanny J. Crosby" "W. H. Doane, 1875"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+staff 2
+	key=4&
+	clef=bass
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4s; 4s; 4s; 8.ec; 16ac;
+2: 4s; 4s; 4s; 8.aa-; 16aa-;
+
+				lyrics 1: "<1. >-1|There's a";
+				lyrics 1: "<2. >-1|There the";
+				lyrics 1: "<3. >-1|Ev-'ry";
+bar
+
+//2
+1: 4c+e; 8d+f; 8c+e; 4c+e; 8bd; 8ac;
+2: 4aa-; 8aa-; 8aa-; 4aa-; 8aa-; 8aa-;
+
+				lyrics 1: "cit-y that looks o'er the";
+				lyrics 1: "King, our Re-deem-er, the";
+				lyrics 1: "soul we have led to the";
+bar
+//3
+1: 4bd; 8ad; 8fd; 4ec; 8s; 8s;
+2: 4fd; 8fd; 8ad; 4aa-; 8s; 8s;
+
+				lyrics 1: "val-ley of death,";
+				lyrics 1: "Lord whom we love,";
+				lyrics 1: "foot of the cross,";
+invisbar
+newscore
+
+1: 4s; 8s; 8s; 4s; 8ec; 8dnb-n;
+2: 4s; 8s; 8s; 4s; 8aa-; 8aa-;
+
+				lyrics 1: "And it's";
+				lyrics 1: "All the";
+				lyrics 1: "Ev'-ry";
+
+bar
+//4
+1: 4ec; 8ae; 8ge; 4ae; 8d+e; 8c+e;
+2: 4aa-; 8ac; 8bd; 4ac; 8gb-; 8aa-;
+
+				lyrics 1: "glo-ries may nev-er be";
+				lyrics 1: "faith-ful with rap-ture be-";
+				lyrics 1: "lamb we have brought to the";
+bar
+//5
+1: 2.be; 4s;
+2: 2.ge; 4s;
+
+				lyrics 1: "told;";
+				lyrics 1: "hold;";
+				lyrics 1: "fold;";
+dblbar
+//6
+1 1: 4s; 4s; 4s; 8.e; 16e;
+1 2: 4s; 4s; 4s; 8.e; 16e;
+2 1: 4s; 4s; 4s; 8.ge; 16ge;
+
+				lyrics 1: "There the";
+				lyrics 1: "There the";
+				lyrics 1: "Will be";
+bar
+//7
+1: 4c+e; 8d+f; 8c+e; 4c+e; 8bd; 8ac;
+2: 4aa-; 8aa-; 8aa-; 4aa-; 8aa-; 8aa-;
+
+				lyrics 1: "sun nev-er sets, and the";
+				lyrics 1: "right-eous for-ev-er will";
+				lyrics 1: "kept as bright jew-els our";
+bar
+//8
+1: 4bd; 8ad; 8fd; 4ec; 8ec; 8ec;
+2: 4fd; 8fd; 8ad; 4aa-; 8aa-; 8aa-;
+
+				lyrics 1: "leaves nev-er fade, In that";
+				lyrics 1: "shine like the stars, In that";
+				lyrics 1: "crown to a-dorn, In that";
+
+
+bar
+newscore
+//9
+1: 8fd; 8ge; 4ae; 8c+e; 4c+e; 8bd;
+2 1: 8ad; 8bd; 4ac; 8ae; 4e; 8e;
+2 2: 8s; 8s; 4s; 8s; 4e; 8e;
+mussym (9) above 1: 3.5 "ferm";
+mussym (9) below 2: 3.5 "uferm";
+
+				lyrics 1: "beau-ti-ful cit-y of";
+				lyrics 1: "beau-ti-ful cit-y of";
+				lyrics 1: "beau-ti-ful cit-y of";
+bar
+//10
+1: 2.ac; 4s;
+2: 2.ea-; 4s;
+
+				lyrics 1: "gold.";
+				lyrics 1: "gold.";
+				lyrics 1: "gold.";
+dblbar
+//11
+1: 4s; 4s; 4s; 8.c+e; 16d+e;
+2 1: 4s; 4s; 4s; 8.a; 16b;
+2 2: 4s; 4s; 4s; 8.a; 16a;
+
+				ital (13) above 1: 1 "Refrain";
+				lyrics 1: "There the";
+bar
+//12
+1 1: 2.e+; 8.s; 16s;
+1 2: 4e; 8e; 8e; 4e; 8.s; 16s;
+2: 4c+a; 8c+a; 8c+a; 4c+a; 8.s; 16s;
+
+				lyrics 1: "sun";
+				lyrics 1: 4s; 8; 8; 4; 8.s; 16s; "There the sun";
+
+invisbar
+newscore
+
+1 1: 2.s; 8.c+e; 16be;
+1 2: 4s; 8s; 8s; 4s; 8.s; 16s;
+2: 4s; 8s; 8s; 4s; 8.e+a; 16d+e;
+
+				lyrics 1: "nev-er";
+				
+
+
+bar
+//13
+1 1: 2.a; 8.ge; 16af;
+1 2: 4e; 8f; 8f; 4e; 8.s; 16s;
+2: 4c+a-; 8d+d; 8d+d; 4c+a-; 8.be; 16be;
+
+				lyrics 1: 2.; 8.; 16; "sets and the";
+				lyrics 1: 4s; 8; 8; 4; 8.s; 16s; "nev-er sets";
+bar
+//14
+1 1: 2.b; 8.s; 16s;
+1 2: 4g; 8g; 8g; 4g; 8.s; 16s;
+2: 4e+e; 8e+e; 8e+e; 4e+e; 8.s; 16s;
+
+				lyrics 1: "leaves";
+				lyrics 1: 4s; 8; 8; 4; 8.s; 16s; "and the leaves";
+
+invisbar
+newscore
+
+1 1: 2.s; 8.d+e; 16c+e;
+1 2: 4s; 8s; 8s; 4s; 8.s; 16s;
+2: 4s; 8s; 8s; 4s; 8.be; 16ae;
+
+				lyrics 1: "nev-er";
+bar
+//15
+1: 2.be; 8.e; 16e;
+1 2: 2.s; 8.e; 16e;
+2: 2.ge; 8.ge; 16ge;
+
+				lyrics 1: "fade; There the";
+
+bar
+//17
+1: 4c+e; 8d+f; 8c+e; 4c+e; 8bd; 8ac;
+2: 4ea-; 8aa-; 8aa-; 4aa-; 8aa-; 8aa-;
+
+				lyrics 1: "eyes of the faith-ful their";
+bar
+newscore
+//18
+1: 4bd; 8ad; 8fd; 4ec; 8ec; 8ec;
+2: 4fd; 8fd; 8ad; 4aa-; 8aa-; 8aa-;
+
+				lyrics 1: "Sav-iour be-hold, In that";
+bar
+//19
+1: 8fd; 8ge; 4ae; 8c+e; 4c+e; 8bd;
+2 1: 8ad; 8bd; 4ac; 8ae; 4e; 8e;
+2 2: 8s; 8s; 4s; 8s; 4e; 8e;
+mussym (9) above 1: 3.5 "ferm";
+mussym (9) below 2: 3.5 "uferm";
+
+				lyrics 1: "beau-ti-ful cit-y of";
+bar
+//20
+1: 2.ac; 4s;
+2: 2.ea-; 4s;
+
+				lyrics 1: "gold.";
+endbar

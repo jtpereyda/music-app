@@ -1,0 +1,229 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Endeavor Hymns
+//		by Ira D. Sankey 
+//		Pub. by The United Christian Society of Christian Endeavor
+//		646 Washington St, Boston, Mass.
+//		The Biglow and Main Co.
+//		76 East 9th St., New York
+//		Copyright 1894
+//		Hymn No.: 106
+
+// Transcribed by: Ted Gatza, Jr. 06/20/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "Thy Word is a Lamp" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - MI" "\s(18)\f(TI)\:Thy\ word\ is\ a\ lamp\ unto\ my\ feet,\ And\ light\ unto\ my\ path.\ -\ Ps.\ 119:105 \(space)"""
+   title (13) "Grace J. Frances" " " "Hubert P. Main, 1893"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4.s; 4s; 8ge;
+2: 4.s; 4s; 8be;
+
+
+			lyrics 1: "<1. >-1|Thy";
+			lyrics 1: "<2. >-1|Thy";
+			lyrics 1: "<3. >-1|Thy";
+bar
+//2
+1: 8.ge; 16fd; 8ge; 8.ad; 16gd; 8ad;
+2 1: 8.be; 16b; 8bg; 8.bf; 16bf; 8bf;
+2 2: 8.s; 16a; 8s; 8.s; 16s; 8s;
+
+			lyrics 1: "word is a lamp to my";
+			lyrics 1: "word is a lamp to my";
+			lyrics 1: "word is a lamp to my";
+bar
+//3
+1 1: 4b; 8e+a; 4e+g; 8e;
+1 2: 8e bm; 8g ebm; 8s; 4s; 8e;
+2 1: 8g bm; 8b ebm; 8c+e; 4be; 8bg;
+2 2: 4e; 8s; 4s; 8s;
+
+			lyrics 1: "feet, O Lord, Thy";
+			lyrics 1: "feet O Lord, And,";
+			lyrics 1: "feet, O Lord, And";
+bar
+newscore
+//4
+1 1: 8.e; 16f; 8ge; 8.be; 16ae; 8ge;
+1 2: 8.e; 16e; 8s; 8.s; 16s; 8s;
+2: 8.c+e; 16c+e; 8bg; 8.c+f; 16c+f; 8anf;
+
+			lyrics 1: "word is a light to my";
+			lyrics 1: "trust-ing in Thee as my";
+			lyrics 1: "O, when Thy glo-ry I";
+bar
+//5
+1: 4.fd tie; 4fd; 8ge;
+2 1: 4.b tie; 4b; 8be;
+2 2: 4.b tie; 4b; 8s;
+
+			lyrics 1: "way; It";
+			lyrics 1: "all, What-";
+			lyrics 1: "see, For";
+bar
+//6
+1: 8.ge; 16fd; 8ge; 8s; 8s; 8s;
+2 1: 8.be; 16b; 8bg; 8s; 8s; 8s;
+2 2: 8.s; 16a; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "shines in my";
+			lyrics 1: "ev-er of";
+			lyrics 1: "all the rich";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8ad; 8gd; 8ad;
+2 1: 8.s; 16s; 8s; 8bf; 8bf; 8bf;
+2 2: 8.s; 16s; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "soul like a";
+			lyrics 1: "e-vil may";
+			lyrics 1: "bless-ings its";
+
+
+bar
+//7
+1 1: 4b; 8e+a; 4e+g; 8c+g;
+1 2: 8e bm; 8g ebm; 8s; 4s; 8s;
+2 1: 8g bm; 8b ebm; 8c+e; 4be; 8ben;
+2 2: 4e; 8s; 4s; 8s;
+
+			lyrics 1: "star by night, And";
+			lyrics 1: "cross my path, I";
+			lyrics 1: "truth has brought, The";
+bar
+//8
+1: 8.d+f; 16c+f; 8bf; 8c+e; 8bd; 8ane;
+2: 8.bf; 16e+f; 8d+f; 8anf; 8bf; 8c+f;
+
+			lyrics 1: "com-forts and cheers me by";
+			lyrics 1: "nev-er, no, nev-er can";
+			lyrics 1: "praise will I give un-to";
+
+bar
+newscore
+//9
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			lyrics 1: "day.";
+			lyrics 1: "fall.";
+			lyrics 1: "Thee.";
+dblbar
+//10
+1: 4.s; 4s; 8be;
+2: 4.s; 4s; 8ge;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"O";
+bar
+//11
+1: 8.be; 16c+e; 8be; 8.bnf; 16anf; 8bf;
+2: 8.ge; 16ae; 8ge; 8.gd; 16gd; 8gd;
+
+			lyrics 1: [c]"won-der-ful, won-der-ful";
+bar
+//12
+1: 4.c+e tie; 4c+e; 8e+f#;
+2: 4.gc tie; 4gc; 8c+a-n;
+
+			lyrics 1: [c]"Word, My";
+bar
+//13
+1: 8d+g; 8c+g; 8s; 8s; 8s; 8s;
+2: 8d+b-; 8e+c; 8s; 8s; 8s; 8s;
+
+			lyrics 1: [c]"treas-ure,";
+invisbar
+newscore
+
+1: 8s; 8s; 8bg; 8c+f#; 8bf; 8anf;
+2: 8s; 8s; 8d+d; 8and; 8bd; 8c+d;
+
+			lyrics 1: [c]"my hope, and my";
+
+bar
+//14
+1: 4.b~ g slur; 4bf; 8ad;
+2: 4.d+~ g slur; 4d+a&; 8bf;
+
+			lyrics 1: [c]"stay; Each";
+bar
+//15
+1: 8.ge; 16fd; 8ge; 8.ad; 16gd; 8ad;
+2 1: 8.be; 16b; 8bg; 8.bf; 16bf; 8bf;
+2 2: 8.s; 16a; 8s; 8.s; 16s; 8s;
+
+			lyrics 1: [c]"prom-ise re-cord-ed de-";
+bar
+newscore
+//16
+1 1: 4b; 8e+a; 4e+g; 8c+e;
+1 2: 8e bm; 8g ebm; 8s; 4s; 8s;
+2 1: 8g bm; 8b ebm; 8c+e; 4be; 8a;
+2 2: 4e; 8s; 4s; 8a;
+
+			lyrics 1: [c]"lights my soul, And";
+bar
+//17
+1 1: 8be; 8e; 8ae; 8.ge; 16af; 8fd;
+1 2: 8s; 8e; 8s; 8.s; 16s; 8s;
+2: 8bg; 8c+c; 8c+f; 8.bb-; 16bb-; 8ab-;
+
+			lyrics 1: [c]"bright-ens each step of my";
+bar
+//18
+1 1: 4.e tie; 4e; 8s;
+1 2: 4.e tie; 4e; 8s;
+2: 4.ge tie; 4ge; 8s;
+
+			lyrics 1: [c]"way.";
+endbar

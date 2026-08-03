@@ -1,0 +1,213 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Glad Hallelujahs,Replete With Sacred Songs
+//		John R. Sweney and William J. Kirkpatrick,
+//		Philadelphia:
+//		thos. T. Tasker, Sr., Publisher
+//		No. 921 Arch Street
+//		Copyright: 1887
+//		Hymn No.: 34
+//		
+// Transcribed by: Ted Gatza, Jr. 03/14/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Jesus My Refuge Eternal" ""
+   title (2)""
+   title (11) "F - 2 - MI" "\s(17)\f(TI)\:Preserve\ me,\ O\ God;\ for\ in\ thee\ do\ I\ take\ refuge.\ -\ Ps.\ 16:1 \(space)" ""   
+   title (13) "Fanny J. Crosby" "" "Wm. J. Kirkpatrick, 1887" 
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+//1
+1 1: 8af; gc; fc; c; fc; af;
+1 2: 8s;;; c; s;;
+2: 8c+f; bf; af;;; c+f;
+
+			VERSE "<1. >-1|Je-sus my ref-uge e-";
+			VERSE "<2. >-1|Oft when thy spir-it de-";
+			VERSE "<3. >-1|Je-sus my re-fuge e-";
+			VERSE "<4. >-1|Je-sus my ref-uge e-";
+bar
+//2
+1: 4.c+f; be;
+2: 4.c+a; c+g;
+
+			VERSE "ter-nal,";
+			VERSE "scend-ing,";
+			VERSE "ter-nal,";
+			VERSE "ter-nal,";
+bar
+//3
+1 1: 8af; gc; c; af; gd; fd;
+1 2: 8s;; c; s;;;
+2: 8c+f; bf; af; bnd;;;
+
+			VERSE "Hope when all oth-ers have";
+			VERSE "Brings me a tok-en of";
+			VERSE "Firm shall my an-chor a-";
+			VERSE "Day-spring of mer-cy di-";
+bar
+//4
+1: 4.ge tie; 4; 8r;
+2: 4.c+<b>c~; 4bc; 8r;
+
+			VERSE "flown,";
+			VERSE "love,";
+			VERSE "bide,";
+			VERSE "vine,";
+bar
+//5
+1 1: 8af; gc; fc; c; fc; af;
+1 2: 8s;;; c; s;;
+2: 8c+f; bf; af;;; c+f;
+
+			VERSE "Strong is my faith in thy";
+			VERSE "O how my soul in its";
+			VERSE "What though life's per-ils o'er-";
+			VERSE "While in thy vine-yard I";
+bar
+//6
+1: 4.c+f; be;
+2: 4.c+a; c+g;
+
+			VERSE "prom-ise,";
+			VERSE "rap-ture,";
+			VERSE "take me,";
+			VERSE "la-bor,";
+bar
+//7
+1 1: 8af; gc; c; ae; ge; c;
+1 2: 8s;; c; s;;c;
+2: 8c+f; bf; af; bc;;;
+
+			VERSE "There I am cling-ing a-";
+			VERSE "Dreams of the man-sions a-";
+			VERSE "Safe in thy shel-ter I'll";
+			VERSE "O what a com-fort is";
+bar
+//8
+1: 4.fc tie; 4; 8r;
+2: 4.af tie; 4; 8r;
+
+			VERSE "lone.";
+			VERSE "bove.";
+			VERSE "hide.";
+			VERSE "mine.";
+dblbar
+//9
+1 1: 4.f tie; 8; b; d+;
+1 2: 8d;;;;; r;
+2: 8bb-;;;;; 8r;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE 8; 8s; 8s; 8s; 8s; 8s; "<>";
+			VERSE "Watch-ing and";
+			VERSE 8; 8; 8; 8; 8; 8s; "Watch-ing and wait-ing,";
+bar
+//10
+1 1: 4.c+; 4a; 8r;
+1 2: 8f;;;;; s;
+2: 8af;;; c+f;; 8r;
+
+			VERSE "wait-ing,";
+			VERSE 8; 8; 8; 8; 8; 8s; "watch-ing and wait-ing,";
+bar
+//11
+1: 8ge;;;; d+e; c+e;
+2: 8c+c;;;;;;
+
+			VERSE "Long-ing, my Sav-iour, for";
+			VERSE 8s; 8s; 8s; 8s; 8s; 8; "my";
+bar
+//12
+1 1:4.a tie; 4; 8r;
+1 2: 8f;;; 4; 8s;
+2: 8c+f;;; 4; 8r;
+
+			VERSE "thee,_";
+			VERSE 8; 8; 8; 4; 8s; "Sav-iour for thee,";
+bar
+//13
+1 1: 4.f tie; 8; b; d+;
+1 2: 8d;;;;; 8r;
+2: 8bb-;;;;; 8r;
+
+			VERSE "Watch-ing and";
+			VERSE 8; 8; 8; 8; 8; 8s; "Watch-ing and wait-ing,";
+bar
+//14
+1 1: 4.c+; 4a; 8r;
+1 2: 8f;;;;; 8s;
+2: 8af;;; c+f;; 8r;
+
+			VERSE "wait-ing,";
+			VERSE 8; 8; 8; 8; 8; 8s; "Watch-ing and wait-ing,";
+bar
+//15
+1: 8ge;;;; af; gc;
+2: 8bc;;;; c+c; bc;
+mussym (9) above 1: 5 "ferm";
+mussym (9) below 2: 5 "uferm";
+
+			VERSE "Come in thy beau-ty to";
+			VERSE 8s; 8s; 8s; 8s; 8s; 8; "in";
+bar
+//16
+1 1: 4.f tie; 4; 8r;
+1 2: 8c;; d; 4c; 8s;
+2 1: 8a;; b; 4a; 8r;
+2 2: 4.f tie; 4; 8s;
+
+			VERSE "me._";
+			VERSE 8; 8; 8; 4; 8s; "beau-ty to me.";
+endbar

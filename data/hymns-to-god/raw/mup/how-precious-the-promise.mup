@@ -1,0 +1,210 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No.2 
+//		Pub. by The Biglow and Main Publishing Co., New York
+//		Copyright 1899
+
+// Transcribed by: Ted Gatza, Jr. 12/22/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "How Precious The Promise" ""
+   title (2)""
+   title (11) "A - 2 - SOL" "\f(TI)Exceeding great and precious promise. Lk. 3 Pet. 1:4"""
+   title (13) "Julia Sterling, 1899" " " "Ira D. Sankey"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=3#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=3#
+	clef=bass
+music
+
+midi all: 0 "tempo=77";
+
+//1
+1: 4.s; 4s; 8ec;
+2: 4.s; 4s; 8aa-;
+
+			lyrics 1: "<1. >-1|How";
+			lyrics 1: "<2. >-1|O";
+			lyrics 1: "<3. >-1|Thus";
+bar
+//2
+1: 8.ac; 16ac; 8ac; 8ae; 8ge; 8ae;
+2: 8.ea-; 16ea-; 8ea-; 8ac; 8d+b-; 8c+a-;
+
+			lyrics 1: "pre-cious the prom-se I";
+			lyrics 1: "what are the sor-rows and";
+			lyrics 1: "far on my jour-ney by";
+bar
+//3
+1: 8bf; 8af; 8fd; 4ec; 8ec;
+2 1: 8d+d; 8d+d; 8ad; 4aa-; 8a;
+2 2: 8s; 8s; 8s; 4s; 8a;
+
+			lyrics 1: "read in the word, Of";
+			lyrics 1: "tri-als of earth, Com-";
+			lyrics 1: "faith I have come, And";
+bar
+//4
+1: 8.ae; 16ae; 8ae; 8ad#; 8gd; 8ad;
+2: 8.c+a; 16c+a; 8c+a; 8bf; 8bf; 8ab-;
+
+			lyrics 1: "Je-sus, my Sav-iour to";
+			lyrics 1: "pared with the bliss I shall";
+			lyrics 1: "Je-sus a-bides with me";
+bar
+//5
+1 1: 4.be tie; 4be; 8e;
+1 2: 4.s; 4s; 8e;
+2: 4.ge tie; 4ge; 8bg;
+
+			lyrics 1: "me, That";
+			lyrics 1: "know With";
+			lyrics 1: "still, And";
+bar
+//6
+1: 8.c+e; 16c+e; 8c+e; 8c+e; 8s; 8s;
+2 1: 8.a; 16a; 8a; 8aa-; 8s; 8s;
+2 2: 8.a; 16a; 8a; 8s; 8s; 8s; 
+
+			lyrics 1: "when I have fin-";
+			lyrics 1: "Him, my Re-deem-";
+ 			lyrics 1: "O what a les-";
+
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8s; 8d+f; 8c+e;
+2 1: 8.s; 16s; 8s; 8s; 8aa-; 8aa-;
+2 2: 8.s; 16s; 8s; 8s; 8s; 8s; 
+
+			lyrics 1: "ished the";
+			lyrics 1: "er, where";
+ 			lyrics 1: "son from";
+
+
+
+bar
+//7
+1: 8bd; 8ad; 8fd; 4ec; 8ec;
+2: 8fd; 8fd; 8ad; 4aa-; 8aa-;
+
+			lyrics 1: "work that He gave, My";
+			lyrics 1: "riv-ers of joy For-";
+			lyrics 1: "Him I have learned, Of";
+bar
+//8
+1: 8fd; 8ae; 8c+e; 16bd; 8.fd; 8gd;
+2 1: 8ad; 8ac; 8aa-; 16ge; 8.be; 8e;
+2 2: 8s; 8s; 8s; 16s; 8.s; 8e;
+
+			lyrics 1: "home in His king-dom shall";
+			lyrics 1: "ev-er and ev-er shall";
+			lyrics 1: "trust-ing, and do-ing His";
+bar
+newscore
+//9
+1: 4.ac tie; 4ac; 8s;
+2: 4.ea- tie; 4ea-; 8s;
+
+			lyrics 1: "be.";
+			lyrics 1: "flow?";
+			lyrics 1: "will.";
+dblbar
+//10
+1 1: 4.s; 4s; 8e;
+1 2: 4.s; 4s; 8e;
+2 1: 4.s; 4s; 8e;
+2 2: 4.s; 4s; 8e;
+ital (13) above 1: 1 "Chorus";
+			lyrics 1: [c]"And";
+bar
+//11
+1: 8.bd; 16bd; 8bd; 8bd; 8c+e; 8bd;
+2: 8.ge; 16ge; 8ge; 8ge; 8ge; 8ge;
+
+			lyrics 1: [c]"when in the glo-ry I";
+bar
+//12
+1: 8ac; 8ac; 8ad; 4ac; 8ac;
+2: 8aa-; 8ea-; 8fa-; 4ea-; 8ea-;
+
+			lyrics 1: [c]"look on His face, With";
+bar
+//13
+1: 8.c+e; 16be; 8ae; 8ac; 8gd#; 8ad;
+2: 8.aa-; 16gb-; 8ac; 8c+f; 8bf; 8ab-;
+
+			lyrics 1: "rap-ture that can-not be";
+bar
+//14
+1 1: 4.be tie; 4be; 8e;
+1 2: 4.s; 4s; 8e;
+2: 4.ge tie; 4ge; 8bg;
+
+			lyrics 1: "told; The";
+bar
+//15
+1: 8.c+e; 16c+e; 8c+e; 8ae; 8be; 8c+gn;
+2 1: 8.a; 16a; 8a; 8ac; 8ae; 8a;
+2 2: 8.a; 16a; 8a; 8s; 8s; 8a;
+
+			lyrics 1: "won-der-ful sto-ry of";
+bar
+//16
+1: 8.d+f; 16d+f; 8d+f; 8fd; 8ge; 8af;
+2: 8.ad; 16ad; 8ad; 8ad; 8ad; 8ad#;
+
+			lyrics 1: "grace and of glo-ry Will";
+bar
+//17
+1: 16ec; 8.ac; 8c+e; 16bd; 8.fd; 8gd;
+2: 16ae; 8.ae; 8ae; 16ge; 8.be; 8be;
+mussym above 1: 1.71 "ferm";
+mussym above 1: 4.71 "ferm";
+mussym below 2: 1.44 "uferm";
+mussym below 2: 4.44 "uferm";
+
+			lyrics 1: "nev-er, no, nev-er grow";
+bar
+//18
+1: 4.ac tie; 4ac; 8s;
+2: 4.aa- tie; 4aa-; 8s;
+
+			lyrics 1: "old.";
+endbar

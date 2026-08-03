@@ -1,0 +1,245 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+// Hymn Source: Hymns And Sacred Songs
+//		Edited by: E. O. Excell
+//		Associate Editors: G. H. Shorney, F. G. Kingsbury
+//		Publisher : Hope Publishing Company, Chicago
+//		Copyright 1918
+//		Hymn no. 158
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 09/15/2014; Rev. 01/24/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "The Great Physician" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - SOL" "\s(17)\f(TI)\:But\ when\ he\ heard\ it,\ he\ said,\ \^They\ that\ are\ whole\ have\ no\ need of\ a\ physician,\ but\ they\ \^that\ are\ sick.\ -\ Matt.\ 9:12" ""   
+   title (13) "William Hunter" "" "John H. Stockton"
+   title (13) "Refrain: Richard Kempenfelt" "" ""
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1: 4.s; 4; 8bg; 
+2: 4.s; 4; 8be; 
+
+	VERSE 4.s; 4s; 8; "<1. >-1|The";
+	VERSE 4.s; 4s; 8; "<2. >-1|Your";
+	VERSE 4.s; 4s; 8; "<3. >-1|All";
+	VERSE 4.s; 4s; 8; "<4. >-1|His";
+bar
+//2
+1 1: 4bg; 8ge; 4e; 8fd;
+1 2: 4s; 8; 4e; 8s;
+2: 4e+e; 8be; 4ge; 8bb-;
+
+	VERSE "great Phy-si-cian";
+	VERSE "man-y sins are";
+	VERSE "glo-ry to the";
+	VERSE "name dis-pels my";
+bar
+//3
+1: 4ge; 8af; 4bg; 8;
+2: 4be; 8; 4; 8;
+
+	VERSE "now is near, The";
+	VERSE "all for-giv'n, Oh!";
+	VERSE "dy-ing Lamb! I";
+	VERSE "guilt and fear, No";
+bar
+//4
+1 1: 4bg; 8e; 4ge; 8e;
+1 2: 4s; 8e; 4s; 8e;
+2: 4e+e; 8ge; 4be; 8ge;
+
+	VERSE "sym-pa-thiz-ing";
+	VERSE "hear the voice of";
+	VERSE "now be-lieve in";
+	VERSE "oth-er name but";
+bar
+//5
+1 1: 4.fd; 4e; 8bg;
+1 2: 4.s; 4e; 8s;
+2: 4.ab-; 4ge; 8be;
+
+	VERSE "Je-sus, He";
+	VERSE "Je-sus, Go";
+	VERSE "Je-sus; I";
+	VERSE "Je-sus; Oh!";
+bar
+//6
+
+1 1: 4bg; 8ge; 4e; 8fd;
+1 2: 4s; 8; 4e; 8s;
+2: 4e+e; 8be; 4ge; 8bb-;
+
+	VERSE "speaks the droop-ing";
+	VERSE "on your way in";
+	VERSE "love the bless-ed";
+	VERSE "how my soul de-";
+bar
+//7
+1: 4ge; 8af; 4bg; 8;
+2: 4be; 8; 4; 8;
+
+	VERSE "heart to cheer, Oh!";
+	VERSE "peace to Heav'n, And";
+	VERSE "Sav-ior's name, I";
+	VERSE "lights to hear The";
+bar
+//8
+1 1: 4bg; 8e; 4ge; 8e;
+1 2: 4s; 8e; 4s; 8e;
+2: 4e+e; 8ge; 4be; 8ge;
+
+	VERSE "hear the voice of";
+	VERSE "wear a crown with";
+	VERSE "love the name of";
+	VERSE "charm-ing name of";
+bar
+//9
+1 1: 4.fd; 4e; 8r;
+1 2: 4.s; 4e; 8s;
+2: 4.ab-; 4ge; 8r;
+
+	VERSE "Je-sus.";
+	VERSE "Je-sus.";
+	VERSE "Je-sus.";
+	VERSE "Je-sus.";
+dblbar
+//10
+
+1 1: 8b bm; c+ ebm; 8d+a; 4e+g; 8bg;
+1 2: 4g; 8s; 4; 8;
+2: 4be; 8; 4; 8e+e;
+ital (13) above 1: 1 "Refrain";
+
+	VERSE 4; 8; 4; 8; "Sweet-est note in";
+bar
+//11
+1: 4d+a; 8c+a; 4.bg;
+2: 4e+a; 8; 4.e+e;
+
+	VERSE "ser-aph song,";
+bar
+//12
+1 1: 8b bm; c+ ebm; 8d+a; 4s; 8s;
+1 2: 4g; 8s; 4s; 8s;
+2: 4be; 8; 4s; 8s;
+
+	VERSE 4; 8; 4s; 8s; "Sweet-est";
+
+invisbar
+newscore
+
+1 1: 8s; s; 8s; 4e+g; 8bg;
+1 2: 4s; 8s; 4; 8;
+2: 4s; 8s; 4be; 8e+e;
+
+	VERSE 4s; 8s; 4; 8; "name on";
+
+bar
+//13
+1: 4d+a; 8c+a; 4.bg;
+2: 4e+a; 8; 4.e+e;
+
+	VERSE "mor-tal tongue";
+bar
+//14
+1 1: 4bg; 8ge; 4e; 8fd;
+1 2: 4s; 8; 4e; 8s;
+2: 4e+e; 8be; 4ge; 8bb-;
+
+	VERSE "Sweet-est car-ol";
+bar
+
+//15
+1: 4ge; 8af; 4.bg;
+2: 4be; 8; 4.;
+
+	VERSE "ev-er sung,";
+bar
+//16
+1 1: 4bg; 8e; 4ge; 8e;
+1 2: 4s; 8e; 4s; 8e;
+2: 4e+e; 8ge; 4be; 8ge;
+
+	VERSE "Je-sus bless-ed";
+bar
+//17
+1 1: 4.fd; 4e; 8s;
+1 2: 4.s; 4e; 8s;
+2: 4.ab-; 4ge; 8s;
+
+	VERSE "Je-sus.";
+dblbar
+//18
+1: 2.ec;
+2: 2.aa-;
+
+	VERSE "A-";
+bar
+//19
+1: 2.eb-;
+2: 2.ge;
+
+	VERSE "MEN.";
+endbar

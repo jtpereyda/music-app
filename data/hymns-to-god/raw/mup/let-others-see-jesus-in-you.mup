@@ -1,0 +1,254 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Awakening Songs
+//		For The Church, Sunday School and
+//		Evangelistic Services
+//		Homer A. Rodeheraver, Compiler
+//		Chas. H. Gabriel Music Editor
+//		Publisher: The Rodeheaver Company
+//		Monon Building, Chicago
+//		commercial Building, Philadelphia
+//		Copyright 1917
+//		Hymn No.: 56
+//		
+// Transcribed by: Ted Gatza, Jr. 09/26/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Let Others See Jesus In You" ""
+   title (2)""
+   title (11) "D \(flat) - 3 - MI" "\s(17)\f(TI)\:Even\ so\ let\ your\ light\ shine\ befor\|e\ men;\ that\ they\ may\ see\ your\ good works,\ and\ glorify\ your\ Fathe\|r\ who\ is\ in\ heaven.\ -\ Mat.\ 5:16" ""
+   title (13) "E. E. Hewitt" "" "C. D. Emerson, 1917"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 8fd; 8fd; 8en; 8fd; 4.s; 4s;
+1 2: 8s; 8s; 8d; 8s; 4.s; 4s;
+2: 8ad; 8ad; 8gnd; 8ad; 4.s; 4s;
+
+
+			VERSE "<1. >-1|By love nev-er-";
+			VERSE "<2. >-1|By pow'r when temp-";
+			VERSE "<3. >-1|By smiles that come";
+
+bar
+//2
+1 1: 4.af; 4af; 8fd; 8fd; 8en; 8fd;
+1 2: 4.s; 4s; 8s; 8s; 8d; 8s;
+2: 4.d+d; 4d+d; 8ad; 8ad; 8gnd; 8ad;
+
+			VERSE "fail-ing, love gen-tle and";
+			VERSE "ta-tions are surg-ing a-";
+			VERSE "free-ly from some hid-den";
+bar
+//3
+1: 4.gc tie; 4gc; 8s; 8s; 8s; 8s;
+2: 4.ae tie; 4ae; 8s; 8s; 8s; 8s;
+
+			VERSE "kind,";
+			VERSE "round,";
+			VERSE "spring,";
+invisbar
+newscore
+
+1: 4.s; 4s; 8gc; 8gc; 8fc; 8gc;
+2: 4.s; 4s; 8ae; 8ae; 8ae; 8ae;
+
+			VERSE "Love show-ing forth";
+			VERSE "To sing of the";
+			VERSE "By songs that to";
+
+bar
+//4
+1: 4.c+g; 4c+g; 8bg; 8bg; 8af; 8ge;
+2: 4.e+a-; 4e+a-; 8c+a-; 8c+a-; 8d+a-; 8aa-;
+
+			VERSE "dai-ly the Mas-ter's own";
+			VERSE "grace that still more will a-";
+			VERSE "Je-sus will joy-ful-ly";
+bar
+//5
+1: 4.fd tie; 4fd; 8s; 8s; 8s; 8s;
+2: 4.ad tie; 4ad; 8s; 8s; 8s; 8s;
+
+			VERSE "mind,";
+			VERSE "bound,";
+			VERSE "ring;";
+invisbar
+newscore
+
+1: 4.s; 4s; 8af; 8af; 8gnen; 8af;
+2: 4.s; 4s; 8d+d; 8d+d; 8d+d; 8d+d;
+
+			VERSE "By love that in";
+			VERSE "So press on in";
+			VERSE "By words that to";
+
+bar
+//6
+1: 4.d+f; 4d+f; 8c+f;8e+g; 8d+f; 8af;
+2: 4.ad; 4ad; 8ad; 8ad; 8ad; 8d+d;
+
+			VERSE "serv-ing new bless-ings will";
+			VERSE "con-flict till prais-es re-";
+			VERSE "oth-ers, sal-va-tion will";
+bar
+//7
+1: 4.bg tie; 4bg; 8s; 8s; 8s; 8s;
+2: 4.d+g tie; 4d+g; 8s; 8s; 8s; 8s;
+
+			VERSE "find,";
+			VERSE "sound;";
+			VERSE "bring,";
+invisbar
+newscore
+
+1: 4.s; 4s; 8bg; 8bg; 8c+a; 8d+a;
+2: 4.s; 4s; 8d+g; 8d+g; 8e+g; 8d+f;
+
+			VERSE "Let oth-ers see";
+			VERSE "Let oth-ers see";
+			VERSE "Let oth-ers see";
+
+bar
+//8
+1: 4.e+a; 4.e+gn; 4.ge;
+2: 4.c+e; 4.be; 4.d+d;
+
+			VERSE "Je-sus in";
+			VERSE "Je-sus in";
+			VERSE "Je-sus in";
+bar
+//9
+1: 4.ae tie; 4ae; 8r; 4.s;
+2: 4.c+a- tie; 4c+a-; 8r; 4.s;
+
+			VERSE "you.";
+			VERSE "you.";
+			VERSE "you.";
+dblbar
+//10
+1 1: 4.a; 4.s; 4.s;
+1 2: 4.g; 4.s; 4.s;
+2: 4.c+a; 4.s; 4.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Let";
+bar
+newscore
+//11
+1: 4.d+f; 4d+f; 8af; 8fd; 8af; 8d+f;
+2 1: 4.ad; 4a; 8d+; 8a; 8d+; 8a;
+2 2: 4.s; 4.d tie; 4d; 8d;
+
+			VERSE "oth-ers see Je-sus in";
+			VERSE 4.; 4.; 4s; 8; "oth-ers_ see";
+bar
+//12
+1: 4.c+g tie; 4.c+g; 4.c+g;
+2 1: 4.a tie; 4.a; 4.e+a;
+2 2: 8e; 8a-; 8e; 4.a; 4.s;
+
+			VERSE "you;_ Let";
+			VERSE 8; 8; 8; 4.; 4.; "Je-sus in you; Let";
+bar
+newscore
+//13
+1 1: 4.e+g; 4e+g; 8c+g; 8a; 8c+g; 8e+g;
+1 2: 4.s; 4s; 8s; 8g; 8s; 8s;
+2 1: 4.c+a-; 4c+; 8e+; 8c+; 8a; 8a;
+2 2: 4.s; 4.a- tie; 4a-; 8a-;
+
+			VERSE "oth-ers see Je-sus in";
+			VERSE 4.; 4.; 4s; 8; "oth-ers_ see";
+bar
+//14
+1: 4.d+f tie; 4d+f; 8af; 8af; 8gnen; 8af;
+2 1: 4.a tie; 4a; 8d+d; 8d+d; 8d+d; 8d+d;
+2 2: 8d; 8f; 8a; 4d; 8s; 8s; 8s; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "you,_ Keep tell-ing the";
+			VERSE 8; 8; 8; 4; 8s; 8s; 8s; 8s; "Je-sus in you;";
+bar
+//15
+1: 4.f+a; 4d+f; 8s; 8s; 8s; 8s;
+2: 4.d+d; 4ad; 8s; 8s; 8s; 8s;
+
+			VERSE "sto-ry";
+invisbar
+newscore
+
+1: 4.s; 4s; 8d+f; 8d+f; 8c+g; 8d+a;
+2: 4.s; 4s; 8ad; 8ad; 8ad; 8d+f;
+
+			VERSE "re-flect-ing His";
+
+bar
+//16
+1: 4.e+g; 4bg; 8d+g; 8d+en; 8c+e; 8be;
+2: 4.bg; 4d+g; 8bg; 8bgn; 8bg; 8d+g;
+
+			VERSE "glo-ry, Let oth-ers see";
+bar
+//17
+1: 4.af; 4.d+f; 4.c+g;
+2 1: 4.d+a; 4.a; 4.aa-;
+2 2: 4.s; 4.a; 4.s;
+
+			VERSE "Je-sus in";
+bar
+//18
+1: 4.d+f tie; 4d+f; 8s; 4.s;
+2: 4.ad tie; 4ad; 8s; 4.s;
+
+			VERSE "you.";
+endbar

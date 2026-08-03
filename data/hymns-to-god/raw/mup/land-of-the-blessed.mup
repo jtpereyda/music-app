@@ -1,0 +1,288 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+// Hymn Source: Songs of Redeeming Love
+//		Edited by: Jno. R. Sweeney,
+//		C. C. McCabe, T. C. O'Kane,
+//		W. J. Kirkpatrick.
+//		Philadelphia: John J. Hood. 1018 Arch Street
+//		Cincinnati: Walden & Stowe, St. Louis & Chicago
+//		Copyright 1882	
+//		Hymn no. 74
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 06/23/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Land Of The Blessed" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:In\ my\ Father's\ house\ are\ many\ ma\|nsions;\ if\ it\ were\ not\ so,\ I\ would have\ told\ you;\ for\ I\ go\ to\ prepa\|re\ a\ place\ for\ you.\ -\ Jn.\ 14:2" ""   
+   title (13) "Emily Huntington Miller" "" "T. C. O'Kane"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=80";
+
+// Enter music
+
+//1
+1: 8fd; 4.s; 4;
+2: 8bb-; 4.s; 4;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+	VERSE "<1. >-1|Oh!";
+	VERSE "<2. >-1|Oh!";
+	VERSE "<3. >-1|Dear";
+bar
+//2
+1: 8.fd; 16; 8;; db-; fd;
+2: 8.bb-; 16; 8;; fb-; bb-;
+
+	VERSE "Land of the bless-ed, thy";
+	VERSE "Land of the bless-ed, thy";
+	VERSE "home of my Fath-er, fair";
+bar
+//3
+1 1: 8.bf; 16; 8; b bm; a ebm; bf;
+1 2: 8.s; 16; 8; 4f; 8s;
+2: 8.d+b-; 16; 8; bm; c+c ebm; bd;
+
+	VERSE 8.; 16; 8; 4; 8; "shad-ow-less skies Some-";
+	VERSE 8.; 16; 8; 4; 8; "hills of de-light Some-";
+	VERSE 8.; 16; 8; 4; 8; "cit-y, whose peace No";
+bar
+//4
+1: 8.c+g; 16c+f; 8c+e;; d+f; c+e;
+2: 8.be; 16ae; 8ge; af;;;
+
+	VERSE "times in my dream-ing I";
+	VERSE "times on my vi-sion un-";
+	VERSE "shad-ow of chang-ing can";
+bar
+//5
+1: 4.bd tie; 4; 8fd;
+2: 4.bb- tie; 4; 8bb-;
+
+	VERSE "see: I";
+	VERSE "fold; Thy";
+	VERSE "mar! How";
+bar
+//6
+1: 8.fd; 16; 8;; db-; fd;
+2: 8.bb-; 16; 8;; fb-; bb-;
+
+	VERSE "hear the glad songs that the";
+	VERSE "man-sions ce-les-tial, thy";
+	VERSE "glad are the souls that have";
+
+bar
+//7
+1 1: 8.bf; 16; 8; b bm; a ebm; bf;
+1 2: 8.s; 16; 8; 4f; 8s;
+2: 8.d+b-; 16; 8; bm; c+c ebm; bd;
+
+	VERSE 8.; 16; 8; 4; 8; "glo-ri-fied sing Steal";
+	VERSE 8.; 16; 8; 4; 8; "pal-ac-es bright, Thy ";
+	VERSE 8.; 16; 8; 4; 8; "tast-ed thy joy, How";
+bar
+//8
+1: 8.c+g; 16c+f; 8c+e;; d+f; c+e;
+2: 8.be; 16ae; 8ge; af;;;
+
+	VERSE "o-ver e-ter-ni-ty's";
+	VERSE "bul-warks of jas-per and";
+	VERSE "blest thine in-hab-it-ants";	
+bar
+//9
+1: 4.bd tie; 4; 8fd;
+2: 4.bb- tie; 4; 8bb-;
+	
+	VERSE "sea. Tho'";
+	VERSE "gold. Dear";
+	VERSE "are! When";
+bar
+//10
+1: 8.ge; 16; 8; be; ae; ge;
+2: 8.be; 16; 8; ge; c+e; be;
+
+	VERSE "dark are the shad-ows that";
+	VERSE "voic-es are chant-ing thy";
+	VERSE "wea-ry with toil-ing, I";
+bar
+//11
+1: 8.ge; 16fd; 8; 4; 8;
+2: 8.bb-; 16; 8; 4; 8; 
+
+	VERSE "gath-er be-tween; I";
+	VERSE "cho-rus of praise, Dear";
+	VERSE "think of the day\(emdash) Who";
+bar
+//12
+1: 8.ge; 16; 8; c+en; c+f; c+g;
+2: 8.be; 16; 8ge; gc; c+d; ben;
+
+	VERSE "know that thy morn-ing is";
+	VERSE "eyes in thy sun-light are";
+	VERSE "knows if its dawn-ing be";
+bar
+//13
+1: 4.c+f tie; 4; 8c+f;
+2: 4.af tie; 4; 8af;
+
+	VERSE "fair; I";
+	VERSE "fair; I";
+	VERSE "near? When";
+bar
+//14
+1 1: 8.d+f; 16; 8;; c+f; b;
+1 2: 8.s; 16; 8;;; b;
+2 1: 8.b; 16; 8;; c+a; d+g;
+2 2: 8.b; 16; 8;; s;;
+
+	VERSE "catch but a glimpse of thy";
+	VERSE "look from my val-ley of";
+	VERSE "he who hath loved me shall";
+bar
+//15
+1 1: 8.c+g; 16; 8; c+ bm; b ebm; ge;
+1 2: 8.s; 16; 8; 4g; 8s;
+2: 8.e+e; 16c+e; 8be; 4; 8;
+
+	VERSE 8.; 16; 8; 4; 8; "glo-ry and light, And";
+	VERSE 8.; 16; 8; 4; 8; "shad-ow be-low, And";
+	VERSE 8.; 16; 8; 4; 8; "call me a-way From";
+bar
+//16
+1: 8fd; 16; r; 8bf; af; bd; c+e;
+2: 8bf; 16; r; 8d+f; c+f; bf; af;
+mussym (9) above 1: 2.5 "ferm";
+mussym (9) below 2: 2.5 "uferm";
+ital (13) above 1: 3 "Rit.....";
+
+
+	VERSE "whis-per: would God I were";
+	VERSE "whis-per: would God I were";
+	VERSE "all that hath bur-dened me";
+bar
+//17
+1: 4.bd tie; 4; 8s;
+2: 4.bb- tie; 4; 8s;
+
+	VERSE "there!";
+	VERSE "there!";
+	VERSE "here.";
+dblbar
+//18
+1: 8fd; 4.s; 4;
+2: 8r; 4.s; 4;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+ital (13) above 1: 1 "Chorus";
+
+	VERSE [c]"Oh!";
+bar
+//19
+1: 8fd;;; 4. slur;
+2: 4r; 8bb-;;;8b-<d>b~;
+
+	VERSE "Sav-iour, pre-pare_";
+	VERSE 8s; 8s; 8; 8; 8; 8; "Sav-iour, pre-pare";
+bar
+//20
+1: 4.fb; af;
+2: 4.bd; r;
+
+	VERSE 4.s; 4.; "My";
+bar
+//21
+1: 8ge;;; 4. slur;
+2: 4r; 8be;;; 8e<c>g~;
+
+	VERSE "spir-it to share_";
+	VERSE 4s; 8; 8; 8; 8; "spir-it to share";
+bar
+//22
+1: 4.c+en; bg;
+2: 4.gc; r;
+
+	VERSE "For-";
+bar
+//23
+1: 8af;;; 4. slur;
+2: 4r; 8af; c+f; bf; f<d>a~;
+
+	VERSE "ev-er with thee_";
+	VERSE 4s; 8; 8; 8; 8; "ev-er with thee";
+bar
+//24
+1: 4.d+f#; c+g;
+2: 4.ad; e+e;
+
+	VERSE "those";
+bar
+//25
+1: 4.bf; ae;
+2: 4.d+f; c+f;
+
+	VERSE "man-sions";
+bar
+//26
+1: 4.bd tie; 4; 8s;
+2: 4.bb- tie; 4; 8s; 
+
+	VERSE "fair.";
+endbar

@@ -1,0 +1,431 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Always Welcome
+//	A Choice Collection of Song Gems
+//	For the Sunday School, Prayer and Praise
+//	Meetings and the Home Circle
+//	By Frank M. Davis
+//	Cleveland, Ohio
+//	Published by J. B. Clark, 136 Bank Street.
+//	Copyright 1879
+//	Hymn No. 10
+//		
+// Transcribed by:
+//	Ted Gatza, Jr. 10/15/2023
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "I Love To Hear The Story" ""
+   title (2)""
+   title (11)"" "\f(TI)And as the Gentiles heard this, they were glad, and glorified the word of God" ""
+   title (11)"" "\f(TI)and as many as were ordained to eternal life believed. - Acts 13:48" ""
+   title (11) "B\(flat) - 2 - SOL" "" ""
+   title (13) "Jennie Ree (arr.)" "" "Frank M. Davis, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+   
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit." @
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine" @
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign" @
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=85";
+
+//=========================
+
+//Verse 1
+
+//1
+1: 2s; 8s; 8df;
+2: 2s; 8s; 8b-b;
+
+	VS 2s; 8s; 8; "<1. >-1|I";
+	VS 2s; 8s; 8; "<2. >-1|I";
+	VS 2s; 8s; 8; "<3. >-1|There";
+bar
+
+//2
+1: 4db; 8; 4df; 8eg;
+2: 4b-f; 8; 4b-b; 8;
+
+	VS "love to hear the";
+	VS "love the bles-sed";
+	VS "on the hills of";
+bar
+
+//3
+1: 4d~f slur; 8db; 4fd+; 8s;
+2: 4.b-b; 4; 8s;
+
+	VS21 "sto-ry";
+	VS21 "sto-ry";
+	VS21 "glo-ry";
+invisbar
+1: 2s; 8s; 16db bm; fa ebm;
+2: 2s; 8s; 16b-b bm; dc+ ebm;
+
+	VS 2s; 8s; 8; "Of";
+	VS 2s; 8s; 8; "Of";
+	VS 2s; 8s; 8; "The";
+bar
+
+//4
+1 1: 4eg; 8gb; c+ bm; b ebm; eg;
+1 2: 4s; 8; 4g; 8s;
+2: 4eb; 8ee+; 4; 8eb;
+
+	VS21 "Je-sus and His";
+	VS21 "Je-sus and His";
+	VS21 "sa-cred mount a-";
+bar
+
+//5
+1: 4.eg slur; 4df; 8s;
+2: 4.b-b tie; 4b-b; 8s;
+
+	VS "birth,";
+	VS "cross,";
+	VS "bove,";
+invisbar
+1: 4.s; 4; 8df;
+2: 4.s; 4s; 8b-b;
+
+	VS "How";
+	VS "Who";
+	VS "I'll";
+bar
+
+//6
+1 1: 4fc+; 8f; 4fc+; 8f;
+1 2: 4s; 8f; 4s; 8f;
+2: 4fa; 8; 4; 8;
+
+	VS "He, the Lord of";
+	VS "left the courts of";
+	VS "cel-e-brate the";
+bar
+
+//7
+1: 4fd+ slur; 8ec+; 4db; 8s;
+2: 4.b-b tie; 4; 8s;
+
+	VS "glo-ry";
+	VS "glo-ry";
+	VS "sto-ry";
+invisbar
+1: 4.s; 4s; 8fd+;
+2: 4.s; 4s; 8b-b;
+
+	VS "Come";
+	VS "To";
+	VS "Of";
+bar
+
+//8
+1: 4fc+; 8eng; 4ec+; 8ed+;
+2: 4ca; 8cc+; 4cg; 8cb;
+
+	VS "down to dwell on";
+	VS "res-cue us from";
+	VS "Je-sus and His";
+bar
+
+//9
+1: 4.fc+ tie; 4; 8s;
+2: 4.fa tie; 4; 8s;
+
+	VS "earth;";
+	VS "loss;";
+	VS "love;";
+invisbar
+1 1: 4.s; 4s; 8f;
+1 2 :4.s; 4s; 8e;
+
+2: 4.s; 4; 8fa;
+
+	VS "He";
+	VS "He";
+	VS "I'll";
+bar
+
+//10
+1: 4db; 8; 4df; 8eg;
+2: 4b-b; 8b-f; 4b-b; 8;
+
+	VS "laid a-side His";
+	VS "with our sins was";
+	VS "gaze up-on His";
+bar
+
+//11
+1: 4d~f slur; 8db; 4fd+; 8s;
+2: 4.b-b; 4; 8s;
+
+	VS21 "splen-dor,";
+	VS21 "bur-dened,";
+	VS21 "glo-ry";
+invisbar
+//11
+1: 4.s; 4s; 16db bm; fa ebm;
+2: 4.s; 4s; 16b-b bm; dc+ ebm;
+
+	VS 2s; 8s; 8; "His";
+	VS 2s; 8s; 8; "He";
+	VS 2s; 8s; 8; "The";
+bar
+
+//12
+1 1: 4eg; 8gb; 8c+ bm; b ebm; eg;
+1 2: 4.s; 4g; 8s;
+2: 4eb; 8ee+; 4; 8eb;
+
+	VS21 "roy-al di-a-";
+	VS21 "suf-fered all our";
+	VS21 "beau-ties of His";
+bar
+
+//13
+1: 4.eg slur; 4df; 8s;
+2: 4.bb- tie; 4; 8s;
+
+	VS "dem,";
+	VS "pain,";
+	VS "face,";
+invisbar
+1: 4.s; 4; 8df;
+2: 4.s; 4; 8b-b;
+
+	VS "Be-";
+	VS "That";
+	VS "And";
+bar
+
+//14
+1: 4fc+; 8db; 4fc+; 8fd+;
+2: 4fa; 8fb; 4fa; 8fb;
+
+	VS "came an in-fant,";
+	VS "we from death es-";
+	VS "sing the won-drous";
+bar
+
+//15
+1: 4.fe+; 4fc+; 8s;
+2: 4.fc+; 4fa; 8s;
+
+	VS "ten-der,";
+	VS "cap-ing";
+	VS "sto-ry";
+invisbar
+1: 4.s; 4; 8fc+;
+2: 4.s; 4; 8fa;
+
+	VS "The";
+	VS "E-";
+	VS "Of";
+bar
+
+//16
+1: 4fd+; 8ec+; 4db; 8ca;
+2 1: 4b; 8eg; 4f; 8;
+2 2: 4b; 8s; 4f; 8;
+
+	VS "babe of Beth-le-";
+	VS "ter-nal life might";
+	VS "His re-deem-ing";
+bar
+
+//17
+1: 4.db tie; 4; 8s;
+2: 4.b-f tie; 4; 8s;
+
+	VS "ham.";
+	VS "gain.";
+	VS "grace.";
+dblbar
+newscore
+//18
+REFRAIN
+1 1: 4.s; 4; 16a bm; b ebm;
+1 2: 4.s; 4; 8f;
+2 1: 4.s; 4; 16c+ bm; b ebm;
+2 2: 4.s; 4; 8f;
+
+	VS12 "Re-";
+bar
+
+//19
+1 1: 4fc+; 8; c+ bm; b ebm; 8fc+;
+1 2: 4.s; 4f; 8s;
+2 1: 4s; 8; a bm; g ebm; 8s;
+2 2: 4fa; 8; 4f; 8fa;
+
+	VS22 "peat the joy-ful";
+bar
+
+//20
+1: 4fd+ slur; 8ec+; 4db; 8s;
+2: 4.b-b; 4; 8s;
+
+	VS "sto-ry,";
+invisbar
+1: 4.s; 4; 16db bm; 16fa ebm;
+2: 4.s; 4; 16b-b bm; dc+ ebm;
+
+	VS 4.s; 4s; 8; "Re-";
+bar
+
+//21
+1: 4eg; 8; 8eg bm; fa ebm; gb;
+2: 4eb; 8; 4; 8;
+
+	VS21 "peat the joy-ful";
+bar
+
+//22
+1: 4.eg; 4df; 8s;
+2: 4.b-b; 4; 8s;
+
+	VS "sto-ry,";
+invisbar
+1: 4.s; 4; 8df;
+2: 4.s; 4; 8b-b;
+
+	VS "Re-";
+bar
+
+//23
+1: 4db; 8; 4df; 8eg;
+2: 4b-f; 8; 4b-b; 8;
+
+	VS "peat the joy-ful";
+bar
+
+//24
+1: 4d~f slur; 8db; 4fd+; 8s;
+2: 4.b-b; 4; 8s;
+
+	VS "sto-ry,";
+invisbar
+1: 4.s; 4; 8fd+;
+2: 4.s; 4; 8b-b;
+
+	VS "Of";
+bar
+
+//25
+1: 4fd+; 8ec+; 4db; 8ca;
+2 1: 4b-b; 8eg; 4f; 8;
+2 2: 4.s; 4f; 8;
+
+	VS "Je-sus and His";
+bar
+
+//26
+1: 4.db tie; 4; 8s;
+2: 4.b-f tie; 4; 8s;
+
+	VS "love.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

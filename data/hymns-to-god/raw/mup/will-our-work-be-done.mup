@@ -1,0 +1,222 @@
+// Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	His Praise
+//		By Charlie D Tillman
+//		Published on Both Round and Shaped Notes
+//		Charlie Tillman Song Book Co.
+//		Tillman’s Crossing, Lee Street Atlanta Ga.
+//		Copyright 1916
+//		Hymn No. 4
+		
+		
+// Transcribed by: Ted Gatza, Jr. 08/04/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Will Our Work Be Done?" ""
+   title (2) ""
+   title (11)"" "\f(TI)We must work the works of him that sent me, while it is day: " ""
+   title (11)"" "\f(TI)the night cometh, when no man can work. - Jn. 9:4" ""
+
+   title (11)"C - 4 - MI" "" ""  
+   title (13) "Thomas O. Chisholm" "" "Samuel W. Beazley, 1915"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+
+//1
+1: 2.s; 8ce; df;
+2: 2.s; 8cg;;
+	
+	VERSE "<1. >-1|When the";
+	VERSE "<2. >-1|There's a";
+	VERSE "<3. >-1|What a";
+bar
+//2
+1: 4eg; ec+;; 8fb; gc+;
+2: 4cc+; cg;; 8dg; ec+;
+
+	VERSE "last hour comes, in our";
+	VERSE "work for me, there's a";
+	VERSE "bright re-ward will be";
+bar
+//3
+1: 4ad+; fa;; 8; fc+;
+2: 4fc+;;; 8; fa;
+
+	VERSE "life's brief day, When we";
+	VERSE "work for you, 'Tis a";
+	VERSE "ours at last, When the";
+bar
+//4
+1: 4fb; ec+; fd+; 8fb;;
+2 1: 4g;;; 8;;
+2 2: 4g;;; 8;;
+
+	VERSE "hear a Voice call our";
+	VERSE "work that none but our-";
+	VERSE "earth-life end-ed and";
+bar
+//5
+1: 4ec+; ce; eg; 8ce; df;
+2: 4cg;; cc+; 8cg;;
+
+	VERSE "souls a-way, Will the";
+	VERSE "selves can do; Let us";
+	VERSE "la-bor past, With the";
+bar
+//6
+1: 4eg; ec+;; 8fb; gc+;
+2: 4cc+; cg;; 8dg; ec+;
+
+	VERSE "Mas-ter find That the";
+	VERSE "work with might, Lest the";
+	VERSE "mil-lions blest We shall";
+bar
+//7
+1 1: 4ad+; fa;; 8a;;
+1 2: 4s;;; 8g;;
+2: 4fc+;;; 8ec#+;;
+
+	VERSE "task as-signed To us";
+	VERSE "com-ing night Should, per-";
+	VERSE "en-ter rest, And the";
+bar
+//8
+1 1: 4f#d+; 8; fe+; gd+; gb; g; a;
+1 2: 4s; 8;;;; g;;
+2: 4dd+; 8dc+;; gb; gd+; b-d+; ce+;
+
+	VERSE "each have been fin-ished\(emdash) will our";
+	VERSE "chance, o-ver-take us with our";
+	VERSE "joy of the Lord, when all our";
+bar
+//9
+1 1: 4gb; f#a; g; s;
+1 2: 4s;; g; s;
+2: 4dd+; dc+; g-b; s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE "work be done?";
+	VERSE "work not done?";
+	VERSE "work is done!";
+dblbar
+
+//10
+1: 2.s; 8ge+; fnd+;
+2: 2.s; 8gb;;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE [c]"O the";
+bar
+//11
+1: 4ec+; eg;; 8gc+; gb;
+2: 4cc+;;; 8ec+;;
+
+	VERSE [c]"lives in need! O the";
+bar
+//12
+1: 4gb; fa; fd+; 8fa; fc+;
+2: 4fc+;; fa; 8fc+; fa;
+
+	VERSE [c]"hearts that bear Loads that";
+bar
+//13
+1: 4fb; df; fb; 8fa; fb;
+2 1: 4g; gb; g; 8gb; gd+;
+2 2: 4g; s; g; 8s;;
+
+	VERSE "crush them down, ment for";
+bar
+//14
+1: 4ea; ce; eg; 8; ec+;
+2: 4cc+; cg; cc+; 8;;
+
+	VERSE "us to share! O the";
+bar
+//15
+1: 4ge+; f#d#+; 4ge+; 8af+; ge+;
+2: 4cc+;;; 8;;
+
+	VERSE "souls to win, In the";
+bar
+//16
+1: 4fd+; fa; fd+; 8fa; fc+;
+2: 4fa; fd+; fa; 8;;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE "wastes of sin!\(emdash) When the";
+bar
+//17
+1 1: 4fb; 8;;; fa; g; gf+;
+1 2: 4s; 8;;;; f; s;
+2 1: 4g; 8gd+;;; gc+; gb;;
+2 2: 4g; 8s;;;;;;
+
+	VERSE "reap-ers come sing-ing will our";
+bar
+//18
+1: 4ge+; fd+; ec+; s;
+2: 4gc+; gb; cc+; s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE "work be done?";
+endbar

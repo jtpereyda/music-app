@@ -1,0 +1,259 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Choice Hymns No. 1
+//		Complied and Edited by J.Wilbur Chapman, D. D.
+//		and W. S. Weeden
+//		Publishers, Hall-Mack Company
+//		1020 Arch Street, Philadelphia
+//		156 Fifth Avenue, New York
+// 		Copyright, 1902
+//		Hymn no. 7
+
+// Transcribed by: Ted Gatza, Jr. 01/13/2010
+// HymnsToGod.org
+
+// *******************************************
+top
+
+   title bold (19) "" "Blessed Rock" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:be\ thou\ my\ strong\|\ rock,\ for\ an\ house of\ defence\ to\ sa\|ve\ me.\ -\ Ps.\ 31:2"""
+   title (13) "Fanny J. Crosby" " " "Hubert P. Main"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=9/8	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=4&
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4.s; 4.s; 4ec; 8ec;
+2: 4.s; 4.s; 4aa-; 8aa-;
+
+
+			lyrics 1: "<1. >-1|'Mid the";
+			lyrics 1: "<2. >-1|Wreck'd by";
+			lyrics 1: "<3. >-1|Rock, that";
+			lyrics 1: "<4. >-1|When be-";
+bar
+//2
+1 1: 4.ac tie; 4ac; 8ad; 8a bm; 8b ebm; 8c+e;
+1 2: 4.s; 4s; 8s; 4e; 8s;
+2: 4.ea- tie; 4ea-; 8eb-; 8ac bm; gb- ebm; 8aa-;
+
+			lyrics 1: 4.; 4s; 8; 4; 8; "wild and fear-ful";
+			lyrics 1: 4.; 4s; 8; 4; 8; "sin, by tem-pest";
+			lyrics 1: 4.; 4s; 8; 4; 8; "hides my trem-bling";
+			lyrics 1: 4.; 4s; 8; 4; 8; "yond the vale of";
+bar
+//3
+1: 4.be tie; 4. be; 4c+e; 8d+e;
+2 1: 4.ge tie; 4.ge; 4a; 8b;
+2 2: 4.s; 4.s; 4a; 8a;
+
+			lyrics 1: "blast, I have";
+			lyrics 1: "tossed, Com-pass,";
+			lyrics 1: "soul From the";
+			lyrics 1: "night I shall";
+bar
+//4
+1: 4e+a; 8af; 4.s; 4.s;
+2 1: 4c+a; 8c+a; 4.s; 4.s;
+2 2: 4s; 8s; 4.s; 4.s;
+
+			lyrics 1: "reached the";
+			lyrics 1: "chart, and";
+			lyrics 1: "storms that";
+			lyrics 1: "soar to";
+
+invisbar
+newscore
+
+1: 4s; 8s; 4.ge; 4.fdn;
+2 1: 4s; 8s; 4.b; 4.ab-;
+2 2: 4s; 8s; 4.b; 4.s;
+
+			lyrics 1: "Rock at";
+			lyrics 1: "an-chor";
+			lyrics 1: "dai-ly";
+			lyrics 1: "realms of";
+
+
+bar
+//5
+1 1: 4.e tie; 4.e; 4ec; 8ec;
+1 2: 4.e tie; 4.e; 4s; 8s;
+2 1: 4.ge tie; 4.ge; 4aa-; 8aa-;
+2 2: 4e?; 8c?; 4b-?; 8f-?; 4s; 8s;
+
+			lyrics 1: "last; Help-less";
+			lyrics 1: "lost, He whose";
+			lyrics 1: "roll; While be-";
+			lyrics 1: "light; When mine";
+bar
+//6
+1 1: 4.ac tie; 4ac; 8ad; 8a bm; 8b ebm; 8c+e;
+1 2: 4.s; 4s; 8s; 4e; 8s;
+2: 4.ea- tie; 4ea-; 8eb-; 8ac bm; gb- ebm; 8aa-;
+
+			lyrics 1: 4.; 4s; 8; 4; 8; "weak and sore dis-";
+			lyrics 1: 4.; 4s; 8; 4; 8; "power a-lone can";
+			lyrics 1: 4.; 4s; 8; 4; 8; "neath, the sur-ges";
+			lyrics 1: 4.; 4s; 8; 4; 8; "eyes be-hold the";
+
+bar
+//7
+1: 4.be tie; 4. be; 4s; 8s;
+2 1: 4.ge tie; 4.ge; 4s; 8s;
+
+			lyrics 1: "mayed,";
+			lyrics 1: "save,";
+			lyrics 1: "dash,";
+			lyrics 1: "King,";
+
+invisbar
+newscore
+
+1: 4.s; 4.s; 4e+e; 8c+e;
+2 1: 4.s; 4.s; 4ac; 8aa-;
+
+			lyrics 1: "To the";
+			lyrics 1: "Lulls the";
+			lyrics 1: "Thun-ders";
+			lyrics 1: "Heart and";
+
+bar
+//8
+1: 4ac; 8d+f; 4.c+e; 4.bd;
+2: 4af; 8ad; 4.ae; 4.ge;
+
+			lyrics 1: "cross I'll cling for";
+			lyrics 1: "wind and stills the";
+			lyrics 1: "roar, and light-nings";
+			lyrics 1: "soul and tongue shall";
+bar
+//9
+1: 4.ac tie; 4.ac; 4.s;
+2: 4.aa- tie; 4.aa-; 4.s;
+
+			lyrics 1: "aid.";
+			lyrics 1: "wave.";
+			lyrics 1: "flash.";
+			lyrics 1: "sing.";
+dblbar
+//10
+1: 4.s; 4.s; 4c+e; 8d+e;
+2 1: 4.s; 4.s; 4a; 8b;
+2 2: 4.s; 4.s; 4s; 8a;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: 4.;4.s;4s;8s; "<>";
+			lyrics 1: "Bless-ed";
+bar
+//11
+
+1 1: 4.e+ tie; 4e+; 8d+e; 4s; 8s;
+1 2: 4a; 8a; 4a; 8s; 4s; 8s;
+2 1: 4c+a; 8c+a; 4c+a; 8b; 4s; 8s;
+2 2: 4s; 8s; 4s; 8a; 4s; 8s;
+
+			lyrics 1: 4.; 4s; 8s; 4s; 8s; "<>";
+			lyrics 1: 4.; 4s; 8; 4s; 8s; "Rock,_ where ";
+			lyrics 1: 4; 8; 4; 8s; 4s; 8s; "Bless-ed Rock,";
+
+invisbar
+newscore
+
+1 1: 4.s; 4s; 8s; 4c+e; 8d+e;
+1 2: 4s; 8s; 4s; 8s; 4s; 8s;
+2 1: 4s; 8s; 4s; 8s; 4a; 8b;
+2 2: 4s; 8s; 4s; 8s; 4a; 8a;
+
+			lyrics 1: 4s; 8s; 4s; 8s; 4; 8; "faith di-";
+			
+
+
+bar
+//12
+1: 4.e+a tie; 4.e+a; 4ae; 8be;
+2: 4.c+a tie; 4.c+a; 4ac; 8ge;
+
+			lyrics 1: "vine, Fills with";
+bar
+//13
+1 1: 4.c+ tie; 4c+; 8e+a; 4d+e; 8c+e;
+1 2: 4e; 8e; 4e; 8s; 4s; 8s;
+2 1: 4a; 8a; 4a; 8c+a; 4bg; 8a;
+2 2: 4a; 8a; 4a; 8s; 4s; 8a;
+	
+			lyrics 1: "love_ this heart of";
+			lyrics 1: 4; 8; 4; 8s; 4s; 8s; "Fills with love";
+bar
+//14
+1 1: 4.be tie; 4.be; 4e; 8e;
+1 2: 4.s; 4.s; 4e; 8e;
+2: 4.ge tie; 4.ge; 4ge; 8bd;
+
+			lyrics 1: "Mine! Cross of";
+bar
+//14
+1 1: 4.a tie; 4a; 8gd; 4ac; 8be;
+1 2: 4e; 8d; 4c; 8s; 4s; 8s; 
+2: 4ac; 8eb-; 4aa-; 8be; 4af; 8ge;
+
+			lyrics 1: "him_ who died for";
+			lyrics 1: 4; 8; 4; 8s; 4s; 8s; "Cross of him";
+bar
+//15
+1: 4.c+e tie; 4.c+e; 4e+e; 8c+e;
+2 1: 4.a tie; 4.a; 4ac; 8ac;
+2 2: 4.a tie; 4.a; 4s; 8s;
+
+			lyrics 1: "me, Ev-er-";
+bar
+//16
+1: 4ac; 8d+f; 4.c+e; 4.bd;
+2: 4af; 8ad; 4.ae; 4.ge;
+
+			lyrics 1: "more I'll cling to";
+bar
+//17
+1: 4.ac tie; 4.ac; 4.s;
+2: 4.aa- tie; 4.aa-; 4.s;
+
+			lyrics 1: "thee!";
+endbar

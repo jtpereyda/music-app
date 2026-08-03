@@ -1,0 +1,321 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Best Endeavor Hymns
+//		 Edited and Compiled by
+//		 I. Allen Sankey and John R. Clements
+//		 Especially for Use In
+//		 Christian Endeavor Societies Young People's
+//		 Meetings, Sunday Schools, and General Church Work
+//		 Published by The Biglow and Main Co.
+//		 Lakeside Building, Chicago
+//		 135 Fifth Avenue, New York
+//		 Copyright 1907
+//		 Hymn No.: 74
+//		
+// Transcribed by: Ted Gatza, Jr. 09/10/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Who Is On The Lord's Side?" ""
+   title (2)""
+   title (11) "C - 4 - SOL" "\s(17)\f(TI)\:He\ that\ is\ not\ with\ me\ i\|s\ against\ me;\ and\ he\ that gathereth\ not\ with\ me\|\ scattereth.\ -\ Lk.\ 11:23" ""
+   title (13) "Frances R. Havergal" "" "Ira D. Sankey, 1881"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=120";
+
+//1
+1: 4ge; 4ge; 4.ge; 8af;
+2: 4c+c; 4c+c; 4.c+c; 8c+c;
+ital (13) above 1: 1 "Spirited";
+
+			VERSE "<1. >-1|Who is on the";
+			VERSE "<2. >-1|Not for weight of";
+			VERSE "<3. >-1|Je-sus, Thou hast";
+			VERSE "<4. >-1|Fierce may be the";
+
+bar
+//2
+1: 2ge; 2ec;
+2: 2c+c; 2gc;
+
+			VERSE "Lord's side?";
+			VERSE "glo-ry,";
+			VERSE "bought us,";
+			VERSE "con-flict,";
+bar
+//3
+1 1: 4c; 4ec; 4ge; 4c+g;
+1 2: 4c; 4s; 4s; 4s;
+2: 4ec; 4gc; 4c+c; 4e+c;
+
+			VERSE "Who will serve the";
+			VERSE "Not for crown and";
+			VERSE "Not with Gold or";
+			VERSE "Strong may be the";
+bar
+//4
+1: 2.e+g; 4r;
+2: 2.c+c; 4r;
+
+			VERSE "King?";
+			VERSE "palm,";
+			VERSE "gem,";
+			VERSE "foe,";
+bar
+//5
+1: 4d+f; 4c+f; 4bg; 4af;
+2: 4af; 4af; 4bf; 4c+f;
+
+			VERSE "Who will be His";
+			VERSE "En-ter we the";
+			VERSE "But with Thine own";
+			VERSE "But the King's own";
+bar
+//6
+1: 2ge; 2c+e;
+2: 2c+c; 2gc;
+
+			VERSE "help-ers,";
+			VERSE "ar-my,";
+			VERSE "life-blood,";
+			VERSE "ar-my";
+bar
+//7
+1: 4bd; 4ad; 4gd; 4f#d;
+2: 4gd; 4c+d; 4bd; 4ad;
+
+			VERSE "Oth-er lives to";
+			VERSE "Raise the war-rior";
+			VERSE "For Thy di-a-";
+			VERSE "None can o-ver-";
+bar
+//8
+1: 2.gd; 4r;
+2: 2.bg; 4r;
+
+			VERSE "bring?";
+			VERSE "psalm;";
+			VERSE "dem;";
+			VERSE "throw;";
+bar
+//9
+1 1: 4g; 4g; 4af; 4bf;
+1 2: 4f; 4f; 4s; 4s;
+2: 4bg; 4bg; 4c+g; 4d+g-;
+
+			VERSE "Who will leave the";
+			VERSE "But for love that";
+			VERSE "With Thy bless-ing";
+			VERSE "Round His stand-ard";
+bar
+//10
+1: 2d+f; 2c+e;
+2: 2gc; 2c+c;
+
+			VERSE "world's side?";
+			VERSE "claim-eth";
+			VERSE "fill-ing";
+			VERSE "rang-ing,";
+bar
+//11
+1: 4c+a; 4c+a; 4d+a; 4d+a;
+2: 4e+a; 4e+a; 4d+f; 4af;
+
+			VERSE "Who will face the";
+			VERSE "Lives for whom He";
+			VERSE "All who come to";
+			VERSE "Vic-t'ry is se-";
+bar
+//12
+1: 2.e+g#; 4r;
+2: 2.be; 4r;
+
+			VERSE "foe?";
+			VERSE "died,";
+			VERSE "Thee,";
+			VERSE "cure,";
+bar
+//13
+1: 4e+g; 4d+f; 4c+e; 4bd;
+2: 4c+c; 4gc; 4gc; 4g#e;
+
+			VERSE "Who is on the";
+			VERSE "He whom Je-sus";
+			VERSE "Thou hast made us";
+			VERSE "For His truth un-";
+bar
+//14
+1: 2d+f; 2af; 
+2: 2af; 2d+f;
+
+			VERSE "Lord's side?";
+			VERSE "nam-eth";
+			VERSE "will-ing";
+			VERSE "chang-ing";
+bar
+//15
+1: 4c+f; 4bf; 4af; 4bf;
+2: 4d+g; 4d+g; 4c+g; 4gg-;
+
+			VERSE "Who for Him will";
+			VERSE "Must be on His";
+			VERSE "Thou hast made us";
+			VERSE "Makes the tri-umph";
+bar
+//16
+1: 2.c+e; 4r;
+2: 2.gc; 4r;
+
+			VERSE "go?";
+			VERSE "side.";
+			VERSE "free.";
+			VERSE "sure.";
+dblbar
+//17
+1: 4d+g; 4d+g; 4.d+g; 8e+g;
+2: 4bg; 4bg; 4.bg; 8c+g;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Who is on the";
+bar
+//18
+1: 2d+g; 2bg;
+2: 2bg; 2c+g;
+
+			VERSE "Lord's side?";
+bar
+//19
+1: 4d+b; 4c+a; 4bg; 4af#;
+2: 4d+d; 4d+d; 4d+d; 4d+d;
+
+			VERSE "Who will serve the";
+bar
+//20
+1: 2.bg; 4r;
+2: 2.d+g; 4r;
+
+			VERSE "King?";
+bar
+newscore
+//21
+1: 4d+g; d+g; 4.d+g; 8e+g;
+2: 4bg; 4bg; 4.bg; 8c+g;
+
+			VERSE "Who will be His";
+bar
+//22
+1: 2d+g; 2bg;
+2: 2bg; 2d+g;
+
+			VERSE "help-ers,";
+bar
+//23
+1: 4d+g; 4c+g; 4bf#; 4af;
+2: 4bd; 4ad; 4d+d; 4c+d;
+
+			VERSE "Oth-er lives to";
+bar
+//24
+1 1: 2.g; 4r;
+1 2: 2.g; 4s;
+2 1: [down]2.bg-; 4r;
+2 2: 4g; 4f; 4e; 4d;
+phrase below 2: 1 til 4;
+
+			VERSE "bring?";
+bar
+//25
+1: 4ge; 4ge; 4.ge; 8af;
+2: 4c+c; 4c+c; 4.c+c; 8c+c;
+
+			VERSE "By Thy grand re-";
+bar
+//26
+1: 2ge; 2ec;
+2: 2c+c; 2gc;
+
+			VERSE "demp-tion,";
+bar
+//27
+1 1: 4c; 4ec; 4ge; 4c+g;
+1 2: 4c; 4s; 4s; 4s;
+2: 4ec; 4gc; 4c+c; 4e+c;
+
+			VERSE "By thy grace di-";
+bar
+//28
+1: 2.e+g; 4r;
+2: 2.c+c; 4r;
+
+			VERSE "vine,";
+bar
+//29
+1: 4d+f; 4c+f; 4bf; 4af;
+2: 4af; 4af; 4bf; 4c+f;
+
+			VERSE "We are on the";
+bar
+//30
+1: 2ge; 2c+g;
+2: 2c+c; 2e+c;
+
+			VERSE "Lord's side;";
+bar
+//31
+1: 4c+f; 4bf; 4af; 4bf;
+2: 4d+g; 4d+g; 4c+g; 4gg-;
+
+			VERSE "Sav-iour, we are";
+bar
+//32
+1: 2.c+e; 4r;
+2: 2.gc; 4r;
+
+			VERSE "Thine.";
+endbar

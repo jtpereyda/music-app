@@ -1,0 +1,233 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public  domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+
+// 
+
+// Lyric Source: Hymns Of His Grace No. 1
+//		 For the Evangelist, Church,
+//		 Sunday School, And young Peoples
+//		 Society.
+//		 Compiled and edited by: P.P. bilhorn,
+//		 F.G. Fischer, John R. Clements,
+//		 W. Stillman Martin.
+//		 Bilhorn Brothers Music Publishers
+//		 And Folding Organ Mfgs.
+//		 152 lake St. Chicago, ILL.
+//		 Copyright: 1907
+//		 Hymn No. 110
+//		
+// Transcribed by: Ted Gatza, Jr. 05/19/11 rev. 05/16,2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Lift Your Light A Little Higher" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:Even\ so\ let\ your\ light\ shine\ befor\|e\ men;\ that\ they\ may\ see\ your\ good works,\ and\ glorify\ your\ Fathe\|r\ who\ is\ in\ heaven.\ -\ Mat.\ 5:16" ""
+   title (13) "Mrs. C. D. Martin" "" "W. Stillman Martin, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+	midi all: 0 "tempo=90";
+	define VERSE lyrics between 1&2: @
+
+
+//1
+1 1: 2.s; 8d; 8gd;
+1 2: 2.s; 8d; 8s;
+2: 2.s; 8bg; 8bg;
+
+
+			VERSE "<1. >-1|Lift your";
+			VERSE "<2. >-1|Lift your";
+			VERSE "<3. >-1|Let the";
+bar
+//2
+1: 8.bg; 16bg; 8bg; 8bg; 8c+g; 8bg; 8af; 8gd;
+2: 8.d+g; 16d+g; 8d+g; 8d+g; 8e+g; 8d+g; 8c+g; 8bg;
+
+			VERSE "light a lit-tle high-er, there's a";
+			VERSE "light a lit-tle high-er, do not";
+			VERSE "light from God's own pres-ence shine in-";
+bar
+//3
+1: 4d+g; 4e+g; 4d+g; 8gd; 8ad;
+2: 4bg; 4c+c; 4bg; 8bg; 8c+g;
+
+			VERSE "life to save, Let it";
+			VERSE "hide its ray, You may";
+			VERSE "to your heart Then to";
+bar
+//4
+1: 8.bg; 16bg; 8bg; 8bg; 8c+g; 8bg; 8af; 8gd;
+2: 8.d+g; 16d+g; 8d+g; 8d+g; 8e+g; 8d+g; 8c+g; 8bg;
+
+			VERSE "shine a lit-tle bright-er, o'er the";
+			VERSE "be a bea-con light a-long the";
+			VERSE "those who live in dark-ness light you";
+bar
+//5
+1 1: 4a; 4bg; 4af; 8d; 8gd;
+1 2: 4g; 4s; 4s; 8s; 8s; 
+2: 4c#+e; 4c+a-; 4d+d; 8bg; 8bg;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "storm-y wave; Some poor";
+			VERSE "rock-y way; By a";
+			VERSE "may im-part; Burn-ing";
+bar
+//6
+1 1: 8bd; 8bd#; 8bf; 8af; 16af; 8.ge; 8g; 8g;
+1 2: 8s; 8s; 8s; 8s; 16s; 8.s; 8fn; 8f;
+2 1: 8g; 8bf; 8bd#; 8bd; 16bd#; 8.be; 8bdn; 8bd;
+2 2: 8g; 8s; 8s; 8s; 16s; 8.s; 8s; 8s;
+
+			VERSE "soul for help is cry-ing, In the";
+			VERSE "lit-tle care and la-bor, You may";
+			VERSE "\"oil of joy and glad-ness,\" You may";
+bar
+//7
+1: 8ae; 8ge; 8ge; 8ec; 16ec; 8.db-; 8s; 8s;
+2: 8c+c; 8c+c; 8c+c; 8gc; 16gc; 8.gg-; 8s; 8s;
+
+			VERSE "sea of sin is dy-ing,";
+			VERSE "save a friend or neigh-bor,";
+			VERSE "help dis-pel life's sad-ness,";
+invisbar
+newscore
+
+1: 8s; 8s; 8s; 8s; 16s; 8.s; 8gd; 8ad;
+2: 8s; 8s; 8s; 8s; 16s; 8.s; 8gb-; 8fd;
+
+			VERSE "Lift your";
+			VERSE "Lift your";
+			VERSE "Lift your";
+
+bar
+//8
+1 1: 8bd; 8c+d; 16d+d; 8.bg; 16af; 8.g; 8.af; 16bf;
+1 2: 8s; 8s; 16s; 8.s; 16s; 8.g; 8.s; 16s;
+2 1: 8g; 8a; 16bg; 8.d+g; 16c+d; 8.bd; 8.c+d; 16d+d;
+2 2: 8g; 8g; 16s; 8.s; 16s; 8.s; 8.s; 16s;
+
+			VERSE "light a lit-tle high-er o'er the";
+			VERSE "light a lit-tle high-er o'er the";
+			VERSE "light a lit-tle high-er o'er the";
+bar
+//9
+1: 2gd; 4r; 4s;
+2: 2bg; 4r; 4s;
+
+			VERSE "wave.";
+			VERSE "wave.";
+			VERSE "wave.";
+dblbar
+//10
+1: 8.d+g; 16d+g; 8d+g; 8d+g; 16e+g; 8.d+g; 8bg; 8af;
+2: 8.bg; 16bg; 8bg; 8bg; 16c+g; 8.bg; 8d+g; 8c+g;
+ital (13) above 1: 1 "Chorus";
+mussym (13) above 1: 3 "acc_gt";
+
+			VERSE "Lift your light a lit-tle high-er";
+bar
+//11
+1 1: 4g; 4g; 2g;
+1 2: 8d; 8d; 8e; 8e; 2d;
+2: 8bg; 8bg; 8c+g; 8c+g; 2bg;
+
+			VERSE "Keep it bright;";
+			VERSE 8; 8; 8; 8; 2; "Keep it shin-ing bright;";
+bar
+//12
+1: 8.d+g; 16d+g; 8d+g; 8d+g; 16e+g; 8.d+g; 8bg; 8gd;
+2: 8.bg; 16bg; 8bg; 8bg; 16c+g; 8.bg; 8d+g; 8bg;
+mussym (13) above 1: 3 "acc_gt";
+
+
+			VERSE "Some-one lost and sink-ing, looks to";
+bar
+//13
+1 1: 4a; 4bg; 2af;
+1 2: 4g; 4s; 2s;
+2: 4c+#e; c+a-; 2d+d;
+
+			VERSE "you for light;";
+bar
+//14
+1: 8.e+g; 16e+g; 8d+g; 8bg; 2d+g;
+2: 8.c+c; 16c+e; 8bg; 8d+g; 2bg;
+			
+			VERSE "You a life may save,";
+bar
+//15
+1 1: 8.b; 16a; 8g; 8a; 4.b; 8e+g;
+1 2: 8.b; 16a; 8g; 8a; 4.b; 8s;
+2 1: 8.d+; 16c+; 8b; 8c+; 4.d+; 8a#c#;
+2 2: 8.d+; 16c+; 8b; 8c+; 4.d+; 8s;
+mussym (9) above 1: 4.5 "ferm";
+mussym (9) below 2: 4.5 "uferm";
+ital (13) dyn above 1: 1 "p";
+
+			VERSE "from a hope-less grave, Just";
+bar
+//16
+1 1: 8.d+g; 16bg; 8af; 8g; 16bg; 8d+g; 16r; 8.af; 16bf;
+1 2: 8.s; 16s; 8s; 8g; 16s; 8s; 16s; 8.s; 16s;
+2: 8.bd; 16d+d; 8c+d; 8bd; 16d+d; 8bd; 16r; 8.c+d; 16d+d;
+mussym (9) above 1: 3.25 "ferm";
+mussym (9) below 2: 3.25"uferm";
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "lift your light up high-er, o'er the";
+bar
+//17
+1: 2.gd; 4s;
+2: 2.bgg-; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			VERSE "wave.";
+endbar

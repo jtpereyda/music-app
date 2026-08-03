@@ -1,0 +1,219 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Best Endeavor Hymns
+//		 Edited and Compiled by
+//		 I. Allen Sankey and John R. Clements
+//		 Especially for Use In
+//		 Christian Endeavor Societies Young People's
+//		 Meetings, Sunday Schools, and General Church Work
+//		 Published by The Biglow and Main Co.
+//		 Lakeside Building, Chicago
+//		 135 Fifth Avenue, New York
+//		 Copyright 1907
+//		 Hymn No.: 54
+//		
+// Transcribed by: Ted Gatza, Jr. 09/05/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Will Sing of Thy Redemption" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - DO" "\s(17)\f(TI)\:Preserve\ me,\ O\ God;\ For\ in\ thee\ do\ I\ take\ refuge.\ -\ Ps.\ 16:1 \(space)" ""
+   title (13) "Fanny J. Crosby" "" "Victor H. Benke, 1902"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=115";
+
+//1
+1 1: 2.s; 4e; 8fd;
+1 2: 2.s; 4e; 8s;
+2: 2.s; 4ge; 8ae;
+
+
+			VERSE "<1. >-1|O Thou";
+			VERSE "<2. >-1|Thou who";
+			VERSE "<3. >-1|Thou who";
+
+bar
+//2
+1: 4.ge tie; 4ge; 8ge; 4be; 8ge;
+2: 4.be tie; 4be; 8be; 4ge; 8be;
+
+			VERSE "Rock of my sal-";
+			VERSE "didst so kind-ly";
+			VERSE "art my staff and";
+bar
+//3
+1: 4.c+f#; 4.bg; 4e+a; 8c+a;
+2: 4.ane; 4.be; 4c+e; 8e+e;
+
+			VERSE "va-tion, Hope and";
+			VERSE "watch me, Ere my";
+			VERSE "com-fort While this";
+bar
+newscore
+//4
+1: 4.bg tie; 4bg; 8c+a; 4bg; 8ge;
+2: 4.e+e tie; 4e+e; 8e+e; 4e+e; 8be;
+
+			VERSE "ref-uge of my";
+			VERSE "heart to Thee I";
+			VERSE "fleet-ing life shall";
+bar
+//5
+1 1: 2.fd; 4e; 8fd;
+1 2: 2.s; 4e; 8s;
+2: 2.bb-; 4ge; 8ae;
+
+			VERSE "soul, Thou wilt";
+			VERSE "gave, Thou whose";
+			VERSE "last, I will";
+bar
+//6
+1: 4.ge tie; 4ge; 8ge; 4be; 8ge;
+2: 4.be tie; 4be; 8be; 4ge; 8be;
+
+			VERSE "hide me when the";
+			VERSE "love has paid my";
+			VERSE "trust Thee for the";
+
+bar
+//7
+1: 4.c+f#; 4.bg; 4c+g; 8e+g;
+2: 4.ane; 4.be; 4be; 8bc;
+
+			VERSE "temp-est, And the";
+			VERSE "ran-som, Can I";
+			VERSE "fu-ture, And a-";
+bar
+//8
+1: 4.d+f tie; 4d+f; 8bf; 4c+f; 8d+f;
+2: 4.bf tie; 4bf; 8d+f; 4e+f; 8e+f;
+
+			VERSE "storm-y bil-lows";
+			VERSE "doubt Thy pow'r to";
+			VERSE "dore Thee for the";
+bar
+//9
+1: 2.bf; 4.s;
+2: 2.d+b-; 4.s;
+
+			VERSE "roll.";
+			VERSE "save?";
+			VERSE "past.";
+dblbar hidechanges
+score
+time=12/8
+music
+//10
+1 1: 4b; 8b; 4.s; 4.s; 4.s;
+1 2: 4b; 8a; 4.s; 4.s; 4.s; 
+2: 4.r; 4.s; 4.s; 4.s; 
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"I will";
+bar
+//11
+1: 4.e+g tie; 4.e+g tie; 4e+g; 8bg; 4c+g; 8ge;
+2: 4.r; 4be; 8be; 4be; 8r; 4.r;
+
+			VERSE "sing;_ of Thy re-";
+			VERSE 4.s; 4; 8; 4; 8s; 4.s; "I will sing";
+bar
+//12
+1: 4.bd; 4.fd tie; 4.fd;4gb-; 8fb-n;
+2: 4r; 8bb-; 4bb-; 8bb-; 4bb-; 8bb-; 4.r;
+
+			VERSE "demp-tion,_ And pro-";
+			VERSE 4s; 8; 4; 8; 4; 8; 4.s; "of Thy re-demp-tion,";
+bar
+//13
+1: 4.ec tie; 4.ec tie; 4ec; 8ge; 4d+f; 8c+e;
+2: 4.r; 4gc; 8gc; 4gc; 8gc; 4anf; 8af;
+
+			VERSE "claim_ the won-drous";
+			VERSE 4.s; 4; 8; 4; 8s; 4s; 8s; "And pro-claim";
+bar
+//14
+1 1: 4.b tie; 4.b tie; 4.b; 4c+e; 8d+f;
+1 2: 4d; 8d; 4f; 8e; 4.d; 4s; 8s;
+2: 4bb-; 8fb-; 4ab-; 8gb-; 4.fb-; 4.r;
+
+			VERSE "grace_ that be-";
+			VERSE 4s; 8; 4; 8; 4.; 4.s; "the won-drous grace";
+bar
+//15
+1: 4.e+g tie; 4.e+g tie; 4e+g; 8e+g; 4f+a; 8e+g;
+2: 4.r; 4be; 8be; 4be; 8r; 4.r;
+
+			VERSE "yond_ the vale and";
+			VERSE 4.s; 4; 8; 4; 8s; 4.s; "That be-yond";
+
+bar
+//16
+1: 4.d+b; 4.c+a tie; 4.c+a; 4d+b; 8c+a;
+2: 4r; 8e+aa-; 4e+aa-; 8e+aa-; 4e+aa-; 8e+aa-; 4.r;
+
+			VERSE "shad-ow_ Has pre-";
+			VERSE 4s; 8; 4; 8; 4; 8; 4.s; "the vale and shad-ow";
+bar
+//17
+1: 4.bg tie; 4.bg tie; 4bg; 8ge; 4ad; 8fd;
+2: 4.r; 4e+b-; 8e+b-; 4e+b-; 8bb-; 4bb-; 8bb-;
+
+			VERSE "pared_ for me a";
+			VERSE 4.s; 4; 8; 4; 8s; 4s; 8s; "Has pre-pared";
+bar
+//18
+1 1: 4.e tie; 4.e tie; 4.e; 4.s;
+1 2: 4e; 8b-; 4c; 8c; 4.b-; 4.s;
+2: 4ge; 8ge; 4aa-; 8aa-; 4.ge; 4.s;
+
+			VERSE "place.";
+			VERSE 4s; 8; 4; 8; 4.; 4.s; "for me a place.";
+endbar

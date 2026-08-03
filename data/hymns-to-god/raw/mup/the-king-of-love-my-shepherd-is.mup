@@ -1,0 +1,167 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sunday School Hymnal
+//		With Offices of Devotion
+//		Compiled and Edited by
+//		Mrs. L. Weston Attwood
+//		Universalist Publishing House
+//		Standbope Press
+//		F.H. Gilson Company
+//		Boston, U.S.A.
+//		Copyright 1912	
+//		Hymn no. 37
+
+// Transcribed by: Ted Gatza, Jr. 03/08/2011; Rev. 04/08/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The King of Love My Shepherd Is" ""
+   title (2)""
+   title (11) "G - 4 - MI" "Psalm 23 \(space)" ""
+   title (13) "Henry W. Baker" "" "John B. Dykes"
+
+ 
+//footer
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 2.s; 4bd;
+2: 2.s; 4bg;
+
+			lyrics 1: 2.s; 4; "<1. >-1|The";
+			lyrics 1: 2.s; 4; "<2. >-1|Where";
+			lyrics 1: 2.s; 4; "<3. >-1|Thou";
+			lyrics 1: 2.s; 4; "<4. >-1|And";
+bar
+//2
+1: 4d+f; 4c+e; 4bd; 4bg;
+2 1: 4ad; 8ge bm; 8af ebm; 4bg; 4d+;
+2 2: 4s; 8s; 8s; 4s; 8b- bm; 8c ebm;
+
+			lyrics 1: "King of love my";
+			lyrics 1: "streams of liv-ing";
+			lyrics 1: "spreadst a ta-ble";
+			lyrics 1: "so, thro' all the";
+bar
+//3
+1 1: 4a; 4af; 4ge; 4d;
+1 2: 4g; 4s; 4s; 4d;
+2 1: 8c+ bm; 8b ebm; 4c+d; 4be; 8a bm; 8c+ ebm;
+2 2: 4d; 4s; 4s; 4f;
+
+			lyrics 1: "Shep-herd is, Whose";
+			lyrics 1: "wa-ter flow, My";
+			lyrics 1: "in my sight, Thy";
+			lyrics 1: "length of days, Thy";
+bar
+newscore
+//4
+1 1: 4.d; 8e; 4fc#; 4bc;
+1 2: 4.d; 8d; 4s; 4s;
+2: 4c+g; 4bg; 4ae; 4ge;
+
+			lyrics 1: "good-ness fail-eth";
+			lyrics 1: "ran-somed soul he";
+			lyrics 1: "unc-tion grace be-";
+			lyrics 1: "good-ness fail-eth";
+bar
+//5
+1 1: 2b; 4af; 4d+g;
+1 2: 4d slur; 4g; 4s; 4s;
+2 1: 4.g slur; 8b; 4d+d; 4d+b;
+2 2:2d; 4s; 4s;
+
+			lyrics 1: "nev-er; I";
+			lyrics 1: "lead-eth, And";
+			lyrics 1: "stow-eth, And";
+			lyrics 1: "nev-er; Good";
+bar
+//6
+1 1: 4c+g; 8b bm; 8a ebm; 4bg; 4be;
+1 2:4s; 4f; 4s; 4s;
+2: 4e+a; 4d+d; 4d+g; 4bg;
+
+			lyrics 1: 4; 4; 4; 4; "noth-ing lack if";
+			lyrics 1: 4; 4; 4; 4; "where the ver-dant";
+			lyrics 1: 4; 4; 4; 4; "O, the trans-port";
+			lyrics 1: 4; 4; 4; 4; "Shep-herd, may I";
+bar
+newscore
+//7
+1 1: 4ae; 8g bm; 8f ebm; 4ge; 4e;
+1 2: 4s; 4d#; 4s; 8b- bm; 8c ebm;
+2 1: 4c+f; 4bb-; 4be; 4g;
+2 2: 4s; 4s; 4s; 8e bm; 8c ebm;
+
+			lyrics 1: 4; 4; 4; 4; "I am his, And";
+			lyrics 1: 4; 4; 4; 4; "pas-tures grow, With";
+			lyrics 1: 4; 4; 4; 4; "of de-light With";
+			lyrics 1: 4; 4; 4; 4; "sing thy praise With-";
+bar
+//8
+1 1: 4.d; 8ec; 4fc; 4gd;
+1 2: 4.c; 8s; 4s; 4s;
+2: 4.fd; 8gd; 4ad; 4bd;
+
+			lyrics 1: "he is mine for-";
+			lyrics 1: "food ce-les-tial";
+			lyrics 1: "which my cup o'er-";
+			lyrics 1: "in thy house for-";
+bar
+//9
+1 1: 4b slur; 4a; 4g; 4s;
+1 2: 2f; 4g; 4s;
+2: 2c+d; 4bg-; 4s;
+
+			lyrics 1: "ev-er.";
+			lyrics 1: "feed-eth.";
+			lyrics 1: "flow-eth!";
+			lyrics 1: "ev-er!";
+endbar
+
+title (20) ""
+title (11) "" "Public Domain" "HymnsToGod.org"
+

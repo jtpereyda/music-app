@@ -1,0 +1,353 @@
+//!Mup vs. 6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	
+//
+//	Dew Drops of Sacred Song
+//	Gathered for the Use of Sabbath Schools
+//	By T. C. OÕKane, Author of ÒFresh Leaves,Ó Etc.
+//	Philip Phillips,
+//	37 Union Square, Broadway, New York,
+//	Hitchcock & Walden,
+//	Cincinnati, Chicago, and St. Louis
+//	Copyright 1870
+//	Hymn No. 25
+		
+		
+// Transcribed by: Ted Gatza, Jr. 08/04/2020; rev. 03/06/2022
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Love Divine" ""
+   title (2) ""
+   title (11)"" "\f(TI)and above all these things put on love," ""
+   title (11)"" "\f(TI)which is the bond of perfectness. - Col 3:14" ""
+   title (11)"F - 3 - SOL" "" ""  
+   title (13) "Charles Wesley, 1747" "" "T. C. O'Kane, 1870"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+//=========================
+//Verse 1
+
+//1
+1 1: 4.c+ slur; 8d+; 4fc+;
+1 2: 2f; 4s;
+2 1: 4.a slur; 8b; 4fa;
+2 2: 2f; 4s;
+	
+	VS "<1. >-1|Love di-";
+	VS "<2. >-1|Come, al-";
+
+bar
+//2
+1 1: 4. a slur; 8g; 4f;
+1 2: 2f; 4;
+2 1: 4.c+ slur; 8b; 4fa;
+2 2: 2f; 4s;
+
+	VS "vine, all";
+	VS "migh-ty";
+bar
+//3
+1: 4.eg slur; 8df; 4eg;
+2: 2cc+; 4;
+
+	VS "love ex-";
+	VS "to de-";
+bar
+//4
+1: 8fa; 4.ac+; 4r;
+2: 8fc+; 4.; 4r;
+
+	VS "cell-ing,";
+	VS "liv-er";
+bar
+//4
+1: 2fd+; 4;
+2 1: 2b; 4b;
+2 2: 2b; 4b;
+
+	VS "Joy of";
+	VS "Let us";
+bar
+//5
+1: 2fc+; 4fa;
+2: 2ac+; 4fc+;
+
+	VS "heaven to";
+	VS "all thy";
+bar
+//6
+1 1: 4fc+ slur; ca; f;
+1 2: 4s;; f;
+2: 2fa; 4da;
+
+	VS "earth come";
+	VS "love re-";
+bar
+//7
+1: 4.eg; 8fa; 4gb;
+2: 2.cc+;
+phrase above 1: 1 til 3;
+
+	VS 4.; 8s; 4s; "down,";
+	VS 4.; 8s; 4s; "ceive;";
+bar
+//8
+1: 4.ac+ slur; 8bd+; 4ac+;
+2: 2fc+; 4ff+;
+
+	VS "Fix in";
+	VS "Sud-den-";
+bar
+//9
+1 1: 4.fa slur; 8eg; 4f;
+1 2: 4.s;8; 4f;
+2: 2fc+; 4fa;
+
+	VS "us thy";
+	VS "ly re-";
+bar
+//10
+1: 4.eg slur; 8df; 4eg;
+2: 2cc+; 4;
+
+	VS "hum-ble";
+	VS "turn, and";
+bar
+//11
+1: 8fa; 4.fc+; 4r;
+2: 8fc +; 4.fa; 4r;
+
+	VS "dwell-ing,";
+	VS "nev-er,";
+bar
+//12
+1: 2fd+; 4;
+2 1: 2b; 4;
+2 2 : 2b; 4;
+
+	VS "All thy";
+	VS "Nev-er-";
+bar
+//13
+1 1: 2fc+; 8f bm; 8g ebm;
+1 2: 2s; 4f;
+2: 2ac+; 8ac+ bm; 8bd+ ebm;
+
+	VS 2; 4; "faith-ful";
+	VS 2; 4; "more thy";
+bar
+//14
+1: 2fa; 4eg;
+2 1: 2c+; 4cb;
+2 2: 2c+; 4s;
+
+	VS "mer-cies";
+	VS "tem-ples";
+bar
+//15
+1 1: 2f; 4r;
+1 2: 2f; 4s;
+2: 2fa; 4r;
+
+	VS "crown.";
+	VS "leave;";
+dblbar
+//16
+1: 4.eg slur; 8d#f#; 4eg;
+2: 2cc+; 4;
+
+	VS "Je-sus";
+	VS "Thee we";
+bar
+//17
+1 1: 4.c+ slur; 8bn; 4gc+;
+1 2: 2g; 4s;
+2: 2ec+; 4;
+
+	VS "thou art";
+	VS "would be";
+bar
+//18
+1 1: 4.d+ slur; 8c#+; 4gd+;
+1 2: 2g; 4s;
+2 1: 4. bn slur; 8a; 4gb;
+2 2: 2g; 4s;
+
+	VS "all com-";
+	VS "al-ways";
+bar
+//19
+1: 8ge+; 4.ec+; 4r;
+2: 8cc+; 4.cg; 4r;
+
+	VS "pas-sion,";
+	VS "bless-ing,";
+bar
+//20
+1: 4.ac+ slur; 8gbn; 4fa;
+2: 2fc+; 4;
+
+	VS "Pure, un-";
+	VS "Serve thee";
+bar
+//21
+1 1: 2g; 8gc+ bm; 8ad+ ebm;
+1 2: 2g; 8s;;
+2 1: 2ec+; 4c+;
+2 2: 2s; 8e bm; f ebm;
+
+	VS 2; 4; "bound-ed";
+	VS 2; 4; "as thy";
+bar
+//22
+1: 2ge+; 4fd+;
+2: 2gc+; 4g-g;
+
+	VS "love thou";
+	VS "hosts a-";
+bar
+//23
+1 1: 2.c+;
+1 2: 4.e; 8f; 4g;
+phrase below 1: 1 til 3;
+2 1: 2g slur; 4b;
+2 2: 4.c; 8d; 4e;
+phrase below 2: 1 til 3;
+
+	VS "art;";
+	VS "bove,";
+bar
+//24
+1 1: 4.c+; 8d+; 4fc+;
+1 2: 2f; 4s;
+2 1: 4.a slur; 8b; 4fa;
+2 2: 2f; 4s;
+
+	VS 2; 4; "Vis-it";
+	VS 2; 4; "Pray, and";
+bar
+//25
+1 1: 4.a slur; 8g; 4f;
+1 2: 2f; 4f;
+2 1: 4.c+ slur; 8b; 4fa;
+2 2: 2f; 4s;
+
+	VS "us with";
+	VS "praise thee";
+bar
+//26
+1 1: 4.g slur; 8f; 4eg;
+1 2: 2e; 4s;
+2 1: 4.b slur; 8a; 4cb;
+2 2: 2c; 4s;
+
+	VS "thy sal-";
+	VS "with-out";
+bar
+//27
+1: 8fa; 4.fc+; 4r;
+2: 8fc+; 4.fa; 4r;
+
+	VS "va-tion;";
+	VS "ceas-ing,";
+bar
+//28
+1: 2fd+; 4;
+2 1: 2b; 4;
+2 2: 2b; 4;
+
+	VS "En-ter";
+	VS "Glo-ry";
+bar
+//29
+1 1: 2fc+; 8f bm; 8g ebm;
+1 2: 2s; 4f;
+2: 2ac+; 8ac+ bm; 8bd+ ebm;
+
+	VS 2; 4; "ev-ery";
+	VS 2; 4; "in thy";
+bar
+//30
+1: 2fa; 4eg;
+2 1: 2c+; 4cb;
+2 2: 2c+; 4s;
+
+	VS "trem-bling";
+	VS "per-fect";
+bar
+//31
+1 1: 2.f;
+1 2: 2.f;
+2: 2.f-fa;
+
+	VS "heart.";
+	VS "love.";
+endbar

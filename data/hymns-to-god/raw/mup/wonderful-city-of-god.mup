@@ -1,0 +1,582 @@
+// Coded with Mup vs. 7.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The New Gospel Song Book
+//		A rare collection of songs designed fo
+//		Christian work and Worship
+//		Editors: G. H. P. Showalter and Austin Taylor
+//		Publishers: Firm Foundation Publishing House, Austin TX	
+//		Copyright 1914
+//		Hymn no. 185
+
+// Transcribed by: Ted Gatza, Jr. 10/30/2025
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.81 //95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Wonderful City Of God" ""
+   title (2)""
+   title (11) "" "\f(TI)\"I go to prepare a place for you... that where I am, there ye may be also. - John 14:3" ""
+   title (11) "A\(flat) - 2 - SOL" "" ""
+   title (13) "James W. Ferrill" " " "James W. Ferrill, 1907"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+         define RITARD ital (15) above 1: 1 "Ritard."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1: 4.s; 4; 16ce; ;
+2: 4.s; 4; 16a-a; ;
+
+	VS "<1. >-1|There's a";
+	VS "<2. >-1|O how";
+	VS "<3. >-1|When the";
+bar
+
+//2
+1: 8ce; ; ; ; df; ca;
+2: 8a-a; ; ; ; ; ;
+
+	VS "won-der-ful place we call";
+	VS "sweet it will be there to";
+	VS "jew-els of Je-sus are";
+bar
+
+//3a
+1: 4.ec+ tie; 4; 16s; ;
+2: 4.a-a tie; 4; 16s; ;
+
+	VS "home,";
+	VS "dwell";
+	VS "brought,";
+invisbar
+
+//3b
+1: 4.s; 4; 16ea; ;
+2: 4.s; 4; 16ca; ;
+
+	VS "'Tis a";
+	VS "With the";
+	VS "There to";
+bar
+
+//4
+1: 8df; eg; fa; fb; fa; df;
+2: 8da; ; ; dd+; ; da;
+
+	VS "cit-y of glo-ry di-";
+	VS "Sav-iour and Fath-er of";
+	VS "shine in that land of sweet";
+bar
+
+//5a
+1: 4.ce tie; 4; 16s; ;
+2: 4.a-a tie; 4; 16s; ;
+
+	VS "vine,";
+	VS "all,";
+	VS "song,";
+invisbar
+
+//5b
+1: 4.s; 4; 16ce; ;
+2: 4.s; 4; 16a-a; ;
+
+	VS "It is";
+	VS "In a";
+	VS "What a";
+bar
+
+//6
+1: 8ce; ; ; ; df; ca;
+2 1: 8a-a; ; ; a; ; ;
+2 2: s; ; ; a; ; ;
+
+	VS "built in the gar-den of";
+	VS "pal-ace of dia-mond and";
+	VS "beau-ti-ful, beau-ti-ful";
+bar
+
+//7a
+1: 4.ca tie; 4; 16s; ;
+2: 4.fa tie; 4; 16s; ;
+
+	VS "rest,";
+	VS "gold,";
+	VS "thought,";
+invisbar
+
+//7b
+1: 4.s; 4; 16fc+ tie; ;
+2: 4.s; 4; 16fa tie; ;
+
+	VS 4.s; 4s; 16; 16; "And that";
+	VS 4.s; 4s; 16; 16; "Where no";
+	VS "That";
+bar
+
+//8
+1: 8dnc+; db; da; ; df; dc+;
+2: b-a; b-g; b-f; ; b-b; b-a;
+
+	VS "beau-ti-ful home shall be";
+	VS "e-vil to us can be-";
+	VS "I shall be there in that";
+bar
+
+//9a
+1: 4.eb tie; 4; 16s; ;
+2: 4.eg tie; 4; 16s; ; 
+
+	VS "mine;";
+	VS "fall;";
+	VS "throng;";
+invisbar
+
+//9b
+1 1: 4.s; 4; 16e; ;
+1 2: 4.s; 4; 16d; ;
+2: 4.s; 4; 16eg; ;
+
+	VS "O that";
+	VS "There no";
+	VS "Sweet-est";
+bar
+
+//10
+1: 8ce; ; ; ; df; ca;
+2: 8a-a; ; ; ; ; ;
+
+	VS "won-der-ful E-den so";
+	VS "sor-row that home shall in-";
+	VS "peace to my soul it will";
+bar
+
+//11a
+1: 4.ec+ tie; 4; 16s; ;
+2: 4.a-a tie; 4; 16s; ;
+
+	VS "blest,";
+	VS "vade,";
+	VS "be,";
+invisbar
+
+//11b
+1: 4.s; 4; 16ea tie; 16;
+2: 4.s; 4; 16ca tie; 16;
+
+	VS "Where";
+	VS 4.s; 4s; 16; 16; "And our";
+	VS 4.s; 4s; 16; 16; "To be-";
+bar
+
+//12
+1: 8df; eg; fa; fb; fa; df;
+2: 8da; ; ; dd+; ; da;
+
+	VS "Je-sus, the Mas-ter has";
+	VS "loved ones no more there shall";
+	VS "hold such a glo-ri-ous";
+bar
+
+//13a
+1: 4.ce tie; 4; 16s; ;
+2: 4.a-a tie; 4; 16s; ;
+
+	VS "gone";
+	VS "die;";
+	VS "sight,";
+invisbar
+
+//13b
+1: 4.s; 4; 16ce tie; ;
+2: 4.s; 4; 16a-a tie; ;
+
+	VS "To";
+	VS 4.s; 4s; 16; 16; "One ce-";
+	VS 4.s; 4s; 16; 16; "Where the";
+bar
+
+//14
+1: 8ce; ; ; df; dg; db;
+2: 8a-a; ; ; eg; ; eng;
+
+	VS "pre-pare us this glor-ious";
+	VS "les-tial, un-brok-en, sweet";
+	VS "sun and the moon nei-ther";
+bar
+
+//15a
+1: 4.ca tie; 4; 16s; ;
+2: 4.fa tie; 4; 16s; ;
+
+	VS "home.";
+	VS "day,";
+	VS "shine,";
+invisbar
+
+//15b
+1: 4.s; 4; 16df; ;
+2: 4.s; 4; 16da; ;
+
+	VS "There He";
+	VS "While e-";
+	VS "But the";
+bar
+
+//16
+1: 8ce; ca; ec+; db; ce; db;
+2 1: 8ea; ; ; eg; ; e;
+2 2: 8s; ; ; ; ; e;
+
+	VS "bids us a wel-come to";
+	VS "ter-ni-ties' ag-es roll";
+	VS "glo-ry of God is the";
+bar
+
+//17
+1: 4.ca tie; 4; 16s; ;
+2: 4.a-e tie; 4; 16s; ;
+
+	VS "come.";
+	VS "by.";
+	VS "light.";
+dblbar
+
+REFRAIN
+
+//18
+1: 4.s; 4; 8ec+;
+2 1: 4.s; 4; 8a;
+2 2: 4.s; 4; 8a;
+
+	VS "O";
+	VS "O";
+bar
+
+//19
+1: 8ae+; ; af+; ec+; db; ca;
+2 1: 4.ac+; 4a; 8;
+2 2: 4.s; 4a; 8;
+
+	VS "won-der-ful cit-y of";
+	VS21 "won-der-ful";
+bar
+
+//20a
+1: 4.ec+ tie; 4; 16s; ;
+2 1: 8a-a; ca; ea; 4a; 16s; ;
+2 2: 8s; ; ; 4a; 16s; ;
+
+	VS "God,_";
+	VS21 "cit-y of God,";
+invisbar
+
+//20b
+1: 4.s; 4; 16eb; ;
+2: 4.s; 4; 16ca; ;
+
+	VS "Just a-";
+	VS "Just a-";
+bar
+
+//21
+1: 8fa; ; ; fb; fa; df;
+2: 4.da; 4dd+; 8dfa;
+
+	VS "cross in that beau-ti-ful";
+	VS21 "cross in that";
+bar
+
+//22a
+1: 4.ce tie; 4; 16s; ;
+2: 8a-a; ; ; 4; 16s; s;
+
+	VS "clime,_";
+	VS21 "beau-ti-ful clime,";
+invisbar
+
+1: 4.s; 4; 16ce; ;
+2: 8s; ; ; 4; 16a-a; ;
+
+	VS "Where the";
+	VS "Where the";
+bar
+
+//23
+1: 8ce; ; ; ; df; ca;
+2 1: 4.a-a; 4; 8a;
+2 2: 4.s; 4; 8a;
+
+	VS "an-gels' sweet ech-o of";
+	VS21 "an-gels' sweet";
+bar
+
+//24a
+1: 4.ca tie; 4; 8s;
+2: 8fa; ; ; 4; 8s;
+
+	VS "song_";
+	VS21 "ech-o of song";
+invisbar
+
+//24b
+1: 4.s; 4; 8fc+;
+2: 8s; ; ; 4; 8fa;
+
+	VS "In";
+	VS "In";
+bar
+
+//25
+1: 8dnc+; db; da; ; df; dc+;
+2: 4.b-a; 4b-f; 8b-a;
+
+	VS "mu-sic-al ca-den-cies";
+	VS21 "mu-sic-al";
+bar
+//26a
+1: 4.eb tie; 4; 8s;
+2: 8eg; ; fa; 4gb; 8s;
+
+	VS "chime,_";
+	VS21 "ca-den-cies chime,";
+invisbar
+
+//26b
+1: 4.s; 4; 8ec+;
+2 1: 8s; ; ; 4; 8a;
+2 2: 8s; ; ; 4; 8a;
+
+	VS "O";
+	VS21 "O";
+bar
+
+//27
+1: 8ae+; ; af+; ec+; db; ca;
+2 1: 4.ac+; 4a; 8;
+2 2: 4.s; 4a; 8;
+
+	VS "won-der-ful-cit-y of";
+	VS21 "won-der-ful";
+bar
+
+//28a
+1: 4.ec+ tie; 4; 8s; 
+2 1: 8a-a; ca; ea; 4a; 8s;
+2 2: 8s; ; ; 4a; 8s;
+
+	VS "God,_";
+	VS21 "cit-y of God,";
+invisbar
+
+//28b
+1: 4.s; 4; 8eb;
+2: 4.s; 4; 8ca;
+
+	VS "By";
+	VS "By";
+bar
+
+//29
+1: 8fa; ; ; fb; fa; df;
+2: 4.da; 4dd+; 8da;
+
+	VS "faith in the dis-tance I";
+	VS21 "faith in the";
+bar
+
+//30a
+1: 4.ce tie; 4; 16s; ;
+2: 8a-a; ; ; 4; 16s; ;
+
+	VS "see,_";
+	VS21 "dis-tance I see,";
+invisbar
+
+//30b
+1: 4.s; 4; 16ce; ;
+2: 8s; ; ; 4; 16a-a; ;
+
+	VS "There's a";
+	VS "There's a";
+bar
+
+//31
+1: 8ce; ; ; df; dg; db;
+2: 4.a-a; 4a-a; 8eg;
+
+	VS "man-sion pre-pared o-ver";
+	VS21 "man-sion pre-";
+bar
+
+//32a
+1: 4.ca tie; 4; 16s; ;
+2: 8fa; ; ; 4; 16s; ;
+
+	VS "there,_";
+	VS21 "pared o-ver there,";
+invisbar
+
+//32b
+1: 4.s; 4; 16df; ;
+2: 8s; ; ; 4; 16da; ;
+
+	VS "Yes, a";
+	VS" Yes, a";
+bar
+
+//33
+1 1: 8ce; ca; ec+; db; e; db;
+1 2: 8s; ; ; ; d; s;
+2: 4.ea; 4eg; 8;
+
+	VS "place in that cit-y for";
+	VS21 "place in that";
+bar
+
+//34
+1 1: 4.a tie; 4; 8s;
+1 2: 8c; ; d; 4c; 8s;
+2: 8a-a; ae; af; 4ae; 8s;
+
+	VS "me._";
+	VS21 "cit-y for me.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

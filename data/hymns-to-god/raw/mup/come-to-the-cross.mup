@@ -1,0 +1,173 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gates Ajar
+//		Hymns and Tunes for 
+//		Use In Sunday Schools, Praise and Prayer Meetings, ertc.
+//		By J. H. Kurzenknabe
+//		J. H. Kurzenknabe & Sons, Publishers,
+//		Harrisburg, PA.:
+//		Copyright: 1885
+//		Hymn No.: 48
+//		
+// Transcribed by: Ted Gatza, Jr. 02/21/2012; Rev. 06/26/12.
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Come To The Cross" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - MI" "\s(17)\f(TI)\:he\ humbled\ himself,\ becomi\|ng\ obedient\ even\ unto\ death, yea,\ the\ death\ of\ t\|he\ cross.\ -\ Phil.\ 2:8" ""   
+   title (13) "J. H. Martin" "" "E. S. Lorenz"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 4d+f; 8.c+e; 16bd; 4fd; 8.db-; 16fd;
+2: 4bb-; 8.; 16; 4; 8.fb-; 16bb-;
+
+			VERSE "<1. >-1|Come to the cross where the";
+			VERSE "<2. >-1|Fall at the feet of the";
+			VERSE "<3. >-1|Fly to the arms of His";			
+			lyrics below 2: "<\f(TI)D.C. - \f(PV)>-2|Come to the cross where the";
+bar
+//2
+1: 4ge; e+g; 2d+f;
+2: 4be;; 2bb-;
+
+			VERSE "Sav-iour died,";
+			VERSE "dy-ing One,";
+			VERSE "par-d'ning love,";
+			lyrics below 2: "Sav-iour died,";
+bar
+//3
+1 1: 4d+f; 8.c+f; 16bnf; 4c+f; 8.f; 16c+f;
+1 2: 4s; 8.; 16; 4; 8.f; 16s;
+2 1: 4bf; 8.af; 16g#; 4af; 8.; 16;
+2 2: 4s; 8.s; 16f; 4s; 8.; 16;
+
+			VERSE "Look to the Lamb that was";
+			VERSE "Trust in the name of the";
+			VERSE "Cher-ish the hope of a";
+			lyrics below 2: 4; 8.; 16; 4; 8.; 16; "Look to the Lamb that was";
+bar
+//4
+1: 4d+f; c+e; 2bd;
+2 1: 4b; af; 2bb-;
+2 2: 4b; s; 2;
+ital (13) above 1: 4 "Fine";
+
+			VERSE "cru-ci-fied,";
+			VERSE "Fa-ther's Son.";
+			VERSE "crown a-bove,";
+			lyrics below 2: 4; 4; 2; "cru-ci-fied.";
+dblbar
+//5
+1: 4d+f; 8.c+e; 16bd; 4fd; 8.db-; 16fd;
+2: 4bb-; 8.; 16; 4; 8.; 16;
+
+			VERSE "Turn to the mourrn-ful and";
+			VERSE "Wash in the foun-tain of";
+			VERSE "Taste of the sweet-ness of";
+bar
+//6
+1: 4ge; e+g; 2d+f;
+2: 4be;; 2bb-;
+
+			VERSE "trag-ic scene,";
+			VERSE "Je-sus' blood,";
+			VERSE "sins for-giv'n,";
+bar
+newscore
+//7
+1 1: 4d+f; 8.c+f; 16bnf; 4c+f; 8.f; 16c+f;
+1 2: 4s; 8.; 16; 4; 8.f; 16s;
+2 1: 4bf; 8.af; 16g#; 4af; 8.; 16;
+2 2: 4s; 8.; 16f; 4s; 8.; 16;
+
+			VERSE "Gaze on the suf-fer-ing";
+			VERSE "Seek for thy cure in the";
+			VERSE "Lean on the prom-ise of";
+bar
+//8
+1: 4d+f; c+e; 2bd;
+2 1: 4b; af; 2bb-;
+2 2: 4b; 4s; 2s;
+
+			VERSE "Naz-a-rene.";
+			VERSE "heal-ing flood.";
+			VERSE "rest in heav'n.";
+dblbar
+newscore
+//9
+1: 4d+f#; 8.; 16; 8;; 4;
+2: 4ad; 8.; 16; 8; d+d; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Look at the Cru-ci-fied,";
+bar
+//10
+1 1: 4bg; 4af#; 2g;
+1 2: 4s;; 2g;
+2: 4d+g; c+d; 2bgg-;
+
+			VERSE [c]"look and live!";
+bar
+//11
+1: 4c+en; 8.; 16; 8;; 4;
+2: 4gc; 8.; 16; 8; 8c+c; 4;
+
+			VERSE "Look, for e-ter-nal life";
+bar
+//12
+1 1: 4af; gen; 2f;
+1 2: 4s;; 2f;
+2: 4c+f; bc; 2af;
+ital (13) above 1: 4 "D.C.";
+
+			VERSE "He will give;";
+endbar

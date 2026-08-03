@@ -1,0 +1,241 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		J.D.Brunk, Musical Editor
+//		Mennonite Publishing House
+//		Scottdale, Penna.
+//		Copyright 1902
+//		by J. S. Shoemaker
+//		Freeport, ILL.
+//		Hymn no. 509
+
+// Transcribed by: Ted Gatza, Jr. 03/10/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Ye Must be Born Again" ""
+   title (2)""
+   title (11) "E \(flat) - 6 - DO" "\s(17)\f(TI)\:Except\ a\ man\ be\ born\ again,\ he\ cannot\ see\ the\ kingdom\ of\ God.\ -\ Jn.\ 3:3 \(space)"""
+   title (13) "W. T. Sleeper" " " "Geo. C. Stebbins, 1905"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 2s; 8s; 8eb-;
+2: 2s; 8s; 8ge;
+
+
+			lyrics 1: 2s; 8s; 8; "<1. >-1|A";
+			lyrics 1: 2s; 8s; 8; "<2. >-1|Ye";
+			lyrics 1: 2s; 8s; 8; "<3. >-1|O";
+bar
+//2
+1: 8ge; 8ge; 8ge; 8ge slur; 8af; 8bg;
+2: 8be; 8be; 8be; 8be tie; 8be; 8e+e;
+
+			lyrics 1: "rul-er once came to";
+			lyrics 1: "chil-dren of men at-";
+			lyrics 1: "ye who would en-ter";
+bar
+//3
+1: 8c+a; 8bg; 8anf#; 4bg; 8bg;
+2: 8e+e; 8e+e; 8e+e; 4e+e; 8e+e;
+
+			lyrics 1: "Je-sus by night, To";
+			lyrics 1: "tend to the word So";
+			lyrics 1: "that glo-rious rest, And";
+bar
+//4
+1: 8bg; 8af; 8ge; 8s; 8s; 8s;
+2: 8e+b-; 8bb-; 8bb-; 8s; 8s; 8s;
+
+			lyrics 1: "ask him the";
+			lyrics 1: "sol-emn-ly";
+			lyrics 1: "sing with the";
+invisbar
+newscore
+
+1: 8s; 8s; 8s; 8fd; 8ge; 8af;
+2: 8s; 8s; 8s; 8bb-; 8bb-; 8bb-;
+
+			lyrics 1: "way of sal-";
+			lyrics 1: "ut-terd by";
+			lyrics 1: "ran-som'd the";
+
+bar
+//5
+1 1: 8af; 8ge; 8f#; 4ge; 8eb-;
+1 2: 8s; 8s; 8e; 4s; 8s;
+2: 8be; 8be; 8ane; 4be; 8ge;
+
+			lyrics 1: "va-tion and light; The";
+			lyrics 1: "Je-sus the Lord, And";
+			lyrics 1: "song of the blest, The";
+bar
+//6
+1: 8ge; 8ge; 8ge; 8ge; 8af; 8bg;
+2: 8be; 8be; 8be; 8be; 8be; 8e+e;
+
+			lyrics 1: "Mas-ter made an-swer in";
+			lyrics 1: "let not this mes-sage to";
+			lyrics 1: "life ev-er-last-ing if";
+bar
+//7
+1: 8c+a; 8s; 8s; 4s; 8s;
+2: 8e+e; 8s; 8s; 4s; 8s;
+
+			lyrics 1: "words";
+			lyrics 1: "you";
+			lyrics 1: "you";
+invisbar
+newscore
+
+1: 8s; 8bg; 8anf#; 4bg; 8ge;
+2: 8s; 8e+e; 8e+e; 4e+e; 8be;
+
+			lyrics 1: "true and plain, \"Ye";
+			lyrics 1: "be in vain, \"Ye";
+			lyrics 1: "would ob-tain, \"Ye";
+
+bar
+//8
+1: 4fd; 8bf; 4be; 8ane;
+2: 4bf; 8d+f; 4c+f; 8c+f;
+
+			lyrics 1: "must be born a-";
+			lyrics 1: "must be born a-";
+			lyrics 1: "must be born a-";
+bar
+//9
+1 1: 4.b tie; 4b; 8s;
+1 2: 4d; 8e; 4f; 8s;
+2: 4bb-; 8gb-; 4ab-; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: "gain.\"";
+			lyrics 1: "gain.\"";
+			lyrics 1: "gain.\"";
+			lyrics 1: 4s; 8; 4; 8s; "a-gain.";
+dblbar
+//10
+1 1: 8b; 2s; 8s;
+1 2: 8a; 2s; 8s;
+2: 8d+b-; 2s; 8s; 
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "<>";
+			lyrics 1: "\"Ye";
+bar
+//11
+1: 4bg; 8bg; 8ge bm; 8af ebm; 8bg;
+2: 4e+e; 8e+e; 4be; 8e+e;
+
+			lyrics 1: 4s; 8s; 8s; 8s; 8; "<>";
+			lyrics 1: 4; 8; 4; 8; "must be born a-";
+bar
+//12
+1 1:4.c+ tie; 4c+; 8c+a;
+1 2: 4a; 8a; 4a; 8s;
+2: 4e+a; 8e+a; 4e+a; 8e+a;
+
+			lyrics 1: "gain, Ye";
+			lyrics 1: 4s; 8; 4; 8s; "a-gain,";
+bar
+//13
+1: 4c+a; 8c+a; 8fd bm; 8ge ebm; 8af;
+2: 4d+b-; 8bb-; 4bb-; 8bb-;
+
+			lyrics 1: 4; 8; 4; 8; "must be born a-";
+bar
+//14
+1 1: 4.b tie; 4b; 8ad;
+1 2:4g; 8f; 4e; 8s;
+2: 4be; 8ae; 4ge; 8bb-;
+
+			lyrics 1: "gain, I";
+			lyrics 1: 4s; 8; 4; 8s; "a-gain,";
+bar
+//15
+1: 8.ge; 16ge; 8ge; 8.s; 16s; 8s;
+2: 8.be; 16be; 8be; 8.s; 16s; 8s;
+
+			lyrics 1: "ver-i-ly,";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8.ad; 16ad; 8ad;
+2: 8.s; 16s; 8s; 8.bf; 16bf; 8bf;
+
+			lyrics 1: "ver-i-ly,";
+
+bar
+//16
+1: 8be; 8be; 8be; 4c+e; 8e+a;
+2 1: 8bg; 8bg; 8bg; 4a; 8c+a;
+2 2: 8s; 8s; 8s; 4a; 8s;
+mussym (9) above 1: 6 "ferm";
+mussym (9) below 2: 6 "uferm";
+
+			lyrics 1: "say un-to thee, Ye";
+bar
+//17
+1: 4bg; 8ge; 4ge; 8fd;
+2 1: 4e+b; 8b; 4bb-; 8bb-;
+2 2: 4s; 8b; 4s; 8s;
+
+			lyrics 1: "must be born a-";
+bar
+//18
+1 1:4.e tie; 4e; 8s;
+1 2: [ho .1] 4e; 8c; 4b-; 8s;
+2: 4ge; 8ae; 4ge; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: "gain.\"";
+			lyrics 1: 4s; 8; 4; 8s; "a-gain.";
+endbar

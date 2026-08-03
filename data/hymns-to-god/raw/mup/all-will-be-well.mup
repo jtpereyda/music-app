@@ -1,0 +1,302 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+// 	New Perfect Praise
+//	For Sunday-Schools, Singing-Schools, Revivals, Conventions
+//	and General Use in Christian Work and Worship
+//	Publisher: James D. Vaughan
+//	Lawernceburg, Tenn.
+//	Copyright: 1920
+//	Hymn No.: 53
+
+// Transcribed by: Ted Gatza, Jr. 01/15/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=4/4
+	key=c
+
+staff 2
+	key=c
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "All Will Be Well" ""
+   title (2) ""
+   title (11) "" "\f(TI)Say ye of the righteous, that it shall be well with him ;" "" 
+   title (11) "" "\f(TI)for they shall eat the fruit of their doings. - Isa. 3:10" "" 
+   title (11) "" 
+   title (11) "C - 4 - SOL" "" ""
+   title (13) "Tillit S. Teddlie" "" "Tillit S. Teddlie"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+// Verse
+
+//1
+1: 4eg; 8; fa; 4eg; 8ce; cg;
+2: 4cc+; 8; ; 4; 8cg; eb&;
+
+	VS "<1. >-1|All will be well when the";
+	VS "<2. >-1|God will pro-vide ev-'ry";
+	VS "<3. >-1|Christ will be near when I'm";
+bar
+
+//2
+1: 4cc+; fa; 2eg;
+2: 4fa; fc+; 2cc+;
+
+	VS "morn-ing dawns,";
+	VS "need for me,";
+	VS "cross-ing o'er,";
+bar
+
+//3
+1 1: 4g; 8b-d; ce; 2df;
+1 2: 4f; 8s; ; 2;
+2 1: 4gb; 8g; ; 2gb;
+2 2: 4s; 8g; ; 2s;
+
+	VS "All will be well,";
+	VS "All will be well,";
+	VS "All will be well,";
+bar
+
+//4
+1: 4fa; 8eg; df; 2ce;
+2: 4g-gb; 8a-gc+; 8b-g; 2cg;
+
+	VS "all will be well;";
+	VS "all will be well;";
+	VS "all will be well;";
+bar
+
+//5
+1: 4eg; 8; fa; 4eg; 8ce; cg;
+2: 4cc+; 8; ; 4; 8cg; eb&;
+
+	VS "Weep-ing and heart-aches will";
+	VS "Why should I fear tho' I";
+	VS "Loved ones will shout on the";
+bar
+
+//6
+1: 4cc+; 4fa; 2eg;
+2 1: 4s; ; 2c+;
+2 2: 4fa; fc+; c; e;
+
+	VS "all be gone,";
+	VS "can not see?";
+	VS22 "heav'n-ly shore, and";
+bar
+
+//7
+1 1: 4fd+; 8; ; 4ec+; b;
+1 2: 4s; 8; ; 4; 8d bm; f ebm;
+2 1: 4s; 8; ; 4; g;
+2 2: 4gb; 8; ; 4gc+; 4g-g;
+
+	VS "All will be well up";
+//	VS "All will be well up";
+//	VS "All will be well up";
+bar
+
+//8
+1: 2.ec+; 4r;
+2: 2.cg; 4r;
+
+	VS "there.";
+//	VS "there.";
+//	VS "there.";
+dblbar
+
+CHORUS
+
+//9
+1 1:4ac+; 8fa; gb; 2c+;
+1 2: 4s; 8; ; 4a slur; f;
+2 1: 4fc+; 8; ; 4c+ slur; a;
+2 2: 4s; 8; ; 2f;
+
+	VS "All will be well,";
+bar
+
+//10	
+1: 4ec+; 8ce; df; 2eg;
+2: 4cg; 8; ; 2cc+;
+
+	VS "all will be well,";
+bar
+
+//11
+1: 4fb; 8; ; 4df; 8fa; ;
+2: 4gd+; 8; ; 4gb; 8; ; 
+
+	VS "All will be well in the";
+bar
+
+//12
+1: 4eg; df; 2ce;
+2: 4gc+; g-g; 2cg;
+
+	VS "bye and bye,";
+bar
+
+//13
+
+1: 4eg; 8; fa; 4eg; 8ce; cg;
+2: 4cc+; 8; ; 4; 8cg; eb&;
+
+	VS "Naught will I fear as I";
+bar
+
+//14
+1: 4cc+; fa; eg; gc+;
+2: 4fa; fc+; cc+; ec+;
+
+	VS "cross the val-ley,";
+bar
+
+//15
+1 1: 4fd+; 8; ; 4ec+; b;
+1 2: 4s; 8; ; 4; 8d bm; f ebm;
+2 1: 4s; 8; ; 4; g;
+2 2: 4gb; 8; ; 4gc+; 4g-g;
+
+	VS "All will be well up";
+bar
+
+//16
+1: 2.ec+; 4r;
+2: 2.cg; 4r;
+
+	VS "there.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

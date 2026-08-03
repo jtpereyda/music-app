@@ -1,0 +1,290 @@
+// !Mup vs. 6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Hymn Source: 
+//	Pentecostal Hymns Number Four
+//	A winnowed collecttion for young peoples
+//	Societies, church prayer meetings,
+//	Evangelistic Services and Sunday Schools
+//	Selected by Henry Date
+//	Music Editors: E. A. Hoffman and T. M. Towne
+//	Published by Hope Publishing Company
+//	150 Michigan Avenue, Chicage; 
+//	27East 22nd Street, New York
+//	Copyright: 1907
+//	Hymn No.: 38
+		
+// Transcribed by:
+//	Ted Gatza, Jr. 10/21/2013
+
+// Revisons:
+//	09/02/2022
+
+// HymnsToGod.org
+
+// ******************************************
+
+// Letter Size Output
+
+top
+
+	title bold (19) "" "All The Way My Savior Leads Me" ""
+	title (2)""
+	title (11) "" "\f(TI)for the Lamb that is in the midst of| the throne shall be their shepherd," ""   
+	title (11) "" "\f(TI)and shall guide them unto fountains of waters of life: - Rev. 7:17" ""   
+	title (11) "A \(flat) - 3 - MI" "" ""
+	title (13) "Fanny J. Crosby" "" "Robert Lowry, 1903"
+ 
+footer
+
+	title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+
+//1
+1: 8.c+e; 16; 2s;
+2: 8.aa-; 16; 2s;
+
+	VS "<1. >-1|All the";
+	VS "<2. >-1|All the";
+	VS "<3. >-1|All the";
+
+bar
+
+//2
+1: 4.c+e; 8; bd; ac;
+2: 4.aa-; 8;;;
+
+	VS "way my Sav-ior";
+	VS "way my Sav-ior";
+	VS "way my Sav-ior";
+bar
+
+//3
+1: 4ec; ac; 8; c+e;
+2: 4aa-; ea-; 8; aa-;
+
+	VS "leads me; What have";
+	VS "leads me, Cheers each";
+	VS "leads me; O the";
+bar
+
+//4
+1: 4.be; 8ge; ae; be;
+2: 4.ge; 8bd; ac; gb-;
+
+	VS "I to ask be-";
+	VS "wind-ing path I";
+	VS "ful-ness of his";
+bar
+
+//5
+1: 2c+e; 8.; 16;
+2 1: 2aa-; 8.a; 16;
+2 2: 2s; 8.a; 16;
+
+	VS "side? Can I";
+	VS "tread; Gives me";
+	VS "love! Per-fect";
+bar
+
+//6
+1: 4.d+f; 8c+e; bd; ac;
+2 1: 4.a; 8; ge; af;
+2 2: 4.a; 8; s;;
+
+	VS "doubt his ten-der";
+	VS "grace for ev-'ry";
+	VS "rest to me is";
+bar
+
+//7
+1: 4c+e; be; 8;;
+2: 4ae; ge; 8;;
+
+	VS "mer-cy Who thro'";
+	VS "tri-al, Feeds me";
+	VS "prom-ised In my";
+bar
+
+//8
+1: 4.bdn; 8fd; ge; af;
+2: 4.fb-; 8bb-;;;
+
+	VS "life has been my";
+	VS "with the liv-ing";
+	VS "Fa-ther's house a-";
+bar
+
+//9
+1 1: 2ge; 8fd; e;
+1 2: 2s; 8s; d;
+2: 2be; 8; ge;
+
+	VS "guide? Heav'n-ly";
+	VS "bread; Tho' my";
+	VS "bove; When my";
+bar
+
+//10
+1: 4.ac; 8bd; ac; fd;
+2: 4.aa-; 8;;;
+
+	VS "peace, di-vin-est";
+	VS "wear-y steps may";
+	VS "spir-it, clothed, im-";
+bar
+
+//11
+1: 4ec; ac; 8ae; be;
+2: 4aa-; ea-; 8ac; ge;
+
+	VS "com-fort, Here by";
+	VS "fal-ter, And my";
+	VS "mor-tal, Wings its";
+bar
+
+//12
+1: 4.c+e; 8ac; d+f; c+e;
+2 1: 4.a; 8;;;
+2 2: 4.a; 8;;;
+
+	VS "faith in him to";
+	VS "soul a-thirst may";
+	VS "flight to realms of";
+bar
+
+//13
+1: 2be; 8c+e; d+e;
+2 1: 2ge; 8a; b;
+2 2: 2s; 8a;;
+
+	VS "dwell! For I";
+	VS "be, Gush-ing";
+	VS "day, This my";
+bar
+
+//14
+1: 4. e+e; 8c+e; be; ae;
+2: 4. c+a; 8aa-; gb-; 8ac;
+
+	VS "know, what-e'er be-";
+	VS "from the Rock be-";
+	VS "song thro' end-less";
+bar
+
+//15
+1: 4bd; af; 8ge; fd;
+2: 4fd; ad; 8;;
+
+	VS "fall me, Je-sus";
+	VS "fore me, Lo! a";
+	VS "a-ges\(emdash) Je-sus";
+bar
+
+//16
+1: 8ec; ac; 4c+e; be;
+2: 8ae;; 4; ge;
+
+	VS "do-eth all things";
+	VS "spring of joy I";
+	VS "led me all the";
+bar
+
+//17
+1: 2c+e; 8c+e; d+e;
+2 1: 2a; 8a; b;
+2 2: 2a; 8a;;
+
+	VS "well; For I";
+	VS "see; Gush-ing";
+	VS "way; This my";
+bar
+
+//18
+1: 4.e+e; [up]8c+a; bg; af;
+2: 4.c+a; 8e+a; d+e; c+f;
+
+	VS "know, what-e'er be-";
+	VS "from the Rock be-";
+	VS "song thro' end-less";
+bar
+
+//19
+1: 4bf; af; 8ge; fd;
+2: 4d+d;; 8ad;;
+
+	VS "fall me, Je-sus";
+	VS "fore me, Lo! a";
+	VS "a-ges\(emdash) Je-sus";
+bar
+
+//20
+1: 8ec; ae; 4c+e; be;
+2: 8ae; c+e; 4e+e; d+e;
+
+	VS "do-eth all things";
+	VS "spring of joy I";
+	VS "led me all the";
+bar
+
+//21
+1: 2ae; 4s;
+2: 2c+a-; 4s;
+
+	VS "well.";
+	VS "see.";
+	VS "way.";
+endbar

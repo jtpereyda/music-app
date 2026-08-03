@@ -1,0 +1,309 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public  domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+
+// 
+
+// Lyric Source: Hymns Of His Grace No. 1
+//		 For the Evangelist, Church,
+//		 Sunday School, And young Peoples
+//		 Society.
+//		 Compiled and edited by: P.P. bilhorn,
+//		 F.G. Fischer, John R. Clements,
+//		 W. Stillman Martin.
+//		 Bilhorn Brothers Music Publishers
+//		 And Folding Organ Mfgs.
+//		 152 lake St. Chicago, ILL.
+//		 Copyright: 1907
+//		 Hymn No. 58
+//		
+// Transcribed by: Ted Gatza, Jr. 05/17/11
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Hear The Call For Reapers" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(17)\f(TI)\:Then\ saith\ he\ unto\ his\ dis\|ciples,\ The\ harvest\ indeed\ is plenteous,\ but\ the\ labo\|rers\ are\ few.\ -\ Matt.\ 9:37" ""
+   title (13) "Mrs. C. D. Martin" "" "P. P. Bilhorn, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .65
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+	midi all: 0 "tempo=70";
+	define VERSE lyrics between 1&2: @
+
+
+//1
+1: 8bg; 8d+g; 8.bf; 16af; 8ge; 8af; 8bg; 8e+g;
+2: 8d+g; 8bg; 8.d+d; 16c+d; 8be; 8d+d; 8d+g; 8c+g;
+
+			VERSE "<1. >-1|Hear the call for reap-ers as it";
+			VERSE "<2. >-1|Ma-ny now are i-dle whom the";
+			VERSE "<3. >-1|Time is swift-ly pass-ing, soon the";
+bar
+//2
+1: 8d+g; 8bg; 8.ae; 16ge&; 2bd;
+2 1: 8bg; 8d+g; 8.c+g; 16c+g; 2d+;
+2 2: 8s; 8s; 8.s; 16s; 8g; 8d; 8e; 8f;
+
+			VERSE 8; 8; 8.; 16; 8; 8; 8; 8; "comes from ev-'ry land, (O hear it,)";
+			VERSE 8; 8; 8.; 16; 8; 8; 8; 8; "Lord could use to-day, (In serv-ice,)";
+			VERSE 8; 8; 8.; 16; 8; 8; 8; 8; "Mas-ter will be here, (Be earn-est,)";
+bar
+//3
+1: 8bg; 8d+g; 8.bf;16af; 8ge; 8af; 8bg; 8d+g;
+2: 8d+g; 8bg; 8.d+d; 16c+d; 8be; 8d+d; 8d+g-; 8bg-;
+
+			VERSE "Are you read-y Chris-tian to o-";
+			VERSE "Know-ing not how well the bless-ed";
+			VERSE "And the end of toil-ing ver-y";
+bar
+//4
+1: 8ae; 8ae; 8.bg; 16ge; 2af;
+2 1: 8c#+a-; 8c+a-; 8.c+a-; 16aa-; 8a; 8d+; 8c#+; 8cn+;
+2 2: 8s; 8s; 8.s; 16s; 2d;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+mussym (9) above 2: 4.5 "ferm";
+
+			VERSE 8; 8; 8.; 16; 8; 8; 8; 8; "bey your Lord's com-mand, (A-wake for)";
+			VERSE 8; 8; 8.; 16; 8; 8; 8; 8; "Mas-ter will re-pay; (How-ma-ny)";
+			VERSE 8; 8; 8.; 16; 8; 8; 8; 8; "quick-ly draw-eth near, (Be faith-ful)";
+bar
+//5
+1: 8e+e; 8e+e; 8.d+g#; 16bg; 8d+a; 4c+a; 8c+a;
+2 1: 8bg#; 8bg; 8.be; 16e+e; 8e+a; 4a; 8fd;
+2 2: 8s; 8s; 8.s; 16s; 8s; 4a; 8s;
+
+			VERSE "Sheaves are still un-gath-ered, Just";
+			VERSE "Months and years are wast-ed, The";
+			VERSE "Day and night, O reap-er, Go";
+bar
+//6
+1: 8bd; 8bd; 8.ad#; 16fd; 8af; 4ge; 8fd;
+2 1: 8g; 8gg-; 8.fb-; 16bb-; 8bd#; 4be; 8bb-;
+2 2: 8g; 8s; 8.s; 16s; 8s; 4s; 8s;
+
+			VERSE "wait-ing for the work-er, Go";
+			VERSE "souls of men are dy-ing, A-";
+			VERSE "gath-er sheaves for Je-sus, Be";
+bar
+//7
+1 1:8e; 8ae; 8.a; 16a#; 8bg; 8e+g; 8.d+f; 16c#+g;
+1 2: 8e; 8s; 8.g; 16g; 8s; 8s; 8.s; 16s;
+2: 8gc; 8ac; 8.e+c; 16e+c#; 8d+d; 8bg-; 8.aa-; 16aa-;
+
+			VERSE "forth and with the reap-ers lend a";
+			VERSE "rouse you then, and bear the sheaves a-";
+			VERSE "faith-ful till in glo-ry He ap-";
+bar
+//8
+1 1:2d+ tie; 8d+; 4s; 8s;
+1 2: 8f; 8f; 8.g; 16g#; 8a; 4s; 8s;
+2 1: 8a; 8a; 8.a#; 16b; 8c+; 4s; 8s;
+2 2: 2d tie; 8d; 4s; 8s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 1: 3 "uferm";
+mussym (9) above 2: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE 8; 8; 8.; 16; 8; 4s; 8s; "hand. (And lend a hand.)";
+			VERSE 8; 8; 8.; 16; 8; 4s; 8s; "way. (The sheaves a-way.)";
+			VERSE 8; 8; 8.; 16; 8; 4s; 8s; "pear. (Till He ap-pear.)";
+dblbar
+//9
+1: 4s; 4s; 8s; 8bgn; 8c+a; 8c#+a#;
+2: 4s; 4s; 8s; 8r; 4r;
+< below 1: 1 til 5;
+ital above 1: 1 "Refrain";
+
+			VERSE 4s; 4s; 8s; 8; 8; 8; "The har-vest";
+bar
+//10
+1: 4d+b; 4d+b; 8e+g; 8d+g; 8bg; 8ad;
+2: 4g+?d+g; 4g+?d+g; 8c+g; 8bg; 8d+d; 8c+d;
+
+			VERSE "time is come and God is";
+			VERSE "Rise, O sleep-ers, God is";
+bar
+//11	
+1 1: 4gd; 4ge; 8gd; 8d; 8gd; 8bg;
+1 2: 4s; 4s; 8s; 8d; 8s; 8s;
+2: 4bg; 4c+c; 8bg; 8bg; 8bg; 8d+g;
+
+			VERSE "call-ing now for reap-ers,";
+			VERSE "call-ing now for reap-ers,";
+			lyrics below 2: 4s; 4s; 8; 8; 8; 8; "now for reap-ers";
+bar
+//12
+1 1: 4d+g; 4d+g; 8e+; 8d+; 8b; 8g;
+1 2: 4s; 4s; 4g; 4g; 
+2 1: 4b; 4b; 8c+; 8b; 8d+; 8b;
+2 2: 8g; 8e; 8d; 8e; 4g; 4g;
+
+			VERSE "Who shall gath-er in the";
+			VERSE 4; 4; 4; 4; "Who shall gath-er";
+			lyrics below 2: 8; 8; 8; 8; 4; 4; "Who shall gath-er in the";
+bar
+//13
+1 1: 4a; 4bg; 8af; 8d; 8fd; 8af;
+1 2: 4g; 4s; 8s; 8d; 8s; 8s;
+2 1: 4c+e; 4c+a-; 8d+d; 8d+; 8d+; 8d+;
+2 2: 4s; 4s; 8s; 8d+; 8cn+; 8c+;
+
+			VERSE "gold-en grain; A-wake, O";
+			VERSE "gold-en grain; A-wake, O";
+			lyrics below 2: 4; 4; 8; 8; 8; 8; "gold-en grain; A-wake, O";
+bar
+//14
+1 1: 8c+a; 4.c+a; 8r; 8d; 8fd; 8af;
+1 2: 8s; 4.s; 8s; 8d; 8s; 8s;
+2 1: 8d+; 4.d+; [dist 8] 8r; 8d+; 8d+; 8d+;
+2 2: 8f; 8f; 8a; 8g; 8f; 8d+; 8c+; 8c+;
+
+			VERSE "sleep-er be-come a";
+			lyrics below 2: 8; 8; 8; 8; 8; 8s; 8s; 8s; "sleep-er, rise to-day";
+bar
+//15
+1 1: 8bg; 4.bg; 8r; 8d; 8gd; 8bg;
+1 2: 8s; 4.s; 8s; 8d; 8s; 8s;
+2 1: 8d+; 4.d+; [dist 8] 8r; 8af; 8be; 8d+d;
+2 2: 8b; 8a; 8g; 8b; 8g; 8s; 8s; 8s;
+
+			VERSE "reap-er, The call is";
+			lyrics below 2: 8s; 8s; 8; 8; 8; 8s; 8s; 8s; "while you may";
+bar
+//16
+1 1: 4ae; 4ae; 8a; 8c#+g; 8f+a; 8e+g;
+1 2: 4s; 4s; 8g; 8s; 8s; 8s;
+2: 4c#+a-; 4c+a-; 8ac#; 8ae; 8ac; 8aa-;
+
+			VERSE "sound-ing o-ver hill and";
+bar
+//17
+1 1: 2d+ tie; 8d+; 8d; 8gd; 8bg;
+1 2: 4f; 4g; 8a; 8d; 8s; 8s;
+2: 4ad; 4bd; 8c+d; 8bg; 8bg; 8d+g;
+mussym (9) above 1:  3 "ferm";
+mussym (9) below 1:  3 "uferm";
+mussym (9) below 2:  3 "uferm";
+< above 1: 3.5 til 4;
+
+			VERSE "plain. The har-vest";
+			VERSE 4s; 4; 8; 8; 8; 8; "and plain. The har-vest";
+			lyrics below 2: 4s; 4s; 8s; 8; 8; 8; "The har-vest";
+bar
+//17
+1 1: 4d+g; 4d+g; 8e+; 8d+; 8b; 8a;
+1 2: 4s; 4s; 4g; 8g bm; 8f ebm;
+2 1: 4b; 4b; 4bg; 8d+ bm; 8c+ ebm;
+2 2: 8g; 8e; 8d; 8e; 4s; 4d;
+
+			VERSE "time is come and God is";
+			VERSE 4; 4; 4; 4; "time is come and";
+			lyrics below 2: 8; 8; 8; 8; 4; 4; "time is come and God is";
+bar
+//18
+1 1: 4gd; 4ge; 8gd; 8d; 8gd; 8bg;
+1 2: 4s; 4s; 8s; 8d; 8s; 8s; 
+2: 4bg; 4c+c; 8bg; 8bg; 8bg; 8d+g;
+
+			VERSE "call-ing now for reap-ers";
+			VERSE "God is call-ing now for";
+			lyrics below 2: "call-ing now for reap-ers";
+bar
+//19
+1 1: 4d+g; 4d+g; 8e+; 8d+; 8b; 8g;
+1 2: 4s; 4s; 4g; 4d;
+2 1: 4b; 4b; 4bg; 4bg;
+2 2: 8g; 8e; 8d; 8e; 4s; 4s; 
+
+			VERSE "Who shall gath-er in the";
+			VERSE 4; 4; 4; 4; "reap-ers, Who shall";
+			lyrics below 2: 8; 8; 8; 8; 4; 4; "Who shall gath-er in the";
+bar
+//20
+1 1: 4a; 4bg; 8af; 8d; 8fd; 8af;
+1 2: 4g; 4s; 8s; 8d; 8s; 8s;
+2 1: 4c#+a; 4c+a-; 8d+d; 8af; 8a; 8ad;
+2 2: 4s; 4s; 8s; 8s; 8a; 8s;
+
+			VERSE "gold-en grain; A-wake, O";
+			VERSE 4; 4; 8; 8s; 8s; 8s; "gath-er grain:";
+			lyrics below 2: 4; 4; 8; 8; 8; 8; "gold-en grain; A-wake, O";
+bar
+//21
+1 1: 8c+f; 4.c+f; 8r; 8d; 8fd; 8af;
+1 2: 8s; 4.s; 8s; 8d; 8s; 8s;
+2 1: 8d+; 4.d+; [dist 8] 8r; 8s; 8s; 8d+;
+2 2: 8d; 8f; 8a; 8g; 8f; 8fd; 8ad; 8c+;
+
+			VERSE "sleep-er, be-come a";
+			lyrics below 2: 8; 8; 8; 8; 8; 8; 8; 8; "sleep-er, rise to-day, be-come a";
+bar
+//22
+1 1: 8bg; 4.bg; 8r; 8d; 8gd; 8bd;
+1 2: 8s; 4.s; 8s; 8d; 8s; 8s; 
+2 1: 8d+; 4.d+; [dist 8] 8r; 8d+f; 8d+e; 8gd;
+2 2: 8b; 8a; 8g; 8b; 8g; 8s; 8s; 8s;
+
+			VERSE "reap-er, The call for";
+			VERSE 8s; 8s; 8; 8; 8; 8; 8; 8; "while you may, The call for";
+bar
+//23
+1 1: 8d+; 8c+; 8b; 8a; 8g; 8f; 8g; 8e;
+1 2: 4e; 4d#; 4e; 4b&-;
+2: 4ac; 4ac; 4b&c#; 4gc;
+
+			VERSE "reap-ers now is sound-ing o-ver";
+			VERSE 4; 4; 4; 4; "reap-ers sounds o'er";
+bar
+//24
+1: 4dbn; 4d+f; 4f+?gd; 4r;
+2: 4gd; 4c+d; 4bg?g-; 4r;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "hill and plain.";
+			VERSE "hill and plain.";
+endbar

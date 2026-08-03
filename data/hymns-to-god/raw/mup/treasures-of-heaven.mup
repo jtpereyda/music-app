@@ -1,0 +1,234 @@
+// !Mup vs. 6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 16
+//		
+// Transcribed by: Ted Gatza, Jr. 10/31/2011; Rev. 05/24/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Treasures Of Heaven" ""
+   title (2)""
+   title (11) "A\(flat) - 4 - SOL" "\s(17)\f(TI)\:make\ for\ yourselves\ pur\^ses\ which\ wax\ not\ old,\ a treasure\ in\ the\ heavens\ th\|at\ faileth\ not,\ -\ Lk.\ 12:33" ""   
+   title (13) "T. C. O'Kane" "" "T. C. O'Kane"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8.ec; 16; 2.s;
+2: 8.aa-; 16; 2.s;
+
+
+			VERSE "<1. >-1|There's a";
+			VERSE "<2. >-1|There's a";
+			VERSE "<3. >-1|There's a";
+			VERSE "<4. >-1|There's a";
+			VERSE "<5. >-1|There's a";
+bar
+//2
+1: 4ac;;; 8.c+e; 16;
+2: 4aa-;;; 8.; 16;
+
+			VERSE "crown in heaven for the";
+			VERSE "rest in heaven for the";
+			VERSE "joy in heaven for the";
+			VERSE "peace in heaven for the";
+			VERSE "home in heaven for the";
+bar
+//3
+1: 4c+e; be;; 8.ge; 16ae;
+2: 4ae; ge;; 8.be; 16c+e;
+
+			VERSE "striv-ing soul, Which the";
+			VERSE "wear-ry soul,\(emdash) 'Tis for";
+			VERSE "mourn-ing soul; Though the";
+			VERSE "troub-led soul, Where the";
+			VERSE "faith-ful soul, In the";
+bar
+//4
+1: 4be; bg;; 8.d+g; 16d+b;
+2: 4d+e;;; 8.be; 16e+e;
+
+			VERSE "bless-ed Je-sus him-";
+			VERSE "all by care and by";
+			VERSE "tears may fall all the";
+			VERSE "wick-ed shall from their";
+			VERSE "man-y man-sions pre-";
+bar
+//5
+1: 4d+b; c+a;; 8.ae; 16be;
+2: 4e+a;;; 8.c+a; 16d+a;
+
+			VERSE "self will place On the";
+			VERSE "sin op-pressed; To the";
+			VERSE "earth-ly night; Yet the";
+			VERSE "troub-ling cease, And to";
+			VERSE "pared a-bove, Where the";
+bar
+//6
+1: 4c+a;;; 8.e+a; 16e+e;
+2: 4e+a;;; 8.ac; 16;
+
+			VERSE "head of each who shall";
+			VERSE "sons of God it re-";
+			VERSE "clouds of sad-ness will";
+			VERSE "all the saints like a";
+			VERSE "glo-ri-fied shall for-";
+bar
+//7
+1: 4e+f; d+f;; {8d+f bm; c+e ebm; 8bf;}3;
+2: 4ad;;; {bd; 8;}3;
+
+			VERSE 4;;; {; 8;}3; "faith-ful prove E-ven";
+			VERSE 4;;; {; 8;}3; "main-eth sure, And the";
+			VERSE 4;;; {; 8;}3; "break a-way, And re-";
+			VERSE 4;;; {; 8;}3; "riv-er flow, Through the";
+			VERSE 4;;; {; 8;}3; "ev-er sing, Of a";
+bar
+//8
+1: 4ae;; ge; {8ge bm; 8af ebm; bg;}3;
+2: 4c+e;; be; {4be; 8e+e;}3;
+
+			VERSE 4;;; {; 8;}3; "un-to death, In the";
+			VERSE 4;;; {; 8;}3; "proph-et say 'tis a";
+			VERSE 4;;; {; 8;}3; "joic-ing come with the";
+			VERSE 4;;; {; 8;}3; "end-less a-ges the";
+			VERSE 4;;; {; 8;}3; "Sav-iour's free and un-";
+bar
+//9
+1: 4.c+a; 8be; 8ac; 4.s;
+2: 4.e+e; 8ge; 8aa-; 4.s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "heaven-ly race";
+			VERSE "\"glor-ious rest.\"";
+			VERSE "morn-ing light.";
+			VERSE "stream of peace.";
+			VERSE "bound-ed love.";
+dblbar
+//10
+1 1: 8e; 8.ac; 16bd; 4.s; 4s;
+1 2: 8e; 8.s; 16; 4.; 4;
+2: 8r; 4r; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Oh, may that";
+bar
+//11
+1: 2c+e tie; 8.; 16bg; 8.c+a; 16d+b;
+2: 8r; 8aa-; 8.; 16; 4; 4r;
+
+			VERSE "crown_ In heaven be";
+			VERSE 8s; 8; 8.; 16; 4; 4s; "Oh, may that crown";
+bar
+//12
+1: 2e+c+; 8r; s; 8.s; 16s;
+2 1: 8r; 8a; 8.c+a; 16e+a; 4; 4s;
+2 2: 8s; 8a; 8.s; 16; 4; 4;
+
+			VERSE "mine,";
+			VERSE 8s; 8; 8.; 16; 4; 4s; "in heaven be mine,";
+invisbar
+newscore
+
+1: 2s; 8s; c+a; 8.d+b; 16c+a;
+2 1: 8s; 8s; 8.s; 16s; 4; 4r;
+2 2: 8s; 8s; 8.s; 16s; 4; 4;
+
+			VERSE "And I a-";
+			
+
+bar
+//13
+1: 2bg tie; 8.; 16c+a; {8bg bm; 8af ebm; 8bg;}3;
+2: 8r; 8d+e; 8.; 16; 4; 4r;
+
+			VERSE 2; 8.s; 16; {4; 8;}3; "mong_ the an-gels";
+			VERSE 8s; 8; 8.; 16; 4; 4s; "And I a-mong";
+bar
+//14
+1 1: 2c+a; 8r; 8e; 8.ac; 16bd;
+1 2: 2s; 8; 8e; 8.s; 16;
+2: 8r; 8e+a; 8.; 16; 4; 4r;
+
+			VERSE 2; 8s; 8; 8.; 16; "shine; Be thou, O";
+			VERSE 8s; 8; 8.; 16; 4; 4s; "the an-gels shine;";
+bar
+//15
+1: 2c+e tie; 8.; 16d+f; 8.c+a; 16bg;
+2: 8r; 8aa-; 8.; 16; 4; 4r;
+
+			VERSE 2; 8.s; 16; 8.; 16; "Lord!_ my dai-ly";
+			VERSE 8s; 8; 8.; 16; 4; 4s; "Be thou, O Lord";
+bar
+//16
+1: 2af; 4r; 8.ge; 16ae;
+2: 8r; ad; 8.; 16; 4; 8.be; 16c+e; 
+
+			VERSE 2; 4s; 8.; 16; "guide, Let me";
+			VERSE 8s; 8; 8.; 16; 4; 8.s; 16s; "my dai-ly guide,";
+bar
+//17
+1: 8.be; 16c+a; 8.d+a; 16c+a; 4d+g; 4ge;
+2: 8.d+e; 16e+e; 8.f+e; 16e+e; 4e+e; 4d+e;
+
+			VERSE "ev-er in thy love a-";
+			
+bar
+//18
+1: 2.ae; 4s;
+2: 2.c+aa-; 4s;
+
+			VERSE "bide.";
+endbar

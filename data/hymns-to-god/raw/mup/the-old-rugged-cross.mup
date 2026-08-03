@@ -1,0 +1,258 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Great Tabernacle Hymns
+//		For Use In Gospel Meetings, 
+//		Evangelistic Services,Sunday 
+//		Schools,Prayer Meetings and 
+//		Young People's Societies.
+//		Compiled by Charles F. Weigle
+//		and George J. Meyer
+//		Published by: Meyer & Brother 
+//		75-77 W. Washington Street Chicage, ILL.
+//		Copyright: Unknown
+//		Hymn No. 72
+
+		
+		
+// Transcribed by: Ted Gatza, Jr. 10/06/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Old Rugged Cross" ""
+   title (2) ""
+   title (11)"" "\f(TI)and being found in fashion as a man, he humbled himself, becoming" ""
+   title (11)"" "\f(TI)obedient even unto death, yea, the death of the cross. - Phil. 2:8" ""
+
+   title (11)"B\(flat) - 2 - MI" "" ""  
+   title (13) "George Bennard" "" "George Bennard, 1913"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=b&
+
+
+staff 2
+	key=b&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VERSE lyrics between 1&2: @
+       define DSVERSE lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=60";
+
+// Enter music
+//============
+//1
+1: 16b-d;; 4.s; 4;
+2: 16b-f;; 4.s; 4;
+
+	
+	VERSE "<1. >-1|On a";
+	VERSE "<2. >-1|Oh, that";
+	VERSE "<3. >-1|In the";
+	VERSE "<4. >-1|To the";
+
+bar
+//2
+1: 8.df; 16c#en; 8cg; 4df; 16;;
+2: 8.b-b; 16; 8b-g; 4b-b; 16;;
+
+	VERSE "hill far a-way stood an";
+	VERSE "old rug-ged cross, so de-";
+	VERSE "old rug-ged cross, stained with";
+	VERSE "old rug-ged cross I will";
+bar
+//3
+1 1: 8.ge; 16f#; 8ea; 4eg; 16eng tie; ;
+1 2: 8.s; 16e; 8s; 4; 16;;
+2: 8.eb; 16; 8ec+; 4eb; 16cc+ tie; ;
+
+	VERSE "old rug-ged cross, The";
+	VERSE 8.; 16; 8; 4; 16; 16; "spised by the world, Has a";
+	VERSE 8.; 16; 8; 4; 8; "blood so di-vine, A";
+	VERSE "ev-er be true, Its";
+bar
+//4
+1: 8.a <g> e~; 16ge; 8df; 8ce; cf; ce;
+2 1: 8.c+<a> f~; 16 af; 8fb; fa;; f;
+2 2: 8.s; 16; 8;;; f;
+
+	VERSE 8.; 16; 8; 8; 8; 8; "em-blem of suf-f'ring and";
+	VERSE 8.; 16; 8; 8; 8; 8; "won-drous at-trac-tion for";
+	VERSE 4; 8; 8; 8; 8; "won-drous beau-ty I";
+	VERSE 8.; 16; 8; 8; 8; 8; "shame and re-proach glad-ly";
+bar
+//5
+1: 4.b-d tie; 4; 16b-d; 16ce;
+2: 4.b-f tie; 4; 16b-f;;
+
+	VERSE "shame, And I";
+	VERSE "me; For the";
+	VERSE "see, For 'twas";
+	VERSE "bear; Then He'll";
+bar
+//6
+1: 8.df; 16c#en; 8cg; 4df; 16;;
+2: 8.b-b; 16; 8b-g; 4b-b; 16;;
+
+	VERSE "love that old cross where the";
+	VERSE "dear Lamb of God left His";
+	VERSE "on that old cross Je-sus";
+	VERSE "call me some day to my";
+bar
+//7
+1 1: 8.eg; 16f#; 8ea; 4eg; 16eng tie; 16;
+1 2: 8.s; 16e; 8s; 4s; 16s;;
+2: 8.eb; 16ea; 8ec+; 4eb; 16cc+ tie; 16;
+
+	VERSE 8.; 16; 8; 4; 16; 16; "Dear-est and Best For a";
+	VERSE "Glo-ry a-bove, To";
+	VERSE "suf-fered and died, To";
+	VERSE 8.; 16; 8; 4; 16; 16; "home far a-way, Where His";
+bar
+//8
+1 1: 8.ea; 16eg; 8f; 8ge+; fd+; ec+;
+1 2: 8.s; 16; 8e; 8s;;;
+2: 8.fc+; 16fb; 8fa;; fb; fa;
+
+	VERSE "world of lost sin-ners was";
+	VERSE "bear it to dark Cal-va-";
+	VERSE "par-don and sanc-ti-fy";
+	VERSE "glo-ry for-ev-er I'll";
+bar
+//9
+1: 4.db tie; 4; 16s;;
+2: 4.b-b tie; 4; 16s;;
+
+	VERSE "slain.";
+	VERSE "ry.";
+	VERSE "me.";
+	VERSE "share.";
+dblbar
+//10
+1: 16ca; db; 4.s; 4;
+2 1: 16f;; 4.s; 4;
+2 2: 16f;; 4.s; 4;
+CHORUS
+
+	VERSE [c]"So I'll";
+bar
+//11
+1 1: 8.ec+; 16; 8; c+; b; a;
+1 2: 8.s; 16; 8; 4e; 8;
+2 1: 8.fa; 16; 8; 4; 8f;
+2 2: 8.s; 16; 8; 4; 8f;
+
+	VERSE "cher-ish the old rug-ged";
+	VERSE 8.s; 16s; 8s; 4; 8; "cross the";
+bar
+//12
+1 1: 4.b tie; 4; 16fb; fa;
+1 2: 8d; c#; e; 4d; 16s;;
+2: 8b-f; b-en; b-g; 4b-f; 16db;;
+
+	VERSE "cross,_ Till my";
+	VERSE 8; 8; 8; 4; 16s; 16s; "old rug-ged cross,";
+bar
+//13
+1: 8.eg; 16; 8; gb; fa; eg;
+2: 8.eb; 16; 8;;;;
+
+	VERSE "tro-phies at last I lay";
+bar
+//14
+1: 4.df tie; 4; 16; db;
+2: 4.b-b tie; 4; 16;;
+
+	VERSE "down; I will";
+bar
+//15
+1 1: 8.fd+; 16; 8; 8fd+; ge+; fd+;
+2: 8.b-b; 16; 8; 4; 8;
+
+	VERSE "cling to the old rug-ged";
+	VERSE 8.s; 16s; 8s; 4; 8; "cross, the";
+bar
+//16
+1 1: 4.g tie; 4; 16ge+;;
+1 2: 8e;;; 4; 16s;;
+2: 8eb;;; 4; 16;;
+
+	VERSE "cross,_ And ex-";
+	VERSE 8; 8; 8; 4; 16s; 16s; "old rug-ged cross,";
+bar
+//17
+1 1: 8.fd+; 16ec+; 8db; f; ea; ec+;
+1 2: 8.s; 16; 8; e; s; s;
+2 1: 8.fb; 16fa; 8fb; fa; fc+; f;
+2 2: 8.s; 16; 8; 8; 8; f;
+
+	VERSE "change it some day for a";
+bar
+//18
+1: 4.db tie; 4; 16s;;
+2: 4.b-f tie; 4; 16s;;
+
+	VERSE "crown.";
+endbar
+
+
+
+
+

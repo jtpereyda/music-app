@@ -1,0 +1,227 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 92
+//		
+// Transcribed by: Ted Gatza, Jr. 11/01/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Home Of The Soul" ""
+   title (2)""
+   title (11) "A\(flat) - 2 - SOL" "\s(17)\f(TI)\:And\ the\ building\ of\ the\ wall\|\ thereof\ was\ jasper:\ and\ the city\ was\ pure\ gold,\ like\ un\|to\ pure\ glass.\ -\ Rev.\ 21:18" ""   
+   title (13) "Ellen Maria Huntington Gates, arr." "" "B. B. Funk"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=75";
+
+//1
+1: 16ec; ac; 4.s; 4;
+2 1: 16a;; 4.s; 4;
+2 2: 16a;; 4.s; 4s;
+
+
+			VERSE "<1. >-1|I will";
+			VERSE "<2. >-1|O, that";
+			VERSE "<3. >-1|That un-";
+			VERSE "<4. >-1|O, how";
+bar
+//2
+1: 8.c+e; 16bndn; 8c+e; 8.ae; 16; 8;
+2 1: 8.a; 16; 8; 8.c+a-; 16; 8;
+2 2: 8.a; 16; 8; 8.s; 16; 8;
+
+			VERSE "sing you a song of that";
+			VERSE "home of the soul! in my";
+			VERSE "change-a-ble home is for";
+			VERSE "sweet it will be in that";
+bar
+//3
+1 1: 8.bf; 16af; 8f; 4af; 16ge slur; fd;
+1 2: 8.s; 16; 8f; 4s; 16;;
+2: 8.d+d; 16; 8ad; 4d+d; 16ad tie;;
+
+			VERSE 8.; 16; 8; 4; 16; 16; "beau-ti-ful land, Of the";
+			VERSE 8.; 16; 8; 4; 16; 16; "vi-sions and dreams With its";
+			VERSE 8.; 16; 8; 4; 8; "you and for me, Where";
+			VERSE 8.; 16; 8; 4; 8; "beau-ti-ful land, So";
+bar
+//4
+1: 8.ec; 16ac; 8; 8.; 16ge; 8ae;
+2: 8.aa-; 16ea-; 8; 8.; 16eb-; 8ac;
+
+			VERSE "far a-way home of the";
+			VERSE "bright jas-per walls I can";
+			VERSE "Je-sus of Naz-a-reth";
+			VERSE "free from all sor-rows and";
+bar
+//5
+1: 4.be tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "soul,";
+			VERSE "see,";
+			VERSE "stands;";
+			VERSE "pain;";
+bar
+//6
+1 1: 16e slur; a; 4.s; 4;
+1 2: 16e tie; e; 4.s; 4;
+2 1: 16ae tie;; 4.s; 4;
+
+
+			VERSE 16;; 4.s; 4s; "Where no";
+			VERSE 16;; 4.s; 4s; "Till I";
+			VERSE 8; 4.s; 4s; "The";
+			VERSE 16;; 4.s; 4s; "We will";
+//			VERSE 8; 4.s; 4s; "With"; //Original Lyrics
+bar
+//7
+1: 8.c+e; 16bndn; 8c+e; 8.ae; 16; 8;
+2 1: 8.a; 16; 8; 8.c+a-; 16; 8;
+2 2: 8.a; 16; 8; 8.s; 16; 8;
+
+			VERSE "storms e-ver beat on the";
+			VERSE "fan-cy but thin-ly the";
+			VERSE "King of all king-doms for-";
+			VERSE "en-ter to live in that";
+//			VERSE "songs on our lips and with"; //Original Lyrics
+bar
+//8
+1 1: 8.bf; 16af; 8f; 4af; 16ge slur; fd;
+1 2: 8.s; 16; 8f; 4s; 16;;
+2: 8.d+d; 16; 8ad; 4d+d; 16ad tie;;
+
+			VERSE 8.; 16; 8; 4; 16; 16; "glit-ter-ing strand, While the";
+			VERSE 8.; 16; 8; 4; 8; "vail in-ter-venes Be-";
+			VERSE 8.; 16; 8; 4; 16; 16; "ev-er is he, And he";
+			VERSE 8.; 16; 8; 4; 16; 16; "cit-y so grand, And to";
+//			VERSE 8.; 16; 8; 4; 8; "harps in our hands To"; //Original Lyrics
+bar
+//9
+1: 8.ec; 16ac; 8; 8.gb-; 16ac; 8bd;
+2 1: 8.ae; 16e; 8; 8.; 16; 8;
+2 2: 8.s; 16e; 8; 8.; 16; 8;
+
+			VERSE "years of e-ter-ni-ty";
+			VERSE "tween the fair cit-y and";
+			VERSE "hold-eth our crowns in his";
+			VERSE "meet one an-oth-er a-";
+bar
+//10
+1: 4.ac tie; 4; 8r;
+2: 4.ea- tie; 4; 8r;
+
+			VERSE "roll.";
+			VERSE "me.";
+			VERSE "hands.";
+			VERSE "gain!";
+dblbar
+//11
+1 1: 4.e+a tie; 8; 8c+a; 8a;
+1 2: 4.s; 8; 8; a;
+2: 8.c+a-; 16; 8; 8.; 16e+a-; 8c+a-;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 8.; 16s; 8s; 8.s; 16s; 8s; "<>";
+			VERSE "Beau-ti-ful";
+			VERSE 8.; 16; 8; 8.; 16; 8; "Beau-ti-ful, beau-ti-ful";
+bar
+//12
+1: 4.c+a tie; 4; 8r;
+2: 8.e+a-; 16; 8; 4; 8r;
+
+			VERSE 4.; 4s; 8s; "home,_";
+			VERSE 8.; 16; 8; 4; 8s; "home of the soul,";
+bar
+//13
+1 1: 4.e+a tie; 8; 8c+a; 8a;
+1 2: 4.s; 8; 8; a;
+2: 8.c+a; 16; 8; 8.; 16e+a; 8c+a;
+
+			VERSE "Beau-ti-ful";
+			VERSE 8.; 16; 8; 8.; 16; 8; "Beau-ti-ful, beau-ti-ful";
+bar
+//14
+1: 4.bg tie; 4; 8r;
+2: 8.e+e; 16; 8; 4; 8r;
+
+			VERSE "home,_";
+			VERSE 8.; 16; 8; 4; 8s; "home of the soul,";
+bar
+//15
+1: 4.e+a tie; 8; c+a; ae;
+2: 8.c+a-; 16; 8; 8.; 16; 8;
+
+			VERSE "Beau-ti-ful";
+			VERSE 8.; 16; 8; 8.; 16; 8; "Beau-ti-ful, Beau-ti-ful";
+bar
+//16
+1: 8.ae; 16be; 8c+g&; 4d+f; 16;;
+2: 8.ac; 16gb-; 8aa-; 4ad; 16;;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "home of the soul, While the";
+bar
+//17
+1: 8.c+a; 16e+a; 8c+a; 8.bg; 16ae; 8be;
+2: 8.ae; 16c+e; 8e+e; 8.d+e; 16c+e; 8d+e;
+
+			VERSE "years of e-ter-ni-ty";
+bar
+//18
+1: 4.ae tie; 4; 8s;
+2: 4.c+a- tie; 4; 8s;
+
+			VERSE " roll.";
+endbar

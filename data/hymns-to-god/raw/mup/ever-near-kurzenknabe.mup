@@ -1,0 +1,199 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Lyric Source: Sowing and Reaping: hymns, tunes, 
+//		 and carols for the Sunday school, 
+//		 prayer, praise and gospel service. 
+//		 Author: John H. Kurzenknabe. 
+//		 Publisher: J.H. Kurzenknabe & Sons, 
+//		 Copyright 1889
+//		 Hymn No. 6
+
+
+		
+// Transcribed by: Ted Gatza, Jr. 08/22/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Ever Near" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - MI" "\s(17)\f(TI)\:We\ give\ thanks\ unto\ thee,\ O\ \|God;\ We\ give\ thanks,\ for\ thy Name\ is\ near:\ Men\ tell\ of\ th\|y\ wondrous\ works.\ -\ Ps.\ 75:1" ""
+   title (13) "John. H. Kurzenknabe" "" "John. H. Kurzenknabe, 1889"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	staffpad=2 //1
+	scoresep=6,30
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key= 2&
+
+
+staff 2
+	key= 2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 4d+f; 8c+e; 4bd; 8r;
+2: 4bb-; 8bb-; 4bb-; 8r;
+
+
+			VERSE "<1. >-1|Ev-er near,";
+			VERSE "<2. >-1|Ev-er near,";
+			VERSE "<3. >-1|Ev-er near,";
+			
+bar
+//2
+1: 4be; 8ge; 4fd; 8r;
+2: 4ge; 8be; 4bb-; 8r;
+
+			VERSE "ev-er near,";
+			VERSE "ev-er near,";
+			VERSE "ev-er near,";
+bar
+//3
+1: 8fd; 8bd; 8r; 8bf; 8d+f; 8r;
+2: 8bb-; 8fb-; 8r; 8bd; 8bb-; 8r;
+
+			VERSE "Je-sus, bess-ed";
+			VERSE "Think not 'tis to-";
+			VERSE "In the day of";
+bar
+newscore
+//4
+1: 4.d+f; 4c+f; 8r;
+2: 4.bf; 4af; 8r;
+
+			VERSE "Sav-iour;";
+			VERSE "mor-row;";
+			VERSE "sad-ness;";
+bar
+//5
+1 1: 4c+f; 8c+f; 8c+ bm; 8bn ebm; 8c+e;
+1 2: 4s; 8s; 4f; 8s;
+2 1: 4af; 8af; 8a bm; 8g# ebm; 8af;
+2 2: 4s; 8s; 4f; 8s;
+
+			VERSE 4; 8; 4; 8; "Why should mor-tals";
+			VERSE 4; 8; 4; 8; "Je-sus wipes the";
+			VERSE 4; 8; 4; 8; "Through the dark-ness";
+bar
+//6
+1: 4bd; 8fd; 4.ge;
+2: 4bb-; 8bb-; 4.be;
+
+			VERSE "doubt or fear,";
+			VERSE "pres-ent tear,";
+			VERSE "shall ap-pear,";
+bar
+//7
+1: 8fd; 8bd; 8r; 8bf; 8af; 8r;
+2: 8bf; 8bf; 8r; 8d+f; 8c+f; 8r;
+
+			VERSE "Bless-ed with Thy";
+			VERSE "From the eye of";
+			VERSE "Christ! the star of";
+bar
+//8
+1: 4.c+f; 4bf; 8r;
+2: 4.e+f; 4d+bb-; 8r;
+
+			VERSE "fav-or.";
+			VERSE "sor-row.";
+			VERSE "glad-ness.";
+dblbar
+//9
+1 1: 4.d+ tie; 8d+ bm; 8c+ ebm; 8bf;
+1 2: 4.f tie; 4f; 8s;
+2: 4bb-; 8bb-; 8bb- bm; 8ac ebm; 8bd;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE 4.; 8s; 8s; 8; "Ev-er";
+			VERSE 4; 8; 4; 8; "Ev-er near Thy";
+bar
+//10
+1: 4.c+f tie; 4c+f; 8r;
+2: 4af; 8af; 4af; 8r;
+
+			VERSE "near,";
+			VERSE 4; 8; 4; 8s; "lov-ing side,";
+
+bar
+//11
+1 1:4.f+ tie; 8f+ bm; 8e+ ebm; 8c+f;
+1 2: 4.f tie; 4f; 8s;
+2: 4af; 8af; 4af; 8af;
+
+			VERSE 4.; 8s; 8s; 8; "Ev-er";
+			VERSE 4; 8; 4; 8; "There no e-vil";
+bar
+//12
+1: 4.d+f tie; 4d+f; 8r;
+2 1: 4b; 8b; 4b; 8r;
+2 2: 4b; 8b; 4b; 8s;
+
+			VERSE "near;";
+			VERSE 4; 8; 4; 8s; "may be-tide;";
+bar
+//13
+1: 4ge; 8bg; 4e+g; 8ge;
+2: 4be; 8be; 4be; 8be;
+
+			VERSE "Those who love their";
+bar
+//14
+1 1: 8f bm; 8b ebm; 8d+f; 4.c+f;
+1 2: 4d; 8s; 4.s;
+2: 4bb-; 8bb-; 4.af;
+
+			VERSE 4; 8; 4.; "Sav-iour dear,";
+bar
+//15
+1: 4d+f; 8bf; 8ge; 8bg; 8r;
+2 1: 4b; 8bd; 8be; 8be; 8r;
+2 2: 4b; 8s; 8s; 8s; 8s;
+
+			VERSE "Find Him ev-er,";
+bar
+//16
+1: 8bf; 8ae; 8r; 4.bd;
+2: 8d+f; 8c+f; 8r; 4.bb-;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "ev-er, near.";
+endbar

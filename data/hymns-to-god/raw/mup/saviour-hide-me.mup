@@ -1,0 +1,225 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest And Best
+//		A Choice Collection of New Songs
+//		for the Sunday School
+//		and Meetings of prayer and Praise
+//		New York and Chicago
+//		Publishers: Biglow and Main
+//		Copyright 1875
+//		Hymn no. 96
+
+// Transcribed by: Ted Gatza, Jr. 02/09/2010 Rev. 04/10/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Saviour, Hide Me" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - SOL" "\s(17)\f(TI)\:\"Hide\ me\ under\ the\ shadow\ of\ thy\ wing\"\ -\ Ps.\ 17:18 \(space)"""
+   title (13) "Fanny J. Crosby" " " "W. H. Doane, 1875"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4
+	key=3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4be; 4be; 4ge; 4eb-;
+2: 4ge; 4ge; 4be; 4ge;
+ital (13) above 1: 1 "Tenderly";
+
+			lyrics 1: "<1. >-1|Sav-iour, hide me";
+			lyrics 1: "<2. >-1|Sav-iour, keep me";
+			lyrics 1: "<3. >-1|Sav-iour, love me";
+			lyrics 1: "<4. >-1|Sav-iour, take me";
+bar
+//2
+1 1: 8fd bm; 8ec ebm; 4fd; 2e;
+1 2: 8s; 8s; 4s; 2e;
+2 1: 4bb-; 8b bm; 8a ebm; 2ge;
+2 2: 4s; 4b-; 2s;
+
+			lyrics 1: 4; 4; 2; "when the storm";
+			lyrics 1: 4; 4; 2; "ev-ery hour";
+			lyrics 1: 4; 4; 2; "all the while,";
+			lyrics 1: 4; 4; 2; "home at last,";
+bar
+//3
+1: 4c+e; 4c+e; 4be; 4ge;
+2: 4aa-; 4ac; 4ge; 4be;
+
+			lyrics 1: "Rears a-loft its";
+			lyrics 1: "By Thy all pro-";
+			lyrics 1: "Let me see Thy";
+			lyrics 1: "When the day of";
+bar
+newscore
+//4
+1 1: 4ge; 4f; 2fd;
+1 2: 4s; 4e; 2s;
+2: 4anc; 4af; 2bb-;
+
+			lyrics 1: "gi-ant form;";
+			lyrics 1: "tect-ing pow'r;";
+			lyrics 1: "ten-der smile;";
+			lyrics 1: "life is past;";
+bar
+//5
+1: 4af; 4af; 4ge; 4fd;
+2: 4bb-; 4bb-; 4bb-;4bb-;
+
+			lyrics 1: "Let my tremb-ling";
+			lyrics 1: "Let my heart a";
+			lyrics 1: "Let me hear Thy";
+			lyrics 1: "Take me where Thy";
+bar
+//6
+1: 4ge; 4c+e; 2be;
+2: 4be; 4ae; 2ge;
+
+			lyrics 1: "soul a-bide";
+			lyrics 1: "tem-ple be,";
+			lyrics 1: "voice di-vine";
+			lyrics 1: "saints a-bove";
+bar
+//7
+1 1: 4e+e; 8d+ bm; 8c+ ebm; 4s; 4s;
+1 2: 4s; 4e; 4s; 4s;
+2: 4c+a-; 8ba- bm; ac ebm; 4s; 4s;
+
+			lyrics 1: 4; 4; 4s; 4s; "In Thy";
+			lyrics 1: 4; 4; 4s; 4s; "Con-se-";
+			lyrics 1: 4; 4; 4s; 4s; "Breath-ing";
+			lyrics 1: 4; 4; 4s; 4s; "Joy-ful";
+invisbar
+newscore
+
+1 1: 4s; 8s; 8s; 4be; 4ge;
+1 2: 4s; 4s; 4s; 4s;
+2: 4s; 8s; 8s; 4ge; 4be;
+
+			lyrics 1: 4s; 4s; 4; 4; "pre-cious,";
+			lyrics 1: 4s; 4s; 4; 4; "crat-ed";
+			lyrics 1: 4s; 4s; 4; 4; "soft-ly:";
+			lyrics 1: 4s; 4s; 4; 4; "sing re-";
+
+bar
+//8
+1 1: 8fd bm; 8ec ebm; 4fd; 2e;
+1 2: 8s; 8s; 4s; 2e;
+2 1: 4bb-; 8b bm; 8a ebm; 2ge;
+2 2: 4s; 4b; 2s;
+
+			lyrics 1: 4; 4; 2; "bleed-ing side.";
+			lyrics 1: 4; 4; 2; "all to Thee.";
+			lyrics 1: 4; 4; 2; "Thou art mine.";
+			lyrics 1: 4; 4; 2; "deem-ing love.";
+dblbar
+//9 
+1: 4bg; 4bg; 4.bg; 8ge;
+2: 4be; 4e+e; 4.e+e; 8be;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Sav-iour, hide me;";
+bar
+//10
+1: 8fd bm; 8ge ebm; 8s; 8s; 2s;
+2: 4bb-; 4s; 2s;
+
+			lyrics 1: 4; 4s; 2s; [c]"I";
+invisbar
+newscore
+
+1: 8s; 8s; 8af bm; 8bg ebm; 2ge;
+2: 4s; 4bb-; 2be;
+
+			lyrics 1: 4s; 4; 2; "would rest,";
+
+bar
+//11
+1: 4c+e; 4be; 4ae; 4ge;
+2: 4ae; 4ge; 4c+e; 4be;
+
+			lyrics 1: "Calm-ly pil-lowed";
+bar
+//12
+1: 4bg; 4ge; 2fd;
+2: 4e+e; 4be; 2bb-;
+
+			lyrics 1: "on Thy breast;";
+bar
+//13
+1: 4af; 4af; 4ge; 4s;
+2: 4bb-; 4bb-; 4bb-; 4s;
+
+			lyrics 1: "On-ly there";
+invisbar
+newscore
+
+1: 4s; 4s; 4s; 4fd;
+2: 4s; 4s; 4s; 4bb-;
+
+			lyrics 1: "my";
+
+bar
+//14
+1: 4ge; 4c+e; 2be;
+2: be; 4ae; 2ge;
+
+			lyrics 1: "trust shall be,";
+bar
+//15
+1 1: 4e+e; 8d+ bm; 8c+ ebm; 4be; 4ge;
+1 2: 4s; 4e; 4s; 4s;
+2: 4c+a-; 8ba- bm; ac ebm; 4ge; 4be;
+
+			lyrics 1: 4; 4; 4; 4; "On-ly there is";
+bar
+//16
+1 1: 8fd bm; 8ec ebm; 4fd; 2e;
+1 2: 8s; 8s; 4s; 2e;
+2 1: 4bb-; 8b bm; 8a ebm; 2ge;
+2 2: 4s; 4b-; 2s;
+
+			lyrics 1: 4; 4; 2; "joy for me.";
+endbar

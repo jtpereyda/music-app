@@ -1,0 +1,367 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 12
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/20/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Since I Have Been Redeemed" ""
+   title (2)""
+   title (11)"" "\f(TI)My lips shall shout for joy when I sing praises unto thee;" ""
+   title (11)"" "\f(TI)And my soul, which thou hast redeemed. - Ps. 71:23" ""
+   title (11) "G - 4 - SOL" "" ""
+   title (13) "E. O. Excell" "" "E. O. Excell, 1884"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==== FOR LETTER ==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffsep=20
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+//6"x9"page size
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=95";
+
+//=========================
+//Verse 1
+
+//1
+1 1: 4d; 2.s;
+1 2: 4d; 2.s;
+2: 4gb; 2.s;
+
+	VS1 "<1. >-1|I";
+	VS1 "<2. >-1|I";
+	VS1 "<3. >-1|I";
+	VS1 "<4. >-1|I";
+	VS1 "<5. >-1|I";
+bar
+
+//2
+1: 4.dg; 8da; 8gb bm; 8ac+ ebm; 8bd+ bm; 8c+e+ ebm;
+2: 4.gb; 8gc+; 4gd+; 4gd+;
+
+	VS21 "have a song I";
+	VS21 "have a Christ that";
+	VS21 "have a Wit-ness,";
+	VS21 "have a joy I";
+	VS21 "have a home pre-";
+bar
+
+//3
+1 1: 4bd+; ac+; gb; s;
+1 2: 4s; ; ; s;
+2: 4dd+; ; gd+; s;
+
+	VS1 "love to sing,";
+	VS1 "sat-is-fies,";
+	VS1 "bright and clear,";
+	VS1 "can't ex-press,";
+	VS1 "pared for me,";
+invisbar
+
+1 1: 4s; s; s; g;
+1 2: 4s; ; ; g;
+2: 4s; ; s; gb;
+
+	VS1 "Since";
+	VS1 "Since";
+	VS1 "Since";
+	VS1 "Since";
+	VS1 "Since";
+bar
+
+//4
+1: 4.gb; 8gb; 4da; dg;
+2: 4.gd+; 8gd+; 4gc+; 4gb;
+
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+bar
+
+//5
+1 1: 2.d+; 4s;
+1 2: 4f; g; a; s;
+phrase below 1: 1 til 3;
+SFT(1)
+SFT(3)
+2 1: 4a; b; c+; 4s;
+2 2: 2.d; 4s;
+phrase above 2: 1 til 3;
+BFB(1)
+BFT(3)
+
+	VS1 "deemed,";
+	VS1 "deemed,";
+	VS1 "deemed,";
+	VS1 "deemed,";
+	VS1 "deemed,";
+bar
+
+//6
+1 1: 4d; 2.s;
+1 2: 4d; 2.s;
+2: 4dc+; 2.s;
+	
+	VS1 "Of";
+	VS1 "To";
+	VS1 "Dis-";
+	VS1 "All";
+	VS1 "Where";
+bar
+
+//7
+1: 4.dg; 8da; 8gb bm; 8ac+ ebm; 8bd+ bm; 8c+e+ ebm;
+2: 4.gb; 8gc+; 4gd+; 4gd+;
+
+	VS21 "my Re-deem-er,";
+	VS21 "do His will my";
+	VS21 "pell-ing ev-'ry";
+	VS21 "through His blood and";
+	VS21 "I shall dwell e-";
+bar
+
+//8
+1: 4bd+; ac+; gb; s;
+2: 4dd+; ; gd+; s;
+
+	VS1 "Sav-ior, King,";
+	VS1 "high-est prize,";
+	VS1 "doubt and fear,";
+	VS1 "right-eous-ness,";
+	VS1 "ter-nal-ly,";
+invisbar
+
+1: 4s; s; s; ea;
+2: 4s; s; s; cc+;
+
+	VS1 "Since";
+	VS1 "Since";
+	VS1 "Since";
+	VS1 "Since";
+	VS1 "Since";
+bar
+
+//9
+1: 4.dg; 8dg; 4da; 4df;
+2: 4.db; 8db; 4dc+; 4dc+;
+
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+	VS1 "I have been re-";
+bar
+
+//10
+1: 2.dg; 4s;
+2: 2.gb; 4s;
+
+	VS1 "deemed.";
+	VS1 "deemed.";
+	VS1 "deemed.";
+	VS1 "deemed.";
+	VS1 "deemed.";
+dblbar
+newscore
+
+CHORUS
+//11
+1: 8gb bm;8 ac+ ebm; 2.s;
+2: 4gd+; 2.s;
+
+	VS21 "Since";
+bar
+
+//12
+1 1: 2d+ tie; 8d+; 8d+; 8b; 8g;
+1 2: 8b; 8b; 8g; 8a; 4b; 4g;
+2 1: 8s; 8s; 8s; 8s; 4s; 8d+ bm; 8b ebm;
+2 2: 8gd+; ; 8gb; gc+; 4gd+; 4g;
+
+	VS1 "I have been re-";
+	VS22 "I have been re-deemed, Since";
+bar
+
+//13
+1 1: 2.d+; 8s; 8s;
+1 2: 8f; 8f; 8a; 8g; 4f; 4s;
+2: 8da; ; dc+; db; 4da; 4s;
+
+	VS 2.; 4s; "deemed,";
+	VS12 "I have been re-deemed,";
+invisbar
+
+1 1: 2.s; 8fa bm; 8gb ebm;
+1 2: 8s; 8s; 8s; 8s; 4s; 4s;
+2: 8s; ; s; s; 4s; 4dd+;
+
+	VS 2.s; 4; "Since";
+bar
+
+//14
+1 1: 8ac+; gc+; fc+; ec+; 4dc+; 8s; 8s;
+1 2: 8s; ; ;  ;4; 8s; 8s;
+2: 8dd+; ; ; ; 4dd+; 8s; ;
+
+
+	VS1 "I have been re-deemed,";
+invisbar
+
+1 1: 8s; s; s; s; 4s; 8e; 8df;
+1 2: 8s; ; ;  ;4; 8d; 8s;
+2: 8s; ; ; ; 4s; 8dc+; ;
+
+
+	VS1 "I will";
+bar
+
+//15
+1: 8dg; ; da; ; 4gb; 4s;
+2: 8gb; gb; gc+; gc+; 4gd+; 4s;
+
+	VS1 "glo-ry in His name,";
+bar
+
+//16
+1: 8gb bm;8 ac+ ebm; 2.s;
+2: 4gd+; 2.s;
+
+	VS21 "Since";
+bar
+
+//17
+1 1: 2d+ tie; 8d+; 8d+; 8b; 8g;
+1 2: 8b; 8b; 8g; 8a; 4b; 4g;
+2 1: 8s; 8s; 8s; 8s; 4s; 8d+ bm; 8b ebm;
+2 2: 8gd+; ; 8gb; gc+; 4gd+; 4g;
+
+	VS1 "I have been re-";
+	VS22 "I have been re-deemed, Since";
+bar
+
+//18
+1 1: 2.d+; 8s; 8s;
+1 2: 8f; 8f; 8a; 8g; 4f; 4s;
+2: 8da; ; dc+; db; 4da; 8s; 8s;
+
+	VS1 "deemed,";
+	VS12 "I have been re-deemed,";
+invisbar
+
+1 1: 2.s; 8fa; 8gb;
+1 2: 8s; 8s; 8s; 8s; 4s; 4s;
+2: 8s; s; s; s; 4s; 8dd+; 8dd+;
+
+	VS1 "I will";
+bar
+
+//19
+1: 8fd+; ec+; db; da; 4dg; df;
+2 1: 8dd+; ; ; dc+; 4db; 8a bm; c+ ebm;
+2 2: 8s; ; ; ; 4; 4d;
+
+	VS1 "glo-ry in the Sav-ior's";
+bar
+
+//20
+1: 2.dg; 4s;
+2: 2.g-gb; 4s;
+
+	VS1 "name.";
+endbar
+
+
+
+
+
+
+
+
+
+

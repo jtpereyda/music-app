@@ -1,0 +1,219 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 1 to 6
+//		by Ira D. Sankey, James McGranahan, and Gep. C. Stebbins
+//		Excelsior Edition
+//		Published by: The Biglow & Main Co. New York, Chicago
+//		The John Church Co. Cincinnati, New York, Chicago
+//		Copyright, 1895
+//		Hymn no. 52
+
+// Transcribed by: Ted Gatza, Jr. 04/20/2010; rev. 07/31/13
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "No Other Name" ""
+   title (2)""
+   title (11) "F - 3 - DO" "\s(17)\f(TI)\:Neither\ is\ there\ salvation\ in\ any\ other.\ -\ Acts\ 4:12 \(space)"""
+   title (13) "P. P. Bliss" " " "P. P. Bliss"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key= 1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1 1: 2s; 8f bm; 8a ebm;
+1 2: 2s; 4f;
+2: 2s; 4af;
+
+			lyrics 1: 2s; 4; "<1. >-1|One";
+			lyrics 1: 2s; 4; "<2. >-1|One";
+			lyrics 1: 2s; 4; "<3. >-1|My";
+			
+bar
+//2
+1: 4.c+f; 8d+f; 8.c+f; 16bf;
+2 1: 4.af; 8bf; 8.af; 16g;
+2 2: 4.s; 8s; 8.s; 16f;
+
+			lyrics 1: "of-fer of sal-";
+			lyrics 1: "on-ly door of";
+			lyrics 1: "on-ly song and";
+bar
+//3
+1 1: 8.a bm; 16b ebm; 4c+f; 4af;
+1 2: 4f; 4s; 4s;
+2 1: 8.f bm; 16g ebm; 4af; 4c+f;
+2 2: [pad -5.8] 4f; 4s; 4s;
+
+			lyrics 1: 4; 4; 4; "va-tion, To";
+			lyrics 1: 4; 4; 4; "heav-en Stands";
+			lyrics 1: 4; 4; 4; "sto-ry Is";
+bar
+//4
+1: 4.ge; 8af; 8.bg; 16af;
+2: 4.c+c; 8c+c; 8.c+c; 16c+c;
+
+			lyrics 1: "all the world make";
+			lyrics 1: "o-pen wide to-";
+			lyrics 1: "Je-sus died for";
+bar
+newscore
+//5
+1 1: 2ge; 8f bm; 8a ebm;
+1 2: 2s; 4f;
+2: 2c+c; 4af;
+
+			lyrics 1: 2; 4; "known; The";
+			lyrics 1: 2; 4; "day, One";
+			lyrics 1: 2; 4; "me; My";
+bar
+//6
+1: 4.c+f; 8d+f; 8.c+f; 16bf;
+2 1: 4.af; 8bf; 8.af; 16g;
+2 2: 4.s; 8s; 8.s; 16f;
+
+			lyrics 1: "on-ly sure foun-";
+			lyrics 1: "sac-ri-fice is";
+			lyrics 1: "on-ly hope of";
+bar
+//7
+1 1: 8.a bm; 16b ebm; 4c+f; 4af;
+1 2: 4f; 4s; 4s;
+2 1: 8.f bm; 16g ebm; 4af; 4c+f;
+2 2: [pad -5.8] 4f; 4s; 4s; 
+
+			lyrics 1: 4; 4; 4; "da-tion Is";
+			lyrics 1: 4; 4; 4; "giv-en, 'Tis";
+			lyrics 1: 4; 4; 4; "glo-ry, The";
+bar
+//8
+1: 8.ge; 16c+e; 4c+e; 4bnf; 
+2 1: 8.c+g; 16c+g; 4g; 4g; 
+2 2: 8.s; 16s; 4g; 4g; 
+
+			lyrics 1: "Christ, the Cor-ner-";
+			lyrics 1: "Christ, the liv-ing";
+			lyrics 1: "cross of Cal-va-";
+bar
+newscore
+//9
+1: 2c+e; 4s;
+2: 2gc; 4s;
+
+			lyrics 1: "stone.";
+			lyrics 1: "way.";
+			lyrics 1: "ry.";
+dblbar
+//10
+1: 4c+e; 2s;
+2: 4bc; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"No";
+bar
+//11
+1: 4.c+f; 8af; 8.d+f; 16c+f;
+2 1: 4.af; 8f; 8.bf; 16af;
+2 2: 4.s; 8f; 8.s; 16s;
+
+			lyrics 1: [c]"oth-er name is";
+bar
+//12
+1 1: 8.c+ bm; 16b ebm; 4af; 4af;
+1 2: 4f; 4s; 4s; 
+2 1: 8.a bm; 16g ebm; 4f; 4c+f;
+2 2: 4f; 4f; 4s;
+
+			lyrics 1: 4; 4; 4; [c]"giv-en, No";
+bar
+//13
+1: 4. bg; 8ge; 8.c+a; 16bg;
+2: 4. c+c; 8c+c; 8.c+c; 16c+c;
+
+			lyrics 1: [c]"oth-er way is";
+bar
+//14
+1 1: 2af; 8s; 8s; 
+1 2: 2s; 4s;
+2: 2c+f; 4s;
+
+			lyrics 1: [c]"known,";
+invisbar
+newscore
+
+1 1: 2s; 8f bm; 8a ebm; 
+1 2: 2s; 4f;
+2: 2s; 4af;
+
+			lyrics 1: 2s; 4; [c]"'Tis";
+
+bar
+//15
+1: 8.c+f; 16bnf; 4c+f; 4af;
+2 1: 8.af; 16g#; 4af; 4c+f;
+2 2: 8.s; 16f; 4s; 4s; 
+
+			lyrics 1: [c]"Je-sus Christ, the";
+bar
+//16
+1: 8.d+f; 16c#+e; 4d+f; 4f+g#;
+2 1: 8.b; 16b; 4b; 4d+bn;
+2 2: 8.b; 16b; 4b; 4s;
+
+			lyrics 1: [c]"First and Last, He";
+bar
+//17
+1: 4.c+a; 8af; 8.be; 16ge;
+2: 4.f+c+; 8c+c; 8.c+c; 16bc;
+
+			lyrics 1: [c]"saves, and He a-";
+bar
+//18
+1 1: 2f; 4s;
+1 2: 2f; 4s;
+2: 2af; 4s;
+
+			lyrics 1: [c]"lone.";
+endbar

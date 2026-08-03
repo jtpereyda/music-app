@@ -1,0 +1,322 @@
+// !Mup vs.6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: 
+//	Voices of Praise
+//	Prepared with Especial reference 
+//	to the needs of the Sunday School
+//	Will also ve found suitable for the prayer 
+//	meeting and other religious gatherings
+//	Compiled by William B Olmstead, David S. Warner,
+//	Mary Coleman, Emma L. Hogue, William B. Rose
+//	Published by W. B. Rose, Agent
+//	1132 Washington Boulevard, Chicago, IL
+//	Copyright 1909
+//	Hymn No.: 5
+	
+// Transcribed by: 
+//	Ted Gatza, Jr. 08/02/2022
+
+// Revisions:
+//	09/02/2022
+
+// HymnsToGod.org
+
+// ****************************************
+// Letter size format
+
+top
+
+   	title bold (19) "" "All Glory Be Thine" ""
+   	title (2)""
+   	title (11)"" "\f(TI)for thou only art holy; for all the nations shall" ""
+   	title (11)"" "\f(TI)come and worship before thee; - Rev. 15:4" ""
+  	title (11) "A\(flat) - 2 - MI" "" ""
+   	title (13) "Fanny J. Crosby" "" "John R. Sweney, 1909"
+ 
+footer
+
+   	title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+
+	label=""
+	packexp=0.0
+	packfact=0.8
+	pad=0
+	vscheme=2f
+	staffsep=23
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale=1
+	lyricsdist = 1
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+ 	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+   //Time Signature - Use on projection hymns only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+         print (t.w - 2, t.y) "\f(newcentury bold)\s(16)6";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)8";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)6";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)8;
+	 @
+
+// set midi
+	midi all: 0 "temp=95";
+	
+//=========================
+
+//1
+1: 4.c+e; 8db; da; df;
+2: 4.a-a; 8df;; da;
+
+	VS "<1. >-1|Thou on-ly art";
+	VS "<2. >-1|Thou on-ly art";
+	VS "<3. >-1|Thou on-ly art";
+bar
+
+//2
+1: 4.ce; ca;
+2: 4.a-a; a-e;
+
+	VS "ho-ly,";
+	VS "ho-ly,";
+	VS "ho-ly,";
+bar
+
+//3
+1: 4.eb; 8eb; ec+; ed+;
+2: 4.eg; 8; ea; eb;
+
+	VS "Thou on-ly the";
+	VS "In Thee is our";
+	VS "The an-gels in";
+bar
+
+//4
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4.a-a tie; 4a-a; 8r;
+
+	VS "Lord;";
+	VS "trust;";
+	VS "light;";
+bar
+
+//5
+1: 4.ec+; 8db; da; df;
+2: 4.a-a; 8df;; da;
+
+	VS "Truth, mer-cy and";
+	VS "Thy laws are un-";
+	VS "With proph-ets and";
+bar
+
+//6
+1: 4.ce; ea;
+2: 4.a-a; a-c+;
+
+	VS "judg-ment";
+	VS "chang-ing,";
+	VS "mar-tyrs";
+bar
+
+//7
+1: 4.eg; 8; ea; eb;
+2: 4.eb; 8; ec+; ed+;
+
+	VS "Shine forth in Thy";
+	VS "Thy stat-utes are";
+	VS "Their an-thems u-";
+bar
+
+//8
+1: 4.ea tie; 4ea; 8r;
+2: 4.a-ac+ tie; 4a-ac+; 8r;
+
+	VS "word.";
+	VS "just.";
+	VS "nite.";
+bar
+
+//9
+1: 4.fa; 8ac+; gb; fa;
+2: 4.fc+; 8;;;
+
+	VS "Thou rul-est and";
+	VS "All na-tions and";
+	VS "Thou on-ly art";
+bar
+
+//10
+1: 4.fa; eng;
+2 1: 4.cc+; 4c+ slur; 8b;
+2 2: 4.s; 4.c;
+
+	VS "reign-est,";
+	VS "peo-ple";
+	VS "ho-ly";
+bar
+
+//11
+1: 4.df; 8fa; eg; df;
+2: 4.da; 8;;;
+
+	VS "All oth-ers a-";
+	VS "Be-fore Thee shall";
+	VS "O An-cient of";
+bar
+
+//12
+1: 4.ce tie; 4ce; 8r;
+2: 4.a-a tie; 4a-a; 8r;
+
+	VS "bove;";
+	VS "fall;";
+	VS "days;";
+bar
+
+//13
+1: 4.ec+; 8; fd+; g&e+;
+2 1: 4.a; 8;;;
+2 2: 4.a; 8;;;
+
+	VS "Thy throne is e-";
+	VS "The Fath-er, Re-";
+	VS "The bound-less cre-";
+bar
+//14
+1 1: 4.df; 4b slur; 8a;
+1 2: 4.s; d;
+2 1: 4.da; 4f slur; 8b;
+2 2: 4.s; 4.d;
+
+	VS "ter-nal,";
+	VS "deem-er,";
+	VS "a-tion";
+bar
+
+//15
+1: 4.dg; 8; df; dg;
+2 1: 4.eb; 8;; e;
+2 2: 4.s; 8;; e;
+
+	VS "Thy scep-tre is";
+	VS "And Sav-ior of";
+	VS "Is filled with Thy";
+bar
+
+//16
+1: 4.ca tie; 4ca; 8r;
+2: 4.a-e tie; 4a-e; 8r;
+
+	VS "love.";
+	VS "all.";
+	VS "praise.";
+dblbar
+newscore
+//17
+CHORUS
+1: 4.ec+; 8;;;
+2 1: 4.a; 8;;;
+2 2: 4.a; 8;;;
+
+	VS "Thy throne is e-";
+bar
+
+//18
+1: 4.ee+;;
+2: 4.gb;;
+
+	VS "ter-nal";
+bar
+
+//19
+1: 4.fa; 8;;;
+2: 4.fc+; 8;;;
+
+	VS "Thy king-dom di-";
+bar
+
+//20
+1: 4.enc+ tie; 4.ec+;
+2 1: 4.c<c> c+<b>; 4.cb;
+
+	VS "vine.";
+bar
+
+//21
+1: 4.df; 8fb; fa; df;
+2: 4.da; 8dd+;; da;
+
+	VS "Hence-forth and for-";
+bar
+
+//22
+1 1: 4.e; 4ca; 8ec+;
+1 2: 4.e; 4s; 8;
+2 1: 4.ca; 4a-a; 8a;
+2 2: 4.s; 4; 8a;
+
+	VS "ev-er All";
+bar
+
+//23
+1: 4.ge+; 4gd+; 8eg;
+2: 4.eb; 4; 8ed+;
+
+	VS "glo-ry be";
+bar
+
+//24
+1: 4.ea tie; 4ea; 8r;
+2: 4. a-ac+ tie; 4a-ac+; 8r;
+
+	VS "Thine.";
+endbar
+
+
+
+
+

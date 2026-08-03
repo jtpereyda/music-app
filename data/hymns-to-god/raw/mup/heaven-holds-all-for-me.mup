@@ -1,0 +1,321 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+// 	New Perfect Praise
+//	For Sunday-Schools, Singing-Schools, Revivals, Conventions
+//	and General Use in Christian Work and Worship
+//	Publisher: James D. Vaughan
+//	Lawernceburg, Tenn.
+//	Copyright: 1920
+//	Hymn No.: 46
+
+// Transcribed by: Ted Gatza, Jr. 01/12/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.1
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=6/4
+	key=a&
+
+staff 2
+	key=a&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Heaven Holds All For Me" ""
+   title (2) ""
+   title (11) "" "\f(TI)But now they desire a better country, that is, an heavenly. - Heb. 11:16" "" 
+   title (11) "" 
+   title (11) "A \(flat) - 2 - MI" "" ""
+   title (13) "Tillit S. Teddlie" "" "Tillit S. Teddlie"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (13) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (13) above 1: 1 "Refrain"; @
+         define RALL ital (13) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+// Verse
+
+//1
+ital (13) above 1: 1 "Not too fast.";
+1: 4ec+; dnbn; ec+; d&b&; ca; cb;
+2: 4a-a; ; ; a-e; ; a-g&;
+
+	VS "<1. >-1|Earth holds no treas-ures but";
+	VS "<2. >-1|Out on the hill of that";
+	VS "<3. >-1|Why should I long for the";
+bar
+
+//2
+1: 4da; dg; df; ; 2ce;
+2: 4df; ; da; a-a; 2;
+
+	VS "per-ish with us-ing,";
+	VS "won-der-ful coun-try,";
+	VS "world and its sor-rows,";
+bar
+
+//3
+1 1: 4ec+; ae+; af+; ae+; ac+; a; 
+1 2: 4s; ; ; ; ; a;
+2 1: 4a; ac+; ad+; ac+; ae+; fdn+;
+2 2: 4a; s; ; ; ; ;
+
+	VS "How-ev-er pre-cious they";
+	VS "Hap-py, con-tent-ed and";
+	VS "When in that home o'er the";
+bar
+
+//4
+1: 2.gb tie; ;
+2: 2.ee+ tie; ;
+
+	VS "be;";
+	VS "free;";
+	VS "sea;";
+bar
+
+//5
+1 1: 4ac+; bn; ac+; eb&; ea; enb;
+1 2: 4s; a; s; ; ; ;
+2: 4a-a?e+; a-a?dn+; a-a?e+; a-a?d&+; a-a?c+; ca;
+
+	VS "Yet there's a coun-try to";
+	VS "Loved ones are wait-ing and";
+	VS "Mil-lions are sing-ing the";
+bar
+
+//6
+1: 4fa; eg; df; df; 2ce;
+2: 4dd+; ; da; a-a; 2;
+
+	VS "which I am go-ing";
+	VS "watch-ing my com-ing,";
+	VS "won-der-ful sto-ry,";
+bar
+
+//7
+1: 4ec+; ae+; af+; a~e+ slur; ac+; eb;
+   FST(4)
+   FST(5)
+2 1: 4a; ac; dd+; e~c+ slur; ee+; ed+;
+2 2: 4a; s; ; ; ; ;
+   FBB(4)
+   FBB(5)
+
+	VS "Heav-en holds all to";
+//	VS "Heav-en holds all to";
+//	VS "Heav-en holds all to";
+bar
+
+//8
+1: 2.ea tie; 2.;
+2: 2.a-ac+ tie; 2.;
+
+	VS "me.";
+//	VS "me.";
+//	VS "me.";
+dblbar
+
+CHORUS
+
+//9
+1: 4ec+; db; ca; 2ce; 4df;
+2: 4a-a; ; a-e; 2a-a; 4;
+
+	VS "Heav-en holds all to";
+bar
+
+//10
+1: 2.ce slur; ea;
+2 1: 2.a slur; c+;
+2 2: 4a-; c; e; 2.a-a;
+
+	VS "me,_";
+	VS 4s; 4s; 4; 2.; "to me,";
+bar
+
+//11
+1 1: 4ec+; ae+; af+; ae+; ac+; a;
+1 2: 4s; ; ; ; ; a;
+2 1: 4a; ac+; ad+; ac+; ae+; ce+;
+2 2: 4a; s; ; ; ; ;
+
+	VS "Bright-er its glo-ry will";
+bar
+
+//12
+1: 2.gb tie; ;
+2: 2.ee+ tie; ;
+
+	VS "be";
+bar
+
+//13
+  ital above 1: 1 "p";
+1 1: 4ac+; bn; ac+; eb&; 2ea;
+   FST(5)
+1 2: 4s; a; s; ; 4s =_e1; 4g&? =_g1;
+   curve (_e1.x, _e1.y -6) to (_g1.x, _g1.y -1) bulge -2
+2: 4a-a?e+; a-a?dn+; a-a?e+; a-a?d&+; 2a-a?c+;
+   FBT(5)
+
+	VS "Joy with-out meas-ure";
+bar
+
+//14
+   ital above 1: 1 "m";
+1: 4fb; fa; ; df; 2ce;
+   FST(5)
+2: 4da?d+; ; da; a-a; 2;
+   FBT(5)
+
+	VS "will be my treas-ure,";
+bar
+
+//15
+   ital above 1: 2 "rit.";
+1: 4ec+; ae+; af+; a~e+ slur; ac+; eb;
+   FST(4)
+   FST(5)
+2 1: 4a; ac+; dd+; e~c+ slur; ee+; ed+;
+2 2: 4a; s; ; ; ; ;
+   FBT(4)
+   FBT(5)
+
+	VS "Heav-en holds all to";
+bar
+
+//16
+1: 2.ea tie; ;
+2: 2.a-ac+ tie; ;
+
+	VS "me.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

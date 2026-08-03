@@ -1,0 +1,328 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Victorious Life Hymns
+//		Edited by: Charles M. Alexander
+//		and the Council of the Victorious Life Testimony
+//		The Sunday School Times Company
+//		Philadelphia
+// 		Copyright 1919
+//		Hymn No.: 59
+
+// Transcribed by: Ted Gatza, Jr. 06/13/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=.94
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=13
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Deeper And Deeper" ""
+   title (2) ""
+   title (11) "" "\f(TI)Looking unto Jesus the author and finisher of our faith;" ""
+   title (11) "" "\f(TI)who for the joy set before Him endured the cross... Heb.12:2" ""
+   title (11) "" 
+   title (11)" E\(flat) - 2 - MI" "" ""
+   title (13) "Oswald J. Smith" "" "Oswald J. Smith, 1914"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=180";
+
+//=========================
+
+// Verse
+
+//1
+1: 4eg; ; ; 2; 4fa;
+2: 4eb; ; ; 2; 4; 
+
+	VS "<1. >-1|In-to the heart of";
+	VS "<2. >-1|In-to the will of";
+	VS "<3. >-1|In-to the cross of";
+	VS "<4. >-1|In-to the joy of";
+bar
+
+//2
+1: 2.gb; ; 
+2: 2.ee+; ;
+
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "Je-sus,";
+bar
+
+//3
+1: 4eg; ea; eb; 4.ee+; 8ad+; 4ac+;
+2: 4eb; fb; gb; 4.ac+; 8ad+; 4ae+;
+
+	VS "deep-er and deep-er I";
+	VS "deep-er and deep-er I";
+	VS "deep-er and deep-er I";
+	VS "deep-er and deep-er I";
+bar
+
+//4
+1: 2.gb tie; ;
+2: 2.ee+ tie; ;
+
+	VS "go,";
+	VS "go,";
+	VS "go,";
+	VS "go,";
+bar
+
+//5
+1 1: 4f; df; ; 2f; 4eg;
+1 2: 4f; s; ; 2f; 4s;
+2 1: 4bd+; b; fb; 2db; 4eb;
+2 2: 4s; a; s; 2s; 4;
+
+	VS "Seek-ing to know the";
+	VS "Pray-ing for grace to";
+	VS "Fol-low-ing thro' the";
+	VS "Ris-ing with soul en-";
+bar
+
+//6
+1: 2.fa; ;
+2: 2.b-d+; ;
+
+	VS "rea-son";
+	VS "fol-low,";
+	VS "gar-den";
+	VS "rap-tured";
+bar
+
+//7
+1: 4eg; ea; eb; 2ac+; 4fa;
+2: 4ee+; fe+; ge+; 2ae+; 4bd+;
+
+	VS "why He should love me";
+	VS "seek-ing His way to";
+	VS "fac-ing the dread-ed";
+	VS "far from the world be-";
+bar
+
+//8
+1: 2.eg tie; ;
+2: 2.ee+ tie; ;
+
+	VS "so,";
+	VS "know,";
+	VS "foe,";
+	VS "low,";
+bar
+
+//9
+1: 4eg; ; ; 2; 4fa;
+2: 4eb; ; ; 2; 4;
+
+	VS "Why He should stoop to";
+	VS "Bow-ing in full sur-";
+	VS "Drink-ing the cup of";
+	VS "Joy in the place of";
+bar
+
+//10
+1: 2.gb; ;
+2: 2.ee+; ;
+
+	VS "lift me";
+	VS "ren-der";
+	VS "sor-row,";
+	VS "sor-row,";
+bar
+
+//11
+1: 4eg; fa; gb; 2ge+; 4ed+;
+2: 4ee+; ; ; 2eb; 4gb;
+
+	VS "up from the mir-y";
+	VS "low at His bless-ed";
+	VS "sob-bing with bro-ken";
+	VS "peace in the midst of";
+bar
+
+//12
+1: 2.ec+ tie; ;
+2 1: 2.a tie; ;
+2 2: 2.a tie; ;
+
+	VS "clay,";
+	VS "feet,";
+	VS "heart,";
+	VS "pain,";
+bar
+
+//13
+RALL
+1: 4ee+; ed+; ec+; 2.eb;
+2 1: 4ac+; b; a; 2.eg;
+2 2: 4s; a; ; 2.s;
+
+	VS "Sav-ing my soul,";
+	VS "Bid-ding Him take,";
+	VS "O Sav-ior, help!";
+	VS "Je-sus will give,";
+bar
+
+//14
+1: 4dc+; db; da; 2.eg;
+2: 4b-b; ; ; 2.eb;
+
+	VS "mak-ing me whole,";
+	VS "break me and make,";
+	VS "dear Sav-ior, help";
+	VS "Je-sus will give;";
+bar
+
+//15
+1: 4df; dg; da; db; da; df;
+2 1: 4b; gb; fb; b-a; b-f; b-a;
+2 2: 4a; s; ; ; ; ;
+
+	VS "Tho' I had wan-dered a-";
+	VS "Till I am mold-ed and";
+	VS "grace for my weak-ness im-";
+	VS "He will up-hold and sus-";
+bar
+
+//16
+1 1: 2.e tie; ;
+1 2: 2.e tie; ;
+2: 2.eg tie; ;
+
+	VS "way.";
+	VS "meet.";
+	VS "part.";
+	VS "tain.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

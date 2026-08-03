@@ -1,0 +1,225 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No. 2
+//		Compiled and arranged for use in
+//		Gospel Meetings Sunday Schools, Prayer Meetings,
+//		And Other Religious Services
+//		By Ira D. Sankey, James McGranahan, and Geo. C. Stebbins.
+//		Published by The Copp. Clark Company, Limited
+//		Front Street West Toronto
+//		Copyright 1899
+
+// 		Transcribed by: Ted Gatza, Jr. 09/06/2009; Rev. 01/23/2014
+// 		HymnsToGod.org
+// ****************************************************************************************
+
+
+
+top
+   title bold (19) "" "Press Forward, O Soldiers" ""
+   title (2) ""
+   title (11) "F - 4 - DO" "\s(17)\f(TI)\:Be\ strong\ and\ of\ good\ courage\ -\ Deut.\ 31:6 \(space)"""
+   title (13) "Frances J. Crosby" "Ira D. Sankey, 1899"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	staffs=2
+	time=4/4
+	key=1&	
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=0.200
+	bottommargin=0.200
+	withfontfamily=palatino
+
+staff 2
+	key=1&
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+// 1
+1: 4s; 4s; 4s; 8s; 8fc; 
+2: 4s; 4s; 4s; 8s; 8fa;
+
+				lyrics 1: "<1. >-1|Press";
+				lyrics 1: "<2. >-1|Move";
+				lyrics 1: "<3. >-1|Through";
+				
+bar
+
+//2
+1 1: 4fc+; 8.fc+; 16fd+; 4fc+; 8f;    8g; 
+1 2: 4s;   8.s;   16s;   4s;  8f;    8f;
+2:   4fa;  8.fa;  16fb;  4fa; 8a-c+; 8b-d+; 
+
+				lyrics 1: "for-ward, O sol-diers, with";
+				lyrics 1: "for-ward, O sol-diers, be";
+				lyrics 1: "le-gions of dark-ness may";
+				
+bar
+
+//3
+1 1: 4fa;  8.cf; 16eg; 4.f; 8s;
+1 2: 4s;   8.s;  16s;  4.f; 8s;
+2 1: 4cc+; 8.ca; 16cb; 4.a; 8s;
+2 2: 4s;   8.s;  16s;  4.f; 8s;
+
+				lyrics 1: "ban-ner and shield;";
+				lyrics 1: "loy-al and true,";
+				lyrics 1: "ral-ly their pow'rs,";
+dblbar
+newscore
+//4
+1 1: 4s; 4s; 4s; 8s; 8f;
+1 2: 4s; 4s; 4s; 8s; 8f;
+2:   4s; 4s; 4s; 8s; 8fa;
+				lyrics 1: "The";
+				lyrics 1: "What-";
+				lyrics 1: "Though";
+bar
+
+//5
+1 1:   4fb; 8.fc+; 16fd+; 4fc+; 8fa; 8f;
+1 2: 4s;  8.s;   16s;   4s;   8s;  8f;
+2:   4db; 8.ca;  16b-b; 4fa;  8fc+; 8ac+;
+
+				lyrics 1: "Lord is our help-er, the";
+				lyrics 1: "ev-er the tri-als keep";
+				lyrics 1: "fierce be the con-flict, the";
+bar
+//6
+1 1: 4eg;  8.fa;  16g;  4.ec+; 8s;
+1 2: 4s;   8.s;   16f;  4.s;   8s;
+2:   4gc+; 8.gbn; 16gb; 4.cc+; 8s;
+
+				lyrics 1: "world is our field:";
+				lyrics 1: "Je-sus in view;";
+				lyrics 1: "day shall be ours;";
+dblbar
+newscore
+
+//7
+1: 4s; 4s; 4s; 8s; 8ec+;
+2: 4s; 4s; 4s; 8s; 8cb&;
+
+				lyrics 1: "With";
+				lyrics 1: "His";
+				lyrics 1: "God's";
+bar
+
+//8
+1: 4fc+; 8.fc+; 16fd+; 4fc+; 8.fa; 16fa;
+2: 4fa; 8.fa; 16fb;  4fa;  8.fc+; 16ce&;
+
+				lyrics 1: "cour-age ad-vanc-ing, our";
+				lyrics 1: "steps let us fol-low, and";
+				lyrics 1: "arm is our ref-fuge; we'll";
+bar
+
+//9
+1: 4fb; 8.fc+; 16fc+; 4.fd+; 8s;
+2: 4db; 8.ac+;  16ac+;  4.b-b; 8s;
+
+				lyrics 1: "strength in His might,";
+				lyrics 1: "walk in His light,";
+				lyrics 1: "trust in his might,";
+dblbar
+newscore
+
+//10
+1: 4s; 4s; 4s; 8s; 8fd+;
+2: 4s; 4s; 4s; 8s; 8db;
+
+				lyrics 1: "Let";
+				lyrics 1: "And";
+				lyrics 1: "While";
+bar
+
+//11
+1 1: 4fc+; 8.fc+; 16df; 8cf; 4f;  8gb;
+1 2: 4s;   8.s;   16s;  8s;  4f;  8s;
+2:   4fa;  8.fa;  16fb; 8fa; 4da; 8bd+;
+
+				lyrics 1: "this be our watch-word: \"For";
+				lyrics 1: "this be our watch-word: \"For";
+				lyrics 1: "march-ing to bat-tle for";
+bar
+
+//12
+1 1: 4fa;  8.cf; 16eg; 4.f; 8s;
+1 2: 4s;   8.s;  16s;  4.f; 8s;
+2 1: 4cc+; 8.ca; 16c+; 4.fa; 8s;
+2 2: 4s;   8.s;  16b;  4.s; 8s;
+
+				lyrics 1: "God and the right.\"";
+				lyrics 1: "God and the right.\"";
+				lyrics 1: "\"God and the right.\"";
+dblbar
+newscore
+
+//13
+1: 4s; 4s; 4s; 8s; 8eg;
+2: 4s; 4s; 4s; 8s; 8cc+;
+
+				ital (13) above 1: 4 "Chorus";
+				lyrics 1: "Then";
+			
+bar
+
+//14
+1: 4eg;  8.d#f#; 16eg;  4ec+; 8ce;  8ge+;
+2: 4cc+; 8.cc+;  16cc+; 4cc+; 8cc+; 8cc+;
+
+				lyrics 1: "stand for the right, Firm-ly";
+bar
+
+//15
+1: 4fd+; 8.fa;  16fbn; 4.ec+; 8s;
+2: 4fa;  8.gd+; 16gd+; 4.cc+; 8s;
+
+				lyrics 1: "stand for the right;";
+dblbar
+newscore
+
+//16
+1: 4s; 4s; 4s; 8s; 8ec+;
+2: 4s; 4s; 4s; 8s; 8b-c+;
+
+				lyrics 1: "And";
+bar
+
+//17
+1 1:   4ff+;  8.fe+;  16fd+; 8fc+; 4f;  8fb;
+1 2: 4s;    8.s;    16s;   8s;   4f;  8s;
+2:   4a-c+; 8.b-c+; 16db;  8fa;  4fa; 8db;
+
+				lyrics 1: "this be our watch-word: \"For";
+bar
+
+//18
+1 1:   4fa;  8.cf; 16eg; 4.f;  8s;
+1 2: 4s;   8.s;  16s;  4.f;  8s;
+2:   4cc+; 8.ca; 16cb; 4.fa; 8s; 
+
+				lyrics 1: "God and the right.\"";
+endbar

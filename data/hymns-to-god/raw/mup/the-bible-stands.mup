@@ -1,0 +1,206 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: http://www.hymntime.com/tch/htm/b/i/b/bibstand.htm
+//		Copyright 1917
+//		
+// Transcribed by: Ted Gatza, Jr. 01/13/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Bible Stands" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:The\ grass\ withereth,\ the\ f\|lower\ fadeth:\ but\ the\ Word of\ our\ God\ shall\ sta\|nd\ forever.\ Isa.\ 40:8" ""   
+   title (13) "Halder Lillenas, arr." "" "Halder Lillenas, 1917"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=110";
+
+//1
+1: 4ec; s;;;
+2: 4aa-; s;;;
+
+			VERSE "<1. >-1|The";
+			VERSE "<2. >-1|The";
+			VERSE "<3. >-1|The";
+			VERSE "<4. >-1|The";
+			
+bar
+//2
+1: 4ac; ad; ac; 8gd; ae;
+2: 4ea-; 4fa-; 4ea-; 8eb-; ac;
+
+			VERSE "Bi-ble stands like a";
+			VERSE "Bi-ble stands like a";
+			VERSE "Bi-ble stands and it";
+			VERSE "Bi-ble stands eve-ry";
+bar
+//3
+1: 4bd; fd; 8bd; af; ge; fd;
+2: 4ad;; 8;;;;
+
+			VERSE "rock un-daunt-ed 'Mid the";
+			VERSE "mount-ain tower-ing Far a-";
+			VERSE "will for-e-ver, When the";
+			VERSE "test we give it, For its";
+bar
+//4
+1: 4ec; ac; c+e; ae;
+2: 4aa-;;; ac;
+
+			VERSE "rag-ing storms of";
+			VERSE "bove the works of";
+			VERSE "world has passed a-";
+			VERSE "Au-thor is di-";
+bar
+//5
+1 1: 2.be; 4e;
+1 2: 2.s; 4d;
+2: 2.ge; 4;
+
+			VERSE "time; It's";
+			VERSE "men; Its";
+			VERSE "way; By";
+			VERSE "vine; By";
+bar
+//6
+1: 4ac; ad; ac; 8gd; ae;
+2: 4aa-; 4fa-; ea-; 8eb-; ac;
+
+			VERSE "pag-es burn with the";
+			VERSE "truth by none e-ver ";
+			VERSE "in-spir-a-tion it";
+			VERSE "faith in God I ex-";
+//			VERSE "grace a-lone I ex-";  //Original verse.
+bar
+//7
+1: 4bd; fd; 8bd; af; ge; fd;
+2: 4ad;; 8;;;;
+
+			VERSE "truth e-ter-nal, And they";
+			VERSE "was re-fut-ed, And de-";
+			VERSE "has been giv-en, All its";
+			VERSE "pect to live it, And to";
+bar
+//8
+1: 4ec; 8c+e; d+f; 4c+e; bd;
+2: 4ae; 8;; 4; ge;
+
+			VERSE "glow with a light sub-";
+			VERSE "stroy it they ne-ver";
+			VERSE "pre-cepts I will o-";
+			VERSE "prove and to make it";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "lime.";
+			VERSE "can.";
+			VERSE "bey.";
+			VERSE "mine.";
+dblbar
+newscore
+//10
+1: 4ec; 2.s;
+2: 4aa-; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "The";
+bar
+//11
+1 1: 4c+;; c+e; 8be; ae;
+1 2: 8e<a> bm; a ebm; g<f> bm; f ebm; 4s; 8;;
+2: 4aa-; ea-; aa-; 8gb-; ac;
+
+			VERSE "Bi-ble stands though the";
+bar
+//12
+1 1: 4ge; d+e; 8; be; ge; f;
+1 2: 4s;; 8;;; e;
+2: 4be; 4ge; 8;; be; ae;
+
+			VERSE "hills may tum-ble, it will";
+bar
+//13
+1 1: 8e<f> bm; f ebm; 4d+; d+b; 8c+a; bg;
+1 2: 8e<f> bm; f ebm; g<a> bm; a ebm; 4s; 8s;;
+2: 4ge; be; e+e; 8; d+e;
+
+			VERSE 4; 4; 4; 8; 8; "firm-ly stand when the";
+bar
+//14
+1: 4ae; e+a; 8; c+e; bd; ac;
+2 1: 4c+a;; 8; a; ge; ae;
+2 2: 4s;; 8; a; s;;
+
+			VERSE "earth shall crum-ble; I will";
+bar
+//15
+1: 4ec; c+e;; 8bd; c+d;
+2: 4aa-;;; 8;;
+
+			VERSE "plant my feet on its";
+bar
+//16
+1: 4d+f; fd; 8bd; af; ge; fd;
+2: 4ad;; 8;;;;
+
+			VERSE "firm found-a-tion, For the";
+bar
+//17
+1: 2ec; bd;
+2: 2ae; ge;
+
+			VERSE "Bi-ble";
+bar
+//18
+1: 2.ac; 4s;
+2: 2.aea-; 4s;
+
+			VERSE "stands.";
+endbar

@@ -1,0 +1,230 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The New Evangel
+//		Edited and Compiled by Robert H. Coleman
+//		American Baptist Society
+//		Boston - Chicago - St. Louis
+//		Copyright 1911
+// 		by Robert H. Coleman, Dallas Texas
+//		Hymn no. 7
+
+// Transcribed by: Ted Gatza, Jr. 01/26/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Because I Love Jesus" ""
+   title (2)""
+   title (11) "E - 2 - SOL" "\s(17)\f(TI)\:These\ things\ have\ I\|\ spoken\ unto\ you,\ that in\ me\ ye\ may\ hav\|e\ peace.\ -\ Jn.\ 16:33"""
+   title (13) "James Rowe" " " "Chas. H. Gabriel, 1902"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/4	
+	key=4#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4#
+	clef=bass
+// ****************************************
+
+music
+
+midi all: 0 "tempo=115";
+
+//1
+1: 2.s; 2s; 4bg;
+2: 2.s; 2s; 4e+e;
+
+			lyrics 1: 2.s; 2s; 4; "<1. >-1|My";
+			lyrics 1: 2.s; 2s; 4; "<2. >-1|Be-";
+			lyrics 1: 2.s; 2s; 4; "<3. >-1|Tho'";
+			lyrics 1: 2.s; 2s; 4; "<4. >-1|Tho'";
+bar
+//2
+1: 4.bg; 8c+a; 4bg; 4ge; 4fb-; 4eb-;
+2: 4.e+e; 8e+e; 4e+e; 4be; 4ae; 4ge;
+
+			lyrics 1: "path may be lone-ly, and";
+			lyrics 1: "cause I love Je-sus, my";
+			lyrics 1: "loved ones be ta-ken a-";
+			lyrics 1: "all that is e-vil a-";
+bar
+//3
+1: 4fd; 4ec; 4fd; 2ge; 4ge;
+2: 4bb-; 4bb-; 4bb-; 2be; 4d+ne;
+
+			lyrics 1: "dark be the night, The";
+			lyrics 1: "Sav-ior and thine, There's";
+			lyrics 1: "way from my side, Tho'";
+			lyrics 1: "gainst me com-bine, Tho'";
+bar
+//4
+1: 4.ae; 8ge; 4ae; 4e+e; 4d+e; 4c+e;
+2: 4.c+a-; 8b#a-; 4c+a-; 4c+a-; 4ba-; 4aa-;
+
+			lyrics 1: "clouds may be hid-ing the";
+			lyrics 1: "peace in my soul, there is";
+			lyrics 1: "rich-es and hon-or to";
+			lyrics 1: "Sa-tan a-round me his";
+bar
+//5
+1 1: 4c+e; 4be; 4ge; 2fd; 4b;
+1 2: 4s; 4s; 4s; 2s; 4a;
+2: 4ae; 4ge; 4be; 2bb-; 4d+b-;
+
+			lyrics 1: "sun from my sight, Yet";
+			lyrics 1: "com-fort di-vine; 'Twill";
+			lyrics 1: "me be de-nied, Yet";
+			lyrics 1: "snares should en-twine, Yet";
+bar
+//6
+1 1: 4.bg; 8c+a; 4bg; 4ge; 4fd; 4e;
+1 2: 4.s; 8s; 4s; 4s; 4s; 4e;
+2: 4.e+e; 8e+e; 4e+e; 4be; 4bf; 4bg;
+
+			lyrics 1: "I have as-sur-ance that";
+			lyrics 1: "al-ways a-bide, for the";
+			lyrics 1: "if I but trust Him no";
+			lyrics 1: "if I am faith-ful a";
+bar
+//7
+1: 4c+e; 4c+e; 4d+e; 2e+e; 4s;
+2 1: 4a; 4a; 4b; 2c+a; 4s; 
+2 2: 4a; 4a; 4a; 2s; 4s;
+
+			lyrics 1: "all will be right,";
+			lyrics 1: "prom-ise is mine,";
+			lyrics 1: "ill can be-tide,";
+			lyrics 1: "crown will be mine,";
+dblbar
+//8
+1 1: 2.s; 2s; 4c+;
+1 2: 2.s; 2s; 4r;
+2: 2.s; 2s; 4r;
+
+			lyrics 1: 2.s; 2s; 4; "<>";
+			lyrics 1: "Be-";
+bar
+//9
+1 1: 2.b tie; 4b; 4s; 4s;
+1 2: 2r; 4g; 4g; 4s; 4s;
+2: 2r; 4e+b-; 4e+b-; 4s; 4s;
+
+			lyrics 1: 2.; 4s; 4s; 4s; "<>";
+			lyrics 1: 2.; 4s; 4s; 4; "cause_ <>";
+			lyrics 1: 2s; 4; 4; 4s; 4s; "Be-cause";
+
+
+invisbar
+newscore
+
+1 1: 2.s; 4s; 4s; 4s;
+1 2: 2s; 4s; 4s; 4eg; 4b-e;
+2: 2s; 4s; 4s; 4bb-; 4gb-;
+
+			lyrics 1: 2.s; 4s; 4; 4; "I love";
+
+
+bar
+//10
+1: 2.fb-; 2eb-; 4s;
+2: 2.ab-; 2ge; 4s;
+
+			lyrics 1: "Je-sus.";
+dblbar
+//11
+1: 2.s; 2s; 4bg;
+2: 2.s; 2s; 4e+e; 
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "Be-";
+bar
+//12
+1: 4.bg; 8c+a; 4bg; 4ge; 2e+g;
+2: 4.e+e; 8e+e; 4e+e; 4be; 2be;
+
+			lyrics 1: "cause I love Je-sus,";
+bar
+//13
+1 1: 2.s; 2s; 4c+;
+1 2: 2.c+a; 2e+a; 4r;
+2 1: 2.a-e+; 2a-c+; 4r;
+
+			lyrics 1: 2.; 2; 4; "Je-sus, Be-";
+bar
+newscore
+//14
+1 1: 2.b tie; 4b; 4ge; 4e;
+1 2: [dist-6]2r; 4g; 4g; 4s; 4e;
+2: 2r; 4e+e; 4e+e; 4be; 4ge;
+
+
+			lyrics 1: "cause_ I love";
+			lyrics 1: 2s; 4; 4; 4s; 4s; "Be-cause";
+bar
+//15
+1 1: 2.ge; 2fd; 4b;
+1 2: 2.s; 2s; 4a;
+2: 2.bb-; 2bb-; 4d+b-;
+		
+			lyrics 1: "Je-sus; My";
+bar
+//16
+1 1: 4.bg; 8c+a; 4bg; 4ge; 4fd; 4e;
+1 2: 4.s; 8s; 4s; 4s; 4s; 4e;
+2: 4.e+e; 8e+e; 4e+e; 4be; 4bf; 4bg;
+
+			lyrics 1: "soul is at rest, and in";
+bar
+newscore
+//17
+1 1: 4s; 4s; 4s; 2s; 4c+;
+1 2: 4c+e; 4c+e; 4d+e; 2e+e; 4r;
+2 1: 4a; 4a; 4b; 2c+a; 4r;
+2 2: 4a; 4a; 4a; 2s; 4s; 
+
+			lyrics 1: 4; 4; 4; 2; 4; "Him I am blest, Be-";
+bar
+//18
+1 1: 2.b tie; 4b; 4s; 4s;
+1 2: 2r; 4g; 4g; 4ge; 4eb-;
+2: 2r; 4e+b-; 4e+b-; 4bb-; 4gb-;
+
+			lyrics 1: 2.; 4s; 4; 4; "cause_ I love";
+bar
+//19
+1: 2.fb-; 2eb-; 4s;
+2: 2.ab-; 2eg; 4s;
+
+			lyrics 1: "Je-sus.";
+endbar

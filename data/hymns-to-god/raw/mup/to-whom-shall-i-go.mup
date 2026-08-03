@@ -1,0 +1,227 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Hosannas
+//		For Church And Sabbath School
+//		Young People's Services And
+//		Evangelistic Meetings
+//		Compiled and Edited by: C. B. Strouse, 
+//		Milford H. Lyon, C. G. Jordan,
+//		W. E. Biederwolf, Henry M Stough,
+//		John S. Milton, R. Sam Kirkland
+//		Published by The Glad Tidings Publishing Co.
+//		Lakeside Bldg. Chicago
+//		Copyright: 1911
+//		Hymn No.: 77
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 08/08/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "To Whom Shall I Go?" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - MI" "\s(17)\f(TI)\:Simon\ Peter\ answered\ him,\|\ Lord,\ to\ whom\ shall\ we\ go? thou\ hast\ the\ words\ of\|\ eternal\ life.\ -\ Jn.\ 6:68" ""
+   title (13) "Russell De Koven" " " "Russell De Koven, 1911" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+//1
+1: 8ge;4.s; 4;
+2: 8be; 4.s; 4;
+			VERSE "<1. >-1|To";
+			VERSE "<2. >-1|To";
+			VERSE "<3. >-1|To";
+			VERSE "<4. >-1|To";
+bar
+//2
+1 1: 8ge; f#; ge; c+e; be; e;
+1 2: 8s; e; s;;; e;
+2: 8be; ane; be; a&e; ge;;
+
+			VERSE "whom shall I go but to";
+			VERSE "whom shall I go but to";
+			VERSE "whom shall I go but to";
+			VERSE "whom shall I go but to";
+bar
+//3
+1: 4.ge; 4fd; 8ge;
+2: 4.bb-; 4; 8;
+
+			VERSE "Je-sus? He";
+			VERSE "Je-sus? He";
+			VERSE "Je-sus? When";
+			VERSE "Je-sus? He's";
+bar
+//4
+1: 8af; gen; af; d+a; c+a; af;
+2: 8bb-;;;;;;
+
+			VERSE "know-eth the way that I";
+			VERSE "knows all the tri-als I";
+			VERSE "press'd by temp-ta-tion and";
+			VERSE "prom-ised to car-ry me";
+bar
+//5
+1: 4.ge tie; 4; 8be;
+2: 4.be tie; 4; 8ge;
+
+			VERSE "take; His";
+			VERSE "bear; I'll";
+			VERSE "sin? To";
+			VERSE "thro'; I";
+bar
+//6
+1: 8be; ane; be; c+en; be; ge;
+2 1: 8ge; f#; ge; gc;; c+c;
+2 2: 8s; e; s;;;;
+
+			VERSE "love will en-fold me for-";
+			VERSE "give Him a part in my";
+			VERSE "Him who is strong to de-";
+			VERSE "find Him un-speak-a-bly";
+bar
+//7
+1: 4.bg; 4af; 8gc;
+2: 4.c+f; 4; 8bg-;
+
+			VERSE "ev-er, He'll";
+			VERSE "sor-rows, He'll";
+			VERSE "liv-er, Who";
+			VERSE "pre-cious, He'll";
+bar
+newscore
+//8
+1: 8fc; ge; af; 4ge; 8fd;
+2: 8aa-; ba-; c+a-; 4bb-; 8ab-;
+
+			VERSE "nev-er my soul for-";
+			VERSE "glad-ly life's bur-dens";
+			VERSE "gives me sweet peace with-";
+			VERSE "be the same friend to";
+bar
+//9
+1 1: 4.e tie; 4; 8s;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "sake.";
+			VERSE "bear.";
+			VERSE "in.";
+			VERSE "you.";
+dblbar
+//10
+1: 8bg; 4.s; 4;
+2: 8e+e; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"To";
+bar
+//11
+1: 8e+g; d+g; c+a; 4bg; 8;
+2: 8be;; c+e; 4e+e; 8;
+
+			VERSE [c]"whom shall I go, to";
+bar
+//12
+1: 8e+g; d+g; c+a; 4bg; 8;
+2: 8be;; c+e; 4e+e; 8;
+
+			VERSE "whom shall I go, But";
+bar
+//13
+1: 8e+g; d+g; c+e; be; c+e; be;
+2: 8be;; ae; ge; ae; ge;
+
+			VERSE "to the dear Sav-ior who";
+bar
+//14
+1 1: 8ge; f; ge; 4fd; 8b;
+1 2: 8s; e; s; 4; 8a;
+2 1: 8anf;;; 4bb-; 8b;
+2 2: 8s;;; 4; 8b;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "lov-eth me so? This";
+bar
+//15
+1: 8e+g; d+g; c+g; 4bg; 8be;
+2: 8be;; c+e; 4e+e; 8ge;
+
+			VERSE "won-der-ful Friend is";
+bar
+//16
+1: 8c+en; be; ge; 4af; 8ge&;
+2: 8gc;; c+c; 4c+f; 8bg;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "mine to the end; To";
+bar
+//17
+1 1: 8f; ae; c+e; 4e+g; 8ge;
+1 2: 8e; s;; 4; 8;
+2: 8c+a; c+a-; e+a-; 4bb-; 8;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+		
+			VERSE "whom shall I go but";
+bar
+//18
+1 1: 4.fd; 4e; 8s;
+1 2: 4.s; 4e; 8s;
+2: 4.ab-; 4ge; 8s;
+
+			VERSE "Je-sus?";
+endbar

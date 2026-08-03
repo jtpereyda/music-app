@@ -1,0 +1,348 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+// Hymn Source: Songs of Redeeming Love No. 2
+//		Edited by: Jhon R. Sweeney, C. C. McCabe
+//		T. C. O'Kane, W. J. Kirkpatrick
+//		Publisher: John J. Hood. 1018 Arch Street, Philadelphia
+//		Cranston & Stowe, Chicago and St. Louis, Cincinnati
+//		Dayton Ohio
+//		Copyright 1887
+//		Hymn no. 63
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/28/2014; Rev. 12/09/2021
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Heaven" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:And\ the\ city\ hath\ no\ need\ of\ t\|he\ sun,\ neither\ of\ the\ moon,\ to shine\ upon\ it:\ for\ the\ glory\ \^of\ God\ did\ lighten\ it,\ and\ the lamp\ thereof\ is\ the\^\ Lamb.\ -\ Rev.\ 21:23" ""   
+   title (13) "Anonymous" "" "T. C. O'Kane"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1: 4ec; 2s;
+2: 4aa-; 2s; 
+
+	VERSE 4; 2s; "<1. >-1|What";
+	VERSE 4; 2s; "<2. >-1|We";
+	VERSE 4; 2s; "<3. >-1|We";
+	VERSE 4; 2s; "<4. >-1|We";
+bar
+//2
+1: 4.ec; 8fd; 4ec;
+2: 4. aa-; 8; 4;
+
+	VERSE "glo-ry is";
+	VERSE "know thou hast";
+	VERSE "dream of thy";
+	VERSE "see the white";
+bar
+//3
+1: 4ec; ae; be;
+2: 4aa-; ac; ge;
+
+	VERSE "thine, O thou";
+	VERSE "nev-er a";
+	VERSE "peace that shall";
+	VERSE "robes in the";
+bar
+//4
+1 1: 4.c+e; 8be; 4a;
+1 2: 4.s; 8; 4a;
+2 1: 4.a; 8bg; 4c+f;
+2 2: 4.a; 8s; 4;
+
+	VERSE "Ci-ty of";
+	VERSE "beam of our";
+	VERSE "nev-er be";
+	VERSE "streets of pure";
+bar
+//5
+1 1: 2bg; 4e;
+1 2: 2s; 4e;
+2: 2e+e; 4ge;
+
+	VERSE "God; O";
+	VERSE "sun, The";
+	VERSE "strife, The";
+	VERSE "gold, The";
+bar
+//6
+1 1: 4e; ge; be;
+1 2: 4e; s;;
+2: 4ge; be; ge;
+
+	VERSE "Zi-on, bright";
+	VERSE "moon nor the";
+	VERSE "day that shall";
+	VERSE "flash of white";
+bar
+//7
+1: 4.d+e; 8c+e; 4be;
+2: 4.be; 8ae; 4ge;
+
+	VERSE "land of our";
+	VERSE "stars of our";
+	VERSE "nev-er be";
+	VERSE "wings in the";
+bar
+//8
+1: 2.c+e tie;
+2: 4.aa-; 8; 4;
+
+	VERSE 4.; 8; 4; "dreams (of our";
+	VERSE 4.; 8; 4; "night; (of our";
+	VERSE 4.; 8; 4; "(nev-er be)";
+	VERSE 4.; 8; 4; "air; (in the";
+bar
+//9
+1 1: 2c+e; 8c+ bm; d+ ebm;
+1 2: 2s; 4a;
+2 1: 2aa-; 8a bm; b ebm;
+2 2: 2s; 4a;
+
+	VERSE 2; 4; "dreams,) What";
+	VERSE 2; 4; "night;) With";
+	VERSE 2; 4; "o'er; The";
+	VERSE 2; 4; "air;) The";
+bar
+//10
+1: 4.e+a; 8d+a; 4c+a;
+2 1: 4.c+a; 8b; 4a;
+2 2: 4.s; 8a; 4a;
+
+	VERSE "beau-ty hangs";
+	VERSE "grand-eur e-";
+	VERSE "lil-es so";
+	VERSE "star of thy";
+bar
+//11
+1: 4c+e; bd; ac;
+2: 4aa-;;;
+
+	VERSE "o-ver thy";
+	VERSE "ter-nal thy";
+	VERSE "white in the";
+	VERSE "morn-ing that";
+bar
+//12
+1: 4.fd; 8ge; 4af;
+2: 4.ad; 8; 4;
+
+	VERSE "flow-er-y";
+	VERSE "arch-es are";
+	VERSE "Riv-er of";
+	VERSE "nev-er grows";
+bar
+//13
+1 1: 2e; 4ac;
+1 2: 2e; 4s;
+2: 2ac; 4af;
+
+	VERSE "sod, Thy";
+	VERSE "hung, The";
+	VERSE "Life, The";
+	VERSE "old, The";
+bar
+//14
+1: 4.be; 8; 4;
+2: 4.ge; 8; 4;
+
+	VERSE "walls and thy";
+	VERSE "smile of the";
+	VERSE "ros-es so";
+	VERSE "smile of the";
+bar
+//15
+1: 4be; c+e; bd;
+2: 4ge;;;
+
+	VERSE "sil-ver winged";
+	VERSE "Lord is thy";
+	VERSE "sweet on the";
+	VERSE "loved that are";
+bar
+//16
+1: 2.ac tie;
+2: 2.aa- tie;
+
+	VERSE "streams!";
+	VERSE "light!";
+	VERSE "Shore!";
+	VERSE "there!";
+bar
+//17
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+dblbar
+//18
+1 1: 8a bm; g ebm; 2s;
+1 2: 4e; 2s;
+2: 4ac; 2s;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE 4; 2s; [c]"To";
+bar
+//19
+1: 4.fd; 8; 4;
+2: 4.ad; 8; 4;
+
+	VERSE [c]"thee we will";
+bar
+//20
+1: 4bf; af; fd;
+2: 4ad;;;
+
+	VERSE [c]"jour-ney, O";
+bar
+//21
+1: 8ec; 4.ac; 4bd;
+2: 8ae; 4.; 4ge;
+
+	VERSE "Ci-ty of";
+bar
+//22
+1: 2ac; 4ae;
+2: 2aa-; 4c+a;
+
+	VERSE "God, To";
+bar
+//23
+1: 4.af; 8; 4;
+2: 4.c+f; 8; 4;
+
+	VERSE "rest on thy";
+bar
+//24
+1: 8bf; 4.; 4c+a;
+2: 8dn+b-; 4.; 4;
+
+	VERSE "ev-er-green";
+bar
+//25
+1: 2.bg tie;
+2: 8e+e; 4.; 4;
+
+	VERSE 8; 4.s; 4s; "shore_";
+	VERSE 8; 4.; 4; "ev-er-green";
+bar
+//26
+1: 2bg; 8be;;
+2: 2be; 8ge;;
+
+	VERSE 2s; 8; 8; "When mor-";
+	VERSE 2; 8s; 8s; "shore,";
+bar
+//27
+1: 4.c+e; 8; 4;
+2 1: 4.a; 8; 4;
+2 2: 4.a; 8; 4;
+
+	VERSE "tal-i-ty's";
+bar
+//28
+1: 4c+f;;;
+2: 4af;;;
+
+	VERSE "path-ways of";
+bar
+//29
+1: 4.d+f; 8; 4;
+2: 4.ad; 8; 4;
+
+	VERSE "du-ty are";
+bar
+//30
+1: 2fd; 4bf;
+2: 2ad; 4d+d;
+
+	VERSE "trod, With";
+bar
+//31
+1: 4.ae; 8gd; 4ac;
+2: 4.c+e; 8be; 4ae;
+
+	VERSE "Je-sus to";
+bar
+//32
+1: 4be; 4.c+e; 8be;
+2: 4ge; 4.ae; 8d+e;
+
+	VERSE "live ev-er-";
+bar
+//33
+1 1: 2.a tie;
+1 2: 2e; 8f;;
+2: 2c+a-; 8d+a-;;
+
+	VERSE 2.; "more._";
+	VERSE 2s; 8; 8; "ev-er-";
+bar
+//34
+1 1: 2a; 4s;
+1 2: 2e; 4s;
+2: 2c+a-; 4s;
+
+	VERSE 2; 4s; "_";
+	VERSE 2; 4s; "more.";
+endbar

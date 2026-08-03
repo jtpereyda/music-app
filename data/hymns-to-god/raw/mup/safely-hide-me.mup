@@ -1,0 +1,222 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gates Ajar
+//		Hymns and Tunes for 
+//		Use In Sunday Schools, Praise and Prayer Meetings, ertc.
+//		By J. H. Kurzenknabe
+//		J. H. Kurzenknabe & Sons, Publishers,
+//		Harrisburg, PA.:
+//		Copyright: 1885
+//		Hymn No.: 118
+//		
+// Transcribed by: Ted Gatza, Jr. 03/06/2012; Rev. 03/05/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Safely Hide Me" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - MI" "\s(17)\f(TI)\:Keep\ me\ as\ the\ apple\ o\|f\ the\ eye;\ Hide\ me\ under the\ shadow\ of\ thy\|\ wings,\ -\ Ps.\ 17:8" ""   
+   title (13) "J. H. Kurzenknabe" "" "J. H. Kurzenknabe, 1880"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1: 8c+e bm; bd ebm; ac; 4.s;;
+2: 4aa-; 8; 4.s;;
+
+			VERSE 4; 8; 4.s; 4.s; "<1. >-1|Pre-cious";
+			VERSE 4; 8; 4.s; 4.s; "<2. >-1|Pre-cious";
+			VERSE 4; 8; 4.s; 4.s; "<3. >-1|Pre-cious";
+			VERSE 4; 8; 4.s; 4.s; "<4. >-1|Pre-cious";
+bar
+//2
+1 1: 4.c+e tie; 4; 8ae; 8b bm; a ebm; 8fd;
+1 2: 4.s; 4; 8; 4f; 8s;
+2: 4.aa- tie; 4; 8ac; 4ad; 8ad;
+
+			VERSE 4.; 4s; 8; 4; 8; "love that gives me";
+			VERSE 4.; 4s; 8; 4; 8; "hope that bears me";
+			VERSE 4.; 4s; 8; 4; 8; "trust that cheers me";
+			VERSE 4.; 4s; 8; 4; 8; "peace in my dis-";
+bar
+//3
+1: 4.ec tie;; ae;
+2: 4.aa- tie;; ac;
+
+			VERSE 4.; 4.s; 4.; "proof, What-";
+			VERSE 4.; 4.s; 4.; "up, Though";
+			VERSE 4.; 4.s; 4.; "most When";
+			VERSE 4.; 4.s; 4.; "tress, When";
+bar
+//4
+1: 4.be tie; 4; 8; 4ae; 8be;
+2: 4.ge tie; 4; 8; 4ac; 8ge;
+
+			
+			VERSE 4.; 4s; 8; 4; 8; "ev-er may be-";
+			VERSE 4.; 4s; 8; 4; 8; "all the world de-";
+			VERSE 4.; 4s; 8; 4; 8; "sin and Sa-tan";
+			VERSE 4.; 4s; 8; 4; 8; "death's form stands be-";
+bar
+//5
+1: 4.c+e; be; 8c+e bm; bd ebm; 8ac;
+2 1: 4.a; ge; 4aa-; 8;
+2 2: 4.a; s; 4; 8;
+
+			VERSE 4.; 4.; 4; 8; "tide me. Je-sus";
+			VERSE 4.; 4.; 4; 8; "ride me! I have";
+			VERSE 4.; 4.; 4; 8; "chide me! I shall";
+			VERSE 4.; 4.; 4; 8; "side me! From the";
+bar
+//6
+1 1: 4.c+e tie; 4; 8ae; 8b bm; a ebm; fd;
+1 2: 4.s; 4; 8; 4f; 8s;
+2: 4.aa- tie; 4; 8ac; 4ad; 8;
+
+			VERSE 4.; 4s; 8; 4; 8; "gave His life to";
+			VERSE 4.; 4s; 8; 4; 8; "heard the pard'n-ing";
+			VERSE 4.; 4s; 8; 4; 8; "know the way to";
+			VERSE 4.; 4s; 8; 4; 8; "strand he'll reach His";
+bar
+//7
+1: 4.ec tie;; ae;
+2: 4.aa- tie;; ac;
+
+			VERSE "save, And";
+			VERSE "word, And";
+			VERSE "go, And";
+			VERSE "hand To";
+bar
+//8
+1: 4.c+e tie; 4; 8ac; bd bm; ac ebm; 8c+e;
+2 1: 4.ae tie; 4; 8; g bm; a ebm; ae;
+2 2: 4.s; 4; 8; 4e; 8s;
+
+			VERSE 4.; 4s; 8; 4; 8; "He will safe-ly";
+			VERSE 4.; 4s; 8; 4; 8; "He will safe-ly";
+			VERSE 4.; 4s; 8; 4; 8; "He will safe-ly";
+			VERSE 4.; 4s; 8; 4; 8; "shield and safe-ly";
+bar
+//9
+1: 4.bd; 4ac; 8r; 4.s;
+2: 4.ge; 4aa-; 8r; 4.s;
+
+			VERSE "hide me.";
+			VERSE "hide me.";
+			VERSE "hide me.";
+			VERSE "hide me.";
+dblbar
+//10
+1: 8ac bm; c+e ebm; 8e+a; 4.s;;
+2: 4r; 8r; 4.s;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 4; 8s; 4.s; 4.s; "<>";
+			VERSE 4; 8; 4.s; 4.s; "Safe-ly";
+bar
+//11
+1: 4.f+a; e+a; 8c+e bm; bd ebm; 8ac;
+2: 4d+d; 8d+f; 4c+a; 8; 4r; 8r;
+
+			VERSE 4.; 4.s; 4s; 8s; "<>";
+			VERSE 4.; 4.; 4; 8; "hide me, safe-ly";
+			VERSE 4; 8; 4; 8; 4s; 8s; "Safe-ly hide me,";
+bar
+//12
+1: 4.bd; ac; 8ac bm; c+e ebm; e+a;
+2: 4ge; 8; 4aa-; 8; 4r; 8;
+
+			VERSE 4.; 4.; 4; 8; "hide me, When the";
+			VERSE 4; 8; 4; 8; 4s; 8s; "Safe-ly hide me,";
+bar
+//13
+1 1: 4. f+a; e+a; 8c+ bm; b ebm; ae;
+1 2: 4.s;; 4a; 8s;
+2 1: 4 d+d; 8d+f; 4c+a; 8; 8e+ bm; d+ ebm; c+a;
+2 2: 4s; 8; 4; 8; 4a; 8s;
+
+			VERSE 4.; 4.; 4; 8; "storms and bil-lows";
+			VERSE 4; 8; 4; 8; 4; 8; "When the storms, the storms and";
+bar
+//14
+1: 4.bg tie; 4; 8r; 8c+e bm; bd ebm; 8ac;
+2 1: 4e+; 8; 4e+e; 8r; 8s;;;
+2 2: 8e bm; g ebm; b; 4s; 8s; 4aa-; 8;
+
+			VERSE 4.; 4s; 8s; 4; 8; "rage; He will";
+			VERSE 4; 8; 4; 8s; 4s; 8s; "bil-lows rage;";
+bar
+//15
+1 1: 4.c+e tie; 4; 8ae; 8b bm; a ebm; 8fd;
+1 2: 4.s; 4; 8; 4f; 8s;
+2: 4.aa- tie; 4; 8ac; 4ad; 8;
+
+			VERSE 4.; 4s; 8; 4; 8; "guide me, safe-ly";
+bar
+//16
+1 1: 4.fd; ec; 8e bm; a ebm; c+e;
+1 2: 4.s;; 4c; 8s;
+2: 4.aa-;; 4; 8;
+
+			VERSE 4.; 4.; 4; 8; "guide me, Through this";
+bar
+//17
+1: 4.bd tie; 4; 8ac; 4c+e; 8bd;
+2: 4.ge tie; 4; 8ae; 4; 8ge;
+
+			VERSE "earth-ly pil-grim-";
+bar
+//18
+1: 4.ac tie; 4; 8r; 4.s;
+2: 4.aa- tie; 4; 8r; 4.s;
+
+			VERSE " age.";
+endbar

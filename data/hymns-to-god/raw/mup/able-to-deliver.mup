@@ -1,0 +1,217 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// This source code and the hymn produced by this source code is 
+// licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. 
+// To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ 
+// or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA. 
+// in the United States of America.
+
+// The lyrics to this song are in the the Public Domain of the United States of America.
+
+// 
+
+// Lyric Source: Best Endeavor Hymns
+//		 Edited and Compiled by
+//		 I. Allen Sankey and John R. Clements
+//		 Especially for Use In
+//		 Christian Endeavor Societies Young People's
+//		 Meetings, Sunday Schools, and General Church Work
+//		 Published by The Biglow and Main Co.
+//		 Lakeside Building, Chicago
+//		 135 Fifth Avenue, New York
+//		 Copyright 1907
+//		 Hymn No.: 36
+//		
+// Transcribed by: Ted Gatza, Jr. 09/04/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Able To Deliver" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - MI" "\s(17)\f(TI)\:The\ Lord\ will\ deliver\ me\ fr\|om\ every\ evil\ work,\ and\ will save\ me\ unto\ his\ heaven\|ly\ kingdom\ -\ 2\ Tim.\ 4:18" ""
+   title (13) "Fanny J. Crosby" "" "Ira D. Sankey, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 2.s; 8.db- bm; 16ec ebm;
+2: 2.s; 4fb-;
+
+
+			VERSE 2.s; 4; "<1. >-1|O";
+			VERSE 2.s; 4; "<2. >-1|O";
+			VERSE 2.s; 4; "<3. >-1|O";
+
+bar
+//2
+1: 4fd; 4fd; 4fd; 8.bf; 16c+e;
+2: 4bb-; 4bb-; 4bb-; 8.bd; 16ge;
+
+			VERSE "trou-bled heart, be thou";
+			VERSE "trou-bled heart, tho' thy";
+			VERSE "trou-bled heart, when thy";
+bar
+//3
+1: 4bd; 4ac; 4ac; 8.ca-; 16db;
+2 1: 4f; 4f; 4f; 8.f; 16f;
+2 2: 4f; 4f; 4f; 8.f; 16f;
+
+			VERSE "not a-fraid, In the";
+			VERSE "foes u-nite, Let thy";
+			VERSE "way is drear, He will";
+bar
+//4
+1: 4ec; 4ec; 4ec; 8.ae; 16ge;
+2: 4af; 4af; 4af; 8.c+f; 16af;
+
+			VERSE "Lord thy God, let thy";
+			VERSE "faith be strong and thy";
+			VERSE "res-cue thee and dis-";
+bar
+//5
+1: 4gd; 4fd; 4fd; 8.db-; 16ec;
+2: 4bb-; 4bb-; 4bb-; 8.fb-; 16fb-;
+
+			VERSE "hope be stayed; He will";
+			VERSE "arm-or bright; Thou shalt";
+			VERSE "pel thy fear; In thy";
+bar
+//6
+1: 4fd; 4fd; 4fd; 8.d+f; 16d+f;
+2: 4bb-; 4bb-; 4bb-; 8.bb-; 16bb-;
+
+			VERSE "hear thy cry and will";
+			VERSE "o-ver-come thro' His";
+			VERSE "great-est need He is";
+bar
+//7
+1: 4c+e; 4ge; 4ge; 8.c+en bm; 16bg ebm;
+2: 4ge; 4be; 4be; 4c+c;
+
+			VERSE 4; 4; 4; 4; "give thee aid, What-";
+			VERSE 4; 4; 4; 4; "pow'r and might, And";
+			VERSE 4; 4; 4; 4; "al-way near,\(emdash) To";
+bar
+//8
+1: 4af; 4ae&; 4bd; 4c+e;
+2: 4c+f; 4c+f; 4bf; 4af;
+
+			VERSE "e'er thy cross may";
+			VERSE "more than con-queror";
+			VERSE "Him all glo-ry";
+bar
+//9
+1: 2.bd; 4s;
+2: 2.bb-; 4s;
+
+			VERSE "be.";
+			VERSE "be.";
+			VERSE "be.";
+dblbar
+//10
+1: 8.fd; 16bd; 2.s;
+2: 8.bb-; 16bb-; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"He is";
+bar
+//11
+1: 4d+f; 4d+f; 4d+f; [up]8.e+g; 16d+f;
+2: 4bb-; 4bb-; 4bb-; 8.bb-; 16bb-; 
+
+			VERSE [c]"a-ble still to de-";
+bar
+//12
+1 1: 4d+f; 4c+e; 4c+e; 8.s; 16s;
+1 2: 4s; 4s; 4s; 8.s; 16s;
+2: 4af; 4af; 4af; 8.s; 16s;
+
+			VERSE [c]"liv-er thee,";
+invisbar
+newscore
+
+1 1: 4s; 4s; 4s; 8.f; 16ae;
+1 2: 4s; 4s; 4s; 8.e; 16s;
+2: 4s; 4s; 4s; 8.af; 16c+f;
+
+			VERSE "And His";
+
+bar
+//13
+1: 4c+e; 4c+e; 4c+e; 8.d+f; 16c+e;
+2 1: 4af; 4af; 4af; 8.f; 16af;
+2 2: 4s; 4s; 4s; 8.f; 16s;
+
+
+			VERSE "own right-hand thy de-";
+bar
+//14
+1: 4c+e; 4bd; 4bd; 8.fd; 16fd;
+2: 4bb-; 4bb-; 4fb-; 8.bb-; 16bb-;
+
+			VERSE "fence shall be: He is";
+bar
+//15
+1: 4ge; 4ge; 4bg; 8.af; 16ge;
+2: 4be; 4be; 4be; 8.be; 16be;
+
+			VERSE "a-ble still to de-";
+bar
+//16
+1: 4fd; 4bd; 4d+f; 4bf;
+2: 4bb-; 4fb-; 4bb-; 4a&d;
+
+			VERSE "liv-er thee, Then";
+bar
+//17
+1 1: 4c+e; 4ge; 4.ae; 8f;
+1 2: 4s; 4s; 4.s; 8e;
+2: 4ge; 4c+e; 4.c+f; 8af;
+
+			VERSE "be thou not a-";
+bar
+//18
+1: 2.bd; 4s;
+2: 2.fb-; 4s;
+
+			VERSE "fraid.";
+endbar

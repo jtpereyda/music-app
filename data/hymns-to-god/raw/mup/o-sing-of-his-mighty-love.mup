@@ -1,0 +1,269 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gems Of Songs For The Sunday School
+//		Compiled and Arranged By:
+//		Ira D. Sankey and Hubert P. Main
+//		The Biglow and Main Co.
+//		lakeside building, chicago
+//		135 Ffth Avenue, New York
+//		Copyright 1901
+//		Hymn No.: 214
+//		
+// Transcribed by: Ted Gatza, Jr. 09/12/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "O Sing Of His Mighty Love" ""
+   title (2)""
+   title (11) "C - 3 - SOL" "\s(17)\f(TI)\:in\ whom\ we\ have\ our\ redemption\ thr\|ough\ his\ blood,\ the\ forgiveness\ of our\ trespasses,\ according\ to\ the\ \|riches\ of\ his\ grace,\ -\ Eph.\ 1:7" ""
+   title (13) "Frank Bottome" "" "William B. Bradbury, 1867"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=97";
+
+//1
+1: 4ge; 2s;
+2: 4c+c; 2s;
+
+
+			VERSE "<1. >-1|Oh,";
+			VERSE "<2. >-1|Oh,";
+			VERSE "<3. >-1|Oh";
+bar
+//2
+1: 2ge; 8.af; 16bf;
+2: 2c+c; 8.; 16gc;
+
+			VERSE "bliss of the";
+			VERSE "bliss of the";
+			VERSE "bliss of the";
+bar
+//3
+1: 8.c+e; 16bf; 2c+e;
+2: 8.gc; 16; 2;
+
+			VERSE "pu-ri-fied,";
+			VERSE "pu-ri-fied,";
+			VERSE "pu-ri-fied!";
+bar
+//4
+1: 2d+f; 8.c+e; 16d+f;
+2: 2bg; 8.c+g; 16bg;
+
+			VERSE "bliss of the";
+			VERSE "Je-sus is";
+			VERSE "bliss of the";
+bar
+//5
+1 1: 2e+g; 8d+ bm; c+ ebm;
+1 2: 2s; 4e;
+2: 2c+c; 4gc;
+
+			VERSE 2; 4; "free! I";
+			VERSE 2; 4; "mine! No";
+			VERSE 2; 4; "pure! No";
+bar
+//6
+1: 2c+f; 8.bf; 16af;
+2: 2af; 8.bf; 16c+f;
+
+			VERSE "plunge in the";
+			VERSE "long-er in";
+			VERSE "wound hath the";
+bar
+//7
+1: 4.ge; 8ec; 4ge;
+2: 4.c+c; 8gc; 4c+c;
+
+			VERSE "crim-son tide";
+			VERSE "dread con-dem-";
+			VERSE "soul that His";
+bar
+//8
+1: 4bd; c+e; d+f;
+2 1: 4g;; gg-;
+2 2: 4g;; s;
+
+			VERSE "o-pen'd for";
+			VERSE "na-tion I";
+			VERSE "blood can-not";
+bar
+//9
+1: 2c+e; 4ge;
+2: 2gc; 4c+c;
+
+			VERSE "me! O'er";
+			VERSE "pine; In";
+			VERSE "cure; O";
+bar
+//10
+1: 2ge; 8.af; 16bf;
+2: 2c+c; 8.; 16gc;
+
+			VERSE "sin and un-";
+			VERSE "con-scious sal-";
+			VERSE "Je-sus the";
+bar
+//11
+1: 8.c+e; 16bf; 2c+e;
+2: 8.gc; 16; 2;
+
+			VERSE "clean-ness ex-";
+			VERSE "va-tion I";
+			VERSE "cru-ci-fied!";
+bar
+//12
+1: 2d+f; 8.c+e; 16d+f;
+2: 2bg; 8.c+g; 16bg;
+
+			VERSE "ult-ing I";
+			VERSE "sing of His";
+			VERSE "Thee will I";
+bar
+//13
+1 1: 2e+g; 8d+ bm; c+ ebm;
+1 2: 2s; 4e;
+2: 2c+c; 4gc;
+
+			VERSE 2; 4; "stand, And";
+			VERSE 2; 4; "Grace, Who";
+			VERSE 2; 4; "sing, My";
+bar
+//14
+1: 2c+f; 8.bf; 16af;
+2: 2af; 8.bf; 16c+f;
+
+			VERSE "point to the";
+			VERSE "lift-eth up-";
+			VERSE "bless-ed Re-";
+bar
+//15
+1: 4.ge; 8ec; 4ge;
+2: 4.c+c; 8gc; 4c+c;
+
+			VERSE "print of the";
+			VERSE "on me the";
+			VERSE "deem-er, my";
+bar
+//16
+1: 4bd; c+e; d+f;
+2 1: 4g;; gg-;
+2 2: 4g;; s;
+
+			VERSE "nails in His";
+			VERSE "light of His";
+			VERSE "God and my";
+bar
+//17
+1: 2c+e; 4s;
+2: 2gc; 4s;
+
+			VERSE "hand.";
+			VERSE "face.";
+			VERSE "King.";
+dblbar
+//18
+1: 4ge; 2s;
+2: 4gc; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Oh,";
+bar
+//19
+1: 2ge; 8.fd; 16;
+2: 2gc; 8.ac; 16bc;
+
+			VERSE [c]"sing of His";
+bar
+//20
+1: 8.ec; 16fd; 2ge;
+2: 8.c+c; 16bc; 2c+c;
+
+			VERSE [c]"might-y love,";
+bar
+//21
+1: 2bf; 8.af; 16bf;
+2: 2d+gg-; 8.c+gg-; 16d+gg-;
+
+			VERSE [c]"Sing of His";
+bar
+//22
+1 1: 8.c+g; 16g; 2ge;
+1 2: 8.s; 16f; 2s;
+2: 8.e+c; 16d+c; 2c+c;
+
+			VERSE "might-y love,";
+bar
+//23
+1: 2af; 8.bf; 16c+f;
+2: 2c+f; 8.bf; 16af;
+
+			VERSE "Sing of His";
+bar
+//24
+1: 8.c+e; 16gc; 2ge;
+2: 8.gc; 16ec; 2gc;
+
+			VERSE "might-y love,";
+bar
+//25
+1 1: 4gd; ge; g;
+1 2: 4s;; f;
+2: 4bg-; c+g-; d+g-;
+ital (13) above 1: 1 "rit.";
+
+			VERSE "Might-y to";
+bar
+//26
+1: 2ge; 4s;
+2: 2c+c; 4s;
+
+			VERSE "save.";
+endbar

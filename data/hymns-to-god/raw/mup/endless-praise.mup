@@ -1,0 +1,222 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source:  Kindly Light
+//		 A New Collection of Hymns and Music 
+//		 for praise in the Sunday School
+//		 By J. H. Kurzenknabe,
+//		 Publishers: J. H. Kurzenknabe & Sons
+//		 Harrisburg, PA
+//		 Copyright 1896
+//		 Hymn No.: 155
+//		
+// Transcribed by: Ted Gatza, Jr. 09/10/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Endless Praise" ""
+   title (2)""
+   title (11) "C - 3 - SOL" "\s(17)\f(TI)\:To\ the\ end\ that\ my\ glory\ may\ sing\|\ praise\ to\ thee,\ and\ not\ be\ silent. O\ Jehovah\ my\ God,\ I\ will\ give\ tha\^nks\ unto\ thee\ for\ ever.\ -\ Ps.\ 30:12" ""
+   title (13) "Robert L. Fletcher" "" "John H. Kurzenknabe, 1896"
+ 
+footer
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=93";
+
+//1
+1 1: 4ge slur; ec; af;
+2: 2cc+; 4;
+
+
+			VERSE "<1. >-1|God of";
+			VERSE "<2. >-1|All our";
+			VERSE "<3. >-1|All Thy";
+			VERSE "<4. >-1|Thee we";
+
+bar
+//2
+1: 2ge; 4c+g;
+2: 2c+c; 4c+e;
+
+			VERSE "ev-ning,";
+			VERSE "hopes to";
+			VERSE "won-drous";
+			VERSE "praise in";
+bar
+//3
+1: 4bd slur; c+e; d+f;
+2 1: 4d+ slur; c+; bg;
+2 2: 2g; 4s;
+
+			VERSE "God of";
+			VERSE "Thee con-";
+			VERSE "works ad-";
+			VERSE "cease-less";
+bar
+//4
+1: 2c+e; 4ge;
+2: 2c+c; 4;
+
+			VERSE "morn-ing,";
+			VERSE "fid-ing,";
+			VERSE "mir-ing,";
+			VERSE "meas-ure,";
+bar
+//5
+1: 2af; 4;
+2: 2c+f; 4;
+
+			VERSE "God of";
+			VERSE "God of";
+			VERSE "God, our";
+			VERSE "To Thy";
+bar
+//6
+1: [up]4c+a slur; bg; af;
+2: 2c+f; 4;
+
+			VERSE "ev-er-";
+			VERSE "mer-cy,";
+			VERSE "Sav-iour,";
+			VERSE "throne lift";
+bar
+//7
+1: 2ge; 4ec;
+2: 2c+c; 4gc;
+
+			VERSE "last-ing";
+			VERSE "God of";
+			VERSE "Lord of";
+			VERSE "up our";
+bar
+//8
+1: 2.db-;
+2: 2.gg-;
+
+			VERSE "days;";
+			VERSE "love;";
+			VERSE "all;";
+			VERSE "songs;";
+bar
+//9
+1: 4fd slur; ec; db-;
+2: 2gg-; 4;
+
+			VERSE "God, whose";
+			VERSE "In Thy";
+			VERSE "Au-thor";
+			VERSE "Thou who";
+bar
+//10
+1: 2ec; 4ge;
+2: 2gc; 4;
+
+			VERSE "glo-ry,";
+			VERSE "prom-is-";
+			VERSE "of the";
+			VERSE "art our";
+bar
+//11
+1: 4fd slur; ec; db-;
+2 1: 2g; 4;
+2 2: 2g; 4;
+
+			VERSE "earth a-";
+			VERSE "es a-";
+			VERSE "soul as-";
+			VERSE "high-est";
+bar
+//12
+1: 2ec; 4ge;
+2: 2gc; 4c+c;
+
+			VERSE "dorn-ing,";
+			VERSE "bid-ing";
+			VERSE "pir-ing";
+			VERSE "treas-ure,";
+bar
+//13
+1: 2af; 4c+f;
+2: 2c+f; 4c+a-;
+
+			VERSE "Calls for";
+			VERSE "Now we";
+			VERSE "Hear us";
+			VERSE "Un-to";
+bar
+//14
+1: 2ge; 4ec;
+2: 2c+c; 4gc;
+
+			VERSE "end-less";
+			VERSE "lift our";
+			VERSE "when on";
+			VERSE "Whom our";
+bar
+//15
+1: 2ec; 4db-;
+2: 2gg-; 4fg-;
+
+			VERSE "songs of";
+			VERSE "eyes a-";
+			VERSE "Thee we";
+			VERSE "praise be-";
+bar
+//16
+1 1: 2.c;
+1 2: 2.c;
+2:2.ec;
+
+			VERSE "praise.";
+			VERSE "bove.";
+			VERSE "call.";
+			VERSE "longs.";
+endbar
+
+title (20) ""
+title (11) "" "Public Domain" "HymnsToGod.org"

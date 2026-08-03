@@ -1,0 +1,202 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Songs Of Grace And Glory
+//		Editors: W. S. Weeden, J. W. Van De Venter,
+//		Leonard Weaver
+// 		Sevring Publishing Co.,
+//		New york: 441 Pearl St.,
+//		Pittsburg: 806 Lewis Block
+//		Copyright 1896
+//		Hymn no. 86
+
+// Transcribed by: Ted Gatza, Jr. 01/21/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Cross" ""
+   title (2)""
+   title (11) "D \(flat) - 4 - MI" "\s(17)\f(TI)\:Then\ said\ Jesus\ unto\ his\ disciples,\|\ If\ any\ man\ would\ come\ after\ me,\ let him\ deny\ himself,\ and\ take\ up\ his\^\ cross,\ and\ follow\ me.\ -\ Matt.\ 16:24" ""
+   title (13) "J. W. Van De Venter" " " "J. W. Van De Venter, 1895"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.0
+
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+
+//1
+1: 8fd; ge; 2.s;
+2: 8ad;; 2.s;
+
+			VERSE "<1. >-1|I Will";
+			VERSE "<2. >-1|When the";	
+			VERSE "<3. >-1|When temp-";
+			VERSE "<4. >-1|When I";
+
+bar
+//2
+1: 4af;; 8bg; af;; fd;
+2: 4d+d;; 8;;; ad;
+
+			VERSE "fol-low Je-sus where He";
+			VERSE "clouds and shad-ows o-ver-";
+			VERSE "ta-tions bit-ter-ly as-";
+			VERSE "cross the Jor-dan He will";
+bar
+//3
+1: 2af; 4ge; 8ec; fd;
+2 1: 4d+ slur; a; c+a-; 8aa-;;
+2 2: 2d; 4s; 8;;
+
+			VERSE "leads me; I will";
+			VERSE "take me, I will";
+			VERSE "sail me, I will";
+			VERSE "hold me; In His";
+bar
+//4
+1: 4ge; c+g; 4.c+g; 8bg;
+2: 4aa-; e+aa-; 4. e+a-; 8c+a-;
+
+			VERSE "seek His face and";
+			VERSE "sim-ply trust, and";
+			VERSE "rest se-cure up-";
+			VERSE "gen-tle arms se-";
+bar
+//5
+1: 8bg; af; gnen; af; 4fd; 8; ge;
+2: 8d+d;; bd; ad; 4; 8;;
+
+			VERSE "praise Him day by day; I will";
+			VERSE "nev-er, nev-er fear; Tho' my";
+			VERSE "on His might-y arm; And His";
+			VERSE "cure-ly I will rest; In His";
+bar
+//6
+1: 4af;; 8bg; af;; fd;
+2: 4d+d;; 8;;; ad;
+
+			VERSE "ev-er la-bor where He";
+			VERSE "dear ones wan-der and for-";
+			VERSE "keep-ing pow-er will not";
+			VERSE "lov-ing bos-om He will";
+bar
+//7
+1: 2af; 4ge; 8.c+g; 16bg;
+2 1: 4d+ slur; a; c+a-; 8.e+a-; 16d+a-;
+2 2: 2d; 4s; 8.; 16;
+
+			VERSE "needs me: I will";
+			VERSE "sake me, I can";
+			VERSE "fail me, If I";
+			VERSE "fold me; I will";
+bar
+//8
+1 1: 4a;; bf; gd;
+1 2: 4g;; s;;
+2: 4c+a-; ac; ad; bg-;
+
+			VERSE "bear the cross and";
+			VERSE "bear it all, for";
+			VERSE "trust His grace to";
+			VERSE "sweet-ly sleep up-";
+bar
+//9
+1: 8fd;; ec;; 4da-; 4r;
+2: 8aa-;; ga-;; 4fd; 4r;
+
+			VERSE "fol-low all the way.";
+			VERSE "Je-sus will be near.";
+			VERSE "shel-ter me from harm.";
+			VERSE "on the Sav-ior's breast.";
+repeatstart
+//10
+1: 8af; 8s; 2.;
+2: 8r; 8s; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "<>";
+			VERSE "The";
+bar
+//11
+1: 4.af; 8bg; 4.af; 8ge;
+2: 8r; d+d;; 8r;; 8d+d;; ad;
+
+			VERSE 1; "<>";
+			VERSE "cross, the cross I'll";
+			VERSE 8s; 8; 8; 8s; 8s; 8; 8; 8s; "The cross, the cross";
+bar
+//12
+1: 8fd; ec; fd; ge; 4bg; 8af; d+f;
+2: 8ad;;;; 4d+d; 8; r;
+
+			VERSE "bear, and fol-low Je-sus; His";
+bar
+//13
+1 1: 4.c+g; 8; bg; 4a; 8a;
+1 2: 4.s; 8;; 4g; 8g;
+2: 8r; e+a;;; d+a; 4c+a; 8c+a;
+
+			VERSE "grace He gives me, to";
+			VERSE 8s; 8; 8; 8s; 8s; 4s; 8s; "His grace";
+
+bar ending "1."
+//14
+1: 8bg; af; gnen; af; 4.fd; 8s;
+2: 8d+d;; bd; ad; 4.; 8s;
+
+			VERSE "strength-en as I go;";
+repeatend ending "2."
+//15
+1: 8ae;; bg; c+g; 4d+f; 4s;
+2: 8c+a;; e+a; 8aa-; 4ad; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "con-quer ev-'ry foe.";
+endbar

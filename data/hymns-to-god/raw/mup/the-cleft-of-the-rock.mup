@@ -1,0 +1,205 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		J.D.Brunk, Musical Editor
+//		Mennonite Publishing House
+//		Scottdale, Penna.
+//		Copyright 1902
+//		by J. S. Shoemaker
+//		Freeport, ILL.
+//		Hymn no. 447 / 324
+
+// Transcribed by: Ted Gatza, Jr. 03/09/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Cleft Of The Rock" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:I\ will\ put\ thee\ in\ a\|\ cleft\ of\ the\ rock,\ and\ will cover\ thee\ with\|\ my\ hand...\ Ex.\ 33:22"""
+   title (13) "Samuel E. Good" " " "Samuel E. Good"	
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 2.s; 8.d tie; 16d;
+1 2: 2.s; 8.d tie; 16d;
+2: 2.s; 8.bg tie; 16bg;
+
+			lyrics 1: 2.s; 8.; 16;"<1. >-1|There's a";
+			lyrics 1: 2.s; 8.; 16; "<2. >-1|There is";
+			lyrics 1: 2.s; 4; "<3. >-1|Oh,";
+bar
+//2
+1: 4gd; 8.gd; 16gd; 4gd; 4bd;
+2 1: 4bg; 8.bg; 16bg; 4bg; 4g;
+2 2: 4s; 8.s; 16s; 4s; 4g;
+
+			lyrics 1: "cleft in the Rock of";
+			lyrics 1: "peace for the soul that";
+			lyrics 1: "soul, thou who now art";
+bar
+//3
+1: 2gd; 4db-; 8.db-; 16db-;
+2 1: 2bg; 4g; 8.gg-; 16gg-;
+2 2: 2s; 4g; 8.s; 16s;
+
+			lyrics 1: "a-ges, Where my";
+			lyrics 1: "hid-eth In the";
+			lyrics 1: "wea-ry, To the";
+bar
+//4
+1: 4ec; 8ec tie; 8ec; 4s; 8s; 8s;
+2: 4gc; 8gc tie; 8gc; 4s; 8s; 8s;
+
+			lyrics 1: "soul may";
+			lyrics 1: 4; 8; 8; 4s; 8s; 8s;  "rock that is";
+			lyrics 1: "Rock do";
+invisbar
+newscore
+
+1: 4s; 8s; 8s; 4ge; 8fd slur; 8ec;
+2: 4s; 8s; 8s; 4gc; 8gc tie; 8gc;
+
+			lyrics 1: "safe-ly";
+			lyrics 1: 4s; 8s; 8s; 4; 8; 8; "high-er than";
+			lyrics 1: "come for";
+
+bar
+//5
+1 1: 2.db-; 8d; 8d;
+1 2: 2.s; 8d; 8d;
+2: 2.gg-; 8bg; 8bg;
+mussym (10) above 1: 4 "sign";
+
+			lyrics 1: "hide While the";
+			lyrics 1: "I, For the";
+			lyrics 1: "rest, Come to";
+			lyrics 2: 2.s; 8; 8; "<\f(TX)D.S.\f(TR) - >-1|While the";
+bar
+//6
+1 1: 4bd; 4d+d; 4gd; 8d slur; 8fn;
+1 2: 4s; 4s; 4s; 8d tie; 8d;
+2 1: 4g; 4bg; 4gb-; 8gb- tie; 8gb-;
+2 2: 4g; s;; 8;;
+
+			lyrics 1: "storms of life are";
+			lyrics 1: 4; 4; 4; 8; 8; "soul that on-ly con-";
+			lyrics 1: 4; 4; 4; 8; 8; "him who on-ly can";
+			lyrics 2: "Storms of life are";
+bar
+//7
+1: 2ec; 4c+e; 8.ec; 16ec;
+2: 2gc; 4gc; 8.gc; 16gc;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "rag-ing And the";
+			lyrics 1: "fid-eth And the";
+			lyrics 1: "cheer thee, To the";
+			lyrics 2: "rag-ing And the";
+bar
+//8
+1: 4db-; 8.bd; 16bd; 4ad; 4fd;
+2: 4gd; 8.gd; 16gd; 4fd; 4c+d;
+
+			lyrics 1: "bil-lows roll o'er the";
+			lyrics 1: "cleft of the Rock will";
+			lyrics 1: "dear lov-ing Sav-iour's";
+			lyrics 2: "bil-lows roll o'er the";
+bar
+//9
+1: 2.gd; 4s;
+2: 2.bgg-; 4s;
+ital (13) above 1: 1 "\f(TX)Fine.\f(TR)";
+
+			lyrics 1: "tide.";
+			lyrics 1: "try.";
+			lyrics 1: "breast.";
+			lyrics 2: "tide.";
+dblbar
+//10
+1 1: 2.s; 8.d; 16d;
+1 2: 2.s; 8.d; 16d;
+2: 2.s; 8.bg; 16bg;
+
+			lyrics 1: "Oh, the";
+			lyrics 1: "Oh, the";
+bar
+//11
+1 1: 2.d; 8.bd; 16gd;
+1 2: 2.d; 8.s; 16s;
+2 1: 4bg; 8bg; 8bg; 4bg; 8.g; 16bg;
+2 2: 4s; 8s; 8s; 4s; 8.g; 16s;
+
+			lyrics 1: "cleft of the";
+			lyrics 1: 4; 8; 8; 4; 8.; 16; "cleft of the Rock, Oh, the";
+bar
+//12
+1 1: 2.d; 8.gd; 16fd;
+1 2: 2.d; 8.s; 16s;
+2: 4bg; 8bg; 8bg; 4bg; 8.gb-; 16gb-;
+
+			lyrics 1: "Rock Where my";
+			lyrics 1: 4; 8; 8; 4; 8.; 16; "cleft of the Rock where my";
+bar
+//13
+1: 2.ec; 4c+e;
+2: 4gc; 8gc; 8gc; 8gc; 8gc; 8.gc; 16gc;
+
+			lyrics 1: "soul may";
+			lyrics 1: 4; 8; 8; 8; 8; 8.; 16; "soul may se-cure-ly, may se-";
+bar
+//14
+1: 2.bd; 4s;
+2: 4gg-; 4gg-; 4gg-; 4s;
+ital above 1: 3 "\f(TX)D.S.\f(TR)";
+
+			lyrics 1: "hide.";
+			lyrics 1: 4; 4; 4; 4s;  "cure-ly hide.";
+endbar
+
+title (20) "";
+title (11) "" "Public Domain" "HymnsToGod.org"

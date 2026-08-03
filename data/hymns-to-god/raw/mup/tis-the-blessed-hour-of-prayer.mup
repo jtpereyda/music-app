@@ -1,0 +1,414 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Good As Gold
+//		A New Collection Of Sunday School Songs
+//		By Robert Lowry And W. Howard Doane
+//		Publisher: Biglow & Main - New York And Chicago
+//		Copyright: 1880
+//		Hymn No.: 30
+
+// Transcribed by: Ted Gatza, Jr. 08/12/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.93
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=15
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "'Tis The Blessed Hour Of Prayer" ""
+   title (11) "" "\f(TI)Now Peter and John were going up into the temple at the" ""
+   title (11) "" "\f(TI)hour of prayer, being the ninth hour. - Acts 3:1" ""
+   title (11) "" 
+   title (11) "E\(flat) - 3 - DO" "" ""
+   title (13) "Fanny J. Crosby" "" "William H. Doane, 1880"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 2s; 8.e; 16f;
+1 2: 2s; 8.e; 16;
+2: 2s; 8.eg; 16ea;
+
+	VS "<1. >-1|'Tis the";
+	VS "<2. >-1|'Tis the";
+	VS "<3. >-1|'Tis the";
+	VS "<4. >-1|At the";
+bar
+
+//2
+1 1: 8.eg; 16f#; 4eg; fna;
+1 2: 8.s; 16e; 4s; ;
+2: 8.eb; 16ean; 4eb; ;
+
+	VS "bless-ed hour of";
+	VS "bless-ed hour of";
+	VS "bless-ed hour of";
+	VS "bless-ed hour of";
+bar
+
+//3a
+1: 2gb; 8s; ;
+2: 2ee+; 8s; ;
+
+	VS "Prayer,";
+	VS "Prayer,";
+	VS "Prayer,";
+	VS "Prayer,";
+invisbar
+
+//3b
+1: 2s; 8eb; ;
+2: 2s; 8gb; ;
+
+	VS "when our";
+	VS "when the";
+	VS "when the";
+	VS "if we";
+bar
+
+//4
+1: 4ee+; ed+; ec+;
+2: 4ac+; a-b; ca;
+
+	VS "hearts low-ly";
+	VS "Sav-iour draws";
+	VS "tenpt-ed and";
+	VS "firm-ly be-";
+bar
+
+//5a
+1: 2eb; 8s; ;
+2: 2eg; 8s; ;
+
+	VS "bend,";
+	VS "near,";
+	VS "tried";
+	VS "lieve";
+invisbar
+
+//5b
+1: 2s; 8eb; ;
+2: 2s; 8eg; ;
+
+	VS "And we";
+	VS "With a";
+	VS "To the";
+	VS "That the";
+bar
+
+//6
+1: 4eb; eg; eb;
+2: 4eg; eb; eg;
+
+	VS "gath-er to";
+	VS "ten-der com-";
+	VS "Sav-iour who";
+	VS "bless-ing we";
+bar
+
+//7
+1: 4ec+; eb; eg;
+2: 4ea; eg; eb;
+
+	VS "Je-sus, our";
+	VS "pas-sion His";
+	VS "loves them their";
+	VS "ask for we'll";
+bar
+
+//8
+1 1: 4.eg; 8f; 4e;
+1 2: 4.s; 8e; 4;
+2: 4.can; 8ca; 4fa;
+
+	VS "Sav-iour and";
+	VS "chil-dren to";
+	VS "sor-row con-";
+	VS "sure-ly re-";
+bar
+
+//9a
+1: 2df; 8.s; 16;
+2: 2b-b; 8.s; 16;
+
+	VS "Friend;";
+	VS "hear;";
+	VS "fide;";
+	VS "ceive,";
+invisbar
+
+//9b
+1 1: 2s; 8.e; 16f;
+1 2: 2s; 8.e; 16;
+2: 2s; 8.eg; 16ea;
+
+	VS "If we";
+	VS "When He";
+	VS "With a";
+	VS "In the";
+bar
+
+//10
+1 1: 8.eg; 16f#; 4eg; ea;
+1 2: 8.s; 16e; 4s; ;
+2 1: 8.eb; 16ean; 4eb; f;
+2 2: 8.s; 16; 4; e;
+
+	VS "come to Him in";
+	VS "tells us we may";
+	VS "sym-pa-thiz-ing";
+	VS "full-ness of de-";
+bar
+
+//11a
+1: 2eb; 8s; ;
+2: 2eg; 8s; ;
+
+	VS "faith,";
+	VS "cast";
+	VS "heart";
+	VS "light";
+invisbar
+
+//11b
+1: 2s; 8eb; ;
+2: 2s; 8gb; ;
+
+	VS "His pro-";
+	VS "at His";
+	VS "He re-";
+	VS "we shall";
+bar
+
+//12
+1: 4ee+; ed+; ec+;
+2: 4ac+; a-b; ca;
+
+	VS "tec-tion to";
+	VS "feet ev-ery";
+	VS "moves ev-ery";
+	VS "lose ev-ery";
+bar
+
+//13a
+1: 2eb; 8s; ;
+2: 2eg; 8s; ;
+
+	VS "share,";
+	VS "care,";
+	VS "care;";
+	VS "care;";
+invisbar
+
+//13b
+SIGN(2)
+1: 2s; 8eb; ;
+2: 2s; 8eg; ;
+
+	VS "What a";
+bar
+
+//14
+1: 4ec+; 4.ee+; 8ec+;
+2: 4a-a; 4.a-c+; 8ca;
+
+	VS "balm for the";
+bar
+
+//15a
+1: 4eb; eg; 8s; ;
+FST(2)
+2: 4eg; eb; 8s; ;
+FBT(2)
+
+	VS "wea-ry!";
+invisbar
+
+//15b
+1 1: 4s; ; 8e; f;
+1 2: 4s; ; 8e; ;
+2: 4s; ; 8gb; ac+;
+
+	VS "O how";
+bar
+
+//16
+1 1: 8.g bm; 16a ebm; 4s; s;
+1 2: 4e; 4eg; df;
+2 1: [ho 0 ] 8.b bm; 16c+ ebm; 4s; s;
+2 2: 4b; 4b-b; b-a;
+
+	VS12 "sweet to be";
+bar
+
+//17
+FINE(1)
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2eg; 4s;
+
+	VS "there!";
+dblbar
+
+CHORUS
+
+//18
+1:2s; 8eg; eb;
+2: 2s; 8eb; eg;
+
+	VS "Bess-ed";
+bar
+
+//19
+1 1: 2b; 4fb;
+1 2: 4d slur; e; 4s;
+2 1: 4f slur; g; b-a;
+2 2: 2b-; 4s;
+
+	VS "hour of";
+bar
+
+//19a
+1: 2eb; 8s; ;
+2: 2eg; 8s; ;
+
+	VS "pray'r,";
+invisbar
+
+//19b
+1: 2s; 8eg; eb;
+2: 2s; 8eb; eg;
+
+	VS "Bless-ed";
+bar
+
+//20
+1 1: 4e+ slur; d+; c+;
+1 2: 2e; 4s;
+2 1: 4c+ slur; b; a;
+2 2: 2a-; 8a-bm; c ebm;
+
+	VS "hour of";
+bar
+
+//21
+DS(1)
+1: 2eb; 4s;
+2: 2eg; 4s;
+
+	VS "pray'r;";
+endbar

@@ -1,0 +1,364 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This Mup source code is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymns, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church
+//	E. L. Jorgenson, Compiler
+//	Word and Work
+//	Louisville, Kentucky
+//	Copyright 1921
+//	Hymn No.: 112	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 01/03/2024
+
+// Revisions:
+//	01/14/2024 [1] Corrected directing pattern from 3 to 4
+//	01/15/2024 [1] Corrected the starting syllable from Do to DO
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=e&
+
+
+staff 2
+	key=e&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "I Know Whom I Have Believed" ""
+   title (2)""
+   title (11) "" "\f(TI)For which cause I suffer also these things: yet I am not ashamed; for I"""
+   title (11) "" "\f(TI)know him whom I have believed, and I am persuaded that he is able to guard"""
+   title (11) "" "\f(TI)that which I have committed unto him against that day. - 2 tim. 1:12"""
+   title "E \(flat) - 4 - DO" "" ""
+   title  "Daniel Webster Whittle, 1883" "" "James McGranahan, 1883"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+
+//Verse
+
+//1
+1 1: 2.s; 4e;
+1 2: 2.s; 4e;
+2: 2.s; 4eg;
+
+	VS "<1. >-1|I";
+	VS "<2. >-1|I";
+	VS "<3. >-1|I";
+	VS "<4. >-1|I";
+
+bar
+
+//2
+1 1: 4.s; 8; a bm; g ebm; f bm; e ebm;
+1 2: 4.eg; 8; 4e; b-;
+2 1: 4.eb; 8; c+ bm; b ebm; a bm; g ebm;
+2 2: 4.s; 8; 4e; ; 
+
+	VS12 "know not why God's";
+	VS12 "know not how the";
+	VS12 "know not what of";
+	VS12 "know not when my";
+bar
+
+//3 
+1: 4ec+; eb; ; s;
+2: 4ea; eg; ; s;
+
+	VS "won-drous grace";
+	VS "Spir-it moves,";
+	VS "good or ill";
+	VS "Lord may come,";
+invisbar
+1: 4s; ; ; eg;
+2: 4s; ; ; eb;
+
+	VS "To";
+	VS "Con-";
+	VS "May";
+	VS "At";
+bar
+
+//4
+1: 4.gb; 8; ac+ bm; gb ebm; fa bm; eg ebm;
+2 1: 4.ee+; 8; 4; b;
+2 2: 4.s; 8; 4; 8d bm; e ebm;
+
+	VS21 "me He hath made";
+	VS21 "vinc-ing men of";
+	VS21 "be re-served for";
+	VS21 "night or noon-day";
+bar
+
+//5
+1: 2.df; 4s;
+2: 2.b-b; 4s;
+
+	VS "known,";
+	VS "sin,";
+	VS "me,";
+	VS "fair,";
+invisbar
+1: 2.s; 4fa;
+2: 2.s; 4b-b;
+
+	VS "Nor";
+	VS "Re-";
+	VS "Of";
+	VS "Nor";
+bar
+
+//6
+1 1: 4.s; 8; a bm; g ebm; f bm; e ebm;
+1 2: 4.eg; 8; 4e; b-;
+2 1: 4.s; 8; c+ bm; b ebm; a bm; g ebm;
+2 2: 4.eb; 8; 4e; ; 
+
+	VS12 "why\(emdash) un-wor-thy\(emdash)";
+	VS12 "veal-ing Je-sus";
+	VS12 "wear-y ways or";
+	VS12 "if I'll walk the";
+bar
+
+//7
+1: 4ec+; eb; ; s;
+2: 4ea; eg; ; s;
+
+	VS "Christ in love,";
+	VS "thro' the Word,";
+	VS "gold-en days,";
+	VS "vale with Him,";
+invisbar
+1: 4s; ; ; eg;
+2: 4s; ; ; eb;
+
+	VS "Re-";
+	VS "Cre-";
+	VS "Be-";
+	VS "Or";
+bar
+
+//8
+1 1: 4.s; 8; c+ bm; b ebm; a bm; f ebm;
+1 2: 4.db; 8; 4d; ;
+2 1: 4.s; 8; 4; 8f bm; a ebm;
+2 2: 4.b-b; 8b-f; 4; b-;
+
+	VS12 "deemed me for His";
+	VS12 "at-ing faith in";
+	VS12 "fore His face I";
+	VS12 "\"meet Him in the";
+bar
+
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.eg; 4s;
+
+	VS "own.";
+	VS "Him.";
+	VS "see.";
+	VS "air\"";
+dblbar
+newscore
+
+//10
+CHORUS
+1 1: 2.s; 8e; ;
+1 2: 2.s; 8e; ; 
+2 1: 2.s; 8e; ;
+2 2: 2.s; 8e; ; 
+
+	VS "But \"I";
+bar
+
+//11
+1: 4c+e+; 4.; 8; 8bd+; ac+;
+2: 4a-e+; 4.ae+; 8; ; ;
+
+	VS "know whom I have be-";
+bar
+
+//12
+1: 4ac+; 4.gb; 8s; ; ;
+2: 4ee+; 4.; 8s; ; ; 
+
+	VS "liev-ed,";
+invisbar
+1: 8gb; ac+; gb; 4s; 4.;
+2: 8ee+; ; ; 4s; 4.;
+
+	VS "And am per-";
+bar
+
+//13
+1: 4gb; 4.fa; 8; gb; fa;
+2: 4b-d+; 4.; 8; ; ;
+
+	VS "suad-ed that He is";
+bar
+
+//14
+1: 4fa; 2eg; 4s;
+2: 4ee+; 2eb; 4s;
+
+	VS "a-ble";
+invisbar
+1 1: 4s; 2; 4e;
+1 2: 4s; 2; 4e;
+2 1: 4s; 2; 4e;
+2 2: 4s; 2; 4e;
+
+	VS "To";
+bar
+
+//15
+1: 4c+e+; 4.; 8; 8bd+; ac+;
+2: 4a-e+; 4.ae+; 8; ; ;
+
+	VS "keep that which I've com-";
+bar
+
+//16
+1: 4ac+; 2gb; 8s; ;
+2: 4ee+; 2; 8s; ;
+
+	VS "mit-ted";
+invisbar
+1: 4s; 2; 8gb; ;
+2: 4s; 2; 8eb; ;
+
+	VS "Un-to";
+bar
+
+//17
+1 1: 4.fd+; 8ac+; 4ad+; 4b;
+1 2: 4.s; 8; 4; a;
+2 1: 4.b-b; 8; 4b; db;
+2 2: 4.s; 8; b- bm; c ebm; 4s;
+
+	VS "Him a-gainst that";
+bar
+
+//18
+1: 2.ge+; 4s;
+2: 2.eb; 4s;
+
+	VS "day.\"";
+endbar
+
+
+
+
+
+
+
+
+
+
+

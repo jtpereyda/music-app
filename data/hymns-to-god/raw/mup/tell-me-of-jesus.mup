@@ -1,0 +1,210 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Favorite Gospel Songs
+//		A Hymn and tune book
+//		adapted to Evangelistic meetings, 
+//		prayer meetings, Sabbath schools, 
+//		Epworth leagues, Y. P. S. C. E.
+//		Orginizations, and all conventions 
+//		and Gatherings Of Christian workers.
+//		Edited by Mrs. Grace Weiser Davis, Elisha A. Hoffman
+//		Music Editor, Ira Orwig Hoffman,
+//		Publisher: J. N. Davis,
+//		No. 83 Railroad Avenue,
+//		Jersey City, N. J.
+//		Copyright: 1894
+//		Hymn No.: 87
+//		
+// Transcribed by: Ted Gatza, Jr. 09/04/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Tell Me Of Jesus" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - MI" "\s(17)\f(TI)\:And\ they\ spake\ the\ word\ \|of\ the\ Lord\ unto\ him,\ with all\ that\ were\ in\ his\|\ house.\ -\ Acts\ 16:32" ""   
+   title (13) "Elisha A. Hoffman" "" "Elisha A. Hoffman, 1894"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1 1: 4ge; 8.; 16ae; 4ge; e;
+1 2: 4s; 8.; 16; 4; e;
+2: 4be; 8.; 16c+e; 4be; ge;
+
+			VERSE "<1. >-1|Tell me of Je-sus";
+			VERSE "<2. >-1|Tell me of Je-sus";
+			VERSE "<3. >-1|Tell me of Je-sus";
+
+bar
+//2
+1: 4be; 8.; 16c+e; 4be; ge;
+2: 4ge; 8.; 16ae; 4ge; be;
+
+			VERSE "won-der-ful Sav-iour,";
+			VERSE "pre-cious Re-deem-er,";
+			VERSE "lov-ing and ten-der,";
+bar
+//3
+1 1: 4ge; 8.; 16ae; 4ge; e;
+1 2: 4s; 8.; 16; 4; e;
+2: 4be; 8.; 16c+e; 4be; ge;
+
+			VERSE "Bear-er of sin on";
+			VERSE "Who can a-lone from";
+			VERSE "No oth-er mes-sage";
+bar
+//4
+1 1: 4e; 8.f; 16ge; 2fd;
+1 2: 4e; 8.; 16s; 2;
+2: 4ge; 8.ae; 16be; 2bb-;
+
+			VERSE "Cal-va-ry's tree;";
+			VERSE "sin make us free,";
+			VERSE "sweet-er can be;";
+bar
+//5
+1 1: 4ge; 8.; 16ae; 4ge; e;
+1 2: 4s; 8.; 16; 4; e;
+2: 4be; 8.; 16c+e; 4be; ge;
+
+			VERSE "Suff-'ring for sin-ners,";
+			VERSE "Bur-ied no long-er,";
+			VERSE "Tell how He died to";
+bar
+//6
+1: 4be; 8.; 16c+e; 4be; ge;
+2: 4ge; 8.; 16ae; 4ge; be;
+
+			VERSE "dy-ing to save them";
+			VERSE "ris-en and liv-ing,";
+			VERSE "seal my re-demp-tion,";
+bar
+//7
+1 1: 8e;; e&;; ec;; ge;;
+1 2: 8e;; d;; s;;;;
+2: 8ge;;;; aa-;; be;;
+
+			VERSE "He be-came a sac-ri-fice for";
+			VERSE "He is a-ble now to save both";
+			VERSE "How He suf-fered on the Cross for";
+bar
+//8
+1 1: 4f; fd; 2e;
+2: 4bb-; ab-; 2ge;
+
+			VERSE "you and me.";
+			VERSE "you and me.";
+			VERSE "you and me.";
+dblbar
+//10
+1 1: 4ge; 8; fd; 2e;
+1 2: 4s; 8;; 2e;
+2: 4r; 8; bb-; ge;; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "He died for you,";
+			VERSE 4s; 8s; 8; 8; 8; 4; "He died for you,";
+bar
+//11
+1: 4bg; 8; af; 2ge;
+2: 4r; 8; bb-; be;; 4;
+
+			VERSE "He died for me,";
+			VERSE 4s; 8s; 8; 8; 8; 4; "He died for me,";
+bar
+//12
+1: 8c+e;;;; be;; ae; ge;
+2: 8aa-; ab-; ac; ad; ge;; c+e; be;
+
+			VERSE "Je-sus Christ a-toned for all on";
+bar
+//13
+1 1: 4fd; f; f slur; b;
+1 2: 4s; 4e; 2d;
+2: 4bf; anf; 2bb-;
+
+			VERSE "Cal-va-ry,";
+bar
+//14
+1 1: 4ge; 8; fd; 2e;
+1 2: 4s; 8;; 2e;
+2: 4r; 8; bb-; ge;; 4;
+
+			VERSE "On-Cal-va-ry,";
+			VERSE 4s; 8s; 8; 8; 8; 4; "On Cal-va-ry,";
+bar
+//15
+1: 4bg; 8; af; 2ge;
+2: 4r; 8; bb-; be;; 4;
+
+			VERSE "on Cal-va-ry,";
+			VERSE 4s; 8s; 8; 8; 8; 4; "On Cal-va-ry,";
+bar
+//16
+1 1: 8c+e;; d+f;; e+e; be; ge; e;
+1 2: 8s;;;;;;; e;
+2 1: 8a;; b;; bg;; be; ge;
+2 2: 8a;;;; s;;;;
+
+			VERSE "Je-sus suf-fered on the Cross for";
+bar
+//17
+1 1: 4ge; fd; 2e;
+1 2: 4s;; 2e;
+2: 4bb-; ab-; 2ge;
+
+			VERSE "you and me.";
+endbar

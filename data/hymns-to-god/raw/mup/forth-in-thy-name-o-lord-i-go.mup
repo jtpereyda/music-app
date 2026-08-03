@@ -1,0 +1,227 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Assembly Hymn and Song Collection
+//		For use ing Chapel, Assembly, Convocation
+//		or General Exercises of Schools, Normals, 
+//		Colleges, Universitues, Etc.
+//		Compiled and Edited by C. Guy Hoover
+//		Professor of School Music, Theory and 
+//		Conducting
+//		Published by the Author
+//		Authorized Distributer: Educational Music Bureau
+//		School-Music Supply Department
+//		218 So. Wabash Ave. Chicago.
+//		Sixth Edition
+//		Copyright 1915
+//		Hymn no. 92
+
+// Transcribed by: Ted Gatza, Jr. 12/02/2001
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Forth In Thy Name, O Lord, I Go" ""
+   title (2)""
+   title (11) "F - 2 - MI" "\s(17)\f(TI)\:I\ beheld\ the\ Lord\ always\ be\|fore\ my\ face;\ For\ he\ is\ on\ my right\ hand,\ that\ I\ should\|\ not\ be\ moved:\ -\ Acts\ 2:25"""
+   title (13) "Charles Wesley" " " "Henry K. Oliver"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=2/2	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2af; 4af; 4af;
+2: 2c+f; 4c+f; 4c+f;
+
+			lyrics 1: "<1. >-1|Forth in Thy";
+			lyrics 1: "<2. >-1|The task Thy";
+			lyrics 1: "<3. >-1|Pre-serve me";
+			lyrics 1: "<4. >-1|Thee may I";
+bar
+//2 
+1 1: 2bf; 4a slur; 4c+;
+1 2: 2s; 2f;
+2 1: 2d+f; 4c+ slur; 4a;
+2 2: 2s; 2f;
+
+			lyrics 1: "name, O";
+			lyrics 1: "wis-dom";
+			lyrics 1: "from my";
+			lyrics 1: "set at";
+bar
+//3
+1: 2c+g; 2be;
+2: 2ge; 2c+c;
+
+			lyrics 1: "Lord, I";
+			lyrics 1: "hath as-";
+			lyrics 1: "call-ing's";
+			lyrics 1: "my right";
+bar
+//4
+1: 1af;
+2: 1c+f;
+
+			lyrics 1: "go,";
+			lyrics 1: "sign'd";
+			lyrics 1: "snare,";
+			lyrics 1: "hand,";
+bar
+//5
+1: 2be; 4bg; 4be;
+2: 2c+c; 4c+e; 4c+c;
+
+			lyrics 1: "My dai-ly";
+			lyrics 1: "O let me";
+			lyrics 1: "And hide my";
+			lyrics 1: "Whose eyes mine";
+bar
+newscore
+//6
+1: 2.af; 4af;
+2: 2.c+f; 4c+f;
+
+			lyrics 1: "la-bor";
+			lyrics 1: "cheer-ful-";
+			lyrics 1: "sim-ple";
+			lyrics 1: "in-most";
+bar
+//7
+1: 2bnf; 2bf;
+2: 2d+d; 2d+g;
+
+			lyrics 1: "to pur-";
+			lyrics 1: "ly ful-";
+			lyrics 1: "heart a-";
+			lyrics 1: "sub-stance";
+bar
+//8
+1: 1c+e;
+2: 1c+c;
+
+			lyrics 1: "sue;";
+			lyrics 1: "fil;";
+			lyrics 1: "bove;";
+			lyrics 1: "see,";
+bar
+//9
+1: 2c+f; 4c+g; 4be;
+2: 2af; 4ge; 4c+c;
+
+			lyrics 1: "Thee, on-ly";
+			lyrics 1: "In all my";
+			lyrics 1: "A-bove the";
+			lyrics 1: "And la-bor";
+bar
+//10
+1: 2af; 2fc;
+2: 2c+f; 2c+a;
+
+			lyrics 1: "Thee, re-";
+			lyrics 1: "works Thy";
+			lyrics 1: "thorns of";
+			lyrics 1: "on at";
+bar
+newscore
+//11
+1 1: 4e slur; 4f; 4ge slur; 4af;
+1 2: 2c; 4s; 4s;
+2 1: 2c+; 2c+;
+2 2: 4b slur; 4a; 4g slur; 4f;
+
+			lyrics 1: "solved to";
+			lyrics 1: "pres-ence";
+			lyrics 1: "chok-ing";
+			lyrics 1: "Thy com-";
+bar
+//12
+1: 1bg;
+2: 1c+e;
+
+			lyrics 1: "know";
+			lyrics 1: "find,";
+			lyrics 1: "care,";
+			lyrics 1: "mand,";
+bar
+//13
+1: 2af; 4d+f; 4d+f;
+2: 2c+f; 4bb-; 4bd;
+
+			lyrics 1: "In all I";
+			lyrics 1: "And prove Thy";
+			lyrics 1: "The gild-ed";
+			lyrics 1: "And of-fer";
+bar
+//14
+1: 2c+f; 2af;
+2: 2af; 2c+f?f-;
+			lyrics 1: "think, or";
+			lyrics 1: "good and";
+			lyrics 1: "baits of";
+			lyrics 1: "all my";
+bar
+//15
+1 1: 2f; 2ge;
+1 2: 2f; 2s;
+2: 2ac; 2bc;
+
+			lyrics 1: "speak, or";
+			lyrics 1: "per-fect";
+			lyrics 1: "world-ly";
+			lyrics 1: "works to";
+bar
+//16
+1 1: 1f;
+1 2: 1f;
+2: 1af?f-;
+
+			lyrics 1: "do.";
+			lyrics 1: "will.";
+			lyrics 1: "love.";
+			lyrics 1: "Thee.";
+endbar			
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

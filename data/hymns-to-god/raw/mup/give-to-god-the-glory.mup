@@ -1,0 +1,229 @@
+// Mup vs.6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Melody
+//		A Collection Of Sacred Songs For The
+//		Sunday-School and Young people's and
+//		Other Devotional Meetings
+//		Edited by E. S. Lorenz
+//		United Brethren Publishing House
+//		Dayton, OH
+//		Copyright: 1899
+//		Hymn No.: 87
+//		
+// Transcribed by: Ted Gatza, Jr. 10/30/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Give To God The Glory" ""
+   title (2)""
+   title (11) "G - 2 - FA" "\s(17)\f(TI)\:Now\ unto\ God\ and\ ou\|r\ Father\ be\ glory\ for ever\ and\ ever.\ Am\|en.\ -\ Phil.\ 4:20" ""   
+   title (13) "E. C. Macartney" "" "Howard E. Smith, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1 1: 8d; 4.s; 4s;
+1 2: 8d; 4.s; 4s;
+2: 8bg; 4.s; 4s;
+
+			VERSE "<1. >-1|I";
+			VERSE "<2. >-1|I've";
+			VERSE "<3. >-1|I'm";
+			VERSE "<4. >-1|I";
+			
+bar
+//2
+1 1: 4d; 8; db- bm; ec ebm; fc;
+1 2: 4d; 8; s;;;
+2 1: 4bg; 8; 4g; 8a;
+2 2: 4s; 8; 4g; 8;
+
+			VERSE 4; 8; 4; 8; "know my sins are";
+			VERSE 4; 8; 4; 8; "found in him a";
+			VERSE 4; 8; 4; 8; "liv-ing for him";
+			VERSE 4; 8; 4; 8; "soon shall sing a-";
+bar
+//3
+1: 4gd; 8af; 4.bg;
+2: 4bg; 8d+d; 4.d+g;
+
+			VERSE "washed a-way,";
+			VERSE "safe re-treat,";
+			VERSE "day by day,";
+			VERSE "mong the blest,";
+bar
+//4
+1 1: 4bg; 8;  bm; af ebm; g;
+1 2: 4s; 8;;; g;
+2 1: 4d+g; 8; d+ bm; c+ ebm; bg;
+2 2: 4s; 8; 4g; 8s;
+
+			VERSE 4; 8; 4; 8; "Give to God the";
+			VERSE 4; 8; 4; 8; "Give to God the";
+			VERSE 4; 8; 4; 8; "Give to God the";
+			VERSE 4; 8; 4; 8; "Give to God the";
+bar
+//5
+1 1: 4.bg; 4af; 8s;
+1 2: 4.s; 4; 8s;
+2: 4.d+d; 4; 8s;
+
+			VERSE "glo-ry,";
+			VERSE "glo-ry,";
+			VERSE "glo-ry,";
+			VERSE "glo-ry,";
+bar
+//6
+1 1: 8d; 4.s; 4s;
+1 2: 8d; 4.s; 4s;
+2: 8c+d; 4.s; 4s;
+
+			VERSE "He";
+			VERSE "Up-";
+			VERSE "I'm";
+			VERSE "He'll";
+
+bar
+//7
+1 1: 4d; 8; db- bm; ec ebm; fc;
+1 2: 4d; 8; s;;;
+2 1: 4bg; 8; 4g; 8a;
+2 2: 4s; 8; 4g; 8;
+
+			VERSE 4; 8; 4; 8; "guides my foot-steps";
+			VERSE 4; 8; 4; 8; "on the rock he";
+			VERSE 4; 8; 4; 8; "walk-ing in the";
+			VERSE 4; 8; 4; 8; "take me to e-";
+bar
+//8
+1: 4gd; 8af; 4.bg;
+2: 4bg; 8d+d; 4.d+g;
+
+			VERSE "all the day,";
+			VERSE "placed my feet,";
+			VERSE "heav'n-ly way,";
+			VERSE "ter-nal rest,";
+bar
+//9
+1: 4af; 8d+f; 4; 8c#+g;
+2 1: 4d+a; 8a; 4aa-; 8;
+2 2: 4s; 8a; 4s; 8;
+
+			VERSE "Glo-ry to his";
+			VERSE "Glo-ry to his";
+			VERSE "Glo-ry to his";
+			VERSE "Glo-ry to his";
+bar
+//10
+1: 4.d+f tie; 4; 8r;
+2: 4.ad tie; 4; 8r;
+
+			VERSE "name.";
+			VERSE "name.";
+			VERSE "name.";
+			VERSE "name.";
+dblbar
+//11
+1 1: 4d+g; 8; e+ bm; d+ ebm; bg;
+1 2: 4s; 8; 4g; 8s;
+2 1: 4bg; 8; c+ bm; b ebm; d+g;
+2 2: 4s; 8; 4g; 8s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE 4; 8; 4; 8; "Glo-ry to the";
+bar
+//12
+1: 4af; 8bg;[up]4.c+a;
+2: 4d+d; 8; 4.;
+
+			VERSE "Lord most high,";
+bar
+//13
+1: [up]4c+a; [up]8; [up]d+b bm; c+a ebm; af;
+2: 4d+d; 8; 4; 8; 
+
+			VERSE 4; 8; 4; 8; "We shall see him";
+bar
+//14
+1 1: 4g; 8af; 4.bg;
+1 2: 4g; 8s; 4.;
+2: 4d+b-; 8d+d; 4.d+g;
+
+			VERSE "by and by,";
+bar
+//15
+1 1: 4d+g; 8; e+ bm; d+ ebm; bfn;
+1 2: 4s; 8; 4g; 8s;
+2 1: 4bg; 8; c+ bm; b ebm; g;
+2 2: 4s; 8; 4g; 8s;
+
+			VERSE 4; 8; 4; 8; "Dwell with him be-";
+bar
+//16
+1: 4d+e; 8c+e; 4; 8r;
+2: 4gc; 8; 4; 8r;
+
+			VERSE "yond the sky,";
+bar
+//17
+1 1: 8a bm; b ebm; c+d; 4bd; 8ac;
+1 2: 4d; 8s; 4s; 8s;
+2 1: 8f bm; g ebm; ad; 4gd; 8fd;
+2 2: 4d; 8s; 4s; 8s;
+
+			VERSE 4; 8; 4; 8; "Glo-ry to his";
+bar
+//18
+1: 4.gb- tie; 4; 8s;
+2: 4.gg- tie; 4; 8s;
+
+			VERSE "name.";
+endbar

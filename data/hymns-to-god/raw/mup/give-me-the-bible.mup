@@ -1,0 +1,267 @@
+// !Mup 7.1 arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 63
+
+// Transcribed by: Ted Gatza, Jr. 07/05/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Give Me The Bible" ""
+   title (2) ""
+   title (11) "" "\f(TI)Thy word is a lamp unto my feet, And light unto my path. - Ps. 119:105" ""
+   title (11) "A \(flat) - 4 - MI" "" ""
+   title (11) "Priscilla J. Owens" "" "Edmund S. Lorenz, 1883"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1: 4ec+; 8ce; ca; 4ec+; fd+;
+2 1: 4a; 8; ; 4; ;
+2 2: 4a; 8; ; 4; ; 
+
+
+	VS "<1. >-1|Give me the Bi-ble,";
+	VS "<2. >-1|Give me the Bi-ble";
+	VS "<3. >-1|Give me the Bi-ble,";
+	VS "<4. >-1|Give me the Bi-ble,";
+
+bar
+
+//2
+1: 8ec+; db; ; ec+; 4ca; ce;
+2: 8eg; ; ; ; 4a-a; ;
+
+	VS "star of glad-ness gleam-ing,";
+	VS "when my heart is bro-ken,";
+	VS "all my steps en-light-en,";
+	VS "lamp of life im-mor-tal,";
+bar
+
+//3
+1: 4df; 8; ; 4fa; fd+;
+2: 4da; 8; ; 4; ; 
+
+	VS "To cheer the wan-d'rer";
+	VS "When sin and grief have";
+	VS "Teach me the dan-ger";
+	VS "Hold up that splen-dor";
+bar
+
+//4
+1: 8ec+; ed+; ee+; ec+; 2eb;
+2 1: 8a; b; ac+; a; 2eg;
+2 2: 8a; ; s; a; 2s;
+
+	VS "lone and tem-pest tossed;";
+	VS "filled my soul with fear;";
+	VS "of these realms be-low;";
+	VS "by the o-pen grave;";
+bar
+
+
+//===============
+//5
+SIGN(1);
+1: 4ec+; 8ce; ca; 4ec+; fd+;
+2 1: 4a; 8; ; 4; ;
+2 2: 4a; 8; ; 4; ;
+
+	VS "No storm can hide that";
+	VS "Give me the pre-cious";
+	VS "That lamp of safe-ty";
+	VS "Show me the light from";
+	BVS "<\f(TX)D. S. \f(TI)- >Pre-cept and prom-ise,";
+bar
+
+//6
+1: 8ec+; db; ; ec+; 4ca; ce;
+2: 8eg; ; ; ; 4a-a; ;
+
+	VS "ra-diance peace-ful beam-ing,";
+	VS "words by Je-sus spo-ken,";
+	VS "o'er the gloom shall bright-en,";
+	VS "heav-en's shin-ing por-tal,";
+	BVS "law and love com-bin-ing,";
+bar
+
+//7
+1: 4df; 8; ; 4fa; fd+;
+2: 4da; 8; ; 4; ; 
+
+	VS "since Je-sus came to";
+	VS "Hold up faith's lamp to";
+	VS "That light a-lone the";
+	VS "Show me the glo-ry";
+	BVS "Till night shall van-ish";
+bar
+
+//8
+FINE(4);
+1: 8ec+; db; ca; dg; 2ca;
+2: 8ea; eg; ea; eb; 2a-a;
+
+	VS "seek and save the lost.";
+	VS "show my Sav-ior near.";
+	VS "path of peace can show.";
+	VS "gild-ing Jor-dan's wave.";
+	BVS "in e-ter-nal day.";
+dblbar
+
+CHORUS
+//9
+1 1: 4ae+; 8ac+; bd+; 4c+e+; 4a;
+1 2: 4s; 8; ; 4; a;
+2: 4ac+; 8ae+; ; 4; ac+;
+
+	VS "Give me the Bi-ble,";
+bar
+
+//10
+1: 8fd+; ec+; db; ca; 4df; da;
+2 1: 8a; ; ; ; 4da; fa;
+2 2: 8a; ; ; ; 4s; ;
+
+	VS "Ho-ly mes-sage shin-ing,";
+bar
+
+//11
+1: 4ce; 8ca; db; 4ec+; ee+;
+2 1: 4a; 8; ; 4; ac+;
+2 2: 4a; 8; ; 4; s;
+
+	VS "Thy light shall guide me";
+bar
+
+//12
+DS(4)
+1: 8ec+; ; eb; dna; 2eb;
+2 1: 8a; ; gb; fb; 2eg;
+2 2: 8a; ; s; ; 2;
+
+	VS "in the nar-row way;";
+endbar

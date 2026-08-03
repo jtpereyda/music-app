@@ -1,0 +1,226 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Songs Of Love And Praise
+//		For use in meetings for Christian
+//		worship and work
+//		Editors: John R. Sweeney, Wm. J. Kirkpatrick, 
+//		and H. L. gilmour
+//		Publisher: John J. Hood, 
+//		1024 Arch St., Philadelphia
+//		Copyright: 1894
+//		Hymn No.: 29
+//		
+// Transcribed by: Ted Gatza, Jr. 02/17/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Lo, He Is God Alone" ""
+   title (2)""
+   title (11) "D - 4 - DO" "\s(17)\f(TI)\:All\ the\ earth\ shall\ worship\ t\|hee,\ And\ shall\ sing\ unto\ thee; They\ shall\ sing\ to\ thy\|\ name.\ Selah\ -\ Ps.\ 66:4" ""   
+   title (13) "Fanny J. Crosby" "" "William J. Kirkpatrick, 1894"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+
+//1
+1: 4d+f; 8.; 16; [up]4c+a; bg;
+2 1: 4ad; 8.; 16; 4; 8b bm; c+ ebm;
+2 2: 4s; 8.; 16; 4; d;
+
+	VERSE "<1. >-1|Sing to the Lord most";
+	VERSE "<2. >-1|Sing to the Lord, ye";
+	VERSE "<3. >-1|Sing to the Lord most";
+	VERSE "<4. >-1|Sing to the Lord most";
+bar
+//2
+1: 2af; fd;
+2: 2d+d; ad;
+
+	VERSE "ho-ly,";
+	VERSE "an-gels,";
+	VERSE "ho-ly,";
+	VERSE "ho-ly,";
+bar
+//3
+1: 4ad; 8.; 16; 4s; s;
+2: 4af; 8.; 16; 4s; s;
+
+	VERSE "Sing to the";
+	VERSE "Ye that o-";
+	VERSE "Oh, ye re-";
+	VERSE "An-cient of";
+invisbar
+newscore
+1: 4s; 8.; 16; 4gc; fd;
+2: 4s; 8.; 16; 4ae; ad;
+
+	VERSE "Lord most";
+	VERSE "bey his";
+	VERSE "deemed a-";
+	VERSE "end-less";
+
+
+bar
+//4
+1: 2. ec; 4r;
+2 1: 2.a; 4r;
+2 2: 2.a; 4s;
+
+	VERSE "high;";
+	VERSE "will;";
+	VERSE "bove;";
+	VERSE "days;";
+bar
+//5
+1: 4d+f; 8.; 16; [up]4c+a; bg;
+2 1: 4ad; 8.; 16; 4; 8b bm; c+ ebm;
+2 2: 4s; 8.; 16; 4; d;
+
+	VERSE "Might-y in power and";
+	VERSE "Ye that in strength ex-";
+	VERSE "Praise ye the Rock e-";
+	VERSE "Haste to his gates with";
+bar
+newscore
+//6
+1: 2af; fd;
+2: 2d+d; ad;
+
+	VERSE "great-ness,";
+	VERSE "cell-ing,";
+	VERSE "ter-nal,";
+	VERSE "glad-ness,";
+bar
+//7
+1: 4ae; 8.; 16; 4bg; c+g;
+2 1: 4c+a; 8.; 16; 4; a;
+2 2: 4s; 8.; 16; 4; a;
+
+	VERSE "Mak-er of earth and";
+	VERSE "Ev-er his word ful-";
+	VERSE "Foun-tain of life and";
+	VERSE "En-ter his courts with";
+bar
+//8
+1: 2.d+f; 4r;
+2: 2.ad; 4r;
+
+	VERSE "sky.";
+	VERSE "fil.";
+	VERSE "love.";
+	VERSE "praise.";
+dblbar
+//9
+1: 4ec; 8.; 16fd; 4ge; 8.ac; 16gc;
+2: 4aa-; 8.; 16; 4; 8.; 16;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE [c]"Look un-to him, all ye";
+bar
+//10
+1: 4fd; 8.; 16ge; 2af;
+2: 4ad; 8.; 16; 2d+d;
+
+	VERSE "ends of the earth,";
+bar
+//11
+1 1: 4g#e; 8.; 16ae; 4be; e;
+1 2: 4s; 8.; 16; 4; e;
+2: 4be; 8.; 16c+e; 4d+e; g#e;
+
+	VERSE "Bow at his sa-cred";
+bar
+//12
+1 1: 1c+;
+1 2: 2e ph; 4a; g eph;
+2: 1a;
+
+	VERSE "throne;";
+bar
+//13
+1: 4d+f; 8.; 16; 4; [up]8.c+a; 16bg;
+2: 4ad; 8.; 16; 4; 8.d+d; 16;
+
+	VERSE "Look un-to him, and be";
+bar
+//14
+1 1: 4af;8b bm; c+ ebm; 2d+f;
+1 2: 4s; g; 2s;
+2: 4d+d; 4ad; 2;
+
+	VERSE 4; 4; 2; "saved by grace,";
+bar
+//15
+1 1: 4e; 8.ad; 16gd; 4fd; ec;
+1 2: 4d; 8.s; 16; 4;;
+2 1: 4bg; 8.; 16; 4a; ga-;
+2 2: 4s; 8.; 16; 4a; s;
+
+	VERSE "Lo, he is God a-";
+bar
+//16
+1 1: 2.d; 4r;
+1 2: 2.d; 4s;
+2: 2.fd; 4r;
+
+	VERSE "lone.";
+endbar
+

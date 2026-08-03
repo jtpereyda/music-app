@@ -1,0 +1,213 @@
+// Mup vs.6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Bright Melodies
+//		For The Sunday School and Young people's Societies
+//		Embracing Praise Hymns, Work Songs, Invitation songs,
+//		Primary Songs, etc,. etc.
+//		Edited by John R. Sweney and J. Howard Entwisle
+//		Published by John J. Hood
+//		Philadelphia 1024 Arch St.; Chicago 640 W. Madison St.
+//		Copyright: 1899
+//		Hymn No.: 11
+//		
+// Transcribed by: Ted Gatza, Jr. 11/12/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "We Shall Stand Before The King" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - DO" "\s(17)\f(TI)\:Exalt\ ye\ Jehovah\ ou\|r\ God,\ And\ worship\ at his\ footstool:\ Hol\|y\ is\ he.\ -\ Ps.\ 99:5" ""   
+   title (13) "E. O. Excell, arr." "" "E. O. Excell, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1: 8. ac; 16bd; 2.s;
+2: 8.aa-; 16; 2.s;
+
+			VERSE "<1. >-1|We Shall";
+//			VERSE "<2. >-1|Ring, ye";	//Original Lyrics
+			VERSE "<2. >-1|Sing, ye";
+			VERSE "<3. >-1|Wake, my";
+			
+bar
+//2
+1: 8.c+e;  16; 8.bd; 16c+e; 4ac; 8.; 16ae;
+2: 8.aa-; 16; 8.; 16; 4; 8.; 16ac;
+
+			VERSE "stand be-fore the King, With the";
+//			VERSE "bells of heav-en ring, We shall";	//Original Lyrics
+			VERSE "saints of heav'n-ly things, We shall";
+			VERSE "soul, thy trib-ute bring, Thou shalt";
+bar
+//3
+1: 8.bf; 16af; 8.ge; 16fd; 4ec; 8.; 16ac;
+2 1: 8.ad; 16; 8.; 16; 4a; 4r;
+2 2: 8.s; 16; 8.; 16; 4a; 4s;
+
+			VERSE "an-gels we shall sing, By and";
+			VERSE "stand be-fore the King, By and";
+			VERSE "stand be-fore the King, By and";
+bar
+//4
+1 1: 2b slur; 4e; 8.ac; 16bd;
+1 2: 2.e; 4s;
+2: 4r; 8.ge; 16; 4; r;
+
+			VERSE "by,_ by and";
+			VERSE "by,_ by and";
+			VERSE "by,_ by and";
+			VERSE 4s; 8.; 16; 4; 4s; "By and by,";
+bar
+//5
+1: 2.c+e; 8.ac; 16bd;
+2: 4r; 8.aa-; 16; 4; 8.aa-; 16;
+
+			VERSE "by; Walk the";
+			VERSE "by; There our";
+			VERSE "by; Lay thy";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "by and by;";
+bar
+//6
+1: 8.c+e;  16; 8.bd; 16c+e; 4ac; 8.; 16ae;
+2: 8.aa-; 16; 8.; 16; 4; 8.; 16ac;
+
+			VERSE "bright, the gold-en shore, prais-ing";
+			VERSE "sor-rows will be o'er, There his";
+			VERSE "tro-phies at his feet, In his";
+bar
+//7
+1: 8.bf; 16af; 8.ge; 16fd; 4ec; 8.ec; 16ac;
+2 1: 8.ad; 16; 8.; 16; 4a; 4r;
+2 2: 8.s; 16; 8.; 16; 4a; 4s;
+
+			VERSE 8.; 16; 8.; 16; 4; 8.s; 16s; "him for-ev-er-more,";
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; "name we will a-dore, By and";
+			VERSE 8.; 16; 8.; 16; 4; 8.s; 16s; "like-ness stand com-plete,";
+bar
+//8
+1 1: 2b slur; 4e; 8.c+e; 16bd;
+1 2: 2.e; 8.s; 16;
+2: 4r; 8.ge; 16; 4; 4r;
+
+			VERSE 1; "<>";
+			VERSE "by_ by and";
+			VERSE 4s; 8.; 16; 4; 4s; "By and by,";
+bar
+//9
+1: 2.ac; 4s;
+2: 4r; 8.aa-; 16; 4; 4s;
+
+			VERSE "by.";
+			VERSE 4s; 8.; 16; 4; 4s; "by and by.";
+dblbar
+//10
+1: 8.c+a; 16d+b; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "We shall";
+bar
+//11
+1: 2e+c+ tie; 8.; 16 c+a; 8.d+b; 16e+c+;
+2: 4r; 8.e+a; 16; 4; 4r;
+
+			VERSE "stand_ be-fore the";
+			VERSE 4s; 8.; 16; 4; 4s; "We shall stand";
+bar
+//12
+1: 2c+a slur; 4ae; 8.be; 16ae;
+2: 8.r; 16e+a; 8.; 16; 4c+a; 8.d+e; 16c+e;
+
+			VERSE "King,_ With the";
+			VERSE 8.s; 16; 8.; 16; 4; 8.s; 16s; "be-fore the King,";
+bar
+//13
+1: 8.ge; 16e+g; 8.; 16; 4e+b; 8.d+g; 16bg;
+2: 8.be; 16; 8.; 16c+e; 4d+e; 8.be; 16;
+
+			VERSE "an-gels we shall sing, Glo-ry,";
+bar
+//14
+1 1: 8.ge; 16e; 8.ac; 16bd; 4c+e; 8.c+a; 16d+b;
+1 2: 8.s; 16d; 8.s; 16; 4; 8.; 16;
+2 1: 8.be; 16; 8.aa-; 16; 4a; 4r;
+2 2: 8.s; 16; 8.; 16; 4a; 4s;
+
+			VERSE "glo-ry to our King, Hal-le";
+bar
+//15
+1: 2e+c+ tie; 8.; 16c+a; 8.d+b; 16e+c+;
+2: 4r; 8.e+a; 16; 8.; 16; 4r;
+
+			VERSE "lu-jah, hal-le";
+			VERSE 4s; 8.; 16; 8.; 16; 4s; "Hal-le-lu-jah,";
+bar
+//16
+1: 2c+a; 4ae; 8.bf; 16d+b;
+2: 4r; 8.e+a; 16; 8.c+a; 16; 8.d+d; 16f+d;
+
+			VERSE "lu-jah, We shall";
+			VERSE 4s; 8.; 16; 8.; 16; 8.s; 16s; "hal-le-lu-jah,";
+bar
+//17
+1: 2c+a tie; 8.; 16be; 8.ae; 16ge;
+2: 4e+e; 8.; 16; 8.; 16d+e; 8.c+e; 16be;
+
+			VERSE "stand_ be-fore the";
+			VERSE 4s; 8.; 16; 8.; 16s; 8.s; 16s; "We shall stand";
+bar
+//18
+1: 2.ae; 4s;
+2: 2.c+aa-; 4s;
+
+			VERSE "King.";
+endbar 

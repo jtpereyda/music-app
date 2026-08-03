@@ -1,0 +1,216 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: International Song Service
+//		With Bright Gems From Fifty Authors
+//		By Philip Phillips
+//		and His Son
+//		For Sunday-Schoois, Gospel Meetings,
+//		Missionary and Young People's Societies,
+//		Prayer Meetings, Etc.
+//		Mast, Crowell & Kirkpatrick
+//		New York City, Times Building
+//		Chicago, Ill. Monadnock Block,
+//		Springfield, Ohio
+//		Copyright 1895
+//		Hymn no. 145
+
+// Transcribed by: Ted Gatza, Jr. 10/28/2010; Rev. 04/03/20
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The City of Gold" ""
+   title (2)""
+   title (11) "A - 4 - SOL" "\s(17)\f(TI)\:And\ the\ building\ of\ the\ wal\|l\ thereof\ was\ jasper:\ and\ the city\ was\ pure\ gold,\ like\ un\|to\ pure\ glass.\ -\ Rev.\ 21:18"""
+   title (13) "Frank M. Davis" " " "Frank M. Davis, 1895"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8.ec; 16ec;
+2: 2.s; 8.aa-; 16aa-;
+
+			lyrics 1: 2.s; 8.; 16; "<1. >-1|There's a";
+			lyrics 1: 2.s; 8.; 16; "<2. >-1|Thro' this";
+			lyrics 1: 2.s; 8.; 16; "<3. >-1|There the";
+bar
+//2
+1: 4ac; 8.ac; 16ac; 4bd; 8.ad; 16fd;
+2: 4ea-; 8.ea-; 16ea-; 4fd; 8.fd; 16ad;
+
+			lyrics 1: "cit-y whose walls are of";
+			lyrics 1: "cit-y there flow-eth a";
+			lyrics 1: "King in His glo-ry and";
+bar
+//3
+1: 2ec; 4ac; 8.ac; 16bd;
+2: 2aa-; 4ea-; 8.ea-; 16ea-;
+
+			lyrics 1: "jas-per, And whose";
+			lyrics 1: "riv-er, From the";
+			lyrics 1: "beau-ty, Is the";
+bar
+//4
+1: 4c+e; 8.c+e; 16c+e; 4d+e; 8.c+e; 16c+e;
+2 1: 4a; 8.a; 16a; 4bg; 8.a; 16a;
+2 2: 4a; 8.a; 16a; 4s; 8.a; 16a;
+
+			lyrics 1: "streets are in-laid with pure";
+			lyrics 1: "foun-tain of life by the";
+			lyrics 1: "light of this cit-y so";
+bar
+//5
+1: 2.be; 8.be; 16be;
+2: 2.ge; 8.ge; 16ge;
+
+			lyrics 1: "gold, Where the";
+			lyrics 1: "throne, On its";
+			lyrics 1: "fair, And His";
+bar
+//6
+1: 4c+e; 8.c+e; 16bd; 4s; 8.s; 16s;
+2: 4aa-; 8.aa-; 16ea-; 4s; 8.s; 16s;
+
+			lyrics 1: "saints and the";
+			lyrics 1: "banks the re-";
+			lyrics 1: "smile drives a-";
+
+//invisbar
+//newscore
+
+//1: 4s; 8.s; 16s; 4ac; 8.e; 16e;
+//2: 4s; 8.s; 16s; 4ea-; 8.ac; 16ac;
+
+//			lyrics 1: "blest of all";
+//			lyrics 1: "deemed ones shall";
+//			lyrics 1: "way ev-'ry";
+
+
+bar
+//7
+1: 2fd; 4bf; 8.d+f; 16d+f;
+2: 2ad; 4d+d; 8.ad; 16ad;
+
+			lyrics 1: "a-ges, Are re-";
+			lyrics 1: "gath-er, Bless-ed";
+			lyrics 1: "sor-row, Ev-'ry";
+bar
+//8
+1: 4c+e; 8.ae; 16ae; 8.be; 16be; 4ge;
+2: 4ae; 8.c+e; 16c+e; 8.d+e; 16d+e; 4be;
+
+			lyrics 1: "joic-ing 'mid pleas-ures un-";
+			lyrics 1: "ones called by Je-sus His";
+			lyrics 1: "strife, ev-'ry cum-ber-ing";
+bar
+//9
+1: 2.ae; 4s;
+2: 2.c+a-; 4s;
+
+			lyrics 1: "told.";
+			lyrics 1: "own.";
+			lyrics 1: "care.";
+dblbar
+newscore
+//10
+1: 2.s; 8.ge; 16ae;
+2: 2.s; 8.be; 16c+e;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Will this";
+bar
+//11
+1: 4be; 8.be; 16be; 4be; 8.c+e; 16bd;
+2: 4d+e; 8.ge; 16ge; 4ge; 8.ae; 16ge;
+
+			lyrics 1: "cit-y be mine with its";
+bar
+//12
+1: 2ac; 4ec; 8.ge; 16ae;
+2: 2aa-; 4aa-; 8.be; 16c+e;
+
+			lyrics 1: "pleas-ures, Will its";
+bar
+newscore
+//13
+1: 4be; 8.be; 16be; 4be; 8.e+e; 16d+e;
+2: 4d+e; 8.d+e; 16d+e; 4d+e; 8.c+e; 16be;
+
+			lyrics 1: "splen-dor e'er my eyes be-";
+bar
+//14
+1: 2.c+e; 8.c+e; 16d+e;
+2: 2.aa-; 8.aa-; 16ba-;
+
+			lyrics 1: "hold? Yes, I";
+bar
+//15
+1 1: 4e+e; 8.c+e; 16bd; 4ac; 8.e; 16e;
+1 2: 4s; 8.s; 16s; 4s; 8.e; 16e;
+2: 4c+a-; 8.aa-; 16ea-; 4ea-; 8.ac; 16ac;
+
+			lyrics 1: "know if my trust is in";
+bar
+newscore
+//16
+1: 2fd; 4bf; 8.d+f; 16d+f;
+2: 2ad; 4d+d; 8.ad; 16ad;
+
+			lyrics 1: "Je-sus, I shall";
+bar
+//17
+1: 4c+e; 8.ae; 16ae; 8.be; 16be; 4ge;
+2: 4ae; 8.c+e; 16c+e; 8.d+e; 16d+e; 4be;
+
+			lyrics 1: "dwell in this cit-y of";
+bar
+//18
+1: 2.ae; 4s;
+2: 2.c+a-; 4s;
+
+			lyrics 1: "gold.";
+endbar

@@ -1,0 +1,382 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Spiritual Songs For Gospel Meetings
+//		And The Sunday School
+//		By Elisha A. Hoffman and J. H. Tenney
+//		Publisher: Barker and Smellie
+//		35 Superior and 45 Union Streets
+//		Cleveland, OH
+//		Copyright: Pre 1878
+//		Hymn No.: 63
+
+// Transcribed by: Ted Gatza, Jr. 08/21/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=15
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+
+staffs=2
+	time=4/4
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Come To Jesus!" ""
+   title (2) ""
+   title (11) "" "\f(TI)...Behold, now is the accepted time: behold," ""
+   title (11) "" "\f(TI)now is the day of salvation. II Cor. 6:2" ""
+   title (11) "" 
+   title (11) "D - 4 - MI" "" ""
+   title (13) "Eden Reeder Latta, 1878" "" "John Harrison Tenney, 1878"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 8.df; 16eg;
+2: 2.s; 8.da; 16;
+
+	VS "<1. >-1|Come to";
+	VS "<2. >-1|Come to";
+	VS "<3. >-1|Come to";
+
+bar
+
+//2
+1 1: 4fa; d; fd+; gb;
+1 2: 4s; d; s; ;
+2: 4da; df; da; dd+;
+
+	VS "Je-sus! He will";
+	VS "Je-sus! do not";
+	VS "Je-sus, dy-ing";
+bar
+
+//3a
+1: 2fa; 4df; 8.s; 16;
+2: 2dd+; 4da; 8.s; 16;
+
+	VS "save you,";
+	VS "tar-ry,";
+	VS "sin-ner!";
+invisbar
+
+//3b
+1 1: 2s; 4; 8.d; 16e;
+1 2: 2s; 4; 8.d; 16;
+2: 2s; 4; 8.df; 16dg;
+
+	VS "Tho' your";
+	VS "En-ter";
+	VS "Oth-er";
+bar
+
+//4
+1: 4df; eg; fa; df;
+2: 4da; ; ; ;
+
+	VS "sins as crim-son";
+	VS "in at mer-cy's";
+	VS "Sav-ior there is";
+bar
+
+//5a
+1: 2.ce; 8.s; 16;
+2: 2.a-a; 8.s; 16;
+
+	VS "glow;";
+	VS "gate;";
+	VS "none;";
+invisbar
+
+//5b
+1: 2.s; 8.df; 16eg;
+2: 2.s; 8.da; 16;
+
+	VS "If you";
+	VS "O de-";
+	VS "He will";
+bar
+
+//6
+1 1: 4fa; d; fd+; gb;
+1 2: 4s; d; s; ;
+2: 4da; df; da; dd+;
+
+	VS "give your hearts to";
+	VS "lay not till the";
+	VS "share with you His";
+bar
+
+//7a
+1: 2fa; 4df; 8.s; 16;
+2: 2dd+; 4da; 8.s; 16;
+
+	VS "Je-sus,";
+	VS "mor-row,";
+	VS "glo-ry,";
+invisbar
+
+//7b
+1: 2s; 4; 8.ca; 16db;
+2: 2s; 4; 8.a-a; 16;
+
+	VS "He will";
+	VS "Lest thy";
+	VS "When your";
+bar
+
+//8
+1: 4ec+; fd+; ec+; db;
+2: 4a-a; da; ea; eg#;
+
+	VS "make them white as";
+	VS "com-ing be too";
+	VS "pil-grim-age is";
+bar
+
+//9
+1: 2.ca; 8.s; 16;
+2: 2.a-a; 8.s; 16;
+
+
+	VS "snow.";
+	VS "late.";
+	VS "done.";
+dblbar
+
+CHORUS
+
+//10
+1: 2.s; 8.fa; 16gb;
+2: 2.s; 4r;
+
+	VS "Come to";
+bar
+
+//11a
+1: 2fa; 4df; 8.s; 16;
+2: 4dd+; 8.; 16; 4da; s;
+
+	VS "Je-sus!";
+	VS21 "Come, come to-day!";
+invisbar
+
+//11b
+1: 2s; 4; 8.fd+; 16gb;
+2: 4s; 8.; 16; 4; r;
+
+	VS "Come to";
+bar
+
+//12a
+1: 2fa; 4df; 8.s; 16;
+2: 4dd+; 8.; 16; 4da; 8.s; 16;
+
+	VS "Je-sus!";
+	VS21 "Come, come to-day!";
+invisbar
+
+//12b
+1: 2s; 4; 8.ge+; 16fd+;
+2: 4s; 8.; 16; 4; 8.a-a; 16;
+
+	VS "Come to";
+bar
+
+//13
+1: 4ec+; gb; fa; eg;
+2: 4a-a; a-c+; a-d+; a-a;
+
+	VS "Je-sus! come to-";
+	VS "<> <> <> yes";
+bar
+
+//14a
+1: 2.df; 8.s; 16;
+2: 4da; 8.; 16; 4; s;
+
+	VS "day,";
+	VS21 "come, come to-day!";
+invisbar
+
+//14b
+1: 2.s; 8.fa; 16gb;
+2: 4s; 8.; 16; 4; r;
+
+	VS "Come to";
+bar
+
+//15a
+1: 2fa; 4df; 8.s; 16;
+2: 4dd+; 8.; 16; 4da; 8.s; 16;
+
+	VS "Je-sus!";
+	VS21 "Come, come to-day!";
+invisbar
+
+//15b
+1: 2s; 4; 8.fd+; 16gb;
+2: 4s; 8.s; 16; 4; r;
+
+	VS "Come to";
+bar
+
+//16a
+1: 2fa; 4df; 8.s; 16;
+2: 4dd+; 8.; 16; 4da; 8.s; 16;
+
+	VS "Je-sus!";
+	VS21 "Come, come to-day";
+invisbar
+
+//16b
+1: 2s; 4; 8.fd+; 16;
+2: 4s; 8.; 16; 4; 8.da; 16;
+
+	VS "Come to";
+bar
+
+//17
+1: 4ge+; ; fd+; 8.ec+; 16;
+2 1: 4gb; ; a; 8.a-a; 16;
+2 2: 4s; ; a; 8.s; 16;
+
+	VS "Je-sus! come, come to-";
+bar
+
+//18
+1: 2.fd+; 4s;
+2: 2.da; 4s;
+
+	VS "day!";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

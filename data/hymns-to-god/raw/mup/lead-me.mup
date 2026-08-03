@@ -1,0 +1,231 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Best Endeavor Hymns
+//		Edited and Compiled by
+//		I. Allen Sankey and John R. Clements
+//		Especially for use in Christian Endeavor Societies
+//		Young People's Meetings, Sunday Schools, and
+//		General Church Work
+//		Published by The Biglow and Main Co.
+//		Lakeside Building, Chicago
+//		135 Fifth Avenue, New York
+//		International Copyright Secured
+//		Copyright 1907
+//		Hymn No.: 17
+
+
+// Transcribed by: Ted Gatza, Jr. 12/29/2010; rev. 03/07/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Lead Me" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:For\ thou\ art\ my\ rock\ and\ \|my\ fortress;\ Therefore\ for thy\ name's\ sake\ lead\ me\ \|and\ guide\ me.\ -\ Ps.\ 31:3"""
+   title (13) "Louise F. Emanuel" " " "I. Allan Sankey, 1907"
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1 1: 2.s; 8d; 8d;
+1 2: 2.s; 8d; 8d;
+2: 2.s; 8bg; 8bg;
+
+	
+			lyrics 1: 2.s; 8; 8; "<1. >-1|Guide my";
+			lyrics 1: 2.s; 8; 8; "<2. >-1|As I";
+			lyrics 1: 2.s; 8; 8; "<3. >-1|Guide my";
+
+bar
+//2
+1: 4gd; 4gd; 4bg; 4bg;
+2: 4bg; 4bg; 4d+g; 4d+g;
+
+			lyrics 1: "foot-steps, Fa-ther,";
+			lyrics 1: "jour-ney on-ward";
+			lyrics 1: "foot-steps, Fa-ther,";
+bar
+//3
+1: 8bg; 8af; 8ge; 8af; 4bg; 8bg; 8c+f;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 4d+g; 8d+g; 8d+a;
+
+			lyrics 1: "Lead me lest I stray; Let Thy";
+			lyrics 1: "To the home a-bove, All my";
+			lyrics 1: "Night draws on a-pace; Work-ing";
+bar
+//4
+1: 4d+g; 4d+d; 4c+f; 4bg;
+2: 4d+b; 4d+b; 4d+a; 4d+g;
+
+			lyrics 1: "hand un-er-ring";
+			lyrics 1: "path-way shel-ter";
+			lyrics 1: "hours of bright-ness";
+bar
+//5
+1: 8bg; 8af; 8af; 8ge; 4af; 8.d+f; 16c+a;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 4d+d; 8.d+d; 16d+f;
+
+			lyrics 1: "Point out all my way. When the";
+			lyrics 1: "With Thy wings of love. 'Neath them";
+			lyrics 1: "To the dark give place. Guide my";
+bar
+//6
+1 1: 4bg; 4bg; 4a; 4g;
+1 2: 4s; 4s; 4g; 8d bm; 8d# ebm;
+2: 4d+g; 4d+g; 4c+g; 4bg;
+
+			lyrics 1: "road is drear-y,";
+			lyrics 1: "my pa-vil-ion,";
+			lyrics 1: "foot-steps, Fa-ther,";
+bar
+//7
+1: 8ge; 8ge; 8fd; 8ec; 4db-; 8db-; 8db-;
+2 1: 8c+c; 8gc; 8gc; 8ge; 4g; 8g; 8g;
+2 2: 8s; 8s; 8s; 8s; 4g; 8g; 8g;
+
+			lyrics 1: "And my soul is sad, When my";
+			lyrics 1: "Naught can me a-larm. Shin-ing";
+			lyrics 1: "What have I to fear? Thou my";
+bar
+//8
+1: 4ec; 4fd; 8s; 8s; 8s; 8s;
+2: 4gc; 4c+a-; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "heart is";
+			lyrics 1: "sun, or";
+			lyrics 1: "joy-ful,";
+invisbar
+newscore
+
+1: 4s; 4s; 8gd; 8bd; 8d+fn; 8c+e;
+2: 4s; 4s; 8bg-; 8gg-; 8gb-; 8gc;
+
+			lyrics 1: "wea-ry, Do Thou";
+			lyrics 1: "shad-ow, Nei-ther";
+			lyrics 1: "por-tion, Thou my";
+
+bar
+//9
+1 1: 4bd; 4af; 4g; 4s;
+1 2: 4s; 4s; 4g; 4s;
+2: 4gd; 4c+d; 4bg-; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "make me glad.";
+			lyrics 1: "work-eth harm.";
+			lyrics 1: "Guide sin-cere!";
+dblbar
+//10
+1: 8bd; 8c+d; 2.s;
+2 1: 8g; 8a; 2.s;
+2 2: 8g; 8g; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "Be my";
+			lyrics 1: 4; 2.s; "<>";
+			lyrics 1: "Be my";
+bar
+//11
+1 1: 2.d+; 4e+g;
+1 2: 4g; 4g; 4g; 4s;
+2: 4bg; 4bg; 4bg; 4c+g;
+
+			lyrics 1: "Rock and";
+			lyrics 1: 1; "<>";
+			lyrics 1: 4; 4; 4; 4; "Rock, my Rock and";
+bar
+//12
+1 1: 4d+g; 2bg; 8g; 8a;
+1 2: 4s; 2s; 8g; 8g;
+2: 4bg; 2d+g; 8bg; 8c+g;
+
+			lyrics 1: "For-tress, Be my";
+			lyrics 1: "For-tress, Be my";
+bar
+//13
+1 1: 2.b; 4c+g;
+1 2: 4g; 4g; 4g; 4s;
+2: 4d+g; 4d+g; 4d+g; 4e+g;
+
+			lyrics 1: "Strength and";
+			lyrics 1: 4; 4; 4; 4; "Strength, my Strength and";
+bar
+//14
+1 1: 2.bg; 8d; 8d;
+1 2: 2.s; 8d; 8d;
+2: 2.d+g; 8bg-; bg-;
+
+			lyrics 1: "Stay; Like a";
+			lyrics 1: 2.; 8s; 8s; "Stay;";
+bar
+newscore
+//15
+1: 4gd; 4gd; 4ad; 4af;
+2: 4bg-; 4gb-; 4fd; 4d+d;
+
+			lyrics 1: "ten-der Shep-herd";
+bar
+//16
+1: 4bg; 2d+g; 8gd; 8ae;
+2: 4d+g; 2bg; 8gb-; 8gc;
+
+			lyrics 1: "lead me,\(emdash) Lead me";
+bar
+//17
+1: 4bd; 4c+e; 4.ac; 8gb-;
+2: 4gd; 4gd; 4.fd; 8gg-;
+
+			lyrics 1: "safe-ly all the";
+bar
+//18
+1: 2.gb-; 4s;
+2: 2.gg-; 4s;
+
+			lyrics 1: "way.";
+endbar

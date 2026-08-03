@@ -1,0 +1,263 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+// Hymn Source: Songs of Redeeming Love No. 2
+//		Edited by: Jhon R. Sweeney, C. C. McCabe
+//		T. C. O'Kane, W. J. Kirkpatrick
+//		Publisher: John J. Hood. 1018 Arch Street, Philadelphia
+//		Cranston & Stowe, Chicago and St. Louis, Cincinnati
+//		Dayton Ohio
+//		Copyright 1887
+//		Hymn no. 2
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/15/2014; Rev. 03/01/2022
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Let Not Your Heart Be Troubled" ""
+   title (11)"" "\f(TI)Let not your heart be troubled: believe in God," ""
+   title (11)"" "\f(TI)believe also in me. - Jn. 14:1" "" 
+   title (11) "F - 4 - DO" "" ""
+   title (13) "T. C. O'Kane" "" "T. C. O'Kane"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	staffpad=2 //1
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=2/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+	midi all: 0 "tempo=80";
+
+// Enter music
+
+//=====================
+//Verse 1
+
+//1
+1 1: 8f bm; g ebm; 4s;
+1 2: 4f; 4s;
+2 1: 8a bm; b ebm; 4s;
+2 2: 4f; 4s;
+
+	VS 4; 4s; "<1. >-1|\"Let";
+	VS 4; 4s; "<2. >-1|In";
+	VS 4; 4s; "<3. >-1|To";
+	VS 4; 4s; "<4. >-1|He";
+	VS 4; 4s; "<5. >-1|Then";
+bar
+//2
+1: 8af;;;;
+2: 8c+f;;;;
+
+	VS "not your heart be";
+	VS "heaven are man-y";
+	VS "us he gives this";
+	VS "sends His Ho-ly";
+	VS "on-ward, bro-ther";
+bar
+//3
+1: 8af; c+a; c+f;;
+2: 8c+f;; af;;
+
+	VS "trou-bled, Nei-ther";
+	VS "man-sions, He has";
+	VS "prom-ise, Bid-ding";
+	VS "Spir-it, As the";
+	VS "Christ-ian, Ev-er";
+bar
+//4
+1: 8bd; d+f;;;
+2: 8bb-;;;;
+
+	VS "let it be a-";
+	VS "has-tened to pre-";
+	VS "each to fol-low";
+	VS "Christ-ian's dai-ly";
+	VS "keep the nar-row";
+bar
+//5
+1: 4d+f; 8c+f bm; bg ebm;
+2 1: 4bb-; 8a bm; b ebm;
+2 2: 4s; c;
+
+	VS 4; 4; "fraid,\" Were";
+	VS 4; 4; "pare, That";
+	VS 4; 4; "him, And";
+	VS 4; 4; "guide, And";
+	VS 4; 4; "road, Till";
+bar
+//6
+1: 8af;;;;
+2: 8c+f;;;;
+
+	VS "words of sweet-est";
+	VS "all his true dis-";
+	VS "we thro' this way";
+	VS "gives a bless-ed";
+	VS "Je-sus comes to";
+bar
+//7
+1: 8af; c+a; bg; d+f;
+2: 8c+f;; d+b-; bb-;
+
+	VS "com-fort, By our";
+	VS "ci-ples In his";
+	VS "on-ly, Heav-en's";
+	VS "for-taste Of those";
+	VS "bear you, To his";
+bar
+//8
+1: 8c+f; af; ge;;
+2: 8ac; c+c;; bc;
+
+	VS "dear Re-deem-er";
+	VS "end-less bliss might";
+	VS "gates can en-ter";
+	VS "joys that e'er a-";
+	VS "heav-en-ly a-";
+bar
+//9
+1 1: 4f; 4s;
+1 2: 4f; 4s;
+2: 4aff-; 4s;
+SFERM (1)
+BFERM (1)
+	VS "said.";
+	VS "share.";
+	VS "in.";
+	VS "bide.";
+	VS "bode.";
+
+dblbar hidechanges
+newscore
+//================
+// Time Change
+
+score time=4/4
+music
+midi all: 0 "tempo=78";
+
+//=================
+
+//10
+1: 8c+a;; 2.s;
+2: 8c+f;; 2.s;
+CHORUS
+	VS 8; 8; 2.s; "There is";
+bar
+//11
+1: 4d+f; 8.bg; 16; 4f+b; d+f;
+2: 4bb-; 8.d+b-; 16; 4; bb-;
+
+	VS "joy for the ran-somed,";
+bar
+//12
+1 1:4c+a; 8.; 16d+f; 8c+f; af; f; af;
+1 2: 4s; 8.; 16; 8;; f; s;
+2: 4c+f; 8.; 16af; 8af; c+f; c+a; c+f;
+
+	VS "Joy for the ran-somed, There is";
+bar
+//13
+1: 4ge; 8af; bg; 4d+g; c+e;
+2: 4c+c; 8; bc; 4;;
+
+	VS "joy, end-less joy for";
+	VS 4s; 8s; 8s; 4s; 4; "yes,";
+bar
+//14
+1: 2c+a slur; 4af; 8c+f;;
+2: 8c+f;;;; 4; 8af;;
+
+	VS "you,_ Where the";
+	VS 8; 8; 8; 8; 4; 8s; 8s; "end-less joy for you,";
+bar
+//15
+1: 4d+f; 8.bg; 16bf; 4f+b; d+f;
+2: 4bb-; 8.d+b-; 16; 4; 4bb-;
+
+	VS "saints sing for-ev-er,";
+bar
+//16
+1 1: 4c+f; 8.; 16; 8c+a; af; f; af;
+1 2: 4s; 8.; 16; 8;; f; s;
+2: 4af; 8.; 16bf; 8c+f;; c+a; c+f;
+
+	VS "Near E-den's riv-er, There is";
+bar
+//17
+1 1: 4ge; 8af; bg; d+ bm; c+ ebm; bg bm; ge ebm;
+1 2: 4s; 8;; 4g; 8s;;
+2 1: 4c+c; 8;; b bm; a ebm; c+ bm; b ebm;
+2 2: 4s; 8;; 4c;;
+
+	VS 4; 8; 8; 4; 4; "joy, end-less joy for";
+bar
+//18
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.aff-; 4s;
+
+	VS "you.";
+endbar

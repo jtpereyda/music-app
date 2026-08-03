@@ -1,0 +1,206 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: On Joyful Wing
+//		A Book fo Praise and Song
+//		By John R Sweney and Wm. J. Kirkpatrick
+//		Pub by: John J. Hood
+//		1018 Arch St., Philadelphia
+//		Copyright: 1886
+//		Hymn No.: 64 / 72
+
+// Transcribed by: Ted Gatza, Jr. 08/01/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+   title bold (19) "" "In the Book of Life" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - SOL" "\s(18)\f(TI)\:and\ there\ shall\ in\ no\ wise\ enter\ int\|o\ it\ anything\ unclean,\ ....\ but\ only they\ that\ are\ written\ in\ the\ La\|mb's\ book\ of\ life.\ -\ Rev.\ 21:27 """
+   title (13) "Lizzie Edwards" " " "Wm. J. Kirkpatrick, 1886"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=140";
+
+//1
+1: 2ec; 4ac; 2ac; 4c+e;
+2: 2aa-; 4ea-; 2ea-; 4aa-;
+
+
+			lyrics 1: "<1. >-1|In thy book, where";
+			lyrics 1: "<2. >-1|In thy book, whose";
+			lyrics 1: "<3. >-1|In the book, where";
+			lyrics 1: "<4. >-1|O my Sav-iour,";
+bar
+//2
+1: 2c+e; 4bd; 2.ac;
+2: 2ae; 4ge; 2.aa-;
+
+			lyrics 1: "glo-ry bright";
+			lyrics 1: "pag-es tell";
+			lyrics 1: "thou dost keep";
+			lyrics 1: "thou canst show";
+bar
+//3
+1: 2fd; 4fd; 4.af slur; 8ge; 4fd;
+2: 2ad; 4ad; 2ad; 4ad;
+
+			lyrics 1: "Shines with nev-er-";
+			lyrics 1: "Who have tried to";
+			lyrics 1: "Re-cord still of";
+			lyrics 1: "What I long so";
+bar
+//4
+1: 2fd; 4ec; 2.ec;
+2: 2aa-; 4aa-; 2.aa-;
+
+			lyrics 1: "fad-ing light,";
+			lyrics 1: "serve thee well,";
+			lyrics 1: "years that sleep,";
+			lyrics 1: "much to know:";
+bar
+//5
+1: 2ec; 4ae; 2ae; 4be;
+2 1: 2a; 4c+a; 2c+a; 4d+a;
+2 2: 2a; 4s; 2s; 4s;
+
+			lyrics 1: "Where thy saved thou";
+			lyrics 1: "O'er my name let";
+			lyrics 1: "Let my name be";
+			lyrics 1: "Let my faith be-";
+bar
+//6
+1: 2c+a; 4d+a; 2.e+a;
+2: 2e+a; 4d+a; 2.c+a;
+
+			lyrics 1: "wilt re-cord,";
+			lyrics 1: "mer-cy trace";
+			lyrics 1: "writ-ten down";
+			lyrics 1: "hold and see";
+bar
+//7
+1 1: 4.d+ slur; 8c+; 4bf; 2s; 4s;
+1 2: 2f; 4s; 2s; 4s;
+2: 2ad; 4ad; 2s; 4s;
+
+			lyrics 1: "Write my";
+			lyrics 1: "Child of";
+			lyrics 1: "Heir to";
+			lyrics 1: "That my";
+invisbar
+newscore
+
+1 1: 4.s; 8s; 4s; 2c+e; 4ae;
+1 2: 2s; 4s; 2s; 4s;
+2: 2s; 4s; 2ae; 4c+e;
+
+			lyrics 1: "name, my";
+			lyrics 1: "God, re-";
+			lyrics 1: "life's im-";
+			lyrics 1: "life is";
+
+bar
+//8
+1 1: 4.b slur; 8a; 4ge; 2.ae;
+1 2: 2e; 4s; 2.s;
+2 1: 4.d+ slur; 8c+; 4be; 2.c+aa-;
+2 2: 2e; 4s; 2.s;
+
+			lyrics 1: "name, O Lord.";
+			lyrics 1: "deemed by grace.";
+			lyrics 1: "mor-tal crown.";
+			lyrics 1: "hid with thee.";
+dblbar
+//9
+1: 2fd; 4fd; 4.af; 8ge; 4fd;
+2: 2ad; 4ad; 4.ad; 8ad; 4ad;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Write my name in the";
+bar
+newscore
+//10
+1: 2fd; 4ec; 2.ec;
+2: 2aa-; 4aa-; 2.aa-;
+
+			lyrics 1: [c]"book of life,";
+bar
+//11
+1: 2ge; 4ae; 2.be;
+2: 2be; 4c+e; 2.d+e;
+
+			lyrics 1: [c]"Lamb of God,";
+bar
+//12
+1: 2ae; 4be; 2.c+e;
+2 1: 2c+e; 4ge; 2.a;
+2 2: 2s; 4s; 2.a;
+
+			lyrics 1: [c]"write it there;";
+bar
+//13
+1 1: 2d+e; 4d+e; 4.d+ slur; 8c+; 4be;
+1 2: 2s; 4s; 2e; 4s;
+2: 2bg; 4bg; 2bg; 4bg;
+
+			lyrics 1: [c]"Where thy saved thou";
+bar
+newscore
+//14
+1: 2c+e; 4c+e; 2.c+e;
+2 1: 2a; 4a; 2.a;
+2 2: 2a; 4a; 2.a;
+
+			lyrics 1: [c]"wilt re-cord";
+bar
+//15
+1 1: 4b slur; 4a; 4fd; 2ec; 4ae;
+1 2: 2f; 4s; 2s; 4s;
+2: 2ad; 4ad; 2ae; 4c+e;
+
+			lyrics 1: [c]"Write my name, my";
+bar
+//16
+1: 2ae; 4ge; 2.ae;
+2: 2c+e; 4be; 2.c+aa-;
+
+			lyrics 1: [c]"name, O Lord.";
+endbar

@@ -1,0 +1,273 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: http://www.cyberhymnal.org/htm/i/a/iamsotwg.htm
+
+// Transcribed by: Ted Gatza, Jr. 01/02/2010; Rev. 12/21/2021
+// HymnsToGod.org
+
+//============================
+
+top
+
+   title bold (19) "" "I Am Standing On The Word Of God" ""
+   title (2)""
+   title (11) "" "\f(TI)Heaven and earth shall pass away: but my"""
+   title (11) "F - 4 - MI" "\f(TI)words shall not pass away. - Mk 13:31"""
+   title (13) "E. M. Wardsworth, 1910" " " "Daniel B. Towner"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/2	
+	key=1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+//============================
+
+staff 2
+	key=1&
+	clef=bass
+
+//============================
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (16) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (16) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm"; @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm"; @
+
+   //Time Signature for projection files only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+         print (t.w - 2, t.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4";
+	 @
+
+music
+
+midi all: 0 "tempo=185";
+
+//===================================
+
+//1
+1: 2s; 2s; 2s; 4af; 4bg;
+2 1:  2s; 2s; 2s; 4f; 4f;
+2 2:  2s; 2s; 2s; 4f; 4f; 
+
+	VS "<1. >-1|I am";
+	VS "<2. >-1|I am";
+	VS "<3. >-1|I am";
+	VS "<4. >-1|I am";
+	VS "<5. >-1|I am";
+bar
+//2
+1: 4c+a; 4af; 4gc; 4fc; 2db-; 2ec;
+2 1: 4f; 4c+f; 4bf; 4af; 2fd; 2bc;
+2 2: 4f; 4s; 4s; 4s; 2s; 2s;
+
+	VS "stand-ing on the Word of";
+	VS "stand-ing on the Word of";
+	VS "stand-ing on the Word of";
+	VS "stand-ing on the Word of";
+	VS "stand-ing on the Word of";
+bar
+//3
+1: 1.fc; 4ec slur; 4db-;
+2 1: 1.af; 2f;
+2 2: 1.s; 2f;
+
+	VS "God, Which";
+	VS "God, 'Tis";
+	VS "God, 'Tis";
+	VS "God, And";
+	VS "God, And";
+bar
+//4
+1 1: 4ca- slur; 4fc; 4s; 4s; 2s; 2s;
+1 2: 4s; 4s; 2s; 2s; 2s;
+2 1: 4f slur; 4a; 4s; 4s; 2s; 2s;
+2 2: 2f; 2s; 2s; 2s;
+
+	VS "came";
+	VS "ho-";
+	VS "full";
+	VS "thus";
+	VS "on";
+
+invisbar
+newscore
+
+1 1: 4s; 4s; 4f slur; 4g; 2af; 2af;
+1 2: 4s; 4s; 2c; 2s; 2s;
+2 1: 4s; 4s; 4a slur; 4b; 2c+f; 2c+f;
+2 2: 2s; 2f; 2s; 2s;
+
+	VS "to men of";
+	VS "ly and 'tis";
+	VS "of life di-";
+	VS "I am se";
+	VS "my dy-ing";
+
+
+
+bar
+//5
+1: 1.ge; 4af slur; 4bg;
+2: 1.c+c; 2c+f;
+
+	VS "old; The";
+	VS "true; Through";
+	VS "vine; God's";
+	VS "cure; Though";	
+	VS "bed I'll";
+bar
+//6
+1:4c+a; 4af; 4gc; 4fc; 2db-; 2ec;
+2: 4c+f; 4c+f; 4bf; 4af; 2gd; 2bc;
+
+	VS "Ho-ly Book our fa-thers";
+	VS "ag-es it has been our";
+	VS "Spir-it lives in ev-'ry";
+	VS "blows the temp-est wild and";
+	VS "share its con-so-la-tions,";
+bar
+newscore
+//7
+1: 1.fc; 4ec slur; 4db-;
+2 1: 1.af; 2f;
+2 2: 1.s; 2f;
+
+	VS "loved, And";
+	VS "light, With";
+	VS "word, And";
+	VS "hard, 'Twill";
+	VS "Lord, When";
+bar
+//8
+1 1: 4ca- slur; 4fc; 4f slur; 4g; 2af; 2gc;
+1 2: 4s; 4s; 4c slur; 4f; 2s; 2s; 
+2 1: 4f slur; 4a; 4c+a- slur; 4d+b-; 2c+c; 2bc;
+2 2: 2f; 4s; 4s; 2s; 2s;
+
+	VS "trea-sured more than";
+	VS "splen-dor ev-er";
+	VS "moves in ev-'ry";
+	VS "ev-er-more en-";
+	VS "death's dark vale I";
+bar
+//9
+1: 1.fc; 2s;
+2: 1.af; 2s;
+
+	VS "gold.";
+	VS "new.";
+	VS "line.";
+	VS "dure.";
+	VS "tread.";
+dblbar
+newscore
+//10
+1: 1.s; 4af; 4bg;
+2 1: 1.s; 4f; 4f;
+2 2: 1.s; 4f; 4f;
+ital (13) above 1: 1 "Refrain";
+
+	VS "I am";
+	VS "I am";
+bar
+//11
+1: 1c+a; 1af;
+2 1: 2f; 4f slur; 4a; 2c+f; 2c+f;
+2 2: 2f; 2f; 2s; 2s;
+
+	VS "stand-ing";
+	VS 2; 2; 2; 2; "stand-ing, stand-ing";
+bar
+//12
+1 1: 4fc; 4gc; 4fc; 4d; 2fc; 4ac; 4bc;
+1 2: 4s; 4s; 4s; 4d; 2s; 4s; 4s;
+2 1: 4af; 4bf; 4af; 4af; 2af; 4f; 4g;
+2 2: 4s; 4s; 4s; 4s; 2s; 4f; 4f;
+
+	VS "stand-ing on the Word, Though the";
+bar
+newscore
+//13
+1 1: 1c+f; 4b slur; 4a; 4g; 4f;
+1 2: 1s; 2f; 4f; 4f;
+2 1: 1af; 4d+ slur; 4c+; 4bf; 4af;
+2 2: 1s; 2f; 4s; 4s;
+
+	VS "earth change and de-";
+bar
+//14
+1: 1.ge; 4af; 4bg;
+2 1: 1.c+c; 4f; 4f;
+2 2: 1.s; 4f; 4f;
+	VS "cay, It shall";
+	VS 1.s; 4; 4; "It shall";
+bar
+//15
+1: 1c+a; 1af;
+2 1: 2f; 4f slur; 4a; 2c+f; c+f;
+2 2: 2f; 2f; 2s; 2s; 
+
+	VS "nev-er,";
+	VS 2; 2; 2; 2; "nev-er, nev-er";
+bar
+newscore
+//16
+1 1: 4fc; 4gc; 4fc; 4d; 2fc; 4fc; 4gc;
+1 2: 4s; 4s; 4s; 4d; 2s; 4s; 4s;
+2: 4af; 4bf; 4af; 4af; 2af; 4af; 4bf;
+
+	VS "nev-er pass a-way, I am";
+bar
+//17
+1: 4af; 4bf; 4c+f; d+f; 2af; 2gc;
+2: 4c+f; 4fd; 4fa-; 4fb-; 2c+c; 2bc;
+
+	VS "stand-ing on the Word of";
+bar
+//18
+1: 1fc; 1s;
+2: 1af; 1s;
+
+	VS "God.";
+endbar

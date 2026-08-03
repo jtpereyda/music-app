@@ -1,0 +1,309 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymns, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church
+//	E. L. Jorgenson, Compiler
+//	Word and Work
+//	Louisville, Kentucky
+//	Copyright 1921
+//	Hymn No.: 384	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 12/19/2023
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (21) "" "Would You Live For Jesus?" ""
+   title (2)""
+   title (11) "" "\f(TI)Commit thy way unto Jehovah; Trust also in him,"""
+   title (11) "" "\f(TI)and he will bring it to pass. Ps. - 37:5"""
+   title (12) "F - 4 - SOL" "" ""
+   title (15) "Cyrus S. Nusbaum" "" "Cyrus S. Nusbaum, 1898"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=f
+
+
+staff 2
+	key=f
+	clef=bass
+
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+//Verse
+
+//1
+1 1: 8.c; 16cf; 8.; 16cg; 8.fa; 16; 8.; 16;
+1 2: 8.c; 2.s; 16s;
+2: 8.fa; 16; 8.; 16fb; 8.fc+; 16; 8.; 16;
+
+
+	VS "<1. >-1|Would you live for Je-sus and be";
+	VS "<2. >-1|Would you have Him make you free, and";
+	VS "<3. >-1|Would you in His king-dom find a";
+bar
+
+//2
+1: 8.fa; 16eg; 8.; 16fa; 2gb;
+2: 8.cc+; 16; 8.; 16; 2;
+
+	VS "al-ways pure and good?";
+	VS "fol-low at His call?";
+	VS "place of con-stant rest?";
+bar
+
+//3
+1 1: 8.c; 16ce; 8.eg; 16fa; 4.gb; 8;
+1 2: 8.c; 16s; 8.s; 16s; 4.s; 8s; 
+2: 8.ce; 16cg; 8.cc+; 16; 4.; 8;
+
+	VS "Would you walk with Him with-";
+	VS "Would you know the peace that";
+	VS "Would you prove Him true each";
+bar
+
+//4
+1: 8.gb; 16fa; 8.; 16gb; 2ac+;
+2: 8.fc+; 16; 8.; 16; 2;
+
+	VS "in the nar-row road?";
+	VS "comes by giv-ing all?";
+	VS "prov-i-den-tial test?";
+bar
+
+//5
+1 1: 8.c; 16cf; 8.; 16cg; 8.fa; 16; 8.; 16;
+1 2: 8.c; 2.s; 16s;
+2: 8.fa; 16; 8.; 16fb; 8.fc+; 16; 8.; 16;
+
+	VS "Would you have Him bear your bur-den,";
+	VS "Would you have Him save you, so that";
+	VS "Would you in His ser-vice la-bor";
+bar
+
+//6
+1: 8.da; 16dg; 8.; 16da; 2db;
+2: 8.b-b; 16; 8.; 16a-f#; 2g-g;
+
+	VS "car-ry all your load?";
+	VS "you need nev-er fall?";
+	VS "al-ways at your best?";
+bar
+
+//7
+1 1: 8.c; 16; 8.; 16cb; 4a; eg;
+1 2: 8.c; 16; 8.; 16s; 8c bm; f ebm; 4s;
+2 1: 8.ce; 16; 8.; 16cg; 8f bm; c+ ebm; 4cb;
+2 2: 2s; 4c; s;
+
+	VS "Let Him have His way with";
+	VS "Let Him have His way with";
+	VS "Let Him have His way with";
+bar
+
+//8
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.fa; 4s;
+
+	VS "thee.";
+	VS "thee.";
+	VS "thee.";
+dblbar
+
+//9
+CHORUS
+1: 4fc+; 2.s;
+2: 4fa; 2.s;
+
+	VS [c]"His";
+bar
+
+//10
+1: 4.ec+; 8eg; 8.ec+; 16; 8.eg; 16gb;
+2: 4.cg; 8cc+; 8.cg; 16; 8.cc+; 16;
+
+	VS [c]"pow'r can make you what you";
+bar
+
+//11
+1: 4gb; fa; ; 4s;
+2: 4fc+; ; ; s;
+
+	VS "ought to be";
+invisbar
+1: 4s; ; ; 4fc+;
+2: 4s; ; ; fa;
+
+	VS "His";
+bar
+
+//12
+1: 4.ec+; 8eg; 8.ec+; 16; 8.eg; 16gb;
+2: 4.cg; 8cc+; 8.cg; 16; 8.cc+; 16;
+
+	VS "blood can cleanse your heart and";
+bar
+
+//13
+1: 4gb; fa; ; s;
+2: 4fc+; ; ; s;
+
+	VS "make you free";
+invisbar
+1 1: 2.s; 4c;
+1 2: 2.s; 4c;
+2: 2.s; 4fa;
+
+	VS "His";
+bar
+
+//14
+1 1: 4.cf; 8; 8.eg; 16fa; 8.; 16f;
+1 2: 2.s; 8.; 16e&;
+2: 4.fa; 8; 8.cc+; 16fc+; 8.; 16fa;
+
+	VS "love can fill your soul, and";
+bar
+
+//15
+1: 4df; db; ; s;
+2: 4b-b; b-f;; s;
+
+	VS "you will see";
+invisbar
+1: 2.s; 4b-d;
+2: 2.s; 4b-f;
+
+	VS "'Twas";
+bar
+
+//15
+1: 4.a-c; 8; 8.cf; 16cg; 8.fa; 16fb;
+2: 4.cf; 8; 8.ca; 16cb; 8.cc+; 16cd+;
+
+	VS "best for Him to have His";
+bar
+
+//16
+1: 4fa; eg; 2cf;
+2: 4cc+; cb; 2fa;
+
+	VS "way with thee.";
+endbar
+
+
+
+
+
+
+

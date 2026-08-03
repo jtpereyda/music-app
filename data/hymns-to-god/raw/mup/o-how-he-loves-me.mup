@@ -1,0 +1,228 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Praises
+//		For Use In Meetings Of Christian Worship
+//		Edited by: William J. Kirkpatrick, H. L. Gilmour
+//		and J. Lincoln Hall
+//		Publishers: Hall-mack Co.,
+//		1020 Arch St., Philadelphia
+//		Copyright: 1899
+//		
+// Transcribed by: Ted Gatza, Jr. 12/30/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "O How He Loves Me" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:For\ God\ so\ loved\ the\ world,\ that\ he\ gav\|e\ his\ only\ begotten\ Son,\ that\ whosoever believeth\ on\ him\ should\ not\ perish\|,\ but\ have\ eternal\ life.\ -\ Jn.\ 3:16" ""   
+   title (13) "Johnson Oatman, Jr." "" "H. L. Gilmour, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+	define VERSE11 lyrics between 1&2 using 1 1: @
+	define VERSE12 lyrics between 1&2 using 1 2: @
+	define VERSE21 lyrics between 1&2 using 2 1: @
+	define VERSE22 lyrics between 1&2 using 2 2: @
+
+midi all: 0 "tempo=105";
+
+//1
+1: 4ec; 2.s;
+2: 4aa-; 2.s;
+
+	VERSE "<1. >-1|I";
+	VERSE "<2. >-1|Why";
+	VERSE "<3. >-1|He";
+	VERSE "<4. >-1|He";
+	VERSE "<5. >-1|He";
+bar
+//2
+1: 4ec; ac; 4.c+e; 8;
+2: 4aa-; ea-; 4.aa-; 8;
+
+	VERSE "have a Friend, a";
+	VERSE "he should come, I";
+	VERSE "died to save my";
+	VERSE "walks with me a-";
+	VERSE "has a home pre-";
+bar
+//3
+1: 4bf; af; 2fd;
+2: 4ad;; 2;
+
+	VERSE "pre-cious Friend,";
+	VERSE "can-not tell,";
+	VERSE "soul from death,";
+	VERSE "long life's road,";
+	VERSE "pared for me,";
+bar
+//4
+1: 8ec slur; 4.ae; 4; c+dn;
+2 1: 8a slur; 4.c+; 4ca; af;
+2 2: 2a; 4s;;
+
+	VERSE "O how he";
+	VERSE "O how he";
+	VERSE "O how he";
+	VERSE "O how he";
+	VERSE "O how he";
+bar
+//5
+1 1: 4c+e; 2be; 4e;
+1 2: 4s; 2; 4d;
+2: 4ae; 2ge; 4ge;
+
+	VERSE "loves me; He";
+	VERSE "loves me; In";
+	VERSE "loves me; I'll";
+	VERSE "loves me; He";
+	VERSE "loves me; With";
+bar
+//6
+1: 4ec; ac; 4.c+e; 8;
+2: 4aa-; ea-; 4.aa-; 8;
+
+	VERSE "says his love will";
+	VERSE "my poor brok-en";
+	VERSE "praise him while he";
+	VERSE "car-ries ev-'ry";
+	VERSE "him I'll spend e-";
+bar
+//7
+1: 4bf; af; 2fd;
+2: 4ad;; 2;
+
+	VERSE "nev-er end,";
+	VERSE "heart to dwell,";
+	VERSE "gives me breath,";
+	VERSE "heav-y load,";
+	VERSE "ter-ni-ty,";
+bar
+//8
+1: 8ec slur; 4.ae; 4ge; be;
+2 1: 8a slur; 4.c+; 4be; d+e;
+2 2: 2e; 4s;;
+
+	VERSE "O how he";
+	VERSE "O how he";
+	VERSE "O how he";
+	VERSE "O how he";
+	VERSE "O how he";
+bar
+//9
+1: 4be; 2.ae;
+2: 4d+e; 2.c+a-;
+
+	VERSE "loves me.";
+	VERSE "loves me.";
+	VERSE "loves me.";
+	VERSE "loves me.";
+	VERSE "loves me.";
+dblbar
+newscore
+//10
+1 1: 8c+ slur; 4.e+; e+a; 8c+a;
+1 2: 2a; 4.s; 8;
+2 1: 8e+ slur; 4.c+; 4.c+a; 8e+a;
+2 2: 2a; 4.s; 8;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "O how he";
+bar
+//11
+1: 4e+a; 2d+g; 4r;
+2: 4c+e; 2be; 4r;
+
+	VERSE "loves me,";
+bar
+//12
+1: 8bg slur; 4.d+b;; 8bg;
+2: 2e+e; 4.; 8;
+
+	VERSE "O how he";
+bar
+//13
+1: 4d+b; 2c+a; 4e+a;
+2: 4e+g; 2e+a; 4c+a;
+
+	VERSE "loves me; I";
+bar
+//14
+1: 4e+a; 4c+e; 4.; 8;
+2 1: 4c+a; a; 4.aa-; 8;
+2 2: 4s; a; 4.s; 8;
+
+	VERSE "know not why, I";
+bar
+//15
+1: 4bf; af; 2fd;
+2: 4ad;; 2;
+
+	VERSE "on-ly cry,";
+bar
+//16
+1: 8ec slur; 4.ae; 4ge; be;
+2 1: 8a slur; 4.c+; 4be; d+e;
+2 2: 2e; 4s;;
+
+	VERSE "O how he";
+bar
+//17
+1: 4be; 2ae; 4s;
+2: 4d+e; 2c+a-; 4s;
+
+	VERSE "loves me.";
+endbar

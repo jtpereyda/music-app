@@ -1,0 +1,267 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Carols Of Joy
+//		Choice Collection of Songs And Hymns
+//		For the Sunday-School, bible Class,
+//		And the Home Circle
+//		By Frank M. Davis
+//		Published by Hope Publishing Company
+//		Publishers: J. L. Rust & Co.
+//		Sprinfield, Ohio
+//		Copyright: 1882
+//		Hymn No.: 8
+//		
+// Transcribed by: Ted Gatza, Jr. 10/28/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Sweet Moments Of Prayer" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - DO" "\s(17)\f(TI)\:Evening\ and\ morning\ and\ at\ noon\ will\ I\ pray.\ -\ Ps.\ 55:17 \(space)" ""   
+   title (13) "Frank M. Davis" "" "Frank M. Davis"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1 1: 8e; f; 2s;
+1 2: 8e; ; 2s;
+2: 8ge; ae; 2s;
+
+	VERSE "<1. >-1|Oh, how";
+	VERSE "<2. >-1|Oh, how";
+	VERSE "<3. >-1|Oh, how";
+
+bar
+//2
+1: 4ge;; af;
+2: 4be;;;
+
+	VERSE "sweet are the";
+	VERSE "sweet are the";
+	VERSE "sweet are the";
+bar
+//3
+1: 4bg; ge; c+a;
+2: 4e+e; be; e+e;
+
+	VERSE "mo-ments of";
+	VERSE "mo-ments of";
+	VERSE "mo-ments of";
+bar
+//4
+1: 2bg; 8;;
+2: 2e+e; 8;;
+
+	VERSE "prayer, When the";
+	VERSE "prayer, When the";
+	VERSE "prayer, To the";
+bar
+//5
+1: 4bg; af; ge;
+2: 4e+b-; bb-;;
+
+	VERSE "heart to the";
+	VERSE "soul is o'er-";
+	VERSE "soul that is";
+bar
+//6
+1: 4fd; ge; af;
+2: 4bb-;;;
+
+	VERSE "Lord low-ly";
+	VERSE "bur-dened with";
+	VERSE "tempt-ed to";
+bar
+//7
+1 1: 2ge; 8e; f;
+1 2: 2s; 8e;;
+2: 2be; 8ge; ae;
+
+	VERSE "bends, Oh, what";
+	VERSE "grief; On the";
+	VERSE "stray; Gain-ing";
+bar
+//8
+1: 4ge;; af;
+2: 4be;;;
+
+	VERSE "com-fort and";
+	VERSE "Sav-iour to";
+	VERSE "strength to with-";
+bar
+//9
+1: 4bg; ge; c+a;
+2: 4e+e; be; e+e;
+
+	VERSE "joy to be";
+	VERSE "cast all our";
+	VERSE "stand eve-ry";
+bar
+//10
+1: 2bg; 8;;
+2: 2e+e; 8;;
+
+	VERSE "there, To com-";
+	VERSE "care, And re-";
+	VERSE "snare, That would";
+bar
+//11
+1: 4bg; af; ge;
+2: 4e+b-; bb-;;
+
+	VERSE "mune with the";
+	VERSE "ceive there the";
+	VERSE "lead from the";
+bar
+//12
+1: 4fd; ge; fd;
+2: 4ab-; bb-; ab-;
+
+	VERSE "dear-est of";
+	VERSE "sweet-est re-";
+	VERSE "heav-en-ly";
+bar
+//13
+1 1: 2e; 4r;
+1 2: 2e; 4s;
+2: 2ge; 4r;
+
+	VERSE "friends.";
+	VERSE "lief.";
+	VERSE "way.";
+repeatstart
+//14
+1 1: 4bf; bg; b;
+1 2: 4s;; a;
+2: 4d+b-; e+b-; f+b-;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE [c]"Mo-ments of";
+bar
+//15
+1: 2bg; 4;
+2: 2e+e; 4;
+
+	VERSE [c]"prayer, sweet";
+bar
+//16
+1: 4e+c+; d+b; c+a;
+2: 4e+a;;;
+
+	VERSE [c]"mo-ments of";
+bar 
+//16
+1: 2bg; 4s;
+2: 2e+e; 4s;
+
+	VERSE [c]"prayer";
+
+invisbar ending "1";
+1: 2s; 4bg;
+2: 2s; 4e+e;
+
+	VERSE "A-";
+bar
+//17
+1: 4bg; af; ge;
+2: 4e+b-; bb-;;
+
+	VERSE "way from this";
+bar
+//18
+1: fd; ge; af;
+2: 4bb-;;;
+
+	VERSE "world and its";
+bar
+//19
+1: 2ge; 4r;
+2: 2be; 4r;
+
+	VERSE "care;";
+repeatend ending "2";
+//20
+1: 8bg; be; 2s;
+2: 8e+e; e+g; 2s;
+
+	VERSE "How the";
+bar
+//21
+1: 4c+e; d+f; e+g;
+2 1: 4a; bf; be;
+2 2: 4a; s;;
+
+	VERSE "spir-it is";
+bar
+//22
+1: 2bg; 8ge; bg;
+2: 2e+e; 8be; e+e;
+
+	VERSE "cheered by sweet";
+bar
+//23
+1: 4bg; af; fd;
+2: 4e+b-; bb-; ab-;
+
+	VERSE "mo-ments of";
+bar
+//24
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2ge; 4s;
+
+	VERSE "prayer.";
+endbar

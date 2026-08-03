@@ -1,0 +1,190 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: http://library.timelesstruths.org/music/Following_Him/
+
+// Transcribed by: Ted Gatza, Jr. 12/24/2009 Rev. 07/12/2012
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Following Him" ""
+   title (2)""
+   title (11) "D - 6 - MI" "\s(18)\f(TI)\:If\ any\ man\ would\ come\ afte\|r\ me,\ let\ him\ deny\ himself, and\ take\ up\ his\ cross\ daily,\|\ and\ follow\ me.\ -\ Lk.9:23"""
+   title (13) "Charles M. Fillmore" " " "Charles M. Fillmore"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=2#
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=2#
+	clef=bass
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 8.fd; 16fd; 8fd; 4fd; 8af;
+2: 8.ad; 16ad; 8ad; 4ad; 8d+d;
+
+			lyrics 1: "<1. >-1|Fol-low-ing Je-sus";
+			lyrics 1: "<2. >-1|Fol-low-ing Him through";
+			lyrics 1: "<3. >-1|Fol-low-ing Him through";
+
+bar
+//2
+1: 4af; 8ge; 4.ge;
+2: 4d+a-; 8aa-; 4.aa-;
+
+			lyrics 1: "day by day,";
+			lyrics 1: "all the night,";
+			lyrics 1: "joy or woe,";
+bar
+//3
+1: 8.ec; 16ec; 8ec; 4ec; 8ge;
+2: 8.aa-; 16aa-; 8aa-; 4aa-; 8c+a-;
+
+			lyrics 1: "Fol-low-ing Him His";
+			lyrics 1: "Fol-low-ing Him in-";
+			lyrics 1: "Fol-low-ing Him, in";
+bar
+newscore
+//4
+1: 4ge; 8fd; 4.fd;
+2: 4d+d; 8ad; 4.ad;
+
+			lyrics 1: "will o-bey,";
+			lyrics 1: "to the light,";
+			lyrics 1: "grace to grow,";
+bar
+//5
+1: 8.af; 16af; 8af; 4af; 8d+f;
+2: 8.d+d; 16d+d; 8d+d; 4d+d; 8ad;
+
+			lyrics 1: "Fol-low-ing Him, I";
+			lyrics 1: "Fol-low-ing Him, 'tis";
+			lyrics 1: "Fol-low-ing Him, His";
+bar
+//6
+1: 4e+g; 8d+g; 4c+g; 8bg;
+2: 4bg; 8bg; 4e+g; 8d+g;
+
+			lyrics 1: "can-not stray, I'll";
+			lyrics 1: "al-ways right, I'll";
+			lyrics 1: "love to know, I'll";
+bar
+//7
+1 1: 8.a; 16a; 8s; 4s; 8s;
+1 2: 8.g; 16g; 8s; 4s; 8s;
+2 1: 8.c+a; 16c+a; 8s; 4s; 8s;
+2 2: 8.s; 16s; 8s; 4s; 8s;
+
+			lyrics 1: "fol-low";
+			lyrics 1: "fol-low";
+			lyrics 1: "fol-low";
+
+invisbar
+newscore
+
+1 1: 8.s; 16s; 8a; 4bg; 8c+g;
+1 2: 8.s; 16s; 8g; 4s; 8s;
+2 1: 8.s; 16s; 8c+a; 4c+a; 8a;
+2 2: 8.s; 16s; 8s; 4s; 8a;
+
+			lyrics 1: "Him all the";
+			lyrics 1: "Him all the";
+			lyrics 1: "Him all the";
+
+bar
+//8
+1: 4.d+f tie; 4d+f; 8r;
+2: 4.ad tie; 4ad; 8r;
+
+			lyrics 1: "way.";
+			lyrics 1: "way.";
+			lyrics 1: "way.";
+bar
+//9
+1: 8.af; 16fd; 8fd; 4.fd;
+2: 8.d+d; 16ad; 8ad; 4.ad;
+boldital above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Fol-low-ing Him,";
+bar
+//10
+1: 8.af; 16ge; 8ge; 4.ge;
+2: 8.aa-; 16aa-; 8aa-; 4.aa-;
+
+			lyrics 1: [c]"fol-low-ing Him,";
+bar
+newscore
+//11
+1: 8.c+e; 16bd; 8bd; 4bg; 8c+g;
+2: 8.aa-; 16aa-; 8aa-; 4aa-; 8aa-;
+
+			lyrics 1: "Fol-low-ing Him by";
+bar
+//12
+1: 8.bg; 16af; 8ge; 4.fd;
+2: 8.aa-; 16ab-; 8ac; 4.ad;
+
+			lyrics 1: "night and by day;";
+bar
+//13
+1: 8.af; 16af; 8af; 4.d+f;
+2: 8.d+d; 16d+d; 8ad; 4.bb-;
+
+			lyrics 1: "Fol-low-ing Him,";
+bar
+newscore
+//14
+1: 8.bg; 16bg; 8bg; 4e+g#; 8d+g;
+2: 8.d+g; 16d+g; 8bg; 4be; 8e+e;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: "fol-low-ing Him, I'll";
+bar
+//15
+1: 8.c+a; 16c+a; 8c+a; 4bg; 8c+g;
+2 1: 8.e+a; 16e+a; 8e+a; 4c+a; 8a;
+2 2: 8.s; 16s; 8s; 4s; 8a;
+
+			lyrics 1: "fol-low Him all the";
+bar
+//16
+1: 4.d+f tie; 4d+f; 8r;
+2: 4.ad tie; 4ad; 8r;
+
+			lyrics 1: "way.";
+endbar

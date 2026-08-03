@@ -1,0 +1,260 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Praise In Song:
+//		A collection of
+//		Hymns and Sacred Melodies,
+//		Editors: Jno. R. Sweney, W.J. Kirkpatrick,
+//		and H. L. Gilmour
+//		Published by: John J. Hood
+//		1024 Arch Street, Philadelphia
+//		Copyright 1893
+
+// Transcribed by: Ted Gatza, Jr. 10/30/2009
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "Draw Me Near to Thee" ""
+   title (2) ""
+   title (11) "A \(flat)-2-MI" "\f(TI)And I ..... will draw all men unto myself. - Jn.12:32"""
+   title (13) "Ida L. Reed" "Wm. J. Kirkpartick, 1893"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-10
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+
+// ***********************************
+
+staff 2
+	key=4&
+	clef=bass
+music
+
+midi all: 0 "tempo=175";
+
+//1
+1 1: 2c+e; 4c+e; 4b slur; 4a; 4fd;
+1 2: 2s; 4s; 2d; 4s;
+2: 2aa-; 4ea-; 2fa-; 4aa-;
+
+
+			lyrics 1: 2; 4; 2; 4; "<1. >-1|Draw me near to";
+			lyrics 1: 2; 4; 2; 4; "<2. >-1|Draw me near to";
+			lyrics 1: 2; 4; 2; 4; "<3. >-1|Draw me near to";
+bar
+//2
+1: 2.ec slur; 2ae; 4r;
+2: 2.aa- slur; 2c+a-; 4r;
+
+			lyrics 1: "thee,";
+			lyrics 1: "thee,";
+			lyrics 1: "thee,";
+bar
+//3
+1 1: 2ge; 4ge; 4a slur; 4g; 4ad;
+1 2: 2s; 4s; 2dn; 4s;
+2: 2be; 4be; 2bf; 4af;
+
+			lyrics 1: "To thy bless-ed";
+			lyrics 1: "And my soul de-";
+			lyrics 1: "Make me strong and";
+bar
+//4
+1: 2.bd tie; 2bd; 4r;
+2: 2.ge tie; 2ge; 4r;
+
+			lyrics 1: "side;";
+			lyrics 1: "fend;";
+			lyrics 1: "brave,";
+bar
+newscore
+//5
+1 1: 2c+e; 4c+e; 4b slur; 4a; 4fd;
+1 2: 2s; 4s; 2d; 4s;
+2: 2aa-; 4aa-; 2fa-; 4aa-;
+
+			lyrics 1: "Let thy love so";
+			lyrics 1: "Thou my trust shall";
+			lyrics 1: "Keep my spir-it";
+bar
+//6
+1: 2.ec slur; 2ae; 4r;
+2: 2.aa- slur; 2c+a-; 4r;
+
+			lyrics 1: "free";
+			lyrics 1: "be,";
+			lyrics 1: "free";
+bar
+//7
+1 1: 2ge; 4ge; 4g slur; 4a; 4be;
+1 2: 2s; 4s; 2e; 4s;
+2 1: 2be; 4be; 4b slur; 4c+; 4d+e;
+2 2: 2s; 4s; 2e; 4s;
+
+			lyrics 1: "In my soul a-";
+			lyrics 1: "Un-til life shall";
+			lyrics 1: "From temp-ta-tion's";
+bar
+//8
+1: 2.ae tie; 2ae; 4r;
+2: 2.c+a- tie; 2c+a-; 4r;
+
+			lyrics 1: "bide:";
+			lyrics 1: "end:";
+			lyrics 1: "wave:";
+bar
+//9
+1 1: 2be; 4be; 4b slur; 4a; 4be;
+1 2: 2s; 4s; 2e; 4s;
+2 1: 2ge; 4ge; 4g slur; 4f; 4eg;
+2 2: 2s; 4s; 2e; 4s;
+
+			lyrics 1: "Je-sus, Sav-iour";
+			lyrics 1: "Ev-er true and";
+			lyrics 1: "Draw me near to";
+bar
+//10
+1: 2.c+e slur; 2e+e; 4r;
+2 1: 2.a slur; 2c+; 4s;
+2 2: 2.a tie; 2a; 4r;
+
+			lyrics 1: "dear,";
+			lyrics 1: "kind";
+			lyrics 1: "thee,";
+bar
+//11
+1 1: 2e+e; 4c+e; 4c+ slur; 4b; 4ad;
+1 2: 2s; 4s; 2dn; 4s;
+2 1: 2c+a; 4a; 2af; 4af;
+2 2: 2s; 4a; 2s; 4s;
+
+			lyrics 1: "Un-to thee I";
+			lyrics 1: "To the faith-ful";
+			lyrics 1: "Fill my heart with";
+bar
+//12
+1: 2.be tie; 2 be; 4r;
+2: 2.ge tie; 2ge; 4r;
+
+			lyrics 1: "come";
+			lyrics 1: "heart,";
+			lyrics 1: "love,";
+bar
+newscore
+//13
+1 1: 2c+e; 4c+e; 4b slur; 4a; 4fd;
+1 2: 2s; 4s; 2d; 4s;
+2: 2aa-; 4aa-; 2fd; 4ad;
+
+			lyrics 1: "With my doubt and";
+			lyrics 1: "Friend in thee I";
+			lyrics 1: "I would clos-er";
+bar
+//14
+1: 2.ec slur; 2ae; 4r;
+2: 2.aa- slur; 2c+a-; 4r;
+
+			lyrics 1: "fear,";
+			lyrics 1: "find,";
+			lyrics 1: "be";
+bar
+//15
+1 1: 2ge; 4ge; 4g slur; 4a; 4be;
+1 2: 2s; 4s; 2e; 4s;
+2 1: 2be; 4be; 4b slur; 4c+; 4d+e;
+2 2: 2s; 4s; 2e; 4s;
+
+			lyrics 1: "To thy ho-ly";
+			lyrics 1: "That will ne'er de-";
+			lyrics 1: "To thy throne a-";
+bar
+//16
+1: 2.ae tie; 2ae; 4r;
+2: 2.c+a- tie; 2c+a-; 4r;
+
+			lyrics 1: "throne.";
+			lyrics 1: "part.";
+			lyrics 1: "bove.";
+dblbar
+newscore
+//17
+1: 2.be; 2be; 4r;
+ital (13) above 1: 1 "Chorus";
+2: 2ge; 4ge; 2ge; 4r;
+
+			lyrics 1: "Draw me,";
+			lyrics 1: 2; 4; 2; 4s; "Draw me near,";
+bar
+//18
+1: 2.c+e; 2c+e; 4r;
+2: 2ae; 4ae; 2ae; 4r;
+
+			lyrics 1: "draw me";
+			lyrics 1: 2; 4; 2; 4s; "draw me near,";
+bar
+//19
+1: 2.d+g tie; 2d+g; 4c+a;
+2: 2be; 4be; 2be; 4ae;
+
+			lyrics 1: "near to";
+			lyrics 1: 2; 4; 2; 4; "draw me near to";
+bar
+//20
+1: 2.be tie; 2be; 4r;
+2: 2.ge tie; 2ge; 4r;
+
+			lyrics 1: "thee;";
+bar
+newscore
+//21
+1: 2.c+e; 2.e+g&;
+2 1: 2.a; 2.ac;
+2 2: 2.a; 2.s;
+
+			lyrics 1: "Sav-iour,";
+bar
+//22
+1: 2.d+f; 2.bf;
+2: 2.ad; 2.d+d;
+
+			lyrics 1: "Sav-iour,";
+bar
+//23
+1 1: 4a slur; 4g; 4ae; 2c+a; 4bg;
+1 2: 2e; 4s; 2s; 4s;
+2 1: 4c+ slur; 4b; c+e; 2e+e; 4d+e;
+2 2: 2e; 4s; 2s; 4s;
+
+			lyrics 1: "draw me near to";
+bar
+//24
+1: 2.ae tie; 2ae; 4r;
+2: 2.c+a- tie; 2c+a-; 4r;
+
+			lyrics 1: "thee.";
+endbar
+			

@@ -1,0 +1,205 @@
+//!Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Hymns No. 1
+//		For use in Church Service, Sunday Schools,
+//		Young People's Societies, Etc.
+//		Compiled by Willian Phillips Hall and
+//		J. Wilbur Chapman, D.D.
+//		Editor of Music W. S. Weeden
+//		Hall-Mack Co. Publishers
+//		1020 Arch Street, Philadelphia, PA.
+//		Copyuright 1899
+//		Hymn No. 5
+
+// Transcribed by: Ted Gatza, Jr. 05/10/2010; rEV. 03/13/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Saved To Save Others" ""
+   title (2)""
+   title (11) "A \(flat) - a - MI" "\s(17)\f(TI)\:Take\ heed\ to\ thyself,\ and\ to\ thy\ teachin\|g.\ Continue\ in\ these\ things;\ for\ in\ doing this\ thou\ shalt\ save\ both\ thyself\ a\|nd\ them\ that\ hear\ thee.\ -\ 1\ Tim.\ 4:16"""
+   title (13) "Flora Kirkland" " " "Chas. H. Gabriel,1899"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key= 4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=65";
+
+//1
+1: 8c+e; 8c+e; 8c+e; 8.c+e; 16bd; 8ac;
+2:8aa-; 8aa-; 8aa-; 8.aa-; 16aa-; 8aa-;
+
+
+			lyrics 1: "<1. >-1|\"Saved to save oth-ers,\" re-";
+			lyrics 1: "<2. >-1|Life's lit-tle mo-ment is";
+			lyrics 1: "<3. >-1|Sin is al-lur-ing; but";
+			lyrics 1: "<4. >-1|Mas-ter, thy mer-cy has";
+bar
+//2
+1: 8ec; 8ac; 8c+e; 4.e+e;
+2: 8aa-; 8aa-; 8aa-; 4.c+a;
+
+			lyrics 1: "joic-ing, I sing;";
+			lyrics 1: "hast'n-ing a-away,";
+			lyrics 1: "how will it end?";
+			lyrics 1: "reached e-ven me,";
+bar
+//3
+1: 8d+e; 8c+e; 8be; 8c+e; 8be; 8adn;
+2 1: 8be; 8ae; 8ge; 8a; 8bg; 8bf;
+2 2: 8s; 8s; 8s; 8a; 8s; 8s; 
+
+			lyrics 1: "Lord be my Teach-er to-";
+			lyrics 1: "Come to the Mas-ter, O";
+			lyrics 1: "Pow-ers of e-vil are";
+			lyrics 1: "Help me show oth-ers the";
+bar
+//4
+1: 4.be tie; 4be; 8r;
+2: 4.ge tie; 4ge; 8r;
+
+			lyrics 1: "day!";
+			lyrics 1: "come!";
+			lyrics 1: "strong?";
+			lyrics 1: "way;";
+bar
+//5
+1: 8d+e; 8d+e; 8d+e; 8.d+e; 16c+e; 8be;
+2: 8be; 8be; 8be; 8.be; 16ae; 8ge;
+
+			lyrics 1: "Help me lead some-one to";
+			lyrics 1: "Come to him now, while 'tis";
+			lyrics 1: "Come to the sin-ner's un-";
+			lyrics 1: "Up to the foun-tain of";
+bar
+//6
+1: 8ge; 8ae; 8be; 4.c+e;
+2: 8bd; 8ac; 8gb-; 4.aa-;
+
+			lyrics 1: "heav-en's pure spring,";
+			lyrics 1: "yet called \"to-day,\"";
+			lyrics 1: "change-a-ble Friend,";
+			lyrics 1: "mer-cy so free";
+bar
+//7
+1 1: 8b; 8b; 8b; 8b; 8c+a; 8b;
+1 2: 8a; 8a; 8a; 8a; 8s; 8a;
+2: 8d+b-; 8d+b-; 8d+b-; 8d+b-; 8d+b-; 8d+b-;
+
+			lyrics 1: "Help me show some-one the";
+			lyrics 1: "Come, heav-y-lad-en one";
+			lyrics 1: "He giv-eth vic-t'ry and";
+			lyrics 1: "Help me lead some-one to-";
+bar
+//8
+1 1: 4.e+ tie; 4.e+;
+1 2: 4g; 8a; 4.b;
+2 1: 4b; 8c+; 4.d+;
+2 2: 4.e tie; 4.e;
+phrase below 1: 1 til 4;
+phrase above 2: 1 til 4;
+			lyrics 1: "way.";
+			lyrics 1: "come!";
+			lyrics 1: "song.";
+			lyrics 1: "day.";
+dblbar
+//9
+1: 8.e+a; 16e+a; 8e+a; 8c+a; 8be; 8ae;
+2: 8.c+a; 16c+a; 8c+a; 8e+a; 8d+a; 8c+a;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "\"Saved to save oth-ers\" to-";
+bar
+//10
+1 1: 4.d+ tie; 4.d+;
+1 2: 8.g; 16f; 8e; 8g bm; 8f ebm; 8e;
+2 1: 8.b; 16a; 8g; 8b bm; 8a ebm; 8g;
+2 2: 4e; 8e; 4.e;
+
+			lyrics 1: "day!_";
+			lyrics 1: 8.s; 16; 8; 8; 8s; 8; "to save oth-ers!";
+			lyrics 2: 4s; 8; 4.; "to-day!";
+bar
+//11
+1 1: 8.d+g; 16d+g; 8d+g; 8bg; 8ge; 8e;
+1 2: 8.s; 16s; 8s; 8s; 8s; 8e;
+2: 8.be; 16be; 8be; 8d+e; 8d+e; 8d+g;
+
+			lyrics 1: "Saved to show oth-ers the";
+bar
+//12
+1 1: 4.e+ tie; 4.e+;
+1 2: 8.e; 16a; 8b; 8c+bm; 8b ebm; 8a;
+2 1: 8.c+; 16c+; 8d+; 8e+ bm; 8d+ ebm; 8c+;
+2 2: 4a; 8a; 4.a;
+
+			lyrics 1: "way!_";
+			lyrics 1: 8.s; 16; 8; 8; 8s; 8; "to show oth-ers!";
+			lyrics 2: 4s; 8; 4.; "the way!";
+bar
+//13
+1: 8e+a; 8f+a; 8e+a; 8.c+a; 16be; 8ae;
+2: 8c+a; 8d+a; 8c+a; 8.e+a; 16d+a; 8c+a;
+
+			lyrics 1: "Lord, keep me faith-ful, and";
+bar
+//14
+1: 8ae; 8be; 8c+e; 4.d+d;
+2 1: 8c+a; 8bg; 8a&; 4.af;
+2 2: 8s; 8s; 8g; 4.s;
+
+			lyrics 1: "fill me with pow'r,";
+bar
+//15
+1: 8d+f; 8c+f; 8bf; 8ae; 8c+e; 8bd;
+2: 8ad; 8ad; 8d+d; 8c+e; 8ae; 8ge;
+
+			lyrics 1: "Fill me, and use me, I";
+bar
+//16
+1: 4.ac tie; 4ac; 8r;
+2: 4.aa- tie; 4aa-; 8r;
+
+			lyrics 1: "pray.";
+endbar
+			

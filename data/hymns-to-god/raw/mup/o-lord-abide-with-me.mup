@@ -1,0 +1,249 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 138
+//		
+// Transcribed by: Ted Gatza, Jr. 02/01/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "O Lord, Abide With Me" ""
+   title (2)""
+   title (11) "F - 4 - DO" "\s(17)\f(TI)\:Brethren,\ let\ each\ man\|,\ wherein\ he\ was\ called, therein\ abide\ with\|\ God.\ -\ 1\ Cor.\ 7:24" ""   
+   title (13) "Harriet E. Jones" "" "John R. Bryant, 1896"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 8f bm; g ebm; 2.s;
+1 2: 4f; 2.s;
+2 1: 8a bm; 8b ebm; 2.s;
+2 2: 4f; 2.s;
+
+			VERSE 4; 2.s; "<1. >-1|A-";
+			VERSE 4; 2.s; "<2. >-1|A-";
+			VERSE 4; 2.s; "<3. >-1|A-";
+			
+bar
+//2
+1 1: 4af;; 8; g; f; g;
+1 2: 4s;; 8; f;;;
+2: 4c+f;; 8; bf; af; bf;
+
+			VERSE "bide with me, O Lord a-";
+			VERSE "bide with me, the shad-ows";
+			VERSE "bide with me, a nev-er";
+bar
+//3
+1: 4af; c+f;; 4af;
+2: 4c+f; af;; c+f;
+
+			VERSE "bide with me; I";
+			VERSE "gath-er near, A-";
+			VERSE "fail-ing friend, On";
+bar
+//4
+1: 4ge;; 8; af; bg; ge;
+2: 4c+c;; 8;;;;
+
+			VERSE "faint and fall when far a-";
+			VERSE "bide with me, my wear-ry ";
+			VERSE "Thee a-lone, O Lord, do";
+bar
+//4
+1 1: 4f; ge; af; 8f bm; g ebm;
+1 2: 4f; s;; 4f;
+2 1: 4ad; c+c; c+f; 8a bm; b ebm;
+2 2: 4s;;; f;
+
+			VERSE 4; 4; 4; 4; "way from Thee; But";
+			VERSE 4; 4; 4; 4; "heart to cheer; A-";
+			VERSE 4; 4; 4; 4; "I de-pend; A-";
+bar 
+//5
+1 1: 4af;; 8s; ; ; ; 
+1 2: 4s;; 8s; ; ; ;
+2: 4c+f;; 8s; ; ; ;
+
+			VERSE "if Thou";
+			VERSE "bide with";
+			VERSE "bide with";
+invisbar
+newscore
+
+1 1: 4s;; 8af; g; f; g; 
+1 2: 4s;; 8s; f;;;
+2: 4s;; 8c+f; bf; af; bf;
+
+			VERSE "lead me I shall";
+			VERSE "me, to com-fort";
+			VERSE "me un-til deaths";
+
+bar
+//6
+1: 4af; c+f;; af;
+2: 4c+f; af;; c+f;
+
+			VERSE "walk a-right, For";
+			VERSE "and up-hold, 'Till";
+			VERSE "vale is passed, And,";
+bar
+//7
+1: 4gd; af#; 8bg;; s; s;
+2: 4bb-; c+a-; 8d+g-;; s; s;
+
+			VERSE "O, a lamp Thou";
+			VERSE "all my work is";
+			VERSE "oh! let me a-";
+invisbar
+newscore
+
+1: 4s; s; 8s;; afn; gd;
+2: 4s; s; 8s;; c+a-; bb-;
+
+			VERSE "art of";
+			VERSE "done, and";
+			VERSE "bide with";
+
+bar
+//8
+1: 4fc; ec; fc; s;
+2: 4ac; bc; af; s;
+
+			VERSE "pur-est light.";
+			VERSE "years are told.";
+			VERSE "thee at last.";
+dblbar
+//9
+1 1: 4c+; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "A-";
+bar
+//10
+1 1: 2c+ tie; 8; bf; af; bf;
+1 2: [dist -4]4r; f; 8; 8s;;;
+2: 4r; af; 8; d+f; c+f; d+b-;
+
+			VERSE "bide_ with me, O";
+			VERSE 4s; 4; 8; 8s; 8s; 8s; "A-bide";
+bar
+//11
+1: 8af; ge; f; ec; 4fc; 8ge bm; af ebm;
+2: 8c+c; bc; ac; gc; 4af; c+c;
+
+			VERSE 8; 8; 8; 8; 4; 4; "Lord, a-bide with me; I";
+bar
+//12
+1: 4bg; ge; 4.c+a; 8bg;
+2: 4c+c;; 4.; 8;
+
+			VERSE "feel each day and";
+bar
+//13
+1 1: 8af; bg; s; s; 4s; s;
+1 2: 8s;;;; 4; ;
+2: 8c+f; ; s;; 4; s;
+
+			VERSE "hour my";
+invisbar
+newscore
+
+1 1: 8s; s; c+a; d+b; 4c+a; c+;
+1 2: 8s;;;; 4; [dist -4]r;
+2: 8s;;c+f;; 4c+f; r;
+
+			VERSE "need of Thee; Oh!";
+
+bar
+//14
+1 1: 2c+ tie; 8; bf; af; bf;
+1 2: [dist -4]4r; f; 8; 8s;;;
+2: 4r; af; 8; d+f; c+f; d+b-;
+
+			VERSE "keep_ me, keep me";
+			VERSE 4s; 4; 8; 8; 8; 8; "O, keep me, keep me";
+bar
+//15
+1: 8af; ge; f; s; 4; 8; ;
+2: 8c+c; bc; ac; s; 4; ;
+
+			VERSE 8; 8; 8; 8s; 4s; 4s; "near Thy bleed-";
+invisbar
+newscore
+
+1: 8s; s; s; ec; 4fc; 8ge bm; af ebm;
+2: 8s; s; s; gc; 4af; c+c;
+
+			VERSE 8s; 8s; 8s; 8; 4; 4; "ing side; O,";
+
+bar
+//16
+1 1:4bf; d+f; 4.c+f; 8f;
+1 2: 4s;; 4.s; 8f;
+2: 4d+b-; bb-; 4.ac; 8;
+
+			VERSE "ev-'ry mo-ment,";
+bar
+//17
+1: 8af; gc; fc; ec; 4fc; 4s;
+2: 8c+c; bc; ac; gc; 4af; 4s;
+
+			VERSE "Lord, with me a-bide.";
+endbar

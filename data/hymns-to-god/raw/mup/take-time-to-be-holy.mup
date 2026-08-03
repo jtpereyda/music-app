@@ -1,0 +1,316 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 5 & 6 Combined
+//		Editors:Ira D. Sankey, James McGranahan and George Stebbins
+//		Publishers: The Biglow and Main 
+//		76 East Ninth Street, New York
+//		215 Wabash Avenue, Chicago
+//		The Joyn Church Co.
+//		74 West Fourth St., Cincinnati
+//		13 East 16th Street, New York 	
+// 		Copyright 1892
+//		Hymn No.: 272
+
+// Transcribed by: Ted Gatza, Jr. 05/11/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Take Time To Be Holy" ""
+   title (2) ""
+   title (11) "" "\f(TI)Be ye holy for I am holy - 1 Pet.1:16" ""
+   title (11) "" 
+   title (11)" F - 2 - MI" "" ""
+   title (13) "William D. Longstaff" "" "George C. Stebbins, 1890"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 4.fa; 8; g; fa;
+1 2: 4.s; 8; f; s;
+2: 4.fc+; 8; fb; fc+;
+
+	VS "<1. >-1|Take time to be";
+	VS "<2. >-1|Take time to be";
+	VS "<3. >-1|Take time to be";
+bar
+
+//2
+1: 4.fb; fa;
+2: 4.fd+; fc+;
+
+	VS "ho-ly,";
+	VS "ho-ly,";
+	VS "ho-ly,";
+bar
+
+//3	
+1 1: 4.f; 8cg; cf; ce;
+1 2: 4.f; 8s; ; ;
+2: 4.ca; 8cb; ca; cg;
+
+	VS "Speak of with thy";
+	VS "The world rush-es";
+	VS "Be calm in thy";
+bar
+
+//4
+1: 4.cf tie; ;
+2: 4.fa tie; ;
+
+	VS "Lord;";
+	VS "on;";
+	VS "soul,";
+bar
+
+//5
+1 1: 4.fa; 8; g; fa;
+1 2: 4.s; 8; f; s;
+2: 4.fc+; 8; fb; fc+;
+
+	VS "A-bide in Him";
+	VS "Spend much time in";
+	VS "Each thought and each";
+bar
+
+//6
+1: 4.fb; fa;
+2: 4.fd+; fc+;
+
+	VS "al-ways,";
+	VS "se-cret";
+	VS "mo-tive";
+bar
+
+//7
+1 1: 4.eg; 8dg; eg; g;
+1 2: 4.s; 8; ; f;
+2: 4.gc+;8 gbn; gc+; gd+;
+
+	VS "And feed on His";
+	VS "With Je-sus a-";
+	VS "Be-neath His con-";
+bar
+
+//8
+1: 4.eg tie; ;
+2: 4.cc+ tie; ;
+
+	VS "Word;";
+	VS "lone;";
+	VS "trol;";
+bar
+
+//9
+
+1: 4.gb; 8; fa; eg;
+2: 4.cc+; 8; ; ; 
+
+	VS "Make friends of God's";
+	VS "By look-ing to";
+	VS "Thus led by His";
+bar
+
+//10
+1: 4.fa; fc+;
+2: 4.fc+; fa;
+
+	VS "chil-dren,";
+	VS "Je-sus,";
+	VS "Spir-it";
+bar
+
+//11
+1: 4.eb; 8; fa; eg;
+2: 4.cg; 8; cc+; ;
+
+	VS "Help those who are";
+	VS "Like Him thou shalt";
+	VS "To foun-tains of";
+bar
+
+//12
+1: 4.fa tie; ;
+2: 4.fc+ tie; ;
+
+	VS "weak,";
+	VS "be;";
+	VS " love,";
+bar
+
+//13
+1: 4.fc+; 8; eb; fa;
+2: 4.fa; 8ac+; gc+; fc+;
+
+	VS "For-get-ing in";
+	VS "Thy friends in thy";
+	VS "Thou soon shalt be";
+bar
+
+//14
+1: 4.fd+; fb;
+2 1: 4.b; b-d+;
+2 2: 4.b; s;
+
+	VS "noth-ing";
+	VS "con-duct";
+	VS "fit-ted";
+bar
+
+//15
+1: 4.fa; 8cg; cf; ce;
+2: 4.cc+; 8cb; ca; cg;
+
+	VS "His bless-ing to";
+	VS "His like-ness shall";
+	VS "For serv-ice a-";
+bar
+
+//16
+1: 4.cf tie; ;
+2: 4.fa tie; ;
+
+	VS "seek.";
+	VS "see.";
+	VS "bove.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

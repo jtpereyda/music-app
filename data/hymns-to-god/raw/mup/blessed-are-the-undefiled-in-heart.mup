@@ -1,0 +1,162 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: http://nethymnal.org/htm/b/a/baundefh.htm
+
+// Transcribed by: Ted Gatza, Jr. 12/05/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Blessed Are The Undefiled In Heart" ""
+   title (2)""
+   title (11) "E \(flat)-4-DO" "\f(TI)Blessed are they that are perfect in the way,\n Who walk in the law of Jehovah. - Ps. 119:1"""
+   title (13) "Issac Watts, 1719" " " "Lowell Mason, 1832"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4 	
+	key=3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=3&
+	clef=bass
+music
+
+midi all: 0 "tempo=115";
+
+//1
+1 1: 4s; 4s; 4s; 4e;
+1 2: 4s; 4s; 4s; 4e;
+2: 4s; 4s; 4s; 4ge;
+
+			lyrics 1: "<1. >-1|Blest";
+			lyrics 1: "<2. >-1|Blest";
+			lyrics 1: "<3. >-1|Great";
+			lyrics 1: "<4. >-1|Then";
+			lyrics 1: "<5. >-1|But";
+			lyrics 1: "<6. >-1|Vile";
+bar
+//2
+1: 4ge; 4be;4c+e; 4be;
+2: 4be; 4ge; 4ae; 4ge;
+
+			lyrics 1: "are the un-de-";
+			lyrics 1: "are the men that";
+			lyrics 1: "is their peace who";
+			lyrics 1: "shall my heart have";
+			lyrics 1: "haught-y sin-ners";
+			lyrics 1: "as the dross the";
+bar
+//3
+1: 4be; 4ad; 4ge; 4be;
+2: 4ge; 4bb-; 4be; 4bg;
+
+			lyrics 1: "filed in heart, Whose";
+			lyrics 1: "keep Thy word, And";
+			lyrics 1: "love Thy law; How";
+			lyrics 1: "in-ward joy, And";
+			lyrics 1: "God will hate, The";
+			lyrics 1: "wick-ed are; And";
+bar
+newscore
+//4
+1: 4c+e; 4e+e; 4bf; 4ane;
+2 1: 4a; 4bg; 4d+f; 4c+f;
+2 2: 4a; 4s; 4s; 4s;
+
+			lyrics 1: "ways are right and";
+			lyrics 1: "prac-tice Thy com-";
+			lyrics 1: "firm their souls a-";
+			lyrics 1: "keep my face from";
+			lyrics 1: "proud shall die ac-";
+			lyrics 1: "those that leave Thy";
+bar
+//5
+1: 2.bd; 4e+e;
+2: 2.bb-; 4ce; 
+
+			lyrics 1: "clean; who";
+			lyrics 1: "mands With";
+			lyrics 1: "bide! Nor";
+			lyrics 1: "shame, When";
+			lyrics 1: "cursed; The";
+			lyrics 1: "ways shall";
+bar
+//6
+1: 4d+e; 4c+e; 4be; 4c+e;
+2 1: 4be; 4ae; 4ge; 4a;
+2 2: 4s; 4s; 4s; 4a;
+
+			lyrics 1: "ne-ver from Thy";
+			lyrics 1: "their whole heart they";
+			lyrics 1: "can a bold temp-";
+			lyrics 1: "all Thy stat-utes";
+			lyrics 1: "sons of false-hood";
+			lyrics 1: "see sal-va-tion";
+bar
+newscore
+//7
+1: 4be; 4ad; 4ge; 4bd;
+2: bg; 4bf; 4be; 4bb-;
+
+			lyrics 1: "law de-part, But";
+			lyrics 1: "seek the Lord, And ";
+			lyrics 1: "ta-tion draw Their";
+			lyrics 1: "I o-bey, And";
+			lyrics 1: "and de-ceit Are";
+			lyrics 1: "from a-far, but";
+bar
+//8
+1 1: 4e; 4ae; 4ge; 4fd;
+1 2: 4e; 4s; 4s; 4s;
+2: 4gc; 4c+a-; 4bb-; 4ab-;
+
+			lyrics 1: "fly from e-very";
+			lyrics 1: "serve thee with their";
+			lyrics 1: "stead-y feet a-";
+			lyrics 1: "hon-or all Thy";
+			lyrics 1: "trod-den to the";
+			lyrics 1: "nev-er taste Thy";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;		
+
+			lyrics 1: "sin.";
+			lyrics 1: "hands.";
+			lyrics 1: "side.";
+			lyrics 1: "Name.";
+			lyrics 1: "dust.";
+			lyrics 1: "grace.";
+endbar

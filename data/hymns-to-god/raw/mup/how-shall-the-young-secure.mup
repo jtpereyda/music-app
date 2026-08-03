@@ -1,0 +1,318 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	Popular Hymns Number 2
+//		For The Work And Worship Of The Church
+//		In Public Worship, Prayer-meetings, Revivals, 
+//		Conventions, Sunday-schools, Young People's Meetings,	
+//		Author: C. C. Cline
+//		Publisher: Christian Publishing Company
+//		St. Louis
+//		Date: 1901
+//		Hymn No. 109
+
+// Transcribed by: Ted Gatza, Jr. 06/24/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+//	staffscale=.96
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	scale=.90
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=15
+    	score beamstyle = 4,4,4,4
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=4/4
+	key=4#
+
+staff 2
+	key=4#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "How Shall The Young Secure" ""
+   title (2) ""
+   title (11) "" "\f(TI)Wherewith shall a young man cleanse his way?" ""
+   title (11) "" "\f(TI)By taking heed thereto according to thy word. - Ps. 119:9" ""
+   title (11) "" 
+   title (11) "E - 4 - SOL" "" ""
+   title (11) "Issac Watts" "" "Ludwig von Beethoven"
+ 
+footer
+
+   title (9) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus - Faster"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=110";
+
+//=========================
+
+// Verse
+
+//1
+1: 2s; 4.gb slur; 8fa;
+2: 2s; 2eb;
+
+	VS "<1. >-1|How";
+	VS "<2. >-1|'Tis";
+	VS "<3. >-1|Thy";
+bar
+
+//2
+1: 4eg; ; 8eg; fa; gb; ac+;
+2: 4eb; ; ; ee+;
+
+	VS21 "shall the young se-";
+	VS21 "like the sun, a";
+	VS21 "word is ev-er-";
+bar
+//3a
+1: 4ac+; df; ; 8s; ;
+2: 4b-d+; b-b; ; 8s; ;
+
+	VS "cure their hearts,";
+	VS "heav'n-ly light,";
+	VS "last-ing truth;";
+invisbar
+newscore
+
+//3b
+1: 4s; ; ; 8eg bm; df ebm;
+2 1: 4s; ; ; 8b; a;
+2 2: s; ; ; 4b-;
+
+	VS22 "And";
+	VS22 "That";
+	VS22 "How";
+bar
+
+//4
+1 1: 4e; ; f; df;
+1 2: 4e; ; ; s;
+2 1: 4s; ; b; s;
+2 2: 4eg; gb; b; b-b;
+
+	VS "guard their lives from";
+	VS "guides us all the";
+	VS "pure is ev-'ry";
+bar
+
+//5a
+1: 4s; 2eg slur; 4df;
+2 1: 4s; 2.b;
+2 2: 4s; 2e slur; 4b-;
+
+	VS "sin?";
+	VS "day;";
+	VS "page!";
+invisbar
+newscore
+
+//5b
+1: 2s; 4.gb slur; 8fa;
+2: 2s; 2eb;
+
+	VS "Thy";
+	VS "And,";
+	VS "That";
+bar
+
+//6
+1: 4eg; ; 8eg; fa; gb; ac+;
+2: 4eb; ; ; ee+;
+
+	VS21 "word the choic-est";
+	VS21 "thro' the dan-gers";
+	VS21 "ho-ly book shall";
+bar
+//7a
+1: 4ac+; df; ; 8s; ;
+2: 4b-d+; b-b; ; 8s; ;
+
+	VS "rules im-parts";
+	VS "of the night,";
+	VS "guide our youth,";
+invisbar
+newscore
+
+//7b
+1 1:4s; ; ; 8g; f;
+1 2: 4s; ; ; d;
+2: 4s; ; ; r;
+
+	VS12 "To";
+	VS12 "A";
+	VS12 "And";
+bar
+
+//8
+1 1: 8e; f; eg; fa; 4gb; b;
+1 2: 8e; d; 8s; ; 4; a;
+2: 2r; 4; b-d+;
+
+	VS "keep <> the <> con-science";
+	VS "lamp <> to <> lead our";
+	VS "well <> sup- <> port our";
+	VS21 "\s(13)To";
+	BVS21 "\s(13)To";
+bar
+
+//9a
+1 1: 4s; 2.b;
+1 2: 4s; 2g slur; 4f;
+2 1: 4s; 4e+; ; 8d+; c+;
+2 2: 4s; 8e; f; g; a; 4b;
+
+	VS "clean,_";
+	VS "way,_";
+	VS "age,_";
+	VS21 "keep the con- <>";
+	BVS21 "keep the con- <>";
+invisbar
+newscore
+
+//9b
+
+1: 4ad+; 2.s;
+2: 4b-b; 2.s; 
+
+	VS "To";
+	VS "A";
+	VS "And";
+	VS "science";
+	BVS "science";
+bar
+
+//10
+1 1: 2e+; 4bd+ slur; ac+;
+1 2: 4g slur; a; 4s; ;
+2 1: 4b slur; 2e+; 4s;
+2 2: 4e; f; g; ae+;
+
+	VS " keep the";
+	VS "lamp to";
+	VS "well sup-";
+	VS22 "clean_ <> <> To";
+	BVS22 "clean, To keep the";
+bar
+
+//11
+1: 2gb; fa;
+2 1: 4e+; ; b; ;
+2 2: 2b; b-;
+
+	VS "con-science";
+	VS "lead our";
+	VS "port our";
+	VS21 "keep the con-science";
+	BVS22 "con-science";
+bar
+
+//12
+FST(1)
+1: 2eg; 2s;
+FBT(1)
+2: 2eb; 2s;
+
+	VS "clean.";
+	VS "way.";
+	VS "age.";
+	VS "clean.";
+	BVS "clean.";
+endbar

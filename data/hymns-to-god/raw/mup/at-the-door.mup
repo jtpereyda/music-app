@@ -1,0 +1,364 @@
+// Mup 7.1 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Hymn Source:
+//	The Gospel Pilot Hymnal
+//	A Collection of New and Standard Hymns
+//	for Sunday Schools, Young Peoples' Societies,
+//	Gospel and Social Meetings
+//	Edited By D. B. Towner and French E. Oliver
+//	Published by: Towner and Oliver
+//	80 Institute Place, Chicago
+//	Copyright 1899
+//	Hymn No.: 137
+//		
+// Transcribed by: 
+//	Ted Gatza, Jr. 11/28/2011
+
+// Revisions:
+//	02/22/2024 [1] Updated Mup code [2] Corrected typo mistakes
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+
+top
+
+   title bold (19) "" "At The Door" ""
+   title (2)""
+   title (11) "" "\f(TI)Behold, I have set before thee an open door. - Rev. 3:8" ""   
+   title (10) "G - 2 - DO" "" ""
+   title "Urania Locke Bailey" "" "Robert Lowry"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+//set midi
+	
+	midi all: 0 "tempo=62";
+
+
+
+//=========================
+
+// Verse
+
+//1
+1: 16gd; ad; 4.s; 4;
+2: 16bg; c+g; 4.s; 4;
+ital (13) above 1: 1 "Tenderly";
+
+	VS "<1. >-1|The mis-";
+	VS "<2. >-1|I am";
+	VS "<3. >-1|My mis-";
+	VS "<4. >-1|The mis-";
+bar
+
+//2
+1 1: 8.bg; 16c+g; 8bg; b bm; a ebm; gd;
+1 2: 8.s; 16; 8; 4d; 8s;
+2 1: 8.s; 16; 8; d+ bm; c+ ebm; s;
+2 2: 8.d+g; 16ge+; 8gd+; 4g; 8gb;
+
+	VS22 "takes of my life are";
+	VS22 "low-est of those who";
+	VS22 "takes His free grace will";
+	VS22 "takes of my life are";
+bar
+
+//3
+1 1: 8gd; 4.fd; 8r; 16s; ;
+2 1: 8bd; 4.ad; 8r; 16s; ;
+
+	VS "ma-ny,";
+	VS "love Him,";
+	VS "cov-er,";
+	VS "ma-ny,";
+invisbar
+newscore
+
+1 1: 8s; 4.; 8; 16f slur; g;
+1 2: 8s; 4.; 8; 16d tie; ;
+2 1: 8s; 4.s; 8s; 16a slur; b;
+2 2: 8s; 4.; 8; 16d tie;;
+
+	VS "The_";
+	VS 8s; 4.s; 8s; 16; 16; "I am";
+	VS "My_";
+	VS 8s; 4.s; 8s; 16; 16; "And my";
+bar
+
+//4
+1: 8.ad; 16ad; 8ad; af bm; bg ebm; [up]c+a;
+2: 8.c+d; 16; 8; 4d+d; 8;
+
+	VS21 "sins of my heart are";
+	VS21 "weak-est of those who";
+	VS21 "sins He will wash a-";
+	VS21 "spir-it is sick with";
+bar
+
+//5
+1: 4.bg tie; 4; 16s; ;
+2: 4.d+g tie; 4; 16s;;
+
+	VS "more,";
+	VS "pray;";
+	VS "way,";
+	VS "sin,";
+invisbar
+newscore
+
+1: 4.s; 4; 16bg; c+a;
+2: 4.s; 4; 16d+g;;
+
+	VS "And I";
+	VS "But I";
+	VS "And the";
+	VS "And I";
+bar
+
+//6
+1 1: 4d+b; 16b bm; a ebm; 8gbm; a ebm; bg;
+1 2: 4s; 8g; 4d; 8s;
+2 1: 4s; 16d+ bm; c+ ebm; 8b bm; c+ ebm; 8s;
+2 2: 4gd+; 8g; 4; 8gd+;
+
+	VS22 "scarce can see for";
+	VS22 "come as He has";
+	VS22 "feet that shrink and";
+	VS22 "scarce can see for";
+bar
+
+//7
+1: 8c+g; 4.; 8r; 16s; ;
+2: 8e+c; 4.e+a-; 8r; 16s; ;
+
+	VS "weep-ing,";
+	VS "bid-den,";
+	VS "fal-ter,";
+	VS "weep-ing,";
+invisbar
+newscore
+
+1: 8s; 4.; 8; 16bg slur; ae;
+2: 8s; 4.; 8; 16d+b- slur; c+c;
+
+	VS 8s; 4.s; 8s; 16; 16; "But I";
+	VS "And_";
+	VS "Shall_";
+	VS 8s; 4.s; 8s; 16; 16; "But the";
+bar
+
+//8
+1: 8.gd; 16af; 8bg; 8.bg bm; 16af ebm; 8af;
+2: 8.bd; 16d+d;8; 4; 8c+d;
+
+	VS21 "knock at the o-pen";
+	VS21 "He will not say me";
+	VS21 "walk thro' the gate of";
+	VS21 "Sav-iour will let me";
+bar
+
+//9
+1 1: 4.g tie; 4; 8s;
+1 2: 4.g tie; 4; 8s;
+2: 4.bg- tie; 4; 8s;
+
+	VS "door.";
+	VS "nay.";
+	VS "day.";
+	VS "in.";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 8bg; 4.s; 4;
+2: 8d+g; 4.s; 4;
+
+
+	VS "I";
+bar
+
+//11
+1: 8.af; 16bg; [up]8c+a; bm; bg ebm; af;
+2: 8.d+d; 16; 8; 4; 8; 
+
+	VS21 "know I am weak and";
+bar
+
+//12
+1: 8bg; [up]4.d+g; 8r; s;
+2: 8d+g; 4.bg; 8r; 8s;
+
+	VS "sin-ful,";
+invisbar
+newscore
+
+1: 8s; 4.; 8; bg;
+2: 8s; 4.; 8; 8d+g;
+
+	VS "It";
+bar
+
+//13
+1 1: 8.d+d; 16c+d; 8bd; b bm; a ebm; g;
+1 2: 8.s; 16; 8; 4g; 8;
+2 1: 8.s; 16a; 8g; d+ bm; c+ ebm; s;
+2 2: 8.bg; 16g; 8g; 4g; 8bg;
+
+	VS22 "comes to me more and";
+
+bar
+
+//14
+1: 4.af tie; 4; 8s;
+2: 4.d+d tie; 4; 8s; 
+
+	VS "more;";
+invisbar
+newscore
+
+1: 4.s; 4; 8af;
+2: 4.s; 4; 8dd+; 
+
+	VS "But";
+bar
+
+//15
+1: 8.bg; 16; 8; c+g; d+g; e+g;
+2: 8.d+g; 16; 8d+fn; c+e; bd; c+c;
+
+	VS "when the dear Sav-iour shall";
+bar
+
+//16
+1: 8d+f; bf; af; 4bg; 8s;
+2: 8ad; d+d; d+d; 4d+g; 8s;
+
+	VS "bid me come in,";
+invisbar
+newscore
+1: 8s; ; ; 4; 8af;
+2: 8s; ; ; 4; 8c+d;
+
+	VS "I'll";
+bar
+
+//17
+1: 8.ge; 16af; 8bg; 8.bg bm; 16af ebm; 8af;
+2: 8.be; 16d+d; 8d+g; 4d+d; 8c+d;
+
+	VS21 "en-ter that o-pen";
+bar
+
+//18
+1 1: 4.g tie; 4; 8s;
+1 2: 4.g tie; 4; 8s;
+2: 4.bg- tie; 4; 8s;
+
+	VS "door.";
+endbar
+

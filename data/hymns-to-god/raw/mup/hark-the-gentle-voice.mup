@@ -1,0 +1,272 @@
+// Mup vs. 7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be 
+// in the Choral Public Domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymns, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church
+//	E. L. Jorgenson, Compiler
+//	Word and Work
+//	Louisville, Kentucky
+//	Copyright 1921
+//	Hymn No.: 75	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 12/14/2023
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (21) "" "Hark! The Gentle Voice" ""
+   title (2)""
+   title (11) "" "\f(TI)Come unto me, all ye that labor and are heavy laden,"""
+   title (11) "" "\f(TI)and I will give you rest. - Matt. 11:28"""
+   title "D - 4 - MI" "" ""
+   title "Mrs. M. B. C. Slade" "" "A. B. Everett"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=0.95
+	scoresep=10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=d
+
+
+staff 2
+	key=d
+	clef=bass
+
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital above 1: 1 "Chorus"; @	
+         define REFRAIN ital above 1: 1 "Refrain"; @
+         define RALL ital above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+//Verse
+
+//1
+1 1: 4df; ; 8; e; d; e;
+1 2: 4s; ; 8; d; ; ;
+2: 4da; ; 8; dg; df; dg;
+
+
+	VS "<1. >-1|Hark! the gen-tle voice of";
+	VS "<2. >-1|Take His yoke, for He is";
+	VS "<3. >-1|Then, His lov-ing, ten-der";
+bar
+
+//2
+1: 4df; fa; gb; fa;
+2: 4da; dd+; ; ; 
+
+	VS "Je-sus fall-eth";
+	VS "meek and low-ly,";
+	VS "voice o-bey-ing,";
+bar
+
+//3
+1: 4fd+; gb; fa; df;
+2: 4da; dd+; ; da;
+
+	VS "Ten-der-ly up-";
+	VS "Bear His bur-den,";
+	VS "Bear His yoke, His";
+bar
+
+//4
+1: 4df; ce; 2;
+2: 4a-a; ; 2;
+
+	VS "on your ear;";
+	VS "to Him turn;";
+	VS "bur-den take;";
+bar
+
+//5
+SIGN(1);
+1 1: 4df; ; 8; e; d; e;
+1 2: 4s; ; 8; d; ; ;
+2: 4da; ; 8; dg; df; dg;
+
+	VS "Sweet His cry of love and";
+	VS "He who call-eth is the";
+	VS "Find the yoke His hand is";
+	BSV "<\f(TX)D. S. -\f(PV) >-4|Ye that la-bor and are";
+bar
+
+//6
+1: 4df; fa; gb; fa;
+2: 4da; dd+; ; ; 
+
+
+	VS "pit-y call-eth;";
+	VS "Mas-ter ho-ly,";
+	VS "on you lay-ing";
+	BSV "heav-y la-den,";
+bar
+
+//7
+1 1: 4s; s; s; 8d bm; e ebm;
+1 2: 4fd+; db; da; d;
+2 1: 4da; 8b bm; c+ ebm; 4fd+; gb;
+2 2: 4s; 4g; 4s; ;
+
+	VS12 "Turn and lis-ten,";
+	VS12 "He will teach if";
+	VS12 "Light and eas-y";
+	BSV12 "Come, and I will";
+bar
+
+//8
+FINE(3);
+1 1: 4df; ce; 2d;
+1 2: 4s; 4s; 2d;
+2 1: 4a; a-a; 2df;
+2 2: 4a; 4s; 2;
+
+	VS "stay and hear.";
+	VS "you will learn.";
+	VS "for His Sake.";
+	BSV21 "give you rest.";
+dblbar
+
+//9
+CHORUS
+1: 4.fd+; 8; 4; fa;
+2: 4.da; 8; 4; dd+;
+
+	VS [c]"Ye that la-bor";
+bar
+
+//10
+1: 4gb; ; 8; ac+; bd+; gb;
+2: 4gd+; ; 8; ; ; ;
+
+	VS "and are heav-y la-den,";
+bar
+
+//11
+1: 4.fa; 8gb; 4fa; df;
+2: 4.dd+; 8; 4; da;
+
+	VS "Lean, up-on your";
+bar
+
+//12
+DS(3)
+1: 4df; ce; 2;
+2: 4a-a; ; 2; 
+
+	VS "dear Lord's breast;";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

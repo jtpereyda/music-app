@@ -1,0 +1,178 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Magnificat 
+//		Published by The New-Church Board Of Education 
+//		No. 3 West Twenty-Ninth St., New York, 
+//		Copyright: 1911
+//		Hymn No.: 79 / 98
+
+// Transcribed by: Ted Gatza, Jr. 07/04/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+   title bold (19) "" "We Thank Thee, Lord! For This Fair Earth" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(18)\f(TI)\:Holy,\ holy,\ holy,\ is\ Jeh\|ovah\ of\ hosts:\ the\ whole earth\ is\ full\ of\ h\|is\ glory.\ -\ Is.\ 6:3"""
+   title (13) "G. E. L. Cotton" " " "F. H. Barthelemon"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 2.s; 8gb- bm; 8ac ebm;
+2 1: 2.s; 4g;
+2 2: 2.s; 4g;
+
+
+			lyrics 1: 2.s; 4; "<1. >-1|We";
+			lyrics 1: 2.s; 4; "<2. >-1|Thine";
+			lyrics 1: 2.s; 4; "<3. >-1|Yet";
+			lyrics 1: 2.s; 4; "<4. >-1|So";
+bar
+//2
+1 1: 4bd; 4bd#; 4be; 8c+ bm; 8b ebm;
+1 2: 4s; 4s; 4s; 4e;
+2 1: 4g; 4af; 4ge; 4gc;
+2 2: 4g; 4s; 4s; 4s; 
+
+			lyrics 1: 4; 4; 4; 4; "thank Thee, Lord! for";
+			lyrics 1: 4; 4; 4; 4; "are the flow'rs that";
+			lyrics 1: 4; 4; 4; 4; "teach us still how";
+			lyrics 1: 4; 4; 4; 4; "while we gaze with";
+bar
+//3
+1: 4af; 4ac#; 4ad; 4d+f;
+2: 4fd; 4ge; 4af; 4ad;
+
+			lyrics 1: "this fair earth, The";
+			lyrics 1: "clothe the ground, The";
+			lyrics 1: "far more fair, More";
+			lyrics 1: "thought-ful eye On";
+bar
+//4
+1 1: 4c#+g; 4d+d; 8c+ bm; 8b ebm; 8a bm; 8g ebm;
+1 2: 4s; 4s; 4d; 4e;
+2 1: 4ge; 4af; 4g; 4be;
+2 2: 4s; 4s; 4g; 4s;
+
+			lyrics 1: 4; 4; 4; 4; "glit'-ring sky the";
+			lyrics 1: 4; 4; 4; 4; "trees that wave their";
+			lyrics 1: 4; 4; 4; 4; "glor-ious, Fa-ther";
+			lyrics 1: 4; 4; 4; 4; "all the gifts Thy";
+
+bar
+//5
+1 1: 4fd; 4ec#; 4d; 8d bm; 8e ebm;
+1 2: 4s; 4s; 4d; 4d;
+2 1: 4aa-; 4ga-; 4fd; 8f bm; 8g ebm;
+2 2: 4s; 4s; 4s; 4d;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: 4; 4; 4; 4; "sil-ver sea; For";
+			lyrics 1: 4; 4; 4; 4; "arms a-bove, The";
+			lyrics 1: 4; 4; 4; 4; "in Thy sight, Is";
+			lyrics 1: 4; 4; 4; 4; "love has giv'n, Help";
+bar
+newscore
+//6
+1 1: 4f; 4g; 4ad; 8f bm; 8g ebm;
+1 2: 4.d; 8c#; 4s; 4f;
+2: 4ad; 4ae; 4af; 4ad;
+
+			lyrics 1: 4; 4; 4; 4; "all their beau-ty,";
+			lyrics 1: 4; 4; 4; 4; "hills that gird our";
+			lyrics 1: 4; 4; 4; 4; "one pure deed, one";
+			lyrics 1: 4; 4; 4; 4; "us in Thee to";
+bar
+//7
+1: 4ae; 4bd; 4c+c; 4bd;
+2: 4ac; 4g#b-; 4aa-; 4gnb-;
+
+			lyrics 1: "all their worth, Their";
+			lyrics 1: "dwell-ings 'round, As";
+			lyrics 1: "ho-ly pray'r, One";
+			lyrics 1: "live and die, By";
+bar
+newscore
+//8
+1 1: 4ec; 4fc; 8g bm; 8b ebm; 8d+ bm; 8c+ ebm;
+1 2: 4s; 4s; 4d; 4g;
+2: 4gc; 4aa-; 4gb-; 4ge;
+
+			lyrics 1: 4; 4; 4; 4; "light and glo-ry,";
+			lyrics 1: 4; 4; 4; 4; "Thou didst gird Thine";
+			lyrics 1: 4; 4; 4; 4; "heart that owns Thy";
+			lyrics 1: 4; 4; 4; 4; "Thee to rise from";
+bar
+//9
+1: 4bg; 4af; 4gd; 4s;
+2 1: 8g bm; 8b ebm; 8d+ bm; 8c+ ebm; 4bgg-; 4s;
+2 2: 4d; 4d; 4s; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "come from Thee.";
+			lyrics 1: "own with love.";
+			lyrics 1: "Spir-it's might.";
+			lyrics 1: "earth to heav'n.";
+endbar
+//10
+1: 1gc;
+2: 1ec;
+			lyrics 1: "<>";
+			lyrics 1: "<>";
+			lyrics 1: "<>";
+			lyrics 1: "A-";
+bar
+//11
+1: 1gb-;
+2: 1dg-;
+
+			lyrics 1: "<>";
+			lyrics 1: "<>";
+			lyrics 1: "<>";
+			lyrics 1: "man.";
+endbar

@@ -1,0 +1,251 @@
+// !Mup vs. 6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Church and Suday School Hymnal
+//	Complied and Published under the direction of a 
+//	committee appoiinted by Mennonite Conferences
+//	J.D. Dunk, Musical Editor
+//	Mennonite Publishing House
+//	Scottsdale Penn
+//	copyright 1902
+//  	by J.S. Shoemaker, 
+//	Freefort, Ill.
+//	Hymn No. 214
+
+// Transcribed by:
+//	Ted Gatza, Jr. 11/24/2009
+
+// Revisions:
+//	02/24/2022
+//	09/14/2022
+
+// HymnsToGod.org
+
+// ====================
+// Letter Page Format
+top
+
+        title bold (19) "" "Come Just As You Are" ""
+        title (4)""
+        title (11) "" "\f(TI)Consider mine affliction and my travail;"""
+        title (11) "" "\f(TI)And forgive all my sins. - Ps. 69:18"""
+        title (11) "F-3-MI" "" ""
+        title (13) "Elisha A. Hoffman" " " "J. Henry Showalter, 1899"	
+ 
+bottom
+
+        title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,20
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+// ====================
+
+staffs=2
+	time=3/4	
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+//Set Midi
+       midi all: 0 "tempo=75";
+
+// ====================
+
+1: 4s; 4s; 8.af; 16af;
+2: 4s; 4s; 8.c+f; 16c+f;
+
+	VS "<1. >-1|Shall I";
+	VS "<2. >-1|Shall I";
+	VS "<3. >-1|Shall I";
+	VS "<4. >-1|Shall I";
+bar
+
+//2
+1: 4.af; 8af; 8.bf; 16bf;
+2: 4.c+f; 8c+f; 8.d+f; 16d+f;
+
+	VS "come just as I";
+	VS "come vile as I";
+	VS "come with all my";
+	VS "come, tho' far a-";
+bar
+
+//3
+1: 2af; 8.fc; 16fc;
+2: 2c+f; 8.af; 16af;
+
+	VS "am, Come with";
+	VS "am, And bend";
+	VS "fear, Lest my";
+	VS "way From the";
+bar
+
+//4
+1: 4.fd; 8fd; 8.ge; 16ge;
+2: 4.ad; 8ad; 8.c+c; 16c+c;
+
+	VS "all my guilt and";
+	VS "low at Je-sus'";
+	VS "sins have been too";
+	VS "lov-ing Shep-herd's";
+bar
+
+//5
+1: 2af; 8.ac; 16bc;
+2 1: 2c+f; 8.f; 16g;
+2 2: 2s; 8.f; 16f;
+
+	VS "sin? If I";
+	VS "feet? Shall I";
+	VS "great? Shall I";
+	VS "fold? Will he";
+bar
+
+//6
+1: 4.c+f; 8c+f; 8.d+f; 16d+f;
+2: 4.af; 8af; 8.bb-; 16bd;
+
+	VS "o-pen wide my";
+	VS "plead his pard'-ning";
+	VS "break thro' all my";
+	VS "bless me if I";
+bar
+
+//7
+1: 2c+f; 8.af; 16af;
+2: 2af; 8.c+f; 16c+f;
+
+	VS "heart, Will he";
+	VS "grace, And his";
+	VS "doubts, To sweet";
+	VS "firm To his";
+bar
+
+//8
+1: 2ge; 4bnf;
+2: 2c+g; 4d+g;
+
+	VS "en-ter";
+	VS "love en-";
+	VS "mer-cy's";
+	VS "prom-ise";
+bar
+
+//9
+1: 2c+e; 4s;
+2: 2c+c; 4s;
+
+	VS "in?";
+	VS "treat?";
+	VS "gate?";
+	VS "hold?";
+dblbar
+
+//10
+REFRAIN
+1: 4s; 4s; 8.c+f; 16c+f;
+2: 4s; 4s; 8.af; 16af;
+
+	VS [c]"As you";
+bar
+
+//11
+1: 4.f+a; 8f+a; 8.e+c+; 16d+b;
+2: 4.c+f; 8c+f; 8.d+f; 16e+f;
+
+	VS [c]"are, just as you";
+bar
+
+//12
+1: 2c+a; 8.c+f; 16c+f;
+2: 2f+f; 8.af; 16af;
+
+	VS "are Come to";
+bar
+
+//13
+1: 4.d+f; 8d+f; 8.c+e; 16bnd;
+2 1: 4.ad; 8ad; 8.g; 16g;
+2 2: 4.s; 8s; 8.g; 16g;
+
+	VS "Je-sus, come to-";
+bar
+
+//14
+1: 2c+e; 8.c+f; 16c+f;
+2: 2gc; 8.af; 16af;
+
+	VS "day; He will";
+bar
+
+//15
+1: 4.f+a; 8f+a; 8.e+c+; 16d+b;
+2: 4.c+f; 8c+f; 8.d+f; 16e+f;
+
+	VS "kind-ly wel-come";
+bar
+//16
+1: 2c+a; 8.c+f; 16bg;
+2: 2f+f; 8.c+a-; 16d+b-;
+
+	VS "you, Take your";
+bar
+
+//17
+1: 2af; 4gc;
+2: 2c+c; 4bc;
+
+	VS "sins a-";
+bar
+
+//18
+1: 2fc; 4s;
+2: 2aff-; 4s;
+
+	VS "way.";
+endbar
+			

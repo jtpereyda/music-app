@@ -1,0 +1,328 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source:
+//	Glory Songs of Grace and Glory
+//	Edition 1
+//	W. S. Weeden
+//	J. W. Van De Venter
+//	Leonard Weaver
+//	Sebring Publishing Co.
+//	New York, 441 Pearl St., New York City, New York
+//	Pittsburg, 806 Lewis Block
+//	Copyright 1896
+//	Hymn No. 27 (PDF page 31)
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 01/30/2023
+
+// Revisions:
+	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sweetly Saved" ""
+   title (2)""
+   title (11)"" "\f(TI)For we are a sweet savor of Christ unto God, in them" ""
+   title (11)"" "\f(TI)that are saved, and in them that perish; - 2 Cor. 2:15" ""
+   title (11) "E - 4 - SOL" "" ""
+   title (13) "B. T. Yohe, (arr.)" "" "R. C. Ward"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+staffs=2
+	time=4/4	
+	key=e
+
+
+staff 2
+	key=e
+	clef=bass
+
+//==========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+	define VS lyrics between 1&2: @
+        define VS1 lyrics between 1&2 using 1: @
+        define VS12 lyrics between 1&2 using 1 2: @
+        define VS21 lyrics between 1&2 using 2 1:@
+        define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+        define BVS lyrics below 2: @
+        define BVS1 lyrics below 2 using 1: @
+        define BVS12 lyrics below 2 using 1 2: @
+        define BVS21 lyrics below 2 using 2 1:@
+        define BVS22 lyrics below 2 using 2 2:@ 
+
+   //Chorus - Refrain
+	define CHORUS ital (13) above 1: 1 "Chorus"; @	
+	define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+      //Trebble Cleff
+	define FST(COUNT)
+        mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+        mussym (10) below 1: COUNT "uferm"; @
+ 
+      //Bass Cleff
+        define FBT(COUNT)
+        mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+        mussym (10) below 2: COUNT "uferm"; @
+
+   //DS Ending
+	define DS(COUNT)
+	ital (13) above 1: COUNT "D.S.";  @
+
+	define SIGN(COUNT)
+	mussym (10) above 1: COUNT "sign"; @
+
+	define FINE(COUNT)
+	ital (13) above 1: COUNT "Fine";  @
+	
+//========================
+
+music
+
+//========================
+
+// set midi
+	midi all: 0 "temp=65";
+
+//=========================
+
+// Verse 1
+
+//1
+1 1: 2.s; 8b-; b-e;
+1 2: 2.s; 8b-; s;
+2: 2.s; 8eg; ;
+
+	VS1 "<1. >-1|There is";
+	VS1 "<2. >-1|If we";
+	VS1 "<3. >-1|Earth-ly";
+bar
+
+//2
+1: 4s; 8.eg; 16fa; 8eg; b-f; 4b-e;
+2: 4s; 8.eb; 16; 8; ea; 4eg;
+
+	VS1 "noth-ing in this life";
+	VS1 "gain the wealth of gold,";
+	VS1 "joys are for a day,";
+invisbar
+
+1: 8b-e; eg; 2.s;
+2: 8eg; eb; 2.s;
+
+	VS1 "That is";
+	VS1 "And much";
+	VS1 "Earth-ly";
+bar
+
+//3
+1: 4s; 8.gb; 16ac+; 8gb; fa; 4eg;
+2: 4s; 8.ee+; 16; 8; eb; 4;
+
+	VS1 "worth the toil and strife,";
+	VS1 "hon-or, fame un-told,";
+	VS1 "rich-es pass a-way;";
+invisbar
+
+1: 8gb; ge+; 2.s;
+2: 8eb; ; 2.s;
+
+	VS1 "But to";
+	VS1 "But have";
+	VS1 "But the";
+bar
+
+//4
+1 1: 8.bd+; 16ac+; 8gb; fa; 8g bm; e ebm; 8.eb; 16eg;
+1 2: 8.s; 16; 8; 8; 4e; 8.s; 16;
+2 1: 8.s; 16; 8; 8; 8b bm; g ebm; 8.s; 16;
+2 2: 8.ee+; 16; 8; eb; 4e; 8.gb; 16eb;
+
+	VS22 "know that we are saved, sweet-ly";
+	VS22 "failed to lay our treas-ures a-";
+	VS22 "peace that fills my soul, is to";
+bar
+
+//5
+
+1: 4s; 2.df;
+2: 4s; 2.b-b;
+
+	VS1 "saved;";
+	VS1 "bove;";
+	VS1 "know;";
+invisbar
+
+
+1 1: 8b-; b-e; 2.s;
+1 2: 8b-; s; 2.s;
+2: 8eg; ; 2.s;
+
+	VS1 "There is";
+	VS1 "He will";
+	VS1 "That the";
+bar
+
+//6
+
+SIGN (2)
+1: 4s; 8.eg; 16fa; 8eg; b-f; 4b-e;
+2: 4s; 8.eb; 16; 8; ea; 4eg;
+
+	VS1 "noth-ing that gives peace,";
+	VS1 "say, \"I know ye not,";
+	VS1 "love of God is sure,";
+	BVS1 "<\f(TI)D.S. - \f(PV)>|have His blood ap-plied,";
+invisbar
+
+ 
+1: 8b-e; eg; 2.s;
+2: 8eg; eb; 2.s;
+
+	VS1 "Caus-ing";
+	VS1 "There is";
+	VS1 "And for";
+	BVS1 "Glo-ry";
+bar
+
+//7
+1: 4s; 8.gb; 16ac+; 8gb; fa; 4eg;
+2: 4s; 8.ee+; 16; 8; eb; 4;
+
+	VS1 "pain and strife to cease,";
+	VS1 "noth-ing good you've wrought,";
+	VS1 "ev-er will en-dure,";
+	BVS1 "to the Cru-ci-fied!";
+invisbar
+
+
+1: 8gb; ge+; 2.s;
+2: 8ee+; eb; 2.s;
+
+	VS1 "But to";
+	VS1 "But re-";
+	VS1 "If I'm";
+	BVS1 "I shall";
+bar
+
+//8
+1: 8.ed+; 16ec+; 8e#b; fa; 4eng; 8df; b-f;
+2: 8.a-c+; 16; 8g-c+; a-c+; 4b-b; 8b-a; ; 
+
+	VS1 "walk with-in the way he has";
+	VS1 "rused my of-fered mer-cy and";
+	VS1 "faith-ful I to Je-sus will";
+	BVS1 "live and reign with Him o-ver";
+bar
+
+//9
+FINE(1)
+1: 2.b-e; 4s;
+2: 2.eg; 4s;
+
+	VS1 "paved.";
+	VS1 "love.\"";
+	VS1 "go.";
+	BVS1 "there.";
+dblbar
+
+//10
+CHORUS
+1: 2.s; 8gb; ge+;
+2: 2.s; 8ee+; eb;
+
+	VS1 [c]"Oh, I";
+bar
+
+//11
+1: 4s; 8.fd+; 16; 8; ; 4;
+2 1: 4s; 8.b; 16; 8; ; 4;
+2 2: 4s; 8.b; 16; 8; ; 4;
+
+	VS1 "know I'm sweet-ly saved,";
+invisbar
+
+
+1: 8ac+; ad+; 2.s;
+2: 8b-b; ; 2.s;
+
+	VS1 "For His";
+bar
+
+//12
+1: 4s; 8.ge+; 16gb; 8; ; 4;
+2: 4s; 8.eb; 16ee+; 8; ; 4;
+
+	VS1 "life He free-ly gave,";
+invisbar
+
+1: 8eg; ; 2.s;
+2: 8eb; ; 2.s;
+
+	VS1 "Then the";
+bar
+
+//13
+1: 8.df; 16eg; 8ea#; db; fc+; fd+; fe+; ea;
+2: 8.fb; 16; 8fc+; fb; fa#; fb; fc+; ;
+
+	VS1 "life of bliss im-mor-tal I shall";
+bar
+
+//14
+DS (5)
+1 1: 4s; 2.db; 
+2 1: 4s; 2.b;
+2 2: 4s; 4b; 8.; 16c+; 8b bm; a ebm;
+
+	VS1 "share;";
+	VS 4s; 4s; 8.; 16; 4; "I shall share,";
+invisbar
+
+1 1: 8e; df; 2.s;
+1 2: 8e; s; 2.s;
+2: 8gb; fb; 2.s;
+
+	VS1 "And I";
+endbar

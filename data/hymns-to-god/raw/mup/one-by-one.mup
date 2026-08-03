@@ -1,0 +1,252 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom of Song
+//		A Collection of Songs
+//		For Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited By T. M. Bowdish
+//		Copyrigh by the W. W. Whitney Co.
+//		Entered at stationer's Hall, London, England
+//		Copyright 1900
+//		Hymn No.: 34
+//		
+// Transcribed by: Ted Gatza, Jr. 11/17/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "One By One" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - MI" "\s(17)\f(TI)\:and\ he\ shall\ wipe\ away\ every\ tear\ fr\|om\ their\ eyes;\ and\ death\ shall\ be\ no more;\ neither\ shall\ there\ be\ mou\|rning,\ nor\ crying,...\ -\ Rev.\ 21:4 " ""   
+   title (13) "Mrs. W. A. Bowdish" "" "T. M. Bowdish"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1: 8.ge; 16af; 2s;
+2: 8.be; 16be; 2s;
+
+			VERSE "<1. >-1|One by";
+			VERSE "<2. >-1|One by";
+			VERSE "<3. >-1|One by";
+			VERSE "<4. >-1|There we";
+bar
+//2
+1: 4.bg; 8ge; 8.e+e; 16d+e;
+2: 4.e+e; 8be; 8.c+e; 16be;
+
+			VERSE "one the days are";
+			VERSE "one our tri-als";
+			VERSE "one we're pass-ing";
+			VERSE "soon shall be u-";
+bar
+//3
+1 1: 4c+e; be; 8.ge; 16e;
+1 2: 4s;; 8.; 16e;
+2: 4ae; ge; 8.be; 16ge;
+
+			VERSE "pass-ing, One by";
+			VERSE "end-ed, One by";
+			VERSE "o-ver, One by";
+			VERSE "nit-ed, Soon we'll";
+bar
+//4
+1: 4.c+e; 8be; 8.; 16ge;
+2 1: 4.a; 8bg; 8.; 16be;
+2 2: 4.a; 8s; 8.; 16;
+
+			VERSE "one the mo-ments";
+			VERSE "one our cares are";
+			VERSE "one we cross the";
+			VERSE "reach the gold-en";
+bar
+//5
+1: 2fd; 8.ge; 16af;
+2: 2bb-; 8.be; 16;
+
+			VERSE "go, Which re-";
+			VERSE "done; Soon will";
+			VERSE "tide, To that";
+			VERSE "shore, In our";
+bar
+//6
+1: 4.bg; 8e+g; 8.d+b; 16c+a;
+2: 4.e+e; 8be; 8.e+e; 16e+e;
+
+			VERSE "mind us time is";
+			VERSE "cease all earth-ly";
+			VERSE "bless-ed hap-py";
+			VERSE "pre-cious Sav-iour's";
+bar
+//7
+1: 4c+a; bg; 8.; 16c+g;
+2: 4e+e;; 8.be; 16;
+
+			VERSE "fleet-ing From all";
+			VERSE "la-bor, And our";
+			VERSE "cit-y, Found up-";
+			VERSE "pres-ence, We shall";
+bar
+//8
+1: 4.d+f; 8e+f; 8.d+f; 16c+an;
+2: 4.bf; 8c+f; 8.bf; 16 e+f;
+
+			VERSE "things which dwell be-";
+			VERSE "earth-ly course be";
+			VERSE "on the oth-er";
+			VERSE "reign for-ev-er-";
+bar
+//9
+1 1: 2b; 4s;
+1 2: 4b slur; a&; s;
+2: 2d+b-; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			VERSE "low.";
+			VERSE "run";
+			VERSE "side.";
+			VERSE "more.";
+dblbar hidechanges
+score time=4/4
+music
+midi all: 0 "tempo=80";
+
+//10
+1: {8bg bm; c+a ebm; [up]d+a;}3; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE {4; 8;}3; 2.s; [c]"One by";
+bar
+//11
+1 1: 2e+ tie; 8.; 16bg; {8ge bm; af ebm; 8bg;}3;
+1 2: 8.g; 16a; 8.g; 16f; 8.e; 16s; 4;
+2: 8.r; 16c+e; 8.be; 16ae; 8.ge; 16r; 4r;
+
+			VERSE 2; 8.s; 16; {4; 8;}3; "one_ the days are";
+			VERSE 8.s; 16; 8.; 16; 8.; 16s; 4s; "yes, one by one";
+bar
+//12
+1: 2c+a; 4e+a; 4s;
+2: 8.r; 16e+a; 8.; 16; 8.c+a; 16; 4s;
+
+			VERSE "pass-ing,";
+			VERSE 8.s; 16; 8.; 16; 8.; 16; 4s; "the days are pass-ing,";
+dblbar
+newscore
+//13
+1: {[up]8c+a bm; d+b ebm; [up]e+c+;}3; 2.s;
+2: 4r; 2.s;
+
+			VERSE {4; 8;}3; 2.s; "One by";
+bar
+//14
+1 1: 2d+ tie; 8.; 16c+a; {8fd bm; ge ebm; af;}3;
+1 2: 8.b; 16f; 8.; 16g; 8.a; 16s; {8s;;;}3;
+2: 8.r; 16bb-; 8.ab-; 16gb-; 8.fb-; 16r; 4r;
+
+			VERSE 2; 8.s; 16; {4; 8;}3; "one_ we cross the";
+			VERSE 8.s; 16; 8.; 16; 8.; 16s; 4s; "yes, one by one";
+bar
+//15
+1 1: 2b tie; 4; 4s;
+1 2: 8.g; 16e; 8.g; 16f; 4e; 4s;
+2: 8.s; 16ge; 8.be; 16ae; 4ge; 4s;
+
+			VERSE "tide,_";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "we cross the tide,";
+dblbar
+newscore
+//16
+1: {8bg bm; c+a ebm; [up]d+a;}3; 2.s;
+2: 4r; 2.s;
+
+			
+			VERSE {4; 8;}3; 2.s; "There will";
+bar
+//17
+1 1: 2e+ tie; 8.; 16e+g; {[up]8f+a bm; e+g ebm; bg;}3;
+1 2: 8.g; 16; 8.b; 16a; 8.g; 16s; 4s;
+2: 8.r; 16be; 8.ge; 16c+e; 8.be; 16r; 4r;
+
+			VERSE 2; 8.s; 16; {4;8;}3; "be_ no pain nor";
+			VERSE 8.s; 16; 8.; 16; 8.; 16s; 4s; "O there will be";
+
+bar
+//18
+1: 2c+a; 4e+a; 4s;
+2: 8.r; 16e+a; 8.; 16; 8.c+a; 16; 4s;
+
+			VERSE "sor-row";
+			VERSE 8.s; 16; 8.; 16; 8.; 16; 4s; "no pain nor sor-row";
+dblbar
+newscore
+//19
+1: 8.d+b; 16c+a; 2.s;
+2: 4r; 2.s; 
+
+			VERSE "When we";
+bar
+//20
+1 1: 2b tie; 8.; 16ad; 8.ge; 16fd;
+1 2: 8.g; 16e; 8.f; 16e; 8.d; 16s; 8.s; 16s;
+2: 8.r; 16gb-; 8.ab-; 16gb-; 8.fb-; 16bb-; 8.; 16ab-;
+
+			VERSE "reach_ the oth-er";
+			VERSE 8.s; 16; 8.; 16; 8.; 16s; 8.s; 16s; "When we shall reach";
+bar
+//21
+1 1: 2.e; 4s;
+1 2: 8.e; 16b-; 8.c; 16; 4b-; 4s;
+2 1: 8.g; 16g; 8.a; 16a; 4g; 4s;
+2 2: 2.e; 4s; 
+
+			VERSE "side.";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "the oth-er side.";
+endbar

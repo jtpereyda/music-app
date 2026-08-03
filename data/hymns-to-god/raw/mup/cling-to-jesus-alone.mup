@@ -1,0 +1,210 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1908
+//		Hymn No.: 9
+//		
+// Transcribed by: Ted Gatza, Jr. 10/12/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Cling To Jesus Alone" ""
+   title (2)""
+   title (11) "G - 2 - MI" "\s(17)\f(TI)\:If\ any\ man\ would\ come\ afte\|r\ me,\ let\ him\ deny\ himself, and\ take\ up\ his\ cross,\ and\|\ follow\ me.\ -\ Matt.\ 16:24" ""   
+   title (13) "G. M. Bills" "" "M. L. McPhail, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,40
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8bg; ; ; ; ad; gd;
+2: 8d+g; ; ; ; c+g; bg;
+
+
+
+			VERSE "<1. >-1|Cling-ing to Je-sus a-";
+			VERSE "<2. >-1|World-ly al-li-an-ces";
+			VERSE "<3. >-1|Fol-low-ing Je-sus I";
+			VERSE "<4. >-1|Hum-bly I keep in the";
+			VERSE "<5. >-1|Life will be sweet-er by";
+
+bar
+//2
+1 1: 4d; 8ec#; 4.d;
+1 2: 4d; 8s; 4.s;
+2 1: 4bg; 8a#; 4.bg;
+2 2: 4s; 8g; 4.s;
+
+			VERSE "lone is sweet,";
+			VERSE "I re-sign,";
+			VERSE "know is best,";
+			VERSE "path He trod,";
+			VERSE "far than now,";
+bar
+//3
+1 1: 8d; gd; bg; 4.af;
+1 2: 8d; s; s; 4.s; 
+2: 8bg; ; d+g; 4.d+d;
+
+			VERSE "Je-sus a-lone,";
+			VERSE "Je-sus a-lone,";
+			VERSE "Je-sus a-lone,";
+			VERSE "Je-sus a-lone,";
+			VERSE "Je-sus a-lone,";
+			
+bar
+newscore
+//4
+1: 8af; d+f; c+a; 4.bg;
+2: 8d+d; ; ; 4.d+g;
+
+			VERSE "Je-sus a-lone!";
+			VERSE "Je-sus a-lone!";
+			VERSE "Je-sus a-lone!";
+			VERSE "Je-sus a-lone!";
+			VERSE "Je-sus a-lone!";
+bar
+//5
+1: 8bg; ; ; ; ad; gd;
+2: 8d+g; ; ; ; c+g; bg;
+
+			VERSE "Wis-dom I learn at the";
+			VERSE "Pleas-ures of fol-ly can-";
+			VERSE "Toil-ing as-sur-eth e-";
+			VERSE "Walk-ing with Je-sus I";
+			VERSE "When im-mor-tal-i-ty";
+bar
+//6
+1 1: 4d; 8ec#; 4.d;
+1 2: 4d; 8s; 4.d;
+2 1: 4bg; 8a#; 4.bg;
+2 2: 4s; 8g; 4.s;
+
+			VERSE "Mas-ter's feet,";
+			VERSE "not be mine,";
+			VERSE "ter-nal rest,";
+			VERSE "walk with God,";
+			VERSE "crowns my brow,";
+bar
+newscore
+//7
+1 1: 8d; fc; af; c+f; bf; ad;
+1 2: 8c; s; ; ; ; ; 
+2: 8fd; ad; c+d; e+d; d+d; c+d;
+
+			VERSE "Cling-ing to Je-sus a-";
+//			VERSE "Cling-ing to Je-sus a-";
+//			VERSE "Cling-ing to Je-sus a-";
+//			VERSE "Cling-ing to Je-sus a-";
+//			VERSE "Cling-ing to Je-sus a-";
+bar
+//8
+1: 4.gd tie; 4gd; 8r;
+2: 4.bgg-tie; 4bgg-; 8r;
+
+			VERSE "lone.";
+//			VERSE "lone.";
+//			VERSE "lone.";
+//			VERSE "lone.";
+//			VERSE "lone.";
+dblbar
+//9
+1: 8d+b; ; ; ; c+a; bg;
+2: 8d+g; ; ; ; ; ; 
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Glo-ry and hon-or and";
+bar
+//10
+1: 4c+a; 8c+a; 4.af;
+2: 4d+d; 8 ; 4. ;
+
+			VERSE [c]"love un-told,";
+bar
+//11
+1: 8c+a; ; ; bm; d+b ebm; c+a;
+2: 8d+d; ; ; 4 ; 8 ;
+
+			VERSE 8; ; ; 4; 8; [c]"Ev-er shall be my";
+bar
+//12
+1: 4.bg tie; 4 ; 8r;
+2: 4.d+g tie; 4 ; 8r;
+
+			VERSE 4.; 4s; 8s; [c]"own;";
+bar
+//13
+1: 8bg; ; ; ; c+g; d+g;
+2: 8d+g; ; ; d+fn; c+e; bd;
+
+			VERSE "When I am walk-ing the";
+bar
+//14
+1: 4e+g; 8 ; 4.d+g;
+2: 4c+c; 8 ; 4.bg;
+
+			VERSE "streets of gold,";
+bar
+//15
+1: 8.d+b; 16c+a; 8bg; 16c+a; 8.bg; 8ad;
+2: 8.d+d; 16 ; 8 ; 16 ; 8. ; 8c+d;
+
+			VERSE "Cling-ing to Je-sus a-";
+bar
+//16
+1: 4.gd tie; 4 ; 8r;
+2: 4.bgg- tie; 4 ; 8r;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "lone.";
+endbar

@@ -1,0 +1,235 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 5 and 6 Combined
+//		for use in Gospel Meeitngs and
+//		Other Religious Services
+//		by Ira. D. Sankey, James McGranaham 
+//		Geo C. Stebbins
+//		Published by:
+//		The Biglow & Main Co.
+//		76 East Ninth St., New York
+//		215 Wabash Ave., Chicago
+//		The John Church Co.,
+//		74 West Fourth Street, Cincinnati
+//		13 East 16th Street, New York
+//		Copyright 1892
+//		Hymn No.: 8
+
+// Transcribed by: Ted Gatza, Jr. 11/06/2009; rev. 03/13/13
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+
+   title bold (19) " " "O Child of God" ""
+   title (4)""
+   title (11) "F - 4 - SOL" "\s(17)\f(TI)\:Joy\ cometh\ in\ the\ morning\ -\ Ps.\ 30:5 \(space)"""
+   title (13) "Fanny J. Crosby" " " "Ira D. Sankey"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+// ***********************************
+
+staffs=2
+	time=4/4	
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+music
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4s; 4s; 4s; 4c+f;
+2: 4s; 4s; 4s; 4af;
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|O";
+			VERSE "<3. >-1|O";
+bar
+//2
+1: 4.c+f; 8bf; 4af; 4ge;
+2: 4.af; 8d+f; 4c+f; 4bf;
+
+			VERSE "child of God, wait";
+			VERSE "child of God, He";
+			VERSE "child of God, How";
+bar
+//3
+1 1: 4.f; 8a-c; 4a-c; 4bc;
+1 2: 4.f; 8s; 4s; 4s;
+2 1: 4.af; 8f; 4f; 4ge;
+2 2: 4.s; 8f; 4f; 4s; 
+
+			VERSE "pa-tient-ly When";
+			VERSE "lov-eth thee, And";
+			VERSE "peace-ful-ly He";
+bar
+
+//4
+1: 4ac; 4gd; 4db-; 4ec;
+2 1: 4f; 4gb-; 4gc; 4bc;
+2 2: 4f; 4s; 4s; 4s;
+
+			VERSE "dark thy path may";
+			VERSE "thou art all His";
+			VERSE "calms thy fears to";
+bar
+
+//5
+1: 2.fc; 4c+f;
+2: 2.af; 4af;
+
+			VERSE "be, And";
+			VERSE "own, With";
+			VERSE "rest, And";
+
+bar
+//6
+1: 4.c+f; 8bf; 4af; 4ge;
+2 1: 4.af; 8d+f; 4c+f; 4c+;
+2 2: 4.s; 8s; 4s; 4b;
+
+			VERSE "let thy faith lean";
+			VERSE "gen-tle hand He";
+			VERSE "draws thee up-ward";
+bar
+//7
+1 1: 4.f; 16g bm; 16a ebm; 4c; 4bc;
+1 2: 4f; 4c; 4c; 4s;
+2: 4c+a; 4af; 4ge; 4ec;
+
+			VERSE 4; 4; 4; 4; "trust-ing-ly On";
+			VERSE 4; 4; 4; 4; "lead-eth thee, Thou";
+			VERSE 4; 4; 4; 4; "ten-der-ly, Where";
+bar
+
+//8
+1: 4ac; 4gd; 4db; 4ec;
+2 1: 4f; 4gb-; 4gc; 4bc;
+
+			VERSE "Him who cares for";
+			VERSE "dost not walk a-";
+			VERSE "dwell the pure and";
+bar
+//9
+1: 2. fc; 4af;
+2: 2.af; 4c+f;
+
+			VERSE "thee; And";
+			VERSE "lone; And";
+			VERSE "blest; And";
+
+bar
+//10
+1: 4.af; 8ge; 4ge; 4c+g;
+2: 4.c+c; 8c+c; 4c+c; 4c+e;
+		
+			VERSE "though the clouds hang";
+			VERSE "though thou watch-est";
+			VERSE "He who bend-eth";
+bar
+//11
+1: 4.c+f; 8bnf; 4bf; 4s;
+2: 4.d+g; 8d+g; 4d+g; 4s;
+
+			VERSE "drear-i-ly";
+			VERSE "wea-ri-ly";
+			VERSE "si-lent-ly";
+invisbar
+newscore
+
+1: 4.s; 8s; 4s; 4e+f;
+2: 4.s; 8s; 4s; 4bng;
+
+			VERSE "Up-";
+			VERSE "The";
+			VERSE "A-";
+
+bar
+//12
+1: 4e+f; 4d+f; 4af; 4bnf;
+2: 4bng; 4bg; 4c+g; 4d+g;
+
+			VERSE "on the brow of";
+			VERSE "long and storm-y";
+			VERSE "bove the gloom of";
+bar
+//13
+1: 2.c+e; 4c+e;
+2: 2.c+c; 4bc;
+
+			VERSE "night, Yet";
+			VERSE "night, Yet";
+			VERSE "night, Will";
+
+bar
+//14
+1: 4.c+f; 8bf; 4af; 4gc;
+2 1: 4.af; 8d+f; 4c+f; 4c+;
+2 2: 4.s; 8s; 4s; 4b;
+
+			VERSE "in the morn-ing";
+			VERSE "in the morn-ing";
+			VERSE "take thee home where";
+bar
+newscore
+//15
+1 1: 4.f; 16g bm; 16a ebm; 4c; 4bc;
+1 2: 4c; 4c; 4c; 4s;
+2: 4c+a; 4af; 4eg; 4ec;
+
+			VERSE 4; 4; 4; 4; "joy will come, And";
+			VERSE 4; 4; 4; 4; "joy will come, And";
+			VERSE 4; 4; 4; 4; "end-less joy Shall";
+bar
+//16
+1: 4ac; 4gd; 4db-; 4ec;
+2 1: 4f; 4gb-; 4gc; 4bc;
+2 2: 4f; 4s; 4s; 4s; 
+
+			VERSE "fill my soul with";
+			VERSE "fill my soul with";
+			VERSE "fill my soul with";
+bar
+//17
+1: 2.fc; 4s;
+2: 2.af-; 4s;
+
+			VERSE "light.";
+			VERSE "light.";
+			VERSE "light.";
+endbar

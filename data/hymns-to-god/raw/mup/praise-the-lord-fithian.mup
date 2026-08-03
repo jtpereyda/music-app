@@ -1,0 +1,207 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Melodious Sonnets
+//		For Sacred Service
+//		By John R. Sweney and Wm. J. Kirkpatrick
+//		Published by: John J. Hood
+//		1018 Arch St. Philadelphia
+//		Copyright: 1885
+//		Hymn No.: 70
+
+// Transcribed by: Ted Gatza, Jr. 06/17/2010; rev. 11/13/13
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Praise the Lord" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - MI" "\s(17)\f(TI)\:Oh\ that\ men\ would\ praise\ Jehovah\|\ for\ his\ lovingkindness,\ And\ for his\ wonderful\ works\ to\ the\ ch\|ildren\ of\ men!\ -\ Ps.\ 107:8" ""
+   title (13) "W. P. Mackay" " " "P. G. Fithian, 1885"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 2&
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4.d+f; 8c+e; 4bd; 4bf;
+2: 4.bb-; 8bb-; 4bb-; 4bd;
+//ital (13) above 1: 1 "With Spirit";
+
+
+			lyrics 1: "<1. >-1|Praise the Lord with";
+			lyrics 1: "<2. >-1|Praise the liv-ing";
+			lyrics 1: "<3. >-1|Praise him; en-e-";
+			lyrics 1: "<4. >-1|Praise him for the";
+			lyrics 1: "<5. >-1|Praise him, thro' the";
+bar
+//2
+1 1: 8c+ bm; 8b ebm; 8af bm; 8ge ebm; 4fd; 4db-;
+1 2: 4g; 8s; 8s; 4s; 4s;
+2: 4be; 4be; 4bb-; 4fb-;
+
+		
+			lyrics 1: 4; 4; 4; 4; "hearts and voi-ces";
+			lyrics 1: 4; 4; 4; 4; "God who gave us,";
+			lyrics 1: 4; 4; 4; 4; "mies as-sail us,";
+			lyrics 1: 4; 4; 4; 4; "wa-ter flow-ing";
+			lyrics 1: 4; 4; 4; 4; "des-ert march-ing";
+bar
+//3
+1 1: 4f; 4g; 4af; 8b bm; 8c+ ebm;
+1 2: 4f; 4f; 4s; 4f;
+2: 4af; 4bf; 4c+e; 8bd bm; 8ac ebm;
+
+			lyrics 1: 4; 4; 4; 4; "Gath-ered in his";
+			lyrics 1: 4; 4; 4; 4; "Lost and ru-ined";
+			lyrics 1: 4; 4; 4; 4; "As we through the";
+			lyrics 1: 4; 4; 4; 4; "Free-ly in its";
+			lyrics 1: 4; 4; 4; 4; "On-ward to the";
+bar
+//4
+1: 4d+f; 4d+en; 2c+f;
+2: 4bb-; 4bc; 2af;
+
+			lyrics 1: "ho-ly name;";
+			lyrics 1: "as we lay,";
+			lyrics 1: "des-ert go,";
+			lyrics 1: "bound-less tide;";
+			lyrics 1: "gold-en shore;";
+bar
+//5
+1: 4.d+f; 8c+e; 4bd; 4bf;
+2: 4.bb-; 8bb-; 4bb-; 4bd;
+
+			lyrics 1: "Ev-'ry quick-ened";
+			lyrics 1: "His be-lov-ed";
+			lyrics 1: "But his sword can";
+			lyrics 1: "Christ the smit-ten";
+			lyrics 1: "For our Sav-iour";
+
+bar
+//6
+1 1: 8c+ bm; 8b ebm; 8af bm; 8ge ebm; 4fd; 4db-;
+1 2: 4g; 8s; 8s; 4s; 4s;
+2: 4be; 4be; 4bb-; 4fb-;
+
+			lyrics 1: 4; 4; 4; 4; "soul re-joic-es,";
+			lyrics 1: 4; 4; 4; 4; "Son to save us,";
+			lyrics 1: 4; 4; 4; 4; "nev-er fail us,";
+			lyrics 1: 4; 4; 4; 4; "rock we're know-ing,";
+			lyrics 1: 4; 4; 4; 4; "we are watch-ing,";
+bar
+//7
+1 1: 8ge bm; 8af ebm; 8b bm; 8c+ ebm; 4d+f; 8f+a& bm; 8e+g ebm;
+1 2: 8s; 8s; 4f; 4s; 8s; 8s;
+2 1: 8b bm; 8c+ ebm; 8bd bm; 8af ebm; 4b; 4b;
+2 2: 4e; 8s; 8s; 4b; 8d bm; 8e ebm;
+
+			lyrics 1: 4; 4; 4; 4; "Hear-ing of the";
+			lyrics 1: 4; 4; 4; 4; "Bear-ing all our";
+			lyrics 1: 4; 4; 4; 4; "It shall si-lence";
+			lyrics 1: 4; 4; 4; 4; "Prasie him for his";
+			lyrics 1: 4; 4; 4; 4; "And we'll praise him";
+bar
+//8
+1 1: 4d+f; 4c+; 2bd;
+1 2: 4s; 8f bm; eebm; 2s;
+2: 4bf; 4af; 2bb-;
+
+			lyrics 1: "Sav-iour's fame.";
+			lyrics 1: "sin a-way.";
+			lyrics 1: "ev-'ry foe.";
+			lyrics 1: "wound-ed side.";
+			lyrics 1: "ev-er-more.";
+dblbar
+//9
+1: 4d+f#; 4d+f; 4.d+f; 8c+a;
+2: 4ad; 4ad; 4.ad; 8d+d;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Praise the Lord, oh,";
+bar
+//10
+1: 4bg; 4af#; 4bg; 4gd;
+2: 4d+d; 4d+d; 4d+g; 4bg;
+
+			lyrics 1: [c]"praise him ev-er,";
+bar
+//11
+1: 4c+en; 4bg; 4af; 8c+a bm; 8bg ebm;
+2: 4gc; 4c+en; 4c+f; 4d+b-;
+
+			lyrics 1: 4; 4; 4; 4; [c]"Let our voic-es";
+bar
+//12
+1: 4af; 4ben; 2fc;
+2: 4c+c; 4bc; 2af;
+
+			lyrics 1: [c]"sweet-ly sing;";
+bar
+//13
+1: 4.d+f; 8c+e; 4bd; 4bf;
+2: 4.bb-; 8bb-; 4bb-; 4bd;
+
+			lyrics 1: [c]"Praise the Lord! oh,";
+bar
+//13
+1 1: 8c+ bm; 8b ebm; 8af bm; 8ge ebm; 4fd; 4db-;
+1 2: 4g; 8s; 8s; 4s; 4s;
+2: 4be; 4be; 4bb-; 4bb-;
+
+			lyrics 1: 4; 4; 4; 4; [c]"may we ev-er";
+bar
+//14
+1 1: 8ge bm; 8af ebm; 8b bm; 8c+ ebm; 4d+f; 8f+a& bm; 8e+g ebm;
+1 2: 8s; 8s; 4f; 4s; 8s; 8s;
+2 1: 8b bm; 8c+ ebm; 8bd bm; 8af ebm; 4b; 4b;
+2 2: 4e; 8s; 8s; 4b; 8d bm; 8e ebm;
+
+			lyrics 1: 4; 4; 4; 4; [c]"Sing a-loud to";
+bar
+//15
+1 1: 4d+f; 4c+; 2bd;
+1 2: 4s; 8f bm; 8e ebm; 2s;
+2: 4bf; 4af; 2bb-;
+
+			lyrics 1: [c]"God our King.";
+endbar

@@ -1,0 +1,210 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 51
+//		
+// Transcribed by: Ted Gatza, Jr. 02/14/2012; rev. 07/31/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Nearer To Thee" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:Let\ us\ draw\ near\ \|with\ a\ true\ heart\ in full\ assurance\ of\ \|faith,\ -\ Heb.\ 10:22" ""   
+   title (13) "Luella Clark" "" "R. L. Selle"
+ 
+footer
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1 1: 8e bm; f ebm; 2.s;
+1 2: 4b-; 2.s;
+2 1: 8g bm; a ebm; 2.s;
+2 2: 4e; 2.s;
+
+			VERSE 4; 2.s; "<1. >-1|My";
+			VERSE 4; 2.s; "<2. >-1|Day";
+			VERSE 4; 2.s; "<3. >-1|Hence-";
+			VERSE 4; 2.s; "<4. >-1|Shad-";
+			
+bar
+//2
+1: 4ge;;;;
+2: 4be;;;;
+
+			VERSE "hand in Thine, dear";
+			VERSE "af-ter day to";
+			VERSE "for-ward all my";
+			VERSE "ows can bring me";
+bar
+//3
+1: 2.bg; 4r;
+2: 2.e+e; 4r;
+
+			VERSE "Lord,";
+			VERSE "know";
+			VERSE "way,";
+			VERSE "not";
+bar
+//4
+1: 2bg; 4ge;;
+2: 2e+e; 4be;;
+
+			VERSE "So let me";
+			VERSE "No way but";
+			VERSE "Thou shalt pre-";
+			VERSE "One bod-ing";
+bar
+//5
+1: 2.fd; 4fd;
+2: 2.bb-; 4;
+
+			VERSE "rest; Wher-";
+			VERSE "Thine, To";
+			VERSE "pare; Mine";
+			VERSE "fear; My";
+bar
+//6
+1: 4ge;;;;
+2: 4be;;;;
+
+			VERSE "e'er Thou lead-est";
+			VERSE "love Thy sweet will";
+			VERSE "but on Thee to";
+			VERSE "all-suf-fic-ing";
+bar
+//7
+1: 2.bg; 4r;
+2: 2.e+e; 4r;
+
+			VERSE "me,";
+			VERSE "so,";
+			VERSE "lay";
+			VERSE "thought,";
+bar
+//8
+1: 2ge; 4fd; gd;
+2: 2be; 4ab-; bb-; 
+
+			VERSE "It must be";
+			VERSE "It shall be";
+			VERSE "My ev-'ry";
+			VERSE "Thou, Lord, art";
+bar
+//9
+1 1: 2.e; 4r;
+1 2: 2.e; 4s;
+2: 2.ge; 4r;
+
+			VERSE "best.";
+			VERSE "mine.";
+			VERSE "care.";
+			VERSE "near.";
+dblbar
+//10
+1: 2bg; 2ge;
+2: 2e+e; be;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Near-er,";
+bar
+//11
+1: 2ge; eb-;
+2: 2be; ge;
+
+			VERSE [c]"near-er";
+bar
+//12
+1 1: 4fd;; e; fd;
+1 2: 4s;; e; s;
+2: 4bb-;; bg-; bb-;
+
+			VERSE [c]"Bless-ed Lord to";
+bar
+//13
+1: 2.ge; 4r;
+2: 2.be; 4r;
+
+			VERSE [c]"Thee;";
+bar
+//14
+1: 2bg; ge;
+2: 2e+e; be;
+
+			VERSE "Near-er,";
+bar
+//15
+1: 2ge; eb-;
+2: 2be; ge;
+
+			VERSE "near-er,";
+bar
+//16
+1: 4fd;; 4.ge; 8fd;
+2: 4bb-;; 4.; 8;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "Bless-ed Lord to";
+bar
+//17
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "Thee.";
+endbar
+title (20) ""
+title (11) "" "Public Domain" "HymnsToGod.org"

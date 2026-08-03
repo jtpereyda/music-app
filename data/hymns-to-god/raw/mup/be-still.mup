@@ -1,0 +1,245 @@
+// !Mup vs.6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Sermons In Song No. 3
+//	For use in sunday school, church prayer meeting,
+//	young people's societies and general religious 
+//	work and worship
+//	Edited by I. H. Meredith and 
+//	Grant Colfax Tullar
+//	Publisher: Tullar - Meredith Co.
+//	108 Washington Street, Chicago Ill.
+//	150 Fifth Avenue, New York, N. Y.
+//	Copyright: 1901
+//	Hymn No. 163
+	
+// Transcribed by:
+//	Ted Gatza, Jr. 03/17/2014
+
+// Revisions:
+//	09/03/2022
+
+// HymnsToGod.org
+
+// ******************************************
+// 6x9 page size
+
+top
+	title bold (19) "" "Be Still" ""
+	title (2)""
+	title (11) "" "\f(TI)Be still, and know that I am God: I will be exalted among" "" 
+	title (11) "" "\f(TI)the nations, I will be exalted in the earth. - Ps. 46:10" ""    
+	title (11) "B \(flat) - 3 - MI" "" ""
+	title (13) "Kate Ulmer" "" "Charles C. Ackley, 1901"
+ 
+footer
+	title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.8
+	pad=0
+	vscheme=2f
+//	staffsep=23
+	scorepad=0
+	rightmargin=.750
+	leftmargin=.750
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+//Letter size music
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (10)above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (10) below 2: COUNT "uferm";
+       @
+
+// Set midi
+	midi all: 0 "tempo=80";
+
+//================================
+
+//1
+1: 8db-; ec; 2s;
+2: 8fb-;; 2s;
+
+	VS "<1. >-1|Child of";
+	VS "<2. >-1|\"In the";
+	VS "<3. >-1|\"When the";
+bar
+
+//2
+1: 4.fd; 8bd;ae; c+f;
+2: 4.bb-; 8fb-;fc; ae;
+
+	VS "God, oh, hear Him";
+	VS "midst of fie-ry";
+	VS "jour-ney's end is";
+bar
+
+//3
+1: 4bf; fd; 8af; ge;
+2: 4bd; bb-; 8bd; be;
+
+	VS "say-ing, \"In temp-";
+	VS "tri-als, Thou canst";
+	VS "near-ing, When dark";
+bar
+
+//4
+1: 4.fd; 8db-; ca-; ec;
+2 1: 4.bf; 8f; ff-;;
+2 2: 4.s; 8f; s;;
+
+	VS "ta-tion look to";
+	VS "walk with-out a";
+	VS "Jor-dan rolls be-";
+bar
+
+//5
+1: 4ec slur; db-; 8; ec;
+2: 2fb-; 8;;
+
+	VS "Me. E'en when";
+	VS "fear, For My";
+	VS "fore, Fal-ter";
+bar
+
+//6
+1: 4.fd; 8bd; ae; c+f;
+2: 4.bb-; 8fb-; fc; ae;
+
+	VS "Sa-tan's pow'r seems";
+	VS "pres-ence shall go";
+	VS "not, I have re-";
+bar
+
+//7
+1: 4bf; fd; 8af; ge;
+2: 4bd; bb-; 8bd; be;
+
+	VS "strong-est, Thy sal-";
+	VS "with thee, Thou wilt";
+	VS "deem'd thee, I will";
+bar
+
+//8
+1: 8fd; bf; 4; c+e;
+2: 8bf; d+f; 4; af;
+
+	VS "va-tion I will";
+	VS "ev-er find Me";
+	VS "bear thee safe-ly";
+bar
+
+//9
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+	VS "be.\"";
+	VS "near.\"";
+	VS "o'er.\"";
+dblbar
+newscore
+//10
+CHORUS
+1: 4d+f; 2s;
+2: 4r; 2s;
+
+	VS "Be";
+bar
+
+//11
+1: 2c+e; 4;
+2: 8r; af; 4; r;
+
+	VS "still, be";
+	VS 8s; 8; 4; 4s; "Be still";
+bar
+
+//12
+1: 2bd; 4fd;
+2: 8r; fb-; 4; bb-;
+
+	VS "still, Be";
+	VS 8s; 8; 4; 4s; "be still,";
+bar
+
+//13
+1: 8ae;;; ge; ec; ge;
+2: 8c+f;;;; af;;
+
+	VS "still and know that I am";
+bar
+
+//14
+1: 2fd; 4d+f;
+2: 2bb-; 4r;
+
+	VS "God; Be";
+bar
+
+//15
+1: 2c+e; 4;
+2: 8r; af; 4; r;
+
+	VS "still, be";
+	VS 8s; 8; 4; s; "Be still,";
+bar
+
+//16
+1: 2bd; 4ge;
+2: 8r; bb-; 4; be;
+
+	VS "still, Be";
+	VS 8s; 8; 4; 4s; "be still,";
+bar
+
+//17
+1: 8fd;;; bf; be; ae;
+2: 8bf;;; d+f; c+f;;
+SFERM (3)
+SFERM (3.5)
+BFERM (3)
+BFERM (3.5)
+
+	VS "still and know that I am";
+bar
+
+//18
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+	VS "God.";
+endbar

@@ -1,0 +1,335 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Soul Inspiring Songs
+//	Publisher R. E. Winsett
+//	Alton Park Station, Box 36, Chattanooga, Tenn.
+//	Copyright 1926
+//	Hymn No.: 144
+
+// Transcribed by: Ted Gatza, Jr. 08/09/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "He Bore It All" ""
+   title (2) ""
+   title (11) "" "\f(TI)Who his own self bore our sins in his own body on the tree," ""
+   title (11) "" "\f(TI)that we, being dead to sins, should live to righteousness:" ""
+   title (11) "" "\f(TI)by whose stripes you were healed. - 1 Pet. 2:24" ""
+   title (11) "F - 4 - SOL" "" ""
+   title (13) "J. R. Baxter, Jr." "" "Virgil O. Stamps, 1926"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=97";
+
+//=========================
+
+// Verse
+
+//1
+1: 4.s; 4; 8fc+; fd+; fc+;
+2: 4.s; 4; 8fa; fb; f a;
+
+	VS "<1. >-1|My pre-cious";
+	VS "<2. >-1|They placed a";
+	VS "<3. >-1|Up Cal-v'ry's";
+bar
+
+//2
+1: 4fa; fb; 4fa; eg;
+2: 4fc+; fd+; fc+; cb;
+
+	VS "Sav-ior suf-fered";
+	VS "crown of thorns up-";
+	VS "hill in shame the";
+bar
+
+//3
+1: 8df; ; ; eg; fa; 8s; ; ;
+2: 8da; ; ; cc+; fc+; 8s; ; ;
+
+	VS "pain and ag-o-ny,";
+	VS "on my Sav-ior's head,";
+	VS "bless-ed Sav-ior trod,";
+invisbar
+
+//3
+1: 8s; ; ; ; ; ac+; bd+; ac+;
+2: 8s; ; ; ; ; 8r; 4;
+
+	VS "He bore it";
+bar
+
+//4
+1: 2fa tie; 8; fa; gb; fa;
+2: 8fc+; ; ff+; fd+; fc+; 8r; 4;
+
+	VS "all that I might";
+	VS21 "free-ly bore it all";
+bar
+
+//5
+1 1: 2g tie; 8g; s; ; ; 
+1 2: 2f slur; 8e; s; ; ; 
+2: 8gbn; ; ; ; cc+; s; ; ; 
+
+	VS "live;";
+	VS21 "I with Him might live;";
+invisbar
+
+//5
+1 1: 8ec+; fbn; gb&; 2s; 8s;
+2: 8cg; dg; ec+; 8s; ; ; ; ; 
+
+	VS "He broke the";
+	VS "By cru-el";
+	VS "Be-tween two";
+bar
+
+//6
+1: 4fa; fb; fa; eg;
+2: 4fc+; fd+; fc+; cb;
+
+	VS "bonds of sin and";
+	VS "man with spear His";
+	VS "thieves they cru-ci-";
+bar
+
+//7
+1: 8df; ; ; eg; fa; 8s; ; ;
+2: 8da; ; ; cc+; fc+; 8s; ; ;
+
+	VS "set the cap-tive free,";
+	VS "side was pierced and bled,";
+	VS "fied the Son of God,";
+invisbar
+SIGN(3.5);
+//7
+1: 8s; ; ; ; ; r; 4;
+2 1: 8s; ; ; ; ; r; 4;
+2 2: 8s; ; ; ; ; a; g; f;
+
+	VS "";
+	VS22 "He bore it";
+bar
+
+//8
+1: 8r; gb; r; eb; r; fb; r; gb;
+2 1:8r; c+; r; c+; r; c+; r; c+;
+2 2: 4e; c; d; e;
+
+	VS "all that I might";
+	VS22 "all that I might";
+bar
+
+//9
+FINE(3);
+1: 8r; 16fa; ; 8fb; ; fa; 4.s; 
+2 1: 8r; 16c+; ; 8d+; ; 8c+; 4.s;
+2 2: 2f tie; 8f; 4.s;
+
+
+	VS "in His pres-sence live.";
+	VS22 "live.< ____________________>";
+dblbar
+newscore
+
+REFRAIN
+
+//10
+1: 8ac+; bd+; ac+; 2s; 8s;
+2: 8r; 4r; 2s; 8s;
+
+	VS "He bore it";
+
+bar
+
+//10
+1: 4fa; ; 8; bd+; ac+; gb;
+2: 8fc+; ; ff+; fd+; fc+; r; 4;
+
+	VS "all that I might see His";
+	VS21 "Je-sus bore it all,";
+bar
+
+//11
+1 1: 4fa; eg; 8f; s; ; ;
+1 2: 4s; ; 8f; s; 4;
+2: 8fc+; ; cb; ; da; s; ; ;
+
+	VS "shin-ing face,";
+	VS21 "see His shin-ing face,";
+invisbar
+newscore
+
+1: 4s; ; 8; r; 4;
+2 1: 8s; ; ; ; ; r; 4;
+2 2: 8s; ; ; ; ; c; d; c;
+
+	VS22 "He bore it";
+bar
+
+//12
+1: 8eb; fb; gb; fb; eb; r; 4;
+2 1: 8c+; d+; e+; d+; c+; r; 4;
+2 2: 2g tie; 8; c; d; c;
+
+	VS "Free-ly bore it all,";
+	VS22 "all that I might";
+bar
+
+//13
+1: 8fa; ; ; ; ; s; ; ;
+2 1: 8c+; ; e+; d+; c+; s; 4;
+2 2: 2f tie; 8; s; 4;
+
+	VS "I with Him might live;";
+	VS22 "live;";
+invisbar
+newscore
+
+//13
+1: 8ac+; bd+; ac+; 8s; ; ; ; ; 
+2: 8r; 4; 8s; ; ; ; ; 
+
+	VS "I stood con-";
+	VS 8; 4s; 8s; 8s; 8s; 8s; 8s; "<>";
+bar
+
+//14
+1: 4fa; ; 8; s; ; ;
+2: 8fc+; ; ff+; fd+; fc+; s; 4;
+
+	VS "demned to die";
+	VS21 "stood con-demned to die";
+invisbar
+
+//14
+1: 4s; ; 8; bd+; ac+; gb;
+2: 8s; ; ; ; ; r; 4;
+
+	VS "but Je-sus";
+//	VS21 "stood con-demned to die";
+bar
+
+
+//15
+DS(3.5)
+1 1: 4fa; g; 8; 4.s;
+1 2: 4s; 4f; 8; 4.s;
+2: 8fc+; ; gbn; ; ; 4.s;
+
+	VS "took my place,";
+	VS21 "free-ly took my place,";
+endbar

@@ -1,0 +1,298 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Ark of Praise containing songs and hymns for the sabboth 
+//		School, Prayer Meetings, Etc. Ed. by Jno. R. Sweney & WM. J. Kirkpatrick 
+//		Pub.John J. Hood 1018 Arch Street Philadelphia, Copyright 1882
+
+// Transcribed by: Ted Gatza, Jr. 09/06/2009
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "Abide With Me" ""
+   title (2)""
+   title (11) "G-4-MI" "\f(TI)I am with you always, even unto the end of the world. - Mat. 28:20"""
+   title (13) "Frank Gould" "John R. Sweney, 1882"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=12/8
+	key=1#	
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=.975
+	scale = 0.715
+	scoresep=6,20
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+staff 2
+	key=1#
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+// 1
+1 1: 4.s; 4.s; 4.s; 4db;  8da;
+2 1: 4.s; 4.s; 4.s; 4gd+; 8gc+;
+
+				lyrics 1: "<1. >-1|All the";
+				lyrics 1: "<1. >-1|All the";
+				lyrics 1: "<2. >-1|One by";
+				lyrics 1: "<2. >-1|One by";
+bar
+
+//2
+1 1: 4.g~; 4.g~; 4g;  8d;  4dg; 8bg; 
+1 2: 4d;   8d;   4d;  8d;  4d;  8d; 4s; 8s;
+2 1: 4gb;  8gb;  4gb; 8gb; 4gb; 8gb; 4gb; 8gd+;
+
+				lyrics 1: "day,_ in sweet com-";
+				lyrics 1: 4; 8; 4; 8; 4; 8; 4; 8; "day, in sweet com-mun-ion, All the";
+				lyrics 1: "one,_ the ev'n- ing";
+				lyrics 1: 4; 8; 4; 8; 4; 8; 4; 8; "one, the ev'n-ing shad-ows, One by";
+bar
+
+// 3
+1 1: 4.b; 
+1 2: 4g; 8g; 
+2 1: 4dd+; 8dd+; 
+				lyrics 1: "mun-";
+				lyrics 1: 4; 8; "day, in";
+				lyrics 1: "shad-";
+				lyrics 1: 4; 8; "one the";
+
+invisbar
+newscore
+
+1 1: 4.a~; 4.a; 4fa; 8gb;
+1 2: 4f; 8f; 4f; 8f; 4s; 8s;
+2 1: 4dd+; 8dd+; 4dd+; 8dd+; 4dd+; 8dd+;
+
+				lyrics 1: "ion,_ Je-sus";
+				lyrics 1: 4; 8; 4; 8; 4; 8; "sweet com-mun-ion, Je-sus,";
+				lyrics 1: "ows_ Gath-er";
+				lyrics 1: 4; 8; 4; 8; 4; 8;"ev'n-ing shad-ows gath-er";
+
+
+
+bar
+
+//4
+1 1: 4.c+~; 4.c+~; 4c+; 8d+; 
+1 2: 4a; 8a; 4a; 8a; 4a<f>; 8f; 
+2 1: 4dd+; 8dd+; 4dd+; 8dd+; 4d+<a>d<c>; 8ca; 
+
+				lyrics 1: "I_ have";
+				lyrics 1: 4; 8; 4; 8; 4.; "I have walked with thee,";
+				lyrics 1: "dark-ly";
+				lyrics 1: 4; 8; 4; 8; 4.; "dark-ly o'er the lea,";
+
+invisbar
+newscore
+
+1 1: 4dg; 8ad;
+1 2: 4s; 8s;
+2 1: 4b-g; 8a-f;
+
+				lyrics 1: "walked with";
+				lyrics 1: 4; 8; "Je-sus";
+				lyrics 1: "o'er the";
+				lyrics 1: 4; 8; "Gath-er";
+
+bar 
+
+//5
+1 1: 4.b~; 4.b~; 4.b; 4db; 8da;
+1 2: 4d; 8d; 4d; 8d; 4.d; 4s; 8s;
+2 1: 4g-g; 8g-g; 4g-g; 8g-g; 4.g-g; 4gd+; 8gc+;
+
+				lyrics 1: "thee;_ Do not";
+				lyrics 1: 4; 8; 4; 8; 4.; 4; 8; "I have walked with thee; Do not";
+				lyrics 1: "lea,_ Yet the";
+				lyrics 1: 4; 8; 4; 8; 4.; 4; 8; "dark-ly o'er the lea, Yet the";
+bar
+
+//6
+1 1: 4.g~; 4.g~; 4g;
+1 2: 4d; 8d; 4d; 8d; 4d;
+2 1: 4gb; 8gb; 4gb; 8gb; 4gb;
+
+				lyrics 1: "now_";
+				lyrics 1: 4; 8; 4; 8; 4; "now with-draw thy pres-";
+				lyrics 1: "light_";
+				lyrics 1: 4; 8; 4; 8; 4; "light of peace re-main-";
+
+
+invisbar
+newscore
+
+1 1: 8d; 4dg; 8gb;
+1 2: 8d; 4s; 8s;
+2 1: 8gb; 4gb; 8gd+;
+
+				lyrics 1: "with-draw thy";
+				lyrics 1: 8; 4; 8; "ence, Do not";
+				lyrics 1: "of peace re-";
+				lyrics 1: 8; 4; 8; "eth, Yet the";
+
+bar
+
+//7
+1 1: 4.b; 4.a~; 4.a; 4fa; 8gb;
+1 2: 4g; 8g; 4f; 8f; 4f; 8f; 4s; 8s;
+2 1: 4dd+; 8dd+; 4dd+; 8dd+; 4dd+; 8dd+; 4dd+; 8dd+;
+
+				
+ 				lyrics 1: "pres-ence,_ From this";
+				lyrics 1: 4; 8; 4; 8; 4; 8; 4; 8; "now with-draw thy pres-ence, From this";
+				lyrics 1: "main-eth_ If thou";
+				lyrics 1: 4; 8; 4; 8; 4; 8; 4; 8; "light of peace re-main-eth If thou";
+bar
+
+//8
+1 1: 4.c+~; 4.c+~; 4c+; 8c+; 4gb; 8fa;
+1 2: 4a; 8a; 4a; 8a; 4.a; 4s; 8s;
+2 1: 4dd+; 8dd+; 4dd+; 8dd+; 4.dd+; 4dd+; 8dc+;
+
+				lyrics 1: "hour_ a-bide with";
+				lyrics 1: 4; 8; 4; 8; 4.; 4; 8; "hour a-bide with me, From this";
+				lyrics 1: "still_ a-bide with";
+				lyrics 1: 4; 8; 4; 8; 4.; 4; 8; "still a-bide with me, If thou";
+bar
+
+//9
+1 1: 4.g~; 4.g~; 4.g; //4s; 8s;
+1 2: 4d; 8d; 4e; 8e; 4.d; //4s; 8s;
+2 1: 4g-b; 8g-b; 4g-c+; 8g-c+; 4.g-b; //4s; 8s;
+
+				lyrics 1: "me._";
+				lyrics 1: 4; 8; 4; 8; 4.; "hour a-bide with me.";
+				lyrics 1: "me._";
+				lyrics 1: 4; 8; 4; 8; 4.; "still a-bide with me.";
+dblbar
+newscore
+
+//10
+1 1: 4bd+; 8bd+;
+2 1: 4r; 8r;
+
+				ital (14) above 1: 1 "Chorus";
+				lyrics 1: "Thou my";
+				lyrics 1: 1; "<>";
+				lyrics 1: 1; "<>";
+				
+				
+				
+
+bar
+
+//11
+
+1 1: 4.a~c+~; 4.a~c+~; 4ac+; 8ac+; 4bd+; 8ac+;
+2 1: 4.r; 4dd+; 8dd+; 4dd+; 8dd+; 4dd+; 8dd+;
+
+				lyrics 1: "life_ my on-ly"; 
+				lyrics 1: 4.s; 4; 8; 4; 8s; 4s; 8s; "thou my life,"; 
+bar
+				
+				
+//12
+1 1: 4.g~b~; 4.g~b~; 4.gb; 
+2 1: 4gd+; 8gd+; 4gd+; 8gd+; 4.gd+;
+
+				 lyrics 1: "guide,_";
+				 lyrics 1: 4s; 8; 4; 8; 4.;"my on-ly guide";
+
+invisbar
+newscore
+
+1 1: 4gb; 8ac+;
+2 1: 4gd+; 8gd+;
+
+				lyrics 1: 4; 8; "There is";
+				//lyrics 1: 4.; 4s; 8s; "guide";
+
+bar
+
+//13
+1 1: 4bd+; 8c+e+; 4bd+; 8ac+; 4gb; 8bd+; 4ac+; 8gb;
+2 1: 4gd+; 8gd+; 4gd+; 8gd+; 4gd+; 8gd+; 4fd+; 8gd+;
+
+				lyrics 1: "nought in heav'n or earth I ask but";
+bar
+newscore
+
+//14
+1 1: 4.f~a~; 4.f~a~; 4.fa; 4fb; 8da;
+2 1: 4dd+; 8dd+; 4dd+; 8dd+; 4.dd+; 4dd+; 8dc+;
+
+				lyrics 1: "thee;_ Hear my";
+				lyrics 1: 4s; 8; 4; 8; 4.; 4s; 8s; "I ask but thee;";
+bar
+
+//15
+1 1: 4.g~; 4.g~; 4g; 
+1 2: 4d; 8d; 4d; 8d; 4d; 
+2 1: 4gb; 8gb; 4gb; 8gb; 4gb; 
+
+				lyrics 1: "prayer,_"; 
+				lyrics 1: 4; 8; 4; 8; 4; "prayer, my soul's pe-ti-";
+
+invisbar
+newscore
+
+1 1: 8d; 4dg; 8gb;
+1 2: 8d; 4s; 8s;
+2 1: 8gb; 4gb; 8gd+;
+
+				lyrics 1: "my soul's pe-";
+				lyrics 1: 8; 4; 8; "tion, Hear my";
+
+bar
+
+//16
+1 1: 4.b; 4.a~; 4.a; 4fa; 8gb;
+1 2: 4g; 8g; 4f; 8f; 4f; 8f; 4s; 8s;
+2 1: 4dd+; 8dd+; 4dd+; 8dd+; 4dd+; 8dd+; 4dd+; 8dd+;
+
+				lyrics 1: "ti-tion,_ Go not";
+				lyrics 1: 4; 8; 4; 8; 4; 8; 4; 8;"prayer, my soul's pe-ti-tion, Go Not";
+
+bar
+
+//17
+1 1: 4.c+~; 4.c+~; 4c+; 8c+; 4gb; 8fa;
+1 2: 4a; 8a; 4a; 8a; 4.a; 4s; 8s;
+2 1: 4dd+; 8dd+; 4dd+; 8dd+; 4.dd+; 4dd+; 8dc+;
+
+				lyrics 1: "hence,_ a-bide with";
+				lyrics 1: 4; 8; 4; 8; 4.; 4; 8; "hence, a-bide with me, go not";
+bar
+
+//18
+1 1: 4.g~; 4.g~; 4.g; 4.s;
+1 2: 4d; 8d; 4e; 8e; 4.d; 4.s;
+2 1: 4g-b; 8g-b; 4g-c+; 8g-c+; 4.g-b; 4.s;
+
+				lyrics 1: "me._";
+				lyrics 1:  4; 8; 4; 8; 4.; 4.s; "hence, a-bide with me.";
+endbar
+
+				
+
+ 

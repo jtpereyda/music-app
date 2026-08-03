@@ -1,0 +1,227 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns of His Grace No. 1
+//		For the 
+//		Evangelist, Church, Sunday School, And
+//		Young People's Societies
+//		Compiled and Edited By
+//		P.P. bilhorn, F.G. fischer, 
+//		John R. Clements, W. Stillman Martin
+//		Published by: Bilhorn Brothers
+//		Music Publishers and Folding Organ Mfgs.
+//		152 lake St. Chicage, Ill.
+//		Copyright 1907	
+//		Hymn no. 137
+
+// Transcribed by: Ted Gatza, Jr. 01/20/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "My Soul Sings Hallelujah!" ""
+   title (2)""
+   title (11) "F - 2 - SOL" "\s(17)\f(TI)\:And\ my\ soul\ shall\ be\ jo\|yful\ in\ Jehovah:\ It\ shall rejoice\ in\ his\ sal\|vation.\ -\ Ps.\ 35:9"""
+   title (13) "P. P. Bilhorn" " " "P. P. Bilhorn, 1907"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 4.s; 4s; 8c;
+1 2: 4.s; 4s; 8c;
+2: 4.s; 4s; 8af;
+
+			lyrics 1: 4.s; 4s; 8; "<1. >-1|Since";
+			lyrics 1: 4.s; 4s; 8; "<2. >-1|Since";
+			lyrics 1: 4.s; 4s; 8; "<3. >-1|From";
+			lyrics 1: 4.s; 4s; 8; "<4. >-1|So";
+bar
+//2
+1 1: 4fc; 8fc; 8f bm; 8g ebm; 8af;
+1 2: 4s; 8s; 4c; 8s;
+2 1: 4af; 8af; 8a bm; 8b ebm; 8c+f;
+2 2: 4s; 8s; 4f; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "Je-sus wash'd my";
+			lyrics 1: 4; 8; 4; 8; "par-don, peace and";
+			lyrics 1: 4; 8; 4; 8; "morn 'til night the";
+			lyrics 1: 4; 8; 4; 8; "on I press with";
+bar
+//3
+1: 4c+f; 8d+f; 4c+f; 8af;
+2: 4af; 8bf; 4af; 8c+f;
+
+			lyrics 1: "sins a-way, My";
+			lyrics 1: "pow'r I've found My";
+			lyrics 1: "Lord's my light My";
+			lyrics 1: "ho-ly tho't, My";
+bar
+//4
+1 1: 4fc; 8fc; 8f bm; 8g ebm; 8af;
+1 2: 4s; 8s; 4c; 8s;
+2 1: 4af; 8af; 8a bm; 8b ebm; 8c+f;
+2 2: 4s; 8s; 4f; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "soul sings Hal-le-";
+			lyrics 1: 4; 8; 4; 8; "soul sings Hal-le-";
+			lyrics 1: 4; 8; 4; 8; "soul sings Hal-le-";
+			lyrics 1: 4; 8; 4; 8; "soul sings Hal-le-";
+bar
+//5
+1 1: 4.ge; 8c+e; 8r; 8c;
+1 2: 4.s; 8s; 8s; 8c;
+2 1: 4.c+c; 8bc; 8r; 8s;
+2 2: 4.s; 8s; 8s; 8be;
+
+			lyrics 1: 4.; 8; 8s; 8; "lu-jah! A-";
+			lyrics 1: 4.; 8; 8s; 8; "lu-jah! I'm";
+			lyrics 1: 4.; 8; 8s; 8; "lu-jah! For";
+			lyrics 1: 4.; 8; 8s; 8; "lu-jah! Since";
+bar
+//6
+1 1: 4fc; 8fc; 8f bm; 8g ebm; 8af;
+1 2: 4s; 8s; 4c; 8s;
+2 1: 4af; 8af; 8a bm; 8b ebm; 8c+f;
+2 2: 4s; 8s; 4f; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "bid-ing in Him";
+			lyrics 1: 4; 8; 4; 8; "liv-ing now on";
+			lyrics 1: 4; 8; 4; 8; "Him I'll live for";
+			lyrics 1: 4; 8; 4; 8; "Christ for me re-";
+bar
+//7
+1: 4c+f; 8d+f; 4c+f; 8d+f;
+2: 4af; 8bf; 4af; 8bf;
+			lyrics 1: "all the day, My";
+			lyrics 1: "high-er ground My";
+			lyrics 1: "Him I'll fight My";
+			lyrics 1: "demp-tion wrought My";
+bar
+//8
+1 1: 4c+f; 8af; 8f bm; 8g ebm; 8af;
+1 2: 4s; 8s; 4c; 8s;
+2 1: 4af; 8c+f; 8a bm; 8b ebm; 8c+f;
+2 2: 4s; 8s; 4f; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "soul sing Hal-le-";
+			lyrics 1: 4; 8; 4; 8; "soul sing Hal-le-";
+			lyrics 1: 4; 8; 4; 8; "soul sing Hal-le-";
+			lyrics 1: 4; 8; 4; 8; "soul sing Hal-le-";
+bar
+//9
+1 1: 4.ge; 8f; 8r; 8s;
+1 2: 4.s; 8f; 8s; 8s;
+2: 4.bc; 8af; 8r; 8s;
+
+			lyrics 1: 4.; 8; 4s; "lu-jah!";
+			lyrics 1: 4.; 8; 4s; "lu-jah!";
+			lyrics 1: 4.; 8; 4s; "lu-jah!";
+			lyrics 1: 4.; 8; 4s; "lu-jah!";
+dblbar
+newscore
+//10
+1: 8c+a; 4.s; 4s;
+2: 8c+f; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: 8; 4.s; 4s; [c]"My";
+bar
+//11
+1: 4d+b; 8bf; 8f+d+ bm; 8e+c+ ebm; 8d+b;
+2 1: 4bb-; 8bd; 4b; 8e+d;
+2 2: 4s; 8s; 8b- bm; 8c ebm; 8s;
+
+			lyrics 1: 4; 8; 4; 8; [c]"soul sings Hal-le-";
+bar
+//12
+1: 4.c+a; 4af; 8r;
+2: 4.f+f; 4c+f; 8r;
+
+			lyrics 1: [c]"lu-jah!";
+bar
+//13
+1: 4bg; 8bg; 8ge bm; 8af ebm; 8bg;
+2: 4c+c; 8c+c; 4c+c; 8c+c;
+
+			lyrics 1: 4; 8; 4; 8; [c]"Glo-ry Hal-le-";
+bar
+
+//14
+1: 4.d+b; 4c+a; 8c+a;
+2: 4.f+f; 4f+f; 8c+f;
+
+			lyrics 1: [c]"lu-jah! My";
+bar
+newscore
+//15
+1: 4d+b; 8bf; 8f+d+ bm; 8e+c+ ebm; 8d+b;
+2 1: 4bb-; 8bd; 4b; 8e+d;
+2 2: 4s; 8s; 8b- bm; 8c ebm; 8s;
+< above 1: 6 til 1m + 2.5;
+
+			lyrics 1: 4; 8; 4; 8; [c]"soul sings Hal-le-";
+bar
+//16
+1: 4.c+a; 4f+a; 8d+b;
+2: 4.f+f; 4c+f; 8f+f;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: [c]"lu-jah All";
+bar
+//17
+1: 4c+a; 8fc; 4af; 8ge;
+2: 4c+f; 8af; 4c+c; 8bc;
+
+			lyrics 1: [c]"glo-ry to His";
+bar
+//18
+1: 4.fc tie; 8fc; 4s;
+2: 4.af tie; 8af; 4s;
+
+			lyrics 1: [c]"name.";
+endbar

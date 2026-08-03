@@ -1,0 +1,244 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church Hymns and Gospel Songs
+//		For Sacred Services, Prayer Meetings and
+//		Other Religious Gatherings
+//		By Ira D.Sankey, James McGranahan,
+//		and Geo. C. Stebbins
+//		410th Thousand
+//		Published by: The Biglow and Main Co.
+//		New York Chicago
+//		Copyright: 1898
+//		Hymn No.: 287
+
+// Transcribed by: Ted Gatza, Jr. 07/07/2010; rev. 09/18.2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "O Glad and Glorious Gospel" ""
+   title (2)""
+   title (11) "F - 4 - SOL" "\s(17)\f(TI)\:For\ God\ so\ loved\ the\ world,\ that\ he\ gave\ his\ only\ begotten\ Son\ -\ Jn.\ 3:16 \(space)" ""
+   title (13) "M. Fraser" " " "James McGranahan, 1891"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time= 4/4	
+	key= 1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key= 1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8.c+a; 16c+a;
+2: 2.s; 8.c+f; 16c+f;
+
+
+			lyrics 1: "<1. >-1|'Tis a";
+			lyrics 1: "<2. >-1|He has";
+			lyrics 1: "<3. >-1|Still up-";
+			lyrics 1: "<4. >-1|But re-";
+bar
+//2
+1: 4c+a; 4bg; 4ec; 4d+b;
+2: 4c+c; 4c+e; 4c+g; 4ge;
+
+			lyrics 1: "true and faith-ful";
+			lyrics 1: "made a full a-";
+			lyrics 1: "on His hands the";
+			lyrics 1: "mem-ber this same";
+bar
+//3
+1: 2c+a; 4af; 8.af; 16af;
+2: 2af; 4c+f; 8.c+f; 16c+f;
+
+			lyrics 1: "say-ing, Je-sus";
+			lyrics 1: "tone-ment, Now his";
+			lyrics 1: "nail-prints, And the";
+			lyrics 1: "Je-sus, In the";
+bar
+//4
+1 1: 4ae; 4ge; 4s; 4s;
+1 2: 4s; 4s; 4s; 4s;
+2: 4c+c; 4bc; 4s; 4s;
+
+			lyrics 1: "died for";
+			lyrics 1: "sav-ing";
+			lyrics 1: "scars up-";
+			lyrics 1: "clouds will";
+invisbar
+newscore
+
+1 1: 4s; 4s; 4c; 4be;
+1 2: 4s; 4s; 4c; 4s;
+2: 4s; 4s; 4ec; 4d+c;
+
+			lyrics 1: "sin-ful";
+			lyrics 1: "work is";
+			lyrics 1: "on His";
+			lyrics 1: "come a-";
+
+bar
+//5
+1: 2.af; 8.c+f; 16c+f;
+2: 2. c+f; 8.c+a; 16c+a;
+
+			lyrics 1: "men; Though we've";
+			lyrics 1: "done; He has";
+			lyrics 1: "brow; Our Re-";
+			lyrics 1: "gain, And with";
+bar
+//6
+1 1: 4c+f; 4be; 4e; 4d+e;
+1 2: 4s; 4s; 4e; 4s;
+2 1: 4c+a; 4c+g; 4c+c; 4c+;
+2 2: 4s; 4s; 4s; 4b;
+
+			lyrics 1: "told the sto-ry";
+			lyrics 1: "sat-is-fied the";
+			lyrics 1: "deem-er, Lord and";
+			lyrics 1: "Him His blood bought";
+bar
+//7
+1 1: 2c+; 4c+a; 8.s; 16s;
+1 2: 4.f slur; 8g; 4s; 8.s; 16s;
+2: 4.c+~<c+> a slur; 8c+g; 4c+f; 8.s; 16s;
+
+			lyrics 1: "oft-en,";
+			lyrics 1: "Fa-ther,";
+			lyrics 1: "Sav-iour";
+			lyrics 1: "peo-ple";
+invisbar
+newscore
+
+1 1: 2s; 4s; 8.c+g; 16d+g;
+1 2: 4.s; 8s; 4s; 8.s; 16s;
+2: 4.s; 8s; 4s; 8.c+e; 16bnd;
+
+			lyrics 1: "We must";
+			lyrics 1: "Who ac-";
+			lyrics 1: "In the";
+			lyrics 1: "Ev-er-";
+
+bar
+//8
+1: 4e+g; 4c+g; 4.d+f; 8c+e;
+2: 4c+c; 4c+e; 4.bng; 8c+c;
+
+			lyrics 1: "tell it o'er a-";
+			lyrics 1: "cepts us in His";
+			lyrics 1: "glo-ry stand-eth";
+			lyrics 1: "more shall live and";
+bar
+//9
+1: 2.c+e; 4s;
+2: 2.c+c; 4s;
+
+			lyrics 1: "gain.";
+			lyrics 1: "Son.";
+			lyrics 1: "now.";
+			lyrics 1: "reign.";
+dblbar
+//10
+1 1: 2.s; 4c;
+1 2: 2.s; 4c;
+2 1: 2.s; 4c+;
+2 2: 2.s; 4c+;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"O";
+bar
+//11
+1: 4.f+a; 8c+a; 4e+g; 4d+e;
+2: 4.c+f; 8c+f; 4c+c; 4bc;
+
+			lyrics 1: [c]"glad and glo-rious";
+bar
+newscore
+//12
+1 1: 4c+f; 2af; 4c+;
+1 2: 4s; 2; 4c+;
+2 1: 4af; 2c+f; 4c+;
+2 2: 4s; 2s; 4c+;
+
+			lyrics 1: "Gos-pel! With";
+bar
+//13
+1: 4.f+c+; 8f+a; 4e+g; 4d+g;
+2: 4.c+a; 8c+f; 4c+g; 4f+g;
+
+			lyrics 1: "joy we now pro-";
+			lyrics 1: 4.s; 8s; 4s; 4; "we";
+bar
+//14
+1 1: 2.c+; 4be;
+1 2: 2g slur; 4f; 4s;
+2: 4e+c+; 4d+b; 4c+a; 4c+g;
+
+			lyrics 1: "claim_ A";
+			lyrics 1: 4; 4; 4; 4s; "now pro-claim";
+bar
+newscore
+//15
+1: 4af; 4be; 4c+f; 4f+f;
+2: 4c+f; 4c+f; 4c+a; 4c+a;
+
+			lyrics 1: "full and free sal-";
+bar
+//16
+1: 4e+f; 2d+f; 4d+f;
+2 1: 4c+; 2b; 4bb-;
+2 2: 4b; 2b; 4s;
+
+			lyrics 1: "va-tion, Through";
+bar
+//17
+1: 4.c+f; 8bnf; 4d+e; 4c+e;
+2: 4.ac; 8a&c; 4gc; 4bc;
+
+			lyrics 1: "faith in Je-sus'";
+bar
+//18
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			lyrics 1: "name.";
+endbar
+

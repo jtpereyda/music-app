@@ -1,0 +1,243 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sunlit Songs:
+//		For use In Meetings For Christian
+//		Worship or Work
+//		Editors: Jno. R. Sweney, Wm. J. Kirkpatrick,
+//		And H. L. Gilmour
+//		Philadeplhia:
+//		Published by John J. Hood
+//		1024 Arch St.
+//		Copyright: 1890
+//		Hymn No.: 39
+
+// Transcribed by: Ted Gatza, Jr. 05/13/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Will Go" ""
+   title (2)""
+   title (11) "D - 4 - MI" "\s(17)\f(TI)\:I\ will\ go\ in\ the\ strength\ of\ the\ Lord\ God.\ -\ Ps.\ 71:16 \(space)" ""
+   title (13) "F. G. Burroughs" " " "H. L. Gilmour, 1890"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 2#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8.fd; 16ge;
+2: 2.s; 8.ad; 16ad;
+
+			lyrics 1: 2.s; 8.; 16;"<1. >-1|I will";
+			lyrics 1: 2.s; 8.; 16; "<2. >-1|I will";
+			lyrics 1: 2.s; 8.; 16; "<3. >-1|I will";
+			lyrics 1: 2.s; 8.; 16; "<4. >-1|I will";
+			
+bar
+//2
+1: 4af; 8. af; 16bg; 4af; 8.fd; 16af;
+2: 4d+d; 8.d+d; 16d+d; 4d+d; 8.ad; 16ad;
+
+			lyrics 1: "go in the strength of the";
+			lyrics 1: "go at his gen-tle com-";
+			lyrics 1: "go in the strength of the";
+			lyrics 1: "go, in the pan-op-ly";
+bar
+//3
+1 1: 2d+ slur; 4a; 8.af; 16af;
+1 2: 2.f; 8.s; 16s;
+2 1: 2a slur; 4d+; 8.d+d; 16d+d;
+2 2: 2.d; 8.s; 16s;
+
+			lyrics 1: "Lord, To the";
+			lyrics 1: "mand, Tho' I";
+			lyrics 1: "Lord, And no";
+			lyrics 1: "clad, And un-";
+bar
+//4
+1: 4bf; 8.bf; 16s; 4s; 8.s; 16s;
+2: 4d#+b-; 8.d+b-; 16s; 4s; 8.s; 16s;
+
+			lyrics 1: "work he";
+			lyrics 1: "know not";
+			lyrics 1: "ev-il";
+			lyrics 1: "daunt-ed";
+invisbar
+newscore
+
+1: 4s; 8.s; 16af; 4ge; 8.ae; 16ec;
+2: 4s; 8.s; 16d+b-; 4be; 8.c+a-; 16aa-;
+
+			lyrics 1: "has giv'n me to";
+			lyrics 1: "the way of his";
+			lyrics 1: "shall cause me to";
+			lyrics 1: "by migh-ti-est";
+
+bar
+//5
+1: 2.fd; 8.fd; 16ea-;
+2: 2.ad; 8.ad; 16gd;
+
+			lyrics 1: "do, In the";
+			lyrics 1: "choice; But the";
+			lyrics 1: "fear; Thro' green";
+			lyrics 1: "foe: For no";
+bar
+//6
+1: 4da-; 8.fd; 16ge; 4af; 8.d+f; 16d+f;
+2: 4fd; 8.ad; 16ad; 4d+d; 8.d+d; 16d+d;
+
+			lyrics 1: "strength that is might-y to";
+			lyrics 1: "Lord know-eth me by my";
+			lyrics 1: "pas-tures, or thro' death's dark";
+			lyrics 1: "weap-on can pierce faith's strong";
+bar
+//7
+1 1: 2e+ slur; 4b; 8.c+g; 16bg;
+1 2: 2.g; 8.s; 16s;
+2 1: 2b slur; 4d+; 8.d+g; 16d+g;
+2 2: 2.g; 8.s; 16s;
+
+			lyrics 1: "save, To the";
+			lyrics 1: "name, So I'll";
+			lyrics 1: "vale, I will";
+			lyrics 1: "shield, In the";
+bar
+//8
+1 1: 4af; 8.af; 16af; 4a; 8.bg; 16c+g;
+1 2: 4s; 8.s; 16s; 4g; 8.s; 16s;
+2 1: 4d+a; 8.d+a; 16d+a; 4c+a; 8.a; 16a;
+2 2: 4s; 8.s; 16s; 4s; 8.a; 16a;
+
+			lyrics 1: "field where the lab'r-ers are";
+			lyrics 1: "fol-low my kind Shep-herd's";
+			lyrics 1: "go, with my Com-for-ter";
+			lyrics 1: "strength of the Lord I will";
+bar
+//9
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+			lyrics 1: "few.";
+			lyrics 1: "voice.";
+			lyrics 1: "near.";
+			lyrics 1: "go.";
+dblbar
+//10
+1 1: 8.f; 16e; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"I will";
+bar
+//11
+1 1: 2.d; 8.f; 16a;
+1 2: 4r; 8.a-; 16a-; 4a-; 4r;
+2: 4r; 8.fd; 16fd; 4fd; 4r;
+
+			lyrics 1: "go; where he";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "I will go,";
+bar
+//12
+1 1: 2.d+; 8.ac+; 16gb;
+1 2: [dist -6] 4r ; 8.f; 16f; 4f; 8.s; 16s;
+2: 4r; 8.ad; 16ad; 4ad; 8.ad; 16ad;
+
+			lyrics 1: "leads, In my";
+			lyrics 1: 4s; 8.; 16; 4; 8.s; 16s; "where he leads,"; 	
+bar
+//13
+1: 4af; 8.af; 16af; 4bg; 8.s; 16s;
+2: 4d+d; 8.d+d; 16d+d; 4d+d; 8.s; 16s;
+
+			lyrics 1: "weak-ness his pow'r";
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4s; 8.af; 16fd;
+2: 4s; 8.s; 16s; 4s; 8.d+d; 16ad;
+
+			lyrics 1: "I shall";
+
+bar
+//14
+1: 2.ec; 8.fd bm; 16ge ebm;
+2 1: 4a; 8.a; 16a; 4a; 4ad;
+2 2: 2.a-; 8.s; 16s; 
+
+			lyrics 1: 2.; 8.; 16s; "know: All";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "I shall know:";
+bar
+//15
+1 1: 4af; 8.af; 16af; 4af; 8.fd; 16d;
+1 2: 4s; 8.s; 16s; 4s; 8.s; 16d;
+2: 4d+d; 8.d+d; 16d+d; 4d+d; 8.ad; 16fd;
+
+			lyrics 1: "things, by his grace, I can";
+			lyrics 1: 4s; 8.s; 16s; 4s; 8.; 16; "by his";
+bar
+newscore
+//16
+1 1: 2.b; 8.bg; 16bg;
+1 2: 4d; 8.d; 16d; 4d; 8.s; 16s;
+2 1: 4g; 8.g; 16g; 4g; 8.d+g; 16d+g;
+2 2: 4g; 8.g; 16g; 4g; 8.s; 16s;
+
+			lyrics 1: "do, In the";
+			lyrics 1: 4; 8.; 16; 4; 8.s; 16s; "grace, I can do,";
+bar
+//17
+1 1: 4af; 8.af; 16af; 4a; 8.bg; 16c+g;
+1 2: 4s; 8.s; 16s; 4g; 8.s; 16s;
+2: 4d+a; 8.d+a; 16d+a; 4c+a-; 8.aa-; 16aa-;
+
+			lyrics 1: "strength of the Lord I will";
+bar
+//18
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+			lyrics 1: "go.";
+endbar

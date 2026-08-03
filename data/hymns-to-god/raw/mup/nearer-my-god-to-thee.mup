@@ -1,0 +1,243 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Cyberhymnal
+//		http://www.hymntime.com/tch/htm/n/m/g/nmgtthee.htm
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 02/24/2014; Rev. 08/04/2022
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Nearer, My God, To Thee" ""
+   title (2)""
+   title (11) "" "\f(TI)But it is good for me to draw near unto God: I have made the Lord" "" 
+   title (11) "" "\f(TI)Jehovah my refuge, That I may tell of all thy works. - Ps. 73:28" ""   
+   title (11) "F - 4 - MI" "" ""   
+   title (13) "Sarah F. Adams, 1841" "" "Lowell Mason, 1856"
+   title (13) "Vs. 6 Edward H. Bickersteth, Jr." "" ""
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 2ac; 4gb-; fa-;
+2 1: 2f; 4ec; fd;
+2 2: 2f; 4s;;
+
+	VERSE "<1. >-1|Near-er, my";
+	VERSE "<2. >-1|Though like the";
+	VERSE "<3. >-1|There let the";
+	VERSE "<4. >-1|Then, with my";
+	VERSE "<5. >-1|Or, if on";
+	VERSE "<6. >-1|There in my";
+bar
+//2
+1: 4.fd; 8db-; 2;
+2: 4.bb-; 8fb-; 2;
+
+	VERSE "God, to Thee,";
+	VERSE "wan-der-er,";
+	VERSE "way ap-pear,";
+	VERSE "wak-ing thoughts";
+	VERSE "joy-ful wing";
+	VERSE "Fa-ther's home,";
+bar
+//3
+1 1: 2c; 4fc; ac;
+1 2: 2c; 4s;;
+2: 2af-; 4fa-; ff-;
+
+	VERSE "Near-er to";
+	VERSE "The sun gone";
+	VERSE "Steps un-to";
+	VERSE "Bright with Thy";
+	VERSE "Cleav-ing the";
+	VERSE "Safe and at";
+bar
+//4
+1: 1gc;
+2: 1ec;
+
+	VERSE "Thee!";
+	VERSE "down.";
+	VERSE "heav'n;";
+	VERSE "praise,";
+	VERSE "sky,";
+	VERSE "rest,";
+bar
+//5
+1: 2ac; 4gb-; fa-;
+2 1: 2f; 4ec; fd;
+2 2: 2f; 4s;;
+
+	VERSE "E'en though it";
+	VERSE "Dark-ness be";
+	VERSE "All that Thou";
+	VERSE "Out of my";
+	VERSE "Sun, moon, and";
+	VERSE "There in my";
+bar
+//6
+1: 4.fd; 8db-; 2;
+2: 4.bb-; 8fb-; 2;
+
+	VERSE "be a cross";
+	VERSE "o-ver me,";
+	VERSE "send-est me,";
+	VERSE "ston-y griefs";
+	VERSE "stars for-got,";
+	VERSE "Sav-ior's love,";
+bar
+//7
+1: 4ca- slur; fc; ec; gc;
+2 1: 4f slur; a; gc; bc;
+2 2: 2c; 4s;;
+
+	VERSE "That rais-eth";
+	VERSE "My rest a";
+	VERSE "In mer-cy";
+	VERSE "Beth-el I'll";
+	VERSE "Up-ward I'll";
+	VERSE "Per-fect-ly";
+bar
+//8
+1: 1fc;
+2: 1af-;
+
+	VERSE "me,";
+	VERSE "stone.";
+	VERSE "given;";
+	VERSE "raise;";
+	VERSE "fly,";
+	VERSE "blest;";
+bar
+//9
+1: 2c+f; 4d+f; c+f;
+2: 2af; 4bf; af;
+
+	VERSE "Still all my";
+	VERSE "Yet in my";
+	VERSE "An-gels to";
+	VERSE "So by my";
+	VERSE "Still all my";
+	VERSE "Age af-ter";
+bar
+//10
+1: 4.c+f; 8af; 2c+f;
+2: 4.af; 8c+f; 2af;
+
+	VERSE "song shall be,";
+	VERSE "dreams I'd be";
+	VERSE "beck-on me";
+	VERSE "woes to be";
+	VERSE "song shall be,";
+	VERSE "age to be,";
+bar
+//11
+1: 2c+f; 4d+f; c+f;
+2: 2af; 4bb-; af;
+
+	VERSE "Near-er, my";
+	VERSE "Near-er, my";
+	VERSE "Near-er, my";
+	VERSE "Near-er, my";
+	VERSE "Near-er, my";
+	VERSE "Near-er, my";
+bar
+//12
+1: 4.c+g; 8ac; 2gc;
+2 1: 4.ge; 8f; 2ec;
+2 2: 4.s; 8f; 2s;
+
+	VERSE "God, to Thee.";
+	VERSE "God, to Thee.";
+	VERSE "God, to Thee.";
+	VERSE "God, to Thee.";
+	VERSE "God, to Thee.";
+	VERSE "God, to Thee.";
+bar
+newscore
+//13
+1: 2ac; 4gb-; fa-;
+2 1: 2f; 4ec; fd;
+2 2: 2f; 4s;;
+
+	VERSE "Near-er, my";
+bar
+//14
+1: 4.fd; 8db-; 2;
+2: 4.bb-; 8fb-; 2;
+
+	VERSE "God, to Thee,";
+bar
+//15
+1: 4ca- slur; fc; ec; gc;
+2 1: 4f slur; a; gc; bc;
+2 2: 2c; 4s;;
+
+	VERSE "Near-er to";
+bar
+//16
+1: 1fc;
+2: 1af-;
+
+	VERSE "Thee!";
+endbar

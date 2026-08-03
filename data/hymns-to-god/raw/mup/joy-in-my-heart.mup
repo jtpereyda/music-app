@@ -1,0 +1,281 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Pinebrook Choruses
+//	The Young Peoples Church Of The Air
+//	Compiled By Percy B. Crawford, M.A.
+//	Philadelphia, Pa;
+//	Copyright: 1934
+//	Hymn No.: 19
+
+// Transcribed by: Ted Gatza, Jr. 11/20/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	extendlyrics=y
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=c
+
+staff 2
+	key=c
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Joy In My Heart" ""
+   title (2) ""
+   title (11) "" "\f(TI)behold, my servants shall sing for joy of heart,...Is. 65:14" ""
+   title (11) "" 
+   title (11) "C - 4 - SOL" "" ""
+   title (13) "George W. Cooke" "" "George W. Cooke, 1925"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 2s; 8; g; a; b;
+1 2: 2s; 8; g; a; b;
+2 1: 2s; 8; g; a; b;
+2 2: 2s; 8; g; a; b;
+
+
+	VS "<1. >-1|I have the";
+	VS "<2. >-1|I have the";
+	VS "<3. >-1|I have the";
+	VS "<4. >-1|For there is";
+
+bar
+
+//2
+1 1: 8ec+; e?c+?; eb; e?b?; ea; e?a?; eg; e?g?;
+1 2: 8s; r?; 8s; r?; 8s; r?; 8s; r?;
+2 1: 8s; r?; 8s; r?; 8s; r?; 8s; r?;
+2 2: 8cc+; 8c?c+?; 8cc+; 8c?c+?; 8cc+; 8c?c+?; 8cc+; 8c?c+?;
+
+	VS 8; 8s; 8; 8s; 8; 8s; 8; 8s; "joy, joy, joy, joy,";
+	VS "peace that pass-eth un-der-stand-ing,";
+	VS "love of Je-sus, love of Je-sus,";
+	VS "there-fore now no con-dem-na-tion,";
+bar
+
+//3
+1 1: 8ce; 4b-e; 8b-d; 2c;
+1 2: 8s; 4; 8; 2c;
+2: 8cg; 4g-g; 8g-f; 2ce;
+
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+bar
+
+//4
+1 1: 8fd+; 4; 8fb; 2g;
+1 2: 8s; 4; 8; 2f;
+2: 8g-g; 4b-g; 8dg; 2gb;
+
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+bar
+
+//5
+1: 8ge+; 4; 8ec+; eg; s; ; ;
+2: 8cc+; 4; 8; 8; s; ; ; 
+
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+invisbar
+
+//5
+1 1: 8s; 4s; 8s; ; g; a; b;
+1 2: 8s; 4s; 8s; ; g; a; b;
+2 1: 8s; 4s; 8s; ; g; a; b;
+2 2: 8s; 4s; 8s; ; g; a; b;
+
+	VS "I have the";
+	VS "I have the";
+	VS "I have the";
+	VS "For there is";
+bar
+
+//6
+//2
+1 1: 8ec+; e?c+?; eb; e?b?; ea; e?a?; eg; e?g?;
+1 2: 8s; r?; 8s; r?; 8s; r?; 8s; r?;
+2 1: 8s; r?; 8s; r?; 8s; r?; 8s; r?;
+2 2: 8cc+; 8c?c+?; 8cc+; 8c?c+?; 8cc+; 8c?c+?; 8cc+; 8c?c+?;
+
+	VS 8; 8s; 8; 8s; 8; 8s; 8; 8s; "joy, joy, joy, joy,";
+	VS "peace that pass-eth un-der-stand-ing,";
+	VS "love of Je-sus, love of Je-sus,";
+	VS "there-fore now no con-dem-na-tion,";
+bar
+
+//7
+1 1: 8ce; 4b-e; 8b-d; 2c;
+1 2: 8s; 4; 8; 2c;
+2: 8cg; 4g-g; 8g-f; 2ce;
+
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+	VS "Down in my heart,";
+bar
+
+//8
+1 1: 8fd+; 4fd+; 8fb; 4g; fd+;
+1 2: 8s; 4s; 8; 4f; 4s;
+2: 8gb; 4; 8gd+; 4gb; ; 
+
+	VS "Down in my heart to";
+	VS "Down in my heart to";
+	VS "Down in my heart to";
+	VS "Down in my heart to";
+bar
+
+//9
+1: 2ec+; 8r; 8s; ; ;
+2: 2cg; 8r; 8s; ; ;
+
+	VS "stay.";
+	VS "stay.";
+	VS "stay.";
+	VS "stay.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

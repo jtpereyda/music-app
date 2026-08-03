@@ -1,0 +1,299 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest And Best
+//		A Choice Collection of New Songs
+//		for the Sunday School
+//		and Meetings of prayer and Praise
+//		New York and Chicago
+//		Publishers: Biglow and Main
+//		Copyright 1875
+//		Hymn no. 111
+
+// Transcribed by: Ted Gatza, Jr. 02/10/2010; Rev. 05/08/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "So Near To The Kingdom" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - SOL" "\s(17)\f(TI)\:\"Not\ far\ from\ the\ kingdom\ of\ God\"\ -\ Mk.\ 12:34 \(space)"""
+   title (13) "Fanny J. Crosby" " " "Robert Lowry, 1875"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2s; 4be;
+2: 2s; 4ge;
+
+			lyrics 1: "<1. >-1|So";
+			lyrics 1: "<2. >-1|So";
+			lyrics 1: "<3. >-1|O";
+			lyrics 1: "<4. >-1|To";
+bar
+//2
+1: 2be; 8.ge; 16af;
+2: 2ge; 8.be; 16be;
+
+			lyrics 1: "near to the";
+			lyrics 1: "near that thou";
+			lyrics 1: "come, or thy";
+			lyrics 1: "die with no";
+bar
+//3
+1: 4bg; 4bg; 4ge;
+2: 4e+e; 4e+e; 4be;
+
+			lyrics 1: "king-dom! yet";
+			lyrics 1: "hear-est the";
+			lyrics 1: "sea-son of";
+			lyrics 1: "hope! hast thou";
+bar
+//4
+1: 4fd; 4ec; 4fd;
+2: 4bb-; 4bb-; 4bb-;
+
+			lyrics 1: "what dost thou";
+			lyrics 1: "songs that re-";
+			lyrics 1: "grace will be";
+			lyrics 1: "count-ed the";
+bar
+//5
+1: 2ge; 4bg;
+2: 2be; 4e+e;
+
+			lyrics 1: "lack? So";
+			lyrics 1: "sound From";
+			lyrics 1: "past, The";
+			lyrics 1: "cost? To";
+bar
+//6
+1: 2c+a; 8.s; 16s;
+2: 2e+a; 8.s; 16s;
+
+			lyrics 1: "near";
+			lyrics 1: "those";
+			lyrics 1: "door";
+			lyrics 1: "die";
+invisbar
+newscore
+
+1: 2s; 8.c+a; 16d+b;
+2: 2s; 8.e+a; 16e+a;
+
+			lyrics 1: "to the";
+			lyrics 1: "who, be-";
+			lyrics 1: "will be";
+			lyrics 1: "out of";
+
+bar
+//7
+1: 4e+c+; 4d+b; 4c+a;
+2: 4e+a; 4e+a; 4e+a;
+
+			lyrics 1: "king-dom! what";
+			lyrics 1: "liev-ing, a";
+			lyrics 1: "closed, and this";
+			lyrics 1: "Christ, and thy";
+bar
+//8
+1: 4bg; 4ge; 4be;
+2: 4e+e; 4be; 4bg-;
+			
+			lyrics 1: "keep-eth thee";
+			lyrics 1: "par-don have";
+			lyrics 1: "call be thy";
+			lyrics 1: "soul to be";
+bar
+//9
+1: 2fd; 4bd;
+2: 2bb-; 4ab-;
+
+			lyrics 1: "back? Re-";
+			lyrics 1: "found! So";
+			lyrics 1: "last; O";
+			lyrics 1: "lost! So";
+bar
+//10
+1: 2be; 8.ge; 16af;
+2: 2ge; 8.be; 16be;
+
+			lyrics 1: "nounce ev-ery";
+			lyrics 1: "near, yet un-";
+			lyrics 1: "where wouldst thou";
+			lyrics 1: "near to the";
+bar
+//11
+1 1: 4bg; 4ge; 4e;
+1 2: 4s; 4s; 4e;
+2: 4e+e; 4be; 4ge;
+
+			lyrics 1: "i-dol, tho'";
+			lyrics 1: "will-ing to";
+			lyrics 1: "turn if the";
+			lyrics 1: "king-dom! O";
+bar
+//12
+1: 4ge; 4ae; 4be;
+2: 4be; 4ac; 4ge;
+
+			lyrics 1: "dear it may";
+			lyrics 1: "give up thy";
+			lyrics 1: "light should de-";
+			lyrics 1: "come, we im-";
+bar
+//13
+1: 2c+e; 4d+a;
+2 1: 2a; 4bf;
+2 2: 2a; 4s;
+
+			lyrics 1: "be, And";
+			lyrics 1: "sin, When";
+			lyrics 1: "part That";
+			lyrics 1: "plore, While";
+bar
+//14
+1: 4.e+g; 8d+a; 4e+b;
+2: 4.be; 8bf; 4e+g;
+
+			lyrics 1: "come to the";
+			lyrics 1: "Je-sus is";
+			lyrics 1: "comes from the";
+			lyrics 1: "Je-sus is";
+bar
+//15
+1: 4c+a; 4ae; 4fc;
+2: 4e+a; 4c+a-; 4aa-;
+
+			lyrics 1: "Sav-iour now";
+			lyrics 1: "wait-ing to";
+			lyrics 1: "Spir-it, and";
+			lyrics 1: "plead-ing, come";
+bar
+//16
+1: 4eb-; 4.ge; 8fd;
+2: 4gb-; 4.bb-; 8ab-;
+
+			lyrics 1: "plead-ing with";
+			lyrics 1: "wel-come thee";
+			lyrics 1: "shines on thy";
+			lyrics 1: "en-ter the";
+bar
+//17
+1 1: 2.e;
+1 2: 2.e;
+2: 2.ge;
+
+			lyrics 1: "thee.";
+			lyrics 1: "in!";
+			lyrics 1: "heart?";
+			lyrics 1: "door.";
+dblbar
+//18
+1: 2.bd;
+2: 4fb-; 4fb-; 4fb-;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "<>";
+			lyrics 1: "Plead-";
+			lyrics 1: 4; 4; 4; "Plead-ing with";
+bar
+//19
+1: 4fd slur; 4ge; 4af;
+2: 2.bb-;
+
+			lyrics 1: 4; 4s; 4s; "<>";
+			lyrics 1: "ing with";
+			lyrics 1: 2.; "thee,";
+bar
+//20
+1: 2.g<b>e<e>; 
+2: 4be; 4be; 4be;
+
+			lyrics 1: "<>";
+			lyrics 1: "thee,";
+			lyrics 1: 4; 4; 4; "plead-ing with";
+bar
+//21
+1: 2be; 4s;
+2: 2ge; 4s;
+
+			lyrics 1: 2; 4s; "<>";
+			lyrics 1: 2; 4s; "<>";
+			lyrics 1: 2; 4s; "thee,";
+invisbar
+newscore
+
+1: 2s; 4ge;
+2: 2s; 4be;
+
+			lyrics 1: 2s; 4; "The";
+invisbar
+
+bar
+//22
+1: 4ae; 4ge; 4ge;
+2: 4c+e; 4be; 4be;
+
+			lyrics 1: "Sav-iour is";
+bar
+//23
+1: 4ae; 4ge; 4ge;
+2: 4c+e; 4be; 4be;
+
+			lyrics 1: "plead-ing, is";
+bar
+//24
+1: 4fd; 4gd; 4fd;
+2: 4ab-; 4bb-; 4ab-;
+
+			lyrics 1: "plead-ing with";
+bar
+//25
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2ge; 4s;
+
+			lyrics 1: "thee.";
+endbar

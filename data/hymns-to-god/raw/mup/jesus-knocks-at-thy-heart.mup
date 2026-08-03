@@ -1,0 +1,211 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Lasting Hymns
+//		A collection of songs Specially Designed
+//		For Evey Department of Worship
+//		Suitable for all services of the Churches
+//		Editor: John A. Lee
+//		Publisher John A. Lee
+//		419-421 Elm St. Cincinnati, O. 
+//		7921 St Charles Ave., New Orleans
+//		Glencoe, KY
+//		Copyright 1901
+//		Hymn no. 67
+
+// Transcribed by: Ted Gatza, Jr. 04/22/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Jesus Knocks At Thy Heart" ""
+   title (2)""
+   title (11) "E - 2 - MI" "\s(17)\f(TI)\:Behold,\ I\ knock\ at\ the\ door.\ -\ Rev.\ 3:20 \(space)" ""
+   title (13) "A. J. Showalter" " " "A. J. Showalter, 1896"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.4
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=4#
+
+
+staff 2
+	key=4#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=75";
+
+
+//1
+1 1: 8ge;;;; fd; e;
+1 2: 8s;;;;; e;
+2: 8be;;;; ae; ge;
+
+			VERSE "<1. >-1|Lo! Je-sus pa-tient-ly";
+			VERSE "<2. >-1|O-pen the door and say,";	
+			VERSE "<3. >-1|Je-sus stands wait-ing and";
+			VERSE "<4. >-1|O-pen the door of thy";
+bar
+//2
+1: 8bd; be; bf; 4.be;
+2: 8fb-; gb-; ab-; 4.ge;
+
+			VERSE "knocks at the door,";
+			VERSE "\"Mas-ter, come in,";
+			VERSE "pleads with thee still";
+			VERSE "heart and find rest,";
+bar
+//3
+1: 8be;c+e; g#e; 4.af;
+2: 8ge; gc; c+c; 4.c+f;
+
+			VERSE "Knocks at thy heart,";
+			VERSE "Come and a-bide,";
+			VERSE "O-pen to-day!";
+			VERSE "Find it to-day,";
+bar
+//4
+1: 8ad; bd; fd; 4.ge;
+2: 8bf; bb-;; 4.be;
+
+			VERSE "knocks at thy heart,";
+			VERSE "come and a-bide;\"";
+			VERSE "o-pen to-day!";
+			VERSE "find it to-day;";
+bar
+//5
+1 1: 8ge;;;; fd; e;
+1 2: 8s;;;;; e;
+2: 8be;;;; ae; ge;
+
+			VERSE "O-pen to-day and re-";
+			VERSE "He will re-deem thee and";
+			VERSE "How canst thou treat the dear";
+			VERSE "Let Him but en-ter and";
+bar
+//6
+1: 8bd; be; bf; 4.be;
+2: 8fb-; gb-; ab-; 4.ge;
+
+			VERSE "sist Him no more,";
+			VERSE "cleanse from all sin,";
+			VERSE "Sav-iour so ill?";
+			VERSE "thou shalt be blest;";
+bar
+//7
+1: 8c+e;; e+e; d+f;; c+e;
+2: 8gc;; c+c; bf;; a#f;
+
+			VERSE "Lest He for-ev-er de-";
+			VERSE "He will be with thee to";
+			VERSE "How canst thou turn Him a-";
+			VERSE "Why wilt thy long-er de-";
+bar
+//8
+1: 4.bd tie; 4; 8r;
+2: 4.bb- tie; 4; 8r;
+
+			VERSE "part.";
+			VERSE "guide.";
+			VERSE "way?";
+			VERSE "lay?";
+dblbar
+//9
+1: 4.be tie; 8; 8c+e; g#e;
+2: 4ge; 8;; gc; c+c;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE 4.; 4.s; "<>";
+			VERSE "Knock-ing to-";
+			VERSE 4; 8; 8; 8; 8; "Knock-ing, knock-ing to-";
+			VERSE 4; 8s; 4.s; "<>";
+bar
+//10
+1: 4.af tie; 4; 8r;
+2: 4c+f; 8; 4; 8r;
+
+			VERSE "day,_";
+			VERSE 4; 8; 4; 8s; "day, to-day,";
+			VERSE 4; 8s; 4.s; "<>";
+bar
+//11
+1: 4.ad tie; 8; bd; fd;
+2: 4bf; 8;; bb-;;
+
+			VERSE "Knock-ing to-";
+			VERSE 4; 8; 8; 8; 8; "Knock-ing, knock-ing to-";
+bar
+//12
+1: 4. ge tie; 4; 8r;
+2: 4be; 8; 4; 8r;
+
+			VERSE "day,_";
+			VERSE 4; 8; 4; 8s; "day, to-day.";
+bar
+
+//13
+1 1: 4.e+ tie; 8; [up]d+a; [up]c+a;
+1 2: 8b ph; 8b;; a eph; 8s;;
+2: 8d+ng;;; c+a; d+#a; e+a;
+
+			VERSE "Je-sus is";
+			VERSE 8; 8; 8; 8; 8; 8; "Je-sus is earn-est-ly";
+bar
+//14
+1 1: 4.b tie; 8; g; e;
+1 2: 8g;;; bm; e ebm; e;
+2 1: 8e+e;;; 8e+ bm; b ebm; 8s;
+2 2: 8s;;; 4e; 8ge;
+
+			VERSE 4.; 8s; 8; 8s; "knock-ing,";
+			VERSE 8; 8; 8; 4; 8; "knock-ing to-day, Is";
+bar
+//15
+1: 8fd; ge; af; ge;; fd;
+2: 8bb-;;;;; ab-;
+
+			VERSE "knock-ing for en-trance to-";
+bar
+//16
+1 1: 4.e tie; 4.;
+1 2: 4.e tie; 4.;
+2 1: 4.ge tie; 4.; 
+
+			VERSE "day.";
+endbar

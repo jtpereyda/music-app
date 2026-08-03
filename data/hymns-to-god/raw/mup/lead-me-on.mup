@@ -1,0 +1,228 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 24
+//		
+// Transcribed by: Ted Gatza, Jr. 02/08/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Lead Me On" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - SOL" "\s(17)\f(TI)\:For\ thou\ art\ my\ rock\ and\ \|my\ fortress;\ Therefore\ for thy\ name's\ sake\ lead\ me\ \|and\ guide\ me.\ -\ Ps.\ 31:3" ""   
+   title (13) "J. H. Kurzenknabe" "" "L. H. Parthemore, 1896"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8.fd; 16bd; 2.s;
+2: 8.bb-; 16; 2.s;
+
+			VERSE "<1. >-1|Bless-ed";
+			VERSE "<2. >-1|Oh, the";
+			VERSE "<3. >-1|Thro' the";
+			
+bar
+//2
+1: 4d+f;;; 8c+f; bf;
+2: 4bb-;;; 8ac; bd;
+
+			VERSE "Sav-iour! Thou art my";
+			VERSE "won-drous care and the";
+			VERSE "storms of life, when the";
+bar
+//3
+1: 4ge;; be; 8ae; ge;
+2: 4be;; ge; 8be;;
+
+			VERSE "hope and stay, Thy pro-";
+			VERSE "lov-ing hand Of this";
+			VERSE "tem-pests play, Then He";
+bar
+//4
+1: 4fd;; bf; 8ae; bd;
+2: 4bb-;; bd; 8fc; fb-;
+
+			VERSE "tect-ing hand leads me";
+			VERSE "trus-ty guide, and the";
+			VERSE "calms the winds, and the";
+bar
+//5
+1: 4c+f; d+f; c+f; 8.fd; 16bd;
+2: 4af; bf; af; 8.bb-; 16;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "all the way; Keep me";
+			VERSE "stead-fast friend, Who will";
+			VERSE "waves o-bey; And at";
+bar
+//6
+1: 4d+f;;s; 8; ;
+2: 4bb-;;s; 8; ;
+
+			VERSE "ev-er";
+			VERSE "not for-";
+			VERSE "last, when";
+invisbar
+newscore
+
+1: 4s;;d+f; 8c+f; bf;
+2: 4s;;bb-; 8ac; bd;
+
+			VERSE "near, with the";
+			VERSE "sake what-so-";
+			VERSE "all of life's";
+
+bar
+//7
+1: 4ge;; be; 8ae; ge;
+2: 4be;; ge; 8ae; be;
+
+			VERSE "cross in view, Lead me,";
+			VERSE "o'er be-tide; Those who";
+			VERSE "work is done, He will";
+bar
+//8
+1: 4fd;; bf; 8ae; bd;
+2: 4bf;; bd; 8fc; fb-;
+
+			VERSE "step by step, all my";
+			VERSE "trust His word, in His";
+			VERSE "crown His saints with the";
+bar
+//9
+1: 4d+f; c+e; bd; s;
+2 1: 4f; af; bb-; s;
+2 2: 4f; s;;;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "jour-ney through.";
+			VERSE "love a-bide.";
+			VERSE "vic-t'ry won.";
+dblbar
+//10
+1: 8.bd; 16c+e; 2.s;
+2: 8.bb-; 16; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Lead me";
+bar
+//11
+1 1: 2.d+; 8.be; 16ge;
+1 2: 4f; 8.; 16; 4; 8.s; 16;
+2: 4bb-; 8.; 16; 4; 8.ge; 16be;
+
+			VERSE "on,_ lead me";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "Lead me on,";
+bar
+//12
+1 1: 2.f; 8.ae; 16bd;
+1 2: 4d; 8.; 16; 4; 8.s; 16s;
+2: 4bb-; 8.; 16; 4; 8.c+f; 16bf;
+
+			VERSE "on,_ Lead me";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "Lead me on,";
+bar
+//13
+1: 4c+f;; 8; af; bf; c+f;
+2: 4af;; 8; c+e; bd; af;
+
+			VERSE "in the straight and nar-row";
+bar
+//14
+1 1: 2.d+; 8.bd; 16c+e;
+1 2: 8.f; 16; 8;; 4; 8.s; 16s;
+2 1: 8.b; 16bf; 8bd; bf; 4bb-; 8.bb-; 16;
+2 2: 8.b; 16s; 8;; 4; 8.; 16;
+
+			VERSE "way;_ Lead me";
+			VERSE 8.s; 16; 8; 8; 4; 8.s; 16s; "Lead Thou me on;";
+bar
+//15
+1 1: 2.d+; 8.bf; 16af;
+1 2: 4f; 8.; 16; 4; 8.s; 16s;
+2: 4bb-; 8.; 16; 4; 8.bd; 16;
+
+			VERSE "on,_ Lead me";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "Lead me on,";
+bar
+//16
+1 1: 2.g; 8.ae; 16bd;
+1 2: 4e; 8.; 16; 4; 8.s; 16;
+2: 4be; 8.; 16; 4; 8.fc; 16fb-;
+
+			VERSE "on,_ Lead me";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "Lead me on,";
+bar
+//17
+1: 4c+e;; 8; e+g; d+f; c+e;
+2: 4af;; 8;;;;
+
+			VERSE "Sav-iour, lead me day by";
+bar
+//18
+1 1: 2.b; 4s;
+1 2: 4d; 8e;; 4d; s;
+2 1: 4b; 8g;; 4f; s;
+2 2: 2.b-; 4s;
+ital (13) above 1: 1 "rit.";
+
+			VERSE "day._";
+			VERSE 4s; 8; 8; 4; 4s; "day by day.";
+endbar

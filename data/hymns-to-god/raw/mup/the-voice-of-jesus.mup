@@ -1,0 +1,225 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Glorious Things In Sacred Song
+//		For Sabbath Schools
+//		By T. C. O'Kane,
+//		Perkinpine & Higgins
+//		Sunday School and Theological Book Store
+//		914 Arch St., Philadelphia, Penn.
+//		Copyright 1886
+//		Hymn no. 39
+
+// Transcribed by: Ted Gatza, Jr. 03/25/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Voice Of Jesus" ""
+   title (2)""
+   title (11) "A - 2 - SOL" "\s(17)\f(TI)\:Come\ unto\ me,\ all\ ye\ th\^at\ labor\ and\ are\ heavy laden,\ and\ I\ will\ give\ y\|ou\ rest.\ -\ Mat.\ 11:28" ""
+   title (13) "Horatio Bonar, 1846" " " "T. C. O'Kane"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.
+	pad =0
+	vscheme = 2f
+	staffscale=.9
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+
+//1
+1: 8ec; 4.s; 4;
+2: 8aa-; 4.s; 4;
+
+			VERSE "<1. >-1|I";
+			VERSE "<2. >-1|I";	
+			VERSE "<3. >-1|I";
+bar
+//2
+1: 4ec; 8; bm; d#b#- ebm; ec;
+2: 4aa-; 8; 4; 8;
+
+			VERSE 4; 8; 4; 8; "heard the voice of";
+			VERSE 4; 8; 4; 8; "heard the voice of";
+			VERSE 4; 8; 4; 8; "heard the voice of";
+bar
+//3
+1: 4fd; 8af; 4; 8;
+2: 4ad; 8; 4; 8bd;
+
+			VERSE "Je-sus say, \"Come";
+			VERSE "Je-sus say, \"Be-";
+			VERSE "Je-sus say, \"I";
+bar
+//4
+1: 4ge; 8ae; 4be; 8c+e;
+2: 4be; 8c+e; 4d+e; 8ge;
+
+			VERSE "un-to me and";
+			VERSE "hold, I free-ly";
+			VERSE "am this dark world's";
+bar
+//5
+1: 4.ac tie; 4; 8ec;
+2: 4.aa- tie; 4; 8;
+
+			VERSE "rest. Lay";
+			VERSE "give The";
+			VERSE "light. Look";
+bar
+//6
+1: 4ec; 8; bm; d#b#- ebm; ec;
+2: 4aa-; 8; 4; 8;
+
+			VERSE 4; 8; 4; 8; "down, thou wea-ry";
+			VERSE 4; 8; 4; 8; "liv-ing wa-ter,";
+			VERSE 4; 8; 4; 8; "un-to me, thy";
+bar
+//7
+1: 4fd; 8af; 4; 8;
+2: 4ad; 8; 4; 8bd;
+
+			VERSE "one, lay down Thy";
+			VERSE "thirst-y one, Stoop";
+			VERSE "morn shall rise, And";
+bar
+//8
+1: 4ge; 8ae; 4be; 8c+e;
+2: 4be; 8c+e; 4d+e; 8ge;
+
+			VERSE "head up-on my";
+			VERSE "down and drink and";
+			VERSE "all thy day be";
+bar
+//9
+1: 4.ac tie; 4; 8s;
+2: 4.aa- tie; 4; 8s;
+
+			VERSE "breast.";
+			VERSE "live.";
+			VERSE "bright.";
+dblbar
+//10
+1 1: 16c+ bm; d+ ebm; 4.s; 4;
+1 2: 8e; 4.s; 4;
+2 1: 8a; 4.s; 4;
+2 2: 8a; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 8; 4.s; 4s; "I";
+			VERSE 8; 4.s; 4s; "I";
+			VERSE 8; 4.s; 4s; "I";
+bar
+//11
+1: 4e+a; 8; e+c+ bm; d+b ebm; c+a;
+2 1: 4c+a; 8; 4a; 8;
+2 2: 4s; 8; 4a; 8;
+
+			VERSE 4; 8; 4; 8; "came to Je-sus,";
+			VERSE 4; 8; 4; 8; "came to Je-sus,";
+			VERSE 4; 8; 4; 8; "looked to Je-sus,";
+bar
+//12
+1: 4bg; 8d+g; 8 bm; c+a ebm; bg;
+2: 4be; 8; 4; 8d+e;
+
+			VERSE 4; 8; 4; 8; "as I was, Wea-";
+			VERSE 4; 8; 4; 8; "and I drank, Of";
+			VERSE 4; 8; 4; 8; "and I found, In";
+bar
+//13
+1 1: 4ae; 8c+e; c+ bm; b ebm; a;
+1 2: 4s; 8; 4e; 8a;
+2 1: 4c+a; 8a; a bm; b ebm; c+f;
+2 2: 4s; 8a; bm; g ebm; s;
+
+			VERSE 4; 8; 4; 8; "ry, and worn and";
+			VERSE 4; 8; 4; 8; "that life-giv-ing";
+			VERSE 4; 8; 4; 8; "him my star, my";
+bar
+//14
+1: [up]4.c+a slur; 4bg; 8be;
+2: 4.e+e tie; 4; 8ge;
+
+			VERSE "sad, I";
+			VERSE "stream, My";
+			VERSE "sun, And";
+bar
+//15
+1 1: 4c+e; 8d+f; 8c+ bm; b ebm; ae;
+1 2: 4s; 8; 4e; 8s;
+2: 4aa-; 8; bm; gb- ebm; ac;
+
+			VERSE 4; 8; 4; 8; "found in him a";
+			VERSE 4; 8; 4; 8; "thirst was quenched, my";
+			VERSE 4; 8; 4; 8; "in that light of";
+bar
+//16
+1: 4bf; 8af; 4fd; 8;
+2: 4d+d; 8ad; 4; 8;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "rest-ing place, And";
+			VERSE "soul re-vived, And";
+			VERSE "life I'll walk, Till";
+bar
+//17
+1 1: 4e; 8ac; a bm; g ebm; be;
+1 2: 4e; 8s; 4e; 8s;
+2: 4ac; 8af; 4c+e; 8d+e;
+
+			VERSE 4; 8; 4; 8; "he has made me";
+			VERSE 4; 8; 4; 8; "now I live in";
+			VERSE 4; 8; 4; 8; "all my jour-ney's";
+bar
+//18
+1: 4.ae tie; 4; 8s;
+2: 4.c+a- tie; 4; 8s;
+
+			VERSE "glad.";
+			VERSE "him.";
+			VERSE "done.";
+endbar

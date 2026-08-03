@@ -1,0 +1,343 @@
+// !Mup 7.1 arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 187
+
+// Transcribed by: Ted Gatza, Jr. 06/17/2024
+
+// Revisions:
+
+//[Note] Verse three is not in the hymn used. It was added for this transcription.
+
+// HymnsToGod.org
+
+///==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Love Divine" ""
+   title (2)""
+   title (11)"" "\f(TI)and above all these things put on love," ""
+   title (11)"" "\f(TI)which is the bond of perfectness. - Col 3:14" ""
+   title (11) "B \(flat) - 4 - SOL" "" ""
+   title (11) "Carles Wesley, 1747" " " "John Zundel, 1870"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1: 4df; ; eg; df;
+2: 4b-f; ; b-g; b-b;
+
+
+	VS "<1. >-1|Love di-vine, all";
+	VS "<2. >-1|Breathe, O breathe Thy";
+	VS "<3. >-1|Come, Al-might-y";
+	VS "<4. >-1|Fin-ish then Thy";
+bar
+
+//2
+1: 4fd+; 8ec+ bm; fd+ ebm; 4ec+; db;
+2: 4b-b; fa; ; b-b;
+
+	VS21 "love ex-cel-ing,";
+	VS21 "lov-ing Spir-it";
+	VS21 "to de-liv-er,";
+	VS21 "new cre-a-tion,";
+bar
+
+//3
+1: 4fa; eg; gb; eg;
+2: 4eb; ; ; ;
+
+	VS "Joy of heav'n, to";
+	VS "In-to ev-'ry";
+	VS "May we all Thy";
+	VS "Pure, un-spot-ted,";
+bar
+
+//4
+1 1: 4df; 8e bm; f ebm; 2b-d;
+1 2: 4s; c; 2s;
+2 1: 4fb; f-a; 2b-f;
+
+	VS21 "earth come down!";
+	VS21 "troub-led breast;";
+	VS21 "life re-ceive;";
+	VS21 "may we be;";
+bar
+
+//5
+1: 4df; ; eg; df;
+2: 4b-f; ; b-g; b-b;
+
+	VS "Fix in us Thy";
+	VS "Let us all in";
+	VS "Sud-den-ly re-";
+	VS "Let us see our";
+bar
+
+//6
+1: 4fd+; 8ec+ bm; fd+ ebm; 4ec+; db;
+2: 4b-b; fa; f#a; gb;
+
+	VS21 "hum-ble dwell-ing";
+	VS21 "Thee in-her-it,";
+	VS21 "turn, and nev-er,";
+	VS21 "whole sal-va-tion,";
+bar
+
+//7
+1: 4eg; ge+; 4fd+; fb;
+2: 4eb; ; fb; fd+;
+
+	VS "All Thy faith-ful";
+	VS "Let us find the";
+	VS "Nev-er-more Thy";
+	VS "Per-fect-ly se-";
+bar
+
+//8
+1 1: 4ea; 8g bm; a ebm; 2db;
+1 2: 4s; e; 2s;
+2: 4fc+; f-f; 2b-f;
+
+	VS21 "mer-cies crown.";
+	VS21 "prom-ised rest.";
+	VS21 "tem-ples leave;";
+	VS21 "cured by Thee.";
+bar
+
+//9
+1: 4db; gb; ; f#a;
+2:4 g-g; b-d+; dd+; dc+;
+
+	VS "Je-sus, Thou art";
+	VS "Take a-way the";
+	VS "Thee we would be";
+	VS "Changed from glo-ry";
+bar
+
+//10
+1 1: 4g; 8a bm; g ebm; 4df#; d;
+1 2: 4g; d; s; d;
+2 1: 4s; 8c+ bm; b ebm; 4s; d;
+2 2: 4db; d; da; d;
+
+	VS22 "all com-pas-sion,";
+	VS22 "love of sin-ning,";
+	VS22 "al-ways bless-ing,";
+	VS22 "in-to glo-ry,";
+bar
+
+//11
+1: 4dd+; fd+; ge+; fd+;
+2 1: 4b-b; ; b; b-b;
+2 2: 4s; ; b; s;
+
+	VS "Pure, un-bound-ed";
+	VS "Take our load of";
+	VS "Serve Thee as Thy";
+	VS "Till in heav'n we";
+bar
+
+//12
+1 1: 4fc+; 8c+ bm; d+ ebm; 2c+;
+1 2: 4s; en; f slur; e&;
+2: 4ca; cb; 2fa;
+
+	VS21 "love Thou art;";
+	VS21 "guilt a-way;";
+	VS21 "host a-bove,";
+	VS21 "take our place;";
+bar
+//=================
+//13 
+1: 4df; ; eg; df;
+2: 4b-f; ; b-g; b-b;
+
+	VS "Vis-it us with";
+	VS "End the work of";
+	VS "Pray, and praise Thee,";
+	VS "Till we cast our";	
+bar
+
+//14
+1: 4fd+; 8ec+ bm; fd+ ebm; 4ec+; db;
+2: 4b-b; fa; f#a; gb;
+
+	VS21 "Thy sal-va-tion,";
+	VS21 "Thy be-gin-ning,";
+	VS21 "with-out ceas-ing,";
+	VS21 "crowns be-fore Thee,";
+bar
+
+//15
+1: 4eg; ge+; 4fd+; fb;
+2: 4eb; ; fb; fd+;
+
+	VS "En-ter ev-'ry";
+	VS "Bring is to e-";
+	VS "Glo-ry in Thy";
+	VS "Lost in won-der,";
+bar
+
+//16
+1 1: 4ea; 8g bm; a ebm; 2db;
+1 2: 4s; e; 2s;
+2: 4fc+; f-f; 2b-f;
+
+	VS21 "trem-bling heart!";
+	VS21 "ter-nal day.";
+	VS21 "per-fect love.";
+	VS21 "love and praise.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

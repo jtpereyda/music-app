@@ -1,0 +1,220 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Zion's Glad Songs
+//		for All Christian Gatherings 
+//		by M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W.67th Street, Chicago, Il.
+//		Copyright 1908
+//		Hymn no. 58
+
+// Transcribed by: Ted Gatza, Jr. 02/24/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Pray For One Another" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - MI" "\s(17)\f(TI)\:\"and\ I\ will\ pray\ for\ you\ unto\ Jehovah.\"\ -\ 1\ Sam.\ 7:5 \(space)"""
+   title (13) "Kate Ulmer" " " "M. L. McPhail, 1900"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8.d+f; 16c+e;
+2: 2.s; 8.bb-; 16fb-;
+
+
+			lyrics 1: "<1. >-1|Let us";
+			lyrics 1: "<2. >-1|Let us";
+			lyrics 1: "<3. >-1|Let us";
+			lyrics 1: "<4. >-1|Let us";
+bar
+//2
+1: 4bd; 4fd; 4db-; 4fd;
+2: 4fb-; 4bb-; 4fb-; 4bb-;
+
+			lyrics 1: "pray for one an-";
+			lyrics 1: "in the hour of";
+			lyrics 1: "pray in faith be-";
+			lyrics 1: "cheer our home-ward";
+bar
+//3
+1: 4ge; 2bg; 8.af; 16ge;
+2: 4be; 2be; 8.be; 16be;
+
+			lyrics 1: "oth-er, Help-ing";
+			lyrics 1: "tri-al, When a";
+			lyrics 1: "liev-ing, Ev-er";
+			lyrics 1: "jour-ney, By sweet";
+bar
+//4
+1: 4fd; 4fd; 4s; 4s;
+2: 4bb-; 4bb-; 4s; 4s;
+
+			lyrics 1: "thus the";
+			lyrics 1: "broth-er's";
+			lyrics 1: "trust-ing";
+			lyrics 1: "fel-low-";
+invisbar
+newscore
+
+1: 4s; 4s; 4bf; 4d+f;
+2: 4s; 4s; 4bd; 4bb-;
+
+			lyrics 1: "weak-est";
+			lyrics 1: "faith seems";
+			lyrics 1: "un-dis-";
+			lyrics 1: "ship in";
+
+bar
+//5
+1: 2.c+f; 8.d+f; 16c+e;
+2: 2.af; 8.af; 16af;
+mussym above 1: 4 "sign";
+
+			lyrics 1: "stand; For the";
+			lyrics 1: "weak, That he";
+			lyrics 1: "mayed; Know-ing";
+			lyrics 1: "prayer; Thus the";
+			lyrics 2: 2.s; 8.; 16; "<\f(TX)D.S.\f(TR) - >|He de-";
+bar
+//6
+1: 4bd; 4fd; 4db-; 4fd;
+2: 4bb-; 4bb-; 4fb-; 4bb-;
+
+			lyrics 1: "con-flict with the";
+			lyrics 1: "yet may prove vic-";
+			lyrics 1: "He will send the";
+			lyrics 1: "law of Christ ful-";
+			lyrics 2: "lights to have His";
+bar
+//7
+1: 4ge; 2bg; 8.s; 16s;
+2: 4be; 2be; 8.s; 16s;
+
+			lyrics 1: "tempt-er";
+			lyrics 1: "tor-ious,";
+			lyrics 1: "an-swer,";
+			lyrics 1: "fill-ing,";
+			lyrics 2: "chil-dren";
+invisbar
+newscore
+
+1: 4s; 2s; 8.bg; 16c+g&;
+2: 4s; 2s; 8.be; 16be;
+
+			lyrics 1: "Strength-en-";
+			lyrics 1: "On our";
+			lyrics 1: "Tho' in";
+			lyrics 1: "Thus each";
+			lyrics 2: "To the";
+
+bar
+//8
+1: 4d+f; 4bd; 4.c+e; 8ae;
+2 1: 4bf; 4bf; 4.af; 8f;
+2 2: 4s; 4s; 4.s; 8f;
+	
+			lyrics 1: "ing both heart and";
+			lyrics 1: "knees his name oft";
+			lyrics 1: "wis-dom long de-";
+			lyrics 1: "oth-er's bur-dens";
+			lyrics 2: "throne of grace draw";
+bar
+//9
+1: 2.bd; 4s;
+2: 2.fb-; 4s;
+ital (13) above 1: 1 "Fine.";
+
+			lyrics 1: "hand.";
+			lyrics 1: "speak.";
+			lyrics 1: "layed.";
+			lyrics 1: "bear.";
+			lyrics 2: "near.";
+dblbar
+//10
+1: 8.ac; 16bd; 2.s;
+2 1: 8.f; 16f; 2.s;
+2 2: 8.f; 16f; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Let us";
+bar
+//11
+1: 4c+e; 4e+g; 4s; 4s;
+2: 4af; 4af; 4s; 4s;
+
+			lyrics 1: [c]"pray for";
+invisbar
+newscore
+
+1: 4s; 4s; 4d+f; 4c+e;
+2: 4s; 4s; 4af; 4af;
+
+			lyrics 1: [c]"one an-";
+
+bar
+//12
+1: 4c+e; 2bd; 8bf; 8c+f;
+2: 4af; 2bb-; 8bd; 8af;
+
+			lyrics 1: [c]"oth-er, God will";
+bar
+//13
+1: 4d+f; 4d+f; 4bg; 4ben;
+2 1: 4b; 4b; 4d+g; 8c+ bm; 8b ebm;
+2 2: 4b; 4b; 4s; 4c;
+
+			lyrics 1: [c]"our pet-t-tions";
+bar
+//14
+1: 2.c+f; 4s;
+2: 2.af; 4s;
+ital (13) above 1: 3 "D.S.";
+
+			lyrics 1: [c]"hear;";
+endbar
+

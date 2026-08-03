@@ -1,4 +1,4 @@
-// !Mup vs. 7.2 arkkra.com
+// !Mup vs. 6.9 arkkra.com
 
 // The hymn produced by this source code is believed to be  
 // in the public domain in the United States of America.
@@ -21,41 +21,12 @@
 
 // Revisions:
 //	09/02/2022
-//	11/25/2025 [1] Updated Mup code.
-//		   [2] Removed Vs. 3.
 
 // HymnsToGod.org
 
-//==== FOR LETTER SIZE=====
+// ******************************************
+//6x9 Page size
 
-score
-	label=""
-	packexp=0.0
-	packfact=0.9
-	pad=2
-	vscheme=2f
-	scale=.95
-	staffscale=1.0
-	staffpad=0
-	scoresep=6
-	scorepad=0
-	leftmargin=.750
-	rightmargin=.750
-	lyricssize=14
-	lyricsfontfamily=times
-	noteheads="isostri semicirc diam righttri norm rect pie"
-
-//=========================
-
-staffs=2
-	time=4/4	
-	key=4&
-
-staff 2
-	key=4&
-	clef=bass
-
-//=========================
 top
 
    	title bold (19) "" "Are You Washed In The Blood?" ""
@@ -68,11 +39,33 @@ footer
 
    title (11) "" "Public Domain" "HymnsToGod.org"
 
-//=========================
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1
+	staffpad=2
+	scorepad=0
+	scale=.97
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
 
 music
 
-//=========================
 
 //define macros
 
@@ -91,12 +84,12 @@ music
         define BFERM(COUNT)
         mussym (9) below 2: COUNT "uferm";
 	@
-//=========================
 
 // Set midi
 	midi all: 0 "tempo=95";
 
-//=========================
+
+//===============================
 
 //1
 1: 8ca-; ec; 2.s;
@@ -104,8 +97,8 @@ music
 
 	VS "<1. >-1|Have you";
 	VS "<2. >-1|Are you";
-//	VS "<3. >-1|When the";
-	VS "<3. >-1|Lay a-";
+	VS "<3. >-1|When the";
+	VS "<4. >-1|Lay a-";
 bar
 
 //2
@@ -115,7 +108,7 @@ bar
 
 	VS "been to Je-sus for the";
 	VS "walk-ing dai-ly by the";
-//	VS "Bride-groom com-eth, will your";
+	VS "Bride-groom com-eth, will your";
 	VS "side the gar-ments that are";
 bar
 
@@ -125,7 +118,7 @@ bar
 
 	VS "cleans-ing pow'r? Are you";
 	VS "Sav-ior's side? Are you";
-//	VS "robes be white, Pure and";
+	VS "robes be white, Pure and";
 	VS "stained with sin, And be";
 bar
 
@@ -136,7 +129,7 @@ bar
 
 	VS "washed in the blood of the";
 	VS "washed in the blood of the";
-//	VS "white in the blood of the";
+	VS "white in the blood of the";
 	VS "washed in the blood of the";
 bar
 
@@ -147,7 +140,7 @@ bar
 
 	VS "Lamb? Are you";
 	VS "Lamb? Do you";
-//	VS "Lamb? Will your";
+	VS "Lamb? Will your";
 	VS "Lamb; There's a";
 bar
 
@@ -157,7 +150,7 @@ bar
 
 	VS "ful-ly trust-ing in his";
 	VS "rest each mo-ment in the";
-//	VS "soul be read-y for the";
+	VS "soul be read-y for the";
 	VS "foun-tain flow-ing for the";
 bar
 
@@ -167,7 +160,7 @@ bar
 
 	VS "grace this hour? Are you";
 	VS "Cru-ci-fied? Are you";
-//	VS "man-sions bright, And be";
+	VS "man-sions bright, And be";
 	VS "soul un-clean, Oh, be";
 bar
 
@@ -177,7 +170,7 @@ bar
 
 	VS "washed in the blood of the";
 	VS "washed in the blood of the";
-//	VS "washed in the blood of the";
+	VS "washed in the blood of the";
 	VS "washed in the blood of the";
 bar
 
@@ -187,7 +180,7 @@ bar
 
 	VS "Lamb?";
 	VS "Lamb?";
-//	VS "Lamb?";
+	VS "Lamb?";
 	VS "Lamb!";
 dblbar
 newscore

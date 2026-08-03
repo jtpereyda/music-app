@@ -1,0 +1,219 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Pentecostal Hymns
+//		A winnowed collection for
+//		Evangelistic services, young
+//		Peoples societies and Sunday School
+//		Music Editors: E. A. Hoffman, W. A. Ogden, J.H. Tenney
+//		Publisher: The Hope Publishing company
+//		167 Wabash Ave. Chicago
+//		Copyright: 1894
+//		Hymn No.: 89
+//		
+// Transcribed by: Ted Gatza, Jr. 09/10/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Jesus Shall Have It All" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:And\ he\ said\ unto\ him,\ Thou\ shalt\ lo\|ve\ the\ Lord\ thy\ God\ with\ all\ thy heart,\ and\ with\ all\ thy\ soul,\ and\ w\|ith\ all\ thy\ mind.\ -\ Matt.\ 22:37" ""   
+   title (13) "Elisha A. Hoffman" "" "Elisha A. Hoffman, 1894"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1 1: 4d; 8.gd; 16ad; 4bg; c+g;
+1 2: 4d; 8.s; 16; 4;;
+2: 4bg; 8.; 16c+g; 4d+g; e+c;
+
+			VERSE "<1. >-1|In lov-ing con-se-";
+			VERSE "<2. >-1|All of my life I";
+			VERSE "<3. >-1|Noth-ing shall be with-";
+			VERSE "<4. >-1|My Hands for thee to";
+
+bar
+//2
+1: 2bg; af;
+2: 2d+d;;
+
+			VERSE "cra-tion,";
+			VERSE "pledge thee,";
+			VERSE "hold-en;";
+			VERSE "la-bor,";
+bar
+//3
+1 1: 4d; 8.fd; 16gd; 4ad; bg;
+1 2: 4d; 8.s; 16; 4;;
+2: 4fd; 8.ad; 16bd; 4c+d; d+d;
+
+			VERSE "Lord, Let me bring my";
+			VERSE "All of my ran-somed";
+			VERSE "Noth-ing will I re-";
+			VERSE "My feet to walk thy";
+bar
+//4
+1 1: 2a slur; g;
+1 2: 2f slur; g;
+2: 2c+d slur; 2bg;
+
+			VERSE "heart;";
+			VERSE "pow'rs,";
+			VERSE "call;";
+			VERSE "ways,";
+bar
+//5
+1 1: 4d; 8.gd; 16ad; 4bd; d+fn;
+1 2: 4d; 8.s; 16; 4;;
+2: 4bg; 8.; 16c+g; 4d+g; bg#;
+
+			VERSE "All its af-fec-tion";
+			VERSE "All of my serv-ice";
+			VERSE "All shall be on the";
+			VERSE "My life to mag-ni-";
+bar
+//6
+1: 4d+e; c+e; 2ae;
+2: 4c+a;; 2c+c;
+
+			VERSE "shall be thine;";
+			VERSE "and my love,";
+			VERSE "al-tar laid;";
+			VERSE "fy thy grace,";
+bar
+//7
+1: 4gd; 8.fd; 16s; 4s; s;
+2: 4bd; 8.ad; 16s; 4s; s;
+
+			VERSE "None else";
+			VERSE "All of";
+			VERSE "Je-sus";
+			VERSE "My lips";
+invisbar
+newscore
+
+1: 4s; 8.s; 16gd; 4bg; af;
+2: 4s; 8.s; 16bd; 4d+d; c+d;
+
+			VERSE "shall share a";
+			VERSE "my days and";
+			VERSE "shall have it";
+			VERSE "to speak thy";
+
+bar
+//8
+1 1: 2.g; 4r;
+1 2: 2.g; 4s;
+2: 2.bg-; 4r;
+
+			VERSE "part.";
+			VERSE "hours.";
+			VERSE "all.";
+			VERSE "praise.";
+dblbar
+//9
+1: 4d+g; 8.; 16c+g; 4bg; d+g;
+2: 4bg; 8.; 16e+g; 4d+g; d+b-;
+ital (13) 1: 1 "Chorus";
+
+			VERSE [c]"My all I now sur-";
+bar
+//10
+1: 4.c+a; 8bg; 2af;
+2: 4.d+d; 8; 2;
+
+			VERSE [c]"ren-der, Lord,";
+bar
+//11
+1: 4bg; 8.; 16; 4c+a; bg;
+2: 4d+g; 8.; 16; 4d+f; 4d+g;
+
+			VERSE "Give it be-yond re-";
+bar
+//12
+1: 2.af; 4r;
+2: 2.d+d; 4r;
+
+			VERSE "call;";
+bar
+//13
+1: 4bg; 8.; 16; 4; c+g;
+2 1: 4d+g; 8.; 16; 4; a;
+2 2: 4s; 8.; 16; 4; g;
+
+			VERSE "None else shall share a";
+bar
+newscore
+//14
+1 1: 4d+g; 4r; 2g;
+1 2: 4s;; 2g;
+2: 4bg; 4r; 2be;
+
+			VERSE "part, No!";
+bar
+//15
+1 1: 4bg; 8.; 16d+g; 4g; af;
+1 2: 4s; 8.; 16; 4g; s;
+2: 4d+d; 8.; 16bd; 4; c+d;
+
+			VERSE "Je-sus shall have it";
+bar
+//16
+1 1: 2.g; 4r;
+1 2: 2.g; 4s;
+2: 2.bgg-; 4r;
+
+			VERSE "all.";
+endbar

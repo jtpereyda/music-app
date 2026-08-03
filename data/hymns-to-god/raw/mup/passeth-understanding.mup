@@ -1,0 +1,303 @@
+// Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Hymn Source: Gospel Praises
+//		For use in Gospel Meetings
+//		Young Peoples Societies
+//		Sunday Schools
+//		Edited by William J. Kirkpatrick, H.L. Gilmour,
+//		J. Lincoln Hall
+//		Publisher: Hall Mack Co.
+//		1020 Arch Street, Philadelphia
+//		Copyright: 1899
+//		Hymn No.: 51
+	
+// Transcribed by: 
+//	Ted Gatza, Jr. 06/12/2023
+
+// Revisions:
+
+// HymnsToGod.org
+
+//---------------------
+
+top
+
+
+   title bold (19) "" "\"Passeth Understanding\"" ""
+   title (2)""
+   title (11) "" "\f(TI)And the peace of God, which passeth all understanding, shall guard" "" 
+   title (11) "" "\f(TI)our hearts and your thoughts in Christ Jesus. - Phil. 4:7" ""   
+   title (11) "G - 4 - SOL" "" ""
+   title (13) "E. E. Hewitt" "" "E. E. Hewitt, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	pad=2
+	vscheme=2f
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+//---------------------
+
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+midi all: 0 "tempo=93";
+//---------------------
+//Verses
+
+//1
+1 1: 4d; 2.s;
+1 2: 4d; 2.s;
+2: 4bg; 2.s;
+
+	VS1 "<1. >-1|O";
+	VS1 "<2. >-1|The";
+	VS1 "<3. >-1|'Tis";
+	VS1 "<4. >-1|Far";
+bar
+
+//2
+1: 4gd;; 8; fd; gd; ad;
+2 1: 4bg;; 8; a; bg; c+g;
+2 2: 4s;; 8; g; s;;
+
+	VS1 "bless-ed tok-en of the";
+	VS1 "world can nei-ther give nor";
+	VS1 "found-ed on the liv-ing";
+	VS1 "bet-ter treas-ure than earth's";
+bar
+
+//3
+1: 4bg; c+f; d+g; s;
+2 1: 4d+g; d+a; d+b; s;
+2 2: 4s;;; s;
+
+	VS1 "Fa-ther's love,";
+	VS1 "take a-way";
+	VS1 "truth of God,";
+	VS1 "frag-ile joys,";
+invisbar
+
+1: 4s; ; ; e+g;
+2 1: 4s; ; ; c+;
+2 2: 4s; ; ; c+;
+
+	VS1 "The";
+	VS1 "The";
+	VS1 "The";
+	VS1 "The";
+bar
+
+//4
+1: 4.d+g; 8;; bg; ad; gd;
+2: 4.bg; 8;; d+g; c+g; bg;
+
+	VS1 "peace that pass-eth un-der-";
+	VS1 "peace that pass-eth un-der-";
+	VS1 "peace that pass-eth un-der-";
+	VS1 "peace that pass-eth un-der-";
+bar
+
+//5
+1 1: 2bg; 4af; s;
+1 2: 2s; 4; s;
+2: 2d+d; 4d+d; s;
+FST(3)
+FBB(3)
+
+	VS1 "stand-ing;";
+	VS1 "stand-ing;";
+	VS1 "stand-ing;";
+	VS1 "stand-ing;";
+invisbar
+
+1 1: 2s; 4s; d;
+1 2: 2s; 4; d;
+2: 2s; 4s; bg;
+
+
+
+	VS1 "My";
+	VS1 "New";
+	VS1 "And";
+	VS1 "Sure";
+bar
+
+//6
+1: 4gd;; 8; fd; gd; ad;
+2 1: 4bg;; 8; a; bg; c+g;
+2 2: 4s;; 8; g; s;;
+
+	VS1 "Sav-iour brought it from the";
+	VS1 "mea-sures Je-sus giv-eth";
+	VS1 "by his Spir-it sweet-ly";
+	VS1 "pledge of heav-en's ev-er-";
+bar
+
+//7
+1: 4bg; c+f; d+g; s;
+2 1: 4d+g; d+a; d+b; s;
+2 2: 4s;;; s;
+
+	VS1 "land a-bove,";
+	VS1 "day by day,";
+	VS1 "shed a-broad,";
+	VS1 "last-ing joys,";
+invisbar
+
+1: 4s; ; ; e+g;
+2 1: 4s; ; ; c+;
+2 2: 4s; ; ; c+;
+
+	VS1 "The";
+	VS1 "The";
+	VS1 "The";
+	VS1 "The";
+bar
+
+//8
+1: 4.d+g; 8; d+g; bg; ad; gd;
+2: 4.bg; 8;; d+g; c+g; bg;
+
+	VS1 "peace that pass-eth un-der-";
+	VS1 "peace that pass-eth un-der-";
+	VS1 "peace that pass-eth un-der-";
+	VS1 "peace that pass-eth un-der-";
+bar
+
+//9
+1: 2af; gd;
+2: 2c+d; bg-;
+
+	VS1 "stand-ing.";
+	VS1 "stand-ing.";
+	VS1 "stand-ing.";
+	VS1 "stand-ing.";
+dblbar
+
+//10
+CHORUS
+1: 8bg; 4.d+g; gd; 8ac;
+2: 8d+g; 4.bg;; 8fd;
+
+	VS1 [c]"Bless-ed peace, O";
+bar
+
+//11
+1: 4gb-; ec; 2db-;
+2: 4ge; gc; 2gg-;
+
+	VS1 "won-drous peace!";
+bar
+
+//12
+1: 8gd;;; ad; 4bg;;
+2: 8bg;;; c+g; 4d+g;;
+
+	VS1 "May its swell-ing tide in-";
+bar
+
+//12
+1: 2.af; 8s; s;
+2: 2.d+d; 8s; s;
+
+	VS1 "crease,";
+invisbar
+
+1: 2.s; 8d+f; ;
+2: 2.s; 8ad; ;
+
+	VS1 "And with";
+bar
+
+//13
+1: 4d+g; bd; ad; gd;
+2: 4bg; gg-; fa-; gb-;
+
+	VS1 "heav-'nly mu-sic";
+bar
+
+//14
+1: 2ge slur; ec;
+2: 1gc;
+
+	VS1 "roll";
+bar
+
+//15
+1: 4db-; gd; bg; af;
+2: 4gd; bd; d+d; c+d;
+
+	VS1 "O'er my yield-ed";
+bar
+
+//16
+1: 2.gd; 4s;
+2: 2.bg-; 4s;
+
+	VS1 "soul.";
+endbar

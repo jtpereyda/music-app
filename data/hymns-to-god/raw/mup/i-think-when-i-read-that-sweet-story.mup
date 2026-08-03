@@ -1,0 +1,225 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Voice of Thanksgiving No.2
+//		Prepared by the Moody Bible Institute of Chicago
+//		D.B. Towner Mus. Doc.
+//		Musical Editor
+//		Fleming H Revell Co.
+//		New York, 158 Fifth Ave.
+//		Chicago, 17 N. Wabash Ave.
+//		Toronto - London - Edinburgh
+//		Copyright, 1916
+//		Hymn no. 334
+//
+// Additional verses have been commented out. Uncomment to restore them.
+
+// Transcribed by: Ted Gatza, Jr. 03/30/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Think When I Read That Sweet Story" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:Suffer\ the\ little\ children\|\ to\ come\ unto\ me,\ and\ forbid\ them\ not: for\ to\ such\ belonge\|th\ the\ kingdom\ of\ God.\ -\ Lk.\ 18:16"""
+   title (13) "Jemima Luke, 1841" " " "Arr. William B. Bradbury, 1859"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1 1: 2.s; 8.e bm; 16f ebm;
+1 2: 2.s; [ho .1] 4e;
+2 1: 2.s; 8.g bm; 16a ebm;
+2 2: 2.s; 4e;
+
+			lyrics 1: 2.s; 4; "<1. >-1|I";
+			lyrics 1: 2.s; 4; "<2. >-1|I";
+			lyrics 1: 2.s; 4; "<3. >-1|Yet";
+//			lyrics 1: 2.s; 4; "<4. >-1|In";
+//			lyrics 1: 2.s; 4; "<5. >-1|But";
+//			lyrics 1: 2.s; 4; "<6. >-1|I";
+bar
+//2
+1 1: 4ge; 8ge; 8ge; 8g bm; 8f ebm; 8ge; 8af;
+1 2: 4s; 8s; 8s; 4e; 8s; 8s;
+2 1: 4be; 8be; 8be; 8b bm; 8a ebm; 8be; 8be;
+2 2: 4s; 8s; 8s; 4e; 8s; 8s; 
+
+			lyrics 1: 4; 8; 8; 4; 8; 8; "think when I read that sweet";
+			lyrics 1: 4; 8; 8; 4; 8; 8; "wish that His hands had been";
+			lyrics 1: 4; 8; 8; 4; 8; 8; "still to His foot-stool in";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "that beau-ti-ful place He's";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "thou-sands and thou-sands who";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "long for the joy of that";
+bar
+//3
+1: 4c+a; 8.bg; 16bg; 4bg; 8.s; 16s;
+2 1: 4e+e; 8.e+e; 16e+e; 4e+e; 4s;
+2 2: 4s; 8.s; 16s; 4s; 8.s; 16s;
+
+			lyrics 1: 4; 8.; 16; 4; 4s; "sto-ry of old,";
+			lyrics 1: 4; 8.; 16; 4; 8.s; 16s; "placed on my head,";
+			lyrics 1: 4; 8.; 16; 4; 4s; "pray'r I may go,";
+//			lyrics 1: 4; 8.; 16; 4; 4s; "gone to pre-pare.";
+//			lyrics 1: 4; 8.; 16; 4; 4s; "wan-der and fall";
+//			lyrics 1: 4; 8.; 16; 4; 4s; "glo-ri-ous time.";
+
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4s; 8.ge bm; 16fd ebm;
+2 1: 4s; 8.s; 16s; 4s; 4b;
+2 2: 4s; 8.s; 16s; 4s; 8.e bm; 16b- ebm;
+
+			lyrics 1: 4s; 8.s; 16s; 4s; 4; "When";
+			lyrics 1: 4s; 8.s; 16s; 4s; 8.; 16; "That His";
+			lyrics 1: 4s; 8.s; 16s; 4s; 4; "And";
+//			lyrics 1: 4s; 8.s; 16s; 4s; 4; "For";
+//			lyrics 1: 4s; 8.s; 16s; 4s; 4; "Ne-";
+//			lyrics 1: 4s; 8.s; 16s; 4s; 4; "The";
+
+
+bar
+//4
+1 1: 4fd; 8d; 8ec; 8fd bm; 8d+f ebm; 8c+e; 8ane;
+1 2: 4s; 8d; 8s; 8s; 8s; 8s; 8s; 
+2: 4bb-; 8bb-; 8bb-; 4bb-; 8anf; 8af;
+
+			lyrics 1: 4; 8; 8; 4; 8; 8; "Je-sus was here a-mong";
+			lyrics 1: 4; 8; 8; 4; 8; 8; "arm had been thrown a-round";
+			lyrics 1: 4; 8; 8; 4; 8; 8; "ask for a share in His";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "all who are washed and for-";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "ver heard of that heaven-ly";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "sweet-est and bright-est and";
+bar
+//5
+1: 2.bd; 8.ge slur; 16af;
+2: 2.bb-; 8.be tie; 16be;
+
+			lyrics 1: 2.; 8.; 16; "men, How He";
+			lyrics 1: 2.; 8.; 16; "me, And that";
+			lyrics 1: 2.; 4; "love; And_";
+//			lyrics 1: 2.; 4; "giv'n; And_ ";
+//			lyrics 1: 2.; 8.; 16; "home; I should";
+//			lyrics 1: 2.; 8.; 16; "best, When the";
+bar
+//6
+1 1: 8b bm; 8e+ ebm; 8d+a; 8c+a; 4bg; 8ge; 8af;
+1 2: 4g; 8s; 8s; 4s; 8s; 8s;
+2 1: 8e+ bm; 8b ebm; 8c+e; 8d+e; 4e+e; 8be; 8be;
+2 2: 4e; 8s; 8s; 4s; 8s; 8s;
+
+			lyrics 1: 4; 8; 8; 4; 8; 8; "called lit-tle chil-dren as";
+			lyrics 1: 4; 8; 8; 4; 8; 8; "I might have seen His kind";
+			lyrics 1: 4; 8; 8; 4; 8; 8; " If I now earn-est-ly";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "man-y dear child-ren are";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "like them to know there is";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "dear lit-tle child-ren of";
+bar
+//7
+
+1 1: 8b bm; 8e+ ebm; 8ad+; 8ac+; 4bg; 8.s; 16s;
+1 2: 4g; 8s; 8s; 4s; 8.s; 16s;
+2 1: 8e+ bm; 8b ebm; 8c+e; 8d+e; 4e+e; 8.s; 16s;
+2 2: 4e; 8s; 8s; 4s; 8.s; 16s;
+
+
+			lyrics 1: 4; 8; 8; 4; 8.s; 16s; "lambs to His fold,";
+			lyrics 1: 4; 8; 8; 4; 8.s; 16s; "look when He said,";
+			lyrics 1: 4; 8; 8; 4; 8.s; 16s; "seek Him be-low,";
+//			lyrics 1: 4; 8; 8; 4; 8.s; 16s; "gath-er-ing there,";
+//			lyrics 1: 4; 8; 8; 4; 8.s; 16s; "room for them all,";
+//			lyrics 1: 4; 8; 8; 4; 4s; "e-ver-y clime Shall_ ";
+
+invisbar
+newscore
+
+1 1: 8s; 8s; 8s; 8s; 4s; 8.bg; 16bg;
+1 2: 4s; 8s; 8s; 4s; 8.s; 16s;
+2 1: 8s; 8s; 8s; 8s; 4s; 8.e+e; 16e+e;
+2 2: 4s; 8s; 8s; 4s; 8.s; 16s;
+
+
+			lyrics 1: 4s; 8s; 8s; 4s; 8.; 16; "I should";
+			lyrics 1: 4s; 8s; 8s; 4s; 8.; 16; "\"Let the";
+			lyrics 1: 4s; 8s; 8s; 4s; 8.; 16; "I shall";
+//			lyrics 1: 4s; 8s; 8s; 4s; 8.; 16; "For of";
+//			lyrics 1: 4s; 8s; 8; 4s; 8.; 16; "And that";
+//			lyrics 1: 4s; 8s; 8s; 4s; 4; "Shall_ ";
+
+
+bar
+//8
+1 1: 4c+a; 8be; 8ge; 8b bm; 8a ebm; 8ge; 8fd;
+1 2: 4s; 8s; 8s; 4d; 8s; 8s; 
+2 1: 4e+a; 8e+g; 8be; 4b; 8bb-; 8ab-;
+2 2: 4s; 8s; 8s; 4b; 8s; 8s;
+
+			lyrics 1: 4; 8; 8; 4; 8; 8; "like to have been with them";
+			lyrics 1: 4; 8; 8; 4; 8; 8; "lit-tle ones come un-to";
+			lyrics 1: 4; 8; 8; 4; 8; 8; "see Him and hear Him a-";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "such is the king-dom of";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "Je-sus has bid them to";
+//			lyrics 1: 4; 8; 8; 4; 8; 8; "crowd to His arms and be";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			lyrics 1: "then.";
+			lyrics 1: "Me.\"";
+			lyrics 1: "bove.";
+//			lyrics 1: "heav'n.";
+//			lyrics 1: "come.";
+//			lyrics 1: "blest.";
+endbar
+//10
+//1: 2ae; 2ge;
+//2: 2c+a-; 2be;
+//
+//			lyrics 1: 2; 2s; "<>";
+//			lyrics 1: 2; 2s; "<>";
+//			lyrics 1: "A-MEN.";
+//endbar

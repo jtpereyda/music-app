@@ -1,0 +1,245 @@
+
+
+// Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Melodies of Salvation
+//		A Collection of Psalms, Hymns and Spiritual Songs
+//		For Us in All Church and Evangelistic
+//		Services, Prayer Meetings, Sunday Schools,
+//		Young People's Meetings, Family Worship.
+//		Editors: John R. Sweney, Hugh E. Smith, Frank E. Robinson.
+//		Publishera: The San Francisco Book Company
+//		63 to 65 Crocker Building,
+//		San Francisco, Califoornia,
+//		Copyright 1901
+//		Hymn no. Hymn 52
+		
+		
+// Transcribed by: Ted Gatza, Jr. 03/30/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Holy, Holy, Holy" ""
+   title (2)""
+   title (11) "E - 4 - DO" "\s(17)\f(TI)\:\ Holy,\ holy,\ holy,\ is\ the\ Lord\ of\ hosts;\ -\ Is.\ 6:3 \(space)" ""   
+   title (13) "Reginald Heber, 1826" "" "John B. Dykes, 1861"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=4#
+
+
+staff 2
+	key=4#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 4b-e;; eg;;
+2: 4eg;; ce;;
+	
+	VERSE "<1. >-1|Ho-ly, ho-ly,";
+	VERSE "<2. >-1|Ho-ly, ho-ly,";
+	VERSE "<3. >-1|Ho-ly, ho-ly,";
+	VERSE "<4. >-1|Ho-ly, ho-ly,";
+bar
+//2
+1 1: 2b;;
+1 2: 4d slur; f; e slur; d;
+2 1: 4f slur; a; g slur; b;
+2 2: 2b-; e;
+
+	VERSE 2; 2; "ho-ly,";
+	VERSE 2; 2; "ho-ly,";
+	VERSE 2; 2; "ho-ly,";
+	VERSE 2; 2; "ho-ly,";
+bar
+//3 
+1: 4c<d>c+~; dc+; ec+; fc+;
+2: 4a-~a<b>; a-b; ac+; ad+;
+
+	VERSE 2; 4; 4; "Lord God Al-";
+	VERSE 4; 4; 4; 4; "all the saints a-";
+	VERSE 4; 4; 4; 4; "tho' the dark-ness";
+	VERSE 2; 4; 4; "Lord God Al-";
+bar
+//4
+1: 2gb; eg;
+2 1: 4e+ slur; b; 2eb;
+2 2: 2e; s;
+
+	VERSE "migh-ty!";
+	VERSE "dore Thee.";
+	VERSE "hide Thee,";
+	VERSE "migh-ty!";
+bar
+//5
+1 1: 4.b; 8; 4gb; fb;
+1 2: 4f;; g; f;
+2: 4db;; eb; db;
+
+	VERSE "Ear-ly in the";
+	VERSE "Cast-ing down their";
+	VERSE "Tho, the eye of";
+	VERSE "All Thy works shall";
+bar
+//6
+1: 4e<f>e+~; fe+; fd+; gb;
+2: 4g<a>c~; a#c; db; eb;
+
+	VERSE 2; 4; 4; "morn-ing our";
+	VERSE 4; 4; 4; 4; "gold-en crowns a-";
+	VERSE 4; 4; 4; 4; "sin-ful man Thy";
+	VERSE 4; 4; 4; 4; "praise Thy name, in";
+bar
+//7
+1 1: 4f; db; 4.ec+; 8db;
+1 2: 4f; s; 4.; 8;
+2: 4fd+; fb; 4.fa#; 8b-b;
+
+	VERSE "song shall rise to";
+	VERSE "round the glass-y";
+	VERSE "glo-ry may not";
+	VERSE "earth and sky and";
+bar
+//8
+1: 1db;
+2 1: 2b slur; an;
+2 2: 1b-;
+
+	VERSE "Thee;";
+	VERSE "sea;";
+	VERSE "see;";
+	VERSE "sea;";
+bar
+//9
+1: 4b-e;; eg;;
+2: 4eg;; ce;;
+
+	VERSE "Ho-ly, ho-ly,";
+	VERSE "Cher-u-bim and";
+	VERSE "On-ly Thou art";
+	VERSE "Ho-ly, ho-ly,";
+bar
+//10
+1 1: 4d<f>b~; fb; 2b;
+1 2: 4s;; e slur; d;
+2 1: 4b-f; b-a; g slur; b;
+2 2: 4s;; 2e;
+
+	VERSE 2; 2; "ho-ly,";
+	VERSE 4; 4; 2; "ser-a-phim";
+	VERSE 2; 2; "ho-ly;";
+	VERSE 2; 2; "ho-ly,";
+bar
+//11
+1 1: 4.c+; 8; 4ec+; fc+;
+1 2: 4c; d; s;;
+2 1: 4a; b; ac+; ad+;
+2 2: 4.a-; 8; 2s;
+
+	VERSE "mer-ci-ful and";
+	VERSE "fall-ing down be-";
+	VERSE "there is none be-";
+	VERSE "mer-ci-ful and";
+bar
+//12
+1: 2gb; eb;
+2 1: 4e+ slur; b; 2eg;
+2 2: 2e; 2s;
+
+	VERSE "migh-ty";
+	VERSE "fore Thee,";
+	VERSE "side Thee,";
+	VERSE "migh-ty,";
+
+bar
+//13
+1: 2e+e; 4be;;
+2 1: 4g slur; a; g-b; g-d+n;
+2 2: 2c; 2s;
+
+	VERSE "God in three";
+	VERSE "Which wert and";
+	VERSE "Per-fect in";
+	VERSE "God in three";
+bar
+//14
+1 1: 2ec+; g;
+1 2: 2s; 4e slur; dn;
+2: 2a-c+; eb;
+
+	VERSE "Per-sons,";
+	VERSE "art and";
+	VERSE "pow'r, in";
+	VERSE "Per-sons,";
+bar
+//15
+1 1: 4ca; cf; 4.df; 8e;
+1 2: 4s;; 4.s; 8e;
+2: 4a-a;; 4.b-a; 8eg;
+
+	VERSE "bless-ed Trin-i-";
+	VERSE "ev-er-more shalt";
+	VERSE "love and pur-i-";
+	VERSE "bless-ed Trin-i-";
+bar
+//16
+1: 1e;
+2: 1eg;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+	VERSE "ty.";
+	VERSE "be.";
+	VERSE "ty.";
+	VERSE "ty.";
+endbar

@@ -1,0 +1,228 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 64
+//		
+// Transcribed by: Ted Gatza, Jr. 01/31/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Come To The Living Waters" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:And\ he\ that\ is\ athirst,\ let\ \|him\ come:\ he\ that\ will,\ let him\ take\ the\ water\ of\ l\|ife\ freely.\ -\ Rev.\ 22:17" ""   
+   title (13) "J. H. Alleman" "" "J. H. Alleman, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 2ec; 4.ac; 8bd;
+2: 2aa-; 4.ea-; 8;
+ital (13) above 1: 1 "Not too fast";
+
+			VERSE "<1. >-1|Come to the";
+			VERSE "<2. >-1|Come to the";
+			VERSE "<3. >-1|Come to the";
+			VERSE "<4. >-1|Come to the";
+			
+bar
+//2
+1: 4c+e; ae; 8bf; 4af; 8fd;
+2: 4aa-; ac; 8ad; 4; 8;
+
+			VERSE "liv-ing wa-ters! Why";
+			VERSE "liv-ing wa-ters! Come";
+			VERSE "liv-ing wa-ters! Come";
+			VERSE "liv-ing wa-ters! From";
+bar
+//3
+1 1: 4.e; 8ae; 4d+e; c+e;
+1 2: 4.e; 8s; 4;;
+2: 4.ac; 8; 4gb-; 4aa-;
+
+			VERSE "will ye thirst-y";
+			VERSE "now, no lon-ger";
+			VERSE "who-so-ev-er";
+			VERSE "ev-er flow-ing";
+bar
+//4
+1 1: 2c+ slur; 4b; 4s;
+1 2: 2.e; 4s;
+2 1: 2a slur; 4g; s;
+2 2: 2.e; 4s;
+
+			VERSE "be?";
+			VERSE "wait!";
+			VERSE "will!";
+			VERSE "main;";
+invisbar
+newscore
+
+1 1: 2s; 4s; 4e;
+1 2: 2.s; 4d;
+2 1: 2s; 4s; ge;
+2 2: 2.s; 4s;
+
+			VERSE "The";
+			VERSE "His";
+			VERSE "To-";
+			VERSE "Come";
+
+bar
+//5
+1: 2ec; 4.ac; 8bd;
+2: 2aa-; 4.ea-; 8;
+
+			VERSE "foun-tain of";
+			VERSE "spir-it with";
+			VERSE "day, hear the";
+			VERSE "drink and have";
+bar
+//6
+1: 4c+e; ae; 8bf; 4af; 8fd;
+2: 4aa-; ac; 8ad; 4; 8;
+
+			VERSE "life is flow-ing, Is";
+			VERSE "thine is striv-ing, Come";
+			VERSE "in-vi-ta-tion, That";
+			VERSE "life e-ter-nal, And";
+bar
+//7
+1: 4.ec; 8ac; 4c+e; bd;
+2: 4.ae; 8; 4; ge;
+
+			VERSE "flow-ing now for";
+			VERSE "ere it be too";
+			VERSE "ev-'ry soul should";
+			VERSE "nev-er thirst a-";
+bar
+//8	
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			VERSE "thee.";
+			VERSE "late.";
+			VERSE "thrill.";
+			VERSE "gain.";
+dblbar
+//9
+1: 2c+e; 4.ac; 8ge;
+2: 2aa-; 4.ea-; 8ac;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"He who-so-";
+bar
+//10
+1: 8fd; ge; af; fd; 4.ec; 8;
+2: 8ad;;;; 4.aa-; 8;
+
+			VERSE [c]"ev-er will, may come, And";
+bar
+//11
+1: 4ec; 8.ac; 16bd; 4s; 8s; s;
+2: 4aa-; 8.ea-; 16; 4s; 8s;;
+
+			VERSE [c]"take of the";
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4c+e; 8bd; ac;
+2: 4s; 8.s; 16; 4aa-; 8ea-;;
+
+			VERSE [c]"wa-ter of";
+
+bar
+//12
+1: 4ac slur; c+e; 8; 4.be;
+2 1: 4e slur; a; 8ae; 4.ge;
+2 2: 2a-; 8s; 4.s;
+
+			VERSE "life free-ly;";
+bar
+//13
+1: 2c+e; 4.ac; 8ge;
+2: 2aa-; 4.ea-; 8ac;
+
+			VERSE "He who-so-";
+bar
+//14
+1: 8fd; ge; af; s; 4.s; 8;
+2: 8ad;;;s; 4.s; 8;
+
+			VERSE "ev-er will,";
+invisbar
+newscore
+
+1: 8s; s; s; fd; 4.ec; 8;
+2: 8s;;;ad; 4.aa-; 8;
+
+			VERSE "may come, And";
+
+bar
+//15
+1: 4ec; 8.ac; 16bd; 8c+e; 4ac; 8c+e;
+2: 4aa-; 8.ea-; 16; 8aa-; 4ea-; 8aa-;
+
+			VERSE "take of the wa-ter, the";
+bar
+//16
+1: 8be; 4c+e; 8bd; 2ac;
+2: 8ge; 4; 8; 2aa-;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "wa-ter of life.";
+endbar

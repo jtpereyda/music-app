@@ -1,0 +1,201 @@
+// Coded with Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1908
+//		Hymn No.: 27
+//		
+// Transcribed by: Ted Gatza, Jr. 10/13/2011; Rev. 04/27/20
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Follow In The Steps Of Jesus" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(17)\f(TI)\:For\ hereunto\ were\ ye\ called:\ because\|\ Christ\ also\ suffered\ for\ you,\ leaving you\ an\ example,\ that\ ye\ should\|\ follow\ his\ steps:\ -\ 1\ Pet.\ 2:21" ""
+   title (13) "Kate Ulmer" "" "M. L. McPhail, 1900"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,40
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=110";
+
+//1
+1: 4bg; d+g; e+g; d+g;
+2: 4d+g; bg; c+g; bg;
+
+
+
+			VERSE "<1. >-1|Would you glo-ri-";
+			VERSE "<2. >-1|Would you find the";
+			VERSE "<3. >-1|Would you know God's";
+			VERSE "<4. >-1|Would you wear a";
+			VERSE "<5. >-1|Would you in the";
+
+bar
+//2
+1: 4bg; d+g; 2gd;
+2: 4d+g; bg; 2;
+
+			VERSE "fy the Lord?";
+			VERSE "prom-ised rest?";
+			VERSE "will a-lone?";
+			VERSE "star-ry crown?";
+			VERSE "home-land dwell?";
+bar
+//3
+1: 8ge;;;; 4af;;
+2: 8be;;;; 4d+d;;
+
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+bar
+//4
+1: 2bg; d+g;
+2: 2d+g; bg;
+
+			VERSE "Je-sus;";
+			VERSE "Je-sus;";
+			VERSE "Je-sus;";
+			VERSE "Je-sus;";
+			VERSE "Je-sus;";
+bar
+//5
+1: 4bg; d+g; e+g; d+g;
+2: 4d+g; bg; c+g; bg;
+
+			VERSE "Would you gain a";
+			VERSE "Com-fort wear-y";
+			VERSE "Would you yield to";
+			VERSE "Heed-ing not the";
+			VERSE "He a-lone does";
+bar
+//6
+1: 4bg; d+g; 2gd;
+2: 4d+g; bg; 2bg;
+
+			VERSE "rich re-ward?";
+			VERSE "ones op-prest?";
+			VERSE "Him your own?";
+			VERSE "world's cold frown,";
+			VERSE "all things well,";
+bar
+//7
+1 1: 8ge;;; 8g; 4bg; 4gd;
+1 2: 8s;;; g; 4s; s; 
+2: 8be;;;; 4d+d; bd;
+mussym (10) above 1: 1 "sign";
+
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+			VERSE "Fol-low in the steps of";
+			lyrics below 2: "<\f(TX)D.S. -\f(PV) >-4|Fol-low in the steps of";
+bar
+//8
+1 1: 2af; g;
+1 2: 2s; g;
+2: 2c+d; bgg-;
+ital (13) above 1: 3 "Fine.";
+
+			VERSE "Je-sus.";
+//			VERSE "Je-sus.";
+//			VERSE "Je-sus.";
+//			VERSE "Je-sus.";
+//			VERSE "Je-sus.";
+			lyrics below 2: "Je-sus.";
+dblbar
+//9
+1 1: 2af; 4g; af;
+1 2: 2s; 4g; s;
+2 1: 2d+; 4d+b-; d+d;
+2 2: 4d slur; c; s; s; 
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Ev-er in";
+bar
+//10
+1 1: 4bg; d+g; 2a;
+1 2: 4s;; f slur; d;
+2: 4d+g; d+b-; d+d slur; fb-;
+
+			VERSE [c]"Him a-bide,";
+bar
+//11
+1 1: 4.bd# slur; 8af; 4ge; 8a bm; g ebm;
+1 2: 4.s; 8; 4; c#;
+2: 4fb- slur; bd#; be; aa-;
+
+			VERSE 4.; 8s; 4; 4; [c]"Leav-ing all";
+bar
+//12
+1 1: 4fd; ec#; 2d;
+1 2: 4s; ; 2d;
+2 1: 4ad; ga-; 2f;
+2 2: 4s; ; d slur; c;
+
+			VERSE "else be-side;";
+bar
+//13
+1: 2gd; 4af; bg;
+2 1: 4gb- slur; bg-; d+d; d+;
+2 2: 4s;;; 8g bm; fn ebm;
+
+			VERSE "Cling to the";
+bar
+//14
+1: 4c+g; d+g; 2e+g;
+2: 4c+e; bd; 2c+c;
+ital (13) above 1: 4 "D.S.";
+
+			VERSE "cru-ci-fied,";
+endbar

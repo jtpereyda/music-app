@@ -1,0 +1,235 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gates Ajar
+//		Hymns and Tunes for 
+//		Use In Sunday Schools, Praise and Prayer Meetings, ertc.
+//		By J. H. Kurzenknabe
+//		J. H. Kurzenknabe & Sons, Publishers,
+//		Harrisburg, PA.:
+//		Copyright: 1885
+//		Hymn No.: 128
+//		
+// Transcribed by: Ted Gatza, Jr. 03/07/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Watch And Pray" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - DO" "\s(17)\f(TI)\:Watch\ ye\ and\ pray,\ lest\ ye\ en\|ter\ into\ temptation.\ The\ spirit truly\ is\ ready,\ but\ the\ fl\|esh\ is\ weak.\ -\ Mk.\ 14:38" ""   
+   title (13) "Fanny J. Crosby" "" "W. J. Kirkpatrick, 1885"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1: 8.eb-; 16fb-; 2.s;
+2: 8.ge; 16ae; 2.s;
+
+			VERSE 8.; 16; 2.s; "<1. >-1|Watch and";
+			VERSE 8.; 16; 2.s; "<2. >-1|Watch and";
+			VERSE 8.; 16; 2.s; "<3. >-1|Watch and";
+			VERSE 8.; 16; 2.s; "<4. >-1|Watch and";
+bar
+//2
+1: 4.ge; 8fb-; 8.eb-; 16ge; 8.bg; 16c+a;
+2: 4.be; 8ae; 8.ge; 16be; 8.e+e; 16;
+
+			VERSE "pray that when the Mas-ter";
+			VERSE "pray, the tempt-er may be";
+			VERSE "pray, nor let us ev-er";
+			VERSE "pray nor leave our post of";
+bar
+//3
+1: 2bg; 4ge; 8.s; 16s;
+2: 2e+e; 4be; 8.s; 16s;
+
+			VERSE "com-eth,";
+			VERSE "near us;";
+			VERSE "wea-ry;";
+			VERSE "du-ty";
+invisbar
+newscore
+
+1: 2s; 4s; 8.af; 16ge;
+2: 2s; 4s; 8.be; 16;
+
+			VERSE "If at";
+			VERSE "Keep the";
+			VERSE "Je-sus";
+			VERSE "Till we";
+
+bar
+//4
+1: 4.fd; 8ge; 4af; bd;
+2: 4.bb-; 8; 4;;
+
+			VERSE "morn-ing, noon or";
+			VERSE "heart with jeal-ous";
+			VERSE "watched and prayed a-";
+			VERSE "hear the Bride-groom's";
+bar
+//5
+1: 2.ge; 8.eb-; 16fb-;
+2: 2.be; 8.ge; 16ae;
+
+			VERSE "night, He may";
+			VERSE "care, Lest the";
+			VERSE "lone;\(emdash) Prayed for";
+			VERSE "voice; Then with";
+bar
+//6
+1: 4.ge; 8fb-; 8.eb-; 16ge; 8.bg; 16c+a;
+2: 4.be; 8ae; 8.ge; 16be; 8.e+e; 16;
+
+			VERSE "find a lamp in ev'-ry";
+			VERSE "door, a mo-ment left un-";
+			VERSE "us when on-ly stars be-";
+			VERSE "Him the mar-riage feast par-";
+bar
+//7
+1: 2bg; 4ge; 8.af; 16ge;
+2: 2e+e; 4be; 8.; 16;
+
+			VERSE "win-dow trimmed and";
+			VERSE "guard-ed, E-vil";
+			VERSE "held Him When on";
+			VERSE "tak-ing, We shall";
+bar
+//8
+1: 4.fd; 8fd; 4c+d; bd;
+2: 4.bb-; 8; 4ab-;;
+
+			VERSE "burn-ing clear and";
+			VERSE "thoughts may en-ter";
+			VERSE "Ol-ive's brow they";
+			VERSE "ev-er-more re-";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "bright.";
+			VERSE "there.";
+			VERSE "shone.";
+			VERSE "joiced.";
+dblbar
+//10
+1: {8bd bm; c+e ebm; d+f;}3; 2.s;
+2 1: {4b tie; 8;}3; 2.s;
+2 2: {4b tie; 8;}3; 2.s;
+ital (13) above 1: 1 "Chorus";
+phrase below 1: 1 til 3;
+
+			VERSE {4; 8;}3; 2.s; [c]"Watch and";
+bar
+newscore
+//11
+1: 2e+g tie; 8.; 16c+a; 8.ae; 16c+a;
+2: 8.be; 16; 8.; 16; 8.; 16e+e; 8.c+e; 16e+e;
+
+			VERSE "pray,_ the Lord com-";
+			VERSE 8.; 16; 8.; 16; 8.; 16; 8.; 16; "pray, the Lord com-mand-eth, Watch and";
+bar
+//12
+1: 2bg; 4ge; 8.bg; 16bg;
+2: 8.e+e; 16; 8.; 16; 8.be; 16; 8.; 16; 
+
+			VERSE "mand-eth, Watch and";
+			VERSE 8.; 16; 8.; 16; 8.; 16; 8.; 16; "pray, the Lord com-mand-eth, Watch and";
+bar
+//13
+1: 2d+f tie; 8.; 16c+a; 8.af; 16fd;
+2: 8.bb-; 16; 8.; 16; 4; 8.; 16;
+
+			VERSE "pray,_ 'twill not be";
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; "pray, 'twill not be long, Watch and";
+bar
+//14
+1: 2.ge; {8bf bm; c+g ebm; [up]d+a;}3;
+2 1: 8.be; 16; 8.; 16; 4; {8d+ bm; e+ ebm; f+;}3;
+2 2: 8.s; 16; 8.; 16; 4; {4b tie; 8;}3;
+phrase 1: 4 til 5;
+
+			VERSE 2.; {4; 8;}3; "long; Soon He'll";
+			VERSE 8.; 16; 8.; 16; 4; {4; 8;}3; "pray, 'twill not be long; Soon He'll";
+bar
+//15
+1: 2e+g tie; 8.; 16c+a; 8.ae; 16c+a;
+2: 8.e+e; 16be; 8.; 16; 8.; 16e+e; 8.c+e; 16e+e;
+
+			VERSE" gath-er home His";
+			VERSE 8.; 16; 8.; 16; 8.; 16; 8.; 16; "gath-er home His loved ones, Soon He'll";
+bar
+//16
+1: 2bg; 4ge; 8.af; 16ge;
+2: 8.e+e; 16; 8.; 16; 8.be; 16; 8.; 16;
+
+			VERSE " loved ones To the";
+			VERSE 8.; 16; 8.; 16; 8.; 16; 8.; 16; "gath-er home His loved ones To the";
+bar
+//17
+1: 4.fd; 8; 4c+d; bd;
+2: 4.bb-; 8; 4ab-;;
+
+			VERSE "hap-py vale of";
+			VERSE "hap-py vale of";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 4e; c; b-; s;
+2 1: 8.g; 16; 8.a; 16; 4g; s;
+2 2: 2.e; 4s;
+
+			VERSE 4; 4; 4; 4s; "song. (of song.)";
+			VERSE "song.";
+			VERSE 8.; 16; 8.; 16; 4; s; "hap-py vale of song.";
+endbar

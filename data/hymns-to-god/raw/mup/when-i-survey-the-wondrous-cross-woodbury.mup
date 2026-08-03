@@ -1,0 +1,342 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Hymns of Praise
+//	For the Church and Sunday School
+//	Compiled by F. G. Kingsbury
+//	Hope Publishing Company, Chicago  	
+//	Copyright 1922?
+//	Hymn No.: 206	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 01/25/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.96
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=2/2
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "When I Survey The Wondrous Cross" ""
+   title (2)""
+   title (11) "" "\f(TI)looking unto Jesus the author and perfecter of our faith, who for" ""
+   title (11) "" "\f(TI)the joy that was set before him endured the cross, despising shame," ""
+   title (11) "" "\f(TI)and hath sat down at the right hand of the throne of God. - Heb. 12:2" ""
+   title (10) "D - 2 - MI" "" ""
+   title "Isaac Watts" "" "Isaac B. Woodbury"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+
+//Verse
+
+//1
+1: 2df; 4; ;
+2: 2da; 4; ;
+
+	VS "<1. >-1|When I sur-";
+	VS "<2. >-1|For-bid it,";
+	VS "<3. >-1|See, from His";
+	VS "<4. >-1|Were the whole";
+bar
+
+//2
+1: 2.fa; 4;
+2: 2.dd+; 4;
+
+	VS "vey the";
+	VS "Lord, that";
+	VS "head, His";
+	VS "realm of";
+bar
+//3
+1: 4gb slur; fa; eg slur; fa;
+2: 2dd+; da;
+
+	VS "won-drous";
+	VS "I should";
+	VS "hands, His";
+	VS "na-ture";
+bar
+
+//4
+1: 2.df; 4s;
+2: 2.da; 4s;
+
+	VS "cross";
+	VS "boast";
+	VS "feet,";
+	VS "mine,";
+invisbar
+1: 2.s; 4df;
+2: 2.s; 4da;
+
+	VS "On";
+	VS "Save";
+	VS "Sor-";
+	VS "That";
+bar
+
+//5
+1: 4.ce; 8df; 4eg; 4ce;
+  phrase above 1: 1 til 2;
+  phrase below 1: 1 til 2;
+2: 2.a-a; 4;
+
+	VS21 "which the";
+	VS21 "in the";
+	VS21 "row and";
+	VS21 "were a";
+bar
+//6
+1: 4.df; 8eg; 4fa; df;
+  phrase above 1: 1 til 2;
+  phrase below 1: 1 til 2;
+2: 2.da; 4;
+
+	VS21 "Prince of";
+	VS21 "death of";
+	VS21 "love flow";
+	VS21 "pres-ent";
+bar
+//7
+1: 4ce slur; ea; ec+ slur; db;
+2 1: 4a slur; c+; a slur; g#;
+2 2: 2e; ;
+
+	VS22 "glo-ry";
+	VS22 "Christ my";
+	VS22 "ming-led";
+	VS22 "far to";
+bar
+
+//8
+1: 2.ca; 4r;
+2: 2.a-a; 4r;
+
+	VS "died, ";
+	VS "God!";
+	VS "down!";
+	VS "small;";
+bar
+newscore
+//9
+1: 2df; 4; ;
+2: 2da; 4; ;
+
+	VS "My rich-est";
+	VS "All the vain";
+	VS "Did e'er such";
+	VS "Love so a-";
+bar
+
+//10
+1: 2.fa; 4;
+2: 2.dd+; 4;
+
+	VS "gain I";
+	VS "things that";
+	VS "love and";
+	VS "maz-ing";
+bar
+
+//11
+1: 4gb slur; fa; eg slur; fa;
+2: 2dd+; da;
+
+	VS "count but";
+	VS "charm me";
+	VS "sor-row";
+	VS "so di-";
+bar
+
+//12
+1: 2.df; 4s;
+2: 2.da; 4s;
+
+	VS "loss,";
+	VS "most,";
+	VS "meet,";
+	VS "vine,";
+invisbar
+1: 2.s; 4df;
+2: 2.s; 4da;
+
+	VS "And";
+	VS "I";
+	VS "or";
+	VS "De-";
+bar
+
+//13
+1: 4fd+; ac+; gb; fa;
+  phrase above 1: 1 til 2;
+  phrase below 1: 1 til 2;
+2: 2.dd+; 4;
+
+	VS21 "pour con-";
+	VS21 "sac-ri-";
+	VS21 "thorns com-";
+	VS21 "mands my";
+bar
+
+//14
+1: 4gb; ac+; bd; gb;
+  phrase above 1: 1 til 2;
+  phrase below 1: 1 til 2;
+2: 2.gd+; 4;
+
+	VS21 "tempt on";
+	VS21 "fice them";
+	VS21 "pose so";
+	VS21 "soul, my";
+bar
+
+//15
+1: 4fa slur; df; egslur; fa;
+2 1: 4d+ slur; a; 2s;
+2 2: 2a; a-a;
+
+	VS "all my";
+	VS "to His";
+	VS "rich a";
+	VS "life, my";
+
+bar
+
+//16
+1: 1df;
+2: 1da;
+
+	VS "pride.";
+	VS "blood.";
+	VS "crown?";
+	VS "all!";
+endbar
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

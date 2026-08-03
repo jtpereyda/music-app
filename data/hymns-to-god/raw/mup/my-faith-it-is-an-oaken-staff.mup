@@ -1,0 +1,271 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Archive.org
+//		The Fellowship Hymn Book 
+//		LONDON, E.C.:
+//		W. A. HAMMOND,
+//		BROTHERHOOD PUBLISHING HOUSE, HOLBORN HALL.
+//		HEADLEY BROTHERS, BISHOPSGATE WITHOUT
+//		Copyright 1908?
+//		Copyright informationfound on Archive.org:
+//		  Evidence reported by scanner-scott-cairns for item the 
+//		  fellowshiphym00unknuoft on Sep 12, 2006; no visible notice 
+//	 	  of copyright and date found; exact publication date unknown;
+//		  not published by the US government; a copyright renewal 
+//		  record could not be found.
+//		Hymn No.: 67
+//		
+// Transcribed by: Ted Gatza, Jr. 12/21/2021
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "My Faith, It Is An Oaken Staff" ""
+   title (2)""
+   title (11)"" "\f(TI)Wherefore take up the whole armor of God, that ye may be able to" ""
+   title (11)"" "\f(TI)withstand in the evil day, and, having done all, to stand. - Eph. 6:13" ""
+   title (11) "E\(flat) - 4 - SOL" "" ""
+   title (13) "Thomas T. Lynch, 1855" "" "Traditional Swiss Melody"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+score
+
+	label=""
+	packexp = 0.8
+	packfact = 0.4
+	pad = 1.4 //2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=5
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+ 	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+   //Time Signature - Use on projection hymns only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+         print (t.w - 2, t.y) "\f(newcentury bold)\s(16)6";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)6";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4;
+	 @
+
+
+// set midi
+	midi all: 0 "temp=90";
+
+//Enter music	
+//=========================
+
+//1
+1 1: 4b-; 2.s;
+1 2: 4b-; 2.s;
+2 1: 4b; 2.s;
+2 2: 4b; 2.s;
+
+	VS 4; 2.s; "<1. >-1|My";
+	VS 4; 2.s; "<2. >-1|I";
+	VS 4; 2.s; "<3. >-1|My";
+bar
+//2
+1 1: 4b-e; 8e<g> bm; g ebm; 4df; 8f<a> bm; a ebm;
+1 2: 4s; 4b-; 4s; 4f;
+2: 4eg; eg; b-b; db;
+
+	VS 4; 4; 4; 4; "faith, it is an";
+	VS 4; 4; 4; 4; "have a guide, and";
+	VS 4; 4; 4; 4; "faith, it is an";
+bar
+//3
+1 1: 8g<b> bm; b ebm; 8.e+<c+> bm; 16c+ ebm; 4eb; fa;
+1 2: 4e; ; s; s;
+2: 4eb; ca; eg; db;
+
+	VS 4; 4; 4; 4; "oak-en staff; The";
+	VS 4; 4; 4; 4; "in His steps, When";
+	VS 4; 4; 4; 4; "oak-en staff, O";
+bar
+//4
+1 1: 4eg; 8.a<f> bm; 16f ebm; 4b-e; b-d;
+1 2: 4s; 4c; 4s; ;
+2: 4eb; a-a; b-g; b-f;
+
+	VS 4; 4; 4; 4; "trav'-eler's well loved";
+	VS 4; 4; 4; 4; "trav-el-ers have";
+	VS 4; 4; 4; 4; "let me on it";
+bar
+//5
+1 1: 2.b-e; 4b-;
+1 2: 2.s; 4b-;
+2 1: 2.eg; 4b;
+2 2: 2.s; 4b;
+
+	VS "aid; My";
+	VS "trod, Wheth-";
+	VS "lean! My";
+bar
+//6
+1 1: 4b-e; 8e<g> bm; g ebm; 4df; 8f<a> bm; a ebm;
+1 2: 4s; 4b-; 4s; 4f;
+2: 4eg; eg; b-b; db;
+
+	VS 4; 4; 4; 4; "faith, it is a";
+	VS 4; 4; 4; 4; "er be-neath was";
+	VS 4; 4; 4; 4; "faith it is a";
+bar
+//7
+1 1: 8g<b> bm; b ebm; 8.e+<c+> bm; 16c+ ebm; 4eb; fa;
+1 2: 4e; ; s; ;
+2: 4eb; ca; eg; db;
+
+	VS 4; 4; 4; 4; "weap-on stout, The";
+	VS 4; 4; 4; 4; "flint-y rock Or";
+	VS 4; 4; 4; 4; "trust-y sword, May";
+bar
+//8
+1 1: 4eg; 8.a<f> bm; 16f ebm; 4b-e; b-d;
+1 2: 4s; 4c; s; s; 
+2: 4eb; a-a; b-g; b-f;
+
+	VS 4; 4; 4; 4; "sol-dier's trust-y";
+	VS 4; 4; 4; 4; "yield-ing grass-y";
+	VS 4; 4; 4; 4; "false-hood find it";
+bar
+//9
+1: 2.b-e; 4eb;
+2: 2.eg; 4eg;
+
+	VS "blade. I'll";
+	VS "sod, They";
+	VS "keen. Thy";
+bar
+//10
+1 1: 4.eb; 8eg; 8c+<b> bm; 8b ebm; 8a<g> bm; g ebm;
+1 2: 4.s; 8s; 4e; ; 
+2 1: 4.eg; 8eb; 8a<g> bm; 8g ebm; 8c+<b> bm; b ebm;
+2 2: 4.s; 8s; 4e; ;
+
+	VS 4.; 8; 4; 4; "trav-el on and";
+	VS 4.; 8; 4; 4; "cared not, but with";
+	VS 4.; 8; 4; 4; "Spir-it, Lord, to";
+bar
+//11
+1: 8eg<df> bm; df ebm; 4df; ; fb;
+2: 4b-b; ; ; db;
+
+	VS 4; 4; 4; 4; "still be sitrred By";
+	VS 4; 4; 4; 4; "force un-spent, Un-";
+	VS 4; 4; 4; 4; "me im-part, O";
+bar
+//12
+1: 4.fb; 8eg; 8ac+<gb> bm; gb ebm; 8fa<eg> bm; eg ebm;
+2 1: 4.db; 8b; 4b; 4c+;
+2 2: 4.s; 8e<d> bm; 8d ebm; 8e; 8a-<a-> bm; 8a-n ebm;
+
+	VS 4.; 8; 4; 4; "si-lent thought or";
+	VS 4.; 8; 4; 4; "moved by pain, they";
+	VS 4.; 8; 4; 4; "make me what Thou";
+bar
+//13
+1 1: 8eg<df> bm; df ebm; 4df; df; b-;
+1 2: 8s; s; 4s; s; b-;
+2 1: 4b-b; ; b-b; b;
+2 2: 4s; s; s; b;
+
+	VS 4; 4; 4; 4; "so-cial word; By";
+	VS 4; 4; 4; 4; "on-ward went, Un-";
+	VS 4; 4; 4; 4; "ev-er art, Of";
+bar
+//14
+1 1: 4b-e; 8e<g> bm; g ebm; 4df; 8f<a> bm; a ebm;
+1 2: 4s; b-; s; f;
+2: 4eg; eg; b-b; db;
+
+	VS 4; 4; 4; 4; "all my per-ils";
+	VS 4; 4; 4; 4; "stayed by plea-sure,";
+	VS 4; 4; 4; 4;  "pa-tient and cou-";
+bar
+//15
+1 1: 8g<b> bm; b ebm; 8.e+<c+> bm;16 c+ ebm; 4eb; fa;
+1 2: 4e; ; s; s;
+2: 4eb; ca; eg; db;
+
+	VS 4; 4; 4; 4; "un-de-terred, A";
+	VS 4; 4; 4; 4; "still they bent Their";
+	VS 4; 4; 4; 4; "ra-geous heart, As";
+bar
+//16
+1 1: 4g; 8.a<f> bm; 16f ebm; 4b-e; b-dn;
+1 2: 8e<d> bm; 8d& ebm; 4c; s; s;
+2: 4eb; a-a; b-g; b-a;
+
+	VS 4; 4; 4; 4; "sol-dier pil-grim";
+	VS 4; 4; 4; 4; "zeal-ous course to";
+	VS 4; 4; 4; 4; "all true saints have";
+bar
+//17
+1: 2.b-e; 4s;
+2: 2.eg; 4s;
+
+	VS "staid.";
+	VS "God.";
+	VS "been.";
+endbar
+
+
+
+
+
+
+

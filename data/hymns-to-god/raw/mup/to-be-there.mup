@@ -1,0 +1,235 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Lyric Source: Gospel Melodies New And Old
+//		 For use in the Universalist Church
+//		 Editor: Chester Gore Miller
+//		 Universalist Publishing House, Boston
+//		 Copyright 1904
+//		 Hymn No. 50
+
+
+
+		
+// Transcribed by: Ted Gatza, Jr. 08/15/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "To Be There" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:Having\ a\ desire\ to\ depart,\ and\ \|to\ be\ with\ Christ.\ -\ Phil.\ 1:23 \(space)" ""
+   title (13) "W. O. Cushing" "" "Ira D. Sankey"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key= 3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 2.s; 8e; 8ge;
+1 2: 2.s; 8e; 8s;
+2: 2.s; 8ge; 8be;
+
+
+			VERSE "<1. >-1|I have";
+			VERSE "<2. >-1|There are";
+			VERSE "<3. >-1|In that";
+			VERSE "<4. >-1|There the";
+			
+bar
+//2
+1: 4bg; 8.bg; 16bg; 4bg; 8.c+a; 16bg;
+2: 4e+e; 8.e+e; 16e+e; 4e+e; 8.e+e; 16e+e;
+
+			VERSE "heard of a land far a-";
+			VERSE "fore-tastes of heav-en be-";
+			VERSE "noon-tide of glo-ry so";
+			VERSE "ran-somed with Je-sus a-";
+bar
+//3
+1: 2.e+g; 8e+g; 8d+b;
+2: 2.be; 8be; 8e+g;
+
+			VERSE "way, And its";
+			VERSE "low, There are";
+			VERSE "fair, In the";
+			VERSE "bide In the";
+bar
+//4
+1: 4c+a; 8.c+a; 16c+a; 8c+a bm; 8e+c+ ebm; 8.d+b; 16c+a;
+2: 4e+a; 8.e+a; 16e+a; 4e+a; 8.e+a; 16e+a;
+
+			VERSE 4; 8.; 16; 4; 8.; 16; "glo-ries no tongue can de-";
+			VERSE 4; 8.; 16; 4; 8.; 16; "mo-ments like joys of the";
+			VERSE 4; 8.; 16; 4; 8.; 16; "gleam of the riv-er of";
+			VERSE 4; 8.; 16; 4; 8.; 16; "shade of the shel-ter-ing";
+bar
+//5
+1: 2.bg; 8bg; 8bg;
+2: 2.e+e; 8be; 8be;
+
+			VERSE "clare; But its";
+			VERSE "blest; But the";
+			VERSE "life, There are";
+			VERSE "fold; Ev-er-";
+bar
+//6
+1 1: 4e+g; 8.e+g; 16e+g; 4s; 8.s; 16s;
+1 2: 4s; 8.s; 16s; 8s; 8s; 8.s; 16s;
+2: 4c+c; 8.c+c; 16c+c; 4s; 8.s; 16s;
+
+			VERSE "beau-ty hangs";
+			VERSE "splen-dors no";
+			VERSE "joys that the";
+			VERSE "more by Im-";
+invisbar
+newscore
+
+1 1: 4s; 8.s; 16s; 4d+; 8.c+e; 16c+e;
+1 2: 4s; 8.s; 16s; 8g bm; 8f ebm; 8.s; 16s;
+2: 4s; 8.s; 16s; 4bng; 8.c+a; 16c+a;
+
+			VERSE "o-ver the";
+			VERSE "mor-tal can";
+			VERSE "faith-ful shall";
+			VERSE "man-u-el's";
+
+bar
+//7
+1: 2.bg; 8c+a; 8c+a;
+2: 2.e+e; 8e+a-; 8e+a-;
+
+			VERSE "way, And with";
+			VERSE "know, Of the";
+			VERSE "share; O how";
+			VERSE "side, They shall";
+bar
+//8
+1 1: 4bg; 8ge; 8e; 4fd; 8.gd; 16fd;
+1 2: 4s; 8s; 8e; 4s; 8.s; 16s;
+2: 4e+b-; 8bb-; 8gb-; 4ab-; 8.bb-; 16ab-;
+
+			VERSE "Je-sus I long to be";
+			VERSE "land where the wea-ry shall";
+			VERSE "sweet-ly they rest from the";
+			VERSE "dwell in the glo-ry un-";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "there.";
+			VERSE "rest.";
+			VERSE "strife!";
+			VERSE "told.";
+dblbar
+//10
+1: 8.bg; 16bg; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "To be";
+bar
+//11
+1: 2.bg; 8.bg; 16bg;
+2: 4r; 8.e+e; 16e+e; 4e+e; 4r;
+
+			VERSE "there to be";
+			VERSE 4s; 8.; 16; 4; 4s; "To be there,";
+bar
+//12
+1: 2.c+a; 8e+a; 8c+a;
+2: 4r; 8e+a; 8e+a; 4e+a; 8c+a; 8e+a;
+
+			VERSE "there, And with";
+			VERSE 4s; 8; 8; 4; 8s; 8s; "to be there";
+bar
+//13
+1: 4bg; 8.bg; 16bg; 4bf; 8c+a; 8d+a;
+2 1: 4e+b; 8.e+b; 16e+b; 4d+b; 8b; 8b;
+2 2: 4s; 8.s; 16s; 4s; 8b; 8b;
+
+			VERSE "Je-sus I long to be";
+bar
+//14
+1: 2.e+g; 8.bg; 16bg;
+2: 4be; 8be; 8be; 4be; 4r;
+
+			VERSE "there; To be";
+			VERSE 4s; 8; 8; 4; 4s; "to be there;";
+bar
+//15
+1: 2.bg; 8.bg; 16bg;
+2: 4r; 8.e+e; 16e+e; 4e+e; 4r;
+
+			VERSE "there, to be";
+			VERSE 4s; 8.; 16; 4; 4s; "To be there,";
+bar
+//16
+1: 2c+ slur; 4e+; 8d+b; 8c+a;
+1 2: 2.a; 8s; 8s;
+2: 4r; 8.e+a; 16e+a; 4c+a; 8e+a-; 8e+a;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 1: 1 "uferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "there,_ And with";
+			VERSE 4s; 8.; 16; 4; 8s; 8s; "to be there,";
+bar
+//17
+1 1: 4bg; 8ge; 8e; 4fd; 8.gd; 16fd;
+1 2: 4s; 8s; 8e; 4s; 8.s; 16s;
+2: 4e+b-; 8bb-; 8gb-; 4ab-; 8.bb-; 16ab-;
+
+			VERSE "Je-sus I long to be";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "there.";
+endbar

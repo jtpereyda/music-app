@@ -1,0 +1,229 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Song Treasury
+//		A collection of Songs and Music, especially adapted for
+//		Sunday-Schools, Praise and Prayer Meetings,
+//		Church Choirs and the Home Circle.
+//		Also Containing Selections for
+//		Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		Together with a
+//		Complete Course of Elementary Instruction of all the art of
+//		Reading music at sight
+//		By J. H. Kursenknabe,
+//		Publishers: Crider & Brother
+//		York, PA
+//		Copyright 1879
+//		Hymn No.: 78
+//		
+// Transcribed by: Ted Gatza, Jr. 10/01/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Forever With The Lord!" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:And\ they\ shall\ reign\ forever\ and\ ever.\ -\ Rev.\ 22:5 \(space)" ""   
+   title (13) "W. H. Luckenbach" "" "John H. Kurzenknabe, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8fd; 4.s; 4s;
+2: 8bb-; 4.s; 4s;
+
+
+			VERSE "<1. >-1|Oh";
+			VERSE "<2. >-1|In";
+			VERSE "<3. >-1|What";
+			VERSE "<4. >-1|Cleansed";
+			VERSE "<5. >-1|Through-";
+
+bar
+//2
+1: 4d+f; 8bf; 4ae; 8c+e;
+2: 4bb-; 8bd; 4c+f; 8af;
+
+			VERSE "this is joy in-";
+			VERSE "all that heav'n of";
+			VERSE "rich re-pasts of";
+			VERSE "by his blood from";
+			VERSE "out e-ter-ni-";
+bar
+//3
+1: 4.bd tie; 4bd; 8af;
+2: 4.bb- tie; 4bb-; 8bd;
+
+			VERSE "deed, When";
+			VERSE "bliss, We";
+			VERSE "grace Are";
+			VERSE "sin, From";
+			VERSE "ty, We'll";
+bar
+//4
+1: 4ge; 8c+e; 4c+en; 8d+e;
+2: 4be; 8ge; 4gc; 8gc;
+
+			VERSE "from the earth we've";
+			VERSE "nev-er shall re-";
+			VERSE "spread up-on the";
+			VERSE "death to life re-";
+			VERSE "sing with sweet ac-";
+bar
+//5
+1: 4.c+f tie; 4c+f; 8e+f;
+2: 4.af tie; 4af; 8af;
+
+			VERSE "soared, To";
+			VERSE "cord, A";
+			VERSE "board, Where";
+			VERSE "stored, We";
+			VERSE "cord, That";
+bar
+//6
+1: 4d+f; 8c+e; 4bd; 8af;
+2: 4bb-; 8ac; 4bd; 8bb-;
+
+			VERSE "be from ills and";
+			VERSE "sweet-er, deep-er";
+			VERSE "we shall gath-er";
+			VERSE "glad-ly wait to";
+			VERSE "heav'n is heav'n be-";
+bar
+//7
+1: 4c+e; 8be; 4ae; 8ge;
+2: 4ge; 8ge; 4be; 8be;
+
+			VERSE "sor-rows freed, For-";
+			VERSE "joy than this, For-";
+			VERSE "face to face, For-";
+			VERSE "be shut in, For-";
+			VERSE "cause we'll be For-";
+bar
+//8
+1: 4fd; 8bd; 4bd; 8c+e;
+2: 4bf; 8bf; 4bf; 8af;
+
+			VERSE "ev-er with the";
+			VERSE "ev-er with the";
+			VERSE "ev-er with the";
+			VERSE "ev-er with the";
+			VERSE "ev-er with the";
+bar
+//9
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			VERSE "Lord!";
+			VERSE "Lord!";
+			VERSE "Lord!";
+			VERSE "Lord!";
+			VERSE "Lord!";
+dblbar
+//10
+1: 8d+g; 4.s; 4s;
+2: 8bd; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 8; 4.s; 4s; "<>";
+			VERSE "For-";
+			VERSE "For-";
+bar
+//11
+1: 4.d+g; 4.bd;
+2: 4bd; 8bd; 4gd; 8bg;
+
+			VERSE  4.; 4s; 8s; "<>";
+			VERSE "ev-er";
+			VERSE 4; 8; 4; 8; "ev-er and for-";
+bar
+//12
+1: 4c+f; 8c+f; 4f+f; 8e+f;
+2: 4af; 8af; 4af; 8af;
+
+			VERSE  4.; 4s; 8s; "<>";
+			VERSE "with the Lord! For-";
+			VERSE 4; 8; 4; 8s; "ev-er-more";
+bar
+//13
+1: 4d+f; 8c+e; 4be; 8ge;
+2 1: 4b; 8af; 4bg; 8be;
+2 2: 4b; 8s; 4s; 8s;
+
+			VERSE  4.; 4s; 8s; "<>";
+			VERSE "ev-er\(emdash) bliss-ful";
+bar
+//14
+1: 4.fd tie; 4fd; 8fd;
+2: 4.bb- tie; 4bb-; 8bb-;
+
+			VERSE "word! All";
+bar
+//15
+1: 4d+f; 8c+e; 4bd; 8af;
+2: 4bb-; 8ac; 4bd; 8bb-;
+
+			VERSE "sin and grief and";
+bar
+//16
+1: 4c+e; 8be; 4ae; 8ge;
+2: 4ge; 8ge; 4be; 8be;
+
+			VERSE "suff'-ring o'er, For-";
+bar
+//17
+1: 4fd; 8bd; 4bd; 8c+e;
+2: 4bf; 8bf; 4bf; 8af;
+
+			VERSE "ev-er with the";
+bar
+//18
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			VERSE "Lord!";
+endbar

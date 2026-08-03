@@ -1,0 +1,264 @@
+// !Mup vs.6.9 arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//    J.D.Brunk, Musical Editor
+//    Mennonite Publishing House
+//    Scottdale, Penna.
+//    Copyright 1902
+//    by J. S. Shoemaker
+//    Freeport, ILL.
+//    Hymn no. 69
+//
+// Transcribed by: 
+//	Ted Gatza, Jr. 03/02/2010
+
+// Revisions:
+//	10/25/2022
+
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Ever Will I Pray" ""
+   title (2)""
+   title (11) "" "\f(TI)Evening, and morning, and at noon, will I pray, and"""
+   title (11) "" "\f(TI)cry aloud: and he shall hear my voice. - Ps. 55:17"""
+
+   title (11) "B \(flat) - 3 - MI" "" ""
+   title (13) "A. Cummings" " " "J. H. Tenney"  
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.8
+	pad=0
+	vscheme=2f
+	staffsep=6
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale=.750
+	lyricssize=13
+	lyricsdist=1
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+//==========================
+
+staffs=2
+   time=3/4
+   key=2&
+
+staff 2
+   key=2&
+   clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+       
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+
+//set midi
+   midi all: 0 "tempo=80";
+
+//==========================
+//Verse 1
+
+//1
+1: 4.d+f; 8d+f; 8c+e; 8bd;
+2: 4.bb-; 8bb-; 8fb-; 8fb-;
+
+	VS1 "<1. >-1|Fa-ther, in the";
+        VS1 "<2. >-1|At the bu-sy";
+        VS1 "<3. >-1|When the eve-ning";
+        VS1 "<4. >-1|Thus in life's glad";
+bar
+//2
+1: 4ge; 4fd; 8.bd; 16bd;
+2: 4bb-; 4bb-; 4r;
+
+        VS1 "morn-ing Un-to";
+        VS1 "noon-tide, Press'd with";
+        VS1 "shad-ows Chase a-";
+        VS1 "morn-ing, In its";
+bar
+
+//3
+1 1: 2c+f; 4f;
+1 2: 2s; 4f;
+2: 8af; 8af; 4af; 4c+a;
+
+        VS1 "thee I";
+        VS1 "work and";
+        VS1 "way the";
+        VS1 "bright noon-";
+        VS 8; 8; 4; 4s;"<1. >-1|Un-to thee";
+bar
+
+//4
+1: 2.d+f;
+2 1: 2.b;
+2 2: 2.b;
+
+        VS1 "pray,";
+        VS1 "care,";
+        VS1 "light,";
+        VS1 "day,";
+bar
+
+//5
+1: 4.d+f; 8d+f; 8c+e; 8bd;
+2: 4.bb-; 8bb-; 8fb-; 8fb-;
+
+        VS1 "Let thy lov-ing";
+        VS1 "Then I'll wait with";
+        VS1 "Fa-ther, then I'll";
+        VS1 "In the shad-owy";
+bar
+
+//6
+1: 4ge; 4fd; 8.bd; 16c+e;
+2: 4bb-; 4bb-; 4r;
+
+        VS1 "kind-ness Keep me";
+        VS1 "Je-sus Till he";
+        VS1 "pray thee, Bless thy";
+        VS1 "eve-ning, Ev-er";
+bar
+
+//7
+1: 2d+f; 4c+e;
+2: 8bb-; 8bd; 4bf; 4af;
+
+        VS1 "thro' this";
+        VS1 "hear my";
+        VS1 "child to-";
+        VS1 "will I";
+        VS 8; 8; 4; 4s; "<1. >-1|Keep me thro'";
+bar
+
+//8
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+	VS1 "day.";
+        VS1 "pray'r.";
+        VS1 "night.";
+        VS1 "pray.";
+dblbar
+newscore
+
+REFRAIN
+//9
+1: 8.d+f; 16d+f; 2s;
+2: 4r; 2s;
+
+        VS1 "I will";
+bar
+
+//10
+1: 2c+e; 8.bd; 16ge;
+2: 8af; 8af; 4af; 4r;
+
+        VS1 "pray, I will";
+        VS21 "I will pray,";
+bar
+
+//11
+1: 2fd; 8.d+f; 16d+f;
+2: 8bb-; 8bb-; 4bb-; 4r;
+
+        VS1 "pray Ev-er";
+        VS21 "I will pray";
+bar
+
+//12
+1 1: 2c+; 4ge;
+1 2: 4f slur; 4en; 4s;
+2: 8af; 8af; 4gc; 4c+c;
+
+        VS1 "will I";
+        VS21 "Ev-er will I";
+bar
+
+//13
+1: 2.af;
+2: 2.c+f;
+
+        VS1 "pray;";
+        VS1 "pray;";
+bar
+newscore
+
+//14
+1: 4.bd; 8d+f; 8c+e; 8bd;
+2: 4.bb-; 8bb-; 8fb-; 8fb-;
+
+        VS1 "Morn-ing, noon and";
+bar
+
+//15
+1: 4ge; 4fd; 8.bd; 16c+e;
+2: 4bb-; 4bb-; 4r;
+
+        VS1 "eve-ning Un-to";
+bar
+
+//16
+1: 2d+f; 4c+e;
+2: 8bb-; 8bd; 4bf; 4af;
+
+        VS1 "thee I'll";
+        VS21 "Un-to thee I'll";
+bar
+
+//17
+1: 2.bd;
+2: 2.bb-;
+
+        VS1 "pray.";
+        VS1 "pray.";
+endbar

@@ -1,0 +1,202 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Gospel Pilot Hymnal
+//		A Collection of New and Standard Hymns
+//		for Sunday Schools, Young Peoples' Societies,
+//		Gospel and Social Meetings
+//		Edited By D. B. Towner and French E. Oliver
+//		Published by: Towner and Oliver
+//		80 Institute Place, Chicago
+//		Copyright 1899
+//		Hymn No.: 14
+//		
+// Transcribed by: Ted Gatza, Jr. 11/29/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Jesus At The Door" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - DO" "\s(17)\f(TI)\:Behold,\ I\ stand\ at\ the\ door\ and\^\ knock:\ if\ any\ man\ hear\ my\ voice and\ open\ the\ door,\ I\ will\ \|come\ in\ to\ him,\ -\ Rev.\ 3:20" ""   
+   title (13) "Fanny J. Crosby" "" "Frank J. Robertson, 1897"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1: 4.ac; 8; 4; ae;
+2: 4.ea-; 8; 4; ac;
+			VERSE "<1. >-1|At thy heart the";
+			VERSE "<2. >-1|He was bruised for";
+			VERSE "<3. >-1|Oh how glad-ly";
+			VERSE "<4. >-1|O-pen quick-ly";
+bar
+//2
+1: 4.c+e; 8bd; 4ac; ec;
+2: 4.ge; 8; 4aa-;;
+
+			VERSE "Lord is stand-ing.";
+			VERSE "thy trans-gress-ions;";
+			VERSE "would He en-ter,";
+			VERSE "time is fly-ing,";
+bar
+//3
+1: 4.fc; 8ac; ad;; 8s; s; 
+2: 4.af; 8; fd;; 8s; s;
+
+			VERSE "Griev'd and slight-ed";
+			VERSE "Once a crown of";
+			VERSE "There to dwell for";
+			VERSE "Soon His voice will";
+invisbar
+newscore
+
+1: 4.s; 8; ;; 8bdn; c+d;
+2: 4.s; 8; ;; 8fb-; ab-;
+
+			VERSE "o'er and";
+			VERSE "thorns He";
+			VERSE "ev-er-";
+			VERSE "plead no";
+bar
+//5
+1: 2.be; 4r;
+2: 2.ge; 4r;
+
+			VERSE "o'er,";
+			VERSE "wore;";
+			VERSE "more;";
+			VERSE "more;";
+bar
+//6
+1: 4.c+e; 8c+en; 4c+f;;
+2 1: 4.a; 8bg; 4af; ac;
+2 2: 4.a; 8s; 4;;
+
+			VERSE "Still is knock-ing,";
+			VERSE "Still thy pa-tient";
+			VERSE "Hear thy pa-tient";
+			VERSE "He is wait-ing";
+bar
+//7
+1: 4.d+f; 8c+e; 4bd; 4fd;
+2: 4.gb-; 8ac; 4fd; ad;
+
+			VERSE "plead-ing, call-ing,";
+			VERSE "Lord is say-ing,";
+			VERSE "voice en-treat-ing,";
+			VERSE "for thy an-swer,";
+bar
+//8
+1: 4.ec; 8ac; gd; ac; bd; c+e;
+2: 4.ae; 8; be; ae; ge;;
+
+			VERSE "Why not o-pen now the";
+bar
+//9
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			VERSE "door?";
+dblbar
+//10
+1: 4.be; 8be; c+e; be; ae; gd;
+2: 4.ge; 8;; gd; ac; eb-;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "See the Sav-iour now is";
+bar
+//11
+1: 2ac; 4ec; r;
+2 1: 2e; 4; r;
+2 2: 8a-;; c; e; 4a; 4s;
+
+			VERSE "stand-ing,";
+			VERSE 8; 8; 8; 8; 4; 4s; "stand-ing at the door.";
+bar
+//12
+1: 4.c+a; 8be; ae; ge; ae; c+e;
+2: 4.e+a; 8d+g; c+a; be; ac; aa-;
+
+			VERSE "He is knock-ing at thy";
+bar
+//13
+1: 2.be; 4r;
+2 1: 2.g; 4r;
+2 2: 2e; 8e;; 4;
+
+			VERSE "heart;";
+			VERSE 2s; 8; 8; 4; "at thy heart;";
+bar
+//14
+1: 4.c+e; 8;;; 8c+e; 8e+g&;
+2 1: 4.a; 8;;; 8a; 8ac;
+2 2: 4.a; 8;;; 8a; 8s;
+
+			VERSE "Sin-ner, rise and bid Him";
+bar
+//15
+1: 4e+g&; 2d+f; 4r;
+2 1: 4a; 2; 4r;
+2 2: 8d;;;;;; 4s;
+
+			VERSE "en-ter,";
+			VERSE 8; 8; 8; 8; 8; 8; 4s; "en-ter, bid Him en-ter,";
+bar
+//16
+1: 4.c+e; 8bd; ac; gb-; fd; gd;
+2 1: 4.ae; 8e;;;;;
+2 2: 4.s; 8e;;;;;
+
+			VERSE "Lest from thee He should de-";
+bar
+//17
+1: 2.ac; 4r;
+2: 2.ea-; 4r;
+
+			VERSE "part.";
+endbar

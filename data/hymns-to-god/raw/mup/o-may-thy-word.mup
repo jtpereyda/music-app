@@ -1,0 +1,222 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Fair As The Morning
+//		Hymns and Tunes for 
+//		Praise In The sunday School
+//		By J. H. Kurzenknabe and W. W. Bentley
+//		With Full Arrangement For The
+//		Sunday School Orchestra
+//		By Harry J. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1891
+//		Hymn No.: 149
+//		
+// Transcribed by: Ted Gatza, Jr. 02/20/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "O May Thy Word" ""
+   title (2)""
+   title (11) "A - 4 - MI" "\s(17)\f(TI)\:Let\ thy\ lovingkindnesses\ also\|\ come\ unto\ me,\ O\ Jehovah,\ Even thy\ salvation,\ according\|\ to\ thy\ word.\ -\ Ps.\ 119:41" ""   
+   title (13) "V. E. Marsh" "" "Wm. J. Kirkpatrick, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 8ca- bm; db- ebm; 2.s;
+2: 4ea-; 2.s;
+
+			VERSE 4; 2.s; "<1. >-1|O";
+			VERSE 4; 2.s; "<2. >-1|O";
+			VERSE 4; 2.s; "<3. >-1|O";			
+bar
+//2
+1 1: 4ec;;; 8a bm; 8g ebm;
+1 2: 4s;;; 4e;
+2: 4aa-;;; ac;
+
+			VERSE 4; 4; 4; 4; "may Thy word, my";
+			VERSE 4; 4; 4; 4; "may Thy word, my";
+			VERSE 4; 4; 4; 4; "may Thy word, my";
+bar
+//3
+1: 2.fd; 4bf;
+2: 2.ad; 4d+d;
+
+			VERSE "God, A";
+			VERSE "God, My";
+			VERSE "God, Beam";
+bar
+//3
+1 1: 4ae;; 8a bm; g ebm; 8f bm; g ebm;
+1 2: 4s;; d;;
+2: 4c+e;; be;;
+
+			VERSE 4; 4; 4; 4; "light be-fore me";
+			VERSE 4; 4; 4; 4; "com-fort be, and";
+			VERSE 4; 4; 4; 4; "like the gen-tle";
+bar
+//4
+1: 2.ac; 8ca- bm; db- ebm;
+2: 2.aa-; 4ea-;
+
+			VERSE 2.; 4; "shine, To ";
+			VERSE 2.; 4; "cheer, When";
+			VERSE 2.; 4; "moon Up-";
+bar
+//5
+1 1: 4ec;;; 8a bm; g ebm;
+1 2: 4s;;; e;
+2: 4aa-;;; ac;
+
+			VERSE 4; 4; 4; 4; "guide my feet up-";
+			VERSE 4; 4; 4; 4; "friends are false, or";
+			VERSE 4; 4; 4; 4; "on my eyes that";
+bar
+//6
+1: 4fd;;; d+f;
+2: 4ad;;;;
+
+			VERSE "on the way To";
+			VERSE "death shall take From";
+			VERSE "wait-ing look, While";
+bar
+//7
+1 1: 4c+e; 8b bm; a ebm; 4be; ge;
+1 2: 4s; 4e; s;;
+2 1: 4ae; 8d+ bm; c+ ebm; 4d+e; be;
+2 2: 4s; e; s;;
+
+			VERSE 4; 4; 4; 4; "that blest house of";
+			VERSE 4; 4; 4; 4; "me the loved and";
+			VERSE 4; 4; 4; 4; "shad-ows round me";
+bar
+//8
+1 1: 2.ae; 8g bm; a ebm;
+1 2: 2.s; 4e;
+2: 2.c+a-; 4be;
+
+			VERSE 2.; 4; "thine. O";
+			VERSE 2.; 4; "dear. O";
+			VERSE 2.; 4; "loom. O";
+bar
+//9
+1: 4be;; c+e;;
+2 1: 4ge;; fx; f;
+2 2: 4s;; e;;
+
+			VERSE "may Thy word, my";
+			VERSE "may Thy word, my";
+			VERSE "may Thy word, my";
+bar
+//10
+1 1: 2.be; 8g bm; a ebm;
+1 2: 2.s; 4e;
+2 1: 2.ge; 8b bm; c+ ebm;
+2 2: 2.s; 4e;
+
+			VERSE 2.; 4; "God, My";
+			VERSE 2.; 4; "God, Like";
+			VERSE 2.; 4; "God, So";
+bar
+//11
+1: 4be; bg; c+fx; c+f;
+2: 4d+e;; a#e;;
+
+			VERSE "guide and coun-sel";
+			VERSE "light-house on the";
+			VERSE "full of truth and";
+bar
+//12
+1 1: 2.d+g; 4e;
+1 2: 2.s; 4e;
+2 1: 2.be; 4g;
+2 2: 2.s; 8e bm; d ebm;
+
+			VERSE "be, When";
+			VERSE "sea, Show";
+			VERSE "love, Teach";
+bar
+
+//13
+1: 4ae;; be;;
+2: 4ac;; ge;;
+
+			VERSE "tri-als and tempt-";
+			VERSE "where the cru-el";
+			VERSE "eve-ry heart to";
+bar
+//14
+1: 4c+e; 8bd bm; c+e ebm; 4e+gn; d+f;
+2 1: 4a;; 4ac; ad;
+2 2: 4a;; s;;
+
+			VERSE 4; 4; 4; 4; "a-tions come, To";
+			VERSE 4; 4; 4; 4; "break-ers are, And";
+			VERSE 4; 4; 4; 4; "wor-ship Thee, And";
+bar
+//15
+1 1: 4c+e; 8b bm; a ebm; 4be; ge;
+1 2: 4s; 4e; 4s;;
+2 1: 4ae; 8d+ bm; c+ ebm; 4d+e; be;
+2 2: 4s; 4e; s;;
+
+			VERSE 4; 4; 4; 4; "turn my thoughts to";
+			VERSE 4; 4; 4; 4; "make a path to";
+			VERSE 4; 4; 4; 4; "look in trust a";
+bar
+//16
+1: 2.ae; 4s;
+2: 2.c+a-; 4s;
+
+			VERSE "Thee.";
+			VERSE "Thee.";
+			VERSE "bove.";
+endbar

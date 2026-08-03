@@ -1,0 +1,235 @@
+// Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	The Golden Sheaf
+//		A Collection of Choice Hymns and Songs
+//		Especially Designed For
+//		Sunday Schools, Loyal Worker Meetings
+//		Prayer and Social Services
+//		Boston
+//		The Advent Christian Publication Society
+//		160 Warren Street
+//		Copyright 1902 by Chas. H. Woodman
+//		Hymn No. 59
+		
+		
+// Transcribed by: Ted Gatza, Jr. 07/24/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I Must Tell Jesus" ""
+   title (2) ""
+   title (11)"" "\f(TI)casting all your anxiety upon him, because he careth for you. - 1 Pet. 5:7" ""
+
+   title (11)"E\(flat) - 3 - SOL" "" ""  
+   title (13) "Elisha A. Hoffman" "" "Elisha A. Hoffman, 1893"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=9/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+
+//1
+1 1: 4.s; 4.; 8e; f; eg;
+1 2: 4.s; 4.; 8e;; 8s;
+2: 4.s; 4.; 8eg; ea; eb;
+	
+	VERSE "<1. >-1|I must tell";
+	VERSE "<2. >-1|I must tell";
+	VERSE "<3. >-1|Tempt-ed and";
+	VERSE "<4. >-1|Oh, how the";
+bar
+//2
+1 1: 4.eb;; 8e; f; eg;
+1 2: 4.s;; 8e;; s;
+2: 4.eg;; 8; ea; eb;
+
+	VERSE "Je-sus all of my";
+	VERSE "Je-sus all of my";
+	VERSE "tried, I need a great";
+	VERSE "world to e-vil al-";
+bar
+//3
+1 1: 4.df; e; 8e; f; eg;
+1 2: 4.s; e; 8;; s;
+2: 4.b-b; eg; 8; ea; eb;
+
+	VERSE "tri-als; I can-not";
+	VERSE "trou-bles; He is a";
+	VERSE "Sav-iour, One who can";
+	VERSE "lures me! Oh, how my";
+bar
+//4
+1 1: 4.eb;; 8e; f; eg;
+1 2: 4.s;; 8e;; s;
+2: 4.eg;; 8eg; ea; eb;
+
+	VERSE "bear these bur-dens a-";
+	VERSE "kind, com-pas-sion-ate";
+	VERSE "help my bur-dens to";
+	VERSE "heart is tempt-ed to";
+bar
+//5
+1 1: 4.d~f~; 4; 8r; 8e; f; eg;
+1 2: 4.s; 4; 8; e;; s;
+2: 4.b-~b~; 4; 8r; eg; ea; eb;
+
+	VERSE "lone; In my dis-";
+	VERSE "Friend; If I but";
+	VERSE "bear; I must tell";
+	VERSE "sin! I must tell";
+bar
+//6
+1 1: 4.eb;; 8e; f; eg;
+1 2: 4.s;; 8e; e; s;
+2: 4.eg;; 8; ea; eb;
+
+	VERSE "tress he kind-ly will";
+	VERSE "ask him, he will de-";
+	VERSE "Je-sus, I must tell";
+	VERSE "Je-sus, and he will";
+bar
+//7
+1 1:4.df; e; 8ee+;;;
+1 2: 4.s;e; 8s;;;
+2: 4.b-a; cg; 8c&f#;;;
+
+	VERSE "help me; He ev-er";
+	VERSE "liv-er, Make of my";
+	VERSE "Je-sus; He all my";
+	VERSE "help me O-ver the";
+bar
+//8
+1 1: 4.eb; eg; 8e; eg; df;
+1 2: 4.s;; 8e; s;;
+2: 4.b-g; b-b; 8b-g; b-b; b-a;
+
+	VERSE "loves and cares for his";
+	VERSE "trou-bles quick-ly an";
+	VERSE "cares and sor-rows will";
+	VERSE "world the vic-t'ry to";
+bar
+//9
+1 1: 4.e~; 4; 8r; 4.s;
+1 2: 4.e~; 4; 8s; 4.s;
+2: 4.e~g~; 4; 8r; 4.s;
+
+	VERSE "own.";
+	VERSE "end.";
+	VERSE "share.";
+	VERSE "win.";
+dblbar
+newscore
+//10
+1: 8ge+;;; 4.s;;
+2: 8eb;;; 4.s;;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "I must tell";
+bar
+//11
+1:  4.ge+; gb; 8be+;;;
+2:  4.eb; ee+; 8ge+;;;
+
+	VERSE "Je-sus! I must tell";
+bar
+//12
+1 1: 4.c+e+; 4.ac+; 8a; b; ac+;
+1 2: 4.s;; 8a;; s;
+2: 4.ae+;; 8ac+; ad+; ae+;
+
+	VERSE "Je-sus! I can-not";
+bar
+//13
+1: 4.gb;; 8fb; fa; eg;
+2: 4.ee+; eb; 8db;; eb;
+
+	VERSE "bear my bur-dens a-";
+bar//14
+1 1: 4.d~f~; 4; 8r; 8e; f; eg;
+1 2: 4.s; 4; 8; e;; s;
+2: 4.b-~b~; 4; 8r; eg; ea; eb;
+
+	VERSE "lone; I must tell";
+bar
+//15
+1 1: 4.eb;; 8e; f; eg;
+1 2: 4.s;; 8e; e; s;
+2: 4.eg;; 8; ea; eb;
+
+	VERSE "Je-sus! I must tell";
+bar
+//7
+1 1:4.df; e; 8ee+;;;
+1 2: 4.s;e; 8s;;;
+2: 4.b-a; cg; 8c&f#;;;
+
+	VERSE "Je-sus! Je-sus can";
+bar
+//8
+1 1: 4.eb; eg; 8e; eg; df;
+1 2: 4.s;; 8e; s;;
+2: 4.b-g; b-b; 8b-g; b-b; b-a;
+
+	VERSE "help me, Je-sus a-";
+bar
+//9
+1 1: 4.e~; 4; 8r; 4.s;
+1 2: 4.e~; 4; 8s; 4.s;
+2: 4.e~g~; 4; 8r; 4.s;
+
+	VERSE "lone.";
+
+endbar

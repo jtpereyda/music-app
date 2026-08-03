@@ -1,0 +1,189 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gates Ajar
+//		Hymns and Tunes for 
+//		Use In Sunday Schools, Praise and Prayer Meetings, ertc.
+//		By J. H. Kurzenknabe
+//		J. H. Kurzenknabe & Sons, Publishers,
+//		Harrisburg, PA.:
+//		Copyright: 1885
+//		Hymn No.: 23
+//		
+// Transcribed by: Ted Gatza, Jr. 02/29/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "O My Dear Saviour! I Am Thy Debtor" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:and\ he\ died\ for\ all,\ that\ they\ that\ liv\|e\ should\ no\ longer\ live\ unto\ themselves, but\ unto\ him\ who\ for\ their\ sake\|s\ died\ and\ rose\ again.\ -\ 1\ Cor.\ 5:15" ""   
+   title (13) "John H. Kurzenknabe" "" "John H. Kurzenknabe, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,25
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/2	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DCVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 4d; gd; ad; 2.s;
+1 2: 4d; s;; 2.s;
+2: 4bg;; c+g; 2.s;
+
+			VERSE "<1. >-1|O my dear";
+			VERSE "<2. >-1|O my dear";
+			VERSE "<3. >-1|O my dear";
+			VERSE "<4. >-1|O my dear";
+bar
+//2
+1: 2bg; 4; gd; ae; ge;
+2: 2d+g; 4; d+b-; c+c;;
+
+			VERSE "Sav-iour! I am Thy";
+			VERSE "Sav-iour! I am Thy";
+			VERSE "Sav-iour! I am Thy";
+			VERSE "Sav-iour! I am Thy";
+bar
+//3
+1 1: 4ec; 2ge; 4ec; d; ge;
+1 2: 4s; 2; 4; d; s;
+2: 4gc; 2; 4; gb-; bg-;
+
+			VERSE "debt-or; What shall I";
+			VERSE "debt-or. When faint and";
+			VERSE "debt-or; My life, my";
+			VERSE "debt-or. How can I";
+bar
+//4
+1: 2bg; 4;; ad; gd;
+2: 2d+g-; 4d+g;; c+f; bg;
+
+			VERSE "ren-der, what do for";
+			VERSE "wea-ry, sick and un-";
+			VERSE "por-tion, all that I";
+			VERSE "tell it? What shall I";
+bar
+//5
+1: 2.d+f; 4d+g; e+g; d+g;
+2: 2.ad; 4bg; c+g; bg;
+
+			VERSE "Thee? I will pro-";
+			VERSE "clean, Pro-strate be-";
+			VERSE "have, To Thy blest";
+			VERSE "bring? O glo-ry!";
+bar
+//5
+1: 2bg; 4; gd; ae; ge;
+2: 2d+g; 4; d+b-; c+c;;
+
+			VERSE "claim it to dy-ing";
+			VERSE "fore Thee I found a";
+			VERSE "ser-vice I free-ly";
+			VERSE "Je-sus is my Re-";
+bar
+//6
+1 1: 4ec; 2ge; 4ec; d; gd;
+1 2: 4s; 2; 4; d; s;
+2: 4gc; 2; 4; gb-; bg-;
+
+			VERSE "mor-tals, Je-sus will";
+			VERSE "par-don; Thy blood so";
+			VERSE "of-fer. Help me and";
+			VERSE "deem-er; I am a";
+bar
+//7
+1: 2bg; 4; ge; bg; af;
+2: 2d+d; 4; be; d+d; c+d;
+
+			VERSE "save you as He did";
+			VERSE "pre-cious saved me from";
+			VERSE "lead me some soul to";
+			VERSE "child of the heaven-ly";
+bar
+//8
+1 1: 2.g; 2.s;
+1 2: 2.g; 2.s;
+2: 2.bg; 2.s;
+
+			VERSE "me.";
+			VERSE "sin.";
+			VERSE "save.";
+			VERSE "King.";
+dblbar
+//9
+1: 4af;; d+f; 2.s;
+2: 4d+d;; 4ad; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE [c]"I am so";
+bar
+//10
+1: 2.c+a; 4bg;; e+g;
+2: 2.d+d; 4d+g;; c+g;
+
+			VERSE "glad, I am so";
+bar
+//11
+1: 2.d+g; 4e+g;;;
+2: 2.bg; 4c+c;;;
+
+			VERSE "glad I am a";
+bar
+//12
+1 1: 2d+g; 4; g; bg; af;
+1 2: 2s; 4; g; s;;
+2: 2d+b-; 4; be; d+d; c+d;
+
+			VERSE "child of the heaven-ly";
+
+bar
+//13
+1 1: 2.g; 2.s;
+1 2: 2.g; 2.s;
+2: 2.bg; 2.s;
+
+			VERSE "King!";
+endbar

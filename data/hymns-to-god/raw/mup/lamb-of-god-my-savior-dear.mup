@@ -1,0 +1,199 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1908
+//		Hymn No.: 141
+//		
+// Transcribed by: Ted Gatza, Jr. 10/23/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Lamb Of God, My Savior Dear" ""
+   title (2)""
+   title (11) "A - 4 - MI" "\s(17)\f(TI)\:Now\ the\ Lord\ of\ peace\ himsel\^f\ give\ you\ peace\ at\ all\ times in\ all\ ways.\ The\ Lord\ be\ w\^ith\ you\ all.\ -\ 2\ Thes.\ 3:16" ""   
+   title (13) "C. P. Powley" "" "M. L. McPhail, 1908"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1: 4c+e; bd; 4.ac; 8ge;
+2 1: 4a; ge; 4.af; 8ac;
+2 2: 4a; s; 4.; 8;
+
+
+			VERSE "<1. >-1|\"Lamb of God,\" my";
+			VERSE "<2. >-1|\"Lamb of God,\" be";
+			VERSE "<3. >-1|Teach me how my";
+			VERSE "<4. >-1|May sweet hope like";
+			VERSE "<5. >-1|When at last I'm";
+
+bar
+//2
+1: 4bd; ad; 2fd;
+2: 4fd;; 2ad;
+
+			VERSE "dear-est friend,";
+			VERSE "Thou my guide,";
+			VERSE "cross to bear,";
+			VERSE "morn-ing star,";
+			VERSE "spir-it born,";
+bar
+//3
+1 1: 4e; ac; be; c+e;
+1 2: 4e; s;;;
+2: 4ac; af; ge; aa-;
+
+			VERSE "\"Now on me Thy";
+			VERSE "Ev-er keep me";
+			VERSE "Lift from me all";
+			VERSE "Be my bea-con";
+			VERSE "Then with right-eous-";
+bar
+//4
+1 1: 4bd#; 8f bm; b ebm; 2be;
+1 2: 4s; d; 2s;
+2 1: 4fb-; 8b bm; a ebm; 2ge;
+2 2: 4s; b-; 2s;
+
+			VERSE 4;; 2; "bless-ing send;\"";
+			VERSE 4;; 2; "by Thy side,";
+			VERSE 4;; 2; "world-ly care;";
+			VERSE 4;; 2; "from a-far;";
+			VERSE 4;; 2; "ness a-dorn,";
+bar
+//5
+1: 4c+e; bd; 4.ac; 8ge;
+2 1: 4a; ge; 4.af; 8ac;
+2 2: 4a; s; 4.s; 8;
+
+			VERSE "Nev-er leave me";
+			VERSE "Let Thy will my";
+			VERSE "May my soul with";
+			VERSE "Make my earth-ly";
+			VERSE "All my be-ing";
+bar
+//6
+1: 4bd; ad; 2fd;
+2: 4fd; ; 2ad;
+
+			VERSE "all a-lone,";
+			VERSE "steps con-trol,";
+			VERSE "faith a-bound,";
+			VERSE "path-way bright,";
+			VERSE "clothed in white,";
+bar
+//7
+1 1: 4e; e+gn; d+f; c+e;
+1 2: 4e; 4s;;;
+2 1: 4ac;; ad; a;
+2 2: 4s;;; 8a- bm; c ebm;
+
+			VERSE "Till I reach my";
+			VERSE "Fill with love my";
+			VERSE "Ev-er full of";
+			VERSE "Till my soul be";
+			VERSE "I'll be pure in";
+bar
+//8
+1: 4c+e; bd; 2ac;
+2: 4ae; ge; 2aa-;
+
+			VERSE "heav'n-ly home,";
+			VERSE "wea-ry soul,";
+			VERSE "joy be found,";
+			VERSE "filled with light,";
+			VERSE "Je-sus' sight,";
+bar
+//9
+1 1: 4c+e; c+; d+a; ;
+1 2: 4s; 8e bm; a ebm; 4s;;
+2 1: 4a;; af; ;
+2 2: 4a; gn; s;;
+
+			VERSE "\"Lamb of God my";
+			VERSE "\"Lamb of God my";
+			VERSE "\"Lamb of God my";
+			VERSE "\"Lamb of God my";
+			VERSE "\"Lamb of God my";
+bar
+//10
+1: 4d+#a; ; 2e+a;
+2: 4c+nfn; c+f; 2c+#e;
+
+			VERSE "Sav-ior dear,\"";
+			VERSE "Sav-ior dear,\"";
+			VERSE "Sav-ior dear,\"";
+			VERSE "Sav-ior dear,\"";
+			VERSE "Sav-ior dear,\"";
+bar
+//11
+1 1: 4e;; fd; d+d;
+1 2: 4e;; s;;
+2: 4ac;; ad; bb-;
+
+			VERSE "All is peace whil'st";
+			VERSE "All is joy whil'st";
+			VERSE "All is well whil'st";
+			VERSE "All is safe whil'st";
+			VERSE "I'm at rest whil'st";
+bar
+//12
+1: 4c+e; bd; 2ac;
+2: 4ae; ge; 2aa-;
+
+			VERSE "Thou art near.";
+			VERSE "Thou art near.";
+			VERSE "Thou art near.";
+			VERSE "Thou art near.";
+			VERSE "Thou art near.";
+endbar

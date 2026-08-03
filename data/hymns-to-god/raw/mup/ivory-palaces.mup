@@ -1,0 +1,232 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Songs Of The Assembly No. 1
+//		Compiled by John F. Carson, J Wilbur Chapman
+//		Ford C. Ottman
+//		Edited by Charles M. Alexander
+//		Adaptable for various church services
+//		Sunday Schools, Evangelistic Meetings
+//		Conferences, Conventions
+//		Publishers by Fleming H. Revell Company
+//		New York, Chicago, Toronto, London and Edinburgh
+//		Copyright: 1916
+//		Hymn No.: 36
+//		
+// Transcribed by: Ted Gatza, Jr. 11/25/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Ivory Palaces" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - SOL" "\s(17)\f(TI)\:All\ thy\ garments\ smell\ o\|f\ myrrh,\ and\ aloes,\ and cassia;\ Out\ of\ ivory\ \^palaces...\ -\ Ps.\ 45:8" ""   
+   title (13) "Henry Barraclough,1915" "" "Henry Barraclough, 1915"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+	define VERSE11 lyrics between 1&2 using 1 1: @
+	define VERSE12 lyrics between 1&2 using 1 2: @
+	define VERSE21 lyrics between 1&2 using 2 1: @
+	define VERSE22 lyrics between 1&2 using 2 2: @
+
+midi all: 0 "tempo=93";
+
+//1
+1 1: 4b-; 2.s; 2;
+1 2: 4b-; 2.s; 2;
+2: 4bb-; 2.s; 2;
+
+	VERSE "<1. >-1|My";
+	VERSE "<2. >-1|His";
+	VERSE "<3. >-1|His";
+	VERSE "<4. >-1|In";
+
+bar
+//2
+1: 2ge; 4; 4.fd; 8ge; 4ad;
+2 1: 2be; 4; 4.b; 8bg; 4bf;
+2 2: 2s; 4; 4.a; 8s; 4;
+
+	VERSE "Lord has gar-ments so";
+	VERSE "life had al-so its";
+	VERSE "gar-ments too were in";
+	VERSE "gar-ments glo-ri-ous";
+bar
+//3
+1 1: 2be; 4db-; 2eb-; 4e;
+1 2: 2s; 4; 2; 4e;
+2: 2bg; 4ab-; 2ge; 4bg;
+
+	VERSE "won-drous fine, And";
+	VERSE "sor-row sore, For";
+	VERSE "cas-sia dipped, With";
+	VERSE "He will come, To";
+bar
+//4
+1: 2c+e; 4be; 2ad; 4ge;
+2 1: 2a; 4bg; 2bf; 4be;
+2 2: 2a; 4s; 2; 4;
+
+	VERSE "myrrh their tex-ture";
+	VERSE "al-oes had a";
+	VERSE "heal-ing in a";
+	VERSE "op-en wide the";
+bar
+//5
+1 1: 2.fd tie; 2; 4b-;
+1 2: 2.s; 2; 4b-;
+2: 2.bb- tie; 2; 4;
+
+	VERSE "fills; Its";
+	VERSE "part; And";
+	VERSE "touch; Each";
+	VERSE "door; And";
+bar
+//6
+1: 2ge; 4; 4.fd; 8ge; 4af;
+2 1: 2be; 4; 4.b; 8bg; 4bf;
+2 2: 2s; 4; 4.a; 8s; 4;
+
+	VERSE "fra-grance reach'd to this";
+	VERSE "when I think of the";
+	VERSE "time my feet in some";
+	VERSE "I shall en-ter my";
+bar
+//7
+1: 4bg slur; d+f#; c+an; 2bg; 4a&e;
+2: 4be slur; c+d; d+f#; 2d+g; 4ac;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+	VERSE "heart of mine, With";
+	VERSE "cross He bore, My";
+	VERSE "sin have slipped, He";
+	VERSE "heav'n-ly home, To";
+bar
+//8
+1 1: 4g slur; b; ae; 2c; 4db-;
+1 2: 2e; 4s; 2c; 4s;
+2 1: 4b slur; d+; c+b-; 2ab-; 4;
+2 2: 2b-; 4s; 2; 4;
+
+	VERSE "joy my be-ing";
+	VERSE "eyes with tear-drops";
+	VERSE "took me from its";
+	VERSE "dwell for ev-er-";
+bar
+//9
+1: 2.eb- tie; 2; 4s;
+2: 2.ge tie; 2; 4s;
+
+	VERSE "thrills.";
+	VERSE "start.";
+	VERSE "clutch.";
+	VERSE "more.";
+dblbar
+//10
+1: 2gb-; 8gc; gd; 4.ge; 8gd; 4ge;
+2: [cue]2.ee-;[cue];
+ital (13) above 1: 1 "Chorus";
+ital (13) above 1: 1 "Duet. \(emdash) Slowly, softly, and with much expression.";
+
+	VERSE "Out of the iv-o-ry";
+bar
+//11
+1: 2bg; 4anf#; 2.a&fn;
+2: [cue]2.b-b--; [cue];
+
+	VERSE "pal-a-ces";
+bar
+//12
+1: 2ac; 8ad; ae; 2af; 4ac;
+2: [cue]2.b-b--; [cue];
+
+	VERSE "In-to a world of";
+bar
+//13
+1: 2.gb- tie; 2; 4r;
+2: [cue]2.ee- tie; [cue]2; 4r;
+
+	VERSE "woe,";
+bar
+//14
+1: 2gb-; 8gc; gd; 2ge; 4bg;
+2: 2ge; 8;; 2be; 4ge;
+ital (13) 1: 1 "Full Chorus";
+
+	VERSE "On-ly His great e-";
+bar
+//15
+1 1: 2d+f#; 4c+an; 2b slur; 4a&;
+1 2: 2s; 4; g ph; d; c eph;
+2 1: 2and; 4d+f#; 2d+slur; 4c+;
+2 2: 2s; 4; g ph; g-; a- eph;
+
+	VERSE "ter-nal love_";
+bar
+//16
+1: 4gb- slur; bd; ac; fa-; 2gb-;
+2: [cue]2.b-b--; [cue];
+mussym (9) above 1: 5 "ferm";
+ital (13) above 1: 1 "Duet \(emdash) Very softly";
+
+	VERSE "Made my Sav-iour";
+bar
+//17
+1: 2.eg- tie; 2; 4s;
+2: [cue]2.ee- tie; [cue]2; 4s;
+
+	VERSE "go.";
+endbar

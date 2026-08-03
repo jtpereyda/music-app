@@ -1,0 +1,224 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Song Treasury
+//		A collection of Songs and Music, especially adapted for
+//		Sunday-Schools, Praise and Prayer Meetings,
+//		Church Choirs and the Home Circle.
+//		Also Containing Selections for
+//		Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		Together with a
+//		Complete Course of Elementary Instruction of all the art of
+//		Reading music at sight
+//		By J. H. Kursenknabe,
+//		Publishers: Crider & Brother
+//		York, PA
+//		Copyright 1879
+//		Hymn No.: 117
+//		
+// Transcribed by: Ted Gatza, Jr. 10/03/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come Unto Me" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:Come\ unto\ me,\ all\ ye\ that\|\ labor\ and\ are\ heavy\ laden, and\ I\ will\ give\ yo\|u\ rest.\ -\ Mat.\ 11:28" ""   
+   title (13) "Lizzie Ashbach" "" "Harry J. Kurzenknabe, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,40
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=130";
+
+//1
+1: 4fd; 2.s; 2s;
+2: 4bb-; 2.s; 2s;
+
+
+			VERSE "<1. >-1|Come";
+			VERSE "<2. >-1|Take";
+			VERSE "<3. >-1|For";
+			VERSE "<4. >-1|All";
+
+bar
+//2
+1: 2fd; 4fd; 4ge slur; 4fd; 4bf;
+2: 2bb-; 4bb-; 2bb-; 4bd;
+
+			VERSE "un-to me, the";
+			VERSE "up my yoke, it";
+			VERSE "I, the high and";
+			VERSE "my com-mands o-";
+bar
+//3
+1 1: 4a slur; 4g; 4ae; 2bd; 4bd;
+1 2: 2e; 4s; 2s; 4s;
+2: 2c+f; 4c+f; 2bb-; 4fb-;
+
+			VERSE "sav-ior said, And";
+			VERSE "shall be light, I'll";
+			VERSE "ho-ly One, Was";
+			VERSE "bey, and thou Shalt";
+bar
+//4
+1 1: 2be; 4ge; 4b slur; 4a; 4ge;
+1 2: 2s; 4s; 2e; 4s;
+2: 2ge; 4be; 2ge; 4be;
+
+			VERSE "be for-ev-er";
+			VERSE "bear a part for";
+			VERSE "meek and low-ly";
+			VERSE "be my hon-ored";
+bar
+//5
+1: 2.fd tie; 2fd; 4fd;
+2: 2.bb- tie; 2bb-; 4bb-;
+
+			VERSE "blest; Come,";
+			VERSE "thee; Come,";
+			VERSE "too: With";
+			VERSE "guest; Par-";
+bar
+//6
+1: 2d+f; 4c+f; 2bf; 4bf;
+2: 2bb-; 4bb-; 2bd; 4bd;
+
+			VERSE "all ye wea-ry";
+			VERSE "fol-low in the";
+			VERSE "rev'-rence come and";
+			VERSE "don and peace shall";
+bar
+//7
+1 1: 2c+g; 4bg; 4g slur; 4b; 4ge;
+1 2: 2s; 4s; 2e; 4s;
+2 1: 2be; 4be; 4b slur; 4g; 4be;
+2 2: 2s; 4s; 2e; 4s;
+
+			VERSE "ones come near, And";
+			VERSE "steps I tread, And";
+			VERSE "learn of me, My";
+			VERSE "here be thine, And";
+bar
+newscore
+//8
+1 1: 2fd; 4bd; 4a slur; 4g; 4ae;
+1 2: 2s; 4s; 2e; 4s;
+2: 2bf; 4bf; 2c+f; 4c+f;
+
+			VERSE "I will give you:";
+			VERSE "meek-ly learn of";
+			VERSE "pre-cepts keep in";
+			VERSE "there e-ter-nal";
+bar
+//9
+1: 2.bd tie; 2bd; 4s;
+2: 2.bb- tie; 2bb-; 4s;
+
+			VERSE "rest.";
+			VERSE "me.";
+			VERSE "view.";
+			VERSE "rest.";
+dblbar
+//10
+1: 4bf; 2.s; 2s;
+2: 4bd; 2.s; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Come.";
+bar
+//11
+1 1: 2c+f; 4c+f; 4c+ slur; 4b; 4c+f;
+1 2: 2s; 4s; 2f; 4s;
+2 1: 2af; 4af; 4a slur; 4b; 4af;
+2 2: 2s; 4s; 2f; 4f;
+
+			VERSE [c]"un-to me, ye";
+bar
+//12
+1: 2d+f; 4c+e; 2bd; 4fd;
+2: 2bb-; 4bb-; 2fb-; 4bb-;
+
+			VERSE [c]"wea-ry, come, And";
+bar
+//13
+1 1: 2ge; 4be; 4c+ slur; 4b; 4ge;
+1 2: 2s; 4s; 2e; 4s;
+2: 2be; 4ge; 2ge; 4be;
+
+			VERSE [c]"I will give you";
+bar
+//14
+1 1: 2.fd tie; 2fd; 4fd;
+2: 2.bb- tie; 2bb-; 4bb-;
+
+			VERSE "rest; Come";
+bar
+//14
+1 1: 2d+f; 4d+f; 4d+ slur; 4c+; 4bf;
+1 2: 2s; 4s; 2f; 4s;
+2: 2bb-; 4bb-; 4bb- slur; 4ac; 4bd;
+
+			VERSE "take my yoke and";
+bar
+//15
+1: 2bg; 4ge; 2e+g; 4ge;
+2: 2be; 4be; 2be; 4be;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "learn of me, And";
+bar
+//16
+1: 2fd; 4bd; 2d+f; 4c+e;
+2: 2bf; 4bf; 2bf; 4af;
+
+			VERSE "be for-ev-er";
+bar
+//17
+1: 2.bd tie; 2bd; 4s;
+2: 2.bb- tie; 2bb-; 4s;
+
+			VERSE "blest.";
+endbar

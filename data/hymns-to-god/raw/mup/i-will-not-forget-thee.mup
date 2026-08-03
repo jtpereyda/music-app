@@ -1,0 +1,325 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Voices of Praise
+//	Prepared with
+//	Especial Reference To The Needs Of The Sunday School
+// 	Will Also Be Found Suitable For The Prayer Meeting
+//	And Other
+//	Religious Gatherings
+//	Compiled By William B. Olmstead, David S. Warner, 
+//	Mary L. Coleman, Emma L. Hogue, William B. Rose
+//	Published By W. B. Rose,, Agent, 1132 Washington Boulevard,Chicago, Illinois
+//	Copyright 1909
+//	Hymn No.: 9	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 01/14/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "I Will Not Forget Thee" ""
+   title (2)""
+   title (11) "" "\f(TI)Can a woman forget her sucking child, that she should not have"""
+   title (11) "" "\f(TI)compassion on the son of her womb? yea, these may forget,"""
+   title (11) "" "\f(TI)yet will not I forget thee. - Is. 49:15"""
+   title (10) "A \(flat) - 4 - SOL" "" ""
+   title "Charles H. Gabriel" "" "Charles H. Gabriel, 1889"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+
+//Verse
+
+//1
+1: 4ce; 8ca; db; 4ec+; ;
+2: 4a-a; 8; ; 4; ;
+
+	VS "<1. >-1|Sweet is the prom-ise";
+	VS "<2. >-1|Trust-ing the prom-ise";
+	VS "<3. >-1|When at the gold-en";
+bar
+
+//2
+1: 8ec+; fd+; db; ec+; 4ca; ec;
+2: 8ea; ; eg; ; 4a-a; ;
+
+	VS "\"I will not for-get thee.\"";
+	VS "\"I will not for-get thee.\"";
+	VS "por-tals I am stand-ing,";
+bar
+newscore
+
+//3
+1: 8ea; eb; ec+; ed+; 4ee+; ec+;
+2 1: 8ca; eg; a; b; 4ac+; a;
+2 2: 8s; ; a; ; 4s; a;
+
+	VS "Noth-ing can mo-lest or";
+	VS "On-ward will I go with";
+	VS "All my trib-u-la-tions,";
+bar
+
+//4
+1 1: 8ed+; ec+; eb; dna; 2b;
+1 2: 8s; ; ; ; 4e slur; d&;
+2 1: 8b; a; gb; fb;2 eg;
+2 2: 8a; ; s; ; 2;
+
+	VS "turn my soul a-way;";
+	VS "songs of joy and love,";
+	VS "all my sor-rows past,";
+bar
+newscore
+
+//5
+1: 4ce; 8ca; db; 4ec+; ;
+2: 4a-a; 8; ; 4; ;
+
+	VS "E'en tho' the night be";
+	VS "Tho' earth de-spise me,";
+	VS "How sweet to hear the";
+bar
+
+//6
+1: 8ec+; fd+; db; ec+; 4ca; ec;
+2: 8ea; ; eg; ; 4a-a; ;
+
+	VS "dark with-in the val-ley,";
+	VS "tho' my friends for-sake me,";
+	VS "bless-ed proc-la-ma-tion,";
+bar
+newscore
+
+//7
+1: 8df; eg; fa; fd+; 4ec+; ea;
+2: 8da; ; ; ; 4ea; ec+;
+
+	VS "Just be-yond is shin-ing";
+	VS "I shall be re-mem-bered";
+	VS "\"En-ter faith-ful ser-vant,";
+bar
+
+//8
+1: 8eg; ea; eb; ec+; 2ea;
+2: 8eb; ec+; ed+; ee+; 2a-c+;
+
+	VS "an e-ter-nal day.";
+	VS "in my home a-bove.";
+	VS "wel-come home at last.\"";
+dblbar
+newscore
+
+//9
+CHORUS
+1: 2ae+ tie; 8.; 16ed+; 8ec+; db;
+2 1: 8s; ; ; ; 8.c+ bm; 16b ebm; 4a;
+2 2: 8ac+; bd+; c+e+; bd+; 4a; ;
+
+	VS "I_ will not for-";
+	VS22 "I will not for-get thee,";
+bar
+
+//10
+1: 8ca bm; db ebm; ec+; ca; 4df; ce;
+2: 8a-a; ; ; ; 4; ;
+
+	VS 4; 8; 8; 4; 4; "get thee or leave thee,";
+	VS21 "I will nev-er leave thee,";
+bar
+newscore
+
+//11
+1 1: 8b-e; eg; ; gb; b bm; d+ ebm; 4d+;
+1 2: 8s; ; ; ; 4g; 8g bm; e ebm;
+2 1: 8s; ; ; ; d+ bm; b ebm; b bm; g ebm;
+2 2: 8eg; eb; ; ed+; 4e; ;
+
+	VS22 "In my hands I'll hold thee,";
+bar
+
+//12
+1 1:8ce; ea; ; ac+; c+ bm; e+ ebm; 4ae+;
+1 2: 8s; ; ; ; 4a; s;
+2 1: 8a; s; ; ; e+bm; c+ ebm; 4s;
+2 2: 8a; ac+; ; ae+; 4a; ac+;
+
+	VS22 "in my arms I'll fold thee,";
+bar
+newscore
+
+//13
+1: 2ae+ tie; 8.; 16ed+; 8ec+; db;
+2 1: 8s; ; ; ; 8.c+ bm; 16b ebm; 8a; ;
+2 2: 8ac+; bd+; c+e+; bd+; 4a; 8; ;
+
+	VS "I_ will not for-";
+	VS22 "I will not for-get thee; for-";
+bar
+
+//14
+1: 8ca bm; db ebm; ec+; g&e+; 4; fd+;
+2: 4a-a; 8; ca; 4da; ;
+
+	VS21 "get thee or leave thee;";
+	VS 4; 8s; 8s; 4s; 4s; "get";
+bar
+newscore
+
+//15
+1: 8fa; eng; fa; fd+; 4e&c+; ea;
+2: 8da; ; ; ; 4ea; ec+;
+
+	VS "I am thy Re-deem-er,";
+bar
+
+//16
+1: 8eg; ea; eb; ec+; 2ea;
+2: 8eb; ec+; ed+; ee+; 2a-c+;
+
+	VS "I will care for thee.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Songs Of Grace And Glory
+//		Editors: W. S. Weeden, J. W. Van De Venter,
+//		Leonard Weaver
+// 		Sevring Publishing Co.,
+//		New york: 441 Pearl St.,
+//		Pittsburg: 806 Lewis Block
+//		Copyright 1896
+//		Hymn no. 88
+
+// Transcribed by: Ted Gatza, Jr. 01/28/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Where Jesus Died For Me" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - MI" "\s(17)\f(TI)\:And\ when\ they\ came\ unto\ \|the\ place\ which\ is\ called The\ skull,\ there\ they\ cru\|cified\ him,\ -\ Lk.\ 23:33" ""
+   title (13) "J. W. Van DeVenter" " " "J. W. Van DeVenter, 1896"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = .98
+	pad =0
+	vscheme = 2f
+	staffscale=.99
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+
+//1
+1: 8ge; 4.s; 4;
+2: 8be; 4.s; 4;
+
+			VERSE "<1. >-1|Can";
+			VERSE "<2. >-1|Can";	
+			VERSE "<3. >-1|No!";
+			VERSE "<4. >-1|When";
+
+bar
+//2
+1: 4ge; 8; 4ae; 8;
+2:4be; 8; 4c+e; 8;
+
+			VERSE "I for-get the";
+			VERSE "I for-get that";
+			VERSE "I will not for-";
+			VERSE "I as-cend to";
+bar
+//3
+1 1: 4ge; 8f#; 4ge; 8be;
+1 2: 4s; 8e; 4s;8;
+2: 4be; 8ane; 4be; 8ge;
+
+			VERSE "sto-ry old, Of";
+			VERSE "aw-ful day, The";
+			VERSE "get the cross, Tho'";
+			VERSE "worlds on high, And";
+bar
+//4
+1: 4bd; 8c+d; 4bd; 8af;
+2: 4fb-; 8; 4; 8bb-;
+
+			VERSE "love so full and";
+			VERSE "thorns, the rug-ged";
+			VERSE "in e-ter-ni-";
+			VERSE "bright-er glo-ries";
+bar
+//5
+1: 4.ge tie; 4; 8ge;
+2: 4.be tie; 4; 8be;
+
+			VERSE "free? The";
+			VERSE "tree? Where";
+			VERSE "ty; I'll";
+			VERSE "see, I'll";
+bar
+//6
+1: 4ge; 8; 4ae; 8;
+2: 4be; 8; 4c+e; 8;
+
+			VERSE "place with-out the";
+			VERSE "my dear Sav-ior";
+			VERSE "ev-er think of";
+			VERSE "ne'er for-get that";
+bar
+//7
+1 1: 4ge; 8f#; 4ge; 8be;
+1 2: 4s; 8e; 4s; 8;
+2: 4be; 8ane; 4be; 8d+&g-;
+
+			VERSE "cit-y wall, Where";
+			VERSE "paid the debt, Where";
+			VERSE "that dear place, Where";
+			VERSE "sa-cred place, Where";
+bar
+//8
+1 1: 4af; 8ge; 4gd; 8f;
+1 2: 4s; 8; 4; 16d bm; b- ebm;
+2: 4c+a-; 8; 4bb-; 8ab-;
+
+			VERSE "Je-sus died for";
+			VERSE "Je-sus died for";
+			VERSE "Je-sus died for";
+			VERSE "Je-sus died for";
+bar
+//9
+1: 4.eb- tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "me?";
+			VERSE "me?";
+			VERSE "me.";
+			VERSE "me.";
+
+rom above 1 dist -26!: 4 "\s(18)\(bracerighttp)"; 
+rom above 1 dist -32!: 4 "\s(18)\(bracerightmid)"; 
+rom above 1 dist -37!: 4 "\s(18)\(bracerightbt)";
+
+dblbar
+//10
+1: 8bg; 4.s; 4;
+2: 8be; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Where";
+bar
+//11
+1: 4d+b; 8c+a; 4bg; 8af;
+2 1: 4bb-; 8; b bm; c+ ebm; d+b-;
+2 2: 4s; 8; 4b-; 8s;
+
+			VERSE [c]"Je-sus died for";
+bar
+//12
+1: 4.ge tie; 4; 8bg;
+2: 4.e+e tie; 4; 8;
+
+			VERSE [c]"me. That";
+bar
+//13
+1: 4e+g; 8; 4d+f; 8;
+2: 4be; 8; 4bng; 8; 
+
+			VERSE "sa-cred place on";
+bar
+//14
+1 1: 4c+e; 8bg; 4af; 8f;
+1 2: 4s; 8; 4; 8f;
+2: 4c+a; 8d+&en; 4c+f; 8c+a-;
+
+			VERSE "Cal-va-ry, Where";
+bar
+//15
+1 1: 8g bm; a ebm; ge; 4gd; 8f;
+1 2: 4e; 8s; 4; 16d bm; b- ebm;
+2 1: 8b bm; c+ ebm; 8bb-; 4; 8ab-;
+2 2: 4b-; 8s; 4; 8;
+
+			VERSE 4; 8; 4; 8; "Je-sus died for";
+bar
+//16
+1: 4.eb- tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "me.";
+endbar

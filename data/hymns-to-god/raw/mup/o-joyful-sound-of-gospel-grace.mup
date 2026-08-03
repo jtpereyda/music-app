@@ -1,0 +1,415 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Salvation Army Music (Formerly Published as “Revival Music”), With Supplementary Tunes.
+//	Compiled by: William Booth, for the Use of the Salvation Army,
+//	Publisher: London: S. W. Partridge & Co., 9, Paternoster Row, e.c. Salvation Army Book Stores, 101, Queen Victoria Street, e.c.
+//	Date: 1882
+//	Hymn No.: 102
+
+// Transcribed by: Ted Gatza, Jr. 09/01/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	extendlyrics=y
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "O Joyful Sound Of Gospel Grace" ""
+   title (2) ""
+   title (11) "" "\f(TI)And every one that hath this hope set on him purifieth himself, even as he is pure. - 1 Jn. 3:3" ""
+   title (11) "B \(flat) - 4 - MI" "" ""
+   title (11) "Charles Wesley" "" "Unknown"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 4db;
+2: 2.s; 4bf;
+
+	VS "<1. >-1|O";
+	VS "<2. >-1|This";
+	VS "<3. >-1|The";
+	VS "<4. >-1|He";
+	VS "<5. >-1|With";
+	VS "<6. >-1|Come,";
+
+bar
+
+//2
+1: 4df; fb; ea; db;
+2: 4b-b; df; cf; b-f;
+
+	VS "Joy-ful sound of";
+	VS "heart shall be his";
+	VS "glor-ious crown of";
+	VS "vis-its now the";
+	VS "me I know, I";
+	VS "O my God, Thy-";
+
+bar
+
+//3
+1: 4fc+; fd+; db; 8s; ;
+2 1: 4fa; da; gb; s;
+2 2: 4s; ; ; 8s; ;
+
+	VS21 "gos-pel grace!";
+	VS21 "con-stant home:";
+	VS21 "right-eous-ness";
+	VS21 "house of clay,";
+	VS21 "feel Thou art;";
+	VS21 "self re-veal,";
+invisbar
+
+//3
+1: 4s; ; ; 8ec+ bm; fd+ ebm;
+2 1: 4s; s; s; b;
+2 2: 4s; ; ; 8e bm; d ebm;
+
+	VS21 "Christ";
+	VS21 "I";
+	VS21 "To";
+	VS21 "He";
+	VS21 "But";
+	VS21 "Fill";
+bar
+
+
+//4
+1: 4ge+; fd+; 8ec+ bm; db ebm; ec+ bm; fd+ ebm;
+2 1: 4cb; b; fa; f;
+2 2: 4s; 8d bm; e ebm; 4s; f;
+
+	VS21 "shall in me ap-";
+	VS21 "hear His Spir-it's";
+	VS21 "me reached out I";
+	VS21 "shakes His fu-ture";
+	VS21 "this can-not suf-";
+	VS21 "all this might-y";
+bar
+
+//5
+1: 2.db; 4s;
+2: 2.b-f; 4s;
+
+	VS "pear;";
+	VS "cry:";
+	VS "view:";
+	VS "home:";
+	VS "fice,";
+	VS "void:";
+bar
+
+//6
+1: 2.s; 4db;
+2: 2.s; 4bf;
+
+	VS "I,";
+	VS "\"Sure-";
+	VS "Con-";
+	VS "O";
+	VS "Un-";
+	VS "Thou";
+bar
+
+//7
+1: 4df; fb; ea; db;
+2: 4b-b; df; cf; b-f;
+
+	VS "e-ven I, shall";
+	VS "ly,\" He saith, \"I";
+	VS "queror through Him, I";
+	VS "wouldst Thou, Lord, on";
+	VS "less Thou plant-est";
+	VS "on-ly canst my";
+
+bar
+
+//8
+1: 4fc+; fd+; db; 8s; ;
+2 1: 4fa; da; gb; s;
+2 2: 4s; ; ; 8s; ;
+
+	VS21 "see His face;";
+	VS21 "quick-ly come;\"";
+	VS21 "soon shall seize,";
+	VS21 "this glad day,";
+	VS21 "in my heart,";
+	VS21 "spir-it fill:";
+
+invisbar
+
+//8
+1: 4s; ; ; 8ec+ bm; fd+ ebm;
+2 1: 4s; s; s; b;
+2 2: 4s; ; ; 8e bm; d ebm;
+
+	VS21 "I";
+	VS21 "He";
+	VS21 "And";
+	VS21 "In-";
+	VS21 "A";
+	VS21 "Come,";
+bar
+
+
+//9
+1: 4ge+; fd+; 8ec+ bm; db ebm; ec+ bm; fd+ ebm;
+2 1: 4cb; b; fa; f;
+2 2: 4s; 8d bm; e ebm; 4s; f;
+
+	VS21 "shall be ho-ly";
+	VS21 "saith, who can-not";
+	VS21 "wear it as my";
+	VS21 "to Thy tem-ple";
+	VS21 "con-stant par-a-";
+	VS21 "O my God, my";
+bar
+
+//10
+1: 2.db; 4s;
+2: 2.b-f; 4s;
+
+	VS "here.";
+	VS "lie.";
+	VS "due.";
+	VS "come!";
+	VS "dise.";
+	VS "God!";
+dblbar
+newscore
+
+CHORUS
+//11
+1 1: 8d+ bm; e+ ebm; 2.s;
+1 2: 4f; 2.s;
+2 1: 8b bm; c+ ebm; 2.s;
+2 2: 4b; 2.s;
+
+	VS12 "I";
+bar
+
+//12
+1: 4ff+; ; fd+; s;
+2 1: 4bd+; ; b; s;
+2 2: 4s; ; b; s; 
+
+	VS "do be-lieve,";
+
+invisbar
+
+//12
+1: 4s; ; ; ff+;
+2 1: 4s; ; ; bd+;
+2 2: 4s; ; s; b; 
+
+	VS "I";
+bar
+
+//13
+1: 4fe+; fd+; fc+; 8fd+ bm; ee+ ebm;
+2 1: 4ac+; b; a; b;
+2 2: 4s; b; 8f bm; e ebm; d bm; c ebm;
+
+	VS21 "will be-lieve that";
+bar
+
+//14
+1: 4df+; fb; fa; eng;
+2: 4b-b; b-d+; cc+; cb;
+
+	VS "Je-sus died for";
+bar
+
+//15
+1 1: 4.f; 8g; 4a; s;
+1 2: 2.f; 4s;
+   phrase above 1: 1 til 3;
+2 1: 4.a; 8b; 4c+; s;
+2 2: 2.f; 4s;
+   phrase above 2: 1 til 3;
+
+	VS12 "me,_";
+invisbar
+
+//15
+1 1: 4.s; 8; 4; f;
+1 2: 2.s; 4e;
+2 1: 4.s; 8; 4; s;
+2 2: 2.s; 4fa;
+
+	VS12 "That";
+bar
+
+//16
+1:  4db; fb; ea; db;
+2: 4b-f; df; cf; b-f;
+
+	VS "on the cross He";
+bar
+
+//17
+1: 4fc+; fd+; db; 8s; ;
+2: 4fa; da; gb; s;
+
+	VS "shed His blood,";
+invisbar
+
+1: 4s; ; ; 8ec+ bm; fd+ ebm;
+2 1: 4s; ; ; b;
+2 2: 4s; ; ; 8e bm; d ebm;
+
+	VS21 "From";
+bar
+
+//18
+1: 4ge+; fd+; 8ec+ bm; db ebm; ec+ bm; fd+ ebm;
+2 1: 4cb; b; fa; ;
+2 2: 4s; 8d bm; e ebm; 4s; ;
+
+	VS21 "sin to set me";
+
+bar
+
+//19
+1: 2.db; 4s;
+2: 2.b-f; 4s;
+
+	VS "free.";
+
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Fair as the Morning.
+//		Hymns and Tunes For Praise
+//		In the Sunday-School
+//		By J. H. Kurzenknabe and
+//		W. W. Bentley.
+//		With A Full Arrangement for the
+//		Sunday School Orchestra.
+//		By Harry J. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1891
+//		Hymn No.: 7
+//		
+// Transcribed by: Ted Gatza, Jr. 01/26/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Though I Walk Through Death's Dark Valley" ""
+   title (2)""
+   title (11) "C - 4 - MI" "\s(17)\f(TI)\:Yea,\ thou\ I\ walk\ through\ the\ v\|alley\ of\ the\ shadow\ of\ death, I\ will\ fear\ no\ evil;\ for\ tho\|u\ art\ with\ me;\ -\ Ps.\ 23:4" ""   
+   title (13) "Ida L. Reed" "" "George J. Kurzenknabe, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 8ec; fd; 2.s;
+2: 8gc;; 2.s;
+
+			VERSE "<1. >-1|Though I";
+			VERSE "<2. >-1|Though the";
+			VERSE "<3. >-1|Though my";
+			
+bar
+//2
+1 1: 4ge;; af; g;
+1 2: 4s;;; f;
+2: 4c+c;; c+f; bg;
+
+			VERSE "walk through death's dark";
+			VERSE "way is lost in";
+			VERSE "hope and cour-age";
+bar
+//3
+1: 4ge; 2c+e; 8c+c; bc;
+2: 4c+c; 2gc; 8ge;;
+
+			VERSE "val-ley, I no";
+			VERSE "dark-ness, He shall";
+			VERSE "fail me, He will";
+bar
+//4
+1 1: 4ac; gc; ec; c;
+1 2: 4s;;; c;
+2 1: 4f; ge; gc; f#a-;
+2 2: 4f; 4s;;;
+
+			VERSE "e-vil thing will";
+			VERSE "e'er my com-fort";
+			VERSE "e'er my strength up-";
+bar
+//5
+1 1: 2.db-; 8c; d;
+1 2: 2.s; 8c;;
+2: 2.gg-; 8ec; fc;
+
+			VERSE "fear; For my";
+			VERSE "be; He will";
+			VERSE "hold, And will";
+bar
+//6
+1 1: 4ec; ge; af; g;
+1 2: 4s;;; f;
+2: 4gc; c+c; c+f; bg;
+
+			VERSE "Sav-iour's 'neath the";
+			VERSE "guide me through the";
+			VERSE "gent-ly on-ward";
+bar
+//7
+1: 4ge; 2c+e; 8d+f; c+e;
+2: 4c+c; 2gc; 8;;
+
+			VERSE "shad-ow Walk-ing";
+			VERSE "shad-ows On to";
+			VERSE "lead me Safe in-";
+bar
+//8
+1: 4bd;; c+f#; af;
+2: 4gd;; ad; c+d;
+
+			VERSE "with me, ev-er";
+			VERSE "heav-en's light so";
+			VERSE "to the up-per";
+bar
+//9
+1 1: 2g; 4r; 4s;
+1 2: 2g; 4s; 4;
+2: 2bg; 4r; 4s;
+
+			VERSE "near.";
+			VERSE "free.";
+			VERSE "fold.";
+dblbar
+//10
+1: 8c+g; d+g; 2.s;
+2: 8c+f; bg; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"For no";
+bar
+//11
+1: 4e+g; c+g; c+a; af;
+2: 4c+c; c+e; c+f;;
+
+			VERSE "e-vil shall be-";
+bar
+//12
+1: 4ge; 2ec; 8; fd;
+2: 4c+c; 2gc; 8c+c;;
+
+			VERSE "fall me; With His";
+bar
+//13
+1: 4ge; c+g; bg; c+g;
+2: c+c; e+c; d+d; c+e;
+
+			VERSE "strength He will up-";
+bar
+//14
+1: 2.d+g; 8e+g; d+f;
+2: 2.bg; 8;;
+
+			VERSE "hold, And will";
+bar
+//15
+1: 4c+e; bg; af; c+f;
+2: 4c+c; c+e; c+f; c+a;
+
+			VERSE "lead me, gent-ly";
+bar
+//16
+1 1: 4ge; 2ec; 8c; d;
+1 2: 4s; 2; 8c;;
+2: 4c+; 2c+c; 8ge; af;
+
+			VERSE "lead me, Safe in-";
+bar
+//17
+1: 4ec; ge; fd; db-;
+2 1: 4g;; gg-; fg-;
+2 2: 4g;; s;;
+
+			VERSE "to the up-per";
+bar
+//18
+1 1: 2c; 4r; s;
+1 2: 2c; 4s;;
+2: 2ec; 4r; s;
+
+			VERSE "fold.";
+endbar

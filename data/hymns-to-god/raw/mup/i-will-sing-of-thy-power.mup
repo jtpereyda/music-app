@@ -1,0 +1,213 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sun-Shine Songs For The Sunday School
+//		By P. P. bilhorn
+//		Published by: Bilhorn Brothers
+//		Garden City Block, 56 Fifth Avenue,
+//		Chicago, Ill.
+//		Copyright: 1893 & 1895
+//		Hymn No.: 48
+
+// Transcribed by: Ted Gatza, Jr. 05/28/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Will Sing Of Thy Power" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - MI" "\s(17)\f(TI)\:But\ I\ will\ sing\ of\ thy\ strength;\ Y\|ea,\ I\ will\ sing\ aloud\ of\ thy\ loving- kindness\ in\ the\ morning:\ For\ \|thou\ hast\ been\ my\ high\ tower, And\ a\ refuge\ in\ the\ day\ o\|f\ my\ distress.\ -\ Ps.\ 59:16" ""
+   title (13) "Ida L. Reed" " " "Frank M. Davis, 1895"	
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.4
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+
+//1
+1: 16ge; af; 4.s; 4;
+2: 16be;; 4.s; 4;
+
+			VERSE "<1. >-1|I will";
+			VERSE "<2. >-1|Un-to";	
+			VERSE "<3. >-1|I will";
+bar
+//2
+1: 8bg;;; [up]c+a; bg; anf#;
+2: 8e+e;;;;;;
+
+			VERSE "sing of Thy pow-er, dear";
+			VERSE "Thee, O my Strength and Re-";
+			VERSE "sing un-to Thee, O my";
+bar
+//3
+1: 4.bg; 4ge; 16; fd;
+2: 4.e+e; 4be; 16bb-;;
+
+			VERSE "Sav-ior, I will";
+			VERSE "deem-er, I will";
+			VERSE "Sav-ior, The de-";
+bar
+//4
+1: 8ec;;; fd; ec; fd;
+2: 8gc;;; bb-;;;
+
+			VERSE "sing of Thy mer-cy and";
+			VERSE "lift up my voice in a";
+			VERSE "fense of my spir-it Thou";
+bar
+//5
+1: 4.ge tie; 4; 16ge;;
+2: 4.be tie; 4; 16be;;
+
+			VERSE "love; I will";
+			VERSE "song; That shall";
+			VERSE "art; I will";
+bar
+//6
+1: 8ad;;; af; ge; fd;
+2: 8bf;;; bb-;;;
+
+			VERSE "sing of Thy light and Thy";
+			VERSE "tell to the world of Thy";
+			VERSE "sing of Thy kind, lov-ing";
+bar
+//7
+1: 4.ge; 4bg; 16ge;;
+2: 4.be; 4e+e; 16be;;
+
+			VERSE "glad-ness, Of Thy";
+			VERSE "glo-ry: Un-to";
+			VERSE "fa-vor That has";
+bar
+//8
+1: 8fd;;; bd; anc; c+e;
+2 1: 8bf;;; f;;;
+2 2: 8s;;; f;;;
+
+			VERSE "glo-ri-ous king-dom a-";	
+			VERSE "Thee doth its prais-es be-";
+			VERSE "left Thy sweet peace in my";
+bar
+//9
+1: 4.bd tie; 4; 8s;
+2: 4.fb- tie; 4; 8s;
+
+			VERSE "bove.";
+			VERSE "long.";
+			VERSE "heart.";
+dblbar
+//10
+1: [up]16c+a; [up]d+a; 4.s; 4;
+2: 16bb-;; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"I will";
+bar
+//11
+1: 8e+g;;;; d+b; c+a;
+2: 8be;;;; e+e;;
+
+			VERSE "sing of Thy mer-cy, dear";
+bar
+//12
+1: 4.bg; 4ge; 16be;;
+2: 4.e+e; 4be; 16bg;;
+
+			VERSE "Sav-ior; In the";
+bar
+//13
+1: 8c+e;;; s; s; s;
+2 1: 8a;;; s; s; s;
+2 2: 8a;;; s;;;
+
+			VERSE "morn-ing I'll";
+invisbar
+newscore
+
+1: 8s;;; be; ad; ge;
+2 1: 8s;;; bg; bf; be;
+2 2: 8s;;; s;;;
+
+			VERSE "sing un-to";
+
+bar
+//14
+1: 4.fd tie; 4; 16fd;;
+2: 4.bb- tie; 4; 16bb-;;
+
+			VERSE "Thee, For Thou";
+bar
+//15
+1: 8ge;;; ad;;;
+2: 8be;;; bf;;;
+
+			VERSE "ev-er wilt be a sure";
+bar
+newscore
+//16
+1: 4.be; [up]4c+a; 16c+f#;;
+2: 4.bg; 4e+a; 16e+an;;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "re-fuge, In the";
+bar
+//17
+1: 8bg; af; ge; fd; ge; fd;
+2 1: 8e+b; b;; ab-; bb-; ab-;
+2 2: 8s; b;; s;;;
+
+			VERSE "day of my troub-le, to";
+bar
+//18
+1 1: 4.e tie; 4; 8s;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "me.";
+endbar

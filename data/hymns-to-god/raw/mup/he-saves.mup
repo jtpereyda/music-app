@@ -1,0 +1,214 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Songs Of Redeeming Love No. 2
+//		Edited by: Jno. R. Sweney, C. C. McCabe,
+//		T. C. O'Kane, Wm. J. Kirkpatrick
+//		Publisher : John J. Hood, 1018 Arch Street, Philadelphia
+//		Cranston & Stowe, Cincinnati, Chicago, and St. Louis
+//		Copyright 1887
+//		Hymn no. 12
+		
+		
+// Transcribed by: Ted Gatza, Jr. 02/01/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "He Saves" ""
+   title (2)""
+   title (11) "D \(flat) - 4 - MI" "\s(17)\f(TI)\:For\ God\ sent\ not\ the\ Son\ into\ th\|e\ world\ to\ judge\ the\ world;\ but that\ the\ world\ should\ be\ sav\|ed\ through\ him.\ -\ Jn.\ 3:17" ""   
+   title (13) "Frank M. Davis" "" "Edward C. Avis, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=98";
+
+// Enter music
+
+//1
+1: 2.s; 8fd bm; ge ebm;
+2: 2.s; 4ad;
+
+	VERSE 2.s; 4; "<1. >-1|Sing";
+	VERSE 2.s; 4; "<2. >-1|Oh!";
+	VERSE 2.s; 4; "<3. >-1|Re-";
+bar
+//2
+1: 4af; 8.; 16; 4; 8.bg; 16af;
+2: 4d+d; 8.; 16; 4; 8.; 16;
+
+	VERSE "glo-ry to God in the";
+	VERSE "per-fect re-demp-tion to";
+	VERSE "joice, then, re-joice, all ye";
+bar
+//3
+1: 2d+f; 4af;;
+2: 2ad; 4d+d;;
+
+	VERSE "high-est, For";
+	VERSE "sin-ners, The";
+	VERSE "peo-ple, The";
+bar
+//4
+1: 4bg; 8.; 16; 4d+b; 8.c+a; 16bg;
+2: 4d+g; 8.; 16; 4; 8.; 16;
+
+	VERSE "won-der-ful things he hath";
+	VERSE "pur-chase of Je-sus's own";
+	VERSE "won-drous trans-ac-tion is";
+bar
+//5
+1: 2.af; 8fd bm; ge ebm;
+2: 2.d+d; 4ad;
+
+	VERSE 2.; 4; "done; He";
+	VERSE 2.; 4; "blood, The";
+	VERSE 2.; 4; "done! The";
+bar
+//6
+1: 4af; 8.; 16; 4; 8.bg; 16af;
+2: 4d+d; 8.; 16; 4; 8.; 16;
+
+	VERSE "so loved the world that he";
+	VERSE "vil-est of-fend-er is";
+	VERSE "life-gate is o-pen, come,";
+bar
+//7
+1: 2d+f; 4af; d+f;
+2: 2ad; 4d+d;;
+
+	VERSE "gave us His";
+	VERSE "par-doned, Is";
+	VERSE "ent-er, Thro'";
+bar
+//8
+1: 4c+g; 8.; 16; 4; 8.bg; 16c+g;
+2: 4e+a-; 8.; 16; 4; 8.; 16aa-;
+
+	VERSE "on-ly be-got-ten dear";
+	VERSE "saved thro' the prom-ise of";
+	VERSE "Je-sus, the Cru-ci-fied";
+bar
+//9
+1: 4s; 2.d+f;
+2: 4s; 2.ad;
+
+	VERSE "Son.";
+	VERSE "God.";
+	VERSE "One.";
+dblbar
+//10
+1: 2.s; 8.af; 16bg;
+2: 2.s; 4r;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE 2.s; 8.; 16; "Hal-le-";
+bar
+//11
+1: 2af; 4fd; 8.d+f; 16e+g;
+2: 4r; 8.d+d; 16; 8ad;; 4r;
+
+	VERSE "lu-jah! hal-le-";
+	VERSE 4s; 8.; 16; 8; 8; 4s;"Ha-le-lu-jah!";
+bar
+//12
+1: 2d+b; 4bg;;
+2: 4r; 8.bg; 16d+g; 8;; 4;
+
+	VERSE "lu-jah! He";
+	VERSE 4s; 8.; 16; 8; 8; 4s; "hal-le-lu-jah!";
+bar
+//13
+1: 4af; 8.; 16; 4bg; 8.af; 16fd;
+2: 4d+d; 8.; 16; 4; 8.; 16ad;
+
+	VERSE "saves thro' the death of his";
+bar
+//14
+1: 2.ec; 8.af; 16bg;
+2: 2.aa-; 4r;
+
+	VERSE "Son; Hal-le-";
+bar
+//15
+1: 2af; 4fd; 8.d+f; 16e+g;
+2: 4r; 8.ad; 16; 8;; 4r;
+
+	VERSE "lu-jah! hal-le-";
+	VERSE 4s; 8.; 16; 8; 8; 4s;"Ha-le-lu-jah!";
+bar
+//16
+1: 2d+b; 4bg; 4d+g;
+2: 4r; 8.bg; 16d+g; 8;; 4bg;
+
+	VERSE "lu-jah! He";
+	VERSE 4s; 8.; 16; 8; 8; 4s; "hal-le-lu-jah!";
+bar
+//17
+1 1: 4af; 8.; 16; 4a; 8bg; c+g;
+1 2: 4s; 8.; 16; 4g; 8s;;
+2 1: 4d+a; 8.; 16; 4c+a; 8; a;
+2 2: 4s; 8.; 16; 4; 8; 8a;
+
+	VERSE "saves thro' the Cru-ci-fied";
+bar
+//18
+1: 4s; 2.d+f;
+2: 4s; 2.ad;
+
+	VERSE "One.";
+endbar
+
+

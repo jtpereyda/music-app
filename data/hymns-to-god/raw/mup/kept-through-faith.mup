@@ -1,0 +1,196 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Alexander's Gospel Songs
+//		Compiled by Charles M. Alexander
+//		Published by the Fleming H. Revell Company
+//		New York, 158 Fifth Avenue
+//		Chicago, 80 Wabash Avenue
+//		Toronto, London, Edinburgh
+//		Copyright 1908
+//		Hymn no. 93
+
+// Transcribed by: Ted Gatza, Jr. 12/03/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Kept Through Faith" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - MI" "\s(17)\f(TI)\:who\ by\ the\ power\ of\ God\ are\ guar\|ded\ through\ faith\ unto\ a\ salvation ready\ to\ be\ revealed\ in\ t\|he\ last\ time.\ -\ 1\ Pet.\ 1:15" ""
+   title (13) "Civilla. D. Martin" " " "Charles H. Gabriel, 1907"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=93";
+
+
+//1
+1: 8.c+e; 16bd; 2.s;
+2: 8.aa-; 16; 2.s;
+
+			VERSE "<1. >-1|Tho' I";
+			VERSE "<2. >-1|\"Tho' an";	
+			VERSE "<3. >-1|Je-sus";
+bar
+//2
+1: 4ac; 8.; 16bd; 4ac; ec;
+2: 4ea-; 8.; 16; 4; aa-;
+
+			VERSE "fal-ter, His arm will";
+			VERSE "host should en-camp a-";
+			VERSE "knows all a-bout the";
+bar
+//3
+1: 2fd; 4af; 8.; 16fd;
+2: 2ad; 4d+d; 8.; 16ad;
+
+			VERSE "hold me; I can";
+			VERSE "gainst me,\" Why, O";
+			VERSE "path-way I must";
+bar
+//4
+1: 4ec; 8.ae; 16be; 4c+e;;
+2 1: 4aa-; 8.ac; 16ge; 4a;;
+2 2: 4s; 8.; 16; 4a;;
+
+			VERSE "rest on His strength and";
+			VERSE "why should I have a";
+			VERSE "trav-el from day to";
+bar
+//5
+1: 2.be; 8.c+e; 16bd;
+2: 2.ge; 8.aa-; 16;
+
+			VERSE "grace; Tho' the";
+			VERSE "fear? Lost in";
+			VERSE "day; When on";
+bar
+//6
+1: 4ac; 8.; 16bd; 4ac; ec;
+2: 4ea-; 8.; 16; 4; aa-;
+
+			VERSE "dark-ness of night en-";
+			VERSE "sin, Je-sus sought and";
+			VERSE "earth as a \"Man of";
+bar
+//7
+1: 2fd; 4af; 8.; 16bf;
+2: 2ad; 4; 8.; 16;
+
+			VERSE "fold me, Soon I";
+			VERSE "found me, Now to";
+			VERSE "sor-rows,\" He walked";
+bar
+//8
+1: 4c+e; 8.; 16; 4bd;;
+2: 4ae; 8.; 16; 4ge;;
+
+			VERSE "know I shall see His";
+			VERSE "keep He is ev-er";
+			VERSE "o-ver the same hard";
+bar
+//9
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			VERSE "face.";
+			VERSE "near.";
+			VERSE "way.";
+dblbar
+//10
+1: 4.e+a; 8f+a; 4e+a; 8.c+e; 16be;
+2: 4.c+a; 8d+a; 4c+a; 8.aa-; 16ac;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Kept thro' faith by His";
+bar
+//11
+1: 4af; fd; 2af;
+2: 4d+d; ad; 2;
+
+			VERSE "might-y pow'r,";
+bar
+//12
+1 1: 4e; ae; be; 8.e+e; 16;
+1 2: 4e; s;; 8.; 16;
+2: 4ac;; aa-; 8.ac; 16;
+
+			VERSE "He to shield me is";
+bar
+//13
+1: 4c+e; be; 2;
+2 1: 4ae; ge; g slur; d+;
+2 2: 4s;; 2e;
+
+			VERSE "ev-er nigh;";
+bar
+//14
+1: 4.e+a; 8f+a; 4e+a; 8.c+e; 16be;
+2: 4.c+a; 8d+a; 4c+a; 8.aa-; 16ac;
+
+			VERSE "Gives me grace for each";
+bar
+//15
+1: 4af; fd; af; 8.; 16bf;
+2: 4d+d; ad; d+d; 8.; 16ad;
+
+			VERSE "need and hour, O now";
+bar
+//16
+1: 4c+e; 8.; 16; 4bd;;
+2: 4ae; 8.; 16; 4ge;;
+
+			VERSE "hap-py, how blest am";
+bar
+//17
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "I!";
+endbar

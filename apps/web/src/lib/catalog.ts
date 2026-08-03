@@ -80,6 +80,9 @@ export interface EditionConfig {
 export interface Hymn {
   id: string;
   slug: string;
+  workId: string;
+  arrangementId: string;
+  arrangementLabel: string;
   title: string;
   textAuthor: string;
   tuneName: string;
@@ -110,7 +113,7 @@ export const hymns: readonly Hymn[] = generatedHymns.map((hymn) => ({
   sourceLabel: hymn.sourceLabel,
   availableLines: satbLines,
   lyricsAvailableFor: sopranoLyrics,
-  catalogRevision: 5,
+  catalogRevision: 6,
   rightsStatus: "technical_candidate_not_production_approved",
   publicationStatus: "technical_preview",
 }));

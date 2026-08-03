@@ -1,0 +1,226 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Kingdom Of Song
+//		A Collections of Songs for Sunday Schools,
+//		Young People Societies and all Religious Services
+//		Edited by T. M. Bowdish
+//		Published by: The W. W. Whitney Co 
+//		Copyright 1900
+//		Hymn No.: 39
+//		
+// Transcribed by: Ted Gatza, Jr. 09/24/12
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Jesus Calls" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - DO" " \s(17)\f(TI)\:Wherefore\ also\ he\ is\ able\ t\|o\ save\ to\ the\ uttermost\ them that\ draw\ near\ unto\ God\ \|through\ him,...\ -\ Heb.\ 7:25" ""   
+   title (13) "Unknown" "" "A. J. Showalter"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 4bd; 8.db- bm; 16ec ebm; 4fd; bd;
+2: 4fb-;; bb-; fb;
+
+			VERSE 4; 8.; 16s; 4; 4; "<1. >-1|Come, ye wea-ry";
+			VERSE 4; 8.; 16s; 4; 4; "<2. >-1|Ye, that dread the";
+			VERSE 4; 8.; 16s; 4; 4; "<3. >-1|Nak-ed, guilt-y";
+			VERSE 4; 8.; 16s; 4; 4; "<4. >-1|Debt-ors who have";
+			VERSE 4; 8.; 16s; 4; 4; "<5. >-1|\"It is fin-ished,\"";
+bar
+//2
+1: 4be; ae; 2;
+2: 4fc;; 2;
+
+			VERSE "souls op-prest,";
+			VERSE "wrath of God,";
+			VERSE "poor and blind,";
+			VERSE "naught to pay,";
+			VERSE "lo! he cries,";
+bar
+//3
+1: 4ae; 8.ca- bm; 16db- ebm; 4ec; 4ae;
+2 1: 4f;; af; c+f;
+2 2: 4f;; s;;
+
+			VERSE 4; 8.; 16s; 4; 4; "Find in Christ the";
+			VERSE 4; 8.; 16s; 4; 4; "Come and wash in";
+			VERSE 4; 8.; 16s; 4; 4; "All your wants in";
+			VERSE 4; 8.; 16s; 4; 4; "Come to Je-sus,";
+			VERSE 4; 8.; 16s; 4; 4; "There on yon-der";
+bar
+//4
+1: 4gd; fd; 2;
+2: 4bb-;; 2;
+
+			VERSE "prom-ised rest;";
+			VERSE "Je-sus' blood;";
+			VERSE "Je-sus find;";
+			VERSE "haste a-way;";
+			VERSE "cross he dies";
+bar
+//5
+1: 4fd; 8.db- bm; 16ec ebm; 4fd; 8.bd bm; 16d+f ebm;
+2: 4bb-; fb-; bb-;;
+
+			VERSE 4; 8.; 16s; 4; 8.; 16s; "Let on him your";
+			VERSE 4; 8.; 16s; 4; 8.; 16s; "To the Son of";
+			VERSE 4; 8.; 16s; 4; 8.; 16s; "This the day of";
+			VERSE 4; 8.; 16s; 4; 8.; 16s; "All your sins on";
+			VERSE 4; 8.; 16s; 4; 8.; 16s; "O be-lieve the";
+bar
+//6
+1: 4d+g; c+g; 2e+g;
+2: 4be;; 2;
+
+			VERSE "bur-dens roll,";
+			VERSE "Da-vid cry,";
+			VERSE "mer-cy is,";
+			VERSE "him were laid,";
+			VERSE "re-cord true,";
+bar
+//7
+1 1: 4e+g; 8.d+f bm; 16c+g ebm; 4bf; 4f;
+1 2: 4s; 8.s; 16s; 4s; f;
+2: 4c+c; 8.bd bm; 16c+e ebm; 4d+f;;
+
+			VERSE 4; 8.; 16s; 4; 4; "He can save and";
+			VERSE 4; 8.; 16s; 4; 4; "For this mo-ment";
+			VERSE 4; 8.; 16s; 4; 4; "Now ac-cept the";
+			VERSE 4; 8.; 16s; 4; 4; "All your debts the";
+			VERSE 4; 8.; 16s; 4; 4; "Je-sus died for";
+bar
+//8
+1: 4ge; ae; bd; s;
+2: 4c+f;; bb-; s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+
+			VERSE "make you whole.";
+			VERSE "he is nigh.";
+			VERSE "prof-fered bliss.";
+			VERSE "Sav-iour paid.";
+			VERSE "such as you.";
+dblbar
+//9
+1: 8.fd; 16; 2.s;
+2: 8.bb-; 16; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 8.; 16s; 2.s; "<>";
+			VERSE "Je-sus";
+			VERSE "Je-sus";
+bar
+//10
+1 1: 2ae tie; 8.; 16ae; 8.ge; 16f;
+1 2: 2s; 8.; 16; 8.; 16e;
+2: 8.c+f; 16; 8.; 16; 4; 8.bf; 16af;
+
+			VERSE 1; "<>";
+			VERSE "calls,_ yes, Je-sus";
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; " calls the wan-d'rer home, Je-sus";
+bar
+//11
+1: 2.bd; 8.bd; 16d+f;
+2: 8.bb-; 16fb-; 8.; 16; 4; 8.; 16bb-;
+
+			VERSE "calls, Come ye";
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; "calls the wan-d'rer home, Come ye";
+bar
+//12
+1: 2c+en tie; 8.; 16ge; 8.af; 16bg;
+2: 4gc;; c+c;;
+
+			VERSE "wea-ry and op-";
+			VERSE 4; 4; 4; 4; " wea-ry, come, ye";
+bar
+//13
+1: 2.af; 8.bd; 16c+e;
+2: 8.c+f; 16; 8.; 16; 4; 4r;
+
+			VERSE "prest, He his";
+			VERSE 8.; 16; 8.; 16; 4; 4s; "wea-ry and op-prest;";
+bar
+//14
+1: 2d+f tie; 8.; 16bd; 8.c+e; 16d+f;
+2 1: 4r; 8.b; 16; 4; 4b;
+2 2: 4s; 8.b; 16; 4; 4b;
+
+			VERSE "life_ a ran-som";
+			VERSE 4s; 8.; 16; 4; 4; "He has life a";
+bar
+//15
+1: 2.e+g; 8.d+g; 16c+g;
+2: 4be;;; 8.; 16c+e;
+
+			VERSE "gave, He will";
+			VERSE 4; 4; 4; 8.; 16; "ran-som gave, He will";
+bar
+//16
+1: 4bf; fd; d+f; c+e;
+2: 4d+f; bf;; af;
+
+			VERSE "give you heav'n-ly";
+			VERSE "give you heav'n-ly";
+bar
+//17
+1 1: 2.b; 4r;
+1 2: 4d; e; d; s;
+2 1: 4b; g; f; r;
+2 2: 2.b-; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 1 "uferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "rest.";
+			VERSE 4; 4; 4; 4s; "rest, sweet rest.";
+endbar

@@ -1,0 +1,377 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+
+// Hymn Source: 
+//	Hymns of Praise
+//	For the Church and Sunday School
+//	Compiled by F. G. Kingsbury
+//	Hope Publishing Company, Chicago  	
+//	Copyright 1922?
+//	Hymn No.: 206	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 01/25/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=1
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Savior, Like A Shepherd Lead Us" ""
+   title (2)""
+   title (11) "" "\f(TI)When he hath put forth all his own, he goeth before them," ""
+   title (11) "" "\f(TI)and the sheep follow him: for they know his voice. - Jn. 10:4" ""
+   title (10) "E \(flat) - 4 - MI" "" ""
+   title "Attr. to Dorothy A. Thrupp, 1840" "" "William B. Bradbury, 1859"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+
+//Verse
+
+//1
+1: 4eg; ; 8; df; eg; fa;
+2 1: 4eb; ; 8; b; gb; fb;
+2 2: 4s; ; 8; a; s; ;
+
+	VS "<1. >-1|Sav-ior, like a shep-herd";
+	VS "<2. >-1|We are Thine; do Thou be-";
+	VS "<3. >-1|Thou hast prom-ised to re-";
+	VS "<4. >-1|Ear-ly let us seek Thy";
+bar
+
+//2
+1 1: 4b slur; e+; gb slur; eg;
+1 2: 2g; 4s; ;
+2 1: 2s; 4e+ slur; b;
+2 2: 2eb; e;
+
+	VS "lead us,";
+	VS "friend us,";
+	VS "ceive us,";
+	VS "fa-vor;";
+bar
+
+//3
+1: 4df; eg; 8s; ; ; ;
+2: 4b-b; ; 8s; ; ; ;
+
+	VS "Much we";
+	VS "Be the";
+	VS "Poor and";
+	VS "Ear-ly";
+invisbar
+1: 4s; s; 8fa; ac+; gb; fa;
+2: 4s; ; 8b-b; ; ; ;
+
+	VS "need Thy ten-der";
+	VS "Guard-ian of our";
+	VS "sin-ful though we";
+	VS "let us do Thy";
+bar
+
+//4
+1: 2.eg; 4r;
+2: 2.eb; 4r;
+
+	VS "care;";
+	VS "way;";
+	VS "be;";
+	VS "will;";
+bar
+
+//5
+1: 4eg; ; 8; df; eg; fa;
+2 1: 4eb; ; 8; b; gb; fb;
+2 2: 4s; ; 8; a; s; ;
+
+	VS "In Thy pleas-ant pas-tures";
+	VS "Keep Thy flock, from sin de-";
+	VS "Thou hast mer-cy to re-";
+	VS "Bless-ed Lord and on-ly";
+bar
+
+//6
+1 1: 4b slur; e+; gb slur; eg;
+1 2: 2g; 4s; ;
+2 1: 2s; 4e+ slur; b;
+2 2: 2eb; e;
+
+	VS "feed us,";
+	VS "fend us,";
+	VS "lieve us,";
+	VS "Sav-ior,";
+bar
+
+//7
+1: 4df; eg; 8fa; ac+; gb; fa;
+2: 4b-b; ; 8; ; ; ;
+
+	VS "For our use Thy folds pre-";
+	VS "Seek us when we go a-";
+	VS "Grace to cleanse, and pow'r to";
+	VS "With Thy love our bos-oms";
+bar
+
+//8
+1: 2.eg; 4s;
+2: 2.eb; 4s;
+
+	VS "pare:";
+	VS "stray:";
+	VS "free:";
+	VS "fill:";
+dblbar
+
+//9
+1: 2.s; 8gb; ;
+2: 2.s; 8ee+; ;
+
+	VS "Bless-ed";
+	VS "Bless-ed";
+	VS "Bless-ed";
+	VS "Bless-ed";
+bar
+
+//10
+1: 4ac+; 2c+e+; 8bd+; ac+;
+2: 4ae+; 2; 8; ; 
+
+	VS "Je-sus; Bless-ed";
+	VS "Je-sus; Bless-ed";
+	VS "Je-sus; Bless-ed";
+	VS "Je-sus; Bless-ed";
+bar
+
+//11
+1: 4gb; 2eg; 8s; ;
+2: 4ee+; 2eb; 8s; ;
+
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "Je-sus,";
+invisbar
+
+1: 4s; 2s; 8eg; ;
+2: 4s; 2s; 8eb; ;
+
+	VS "Thou hast";
+	VS "Hear Thy";
+	VS "Ear-ly";
+	VS "Thou hast";
+bar
+
+//12
+1: 4df; ac+; gb; fa;
+2: 4b-b; ; ; ;
+
+	VS "bought us, Thine we";
+	VS "chil-dren when they";
+	VS "let us turn to";
+	VS "loved us, love us";
+bar
+newscore
+
+//13
+1: 2.eg; 4s;
+2: 2.eb; 4s;
+
+	VS "are;";
+	VS "pray;";
+	VS "Thee;";
+	VS "still;";
+invisbar
+//14
+1: 2.s; 8gb; ;
+2: 2.s; 8ee+; ;
+
+	VS "Bless-ed";
+	VS "Bless-ed";
+	VS "Bless-ed";
+	VS "Bless-ed";
+bar
+
+//15
+1: 4ac+; 2c+e+; 8bd+; ac+;
+2: 4ae+; 2; 8; ; 
+
+	VS "Je-sus, Bless-ed";
+	VS "Je-sus, Bless-ed";
+	VS "Je-sus, Bless-ed";
+	VS "Je-sus, Bless-ed";
+bar
+
+//16
+1: 4gb; 2ge+; 8s; ;
+FST(2)
+2: 4ee+; 2eb; 8s; ;
+FBT(2)
+
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "Je-sus,";
+invisbar
+
+1 1: 4s; 2; 8e; f;
+1 2: 4s; 2; 8e; ;
+2: 4s; 2s; 8eg; ea;
+
+	VS "Thou hast";
+	VS "Hear Thy";
+	VS "Ear-ly";
+	VS "Thou hast";
+bar
+
+//17
+1: 4eg; gb; 4.fa; 8df;
+2: 4eb; ; 4.b-b; 8b-a;
+
+	VS "bought us, Thine we";
+	VS "chil-dren when they";
+	VS "let us turn to";
+	VS "loved us, love us";
+bar
+
+//18
+1 1: 2.e; 4r;
+1 2: 2.e; 4s;
+2: 2.eg; 4r;
+
+	VS "are.";
+	VS "pray.";
+	VS "Thee.";
+	VS "still.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

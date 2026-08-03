@@ -1,0 +1,237 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Peacemaker
+//		A collection of sacred songs and
+//		hymns for use in all services
+//		of the church, Sunday-school, 
+//		home circle and all kinds of
+//		evangelistic work
+//		Edited by: W. S. Weeden and Geo. Beaverson,
+//		Published by Weeden & Van De Venter
+//		New york: W. S. Weeden, 149 Fifth Avenue
+//		Pittsburg: J. W. Van De Venter, 805-806 Lewis Block
+//		Copyright 1894
+//		Hymn no. 150
+
+// Transcribed by: Ted Gatza, Jr. 02/04/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Over The Border Land" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:And\ this\ is\ the\ prom\|ise\ which\ he\ promised us,\ even\ the\ life\ e\|ternal.\ -\ 1\ Jn.\ 2:25" ""
+   title (13) "J. H. Alleman" " " "J. H. Alleman, 1896"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = .98
+	pad =0
+	vscheme = 2f
+	staffscale=.99
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+
+//1
+1 1: 8e bm; g ebm; 2.s;
+1 2: 4e; 2.s;
+2 1: 8g bm; b ebm; 2.s;
+2 2: 4e; 2.s;
+
+			VERSE 4; 2.s; "<1. >-1|A";
+			VERSE 4; 2.s; "<2. >-1|My";	
+			VERSE 4; 2.s; "<3. >-1|My";
+			VERSE 4; 2.s; "<4. >-1|The";
+
+bar
+//2
+1: 4be;;;;
+2: 4ge;;;;
+
+			VERSE "home, on high, is";
+			VERSE "loved ones there, will";
+			VERSE "Sav-ior there is";
+			VERSE "smiles of God will";
+bar
+//3
+1: 4c+e;; be; ge;
+2: 4aa-; ac; ge; be;
+
+			VERSE "wait-ing me, Just";
+			VERSE "wel-come me, Just";
+			VERSE "call-ing me, Just";
+			VERSE "fall on me, Just";
+bar
+//4
+1 1: 4bg; 8; ge; 4e; ge;
+1 2: 4s; 8;; 4e; s;
+2: 4e+e; 8; be; 4ge; be;
+
+			VERSE "o-ver the bor-der";
+			VERSE "o-ver the bor-der";
+			VERSE "o-ver the bor-der";
+			VERSE "o-ver the bor-der";
+bar
+//5
+1 1: 2.fd; 8e bm; g ebm;
+1 2: 2.s; 4e;
+2 1: 2.bb-; 8g bm; b ebm;
+2 2: 2.s; 4e;
+
+			VERSE 2.; 4; "land, And";
+			VERSE 2.; 4; "land, And";
+			VERSE 2.; 4; "land, And";
+			VERSE 2.; 4; "land, And";
+bar
+//6
+1: 4be;;;;
+2: 4ge;;;;
+
+			VERSE "there my Sav-ior";
+			VERSE "with them soon, for-";
+			VERSE "by His grace will";
+			VERSE "bless me thro' e-";
+bar
+//7
+1 1: 4c+e;; 4be; 8e bm; f ebm;
+1 2: 4s;;; e;
+2 : 4aa-; ac; ge; 8bg bm; c+a ebm;
+
+			VERSE 4; 4; 4; 4; "I shall see, Just";
+			VERSE 4; 4; 4; 4; "e'er I'll be, Just";
+			VERSE 4; 4; 4; 4; "make me free, Just";
+			VERSE 4; 4; 4; 4; "ter-ni-ty, Just";
+bar
+//8
+1: 4ge; 8;; 4fd;;
+2 1: 4b; 8;; 4ab-;;
+2 2: 4b; 8;; 4s;;
+
+			VERSE "o-ver the bor-der";
+			VERSE "o-ver the bor-der";
+			VERSE "o-ver the bor-der";
+			VERSE "o-ver the bor-der";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "land.";
+			VERSE "land.";
+			VERSE "land.";
+			VERSE "land.";
+dblbar
+//10
+1 1: 8e bm; f ebm; 2.s;
+1 2: 4e; 2.s;
+2 1: 8g bm; a ebm; 2.s;
+2 2: 4e; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 4; 2.s; "<>";
+			VERSE 4; 2.s; "Just";
+bar
+//11
+1 1: 4ge; 8;; 4; a;
+1 2: 4s; 8;; 4; 8d;;
+2: 4be; 8;; 4; 8bg;;
+
+			VERSE 4; 2.s; "<>";
+			VERSE 4; 8; 8; 4; 4; "o-ver the bor-der";
+			VERSE 4s; 8s; 8s; 4s; 8s; 8; "the";
+bar
+//12
+1 1: 2.b; 4be;
+1 2: 4e; d; e; s;
+2: 4bg; af; ge; bg;
+
+			VERSE 2.; 4; "land, There";
+			VERSE 4; 4; 4; 4s; "bor-der land,";
+bar
+//13
+1 1: 4c+e;; be; 8g;;
+1 2: 4s;;; e;
+2 1: 4a;; bg; be;
+2 2: 4a;; s;;
+
+			VERSE "waits the home of the";
+			VERSE 4s; 4s; 4s; 4; "the";
+bar
+//14
+1 1: 2.f; 4bd;
+1 2: 4f; 8e;; 4d; s;
+2 1: 4bd; 8anc;; 4bb-; b;
+2 2: 4s; 8;; 4; a&;
+
+			VERSE "soul, Where";
+			VERSE 4; 8; 8; 4; 4s; "home of the soul";
+bar
+//15
+1: 4e+e;; d+f; 8;;
+2: 4bg;; 4bng; 8;;
+
+			VERSE "praise shall ring as the";
+bar
+//16
+1 1: 4c+e; c+f; 4bg; 8e bm; f ebm;
+1 2: 4s;;; e;
+2: 4c+a; d+a; 4e+e; 8bg bm; c+a ebm;
+
+			VERSE 4; 4; 4; 4; "years shall roll, Just";
+bar
+//17
+1: 4ge; 8;; 4fd;;
+2 1: 4b; 8;; 4ab-;;
+2 2: 4b; 8;; 4s;;
+
+			VERSE "o-ver the bor-der";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "land.";
+endbar

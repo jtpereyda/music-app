@@ -1,0 +1,236 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Northfield Hymnal
+//		For Use In Evangelistic and Church Services,
+//		Conventions, Sunday Schools, and All Prayer
+//		And Social Meetings of the Church and Home
+//		Edited by Geo. C. Stebbins
+//		Published by: The Biglow and Main Co.
+//		Chicago, NewYork
+//		Copyright: 1904
+//		Hymn No. 114
+
+		
+		
+// Transcribed by: Ted Gatza, Jr. 10/01/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Lead Me, O My Saviour" ""
+   title (2) ""
+   title (11)"" "\f(TI)Lead me in Your truth and teach me, For You are the God " ""
+   title (11)"" "\f(TI)of my salvation; On You I wait all the day. - Ps. 25:5" ""
+
+   title (11)"C - 4 - SOL" "" ""  
+   title (13) "Fanny J. Crosby" "" "Charles H. Gabriel, 1902"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VERSE lyrics between 1&2: @
+       define DSVERSE lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=90";
+
+// Enter music
+//============
+//1
+1 1: 4.eg; 8fa; eg; ce; ec+; g;
+1 2: 4.s; 8;;;; g;
+2: 4.cc+; 8;; cg;; ec+;
+
+	
+	VERSE "<1. >-1|Lead me, O my Sav-iour,";
+	VERSE "<2. >-1|Lead me, O my Sav-iour,";
+	VERSE "<3. >-1|Lead me, O my Sav-iour,";
+
+bar
+//2
+1: 2gb; 4fa; 4r;
+2: 2fc+; 4; 4r;
+
+	VERSE "lead me,";
+	VERSE "lead me,";
+	VERSE "lead me,";
+bar
+//3
+1: 4.fb; 8; df;; 8.fa; 16;
+2 1: 4.g; 8gd+; gb;; 8.; 16;
+2 2: 4.g; 8s;;; 8.s; 16s;
+
+	VERSE "Clos-er would I cling to";
+	VERSE "Keep my heart from ev-ery";
+	VERSE "Till at last, my jour-ney";
+bar
+//4
+1: 2.eg; 4r;
+2: 2.cc+; 4r;
+
+	VERSE "Thee,";
+	VERSE "snare;";
+	VERSE "o'er,";
+bar
+//5
+1 1: 4.ec+; 8db; fd+; ec+;; 8g;
+1 2: 4.s; 8;;;; 8g;
+2: 4.cg; 8;;;; ec+;
+
+	VERSE "Ere the shad-ows gath-er";
+	VERSE "Fierce temp-ta-tions oft as-";
+	VERSE "I shall see, a-dore and";
+bar
+//6
+1: 2gb; 4fa; 4r;
+2: 2fc+; 4; 4r;
+
+	VERSE "round me";
+	VERSE "sail me";
+	VERSE "praise Thee";
+bar
+//7
+1: 4.f#a; 8fb; fc+;; cb; da;
+2: 4.dc+; 8db; da; de+; dd+; dc+;
+
+	VERSE "And my way I can-not";
+	VERSE "And I need Thy con-stant";
+	VERSE "With the ran-somed ev-er-";
+bar
+//8
+1 1: 1g;
+1 2: 4d; e; 2f;
+2 1: 4b; c+; 2d+;
+2 2: 1g;
+phrase below 1: 1 til 3;
+phrase above 2: 1 til 3;
+
+	VERSE "see.";
+	VERSE "care.";
+	VERSE "more.";
+dblbar
+//9
+1 1: 2ge+; c+;
+1 2: 2s; 4e slur; g;
+2: 8cc+;;;; 4cg; ec+;
+CHORUS
+
+	VERSE "Lead me,";
+	VERSE 8; 8; 8; 8; 4; 4; "Lead me, O my Sav-iour,";
+bar
+//10
+1 1: 2fa; 2c+;
+1 2: 2s; 4a slur; e;
+2: 8fc+;;;; 4; ac+;
+
+	VERSE "lead me,";
+	VERSE 8; 8; 8; 8; 4; 4; "lead me, O my Sav-iour,";
+bar
+//11
+1 1: 4.fd+; 8; fe+; fd+; fb; g;
+1 2: 4.s; 8s;;;; f;
+2: 4gb;;;;
+
+	VERSE "Grant Thy strength and grace di-";
+	VERSE 4; 4; 4; 4; "Grant, O grant Thy";
+bar
+//12
+1 1: 2c+ tie; 4c+; 4r;
+1 2: 4e; 8g; f; 4e; 4s;
+2: 8cc+; cg; cb; ca; 4cg; 4r;
+
+	VERSE "vine,_";
+	VERSE 8; 8; 8; 8; 4; 4s; "strength and grace di-vine;";
+bar
+//13
+1: 4.ge+; 8fd+; ec+; eg; ce; eg;
+2: 4cc+;;;;
+
+	VERSE "Let my thoughts on Thee be";
+	VERSE 4; 4; 4; 4; "Let my thoughts on";
+bar
+//14
+1: 2gb; 4fa; 4r;
+2: 4fc+;; 8;; 4r;
+
+	VERSE "cen-tered";
+	VERSE 4; 4; 8; 8; 4s; "Thee be cen-tered";
+bar
+//15
+1 1: 4.g; 8c+; fc+; fb; fa; fb;
+1 2: 4e; ; 8s;;;;
+2: 4gc+;; 8gd+;;;;
+
+	VERSE "And my will be lost in";
+	VERSE 4; 8; 8s; 8s; 8s; 8s; 8s; "And my";
+
+bar
+//16
+1 1: 2c+ tie; c+;
+1 2: 4e; 8f;; 2e;
+2: 4cc+; 8ca;; 2cg;
+
+	VERSE 2; 2s; "Thine._";
+	VERSE 4s; 8; 8; 2; "Lost in Thine.";
+endbar
+

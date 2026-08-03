@@ -1,0 +1,230 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Hymns No. 1
+//		For Use In Church Services,
+//		Sunday Schools, Young People's
+//		Societies, Etc.
+//		Compiled by William Phillips Hall
+//		And J. Wilbur Chapman,
+//		Editor of Music W. S. Weeden
+//		pub. by Hall-Mack Co.
+//		1020 Arch Street, Philadelphia, PA
+//		Copyright: 1899
+//		Hymn No.: 12
+
+// Transcribed by: Ted Gatza, Jr. 07/21/10; rev. 06/27/2012
+// HymnsToGod.org
+
+// ************************************
+
+top
+   title bold (19) "" "Count Thy Mercies" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(18)\f(TI)\:Jehovah\ is\ good\ to\ all\|;\ And\ his\ tender\ mercies are\ over\ all\ his\ \|works.\ -\ Ps.\ 145:9"""
+   title (13) "E. A. Hoffman" " " "Elisha A. Hoffman, 1899"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 2.s; 8bg; 8a;
+1 2: 2.s; 8s; 8g;
+2: 2.s; 8d+g; 8c+g;
+
+			lyrics 1: "<1. >-1|Ev-'ry";
+			lyrics 1: "<2. >-1|O how";
+			lyrics 1: "<3. >-1|Not a";
+			lyrics 1: "<4. >-1|Shall we";
+bar
+//2
+1 1: 4g; 4gd; 8g bm; 8d ebm; 8g bm; 8a ebm;
+1 2: 4g; 4s; 4d; 4d;
+2: 4bg; 4bg; 4bg; 4bg; 
+
+			lyrics 1: 4; 4; 4; 4; "day new mer-cies";
+			lyrics 1: 4; 4; 4; 4; "man-i-fold God's";
+			lyrics 1: 4; 4; 4; 4; "good his hand with-";
+			lyrics 1: 4; 4; 4; 4; "not be grate-ful";
+bar
+//3
+1: 2gd; 4fd; 8fd; 8gd;
+2: 2c+a; 4c+a; 8c+a; 8c+g;
+
+			lyrics 1: "greet thee; Ev-'ry";
+			lyrics 1: "bless-ings! More than";
+			lyrics 1: "hold-eth; Not a";
+			lyrics 1: "to him For his";
+bar
+//4
+
+1 1: 4ad; 4d; 4s; 4s;
+1 2: 4s; 4d; 4s; 4s;
+2: 4c+f; 4c+a; 4s; 4s; 
+
+			lyrics 1: "day new";
+			lyrics 1: "thou canst";
+			lyrics 1: "joy his";
+			lyrics 1: "mer-cies";
+invisbar
+newscore
+
+1 1: 4s; 4s; 4ad; 4d;
+1 2: 4s; 4s; 4s; 4d;
+2: 4s; 4s; 4c+f; 4c+a; 
+
+			lyrics 1: "joys are";
+			lyrics 1: "num-ber";
+			lyrics 1: "love de-";
+			lyrics 1: "man-i-";
+
+bar
+//5
+1: 2.bd; 8bg; 8c+g;
+2 1: 2.bg; 8g; 8a;
+2 2: 2.s; 8g; 8g;
+
+			lyrics 1: "thine: Gifts of";
+			lyrics 1: "o'er; Yet in";
+			lyrics 1: "nies; Each new";
+			lyrics 1: "fold, And in";
+bar
+//6
+1 1: 4d+g; 4bg; 8b bm; 8g ebm; 8a bm; 8b ebm;
+1 2: 4s; 4s; 4g; 4fn;
+2 1: 4bg; 4d+g; 8d+ bm; 8b ebm; 8c+ bm; 8d+ ebm;
+2 2: 4s; 4s; 4g; 4g;
+
+			lyrics 1: 4; 4; 4; 4; "heav-en's lov-ing-";
+			lyrics 1: 4; 4; 4; 4; "kind-ness he be-";
+			lyrics 1: 4; 4; 4; 4; "bless-ing he un-";
+			lyrics 1: 4; 4; 4; 4; "each new gift he";
+bar
+//7
+1: 2d+fn; 4c+e; 8be; 8ae;
+2: 2bg; 4c+c; 8c+c; 8c+c;
+
+			lyrics 1: "kind-ness; To-kens";
+			lyrics 1: "stow-eth Dai-ly";
+			lyrics 1: "fold-eth Fills our";
+			lyrics 1: "sends us All his";
+bar
+//8
+1: 4gd; 4gd; 4fd; 4ad;
+2: 4bd; 4bd; 4ad; 4c+d;
+
+			lyrics 1: "of the love di-";
+			lyrics 1: "mer-cies more and";
+			lyrics 1: "hearts with new sur-";
+			lyrics 1: "won-drous grace be-";
+bar
+//9
+1: 2.gd; 4s;
+2: 2.bg; 4s;
+
+			lyrics 1: "vine.";
+			lyrics 1: "more.";
+			lyrics 1: "prise.";
+			lyrics 1: "hold?";
+dblbar
+//10
+1: 8bg; 8c+g; 2.s;
+2 1: 8g; 8a; 2.s;
+2 2: 8g; 8g; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Count thy";
+bar
+//11
+1 1: 4d+g; 4d+g; 8d+ bm; 8b ebm; 8e+ bm; 8b ebm;
+1 2: 4s; 4s; 4g; 4g;
+2 1: 4bg; 4bg; 8b bm; 8d+ ebm; 8c+ bm; 8d+ ebm;
+2 2: 4s; 4s; 4g; 4g; 
+
+			lyrics 1: 4; 4; 4; 4; [c]"mer-cies count them";
+bar
+newscore
+//12
+1: 2d+b; 4c+a; 8af; 8bg;
+2: 2d+d; 4d+d; 8d+d; 8d+d;
+
+			lyrics 1: [c]"o-ver, Count the";
+bar
+//13
+1: 4c+a; 4c+a; 8c+a bm; 8e+c+ ebm; 8d+b bm; 8c+a ebm;
+2: 4d+d; 4d+d; 4d+d; 4d+d;
+
+			lyrics 1: 4; 4; 4; 4; [c]"bless-ings God has";
+bar
+//14
+1 1: 2.bg; 8g; 8a;
+1 2: 2.s; 8g; 8g;
+2: 2.d+g; 8bg; 8c+g;
+
+			lyrics 1: [c]"giv'n; And for";
+bar
+newscore
+//15
+1 1: 4bg; 4bg; 8b bm; 8g ebm; 8c+ bm; 8g ebm;
+1 2: 4s; 4s; 4g; 4g;
+2 1: 4d+g; 4d+g; 8d+ bm; 8b ebm; 8e+ bm; 8b ebm;
+2 2: 4s; 4s; 4g; 4g;
+
+			lyrics 1: 4; 4; 4; 4; [c]"all his lov-ing-";
+bar
+//16
+1: 2bg; 4af; 8fd; 8gd;
+2: 2d+d; 4d+d; 8ad; 8bd;
+
+			lyrics 1: [c]"kind-ness Grate-ful";
+bar
+//17
+1 1: 4ad; 4c+d; 4e; 4fd;
+1 2: 4s; 4s; 4e; 4s;
+2: 4c+d; 4ad; 4c+d; 4c+d;
+
+			lyrics 1: [c]"be to God in";
+bar
+//18
+1: 2.gd; 4s;
+2: 2.bg; 4s;
+
+			lyrics 1: [c]"heav'n.";
+endbar

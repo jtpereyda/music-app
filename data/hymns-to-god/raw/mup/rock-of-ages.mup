@@ -1,0 +1,316 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Songs,
+//		A Choice Collection of
+//		Hymns and Tunes
+//		New and Old, For
+//		Gospel Meetings, Prayer Meetings
+//		Sunday Schools, etc.
+//		By P. P. Bliss,
+//		Cincinnati:
+//		Published by John Church & Co., 
+//		66 W. 24th St.
+//		Copyright 1874	
+//		Hymn no. 60
+
+// Transcribed by: Ted Gatza, Jr. 03/17/2011; Rev. 03/05/2014
+// HymnsToGod.org
+
+//********************************************
+
+top
+
+   title bold (19) "" "Rock of Ages" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:I\ will\ put\ thee\ in\ a\ \|cleft\ of\ the\ rock,\ and\ will cover\ thee\ with\|\ my\ hand\ -\ Ex.\ 33:22" ""
+   title (13) "Augustus M. Toplady, 1776" "" "Mrs. P. P. Bliss"
+
+ 
+footer
+
+title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=3
+	time=3/4	
+	key=4&
+
+staff 2
+	key=4&
+
+staff 3
+	key=4&
+	clef=bass
+
+//********************************************
+
+music
+
+midi all: 0 "tempo=70";
+
+//1
+1: 2s; 8.e; 16a;
+
+
+			lyrics 1: 2s; 8.; 16; "<1. >-1|Rock of";
+			lyrics 1: 2s; 8.; 16; "<2. >-1|Should my";
+			lyrics 1: 2s; 8.; 16; "<3. >-1|While I";
+2: 2s; 4r;
+3: 2s; 4r;
+
+bar
+//2
+1: 4.c+; 8e+; 8a; 8b;
+
+			lyrics 1: "A-ges, cleft for";
+			lyrics 1: "tears for-ev-er";
+			lyrics 1: "draw this fleet-ing";
+
+2: 8e; 8e; 4e; 4e;
+3 1: 8aa-; 8aa-; 8a bm; 8c+ ebm; 8c+ bm; 8b ebm;
+3 2: 8s; 8s; 4a-; 4a-;
+
+			lyrics 2: 8; 8; 4; 4; "<1. >-1|Rock of A-ges";
+			lyrics 2: 8; 8; 4; 4; "<2. >-1|Should my tears fo-";
+			lyrics 2: 8; 8; 4; 4; "<3. >-1|While I draw this";
+bar
+//3
+1: 2c+; 8.b; 16c+;
+
+			lyrics 1: "me, Let me";
+			lyrics 1: "flow, Should my";
+			lyrics 1: "breath, When my";
+
+2: 8e; 8c; 4e; 4r;
+3: 8aa-; 8ea-; 4aa-; 4r;
+
+			lyrics 2: "cleft for me,";
+			lyrics 2: "ev-er flow,";
+			lyrics 2: "fleet-ing breath,";
+bar
+//4
+1:4.b; 8d+; 8c+; 8b;
+
+			lyrics 1: "hide my-self in";
+			lyrics 1: "zeal no lan-guor";
+			lyrics 1: "eye-lids close in";
+2: 8e; 8e; 4e; 4e;
+3 1: 8ge; 8ge; 8g bm; 8b ebm; 8a bm; 8g ebm;
+3 2: 8s; 8s; 4e; 4e;
+
+			lyrics 2: 8; 8; 4; 4; " Let me hide my-";
+			lyrics 2: 8; 8; 4; 4; "Should my zeal no";
+			lyrics 2: 8; 8; 4; 4; "When my eye-lids";
+bar
+//5
+1: 2c+; 8.e; 16a;
+
+			lyrics 1: "thee; Let the";
+			lyrics 1: "know, This for";
+			lyrics 1: "death, When I";
+
+2: 8e; 8e; 4e; 4r;
+3: 8aa-; 8aa-; 4aa-; 4r;
+
+			lyrics 2: "self in thee;";
+			lyrics 2: "lan-guor know,";
+			lyrics 2: "close in death,";
+bar
+//6
+1: 4.c+; 8e+; 8a; 8b;
+
+			lyrics 1: "wa-ter and the";
+			lyrics 1: "sin could not a-";
+			lyrics 1: "rise to worlds un-";
+
+2: 8e; 8e; 4e; 4e;
+3 1: 8aa-; 8aa-; 8a bm; 8c+ ebm; 8c+ bm; 8b ebm;
+3 2: 8s; 8s; 4a-; 4a-; 
+
+			lyrics 2: 8; 8; 4; 4; "Let the wa-ter";
+			lyrics 2: 8; 8; 4; 4; "This for sin could";
+			lyrics 2: 8; 8; 4; 4; "When I rise to";
+bar
+//7
+1: 2c+; 8.b; 16b;
+
+			lyrics 1: "blood, From thy";
+			lyrics 1: "tone; Thou must";
+			lyrics 1: "known, And be-";
+2: 8e; 8c; 4e; 4r;
+3: 8aa-; 8ea-; 4aa-; 4r;
+
+			lyrics 2: "and the blood,";
+			lyrics 2: "not a-tone;";
+			lyrics 2: "worlds un-known,";
+bar
+//8
+1: 4.b; 8d+; 8c+; 8b;
+
+			lyrics 1: "wound-ed side that";
+			lyrics 1: "save, and thou a-";
+			lyrics 1: "hold thee on thy";
+
+2: 8e; 8e; 4e; 8e bm; 8d ebm;
+3 1: 8ge; 8ge; 8g bm; 8b ebm; 8a bm; 8g ebm;
+3 2: 8s; 8s; 4e; 4e;
+
+			lyrics 2: 8; 8; 4; 4; "From thy wound-ed";
+			lyrics 2: 8; 8; 4; 4; "Thou must save, and";
+			lyrics 2: 8; 8; 4; 4; "And be-hold thee";
+bar
+//9
+1: 2a; 8.a; 16g;
+
+			lyrics 1: "flowed, Be of";
+			lyrics 1: "lone: In my";
+			lyrics 1: "throne\(emdash) Rock of";
+2: 8c; 8d; 4c; 4r;
+3: 8aa-; 8fa-; 4ea-; 4r;
+
+			lyrics 2: "side that flowed,";
+			lyrics 2: "thou a-lone:";
+			lyrics 2: "on thy throne\(emdash)";
+bar
+//10
+1: 4.f; 8f; 8a; 8f;
+
+			lyrics 1: "sin the doub-le";
+			lyrics 1: "hand no price I";
+			lyrics 1: "A-ges, cleft for";
+
+2: 8d; 8d; 4d; 4d;
+3: 8ad; 8ad; 4ad; 4af;
+
+			lyrics 2: "Be of sin the";
+			lyrics 2: "In my hand no";
+			lyrics 2: "Rock of A-ges,";
+bar
+//11
+1: 2e; 8.a; 16c+;
+
+			lyrics 1: "cure\(emdash) Save me,";
+			lyrics 1: "bring; Sim-ply";
+			lyrics 1: "me, Let me";
+
+2: 8c; 8d; 4e; 4r;
+3 1: 8a; 8ba-; 4c+a-; 4r;
+3 2: 8a; 8s; 4s; 4s;
+
+			lyrics 2: "dou-ble cure\(emdash)";
+			lyrics 2: "price I bring;";
+			lyrics 2: "cleft for me,";
+bar
+//12
+1: 4.b; 8d+; 8c+; 8b;
+
+			lyrics 1: "Lord, and make me";
+			lyrics 1: "to thy cross I";
+			lyrics 1: "hide my-self in";
+
+2: 8e; 8e; 4e; 4e;
+3 1: 8ge; 8ge; 8g bm; 8b ebm; 8a bm; 8g ebm;
+3 2: 8s; 8s; 4e; 4e; 
+
+			lyrics 2: "Save me, Lord, and";
+			lyrics 2: "Sim-ply to thy";
+			lyrics 2: "Let me hide my-";
+bar
+//13
+1: 2c+; 8.c+; 16d+;
+
+			lyrics 1: "pure; Be of";
+			lyrics 1: "cling; In my";
+			lyrics 1: "thee! Rock of";
+
+2: 8e; 8c; 4e; 4r;
+3: 8aa-; 8ea-; 4aa-; 4r;
+
+			lyrics 2: "make me pure;";
+			lyrics 2: "cross I cling;";
+			lyrics 2: "self in thee;";
+bar
+//14
+1: 4.e+; 8c+; 8b; 8a;
+
+			lyrics 1: "sin the dou-ble";
+			lyrics 1: "hand nor price I";
+			lyrics 1: "A-ges, cleft for";
+
+2: 8e; 8e; 4e; 8d bm; 8c ebm;
+3 1: 8c+a; 8c+a; 8c+ bm; 8a ebm; 4a;
+3 2: 8s; 8s; 4a; 4a;
+
+			lyrics 2: 8; 8; 4; 4; "Be of sin the";
+			lyrics 2: 8; 8; 4; 4; "In my hand no";
+			lyrics 2: 8; 8; 4; 4; "Rock of A-ges,";
+bar
+//15
+1: 2f; 8.a; 16f;
+
+			lyrics 1: "cure\(emdash) Save me";
+			lyrics 1: "bring; Sim-ply";
+			lyrics 1: "me, Let me";
+
+2: 8d; 8d; 4d; 4r;
+3: 8ad; 8ad; 4ad; 4r;
+
+			lyrics 2: "dou-ble cure\(emdash)";
+			lyrics 2: "price I bring;";
+			lyrics 2: "cleft for me,";
+bar
+//16
+1: 4.e; 8e; 8f; 8g;
+
+			lyrics 1: "Lord, and make me";
+			lyrics 1: "to thy cross I";
+			lyrics 1: "hide my-self in";
+
+2: 8c; 8c; 8c bm; 8e ebm; 4d;
+3 1: 8ae; 8ae; 8a bm; 8c+ ebm; 4be;
+3 2: 8s; 8s; 4e; 4s;
+
+			lyrics 2: 8; 8; 4; 4; "Save me, Lord, and";
+			lyrics 2: 8; 8; 4; 4; "Sim-ply to thy";
+			lyrics 2: 8; 8; 4; 4; "Let me hide my-";
+bar
+//17
+1: 2.a;
+mussym (9) above 1: 1 "ferm";
+
+			lyrics 1: "pure.";
+			lyrics 1: "cling.";
+			lyrics 1: "thee!";
+
+2: 8c; 8d; 4c; 4s;
+3: 8aa-; 8fa-; 4ea-; 4s;
+mussym (9) above 2: 2 "ferm";
+mussym (9) below 3: 2 "uferm";
+
+			lyrics 2: "make me pure.";
+			lyrics 2: "cross I cling.";
+			lyrics 2: "self in thee!";
+endbar

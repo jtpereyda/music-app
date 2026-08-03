@@ -1,0 +1,268 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Gospel Melodies
+//		A Choice Gospel Songs and Hymns
+//		For the Sunday School, Young 
+//		People's Society, Prayer Meeting
+//		And Evangelistic Services
+//		Compiled and Arranged by:
+//		E. M. Spreng and F. C. Berger
+//		Evangelical Publishing House
+//		Cleveland, Ohio and Harrisburg, PA
+//		Copyright 1918
+//		Hymn No. 201
+		
+// Transcribed by: Ted Gatza, Jr. 12/12/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "There Is A Habitation" ""
+   title (2) ""
+   title (11)"" "\f(TI)But now they desire a better country, that is, a heavenly: wherefore " ""
+   title (11)"" "\f(TI)God is not ashamed of them, to be called their God; for he hath " ""
+   title (11)"" "\f(TI)prepared for them a city. - Heb. 11:16" ""
+
+   title (11)"E\(flat) - 4 - DO" "" ""  
+   title (13) "Love Humphreys Jameson" "" "James Holmes Rosecrans"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=1 //2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=e&
+
+
+staff 2
+	key=e&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=100";
+
+// Enter music
+//============
+//1
+1 1: 8e bm; 8g ebm; 2.s;
+1 2: 4e; 2.s;
+2 1: 8g bm; b ebm; 2.s;
+2 2: 4e; 2.s;
+
+	VS 4; 2.s; "<1. >-1|There";
+	VS 4; 2.s; "<2. >-1|A";
+	VS 4; 2.s; "<3. >-1|No";
+	VS 4; 2.s; "<4. >-1|With-";
+bar
+//2
+1: 4.eb; 8ec+; 4eb; eg;
+2: 4.eg; 8ea; 4eg; eb;
+
+	VS "is a hab-i-";
+	VS "cit-y with foun-";
+	VS "night is there, no";
+	VS "in its pearl-y";
+bar
+//3
+1 1: 4df; 2e; 8g bm; f ebm;
+1 2: 4s; 2e; 4e;
+2 1: 4b-a; 2eg; 8b bm; 8a ebm;
+2 2: 4s; 2s; 4e;
+
+	VS 4; 2; 4; "ta-tion, Built";
+	VS 4; 2; 4; "da-tions Firm";
+	VS 4; 2; 4; "sor-row, No";
+	VS 4; 2; 4; "por-tals, An-";
+bar
+//4
+1 1: 4e; f; eg; gb;
+1 2: 4e; e; s; s;
+2: 4eg; ea; eb; ee+;
+
+	VS "by the liv-ing";
+	VS "as th'e-ter-nal";
+	VS "death, and no de-";
+	VS "gel-ic voi-ces";
+bar
+//5
+1 1: 2.ac+; 8e+ bm; c+ ebm;
+1 2: 2.s; 4a;
+2 1: 2.ae+; 8c+ bm; e+ ebm;
+2 2: 2.s; 4a;
+
+	VS 2.; 4; "God, For";
+	VS 2.; 4; "throne; Nor";
+	VS 2.; 4; "cay; No";
+	VS 2.; 4; "sing, With";
+bar
+//6
+1: 4.gb; 8ac+; 4gb; eg;
+2: 4.ee+; 8; 4; eb;
+
+	VS "all of ev-'ry";
+	VS "wars, nor des-o-";
+	VS "yes-ter-day, no";
+	VS "glo-ri-fied im-";
+bar
+//7
+1 1: 4df; 2e; 4gb;
+1 2: 4s; 2e; 4s;
+2: 4b-a; 2eg; 4ee+;
+
+	VS "na-tion, Who";
+	VS "la-tions Shall";
+	VS "mor-row, But";
+	VS "mor-tals, The";
+bar
+//8
+1: 4ac+; ea; eg; df;
+2 1: 4ae+; ac+; b; b-a;
+2 2: 4s;; b; s;
+
+	VS "seek that grand a-";
+	VS "ev-er move a";
+	VS "one e-ter-nal";
+	VS "prais-es of its";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.eg; 4s;
+
+	VS "bode.";
+	VS "stone.";
+	VS "day.";
+	VS "King.";
+dblbar
+//10
+1 1: 4b; 2.s;
+1 2: 8b bm; 8a ebm; 2.s;
+2 1: 4b; 2.s;
+2 2: 4b; 2.s;
+CHORUS
+
+	VS "O";
+	VS "O";
+bar
+//11
+1: 2ge+; 2ae+;
+2: 4eb;; ac+;;
+
+	VS "Zi-on,";
+	VS 4; 4; 4; 4; "Zi-on, love-ly";
+bar
+//12
+1 1: 4ge+; 2gb; 8g bm; f ebm;
+1 2: 4s; 2s; 4e;
+2 1: 4eb; 2ee+; 8b bm; a ebm;
+2 2: 4s; 2s; 4e;
+
+	VS 4; 2; 4; "Zi-on, I";
+	VS 4; 2; 4s; "Zi-on,";
+bar
+//13
+1 1: 4e; b-f; eg; ean;
+1 2: 4e; 4s;;;
+2 1: 4eg; db; cg; f;
+2 2: 4s;;; f;
+
+	VS "long thy gates to";
+bar
+//14
+1 1: 2db; 4r; b;
+1 2: 2s; 4s; a;
+2 1: 2f; 4r; fb;
+2 2: 4b-; a; g; s;
+
+	VS 2; 4s; 4; "see; O";
+	VS 4s; 4; 4; 4; "O love-ly";
+bar
+//15
+1: 2ge+; 2ae+;
+2: 4eb;; ac+;;
+
+	VS "Zi-on,";
+	VS 4; 4; 4; 4; "Zi-on, love-ly";
+bar
+//16
+1 1: 4ge+; 2gb; 8g bm; f ebm;
+1 2: 4s; 2s; 4e;
+2 1: 4eb; 2ee+; 8b bm; a ebm;
+2 2: 4s; 2s; 4e;
+
+	VS 4; 2; 4; "Zi-on, When";
+	VS 4; 2; 4s; "Zi-on,";
+bar
+//17
+1 1: 4e; 8cf bm; 8fa ebm; 4eg; df;
+1 2: 4e; 8s;; 4s;;
+2 1: 4eg; 8a bm; c+ ebm; 4b-b; b-a;
+2 2: 4s; 4a-; 4s;;
+SFERM (3)
+SFERM (4)
+BFERM (3)
+BFERM (4)
+
+	VS 4; 4; 4; 4; "shall I dwell in";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.eg; 4s;
+
+	VS "thee?";
+endbar

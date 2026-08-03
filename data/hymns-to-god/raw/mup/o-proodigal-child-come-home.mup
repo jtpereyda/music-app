@@ -1,0 +1,221 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Notes of Praise
+//		A collection fo choice original hymns 
+//		and tunes, by our best composers
+//		For the Sunday-School, Devotional 
+//		And Praise Meetings,
+//		Especially adapted to the
+//		International sunday-School lessons
+//		Edited by Frank M. Davis
+//		Publisher: Frank M. Davis
+//		Vicksburg, Miss
+//		Copyright: 1890
+//		Hymn No.: 92
+//		
+// Transcribed by: Ted Gatza, Jr. 08/05/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "O Prodigal Child, Come Home" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - DO" "\s(17)\f(TI)\:I\ will\ arise\ and\ go\ to\ my\ father.\ -\ Luke\ 15:18 \(space)" ""   
+   title (13) "Frank M. Davis" "" "Edward M. Babb"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,25
+	scorepad= 0
+	scale = .73
+	lyricssize = 13
+	pageheight= 9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 8e; 4.s; 4;
+1 2: 8e; 4.s; 4;
+2: 8ge; 4.s; 4;
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|O";
+			VERSE "<3. >-1|O";
+bar
+//2
+1: 8ge;; af; 4bg; 8;
+2: 8be;;; 4e+e; 8;
+
+			VERSE "prod-i-gal child, so";
+			VERSE "prod-i-gal child, don't";
+			VERSE "prod-i-gal child, thy";
+bar
+//3
+1: 4e+g; 8c+a; 4bg; 8ge;
+2: 4be; 8e+e; 4; 8be;
+
+			VERSE "far from home, In";
+			VERSE "stay a-way, In";
+			VERSE "Fa-ther calls, And";
+bar
+//4
+1: 4fd; 8ge; 4af; 8bd;
+2: 4bb-; 8; 4; 8; 
+
+			VERSE "want and sore dis-";
+			VERSE "suf'r-ing, sor-row";
+			VERSE "waits thy com-ing";
+bar
+//5
+1 1: 4.ge tie; 4; 8e;
+1 2: 4.s; 4; 8e;
+2: 4.be tie; 4; 8ge;
+
+
+			VERSE "tress, Thy";
+			VERSE "shame; Thy";
+			VERSE "feet; Come";
+bar
+//6
+1: 8ge;; af; 4bg; 8;
+2: 8be;;; 4e+e; 8;
+
+			VERSE "Fa-ther is call-ing";
+			VERSE "Fa-ther now stands with";
+			VERSE "home, and thy wants shall";
+bar
+//7
+1: 4e+g; 8c+a; 4bg; 8ge;
+2: 4be; 8e+e; 4; 8be;
+
+			VERSE "thee, re-turn To";
+			VERSE "o-pen arms, His";
+			VERSE "be sup-plied With";
+bar
+//8
+1 1: 4f; 8; 4ge; 8fd;
+1 2: 4e; 8; 4s; 8;
+2: 4c+a-; 8; 4bb-; 8ab-;
+
+			VERSE "joy and hap-pi-";
+			VERSE "lost son to re-";
+			VERSE "par-don full, com-";
+bar
+//9
+1 1: 4.e tie; 4; 8s;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "ness.";
+			VERSE "claim.";
+			VERSE "plete.";
+dblbar
+//10
+1 1: 8b; 4.s; 4;
+1 2: 8r; 4.s; 4;
+2: 8r; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Come";
+bar
+//11
+1 1: 4.b tie; 4; 8c+;
+1 2: 4r; 8d; 4e; 8r;
+2: 4r; 8ab-; 4ge; 8r;
+
+			VERSE "home, come";
+			VERSE 4s; 8; 4; 8s; "Come home,";
+bar
+//12
+1 1: 4.e+ tie; 4; 8c+a;
+1 2: [dist -4]4r; 8a; 4g; 8s;
+2: 4r; 8c+a; 4be; 8e+e;
+
+			VERSE "home, Why";
+			VERSE 4s; 8; 4; 8s; "come home,";
+bar
+//13
+1 1: 8bg; ge; e;; db-; eb-;
+1 2: 8s;; e;; s;;
+2: 8e+e; be; ge; bg; af; ge;
+
+			VERSE "will you still far a-way";
+bar
+//14
+1: 4.fd tie; 4; 8;
+2: 4.bb- tie; 4; 8;
+
+			VERSE "roam? Thy";
+bar
+//15
+1: 8ge; af; bg; e+g; bg; ge;
+2: 8be;; e+e;;; be;
+
+			VERSE "Fa-ther is call-ing so";
+bar
+//16
+1: 4ae; 8bg; 4c+a; 8c+f#;
+2: 4c+c; 8e+b-; 4; 8e+an-;
+mussym (9) above 1: 4 "ferm";
+mussym (9) above 1: 6 "ferm";
+mussym (9) below 2: 4 "uferm";
+mussym (9) below 2: 6 "uferm";
+
+			VERSE "ten-der-ly, O";
+bar
+//17
+1 1: 8bg; ge; e; 4ge; 8fd;
+1 2: 8s;; e; 4s; 8;
+2: 8e+b-; bb-; gb-; 4bb-; 8ab-;
+ital (13) above 1: 4 "rit.";
+
+			VERSE "prod-i-gal child, come";
+bar
+//18
+1 1: 4.e tie; 4; 8s;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "home.";
+endbar

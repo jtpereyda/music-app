@@ -1,0 +1,386 @@
+// Coded with Mup vs. 7.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Chautauqua Collection
+//		A Compilation of Favorite Sunday School Songs
+//		Prepared for the ise at the 
+//		Chautauqua Sunday School Teachers' Assembly
+//		Publishers: Biglow and Main
+//		Copyright 1875
+//		Hymn no. 70
+
+// Transcribed by: Ted Gatza, Jr. 10/26/2025
+// Revisions:
+
+// HymnsToGod.org
+
+////==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "My Song Shall Be Of Jesus" ""
+   title (2)""
+   title (11) "" "\f(TI)\"His praise shall continually be in my mouth\" - Ps. 34:1" ""
+   title (11) "G - 4 - SOL" "" ""
+   title (13) "Mrs. Van Alstyne (Fanny Crosby)" " " "William H. Doane, 1875"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+         define RITARD ital (15) above 1: 1 "Ritard."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 4bd;
+2: 2.s; 4g-g;
+
+	VS "<1. >-1|My";
+	VS "<2. >-1|My";
+	VS "<3. >-1|My";
+bar
+
+//2
+1: 4.b-d; 8ce; 4b-d; dg;
+2: 4.g-g; 8; 4; b-g;
+
+	VS "song shall be of";
+	VS "song shall be of";
+	VS "song shall be of";
+bar
+
+//3a
+1: 2dg; 4df; s;
+2: 2db; 4da; s;
+
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "Je-sus,";
+invisbar
+
+//3b
+1: 2s; 4; df;
+2: 2s; 4; ca;
+
+	VS "His";
+	VS "When,";
+	VS "While";
+bar
+
+//4
+1: 4dg; ; dc+; db;
+2: 4b-g; ; a-f; g-g;
+
+	VS "mer-cy crowns my";
+	VS "sit-ting at his";
+	VS "press-ing on my";
+bar
+
+//5a
+1: 2da; 4r; 4s;
+2: 2df; 4r; 4s;
+
+	VS "days,";
+	VS "feet,";
+	VS "way";
+invisbar
+
+//5b
+1 1: 2s; 4; 8b bm; c+ ebm;
+1 2: 2s; 4; 4d;
+2 1: 2s; 4; 8g bm; a ebm;
+2 2: 2s; 4; 4g;
+
+	VS12 "He";
+	VS12 "I";
+	VS12 "To";
+bar
+
+//6
+1: 4.gd+; 8gb; 4da; dg;
+2: 4.gb; 8gd+; 4fc+; gb;
+
+	VS "fills my cup with";
+	VS "call to mind his";
+	VS "reach the bliss-ful";
+bar
+
+//7a
+1: 2eg; 4ce; s;
+2: 2cc+; 4cg; s;
+
+	VS "bless-ings,";
+	VS "good-ness,";
+	VS "re-gion";
+invisbar
+
+//7b
+1: 2s; 4; ce;
+2: 2s; 4; cg;
+
+	VS "And";
+	VS "In";
+	VS "Of";
+bar
+
+//8
+1: 4b-d; dg; df; 8db bm; ca ebm;
+2: 4dg; db; da; df;
+
+	VS21 "tunes my heart to";
+	VS21 "med-i-ta-tion";
+	VS21 "pure and pre-fect";
+bar
+
+//9a
+1: 2b-g; 4r; s;
+2: 2g-g; 4r; s;
+
+	VS "praise;";
+	VS "sweet;";
+	VS "day;";
+invisbar
+
+//9b
+1 1: 2s; 4; 4d;
+1 2: 2s; 4; 4d;
+2: 2s; 4; dd+;
+
+	VS "My";
+	VS "My";
+	VS "And";
+bar
+
+//10
+1: 4.bd+; 8; 4; 8ac+ bm; gb ebm;
+2: 4.dd+; 8; 4; ;
+
+	VS21 "song shall be of";
+	VS21 "song shall be of";
+	VS21 "when my soul shall";
+bar
+
+//11a
+1 1: 2fa; 4d; s;
+1 2: 2s; 4d; s;
+2: 2dd+; 4; s;
+
+	VS "Je-sus,";
+	VS "Je-sus,";
+	VS "en-ter";
+invisbar
+
+//11b
+1 1: 2s; 4; d;
+1 2: 2s; 4; d;
+2: 2s; 4; dd+;
+
+	VS "The";
+	VS "What-";
+	VS "The";
+bar
+
+//12
+1 1: 4.fa; 8; 4; 8g bm; a ebm;
+1 2: 4.s; 8; 4; 8g bm; f ebm;
+2 1: 4.s; 8; 4; 8b bm; d+ ebm;
+2 2: 4.dd+; 8; 4dc+; d;
+
+	VS22 "pre-cious Lamb of";
+	VS22 "ev-er ill be-";
+	VS22 "gate of E-den";
+bar
+
+//13a
+1: 2gb; 4r; s;
+2: 2gd+; 4r; s;
+
+	VS "God,";
+	VS "tide;";
+	VS "fair,";
+invisbar
+
+//13b
+1 1: 2s; 4; 8b bm; c+ ebm;
+1 2: 2s; 4; g;
+2 1: 2s; 4; 8g bm; a ebm;
+2 2: 2s; 4; 4g;
+
+	VS12 "Who";
+	VS12 "I'll";
+	VS12 "A";
+bar
+
+//14
+1: 4.gd+; 8gb; 4da; dg;
+2: 4.gb; 8gd+; 4dc+; gb;
+
+	VS "gave him-self my";
+	VS "sing the grace that";
+	VS "song of praise to";
+bar
+
+//15a
+1: 2eg; 4ce; s;
+2: 2cc+; 4cg; s;
+
+	VS "ran-som";
+	VS "saves me,";
+	VS "Je-sus";
+invisbar
+
+//15b
+1: 2s; 4; ce;
+2: 2s; 4; cg;
+
+	VS "And";
+	VS "And";
+	VS "I'll";
+bar
+
+//16
+RITARD
+1: 4b-d; dg; df; 8db bm; ca ebm;
+FST(4)
+2: 4dg; db; da; df;
+FBT(4)
+
+	VS21 "bought me with his";
+	VS21 "keeps me at his";
+	VS21 "sing for-ev-er";
+bar
+
+//17
+1: 2b-g; 2s;
+2: 2g-g; 2s;
+
+	VS "blood.";
+	VS "side.";
+	VS "there.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+
+
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Songs Of Redeeming Love No. 2
+//		Edited by: Jno. R. Sweney, C. C. McCabe,
+//		T. C. O'Kane, Wm. J. Kirkpatrick
+//		Publisher : John J. Hood, 1018 Arch Street, Philadelphia
+//		Cranston & Stowe, Cincinnati, Chicago, and St. Louis
+//		Copyright 1887
+//		Hymn no. 74
+		
+		
+// Transcribed by: Ted Gatza, Jr. 02/23/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Peace" ""
+   title (2)""
+   title (11) "E - 4 - DO" "\s(17)\f(TI)\:And\ the\ peace\ of\ God,\ which\ pass\|eth\ all\ understanding,\ shall\ guard your\ hearts\ and\ your\ thought\|s\ in\ Christ\ Jesus.\ -\ Phil.\ -\ 4:7" ""   
+   title (13) "E. Corwin" "" "T. C. O'Kane, 1881"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=4#
+
+
+staff 2
+	key=4#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1 1: 2.s; 8e bm; 8f ebm;
+1 2: 2.s; 4b-;
+2 1: 2.s; 8g bm; 8a ebm;
+2 2: 2.s; 4e;
+
+	VERSE 2.s; 4; "<1. >-1|God";
+	VERSE 2.s; 4; "<2. >-1|What";
+	VERSE 2.s; 4; "<3. >-1|How";
+bar
+//2
+1: 4ge;; 8; af; bg; c+a;
+2: 4be;; 8;; e+e;;
+
+	VERSE "kind-ly keep-eth those he";
+	VERSE "peace he bring-eth to my ";
+	VERSE "calm at e-ven sinks the";
+bar
+//3
+1: 2bg slur; 4ge;;
+2 1: 2e+ slur; 4b; be;
+2 2: 2.e; 4s;
+
+	VERSE "loves Se-";
+	VERSE "heart! Deep";
+	VERSE "sun Be-";
+bar
+//4
+1: 4c+e;; be; ge;
+2: 4ae;; ge; be;
+
+	VERSE "cure from ev-ry";
+	VERSE "as the sound-less";
+	VERSE "yond the cloud-ed";
+bar
+//5
+1: 2fd; 4r; 8e<f>b-~; 8fb-;
+2: 2bb-; 4r; 8g<a>e~; 8ae;
+
+	VERSE 2; 4s; 8; 8; "fear; From the";
+	VERSE 2; 4s; 8; 8s; "sea; How ";
+	VERSE 2; 4s; 8; 8s; "west! So,";
+bar
+//6
+1: 4ge;; 8ad;; 4;
+2: 4be;; 8bf;; 4;
+
+	VERSE "eye that weep-eth, O'er";
+	VERSE "sweet-ly sing-eth The";
+	VERSE "tem-pest driv-en in-";
+bar
+//7
+1: 4be;; 8c+e;; 4;
+2 1: 4bg;; 8a;; 4;
+2 2: 4s;; 8a;; 4;
+
+	VERSE "one that sleep-eth, He";
+	VERSE "soul that cling-eth, My";
+	VERSE "to the ha-ven, I";
+bar
+//8
+1 1: 8c+ bm; 8b ebm; 4ge; fd; 8g bm; 8f ebm;
+1 2: 4e; s;; d;
+2 1: 8a bm; 8g ebm; 4be; bb-; ab-;
+2 2: 4e; s;;;
+
+	VERSE 4; 4; 4; 4; "gent-ly dries the";
+	VERSE 4; 4; 4; 4; "lov-ing Lord, to";
+	VERSE 4; 4; 4; 4; "reach the longed for";
+bar
+//9
+1 1: 4s; 2e; 4r;
+1 2: 4s; 2e; 4s;
+2: 4s; 2ge; 4r;
+
+	VERSE "tear.";
+	VERSE "thee.";
+	VERSE "rest.";
+dblbar
+//10
+1: 2.s; 8ge bm; af ebm;
+2: 2.s; 4be;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE 2.s; 4; "As";
+bar
+//11
+1: 4bg;; 8; c+a; bg; ge;
+2: 4e+e;; 8;;; be;
+
+	VERSE "flows the riv-er calm and";
+bar
+//12
+1 1: 2.e; 4;
+1 2: 4e slur; 2c; 4e;
+2: 4be; 8aa-;; 4; a#c;
+
+	VERSE "deep, In";
+	VERSE 4s; 8; 8; 4; 4s; "calm and deep,";
+bar
+//13
+1: 4ad; ge; fb-; ec;
+2: 4bf; be; bd; a#c;
+
+	VERSE "si-lence t'ward the";
+bar
+//14
+1 1: 2.f; 4bf;
+1 2: 4d ph; e; f eph; s;
+2 1: 2.b; 4s;
+2 2: b- ph; c; d eph; d+d;
+
+	VERSE "sea; So";
+bar
+//15
+1: 4e+g;; 8d+g;; 4d+f;
+2: 4be;; 8b#g-;; 4bg-;
+
+	VERSE "flow-eth ev-er, and";
+bar
+//16
+1: 4c+e;; 8be;; 4ae;
+2:4c+a-; aa-; 8ba-;; 4c+a-;
+
+	VERSE "ceas-eth nev-er, His";
+bar
+//17
+1: 4ge; bg; 8bg bm; 8af ebm; 4fd;
+2 1: 4bb-; e+b-; 8d+ bm; c+ ebm; 8b bm; 8a ebm;
+2 2: 4s;; b-;;
+
+	VERSE 4; 4; 4; 4; "bound-less love to";
+bar
+//18
+1: 4s; 2.eb-;
+2: 4s; 2.ge;
+
+	VERSE "me.";
+endbar

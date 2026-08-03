@@ -1,0 +1,374 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	The New Wonderful Songs for Work and Worship
+//		Editor:	T. S. Cobb, G. H. P. Showalter
+//		Publisher: Firm Foundation Publishing House, Austin, Tex., 1938
+//		Hymn No. 208
+
+// Transcribed by: Ted Gatza, Jr. 02/27/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+
+staffs=2
+	time=6/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Will The Door Of Mercy Be Closed?" ""
+   title (2) ""
+   title (11) "" "\f(TI)When once the master of the house is risen up, and has shut to the door, and you" ""
+   title (11) "" "\f(TI)begin to stand without, and to knock at the door, saying, Lord, Lord, open to us;" "" 
+   title (11) "" "\f(TI)and he shall answer and say to you, I know you not from where you are: - Lk. 13:25" "" 
+ 
+   title (11) "" 
+   title (11) "E\(flat) - 2 - MI" "" ""
+   title (13) "Tillit S. Teddlie" "" "Tillit S. Teddlie, 1923"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=115";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 2; 8eg; fa;
+2: 2.s; 2; 8eb; ;
+
+	VS "<1. >-1|There's a";
+	VS "<2. >-1|Are you";
+	VS "<3. >-1|Will you";
+bar
+
+//2
+1: 2gb; 4; c+e+; bd+; ac+;
+2: 2ee+; 4; ea; ec+; ed+;
+
+	VS "sol-emn call from the";
+	VS "drift-ing on from the";
+	VS "turn a-way from the";
+bar
+
+//3
+1: 2gb; 4; 2eg; 8s; ;
+2: 2ee+; 4; 2eb; 8s; ;
+
+	VS "voice-less dead,";
+	VS "Fa-ther's house";
+	VS "down-ward course,";
+invisbar
+
+//3
+1: 2s; 4; 2; 8eg tie; 8;
+2: 2s; 4; 2; 8e<g>b~; 8gb;
+
+	VS 2s; 4s; 2s; 8; 8; "To the";
+	VS 2s; 4s; 2s; 8; 8; "To the";
+	VS "Where";
+bar
+
+//4
+1: 2db; 4df; 2gb; 4fa;
+2: 2fb; 4; 2b-d+; 4b-b;
+
+	VS "soul in sin re-";
+	VS "darts of sin ex-";
+	VS "death is self-im-";
+bar
+
+//5
+1: 2.eg tie; 2; 8s; ;
+2: 2.eb tie; 2; 8s; ;
+
+	VS "posed;";
+	VS "posed?";
+	VS "posed?";
+invisbar
+
+//5
+1: 2.s; 2; 8eg; fa;
+2: 2.s; 2; 8eb; ;
+
+	VS "'Tis an";
+	VS "To the";
+	VS "Will you";
+bar
+
+//6
+1: 2gb; 4; c+e+; bd+; ac+;
+2: 2ee+; 4; ; ; ;
+
+	VS "aw-ful cry from a";
+	VS "sad, sad night of re-";
+	VS "turn to God, or re-";
+bar
+
+//7
+1: 2gb; 4; 2ge+; 8s; ;
+   FST(4)
+2: 2ee+; 4d&b; 2cc+; 8s; ;
+   FBT(4)
+
+	VS "soul con-demned,";
+	VS "morse and gloom,";
+	VS "ject His love?";
+invisbar
+
+//7
+1: 2s; 4; 2; 8ec+; ;
+2: 2s; 4; 2; 8a-nfn; ;
+
+	VS "With the";
+	VS "With the";
+	VS "Will the";
+bar
+
+//8
+1 1: 2eb; 4e; 2eg; 4df;
+1 2: 2s; 4e; 2s; 4;
+2: 2b-g; 4; 2b-b; 4b-a;
+
+	VS "door of mer-cy";
+	VS "door of mer-cy";
+	VS "door of mer-cy";
+bar
+
+//9
+1 1: 2.e tie; 2; 4s;
+1 2: 2.e tie; 2; 4s;
+2: 2.eg tie; 2; 4s;
+
+	VS "closed.";
+	VS "closed?";
+	VS "closed?";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 2.s; 2; 8gb; ;
+2: 2.s; 2; 8ee+; ;
+
+	VS "Will the";
+bar
+
+//11
+1: 2.gb slur; 2eg; 4gb;
+2: 4.ee+; 8; 4; eb; ; ee+;
+
+	VS "door_ be";
+	VS21 "door of God's mer-cy for-";
+bar
+
+//12
+1: 2.ac+ slur; 2ea; 8s; ;
+2: 4a-ae+; ; ; 2a-ac+; 8s; ;
+
+	VS "closed?_";
+	VS21 "ev-er-be closed?";
+invisbar
+
+//12 
+1: 2.s; 2; 8ac+; ;
+2: 2.s; 2; 8a-e+; ;
+
+	VS "Will the";
+bar
+
+//13
+1: 2fd+; 4ad+; 8fa; 4.bd+; 4ac+;
+2: 2b-b; 4b-f; 8b-b; 4.; 4b-d+;
+
+	VS "door of mer-cy be";
+	VS "<> <> <> <> for";
+bar
+
+//14
+1: 2.gb slur; 2eg; 8s; ;
+2: 4.ee+; 8; 4; 2eb; 8s; ;
+
+	VS "closed?_";
+	VS21 "ev-er be closed?";
+invisbar
+
+//14
+1: 2.s; 2; 8gb; ;
+2: 4.s; 8; 4; 2; 8ee+; ;
+
+	VS "When you";
+bar
+
+//15
+1: 4gb; eg; fa; gb; be+; bf+;
+2: 4ee+; eb; ; ee+; ge+; gd&+;
+
+	VS "stand be-fore God in the";
+bar
+
+//16
+1: 2.ae+; 2ac+; 8s; ;
+2: 2.ac+; 2; 8s; ;
+
+	VS "judg-ment,";
+invisbar
+
+//16
+1: 2.s; 2; 8ec+; ;
+2: 2.s; 2; 8a-a; ;
+
+	VS "Will the";
+bar
+
+//17
+1 1: 2eb; 4eg; 8b-; 4.eg; 4df;
+1 2: 2s; 4; 8b-; 4.s; 4;
+   FST(4.5)
+2: 2b-g; 4b-b; 8b-g; 4.b-b; 4b-a;
+   FBT(4.5)
+
+	VS "door of mer-cy be";
+bar
+
+//18
+1 1: 2.e tie; 2; 4s;
+1 2: 2.e tie; 2; 4s;
+2: 2.eg tie; 2; 4s;
+
+	VS "closed?";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

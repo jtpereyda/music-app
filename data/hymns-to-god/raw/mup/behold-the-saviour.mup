@@ -1,0 +1,211 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Consectrated Hymns
+//		For use in: Devotional Meetings
+//		Young people's Societies
+//		The Sunday School
+//		Editors: Adam Geibel, R. Frank lehman,
+//		And H. C. Lincoln
+//		Published by: Geibel & Lehman
+//		1022 Arch Street, Philadelphia, PA
+//		Copyright: 1902
+//		Hymn no. 61
+
+// Transcribed by: Ted Gatza, Jr. 01/18/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Behold The Saviour" ""
+   title (2)""
+   title (11) "D \(flat) - 3 - SOL" "\s(17)\f(TI)\:But\ God\ commendeth\ his\ own\ l\|ove\ toward\ us,\ in\ that,\ while we\ were\ yet\ sinners,\ Chris\|t\ died\ for\ us.\ -\ Rom.\ 5:8."""
+   title (13) "Alice Jean Cleator" " " "R. Frank Lehman, 1902"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=70";
+
+//1
+1: 2s; 8af bm; 8ge ebm;
+2: 2s; 4ad;
+
+			lyrics 1: 2s; 4; "<1. >-1|Be-";
+			lyrics 1: 2s; 4; "<2. >-1|In";
+			lyrics 1: 2s; 4; "<3. >-1|The";
+bar
+//2
+1 1: 8.fd; 16fd; 4fd; 8g bm; 8f ebm;
+1 2: 8.s; 16s; 4s; 4d;
+2 1: 8.ad; 16ad; 4ad; 8b bm; 8a ebm;
+2 2: 8.s; 16s; 4s; 4d;
+
+			lyrics 1: 8.; 16; 4; 4; "hold the Sav-iour";
+			lyrics 1: 8.; 16; 4; 4; "pur-ple robe is";
+			lyrics 1: 8.; 16; 4; 4; "hosts of heav'n He";
+bar
+//3
+1: 8.fd; 16ec; 4ec; 8ec bm; 8fd ebm;
+2: 8.aa-; 16aa-; 4aa-; 4aa-;
+
+			lyrics 1: 8.; 16; 4; 4; "si-lent stand Ere";
+			lyrics 1: 8.; 16; 4; 4; "He ar-rayed Ere";
+			lyrics 1: 8.; 16; 4; 4; "could com-mand From";
+bar
+//4
+1: 8.ge; 16af; 4c+a; 4bg;
+2: 8.aa-; 16aa-; 4aa-; 4aa-;
+
+			lyrics 1: "slain on Cal-va-";
+			lyrics 1: "yet the deed is";
+			lyrics 1: "them to set Him";
+bar
+//5
+1 1: 2af; 8af bm; 8ge ebm;
+2: 2ad; 4aa-;
+
+			lyrics 1: 2; 4; "ry! A";
+			lyrics 1: 2; 4; "done; And";
+			lyrics 1: 2; 4; "free; Yet,";
+bar
+//6
+1 1: 8.fd; 16fd; 4fd; 8g bm; 8f ebm;
+1 2: 8.s; 16s; 4s; 4d;
+2 1: 8.ad; 16ad; 4ad; 8b bm; 8a ebm;
+2 2: 8.s; 16s; 4s; 4d;
+
+			lyrics 1: 8.; 16; 4; 4; "crown of thorns His";
+			lyrics 1: 8.; 16; 4; 4; "sol-diers stand on";
+			lyrics 1: 8.; 16; 4; 4; "O He proves to";
+bar
+//7
+1: 8.fd; 16ec; 4ec; 8ec bm; 8fd ebm;
+2: 8.aa-; 16aa-; 4aa-; 4aa-;
+
+			lyrics 1: 8.; 16; 4; 4; "brow a-dorns, yet";
+			lyrics 1: 8.; 16; 4; 4; "ev-'ry hand To";
+			lyrics 1: 8.; 16; 4; 4; "us His love By";
+bar
+//8
+1: 8.ge; 16af; 4bg; 4c+g;
+2: 8.aa-; 16aa-; 4aa-; 4aa-;
+
+			lyrics 1: "King of heav'n is";
+			lyrics 1: "guard the Gen-tle";
+			lyrics 1: "death on Cal-va-";
+bar
+//9
+1: 2d+f; 4s;
+2: 2ad; 4s;
+
+			lyrics 1: "He!";
+			lyrics 1: "One!";
+			lyrics 1: "ry!";
+dblbar
+//10
+1 1: 4a; 2s;
+1 2: 4a; 2s;
+2 1: 4a; 2s;
+2 2: 4a; 2s;
+ital (13) above 1: 1 "Chorus";
+	
+			lyrics 1: [c]"The";
+bar
+//11
+1 1: 8.d+f; 16d+f; 8d+f; 8a; 8f; 8g;
+1 2: 8.s; 16s; 8s; 8a; 8f; 8g;
+2 1: 8.ad; 16ad; 8ad; 8a; 8f; 8g;
+2 2: 8.s; 16s; 8s; 8a; 8f; 8g;
+
+			lyrics 1: [c]"might-y King of heav'n is";
+bar
+//12
+1 1: 2a; 4bf;
+1 2: 2a; 4s;
+2 1: 2a; 4ad;
+2 2: 2a; 4s;
+
+			lyrics 1: [c]"He Who";
+bar
+//13
+1: 4.c+e; 8be; 8ae; 8gnd;
+2: 4.ae; 8d+e; 8c+e; 8be;
+
+			lyrics 1: [c]"dies for you and";
+bar
+//14
+1: 2ac; 4g&c;
+2: 2ea-; 4aa-;
+
+			lyrics 1: [c]"me! He";
+bar
+//15
+1: 8.fd; 16ge; 4af; 4af;
+2: 8.ad; 16ad; 4d+d; 4d+d;
+
+			lyrics 1: [c]"suf-fers loss, He";
+bar
+//16
+1 1:8.bg; 16bg; 4e+g; 8d+ bm; 8b ebm;
+1 2: 8.s; 16s; 4s; 4g;
+2 1: 8.d+g; 16d+g; 4bg; 8b bm; 8d+ebm;
+2 2: 8.s; 16s; 4s; 4g;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			lyrics 1: 8.; 16; 4; 4; [c]"bears the cross, He";
+bar
+//17
+1 1: 8.a; 16bg; 4a; 4e+g;
+1 2: 8.g; 16s; 4g; 4s;
+2: 8.c+a; 16d+a; 4c+a; 4c+a;
+
+			lyrics 1: [c]"dies for you and";
+bar
+//18
+1: 2d+f; 4s;
+2: 2d+ad; 4s;
+
+			lyrics 1: [c]"me!";
+endbar

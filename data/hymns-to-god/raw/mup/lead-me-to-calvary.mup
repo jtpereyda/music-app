@@ -1,0 +1,317 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	New Songs of Praise and Poser 1-2-3 Combined
+//		Edited by J. Lincoln Hall, C. Austin Miles, Dr. Adam Geibel and B. D. Ackley
+//		Publisher: Hall-Mack Company Publishers, 21st and Arch Streets, Philadelphia, Pa.
+//		Publication Date: 1922
+//		Hymn No. 251
+
+// Transcribed by: Ted Gatza, Jr. 04/16/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=4/4
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Lead Me To Calvary" ""
+   title (2) ""
+   title (11) "" "\f(TI)And when they came unto the place which is called The skull," ""
+   title (11) "" "\f(TI)there they crucified him, and the malefactors, one on the" ""
+   title (11) "" "\f(TI)right hand and the other on the left. - Lk. 23:33" ""
+
+   title (11) "" 
+   title (11) "D - 4 - MI" "" ""
+   title (13) "Jennie Evelyn Hussey" "" "William J. Kirkpatrick, 1921"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 4df; 8.; 16ce; 4d; ;
+1 2: 4s; 8.; 16; 4d; ;
+2: 4da; 8.; 16dg; 4df; ;
+
+	VS "<1. >-1|King of my life, I";
+	VS "<2. >-1|Show me the tomb where";
+	VS "<3. >-1|Let me like Ma-ry";
+	VS "<4. >-1|May I be will-ing";
+bar
+
+//2
+1: 4dg; ; 2df;
+2: 4g-b; ; 2da;
+
+	VS "crown Thee now,";
+	VS "Thou wast laid,";
+	VS "thro' the gloom,";
+	VS "Lord, to bear,";
+bar
+
+//3
+1 1: 4df; 8.ce; 16d; 4da; df;
+1 2: 4s; 8.; 16d; 4s; ;
+2: 4da; 8.dg; 16df; 4fa; da;
+
+	VS "Thine shall the glo-ry";
+	VS "Ten-der-ly mourn'd and";
+	VS "Come with a gift to";
+	VS "Dai-ly my cross for";
+bar
+
+//4
+1: 2.ce; 4r;
+2: 2.a-a; 4r;
+
+	VS "be;";
+	VS "wept;";
+	VS "Thee;";
+	VS "Thee;";
+bar
+
+//5
+1 1: 4df; 8.; 16e; 4d; ;
+1 2: 4s; 8.; 16d; 4d; ;
+2: 4da; 8.; 16ea; 4fa; df;
+
+	VS "Lest I for-get Thy";
+	VS "An-gels in robes of";
+	VS "Show to me now the";
+	VS "E-ven Thy cup of";
+bar
+
+//6
+1: 4db; ; 2da;
+2: 4g-g; ; 2df;
+
+	VS "thorn-crown'd brow,";
+	VS "light ar-rayed";
+	VS "emp-ty tomb,";
+	VS "grief to share,";
+bar
+
+//7
+1 1: 4d; 8.; 16e; 4df; ce;
+1 2: 4d; 8.; 16; 4s; ;
+2 1: 4fa; 8.; 16gb; 4a; 4a-a;
+2 2: 4s; 8.; 16; 4a; s;
+
+	VS "Lead me to Cal-va-";
+	VS "Guard-ed Thee while Thou";
+	VS "Lead me to Cal-va-";
+	VS "Thou hast borne all for";
+bar
+
+//8
+1 1: 2.d; 4r;
+1 2: 2.d; 4s;
+2: 2.df; 4r;
+
+	VS "ry.";
+	VS "slept.";
+	VS "ry.";
+	VS "me.";
+dblbar
+
+CHORUS
+
+//9
+1: 4ce; 8.; 16df; 4eg; gb;
+2: 4a-a; 8.; 16; 4; ; 
+
+	VS "Lest I for-get Geth-";
+bar
+
+//10
+1: 4.fa; 8eg; 2df;
+2: 4.da; 8; 2;
+
+	VS "sem-a-ne;";
+bar
+
+//11
+1: 4ce; 8.; 16df; 4cg; gb;
+2 1: 4a-a; 8.a; 16fa; 4ea; a-c+;
+2 2: 4s; 8.g; 16s; 4; ; 
+
+	VS "Lest I for-get Thine";
+bar
+
+//12
+1: 4.fa; 8eg; 2df;
+2: 4.dd+; 8da; 2;
+
+	VS "ag-o-ny;";
+bar
+
+//13
+1: 4fd+; 8.; 16; 4ec+; ;
+2: 4b-b; 8.; 16; 4fa#; ;
+
+	VS "Lest I for-get Thy";
+bar
+
+//14
+1: 4db; e#b; 2fa;
+2: 4gb; gd+; 2dd+;
+
+	VS "love for me,";
+bar
+
+//15
+1 1: 4d; 8.; 16e; 4df; ce;
+1 2: 4d; 8.; 16; 4s; ;
+2 1: 4fa; 8.; 16gb; 4a; 4a-a;
+2 2: 4s; 8.; 16; 4a; s;
+
+	VS "Lead me to Cal-va-";
+bar
+
+//16
+1 1: 2.d; 4r;
+1 2: 2.d; 4s;
+2: 2.df; 4r;
+
+	VS "ry.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

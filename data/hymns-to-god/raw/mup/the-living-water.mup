@@ -1,0 +1,413 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Google Books
+//		Gospel Praise Book
+//		A Collection Of Choice Gems Of Song
+//		Suiitable For Church Service, Gospel Praise Meetings
+//		And Family Devotions
+//		By Asa Hull
+//		New York:
+//		Published by D. W. Knowles
+//		240 Fourth Avenue, Boston
+//		James P. Magee, 38 Bromfield Street
+//		Cincinnati, OH; John Church & Co,
+//		Chicago, Il.; Henry A Sumner & Co.
+//		Copyright: 1880
+//		Hymn No.: 17
+//		
+// Transcribed by: Ted Gatza, Jr. 08/20/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Living Water" ""
+   title (2)""
+   title (11)"" "\f(TI)but whosoever drinketh of the water that I shall give him shall never thirst; " ""
+   title (11)"" "\f(TI)but the water that I shall give him shall become in him a well of water" ""
+   title (11)"" "\f(TI)springing up unto eternal life. - Jn. 4:14" ""
+   title (11) "A \(flat) - 4 - DO" "" ""
+   title (13) "Asa Hull, (arr.)" "" "Asa Hull, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+score
+
+	label=""
+	packexp = 0.4
+	packfact = 0.4
+	pad = 1.4 //2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=5
+	scorepad=0
+	scale = .725
+	lyricssize = 12
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+ 	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+   //Time Signature - Use on projection hymns only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+         print (t.w - 2, t.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4";
+	 @
+
+
+// set midi
+	midi all: 0 "temp=105";
+
+//Enter music	
+//=========================
+
+//1
+1: 8.ca; 16db; 2.s;
+2: 8.a-a; 16; 2.s;
+
+	VS "<1. >-1|There's an";
+	VS "<2. >-1|He that";
+	VS "<3. >-1|To that";
+bar
+//2
+1: 4ec+;;; ee+;
+2: 4a-a;;; ca;
+
+	VS "o-pen fount in";
+	VS "drink-eth thirst-eth";
+	VS "foun-tain ev-er";
+bar
+//3
+1: 2fe+; 4fd+; 8.s; 16s;
+2: 2da; 4; 8.s; 16s;
+
+	VS "Zi-on,";
+	VS "nev-er;";
+	VS "flow-ing,";
+dblbar
+//4
+1: 2s; 4s; 8.fc+; 16fb;
+2: 2s; 4; 8.da; 16da;
+
+	VS "Where the";
+	VS "For his";
+	VS "Who-so-";
+bar
+//5
+1: 4ea;; eg; ea;
+2: 4ec+;; eb; ec+;
+
+	VS "liv-ing wa-ters";
+	VS "soul is sat-is-";
+	VS "ev-er will, may";
+bar
+//6
+1: 2.eb; 8.s; 16s;
+2: 2.ed+; 8.s; 16s;
+
+	VS "flow;";
+	VS "fied;";
+	VS "come;";
+dblbar
+//7
+1: 2.s; 8.ca; 16db;
+2: 2.s; 8.a-a; 16;
+
+	VS "O-pened";
+	VS "He shall";
+	VS "End-less";
+bar
+//8
+1: 4ec+;;; ee+;
+2: 4a-a;;; ca;
+
+	VS "free by Ju-dah's";
+	VS "dwell in peace for-";
+	VS "life on all be-";
+bar
+//9
+1: 2fe+; 4fd+; 8.s; 16s;
+2: 2da; 4; 8.s; 16s;
+
+	VS "Li-on.";
+	VS "ev-er,";
+	VS "stow-ing,";
+dblbar
+//10
+1: 2s; 4s; 8.fc+; 16fb;
+2: 2s; 4s; 8.dd+; 16;
+
+	VS "There the";
+	VS "And sit";
+	VS "Who-so-";
+bar
+//11
+1: 4ea;; eg; eb;
+2: 4ec+;; eb; ed+;
+
+	VS "thirst-y soul may";
+	VS "down at Je-sus'";
+	VS "ev-er will, there's";
+bar
+//12
+1: 2.ea; 8.s; 16s;
+2: 2.a-c+; 8.s; 16s;
+
+	VS "go.";
+	VS "side.";
+	VS "room.";
+dblbar
+//13
+1: 2.s; 8.ca; 16db;
+2: 2.s; 8.a-a; 16;
+
+	VS "Come ye,";
+	VS "Come ye,";
+	VS "Pil-grim";
+bar
+//14
+1: 4ec+;;; ee+;
+2: 4a-a;;; ca;
+
+	VS "ev-'ry son and";
+	VS "eve-ry one that";
+	VS "haste to Zi-on's";
+
+bar
+//15
+1: 2fe+; 4fd+; 8.s; 16s;
+2: 2da; 4; 8.s; 16s;
+
+	VS "daugh-ter,";
+	VS "thirst-eth,";
+	VS "moun-tain,";
+
+dblbar
+//16
+1: 2s; 4s; 8.fc+; 16fb;
+2: 2s; 4s; 8.dd+; 16;
+
+	VS "Life e-";
+	VS "Christ can";
+	VS "Ev-er";
+
+bar
+//17
+1: 4ea;; eg; ea;
+2: 4ec+;; eb; ec+;
+
+	VS "ter-nal ye may";
+	VS "liv-ing wa-ter";
+	VS "last-ing life re-";
+
+
+bar
+//18
+1: 2.eb; 8.s; 16s;
+2: 2.ed+; 8.s; 16s;
+
+	VS "have;";
+	VS "give;";
+	VS "ceive;";
+
+dblbar
+//19
+1: 2.s; 8.ca; 16db;
+2: 2.s; 8.a-a; 16;
+
+	VS "Come and";
+	VS "You can";
+	VS "Come thee";
+
+bar
+//20
+1: 4ec+;;; ee+;
+2: 4a-a;;; ca;
+	
+	VS "drink the liv-ing";
+	VS "have it with-out";
+	VS "to that flow-ing";
+
+
+bar
+//21
+1: 2fe+; 4fd+; 8.s; 16s;
+2: 2da; 4; 8.s; 16s;
+
+	VS "wa-ter;";
+	VS "mea-sure,";
+	VS "foun-tain,";
+
+dblbar
+//22
+1: 2s; 4s; 8.fc+; 16fb;
+2: 2s; 4s; 8.dd+; 16;
+
+	VS "Come and";
+	VS "On-ly";
+	VS "Drink, O";
+
+bar
+//23
+1: 4ea;; eg; eb;
+2: 4ec+;; eb; ed+;
+
+	VS "drink, thy soul shall";
+	VS "drink, thy soul shall";
+	VS "drink, thy soul shall";
+
+bar
+//24
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "live.";
+	VS "live.";
+	VS "live.";
+
+dblbar
+newscore
+
+REFRAIN
+//25
+1: 8.ea; 16eb; 2.s;
+2: 8.ac+; 16ad+; 2.s;
+
+
+	VS "Come and";
+bar
+//26
+1: 4ec+; ea; ec+; ea;
+2: 4ae+; ac+; ae+; ac+;
+
+	VS "drink, thy soul shall";
+bar
+//27
+1 1: 2c+ tie; 4c+; 8.s; 16s;
+1 2: 4a;;; 8.s; 16s;
+2: 4ae+;;; 8.s; 16s;
+
+	VS "live,";
+	VS 4s; 4; 4; 8.s; 16s; "shall live,";
+dblbar
+newscore
+//28
+1: 8.gb; 16gc+; 2.s;
+2: 8.ee+; 16; 2.s;
+
+	VS "Come and";
+bar
+//29
+1: 4gd+; gb; gd+; gb;
+2: 4ee+;;;;
+
+	VS "drink, thy soul shall";
+bar
+//30
+1 1: 2d+ tie; 4d+; 4s;
+1 2: 4g;;; 4s;
+2: 4ee+;;; 4s;
+
+	VS "live;";
+	VS 4s; 4; 4; 8.s; 16s; "shall live;";
+dblbar
+newscore
+//31
+1: 8.ca; 16db; 2.s;
+2: 8.a-a; 16; 2.s;
+
+	VS "Come and";
+bar
+//32
+1: 4ec+;;; ee+;
+2: 4a-a;;; ca;
+
+	VS "drink the liv-ing";
+bar
+//33
+1: 2fe+; 4fd+; 8.s; 16s;
+2: 2da; 4; 8.s; 16s;
+
+	VS "wa-ter,";
+dblbar
+newscore
+//34
+1: 2s; 4s; 8.fc+; 16fb;
+2: 2s; 4s; 8.dd+; 16;
+
+	VS "Come and";
+bar
+//35
+1: 4ea;; eg; eb;
+2: 4ec+;; eb; ed+;
+
+	VS "drink, thy soul shall";
+bar
+//36
+1: 2.ea; 4s;
+2: 2. a-c+; 4s;
+
+	VS "live.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+

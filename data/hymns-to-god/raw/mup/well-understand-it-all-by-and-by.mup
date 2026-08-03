@@ -1,0 +1,226 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Eureka Sacred Carols
+//		Copyright: 1921
+//              http://drhamrick.Newsspot.com/2013_12_01_archive.html
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 05/05/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "We'll Understand It All By And By" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:Jesus\ answered\ and\ said\ unto\ \|him,\ What\ I\ do\ thou\ knowest\ not now;\ but\ thou\ shalt\ unde\^rstand\ hereafter.\ -\ Jn.\ 13:7" ""   
+   title (13) "W. E. Lindsay" "" "W. E. Lindsay"
+   title (13) "" "" "Arr. G. C. Adams"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=9/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 8ec; fd; ge; 4.s;;
+2: 8aa-; ga-; fa-; 4.s;;
+
+	VERSE 8; 8; 8; 4.s; 4.s; "<1. >-1|Tempt-ed and";
+	VERSE 8; 8; 8; 4.s; 4.s; "<2. >-1|When death has";
+	VERSE 8; 8; 8; 4.s; 4.s; "<3. >-1|Oft-en I";
+	VERSE 8; 8; 8; 4.s; 4.s; "<4. >-1|Faith-ful till";
+bar
+//2
+1: 4. ac; ae; 8fd; ad; bd;
+2: 4.ea-; ac; 8ad; gd; fd;
+
+	VERSE "tried we oft-en do";
+	VERSE "come and tak-en our";
+	VERSE "won-der why I must";
+	VERSE "death, saith our lov-ing";
+bar
+//3
+1: 4.ac; ec; 8; fd; ge;
+2 1: 4.ea-; aa-; 8a;;;
+2 2: 4.s;; 8a;;;
+
+	VERSE "won-der, Why it should";
+	VERSE "loved ones, Leav-ing our";
+	VERSE "leave home, Go in the";
+	VERSE "Sav-iour, Just a while";
+bar
+//4
+1 1: 4.ae; af; 8c+a; b; a;
+1 2: 4.s;; 8; a;;
+2: 4.c+a; c+f; 8d+nb-;;;
+
+	VERSE "be thus all the day";
+	VERSE "homes so lone-ly and";
+	VERSE "rain, the cold and the";
+	VERSE "long-er la-bor and";
+bar
+//5
+1 1: 4.bg tie;; 8c+a; bn; c+a;
+1 2: 4.s;; 8s; a; s;
+2: 4.e+e tie;; 8e+a; d+na; e+a;
+
+	VERSE "long; While there are";
+	VERSE "drear; Then we do";
+	VERSE "snow, While there are";
+	VERSE "wait; These tri-als";
+bar
+//6
+1: 4. ae;; 8fd; af; bf;
+2: 4.c+a; ac; 8ad; d+d;;
+
+	VERSE "oth-ers liv-ing a-";
+	VERSE "won-der why oth-ers";
+	VERSE "oth-ers liv-ing in";
+	VERSE "here will seem to be";
+bar
+//7
+1: 4.ae; ec; 8c+e;; e+a;
+2 1: 4.c+a-; aa-; 8a;; c+a;
+2 2: 4.s;; 8a;; s;
+
+	VERSE "bout us, Nev-er mo-";
+	VERSE "pros-per, Liv-ing so";
+	VERSE "com-fort, Giv-ing no";
+	VERSE "noth-ing, When we sweep";
+bar
+//8
+1: 4. c+e; af; 8bg; c+a; bg;
+2 1: 4.a; c+f; 8d+e; e+e; d+e;
+2 2: 4.a; s; 8;;;
+
+	VERSE "lest-ed, though liv-ing";
+	VERSE "wick-ed year aft-er";
+	VERSE "heed to all I can";
+	VERSE "thro' the beau-ti-ful";
+bar
+//9
+1: 4.ae tie;; 8s;;;
+2: 4.c+aa- tie;; 8s;;;
+
+	VERSE "wrong.";
+	VERSE "year.";
+	VERSE "do.";
+	VERSE "gate,";
+dblbar
+newscore
+//10
+1: 8c+e; e+a;; 4.s;;
+2 1: 8a; c+a;; 4.s;;
+2 2: 8a; s;; 4.;;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "Fur-ther a-";
+bar
+//11
+1: 4.c+e; ae; 8fd; ad;  be;
+2 1: 4.a; ac; 8ad; gd; fd;
+
+	VERSE "long we'll know more a-";
+bar
+//12
+1: 4.ac; ec; 8c+e; e+a;;
+2 1: 4.ea-; aa-; 8a; c+a;;
+2 2: 4.s;; 8a; s;;
+
+	VERSE "bout it, Fur-ther a-";
+bar
+//13
+1: 4.c+e; ae; 8adn; bd; c+d;
+2 1: 4.a; ac; 8afb-; gb-; ab-;
+2 2: 4.a; s; 8;;;
+
+	VERSE "long we'll un-der-stand";
+bar
+//14
+1: 4.be tie;; 8ec; fd; ge;
+2: 4.ge tie;; 8aa-; ga-; fa-;
+
+	VERSE "why; Cheer up, my";
+bar
+//15
+1: 4.ac; ae; 8fd; af; bf;
+2: 4.ea-; ac; 8ad; d+d;;
+
+	VERSE "broth-er, live in the";
+bar
+//16
+1: 4.ae; ec; 8c+e;; e+a;
+2 1: 4.c+a-; aa-; 8a;; c+a;
+2 2: 4.s;; 8a;; s;
+
+	VERSE "sun-shine, We'll un-der-";
+bar
+//17
+1: 4.c+e; af; 8bg; c+a; bg;
+2 1: 4.a; c+f; 8d+e; e+e; d+e;
+2 2: 4.a; s; 8;;;
+
+	VERSE "stand it all by and";
+bar
+//18
+1 1: 4.a tie;; 8s;;;
+1 2: 4.a tie;; 8s;;;
+2: 4.c+a- tie;; 8s;;;
+
+	VERSE "by.";
+endbar

@@ -1,0 +1,228 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 24
+//		
+// Transcribed by: Ted Gatza, Jr. 11/01/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Judgment" ""
+   title (2)""
+   title (11) "E\(flat) - 3 - DO" "\s(17)\f(TI)\:For\ we\ must\ all\ be\ made\ manifest\ befo\|re\ the\ judgment-seat\ of\ Christ;\ that each\ one\ may\ receive\ the\ things\ \^done\ in\ the\ body,\ -\ 2\ Cor.\ 5:10" ""   
+   title (13) "W. C. Muffitt" "" "B. B. Funk"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1 1: 8.e; 16f; 2s;
+1 2: 8.e; 16e; 2s;
+2: 8.ge; 16ae; 2s;
+
+
+			VERSE "<1. >-1|O, the";
+			VERSE "<2. >-1|There shall";
+			VERSE "<3. >-1|O! how";
+			VERSE "<4. >-1|We shall";
+bar
+//2
+1 1: 4.ge; 8; 8f; e;
+1 2: 4.s; 8s; 8e;;
+2: 4.be; 8; ae; ge;
+
+			VERSE "time is fast ap-";
+			VERSE "be be-fore him";
+			VERSE "sad 'twill be, my";
+			VERSE "all meet at the";
+bar
+//3
+1: 8ge; 4.bg; 8c+a;;
+2: 8be; 4.e+e; 8e+a-;;
+
+			VERSE "proach-ing, When the";
+			VERSE "gath-ered Ev-ery";
+			VERSE "broth-er, For you";
+			VERSE "judg-ment; All hearts";
+bar
+//4
+1: 4.bg; 8ge; 8be; 8ge;
+2 1: 4.e+e; 8be; g; be;
+2 2: 4.s; 8; 8g; s;
+
+			VERSE "judg-ment day shall";
+			VERSE "soul from ev-ery";
+			VERSE "at the judg-ment";
+			VERSE "must be free from";
+bar
+//5
+1 1: 2fd; 8.e; 16f;
+1 2: 2s; 8.e; 16;
+2: 2bb-; 8.ge; 16ae;
+
+			VERSE "come; When we'll";
+			VERSE "land; Will you";
+			VERSE "day, When he";
+			VERSE "sin Or he'll";
+bar
+//6
+//==========
+1 1: 4.ge; 8; 8f; e;
+1 2: 4.s; 8s; 8e;;
+2: 4.be; 8; ae; ge;
+
+			VERSE "hear the trum-pet";
+			VERSE "be a-mong the";
+			VERSE "says, \"Ye bless-ed,";
+			VERSE "say, \"De-part, ye";
+bar
+//7
+1: 8ge; 4.bg; 8c+a;;
+2: 8be; 4.e+e; 8e+a-;;
+
+			VERSE "sound-ing, Will we";
+			VERSE "right-eous, Or with";
+			VERSE "en-ter,\" And you";
+			VERSE "curs-ed,\" And we";
+bar
+//8
+1: 4.bg; 8ge; 8.; 16fd;
+2: 4.e+b-; 8bb-; 8.; 16ab-;
+
+			VERSE "hear him say, \"Come";
+			VERSE "those at his left";
+			VERSE "shall be turned a-";
+			VERSE "can-not en-ter";
+bar
+//9
+1 1: 4.e; s;
+1 2: 4.e; s;
+2: 4.ge; s;
+
+			VERSE "home\"?";
+			VERSE "hand?";
+			VERSE "way.";
+			VERSE "in.";
+
+dblbar hidechanges
+newscore
+score time=4/4
+music
+midi all: 0 "tempo=85";
+
+//10
+1: 8ge; 8.af; 16bg; 8s; 2s;
+2: 8r; 4; 8s; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "The judg-ment";
+bar
+//11
+1: 2c+a tie; 8; c+a; bg; ge;
+2: 8.r; 16e+a-; 8.; 16; 4; 4r;
+
+			VERSE "day_ is draw-ing";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "The judg-ment day";
+bar
+//12
+1: 2bg tie; 8; 8ge; fd; ge;
+2: 8.r; 16e+e; 8.; 16; 4; 4r;
+
+			VERSE "near,_ And are we";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "is draw-ing near,";
+bar
+//13
+1: 2af tie; 8; af; ge; fd;
+2: 8.r; 16d+b-; 8.; 16; 4; 4r;
+
+			VERSE "saved_ from all our";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "And are we saved";
+bar
+//14
+1: 2ge tie; 8; ge; af; bg;
+2: 8.r; 16be; 8.; 16; 4; 4r;
+
+			VERSE "sin?_ O, will we";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "from all our sin?";
+bar
+//15
+1: 2c+a tie; 8; e+c+; d+b; c+a;
+2: 8.r; 16e+a-; 8.; 16; 4; 4r;
+
+			VERSE "hear_ the Mas-ter";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "O, will we hear";
+bar
+//16
+1 1: 2b slur; 4e+; 4r;
+1 2: 2.g; 4s;
+2: 8.r; 16e+e; 8.e+e; 16e+e; 4be; 4r;
+mussym (9) below 1: 1 "uferm";
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE 2; 4s; 4s; "say,_";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "the Mas-ter say,";
+bar
+//17
+1: 4.e+a; 8c+a; 16bg; 8.ge; fd; 16eb-;
+2: 4.c+a-; 8e+a-; 16e+b-; 8.bb-; ab-; 16ge;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "\"Come ye bless-ed, en-ter";
+bar
+//18
+1: 2.eb-; 4s;
+2: 2.ge; 4s;
+
+			VERSE "in.\"";
+endbar

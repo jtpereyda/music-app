@@ -1,0 +1,366 @@
+// Mup vs. 7.1 arkkra.com
+
+
+// The hymn produced by this Mup file is believed to be in the public 
+// domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+//	Hymn Source: The Popular Hymnal
+//	Old Standard Hymns and Popular Gospel Songs 
+//	for Use in All Departments of Church, Sunday School
+//	and Young People’s Work
+//	Edited and Compiled by ROBERT H. COLEMAN
+//	Compiler of
+//	The Evangel, New Evangel, World Evangel, Herald and Treasury of Song
+//	THE JUDSON PRESS
+//	Chicago, St. Loius, Boston, Kansas City, Los Angeles, Seattle. Toronto
+//	Copyright 1918
+//	Hymn no. 274
+
+// Transcribed by: 
+//	Ted Gatza, Jr. 05/21/2024
+//
+// 	Revisions:
+//		
+//
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+
+//=========================
+
+top
+
+   title bold (19) "" "Oh, How I Love Jesus" ""
+   title (2)""
+   title (11) "" "\f(TI)We love, because he first loved us. - 1 Jn. 4;19"""
+   title (11) "A\(flat) - 4 - DO" "" ""
+   title (11) "Frederick Whitfield" " " "Anonymous"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//Define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS11 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (13) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (13) above 1: 1 "Refrain"; @
+         define RALL ital (13) above 1: 1 "Rall."; @
+	define EFFECT ital (13) above 1: 1 "Effectively"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (13) above 1: COUNT "rit."; @
+        define FINE(COUNT)
+           ital (13) above 1: COUNT "fine"; @
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"; @
+        define DS(COUNT)
+	  ital (13) above 1: COUNT "D. S."; @
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+//Verse
+
+//1
+1: 4.s; 4; 8ca;
+2: 4.s; 4; 8a-a;
+
+	VS "<1. >-1|There";
+	VS "<2. >-1|It";
+	VS "<3. >-1|It";
+	VS "<4. >-1|It";
+bar
+
+//2
+1: 4ec+; 8; 8ec+ bm; 8db ebm; ec+;
+2: 4a-a; 8; 4; 8;
+
+	VS21 "is a name I";
+	VS21 "tells me of a";
+	VS21 "tells me what my";
+	VS21 "tells of One whose";
+bar
+
+//3
+1: 4ca; 8; 4; 8s;
+2: 4a-a; 8; 4; 8s;
+
+	VS "love to hear,";
+	VS "Sav-ior's love,";
+	VS "Fa-ther hath";
+	VS "lov-ing heart";
+invisbar
+
+//3
+1: 4s; 8; 4; 8ea;
+2: 4s; 8; 4; 8ca;
+
+	VS "I";
+	VS "Who";
+	VS "In";
+	VS "Can";
+bar
+
+//4	
+1 1: 4s; 8; 8b bm; a ebm; 8s;
+1 2: 4eb; 8; 4e; 8eb;
+2 1: 4eg; 8; 8g bm; f ebm; 8eg;
+2 2: 4s; 8; 4e; 8s;
+
+	VS12 "love to sing its";
+	VS12 "died to set me";
+	VS12 "store for ev-'ry";
+	VS12 "feel my deep-est";
+bar
+
+//5
+1: 4.ec+ slur; 4ae+; 8s;
+2 1: 4.a slur; 4c+; 8s;
+2 2: 4.a tie; 4a; 8s;
+
+	VS "worth;";
+	VS "free;";
+	VS "day,";
+	VS "woe,";
+invisbar
+
+//5
+1: 4.s; 4; 8ed+;
+2 1: 4.s; 4s; 8b;
+2 2: 4.s; 4s; 8a;
+
+	VS "It";
+	VS "It";
+	VS "And";
+	VS "Who";
+bar
+
+//6
+
+1: 4ec+; 8; 8ec+ bm; 8db ebm; ec+;
+2: 4a-a; 8; 4; 8;
+
+	VS21"sounds like mu-sic";
+	VS21 "tells me of His";
+	VS21 "tho' I tread a";
+	VS21 "in each sor-row";
+bar
+
+//7
+1: 4ca; 8; 4; 8s;
+2: 4a-a; 8; 4; 8s;
+
+	VS "in mine ear,";
+	VS "pre-cious blood,";
+	VS "dark-some path,";
+	VS "bears a-part,";
+
+invisbar
+
+//7
+1: 4s; 8; 4; 8ea;
+2: 4s; 8; 4; 8ca;
+
+	VS "The";
+	VS "The";
+	VS "Yields";
+	VS "That";
+bar
+
+//8
+1 1: 8b bm; c+ ebm; 8fd+; 4ec+; 8db;
+1 2: 4f; 8s; 4; 8;
+2: 4da; 8; 4ea; 8eg;
+
+	VS21 "sweet-est name on";
+	VS21 "sin-ner's per-fect";
+	VS21 "sun-shine all the";
+	VS21 "none can bear be-";
+bar
+
+//9
+1: 4.ca tie; 4.;
+2: 4.a-a tie; 4.;
+
+	VS "earth.";
+	VS "plea.";
+	VS "way.";
+	VS "low.";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 4.ec+; 8; db; ec+;
+2: 4.a-a; 8; ; ;
+
+	VS "Oh, how I love";
+bar
+
+//11
+1 1: 4.ca; a;
+1 2: 4.s; 4c slur; 8e;
+2 1: 4.a-a; a;
+2 2: 4.s; 4a- slur; 8c;
+
+	VS "Je-sus,";
+bar
+
+//12
+1: 4.db; 8; ca; db;
+2: 4.eg; 8; ea; eg;
+
+	VS "Oh, how I love";
+bar
+
+//13
+1 1: 4.ec+; 4e+ slur; 8d+;
+1 2: 4.s; 4.a;
+2 1: 4.a; 4c+ slur; 8b;
+2 2: 4.a; ;
+
+	VS22 "Je-sus";
+bar
+
+//14
+1: 4.ec+; 8; db; ec+;
+2: 4.a-a; 8; ; ; 
+
+	VS "Oh, how I love";
+bar
+
+//15
+1: 4.ca; 4; 8s;
+2: 4.a-a; 4; 8s;
+
+	VS "Je-sus,";
+invisbar
+
+//15
+1: 4.s; 4; 8ea;
+2: 4.s; 4; 8ca;
+
+	VS "Be-";
+bar
+
+//16
+1 1: 8b bm; 8c+ ebm; 8ad+; 4ec+; 8db;
+1 2: 4f; 8s; 4; 8;
+2: 4da; 8; 4ea; 8eg;
+
+	VS21 "cause He first loved";
+bar
+
+//17
+1: 4.ca tie; 4; 8s;
+2: 4.a-a tie; 4; 8s;
+
+	VS "me.";
+endbar
+
+//18
+1: 2.da;
+2: 2.df;
+
+	VS "A-";
+bar
+
+//19
+1: 2.ca;
+2: 2.ae;
+
+	VS "MEN.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

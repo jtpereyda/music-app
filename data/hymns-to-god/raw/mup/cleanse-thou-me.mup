@@ -1,0 +1,237 @@
+// !Mup vs.6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Brightest Glory
+//	A Collection of choice and original hymns and tunes
+//	By our best composers for the Sunday Schools,
+//	Young peoples meetins and all religious gatherings
+//	By Frank M. Davis
+//	Published by Frank M. Davis
+//	Vicksburg, Miss
+//	Copyright: 1896
+//	Hymn No.: 73
+
+// Transcribed by: 
+//	Ted Gatza, Jr. 07/15/2013
+
+// Revisions:
+//	09/08/2022
+
+// HymnsToGod.org
+
+// ****************************************
+//Letter Page Format
+
+top
+	title bold (19) "" "Cleanse Thou Me" ""
+   	title (2)""
+   	title (11) "" "\f(TI)Cleanse Thou me from secret faults. - Ps. 19:12" ""
+   	title (11) "G - 2 - MI" "" ""
+   	title (13) "Fanny J. Crosby" " " "Frank M. Davis"	
+
+footer
+
+   	title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffsep = 23
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	lyricsdist = 1
+	rightmargin=.750
+	leftmargin=.750
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Time Signature - Use on projection hymns only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+    	 print (t.w - 2, t.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4";
+	 @
+
+//Define midi
+	midi all: 0 "tempo=90";
+
+//=============================
+
+//1
+1: 4bd; 8; 4; 8ac;
+2 1: 4g; 8; 4; 8fd;
+2 2: 4g; 8; 4; 8s;
+
+	VS "<1. >-1|Cleanse Thou me from";
+	VS "<2. >-1|Thou hast died that";	
+	VS "<3. >-1|Make me pur-er,";
+
+bar
+
+//2
+1: 4gb-; 8; 4.;
+2: 4ge; 8; 4.ge;
+
+	VS "se-cret sin,";
+	VS "I might live,";
+	VS "then, in heart,";
+bar
+
+//3
+1: 4ge; 8; 4c+g; 8bg;
+2: 4c+c; 8; 4c+e; 8d+g;
+
+			
+	VS "Cleanse Thou me, O";
+	VS "Pre-cious is Thy";
+	VS "Ev-er in me";
+
+bar
+
+//4
+1: 4.bg slur; af;
+2: 4.d+d tie; ;
+
+	VS "Lord,";
+	VS "name;";
+	VS "shine;";
+bar
+
+//5
+1: 4bg; 8; 4; 8c+g;
+2: 4d+g; 8; 4; 8c+g;
+
+	VS "Wash me in Thy";
+	VS "Thou, O Christ, art";
+	VS "Wit-ness may I";
+bar
+
+//6
+1: 4d+g; 8; 4.;
+2: 4bg; 8; 4.;
+
+	VS "pre-cious blood,";
+	VS "all in all,";
+	VS "have with-in";
+bar
+
+//7
+1: 4c+e; 8ae; 4gd; 8fd;
+2: 4c+c; 8; 4bd; 8ad;
+
+	VS "Save me by Thy";
+	VS "Al-ways just the";
+	VS "That I'm whol-ly";
+bar
+
+//8
+1: 4.d~a slur; 4dg; 8r;
+2: 4.c+d slur; 4bg; 8r;
+
+	VS "word.";
+	VS "same.";
+	VS "Thine.";
+dblbar
+
+//9
+CHORUS
+1: 4bg; 8gd; 4.bg;
+2: 4d+g; 8bg; 4.d+g;
+
+	VS "Cleanse Thou me,";
+bar
+
+//10
+1: 4c+g; 8ge; 4.c+g;
+2: 4e+c; 8c+c; 4.e+c;
+
+	VS "cleanse Thou me";
+bar
+
+//11
+1: 4bg; 8c+a; 4d+b; 8bg;
+2: 4d+g; 8; 4; 8; 
+
+	VS "In the heal-ing";
+bar
+//12
+1: 4.bg slur; af;
+2: 4.d+d tie; 4.;
+
+	VS "flood,";
+bar
+
+//13
+1: 4bg; 8; 4; 8c+g;
+2: 4d+g; 8; 4; 8c+g;
+
+	VS "Wash my soul from";
+bar
+
+//14
+1: 4d+g; 8; 4.;
+2: 4bg; 8; 4.;
+
+	VS "ev-'ry stain";
+bar
+
+//15
+1: 4c+e; 8ae; 4gd; 8fd;
+2: 4c+c; 8; 4bd; 8ad;
+
+	VS "In Thy pre-cious";
+bar
+
+//16
+1: 4.d~a slur; 4dg; 8r;
+2: 4.c+d slur; 4bg; 8r;
+
+	VS "blood.";
+endbar

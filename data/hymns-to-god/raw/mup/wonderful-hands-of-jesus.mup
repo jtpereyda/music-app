@@ -1,0 +1,434 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 131
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 11/06/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Wonderful Hands Of Jesus" ""
+   title (2)""
+   title (11)"" "\f(TI)He lifted up his hands and blessed them. - Lk. 24:50" ""
+   title (11) "G - 2 - SOL" "" ""
+   title (13) "F. G. B." "" "James R. Murray, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==== LETTER ==========
+score
+	label=""
+	packexp=0.0
+	packfact=0.8
+	pad=0
+	vscheme=2f
+	staffsep=20
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale=.750
+	lyricssize=13
+	lyricsdist=1
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+//==========================
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+
+  //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=85";
+
+//=========================
+//Verse 1
+
+//1
+1 1: 4.s; 4; 8d;
+1 2: 4.s; 4s; 8d;
+2: 4.s; 4; 8gb;
+
+	VS1 "<1. >-1|O";
+	VS1 "<2. >-1|Such";
+	VS1 "<3. >-1|Those";
+	VS1 "<4. >-1|O";
+bar
+
+//2
+1: 8.gb; 16da; 8dg; eg; df; ce;
+2: 8.gd+; 16gc+; 8gb; 8cc+; ; cg;
+
+	VS1 "won-der-ful, won-der-ful";
+	VS1 "won-der-ful, won-der-ful";
+	VS1 "won-der-ful, won-der-ful";
+	VS1 "won-der-ful, won-der-ful";
+bar
+
+//3
+1: 8s; 4.b-d tie; 4;
+2 1: 8s; 4.g tie; 4;
+2 2: 8s; 4.g tie; 4;
+
+	VS1 "hands,";
+	VS1 "hands,";
+	VS1 "hands,";
+ 	VS1 "hands,";
+invisbar
+
+1: 8dg; 4.s; 4;
+2: 8gb; 4.s; 4;
+
+	VS1 "So";
+	VS1 "So";
+	VS1 "They";
+	VS1 "Nail-";
+bar
+
+//4
+1: 4df; 8dg; 4fa; 8fa#;
+2: 4da; 8db; 4dc+; 8dc#+;
+
+	VS1 "pure, and white, and";
+	VS1 "match-less was their";
+	VS1 "guard our rug-ged";
+	VS1 "peirced on Cal-va-";
+bar
+
+//5
+1: 8s; 4.gb tie; 4;
+2: 8s; 4.gd+ tie; 4;
+
+	VS1 "clean;";
+	VS1 "grace,";
+	VS1 "way;";
+	VS1 "ry!";
+invisbar
+
+1 1: 8d; 4.s; 4;
+1 2: 8d; 4.s; 4;
+2: 8gb; 4.s; 4;
+
+	VS1 "Tho'";
+	VS1 "They";
+	VS1 "They";
+	VS1 "Yet,";
+bar
+
+//6
+1: 4gb; 8; 4gc+; 8gb;
+2: 4gd+; 8; 4ge+; 8gd+;
+
+	VS1 "midst the vil-est";
+	VS1 "laid a crown and";
+	VS1 "turn the dark-est";
+	VS1 "while the blood-drops";
+bar
+
+//7
+1: 8s; 4eb; 8ea; 4ce;
+2: 8s; 4cc+; 8; 4cg;
+
+	VS1 "haunts of men";
+	VS1 "scep-ter down";
+	VS1 "hours of night";
+	VS1 "trick-led down,";
+invisbar
+
+1: 8eg; 4.s; 4;
+2: 8c#a; 4.s; 4;
+
+	VS1 "Those";
+	VS1 "To";
+	VS1 "In-";
+	VS1 "They";
+bar
+
+//8
+1 1: 4df; 8g; 4fb; 8da;
+1 2: 4s; 8g; 4s; 8;
+2: 4da; 8db; 4dd+; 8dc+;
+
+	VS1 "sa-cred hands were";
+	VS1 "lift our fall-en";
+	VS1 "to the bright-est";
+	VS1 "pled for you and";
+bar
+
+//9
+1: 8s; 4.dg tie; 4;
+2: 8s; 4.gb tie; 4;
+
+	VS1 "seen.";
+	VS1 "race.";
+	VS1 "day.";
+	VS1 "me;";
+invisbar
+
+1: 8gb; 4.s; 4;
+2: 8gd+; 4.s; 4;
+
+	VS1 "Up-";
+	VS1 "They";
+	VS1 "They";
+	VS1 "O";
+bar
+
+//10
+1: 4fa; 8; 4gb; 8;
+2: 4dd+; 8; 4; 8;
+
+	VS1 "on the head of";
+	VS1 "touched the poor ac-";
+	VS1 "heal the mourn-er's";
+	VS1 "wound-ed hands, thy";
+bar
+
+//11
+1: 8s; 4fd+; 8fc+; 4fa;
+2: 8s; 4da; 8dd+; 4;
+
+	VS1 "child-hood sweet";
+	VS1 "curs-ed ones,";
+	VS1 "brok-en heart,";
+	VS1 "deeds of love";
+invisbar
+
+1: 8fa; 4.s; 4;
+2: 8dd+; 4.s; 4;
+
+	VS1 "They";
+	VS1 "And";
+	VS1 "They";
+	VS1 "For";
+bar
+
+//12
+1: 4gb; 8; 4ac+; 8gb;
+2: 4gd+; 8; 4fd+; 8gd+;
+
+	VS1 "left a fond ca-";
+	VS1 "made the lep-ers";
+	VS1 "raise each droop-ing";
+	VS1 "us shall nev-er";
+bar
+
+//13
+1: 8s; 4.fa tie; 4;
+2: 8s; 4.dd+ tie; 4;
+
+	VS1 "ress;";
+	VS1 "whole;";
+	VS1 "head,";
+	VS1 "cease;";
+
+invisbar
+
+1 1: 8d; 4.s; 4;
+1 2: 8d; 4.s; 4;
+2 1: 8d; 4.s; 4;
+2 2: 8d; 4.s; 4;
+
+	VS1 "The";
+	VS1 "They";
+	VS1 "And";
+	VS1 "Up-";
+bar
+
+//14
+1: 4gb; 8; 4gc+; 8gb;
+2: 4gd+; 8; 4ge+; 8gd+;
+
+	VS1 "cup of bless-ings,";
+	VS1 "sent new life thro'";
+	VS1 "e-ven from their";
+	VS1 "lift-ed still their";
+bar
+
+//15
+1: 8s; 4eb; 8ea; 4ce;
+2: 8s; 4cc+; 8; 4cg;
+
+	VS1 "run-ning o'er,";
+	VS1 "pal-sied limbs,";
+	VS1 "si-lent sleep";
+	VS1 "bless-ings fall";
+invisbar
+
+1: 8eg; 4.s; 4;
+2: 8c#a; 4.s; 4;
+
+	VS1 "To";
+	VS1 "And";
+	VS1 "A-";
+	VS1 "And";
+bar
+
+//16
+1 1: 4df; 8g; 4fb; 8da;
+1 2: 4s; 8g; 4.s;
+2: 4da; 8; 4dd+; 8dc+;
+
+	VS1 "ag-ed lips would";
+	VS1 "cleansed the guilt-y";
+	VS1 "wake the pre-cious";
+	VS1 "fill our hearts with";
+bar
+
+//17
+1: 8s; 4.dg tie; 4;
+2: 8s; 4.gb tie; 4;
+
+	VS1 "press.";
+	VS1 "soul.";
+	VS1 "dead.";
+	VS1 "peace.";
+dblbar
+
+//18
+CHORUS
+1 1: 8.da; 16df; 8d; 4; 8r;
+1 2: 4s; 8d; 4; 8s;
+2: 8.df; 16da; 8dc+; 4; 8r;
+
+	VS1 [c]"Won-der-ful hands,";
+bar
+
+//19
+1: 8s; 8.dd+; 16db; 8dg; 4;
+2: 8s; 8.gb; 16gd+; 8gb; 4;
+
+	VS1 [c]"won-der-ful hands";
+invisbar
+
+1: 8dg; 4.s; 4;
+2: 8gb; 4.s; 4;
+
+	VS1 [c]"Of";
+bar
+
+//20
+1: 4da; 8; 4fd+; 8;
+2: 4fd+; 8; 4dd+; 8;
+
+	VS1 "Christ our Right-eous-";
+bar
+
+//21
+1: 4.gb tie; 4; 8r;
+2: 4.gd+ tie; 4; 8r;
+
+	VS1 "ness,";
+bar
+
+//22
+1 1: 8.fc+; 16fa; 8df; 4d; 8r;
+1 2: 4.s; 4d; 8s;
+2: 8.dd+; 16; 8; 4; 8r;
+
+	VS1 "Won-der-ful hands,";
+bar
+
+//23
+1 1: 8s; 8.ge+; 16gd+; 8gb; 4g;
+1 2: 8s; 4.s; 4g;
+2 1: 8s; 8.gc+; 16gb; 8g; 4b-d+;
+2 2: 8s; 4s; 8g; 4s;
+
+	VS1 "won-der-ful hands,";
+invisbar
+
+1 1: 8a; 4.s; 4;
+1 2: 8g; 4.s; 4;
+2: 8ce+; 4.s; 4;
+
+	VS1 "Still";
+bar
+
+//24
+1: 4gb; 8dg; 4fb; 8da;
+2: 4dd+; 8db; 4dd+; 8dc+;
+
+	VS1 "reach-ing out to";
+bar
+
+//25
+1: 4.dg tie; 4; 8s;
+2: 4.gb tie; 4; 8s;
+
+	VS1 "bless.";
+endbar
+
+
+
+
+
+
+
+
+

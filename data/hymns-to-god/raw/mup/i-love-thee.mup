@@ -1,0 +1,180 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 103
+//		
+// Transcribed by: Ted Gatza, Jr. 02/07/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I Love Thee" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:Even\ as\ the\ Father\ hat\|h\ loved\ me,\ I\ also\ have loved\ you:\ abide\ ye\ i\|n\ my\ love.\ -\ Jn.\ 15:9" ""   
+   title (13) "J. H. Kurzenknabe" "" "J. H. Kurzenknabe, 1896"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8ec; 2.s; 8;
+2: 8aa-; 2.s; 8;
+
+			VERSE "<1. >-1|I";
+			VERSE "<2. >-1|I";
+			VERSE "<3. >-1|I";
+			
+bar
+//2
+1: 4c+e; 8bd; ac; 4c+e; 8bd; ac;
+2: 4aa-; 8;; 4; 8;;
+
+			VERSE "love Thee, my Sav-iour, Thy";
+			VERSE "love Thee, my Sav-iour, and";
+			VERSE "love Thee, my Sav-iour, thy";
+bar
+//3
+1: 4af; 8ge; fd; 4.ec; 8;
+2: 4ad; 8;; 4.aa-; 8;
+
+			VERSE "name I a-dore, Thy";
+			VERSE "Thy pre-cious love As-";
+			VERSE "love is di-vine; In";
+bar
+//4
+1: 4ae; 8; be; 4c+e; 8;;
+2 1: 4ac; 8; ge; 4a; 8;;
+2 2: 4s; 8;; 4a; 8;;
+
+			VERSE "kind lov-ing fa-vor I";
+			VERSE "sures me of par-don and";
+			VERSE "love Thou wilt keep me, for-";
+bar
+//5
+1: 4d+e; 8c+e; ae; 4.be; 8d+e;
+2 1:4bg; 8a; ac; 4.ge; 8bg;
+
+			VERSE "ev-er im-plore; My";
+			VERSE "peace from a-bove; My";
+			VERSE "ev-er-more thine; No";
+bar
+//6
+1: 4c+e; 8e+e; c+a; 4bg; 8c+g; bg;
+2 1: 4a; 8c+a; e+a; 4e+e; 8; d+e;
+2 2: 4a; 8s;; 4; 8;;
+
+			VERSE "weak hands with-out Thee no";
+			VERSE "sins Thou for-giv-est, Thy";
+			VERSE "e-vil shall harm me, for";
+bar
+//7
+1: 4af; 8bf; af; 4.gen; 8;
+2: 4c+f; 8;; 4.c+c; 8;
+
+			VERSE "good work can do, I";
+			VERSE "mer-cy is free To";
+			VERSE "Thou art my guide, Thy";
+bar
+//8
+1 1: 4f; 8af; d+f; 4c+e; 8be; ae;
+1 2: 4f; 8s;; 4; 8;;
+2 1: 4ad; 8;; 4a; 8bg; c+f;
+2 2: 4s; 8;; 4a; 8s;;
+
+			VERSE "pray Thee then, ev-er their";
+			VERSE "all that be-lieve and will";
+			VERSE "hand now shall turn ev-'ry";
+bar
+//9
+1: 4bf; 8ae; ge; 4.ae; 8s;
+2: 4d+d; 8c+e; 8d+e; 4.c+a; 8s;
+
+			VERSE "strength to re-new.";
+			VERSE "come un-to Thee.";
+			VERSE "per-il a-side.";
+dblbar
+//10
+1: 8c+a; 2.s; 8s;
+2: 8e+a; 2.s; 8s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"I";
+bar
+//11
+1: 4e+a; 8c+a; ae; 4c+e; 8be; 8ae;
+2 1: 4c+a; 8e+a; c+a; 4a; 8ac; 8;
+2 2: 4s; 8;; 4a; 8s;;
+
+			VERSE "love Thee! I Love Thee! Thy";
+bar
+//12
+1: 4af; 8ge; fd; 4.ec; 8;
+2: 4ad; 8;; 4.aa-; 8;
+
+			VERSE "name is so sweet; And";
+bar
+//13
+1: 4ae; 8be; c+e; 4d+f; 8c+f; bf;
+2 1: 4ac; 8ge; 8a; 4ad; 8;;
+2 2: 4s; 8; a; 4s; 8;;
+
+			VERSE "Thy love no mor-tal nor";
+bar
+//14
+1: 4ae; 8be; ge; 4.ae; 8s;
+2: 4c+e; 8d+e;; 4.c+a; 8s;
+
+			VERSE "tongue can re-peat.";
+endbar

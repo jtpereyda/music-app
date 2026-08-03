@@ -1,0 +1,219 @@
+// Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	His Praise
+//		By Charlie D Tillman
+//		Published on Both Round and Shaped Notes
+//		Charlie Tillman Song Book Co.
+//		Tillman’s Crossing, Lee Street Atlanta Ga.
+//		Copyright 1916
+//		Hymn No. 19
+		
+		
+// Transcribed by: Ted Gatza, Jr. 08/17/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Just When I Need Him" ""
+   title (2) ""
+   title (11)"" "\f(TI)And my God shall supply every need of yours according" ""
+   title (11)"" "\f(TI)to his riches in glory in Christ Jesus. - Phil. 4:19" ""
+
+   title (11)"B\(flat) - 4 - MI" "" ""  
+   title (13) "Florence Jones Hadley" "" "Samuel W. Beazley, 1914"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=b&
+
+
+staff 2
+	key=b&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1: 2.s; 8b-d bm; ce ebm;
+2: 2.s; 4b-f;
+	
+	VERSE 2.s; 4; "<1. >-1|I";
+	VERSE 2.s; 4; "<2. >-1|I";
+	VERSE 2.s; 4; "<3. >-1|With";
+bar
+//2
+1: 4.df; 8c#g; 4df; db;
+2: 4.b-b; 8; 4; b-f;
+
+	VERSE "have a Friend who";
+	VERSE "have a Friend who";
+	VERSE "such a Friend to";
+bar
+//3
+1: 4.eb; 8ea; 4.; 8fe+;
+2: 4.cf; 8; 4.fc+; 8fa;
+
+	VERSE "walks with me By";
+	VERSE "will not fail Tho'";
+	VERSE "help me on, I'm";
+bar
+//4
+1: 4.fe+; 8eg; 4ea; 4fe+;
+2: 4.fa; 8fb; 4fc+; fa;
+
+	VERSE "wa-ters still or";
+	VERSE "sin may tempt and";
+	VERSE "nev-er, nev-er";
+bar
+//5
+1: 4.ge+; 8fd+; 4; 8b-d bm; ce ebm;
+2: 4.b-b; 8; 4; b-f;
+
+	VERSE 4.; 8; 4; 4; "storm-y sea; Se-";
+	VERSE 4.; 8; 4; 4; "doubts as-sail; What";
+	VERSE 4.; 8; 4; 4; "left a-lone For";
+bar
+//6
+1: 4.df; 8c#g; 4df; fd+;
+2: 4.b-b; 8; 4; 4;
+
+	VERSE "rene I go\(emdash) why";
+	VERSE "mat-ter, then, what";
+	VERSE "all the way He";
+bar
+//7
+1: 4.f#d+; 8fc+; 2gb;
+2: 4.da; 8dd+; 2gd+;
+
+	VERSE "need I fear?";
+	VERSE "foes ap-pear?";
+	VERSE "gives me chear,";
+bar
+//8
+1: 4enc+; 8eg; 8ed+; 4fc+; ff+;
+2: 4cb; 8;; 8fa bm; gb ebm; ac+ bm; bd+ ebm;
+ital (13) above 1: 3 "rit.";
+
+
+	VERSE 4; 8; 8; 4; 4; "Just when I need Him";
+	VERSE 4; 8; 8; 4; 4; "Just when I need Him";
+	VERSE 4; 8; 8; 4; 4; "Just when I need Him";
+bar
+//9
+1 1: 4fa; eng; f slur; e+;
+1 2: 4s;; 2f;
+2 1: 4c+; cb; 2fa;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE 4; 4; 2; "He is near.";
+	VERSE 4; 4; 2; "He is near.";
+	VERSE 4; 4; 2; "He is near.";
+dblbar
+//10
+1: 4fd+; 8.ec+; 16db; 4df; 8.b-d; 16;
+2: 4b-b; 8.b-f; 16; 4b-b; 8.b-f; 16;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "Mo-ment by mo-ment He";
+bar
+//11
+1 1: 4b-f; b-en; 4.a-e&; 8f;
+1 2: 4s;; 4.s; 8e;
+2: 4df; d&g; 4.cf; 8fa;
+
+	VERSE "dear-er grows, Each";
+bar
+//12
+1: 4fe+; 8.fd+; 16ec+; 4eg; ea;
+2: 4fa; 8.; 16; 4fc+;;
+
+	VERSE "step of the way His";
+bar
+//13
+1: 4dg; df; 4.fd+; 8fd+;
+2 1: 4b-b;; 4.; 8b;
+2 2: 4s;; 4.; 8b;
+
+	VERSE "love He shows, He";
+bar
+//14
+1: 8.f#d+; 16; 8.; 16fc+; 4.gb; 8;
+2: 8.ac+; 16; 8.dc+; 16dd+; 4.gd+; 8;
+ital (13) above 1: 1 "f";
+
+	VERSE "puts with-in my heart a";
+bar
+//15
+1: 4end&+; eb; 2fdn+;
+2: 4g&b; gd&+; 2fb;
+ital (13) above 1: 1 "mp";
+ital (13) above 1: 2 "espress.";
+
+	VERSE "song of cheer,";
+bar
+//16
+1: 4af+; 8.eg; 16ea; 4fd+; enb;
+2: 4fc+; 8.; 16; 4fb; 4gc+;
+ital (13) above 1: 1 "f";
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+	VERSE "Just when I need Him";
+bar
+//17
+1: 4fb; fc+; fb; s;
+2: 4fd+; fe+; 4b-d+; s;
+ital (13) above 1: 1 "rit.";
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+
+	VERSE "He is near.";
+endbar

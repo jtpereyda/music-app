@@ -1,0 +1,244 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Victorious Life Hymns
+//		Edited by: Charles M. Alexander
+//		and the Council of the Victorious
+//		Life Testimony
+//		Publisher: The Sunday School Times Company
+//		Philadelphia
+//		Copyright: 1919
+//		Hymn No. 260
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 04/07/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "O The Deep, Deep Love Of Jesus" ""
+   title (2)""
+   title (11) "G minor - 4 - DO" "\s(17)\f(TI)\:apprehend\ with\ all\ the\ saints\ w\|hat\ is\ the\ breadth\ and\ length\ and height\ and\ depth,\ and\ to\ know\ \|the\ love\ of\ Christ\ -\ Eph.\ 3:17-18" ""   
+   title (13) "S. Trevor Francis,1875" "" "Thomas J. Williams, 1890"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=80";
+
+// Enter music
+
+//1
+1 1: 4gd; {8g bm; a; b ebm;}3; 4af#; g;
+1 2: 4s; d; s; g;
+2 1: 4bg; {8b bm; a; g ebm;}3; 8.d+ bm; 16c+ ebm; 4be;
+2 2: 4s; g; d; s;
+
+	VERSE 4; 4; 4; 4; "<1. >-1|O the deep, deep";
+	VERSE 4; 4; 4; 4; "<2. >-1|O the deep, deep";
+	VERSE 4; 4; 4; 4; "<3. >-1|O the deep, deep";
+bar
+//2
+1 1: 4af#; {8af bm; bg; c+a ebm;}3; 8.bg bm; 16af ebm; 4g;
+1 2: 4s;;; g;
+2 1: 4d+d;; 8.d+ bm; 16c+ ebm; 4bg;
+2 2: 4s;; g; s;
+
+	VERSE 4; 4; 4; 4; "love of Je-sus,";
+	VERSE 4; 4; 4; 4; "love of Je-sus,";
+	VERSE 4; 4; 4; 4; "love of Je-sus,";
+bar
+//3
+1 1: 4d+f; {8c+ bm; d+; e+ ebm;}3; 8.d+f bm; 16c+f# ebm; 4bg;
+1 2: 4s; f; s;;
+2 1: 4b; {8a bm; b; c+ ebm;}3; 8.b bm; 16c+ ebm; 4d+g;
+2 2: 4b; f; 8.b bm; 16a ebm; 4s;
+
+	VERSE 4; 4; 4; 4; "Vast, un-meas-ured,";
+	VERSE 4; 4; 4; 4; "Spread His praise from";
+	VERSE 4; 4; 4; 4; "Love of ev-'ry";
+bar
+//4
+1 1: 8.c+ bm; 16b ebm; 4af#; 2g;
+1 2: 4g; s; 2g;
+2 1: 8.e+ bm; 16d+ ebm; 8.c+ bm; 16 d+ ebm; 2bg;
+2 2: 4c; d; 2s;
+
+	VERSE 4; 4; 2; "bound-less, free;";
+	VERSE 4; 4; 2; "shore to shore;";
+	VERSE 4; 4; 2; "love the best:";
+bar
+//5
+1 1: 4gd; {8g bm; a; b ebm;}3; 4af#; g;
+1 2: 4s; d; s; g;
+2 1: 4bg; {8b bm; a; g ebm;}3; 8.d+ bm; 16c+ ebm; 4be;
+2 2: 4s; g; d; s;
+
+	VERSE 4; 4; 4; 4; "Roll-ing as a";
+	VERSE 4; 4; 4; 4; "How He lov-eth,";
+	VERSE 4; 4; 4; 4; "'Tis an o-cean";
+bar
+//6
+1 1: 4af#; {8af bm; bg; c+a ebm;}3; 8.bg bm; 16af ebm; 4g;
+1 2: 4s;;; g;
+2 1: 4d+d;; 8.d+ bm; 16c+ ebm; 4bg;
+2 2: 4s;; g; s;
+
+	VERSE 4; 4; 4; 4; "might-y o-cean";
+	VERSE 4; 4; 4; 4; "ev-er lov-eth,";
+	VERSE 4; 4; 4; 4; "vast of bless-ing";
+bar
+//7
+1 1: 4d+f; {8c+ bm; d+; e+ ebm;}3; 8.d+f bm; 16c+f# ebm; 4bg;
+1 2: 4s; f; s;;
+2 1: 4b; {8a bm; b; c+ ebm;}3; 8.b bm; 16c+ ebm; 4d+g;
+2 2: 4b; f; 8.b bm; 16a ebm; 4s;
+
+	VERSE 4; 4; 4; 4; "In its full-ness";
+	VERSE 4; 4; 4; 4; "Chang-eth nev-er,";
+	VERSE 4; 4; 4; 4; "'Tis a ha-ven";
+bar
+//8
+1 1: 8.c+ bm; 16b ebm; 4af#; 2g;
+1 2: 4g; s; 2g;
+2 1: 8.e+ bm; 16d+ ebm; 8.c+ bm; 16 d+ ebm; 2bg;
+2 2: 4c; d; 2s;
+
+	VERSE 4; 4; 2; "o-ver me.";
+	VERSE 4; 4; 2; "nev-er more;";
+	VERSE 4; 4; 2; "sweet of rest.";
+bar
+//9
+1 1: 4d+b; {8b bm; c+; d+ ebm;}3; 4c+a;;
+1 2: 4s; b; s;;
+2 1: 4f+b; f+; f+f; e+f#;
+2 2: 4s; {8d+ bm; c+; b ebm;}3; 4s;;
+
+	VERSE 4; 4; 4; 4; "Un-der-neath me,";
+	VERSE 4; 4; 4; 4; "How He watch-es";
+	VERSE 4; 4; 4; 4; "O the deep, deep";
+bar
+//10
+1 1: 4bg; {8g bm; a; b ebm;}3; 4af#;;
+1 2: 4s; g; s;;
+2 1: 4d+g; d+; d+d; c+d;
+2 2: 4s; {8b bm; a; g ebm;}3; 4s;;
+
+	VERSE 4; 4; 4; 4; "all a-round me,";
+	VERSE 4; 4; 4; 4; "o'er His loved ones,";
+	VERSE 4; 4; 4; 4; "love of Je-sus,";
+bar
+//11
+1 1: 4g; {8g bm; a; b ebm;}3; 4c+a;;
+1 2: 4g; {8g bm; a; b ebm;}3; 4s;;
+2 1: 4g; {8g bm; a; b ebm;}3; 4c+f; e+f;
+2 2: 4g; {8g bm; a; b ebm;}3; 4s;;
+
+	VERSE 4; 4; 4; 4; "Is the cur-rent";
+	VERSE 4; 4; 4; 4; "Died to call them";
+	VERSE 4; 4; 4; 4; "'Tis a Heav'n of";
+bar
+//12
+1 1: 4b; {8c+a bm; bg; c+a ebm;}3; 2d+b;
+1 2: 4b; 4s; 2s;
+2: 4d+g; f+f; 2f+b;
+mussym (9) above 1: 3 "ferm";
+mussym below 2: 3 "uferm";
+
+	VERSE 4; 4; 2; "of Thy love;";
+	VERSE 4; 4; 2; "all His own;";
+	VERSE 4; 4; 2; "heav'ns to me;";
+bar
+//13
+1 1: 4g; {8g bm; a; b ebm;}3; 4af#; g;
+1 2: 4g; s;; g;
+2 1: 4d+b; d+; 8.d+ bm; 16c+ ebm; 4be;
+2 2: 4s; {8b bm; a; g ebm;}3; 4d; s;
+
+	VERSE 4; 4; 4; 4; "Lead-ing on-ward,";
+	VERSE 4; 4; 4; 4; "How for them He";
+	VERSE 4; 4; 4; 4; "And it lifts me";
+bar
+//14
+//2
+1 1: 4af#; {8af bm; bg; c+a ebm;}3; 8.bg bm; 16af ebm; 4g;
+1 2: 4s;;; g;
+2 1: 4d+d;; 8.d+ bm; 16c+ ebm; 4bg;
+2 2: 4s;; g; s;
+
+	VERSE 4; 4; 4; 4; "lead-ing home-ward,";
+	VERSE 4; 4; 4; 4; "in-ter-ced-eth,";
+	VERSE 4; 4; 4; 4; "up to glo-ry";
+bar
+//15
+1 1: 4d+f; {8c+ bm; d+; e+ ebm;}3; 8.d+f bm; 16c+f# ebm; 4bg;
+1 2: 4s; f; s;;
+2 1: 4b; {8a bm; b; c+ ebm;}3; 8.b bm; 16c+ ebm; 4d+g;
+2 2: 4b; f; 8.b bm; 16a ebm; 4s;
+
+	VERSE 4; 4; 4; 4; "To my glo-rious";
+	VERSE 4; 4; 4; 4; "Watch-eth o'er them";
+	VERSE 4; 4; 4; 4; "For it lifts me";
+bar
+//16
+1 1: 8.c+ bm; 16b ebm; 4af#; 2g;
+1 2: 4g; s; 2g;
+2 1: 8.e+ bm; 16d+ ebm; 8.c+ bm; 16 d+ ebm; 2bg;
+2 2: 4c; d; 2s;
+
+	VERSE 4; 4; 2; "rest a-bove.";
+	VERSE 4; 4; 2; "from the throne.";
+	VERSE 4; 4; 2; "up to Thee.";
+endbar

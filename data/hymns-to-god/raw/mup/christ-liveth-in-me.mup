@@ -1,0 +1,343 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is thought to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Northfield Hymnal No. 2
+//		Editos:    W. R. Moody
+//		Publisher: Fleming H. Revell Company
+//			   New York: 158 Fifth Avenue
+//			   Chicago: 125 N. Wabash Avenue
+//			   Toronto London Edinburgh
+// 		Copyright: 1919
+//		Hymn No.:  265
+
+// Transcribed by: Ted Gatza, Jr. 07/16/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/4
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Christ Liveth In Me" ""
+   title (2) ""
+   title (11) "" "\f(TI)Nevertheless I live; yet not I, but Christ liveth in me. - Gal. 2:20" ""
+   title (11) "" 
+   title (11)" G - 2 - SOL" "" ""
+   title (13) "Daniel W. Whittle" "" "James McGranahan, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Voices
+	define SA 1: @
+	define S 1 1: @
+	define A 1 2: @
+	define TB 2: @
+	define T 2 1: @
+	define B 2 2: @
+	
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VSS lyrics between 1&2 using 1: @
+         define VSA lyrics between 1&2 using 1 2: @
+         define VST lyrics between 1&2 using 2 1:@
+         define VSB lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=160";
+
+//=========================
+
+// Verse
+
+//1
+SA 2.s; 2; 4b-d;
+TB 2.s; 2; 4g-g;
+ 
+
+	VS "<1. >-1|Once";
+	VS "<2. >-1|As";
+	VS "<3. >-1|With";
+bar
+
+//2
+SA 2db; 4ca; 2b-g; 4dg;
+TB 2g-g; 4df; 2eg; 4b-g;
+
+	VS "far from God and";
+	VS "rays of light from";
+	VS "long-ing all my";
+bar
+
+//3a
+SA 4eg slur; df; ce; 2b-d; 4s;
+TB 2cg; 4; 2g-g; 4s;
+
+	VS "dead in sin,";
+	VS "yon-der sun,";
+	VS "heart is filled,";
+invisbar
+
+//3b
+SA 2s; 4; 2; 4b-d;
+TB 2s; 4; 2; 4g-g;
+
+	VS "No";
+	VS "The";
+	VS "That";
+bar
+
+//4
+SA 2ce; 4eg; 2ec+; 4ge+;
+TB 2cg; 4; 2; 4cc+;
+
+	VS "light my heart could";
+	VS "flow'rs of earth set";
+	VS "like Him I may";
+bar
+
+//5a
+SA 2.gd+ tie; 2; 4s;
+TB 2.gb tie; 2; 4s;
+
+	VS "see;";
+	VS "free,";
+	VS "be,";
+invisbar
+
+//5b
+SA 2.s; 2; 4dc+;
+TB 2.s; 2; 4fa;
+
+	VS "But";
+	VS "So";
+	VS "As";
+bar
+
+//6
+S 2db; 4; [up]b slur; a; b;
+A 2s; 4; 2d; 8d bm; fn ebm;
+T 2g; 4; g slur; a; g;
+B 2g; 4; g slur; f; g;
+
+	VS "in God's Word the";
+	VS "life and light and";
+	VS "on the won-drous";
+bar
+
+//7a
+SA 2fnd+; 4ec+; 2eg; 4s;
+TB 2cg; 4; 2cc+; 4s;
+
+	VS "light I found,";
+	VS "love came forth";
+	VS "tho't I dwell";
+invisbar
+
+//7b
+SA 2s; 4; 2; 4ea;
+TB 2s; 4; 2; 4cc+;
+
+	VS "Now";
+	VS "From";
+	VS "That";
+bar
+
+//8
+S 2.db; 4ca; d; ca;
+A 2.s; 4; c; s;
+TB 2.dg; 4df; ; ;
+	VS "Christ liv-eth in";
+	VS "Christ liv-ing in";
+	VS "Christ liv-eth in";
+bar
+
+//9
+SA 2.b-g tie; 2.;
+TB 2.g-g tie; 2.;
+
+	VS "me.";
+	VS "me.";
+	VS "me.";
+dblbar
+newscore
+
+CHORUS
+//10
+SA 2.gb; 4bd+; ac+; gb;
+TB mr;
+
+	VS "Christ liv-eth in";
+bar
+
+//11
+SA 2.fa tie; 2.;
+TB 2.dd+; 4; ; dc+;
+
+	VS "me";
+	VST "Christ liv-eth in";
+bar
+
+//12
+SA 2.eg; 4gb; fa; eg;
+TB 1.eb;
+
+	VS "Christ liv-eth in";
+	VST "me,";
+bar
+
+//13
+SA 1.d#f;
+TB 2.b-b; 4; ; b-a;
+
+	VS "me,";
+	VST "Christ liv-eth in";
+bar
+//14
+SA 2.ce; 4eg; ec+; ge+;
+TB 2cg; 4; 4cc+; ; ;
+
+	VS "Oh! what a sal-";
+	VST "me, Oh! <> <> <>";
+bar
+
+//15a
+SA 2gd+; 4db; 2dg; 4s;
+T 2gb; 4g; 2b-g; 4s;
+B 2s; 4g; 2s; 4s;
+
+	VS "va-tion this,";
+invisbar
+//15b
+SA 2s; 4; 2; 4ea;
+TB 2s; 4; 2; 4cg;
+
+	VS "That";
+bar
+
+//16
+S 2.db; 4ca; d; ca;
+A 2.s; 4; c; s;
+T 2.dg; 4df; ; d;
+B 2.s; 4s; ; d;
+
+	VS "Christ liv-eth in";
+bar
+
+//17
+SA 2.b-g tie; 2.;
+TB 2.g-d tie; 2.;
+
+	VS "me.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+

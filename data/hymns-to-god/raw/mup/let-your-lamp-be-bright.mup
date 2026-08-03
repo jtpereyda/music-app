@@ -1,0 +1,235 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Augsburh Songs
+//		For Sunday School and
+//		Other Seervices
+//		Philadelphia:
+//		Lutheran Publication Society
+//		Copyright: 1885
+//		Hymn No.: 27
+
+// Transcribed by: Ted Gatza, Jr. 09/10/2010; Rev. 02/27/2014
+// HymnsToGod.org
+
+// ************************************
+
+top
+   title bold (19) "" "Let Your Lamps Be Bright" ""
+   title (2)""
+   title (11) "F - 3 - SOL" "\s(17)\f(TI)\:Blessed\ are\ those\ serv\|ants,\ whom\ the\ lord\ when he\ cometh\ shall\ find\|\ watching:\ -\ Lk.\ 12:37"""
+   title (13) "Philip Doddridge, 1702-1751" " " "St. Alban's Tune Book"	
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	staffpad=2
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 2s; 4c+f;
+2: 2s; 4af;
+
+
+			lyrics 1: 2s; 4; "<1. >-1|Ye";
+			lyrics 1: 2s; 4; "<2. >-1|Let";
+			lyrics 1: 2s; 4; "<3. >-1|Watch!";
+			lyrics 1: 2s; 4; "<4. >-1|Oh,";
+
+bar
+//2
+1: 2af; 4af;
+2: 2c+f; 4c+f;
+
+			lyrics 1: "serv-ants";
+			lyrics 1: "all your";
+			lyrics 1: "tis your";
+			lyrics 1: "hap-py";
+bar
+//3
+1 1: 4g slur; 4f; 4ge;
+1 2: 4e slur; 4f; 4s;
+2 1: 4b slur; 4a; 4bc;
+2 2: 2c; 4s;
+			
+			lyrics 1: "of the";
+			lyrics 1: "lamps be";
+			lyrics 1: "Lord's com-";
+			lyrics 1: "serv-ant";
+bar
+//4
+1 1: 2.f~;
+1 2: 2.f~;
+2: 2.a~f~;
+
+			lyrics 1: "Lord,";
+			lyrics 1: "bright,";
+			lyrics 1: "mand";
+			lyrics 1: "he";
+bar
+//5
+1 1: 2f; 8a bm; 8b ebm;
+1 2: 2f; 4f;
+2 1: 2af; 8c+bm; 8b ebm;
+2 2: 2s; 4f;
+
+			lyrics 1: 2s; 4; "Each";
+			lyrics 1: 2s; 4; "And";
+			lyrics 1: 2s; 4; "And";
+			lyrics 1: 2s; 4; "In";
+bar
+//6
+1: 2c+f; 4af;
+2: 2af; 4c+f;
+
+			lyrics 1: "in his";
+			lyrics 1: "trim the";
+			lyrics 1: "while we";
+			lyrics 1: "such a";
+bar
+newscore
+//7
+1: 2d+g; 4bg;
+2: 2bb-; 4d+b-;
+
+			lyrics 1: "of-fice";
+			lyrics 1: "gold-en";
+			lyrics 1: "speak He's";
+			lyrics 1: "pos-ture";
+bar
+//8
+1: 2.g~e~;
+2: 2.c+~c~;
+
+			lyrics 1: "wait,";
+			lyrics 1: "flame,";
+			lyrics 1: "near;";
+			lyrics 1: "found!";
+bar
+//9
+1: 2ge; 4s;
+2: 2c+c; 4s;
+
+			
+dblbar
+//10
+1: 2s; 4ge;
+2: 2s; 4c+c;
+
+			lyrics 1: "Ob-";
+			lyrics 1: "Gird";
+			lyrics 1: "Mark";
+			lyrics 1: "He";
+bar
+//11
+1: 2af; 4af;
+2: 2c+f; 4c+f;
+
+			lyrics 1: "serv-ant";
+			lyrics 1: "up your";
+			lyrics 1: "the first";
+			lyrics 1: "shall his";
+bar
+//12
+1 1: 4b slur; 4a; 4be;
+1 2: 2e; 4s;
+2: 2c+g; 4bg;
+
+			lyrics 1: "of His";
+			lyrics 1: "loins, as";
+			lyrics 1: "sig-nal";
+			lyrics 1: "Lord with";
+bar
+//13
+1: 2c+f; 4c#+g;
+2 1: 2a; 4e+a;
+2 2: 2a; 4s;
+
+			lyrics 1: "heav'n-ly";
+			lyrics 1: "in His";
+			lyrics 1: "of His";
+			lyrics 1: "rap-ture";
+bar
+newscore
+//14
+1: 2d+f; 8bg bm; 8gd ebm;
+2 1: 2d+b; 8d+ bm; 8b ebm;
+2 2: 2s; 4b-;
+
+			lyrics 1: 2; 4; "word And";
+			lyrics 1: 2; 4; "sight, For";
+			lyrics 1: 2; 4; "hand, And";
+			lyrics 1: 2; 4; "see, And";
+bar
+//15
+1: 2fc; 4fc;
+2: 2ac; 4ac;
+
+			lyrics 1: "watch-ful";
+			lyrics 1: "aw-ful";
+			lyrics 1: "read-y";
+			lyrics 1: "be with";
+bar
+//16
+1: 4ec slur; 4ae; 4ge;
+2 1: 4g slur; 4c+; 4bc;
+2 2: 2c; 4s;
+
+			lyrics 1: "at His";
+			lyrics 1: "is His";
+			lyrics 1: "all ap-";
+			lyrics 1: "hon-or";
+bar
+//17
+1 1: 2.f tie;
+1 2: 2.f tie;
+2: 2.a~f~;
+
+			lyrics 1: "gate.";
+			lyrics 1: "name.";
+			lyrics 1: "pear.";
+			lyrics 1: "crown'd.";
+bar
+//18
+1 1: 2f; 4s;
+1 2: 2f; 4s;
+2: 2af; 4s;
+
+endbar
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

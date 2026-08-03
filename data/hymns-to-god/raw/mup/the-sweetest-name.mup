@@ -1,0 +1,245 @@
+// Coded with Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Song Treasury
+//		A collection of Songs and Music, especially adapted for
+//		Sunday-Schools, Praise and Prayer Meetings,
+//		Church Choirs and the Home Circle.
+//		Also Containing Selections for
+//		Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		Together with a
+//		Complete Course of Elementary Instruction of all the art of
+//		Reading music at sight
+//		By J. H. Kursenknabe,
+//		Publishers: Crider & Brother
+//		York, PA
+//		Copyright 1879
+//		Hymn No.: 62
+//		
+// Transcribed by: Ted Gatza, Jr. 09/29/2011; Rev. 04/16/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Sweetest Name" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:for\ neither\ is\ there\ any\ other\|\ name\ under\ heaven,\ that\ is given\ among\ men,\ wherein\ w\|e\ must\ be\ saved.\ -\ Acts\ 4:12" ""   
+   title (13) "Words By John Newton" "" "S. B. Ellenberger"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8fd; 4.s; 4s;
+2: 8bb-; 4.s; 4s;
+
+
+			VERSE "<1. >-1|How";
+			VERSE "<2. >-1|It";
+			VERSE "<3. >-1|Dear";
+			VERSE "<4. >-1|I";
+
+bar
+//2
+1: 4fd; 8fd; 4fd; 8bd;
+2: 4bb-; 8bb-; 4bb-; 8fb;
+
+			VERSE "sweet the name of";
+			VERSE "makes the wound-ed";
+			VERSE "name, the rock on";
+			VERSE "would thy bound-less";
+bar
+//3
+1: 4be; 8ge; 4fd; 8fd;
+2: 4ge; 8be; 4bb-; 8bb-;
+
+			VERSE "Je-sus sounds, In";
+			VERSE "spir-it whole, And";
+			VERSE "which I build, My";
+			VERSE "love pro-claim, With";
+bar
+//4	
+1 1: 4bd; 8d+f; 8d+ bm; 8c+ ebm; 8bf;
+1 2: 4s; 8s; 4f; 8s;
+2: 4fb-; 8bb-; 4bb-; 8bd;
+
+			VERSE 4; 8; 4; 8; "a be-live-er's";
+			VERSE 4; 8; 4; 8; "calms the trou-bled";
+			VERSE 4; 8; 4; 8; "shield and hid-ing";
+			VERSE 4; 8; 4; 8; "ev-'ry fleet-ing";
+bar
+//5
+1: 4.c+f tie; 4c+f; 8c+f;
+2: 4.af tie; 4af; 8af;
+
+			VERSE "ear; It";
+			VERSE "breast; 'Tis";
+			VERSE "place; My";
+			VERSE "breath; So";
+bar
+//6
+1: 4d+f; 8bd; 4fd; 8fd;
+2: 4bb-; 8fb-; 4bb-; 8bb-;
+
+			VERSE "soothes his sor-rows,";
+			VERSE "man-na to the";
+			VERSE "nev-er fail-ing";
+			VERSE "shall the mu-sic";
+bar
+//7
+1: 4ge; 8be; 4be; 8ge;
+2: 4be; 8ge; 4ge; 8be;
+
+			VERSE "heals his wounds, And";
+			VERSE "hun-gry soul, And";
+			VERSE "treas-ure filled, With";
+			VERSE "of thy name, Re-";
+bar
+//8
+1 1: 4f; 8f; 8s; 8s; 8s;
+1 2: 4e; 8e; 4s; 8s;
+2 1: 4af; 8af; 8s; 8s; 8s;
+2 2: 4s; 8s; 4s; 8s;
+
+			VERSE 4; 8; 4s; 8s; "drives a-";
+			VERSE 4; 8; 4s; 8s; "to the";
+			VERSE 4; 8; 4s; 8s; "bound-less";
+			VERSE 4; 8; 4s; 8s; "fresh my";
+invisbar
+newscore
+
+1 1: 4s; 8s; 8a bm; 8g ebm; 8ae;
+1 2: 4s; 8s; 4e; 8s;
+2 1: 4s; 8s; 8c+ bm; 8b ebm; 8c+f;
+2 2: 4s; 8s; 4f; 8s;
+
+			VERSE 4s; 8s; 4; 8; "way his";
+			VERSE 4s; 8s; 4; 8; "wea-ry";
+			VERSE 4s; 8s; 4; 8; "stores of";
+			VERSE 4s; 8s; 4; 8; "soul in";
+
+bar
+//9
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			VERSE "fear.";
+			VERSE "rest.";
+			VERSE "grace.";
+			VERSE "death.";
+dblbar
+//10
+1: 8d+f; 4.s; 4s;
+2: 8bb-; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Thy";
+bar
+//11
+1: 4d+f; 8bd; 8bd; 8ad; 8bd;
+2: 4bb-; 8fb-; 8fb-; 8fb-; 8fb-;
+
+			VERSE [c]"name bless'd Je-sus, is";
+bar
+//12
+1 1: 8c+ bm; 8b ebm; 8ge; 4.fd;
+1 2: 4e; 8s; 4.s;
+2: 4ge; 8be; 4.bb-;
+
+			VERSE 4; 8; 4.; [c]"all my plea;";
+bar
+newscore
+
+//13
+1: 8bd; 8bd; 8bd; 8bd bm; 8af ebm; 8bf;
+2 1: 8fb-; 8fb-; 8fb-; 4f; 8fd;
+2 2: 8s; 8s; 8s; 8b- bm; 8c ebm; 8s;
+
+			VERSE 8; 8; 8; 4; 8; "Dear-est and sweet-est";
+bar
+//14
+1: 4c+f; 8d+f; 4c+f; 8c+f;
+2: 4af; 8bf; 4af; 8af;
+
+			VERSE "name to me; Thou";
+bar
+//15
+1: 4d+f; 8bd; 8bd bm; 8af ebm; 8bf;
+2 1: 4bb-; 8fb-; 4f; 8bd;
+2 2: 4s; 8s; 8b- bm; 8c ebm; 8s;
+
+			VERSE 4; 8; 4; 8; "art my shield and";
+bar
+//16
+1 1: 8c+ bm; 8b ebm; 8ge; 4.fd;
+1 2: 4e; 8s; 4.s;
+2: 4ge; 8be; 4.bb-;
+
+			VERSE 4; 8; 4.; "hid-ing place,";
+bar
+//17
+1 1: 8fd; 8fd; 8fd; 4.g;
+1 2: 8s; 8s; 8s; 4e slur; 8g;
+2 1: 8bb-; 8bb-; 8bb-; 4b slur; 8e+;
+2 2: 8s; 8s; 8s; 4.e;
+ital (13) above 1: 1 "rit.";
+
+			VERSE 8; 8; 8; 4.; "I am re-deemed";
+bar
+//18
+1 1: 4.bf; 8a bm; 8g ebm; 8a;
+1 2: 4.s; 4f; 8e;
+2 1: 4.d+f; 8c+ bm; 8b ebm; 8c+f;
+2 2: 4.s; 4f; 8s;
+
+			VERSE 4.; 4; 8; "by thy rich";
+bar
+//19
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			VERSE "grace.";
+endbar

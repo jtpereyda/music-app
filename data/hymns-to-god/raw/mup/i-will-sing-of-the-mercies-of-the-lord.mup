@@ -1,0 +1,221 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Glad Hallelujahs,Replete With Sacred Songs
+//		John R. Sweney and William J. Kirkpatrick,
+//		Philadelphia:
+//		thos. T. Tasker, Sr., Publisher
+//		No. 921 Arch Street
+//		Copyright: 1887
+//		Hymn No.: 125
+//		
+// Transcribed by: Ted Gatza, Jr. 03/12/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I Will Sing Of The Mercies Of The Lord" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:I\ will\ sing\ of\ the\ lovingkindness\ \|of\ Jehovah\ for\ ever:\ With\ my\ mouth will\ I\ make\ known\ thy\ faithful\|ness\ to\ all\ generations.\ -\ Ps.\ 89:1" ""   
+   title (13) "C. W. Ray" "" "Wm. J. Kirkpatrick, 1887"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1: 8.eb-; 16fb-; 2.s;
+2: 8.ge; 16ae; 2.s;
+
+			VERSE "<1. >-1|I will";
+			VERSE "<2. >-1|I will";
+			VERSE "<3. >-1|I will";
+			VERSE "<4. >-1|I will";
+bar
+//2
+1: 4ge; 8.; 16; 8.; 16fd; 8.ge; 16af;
+2: 4be; 8.; 16; 8.; 16bb-; 8.be; 16be;
+
+			VERSE "sing of the mer-cies of the";
+			VERSE "sing of the mer-cies of the";
+			VERSE "sing of the mer-cies of the";
+			VERSE "sing of the mer-cies of the";
+bar
+//3
+1: 2.bg; 8.; 16;
+2: 2.e+e; 8.; 16;
+
+			VERSE "Lord, All his";
+			VERSE "Lord, Praise for-";
+			VERSE "Lord, Who in";
+			VERSE "Lord, Whose com-";
+bar
+//4
+1: 8.c+a; 16; 8.; 16; 8.c+a; 16be; 8.ad; 16ge;
+2: 8.e+a; 16; 8.; 16; 8.e+a; 16bg; 8.bf; 16be;
+
+			VERSE "good-ness I will has-ten to pro-";
+			VERSE "ev-er shall my heart and tongue em-";
+			VERSE "pit-y doth each stain of guilt re-";
+			VERSE "pas-sion will my ev-'ry want sup-";
+bar
+//5
+1: 2.fd; 8.bd; 16af;
+2: 2.bb-; 8.fb-; 16bb-;
+
+			VERSE "claim; I will";
+			VERSE "ploy; Ho-ly";
+			VERSE "move; Ev-er-";
+			VERSE "ply; He will";
+bar
+//6
+1: 4ge; 8.; 16; 8.; 16fd; 8.ge; 16af;
+2 1: 4be; 8.; 16; 8.; 16b; 8.bg; 16bf;
+2 2: 4s; 8.; 16; 8.; 16a; 8.s; 16;
+
+			VERSE "sing of the prom-ise of his";
+			VERSE "an-gels shall join with one ac-";
+			VERSE "more be his pre-cious name a-";
+			VERSE "ev-er each need-ful grace af-";
+bar
+//7
+1: 2.bg; 4;
+2: 2.e+e; 4be;
+
+			VERSE "word, And";
+			VERSE "cord The";
+			VERSE "dored For";
+			VERSE "ford, And";
+bar
+//8
+1: 4.d+a; 8c+a; 4bg; db-;
+2: 4.bb-; 8; 4; ab-;
+
+			VERSE "tell his pow'r and";
+			VERSE "song of grate-ful";
+			VERSE "his for-giv-ing";
+			VERSE "bring me safe on";
+bar
+//9
+1: 2.eb-; 4s;
+2: 2.ge; 4s;
+
+			VERSE "fame.";
+			VERSE "joy.";
+			VERSE "love.";
+			VERSE "high.";
+dblbar
+//10
+1: 8.bg; 16; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "I will";
+bar
+//11
+1: 2c+a tie; 8.; 16d+b; 8.e+c+; 16c+a;
+2: 4r; 8.e+a; 16; 8.; 16; 8.; 16;
+
+			VERSE "sing_ his praise for-";
+			VERSE 4s; 8.; 16; 8.; 16; 8.; 16; "I will sing his praise, Will";
+bar
+//12
+1: 2bg tie; 8.; 16s; 8.s; 16s;
+2: 8.e+e; 16; 8.; 16; 8.; 16s; 8.s; 16s;
+
+			VERSE "ev-";
+			VERSE 8.; 16; 8.; 16; 8.; 16s; 8.s; 16s; "sing his praise for-ev-";
+invisbar
+newscore
+
+1: 2s; 8.s; 16af; 8.ge; 16bg;
+2: 8.s; 16; 8.; 16; 8.; 16be; 8.be; 16;
+
+			VERSE 2s; 8.s; 16; 8.; 16; "er, While I";
+			VERSE 8.s; 16s; 8.s; 16s; 8.s; 16; 8.; 16; "er, While I";
+
+bar
+//13
+1: 2af tie; 8.; 16ge; 8.fd; 16f#d;
+2: 8.d+b-; 16; 8.; 16; 4; 8.bb-; 16;
+
+			VERSE "tread_ this vale of";
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; "tread this vale of tears; While I";
+bar
+//14
+1: 2.ge; 8.bg; 16;
+2: 8.be; 16; 8.; 16; 4; r;
+
+			VERSE "tears; Naught from";
+			VERSE 8.; 16; 8.; 16; 4; 4s; "tread this vale of tears;";
+bar
+//15
+1: 2c+a tie; 8.; 16d+b; 8.e+c+; 16c+a;
+2: 4r; 8.e+a; 16; 8.; 16; 8.; 16;
+
+			VERSE "him_ my soul shall";
+			VERSE 4s; 8.; 16; 8.; 16; 8.; 16;"Naught from him my soul can";
+bar
+//16
+1: 2bg tie; 8.; 16af; 8.ge; 16bg;
+2: 8.e+e; 16be; 8.; 16; 8.; 16; 8.; 16;
+
+			VERSE "sev-er, He hath";
+			VERSE 8.; 16; 8.; 16; 8.; 16; 8.; 16; "sev-er, naught can sev-er, He hath";
+bar
+//17
+1: 4af; bg; c+a; d+a;
+2: 4bb-;; d+bb-; bb-;
+
+			VERSE "ban-ished all my";
+bar
+//17
+1: 2.e+g; 4s;
+2: 2.be; 4s;
+
+			VERSE "fears.";
+endbar

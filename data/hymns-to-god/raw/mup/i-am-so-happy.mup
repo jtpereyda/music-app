@@ -1,0 +1,215 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Gems
+//		A new and choice collection of
+//		popular hymns and music, for
+//		Gospel meetings, camp meetins, 
+//		family devotions, Christian
+//		associations, Etc.
+//		Author: W. Warren Bentley
+//		Publisher: G. D. Russell,
+//		125 Tremont Street, Boston, Mass.
+//		Copyright: 1879
+//		Hymn No.: 16
+//		
+// Transcribed by: Ted Gatza, Jr. 11/04/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "I Am So Happy" ""
+   title (2)""
+   title (11) "G - 2 - MI" "\s(17)\f(TI)\:God\ is\ love.\ -\ 1\ John\ 4:8 \(space)" ""   
+   title (13) "John H. Kurzenknabe" "" "John H. Kurzenknabe"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+//1
+1: 8bg;;; 4gd; 8;
+2: 8d+g;;; 4bg; 8;
+
+	VERSE "<1. >-1|I am so hap-py,";
+	VERSE "<2. >-1|I am so hap-py,";
+	VERSE "<3. >-1|I am so hap-py,";
+	VERSE "<4. >-1|I am so hap-py,";
+
+bar
+//2
+1: 8ec;; ge; 4ec; 8db-;
+2: 8gc;;; 4gg-; 8;
+
+	VERSE "Je-sus doth love me,";
+	VERSE "Je-sus has prom-ised";
+	VERSE "Je-sus will ev-er";
+	VERSE "Je-sus will meet me,";
+bar
+//3
+1: 8gd; bd; d+g; 4d+b; 8bg;
+2: 8bg; d+g; bg; 4bg; 8d+g;
+
+	VERSE "When a poor sin-ner,";
+	VERSE "Ev-er to guard me";
+	VERSE "Help me to love him";
+	VERSE "With the re-deemed and";
+bar
+//4
+1 1: 8g; af; bg; 4.af;
+1 2: 8g; s;; 4.;
+2: 8d+b; d+a; d+g; 4.d+d;
+
+	VERSE "wea-ry, and sad,";
+	VERSE "with lov-ing care,";
+	VERSE "if I but try;";
+	VERSE "ju-bi-lant throng;";
+bar
+//5
+1: 8bg;;; 4gd; 8;
+2: 8d+g;;; 4bg; 8;
+
+	VERSE "He came to par-don";
+	VERSE "He did not chide, when,";
+	VERSE "Help me to con-quer";
+	VERSE "An-gel-ic choirs with";
+bar
+//6
+1: 8ec;; ge; 4ec; 8db-;
+2: 8gc;;; 4gg-; 8;
+
+	VERSE "ev'-ry trans-gres-sion;";
+	VERSE "con-trite in spir-it,";
+	VERSE "eve-ry temp-ta-tion,";
+	VERSE "heav-en-ly mu-sic,";
+bar
+//7
+1 1: 8gd; bd; d+g; 4; 8g;
+1 2: 8s;;; 4; 8g;
+2 1: 8bg; g; bg; 4; 8d+b-;
+2 2: 8s; g; s; 4; 8;
+
+	VERSE "Je-sus doth love me,";
+	VERSE "Ask-ing for grace, he";
+	VERSE "Give me a crown of";
+	VERSE "Shout the tri-um-phant,";
+bar
+//8
+1 1: 8fd; gd; af; 4.g;
+1 2: 8s;;; 4.g;
+2: 8c+d; bd; c+d; 4.bg-;
+
+	VERSE "I am so glad.";
+	VERSE "met me in prayer.";
+	VERSE "glo-ry on high.";
+	VERSE "glo-ri-fied song.";
+dblbar
+//9
+1 1: 4.e+ tie; 8; d+; c+g;
+1 2: 8g;;; 4; 8s;
+2: 8c+c;;; 4; 8c+e;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "Sing-ing and";
+	VERSE 8; 8; 8; 4; 8; "Sing-ing and pray-ing,";
+bar
+//10
+1 1: 4.d+ tie; 8; c+; bg;
+1 2: 8g;;; 4; 8s;
+2: 8bg;;; 4; 8d+g;
+
+	VERSE "pray-ing, my";
+	VERSE 8; 8; 8; 4; 8; "sing-ing and pray-ing,";
+bar
+//11
+1 1: 4.c+ tie; 8; b; af;
+1 2: 8f;;; 4; 8s;
+2: 8ad;;; 4bd; 8c+d;
+
+	VERSE "soul_ is so";
+	VERSE 8; 8; 8; 4; 8; "My soul is hap-py";
+bar
+//12
+1: 8d+g; bg; gd; 4.;
+2: 8bg; d+g; bg; 4.;
+
+	VERSE "hap-py and free;";
+bar
+//13
+1 1: 4.e+ tie; 8; d+; c+g;
+1 2: 8g;;; 4; 8s;
+2: 8c+c;;; 4; 8c+e;
+
+	VERSE "Shout_ hal-le-";
+	VERSE 8; 8; 8; 4; 8; "Shout hal-le-lu-jah,";
+bar
+//14
+1 1: 4.d+ tie; 8; c+; bg;
+1 2: 8g;;; 4; 8s;
+2: 8bg;;; 4; 8d+g;
+
+	VERSE "lu-jah, For";
+	VERSE 8; 8; 8; 4; 8; "shout hal-le-lu-jah,";
+bar
+//15
+1: 8c+f; bf; af; 4fd; 8af;
+2: 8d+d; ad;; 4c+d; 8;
+
+	VERSE "Je-sus loves e-ven";
+bar
+//16
+1 1: 4.g tie; 4.;
+1 2: 4.g tie; 4.;
+2: 4.bg- tie; 4.;
+
+	VERSE "me.";
+endbar

@@ -1,0 +1,214 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Science Hymnal
+//		Published by the Christian 
+//		Science Publishing  Society
+//		Boston, Massachusetts
+//		Copyright 1898, 1903, 1905, 1909
+//		Hymn no. 28
+
+// Transcribed by: Ted Gatza, Jr. 09/16/2010; rev. 08/20/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Take Up Thy Cross" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - DO" "\s(17)\f(TI)\:And\ he\ that\ doth\ not\ ta\|ke\ his\ cross\ and\ follow after\ me,\ is\ not\ worth\|y\ of\ me.\ -\ Matt.\ 10:38"""
+   title (13) "C. W. Everest" " " "J. Hatton"	
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=2/2	
+	key= 3&
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2eb-; 4ge; 4ad;
+2: 2ge; 4be; 4bf;
+
+			lyrics 1: "<1. >-1|\"Take up thy";
+			lyrics 1: "<2. >-1|Take up thy";
+			lyrics 1: "<3. >-1|Take up thy";
+bar
+//2
+1: 2be; 4c+e slur; 4d+a;
+2 1: 2bg; 4a<b>; 4b;
+2 2: 2s; 4a<f>; 4f;
+
+			
+			lyrics 1: "cross,\" the";
+			lyrics 1: "cross, nor";
+			lyrics 1: "cross, then,";
+bar
+//3
+1: 2e+g; 4d+f slur; 4c+e;
+2 1: 2be; 4b slur; 4an;
+2 2: 2s; 2f;
+
+			lyrics 1: "Sav-iour";
+			lyrics 1: "heed the";
+			lyrics 1: "in his";
+bar
+//4
+1: 1bd;
+2: 1bb-;
+
+			lyrics 1: "said,";
+			lyrics 1: "shame;";
+			lyrics 1: "strength,";
+bar
+//5
+1: 2be; 4be; 4be;
+2: 2ge; 4ge; 4bg;
+
+			lyrics 1: "If thou wouldst";
+			lyrics 1: "Nor let thy";
+			lyrics 1: "And calm-ly";
+bar
+//6
+1: 2c+e; 2be;
+2 1: 2a; 2bg;
+2 2: 2a; 2s;
+
+			lyrics 1: "my dis-";
+			lyrics 1: "fool-ish";
+			lyrics 1: "ev-'ry";
+bar
+//7
+1 1: 2a; 2ge;
+1 2: 4e slur; 4d; 2s;
+2 1: 4c+ slur; 4b; 2be;
+2 2: 2f; 2s;
+
+			lyrics 1: "ci-ple";
+			lyrics 1: "pride re-";
+			lyrics 1: "dan-ger";
+bar
+//8
+1: 1fd;
+2: 1bb-;
+
+			lyrics 1: "be;";
+			lyrics 1: "bel;";
+			lyrics 1: "brave;";
+dblbar
+//9
+1: 2ge; 4ge; 4fd;
+2: 2be; 4be; 4ab-;
+
+			lyrics 1: "De-ny thy-";
+			lyrics 1: "Thy Lord for";
+			lyrics 1: "'Twill guide thee";
+bar
+//10
+1 1: 4e slur; 4g; 4b slur; 4e+;
+1 2: 2e; 2e;
+2 1: 4g slur; 4b; 2bg;
+2 2: 2e; 2s;
+
+			lyrics 1: "self, the";
+			lyrics 1: "thee the";
+			lyrics 1: "to a";
+bar
+//11
+1 1: 4c+ slur; 4b; 4ad slur; 4ge;
+1 2: 2e; 2s;
+2 1: 4a slur; 4b; 2b;
+2 2: 4a slur; 4g; 4f slur; 4e;
+
+			lyrics 1: "world for-";
+			lyrics 1: "cross en-";
+			lyrics 1: "bet-ter";
+bar
+newscore
+//12
+1: 2ge slur; 2fd;
+2: 1bb-;
+
+			lyrics 1: "sake,";
+			lyrics 1: "dured,";
+			lyrics 1: "home,";
+dblbar
+//13
+1: 2be; 4c+e; 4d+a;
+2 1: 4b slur; 4e+; 4e+a; 4bf;
+2 2: 2g; 2s;
+
+			lyrics 1: "And hum-bly";
+			lyrics 1: "He con-quered";
+			lyrics 1: "And lead to";
+bar
+//14
+1 1: 2.e+; 4af;
+1 2: 4.g; 8f; 4e; 4s;
+2 1: 2.b; 4c+a;
+2 2: 4.e; 8f; 4g; 4s;
+phrase below 1: 1 til 2;
+phrase below 2: 1 til 2;
+			
+			lyrics 1: "fol-low";
+			lyrics 1: "sin, and";
+			lyrics 1: "vic-t'ry";
+bar
+//15
+1: 2ge; 2fd;
+2 1: 2b; 4b slur; 4a;
+2 2: 2b; 2b-;
+
+			lyrics 1: "af-ter";
+			lyrics 1: "death, and";
+			lyrics 1: "o'er the";
+bar
+//16
+1 1: 1e;
+1 2: 1e;
+2: 1ge;
+
+			lyrics 1: "me.";
+			lyrics 1: "hell.";
+			lyrics 1: "grave.";
+endbar
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"
+

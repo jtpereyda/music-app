@@ -1,0 +1,233 @@
+
+
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Zion's Glad Songs
+//		For all Christian gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street, Chicago, Ill.
+//		Copyright 1908
+//		Hymn no. 95
+		
+		
+// Transcribed by: Ted Gatza, Jr. 03/16/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "I'll Be With Thee" ""
+   title (2)""
+   title (11) "G - 3 - MI" "\s(17)\f(TI)\:We\ trust\ in\ the\ liv\|ing\ God,\ who\ is\ the Saviour\ of\ all\ \^men.\ -\ 1\ Tim.\ 4:10" ""   
+   title (13) "Kate Ulmer" "" "M. L. McPhail, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=85";
+
+// Enter music
+
+//1
+1: 2s; 8bd; c+d;
+2 1: 2s; 8g; a;
+2 2: 2s; 8g;;
+
+	VERSE 2s; 8; 8; "<1. >-1|O 'tis";
+	VERSE 2s; 8; 8; "<2. >-1|Tho' the";
+	VERSE 2s; 8; 8; "<3. >-1|Oft thro'";
+	VERSE 2s; 8; 8; "<4. >-1|I will";
+bar
+//2
+1: 4.d+g; 8gd; c+d; bd;
+2 1: 4.bg; 8; af; g;
+2 2: 4.s; 8;; g;
+
+	VERSE "sweet to serve the";
+	VERSE "task He gives seems";
+	VERSE "un-known paths He";
+	VERSE "serve Him glad-ly,";
+bar
+//3
+1 1: 4bd; ad; 8d; 8ac;
+1 2: 4s;; 8c; s;
+2: 4gd; fd; 8;;
+
+	VERSE "Mas-ter, Do-ing";
+	VERSE "heav-y, And my";
+	VERSE "leads me, There to";
+	VERSE "free-ly, While I";
+bar
+//4
+1 1: 4.gb-; 8; ac; d;
+1 2: 4.s; 8;; c;
+2: 4.ge; 8; fd;;
+
+	VERSE "as He bids each";
+	VERSE "pow'r to do but";
+	VERSE "do His bless-ed";
+	VERSE "wor-ship and a-";
+bar
+//5
+1: 2bd; 8; c+d;
+2 1: 2gg-; 8g; a;
+2 2: 2s; 8g;;
+
+	VERSE "day, For I";
+	VERSE "small; He with";
+	VERSE "will, But He";
+	VERSE "dore, Watch-ing,";
+bar
+//6
+1: 4.d+g; 8gd; c+d; bd;
+2 1: 4.bg; 8; af; g;
+2 2: 4.s; 8; ; g;
+
+	VERSE "hear His dear voice";
+	VERSE "strength di-vine doth";
+	VERSE "ev-er goes be-";
+	VERSE "pray-ing work-ing,";
+bar
+//7
+1: 4bd; ad; 8af; d+f;
+2: 4gd; fd; 8d+d;;
+
+	VERSE "say-ing, I'll be";
+	VERSE "help me, Ceas-ing";
+	VERSE "fore me, While He";
+	VERSE "wait-ing, For He";
+bar
+//8
+1 1: 4.c#+g; 8a; bg; c+g;
+1 2: 4.s; 8g; s;;
+2: 4.e+a; 8c#+a; d+a-; aa-;
+
+	VERSE "with thee all the";
+	VERSE "not His gra-cious";
+	VERSE "soft-ly whis-pers";
+	VERSE "way-eth ev-er";
+bar
+//9
+1: 4s; 2d+f;
+2: 4s; 2ad;
+
+	VERSE "way.";
+	VERSE "call.";
+	VERSE "still.";
+	VERSE "more.";
+dblbar
+//10
+1: 2s; 8d+f; c+f;
+2: 2s; 8d+d;;
+ital (13) above 1: 3 "Chorus";
+
+	VERSE "I'll be";
+bar
+//11
+1: 4.bg; 8gd; fd; gd;
+2: 4.d+g; 8d+b; c+a; bg;
+
+	VERSE "with thee, I'll be";
+bar
+//12
+1: 4bd; ad; 8; bd;
+2: 4gd; fd; 8; gd;
+
+	VERSE "with thee, I can";
+bar
+//13
+1 1: 4.c+d; 8d; ec; d;
+1 2: 4.s; 8c; s; c;
+2: 4.ad; 8fd;;;
+
+
+	VERSE "hear His sweet voice";
+bar
+//14
+1: 2bd; 8bd; c+d;
+2 1: 2gg-; 8g; a;
+2 2: 2s; 8g;;
+
+	VERSE "say; I'll be";
+bar
+//15
+1: 4. d+g; 8bd; c+d; bd;
+2: 4.bg; 8gg-; fa-; gb-;
+
+	VERSE "with thee, I'll be";
+bar
+//16
+1: 4ae; e+ge; 4r;
+2: 4ac; a#c#; 4r;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+	VERSE "with thee,";
+bar
+//17
+1: 8gd;; fd; gd; bg; ad;
+2: 8bd;; ad; bd; d+d; c+d;
+mussym (9) above 1: 2.5 "ferm";
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 2.5 "uferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE "I'll be with thee all the";
+bar
+//18
+1: 4s; 2gd;
+2: 4s; 2bgg-;
+
+	VERSE "way.";
+endbar

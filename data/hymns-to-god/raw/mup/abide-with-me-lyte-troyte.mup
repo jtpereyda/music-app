@@ -1,0 +1,195 @@
+// Mup vs.6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Emory Hymnal
+//		A Collection Of Sacred Songs and Music
+//		For use in Public Worship, Sunday-Schools,
+//		Social Meetings and Family Worship
+//		Edited by E. S. Lorenz
+//		Publisher: John J. Hood; 1018 Arch Street, Philadelphia
+//		Publisher Grape, Tayler & Supplee; 203 Camden St. Baltimore
+//		Copyright: 1887
+//		Hymn No.: 211
+//		
+// Transcribed by: Ted Gatza, Jr. 11/01/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Abide With Me" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - MI" "\s(17)\f(TI)\:I\ am\ with\ you\ always,\ even\ unto\ the\ end\ of\ the\ world.\ -\ Mat.\ 28:20 \(space)" ""   
+   title (13) "Henry Francis Lyte" "" "Arthur H. D. Troyte, 1857"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4n	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1: [ho 29]1ge; 
+2: [ho 29]1be;
+
+			VERSE "<1. >11|Abide<^ with me! fast fall the>";
+			VERSE "<2. >11|Swift<^ to its close ebbs out life's>";
+			VERSE "<3. >11|I<^ need thy presence every>";
+			VERSE "<4. >11|I<^ fear no foe, with thee at>";
+			VERSE "<5. >11|Hold<^ thou thy cross before my>";
+			
+bar pad 16
+//2
+1: 2ge; ae;
+2: 2be; ac;
+			VERSE "ev-en-";
+			VERSE "lit-tle";
+			VERSE "pass-ing";
+			VERSE "hand to";
+			VERSE "clos-ing";
+bar
+//3
+1: 1be;
+2: 1gg-;
+
+			VERSE "tide,";
+			VERSE "day;";
+			VERSE "hour;";
+			VERSE "bless;";
+			VERSE "eyes";
+
+bar
+newscore
+//4
+1: [ho 30]1ad;
+2: [ho 30]1bf;
+
+			VERSE "|The<^ darkness deepens Lord, with>";
+			VERSE "|Earth's<^ joys grow dim, its glories>";
+			VERSE "|What<^ but thy grace can foil the>";
+			VERSE "|Ills<^ have no weight, and tears no>";
+			VERSE "|Shine<^ through the gloom and point me>";
+bar pad 7.5
+//5
+1: 2ge; fd;
+2: 2be; bb-;
+
+			VERSE "me a-";
+			VERSE "Pass a-";
+			VERSE "tempt-er's";
+			VERSE "bit-ter-";
+			VERSE "to the";
+bar
+//6
+1: 1ge;
+2: 1be;
+
+			VERSE "bide!";
+			VERSE "way;";
+			VERSE "power?";
+			VERSE "ness;";
+			VERSE "skies,";
+bar
+//7
+1: [ho 29]1ge;
+2: [ho 29]1be;
+
+			VERSE "|When<^ other helpers fail, and>";
+			VERSE "|Change<^ and decay in all a->";
+			VERSE "|Who<^ like thyself, my guide and>";
+			VERSE "|Where<^ is death's sting? Where, grave, thy>";
+			VERSE "|Heaven's<^ morning breaks, and earths' vain>";
+bar 
+//8
+1: 2ge; fd;
+2: 2be; ab-;
+
+			VERSE "com-forts";
+			VERSE "round I";
+			VERSE "stay can";
+			VERSE "vic-to-";
+			VERSE "shad-ows";
+bar
+//9
+1 1: 1e;
+1 2: 1e;
+2: 1gc;
+
+			VERSE "flee,";
+			VERSE "see;";
+			VERSE "be?";
+			VERSE "ry?";
+			VERSE "flee;";
+bar
+//10
+1: [ho 30]1fc;
+2: [ho 30]1aa-;
+
+			VERSE "|Help<^ of the helpless, O a->";
+			VERSE "|O<^ thou, who changest not, a->";
+			VERSE "|Through<^ cloud and sunshine, Lord a->";
+			VERSE "|In<^ life, in death, O Lord, a->";
+			VERSE "|In<^ life, in death, O Lord, a->";
+bar pad 11
+//11
+1: 2eb-; db-;
+2: 2gb-; fb-;
+
+			VERSE "bide with";
+			VERSE "bide with";
+			VERSE "bide with";
+			VERSE "bide with";
+			VERSE "bide with";
+bar
+//12
+1: 1eb-;
+2: 1ge;
+
+			VERSE "me.";
+			VERSE "me.";
+			VERSE "me.";
+			VERSE "me.";
+			VERSE "me.";
+endbar
+

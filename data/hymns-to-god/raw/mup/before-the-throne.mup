@@ -1,0 +1,319 @@
+// !Mup 6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Our Sabbath Home Praise Book
+//	Editors: Jno. R. Sweney and WM. J. Kirkpatrick
+//	Pub. by John J. Hood, 
+//	1024 Arch St. Philadelphia
+//	Copyright: 1884
+//	Hymn No.: 124
+
+// Transcribed by:
+//	Ted Gatza, Jr. 07/22/10
+
+// Revisions:
+//	03/17/2023 - Correction to lyrics; format chages.
+
+// HymnsToGod.org
+
+// ************************************
+
+top
+	title bold (19) "" "Before The Throne" ""
+	title (2)""
+	title (11) "" "\f(TI)Thou wilt show me the path of life: In thy presence is fulness of joy;" "" 
+  	title (11) "" "\f(TI)In thy right hand there are pleasures for evermore. - Ps. 16:11" ""
+  	title (11) "D - 3 - MI" "" ""
+   	title (13) "Fanny J. Crosby" " " "John. R. Sweney, 1884"
+	
+bottom
+   	title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+staffs=2
+	time=3/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+
+//1
+1: 2s; 8fd bm; 8ge ebm;
+2: 2s; 4ad;
+
+
+			VS 2s; 4; "<1. >-1|Once";
+			VS 2s; 4; "<2. >-1|With-";
+			VS 2s; 4; "<3. >-1|Our";
+			VS 2s; 4; "<4. >-1|If";
+bar
+
+//2
+1: 8.af; 16af; 4d+f; 4fd;
+2 1: 8.d+d; 16d+d; 4ad; 8a bm; 8d+ ebm;
+2 2: 8.s; 16s; 4s; 4d;
+
+	VS "more we lift our";
+	VS "in the Rock, the";
+	VS "faith mounts up on";
+	VS "such our blest com-";
+bar
+
+//3
+1: 8.af; 16ge; 4ge; 8s; 8s;
+2: 8.d+a-; 16c+a-; 4c+a-; 4s;
+
+	VS 8.; 16; 4; 4s; "joy-ful eyes,";
+	VS 8.; 16; 4; 4s; "Rift-ed Rock,";
+	VS 8.; 16; 4; 4s; "ea-gle wings,";
+	VS 8.; 16; 4; 4s; "mun-ion here,";
+invisbar
+
+1: 8.s; 16s; 4s; 8ec bm; 8fd ebm;
+2: 8.s; 16s; 4s; 4aa-;
+
+	VS 8.s; 16s; 4s; 4; "Once";
+	VS 8.s; 16s; 4s; 4; "Re-";
+	VS 8.s; 16s; 4s; 4; "From";
+	VS 8.s; 16s; 4s; 4; "What";
+bar
+
+
+//4
+1: 4.ge; 8bg; 8af; 8ge;
+2: 4.aa-; 8aa-; 8ab-; 8ac;
+
+	VS "more our hearts we";
+	VS "fresh-ing dew we";
+	VS "dear-ly toil we";
+	VS "will our rap-ture";
+bar
+
+//5
+1: 2fd; 8s; 8s;
+2: 2ad; 4s;
+
+	VS 2; 4s; "raise";
+	VS 2; 4s; "share,";
+	VS 2; 4s; "rise;";
+	VS 2; 4s; "be";
+invisbar
+
+1: 2s; 8fd bm; 8ge ebm;
+2: 2s; 4ad;
+
+	VS 2s; 4; "To";
+	VS 2s; 4; "While";
+	VS 2s; 4; "A-";
+	VS 2s; 4; "When";
+bar
+
+
+//6
+1: 8.af; 16af; 4d+f; 4fd;
+2: 8.d+d; 16d+d; 4ad;4ad;
+
+	VS "him whose kind pro-";
+	VS "Je-sus comes our";
+	VS "bove the bright-est";
+	VS "hearts are joined and";
+bar
+
+//7
+1: 8.gd; 16bg; 4e+g; 4s;
+2: 8.bg; 16bg; 4bg; 4s;
+
+	VS "tect-ing hand";
+	VS "souls to bless,";
+	VS "hills we soar,";
+	VS "hands are clasped";
+invisbar
+
+1: 8.s; 16s; 4s; 4d+g;
+2: 8.s; 16s; 4s; 4bg;
+
+	VS "With";
+	VS "And";
+	VS "And";
+	VS "Be-";
+bar
+
+
+//8
+1: 4.c+g; 8c+g; 8bg; 8c+g;
+2 1: 4.a; 8a; 8aa-; 8aa-;
+2 2: 4.a; 8a; 8s; 8s;
+
+	VS "mer-cy crowns our";
+	VS "Je-sus an-swers";
+	VS "cleave the re-diant";
+	VS "yond the nar-row";
+bar
+
+//9
+1: 2d+f; 4s;
+2: 2ad; 4s;
+
+	VS "days.";
+	VS "prayer.";
+	VS "skies.";
+	VS "sea?";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 4d+f; 2s;
+2: 4ad; 2s;
+
+	VS "Oh,";
+bar
+
+//11
+1: 8.ec+; 16eg; 4ac+; gb;
+2 1: 8.a; 16ac+; 4ae+; ac+;
+2 2: 8.a; 16s; 4; ; 
+
+	VS "sa-cred flame of";
+bar
+
+//12
+1: 8.af; 16fd; 4af; 4s;
+2: 8.d+d; 16ad; 4d+d; 4s;
+
+	VS "Chris-tian love,";
+invisbar
+
+1: 8.s; 16s; 4s; 4d+f;
+2: 8.s; 16s; 4s; 4ad;
+
+	VS "That";
+bar
+
+
+//13
+1: 8.c+e; 16e+e; 4d+e; 4bd;
+2: 8.ae; 16c+e; 4be; 4g#e;
+
+	VS "melts our hearts in";
+bar
+
+//14
+1 1: 4.a slur; 8g; 8s; 8s;
+1 2: 2c; 8s; 8s;
+2 1: 2a; 4s;
+2 2: 2a; 4s;
+
+	VS 2; 4s; [c]"one,";
+invisbar
+
+1 1: 4.s; 8s; 8fd bm; 8ge ebm;
+1 2: 2s; 8s; 8s;
+2 1: 2s; 4ad;
+2 2: 2s; 4s;
+
+	VS 2s; 4; "While";
+bar
+
+
+//15
+1: 8.af; 16af; 4d+f; 4fd;
+2: 8.d+d; 16d+d; 4ad; 4ad;
+
+	VS "here be-fore the";
+bar
+
+//16
+1: 8.gd; 16bg; 4e+g; 4s;
+2: 8.bg; 16bg; 4bg; 4s;
+
+	VS "throne we feel";
+invisbar
+
+1: 8.s; 16s; 4s; 4d+g;
+2: 8.s; 16s; 4s; 4bg;
+
+	VS "Our";
+bar
+
+//17
+1: 4.c+g; 8c+g; 8bg; 8c+g;
+2 1: 4.a; 8a; 8aa-; 8aa-;
+2 2: 4.a; 8a; 8s; 8s;
+
+	VS "heav'n on earth be-";
+bar
+
+//18
+1: 2d+f; 4s;
+2: 2ad; 4s;
+
+	VS "gun!";
+endbar

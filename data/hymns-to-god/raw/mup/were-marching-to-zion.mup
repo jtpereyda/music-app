@@ -1,0 +1,424 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Hymns of Praise
+//	For the Church and Sunday School
+//	Compiled by F. G. Kingsbury
+//	Hop Publishing Company
+//	Chicago
+//	Copyright 1922
+//	Hymn No.107
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 11/01/2023
+
+// Revisions:
+	
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "We're Marching To Zion" ""
+   title (2)""
+   title (11)"" "\f(TI)And the ransomed of Jehovah shall return, and come with singing unto Zion;" ""
+   title (11)"" "\f(TI)and everlasting joy shall be upon their heads: they shall obtain gladness" ""
+   title (11)"" "\f(TI)and joy; and sorrow and sighing shall flee away. - Is. 51:11" ""
+
+   title (11) "G - 2 - DO" "" ""
+   title (13) "Isaac Watts, 1707" "" "Robert Lowry, 1867"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+   
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=110";
+
+//=========================
+
+//Verse 1
+
+//1
+1: 4s; 4.s; 8dg;
+2: 4s; 4.s; 8gb;
+
+	VS "<1. >-1|Come,";
+	VS "<2. >-1|Let";
+	VS "<3. >-1|The";
+	VS "<4. >-1|Then";
+bar
+
+//2
+1: 4.gb; dg;
+2: 4.gd+; g-b;
+
+	VS "we that";
+	VS "those re-";
+	VS "hill of";
+	VS "let our";
+bar
+
+//3
+1 1: 8d bm; e ebm; df; 4dg; 8s;
+1 2: 4d; 4.s; 8s;
+2: 4dc+; 8; 4gb; 8s;
+
+	VS21 "love the Lord,";
+	VS21 "fuse to sing,";
+	VS21 "Zi-on yeilds,";
+	VS21 "songs a-bound,";
+invisbar
+1: 4s; 4.s; 8fa;
+2: 4s; 4.s; 8dd+;
+
+	VS "And";
+	VS "Who";
+	VS "A";
+	VS "And";
+bar
+
+//4
+1: 4gb; 8dg; bd+ bm; ac+ ebm; gb;
+2: 4gd+; 8gb; 4gd+; 8;
+
+	VS21 "let our joys be";
+	VS21 "nev-er knew our";
+	VS21 "thou-sand sa-cred";
+	VS21 "ev-'ry tear be";
+bar
+
+//5
+1: 4.fa tie; 4fa; 8s;
+2: 4.dd+ tie; 4dd+; 8s;
+
+	VS "known,";
+	VS "God;";
+	VS "sweets;";
+	VS "dry;";
+invisbar
+1: 4.s; 4; 8fa;
+2: 4.s; 4; 8dd+;
+
+	VS "Join";
+	VS "But";
+	VS "Be-";
+	VS "We're";
+bar
+
+//6
+1: 4gb; 8; 4gc+; 8gb;
+2: 4gd+; 8; 4ge+; 8gd+;
+
+	VS "in a song with";
+	VS "chil-dren of the";
+	VS "fore we reach the";
+	VS "march-ing thro' Im-";
+bar
+
+//7
+1 1: 4ea; 8eg;4 e; 8s;
+1 2: 4s; 8; 4e; 8s;
+2: 4cc+; 8; 4cg; 8s;
+
+	VS "sweet ac-cord,";
+	VS "heavn-'ly King,";
+	VS "heavn-'ly fields,";
+	VS "man-uel's ground,";
+invisbar
+1: 4.s; 4; 8dg;
+2: 4.s; 4; 8g-b;
+
+	VS "Join";
+	VS "But";
+	VS "Be-";
+	VS "We're";
+bar
+
+//8
+1: 4fa; 8; 4gb; 8fa;
+2: 4dd+; 8; 4; 8da;
+
+	VS "in a song with";
+	VS "chil-dren of the";
+	VS "fore we reach the";
+	VS "march-ing thro' Im-";
+bar
+//9
+1 1: 4eg; 8c#e; 4d; 8s;
+1 2: 4.s; 4d; 8s;
+2: 4a-a; 8a-g; 4df; 8s;
+
+	VS21 "sweet ac-cord,";
+	VS21 "heavn'-ly King,";
+	VS21 "heavn-'ly fields,";
+	VS21 "man-uel's ground,";
+invisbar
+
+1 1: 4.s; 4; 8d;
+1 2: 4.s; 4; 8d;
+2: 4.s; 4; 8gb;
+
+	VS "And";
+	VS "May";
+	VS "Or";
+	VS "To";
+
+	BSV "And";
+//	BSV "May";
+//	BSV "Or";
+//	BSV "To";	
+bar
+
+//10
+1: 4.dg; fa;
+2: 4gb; 8; 4dd+; 8;
+
+	VS "thus sur-";
+	VS "speak their";
+	VS "walk the";
+	VS "fair-er";
+
+	BSV21 "thus sur-round the";
+//	BSV21 "speak their joys a-";
+//	BSV21 "walk the gold-en";
+//	BSV21 "fair-er worlds on";
+bar
+
+//11
+1: 4gb; 8bd+; 4ac+; 8s;
+2: 4gd+; 8; 4ce+; 8s;
+
+	VS "round the throne,";
+	VS "joys a-broad,";
+	VS "gold-en streets,";
+	VS "worlds on high,";
+
+	BSV21 "throne, And thus";
+//	BSV21 "broad, May speak";
+//	BSV21 "street, Or walk";
+//	BSV21 "high, To fair-";
+invisbar
+1: 4.s; 4; 8da;
+2: 4.s; 4; 8cc+;
+
+	VS "And";
+	VS "May";
+	VS "Or";
+	VS "To";
+
+	BSV21 "sur-";
+//	BSV21 "their";
+//	BSV21 "the";
+//	BSV21 "er";
+bar
+
+//12
+1: 4dg; 8; 4da; 8df;
+2: 4.db; dc+;
+
+	VS "thus sur-round the";
+	VS "speak their joys a-";
+	VS "walk the gold-en";
+	VS "fair-er worlds on";
+
+	BSV21 "round the";
+//	BSV21 "joys a-";
+//	BSV21 "gold-en";
+//	BSV21 "worlds on";
+bar
+
+//13
+1: 4.dg tie; 4; 8s;
+2: 4.g-b tie; 4; 8s;
+
+	VS "throne.";
+	VS "broad.";
+	VS "streets.";
+	VS "high.";
+
+	BSV21 "throne.";
+//	BSV21 "broad.";
+//	BSV21 "streets.";
+//	BSV21 "high.";
+dblbar
+
+//14
+CHORUS
+1: 4.s; 4; 8gb;
+2: 4.s; 4; 8gd+;
+
+	VS "<>";
+	VS "We're";
+	VS "We're";
+bar
+
+//15
+1: 4.bd+; 4gb; 8;
+2: 4gd+; 8; 4; 8;
+
+	VS 4.s; 4s; 8; "<>";
+	VS "march-ing to";
+	VS21 "march-ing on to";
+bar
+
+//16
+1: 4.gb; 4dg; 8r;
+2: 4.gd+; 4gb; 8r;
+
+	VS 4.s; 4s; 8; "<>";
+	VS "Zi-on,";
+	VS "Zi-on,";
+bar
+
+//17
+1: 8.gb; 16da; 8dg; 8.gd+; 16gc+; 8gb;
+2: 8.gd+; 16gc+; 8gb; 8.; 16ge+; 8gd+;
+
+	VS "Beau-ti-ful, beau-ti-ful";
+bar
+
+//18
+1: 4.fa; 4fd+; 8s;
+2: 4.dd+; 4da; 8s;
+
+	VS "Zi-on;";
+invisbar
+1: 4.s; 4; 8ac+;
+2: 4.s; 4s; 8dd+;
+
+	VS "We're";
+bar
+
+//19
+1: 4gb; 8; ; gc+; gd+;
+2: 4gd+; 8; ; gc+; gb;
+
+	VS "march-ing up-ward to";
+bar
+
+//20
+1 1: 4.s; 8e+ bm; d+ ebm; 8s;
+1 2: 4.ge+; 4g; 8s;
+2: 4cc+; 8; ; b-d+; s;
+
+	VS12 "Zi-on,";
+	VS21 "Zi-on, Zi-on,";
+invisbar
+
+1: 4.s; 4; 8ac+;
+2: 4.s; 4s; 8ce+;
+
+	VS "The";
+bar
+
+//21
+1: 8.gb; 16; 8; 16fa; 8.; 8;
+2: 8.dd+; 16; 8; 16dc+; 8.; 8;
+
+	VS "beau-ti-ful cit-y of";
+bar
+
+//22
+1 1: 4.g tie; 4; 8s;
+1 2: 4.g tie; 4; 8s;
+2: 4.g-b tie; 4; 8s;
+
+	VS "God.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+

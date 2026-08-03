@@ -1,0 +1,291 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 6
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/27/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Gave My Life For Thee" ""
+   title (2)""
+   title (11)"" "\f(TI)I am the good shepherd: the good shepherd layeth" ""
+   title (11)"" "\f(TI)down his life for the sheep. - Jn. 10:11" ""
+
+
+   title (11) "C - 2 - SOL" "" ""
+   title (13) "Frances R. Havergal" "" "Philip P. Bliss"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==== FOR Letter Size ==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=6/8	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+// ****************************************
+//6"x9"page size
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+//Verse 1
+
+//1
+1: 4.s; 4s; 8eg;
+2: 4.s; 4s; 8cc+;
+
+	VS1 "<1. >-1|I";
+	VS1 "<2. >-1|My";
+	VS1 "<3. >-1|I";
+	VS1 "<4. >-1|And";
+bar
+
+//2
+1: 4eg; 8; 4ce; 8eg;
+2: 4cc+; 8; 4cg; 8cc+;
+
+	VS "gave My life for";
+	VS "Fa-ther's house of";
+	VS "suf-fered much for";
+	VS "I have brought to";
+bar
+
+//3
+1: 8s; 4.fa slur; 8ac+ bm; gb ebm;
+2: 8s; 4.fc+ tie; 4fc+;
+
+	VS21 "thee,";
+	VS21 "light,";
+	VS21 "thee,";
+	VS21 "thee,";
+invisbar
+
+1: 8fa; 4.s; 4s;
+2: 8fc+; 4.s; 4s;
+
+	VS" My";
+	VS "My";
+	VS "More";
+	VS "Down";
+bar
+
+//4
+1: 4eg; 8; 4df; 8b-g;
+2 1: 4gc+; 8; 4fb; 8g;
+2 2: 4.s; 4; 8g;
+
+	VS "pre-cious blood I";
+	VS "glo-ry cir-cled";
+	VS "than thy tongue can";
+	VS "from My home a-";
+bar
+
+//5
+1: 8s; 4.ce tie; 4ce;
+2: 8s; 4.cg tie; 4cg;
+
+	VS "shed,";
+	VS "throne,";
+	VS "tell,";
+	VS "bove.";
+invisbar
+
+//6
+1: 4.s; 4s; 8eg;
+2: 4.s; 4s; 8cc+;
+
+	VS "That";
+	VS "I";
+	VS "Of";
+	VS "Sal-";
+bar
+
+//7
+1: 4eg; 8; 4ce; 8eg;
+2: 4cc+; 8; 4cg; 8cc+;
+
+	VS "thou might ran-somed";
+	VS "left for earth-ly";
+	VS "bit-terest ag-o-";
+	VS "va-tion full and";
+bar
+
+//8
+1: 8s; 4.fa slur; 8ac+ bm; 8gb ebm;
+2: 8s; 4.fc+ tie; 4fc+;
+
+	VS21 "be,";
+	VS21 "night,";
+	VS21 "ny,";
+	VS21 "free,";
+invisbar
+
+1: 8fa; 4.s; 4s;
+2: 8fc+; 4.s; 4s;
+
+	VS "And";
+	VS "For";
+	VS "To";
+	VS "My";
+bar
+
+//9
+1 1: 4s; 8g; 8b bm; a; b ebm;
+1 2: 4eg; 8g; 4f; 8;
+2: 4gc+; 8ge+; 4gd+; 8gd+;
+
+	VS12 "quick-end from the";
+	VS12 "wan-derings sad and";
+	VS12 "res-cue thee from";
+	VS12 "par-don and My";
+invisbar
+
+//10
+1: 4.ec+ tie; 4ec+; 8s;
+2: 4.cc+ tie; 4cc+; 8s;
+
+	VS "dead;";
+	VS "lone;";
+	VS "hell;";
+	VS "love,";
+repeatstart
+
+//11
+1: 4.s; 4s; 8ec+;
+2: 4.s; 4s; 8cc+;
+
+	VS "I";
+	VS "I";
+	VS "I've";
+	VS "I";
+bar
+
+//12
+1: 4fd+; 8; 8 bm; ec+; db ebm;
+2 1: 4s; 8s; 8b bm; c+; d+ ebm;
+2 2: 4gb; 8; 4g; 8;
+
+	VS22 "gave, I gave My";
+	VS22 "left, I left it";
+	VS22 "borne, I've borne it";
+	VS22 "bring, I bring rich";
+bar
+
+//13
+1: 8s; 4ec+; 8; 4eg;
+2: 8s; 4cc+; 8; 4;
+
+	VS "life for thee,";
+	VS "all for thee,";
+	VS "all for thee,";
+	VS "gifts to thee,";
+invisbar
+
+1: 8ec+; 4.s; 4s;
+2: 8cc+; 4.s; 4s;
+
+	VS "What";
+	VS "Hast";
+	VS "What";
+	VS "What";
+bar
+
+//14
+1 1: 4s; 8s; 8b bm; a; b ebm;
+1 2: 4fb; 8; 4f; 8;
+2 1: 4gd+; 8; 4; 8g;
+2 2 :4s; 8; 4; 8g;
+
+	VS21 "hast thou done for";
+	VS21 "thou left aught for";
+	VS21 "hast thou borne for";
+	VS21 "hast thou brought to";
+bar
+
+//15
+1: 4.ec+ tie; 4; 8s;
+2: 4.cg tie; 4; 8s;
+
+	VS "Me?";
+	VS "Me?";
+	VS "Me?";
+	VS "Me?";
+repeatend

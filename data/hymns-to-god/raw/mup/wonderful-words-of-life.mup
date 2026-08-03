@@ -1,10 +1,12 @@
-// Mup vs. 7.1 arkkra.com
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
 
 // The hymn produced by this source code is believed to be  
 // in the public domain in the United States of America.
-
+//
 // This source code is donated to the public domain.
-
+// 
 // Hymn Source:	Great Tabernacle Hymns
 //		For use in Gospel Meetings,
 //		Evangelistic Srvices, Prayer
@@ -18,46 +20,12 @@
 //		Copyright Unknown
 //		Hymn No. 74
 		
-// Transcribed by:
-//	Ted Gatza, Jr. 7/27/2021
-
-//Revisions:
-//	0420/2025 [1]Updated Mup code.
-
+// Transcribed by: Ted Gatza, Jr. 7/27/2021
 // HymnsToGod.org
 
-//==== FOR LETTER SIZE====================
+// ******************************************
 
-score
-	label=""
-	packexp=0.0
-	packfact=0.9
-	pad=2
-	vscheme=2f
-	staffscale=1.0
-	staffpad=0
-	scoresep=6
-	scorepad=0
-	leftmargin=.750
-	rightmargin=.750
-	lyricssize=14
-	lyricsfontfamily=times
-	noteheads="isostri semicirc diam righttri norm rect pie"
-
-//=========================
-
-staffs=2
-	time=6/8	
-	key=g
-
-
-staff 2
-	key=g
-	clef=bass
-
-//=========================
-
-header
+top
 
    title bold (19) "" "Wonderful Words Of Life" ""
    title (2) ""
@@ -71,81 +39,64 @@ footer
 
    title (11) "" "Public Domain" "HymnsToGod.org"
 
-//=========================
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=g
+
+
+staff 2
+	key=g
+	clef=bass
+
+// ****************************************
+
 
 music
-
-//=========================
-
-//define macros
 
 //define macros
 
    //Lyrics
-     //Lyrics Between Staffs
-         define VS lyrics between 1&2: @
-         define VS1 lyrics between 1&2 using 1: @
-         define VS12 lyrics between 1&2 using 1 2: @
-         define VS21 lyrics between 1&2 using 2 1:@
-         define VS22 lyrics between 1&2 using 2 2:@ 
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
 
-     //Lyrics Below Bass Staff    
-         define BVS lyrics below 2: @
-         define BVS1 lyrics below 2 using 1: @
-         define BVS12 lyrics below 2 using 1 2: @
-         define BVS21 lyrics below 2 using 2 1:@
-         define BVS22 lyrics below 2 using 2 2:@ 
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
 
-     //Text - Above Staff
-         define CHORUS ital (15) above 1: 1 "Chorus"; @	
-         define REFRAIN ital (15) above 1: 1 "Refrain"; @
-         define RALL ital (15) above 1: 1 "Rall."; @
-
-     //Fermatas
-         define FST(COUNT)
-           mussym (10) above 1: COUNT "ferm"; @
-
-        define FSB(COUNT)
-          mussym (10) below 1: COUNT "uferm"; @
- 
-        define FBT(COUNT)
-          mussym (10) above 2: COUNT "ferm"; @
-
-        define FBB(COUNT)
-          mussym (10) below 2: COUNT "uferm"; @
-
-     //Note Accents
-        define AST(COUNT)
-          mussym (10) above 1: COUNT "acc_gt"; @
-
-        define ASB(COUNT)
-          mussym (10) below 1: COUNT "acc_gt"; @
- 
-        define ABT(COUNT)
-          mussym (10) above 2: COUNT "acc_gt"; @
-
-        define ABB(COUNT)
-          mussym (10) below 2: COUNT "acc_gt"; @
-
-     //Repeats
-        define RIT(COUNT)
-           ital (15) above 1: COUNT "rit."@
-        define FINE(COUNT)
-           ital (15) above 1: COUNT "fine"@
-        define SIGN(COUNT)
-	   mussym (10) above 1: COUNT "sign"@
-        define DS(COUNT)
-	  ital (15) above 1: COUNT "D. S."; @
-
-//=========================
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
 
 // Set midi
        midi all: 0 "tempo=105";
 
+// Enter music
 //============
-
-//Verse 
-
 //1
 1: 4db; 8;; ec+; db;
 2 1: 4g; 8;;;;
@@ -155,7 +106,6 @@ music
 	VS "<2. >-1|Christ, the bless-ed One,";
 	VS "<3. >-1|Sweet-ly ech-o the";
 bar
-
 //2
 1: 4db; 8ca; 4.;
 2: 4dg; 8df; 4.;
@@ -164,7 +114,6 @@ bar
 	VS "gives to all,";
 	VS "gos-pel call,";
 bar
-
 //3
 1 1: 8d; ca;; 4db; 8ca;
 1 2: 8c; s;; 4; 8;
@@ -174,7 +123,6 @@ bar
 	VS "Won-der-ful words of";
 	VS "Won-der-ful words of";
 bar
-
 //4
 1: 4.b-g slur; b-d;
 2 1: 4.g tie; 4.g;
@@ -184,7 +132,6 @@ bar
 	VS "Life;";
 	VS "Life;";
 bar
-
 //5
 1: 4db; 8;; ec+; db;
 2 1: 4g; 8;;;;
@@ -219,7 +166,6 @@ bar
 	VS "Life;";
 	VS "Life;";
 bar
-
 //9
 1: 4gb; 8; 8gb bm; 8ac+ ebm; 8bd+;
 2 1: 4g; 8; 4; 8;
@@ -229,7 +175,6 @@ bar
 	VS 4; 8; 4; 8; "All so free-ly";
 	VS 4; 8; 4; 8; "Je-sus, on-ly";
 bar
-
 //10
 1: 4.c+e+; 4.bd+;
 2 1: 4.g;;
@@ -239,7 +184,6 @@ bar
 	VS "giv-en,";
 	VS "Sav-ior,";
 bar
-
 //11
 1: 4gb; 8; 8gb bm; 8ac+ ebm; 8bd+;
 2 1: 4g; 8; 4; 8;
@@ -249,7 +193,6 @@ bar
 	VS 4; 8; 4; 8; "Woo-ing us to";
 	VS 4; 8; 4; 8; "Sanc-ti-fy for-";
 bar
-
 //10
 1: 4.c+e+; 4.bd+;
 2 1: 4.g;;
@@ -259,32 +202,26 @@ bar
 	VS "heav-en.";
 	VS "ev-er.";
 dblbar
-
 newscore
-
-CHORUS
-
 //11
 1: 8bd+; ac+;; 4.;
 2: 8dd+;;; 4.;
+CHORUS
 
 	VS "Beau-ti-ful words,";
 bar
-
 //12
 1: 8ac+; gb;; 4.;
 2: 8gd+;;; 4.;
 
 	VS "won-der-ful words,";
 bar
-
 //13
 1: 8gb; da; dg; 4da; 8df;
 2: 8dd+; dc+; db; 4 dc+; 8da;
 
 	VS "Won-der-ful words of";
 bar
-
 //14
 1 1: 4g; 8b; 4.d+;
 1 2: 4.d slur; 4.g;
@@ -293,28 +230,24 @@ phrase above 1: 1 til 4;
 
 	VS 4.; 4.s; "Life;";
 bar
-
 //15
 1: 8bd+; ac+;; 4.;
 2: 8dd+;;; 4.;
 
 	VS "Beau-ti-ful words,";
 bar
-
 //12
 1: 8ac+; gb;; 4.;
 2: 8gd+;;; 4.;
 
 	VS "won-der-ful words,";
 bar
-
 //13
 1: 8gb; da; dg; 4da; 8df;
 2: 8dd+; dc+; db; 4 dc+; 8da;
 
 	VS "Won-der-ful words of";
 bar
-
 //14
 1: 4.dg tie; 4.dg;
 2: 4.gb tie; 4.gb;

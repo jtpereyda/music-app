@@ -1,0 +1,166 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Augsburg Songs 
+//		For Sunday Schools and
+//		Other Services
+//		Philadelphia:
+//		Lutheran Publication Society	
+//		Copyright 1885
+//		Hymn No.: 156
+
+
+// Transcribed by: Ted Gatza, Jr. 01/09/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Bless Me Now" ""
+   title (2)""
+   title (11) "F - 2 - MI" "\s(17)\f(TI)\:God\ be\ merciful\ unto\ us,\|\ and\ bless\ us,\ And\ cause his\ face\ to\ shine\ \^upon\ us;\ -\ Ps.\ 67:1"""
+   title (13) "Alexander Clark" " " "Robert Lowry, 1873"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4af; 8fc; 4bf; 8af;
+2: 4c+f; 8af; 4d+f; 8c+f;
+
+
+	
+			lyrics 1: "<1. >-1|Heav'n-ly Fa-ther,";
+			lyrics 1: "<2. >-1|Now, O Lord! this";
+			lyrics 1: "<3. >-1|Now, just now, for";
+
+bar
+//2
+1: 4gc; 8fd; 4.ge;
+2: 4c+e; 8bnd; 4.c+c;
+
+			lyrics 1: "bless me now;";
+			lyrics 1: "ver-y hour,";
+			lyrics 1: "Je-sus' sake,";
+bar
+//3
+1: 4af; 8be; 4c+f; 8af;
+2: 4c+f; 8c+g; 4c+a; 8c+f;
+
+			lyrics 1: "At the cross of";
+			lyrics 1: "Send Thy grace and";
+			lyrics 1: "Lift the clouds, the";
+bar
+//4
+1: 4bg; 8af; 4.ge;
+2: 4c+e; 8c+f; 4.c+c;
+
+			lyrics 1: "Christ I bow;";
+			lyrics 1: "show Thy pow'r";
+			lyrics 1: "fet-ters break;";
+bar
+//5
+1 1: 4af; 8ge; 4f; 8f;
+1 2: 4s; 8s; 4f; 8f;
+2: 4c+f; 8bc; 4ad; 8ad;
+
+			lyrics 1: "Take my guilt and";
+			lyrics 1: "While I rest up-";
+			lyrics 1: "While I look, and";
+bar
+//6
+1: 4ge; 8af; 4.bf;
+2: 4c+c; 8c+f; 4.d+b-;
+
+			lyrics 1: "grief a-way;";
+			lyrics 1: "on Thy word,";
+			lyrics 1: "as I cry,";
+bar
+//7
+1: 4af; 8fc; 4bf; 8af;
+2: 4c+f; 8af; 4d+f; 8c+f;
+
+			lyrics 1: "Hear and heal me";
+			lyrics 1: "Come and bless me";
+			lyrics 1: "Touch and cleanse me";
+bar
+//8
+1 1: 4af; 8ge; 4.f;
+1 2: 4s; 8s; 4.f;
+2: 4c+c; 8bc; 4.af;
+
+			lyrics 1: "now I pray.";
+			lyrics 1: "now, O Lord!";
+			lyrics 1: "ere I die.";
+dblbar
+//9
+1: 4af; 8be; 4.c+f;
+2: 4c+f; 8c+g; 4.c+a;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Bless me now,";
+bar
+//10
+1: 4ge; 8af; 4.be;
+2 1: 4c+; 8c+a; 4.c+g;
+2 2: 4b; 8s; 4.s;
+
+			lyrics 1: [c]"bless me now,";
+bar
+//11
+1: 4af; 8bg; 4c+a; 8af;
+2: 4c+f; 8c+f; 4f+f; 8cf;
+
+			lyrics 1: [c]"Heav'n-ly Fa-ther,";
+bar
+//12
+1 1: 4af; 8ge; 4.f;
+1 2: 4s; 8s; 4.f;
+2: 4c+c; 8bc; 4.af;
+
+			lyrics 1: [c]"bless me now.";
+endbar
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

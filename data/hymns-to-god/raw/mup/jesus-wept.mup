@@ -1,0 +1,212 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Song Treasury
+//		 A collection of Songs and Music, especially adapted for
+//		 Sunday-Schools, Praise and Prayer Meetings,
+//		 Church Choirs and the Home Circle.
+//		 Also Containing Selections for
+//		 Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		 Together with a
+//		 Complete Course of Elementary Instruction of all the art of
+//		 Reading music at sight
+//		 By J. H. Kursenknabe,
+//		 Publishers: Crider & Brother
+//		 York, PA
+//		 Copyright 1879
+//		 Hymn No.: 88
+//		
+// Transcribed by: Ted Gatza, Jr. 09/14/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Jesus Wept" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - DO" "\s(17)\f(TI)\:Jesus\ wept.\ -\ Jn.\ 11:35 \(space)" ""
+   title (13) "L. Leinbach" "" "J. H. Kurzenknabe, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=75";
+
+//1
+1 1: 8e; 8ge; 2s;
+1 2: 8e; 8s; 2s;
+2: 8ge; 8be; 2s;
+
+
+
+			VERSE "<1. >-1|Je-sus";
+			VERSE "<2. >-1|Je-sus";
+			VERSE "<3. >-1|Je-sus";
+			VERSE "<4. >-1|Je-sus";
+
+bar
+//2
+1: 4.ge; 8ge; 8ae; 8ge;
+2: 4.be; 8be; 8c+e; 8be;
+
+			VERSE "wept! Our Lord and";
+			VERSE "wept, what rich com-";
+			VERSE "wept, a-maz-ing";
+			VERSE "wept! and now, be-";
+bar
+//3
+1: 4ge; 4fd; 8fd; 8ge;
+2: 4bb-; 4bb-; 8bb-; 8bb-;
+
+			VERSE "Sav-ior, When he";
+			VERSE "pass-ion! None ap-";
+			VERSE "won-der! For the";
+			VERSE "liev-er, What-so-";
+bar
+//4
+1: 4.ad; 8ad; 8bd; 8ad;
+2: 4.fb-; 8fb-; 8fb-; 8bb-;
+
+			VERSE "was on earth be-";
+			VERSE "pealed to him in";
+			VERSE "Son of God to";
+			VERSE "e'er our sor-rows";
+bar
+//5
+1: 2ge; 8ge; 8af;
+2: 2be; 8be; 8be;
+
+			VERSE "low; Sym-pa-";
+			VERSE "vain; All re-";
+			VERSE "be So af-";
+			VERSE "be, He will";
+bar
+//6
+1: 4.bg; 8e+g; 8e+a; 8c+a;
+2: 4.be; 8be; 8c+a; 8e+a;
+
+			VERSE "thized and felt for";
+			VERSE "ceived his con-so-";
+			VERSE "fec-tion-ate and";
+			VERSE "com-fort his be-";
+bar
+//7
+1: 8c+a bm; 8bg ebm; 4bg; 8bg; 8ge;
+2: 4e+e; 4e+e; 8e+c; 8be;
+
+			VERSE 4; 4; 8; 8; "oth-ers In their";
+			VERSE 4; 4; 8; 8; "la-tions, E'en the";
+			VERSE 4; 4; 8; 8; "ten-der, To our";
+			VERSE 4; 4; 8; 8; "lov-ed With his";
+bar
+newscore
+//8
+1: 4.fd; 8fd; 8bd; 8fd;
+2: 4.bb-; 8bb-; 8fb-; 8bb-;
+
+			VERSE "sor-row, grief, and";
+			VERSE "dead a-rose a-";
+			VERSE "frail hu-man-i-";
+			VERSE "love and sym-pa-";
+bar
+//9
+1: 2ge; 4r;
+2: 2be; 4r;
+
+			VERSE "woe.";
+			VERSE "gain.";
+			VERSE "ty.";
+			VERSE "thy.";
+dblbar
+//10
+1: 8.fd; 16fd; 8fd; 8bd; 8bd; 8c+e;
+2: 8.bb-; 16bb-; 8bb-; 8fb-; 8fb-; 8bb-;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Je-sus wept! O heart So";
+bar
+//11
+1 1: 8b bm; 8an ebm; 4ae; 4r;
+1 2: 4e; 4s; 4s;
+2: 4c+f; 4c+f; 4r;
+
+
+			VERSE 4; 4; 4s; "ten-der!";
+bar
+//12
+1 1: 8.f; 16f; 8f; 8c+e; 8c+e; 8ane;
+1 2: 8.e; 16e; 8e; 8s; 8s; 8s;
+2: 8.c+f; 16c+f; 8c+f; 8af; 8af; 8c+f;
+
+			VERSE "Heart of love and sym-pa-";
+bar
+//13
+1: 4bd slur; 4af; 8ge; 8af;
+2: 2bb-; 8be; 8be;
+
+			VERSE "thy! He will";
+bar
+//14
+1: 4.bg; 8e+g; 8e+a; 8c+a;
+2: 4.be; 8be; 8c+a; 8e+a;
+
+			VERSE "com-fort his be-";
+bar
+//15
+1: 8c+a bm; 8bg ebm; 4bg; 8bg; 8ge;
+2: 4e+e; 4e+e; 8e+e; 8be;
+
+			VERSE 4; 4; 8; 8; "lov-ed What-so";
+bar
+//16
+1: 4.fd; 8fd; 8bd; 8fd;
+2: 4.bb-; 8bb-; 8fb-; 8bb-;
+
+			VERSE "e'er their sor-rows";
+bar
+//17
+1: 2ge; 4s;
+2: 2be; 4s;
+
+			VERSE "be.";
+endbar

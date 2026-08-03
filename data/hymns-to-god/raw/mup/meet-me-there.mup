@@ -1,0 +1,252 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Glad Hallelujahs,Replete With Sacred Songs
+//		John R. Sweney and William J. Kirkpatrick,
+//		Philadelphia:
+//		thos. T. Tasker, Sr., Publisher
+//		No. 921 Arch Street
+//		Copyright: 1887
+//		Hymn No.: 125
+//		
+// Transcribed by: Ted Gatza, Jr. 03/13/2012; rev. 06/10/2022
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Meet Me There" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:The\ rich\ and\ the\ poor\|\ meet\ together:\ Jehovah is\ the\ maker\ of\ th\|em\ all.\ -\ Prov.\ 22:2" ""   
+   title (13) "Henrietta E. Blair" "" "Wm. J. Kirkpatrick, 1885" 
+
+//Henrietta E. Blair is a pseudonym for Fanny Crosby
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1: 8.eb-; 16fb-; 2.s;
+2: 8.ge; 16ae; 2.s;
+
+			VERSE "<1. >-1|On the";
+			VERSE "<2. >-1|Here our";
+			VERSE "<3. >-1|Where the";
+bar
+//2
+1: 8.ge; 16; 8.; 16; 4; 8.eb-; 16ge;
+2: 8.be; 16; 8.; 16; 4; 8.ge; 16be;
+
+			VERSE "hap-py gold-en shore, Where the";
+			VERSE "fond-est hopes are vain, Dear-est";
+			VERSE "songs of an-gels ring, And the";
+//			VERSE "harps of angels ring, And the"; //Original Lyrics
+bar
+//3
+1: 8.bg; 16; 8.; 16s; 4; 8.; 16;
+2: 8.e+e; 16; 8.; 16s; 4; 8.; 16;
+
+			VERSE "faith-ful part";
+			VERSE "links are rent";
+			VERSE "blest for-ev-";
+invisbar
+newscore
+
+1: 8.s; 16; 8.; 16bg; 4; 8.be; 16;
+2: 8.s; 16; 8.; 16e+e; 4; 8.ge; 16;
+
+			VERSE "no more, When the";
+			VERSE "in twain; But in";
+			VERSE "er sing, In the";
+
+bar
+//4
+1 1: 8.c+e; 16; 8.; 16; 16c+ bm; 8.e+ ebm; 8.be; 16ge;
+1 2: 8.s; 16; 8.; 16; 4e; 8.s; 16;
+2 1: 8.a; 16; 8.; 16; 4s; 8.; 16;
+2 2: 8.aa-?; 16; 8.; 16; 4c+a; 8.e+g; 16be;
+
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; "storms of life are o'er, Meet me";
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; "heav'n no throb of pain, Meet me";
+			VERSE 8.; 16; 8.; 16; 4; 8.; 16; "pal-ace of the King, Meet me";
+bar
+//5
+1: 2.fd; 8.ge; 16af;
+2: 2.bb-; 8.be; 16;
+
+			VERSE "there. Where the";
+			VERSE "there. By the";
+			VERSE "there. Where in";
+dblbar
+//6
+1: 8.bg; 16; 8.; 16; 4; 8.be; 16;
+2: 8.e+e; 16; 8.; 16; 4be; 8.ge; 16;
+mussym (9) above 1: 1 "sign";
+
+			VERSE "night dis-solves a-way In-to";
+			VERSE "riv-er spar-kl'ing bright, In the";
+			VERSE "sweet com-mun-ion blend Heart with";
+			DSVERSE "<\f(TI)D.S. - \f(PV)>-2|storms of life are o'er, On the";
+bar
+//7
+1 1: 8.c+e; 16; 8.s; 16; 16; 8.; 8.; 16;
+1 2: 8.s; 16; 8.s; 16; 4; 8.; 16s;
+2 1: 8.a; 16a; 8.s; 16; 4; 8.; 16;
+2 2: 8.aa-?; 16; 8.s; 16; 4s; 8.; 16;
+
+
+			VERSE 8.; 16; 8.s; 16s; 4s; 8.s; 16s; "pure and";
+			VERSE 8.; 16; 8.s; 16s; 4s; 8.s; 16s; "cit-y";
+			VERSE 8.; 16; 8.s; 16s; 4s; 8.s; 16s; "heart and";
+			DSVERSE 8.; 16; 8.s; 16s; 4s; 8.s; 16s; "hap-py";
+invisbar
+newscore
+
+1 1: 8.s; 16; 8.c+e; 16; 16c+ bm; 8.e+ ebm; 8.e; 16fd;
+1 2: 8.s; 16; 8.; 16; 4e; 8.; 16s;
+2 1: 8.s; 16s; 8.a; 16a; 4c+a; 8.bg; 16bf;
+2 2: 8.s; 16; 8.aa-?; 16; 4s; 8.; 16;
+mussym (9) above 1: 3.25 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE 8.s; 16s; 8.; 16; 4; 8.; 16; "per-fect day, I am";
+			VERSE 8.s; 16s; 8.; 16; 4; 8.; 16; "of de-light, Where our";
+			VERSE 8.s; 16s; 8.; 16; 4; 8.; 16; "friend with friend, In a";
+			DSVERSE 8.s; 16s; 8.; 16; 4; 8.; 16; "gold-en shore, Where the";
+
+bar
+
+//8
+1 1: 8.ge; 16; 8.; 16; 16g bm; 8.b ebm; 8.s; 16s;
+1 2: 8.s; 16; 8.; 16; 4d; 8.s; 16;
+2: 8.be; 16; 8.; 16ge; 4fb-; 8.s; 16;
+
+			VERSE 8.; 16; 8.; 16; 4; 8.s; 16s; "go-ing home to stay,";
+			VERSE 8.; 16; 8.; 16; 4; 8.s; 16s; "faith is lost in sight,";
+			VERSE 8.; 16; 8.; 16; 4; 8.s; 16s; "world that ne'er shall end,";
+			DSVERSE 8.; 16; 8.; 16; 4; 8.s; 16s; " faith-ful part no more,";
+invisbar
+newscore
+
+1 1: 8.s; 16; 8.; 16; 16; 8.; 8.fd; 16gb-;
+1 2: 8.s; 16; 8.; 16; 4; 8.s; 16;
+2: 8.s; 16; 8.; 16; 4; 8.ab-; 16;
+
+			VERSE 8.s; 16s; 8.s; 16s; 4s; 8.; 16; "Meet me";
+			VERSE 8.s; 16s; 8.s; 16s; 4s; 8.; 16; "Meet me";
+			VERSE 8.s; 16s; 8.s; 16s; 4s; 8.; 16; "Meet me";
+			DSVERSE 8.s; 16s; 8.s; 16s; 4s; 8.; 16; "Meet me";
+
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 4b-; 8.c; 16; 4b-; s;
+2 1: 4g; 8.a; 16; 4g; s;
+2 2: 2.e; 4s; 
+ital (13) above 1: 3.5 "Fine";
+
+			VERSE "there.";
+			VERSE "there.";
+			VERSE "there.";
+			VERSE 4s; 8.; 16; 4; 4s; "Meet me there.";
+			DSVERSE "there.";
+dblbar
+//10
+1: 8.b; 16; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "Meet me";
+bar
+//11
+1 1: 2.b; {8s; ; ;}3;
+1 2: 4r; 8.g; 16; 4; 4s;
+2: 4r; 8.e+e; 16; 4; 4s;
+
+			VERSE 2.; {4s; 8s;}3; "there,";
+			VERSE 4s; 8.; 16; 4; 4s; "Meet me there,";
+invisbar
+newscore
+
+1 1: 2.s; {8c+ bm; b ebm; g;}3;
+1 2: 4s; 8.; 16; 4; [dist -6] 4r;
+2: 4s; 8.; 16; 4; 4r;
+
+			VERSE 2.s; {4; 8;}3; "Meet me";
+			
+bar
+//12
+1 1: 2.e+; 8.d+b; 16c+a;
+1 2: [dist -4] 4r; 8.g; 16; 4; 8.s; 16;
+2: 4r; 8.be; 16; 4; 8.; 16;
+
+			VERSE "there, Where the";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "Meet me there";
+bar
+//13
+1: 8.bg; 16; 8.; 16s; ; 8.; ; 16;
+2: 8.e+e; 16; 8.; 16s;; 8.; ; 16;
+
+			VERSE "Tree of life";
+invisbar
+newscore
+
+1: 8.s; 16; 8.; 16bg; c+a; 8.bg;; 16ge;
+2: 8.s; 16; 8.; 16e+e;; 8.; be; 16;
+
+			VERSE "is bloom-ing, Meet me";
+
+bar
+//14
+1: 2.fd; 8.ge; 16af;
+2 1: 4bb-; 8.b; 16; 4; 8.bg; 16bf;
+2 2: 4s; 8.b; 16; 8b bm; a ebm; 8.s; 16;
+ital (13) above 1: 4.75 "D.S.";
+
+			VERSE "there. When the";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "Meet me there.";
+endbar

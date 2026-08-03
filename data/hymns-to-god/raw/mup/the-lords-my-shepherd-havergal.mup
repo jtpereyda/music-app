@@ -1,0 +1,260 @@
+// Mup vs. 7.0 - arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source:
+//	The Psalter with Responsive Readings
+//	The United Presbyterian Board of Publication
+//	Pittsburgh, PA
+//	Copyright 1912
+//	Reprinted may 1913
+//	Hymn No.: 53
+
+// Transcribed by:
+//	Ted Gatza, Jr. 12/06/2023 
+
+// Revisions: 
+
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (19) "" "The Lord's My Shepherd" ""
+   title (2)""
+   title (11) "" "\f(TI)Psalm 23"""
+   title (11) "A \(flat) - 3 - SOL" """"
+   title (13) "Francis Rous" " " "William H. Havergal, 1846"
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+////=========================
+staffs=2
+	time=3/2
+	key=4&
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (12) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (12) above 1: 1 "Refrain"; @
+         define RALL ital (12) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=120";
+
+//=========================
+
+// Verse
+
+//1
+1: 2ec; 2s; 2s;
+2: 2aa-; 2s; 2s;
+
+
+	VS "<1. >-1|The";
+	VS "<2. >-1|My";
+	VS "<3. >-1|Yea";
+	VS "<4. >-1|A";
+	VS "<5. >-1|Good-";
+bar
+
+//2
+1: 4ec; 4ac; 2c+e; 2bd;
+2: 4aa-; 4aa-; 2aa-; 2ge;
+
+	VS "Lord's my Shep-herd,";
+	VS "soul He doth re-";
+	VS "though I walk through";
+	VS "ta-ble Thou hast";
+	VS "ness and mer-cy";
+bar
+
+//3
+1: 4ac; 4fd; 2ec; 2s;
+2: 4af; 4ad; 2aa-; 2s;
+
+	VS "I'll not want;";
+	VS "store a-gain;";
+	VS "death's dark vale,";
+	VS "fur-nished me";
+	VS "all my life";
+invisbar
+1: 4s; 4s; 2s; 2ec;
+2: 4s; 4s; 2s; 2aa-;
+
+	VS "He";
+	VS "And";
+	VS "Yet";
+	VS "In";
+	VS "Shall";
+bar
+
+//4
+1: 4ec; 4ac; 2c+c; 2ac;
+2 1: 4aa-; 4a; 2af; 2af;
+2 2: 4s; 4a; 2s; 2s; 
+
+	VS "makes me down to";
+	VS "me to walk doth";
+	VS "will I fear no";
+	VS "pres-ence of my";
+	VS "sure-ly fol-low";
+bar
+
+//5
+1: 1be; 2s;
+2: 1ge; 2s;
+
+	VS "lie";
+	VS "make";
+	VS "ill;";
+	VS "foes;";
+	VS "me:";
+invisbar
+1: 1s; 2d+e;
+2: 1s; 2be;
+
+	VS "In";
+	VS "With-";
+	VS "For";
+	VS "My";
+	VS "And";
+bar
+
+//6
+1: 4c+e; 4be; 2ac; 2be;
+2 1: 4a; 4ge; 2af; 2ge;
+2 2: 4a; 4s; 2s; 2s;
+
+	VS "pas-tures green; He";
+	VS "in the paths of";
+	VS "Thou art with me,";
+	VS "head Thou doest with";
+	VS "in God's house for-";
+bar
+newscore
+
+//7
+1: 4c+e; 4ae; 2fd; 2s;
+2 1: 4a; 4ac; 2ad; 2s;
+2 2: 4a; 4s; 2; 2;
+
+	VS "lead-eth me";
+	VS "right-eous-ness,";
+	VS "and Thy rod";
+	VS "oil a-noint,";
+	VS "ev-er-more";
+invisbar
+1: 1s; 2eb-;
+2: 1s; 2ge;
+
+	VS "The";
+	VS "E'en";
+	VS "And";
+	VS "And";
+	VS "My";
+bar
+
+//8
+1: 4ec; 4ac; 2c+e; 2bd;
+2: 4aa-; 4af; 2ae; 2ge;
+
+	VS "qui-et wa-ters";
+	VS "for His own name's";
+	VS "staff me com-fort";
+	VS "my cup o-ver";
+	VS "dwell-ing place shall";
+bar
+
+//9
+1: 1ac; 2s;
+2: 1aa-; 2s;
+
+	VS "by.";
+	VS "sake.";
+	VS "still.";
+	VS "flows.";
+	VS "be.";
+endbar

@@ -1,0 +1,274 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Song Treasury
+//		A collection of Songs and Music, especially adapted for
+//		Sunday-Schools, Praise and Prayer Meetings,
+//		Church Choirs and the Home Circle.
+//		Also Containing Selections for
+//		Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		Together with a
+//		Complete Course of Elementary Instruction of all the art of
+//		Reading music at sight
+//		By J. H. Kursenknabe,
+//		Publishers: Crider & Brother
+//		York, PA
+//		Copyright 1879
+//		Hymn No.: 83
+//		
+// Transcribed by: Ted Gatza, Jr. 10/01/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Asking Thy Care" ""
+   title (2)""
+   title (11) "G - 3 - DO" "\s(17)\f(TI)\:Hear\ my\ prayer,\ O\ \|Jehovah,\ And\ let\ my cry\ come\ unto\ t\|hee.\ -\ Ps.\ 102:1" ""   
+   title (13) "G. A. Sanders" "" "D. F. Hodges, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 8g bm; 8a ebm; 2s;
+1 2: 4g; 2s;
+2 1: 8b bm; 8c+ ebm; 2s;
+2 2: 4g; 2s;
+
+			VERSE 4; 2s; "<1. >-1|Dear";
+			VERSE 4; 2s; "<2. >-1|My";
+			VERSE 4; 2s; "<3. >-1|Ah,";
+bar
+//2
+1: 4.bg; 8c+g; 4bg;
+2: 4.d+g; 8e+g; 4d+g;
+
+			VERSE "Sav-iour! the";
+			VERSE "hope is in";
+			VERSE "strength-en my";
+bar
+//3
+1: 4.ae; 8ge; 4ec;
+2: 4.c+c; 8c+c; 4gc;
+
+			VERSE "bat-tle of";
+			VERSE "Thee, Thou de-";
+			VERSE "cour-age, my";
+bar
+//4
+1 1: 4.d; 8gd; 4bg;
+1 2: 4.d; 8s; 4s;
+2: 4.gb-; 8bg-; 4d+g;
+
+			VERSE "life is so";
+			VERSE "sire of my";
+			VERSE "spir-it now";
+bar
+//5
+1 1: 2af; 8g bm; 8a ebm;
+1 2: 2s; 4g;
+2 1: 2d+d; 8b bm; 8c+ ebm;
+2 2: 2s; 4g;
+
+			VERSE 2; 4; "great, Its";
+			VERSE 2; 4; "soul, My";
+			VERSE 2; 4; "cheer, Life's";
+bar
+//6
+1: 4.bg; 8c+g; 4bg;
+2: 4.d+g; 8e+g; 4d+g;
+
+			VERSE "bur-dens for";
+			VERSE "trust and af-";
+			VERSE "path-way, so";
+bar
+//7
+1: 4.ae; 8ge; 4ec;
+2: 4.c+c; 8c+c; 4c+c;
+
+			VERSE "me are too";
+			VERSE "fec-tions shall";
+			VERSE "cloud-y, make";
+bar
+//8
+1 1: 4.d; 8gd; 4ad;
+1 2: 4.d; 8s; 4s;
+2: 4.bd; 8bd; 4c+d;
+
+			VERSE "heav-y to";
+			VERSE "none oth-er";
+			VERSE "bright, plain and";
+bar
+//9
+1 1: 2gd; 8g bm; 8b ebm;
+1 2: 2s; 4g;
+2: 2bg; 4bg;
+
+			VERSE 2; 4; "bear; I";
+			VERSE 2; 4; "share; To";
+			VERSE 2; 4; "clear; Now";
+bar
+//10
+1: 4.d+g; 8e+g; 4d+g;
+2: 4.bg; 8c+g; 4bg;
+
+			VERSE "come, for with";
+			VERSE "Thee ev-er";
+			VERSE "help me to";
+bar
+//11
+1 1: 4.bg; 8a; 4g;
+1 2: 4.s; 8g; 4g;
+2: 4.d+g; 8c+g; 4bg;
+
+			VERSE "Thee it is";
+			VERSE "com-ing, my";
+			VERSE "trav-el, with";
+bar
+//12
+1 1: 4.g; 8a; 4bg;
+1 2: 4.g; 8g; 4s;
+2: 4.bg; 8c+g; 4d+g;
+
+			VERSE "nev-er too";
+			VERSE "life now con-";
+			VERSE "Thee ev-er";
+bar
+//13
+1 1: 2af; 8g bm; 8a ebm;
+1 2: 2s; 4g;
+2 1: 2d+d; 8b bm; 8c+ ebm;
+2 2: 2s; 4g;
+
+			VERSE 2; 4; "late, With";
+			VERSE 2; 4; "trol, With";
+			VERSE 2; 4; "near, In";
+bar
+//14
+1: 4.bg; 8c+g; 4bg;
+2: 4.d+g; 8e+g; 4d+g;
+
+			VERSE "faith and with";
+			VERSE "faith and with";
+			VERSE "faith and in";
+bar
+//15
+1: 4.ae; 8ge; 4ec;
+2: 4.c+c; 8c+c; 4c+c;
+
+			VERSE "con-fi-dence";
+			VERSE "con-fi-dence";
+			VERSE "con-fi-dence";
+bar
+//16
+1: 4.db-; 8gd; 4ad;
+2: 4.gd; 8bd; 4c+d;
+
+			VERSE "Ask-ing Thy";
+			VERSE "Ask-ing Thy";
+			VERSE "Ask-ing Thy";
+bar
+//17
+1: 2gd; 4r;
+2: 2bg; 4r;
+
+			VERSE "care.";
+			VERSE "care.";
+			VERSE "care.";
+dblbar
+//18
+1 1: 4af; 4g; 4af;
+1 2: 4s; 4g; 4s;
+2: 4d+d; 4d+b-; 4d+d;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE [c]"Ask-ing Thy";
+bar
+//19
+1: 2bg; 4r;
+2: 2d+g; 4r;
+
+			VERSE [c]"care,";
+bar
+//20
+1: 4bg; 4d+b; 4bg;
+2: 4d+g; 4d+g; 4d+g;
+
+			VERSE [c]"Ask-ing Thy";
+bar
+//21
+1 1: 2af; 8e+ bm; 8d+ebm;
+1 2: 2s; 4f;
+2: 2d+d; 4ad;
+
+			VERSE 2; 4; "care, With";
+bar
+//22
+1 1: 4.d+g; 8bg; 8a bm; 8b ebm;
+1 2: 4.s; 8s; 4g;
+2 1: 4.bg; 8d+g; 8c+ bm; 8d+ ebm;
+2 2: 4.s; 8s; 4g-;
+
+			VERSE 4.; 8; 4; "faith and with";
+bar
+//23
+1: 4.ge; 8fd; 4ec;
+2: 4.c+c; 8c+c; 4gc;
+
+			VERSE "con-fi-dence,";
+bar
+//24
+1: 4.db-; 8gd; 4ad;
+2: 4.gd; 8bd; 4c+d;
+
+			VERSE "Ask-ing Thy";
+bar
+//25
+1: 2gd; 4s;
+2: 2bg-; 4s;
+
+			VERSE "care.";
+endbar

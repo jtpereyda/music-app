@@ -1,0 +1,350 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Corn In Egypt
+//		A new book of wonderful merit
+//		for the Sunday-school, Revivals, 
+//		Christian Endeavor, Epworth League,
+//		Young people's society and Evangelistic Work.
+//		Edited by George C. Hugg
+//		Publisher: George C. Hugg
+//		2133 Newkirk St., Philadelphia, PA
+//		Copyright: 1900
+//		Hymn No.: 108
+//		
+// Transcribed by: Ted Gatza, Jr. 08/12/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Is Your All On The Altar?" ""
+   title (2)""
+   title (11) "F - 3 - DO" "\s(17)\f(TI)\:I\ beseech\ you\ therefore,\ bret\|hren,\ by\ the\ mercies\ of\ God,\ to present\ your\ bodies\ a\ living\|\ sacrifice,\ holy,\ acceptable\ to God,\ which\ is\ your\ spiri\|tual\ service.\ -\ Rom.\ 12:1" ""   
+   title (13) "Elisha A. Hoffman" "" "Elisha A. Hoffman, 1900"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,25
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=110";
+
+//1
+1 1: 8f; 8g; 2s;
+1 2: 8f;; 2s;
+2: 8af; bf; 2s;
+
+			VERSE "<1. >-1|You have";
+			VERSE "<2. >-1|Would you";
+			VERSE "<3. >-1|Oh, we";
+			VERSE "<4. >-1|Who can";
+bar
+//2
+1: 4.af; 8; 4;
+2: 4.c+f; 8; 4;
+
+			VERSE "longed for sweet";
+			VERSE "walk with the";
+			VERSE "nev-er can";
+			VERSE "tell all the";
+bar
+//3
+1 1: 2f; 8af; bg;
+1 2: 2f; 8s;;
+2: 2af; 8c+f;;
+
+			VERSE "peace, and for";
+			VERSE "Lord, in the";
+			VERSE "know what the";
+			VERSE "love He will";
+bar
+//4
+1: 4.c+a; 8; 4;
+2: 4.f+f; 8; 4;
+
+			VERSE "faith to in-";
+			VERSE "light of His";
+			VERSE "Lord will be-";
+			VERSE "send from a-";
+bar
+//5
+1 1: 2af; 8f;;
+1 2: 2s; 8f;;
+2: 2c+f; 8af;;
+
+			VERSE "crease, And have";
+			VERSE "Word, And have";
+			VERSE "stow Of the";
+			VERSE "bove, And how";
+bar
+//6
+1 1: 4.ae; 8ge; 4c;
+1 2: 4.s; 8; 4c;
+2 1: 4.c+c; 8bc; 4c;
+2 2: 4.s; 8; 4c;
+
+			VERSE "er-nest-ly";
+			VERSE "peace and con-";
+			VERSE "bless-ings for";
+			VERSE "hap-py our";
+bar
+//7
+1 1: 4.ae; 8ge; 4c;
+1 2: 4.s;8; 4c;
+2: 4.c+c; 8bc; 4;
+
+			VERSE "fer-vent-ly";
+			VERSE "tent-ment al-";
+			VERSE "which we have";
+			VERSE "hearts will be";
+bar
+//8
+1: 2.cf tie;
+2: 2.af tie;
+
+			VERSE "pray'd;";
+			VERSE "way,";
+			VERSE "pray'd,";
+			VERSE "made,";
+bar
+//9
+1 1: 2fc; 8f; g;
+1 2: 2s; 8f;;
+2: 2af; 8; bf;
+
+			VERSE "But you";
+			VERSE "You must";
+			VERSE "Till our";
+			VERSE "Of the";
+bar
+//10
+1: 4.af; 8; 4;
+2: 4.c+f; 8; 4;
+
+			VERSE "can-not have";
+			VERSE "do His sweet";
+			VERSE "bod-y and";
+			VERSE "fel-low-ship";
+bar
+//19
+1 1: 2f; 8af; bg;
+1 2: 2f; 8s;;
+2: 2af; 8c+f;;
+
+			VERSE "rest, or be";
+			VERSE "will, to be";
+			VERSE "soul He doth";
+			VERSE "sweet we shall";
+bar
+//20
+1: 4.c+a; 8; 4;
+2: 4.f+f; 8; 4;
+
+			VERSE "per-fect-ly";
+			VERSE "free from all";
+			VERSE "ful-ly con-";
+			VERSE "share at His";
+bar
+//21
+1 1: 2af; 8f;;
+1 2: 2s; 8f;;
+2: 2c+f; 8af;;
+
+			VERSE "blest Un-til";
+			VERSE "ill, On the";
+			VERSE "trol, And our";
+			VERSE "feet, When our";
+bar
+//22
+1 1: 4.ae; 8ge; 4c;
+1 2: 4.s; 8; 4c;
+2 1: 4.c+c; 8bc; 4c;
+2 2: 4.s; 8; 4c;
+
+			VERSE "all on the";
+			VERSE "al-tar your";
+			VERSE "all on the";
+			VERSE "all on the";
+bar
+//23
+1 1: 4.ae; 8ge; 4c;
+1 2: 4.s; 8; 4c;
+2: 4.c+c; 8bc; 4;
+
+			VERSE "al-tar is";
+			VERSE "all you must";
+			VERSE "al-tar is";
+			VERSE "al-tar is";
+bar
+//24
+1: 2.fc tie;
+2: 2.af tie;
+
+			VERSE "laid.";
+			VERSE "lay.";
+			VERSE "laid.";
+			VERSE "laid.";
+bar
+//25
+1: 2fc; 4s;
+2: 2af; 4s;
+
+dblbar
+//26
+1: 8c+f;; 2s;
+2: 8af;; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Is your";
+bar
+//27
+1: 4.d+f; 8; 4;
+2: 4.bb-; 8; 4;
+
+			VERSE [c]"all on the";
+bar
+//28
+1: 4d+f; [up]e+f; [up]d+f;
+2: 4bb-; c+b-; bb-;
+
+			VERSE "al-tar of";
+bar
+//29
+1: 4d+f; c+f; af;
+2: 4bf; af; c+f;
+
+			VERSE "sac-ri-fice";
+bar
+//30
+1: 2c+f; 4;
+2: 2af; 4;
+
+			VERSE "laid? Your";
+bar
+//31
+1: 4.d+f; 8; 4;
+2: 4.bb-; 8; 4;
+
+			VERSE "heart, does the";
+bar
+//32
+1: 4d+g; e+g; f+g;
+2: 4bng-;;;
+
+			VERSE "Spir-it con-";
+bar
+//33
+1 1: 2e+ ph; 4d+;
+1 2:4g slur; 2b tie;
+2 1: 2c+ ph; 4d+;
+2 2: 2.c tie;
+
+			VERSE 2; 4s; "trol?_";
+bar
+//34
+1 1: 2c+ eph; 8f; g;
+1 2: 2b; 8f;;
+2 1: 2e+ eph; 8af; bf;
+2 2: 2c; 8s;;
+mussym (9) 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			VERSE 2s; 8; 8; "You can";
+bar
+//35
+1: 4.af; 8; 4;
+2: 4.c+f; 8; 4;
+
+			VERSE "on-ly be";
+bar
+//36
+1 1: 2f; 8af; bg;
+1 2: 2f; 8s;;
+2: 2af; 8c+f;;
+
+			VERSE "blest and have";
+bar
+//37
+1: 4.c+a; 8; 4;
+2: 4.f+f; 8; 4;
+
+			VERSE "peace and sweet";
+bar
+//38
+1 1: 2af; 8f;;
+1 2: 2s; 8f;;
+2: 2c+f; 8af;;
+
+			VERSE "rest, As you";
+bar
+//39
+1 1: 4.ae; 8ge; 4c;
+1 2: 4.s; 8; 4c;
+2 1: 4.c+c; 8bc; 4c;
+2 2: 4.s; 8; 4c;
+
+			VERSE "yield Him your";
+bar
+//40
+1 1: 4.ae; 8ge; 4c;
+1 2: 4.s; 8; 4c;
+2: 4.c+c; 8bc; 4;
+
+			VERSE "bod-y and";
+bar
+//41
+1: 2.fc tie;
+2: 2.af tie;
+
+			VERSE "soul.";
+bar
+//42
+1: 2fc; 4s;
+2: 2af; 4s;
+
+endbar

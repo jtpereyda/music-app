@@ -1,0 +1,224 @@
+// !Mup vs.6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Kingdom of Song
+//		edited by T. M. Bowdish 
+//		Copyright, 1900, by the W. W. Whitney, Co.
+//		Hymn No. 1
+
+// Transcribed by: Ted Gatza, Jr. 01/09/2010; rev. 02/14/2013; Rev. 08.24.2022
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "The Kingdom of Song" ""
+   title (2)""
+title (11) "C - 2 - SOL" "\s(17)\f(TI)\:O\ let\ the\ nations\ be\ glad\ and\ sing\ for\ joy\ -\ Ps.\ 67:4 \(space)"""
+   title (13) "Adaline H. Beery" " " "T. M. Bowdish, 1900"	
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=c major
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4.s; 4s; 8ge;
+2: 4.s; 4s; 8c+c;
+
+			lyrics 1: "<1. >-1|Come";
+			lyrics 1: "<2. >-1|O,";
+			lyrics 1: "<3. >-1|O,";
+bar
+//2
+1: 8.ge; 16ge; 8ge; 8ec; 8fd; 8ge;
+2: 8.c+c; 16c+c; 8c+c; 8gc; 8gc; 8c+c;
+
+			lyrics 1: "gath-er, all tribes and all";
+			lyrics 1: "sing of his pow-er and";
+			lyrics 1: "sing of the won-drous re-";
+bar
+//3
+1: 4.af; 4c+f; 8af;
+2: 4.c+f; 4af; 8c+f;
+
+			lyrics 1: "na-tions, To";
+			lyrics 1: "glo-ry, Great";
+			lyrics 1: "demp-tion, The";
+bar
+//4
+1: 8.ge; 16ge; 8ge; 8c+e; 8s; 8s;
+2: 8.c+c; 16c+c; 8c+c; 8ge; 8s; 8s;
+
+			lyrics 1: "wor-ship Je-ho-";
+			lyrics 1: "Rul-er whose throne";
+			lyrics 1: "pur-chase of life";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8s; 8bf; 8c+e;
+2: 8.s; 16s; 8s; 8s; 8gd; 8gc;
+
+			lyrics 1: "vah our";
+			lyrics 1: "is the";
+			lyrics 1: "for us";
+
+
+bar
+//5
+1 1: 4.d+g tie; 4d+g; 8g;
+1 2:4.s; 4s; 8g;
+2 1: 4.bg tie; 4bg; 8g;
+2 2: 4.s; 4s; 8g;
+
+			lyrics 1: "king; O,";
+			lyrics 1: "sky, Who,";
+			lyrics 1: "all, O,";
+bar
+//6
+1: 8.e+g; 16d+f; 8c+e; 8c+e; 8d+f; 8e+g;
+2: 8.c+c; 16c+c; 8c+c; 8c+c; 8c+c; 8c+c;
+
+			lyrics 1: "en-ter his pres-ence with";
+			lyrics 1: "giv-eth to men of his";
+			lyrics 1: "give him your song and your";
+bar
+//7
+1: 4.d+f; 4c+f; 8af;
+2: 4.af; 4af; 8c+f;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: "glad-ness, Your";
+			lyrics 1: "boun-ty In";
+			lyrics 1: "ser-vice For";
+bar
+//8
+1 1: 8.ge; 16ge; 8ge; 8g; 8af; 8bf;
+1 2: 8.s; 16s; 8s; 8f; 8s; 8s;
+2: 8.c+g; 16c+g; 8c+g; 8bg-; 8c+g-; 8gg-;
+
+			lyrics 1: "tri-bute of grat-i-tude";
+			lyrics 1: "show-ers of grace from on";
+			lyrics 1: "bless-ings that mo-ment-ly";
+bar
+//9
+1: 4.c+e tie; 4c+e; 8s;
+2: 4.gc tie; 4gc; 8s;
+
+			lyrics 1: "bring.";
+			lyrics 1: "high.";
+			lyrics 1: "fall.";
+dblbar
+//10
+1 1: 4.s; 4s; 8c;
+1 2: 4.s; 4s; 8c;
+2 1: 4.s; 4s; 8c;
+2 2: 4.s; 4s; 8c;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Give";
+bar
+//11
+1 1: 8c; 8e; 8f; 8g; 8e; 8g;
+1 2: 8c; 8e; 8f; 8g; 8e; 8g;
+2 1: 8c; 8e; 8f; 8g; 8e; 8g;
+2 2: 8c; 8e; 8f; 8g; 8e; 8g;
+
+			lyrics 1: [c]"prais-es to God for his";
+bar
+newscore
+//12
+1 1: 4.c+; 4g; 8e+g;
+1 2: 4.c+; 4g; 8s;
+2 1: 4.c+; 4g; 8c+c;
+2 2: 4.c+; 4g; 8s; 
+
+			lyrics 1: "mer-cy! To";
+bar
+//13
+1: 8.d+g; 16c+a; 8bg; 8c+a; 8bg; 8af#;
+2: 8.bd; 16c+d; 8d+d; 8d+d; 8d+d; 8c+d;
+
+			lyrics 1: "him all our voic-es be-";
+bar
+//14
+1 1: 4.g tie; 4g; 8g;
+1 2: 4.g tie; 4g; 8f;
+2: 4.bg tie; 4bg; 8bg;
+
+			lyrics 1: "long; Come,";
+bar
+1: 8.ge; 16c+e; 8c+e; 8s; 8s; 8s;
+2: 8.c+c; 16gc; 8gc; 8s; 8s; 8s; 
+
+			lyrics 1: "of-fer your";
+
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8c+e; 8d+f; 8e+g;
+2: 8.s; 16s; 8s; 8gc; 8gc; 8gc; 
+
+			lyrics 1: "strains of thanks-";
+
+
+
+bar
+//15
+1: 4.d+f; 4c+f; 8af;
+2: 4.af; 4af; 8c+f;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: "giv-ing, And";
+bar
+//16
+1 1: 8.ge; 16ge; 8ge; 8g; 8af; 8bf;
+1 2: 8.s; 16s; 8s; 8f; 8s; 8s;
+2: 8.c+g; 16c+g; 8c+g; 8bg-; 8c+g-; 8gg-;
+
+			lyrics 1: "dwell in the king-dom of";
+bar
+//17
+1: 4.c+e tie; 4c+e; 8s;
+2: 4.gc tie; 4gc; 8s;
+
+			lyrics 1: "song.";
+endbar

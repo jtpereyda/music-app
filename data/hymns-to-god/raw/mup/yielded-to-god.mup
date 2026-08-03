@@ -1,0 +1,236 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Northfield Hymnal
+//		For Use in
+//		Evangelistic and Church Services,
+//		Conventions, Sunday Schools, and
+//		All Prayer and Social Meetings
+//		of the Church and Homwe
+//		Edited Geo. C. Stebbins
+//		Published by the Biglow and Main Co.
+//		Chicago NewYork		
+//		Copyright 1904	
+//		Hymn no. 41
+
+// Transcribed by: Ted Gatza, Jr. 01/31/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Yielded to God" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - SOL" "\s(17)\f(TI)\:So\ therefore\ whosoever\ he\ be\ \|of\ you\ that\ renounceth\ not\ all that\ he\ hath,\ he\ cannot\ b\|e\ my\ disciple.\ -\ Lk.\ 14:33" ""
+   title (13) "Fanny J. Crosby" " " "Geo. C. Stebbins, 1895"
+
+ 
+footer
+
+//  title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2fd; 4db-; 4ec;
+2: 2bb-; 4fb-; 4fb-;
+
+			lyrics 1: "<1. >-1|Yield-ed to";
+			lyrics 1: "<2. >-1|Yield-ed to";
+			lyrics 1: "<3. >-1|Yield-ed to";
+			lyrics 1: "<4. >-1|Yield-ed to";
+bar
+//2
+1: 2gc#; 2fd;
+2: 2enb-; 2fb-;
+
+			lyrics 1: "God, my";
+			lyrics 1: "God, re-";
+			lyrics 1: "God, my";
+			lyrics 1: "God, and";
+bar
+//3
+1: 4ae; 4be; 4c+e; 4ae;
+2 1: 4f; 4g; 4af; 4f;
+2 2: 4f; 4f; 4s; 4f;
+
+			lyrics 1: "bod-y, soul and";
+			lyrics 1: "pos-ing 'neath His";
+			lyrics 1: "life and its de-";
+			lyrics 1: "in His ho-ly";
+bar
+//4
+1: 2bd; 2fd;
+2: 2fb-; 2bb-;
+
+			lyrics 1: "spir-it,";
+			lyrics 1: "shad-ow,";
+			lyrics 1: "vo-tion,";
+			lyrics 1: "keep-ing,";
+bar
+//5
+1: 2ge; 4eb-; 4ge;
+2: 2be; 4ge; 4be;
+
+			lyrics 1: "O what re-";
+			lyrics 1: "Sun-shine and";
+			lyrics 1: "Yield-ed the";
+			lyrics 1: "My heart His";
+bar
+//6
+1 1: 2f; 2g;
+1 2: 2f; 2f;
+2: 2bd; 2bnd&;
+
+			lyrics 1: "joic-ing";
+			lyrics 1: "glad-ness";
+			lyrics 1: "serv-ice";
+			lyrics 1: "tem-ple";
+bar
+//7
+1: 4af; 4bf; 4af; 4gen;
+2: 4c+c; 4d+c; 4c+c; 4bc;
+
+			lyrics 1: "fills my peace-ful";
+			lyrics 1: "round my path-way";
+			lyrics 1: "of my days and";
+			lyrics 1: "ev-er-more shall";
+bar
+//8
+1 1: 1f;
+1 2: 2f; 4d; 4e;
+2 1: 2a; 4b; 4c+;
+2 2: 1f;
+phrase below 1: 1 til 4;
+phrase above 2: 1 til 4;
+
+			lyrics 1: "breast;";
+			lyrics 1: "fall;";
+			lyrics 1: "years";
+			lyrics 1: "be;";
+bar
+//9
+1: 2fd; 4db-; 4ec;
+2: 2bb-; 4fb-; 4fb-;
+
+			lyrics 1: "All, all is";
+			lyrics 1: "Yield-ed to";
+			lyrics 1: "O what a";
+			lyrics 1: "Yield-ed to";
+bar
+//10
+1: 2gc#; 2fd;
+2: 2enb-; 2fb-;
+
+			lyrics 1: "well, no";
+			lyrics 1: "God, whose";
+			lyrics 1: "peace per-";
+			lyrics 1: "God, in";
+bar
+//11
+1: 4d+f; 4s; 4s; 4s;
+2: 4bb-; 4s; 4s; 4s;
+
+			lyrics 1: "doubt ";
+			lyrics 1: "love ";
+			lyrics 1: "vades ";
+			lyrics 1: "will-";
+invisbar
+newscore
+
+1: 4s; 4c+f; 4bf; 4af#;
+2: 4s; 4ac; 4bd; 4c+d;
+
+			lyrics 1: "nor fear dis-";
+			lyrics 1: "dis-pels all";
+			lyrics 1: "my ev-ery";
+			lyrics 1: "ing con-se-";
+
+bar
+//12
+1: 2c+g; 2ge;
+2: 2be; 2be;
+
+			lyrics 1: "turbs me,";
+			lyrics 1: "sor-row,";
+			lyrics 1: "feel-ing,";
+			lyrics 1: "cra-tion,";
+bar
+//13
+1: 2bc#; 4ac; 4gc;
+2: 2gen; 4ae; 4be; 
+
+			lyrics 1: "While on His";
+			lyrics 1: "He is my";
+			lyrics 1: "O what sweet";
+			lyrics 1: "Bless-ed Re-";
+bar
+//14
+1: 2fd; 2bd;
+2: 2bf; 2bg;
+
+			lyrics 1: "prom-ise";
+			lyrics 1: "Ref-uge,";
+			lyrics 1: "vi-sions";
+			lyrics 1: "deem-er,";
+bar
+//15
+1: 4be; 4ae; 4ge; 4ae;
+2 1: 4c+f; 4c+f; 4bf; 4f;
+2 2: 4s; 4s; 4s; 4f;
+
+			lyrics 1: "now a-lone I";
+			lyrics 1: "and my All in";
+			lyrics 1: "on my sight ap-";
+			lyrics 1: "I am lost in";
+
+bar
+//16
+1: 1bd;
+2: 1fb-;
+
+			lyrics 1: "rest.";
+			lyrics 1: "All.";
+			lyrics 1: "pears.";
+			lyrics 1: "Thee.";
+endbar
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

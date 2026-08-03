@@ -1,0 +1,278 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Melodious Sonnets
+//		For Sacred Service
+//		By John R. Sweney and Wm. J. Kirkpatrick
+//		Published by: John J. Hood
+//		1018 Arch St. Philadelphia
+//		Copyright: 1885
+//		Hymn No.: 12
+
+// Transcribed by: Ted Gatza, Jr. 06/28/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Will You Go?" ""
+   title (2)""
+   title (11) "E - 2 - FA" "\s(17)\f(TI)\:Come\ unto\ me,\ all\ ye\ that\|\ labor\ and\ are\ heavy\ laden, and\ I\ will\ give\ yo\|u\ rest.\ -\ Mat.\ 11:28" ""
+   title (13) "C. H. Yatman" " " "W. H. Geistweit, 1885"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time= 6/8	
+	key= 4#
+
+
+staff 2
+	key= 4#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1 1: 4.s; 4s; 8b-;
+1 2: 4.s; 4s; 8b-;
+2  : 4.s; 4s; 8ge;
+ital (13) above 1: 1 "With expression";
+
+			lyrics 1: "<1. >-1|My";
+			lyrics 1: "<2. >-1|My";
+			lyrics 1: "<3. >-1|My";
+bar
+//2
+1: 16eb-; 16eb- tie; 4eb-; 4eb-; 8ge;
+2: 16ge; 16ge tie; 4ge; 4ge; 8be;
+
+			lyrics 1: "broth-er, we are";
+			lyrics 1: "sis-ter, Christ is";
+			lyrics 1: "hear-er, in thy";
+bar
+//3
+1: 16be; 16be tie; 4be; 4be; 8be;
+2: 16ge; 16ge tie; 4ge; 4ge; 8ge;
+
+			lyrics 1: "trav-'ling to the";
+			lyrics 1: "call-ing thee to";
+			lyrics 1: "jour-ney whith-er";
+bar
+//4
+1: 16c+e; 16c+e tie; 4c+e; 4c+e; 8c+e;
+2: 16aa-;16aa- tie; 4aa-; 4aa-; 8ac;
+	
+			lyrics 1: "pal-ace of the";
+			lyrics 1: "jour-ney toward that";
+			lyrics 1: "wilt thou come at";
+bar
+//5
+1 1: 4.be tie; 4be; 16b-; 16b-;
+1 2: 4.s; 4s; 16b-; 16b-;
+2  : 4.ge tie; 4ge; 16ge; 16ge;
+
+			lyrics 1: "King, We are";
+			lyrics 1: "home, Where the";
+			lyrics 1: "last? To the";
+bar
+//6
+1: 16eb-; 16eb- tie; 4eb-; 4eb-; 8ge;
+2: 16ge; 16ge tie; 4ge; 4ge; 8be;
+
+			lyrics 1: "go-ing to mount";
+			lyrics 1: "wea-ry, heav-y";
+			lyrics 1: "throne of God in";
+			
+bar
+//7
+1: 16be; 16be tie; 4be; 4be; 8be;
+2: 16ge; 16ge tie; 4ge; 4ge; 8ge;
+
+			lyrics 1: "Zi-on, where for-";
+			lyrics 1: "lad-en find sweet";
+			lyrics 1: "heav-en, or where";
+bar
+//8
+1: 16c+e; 16c+e tie; 4c+e; 4c+e; 8c+e;
+2: 16aa-;16aa- tie; 4aa-; 4aa-; 8ac;
+
+			lyrics 1: "ev-er we shall";
+			lyrics 1: "rest, no more to";
+			lyrics 1: "hope is ev-er";
+bar
+//9
+1: 4.be tie; 4be; 16ge; 16ge;
+2: 4.ge tie; 4ge; 16be; 16be;
+
+			lyrics 1: "sing; There no";
+			lyrics 1: "roam; Canst thou";
+			lyrics 1: "past? Hear the";
+bar
+//10
+1: 4fd; 8fd; 4fd; 8ge;
+2: 4bb-; 8bb-; 4bb-; 8bb-;
+
+			lyrics 1: "sin or pain or";
+			lyrics 1: "not for-sake the";
+			lyrics 1: "word that Je-sus";
+bar
+//11
+1: 16ad; 16ad tie; 4da; 4ad; 8fd;
+2: 16fb-; 16fb- tie; 4fb-; 4fb-; 8bb-;
+
+			lyrics 1: "sigh-ing can dis-";
+			lyrics 1: "e-vil, and the";
+			lyrics 1: "sends thee, Come to";
+bar
+//12
+1:4ge; 8ge; 4ge; 8ad;
+2: 4be; 8be; 4be; 8bf;
+
+			lyrics 1: "turb our peace-ful";
+			lyrics 1: "Spir-it's call o-";
+			lyrics 1: "me and rest re-";
+bar
+//13
+1: 4.be tie; 4be; 16be; 16be;
+2: 4.bg tie; 4bg; 16ge; 16ge;
+
+			lyrics 1: "rest, For we";
+			lyrics 1: "bey? Christ will";
+			lyrics 1: "receive; I will";
+bar
+//14
+1: 4c+e; 8d+e; 4e+e; 8c+e;
+2 1: 4a; 8b; 4c+a; 8a;
+2 2: 4a; 8a; 4s; 8a;
+
+			lyrics 1: "dwell a-mong the";
+			lyrics 1: "guide thee to that";
+			lyrics 1: "par-don, cleanse, and";
+bar
+//15
+1: 16c+e; 16be tie; 4be; 4be; 8c+e;
+2: 16ae; 16ge tie; 4ge; 4ge; 8ae;
+
+			lyrics 1: "an-gels, and can";
+			lyrics 1: "ci-ty, if you";
+			lyrics 1: "com-fort, if thou";
+bar
+//16
+1: 4ge; 8be; 4fd; 8eb-;
+2: 4be; 8ge; 4ab-; 8ge;
+
+			lyrics 1: "lean on Je-sus'";
+			lyrics 1: "seek the nar-row";
+			lyrics 1: "on-ly wilt be-";
+bar
+//17
+1: 4.eb- tie; 4eb-; 8s;
+2: 4.ge tie; 4ge; 8s;
+
+			lyrics 1: "breast.";
+			lyrics 1: "way.";
+			lyrics 1: "lieve.";
+dblbar
+//18
+1 1: 4.s; 4s; 16e; 16e;
+1 2: 4.s; 4s; 16e; 16e;
+2 1: 4.s; 4s; 16e; 16e;
+2 2: 4.s; 4s; 16e; 16e;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "Will you";
+bar
+//19
+1: 4.ac; 8ac bm; 8bdn ebm; 8c+e;
+2: 4.ea-; 4aa-; 8aa-;
+
+			lyrics 1: 4.; 4; 8; "go? Will you";
+bar
+//20
+1: 4.be tie; 4.be;
+2: 4.ge tie; 4.ge;
+
+			lyrics 1: "go?";
+bar
+//21
+1: 4bd; 16fd; 16fd; 4bd; 8af;
+2: 4bb-; 16bb-; 16bb-; 4bb-; 8bb-;
+
+			lyrics 1: "Go to that land of";
+bar
+newscore
+//22
+1: 4ge; 8ge; 4.ge;
+2: 4be; 8be; 4.be;
+
+			lyrics 1: "pure de-light?";
+bar
+//23
+1: 4bd; 16fd; 16fd; 4bd; 8af;
+2: 4bb-; 16bb-; 16bb-; 4bb-; 8bd;
+
+			lyrics 1: "Go where the saints are";
+bar
+//24
+1: 4ge; 8ge; 4.ge;
+2: 4be; 8be; 4.be;
+
+			lyrics 1: "clothed in white?";
+bar
+//25
+1: 4ae; 16ae; 16ae; 4c+e; 8e+e;
+2: 4c+a-; 16c+a-; 16c+a-; 4aa-; 8c+a-;
+
+			lyrics 1: "Go where the saved shall";
+bar
+//26
+1: 4e+g; 8bg; 4bg; 8c+e;
+2: 4be; 8e+e; 4e+e; 8c+a-;
+
+			lyrics 1: "find no night, But";
+bar
+//27
+1: 4.ge; 4.fd;
+2: 4.bb-; 4.ab-;
+
+			lyrics 1: "end-less";
+bar
+//28
+1 1: 4.e tie; 4e; 8s;
+1 2: 4.e tie; 4e; 8s;
+2: 4.ge tie; 4ge; 8s;
+
+			lyrics 1: "day.";
+endbar

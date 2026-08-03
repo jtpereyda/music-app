@@ -1,0 +1,238 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sowing and Reaping
+//		Author: John H. Kurzenknabe
+//		Published by John H. Kurzenknabe and sons.
+//		Copyright: 1889
+//		Hymn no. 86
+
+// Transcribed by: Ted Gatza, Jr. 04/12/2011
+// HymnsToGod.org
+
+//********************************************
+
+top
+
+   title bold (19) "" "Beautiful City Of Gold" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - DO" "\s(17)\f(TI)\:And\ the\ building\ of\ the\ wal\|l\ thereof\ was\ jasper:\ and\ the\ city was\ pure\ gold,\ like\ u\|nto\ pure\ glass.\ -\ Rev.\ 21:21" ""
+   title (13) "I. N. McHose" "" "I. N. McHose, 1889"
+
+ 
+footer
+
+title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//********************************************
+
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1: 8.ac; 16bd; 2.s;
+2: 8.aa-; 16aa-; 2.s;
+
+			lyrics 1: 8.; 16; 2.s; "<1. >-1|O, how";
+			lyrics 1: 8.; 16; 2.s; "<2. >-1|In that";
+			lyrics 1: 8.; 16; 2.s; "<3. >-1|O, the";
+			lyrics 1: 8.; 16; 2.s; "<4. >-1|On that";
+
+bar
+//2
+1: 4c+e; 8.d+f; 16c+e; 4c+e; 8.bd; 16ac;
+2: 4aa-; 8.aa-; 16aa-; 4aa-; 8.aa-; 16aa-;
+
+			lyrics 1: "oft-en we sing of a";
+			lyrics 1: "cit-y of light, where the";
+			lyrics 1: "rap-tur-ous scenes on that";
+			lyrics 1: "bright, shin-ing shore, all our";
+bar
+//3
+1: 4bd; 8.c+e; 16bd; 4ac; 8.s; 16s;
+2 1: 4ge; 8.ge; 16ge; 4a; 8.s; 16s;
+2 2: 4s; 8.s; 16s; 4a; 8.s; 16s;
+
+			lyrics 1: "cit-y so fair,";
+			lyrics 1: "sun nev-er sets,";
+			lyrics 1: "ev-er green shore,";
+			lyrics 1: "loved ones we'll meet,";
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4s; 8.ge; 16af;
+2 1: 4s; 8.s; 16s; 4s; 8.be; 16be;
+2 2: 4s; 8.s; 16s; 4s; 8.s; 16s;
+
+			lyrics 1: "Just be-";
+			lyrics 1: "The in-";
+			lyrics 1: "To my";
+			lyrics 1: "And the";
+
+bar
+//4
+1: 4bg; 8.bg; 16c+a; 4d+b; 8.e+c+; 16d+b;
+2: 4e+e; 8.e+e; 16e+e; 4e+e; 8.e+e; 16e+e;
+
+			lyrics 1: "yond the dark val-ley, we're";
+			lyrics 1: "ha-bit-ants nev-er grow";
+			lyrics 1: "vi-sion their beau-ties un-";
+			lyrics 1: "King in His beau-ty be-";
+bar
+//5
+1: 2.c+a; 8.ac; 16bd;
+2: 2.e+a-; 8.aa-; 16aa-;
+
+			lyrics 1: "told, Where the";
+			lyrics 1: "old; There, no";
+			lyrics 1: "fold, Where the";
+			lyrics 1: "hold!\(emdash) The white";
+bar
+//6
+1: 4c+e; 8.d+f; 16c+e; 4c+e; 8.bd; 16ac;
+2: 4aa-; 8.aa-; 16aa-; 4aa-; 8.aa-; 16aa-;
+
+			lyrics 1: "Sav-iour has gone, us a";
+			lyrics 1: "sor-row, no sick-ness, no";
+			lyrics 1: "riv-ers of pleas-ure roll";
+			lyrics 1: "robe, and the crown of re-";
+
+bar
+//7
+1: 4bd; 8.c+e; 16bd; 4ac; 8.af; 16fd;
+2: 4ge; 8.ge; 16ge; 4aa-; 8.ad; 16ad;
+
+			lyrics 1: "home to pre-pare, In that";
+			lyrics 1: "death ev-er comes, In that";
+			lyrics 1: "on ev-er-more, In that";
+			lyrics 1: "joic-ing re-ceive, In that";
+bar
+newscore
+//8
+1: 8ec; 4ae; 8d+e; 8c+e; 4c+e; 8be;
+2: 8ae; 4c+e; 8be; 8ae; 4ae; 8d+e;
+
+			lyrics 1: "beau-ti-ful cit-y of";
+			lyrics 1: "beau-ti-ful cit-y of";
+			lyrics 1: "beau-ti-ful cit-y of";
+			lyrics 1: "beau-ti-ful cit-y of";
+bar
+//9
+1: 2.ae; 4s;
+2: 2.c+aa-; 4s;
+
+			lyrics 1: "gold.";
+			lyrics 1: "gold.";
+			lyrics 1: "gold.";
+			lyrics 1: "gold.";
+dblbar
+//10
+1: 8.e+e; 16d+e; 2.s;
+2: 8.c+a-; 16ba-; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: 4; 2.s; "<>";
+			lyrics 1: "There the";
+			lyrics 1: "There the";
+bar
+//11
+1 1: 2.c+; 8.s; 16s;
+1 2: 4e; 8.e; 16e; 4e; 8.s; 16s;
+2: 4aa-; 8.aa-; 16aa-; 4aa-; 8.s; 16s;
+
+			lyrics 1: 2.; 4s; "<>";
+			lyrics 1: "sun";
+			lyrics 1: 4; 8.; 16; 4; 8.s; 16s; "sun ev-er shines,";
+invisbar
+newscore
+
+1 1: 2.s; 8.c+e; 16be;
+2: 4s; 8.s; 16s; 4s; 8.aa-; 16ac;
+
+			lyrics 1: "ev-er";
+			lyrics 1: 4s; 8.s; 16s; 4s; 8.; 16; "there the";
+
+bar
+//12
+1 1: 2.a; 8.ge; 16af;
+1 2: 4f; 8.f; 16f; 4f; 8.s; 16s;
+2: 4ad; 8.d+d; 16d+d; 4d+d; 8.be; 16be;
+
+			lyrics 1: "shines Fra-grant";
+			lyrics 1: 4; 8.; 16; 4; 8.; 16; "sun ev-er shines, Fra-grant";
+bar
+//13
+1 1: 2.b; 8.d+b; 16c+a;
+1 2: 4g; 8.g; 16g; 4g; 8.s; 16s;
+2: 4be; 8.e+e; 16e+e; 4e+e; 8.e+e; 16e+e;
+
+			lyrics 1: "flow'ers ev-er";
+			lyrics 1: 4; 8.; 16; 4; 8.; 16; "flow'ers ev-er bloom, fra-grant";
+bar
+//14
+1 1: 2.b; 8.e+e; 16d+e;
+1 2: 4g; 8.g; 16g; 4g; 8.s; 16s; 
+2: 4e+e; 8.e+e; 16e+e; 4e+e; 8.ge; 16ge;
+
+			lyrics 1: "bloom; There we'll";
+			lyrics 1: 4; 8.; 16; 4; 8.s; 16s; "flow'rs ev-er bloom;";
+bar
+//15
+1: 4c+e; 8.c+a; 16c+a; 4c+a; 8.c+a; 16bg;
+2 1: 8a bm; 8c+ ebm; 8.e+a; 16e+a; 4e+a; 8.e+e; 16d+e;
+2 2: 4a; 8.s; 16s; 4s; 8.s; 16s;
+
+			lyrics 1: "meet the re-deemed, and the";
+bar
+//16
+1 1: 4af; 8.af; 16f; 4af; 8.af; 16fd;
+1 2: 4s; 8.s; 16f; 4s; 8.s; 16s;
+2: 4c+f; 8.c+f; 16af; 4c+f; 8.d+d; 16ad;
+
+			lyrics 1: "Sav-iour be-hold, In that";
+bar
+//17
+1: 8ec; 4ae; 8d+e; 8c+e; 4c+e; 8be;
+2: 8ae; 4c+e; 8be; 8ae; 4ae; 8d+e;
+
+			lyrics 1: "beau-ti-ful cit-y of";
+bar
+//18
+1: 2.ae; 4s;
+2: 2.c+aa-; 4s;
+
+			lyrics 1: "gold.";
+endbar

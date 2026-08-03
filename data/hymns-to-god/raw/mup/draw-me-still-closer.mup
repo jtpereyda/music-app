@@ -1,0 +1,173 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Bright Melodies
+//		For the Sunday School and
+//		Young people's Societies
+//		Editors John R. Sweeney and
+//		Howqard Entwisle
+//		Published by John J. Hood
+//		Philadelphia 1024 Arch St.
+//		Chicage 940 W. Madison St.
+//		Copyright 1899
+//		Hymn no. 39
+
+// Transcribed by: Ted Gatza, Jr. 12/10/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Draw Me Still Closer" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - MI" "\s(17)\f(TI)\:Draw\ nigh\ to\ God,\ and\ he\ will\ draw\ nigh\ to\ you.\ -\ Jms.\ 4:8 \(space)" ""
+   title (13) "Frank M. Davis" " " "Frank M. Davis, 1894"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=77";
+
+
+//1
+1: 8c+e; d+f; c+e; bd; c+e; bd;
+2: 8aa-;;; ge; ae; ge;
+
+			VERSE "<1. >-1|Draw me still clos-er, dear";
+			VERSE "<2. >-1|Draw me still clos-er, dear";	
+			VERSE "<3. >-1|Draw me still clos-er, dear";
+bar
+//2
+1: 4.ac; 4ec; 8r;
+2: 4.aa-; 4; 8r;
+
+			VERSE "Sav-iour,";
+			VERSE "Sav-iour,";
+			VERSE "Sav-iour,";
+bar
+//3
+1: 8c+e; bd; ac; adn; gd; ad;
+2: 8aa-; ea-; aa-; fb-;;;
+
+			VERSE "Clos-er to thy bleed-ing";
+			VERSE "Clos-er by night and by";
+			VERSE "I would live near-er to";
+bar
+//4
+1: 4.be tie; 4; 8r;
+2: 4.ge tie; 4; 8r;
+
+			VERSE "side,";
+			VERSE "day,";
+			VERSE "thee,";
+bar
+//5
+1: 8c+e; d+f; c+e; bd; c+e; bd;
+2: 8aa-;;; ge; ae; ge;
+
+			VERSE "Which for my cleans-ing is";
+			VERSE "When I am tempt-ed to";
+			VERSE "Thou art my Rock and my";
+bar
+//6
+1: 4.ac; 4ec; 8r;
+2: 4.aa-; 4; 8r;
+
+			VERSE "flow-ing,";
+			VERSE "wan-der,";
+			VERSE "re-fuge,";
+bar
+newscore
+//7
+1: 8ec; ac; bd; c+e; ae; be;
+2 1: 8ae; e; ge; ae; c+e; d+e;
+2 2: 8s; e; s;;;;
+
+			VERSE "There I would ev-er a-";
+			VERSE "Draw me still clos-er, I";
+			VERSE "Clos-er to thee I would";
+bar
+//8
+1: 4.ae tie; 4; 8r;
+2: 4.c+a- tie; 4; 8r;
+
+			VERSE "bide.";
+			VERSE "pray.";
+			VERSE "be.";
+repeatstart
+//9
+1: 8c+a; d+b; c+a; 4.bg;
+2: 8e+a;;; 4.e+e;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE [c]"Clos-er to thee,";
+bar
+//10
+1: 8c+a; bg; af; 4.gen;
+2: 8c+f;;; 4.c+c;
+
+			VERSE "clos-er to thee,";
+bar
+//11
+1: 8fd; ge; af; ec; ac; bd;
+2 1: 8ad;;; a;;;
+2 2: 8s;;; a;;;
+
+		VERSE "Draw me, dear Sav-iour, still";
+bar ending "1st"
+//12
+1: 8c+e; bd; ac; 4.be;
+2: 8aa-; ea-; aa-; 4.ge;
+
+			VERSE "clos-er to thee;";
+repeatend ending "2nd"
+//13
+1: 8c+e; ae; be; 4.ae;
+2: 8ae; c+e; d+e; 4.c+a-;
+
+			VERSE "clos-er to thee.";
+endbar
+

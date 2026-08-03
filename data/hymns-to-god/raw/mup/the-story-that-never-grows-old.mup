@@ -1,0 +1,257 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Hymns No. 1
+//		For use in Church Servicw, Sunday Schools,
+//		Young People's Societies, Etc.
+//		Compiled by Willian Phillips Hall and
+//		J. Wilbur Chapman, D.D.
+//		Editor of Music W. S. Weeden
+//		Hall-Mack Co. Publishers
+//		1020 Arch Street, Philadelphia, PA.
+//		Copyuright 1899
+//		Hymn 35
+
+// Transcribed by: Ted Gatza, Jr. 05/05/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Story That Never Grows Old" ""
+   title (2)""
+   title (11) "G - 3 - MI" "\s(17)\f(TI)\:Now\ I\ make\ known\ unto\ you\ brethren\|,\ the\ gospel\ which\ I\ preached\ unto you,\ which\ also\ ye\ received,\ whe\|rein\ also\ ye\ stand,\ -\ 1\ Cor.\ 15:1"""
+   title (13) "John H. Yates" " " "M. L. McPhail, 1894"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key= 1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=75";
+
+//1
+1 1: 4.s; 4s; 16b bm; 16c+ ebm;
+1 2: 4.s; 4s; 8d;
+2 1: 4.s; 4s; 16g bm; 16a ebm;
+2 2: 4.s; 4s; 8g;
+
+			lyrics 1: 4.s; 4s; 8; "<1. >-1|How";
+			lyrics 1: 4.s; 4s; 8; "<2. >-1|It";
+			lyrics 1: 4.s; 4s; 8; "<3. >-1|It";
+			lyrics 1: 4.s; 4s; 8; "<4. >-1|When";
+			lyrics 1: 4.s; 4s; 8; "<5. >-1|When";
+			
+bar
+//2
+1: 8d+g; 8e+g; 8d+g; 8bg; 8ad; 8gd;
+2: 8bg; 8c+g; 8bg; 8d+g; 8c+g; 8bg;
+
+			lyrics 1: "dear to my heart is the";
+			lyrics 1: "came to my heart when, all";
+			lyrics 1: "comes to my soul when the";
+			lyrics 1: "sor-row is mine, and on";
+			lyrics 1: "down in the \"val-ley and";
+bar
+//3
+1 1: 8ae; 8ge; 8ec; 4db-; 16g bm; 16a ebm;
+1 2: 8s; 8s; 8s; 4s; 8d;
+2 1: 8c+c; 8c+c; 8gc; 4gg-; 16b bm; 16c+ ebm;
+2 2: 8s; 8s; 8s; 4s; 8g;
+
+			lyrics 1: 8; 8; 8; 4; 8; "sto-ry of old, The";
+			lyrics 1: 8; 8; 8; 4; 8; "fet-tered by sin, I";
+			lyrics 1: 8; 8; 8; 4; 8; "temp-ter is nigh With";
+			lyrics 1: 8; 8; 8; 4; 8; "pil-lows of stone My";
+			lyrics 1: 8; 8; 8; 4; 8; "shad-ow of Death,\" I";
+bar
+//4
+1: 8bg; 8af; 8bd; 8d+g; 8c+f; 8bg;
+2: 8d+g; 8c+g; 8bg; 8d+b; 8d+a; 8d+g;
+
+			lyrics 1: "sto-ry that ev-er is";
+			lyrics 1: "sat in the pris-on of";
+			lyrics 1: "snares for my way wea-ry";
+			lyrics 1: "ach-ing head seeks for re-";
+			lyrics 1: "en-ter the gloom of the";
+bar
+//5
+1 1: 4.af tie; 4af; 16b bm; 16c+ ebm;
+1 2: 4.s; 4s; 8d;
+2 1: 4.d+d tie; 4d+d; 16g bm; 16a ebm;
+2 2: 4.s; 4s; 8g;
+
+			lyrics 1: 4.; 4s; 8; "new, The";
+			lyrics 1: 4.; 4s; 8; "doubt: Like";
+			lyrics 1: 4.; 4s; 8; "feet; It";
+			lyrics 1: 4.; 4s; 8; "pose, This";
+			lyrics 1: 4.; 4s; 8; "grave, I'll";
+bar
+//6
+1: 8d+g; 8e+g; 8d+g; 8bg; 8s; 8s;
+2: 8bg; 8c+g; 8bg; 8d+g; 8s; 8s;
+
+			lyrics 1: "mes-sage that saints";
+			lyrics 1: "an-gel of old,";
+			lyrics 1: "tells of the Rock";
+			lyrics 1: "sto-ry brings com-";
+			lyrics 1: "tell the old sto-";
+invisbar
+newscore
+
+1: 8s; 8s; 8s; 8s; 8ad; 8gd;
+2: 8s; 8s; 8s; 8s; 8c+g; 8bg;
+
+			lyrics 1: "of all";
+			lyrics 1: "the glad";
+			lyrics 1: "that is";
+			lyrics 1: "fort and";
+			lyrics 1: "ry with";
+
+bar
+//7
+1: 8ae; 8ge; 8ec; 4db-; 8gd;
+2: 8c+c; 8c+c; 8gc; 4gg-;8bg;
+
+			lyrics 1: "a-ges have told, The";
+			lyrics 1: "sto-ry came in And";
+			lyrics 1: "high-er than I, And";
+			lyrics 1: "peace from the throne, My";
+			lyrics 1: "life's lat-est breath of";
+bar
+//8
+1: 8bg; 8ad; 8gd; 8bg; 8bg; 8ad;
+2: 8d+g; 8c+g; 8bg; 8d+d; 8d+d; 8c+d;
+mussym (10) 1: 5 "ferm";
+mussym (10) below 2: 5 "uferm";
+
+			lyrics 1: "mes-sage so ten-der and";
+			lyrics 1: "led me tri-um-phant-ly";
+			lyrics 1: "leads to its bliss-ful re-";
+			lyrics 1: "des-ert blooms forth like the";
+			lyrics 1: "Christ and his pow-er to";
+bar
+//9
+1: 4.gd tie; 4gd; 8s;
+2: 4.bg- tie; 4bg-; 8s;
+
+			lyrics 1: "true.";
+			lyrics 1: "out.";
+			lyrics 1: "treat.";
+			lyrics 1: "rose.";
+			lyrics 1: "save.";
+dblbar
+newscore
+//10
+1: 8gb-; 4.s; 4s;
+2: gg-; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "The";
+bar
+//11
+1: 8.ge; 16fd; 8ec; 8ge; 8fd; 8ec;
+2: 8.gc; 16gc; 8gc; 8gc; 8gc; 8gc;
+
+			lyrics 1: "sto-ry that nev-er grows";
+			lyrics 1: 8.s; 16s; 8s; 8s; 8s; 8; "that";
+bar
+//12
+1 1: 4d; 8g; 4b; 8bg;
+1 2: 4.b-; 4d; 8s;
+2 1: 8gg-; 8gb-; 8gd; 4g; 8d+g;
+2 2: 8s; 8s; 8s; 4g; 8s; 
+phrase above 1: 1 til 4;
+phrase below 1: 1 til 4;
+
+			lyrics 1: 4.; 4s; 8; "old,_ Through";
+			lyrics 1: 8; 8; 8; 4; 8s; "nev-er grows old,";
+bar
+//13
+1 1: 8.bg; 16a; 8s; 8s; 8s; 8s;
+1 2: 8.s; 16g; 8s; 8s; 8s; 8s;
+2: 8.c+#e; 16c+e; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "o-ver";
+invisbar
+newscore
+
+1 1: 8.s; 16s; 8g; 8bg; 8a; 8g;
+1 2: 8.s; 16s; 8g; 8s; 8g; 8g;
+2: 8.s; 16s; 8c+e; 8c+e; 8c+e; 8c+e;
+
+			lyrics 1: "and o-ver 'tis";
+
+bar
+//14
+1: 4.a<d+>f~; 4d+f; 8d+g;
+2 1: 4d+; 8s; 4s; 8s;
+2 2: 8d bm; 8f ebm; 8d+a; 4c+d; 8bg;
+mussym (10) above 1: 4 "ferm";
+mussym (10) below 2: 4 "uferm";
+
+			lyrics 1: 4.; 4s; 8; "told:_ The";
+			lyrics 1: 4s; 8; 4; 8s; "'tis told:";
+bar
+//15
+1: 8d+g; 8e+g; 8d+g; 8bg; 8ad; 8gd;
+2: 8bg; 8c+g; 8bg; 8d+g; 8c+g; 8bg;
+
+			lyrics 1: "sto-ry so dear, bring-ing";
+bar
+newscore
+//16
+1: 8ae; 8ge; 8ec; 4db-; 8gd;
+2: 8c+c; 8c+c; 8gc; 4gg-; 8bg;
+
+			lyrics 1: "heav-en so near, sweet";
+bar
+//17
+1: 8bg; 8ad; 8gd; 8bg; 8bg; 8ad;
+2: 8d+g; 8c+g; 8bg; 8d+d; 8d+d; 8c+d;
+mussym (10) above 1: 5 "ferm";
+mussym (10) below 2: 5 "uferm";
+
+			lyrics 1: "sto-ry that nev-er grows";
+bar
+//18
+1: 4.gd tie; 4gd; 8s;
+2: 4.bg- tie; 4 bg-; 8s;
+
+			lyrics 1: "old.";
+endbar

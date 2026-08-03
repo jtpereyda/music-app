@@ -1,0 +1,194 @@
+// Coded with Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 35
+//		
+// Transcribed by: Ted Gatza, Jr. 11/03/2011; rev. 09/26/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "O! How Sweet To Trust In The Lord" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - SOL" "\s(17)\f(TI)\:let\ him\ trust\ in\ the\ name\ of\ Jehovah,\ and\ rely\ upon\ his\ God.\ -\ IS.\ 50:10 \(space) " ""   
+   title (13) "Marion Watkins" "" "B. B. Funk"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1: 8fd;; 2.s;
+2: 8bb-;; 2.s;
+
+
+			VERSE "<1. >-1|O! how";
+			VERSE "<2. >-1|O! how";
+			VERSE "<3. >-1|And how";
+bar
+//2
+1: 4bd; 8;; 4d+d; 8c+en; 8be;
+2: 4fb-; 8;; 4bg; 8bc; ;
+
+			VERSE "blest and how hap-py must";
+			VERSE "blest and how hap-py are";
+			VERSE "bless-ed are they that do";
+bar
+//3
+1 1: 2.c+f; 8f; 8af;
+1 2: 2.s; 8f; s;
+2 1: 2.af; 8a; c+f;
+2 2: 2.s; 8f; s;
+
+			VERSE 2.; 8; ; "be Those who";
+			VERSE 2.; 8; ; "those Who to";
+			VERSE 2.; 8; ; "know The pre-";
+bar
+//4
+1: 4c+f; 8;; 4e+f; 8d+f; c+e;
+2: 4af; 8;; 4c+f; 8bf; af;
+
+			VERSE "live in the love of the";
+			VERSE "good-ness are ev-er in-";
+			VERSE "cepts the Lord hath them giv-";
+bar
+//5
+1: 2.bd; 8fd;;
+2: 2.bb-; 8bb-;;
+
+			VERSE "Lord, And his";
+			VERSE "clined; Who seek";
+			VERSE "en, And do";
+bar
+//6
+1: 4bd; 8;;4d+f; 8c+f; 8bnf;
+2 1: 4fb-; 8;; 4bf; 8af; g#;
+2 2: 4s; 8;; 4; 8; f;
+
+			VERSE "good-ness in all things can";
+			VERSE "help from the true liv-ing";
+			VERSE "keep them wher-ev-er they";
+bar
+//7
+//===================
+1 1: 2.c+f; 8f slur; 8a;
+1 2: 2.s; 8f tie;;
+2 1: 2.af; 8a slur; c+;
+2 2: 2.s; 8f tie;;
+
+			VERSE 2.; 8; ; "see, And do";
+			VERSE "God, With";
+			VERSE 2.; 8;; "go; They're as-";
+bar
+//8
+1: 4c+f; 8;; 4e+f; 8d+f; c+e;
+2: 4af; 8;; 4c+f; 8bf; af;
+
+			VERSE "trust in his most pre-cious";
+			VERSE "all of their heart and their";
+			VERSE "sured of a home up in";
+bar
+//9
+1: 2.bd; 4r;
+2: 2.bb-; 4r;
+
+			VERSE "word.";
+			VERSE "mind.";
+			VERSE "heaven.";
+dblbar
+//10
+1: 4.fd; 8eb-; 4db-; fd;
+2: 4.bb-; 8gb-; 4fb-; bb-;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "O! how sweet to";
+bar
+//11
+1: 4d+f; 8; c+e; 2bd;
+2: 4bb-; 8; fb-; 2;
+
+			VERSE "trust in the Lord,";
+bar
+//12
+1: 4.bg; 8af; 4ge; be;
+2: 4.e+e; 8; 4be; ge;
+
+			VERSE "O! how sweet to";
+bar
+//13
+1: 4fd; 8; eb-; 2db-;
+2: 4bb-; 8; gb-; 2fb-;
+
+			VERSE "trust in the Lord,";
+bar
+//14
+1: 4.fd; 8ec; 4db-; fd;
+2: 4.fb-; 8; 4; bb-;
+
+			VERSE "O! how sweet to";
+bar
+//15
+1: 4d+f; 8; c+e; 4bd; 8bf;;
+2: 4bb-; 8; fb-; 4; 8bd;;
+
+			VERSE "trust in the Lord, In the";
+bar
+//16
+1: 4c+g;; bf; af;
+2: 4be; e+e; d+f; c+f-;
+
+			VERSE "Sav-iour's ho-ly";
+bar
+//17 
+1: 2.bf; 4s;
+2: 2.d+b-; 4s;
+
+			VERSE "name.";
+endbar

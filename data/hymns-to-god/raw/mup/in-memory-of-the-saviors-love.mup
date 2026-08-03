@@ -1,0 +1,279 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this Mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	
+//	Hymns For Worship (Revised)
+//	Editors: R. J. Stevens and Dane Shepard
+//	Publisher: Guardian of Truth Foundation
+//	420 Old Morgantown Road
+//	Bowliong Green, KY 42102
+//	Date: 1998
+//	Hymn No.: 181
+
+
+// Transcribed by: Ted Gatza, Jr. 01/26/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=1
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "In Memory Of The Savior's Love" ""
+   title (4) ""
+   title (11) "" "\f(TI)For as often as ye eat this bread and drink this cup," "" 
+   title (11) "" "\f(TI)ye do show the Lord's death till He come - 1 Cor. 11:26" "" 
+   title (11) "" 
+   title (11) "F - 4 - DO" "" ""
+   title (13) "Thomas Cotterill, 1805" "" " Este's Psalter, 1592"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define SLOWLY ital (15) above 1: 1 "Slowly"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+     //Misc. Texts
+	 define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+	 define ATEMPO(COUNT)
+           ital (15) above 1: COUNT "a tempo";@
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 4cf;
+2: 2.s; 4fa;
+
+	VS "<1. >-1|In";
+	VS "<2. >-1|By";
+	VS "<3. >-1|Be-";
+bar
+
+//2
+1 1: 4.a; 8; 4s; ;
+1 2: 4f; ; eg; df;
+2 1: 4.c+; 8; 4s; ;
+2 2: 4f; a-; cc+; da;
+
+	VS12 "mem-ory of the";
+	VS12 "faith we take the";
+	VS12" neath His ban-ner";
+bar
+
+//3a
+1: 4db; fb; fa; s;
+2: 4b-b; b-d+; fc+; s;
+
+	VS "Sav-ior's love";
+	VS "bread of life";
+	VS "thus we sing,";
+invisbar
+//3b
+
+1: 2.s; 4eg;
+2: 2.s; 4cc+;
+
+	VS "We";
+	VS "With";
+	VS "The";
+bar
+
+//4
+1: 4fa; gc+; ; dbn;
+2: 4fc+; ec+; gd+; g-g;
+
+	VS "keep the sa-cred";
+	VS "which our souls are";
+	VS "won-ders of His";
+bar
+
+//5a
+1: 2.ec+; 4s;
+2: 2.cg; 4s;
+
+	VS "feast,";	
+	VS "fed,";
+	VS "love;";
+invisbar
+
+//5b
+1: 2.s; 4fa;
+2: 2.s; 4fa;
+
+	VS "Where";
+	VS "The";
+	VS "And";
+bar
+
+//6
+1: 4.fd+; 8ec+; 4fb; fa;
+2: 4.b-b; 8cg; 4df; fc+;
+
+	VS "ev-'ry hum-ble,";
+	VS "cup in to-ken";
+	VS "here an-tic-i-";
+bar
+
+//7a
+1: 4eg; df; c#e; s;
+2: 4cc+; da; a-a; s;
+
+	VS "con-trite heart";
+	VS "of His blood";
+	VS "pate by faith";
+invisbar
+
+//7b
+1: 2.s; 4cna;
+2: 2.s; 4fa;
+
+	VS "Is";
+	VS "That";
+	VS "The";
+bar
+
+//8
+1: 4eg; df; ; ce;
+2: 4cc+; da; b-b; 4cg;
+
+	VS "made a wel-come";
+	VS "was for sin-ners";
+	VS "heav'n-ly feast a-";
+bar
+
+//9
+1: 2.cf; 4s;
+2: 2.fa; 4s;
+
+	VS "guest.";
+	VS "shed.";
+	VS "bove.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

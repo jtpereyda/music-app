@@ -1,0 +1,172 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Assembly Hymn and Song Collection
+//		For use ing Chapel, Assembly, Convocation
+//		or General Exercises of Schools, Normals, 
+//		Colleges, Universitues, Etc.
+//		Compiled and Edited by C. Guy Hoover
+//		Professor of School Music, Theory and 
+//		Conducting
+//		Published by the Author
+//		Authorized Distributer: Educational Music Bureau
+//		School-Music Supply Department
+//		218 So. Wabash Ave. Chicago.
+//		Sixth Edition
+//		Copyright 1915
+//		Hymn no. 64
+
+// Transcribed by: Ted Gatza, Jr. 11/29/2101
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "From Every Stormy Wind That Blows" ""
+   title (2)""
+   title (11) "C - 2 - MI" "\s(17)\f(TI)\:Now\ our\ Lord\ Jesus\ Christ\ himself,\|\ and\ God\ our\ Father\ who\ loved\ us\ and gave\ us\ eternal\ comfort\ and\ goo\|d\ hope\ through\ grace,\ -\ 2\ Thes.\ 2:16"""
+   title (13) "Hugh Stowell" " " "Thomas Hastings"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=120";
+
+//1
+1: 2.s; 2s; 8ec bm; 8fd ebm;
+2: 2.s; 2s; 4gc;
+
+			lyrics 1: 2.s; 2s; 4; "<1. >-1|From";
+			lyrics 1: 2.s; 2s; 4; "<2. >-1|There";
+			lyrics 1: 2.s; 2s; 4; "<3. >-1|There";
+			lyrics 1: 2.s; 2s; 4; "<4. >-1|There";
+bar
+//2
+1: 2ge; 4ge; 4ge slur; 4fd; 4ec;
+2: 2c+c; 4c+c; 2c+c; 4c+c;
+
+			lyrics 1: "ev-'ry storm-y";
+			lyrics 1: "is a place where";
+			lyrics 1: "is a scene where";
+			lyrics 1: "there on ea-gle";
+bar
+//3
+1: 2af; 4af; 2ge; 8bd bm; 8c+e ebm;
+2 1: 2c+f; 4c+f; 2c+c; 4g;
+2 2: 2s; 4s; 2s; 4g;
+
+			lyrics 1: 2; 4; 2; 4; "wind that blows, From";
+			lyrics 1: 2; 4; 2; 4; "Je-sus sheds The";
+			lyrics 1: 2; 4; 2; 4; "spir-its blend, Where";
+			lyrics 1: 2; 4; 2; 4; "wings we soar, And";
+bar
+newscore
+//4
+1: 2d+f; 4d+f; 4d+f slur; 4c+e; 4bd;
+2 1: 2bg; 4bg; 2bg; 4g;
+2 2: 2s; 4s; 2s; 4g;
+
+			lyrics 1: "ev-'ry swell-ing";
+			lyrics 1: "oil of glad-ness";
+			lyrics 1: "friend holds fel-low-";
+			lyrics 1: "sin and sense mo-";
+bar
+//5
+1: 2c+e; 4e+g; 2d+g; 4d+g;
+2: 2gc; 4c+c; 2bg; 4bg;
+
+			lyrics 1: "tide of woes, There";
+			lyrics 1: "on our heads; A";
+			lyrics 1: "ship with friend: Tho'";
+			lyrics 1: "lest no more; And";
+bar
+//6
+1: 2e+g; 4d+f; 2c+e; 4af;
+2: 2c+c; 4gc; 2gc; 4c+c;
+
+			lyrics 1: "is a calm, a";
+			lyrics 1: "place than all be-";
+			lyrics 1: "sun-der'd far, by";
+			lyrics 1: "heav'n comes down our";
+bar
+//7
+1: 2ge; 4ec; 2db-; 8ec bm; 8fd ebm;
+2 1: 2c+c; 4ge; 2g; 4gc;
+2 2: 2s; 4s; 2g; 4s;
+
+			lyrics 1: 2; 4; 2; 4; "sure re-treat: 'Tis";
+			lyrics 1: 2; 4; 2; 4; "side more sweet: It";
+			lyrics 1: 2; 4; 2; 4; "faith they meet A-";
+			lyrics 1: 2; 4; 2; 4; "soul to greet, While";
+bar
+//8
+1: 2ge; 4ge; 4ge slur; 4fd; 4ec;
+2 1: 2c+c; 4c+c; 2c+; 4c+e;
+2 2: 2s; 4s; 4c slur; 4d; 4s;
+
+			lyrics 1: "found be-neath the";
+			lyrics 1: "is the blood-bought";
+			lyrics 1: "round one com-mon";
+			lyrics 1: "glo-ry crowns the";
+bar
+//9	
+1: 2.ac; 2.bf;
+2 1: 2.c+f; 2.g;
+2 2: 2.s; 2.s;
+
+			lyrics 1: "mer-cy";
+			lyrics 1: "mer-cy";
+			lyrics 1: "mer-cy";
+			lyrics 1: "mer-cy";
+bar
+//10
+1: 2.c+e tie; 2c+e; 4s;
+2: 2.gc tie; 2gc; 4s;
+
+			lyrics 1: "seat.";
+			lyrics 1: "seat.";
+			lyrics 1: "seat.";
+			lyrics 1: "seat.";		
+endbar
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

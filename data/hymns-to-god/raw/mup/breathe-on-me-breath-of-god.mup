@@ -1,0 +1,193 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Music: http://www.hymntime.com/tch/pdf/p/e/n/Penpark.pdf
+//		Lyrics: http://www.hymntime.com/tch/htm/b/o/bombog.htm
+
+// Transcribed by: Ted Gatza, Jr. 03/25/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Breathe On Me, Breath of God" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(17)\f(TI)\:Behold,\ I\ will\ cause\ breath\ to\ enter\ into\ you,\ and\ ye\ shall\ live.\ -\ Ez.\ 37:5 \(space)"""
+   title (13) "Edwin Hatch, 1878" " " "J. T. Rees, 1857 - 1949"	
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=125";
+
+//1
+1: 2gd; 4gd; 4gd;
+2: 2bg; 4bg; 4bg;
+
+
+			lyrics 1: "<1. >-1|Breathe on me,";
+			lyrics 1: "<2. >-1|Breathe on me,";
+			lyrics 1: "<3. >-1|Breathe on me,";
+			lyrics 1: "<4. >-1|Breathe on me,";
+bar
+//2
+1: 2ge; 2gc#;
+2: 2be; 2a#e;
+
+			lyrics 1: "breath of";
+			lyrics 1: "breath of";
+			lyrics 1: "breath of";
+			lyrics 1: "breath of";
+bar
+//3
+1: 1fd#;
+2: 1bb-;
+			lyrics 1: "God,";
+			lyrics 1: "God,";
+			lyrics 1: "God,";
+			lyrics 1: "God,";
+bar
+//4
+1: 2ge; 4eb-; 4gc;
+2 1: 2ge; 4g; 4ae;
+2 2: 2s; 4g; 4s;
+
+			lyrics 1: "Fill me with";
+			lyrics 1: "Un-til my";
+			lyrics 1: "Blend all my";
+			lyrics 1: "So shall I";
+bar
+//5
+1: 2gd; 2fc;
+2: 2bd; 2ad;
+
+			lyrics 1: "life a-";
+			lyrics 1: "heart is";
+			lyrics 1: "soul with";
+			lyrics 1: "nev-er";
+bar
+//6
+1: 1gb-;
+2 1: 1g;
+2 2: 1g;
+
+			lyrics 1: "new,";
+			lyrics 1: "pure,";
+			lyrics 1: "Thine,";
+			lyrics 1: "die,";
+bar
+//7
+1: 2bg; 4s; 4s;
+2: 2d+g; 4s; 4s;
+
+			lyrics 1: "That";
+			lyrics 1: "Un-";
+			lyrics 1: "Un-";
+			lyrics 1: "But";
+invisbar
+newscore
+
+1: 2s; 4bg; 4bg;
+2: 2s; 4d+g; 4d+g;
+
+			lyrics 1: "I may";
+			lyrics 1: "til with";
+			lyrics 1: "til this";
+			lyrics 1: "live with";
+
+bar
+//8
+1 1: 2bf; 2b;
+1 2: 2s; 2a;
+2: 2d+#b; 2f+d#;
+
+			lyrics 1: "love what";
+			lyrics 1: "Thee I";
+			lyrics 1: "earth-ly";
+			lyrics 1: "Thee the";
+bar
+//9
+1: 2bg; 2c+g;
+2: 2e+e; 2e+c;
+
+			lyrics 1: "Thou dost";
+			lyrics 1: "will one";
+			lyrics 1: "part of";
+			lyrics 1: "per-fect";
+bar
+//10
+1: 1af;
+2: 1d+d;
+
+			lyrics 1: "love,";
+			lyrics 1: "will,";
+			lyrics 1: "me";
+			lyrics 1: "life";
+bar
+//11
+1: 2bg; 4ae; 4c+e;
+2: 2d+g; 4c+c; 4ac;
+
+			lyrics 1: "And do what";
+			lyrics 1: "To do and";
+			lyrics 1: "Glows with thy";
+			lyrics 1: "Of thine e-";
+bar
+//12
+1: 2gd; 2ad;
+2: 2bd; 2c+d;
+
+			lyrics 1: "Thou wouldst";
+			lyrics 1: "to en-";
+			lyrics 1: "fire di-";
+			lyrics 1: "ter-ni-";
+bar
+//13
+1: 1gd;
+2: 1bg;
+
+			lyrics 1: "do.";
+			lyrics 1: "dure.";
+			lyrics 1: "vine.";
+			lyrics 1: "ty.";
+endbar
+
+  title (11) "";
+  title (11) "" "Public Domain" "HymnsToGod.org"

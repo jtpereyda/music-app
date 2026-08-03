@@ -1,0 +1,246 @@
+// !Mup vs. 6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Gospel Hymns 1-6
+//		By Ira D. Sankey, James McGranahan,
+//		And Geo. C. Stebbins
+//		Excelsior Edition
+//		Published by The John Church Co., 
+//		Cincinnati, New York, Chicago
+//		The Biglow and Main Co. Chicage, new York
+//		Copyright 1895
+//		Hymn no. 597
+		
+		
+// Transcribed by: Ted Gatza, Jr. 09/05/2019; Rev. 01/08/2022
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I Need Thee Every Hour" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - DO" "\s(17)\f(TI)\:\ But\ I\ am\ poor\ and\ needy;\ Yet\ the\ L\|ord\ thinketh\ upon\ me:\ Thou\ art\ my help\ and\ my\ deliverer;\ Make\ no\ t\|arrying,\ O\ my\ God.\ -\ Ps.\ 40:17" ""   
+   title (13) "Annie Sherwood Hawks" "" "Robert Lowry, 1872"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 2s; 4ca;
+2: 2s; 4a-e;
+	
+	VERSE "<1. >-1|I";
+	VERSE "<2. >-1|I";
+	VERSE "<3. >-1|I";
+	VERSE "<4. >-1|I";
+	VERSE "<5. >-1|I";
+bar
+//2
+1: 4.ec+; 8db; ca; b-g;
+2 1: 4.aa-; 8df; e;;
+2 2: 4.s; 8; e;;
+
+	VERSE "need Thee ev-'ry";
+	VERSE "need Thee ev-'ry";
+	VERSE "need Thee ev-'ry";
+	VERSE "need Thee ev-'ry";
+	VERSE "need Thee ev-'ry";
+bar
+//3
+1: 2ca; 4;
+2: 2a-e; 4;
+
+	VERSE "hour, Most";
+	VERSE "hour; Stay";
+	VERSE "hour, In";
+	VERSE "hour; Teach";
+	VERSE "hour, Most";
+bar
+//4
+1 1: 4.a slur; [up]8b; 8a bm; 8 f ebm;
+1 2: 2d; 4;
+2 1: 2df; 8f bm; a ebm;
+2 2: 2s; 4d;
+
+	VERSE 2; 4; "gra-cious";
+	VERSE 2; 4; "Thou near";
+	VERSE 2; 4; "joy or";
+	VERSE 2; 4; "me Thy";
+	VERSE 2; 4; "Ho-ly";
+bar
+//5
+1 1: 2ce; 4s;
+1 2: 2s; 4s;
+2: 2a-a; 4s;
+
+	VERSE 2; 4s; "Lord;";
+	VERSE 2; 4s; "by;";
+	VERSE 2; 4s; "pain;";
+	VERSE 2; 4s; "will;";
+	VERSE 2; 4s; "One;";
+invisbar
+newscore
+1 1: 2s; 4e;
+1 2: 2s; 4e;
+2: 2s; 4eg;
+
+	VERSE 2s; 4; "No";
+	VERSE 2s; 4; "Temp-";
+	VERSE 2s; 4; "Come";
+	VERSE 2s; 4; "And";
+	VERSE 2s; 4; "Oh,";
+bar
+//6
+1 1: 4.eb; 8ec+; eb; e;
+1 2: 4.s; 8;; e;
+2: 4.eg; 8ea; eg;;
+
+	VERSE "ten-der voice like";
+	VERSE "ta-tions lose their";
+	VERSE "quick-ly and a-";
+	VERSE "Thy rich prom-is-";
+	VERSE "make me Thine in-";
+bar
+//7
+1: 2ec+; 4ea;
+2 1: 2a; 4a-c+;
+2 2: 2a; 4s;
+
+	VERSE "Thine Can";
+	VERSE "pow'r When";
+	VERSE "bide, Or";
+	VERSE "es In";
+	VERSE "deed, Thou";
+bar
+//8
+1: 4. eg slur; 8fa; eg bm; dnf ebm;
+2 1: 2b-b; 8b slur; a;
+2 2: 2s; 4b-;
+
+	VERSE 2; 4; "peace af-";
+	VERSE 2; 4; "Thou art";
+	VERSE 2; 4; "life is";
+	VERSE 2; 4; "me ful-";
+	VERSE 2; 4; "bless-ed";
+bar
+//9
+1 1: 4s; 2e;
+1 2: 4s; 2e;
+2: 4s; 2eg;
+
+	VERSE 4s; 2; "ford.";
+	VERSE 4s; 2; "nigh.";
+	VERSE 4s; 2; "vain.";
+	VERSE 4s; 2; "fil.";
+	VERSE 4s; 2; "Son.";
+dblbar
+newscore
+//10
+1: 2s; 4ac+;
+2: 2s; 4ae+;
+ital (13) above 1: 1 "Refrain";
+
+	VERSE 2s; 4; [c]"I";
+bar
+//11
+1: 4.ac+; 8ea; ad+; ac+;
+2: 4. ae+; 8ac+; af+; ae+;
+
+	VERSE [c]"need Thee, oh I";
+bar
+//12
+1: 4ac+; 2gb;
+2: 4ee+; 2;
+
+	VERSE [c]"need Thee;";
+bar
+//13
+1: 4.eb; 8ea; ec+; eb;
+2: 4.ed+; 8ec+; ee+; ed+;
+
+	VERSE [c]"Ev-'ry hour I";
+bar
+//14
+1: 4eb; ea;;
+2: 4a-d+; a-c+; ca;
+
+	VERSE "need Thee; O";
+bar
+//15
+1: 4.fa; 8fb; fa; df;
+2: 4.da; 8;;;
+
+	VERSE "bless me now, my";
+bar
+//16
+1: 4ce; ea; fb;
+2: 4a-a; ca; da;
+
+	VERSE "Sav-iour! I";
+bar
+//17
+1: 4.ec+ slur; 8ca; 4db;
+2: 2ea; 4eg;
+
+	VERSE 2; 4; "come to";
+bar
+//18
+1: 2ca; 4s;
+2: 2a-a; 4s;
+
+	VERSE "Thee.";
+endbar
+	

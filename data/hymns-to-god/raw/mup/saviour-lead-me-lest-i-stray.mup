@@ -1,0 +1,273 @@
+// !Mup vs. 6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Consecrated Hymns
+//	For Use in Devotonal Meetings
+//	Young People's Societies
+//	The Sunday School
+//	Editors: Adam Geibel, R. Frank Lehman
+//	And H. C. Lincoln
+//	Published by Geibel & Lehman
+//	1022 Arch Street, Philadelphia, PA
+//	Copyright 1911
+//	Hymn No. 29
+
+// Transcribed by:
+//	Ted Gatza, Jr. 09/17/2022
+
+// Revisions:
+
+// HymnsToGod.org
+
+// ====================
+// Letter Page Format
+
+top
+
+        title bold (19) "" "Saviour, Lead Me Lest I Stray" ""
+        title (4)""
+        title (11) "" "\f(TI)For thou art my rock and my fortress; Therefore for thy"""
+        title (11) "" "\f(TI)name's sake lead me and guide me. - Ps. 31:3"""
+        title (11) "D \(flat)-4-SOL" "" ""
+        title (13) "Frank M. Davis" " " "Frank M. Davis"	
+ 
+bottom
+        title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+// ====================
+
+staffs=2
+	time=4/4	
+	key=5&
+
+staff 2
+	key=5&
+	clef=bass
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+       define BVS lyrics between 1&2 using 2:@      
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+//Set Midi
+       midi all: 0 "tempo=90";
+
+// ====================
+
+1: 4.fa; 8df; fa; bd+; ac+; gb;
+2: 2dd+;;
+
+	VS "<1. >-1|Sav-iour, lead me lest I";
+	BVS "<   >-1|Sav-iour,";
+	VS "<2. >-1|Thou, the ref-uge of my";
+	BVS "<   >-1|Thou, the";
+	VS "<3. >-1|Sav-iour, lead me, then at";
+	BVS "<   >-1|Sav-iour,";
+
+bar
+
+//2
+1 1: 2.a; 4r;
+1 2: 8f;; g;; 4f; 4s;
+2: 8dd+;; ce+;; 4dd+; 4r;
+
+	VS "stray,";
+	BVS "lead, me, lest I stray,";
+	VS "soul,";
+	BVS "ref-uge of my soul";
+	VS "last,";
+	BVS "lead me, then at last";
+bar
+
+//3
+1: 4.eg; 8df; ce; gb; fa; eg;
+2 1: 2a; a-a;
+2 2: 2a; 2s;
+
+	VS "Gent-ly lead me all the";
+	BVS "Gent-ly";
+	VS "When life's storm-y bil-lows";
+	BVS "When life's";
+	VS "When the storm of life is";
+	BVS "When the";
+bar
+
+//4
+1 1: 2.f; 4r;
+1 2: 8d;;;; 4; s;
+2: 8da;;;; 4; r;
+
+	VS "way;";
+	BVS "lead me all the way;";
+	VS "roll,";
+	BVS "storm-y bil-lows roll,";
+	VS "past,";
+	BVS "storm of life is past,";
+bar
+
+//5
+1: 4.fa; 8;; df; fa; fd+;
+2: 2dd+;;
+
+	VS "I am safe when by Thy";
+	BVS "I am";
+	VS "I am safe when Thou art";
+	BVS "I am";
+	VS "To the land of end-less";
+	BVS "To the";
+bar
+
+//6
+1 1: 2.b; 4r;
+1 2: 8g;;;; 4; s;
+2: 8gd+;;;; 4; r;
+
+	VS "side,";
+	BVS "safe when by Thy side,";
+	VS "nigh,";
+	BVS "safe when Thou art nigh,";
+	VS "day,";
+	BVS "land of end-less day.";
+bar
+
+//7
+1: 4.ec+; 8fd+; ec+; db; ca; b-gn;
+2 1: 2a; eb;
+2 2: 2a; 2s;
+
+	VS "I would in Thy love a-";
+	BVS "I would";
+	VS "All my hopes on Thee re-";
+	BVS "All my";
+	VS "Where all tears are wiped a-";
+	BVS "Where all";
+bar
+
+//8
+1 1: 2.a; 4r;
+1 2: 8c; d; e; f; 4g; s;
+2: 8a-a; a-b; a-c+; a-d+; 4a-e+; 4r;
+SFT (1)
+SFB (3)
+BFB (3)
+
+	VS "bide.";
+	BVS "in Thy love a-bide.";
+	VS "ly.";
+	BVS "hopes on Thee re-ly.";
+	VS "way.";
+	BVS "tears are wiped a-way.";
+dblbar
+newscore
+
+//9
+REFRAIN
+1: 2fa; 4df; 4r;
+2: 2dd+; 4da; 4r;
+
+	VS "Lead me,";
+bar
+
+//10
+1: 2fd+; 4fa; 4r;
+2: 2da; 4dd+; 4r;
+
+	VS "lead me,";
+bar
+
+//11
+1: 4.af+; 8ae+; ad+; gb; fa; df;
+2 1: 4r; 8d+; ac+; fd+; dd+;; da;
+2 2: 4s; 8d+; 8s;;;;;
+
+	VS "Sav-iour, lead me, lest I";
+bar
+
+//12
+1: 4.ce; 8df; 2eg;
+2: 4a-a; 8;; 2a-c+;
+phrase above 1: 1 til 3;
+phrase below 1: 1 til 3;
+
+	VS 4.; 8s; 2s; "stray;";
+	VS 4s; 8; 8; 2; "lest I stray;";
+bar
+
+//13
+1: 4.df; 8;;; cg; da;
+2: 4r; 8da;;;; ea; fd+;
+
+	VS "Gent-ly down the stream of";
+bar
+
+//14
+1: 2.gb; 8enc+; ed+;
+2: 4gd+; 8;; 4; 8gnd+;;
+
+	BVS "time, (stream of time,) Lead me,";
+bar
+
+//15
+1: 4fa; df; eg; a-c;
+2 1: 4ad+; a; a-a; a-g;
+2 2: 4s; 4a; s;;
+
+	VS "Sav-iour, all the";
+bar
+//16
+1 1: 2.d; 4r;
+1 2: 4a-; 8b-;; 4a-; 4s;
+2 1: 4f; 8g;; 4f; 4s;
+2 2: 2.d; 4r;
+
+	BVS "way, all the way.";
+endbar
+
+
+
+
+
+
+
+
+

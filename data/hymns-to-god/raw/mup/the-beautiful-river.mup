@@ -1,0 +1,300 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Song Treasury
+//     		 A collection of Songs and Music, especially adapted for
+//    		 Sunday-Schools, Praise and Prayer Meetings,
+//    		 Church Choirs and the Home Circle.
+//    		 Also Containing Selections for
+//    		 Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//    		 Together with a
+//  	         Complete Course of Elementary Instruction of all the art of
+//   	  	 Reading music at sight
+//               By J. H. Kurzenknabe,
+//               Publishers: Crider & Brother
+//               York, PA
+//               Copyright 1879
+//               Hymn No.: 86
+//    
+// Transcribed by: Ted Gatza, Jr. 09/22/2011; Rev. 3/05/2015
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Beautiful River" ""
+   title (2)""
+   title (11) "B \(flat) - 3 - MI" "\s(17)\f(TI)\:And\ he\ showed\ me\|\ a\ pure\ river\ of the\ water\ of\ life\|.\ -\ Rev.\ 22:1" ""
+   title (13) "John H. Kurzenknabe" "" "John H. Kurzenknabe, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+   label=""
+   packexp = 0.0
+   packfact = 0.5
+   pad = 0
+   vscheme = 2f
+   staffscale=1.0
+   scoresep=6,20
+   scorepad=0
+   scale = .73
+   lyricssize = 13
+   pageheight=9.0
+   pagewidth=6.0
+   topmargin=.200
+   bottommargin=.200
+   withfontfamily=palatino
+   noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+   time=3/4 
+   key=2&
+
+
+staff 2
+   key=2&
+   clef=bass
+
+// ****************************************
+
+music
+   define VERSE lyrics between 1&2: @
+   midi all: 0 "tempo=100";
+
+//1
+1: 4fd; 2s;
+2: 4bb-; 2s;
+
+
+         VERSE "<1. >-1|The";
+         VERSE "<2. >-1|The";
+         VERSE "<3. >-1|Oh";
+
+bar
+//2
+1: 4.fd; 8ge; 4fd;
+2: 4.bb-; 8bb-; 4bb-;
+
+         VERSE "beau-ti-ful";
+         VERSE "glad-en-ing";
+         VERSE "taste of this";
+bar
+//3
+1: 4d+f; 4c+e; 4bd;
+2: 4bb-; 4bb-; 4bb-;
+
+         VERSE "riv-er, the";
+         VERSE "plains and the";
+         VERSE "beau-ti-ful";
+bar
+//4
+1: 4.bg; 8af; 4ge;
+2: 4.be; 8be; 4be;
+
+         VERSE "life-giv-ing";
+         VERSE "val-leys are";
+         VERSE "riv-er now";
+bar
+//5
+1: 4fd; 4bd; 4bf;
+2: 4bb-; 4bb-; 4bd;
+
+         VERSE "riv-er, Will";
+         VERSE "tell-ing Of";
+         VERSE "flow-ing, From";
+bar
+newscore
+//6
+1: 4.af; 8bf; 4c+f;
+2: 4.c+f; 8d+f; 4e+f;
+
+         VERSE "flow on e-";
+         VERSE "glo-ry sur-";
+         VERSE "out of the";
+
+bar
+//7
+1: 4c+f; 4bf; 4af;
+2: 4e+f; 4d+f; 4c+f;
+
+         VERSE "ter-nal when";
+         VERSE "round-ing the";
+         VERSE "soul sav-ing";
+bar
+//8
+1: 4.bd; 8c+e; 4d+f;
+2: 4.bb-; 8bb-; 4bb-;
+
+         VERSE "worlds cease to";
+         VERSE "ev-er-green";
+         VERSE "foun-tain for";
+bar
+//9
+1: 2d+f; 4fd;
+2: 2bb-; 4bb-;
+
+         VERSE "move; Its";
+         VERSE "shore; Of";
+         VERSE "thee; Its";
+bar
+//10
+1: 4.fd; 8ge; 4fd;
+2: 4.bb-; 8bb-; 4bb-;
+
+         VERSE "mur-mer-ings";
+         VERSE "won-der-ful";
+         VERSE "name is sal-";
+bar
+//11
+1: 4d+f; 4c+e; 4bd;
+2: 4bb-; 4bb-; 4bb-;
+
+         VERSE "ech-o the";
+         VERSE "mus-ic in";
+         VERSE "va-tion, on";
+bar
+//12
+1: 4.bg; 8af; 4ge;
+2: 4.be; 8be; 4be;
+
+         VERSE "praise of the";
+         VERSE "rich-ness ex-";
+         VERSE "sin-ners be-";
+bar
+//13
+1: 4fd; 4bd; 4bf;
+2: 4bb-; 4fb; 4bd;
+
+         VERSE "giv-er, Who";
+         VERSE "cell-ing, Breathed";
+         VERSE "stow-ing, An";
+bar
+//14
+1: 4.af; 8bf; 4c+f;
+2: 4.c+f; 8d+f; 4e+f;
+
+         VERSE "sends it to";
+         VERSE "back by the";
+         VERSE "un-de-served";
+bar
+newscore
+//15
+1: 4e+g; 4d+f; 4c+e;
+2: 4c+f; 4af; 4af;
+
+         VERSE "flow from the";
+         VERSE "saints that have";
+         VERSE "par-don e-";
+bar
+//16
+1: 4c+e; 4ge; 4ae;
+2: 4af; 4c+f; 4c+f;
+
+         VERSE "foun-tain of";
+         VERSE "safe-ly crossed";
+         VERSE "ter-nal and";
+bar
+//17
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+         VERSE "love.";
+         VERSE "o'er.";
+         VERSE "free.";
+dblbar hidechanges
+score
+time=6/8
+music
+//18
+1: 4fd; 4s; 4s;
+2: 4bb-; 4s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+         VERSE "O";
+         VERSE "O";
+bar
+//19
+1 1: 4.d+ tie; 8d+; 8c+; 8b;
+1 2: 8.f; 16f; 8f; 8; 8e; 8d;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 8bb-; 8bb-;
+
+         VERSE "beau-ti-ful";
+         VERSE 8.; 16; 8; 8; 8; 8; "beau-ti-ful riv-er, thy";
+bar
+//20
+1 1: 4.f tie; 8f; 8d; 8b;
+1 2: 8.d; 16d; 8d; 8d; 8d; 8f;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 8bb-; 8bd;
+
+         VERSE "riv-er, In";
+         VERSE 8.; 16; 8; 8; 8; 8; "wa-ters will ev-er, Flow";
+bar
+//21
+1 1: 4.a tie; 8a; 8f; 8c+;
+1 2: 8.e; 16e; 8e; 8e; 8f; 8e;
+2: 8.c+f; 16c+f; 8c+f; 8c+f; 8af; 8af;
+
+         VERSE "sil-ver-y";
+         VERSE 8.; 16; 8; 8; 8; 8; "on in their course through thy";
+bar
+//22
+1 1: 4.b tie; 8b; 4fd;
+1 2: 8.d; 16d; 8d; 8d; 4s;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 4bb-;
+
+         VERSE "bed, To";
+         VERSE 8.; 16; 8; 8; 4; "sil-ver-y bed, And";
+bar
+//23
+1 1:4.d+ tie; 8d+; 8c+; 8b;
+1 2: 8.f; 16f; 8f; 8f; 8e; 8d;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 8bb-; 8bb-;
+
+         VERSE "thee, all the";
+         VERSE 8.; 16; 8; 8; 8; 8; "all thro' e-ter-ni-ty";
+bar
+//24
+1 1: 4.f tie; 8f; 8s; 8s;
+1 2: 8.d; 16d; 8d; 8d; 8s; 8s;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 8s; 8s;
+
+         VERSE "ran-";
+         VERSE 8.; 16; 8; 8; 8s; 8s; "noth-ing can sev-";
+
+invisbar
+
+1 1: 4.s; 8s; 8d; 8b;
+1 2: 8.s; 16s; 8s; 8s; 8d; 8f;
+2: 8.s; 16s; 8s; 8s; 8bb-; 8bd;
+
+         VERSE "somed For";
+         VERSE 8.s; 16s; 8s; 8s; 8; 8; "er, The";
+
+bar
+//25
+1 1: 4.a tie; 8a; 8f; 8c+e;
+1 2: 8.e; 16e; 8e; 8e; 8e; 8s;
+2: 8.c+f; 16c+f; 8c+f; 8c+f; 8c+f; 8af;
+
+         VERSE "ref-uge have";
+         VERSE 8.; 16; 8; 8; 8; 8; "ran-somed who to thee for";
+bar
+//26
+1 1: 4.b tie; 8b; 4s;
+1 2: 8.d; 16d; 8d; 8d; 4s;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 4s;
+
+         VERSE "fled.";
+         VERSE 8.; 16; 8; 8; 4s; "re-fuge have fled.";
+endbar

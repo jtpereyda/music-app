@@ -1,0 +1,204 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1908
+//		Hymn No.: 11
+//		
+// Transcribed by: Ted Gatza, Jr. 10/12/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Trusting" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - MI" "\s(17)\f(TI)\:Trust\ in\ Jehovah\ with\ al\|l\ thy\ heart,\ And\ lean\ not upon\ thine\ own\ under\|standing:\ -\ Prov.\ 3:5" ""   
+   title (13) "Kate Ulmer" "" "M. L. McPhail, 1900"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=120";
+
+//1
+1: 4ge; af; bg; bg; 4.c+a; 8bg;
+2: 4be; ; e+e; ; 4. ; 8 ;
+
+
+
+			VERSE "<1. >-1|Trust-ing in Je-sus I";
+			VERSE "<2. >-1|Trust-ing when rough seems the";
+			VERSE "<3. >-1|Trust-ing for guid-ance where";
+			VERSE "<4. >-1|Trust-ing, yes trust-ing still";
+
+
+bar
+//2
+1 1: 4bg; ge; e; 2.fd;
+1 2: 4s; ; e; 2.s;
+2: 4e+e; be; ge; 2.bb-;
+
+			VERSE "find sweet-est rest,";
+			VERSE "path to my feet,";
+			VERSE "I can-not see,";
+			VERSE "un-to the end,";
+bar
+//3
+1: 4fd; ge; af; af; 4.bg; 8af;
+2: 4bb-; ; ; ; 4. ; 8 ;
+
+			VERSE "Just sim-ply trust-ing, O";
+			VERSE "Trust-ing when life is with";
+			VERSE "Know-ing His wis-dom suf-";
+			VERSE "Trust-ing in Him my un-";
+bar
+//4
+1: 4af; ge; fd; 2.ge;
+2: 4bb-;  ; ; 2.be;
+
+			VERSE "how I am blest;";
+			VERSE "glad-ness re-plete;";
+			VERSE "fi-cient for me;";
+			VERSE "change-a-ble friend;";
+bar
+//5
+1: 4ge; af; bg; ; 4.c+a; 8bg;
+2: 4be; ; e+e; ; 4. ; 8 ;
+
+			VERSE "Nev-er a dan-ger and";
+			VERSE "Trust-ing tho' friends all for-";
+			VERSE "Trust-ing in weak-ness His";
+			VERSE "Trust-ing un-til with the";
+bar
+//6
+1 1: 4bg; ge; e; 2.c+e;
+1 2: 4s; ; e; 2.s;
+2: 4e+e; be; ge; 2.aa-;
+
+			VERSE "nev-er a fear,";
+			VERSE "sake here be-low,";
+			VERSE "won-der-ful might,";
+			VERSE "ran-somed a-bove,";
+bar
+//7
+1 1: 4c+e; d+e; c+e; be; ge; e;
+1 2: 4s; ; ; ; ; e;
+2: 4aa-; ba-; aa-; ge; be; anc;
+
+			VERSE "Now can af-fright me since";
+			VERSE "Still my Re-deem-er doeth";
+			VERSE "Look-ing in dark-ness to";
+			VERSE "Sing-ing the praise of His";
+bar
+//8
+1: 4ge; ; fb-; 2.eb-;
+2: 4bb-; ; ab-; 2.ge;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "Je-sus is near.";
+			VERSE "love me I know.";
+			VERSE "Him for the light.";
+			VERSE "won-der-ful love.";
+dblbar
+//9
+1: 4.bg; 8af; 4ge; e+g; d+b; c+a;
+2 1: 4.e+e; 8be; 4 ;4 ;4 ; 8c+ bm; d+ ebm;
+2 2: 4.s; 8 ;4 ; ; ;4e;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Trust-ing in Je-sus by";
+bar
+//10
+1 1: 4bg; ge; e; 2.fd;
+1 2: 4s;  ; e; 2.s;
+2: 4e+e; be; ge; 2.bb-;
+
+			VERSE [c]"night and by day,";
+bar
+//11
+1: 4.af; 8ge; 4fd; c+a; bg; af;
+2: 4.bb-; 8 ; 4 ; ; ; ;
+
+			VERSE "O, how his pres-ence il-";
+bar
+//12
+1: 4af; ge; fd; 2.ge;
+2: 4bb-; ; ; 2.be;
+
+			VERSE "lu-mines my way;";
+bar
+//13
+1: 4.bg; 8af; 4ge; e+g; d+b; c+a;
+2 1: 4.e+e; 8be; 4be; ; ; 8c+ bm; d+ ebm;
+2 2: 4.s; 8 ; 4 ; ; ; e;
+
+			VERSE "Know-ing He lov-eth and";
+bar
+//14
+1 1: 4bg; ge; e; 2.c+e;
+1 2: 4s;  ; e; 2.s;
+2: 4e+e; be; ge; 2.aa-;
+
+			VERSE "car-eth for me,";
+bar
+//15
+1 1: 4c+e; d+e; c+e; be; ge; e;
+1 2: 4s; ; ; ; ; e;
+2: 4aa-; ba-; aa-; ge; be; anc;
+
+			VERSE "Why should my heart ev-er";
+bar
+//16
+1: 4ge; ge; fb-; 2.eb-;
+2: 4bb-; ; ab-; 2.ge;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "sor-row-ful be?";
+endbar

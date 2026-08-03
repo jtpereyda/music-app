@@ -1,0 +1,325 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	Christian Hymns Number 2
+//		Editor, L. O. Sanderson
+//		Publisher: Gospel Advocate Co., Nashville
+//		Date: 1948
+//		Hymn No. 450
+
+// Transcribed by: Ted Gatza, Jr. 05/05/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+
+staffs=2
+	time=4/4
+	key=4#
+
+staff 2
+	key=4#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Fairest Lord Jesus" ""
+   title (2) ""
+   title (11) "" "\f(TI)Thou art fairer than the children of men. Psa. 45:2" ""
+   title (11) "" 
+   title (11) "E - 4 - DO" "" ""
+   title (13) "Richard S. Willis, tr." "" "Richard S. Willis, 1850"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 2b-e; 4ce; e;
+1 2: 2s; 4; e;
+2 1: 2g; 4cg; b-g;
+2 2: 4e slur; d; s; ;
+
+	VS "<1. >-1|Fair-est Lord";
+	VS "<2. >-1|Fair are the";
+	VS "<3. >-1|Fair is the";
+bar
+
+//2
+1: 4cf slur; b-d; 2b-e;
+2: 4a-a slur; b-f; 2eg;
+
+	VS "Je-sus!";
+	VS "mead-ows,";
+	VS "sun-shine,";
+bar
+
+//3
+1 1: 4.g; 8; 4eg; e#g;
+1 2: 4e; f; s; ;
+2: 4eb; db#; cc+; b-d+n;
+
+	VS "Ru-ler of all";
+	VS "Fair-er still the";
+	VS "Fair-er still the";
+bar
+
+//4
+1: 4fa slur; df; 2eg;
+2: 4a-c+ slur; b-b; 2eb;
+
+	VS "na-ture!";
+	VS "wood-lands,";
+	VS "moon-light,";
+bar
+
+//5
+1: 2eb; 4ee+; ec+;
+2: 2eg; 4a-c+; ca;
+
+	VS "O Thou of";
+	VS "Robed in the";
+	VS "And all the";
+bar
+
+//6
+1: 2eb; 4fa slur; eg;
+2 1: 2eg; 2b;
+2 2: 2s; 4d slur; e;
+
+	VS "God and";
+	VS "bloom-ing";
+	VS "twin-kling";
+bar
+
+//7
+1: 2da; eg;
+2: 2fb; eb;
+
+	VS "man the";
+	VS "garb of";
+	VS "star-ry";
+bar
+
+//8
+1: 2.df; 4r;
+2: 2.b-b; 4r;
+
+	VS "Son!";
+	VS "spring;";
+	VS "host:";
+bar
+
+//9
+1: 2eb; 4ec+; eb;
+2: 2g-b; 4a-a; b-g;
+
+	VS "Thee will I";
+	VS "Je-sus is";
+	VS "Je-sus shines";
+bar
+
+//10
+1 1: 4b slur; g; 2a;
+1 2: 2e#; 4f slur; en;
+2 1: 4g slur; c+; 2fc+;
+2 2: 2c; s;
+
+	VS "cher-ish,";
+	VS "fair-er,";
+	VS "bright-er";
+bar
+
+//11
+1: 2da; 4eb; da;
+2 1: 4b slur; f; b-g; b-f;
+2 2: 2 b-; 4s; ;
+
+	VS "Thee will I";
+	VS "Je-sus is";
+	VS "Je-sus shines";
+bar
+
+//12a
+1 1: 4a slur; f; eg; s;
+1 2: 2d; 4s; s;
+2 1: 4f slur; b; eb; s;
+2 2: 2b-; 4s; s;
+
+	VS "hon-or,";
+	VS "pur-er,";
+	VS "pur-er,";
+invisbar
+
+//12b
+1 1: 4s; ; ; eg;
+1 2: 2s; 4s; ;
+2 1: 4s; ; ; eb;
+2 2: 2s; 4s; ;
+
+	VS "Thou,";
+	VS "Who";
+	VS "Than";
+bar
+
+
+//13
+1 1: 4g; eg; eb; fa;
+1 2: 4f; s; ; ;
+2: 4db#; cc+; g-d+n; a-c+;
+
+	VS "my soul's glo-ry,";
+	VS "makes the woe-ful";
+	VS "all the an-gels";
+bar
+
+//14
+1 1: 2eg; f;
+1 2: 2s; 4d slur; b-;
+2: 2b-b; b-a;
+
+	VS "joy, and";
+	VS "heart to";
+	VS "heav'n can";
+bar
+
+//15
+1: 1b-e;
+2: 1eg;
+
+	VS "crown.";
+	VS "sing.";
+	VS "boast.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

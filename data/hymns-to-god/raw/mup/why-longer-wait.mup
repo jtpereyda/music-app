@@ -1,0 +1,300 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Peacemaker No. 1
+//		A collection of sacred songs and
+//		hymns for use in all services
+//		of the church, Sunday - School
+//		Home circle and all kinds of Evangelistic work
+//		Edited by: W. S. Weeden and Geo. Beaverson
+//		Published by: Weeden and Van De Venter
+//		New York: W. S. Weeden, 149 Fifth Avenue
+//		Pittsburg, PA.: J. W. Van De Venter, 905-806 Lewis Block
+//		Copyright 1894
+//		Hymn no. 41
+
+// Transcribed by: Ted Gatza, Jr. 02/25/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Why Longer Wait?" ""
+   title (2)""
+   title (11) "C - 3 - SOL" "\s(17)\f(TI)\:behold,\ now\ is\ the\ ac\|ceptable\ time;\ behold, now\ is\ the\ day\ of\ s\^alvation\ -\ 2\ Cor.\ 6:2" ""
+   title (13) "H. H. Hall" " " "Geo. Beaverson, 1894"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = .9
+	pad =0
+	vscheme = 2f
+	staffscale=.99
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+
+//1
+1: 4ge; 2s;
+2: 4c+c; 2s;
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|Why,";	
+			VERSE "<3. >-1|From";
+
+bar
+//2
+1: 4ge slur; af; ge;
+2: 2c+c; 4;
+
+			VERSE "cap-tive";
+			VERSE "bur-dened";
+			VERSE "Mer-cy's";
+bar
+//3
+1 1: 4e slur; d; c;
+1 2: 2c; 4;
+2 1: 4g slur; f; ec;
+2 2: 2c; 4s;
+
+			VERSE "soul, why";
+			VERSE "trem-bling,";
+			VERSE "gate, oh,";
+bar
+//4
+1 1: 4a slur; c+; af;
+1 2: 2c; 4s;
+2 1: 4f slur; a; c+f;
+2 2: 2f; 4s;
+
+			VERSE "long-er";
+			VERSE "still de-";
+			VERSE "hear Him";
+bar
+//5
+1: 2ge; 4ec;
+2: 2c+c; 4gc;
+
+			VERSE "wait? The";
+			VERSE "lay, So";
+			VERSE "call, And";
+bar
+//6
+1 1: 4a slur; g; ec;
+1 2: 2c; 4s;
+2 1: 4f slur; e; gc;
+2 2: 2c; 4s;
+
+			VERSE "Prince of";
+			VERSE "long by";
+			VERSE "fly at";
+bar
+//7
+1 1: 4e slur; d; c;
+1 2: 2c; 4;
+2 1: g slur; f; ec;
+2 2: 2c; 4s;
+
+			VERSE "Life would";
+			VERSE "guilt and";
+			VERSE "once to";
+bar
+//8
+1: 4ec slur; ge; ec;
+2: 2gc; 4;
+
+			VERSE "make thee";
+			VERSE "fear op-";
+			VERSE "His em-";
+bar
+//9
+1: 2db-; 4gb-;
+2: 2gg-; 4fg-;
+
+			VERSE "free; He";
+			VERSE "prest; At";
+			VERSE "brace; 'Tis";
+bar
+//10
+1 1: 4g slur; a; gc;
+1 2: 2c; 4s;
+2 1: 4e slur; f; ec;
+2 2: 2c; 4s;
+
+			VERSE "stands in";
+			VERSE "Je-sus'";
+			VERSE "o-pen";
+bar
+//11
+1 1: 4e slur; d; c;
+1 2: 2c; 4;
+2 1: 4g slur; f; ec;
+2 2: 2c; 4s;
+
+			VERSE "Mer-cy's";
+			VERSE "feet thy";
+			VERSE "wide for";
+bar
+//12
+1 1: 4a slur; c+; af;
+1 2: 2c; 4s;
+2 1: 4f slur; a; c+f;
+2 2: 2f; 4s;
+
+			VERSE "o-pen";
+			VERSE "bur-den";
+			VERSE "thee\(emdash) for";
+bar
+//13
+1: 2ge; 4c+e;
+2: 2c+c; 4gc;
+
+			VERSE "gate, With";
+			VERSE "lay, And";
+			VERSE "all Who";
+bar
+//14
+1 1: 4c+ slur; b; c+f;
+1 2: 2f; 4s;
+2 1: 4a slur; g#; 4af;
+2 2: 2f; 4s;
+
+			VERSE "hands out-";
+			VERSE "thou shalt";
+			VERSE "care to";
+bar
+//15
+1 1: 4d+ slur; c+; af;
+1 2: 2f#; 4s;
+2: 2ad; 4c+d;
+
+			VERSE "stretch'd to";
+			VERSE "find the";
+			VERSE "taste His";
+bar
+//16
+1 1: 4g slur; b; d+f;
+1 2: 2f; 4s;
+2 1: 4b slur; g; gg-;
+2 2: 2g; 4s;
+
+			VERSE "wel-come";
+			VERSE "long-sought";
+			VERSE "won-drous";
+bar
+//17
+1: 2c+e; 4s;
+2: 2gc; 4s;
+
+			VERSE "Thee.";
+			VERSE "rest.";
+			VERSE "grace.";
+dblbar
+//18
+1: 4c+e; 2s;
+2: 4gc; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"His";
+bar
+//19
+1: 4d+f slur; c+e; bd;
+2 1: 2g; 4;
+2 2: 2g; 4;
+
+			VERSE [c]"heart of";
+bar
+//20
+1 1: 4bd slur; af; g;
+1 2: 4s;; g;
+2: 2gg-; 4gb-;
+
+			VERSE [c]"love and";
+bar
+//21
+1 1: 4.c+ slur; 8b; 4af;
+1 2: 2f; 4s;
+2: 2af; 4c+f;
+
+			VERSE [c]"sweet-est";
+bar
+//22
+1 1: 4a slur; c+; af;
+1 2: 2f; 4s;
+2 1: 4c+ slur; a; c+f;
+2 2: 2f; 4s;
+
+			VERSE "ac-cents";
+bar
+//23
+1: 4af; 2ge;
+2: 4c+c; 2;
+
+			VERSE "fall-ing,";
+bar
+//24
+1: 4ge slur; c+g; d+a;
+2 1: 2c+; 4c+f;
+2 2: 4c slur; e; s;
+
+			VERSE "Gent-ly";
+bar
+//25
+1: 4.e+g slur; 8d+f; 4c+e;
+2 1: 4.c+ slur; 8g; 4;
+2 2: 2g; 4;
+
+			VERSE "whis-pers";
+bar
+//26
+1 1: 4.b slur; 8a; 4bf;
+1 2: 2f; 4s;
+2: 2gg-; 4;
+
+			VERSE "\"Come to";
+bar
+//27
+1: 2c+e; 4s;
+2: 2gc; 4s;
+
+			VERSE "me.\"";
+endbar
+			

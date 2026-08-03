@@ -39,7 +39,10 @@ DEFAULT_WEB_CATALOG = REPOSITORY_ROOT / "apps/web/src/lib/catalog.generated.ts"
 DEFAULT_HYMNS_TO_GOD_MANIFEST = (
     REPOSITORY_ROOT / "data/hymns-to-god/manifest.json"
 )
-CATALOG_REVISION = "5"
+DEFAULT_HYMNS_TO_GOD_CONVERSION = (
+    REPOSITORY_ROOT / "data/hymns-to-god/conversion.json"
+)
+CATALOG_REVISION = "6"
 CANONICAL_ENCODING_DATE = "2026-07-21"
 RIGHTS_DECLARATION_PREFIX = "copyright: public domain."
 RIGHTS_STATUS = "technical_candidate_not_production_approved"
@@ -69,10 +72,17 @@ EXPECTED_HYMNS_TO_GOD_PD_RECORDS = 16
 EXPECTED_HYMNS_TO_GOD_ITEMS = 13
 EXPECTED_HYMNS_TO_GOD_RIGHTS_HOLDS = 1
 EXPECTED_HYMNS_TO_GOD_STRUCTURE_HOLDS = 3
-EXPECTED_CATALOG_ITEMS = 290
+EXPECTED_CATALOG_ITEMS = 869
 HYMNS_TO_GOD_COLLECTION_ID = "hymns-to-god-public-domain-usa"
 HYMNS_TO_GOD_GENERATOR_NAME = "hymns-to-god-mup-satb"
-HYMNS_TO_GOD_GENERATOR_VERSION = "1"
+HYMNS_TO_GOD_GENERATOR_VERSION = "2"
+HYMNS_TO_GOD_ROUTE_ALIASES = {
+    # Preserve the two public routes introduced by the original audited
+    # tranche while retaining the complete index's canonical arrangement IDs
+    # in source metadata.
+    "near-the-cross-doane": "near-the-cross",
+    "rejoice-the-lord-is-king-darwall": "rejoice-the-lord-is-king",
+}
 STRUCTURE_NORMALIZATIONS = {
     30: SPLIT_COMBINED_CHORD_VOICES,
     134: SPLIT_COMBINED_CHORD_VOICES,
@@ -283,7 +293,11 @@ def _score_facts(data: bytes) -> dict[str, object]:
 
 def _assign_ids(records: list[dict[str, object]]) -> None:
     by_slug: defaultdict[str, list[dict[str, object]]] = defaultdict(list)
+    hymns_to_god_records: list[dict[str, object]] = []
     for record in records:
+        if record["source"]["collection_id"] == HYMNS_TO_GOD_COLLECTION_ID:
+            hymns_to_god_records.append(record)
+            continue
         base = _slug(str(record["title"]))
         if not base:
             raise CatalogBuildError(f"Title cannot form a stable ID: {record['title']!r}")
@@ -302,6 +316,36 @@ def _assign_ids(records: list[dict[str, object]]) -> None:
             record["id"] = item_id
             used.add(item_id)
 
+    for record in sorted(
+        hymns_to_god_records,
+        key=lambda value: (
+            str(value.get("_arrangement_id") or value.get("_pinned_id") or ""),
+            int(value["source"]["record_ordinal"]),
+        ),
+    ):
+        arrangement_id = str(
+            record.get("_arrangement_id")
+            or record.get("_pinned_id")
+            or _slug(str(record["title"]))
+        )
+        if not ID_RE.fullmatch(arrangement_id):
+            raise CatalogBuildError(
+                f"Invalid HymnsToGod arrangement ID {arrangement_id!r}."
+            )
+        item_id = HYMNS_TO_GOD_ROUTE_ALIASES.get(
+            arrangement_id, arrangement_id
+        )
+        if item_id in used:
+            item_id = f"{arrangement_id}-hymns-to-god"
+        if item_id in used:
+            item_id = f"{item_id}-{record['source']['record_ordinal']}"
+        if not ID_RE.fullmatch(item_id) or item_id in used:
+            raise CatalogBuildError(
+                f"Could not assign a unique stable ID for {arrangement_id!r}."
+            )
+        record["id"] = item_id
+        used.add(item_id)
+
 
 def _write_web_catalog(items: list[dict[str, object]], output_path: Path) -> None:
     lines = [
@@ -312,6 +356,7 @@ def _write_web_catalog(items: list[dict[str, object]], output_path: Path) -> Non
     ]
     for item in items:
         display = item["display"]
+        source = item["source"]
         key_name = str(item["original_key"]["name"])
         source_label = (
             "HymnsToGod"
@@ -323,6 +368,9 @@ def _write_web_catalog(items: list[dict[str, object]], output_path: Path) -> Non
                 "  {",
                 f"    id: {json.dumps(item['id'], ensure_ascii=False)},",
                 f"    slug: {json.dumps(item['id'], ensure_ascii=False)},",
+                f"    workId: {json.dumps(source.get('work_id') or _slug(str(item['title'])), ensure_ascii=False)},",
+                f"    arrangementId: {json.dumps(source.get('arrangement_id') or item['id'], ensure_ascii=False)},",
+                f"    arrangementLabel: {json.dumps(source.get('arrangement_label') or display['tune_name'], ensure_ascii=False)},",
                 f"    title: {json.dumps(item['title'], ensure_ascii=False)},",
                 f"    textAuthor: {json.dumps(display['text_author'], ensure_ascii=False)},",
                 f"    tuneName: {json.dumps(display['tune_name'], ensure_ascii=False)},",
@@ -338,6 +386,268 @@ def _write_web_catalog(items: list[dict[str, object]], output_path: Path) -> Non
     output_path.write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
+def _bulk_hymns_to_god_records(
+    *,
+    inventory_path: Path,
+    conversion_path: Path,
+    musicxml_dir: Path,
+) -> dict[str, object]:
+    inventory_bytes = inventory_path.read_bytes()
+    inventory = json.loads(inventory_bytes.decode("utf-8"))
+    conversion = json.loads(conversion_path.read_text(encoding="utf-8"))
+    if (
+        inventory.get("schema_version") != 2
+        or inventory.get("dataset_id") != HYMNS_TO_GOD_COLLECTION_ID
+    ):
+        raise CatalogBuildError("Invalid bulk HymnsToGod inventory identity.")
+    if (
+        conversion.get("schema_version") != 1
+        or conversion.get("dataset_id") != HYMNS_TO_GOD_COLLECTION_ID
+        or conversion.get("inventory_sha256") != _sha256_bytes(inventory_bytes)
+        or conversion.get("converter")
+        != {
+            "name": HYMNS_TO_GOD_GENERATOR_NAME,
+            "version": "2",
+            "mup_version": "7.2",
+        }
+    ):
+        raise CatalogBuildError(
+            "Bulk HymnsToGod conversion identity or inventory hash drifted."
+        )
+
+    source_records = inventory.get("records", [])
+    conversion_records = conversion.get("records", [])
+    if (
+        not isinstance(source_records, list)
+        or not isinstance(conversion_records, list)
+        or len(source_records)
+        != inventory.get("index", {}).get("arrangement_count")
+        or len(conversion_records) != len(source_records)
+    ):
+        raise CatalogBuildError(
+            "Bulk HymnsToGod inventory and conversion must account for every index entry."
+        )
+    conversion_by_id = {
+        str(record["arrangement_id"]): record for record in conversion_records
+    }
+    if len(conversion_by_id) != len(conversion_records):
+        raise CatalogBuildError("Duplicate HymnsToGod arrangement conversion ID.")
+
+    raw_root = inventory_path.parent / "raw"
+    records: list[dict[str, object]] = []
+    rights_holds: list[dict[str, object]] = []
+    structure_holds: list[dict[str, object]] = []
+    source_holds: list[dict[str, object]] = []
+    public_domain_arrangement_count = 0
+    public_domain_page_files: set[str] = set()
+    for source_record in source_records:
+        arrangement_id = str(source_record["arrangement_id"])
+        ordinal = int(source_record["record_ordinal"])
+        converted_record = conversion_by_id.get(arrangement_id)
+        if converted_record is None:
+            raise CatalogBuildError(
+                f"Missing conversion result for {arrangement_id!r}."
+            )
+        if converted_record.get("inventory_disposition") != source_record.get(
+            "disposition"
+        ):
+            raise CatalogBuildError(
+                f"Inventory disposition drift for {arrangement_id!r}."
+            )
+
+        page_file = source_record.get("page_file")
+        if page_file is not None:
+            page_path = raw_root / str(page_file)
+            page_bytes = page_path.read_bytes()
+            if _sha256_bytes(page_bytes) != source_record.get("page_sha256"):
+                raise CatalogBuildError(
+                    f"HymnsToGod page hash drift for {arrangement_id!r}."
+                )
+            declaration = str(source_record.get("page_rights_declaration", ""))
+            if (
+                source_record.get("rights_basis")
+                == "individual_page_declaration"
+                and declaration
+                and declaration.removeprefix("Copyright: ").encode("utf-8")
+                not in page_bytes
+            ):
+                raise CatalogBuildError(
+                    f"HymnsToGod page declaration drift for {arrangement_id!r}."
+                )
+            if (
+                source_record.get("disposition") != "rights_hold"
+                and source_record.get("rights_basis")
+                not in {
+                    "individual_page_declaration",
+                    "complete_public_domain_index",
+                }
+            ):
+                raise CatalogBuildError(
+                    f"HymnsToGod rights basis drift for {arrangement_id!r}."
+                )
+
+        inventory_disposition = str(source_record["disposition"])
+        if inventory_disposition != "rights_hold":
+            public_domain_arrangement_count += 1
+            if page_file is not None:
+                public_domain_page_files.add(str(page_file))
+        hold = {
+            "arrangement_id": arrangement_id,
+            "collection_id": HYMNS_TO_GOD_COLLECTION_ID,
+            "record_ordinal": ordinal,
+            "title": source_record["title"],
+            "reason": source_record.get("hold_reason", inventory_disposition),
+        }
+        if inventory_disposition == "rights_hold":
+            rights_holds.append(hold)
+            continue
+        if inventory_disposition != "pending_conversion":
+            source_holds.append(hold)
+            continue
+
+        source_path = raw_root / str(source_record["source_file"])
+        source_bytes = source_path.read_bytes()
+        if _sha256_bytes(source_bytes) != source_record.get("source_sha256"):
+            raise CatalogBuildError(
+                f"HymnsToGod Mup source hash drift for {arrangement_id!r}."
+            )
+        if converted_record.get("disposition") == "conversion_hold":
+            structure_holds.append(
+                {
+                    **hold,
+                    "reason": "unsupported_notation_or_musical_shape",
+                    "detail": converted_record.get("hold_reason", ""),
+                }
+            )
+            continue
+        if converted_record.get("disposition") != "eligible":
+            raise CatalogBuildError(
+                f"Unsupported conversion disposition for {arrangement_id!r}."
+            )
+
+        input_path = musicxml_dir / str(converted_record["output_file"])
+        if _sha256_bytes(input_path.read_bytes()) != converted_record.get(
+            "output_sha256"
+        ):
+            raise CatalogBuildError(
+                f"Converted MusicXML hash drift for {arrangement_id!r}."
+            )
+        xml_data = _normalized_musicxml(input_path)
+        facts = _score_facts(xml_data)
+        if (
+            facts["parts"] != 2
+            or facts["voices"] != 4
+            or not facts["soprano_lyrics"]
+        ):
+            structure_holds.append(
+                {
+                    **hold,
+                    "reason": "unsupported_catalog_satb_shape",
+                    "parts": facts["parts"],
+                    "voices": facts["voices"],
+                    "soprano_lyrics": facts["soprano_lyrics"],
+                }
+            )
+            continue
+        if facts["title"] != converted_record.get("source_title"):
+            raise CatalogBuildError(
+                f"Title mismatch for HymnsToGod arrangement {arrangement_id!r}."
+            )
+        if facts["mode"] not in {"major", "minor"}:
+            raise CatalogBuildError(
+                f"Unsupported mode for HymnsToGod arrangement {arrangement_id!r}."
+            )
+
+        lyricist = _display_person(str(source_record.get("lyricist") or "Unknown"))
+        composer = _display_person(str(source_record.get("composer") or "Unknown"))
+        arranger_value = str(source_record.get("arranger") or "").strip()
+        arranger = _display_person(arranger_value) if arranger_value else ""
+        arrangement_label = str(
+            source_record.get("arrangement_label") or ""
+        ).strip()
+        if arrangement_label == arrangement_id:
+            arrangement_label = arrangement_label.replace("-", " ").title()
+        tune_name = arrangement_label or arranger or composer or "HymnsToGod setting"
+        attributions = [
+            f"Lyrics: {lyricist}.",
+            f"Music: {composer}.",
+        ]
+        if arranger:
+            attributions.append(f"Arrangement: {arranger}.")
+        attributions.append("Mup transcription published by HymnsToGod.org.")
+
+        fifths = int(facts["fifths"])
+        mode = str(facts["mode"])
+        records.append(
+            {
+                "available_lines": ["SATB", "S", "A", "T", "B"],
+                "display": {
+                    "meter": "Irregular",
+                    "text_author": lyricist,
+                    "tune_name": tune_name,
+                },
+                "lyrics": {
+                    "available": True,
+                    "scope": "soprano_only",
+                    "verse_ids": facts["verse_ids"],
+                },
+                "original_key": {
+                    "abc": _abc_key(fifths, mode),
+                    "fifths": fifths,
+                    "mode": mode,
+                    "name": _key_name(fifths, mode),
+                },
+                "rights": {
+                    "source_attribution": attributions,
+                    "source_declaration": "Copyright: Public Domain - USA",
+                    "source_music_reference": str(source_record["source_url"]),
+                    "status": RIGHTS_STATUS,
+                },
+                "score": {
+                    "canonical_state": "untransposed",
+                    "generator": {
+                        "name": HYMNS_TO_GOD_GENERATOR_NAME,
+                        "version": "2",
+                    },
+                    "media_type": "application/vnd.recordare.musicxml+xml",
+                    "path": "",
+                    "sha256": _sha256_bytes(xml_data),
+                },
+                "source": {
+                    **(
+                        {"arrangement_label": arrangement_label}
+                        if arrangement_label
+                        else {}
+                    ),
+                    "arrangement_id": arrangement_id,
+                    "artifact_sha256": source_record["source_sha256"],
+                    "collection_id": HYMNS_TO_GOD_COLLECTION_ID,
+                    "record_ordinal": ordinal,
+                    "record_reference": arrangement_id,
+                    "record_url": source_record["page_url"],
+                    "work_id": source_record["work_id"],
+                },
+                "title": facts["title"],
+                "_arrangement_id": arrangement_id,
+                "_musicxml": xml_data,
+                "_cleanup_required": False,
+                "tune_name": tune_name,
+            }
+        )
+
+    return {
+        "catalog_records": records,
+        "inventory": inventory,
+        "inventory_sha256": _sha256_bytes(inventory_bytes),
+        "public_domain_arrangements": public_domain_arrangement_count,
+        "public_domain_pages": len(public_domain_page_files),
+        "rights_holds": rights_holds,
+        "source_holds": source_holds,
+        "source_records": len(source_records),
+        "structure_holds": structure_holds,
+    }
+
+
 def build_catalog(
     *,
     inventory_path: Path,
@@ -348,6 +658,7 @@ def build_catalog(
     supplement_musicxml_dir: Path,
     hymns_to_god_musicxml_dir: Path,
     hymns_to_god_manifest_path: Path = DEFAULT_HYMNS_TO_GOD_MANIFEST,
+    hymns_to_god_conversion_path: Path = DEFAULT_HYMNS_TO_GOD_CONVERSION,
     source_path: Path = DEFAULT_SOURCE,
     split_zip_path: Path = DEFAULT_SPLIT_ZIP,
     catalog_root: Path = DEFAULT_CATALOG_ROOT,
@@ -404,6 +715,7 @@ def build_catalog(
     source_metadata = _source_metadata(source_text)
     exact_pd_count = 0
     rights_holds: list[dict[str, object]] = []
+    source_holds: list[dict[str, object]] = []
     structure_holds: list[dict[str, object]] = []
     records: list[dict[str, object]] = []
     normalized_ordinals: set[int] = set()
@@ -723,23 +1035,59 @@ def build_catalog(
     hymns_to_god_manifest = json.loads(
         hymns_to_god_manifest_bytes.decode("utf-8")
     )
-    if (
+    hymns_to_god_bulk_mode = hymns_to_god_manifest.get("schema_version") == 2
+    bulk_result: dict[str, object] | None = None
+    if hymns_to_god_bulk_mode:
+        bulk_result = _bulk_hymns_to_god_records(
+            inventory_path=hymns_to_god_manifest_path,
+            conversion_path=hymns_to_god_conversion_path,
+            musicxml_dir=hymns_to_god_musicxml_dir,
+        )
+        records.extend(bulk_result["catalog_records"])
+        rights_holds.extend(bulk_result["rights_holds"])
+        source_holds.extend(bulk_result["source_holds"])
+        structure_holds.extend(bulk_result["structure_holds"])
+        hymns_to_god_upstream_url = str(
+            hymns_to_god_manifest["index"]["url"]
+        )
+        hymns_to_god_pd_records = int(bulk_result["public_domain_arrangements"])
+        hymns_to_god_pd_pages = int(bulk_result["public_domain_pages"])
+        hymns_to_god_source_records = int(bulk_result["source_records"])
+        hymns_to_god_mup_version = "7.2"
+    else:
+        hymns_to_god_upstream_url = str(
+            hymns_to_god_manifest["upstream"]["public_domain_index_url"]
+        )
+        hymns_to_god_pd_records = EXPECTED_HYMNS_TO_GOD_PD_RECORDS
+        hymns_to_god_pd_pages = EXPECTED_HYMNS_TO_GOD_PD_RECORDS
+        hymns_to_god_source_records = EXPECTED_HYMNS_TO_GOD_RECORDS
+        hymns_to_god_mup_version = str(
+            hymns_to_god_manifest["conversion_profile"]["mup_version"]
+        )
+    if not hymns_to_god_bulk_mode and (
         hymns_to_god_manifest.get("dataset_id") != HYMNS_TO_GOD_COLLECTION_ID
         or hymns_to_god_manifest.get("conversion_profile", {}).get("name")
         != HYMNS_TO_GOD_GENERATOR_NAME
         or hymns_to_god_manifest.get("conversion_profile", {}).get("version")
-        != HYMNS_TO_GOD_GENERATOR_VERSION
+        != "1"
     ):
         raise CatalogBuildError("HymnsToGod manifest identity or converter drifted.")
-    hymns_to_god_records = hymns_to_god_manifest.get("records", [])
-    if len(hymns_to_god_records) != EXPECTED_HYMNS_TO_GOD_RECORDS:
+    hymns_to_god_records = (
+        [] if hymns_to_god_bulk_mode else hymns_to_god_manifest.get("records", [])
+    )
+    if (
+        not hymns_to_god_bulk_mode
+        and len(hymns_to_god_records) != EXPECTED_HYMNS_TO_GOD_RECORDS
+    ):
         raise CatalogBuildError(
             f"Expected {EXPECTED_HYMNS_TO_GOD_RECORDS} HymnsToGod records, "
             f"found {len(hymns_to_god_records)}."
         )
     hymns_to_god_raw_root = hymns_to_god_manifest_path.parent / "raw"
     hymns_to_god_dispositions: defaultdict[str, int] = defaultdict(int)
-    hymns_to_god_item_count = 0
+    hymns_to_god_item_count = (
+        len(bulk_result["catalog_records"]) if bulk_result else 0
+    )
     seen_hymns_to_god_ids: set[str] = set()
     for ordinal, source_record in enumerate(hymns_to_god_records, start=1):
         source_id = str(source_record["id"])
@@ -898,7 +1246,7 @@ def build_catalog(
         )
         hymns_to_god_item_count += 1
 
-    if (
+    if not hymns_to_god_bulk_mode and (
         hymns_to_god_item_count != EXPECTED_HYMNS_TO_GOD_ITEMS
         or hymns_to_god_dispositions
         != {
@@ -911,15 +1259,23 @@ def build_catalog(
             "HymnsToGod eligible/rights/structure disposition counts drifted."
         )
 
-    if len(records) != EXPECTED_CATALOG_ITEMS:
+    expected_catalog_items = (
+        EXPECTED_COMBINED_ITEMS
+        + EXPECTED_SUPPLEMENT_ITEMS
+        + hymns_to_god_item_count
+    )
+    if len(records) != expected_catalog_items:
         raise CatalogBuildError(
-            f"Expected {EXPECTED_CATALOG_ITEMS} catalog items, found {len(records)}."
+            f"Expected {expected_catalog_items} catalog items, found {len(records)}."
         )
 
     _assign_ids(records)
     for record in records:
         pinned_id = record.pop("_pinned_id", None)
-        if pinned_id is not None and record["id"] != pinned_id:
+        if pinned_id is not None and record["id"] not in {
+            pinned_id,
+            f"{pinned_id}-hymns-to-god",
+        }:
             raise CatalogBuildError(
                 f"HymnsToGod stable ID drift: expected {pinned_id!r}, "
                 f"generated {record['id']!r}."
@@ -937,6 +1293,13 @@ def build_catalog(
         record["score"]["path"] = f"scores/{item_id}.musicxml"
         (scores_dir / f"{item_id}.musicxml").write_bytes(xml_data)
         items.append(record)
+
+    expected_score_files = {
+        Path(str(item["score"]["path"])).name for item in items
+    }
+    for existing_score in scores_dir.glob("*.musicxml"):
+        if existing_score.name not in expected_score_files:
+            existing_score.unlink()
 
     catalog = {
         "catalog_id": "hymn-transposer-technical-preview",
@@ -962,9 +1325,7 @@ def build_catalog(
                 "encoding": "utf-8",
                 "id": HYMNS_TO_GOD_COLLECTION_ID,
                 "manifest_sha256": hymns_to_god_manifest_sha256,
-                "source_url": hymns_to_god_manifest["upstream"][
-                    "public_domain_index_url"
-                ],
+                "source_url": hymns_to_god_upstream_url,
             },
         ],
     }
@@ -993,15 +1354,14 @@ def build_catalog(
                     "name": HYMNS_TO_GOD_GENERATOR_NAME,
                     "version": HYMNS_TO_GOD_GENERATOR_VERSION,
                 },
-                "mup_version": hymns_to_god_manifest["conversion_profile"][
-                    "mup_version"
-                ],
+                "mup_version": hymns_to_god_mup_version,
             },
             "selected_cleanup_required": cleanup_count,
             "supplement_cleanup_required": supplement_cleanup_count,
         },
         "excluded": {
             "rights_holds": rights_holds,
+            "source_holds": source_holds,
             "structure_holds": structure_holds,
         },
         "schema_version": 1,
@@ -1020,12 +1380,23 @@ def build_catalog(
             },
             "hymns_to_god": {
                 "catalog_items": hymns_to_god_item_count,
-                "public_domain_page_declarations": (
-                    EXPECTED_HYMNS_TO_GOD_PD_RECORDS
+                "index_pages": int(
+                    hymns_to_god_manifest.get("index", {}).get(
+                        "entry_count", hymns_to_god_source_records
+                    )
                 ),
-                "rights_holds": EXPECTED_HYMNS_TO_GOD_RIGHTS_HOLDS,
-                "source_records": EXPECTED_HYMNS_TO_GOD_RECORDS,
-                "structure_holds": EXPECTED_HYMNS_TO_GOD_STRUCTURE_HOLDS,
+                "public_domain_arrangements": hymns_to_god_pd_records,
+                "public_domain_pages": hymns_to_god_pd_pages,
+                "rights_holds": sum(
+                    hold.get("collection_id") == HYMNS_TO_GOD_COLLECTION_ID
+                    for hold in rights_holds
+                ),
+                "source_holds": len(source_holds),
+                "source_records": hymns_to_god_source_records,
+                "structure_holds": sum(
+                    hold.get("collection_id") == HYMNS_TO_GOD_COLLECTION_ID
+                    for hold in structure_holds
+                ),
             },
         },
         "summary": {
@@ -1033,14 +1404,15 @@ def build_catalog(
             "exact_public_domain_candidates": (
                 exact_pd_count
                 + EXPECTED_SUPPLEMENT_ITEMS
-                + EXPECTED_HYMNS_TO_GOD_PD_RECORDS
+                + hymns_to_god_pd_records
             ),
             "rights_holds": len(rights_holds),
             "source_records": (
                 len(tunes)
                 + EXPECTED_SUPPLEMENT_ITEMS
-                + EXPECTED_HYMNS_TO_GOD_RECORDS
+                + hymns_to_god_source_records
             ),
+            "source_holds": len(source_holds),
             "structure_holds": len(structure_holds),
             "supplement_items": EXPECTED_SUPPLEMENT_ITEMS,
             "hymns_to_god_items": hymns_to_god_item_count,
@@ -1069,6 +1441,11 @@ def main() -> int:
         default=DEFAULT_HYMNS_TO_GOD_MANIFEST,
         type=Path,
     )
+    parser.add_argument(
+        "--hymns-to-god-conversion",
+        default=DEFAULT_HYMNS_TO_GOD_CONVERSION,
+        type=Path,
+    )
     parser.add_argument("--source", default=DEFAULT_SOURCE, type=Path)
     parser.add_argument("--split-zip", default=DEFAULT_SPLIT_ZIP, type=Path)
     parser.add_argument("--catalog-root", default=DEFAULT_CATALOG_ROOT, type=Path)
@@ -1086,6 +1463,9 @@ def main() -> int:
                 args.hymns_to_god_musicxml_dir.resolve()
             ),
             hymns_to_god_manifest_path=args.hymns_to_god_manifest.resolve(),
+            hymns_to_god_conversion_path=(
+                args.hymns_to_god_conversion.resolve()
+            ),
             source_path=args.source.resolve(),
             split_zip_path=args.split_zip.resolve(),
             catalog_root=args.catalog_root.resolve(),

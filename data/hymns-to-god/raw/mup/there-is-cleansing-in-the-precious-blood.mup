@@ -1,0 +1,236 @@
+// Mup vs.6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Old Story In Song
+//		For Evangelistic Meetings, Prayer Services,
+//		Sunday Schools and the Young People's Meetings
+//		Edited by Arthur S. Magann, Wm. J. Kirkpatrick,
+//		and H. L. Gilmour
+//		Published by The Praise Publishing Co.,
+//		502 Perry Building, Philadellphia
+//		Western Officce, Fairbury, Illinois
+//		Copyright by Geo. W. Sanville
+//		Copyright: 1906 
+//		Hymn No.: 93
+//		
+// Transcribed by: Ted Gatza, Jr. 11/28/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "There Is Cleansing In The Precious Blood" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - DO" "\s(17)\f(TI)\:Come\ now,\ and\ let\ us\ reason\ tog\|ether,\ saith\ Jehovah:\ though\ your sins\ be\ as\ scarlet,\ they\ shall\^\ be\ as\ white\ as\ snow;\ -\ Is.\ 1:18" ""   
+   title (13) "Isaac Naylor" "" "James M. Black, 1894"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1: 4ac; 2.s;
+2: 4ea-; 2.s;
+
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|\"Come";	
+			VERSE "<3. >-1|Your";
+			VERSE "<4. >-1|At";			
+bar
+//2
+1: 8.c+e; 16; 8.; 16bd; 4ac; c+e;
+2: 8.aa-; 16; 8.; 16; 4ea-; aa-;
+
+			VERSE "has-ten now to Cal-v'ry's";
+			VERSE "now, to-geth-er let us";
+			VERSE "heart is full of sin and";
+			VERSE "morn-ing, noon, and night I'm";
+bar
+//3
+1: 2bd; 4ad; fd;
+2: 2fd; 4; ad;
+
+			VERSE "moun-tain, There's";
+			VERSE "rea-son,\" There's";
+			VERSE "sad-ness, There's";
+			VERSE "sing-ing, There's";
+bar
+//4
+1: 8.ec; 16; 8.s; 16s; 4s;;
+2 1: 8.aa-; 16; 8.s; 16s; 4s;;
+2 2: 8.s; 16; 8.s; 16s; 4s;;
+
+			VERSE "cleans-ing";
+			VERSE "cleans-ing";
+			VERSE "cleans-ing";
+			VERSE "cleans-ing";
+invisbar
+newscore
+
+1: 8.s; 16s; 8.ae; 16be; 4c+e;;
+2 1: 8.s; 16s; 8.ac; 16ge; 4a;;
+2 2: 8.s; 16; 8.; 16; 4a;;
+
+			VERSE "in the pre-cious";
+			VERSE "in the pre-cious";
+			VERSE "in the pre-cious";
+			VERSE "in the pre-cious";
+
+bar
+//5
+1: 2.be; 4d+e;
+2: 2.ge; 4;
+
+			VERSE "blood; And";
+			VERSE "blood; Al-";
+			VERSE "blood; In";
+			VERSE "blood; O";
+bar
+//6
+1: 8.c+e; 16; 8.; 16bd; 4ac; c+e;
+2: 8.aa-; 16; 8.; 16; 4ea-; aa-;
+
+			VERSE "plunge in-to the flow-ing";
+			VERSE "though your sins be red like";
+			VERSE "Je-sus there is joy and";
+			VERSE "let us keep the an-them";
+
+bar
+//7
+1: 2bd; 4ad; fd;
+2: 2fd; 4; ad;
+
+			VERSE "foun-tain, There's";
+			VERSE "crim-son, There's";
+			VERSE "glad-ness, There's";
+			VERSE "ring-ing, There's";
+bar
+//8
+1: 8.ec; 16; 8.ac; 16bd; 4c+e; bd;
+2 1: 8.ae; 16; 8.e; 16; 4ae; ge;
+2 2: 8.s; 16; 8.e; 16; 4s;;
+
+			VERSE "cleans-ing in the pre-cious";
+			VERSE "cleans-ing in the pre-cious";
+			VERSE "cleans-ing in the pre-cious";
+			VERSE "cleans-ing in the pre-cious";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "blood.";
+			VERSE "blood.";
+			VERSE "blood.";
+			VERSE "blood.";
+dblbar
+newscore
+//10
+1 1: 4a; 2.s;
+1 2: 4g&; 2.s;
+2: 4c+a; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "There's";
+bar
+//11
+1: 8.af; 16; 8.; 16; 4d+f;;
+2: 8.d+d; 16; 8.; 16; 4ad;;
+
+			VERSE "cleans-ing in the pre-cious";
+bar
+//12
+1: 2.c+e; 4;
+2: 2.aa-; 4;
+
+			VERSE "blood, Plunge";
+bar
+//13
+1: 8.be; 16; 8.; 16s; 4s; s;
+2: 8.gb-; 16; 8.; 16s; 4s;;
+
+			VERSE "now be-neath";
+invisbar
+newscore
+
+1: 8.s; 16; 8.; 16be; 4e+g; dna;
+2: 8.s; 16; 8.; 16gb-; 4bb-;;
+
+			VERSE "the crim-son";
+
+bar
+//14
+1: 2.e+g; 4d+g;
+2: 2.be; 4;
+
+			VERSE "flood; Con-";
+bar
+//15
+1: 8.c+a; 16; 8.c+e; 16bd; 4ac; c+e;
+2: 8.aa-; 16; 8.; 16; 4ea-; aa-;
+
+			VERSE "fess-ing all your sins to";
+bar
+//16
+1: 2bd; 4ad; fd;
+2: 2fd; 4; ad;
+
+			VERSE "Je-sus, There's";
+bar
+//17
+1: 8.ec; 16; 8.ac; 16bd; 4c+e; bd;
+2 1: 8.ae; 16; 8.e; 16; 4ae; ge;
+2 2: 8.s; 16; 8.e; 16; 4s;;
+
+			VERSE "cleans-ing in the pre-cious";
+bar
+//18
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "blood.";
+endbar

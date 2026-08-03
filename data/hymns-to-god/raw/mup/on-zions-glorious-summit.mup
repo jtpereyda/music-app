@@ -1,0 +1,424 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 246	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 02/04/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	scoresep=6
+	staffpad=1
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "On Zion's Glorious Summit" ""
+   title (2)""
+   title (11) "" "\f(TI)...Holy, holy, holy, Lord God Almighty, which was and is and is to come. - Rev. 4:8" ""
+   title (10) "A \(flat) - 4 - SOL" "" ""
+   title "John Kent" "" "Robert Skene"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+//Verse
+
+//1
+1 1: 2.s; 4e;
+1 2: 2.s; 4e;
+2 1: 2.s; 4e;
+2 2: 2.s; 4e;
+
+	VS "<1. >-1|On";
+	VS "<2. >-1|Here";
+	VS "<3. >-1|While";
+bar
+
+//2
+1: 4ea; ; ; ;
+2: 4ac+; ec+; cc+; a-c+;
+
+	VS "Zi-on's glo-rious";
+	VS "all who suf-fered";
+	VS "ev-er-last-ing";
+bar
+
+//3
+
+1: 4.eg; 8eb; 4ea; s;
+2: 4.eb; 8ed+; 4a-c+; s;
+
+	VS "sum-mit stood";
+	VS "sword or flame";
+	VS "a-ges roll,";
+invisbar
+1: 2.s; 4eb;
+2: 2.s; 4eg;
+
+	VS "A";
+	VS "For";
+	VS "E-";
+bar
+
+//4
+1: 4ec+; ; ; ;
+2 1: 4a; ea; ca; a-a;
+2 2: 4a; 4s; ; ;
+
+	VS "num'-rous host re-";
+	VS "truth, or Je-sus'";
+	VS "ter-nal love shall";
+bar
+
+//5
+1: 4.eb; 8ed+; 4ec+; s;
+2 1: 4.eg; 8eb; 4a; s;
+2 2: 4.s; 8; 4a; s;
+
+	VS "deemed by blood!";
+	VS "lov-ly name,";
+	VS "feast their soul,";
+invisbar
+1: 4.s; 8; 4; ge+;
+2: 4.s; 8; 4; eb;
+
+	VS "They";
+	VS "Shout";
+	VS "And";
+bar
+
+//6
+1: 4ae+; ge+; ae+; ge+;
+2: 4ac+; eb; ac+; eb;
+
+	VS "hymned their King in";
+	VS "vic-tr'y now and";
+	VS "scenes of bliss, for-";
+bar
+
+//7
+1: 2ae+; 4bd+ slur; ac+;
+2 1: 2ac+; 2e+;
+2 2: 2s; 4g slur; a;
+
+	VS "strains di-";
+	VS "hail the";
+	VS "ev-er";
+bar
+
+//8
+1: 2ac+ slur; 4gb; 4s;
+2: 2.ee+; 4s;
+
+	VS "vine;";
+	VS "Lamb,";
+	VS "new,";
+invisbar
+1: 2s; 4; 4gd+;
+2: 2.s; 4eb;
+
+	VS "I";
+	VS "And";
+	VS "Rise";
+bar
+
+//9
+1 1: 4ac+; 8d+<e+> bm; 8e+ ebm; 4af+; 8d+<b> bm; 8b ebm;
+1 2: 4s; a; s; f;
+2 1: 4a; 8b<c+> bm; c+ ebm; 4dd+; ;
+2 2: 4a; ; s;;
+
+	VS "heard the song, and";
+	VS "bow be-fore the";
+	VS "in suc-ces-sion";
+bar
+
+//10
+1 1: 2ea; 4c+ slur; b;
+1 2: 2s; e;
+2 1: 2ec+; 4e+ slur; d+;
+2 2: 2s; 2e;
+
+	VS "strove to";
+	VS "great I";
+	VS "to their";
+bar
+
+//11
+1: 2.ea; 4s;
+2: 2.ac+; 4s;
+
+	VS "join,";
+	VS "AM";
+	VS "view,";
+invisbar
+ ital above 1: 4 "p";
+1: 2.s; 4ea;
+2: 2.s; 4a-c+;
+
+	VS "I";
+	VS "And";
+	VS "Rise";
+bar
+
+//12
+1: 4.fa; 8; 4; ;
+2: 4.dd+; 8; 4; ;
+
+	VS "heard the song, and";
+	VS "bow be-fore the";
+	VS "in suc-ces-sion";
+bar
+//13
+1 1: 2ea; 4c+ slur; b;
+1 2: 2s; e;
+2 1: 2ec+; 4e+ slur; b;
+2 2: 2s; e;
+
+	VS "strove to";
+	VS "great I";
+	VS "to their";
+bar
+
+//14
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "join.";
+	VS "AM.";
+	VS "view.";
+dblbar
+newscore
+
+//15
+repeatstart
+ rom 1: 1 "\f(TR)SANCTUS \f(TI)  to be sung at close of hymn.";
+
+1: 2ac+; 4ea; 4r;
+2: 2ae+; 4ac+; 4r;
+
+	VS "Ho-ly,";
+bar
+
+//16
+1: 2ge+; 4eg; r;
+2: 2eb; 4; r;
+
+	VS "ho-ly";
+bar
+
+//17
+1: 2ca; df;
+2: 2fa; da;
+
+	VS "ho-ly";
+bar
+
+//18
+1: 2.ce; 4r;
+2: 2.a-a; 4r;
+
+	VS "Lord,";
+bar
+
+//19
+1: 4ea; ac+; ad+; af+;
+2: 4ac+; a&e+; fd+; dd+;
+
+	VS "God of hosts, on";
+bar
+
+//20
+1: 4ae+; eg; ea; r;
+2: 4ec+; eb; a-c+; r;
+
+	VS "high a-dored!";
+
+bar ending "1."
+
+//21
+
+1: 4ce; a-c; 4.fa; 8eg;
+2: mr;
+
+	VS "Who like me Thy";
+bar
+
+//22
+1: 4df; ; 2ce;
+2: mr;
+
+	VS "praise should sing,";
+bar
+
+//23
+1: 4ea; ac+; gb; fb;
+2: 4ca; a-e+; b-e+; b-d+n;
+
+	VS "O Al-might-y";
+bar
+
+//24
+1: 2.gb; 4r;
+2: 2.ee+; 4r;
+
+	VS "King!";
+
+repeatend ending "2."
+
+//25
+ ital above 1: 1 "dim.";
+1: 2fa; 4ea; r;
+2: 2dd+;4 a-c+; r;
+
+	VS "Ho-ly,";
+bar
+
+//26
+1: 2fa; 4ea; r;
+2: 2dd+; 4a-c+; r;
+
+	VS "ho-ly,";
+bar
+
+//27
+1: 1fa;
+2: 1dd+;
+
+	VS "ho-";
+bar
+
+//28
+1: 1ea;
+ FST (1)
+ FSB (1)
+2: 1a-c+;
+ FBT (1)
+ FBB (1)
+
+	VS "ly.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,334 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	timelesstruths.org
+//	https://library.timelesstruths.org/library/music/W/When_Jesus_Comes_Again/When_Jesus_Comes_Again.pdf		
+
+// Transcribed by:
+//	Ted Gatza, Jr. 11/09/2022
+
+// Revisions:
+//	02/01/2023 - Corrected tenor in measure 11
+	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "When Jesus Comes Again" ""
+   title (2)""
+   title (11)"" "\f(TI)His lord said unto him, Well done, good and faithful servant: thou hast" ""
+   title (11)"" "\f(TI)been faithful over a few things, I will set thee over many things;" ""
+   title (11)"" "\f(TI)enter thou into the joy of thy lord. - Matt. 25:31" "" 
+
+   title (11) " B\(flat) - 4 - MI" "" ""
+   title (13) "James W. Gaines" "" "James W. Gaines, 1923"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.9
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+
+  //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=95";
+
+//=========================
+//Verse 1
+
+//1
+1: 2s; 8; b-d; ce bm; c#en ebm;
+2: 2s; 8; b-f; b-f bm; b-b ebm;
+
+	VS1 "<1. >-1|When Je-sus";
+	VS1 "<2. >-1|I want to";
+	VS1 "<3. >-1|He's com-ing";
+	VS1 "<4. >-1|I do not";
+bar
+
+//2
+1: 4df; db; fd+; df;
+2: b-b; b-f; b-b; ;
+
+	VS1 "comes a-gain to";
+	VS1 "tell to all the";
+	VS1 "back a-gain, His";
+	VS1 "know the day my";
+bar
+
+//3
+1: 4.s; 8eg; 4eb; 8ec+ bm; eb ebm;
+2: 4.s; 8eb; 4eg; 8; ;
+
+	VS1 "gath-er His own,";
+	VS1 "sto-ry of love,";
+	VS1 "jew-els to claim,";
+	VS1 "Sav-ior will come,";
+invisbar
+newscore
+
+1: 8gb; fa bm; eg ebm; 2s; 8;
+2:  8eb; bm; ebm; 2s; 8;
+
+	VS1 "And to the";
+	VS1 "That they may";
+	VS1 "They shall re-";
+	VS1 "But I must";
+bar
+
+//4
+1: 4df; fb; end+; ec+;
+2: 4b-b; db; cb; ;
+
+	VS1 "true a crown is";
+	VS1 "know His par-don";
+	VS1 "ceive e-ter-nal";
+	VS1 "be pre-pared to";
+bar
+
+//5
+1: 4.s; 2fc+ tie; 8;
+2: 4.s; 2fa tie; 8;
+
+	VS1 "giv'n";
+	VS1 "free,";
+	VS1 "rest;";
+	VS1 "go;";
+invisbar
+1: 8b-d; 8ce bm; c#en ebm; 2s; 8;
+2: 8b-f; b-f bm; b-b ebm; 2s; 8;
+
+	VS1 "I want to";
+	VS1 "And there be-";
+	VS1 "'Tis sweet to";
+	VS1 "If I am";
+bar
+
+//6
+1: 4df; db; fd+; f#b;
+2: 4b-b; b-f; b-b; db;
+
+	VS1 "hear Him say, \"My";
+	VS1 "fore His throne in";
+	VS1 "know that all who";
+	VS1 "read-y, He will";
+bar
+
+//7
+1: 4.s; 8gc+; 4gb; 8eg; 8gb;
+2: 4.s; 8eb; 4; 8; ;
+
+	VS1 "ser-vant, well done,";
+	VS1 "glo-ry a-bove,";
+	VS1 "come in His name";
+	VS1 "call me His own,";
+invisbar
+
+1: 8gb; gc+ bm; g&c+# ebm; 2s; 8;
+2: 8eb; eb bm; enb ebm; 2s; 8;
+
+	VS1 "Thy soul shall";
+	VS1 "Re-ceive a";
+	VS1 "Shall there be";
+	VS1 "And that's e-";
+bar
+
+//8
+1: 4fd+; db; 4.fd+; 8ec+;
+2 1: 4fb; gb; 4.fb; 8f;
+2 2: 2s; 4.; 8f;
+
+	VS1 "know the joys of";
+	VS1 "crown of vic-to-";
+	VS1 "num-bered with the";
+	VS1 "nough for me to";
+bar
+
+//9
+1: 2db tie; 8; 4.s;
+2: 2b-f tie; 8; 4.s;
+
+	VS1 "heav'n.\"";
+	VS1 "ry.";
+	VS1 "blest.";
+	VS1 "know.";
+dblbar
+newscore
+
+//10
+REFRAIN
+1: 2s; 8; 8r; 4;
+2 1:2s; 8; 8r; 4;
+2 2: 2s; 8; [down]b-; d bm; g ebm;
+
+	VS1 " ";
+	VS22 "I want to";
+bar
+
+//11
+1 1: 8r; fd+; gb bm; gc+ ebm; fd+ bm; f ebm; eg bm; ea ebm;
+1 2: 2s; 8; 8f; 4s;
+2 1: 8r; b; bm; ebm; 8 bm; ebm; fbm; ebm;
+2 2: 4f; e; d; c;
+
+	VS1 "I want to know that He will";
+	VS22 "know that He will";
+bar
+
+//12
+1: 4.s; 8db; 4; 8eg; df;
+2: 4.s; 8b-f; 4; 8b-b; ;
+
+	VS1 "wel-come me there,";
+	VS1 "wel-come me there,";
+invisbar
+newscore
+
+1: 8r; 4; 2s; 8;
+2 1: 8r; 4; 2s; 8;
+2 2: [down]8b-; d bm; f ebm; 2s; 8;
+
+	VS1 " ";
+	VS22 "I do not";
+bar
+
+//13
+1: 8r; [up]gd+; f#d+ bm; ebm; gd+ bm; db ebm; eng bm; ed+ ebm;
+2 1: 8r; 8b; a bm; ebm; b bm; ebm; bm; ebm;
+2 2: 4g; d; g; c;
+
+	VS1 "I do not want to be de-";
+	VS22 "want to be de-";
+bar
+
+//14
+1: 4.s; 2fc+ tie; 8;
+2: 4.s; 2fa tie; 8;
+
+	VS1 "nied";
+	VS1 "nied;";
+invisbar
+1 1: 8r; 4; 2s; 8;
+1 2: 8f; g bm; a ebm; 2s; 8;
+2: 8r; 4; 2s; 8;
+
+	VS1 " ";
+	VS12 "I want to";
+bar
+
+//15
+1 1: 8r; d+; f+ bm; ebm; d+ bm; b ebm; c+ bm; d+ ebm;
+1 2: 4b; a; g; f#;
+2 1: 8s; 8b; 2s; 4;
+2 2: 8r; 8b; fc+ bm; ebm; gb bm; gd+ ebm; dd+ bm; dc+ ebm;
+
+	VS1 "I want to meet Him in that";
+	VS12 "meet Him in that";
+bar
+
+//16
+1: 4.s; 8gc+; 4gb; 8eg; 8gb;
+2: 4.s; 8eb; 4; 8; 8;
+
+	VS1 "cit-y so fair,";
+	VS1 "cit-y so fair,";
+invisbar
+newscore
+
+1: 2s; 8; gb; gc+ bm; g&c#+ ebm;
+2: 2s; 8; 8eb; 8 bm; enb ebm;
+
+	VS1 "And ev-er";
+bar
+
+//17
+1: 4fd+; db; 4.fd+; 8ec+;
+2 1: 4fb; gb; 4.fb; 8f;
+2 2: 2s; 4.s;  8f;
+
+	VS1 "there with Him a-";
+bar
+
+//18
+1: 2db tie; 8; 4.s;
+2: 2b-f tie; 8; 4.s;
+
+	VS1 "bide.";
+endbar
+
+
+
+
+
+
+
+
+
+
+

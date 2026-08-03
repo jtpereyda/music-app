@@ -1,0 +1,197 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns of His Grace No. 1
+//		For the Evangelist, Church, Sunday School,
+//		and Young People's Society
+//		Compiled and Edited by P.P. Bilhorn, F.G. Fischer,
+//		John R. Clements, W. Stillman martin
+//		Published by The Bilhorn Brothers
+//		152 lake Street, Chicago, Ill.
+//		Copyright 1907
+//		Hymn no. 4
+
+// Transcribed by: Ted Gatza, Jr. 03/22/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Holy is the Lord" ""
+   title (2)""
+   title (11) "F - 4 - MI" "\s(17)\f(TI)\:Exalt\ ye\ Jehovah\ ou\|r\ God,\ And\ worship\ at his\ footstool:\ Ho\|ly\ is\ he.\ -\ Ps.\ 99:3"""
+   title (13) "Fanny J. Crosby, 1869" " " "Wm. B. Bradbury, 1867"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4af; 4af; 4af; 4af;
+2: 4c+f; 4c+f; 4c+f; 4c+f;
+
+			lyrics 1: "<1. >-1|Ho-ly, ho-ly,";
+			lyrics 1: "<2. >-1|Praise Him, Praise Him,";
+			lyrics 1: "<3. >-1|King e-ter-nal,";
+bar
+//2
+1: 8.gd; 16fd; 8.ec; 16db-; 2ca-;
+2: 8.bb-; 16bb-; 8.fb-; 16fb-; 2ff-;
+
+			lyrics 1: "ho-ly is the Lord!";
+			lyrics 1: "shout a-loud for joy,";
+			lyrics 1: "bless-ed be His name!";
+bar
+//3
+1: 4fc; 8.fc; 16gc; 4fc; 4ec;
+2: 4af; 8.af; 16bf; 4ac; 4gc;
+
+			lyrics 1: "Sing, O ye peo-ple,";
+			lyrics 1: "Watch-man of Zi-on";
+			lyrics 1: "So may His chil-dren";
+bar
+//4
+1 1: 4ge; 8.ge; 16af; 4ge; 4f;
+1 2: 4s; 8.s; 16s; 4s; 4f;
+2: 4c+c; 8.c+c; 16c+c; 4bc; 4af;
+
+			lyrics 1: "glad-ly a-dore Him:";
+			lyrics 1: "her-ald the sto-ry;";
+			lyrics 1: "glad-ly a-dopre Him,";
+bar
+//5
+1: 4af; 4af; 4af; 4af;
+2: 4c+f; 4c+c; 4c+a-; 4c+f-;
+		
+			lyrics 1: "Let the moun-tains";
+			lyrics 1: "Sin and death His";
+			lyrics 1: "When in heav'n we";
+bar
+//6
+1: 8.gd; 16fd; 8.ec; 16db-; 2ca-;
+2: 8.bb-; 16bb-; 8.fb-; 16fb-; 2ff-;
+
+			lyrics 1: "trem-ble at His word;";
+			lyrics 1: "king-dom shall de-stroy;";
+			lyrics 1: "join the hap-py strain,";
+bar
+//7
+1 1: 8.db-; 16ec; 8.fc; 16g; 4af; 8.bg; 16af;
+1 2: 8.s; 16s; 8.s; 16f; 4s; 8.s; 16s;
+2: 8.fb-; 16gg-; 8.fa-; 16d+b-; 4c+c; 8.c+c; 16c+c;
+
+			lyrics 1: "Let the hills be joy-ful be-";
+			lyrics 1: "All the earth shall sing of His";
+			lyrics 1: "When we cast our bright crowns be-";
+bar
+//8
+1 1: 2ge; 4f; 4r;
+1 2: 2s; 4f; 4s;
+2: 2bc; 4af; 4r;
+
+			lyrics 1: "fore Him;";
+			lyrics 1: "glo-ry;";
+			lyrics 1: "fore Him,";
+bar
+//9
+1: 4c+a; 8.c+a; 16f+f; 4f+a; 4e+g;
+2 1: 4c+f; 8.c+f; 16c+a; 4c+; 4c+;
+2 2: 4s; 8.s; 16s; 4c+; 4c+;
+
+			lyrics 1: "Might-y in wis-dom,";
+			lyrics 1: "Praise Him, ye an-gels,";
+			lyrics 1: "There in His like-ness";
+bar
+//10
+1 1: 4e+c+; 8.d+b; 16c+; 4c+a; 4af;
+1 2: 4s; 8.s; 16b; 4s; 4s;
+2: 4c+c; 8.c+c; 16c+e; 4c+f; 4c+f;
+
+			lyrics 1: "bound-less in mer-cy";
+			lyrics 1: "ye who be-hold Him";
+			lyrics 1: "joy-ful a-wak-ing,";
+bar
+//11
+1: 4c+a; 8.c+a; 16f+f; 4f+a; 4e+g;
+2 1: 4c+f; 8.c+f; 16c+a; 4c+; 4c+;
+2 2: 4s; 8.s; 16s; 4c+; 4c+;
+
+			lyrics 1: "Great is Je-ho-vah,";
+			lyrics 1: "Robed in His splen-dor,";
+			lyrics 1: "There we shall see Him,";
+bar
+//12
+1: 4e+g; 8.d+f; 16e+g; 2c+e;
+2: 4c+g; 8.bng; 16bg; 2c+c;
+
+			lyrics 1: "King o-ver all.";
+			lyrics 1: "match-less di-vine,";
+			lyrics 1: "there we shall sing.";
+bar
+//13
+1: 4af; 4af; 4af; 4af;
+2: 4c+f; 4c+f; 4c+f; 4c+f;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "Ho-ly, ho-ly,";
+
+
+bar
+//14
+1: 8.gd; 16fd; 8.ec; 16db-; 2ca-;
+2: 8.bb-; 16bb-; 8.fb-; 16fb-; 2ff-;
+
+			lyrics 1: "ho-ly is the Lord,";
+bar
+//15
+1 1: 8.db-; 16ec; 8.fc; 16g; 4af; 8.bg; 16af;
+1 2: 8.s; 16s; 8.s; 16f; 4s; 8.s; 16s;
+2: 8.fb-; 16gg-; 8.fa-; 16d+b-; 4c+c; 8.c+c; 16c+c;
+
+			lyrics 1: "Let the hills be joy-ful be-";
+bar
+//16
+1 1: 2ge; 4f; 4r;
+1 2: 2s; 4f; 4s;
+2: 2bc; 4af; 4r;
+
+			lyrics 1: "fore Him.";
+endbar

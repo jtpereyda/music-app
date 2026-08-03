@@ -1,0 +1,579 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be  
+// in the public domain in the United States of America.
+
+// This mup code is donated to the public domain.
+// 
+
+// Hymn Source: Hymns For Worship
+//		Editors R. J. Stevens and Dane K. Shepherd
+//		Publisher: Guardian of Truth Foundation
+//		420 Old Morgantown Road
+//		Bowling Green KY 42102
+//		Copyrigght 1989
+//		Hymn No.: 16
+			
+// Transcribed by: Ted Gatza, Jr. 04/16/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=1.0
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=2/4
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "A Mighty Fortress" ""
+   title (2) ""
+   title (11) "" "\f(times boldital)He is my refuge and my fortress, my God in Him I trust. - Ps. 91:2" ""
+   title (11) "D - 2 - DO" "" ""
+   title (13) "Martin Luther" " " "Martin Luther, 1529" 
+   title (13) "\f(ital)Tr. F. H Hedge" "" ""
+
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse 1
+
+//1
+1: 4s; 4fd+;
+2: 4s; 4da;
+
+	VS "<1. >-1|A";
+	VS "<2. >-1|Did";
+	VS "<3. >-1|And";
+bar
+
+//2
+1: 4fd+; ;
+2: 4da; ;
+
+	VS "might-y";
+	VS "we in";
+	VS "tho' this";
+bar
+
+//3
+1 1: 8a bm; b ebm; 4s;
+1 2: 4e; 4ac+;
+2: 4ac+; fa;
+
+	VS12 "for-tress";
+	VS12 "our own";
+	VS12 "world, with";
+bar
+
+//4
+1 1: 8d+ bm; 8c+ ebm; 4s;
+1 2: 4f; 4eb;
+2 1: 4s; 8g# bm; d+ ebm;
+2 2: 4b-b; e;
+
+	VS12 "is our";
+	VS12 "strength con-";
+	VS12 "e-vil";
+bar
+
+//5a
+1: 4ea; s;
+2: 4a-c+; s;
+
+	VS "God,";
+	VS "fide";
+	VS "filled,";
+invisbar
+
+//5b
+1: 4s; fd+;
+2: 4s; b-b;
+
+	VS "A";
+	VS "Our";
+	VS "Should";
+bar
+
+//6
+1: 4fc+; db;
+2 1: 4fa; g;
+2 2: 4s; g;
+
+	VS "bul-wark";
+	VS "striv-ing";
+	VS "threat-en";
+bar
+
+//7
+1: 4da; db;
+2: 4df; b-f;
+
+	VS "nev-er";
+	VS "would be";
+	VS "to un-";
+bar
+
+//8
+1 1: 8g bm; f ebm; 4e;
+   phrase above 1: 1 til 2;
+1 2: 4b- slur; 4c;
+2 1: 4g; 8a bm; g ebm;
+   phrase above 2: 1 til 2;
+2 2: 4e slur; a-;
+
+	VS12 "fail-";
+	VS12 "los-";
+	VS12 "do";
+bar
+
+//9a
+1 1: 4d; 4s;
+1 2: 4d; 4s;
+   FST(1)
+2: 4df; 4s;
+   FBB(1)
+	
+	VS "ing;";
+	VS "ing;";
+	VS "us;";
+invisbar
+
+//9b
+1: 4s; 4fd+;
+2: 4s; 4da;
+
+	VS "Our";
+	VS "Were";
+	VS "We";
+bar
+
+//10
+//2
+1: 4fd+; ;
+2: 4da; ;
+
+	VS "help-er";
+	VS "not the";
+	VS "will not";
+bar
+
+//11
+1 1: 8a bm; b ebm; 4s;
+1 2: 4e; 4ac+;
+2: 4ac+; fa;
+
+	VS12 "He, a-";
+	VS12 "right One";
+	VS12 "fear, for";
+bar
+
+//12
+1 1: 8d+ bm; 8c+ ebm; 4s;
+1 2: 4f; 4eb;
+2 1: 4s; 8g# bm; d+ ebm;
+2 2: 4b-b; e;
+
+	VS12 "mid the";
+	VS12 "on our";
+	VS12 "God hath";	
+bar
+
+//13a
+1: 4ea; s;
+2: 4a-c+; s;
+
+	VS "flood";
+	VS "side";
+	VS "willed";
+	
+invisbar
+
+//13b
+1: 4s; fd+;
+2: 4s; b-b;
+
+	VS "Of";
+	VS "The";
+	VS "His";	
+bar
+
+//14
+1: 4fc+; db;
+2 1: 4fa; g;
+2 2: 4s; g;
+
+	VS "mor-tal";
+	VS "Man of";
+	VS "truth to";	
+bar
+
+//15
+1: 4da; db;
+2: 4df; b-f;
+
+	VS "ills pre-";
+	VS "God's own";
+	VS "tri-ump";	
+bar
+
+//16
+1 1: 8g bm; f ebm; 4e;
+   phrase above 1: 1 til 2;
+1 2: 4b- slur; 4c;
+2 1: 4g; 8a bm; g ebm;
+   phrase above 2: 1 til 2;
+2 2: 4e slur; a-;
+
+	VS12 "vail-";
+	VS12 "choos-";
+	VS12 "through";	
+bar
+
+//17a
+1 1: 4d; 4s;
+1 2: 4d; 4s;
+   FST(1)
+2: 4df; 4s;
+   FBB(1)
+	
+	VS "ing.";
+	VS "ing.";
+	VS "us.";
+bar
+
+//17b
+1 1: 4s; d;
+1 2: 4s; d;
+2: 4s; df;
+
+	VS "For";
+	VS "Dost";
+	VS "Let";
+bar
+
+//18
+1: 4da; fb;
+2: 4fa; b-d+;
+
+	VS "still our";
+	VS "ask who";
+	VS "goods and";
+bar
+
+//19
+1: 4ea; eg#;
+2 1: 4c+; eb;
+2 2: 8c bm; d ebm; 4s;
+
+	VS "an-cient";
+	VS "that may";
+	VS "kin-dred";
+bar
+
+//20a
+1: 4ea; s;
+   FST(1)
+2: 4a-c+; s;
+   FBB(1)
+
+	VS "foe";
+	VS "be?";
+	VS "go,";
+invisbar
+
+//20b
+1 1: 4d; s;
+1 2: 4d; s;
+2: 4b-f; s;
+
+	VS "Doth";
+	VS "Christ";
+	VS "This";
+bar
+
+//21
+1: 4ea; fa;
+2: 4ca; da;
+
+	VS "seek to";
+	VS "Je-sus,";
+	VS "mor-tal";
+bar
+
+//22
+1: 4db; gc+;
+2 1: 4g; ea;
+2 2: 4g; s;
+
+	VS "work us";
+	VS "it is";
+	VS "life al-";
+bar
+
+//21a
+1: fd+; s;
+   FST(1)
+2 1: 4b; s;
+2 2: 4b; s;
+   FBB(1)
+
+	VS "woe;";
+	VS "He;";
+	VS "so;";
+invisbar
+
+//21b
+1: 4s; fc+;
+2: 4s; fa;
+
+	VS "His";
+	VS "Lord";
+	VS "The";
+bar
+
+//22
+1: 4fd+;gc+;
+2: 4b-b; ec+;
+
+	VS "craft and";
+	VS "Sa-ba-";
+	VS "bod-y";
+bar
+
+//23
+1: 4fb; eb;
+2 1: 4s; 8g# bm; d+ ebm;
+2 2: 4dd+; e;
+
+	VS " pow'r are";
+	VS "oth\(emdash) His";
+	VS "they may";
+bar
+
+//24a
+1: 4ea; s;
+   FST(1)
+2: 4a-?ac+; s;
+   FBB(1)
+
+	VS "great,";
+	VS "name,";
+	VS "kill:";
+invisbar
+
+//24b
+1: 4s; gb;
+2: 4s; gd+;
+
+	VS "And";
+	VS "From";
+	VS "God's";
+bar
+
+//25
+1: 4gb; fa;
+2: 4ee+; fc+;
+
+	VS "armed with";
+	VS "age to";
+	VS "truth a-";
+bar
+
+//26
+1 1: 8b bm; a ebm; 4s;
+1 2: 4f; eg;
+2: 4b-d+; eb;
+
+	VS12 "cru-el";
+	VS12 "age the";
+	VS12 "bid-eth";
+bar
+
+//27a
+1: 4cf; s;
+   FST(1)
+2: 4fa#; s;
+   FBB(1)
+
+	VS "hate,";
+	VS "same,";
+	VS "still";
+invisbar
+
+//27b
+1: 4s; fd+;
+2: 4s; b-b;
+
+	VS "On";
+	VS "And";
+	VS "His";
+bar
+
+//28
+1: 4gc+; gb;
+2 1: 8b bm; c+ ebm; 4s;
+2 2: 4e; dd+;
+
+	VS "earth is";
+	VS "He must";
+	VS "king-dom";
+bar
+
+//29
+1 1: 4a; 8b bm; a ebm;
+1 2: 4g; f;
+2 1: 4s; 8b bm; f ebm;
+2 2: 4ce+; d#;
+
+	VS12 "not his";
+	VS12 "win the";
+	VS12 "is for-";
+bar
+
+//30
+1: 8eg bm; df ebm; 4ce;
+   phrase above 1: 1 til 2;
+   phrase below 1: 1 til 2;
+2 1: 4g; 8a bm; g ebm;
+   phrase above 2: 1 til 2;
+2 2: 4e slur; a-;
+
+	VS22 "e-";
+	VS22 "bat-";
+	VS22 "ev-";
+bar
+
+//31
+1 1: 4d; s;
+1 2: 4d; s;
+   FST(1)
+2: 4df; s;
+   FBT(1)
+
+	VS "qual.";
+	VS "tle.";
+	VS "er.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

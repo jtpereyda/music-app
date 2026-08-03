@@ -1,0 +1,206 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom Of Song
+//		A collection of Songs for
+//		Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited by T. M. Bowdish
+//		Published by the W. W. Whitney Co.
+//		Entered At Stationers Hall, London England
+//		Copyrigght 1900
+//		Hymn No.: 18
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 03/28/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Jesus, The Light Of The World" ""
+   title (2)""
+   title (11) "G - 2 - MI" "\s(17)\f(TI)\:I\ am\ the\ light\ of\ the\ world:\ he\|\ that\ followeth\ me\ shall\ not\ walk in\ the\ darkness,\ but\ shall\ h\|ave\ the\ light\ of\ life.\ -\ Jn.\ 8:12" ""
+   title (13) "F. S. Robinson" " " "Charles L. Moore" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+//1
+1: 8bd;;;; ac; gb-;
+2: 8gg-;;;;;;
+
+			VERSE "<1. >-1|Bur-dened with sin's dark-est";
+			VERSE "<2. >-1|Look-ing to Je-sus who";
+			VERSE "<3. >-1|Trav-'lers in dark-ness with";
+			VERSE "<4. >-1|Need-less the sun-light in";
+bar
+//2
+1: 8ac; gb-; ad; 4.bd;
+2 1: 8fd; gd; fd; 4.g;
+2 2: 8s;;; 4.g;
+
+			VERSE "night of dis-tress,";
+			VERSE "shed his own blood,";
+			VERSE "sin blind-ed eyes,";
+			VERSE "heav-en we're told,";
+bar
+//3
+1: 8d+g;;; e+g; d+g; bg;
+2: 8bg;;; c+g; d+b; d+g;
+
+			VERSE "Je-sus, the light of the";
+			VERSE "Je-sus, the light of the";
+			VERSE "Je-sus, the light of the";
+			VERSE "Je-sus, the light of the";
+
+bar
+//4
+1: 4.af tie; 4; 8r;
+2: 4.d+d tie; 4; 8r;
+
+			VERSE "world,";
+			VERSE "world,";
+			VERSE "world,";
+			VERSE "world,";
+bar
+//5
+1: 8bd;;;; ac; gb-;
+2 1: 8g;;; gg-;;;
+2 2: 8g;;; s;;;
+
+			VERSE "Light will break in if your";
+			VERSE "Los-ing your bur-dens and";
+			VERSE "Look at his bid-ding and";
+			VERSE "Christ is the light in the";
+bar
+//6
+1: 8ac; gb-; ad; 4.bd;
+2 1: 8fd; ge; fd; 4.g;
+2 2: 8s;;; 4.g;
+
+			VERSE "sins you con-fess,";
+			VERSE "gain-ing his love,";
+			VERSE "light will a-rise";
+			VERSE "cit-y of gold,";
+bar
+//7
+1: 8d+g;;; e+g; d+g; bg;
+2: 8bg;;; c+g; d+b; d+g;
+
+			VERSE "Je-sus the bright-ness of";
+			VERSE "Je-sus the bright-ness of";
+			VERSE "Je-sus the bright-ness of";
+			VERSE "Je-sus the bright-ness of";
+bar
+//8
+1 1: 4.af; g;
+1 2: 4.s; g;
+2: 4.c+d; bg;
+
+			VERSE "glo-ry.";
+			VERSE "glo-ry.";
+			VERSE "glo-ry.";
+			VERSE "glo-ry.";
+dblbar
+//9
+1 1: 4.d+ tie; 8; bg; d+g;
+1 2: 8g;;;; s;;
+2: bg;;;; d+g; bg;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Je-sus the";
+			VERSE 8; 8; 8; 8; 8; 8; "Je-sus, the beau-ti-ful,";
+bar
+//10
+1: 8e+g;;; 4.d+g;
+2: 8c+c;; c+e; 4.bg;
+
+			VERSE "beau-ti-ful light,";
+bar
+//11
+1: 8d+g;;; e+g; d+g; bg;
+2: 8bg;;; c+g; bg; d+g;
+
+			VERSE "Beau-ti-ful light of the";
+bar
+//12
+1: 4.af tie; 4; 8r;
+2: 4.d+d tie; 4; 8r;
+
+			VERSE "world,";
+bar
+//13
+1 1: 8bg;;;; a; g;
+1 2: 8s;;;; g;;
+2: 8d+g;;;; c+g; bg;
+
+			VERSE "Beau-ti-ful, beau-ti-ful";
+bar
+//14
+1: 8af; ge; af; 4.bg;
+2: 8d+d; be; d+d; 4.d+g;
+
+			VERSE "light of the world,";
+bar
+//15
+1: 4.d+<e+>g~; 8e+g; d+g; bg;
+2: 8bg;;; c+g; bg; d+g;
+
+			VERSE "Bright-ness of";
+			VERSE 8; 8; 8; 8; 8; 8; "Je-sus, the bright-ness of";
+bar
+//16
+1 1: 4.af; g;
+1 2: 4.s; g;
+2: 4.c+d; bgg-;
+
+			VERSE "glo-ry.";
+			VERSE "glo-ry.";
+endbar

@@ -1,0 +1,231 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Song Treasury
+//		A collection of Songs and Music, especially adapted for
+//		Sunday-Schools, Praise and Prayer Meetings,
+//		Church Choirs and the Home Circle.
+//		Also Containing Selections for
+//		Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		Together with a
+//		Complete Course of Elementary Instruction of all the art of
+//		Reading music at sight
+//		By J. H. Kursenknabe,
+//		Publishers: Crider & Brother
+//		York, PA
+//		Copyright 1879
+//		Hymn No.: 123
+//		
+// Transcribed by: Ted Gatza, Jr. 10/04/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "God Is Love" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:God\ is\ love.\ -\ Jn.\ 4:8 \(space)" ""   
+   title (13) "J. H. Kurzenknabe" "" "J. H. Kurzenknabe"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8.ec; 16ac; 2s;
+2: 8.aa-; 16aa-; 2s;
+
+
+			VERSE "<1. >-1|God is";
+			VERSE "<2. >-1|God is";
+			VERSE "<3. >-1|God is";
+
+bar
+//2
+1: 4.c+e; 8ae; 8bf; 8af;
+2: 4.aa-; 8ac; 8ad; 8ad;
+
+			VERSE "love! for us he";
+			VERSE "love! and par-don";
+			VERSE "love! and as for-";
+bar
+//5
+1 1: 8f; 4.af; 8ge; 8ae;
+1 2: 8f; 4.s; 8s; 8s;
+2: 8d+d; 4.d+d; 8be; 8c+e;
+
+			VERSE "car-eth, While up-";
+			VERSE "dwell-eth, Where a";
+			VERSE "ev-er, Years roll";
+bar
+//6
+1 1: 4.bg; 8bg; 8c+a; 8a;
+1 2: 4.s; 8s; 8s; 8a;
+2: 4.e+e; 8e+e; 8e+a; 8e+c;
+
+			VERSE "on the earth we";
+			VERSE "soul his grace doeth";
+			VERSE "by and ag-es";
+bar
+//7
+1: 2bg; 8.c+a; 16d+a;
+2: 2e+e; 8.e+a; 16e+a;
+
+			VERSE "move, Eve-ry";
+			VERSE "prove, Eve-ry-";
+			VERSE "move; On-ly";
+bar
+//8
+1: 4.e+a; 8c+a; 8bg; 8af;
+2: 4.c+a; 8e+a; 8e+e; 8c+f;
+
+			VERSE "work of his de-";
+			VERSE "where his good-ness";
+			VERSE "He, He chang-es";
+bar
+//9
+1 1: 8f; 4.af; 8gd; 8fd;
+1 2: 8f; 4.s; 8s; 8s;
+2: 8d+d; 4.d+d; 8ad; 8ad;
+
+			VERSE "clar-eth, The al-";
+			VERSE "tell-eth, God is";
+			VERSE "nev-er, The un-";
+bar
+//10
+1: 8ec; 8ae; 4ae; 4gd;
+2: 8ae; 8c+e; 4c+e; 4be;
+
+			VERSE "might-y God is";
+			VERSE "mer-cy, God is";
+			VERSE "chang-ing God is";
+bar
+//11
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			VERSE "love.";
+			VERSE "love.";
+			VERSE "love.";
+dblbar
+//12
+1 1:{8c bm; 8e ebm; 8a;}3; 2s;
+1 2: 4r; 2s;
+2: 4r; 2s;
+phrase above 1: 1 til 2;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE {4; 8;}3; 2s; "Might-y";
+bar
+//13
+1 1: 2c+; {8c bm; 8e ebm; 8a;}3;
+1 2: 8.e; 16e; 4e; 4r;
+2: 8.aa-; 16aa-; 4aa-; 4r;
+phrase above 1: 3 til 4;
+
+			VERSE 2; {4; 8;}3; "love, Match-less";
+			VERSE 8.; 16; 4; 4s; "Might-y love,";
+bar
+//14
+1 1: 2c+; {8e; 8g; 8b;}3;
+1 2: 8.e; 16e; 4e; 4r;
+2: 8.aa-; 16aa-; 4aa-; 4r;
+phrase above 1: 3 til 4;
+
+			VERSE 2; {4; 8;}3; "love, In-fi-";
+			VERSE 8.; 16; 4; 4s; "Match-less love,";
+bar
+//15
+1 1: 2e+; 4g;
+1 2: {8g; 8g; 8g;}3; 4g; 8e bm; 8d ebm;
+2: {8be; 8be; 8be;}3; 4be; 4be;
+phrase below 1: 1 til 1.75;
+phrase below 2: 1 til 1.75;
+
+			VERSE 4; 4; 4; "nite and un-";
+			VERSE {8; 8; 8;}3; 4; 4; "In-fi-nite and un-";
+bar
+//16
+1 1: 8.bc; 16ac; 4ec; {8c bm; 8e ebm; 8a;}3;
+1 2: 8.s; 16s; 4s; 4r;
+2: 8.aa-; 16aa-; 4aa-; 4r;
+phrase above 1: 3 til 4;
+
+			VERSE 8.; 16; 4; {4; 8;}3;"chang-ing love, Ten-der";
+			VERSE 8.; 16; 4; 4s; "chang-ing love,";
+bar
+//17
+1 1: 2c+; {8c bm;8e ebm; 8a;}3;
+1 2: 8.e; 16e; 4e; 4r;
+2: 8.aa-; 16aa-; 4aa-; 4r;
+phrase above 1: 3 til 4;
+
+			VERSE 2; {4; 8;}3; "love, Sav-ing";
+			VERSE 8.; 16; 4; 4s; "Tend-er love,";
+bar
+//18
+1 1: 2c+; {8e; 8g; 8b;}3;
+1 2: 8.e; 16e; 4e; 4r;
+2: 8.aa-; 16aa-; 4aa-; 4r;
+phrase above 1: 3 til 4;
+
+			VERSE 2; {8; 8; 8;}3; "love, God is e-";
+			VERSE 8.; 16; 4; 4s; "Sav-ing love,";
+bar
+//19
+1 1: 2e+; 4g;
+1 2: {8g; 8g; 8g;}3; 4g; 8e bm; 8d ebm;
+2: {8be; 8be; 8be;}3; 4be; 4be;
+phrase below 1: 1 til 1.75;
+phrase below 2: 1 til 1.75;
+
+			VERSE 4; 4s; 4; "ter-nal";
+			VERSE {8; 8; 8;}3; 4; 4; "God is e-ter-nal";
+bar
+//20
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			VERSE "love.";
+endbar

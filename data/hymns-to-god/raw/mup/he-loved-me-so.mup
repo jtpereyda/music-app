@@ -1,0 +1,373 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Kingdom Of Song
+// 	A Ccollection of Songs for SundaySchools, Young People's Societies
+//	and all Religious Services.
+//	Edited by T. M. Bowdish
+//	The W. W. Whitney Co.
+//	Word and Work, Louisville, KY  	
+//	Copyright 1900
+//	Hymn No.: 11	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 03/10/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "He Loved Me So" ""
+   title (2)""
+   title (11) "" "\f(TI)Greater love hath no man than this, that a man" ""
+   title (11) "" "\f(TI)lay down his life for his friends.- Jn. 15:1" ""
+
+   title (10) "F - 4 - SOL" "" ""
+   title "James Gerald Dailey" "" "James Gerald Dailey, 1892"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=85";
+
+//=========================
+
+//Verse
+
+//1
+1: 2.s; 4fc+;
+2: 2.s; 4fa;
+
+
+	VS "<1. >-1|Why";
+	VS "<2. >-1|Why";
+	VS "<3. >-1|And";
+	VS "<4. >-1|Till";
+bar
+
+//2
+1 1: 4.fc+; 8fb; fa; g; f; g;
+1 2: 4.s; 8; ; f; ; ;
+2: 4.fa; 8fd+; fc+; fb; fa; fb;
+
+	VS "did my Sav-iour come to";
+	VS "did he drink the bit-ter";
+	VS "now he bids me look and";
+	VS "Je-sus comes, I'll sing his";
+bar
+
+//3
+1: 4f~a<b>; f~b<a>; fa; s;
+2 1: 4c+ slur; d+ slur; c+; s;
+2 2: 2.f; 4s;
+
+	VS "earth;";
+	VS "cup";
+	VS "live,";
+	VS "praise,";
+invisbar
+
+1: 4s; ; ; eg;
+2: 4s; ; ; cb;
+
+	VS "And";
+	VS "Of";
+	VS "And";
+	VS "And";
+bar
+
+//4
+1 1: 4.f; 8; 4.eg; 8;
+1 2: 4.f; 8; 4.s; 8;
+2: 4.da; 8; 4.cc+; 8;
+
+	VS "to the hum-ble";
+	VS "sor-row, pain and";
+	VS "by his grace to";
+	VS "then to glo-ry";
+bar
+
+//5
+1: 2. fa; 4s;
+2: 2. fc+; 4s;
+
+	VS "go?";
+	VS "woe?";
+	VS "know,";
+	VS "go;";
+invisbar
+
+1: 2.s; 4fc+;
+2: 2.s; 4fa;
+
+	VS "Why";
+	VS "Why";
+	VS "A";
+	VS "And";
+bar
+
+//6
+1: 4.fc+; 8fb; fa; cg; cf; cg;
+2: 4.fa; 8fd+; fc+; fb; fa; fb;
+
+	VS "did he choose a low-ly";
+	VS "on the cross be lift-ed";
+	VS "home in glo-ry he will";
+	VS "reign with him thro' end-less";
+bar
+
+//7
+1: 4f~a<b>; f~b<a>; fa; s;
+2: 4f~c+<d+>; f~d+<c+>; fc+; s;
+
+	VS "birth?";
+	VS "up?";
+	VS "give,";
+	VS "days,";
+invisbar
+1: 4s; ; ; dg;
+2: 4s; ; ; b-b;
+
+	VS "Be-";
+	VS "Be-";
+	VS "Be-";
+	VS "Be-";
+bar
+
+//8
+1: 4.cf; 8fa; 4; cg;
+2: 4.ca; 8cc+; 4; cb;
+
+	VS "cause he loved me";
+	VS "cause he loved me";
+	VS "cause he loved me";
+	VS "cause he loved me";
+bar
+
+//9
+1: 2.ca; 4s;
+2: 2.fa; 4s;
+
+	VS "so!";
+	VS "so!";
+	VS "so.";
+	VS "so.";
+dblbar
+newscore
+
+//10
+CHORUS
+1 1: 2.s; 4a;
+1 2: 2.s; 4r;
+2 1: 2.s; 4c+;
+2 2: 2.s; 4r;
+
+	VS "He";
+bar
+
+//11
+1 1: 4a slur; b slur; a; g;
+1 2: 4r; f; f; c;
+2 1: 4c+ slur; d+ slur; c+; b;
+2 2: 4r; ; ; c;
+
+	VS "loved me";
+	VS12 "He loved, he";
+bar
+
+//12
+1 1: 2.f; 4s;
+1 2: 4c; d; c; 4s;
+2: 4fa; fb; fa; s;
+
+	VS "so,";
+	VS21 "loved me so,";
+invisbar
+
+1: 2.s; 8fa bm; gb ebm;
+2: 2.s; 4r;
+
+	VS 2.s; 4; "He";
+bar
+
+//13
+1: 4ac+ slur; bd+ slur; ac+; fa;
+2 1: [dist 8] 4r; f+; ; fc+;
+2 2: [dist 0] 4r; [dist 0] 4r; [dist 0] 4r; s;
+
+	VS 2.; 4; "loved me";
+	VS21 "He loved, he";
+bar
+newscore
+
+//14
+1 1: 2.g; 4s;
+1 2: 4e; f; e; s;
+2: 4gc+; g-bn; cc+; s;
+  FSB (3)
+  FBT (3)
+
+	VS12 "loved me so,";
+invisbar
+
+1 1: 2.s; 8a bm; b ebm;
+1 2: 2.s; 4f;
+2 1: 2.s; 8c+ bm; b ebm;
+2 2: 2.s; 4f;
+
+	VS12 "He";
+bar
+
+//15
+1: 4.fc+; 8fb; fa; cg; cf; cg;
+2: 4.fa; 8fd+; fc+; cb; a-a; g-b;
+
+	VS "gave his pre-cious life for";
+bar
+
+//16
+1: 4fa; eb; fa; s;
+2: 4f-c+; g-c+; a-c+; s;
+
+	VS "me, for me,";
+invisbar
+
+1: 4s; ; ; dg;
+2: 4s; ; ; b-b;
+
+	VS "Be-";
+bar
+
+//17
+1: 4.cf; 8fa; 4.; 8cg;
+2: 4.ca; 8cc+; 4.; 8cb;
+   FST(3)
+   FBT(3)
+
+	VS "cause he loved me";
+bar
+
+//18
+1: 2.cf; 4s;
+2: 2.fa; 4s;
+
+	VS "so.";
+endbar
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,212 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Best Endeavor Hymns
+//		 Edited and Compiled by
+//		 I. Allen Sankey and John R. Clements
+//		 Especially for Use In
+//		 Christian Endeavor Societies Young People's
+//		 Meetings, Sunday Schools, and General Church Work
+//		 Published by The Biglow and Main Co.
+//		 Lakeside Building, Chicago
+//		 135 Fifth Avenue, New York
+//		 Copyright 1907
+//		 Hymn No.: 190
+//		
+// Transcribed by: Ted Gatza, Jr. 09/16/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Open Wide The Door" ""
+   title (2)""
+   title (11) "D \(flat) - 4 - SOL" "\s(17)\f(TI)\:Behold,\ I\ stand\ at\ the\ door\ and\|\ knock:\ if\ any\ man\ hear\ my\ voice and\ open\ the\ door,\ I\ will\ \|come\ in\ to\ him...\ -\ Rev.\ 3:20" ""
+   title (13) "W. Kitching" "" "John H. Burk, 1896"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=105";
+
+//1
+1 1: 4.af; 8bg; 4af; 4d+f;
+2: 4.d+d; 8d+d; 4d+d; 4ad;
+
+			VERSE "<1. >-1|Je-sus knocks; He";
+			VERSE "<2. >-1|Je-sus knocks, He";
+			VERSE "<3. >-1|Je-sus knocks, is";
+			VERSE "<4. >-1|Je-sus knocks; the";
+
+bar
+//2
+1: 4.d+f; 8c+e; 2c+e;
+2 1: 4.a; 8a; 2a;
+2 2: 4.a; 8a; 2a;
+
+			VERSE "calls to thee;";
+			VERSE "comes to save,";
+			VERSE "knock-ing still;";
+			VERSE "mo-ments fly;";
+bar
+//3
+1: 4.ge; 8fd; 4ge; 4bg;
+2: 4.aa-; 8aa-; 4aa-; 4c+a-;
+
+			VERSE "\"Wea-ry one, O";
+			VERSE "'Twas for thee His";
+			VERSE "Yield to Him at";
+			VERSE "While sal-va-tion";
+bar
+//4
+1: 4.bg; 8af; 2af;
+2: 4.d+d; 8d+d; 2d+d;
+
+			VERSE "come to me;\"";
+			VERSE "life He gave;";
+			VERSE "once thy will;";
+			VERSE "yet is nigh;";
+bar
+//5
+1: 4.af; 8bg; 4af; 4f+a;
+2: 4.d+d; 8d+d; 4d+d; 4ad;
+
+			VERSE "He can save, and";
+			VERSE "He hast tri-umph'd";
+			VERSE "He with joy thy";
+			VERSE "Ere the Sav-iour";
+bar
+//6
+1 1: 4.e+g; 8d+g; 4b slur; 4d+;
+1 2: 4.s; 8s; 2g;
+2 1: 4.bg; 8bg; 4d+ slur; 4b;
+2 2: 4.s; 8s; 2g;
+
+			VERSE 4.; 8; 2; "on-ly He;";
+			VERSE 4.; 8; 2; "o'er the grave;";
+			VERSE 4.; 8; 2; "heart can fill;";
+			VERSE 4.; 8; 2; "pass-eth by,";
+bar
+//7
+1 1: 2c+g tie; 8c+g; 8a; 8.bg; 16c+g;
+1 2: 2s; 8s; 8g; 8.s; 16s;
+2: 4e+a; 4e+a; 8e+a; 8c+a; 8.d+a; 16e+a;
+
+			VERSE 1; "<>";
+			VERSE "O-pen wide the";
+			VERSE 4; 4; 8; 8; 8.; 16;" O-pen, o-pen wide the";
+bar
+//8
+1: 2.d+f; 4r;
+2: 2.d+d; 4r;
+
+			VERSE "door.";
+			VERSE "door.";
+dblbar
+//9
+1 1: 2d+f tie; 8d+f; 8af; 8.fd; 16d;
+1 2: 2s; 8s; 8s; 8.s; 16r;
+2: 4ad; 4ad; 8ad; 8ad; 8.ad; 16r;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "O-pen wide the";
+			VERSE 4; 4; 8; 8; 8.; 16s; "O-pen, o-pen wide,";
+bar
+//10
+1 1: 2.a; 4r;
+1 2: 8c; 8g; 8.g; 16g; 4g; 4s;
+2: 8c+a; 8c+a; 8.c+a; 16c+a; 4c+a; 4r;
+
+			VERSE 2.; 4s; "door,";
+			VERSE 8; 8; 8.; 16; 4; 4s; "O-pen wide the door,";
+bar
+//11
+1 1: 2e+g tie; 8e+g; 8c+g; 8.bg; 16c+;
+1 2: 2s; 8s; 8s; 8.s; [dist -4]16r;
+2: 4c+a; 4c+a; 8c+a; 8e+a; 8.c+a; 16r;
+
+			VERSE "O-pen wide the";
+			VERSE 4; 4; 8; 8; 8.; 16s; "O-pen, o-pen wide,";
+bar
+//12
+1 1: 2.d+; 4r;
+1 2: 8f; 8f; 8.f; 16f; 4f; 4s;
+2: 8ad; 8ad; 8.ad; 16ad; 4ad; 4r;
+
+			VERSE 2.; 4s; "door,";
+			VERSE 8; 8; 8.; 16; 4; 4s; "o-pen wide the door;";
+bar
+//13
+1: 4.af; 8bg; 4af; 4f+a;
+2: 4.d+d; 8d+d; 4d+d; 4ad;
+
+			VERSE "He can save, and";
+bar
+//14
+1 1: 4.e+g; 8d+g; 4b slur; 4d+;
+1 2: 4.s; 8s; 2g;
+2 1: 4.bg; 8bg; 4d+ slur; 4b;
+2 2: 4.s; 8s; 2g;
+
+			VERSE  4.; 8; 2; "on-ly He;\(emdash)";
+bar
+//15
+1 1: 2c+g tie; 8c+g; 8a; 8.bg; 16c+;
+1 2: 2s; 8s; 8g; 8.s; [dist -4]16r;
+2 1: 4e+a; 4e+a; 8e+a; 8c+a; 8.c+a; 16r;
+2 2: 4s; 4s; 8s; 8s; 8.s; 16a;
+
+			VERSE "O-pen wide the";
+			VERSE 1; "<>";
+			VERSE 4; 4; 8; 8; 8.; 16; "O-pen, o-pen wide the";
+bar
+//16
+1 1: 2.d+; 4r;
+1 2: 8f; 8f; 8.g; 16g; 4f; 4s;
+2 1: 8a; 8a; 8.b; 16b; 4a; 4r;
+2 2: 2.d; 4s;
+
+			VERSE 2.; 4s; "door.";
+			VERSE 8; 8; 8.; 16; 4; 4s; "o-pen wide the door.";
+			VERSE 2.; 4s; "door.";
+endbar

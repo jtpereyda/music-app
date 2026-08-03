@@ -1,0 +1,216 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Alexander's Gospel Songs 
+//		Compiled by Charles M. Alexander, 
+//		Fleming H. Revell Co., New York, 
+//		158 Fifth Avenue, 
+//		Copyright 1908
+//		Hymn 56
+
+// Transcribed by: Ted Gatza, Jr. 02/27/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "Over Yonder" ""
+   title (2)""
+title (11) "F - 4 - SOL" "\s(18)\f(TI)\:In\ thy\ presence\ is\ fulness\|\ of\ joy;\ In\ thy\ right\ hand there\ are\ pleasures\ for\ \|evermore.\ -\ Psa.\ 16:11"""
+   title (13) "Robert Harkness" " " "Robert Harkness, 1908"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=-2
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=110";
+
+//1
+1 1: 2.s; 8.c; 16c;
+1 2: 2.s; 8.c; 16c;
+2: 2.s; 8.af; 16af;
+
+			lyrics 1: "<1. >-1|What sweet";
+			lyrics 1: "<2. >-1|Oft we";
+			lyrics 1: "<3. >-1|We may";
+bar
+//2
+1 1: 4fc; 8.f; 16g; 4af; 8.d+f; 16d+f;
+1 2: 4s; 8.f; 16f; 4s; 8.s; 16s;
+2: 4af; 8.af; 16bf; 4c+f; 8.bf; 16bf;
+
+			lyrics 1: "peace we shall have o-ver";
+			lyrics 1: "long for the voic-es now";
+			lyrics 1: "have man-y sor-rows and";
+bar
+//3
+1 1: 2c+f; 4af; 8.g#; 16af;
+1 2: 2s; 4s; 8.f; 16s;
+2: 2af; 4c+f; 8.bnf; 16c+f;
+
+			lyrics 1: "yon-der, In the";
+			lyrics 1: "si-lent, For the";
+			lyrics 1: "tri-als, As the";
+bar
+//4
+1: 4c+e; 8.ge; 16af; 4s; 8.s; 16s;
+2: 4c+c; 8.bc; 16ac; 4s; 8.s; 16s;
+
+			lyrics 1: "land of the";
+			lyrics 1: "touch of some";
+			lyrics 1: "jour-ney of";
+invisbar
+newscore
+
+1: 4s; 8.s; 16s; 4be; 8.c+f; 16bg;
+2: 4s; 8.s; 16s; 4gc; 8.ac; 16c+c;
+
+			lyrics 1: "saved and the";
+			lyrics 1: "dear lov-ing";
+			lyrics 1: "life we pur-";
+
+bar
+
+//5
+1 1: 2.af; 8.c; 16c;
+1 2: 2.s; 8.c; 16c;
+2: 2.c+f; 8.af; 16af;
+
+			lyrics 1: "blest, What a";
+			lyrics 1: "hand, When with";
+			lyrics 1: "sue, But a-";
+bar
+//6
+1 1: 4fc; 8.f; 16g; 4af; 8.d+f; 16d+f;
+1 2: 4s; 8.f; 16f; 4s; 8.s; 16s;
+2: 4af; 8.af; 16bf; 4c+f; 8.bf; 16bf;
+
+			lyrics 1: "joy shall be ours o-ver";
+			lyrics 1: "Je-sus we dwell o-ver";
+			lyrics 1: "midst all our tears and our";
+bar
+//7
+1: 2c+f; 4af; 8.d+f; 16d+f;
+2: 2af; 4c+f; 8.bb-; 16bd;
+
+			lyrics 1: "yon-der, In the";
+			lyrics 1: "yon-der, We shall";
+			lyrics 1: "sigh-ings, That blest";
+bar
+//8
+1 1: 4c+f; 8.af; 16f; 4af; 4ge;
+1 2: 4s; 8.s; 16f; 4s; 4s;
+2: 4af; 8.c+f; 16af; 4c+c; 4bc;
+
+			lyrics 1: "home of e-ter-nal";
+			lyrics 1: "meet on that far off";
+			lyrics 1: "home o-ver there we";
+bar
+//9
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			lyrics 1: "rest.";
+			lyrics 1: "strand.";
+			lyrics 1: "view.";
+dblbar
+//10
+1 1: {8c; 8d; 8e;}3; 2.s;
+1 2: {8c; 8d; 8e;}3; 2.s;
+2 1: {8c; 8d; 8e;}3; 2.s;
+2 2: {8c; 8d; 8e;}3; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"It will be";
+bar
+//11
+1 1: 4fc; 8.f; 16g; 4af; 8.d+f; 16d+f;
+1 2: 4s; 8.f; 16f; 4s; 8.s; 16s;
+2: 4af; 8.af; 16bf; 4c+f; 8.bf; 16bf;
+
+			lyrics 1: [c]"joy when we get o-ver";
+bar
+//12
+1 1: 2c+f; 4af; 8.g#; 16af;
+1 2: 2s; 4s; 8.f; 16s;
+2: 2af; 4c+f; 8.bnf; 16c+f;
+	
+			lyrics 1: [c]"yon-der, O-ver";
+bar
+//13
+1: 2c+e; 4ge; 8.ae; 16be;
+2: 2c+c; 4bc; 8.ac; 16gc;
+
+			lyrics 1: [c]"yon-der, o-ver";
+bar
+//14
+1 1: 2d+f; 4c+f; {8c; 8d; 8e;}3;
+1 2: 2s; 4s; {8c; 8d; 8e;}3;
+2 1: 2bf; 4af; {8c; 8d; 8e;}3;
+2 2: 2s; 4s; {8c; 8d; 8e;}3;
+
+			lyrics 1: [c]"yon-der; It will be";
+bar
+newscore
+//15
+1 1: 4fc; 8.f; 16g; 4af; 8.d+f; 16d+f;
+1 2: 4s; 8.f; 16f; 4s; 8.s; 16s;
+2: 4af; 8.af; 16bf; 4c+f; 8.bf; 16bf;
+
+			lyrics 1: [c]"joy when we get o-ver";
+bar
+//16
+1: 2c+f; 4af; 8.f+f; 16d+f;
+2: 2af; 4c+f; 8.d+b-; 16bb-;
+
+			lyrics 1: [c]"yon-der, O-ver";
+bar
+//17
+1: 4c+f; 4af; 8ae; 4.ge;
+2: 4ac; 4c+c; 8c+c; 4.bc;
+
+			lyrics 1: [c]"on that gold-en";
+bar
+//18
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			lyrics 1: [c]"shore.";
+endbar

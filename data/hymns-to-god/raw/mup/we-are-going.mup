@@ -1,0 +1,268 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Melodious Sonnets
+//		For Sacred Service
+//		By John R. Sweney and Wm. J. Kirkpatrick
+//		Published by: John J. Hood
+//		1018 Arch St. Philadelphia
+//		Copyright: 1885
+//		Hymn No.: 97
+
+// Transcribed by: Ted Gatza, Jr. 06/21/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "We are Going" ""
+   title (2)""
+   title (11) "C - 3 - MI" "\s(17)\f(TI)\:There\ remaineth\ a\ rest\ to\ the\ people\ of\ God.\ -\ Heb.\ 4:9 \(space)" ""
+   title (13) "Jno. O. Foster" " " "Jno. R. Sweney, 1884"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key= c major
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2s; 8ec; 8fd;
+2: 2s; 8gc; 8gc;
+
+			lyrics 1: "<1. >-1|We are";
+			lyrics 1: "<2. >-1|We are";
+			lyrics 1: "<3. >-1|We are";
+bar
+//2
+1: 4ge; 4e+g; 8e+g; 8d+f;
+2: 4c+c; 4c+c; 8c+c; 8gc;
+
+			lyrics 1: "go-ing, we are";
+			lyrics 1: "go-ing where the";
+			lyrics 1: "go-ing where the";
+bar
+//3
+1: 4c+e; 4ge; 8ge; 8c+e;
+2: 4gc; 4c+c; 8c+c; 8gc;
+			
+			lyrics 1: "go-ing, Far be-";
+			lyrics 1: "foun-tains Of the";
+			lyrics 1: "ho-ly En-ter";
+bar
+//4
+1 1: 8c+e; 8bd; 4g; 4d+f;
+1 2: 8s; 8s; 4f; 4s;
+2 1:8g; 8g; 4bg; 4bgg-;
+2 2: 8g; 8g; 4s; 4s;
+
+			lyrics 1: "yond the set-ting";
+			lyrics 1: "heal-ing wa-ters";
+			lyrics 1: "joys they can-not";
+bar
+//5
+1: 2c+e; 8ec; 8fd;
+2: 2c+c; 8gc; 8fc;
+
+			lyrics 1: "sun; To a";
+			lyrics 1: "flow, Where the";
+			lyrics 1: "tell, Where the";
+bar
+//6
+1: 4ge; 4e+g; 8e+g; 8d+f;
+2: 4c+c; 4c+c; 8c+c; gc;
+
+			lyrics 1: "king-dom that is";
+			lyrics 1: "val-leys and the";
+			lyrics 1: "meek and bless-ed";
+bar
+//7
+1: 4c+e; 4ge; 8ge; 8ge;
+2: 4gc; 4c+c; 8c+c; 8c+c;
+
+			lyrics 1: "grow-ing From the";
+			lyrics 1: "moun-tains Bathed in";
+			lyrics 1: "low-ly With the";
+bar
+//8
+1: 4.f#d; 8bg; 8bg; 8af#;
+2: 4.ad; 8d+d; 8d+d; 8c+d;
+
+			lyrics 1: "na-tions it has";
+			lyrics 1: "sun-light ev-er";
+			lyrics 1: "pure in spir-it";
+bar
+//9
+1 1: 2g; 8gd; 8gd;
+1 2: 2g; 8s; 8s;
+2: 2bg; 8bg; 8bg;
+
+			lyrics 1: "won; For the";
+			lyrics 1: "glow; Where the";
+			lyrics 1: "dwell; Where no";
+bar
+//10
+1: 4.fd; 8af; 8ge; 8fd;
+2: 4.bg; 8bgg-; 8bgg-; 8bgg-;
+
+			lyrics 1: "hon-or cov-ered";
+			lyrics 1: "crys-tal streams are";
+			lyrics 1: "hun-gry hearts are";
+bar
+//11
+1 1: 4fd; 4ec; 8e; 8e;
+1 2: 4s; 4s; 8e; 8e;
+2 1: 4gc; 4gc; 8e; 8e;
+2 2: 4s; 4s; 8e; 8e;
+
+			lyrics 1: "sag-es, Who have";
+			lyrics 1: "flow-ing In their";
+			lyrics 1: "ach-ing For the";
+bar
+//12
+1 1: 4.a; 8c+; 8b; 8a;
+1 2: 4.a; 8c+; 8b; 8a;
+2 1: 4.a; 8c+; 8b; 8a;
+2 2: 4.a; 8c+; 8b; 8a;
+
+			lyrics 1: "passed the vale of";
+			lyrics 1: "bright and sil-v'ry";
+			lyrics 1: "bread of life to";
+bar
+//13
+1 1: 2bg#; 8af; 8gn;
+1 2: 2s; 8s; 8f;
+2: 2e+e; 8bd; 8bd;
+		
+			lyrics 1: "tears, Have been";
+			lyrics 1: "sheen, And the";
+			lyrics 1: "share, But for-";
+bar
+//14
+1: 4.ge; 8e+g; 8d+g; 8c+g;
+2: 4.c+c; 8c+c; 8bd; 8c+e;
+
+			lyrics 1: "gath-er-ing for";
+			lyrics 1: "tree of life is";
+			lyrics 1: "ev-er are par-";
+bar
+//15
+1: 4bg; 4af; 8af; 8af;
+2: 4c+f; 4c+f; 8c+f; 8c+f;
+
+			lyrics 1: "ag-es Where the";
+			lyrics 1: "grow-ing On the";
+			lyrics 1: "tak-ing Of the";
+bar
+//16
+1: 8ge; 8c+e; 4c+d; 4bf;
+2 1: 8c+g; 8g; 4gg-; 4gg-;
+2 2: 8s; 8g; 4s; 4s;
+
+			lyrics 1: "throne of God ap-";
+			lyrics 1: "banks of liv-ing";
+			lyrics 1: "ful-ness o-ver";
+bar
+//17
+1: 2c+e; 4s;
+2: 2gc; 4s;
+
+			lyrics 1: "pears.";
+			lyrics 1: "green.";
+			lyrics 1: "there.";
+dblbar
+//18
+1: 8c+e; 8d+f; 2s;
+2: 4r; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"We are";
+bar
+//19
+1: 8c+e; 4bd; 8r; 8bg; 8af;
+2: 4r; 8gg-; 8gg-; 4r;
+
+			lyrics 1: "go-ing, we are";
+			lyrics 1: 4s; 8; 8; 4s; "go-ing,";
+bar
+//20
+1: 8af; 4ge; 8r; 8ge; 8af;
+2: 4r; 8c+c; 8c+c; 8c+c; 8c+c;
+
+			lyrics 1: "go-ing Where the";
+			lyrics 1: 4s; 8; 8; 8s; 8s; "go-ing";
+bar
+//21
+1: 8ge; 8fd; 4fd; 4gb-;
+2 1: 8g; 8g; 4gg-; 4gg-;
+2 2: 8g; 8g; 4s; 4s;
+
+			lyrics 1: "wea-ry work is";
+bar
+//22
+1: 2ec; 8ec; 8fd;
+2: 2gc; 8gc; 8gc;
+
+			lyrics 1: "o'er, Where the";
+bar
+//23
+1: 4.ge; 8e+g; 8d+g; 8cg;
+2: 4.c+c; 8c+c; 8bd; 8c+e;
+
+			lyrics 1: "morn-ing light is";
+bar
+//24
+1: 8bg; 4.af; 8af; 8af;
+2: 8c+f; 4.c+f; 8c+f; 8c+f;
+
+			lyrics 1: "glow-ing On the";
+bar
+//25
+1: 8ge; 8c+e; 4c+d; 4bf;
+2 1: 8c+g; 8g; 4gg-; 4gg-;
+2 2: 8s; 8g; 4s; 4s;
+
+			lyrics 1: "bless-ed sun-ny";
+bar
+//26
+1: 2c+e; 4s;
+2: 2gc; 4s;
+
+			lyrics 1: "shore.";
+endbar

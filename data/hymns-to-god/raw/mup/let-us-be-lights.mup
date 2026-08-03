@@ -1,0 +1,179 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Alexander's Gospel Songs 
+//		Compiled by Charles M. Alexander
+//		Fleming H. Revell Co.
+//		New York, 158 Fifth Avenue
+//		Copyright 1908
+
+// Transcribed by: Ted Gatza, Jr. 01/11/2010; rev. 04/18/2013
+// HymnsToGod.org
+
+// ***********************************
+
+top
+
+   title bold (19) "" "Let Us Be Lights" ""
+   title (2)""
+title (11) "A \(flat) - 4 - SOL" "\f(TI)Ye are the light of the world. - Mat. 5:14"""
+   title (13) "Maggie E. Gregory" " " "Chas. H. Gabriel, 1907"	
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=110";
+
+//1
+1: 4ec; 8.ec; 16ec; 4ac; 4bd;
+2: 4aa-; 8.aa-; 16aa-; 4aa-; 4aa-;
+
+
+			lyrics 1: "<1. >-1|Let us be lights, and";
+			lyrics 1: "<2. >-1|Oh, let us shine 'mid";
+			lyrics 1: "<3. >-1|Oh, let us shine to";
+bar
+//2
+1: 4c+e; 4c+e; 4.c+e; 8ae;
+2: 4aa-; 4aa-; 4.aa-; 8ac;
+
+			lyrics 1: "bright-ly shine With";
+			lyrics 1: "grief and pain; God's";
+			lyrics 1: "clear the gloom, And";
+bar
+//3
+1: 4be; 4be; 4be; 4c+e;
+2: 4ge; 4ge; 4ge; 4ae;
+
+			lyrics 1: "all the glow of";
+			lyrics 1: "prom-is-es are";
+			lyrics 1: "help this sad world";
+bar
+//4
+1: 4d+e; 4d+e; 4.d+e; 8be;
+2: 4be; 4be; 4.be; 8ge;
+
+			lyrics 1: "love di-vine; And";
+			lyrics 1: "not in vain, And";
+			lyrics 1: "to il-lume; Let";
+bar
+//5
+1: 4c+e; 4c+e; 4c+e; 4d+e;
+2 1: 4a; 4a; 4a; 4b;
+2 2: 4a; 4a; 4a; 4a;
+
+			lyrics 1: "may we, crea-tures";
+			lyrics 1: "tho' we're oft-en";
+			lyrics 1: "us be lights a-";
+bar
+//6
+1: 4e+e; 4e+e; 4.e+e; 8d+f;
+2: 4c+a; 4c+a; 4.ac; 8ad;
+
+			lyrics 1: "of His grace, Be";
+			lyrics 1: "sad and lone, Our";
+			lyrics 1: "long the road To";
+bar
+//7
+1: 8c+e; 8c+e; 8c+e; 8c+e; 4bd; 4bd;
+2: 8ae; 8ae; 8ae; 8ae; 4ge; 4ge;
+
+			lyrics 1: "mir-rors to re-flect His";
+			lyrics 1: "Fa-ther car-eth for His";
+			lyrics 1: "help the wand'r-er back to";
+bar
+//8
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			lyrics 1: "face.";
+			lyrics 1: "own.";
+			lyrics 1: "God.";
+dblbar
+//9
+1: 4c+e; 8.ec; 16ac; 2c+e;
+2 1: 4aa-; 8.aa-; 16aa-; 2a;
+2 2: 4s; 8.s; 16s; 2a;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Let us be lights,";
+bar
+newscore
+//10
+1: 4d+f; 8.fd; 16d+f; 4.c+e; 8c+e;
+2: 4ad; 8.ad; 16ad; 4.aa-; 8aa-;
+
+			lyrics 1: "let us be lights, To";
+bar
+//11
+1: 4be; 4be; 4c+dn; 4d+na;
+2: 4gb-; 4gb-; 4fb-; 4bb-;
+
+			lyrics 1: "bright-en all the";
+bar
+//12
+1: 2.e+g; 4e+g;
+2: 2.be; 4d+e;
+
+			lyrics 1: "way, And";
+bar
+//12
+1: 4e+a; 4c+e; 4.c+e; 8ae;
+2 1: 4c+e; 4a; 4.a; 8ac;
+2 2: 4s; 4a; 4.a; 8s;
+
+			lyrics 1: "shine a-long the";
+bar
+//13
+1: 4af; 4af; 4fd; 4d+f;
+2: 4d+d; 4d+d; 4ad; 4ad;
+
+			lyrics 1: "up-ward path That";
+bar
+//14
+1: 8c+e; 8c+e; 8c+e; 8c+e; 4bd; 4bd;
+2: 8ae; 8ae; 8ae; 8ae; 4ge; 4ge;
+
+			lyrics 1: "leads to ev-er-last-ing";
+bar
+//15
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			lyrics 1: "day.";
+endbar

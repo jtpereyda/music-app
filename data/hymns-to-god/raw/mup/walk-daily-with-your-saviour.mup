@@ -1,0 +1,236 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		J.D.Brunk, Musical Editor
+//		Mennonite Publishing House
+//		Scottdale, Penna.
+//		Copyright 1902
+//		by J. S. Shoemaker
+//		Freeport, ILL.
+//		Hymn no. 126
+//
+// Transcribed by: Ted Gatza, Jr. 02/01/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Walk Daily With Your Saviour" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(17)\f(TI)\:\"I\ must\ walk\ today\ and\ tomorrow\"\ -\ Lk.\ 13:33 \(space)"""
+   title (13) "Elisha A. Hoffman" " " "Chas. Edw. Pollock"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 2.s; 8g bm; 8a ebm;
+1 2: 2.s; 4g;
+2 1: 2.s; 8b bm; 8c+ ebm;
+2 2: 2.s; 4g;
+
+			lyrics 1: 2.s; 4; "<1. >-1|Walk";
+			lyrics 1: 2.s; 4; "<2. >-1|Walk";
+			lyrics 1: 2.s; 4; "<3. >-1|Walk";
+			lyrics 1: 2.s; 4; "<4. >-1|Walk";
+bar
+//2
+1: 4bg; 4bg; 4c+g; 4bg;
+2: 4d+g; 4d+g; 4e+g; 4d+g;
+
+			lyrics 1: "dai-ly with your";
+			lyrics 1: "dai-ly with your"; 
+			lyrics 1: "dai-ly with your";
+			lyrics 1: "dai-ly with your";
+bar
+//3
+1: 2bg; 4af; 4af;
+2: 2d+d; 4d+d; 4c+d;
+
+			lyrics 1: "Sav-iour, And";
+			lyrics 1: "Sav-iour, And";
+			lyrics 1: "Sav-iour, And";
+			lyrics 1: "Sav-iour, And";
+bar
+//4
+1: 4ge; 4ge; 4af; 4af;
+2: 4be; 4be; 4d+d; 4d+d;
+
+			lyrics 1: "doubt will dis-ap-";
+			lyrics 1: "nev-er leave his";
+			lyrics 1: "love him more and";
+			lyrics 1: "trust his sov-'reign";
+bar
+//5
+1 1: 2.bg; 8s; 8s; 
+1 2: 2.s; 4s;
+2 1: 2.d+g; 8s; 8s;
+2 2: 2.s; 4s;
+
+			lyrics 1: "pear;";
+			lyrics 1: "side;";
+			lyrics 1: "more;";
+			lyrics 1: "grace;";
+invisbar
+newscore
+
+1 1: 2.s; 8g bm; 8a ebm; 
+1 2: 2.s; 4g;
+2 1: 2.s; 8b bm; 8c+ ebm;
+2 2: 2.s; 4g;
+
+			lyrics 1: 2.s; 4; "You";
+			lyrics 1: 2.s; 4; "For";
+			lyrics 1: 2.s; 4; "And";
+			lyrics 1: 2.s; 4; "Un-";
+
+bar
+//6
+1: 4 bg; 4bg; 4c+g; 4bg;
+2: 4d+g; 4d+g; 4e+g; 4d+g;
+
+			lyrics 1: "can-not be in";
+			lyrics 1: "un-to those who";
+			lyrics 1: "you will find the";
+			lyrics 1: "til at last he";
+bar
+//7
+1: 2bg; 4af; 4af;
+2: 2d+d; 4d+d; 4c+d;
+
+			lyrics 1: "dark-ness, While";
+			lyrics 1: "trust him, No";
+			lyrics 1: "path-way Grow";
+			lyrics 1: "leads you To";
+bar
+//8
+1: 4ge; 4c+a; 4bg; 4af;
+2: 4be; 4e+c; 4d+d; 4c+d;
+
+			lyrics 1: "he, the light, is";
+			lyrics 1: "e-vil can be-";
+			lyrics 1: "bright-er on be-";
+			lyrics 1: "heav'n, his dwell-ing";
+bar
+//9
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bg-; 4s;
+
+			lyrics 1: "near.";
+			lyrics 1: "tide.";
+			lyrics 1: "fore.";
+			lyrics 1: "place.";
+dblbar
+newscore
+//10
+1 1: 8b bm; 8c+ ebm; 2.s;
+1 2: 4g; 2.s;
+2 1: 8g bm; 8a ebm; 2.s;
+2 2: 4g; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: 4; 2.s; "Walk";
+bar
+//11
+1: 4d+g; 4d+g; 4e+g; 4e+g;
+2: 4bg; 4bg; 4c+c; 4c+c;
+
+			lyrics  1: "dai-ly with your";
+bar
+//12
+1: 2d+g; 4bg; 4d+g;
+2: 2bg; 4d+g; 4bg;
+
+			lyrics 1: "Sav-iour, In";
+bar
+//13
+1: 4e+g; 4e+g; 4d+f; 4c+#e;
+2 1: 4be; 4be; 4a; 4aa-;
+2 2: 4s; 4s; 4a; 4s;
+
+			lyrics 1: "fel-low-ship of";
+bar
+//14
+1 1: 2.d+f; 8s; 8s;
+1 2: 2.s; 4s;
+2 1: 2.ad; 8s; 8s;
+2 2: 2.s; 4s;
+
+			lyrics 1: "love;";
+invisbar
+newscore
+
+1 1: 2.s; 8g bm; 8a ebm;
+1 2: 2.s; 4g;
+2 1: 2.s; 8b bm; c+ ebm;
+2 2: 2.s; 4g;
+
+			lyrics 1: 2.s; 4; "And";
+
+bar
+//15
+1: 4bg; 4bg; 4c+g; 4bg;
+2: d+g; 4d+g; 4e+g; 4d+g;
+
+			lyrics 1: "you shall share his";
+bar
+//16
+1: 2bg; 4af; 4af;
+2: 2d+d; 4d+d; 4c+d;
+
+			lyrics 1: "friend-ship, In";
+//17
+bar
+1: 4ge; 4c+a; 4bg; 4af;
+2: 4be; 4e+c; 4d+d; 4c+d; 
+
+			lyrics 1: "yon fair land a-";
+bar
+//18
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bgg-; 4s;
+
+			lyrics 1: "bove";
+endbar

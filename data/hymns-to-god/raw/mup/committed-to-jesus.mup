@@ -1,0 +1,208 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 164
+//		
+// Transcribed by: Ted Gatza, Jr. 02/06/2012; Rev. 06/27/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Committed To Jesus" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:Commit\ thy\ works\ unto\ J\|ehovah,\ And\ thy\ purposes shall\ be\ establis\|hed.\ -\ Prov.\ 16:3" ""   
+   title (13) "Minnie B. Johnson, arr." "" "John R. Bryant, 1896"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8ec;; ac; bd; 4.s; 4;
+2: 8aa-;;;; 4.s; 4;
+
+			VERSE "<1. >-1|Com-mit-ted to";
+			VERSE "<2. >-1|Com-mit-ted to";
+			VERSE "<3. >-1|Com-mit-ted to";
+			
+bar
+//2
+1: 4.c+e; 4ac; 8ec; fd; af; fd;
+2: 4.aa-; 4ea-; 8aa-; ad;;;
+
+			VERSE "Je-sus, my-self and my";
+			VERSE "Je-sus, my ev-'ry day";
+			VERSE "Je-sus, my in-ner-most";
+bar
+//3
+1: 4.ec tie; 4; 8;; ac; bd;
+2: 4.aa- tie; 4; 8;;;;
+
+			VERSE "all, To do at His";
+			VERSE "life; Well know-ing it";
+			VERSE "will, My in-ner-most";
+bar
+//4
+1: 4.c+e; 4ac; 8; ae; gd; ac;
+2: 4.aa-; 4ea-; 8; ec; eb-; ea-;
+
+			VERSE "bid-ding, and go at His";
+			VERSE "means for me con-flict and";
+			VERSE "pur-pose, His wish to ful-";
+bar
+//5
+1: 4.be tie; 4; 8be;; c+e; d+e;
+2: 4.ge tie; 4; 8ge;; ae; be;
+
+			VERSE "call; A work-er in";
+			VERSE "strife, To faith-ful-ly";
+//			VERSE "fill; With ar-dor, His"; //Original Lyrics
+			VERSE "fill; With pas-sion, His";
+bar
+//5
+1: 4.c+e; 4ac; 8ae; bf; af; fd;
+2: 4.aa-; 4ea-; 8ac; ad;;;
+
+			VERSE "ear-nest, both faith-ful and";
+			VERSE "do all the will of the";
+			VERSE "ser-vice, I'll ev-er pur-";
+bar
+//6
+1: 4.ec tie; 4; 8; fd; gd; ad;
+2: 4.aa- tie; 4; 8; ad; fd;;
+
+			VERSE "true, With-hold-ing no";
+			VERSE "Lord, And fol-low Him";
+			VERSE "sue, And do what-so-";
+bar
+//7
+1: 4.ac; 4ec; 8ac; bd; ac; gb-;
+2 1: 4.e; 4ae; 8; e;;;
+2 2: 4.e; 4s; 8; 8e;;;
+
+			VERSE "ser-vice my weak hand can";
+			VERSE "ful-ly, o-bey-ing His";
+			VERSE "ev-er He bids me to";
+bar
+//8
+1: 4.ac tie; 4; 2s;
+2: 4.ea- tie; 4; 2s;
+
+			VERSE "do.";
+			VERSE "word.";
+			VERSE "do.";
+dblbar
+//9
+1 1: 8e;; ge; ae; 4.s; 4;
+1 2: 8e;; s;; 4.; 4;
+2: 8ge;; be; c+e; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Com-mit-ted to";
+bar
+//10
+1 1: 4.be; 4; 8e; ae;; be;
+1 2: 4.s; 4; 8e; s;;;
+2: 4.d+e; 4; 8gd; ac;; 8ge;
+
+			VERSE "Je-sus, my bod-y and";
+bar
+//11
+1 1: 4.c+e tie; 4; 8e; fd; gd; ad;
+1 2: 4.s; 4; 8e; s;;;
+2 1: 4.a tie; 4; 8ac; ad; fd; fd;
+2 2: 4.a tie; 4; 8s;;;;
+
+			VERSE "soul; My gifts and pos-";
+bar
+//12
+1: 4.ac; 4; 8; adn; gd; ad;
+2 1: 4.ea-; 4af; 8f; fb-;;;
+2 2: 4.s; 4; 8f; s;;;
+
+			VERSE "ses-sions, I give Him the";
+bar
+//13
+1: 4.be tie; 4; 8be;; c+e; d+e;
+2: 4.ge tie; 4; 8ge;; ae; be;
+
+			VERSE "whole; Oh, praise the dear";
+bar
+//14
+1: 4.c+e; 4ac; 8ae; bf; af; fd;
+2: 4.aa-; 4aa-; 8ac; ad;;;
+
+//			VERSE "Sav-iour, who spoke me for-"; // Original Lyrics.
+			VERSE "Sav-iour, my sins are for-";
+bar			
+//15
+1 1: 4.ec tie; 4; 8e; fd; gd; ad;
+1 2: 4.s; 4; 8e; s;;;
+2: 4.aa- tie; 4; 8ac; ad; fd; fd;
+
+			VERSE "giv'n, An heir of sal-";
+bar
+//16
+1: 4.ac; 4ec; 8ac; bd; ac; gb-;
+2 1: 4.e; 4ae; 8e;;;;
+2 2: 4.e; 4s; 8e;;;;
+
+			VERSE "va-tion, a pil-grim for";
+bar
+//17
+1: 4.ac tie; 4; 2s;
+2: 4.ea- tie; 4; 2s;
+
+			VERSE "Heav'n.";
+endbar

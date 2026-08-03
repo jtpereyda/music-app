@@ -1,0 +1,194 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		Edited By J.D. Brunk
+//		Mennonite Publishing House
+//		Scottdale, Penn.
+//		Copyright by J.S. Shoemaker, Freeport, IL.
+// 		Copyright, 1902
+
+// Transcribed by: Ted Gatza, Jr. 01/07/2010 rev. 11/08/12
+// HymnsToGod.org
+
+// **********************************
+
+top
+
+   title bold (19) "" "Abide With Me" ""
+   title (2)""
+   title (11) "D - 2 - MI" "\s(17)\f(TI)\:If\ ye\ abide\ in\ me,\ and\ my\ wo\|rds\ abide\ in\ you,\ ye\ shall\ ask what\ ye\ will,\ and\ it\ shall\ b\|e\ done\ unto\ you.\ -\ Jn.15:7"""
+   title (13) "Emma G. Dietrick" " " "Chas. Edw. Pollock"	
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=2/4	
+	key=2#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=2#
+	clef=bass
+music
+
+midi all: 0 "tempo=65";
+
+//1
+1: 4fd; 8fd; 8ge;
+2: 4ad; 8ad; 8ad;
+ital (13) above 1: .1"Slow";
+
+			lyrics 1: "<1. >-1|A-bide with";
+			lyrics 1: "<2. >-1|Be with me,";
+			lyrics 1: "<3. >-1|A-bide with";
+bar
+//2
+1: 4af; 4af;
+2: 4d+d; 4d+d;
+
+			lyrics 1: "me, I";
+			lyrics 1: "Lord, where-";
+			lyrics 1: "me, my";
+bar
+//3
+1: 8bg; 8af; 8g#e#; 8af;
+2: 8d+d; 8d+d; 8d+d; 8d+d;
+
+			lyrics 1: "need thee ev-'ry";
+			lyrics 1: "'er my path may";
+			lyrics 1: "Lord, and when at";
+bar
+//4
+1: 2fd;
+2: 2ad;
+
+			lyrics 1: "day,";
+			lyrics 1: "lead,";
+			lyrics 1: "last";
+bar
+//5
+1: 4d+f; 8c+g; 8bg;
+2: 4ad; 8bd; 8c+d;
+
+			lyrics 1: "To lead me";
+			lyrics 1: "Ful-fil thy";
+			lyrics 1: "This earth and";
+bar
+//6
+1: 4af; 4fd;
+2: 4d+d; 4ad;
+
+			lyrics 1: "safe thro'";
+			lyrics 1: "word, sup-";
+			lyrics 1: "all its";
+bar
+//7
+1: 8ec; 8fd; 8ge; 8ac;
+2: 8aa-; 8aa-; 8aa-; 8aa-;
+
+			lyrics 1: "all the wea-ry";
+			lyrics 1: "ply my ev-'ry";
+			lyrics 1: "wea-ry  cares are";
+bar
+//8
+1: 2fd;
+2: 2ad;
+
+			lyrics 1: "way;";
+			lyrics 1: "need;";
+			lyrics 1: "past;";
+bar
+//9
+1: 4af; 8af; 8af;
+2: 4d+d; 8d+d; 8d+d;
+
+			lyrics 1: "When storms sur-";
+			lyrics 1: "Help me to";
+			lyrics 1: "I'll pray no";
+bar
+//10
+1: 4d+f; 4af;
+2: 4ad; 4d+d;
+
+			lyrics 1: "round and";
+			lyrics 1: "live each";
+			lyrics 1: "more that";
+bar
+//10
+1: 8bg; 8d+b; 8c+a; 8bg;
+2: 8d+g; 8d+g; 8d+g; 8d+g;
+			
+			lyrics 1: "on-ly clouds I";
+			lyrics 1: "day more close to";
+			lyrics 1: "thou a-bide with";
+bar
+//11
+1: 2af;
+2: 2d+d;
+
+			lyrics 1: "see,";
+			lyrics 1: "thee,";
+			lyrics 1: "me,";
+bar
+//12
+1: 4af; 8bg; 8bg;
+2: 4d+d; 8d+g-; 8d+b-;
+			
+			lyrics 1: "Lord, be my";
+			lyrics 1: "And oh, dear";
+			lyrics 1: "For then, at";
+bar
+//13
+1 1: 8af; 8fd; 8d; 8ge;
+1 2: 8s; 8s; 8d; 8s;
+2: 8d+d; 8ad; 8bb-; 8bg-;
+
+			lyrics 1: "com-fort and a-";
+			lyrics 1: "Lord, I pray a-";
+			lyrics 1: "last, I shall a-";
+bar
+//14
+1: 4fd; 4ec;
+2: 4aa-; 4ga-;
+
+			lyrics 1: "bide with";
+			lyrics 1: "bide with";
+			lyrics 1: "bide with";
+bar
+//15
+1 1: 2d;
+1 2: 2d;
+2: 2fd;
+
+			lyrics 1: "me!";
+			lyrics 1: "me!";
+			lyrics 1: "thee!";
+endbar
+title (20) ""
+title (11) "" "Public Domain" "HymnsToGod.org"

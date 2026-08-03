@@ -1,0 +1,179 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The English Hymnal With Tunes 
+//		Humphry Milford 
+//		Oxford University Press, London, 
+//		E.C. A.R. Mowbray & Co. Ltd. 28 Margaret Street, London, W., 
+//		Copyright 1906
+
+
+// Transcribed by: Ted Gatza, Jr. 02/05/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Lord Behold Us With Thy Blessing" ""
+   title (2)""
+   title (11) "A - 4 - DO" "\s(17)\f(TI)\:Blessed\ be\ the\ God\ and\ Father\ of\ our\ \|Lord\ Jesus\ Christ,\ who\ hath\ blessed\ us with\ every\ spiritual\ blessing\ in\ the\ \|heavenly\ places\ in\ Christ:\ -\ Eph.\ 1:3"""
+   title (13) "H. J. Buckoll, 1803-71" " " "W. L. Vinder, 1856"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4
+	key=a
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4ac; 8ge bm; 8fd ebm; 4ec; 4ca-;
+2: 4ea-; 4ea-; 4ea-; 4aa-;
+
+			lyrics 1: 4; 4; 4; 4; "<1. >-1|Lord Be-hold us";
+			lyrics 1: 4; 4; 4; 4; "<2. >-1|For thy mer-cy";
+			lyrics 1: 4; 4; 4; 4; "<3. >-1|Lord, dis-miss us";
+			lyrics 1: 4; 4; 4; 4; "<4. >-1|Let thy Fa-ther";
+bar
+//2
+1: 4fd; 8af bm; 8fd ebm; 4ec; 4ca-;
+2: 4ad; 4ad; 4aa-; 4ea-;
+
+			lyrics 1: 4; 4; 4; 4; "with thy bless-ing.";
+			lyrics 1: 4; 4; 4; 4; "we a-dore thee;";
+			lyrics 1: 4; 4; 4; 4; "with thy bless-ing;";
+			lyrics 1: 4; 4; 4; 4; "hand be shield-ing";
+bar
+//3
+1: 4c+c; 8bd bm; 8ae ebm; 4fd; 4bf;
+2: 4ea; 8gb- bm; 8ac ebm; 4ad; 4d+b-;
+
+			lyrics 1: 4; 4; 4; 4; "Once a-gain as-";
+			lyrics 1: 4; 4; 4; 4; "For this rest up-";
+			lyrics 1: 4; 4; 4; 4; "Thanks for mer-cies";
+			lyrics 1: 4; 4; 4; 4; "All who here shall";
+bar
+//4
+1: 4ae; 4ge; 2ae;
+2: 4c+e; 4be; 2c+a-;
+
+			lyrics 1: "sem-bled here;";
+			lyrics 1: "on our way;";
+			lyrics 1: "past re-ceive;";
+			lyrics 1: "meet no more;";
+bar
+//5
+1 1: 4c+a; 8c+ bm; 8d+ ebm; 4e+a; 4c+a;
+1 2: 4s; 4a; 4s; 4s; 
+2 1: 4a; 8a bm; 8b ebm; 4c+; 4a;
+2 2: 4a; 8a bm; 8b ebm; 4c+; 4a;
+
+			lyrics 1: 4; 4; 4; 4; "On-ward be our";
+			lyrics 1: 4; 4; 4; 4; "Lord, a-gain we";
+			lyrics 1: 4; 4; 4; 4; "Par-don all, their";
+			lyrics 1: 4; 4; 4; 4; "May their seed time";
+bar
+//6
+1: 4d+a; 4bg; 4c+a; 4ae;
+2 1: 4b; 4e; 4a; 4c+a;
+2 2: 4b; 4e; 4a; 4s;
+
+			lyrics 1: "foot-steps press-ing";
+			lyrics 1: "bow be-fore thee,";
+			lyrics 1: "faults con-fess-ing;";
+			lyrics 1: "past be yield-ing";
+bar
+//7
+1 1: 4c+a; 8c+ bm; 8d+ ebm; 4e+a; 4c+a;
+1 2: 4s; 4a; 4s; 4s;
+2 1: 4a; 8a bm; 8b ebm; 4c+; 4e+a;
+2 2: 4a; 8a bm; 8b ebm; 4c+; 4s;
+
+			lyrics 1: 4; 4; 4; 4; "In thy love and";
+			lyrics 1: 4; 4; 4; 4; "Speed our la-bours";
+			lyrics 1: 4; 4; 4; 4; "Time that's lost may";
+			lyrics 1: 4; 4; 4; 4; "Year by year a";
+bar
+//8
+1 1: 4d+g; 4c+a; 2b;
+1 2: 4s; 4s; 4a slur; 4g;
+2: 4e+b; 4e+a; 2e+e;
+
+			lyrics 1: "faith and fear:";
+			lyrics 1: "day by day:";
+			lyrics 1: "all re-trieve:";
+			lyrics 1: "rich-er store;";
+bar
+//9
+1: 4ac; 8ge bm; 8fd ebm; 4ec; 4ca-;
+2: 4ea-; 4ea-; 4ea-; 4aa-;
+
+			lyrics 1: 4; 4; 4; 4; "Still pro-tect us,";
+			lyrics 1: 4; 4; 4; 4; "Mind and spir-it,";
+			lyrics 1: 4; 4; 4; 4; "May thy child-ren,";
+			lyrics 1: 4; 4; 4; 4; "Those re-turn-ing,";
+bar
+//10
+1: 4fd; 8af bm; 8fd ebm; 4ec; 4ca-;
+2: 4ad; 4ad; 4aa-; 4ea-;
+
+			lyrics 1: 4; 4; 4; 4; "Still pro-tect us";
+			lyrics 1: 4; 4; 4; 4; "Mind and spir-it";
+			lyrics 1: 4; 4; 4; 4; "May thy child-ren";
+			lyrics 1: 4; 4; 4; 4; "Those re-turn-ing";
+bar
+//11
+1: 4c+c; 8bd bm; 8ae ebm; 4fd; 4bf;
+2: 4ea-; 8gb- bm; 8ac ebm; 4ad; 4d+b-;
+
+			lyrics 1: 4; 4; 4; 4; "By thy pres-ence";
+			lyrics 1: 4; 4; 4; 4; "With thy choic-est";
+			lyrics 1: 4; 4; 4; 4; "Ne'er a-gain they";
+			lyrics 1: 4; 4; 4; 4; "Make more faith-ful";
+bar
+//12
+1: 4ae; 4ge; 2ae;
+2: 4c+e; 4be; 2c+a-;
+
+			lyrics 1: "ev-er near.";
+			lyrics 1: "gifts ar-ray.";
+			lyrics 1: "Spir-it grieve.";
+			lyrics 1: "than be-fore.";
+endbar

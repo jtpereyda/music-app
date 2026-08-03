@@ -1,0 +1,382 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Soul Inspiring Songs
+//	Publisher R. E. Winsett
+//	Alton Park Station, Box 36, Chattanooga, Tenn.
+//	Copyright 1926
+//	Hymn No.: 27
+
+// Transcribed by: Ted Gatza, Jr. 08/12/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.93
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	extendlyrics=y
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "In That Home Of The Soul" ""
+   title (2) ""
+   title (11) "" "\f(TI)Thou wilt show me the path of life: In thy presence is fulness of joy;" ""
+   title (11) "" "\f(TI)In thy right hand there are pleasures for evermore. - Ps. 16:1" ""
+   title (11) "A \(flat) - 4 - SOL" "" ""
+   title (13) "James W. Gaines" "" "James W. Gaines,1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=97";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 8.ce; 16df;
+2: 2.s; 8.a-a; 16;
+
+	VS "<1. >-1|Soon the";
+	VS "<2. >-1|There the";
+	VS "<3. >-1|While the";
+bar
+
+//2
+1: 8.ca; 16; 8.ea; 16db; 4ca; 8.s; 16;
+2 1: 8.a-e; 16; 8.ca; 16eg; 4a; 8.s; 16;
+2 2: 8.s; 16; 8.; 16; 4a; 8.s; 16;
+
+	VS "toils of life will cease,";
+	VS "Sav-iour we shall see,";
+	VS "ag-es on-ward roll,";
+invisbar
+
+//2
+1: 8.s; 16; 8.; 16; 4s; 8.ca; 16db;
+2 1: 8.s; 16; 8.; 16; 4s; 8.a; 16;
+2 2: 8.s; 16; 8.; 16; 4s; 8.a; 16;
+
+	VS "Then no";
+	VS "And His";
+	VS "Round the";
+bar
+
+//3
+1: 8.ec+; 16eb; 8.ea; 16dg; 4ca; 8.s; 16;
+2 1: 8.a; 16eg; 8.ca; 16eb; 4a-a; 8.s; 16;
+2 2: 8.a; 16s; 8.; 16; 4; 8.; 16;
+
+	VS "sor-row we shall know,";
+	VS "glo-ry ev-er share,";
+	VS "shin-ing throne we'll sing,";
+invisbar
+
+//3
+1 1: 8.s; 16s; 8.; 16; 4; 8.c+; 16b;
+1 2: 8.s; 16s; 8.; 16; 4; 4r;
+2: 8.s; 16s; 8.; 16; 4; 4r;
+
+	VS "In that";
+//	VS "In that";
+//	VS "In that";
+bar
+
+//4
+1 1: 2.a; 8.fa; 16df;
+1 2: 4e; f; e; 8.s; 16;
+2: 4ac+; fc+; ac+; 8.dd+; 16da;
+
+	VS "home of the";
+	VS 1; "<>";
+	VS 4; 4; 4; 8.s; 16s; "In that home";
+bar
+
+//5
+1 1: 2.e; 8.s; 16;
+1 2: 4c; 8.e; 16d; 4c; 8.s; 16;
+2 1: 4a-a; 8.ca; 16eg; 4a; 8.s; 16;
+2 2: 4s; 8.s; 16; 4a; 8.s; 16;
+
+	VS1 "soul;";
+	VS "<>";
+	VS 4s; 8.; 16; 4; 4s; "of the soul;";
+bar
+
+//6
+1: 4s; 8.; 16; 4; 8.ce; 16df;
+2: 4s; 8.; 16; 4; 8.a-a; 16;
+
+	VS "There we'll";
+	VS "Re-u-";
+	VS "With the";
+bar
+
+//7
+1: 8.ca; 16; 8.ea; 16db; 4ca; 8.s; 16;
+2 1: 8.a-e; 16; 8.ca; 16eg; 4a; 8.s; 16;
+2 2: 8.s; 16; 8.s; 16; 4a; 8.s; 16;
+
+	VS "dwell in joy and peace,";
+	VS "nit-ed we shall be,";
+	VS "an-gels we'll ex-tol,";
+invisbar
+
+1: 8.s; 16; 8.s; 16; 4; 8.ca; 16db;
+2 1: 8.s; 16; 8.s; 16; 4; 8.a; 16a;
+2 2: 8.s; 16; 8.s; 16; 4; 8.a; 16a;
+
+	VS "Robed in";
+	VS "With the";
+	VS "Him, the";
+bar
+
+//8
+1: 8.ec+; 16eb; 8.ea; 16dg; 4ca; 4s;
+2 1: 8.a; 16eg; 8.ca; 16eb; 4a-a; 4s;
+2 2: 8.a; 16s; 8.; 16; 4; 4s;
+
+	VS "gar-ments white as snow,";
+	VS "ran-somed o-ver there,";
+	VS "Christ, our Lord, and King,";
+invisbar
+
+1 1: 8.s; 16; 8.; 16; 4; {8c+ bm; b ebm; a;}3;
+1 2: 8.s; 16; 8.; 16; 4; 4r;
+2: 8.s; 16; 8.; 16; 4; 4r;
+
+	VS 8.s; 16s; 8.s; 16s; 4s; {8; 8s; 8;}3; "In that";
+
+bar
+
+//9
+1 1: 2c+ slur; 4a; {8b-e bm; ca ebm; dg;}3;
+1 2: 4e; f; c; 4s;
+2 1: 4a; fa; ea; {8g bm; a ebm; e;}3;
+2 2: 4a; s; ; {4e; 8;}3;
+
+	VS 4; 4s; 4s; {8; 8s; 8;}3; "home of the";
+//	VS 1; "<>";
+	VS 4; 4; 4; {8s; 8s; 8s;}3; "In that home";
+bar
+
+//10
+1: 2.ca; 4s;
+2: 2.a-e; 4s;
+
+	VS "soul.";
+//	VS "soul.";
+dblbar
+
+REFRAIN
+
+//11
+1 1: 2.s; 8.e; 16f;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS "Bless-ed";
+bar
+
+//12
+1 1: 2.a; {8a bm; b ebm; 8c+;}3;
+1 2: 4e; f; e; {4e; 8;}3;
+2 1: 4ac+; fc+; ac+; {8c+ bm; b ebm; 8;}3;
+2 2: 4s; ; ; {4a; 8;}3;
+
+	VS 2.; {8; 8s; 8;}3; "thought, there to";
+	VS 4; 4; 4; {4s; 8s;}3; "Bless-ed tho't,";
+bar
+
+//13
+1 1: 2. e+; 4s;
+1 2: 4a; g; a; s;
+2: 4ac+; eb; ac+; s;
+
+	VS "dwell,";
+	VS12 "ev-er dwell";
+invisbar
+
+//14 
+1 1: 4s; ; ; 8.c+; 16b;
+1 2: 4s; ; ; r;
+2: 4s; ; ; r;
+
+	VS "In that";
+bar
+
+//15
+1 1: 2.a; 8.fa; 16df;
+1 2: 4e; f; e; 8.s; 16;
+2: 4ac+; fc+; ac+; 8.dd+; 16da;
+
+	VS "home of the";
+	VS12 "In that home,";
+bar
+
+//16
+1 1: 2.e; 8.s; 16;
+1 2: 4c; 8.e; 16d; 4c; s;
+2 1: 4a-a; 8.ca; 16eg; 4a; s;	
+2 2: 4s; 8.s; 16; 4a; s;
+
+	VS "soul;";
+	VS 4s; 8.; 16; 4; 8.s; 16s; "of the soul";
+invisbar
+
+//16
+1 1: 2.s; 8.e; 16f;
+1 2: 4s; 8.; 16; 4; r;	
+2: 4s; 8.s; 16; 4s; r;
+
+	VS "End-less";
+bar
+
+
+//17
+1 1: 2.a; {8a bm; b ebm; 8c+;}3;
+1 2: 4e; f; e; {4e; 8;}3;
+2 1: 4ac+; fc+; ac+; {8c+ bm; b ebm; 8;}3;
+2 2: 4s; ; ; {4a; 8;}3;
+
+	VS 2.; {8; 8s; 8;}3; "praise we shall";
+	VS 4; 4; 4; {4s; 8s;}3; "End-less praise";
+bar
+
+//18
+1 1: 2.e+; 4s;
+1 2: 4a; g; a; 4s;
+2: 4ac+; eb; ac+; 4s;
+
+	VS "swell";
+	VS12 "glad-ly swell,";
+invisbar
+
+//19
+1 1: 2.s; {8c+ bm; b ebm; a;}3;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS 2.s; {8; 8s; 8;}3; "In that";
+bar
+
+//19
+1 1: 2c+ slur; 4a; {8b-e bm; cf ebm; dg;}3;
+1 2: 4e; f; c; 4s;
+2 1: 4a; fa; ea; {8g bm; a ebm; e;}3;
+2 2: 4a; s; ; {4e; 8e;}3;
+
+	VS 2.; {8; 8s; 8;}3; "home of the";
+	VS 4; 4; 4; {4s; 8s;}3; "In that home";
+bar
+
+//20
+1: 2.ca; 4s;
+2: 2.a-e; 4s;
+
+	VS "soul.";
+endbar

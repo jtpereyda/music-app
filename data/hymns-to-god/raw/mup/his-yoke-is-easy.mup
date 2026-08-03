@@ -1,0 +1,389 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Glowing Songs
+//		Editor: Charlie D. Tillman
+//		Copyright: 1895
+//		Hymn No.: 60
+
+// Transcribed by: Ted Gatza, Jr. 07/21/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8
+	key=5&
+
+staff 2
+	key=5&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "His Yoke Is Easy" ""
+   title (2) ""
+   title (9) "" "\f(TI)Take My yoke upon you, and learn of me..." ""
+   title (9) "" "\f(TI)for My yoke is easy and My burden is light. Matt 11:29-30" ""
+   title (11) "" 
+   title (11) "D\(flat) - 2 - SOL" "" ""
+   title (13) " Daniel Sidney Warner, 1893" "" "Barney Elliott Warren, 1893"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=85";
+
+//=========================
+
+// Verse
+
+//1
+1: 4.s; 4s; 8fa;
+2: 4.s; 4s; 8dd+;
+
+	VS "<1. >-1|I've";
+	VS "<2. >-1|No";
+	VS "<3. >-1|He's";
+	VS "<4. >-1|I've";
+bar
+
+//2
+1: 4fa; 8fa; 8bd+ bm; ac+ ebm; gb;
+2: 4dd+; 8; 4; 8;
+
+	VS21 "found my Lord and";
+	VS21 "oth-er Lord but";
+	VS21 "dear-er to my";
+	VS21 "tried the road of";
+bar
+
+//3a
+1: 8fa bm; gb ebm; fa; 4df; 8s;
+2: 4dd+; 8; 4da; 8s;
+
+	VS21 "He is mine,";
+	VS21 "Christ I know,";
+	VS21 "heart than life,";
+	VS21 "sin and found,";
+invisbar
+
+//3b
+1: 4s; 8; 4; 8fa;
+2: 4s; 8; 4; 8dd+;
+
+	VS "He";
+	VS "I";
+	VS "He";
+	VS "Its";
+bar
+
+//4
+1: 4ea; 8eg; 4; 8;
+2: 4a-c+; 8a-b; 4a-a; 8;
+
+	VS "won me by His";
+	VS "walk with him a-";
+	VS "found me lost in";
+	VS "pros-pects all de-";
+bar
+
+//5a
+1: 4.df slur; 4fa; 8s;
+2: 4.d~ a slur; 4dd+; 8s;
+
+	VS "love;";
+	VS "lone;";
+	VS "sin;";
+	VS "ceive;";
+invisbar
+
+//5b
+1: 4.s; 4; 8fa;
+2: 4.s; 4; 8dd+;
+
+	VS "I'll";
+	VS "His";
+	VS "He";
+	VS "I've";
+bar
+
+//6
+1 1: 8a bm; d+ ebm; 8ge+; f+ bm; e+ ebm; fd+;
+1 2: 4f; 8s; 4a; 8s;
+2 1: 8d+ bm; a ebm; s; d+ bm; a ebm; s;
+2 2: 4d; 8da; 4d; 8da;
+
+	VS22 "serve Him all my";
+	VS22 "streams of love for-";
+	VS22 "calmed the sea of";
+	VS22 "proved the Lord and";
+bar
+
+//7a
+1 1: 8b bm; d+ ebm; 8s; 4; 8s;
+1 2: 4g; 8gb; 4fa; 8s;
+2 1: 8d+ bm; b ebm; gd+; 4dd+; 8s;
+2 2: 4g; 8s; 4; 8;
+
+	VS12 "years of time,";
+	VS12 "ev-er flow,";
+	VS12 "in-ward strife,";
+	VS12 "joys a-bound,";
+invisbar
+
+//7b
+1: 4s; 8s; 4s; 8fd+;
+2: 4s; 8; 4; 8da;
+
+	VS "And";
+	VS "With-";
+	VS "And";
+	VS "More";
+bar
+
+//8
+1 1: 4gc+; 8gb; 8c+ bm; d+ ebm; 8ge+;
+1 2: 4s; 8; 4g; 8s;
+2 1: 4a; 8; 4a-a; 8;
+2 2: 4a; 8; 4s; 8;
+
+	VS21 "dwell with Him a-";
+	VS21 "in my heart, His";
+	VS21 "bid me come to";
+	VS21 "than I could be-";
+bar
+
+//9
+1 1: 4.d+ tie; 4; 8s;
+1 2: 4f; 8g; 4f; 8s;
+phrase below 1: 1 til 5;
+2 1:4a; 8b; 4a; 8s;
+phrase above 2: 1 til 5;
+2 2: 4.d tie; 4; 8s;
+
+	VS "bove.";
+	VS "throne.";
+	VS "Him.";
+	VS "lieve.";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 4.s; 4; 8fa;
+2: 4.s; 4; 8dd+;
+
+	VS "His";
+bar
+
+//11
+1: 4fa; 8; df; eg; fa;
+2: 4dd+; 8; da; ; dad+;
+
+	VS "yoke is ea-sy, His";
+bar
+
+//12a
+1: 8.gb; 16; 8; 4fa; 8s;
+2: 8.gd+; 16; 8; 4dd+; 8s;
+
+	VS "bur-den is light,";
+invisbar
+
+//12b
+1: 8.s; 16; 8; 4; 8df;
+2: 8.s; 16; 8; 4; 8da;
+
+	VS "I've";
+bar
+
+//13
+1: 4eg; 8ce; bm; df ebm; eg;
+2: 4a-a; 8; 4; 8;
+
+	VS21 "found it so, I've";
+bar
+
+//14a
+1: 4gb; 8fa; 4df; 8s;
+2: 4dd+; 8; 4da; 8s;
+
+	VS "found it so:";
+invisbar
+
+//14b
+1: 4s; 8; 4; 8fa;
+2: 4s; 8; 4; 8dd+;
+
+	VS "His";
+bar
+
+//15
+1 1: 8a bm; d+ ebm; 8s; 8f+ bm; e+ ebm; 8s;
+1 2: 4f; 8ge+; 4a; 8fd+;
+2 1: 8d+ bm; a ebm; 8s; 8d+ bm; a ebm; 8s;
+2 2: 4d; 8da; 4d; 8da;
+
+	VS22 "ser-vice is my";
+bar
+
+//16a
+1: 8gb; bd+; gb; 4fa; 8s;
+2: 8gd+; ; ; 4dd+; 8s;
+
+	VS "sweet-est de-light,";
+invisbar
+
+//16b
+1: 8s; ; ; 4; 8fd+;
+2: 8s; ; ; 4; 8da;
+
+	VS "His";
+bar
+
+//17
+1 1: 4gc+; 8gb; 8c+ bm; d+ ebm; 8ge+;
+1 2: 4s; 8; 4g; 8s;
+2 1: 4a; 8; 4a-a; 8;
+2 2: 4a; 8; 4s; 8;
+
+	VS21 "bless-ings ev-er";
+bar
+
+//18
+1 1: 4.d+ tie; 4; 8s;
+1 2: 4f; 8g; 4f; 8s;
+phrase below 1: 1 til 5;
+2 1: 4a; 8b; 4a; 8s;
+phrase above 2: 1 til 5;
+2 2: 4.d tie; 4; 8s;
+
+	VS "flow.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

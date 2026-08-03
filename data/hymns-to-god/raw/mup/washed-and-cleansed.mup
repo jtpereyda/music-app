@@ -1,0 +1,300 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Spiritual songs NO. 2
+//		For Gospel Meetings and the Sunday School
+//		Music Editors: E. A. Hoffman, J.H. Tenney
+//		Publisher: Samuel Barker,
+//		No. 74 Superior St. Cleveland, Ohio.
+//		Copyright: 1883
+//		Hymn No.: 86
+//		
+// Transcribed by: Ted Gatza, Jr. 09/16/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Washed And Cleansed" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:but\ ye\ were\ washed,\ but\ ye\ were\ sancti\|fied,\ but\ ye\ were\ justified\ in\ the\ name of\ the\ Lord\ Jesus\ Christ,\ and\ in\ th\|e\ Spirit\ of\ our\ God.\ -\ 1\ Cor.\ 6:11" ""   
+   title (13) "Elisha A. Hoffman" "" "Elisha A. Hoffman, 1883"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=75";
+
+//1
+1:8ec; 4s;
+2: 8aa-; 4s;
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|O";
+			VERSE "<3. >-1|O";
+bar
+//2
+1: 8ac;; bd;
+2: 8aa-;;;
+
+			VERSE "won-der-ful";
+			VERSE "won-der-ful";
+			VERSE "won-der-ful";
+bar
+//3
+1: 8c+e;;;
+2: 8aa-;;;
+
+			VERSE "depth of God's";
+			VERSE "heights of God's";
+			VERSE "breadths of this";
+bar
+//4
+1: 8d+f;; c+e;
+2: 8aa-;;;
+
+			VERSE "won-der-ful";
+			VERSE "won-der-ful";
+			VERSE "riv-er of";
+bar
+//5
+1: 4be; 8;
+2: 4ge; 8;
+
+			VERSE "love! Its";
+			VERSE "love, En-";
+			VERSE "love! From";
+bar
+//6
+1: 8c+e;; be;
+2: 8aa-;; ge;
+
+			VERSE "ful-ness I";
+			VERSE "thrill-ing my";
+			VERSE "hence I would";
+bar
+//7
+1: 8ac;; be;
+2: 8af;; ge;
+
+			VERSE "know, and its";
+			VERSE "soul with the";
+			VERSE "nev-er a";
+bar
+//8
+1: 8ec+; fd+; ec+;
+2: 8aa-;;;
+
+			VERSE "sweet-ness I";
+			VERSE "joy from a-";
+			VERSE "mo-ment re-";
+bar
+//9
+1: 4eb; 8ec;
+2: 4ge; 8aa-;
+
+			VERSE "prove; Christ";
+			VERSE "bove! Such";
+			VERSE "move; Its";
+bar
+//10
+1: 8ac;; bd;
+2: 8aa-;;;
+
+			VERSE "brought me such";
+			VERSE "rest as the";
+			VERSE "wa-ters I'll";
+bar
+//11
+1: 8c+e;;;
+2: 8aa-;;;
+
+			VERSE "wealth, such a";
+			VERSE "Lord on his";
+			VERSE "drink, and I'll";
+bar
+//12
+1: 8d+f;; c+e;
+2: 8aa-;;;
+
+			VERSE "treas-ure of";
+			VERSE "saints doth be-";
+			VERSE "here make my";
+bar
+//13
+1: 4be; 8;
+2: 4ge; 8;
+
+			VERSE "peace, My";
+			VERSE "stow, No";
+			VERSE "rest; For";
+bar
+//14
+1: 8c+e;; bd;
+2: 8aa-;; ge;
+
+			VERSE "soul is o'er-";
+			VERSE "sin-ner un-";
+			VERSE "lean-ing on";
+bar
+//15
+1: 8ac;; bf;
+2: 8ae;; ad;
+
+			VERSE "whelmed in a ";
+			VERSE "saved or un-";
+			VERSE "Christ I am";
+bar
+//16
+1: 8c+e;; bd;
+2: 8ae;; ge;
+
+			VERSE "sea of pure";
+			VERSE "par-doned can";
+			VERSE "per-fect-ly";
+bar
+//17
+1: 4ac; 8s;
+2: 4ea-; 8s;
+
+			VERSE "bliss.";
+			VERSE "know.";
+			VERSE "blest.";
+dblbar 
+newscore
+//18
+repeatstart
+1: 16ad; fd; 4s;
+2: 16fd; ad; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "For my";
+			VERSE "Hal-le";
+bar
+//19
+1: 8ec;; fd;
+2: 8aa-;;;
+
+			VERSE "Sav-ior has";
+			VERSE "lu-jah, he";
+bar
+//20
+1: 8ac;; 16ae; be;
+2: 8aa-;; 16ac; ge;
+
+			VERSE "washed me in the";
+			VERSE "saves me! I am";
+bar
+//21
+1: 16c+e;; 8;;
+2 1: 16a;; 8;;
+2 2: 16a;; 8;;
+
+			VERSE "foun-tain of his";
+			VERSE "rec-on-ciled to";
+bar
+//22
+1: 4c+e; 16d+f; c+e;
+2: 4aa-; 16;;
+
+			VERSE "blood. He has";
+			VERSE "God! Let me";
+bar ending "1."
+//23
+1: 8be;;;
+2: 8ge;;;
+
+			VERSE "washed me and";
+bar
+//24
+1: 8be; ae; 16ac; be;
+2: 8ge;; 16af; ge;
+
+			VERSE "cleansed me in the";
+bar
+//25
+1: 16c+e; bd; 8ac; fd;
+2: 16aa-;; 8;;
+
+			VERSE "flow-ing, crim-son";
+bar
+//26
+1: 4ec; 8s;
+2: 4aa-; 8s;
+
+			VERSE "flood,";
+repeatend  ending "2."
+//27
+1: 8bd;; ac;
+2: 8ge;; af;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "praise him for-";
+bar
+//28
+1: 8c+e;; bd;
+2: 8ac; ae; ge;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "ev-er, A-";
+bar
+//29
+1: 4.ac tie;
+2: 4.aa- tie;
+
+			VERSE "men!_";
+bar
+//30
+1: 4ac; 8s;
+2: 4aa-; 8s;
+
+endbar

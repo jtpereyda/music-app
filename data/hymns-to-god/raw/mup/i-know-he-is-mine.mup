@@ -1,0 +1,283 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Soul Winning Songs
+//		for Soul Winners
+//		by P.P. Bilhorn
+//		P.P. bilhorn Publisher
+//		No. 56 Fifth Avenue, Chicago
+//		Copyright 1896
+//		Hymn no. 15
+
+// Transcribed by: Ted Gatza, Jr. 09/16/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Know He Is Mine" ""
+   title (2)""
+   title (11) "D \(flat) - 3 - SOL" "\s(17)\f(TI)\:for\ I\ know\ him\ whom\ I\ have\ believed,\|\ and\ I\ am\ persuaded\ that\ he\ is\ able\ to guard\ that\ which\ I\ have\ committed\ un\|to\ him\ against\ that\ day.\ -\ 2\ Tim.\ 1:12"""
+   title (13) "P. P. Bilhorn" " " "P. P. Bilhorn, 1896"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+	staffs=2
+	time=3/4	
+	key= 5&
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2s; 4af;
+2: 2s; 4d+d;
+
+			lyrics 1: "<1. >-1|My";
+			lyrics 1: "<2. >-1|My";
+			lyrics 1: "<3. >-1|I";
+			lyrics 1: "<4. >-1|And";
+bar
+//2
+1: 4af; 4fd; 4ge;
+2: 4d+d; 4ad; 4ad;
+
+			lyrics 1: "heart was not";
+			lyrics 1: "soul was dis-";
+			lyrics 1: "walk in the";
+			lyrics 1: "there ev-er-";
+bar
+//3
+1: 2af; 8d+f; 8d+f;
+2: 2d+d; 8d+d; 8d+d;
+
+			lyrics 1: "right In my";
+			lyrics 1: "trest, With its";
+			lyrics 1: "light of His";
+			lyrics 1: "more I'll my";
+bar
+//4
+1: 4d+b; 4c+a; 4bg;
+2: 4d+g; 4d+g; 4d+g;
+
+			lyrics 1: "dear Sav-ior's";
+			lyrics 1: "sor-row op-";
+			lyrics 1: "pres-ence so";
+			lyrics 1: "Sav-ior a-";
+bar
+//5
+1: 2af; 4af;
+2: 2d+d; 4ad;
+
+			lyrics 1: "sight, I";
+			lyrics 1: "pressed, Till";
+			lyrics 1: "bright, His";
+			lyrics 1: "dore, Give";
+bar
+//6
+1: 4ac; 4ec; 4fd;
+2: 4aa-; 4aa-; 4aa-; 
+
+			lyrics 1: "knew not the";
+			lyrics 1: "Je-sus my";
+			lyrics 1: "love makes my";
+			lyrics 1: "praise to His";
+bar
+//7
+1: 4gc; 4fc; 4ec;
+2: 4ea-; 4aa-; 4aa-;
+
+			lyrics 1: "peace all sub-";
+			lyrics 1: "Sav-ior I";
+			lyrics 1: "heav-en be-";
+			lyrics 1: "pow-er di-";
+bar
+//7
+1: 2fd; 4af;
+2: 2ad; 4d+d;
+
+			lyrics 1: "lime; I";
+			lyrics 1: "found, But";
+			lyrics 1: "low; I'll";
+			lyrics 1: "vine, I'll";
+bar
+//8
+1: 4af; 4fd; 4ge;
+2: 4d+d; 4ad; 4ad;
+
+			lyrics 1: "came to His";
+			lyrics 1: "now He's my";
+			lyrics 1: "sing of His";
+			lyrics 1: "fall at His";
+bar
+//9
+1: 2af; 8af; 8af;
+2: 2d+d; 8d+d; 8d+d;
+
+			lyrics 1: "side, And His";
+			lyrics 1: "theme, While His";
+			lyrics 1: "grace Till I";
+			lyrics 1: "feet And the";
+bar
+newscore
+//10
+1 1: 4gb; 4g; 4bg;
+1 2: 4s; 4g; 4s;
+2: 4d+g; 4bg; 4d+g;
+
+			lyrics 1: "blood was ap-";
+			lyrics 1: "word keeps me";
+			lyrics 1: "see his dear";
+			lyrics 1: "sto-ry re-";
+bar
+//11
+1: 2d+b; 8c+a; 8bg;
+2: 2d+g; 8d+g; 8d+g;
+
+			lyrics 1: "plied, Hal-le-";
+			lyrics 1: "clean, Hal-le-";
+			lyrics 1: "face With the";
+			lyrics 1: "peat, Hal-le";
+bar
+//12
+1: 4af; 4fd; 4ad;
+2 1: 4d+a; 4a; 4fa-;
+2 2: 4s; 4a; 4s;
+
+			lyrics 1: "lu-jah, I";
+			lyrics 1: "lu-jah, His";
+			lyrics 1: "dear ones washed";
+			lyrics 1: "lu-jah, I";
+bar
+//13
+1: 4gc; 4fc; 4ec;
+2: 4ea-; 4aa-; 4ga-;
+
+			lyrics 1: "know He is";
+			lyrics 1: "grace doth a-";
+			lyrics 1: "whit-er than";
+			lyrics 1: "know He is";
+bar
+//14
+1 1: 2d; 4s;
+1 2: 2d; 4s;
+2: 2fd; 4s;
+
+			lyrics 1: "mine!";
+			lyrics 1: "bound!";
+			lyrics 1: "snow.";
+			lyrics 1: "mine!";
+dblbar hidechanges
+score time=6/8
+music
+midi all: 0 "tempo=87";
+
+//15
+1 1:4a; 4.s; 8s;
+1 2:4r; 4.s; 8s;
+2: 4r; 4.s; 8s;
+ital (13) above 1: 1 " Chorus";
+
+			lyrics 1: "I";
+bar
+//16
+1 1: 4.d+ tie; 8d+; 8a; 8an;
+1 2: 8f; 8f; 8f; 8f; 4r;
+2 1: 8d+d; 8d+f; 8d+a; 8d+; 4r;
+2 2: 8s; 8s; 8s; 8d+; 4s;
+
+			lyrics 1: "know_ He is";
+			lyrics 1: 8; 8; 8; 8; 4s; "Je-sus is mine,";
+bar
+//17
+1 1: 4.b tie; 8b; 8b; 8b;
+1 2: 8g; 8g; 8g; 8g; 4r;
+2: 8d+g-; 8d+b-; 8d+d; 8d+g; 4r;
+
+			lyrics 1: "mine,_ Yes, I";
+			lyrics 1: 8; 8; 8; 8; 4s; "yes He is mine,";
+bar
+newscore
+//18
+1 1: 4.e+ tie; 8e+; 8b; 8bn;
+1 2: 8gn; 8g; 8g; 8g; 4r;
+2: 8be; 8be; 8be; 8be; 4r;
+
+			lyrics 1: "know_ He is";
+			lyrics 1: 8; 8; 8; 8; 4s; "Je-sus is mine,";
+bar
+//19
+1 1: 4.c+ tie; 8c+; 8r; 8c+;
+1 2: 8a; 8a; 8a; 8a; 8r; 8r;
+2: 8e+a-; 8e+c; 8e+e; 8e+a; 4r;
+
+			lyrics 1: "mine_ I'll";
+			lyrics 1: 8; 8; 8; 8; 4s; "yes He is mine,";
+bar
+//20
+1 1: 4.d+ tie; 8d+; 8c+; 8b;
+1 2: 8f; 8f; 8f; 8f; 4r;
+2 1: 8d+d; 8d+f; 8d+a; 8d+; 4r;
+2 2: 8s; 8s; 8s; 8d+; 4s;
+
+			lyrics 1: "doubt_ Him no";
+			lyrics 1: 8; 8; 8; 8; 4s; "doubt Him no more,";
+bar
+//21
+1 1: 4.a tie; 8a; 8f; 8fd;
+1 2: 8f; 8f; 8f; 8f; 8d; 8s;
+2: 8d+d; 8d+a; 8d+f; 8d+d; 8ad; 8ad;
+
+			lyrics 1: "lon-ger, I";
+			lyrics 1: 8; 8; 8; 8; 8; 8; "doubt Him no long-er, I";
+bar
+//22
+1 1: 4.g tie; 8g; 8fc; 8ec;
+1 2: 8c; 8c; 8c; 8c; 8s; 8s;
+2 1: 8aa-; 8ac; 8ae; 8a; 8aa-; 8ga-;
+2 2: 8s; 8s; 8s; 8a; 8s; 8s;
+
+			lyrics 1: "know_ He is";
+			lyrics 1: 8; 8; 8; 8; 8; 8; "know the dear Sav-ior is";
+bar
+//23
+1 1: 4.d tie; 4d; 8s;
+1 2: 4.d tie; 4d; 8s;
+2: 4.fd tie; 4fd; 8s;
+
+			lyrics 1: "mine.";
+			lyrics 1: "mine.";
+endbar

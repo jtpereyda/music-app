@@ -1,0 +1,216 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Christian Hymnal, 
+//		Pub. Central Book Concern, 
+//		180 Elm St., Cincinnati, Ohio, 
+//		Copyright 1882
+
+// Transcribed by: Ted Gatza, Jr. 09/06/2009
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "How Gentle God's Commands" ""
+   title (2) " "
+   title (11) "F-3-MI" "\f(TI)Casting all your care upon Him; for He careth for you. - 1 Peter 5:7"""
+   title (13) "Phillip Doddridge, 1702 - 1751" "H.G. Nagali, 1773 - 1836\n arr. Lowell Mason"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=1&
+	packexp = 0.0
+	packfact = 0.0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,10
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+
+staff 2
+	key=1&
+	clef=bass
+music
+
+midi all: 0 "tempo=105";
+
+//1
+1: 4s; 4s; 4af;
+2: 4s; 4s; 4c+f;
+
+			lyrics 1: "<1. >-1|How";
+			lyrics 1: "<2. >-1|While";
+			lyrics 1: "<3. >-1|Why";
+			lyrics 1: "<4. >-1|His";
+bar
+//2
+1: 4af slur; 4fc; 4af;
+2 1: 4c+ slur; 4a; 4c+f;
+2 2: 2f; 4s;
+			lyrics 1: "gen-tle";
+			lyrics 1: "pro-vi-";
+			lyrics 1: "should this";
+			lyrics 1: "good-ness";
+bar
+//3
+1: 4ge slur; 4ec; 4ge;
+2 1: 4c+ slur; 4g; 4bc;
+2 2: 2c; 4s;
+
+			lyrics 1: "God's com-";
+			lyrics 1: "dence sup-";
+			lyrics 1: "anx-ious";
+			lyrics 1: "stands ap-";
+bar
+//4
+1 1: 2f; 4s;
+1 2: 2f; 4s;
+2: 2af; 4s;
+
+			lyrics 1: "mand's,";
+			lyrics 1: "ports,";
+			lyrics 1: "load";
+			lyrics 1: "proved,";
+dblbar
+//5
+1 1: 2s; 4f;
+1 2: 2s; 4e&;
+2: 2s; 4af;
+
+			lyrics 1: "How";
+			lyrics 1: "Let";
+			lyrics 1: "Press";
+			lyrics 1: "Down";
+bar
+//6
+1: 4fd slur; 4db-; 4fd;
+2 1: 4b slur; 4f; 4bb-;
+2 2: 2b-; 4s;
+
+			lyrics 1: "kind his";
+			lyrics 1: "saints se-";
+			lyrics 1: "down your";
+			lyrics 1: "to the";
+bar
+newscore
+//7
+1: 4fc slur; 4ca-; 4fc;
+2 1: 4a slur; 4f; 4af;
+2 2: 2f; 4s;
+
+			lyrics 1: "pre-cepts";
+			lyrics 1: "cure-ly";
+			lyrics 1: "wea-ry";
+			lyrics 1: "pres-ent";
+bar
+//8
+1: 2ec; 4s;
+2: 2gc; 4s;
+
+			lyrics 1: "are!";
+			lyrics 1: "dwell;";
+			lyrics 1: "mind?";
+			lyrics 1: "day;";
+dblbar
+//9
+1: 2s; 4ge;
+2: 2s; 4c+c;
+		
+			lyrics 1: "Come,";
+			lyrics 1: "That";
+			lyrics 1: "Haste";
+			lyrics 1: "I'll";
+bar
+//10
+1: 4ge slur; 4ce; 4gc;
+2 1: 4c+ slur; 4g; 4bc;
+2 2: 2c; 4s;
+
+			lyrics 1: "cast your";
+			lyrics 1: "hand, which";
+			lyrics 1: "to your";
+			lyrics 1: "drop my";
+bar
+//11
+1: 4fc slur; 4af; 4c+f;
+2 1: 4a slur; 4c+; 4af;
+2 2: 2f; 4s;
+	
+			lyrics 1: "bur-dens";
+			lyrics 1: "bears all";
+			lyrics 1: "heav'n-ly";
+			lyrics 1: "bur-den";
+bar
+newscore
+//12
+1 1: 4c+ slur; 4g; 4bg;
+1 2: 2e; 4s;
+2 1: 4g slur; 4c+; 4c+c;
+2 2: 2c; 4s;
+
+			lyrics 1: "on the";
+			lyrics 1: "na-ture";
+			lyrics 1: "Fa-ther's";
+			lyrics 1: "at his";
+bar
+//13
+1: 4af slur; 4c+a; 4s;
+2: 2c+f; 4s;
+
+			lyrics 1: "Lord,";
+			lyrics 1: "up,";
+			lyrics 1: "throne,";
+			lyrics 1: "feet,";
+dblbar
+//14
+1: 2s; 4d+f;
+2: 2s; 4bf;
+
+			lyrics 1: "And";
+			lyrics 1: "Shall";
+			lyrics 1: "And";
+			lyrics 1: "And";
+bar
+//15
+1 1: 4c+ slur; 4a; 4bf;
+1 2: 2f; 4s;
+2 1: 4a slur; 4c+; 4d+b-;
+2 2: 2f; 4s;
+
+			lyrics 1: "trust his";
+			lyrics 1: "guide his";
+			lyrics 1: "sweet com-";
+			lyrics 1: "bear a";
+bar
+//16
+1: 4af slur; 4fc; 4gc;
+2 1: 4c+ slur; 4a; 4bc;
+2 2: 2c; 4s;
+
+			lyrics 1: "con-stant";
+			lyrics 1: "chil-dren";
+			lyrics 1: "mun-ion";
+			lyrics 1: "song a-";
+bar
+//17
+1: 2fc; 4s;
+2: 2af; 4s;
+			lyrics 1: "care.";
+			lyrics 1: "well.";
+			lyrics 1: "find.";
+			lyrics 1: "way.";
+endbar

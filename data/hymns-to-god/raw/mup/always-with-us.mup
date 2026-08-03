@@ -1,0 +1,204 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Songs of Redeeming Love
+//		Edited By: Jno. R. Sweney,
+//		C. C. McBride, T.C. O'Kane,
+//		W. J. Kirkpatrick
+//		Publishers: Phidadelphia: John J. Hood,
+//		1018 Arch Street.
+//		Cincinnati: Walden & Stowe, St. Louis
+//		and Chicage.
+//		Copyright 1882
+//		Hymn No.: 61
+//		
+// Transcribed by: Ted Gatza, Jr. 12/28/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Always With Us" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:teaching\ them\ to\ observe\ all\ things\|\ whatsoever\ I\ commanded\ you:\ and\ lo, I\ am\ with\ you\ always,\ even\ unto\|\ the\ end\ of\ the\ world.\ -\ Mat.\ 28:20" ""   
+   title (13) "Edwin H. Nevin" "" "T. C. O'Kane, 1883"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1: 8ec; ae; 2s;
+2: 8aa-; c+a-; 2s;
+
+			VERSE "<1. >-1|With us";
+			VERSE "<2. >-1|With us";
+			VERSE "<3. >-1|With us";
+bar
+//2
+1: 4.c+e; 8; bd; ac;
+2: 4.aa-; 8;;;
+
+			VERSE "when we toil in";
+			VERSE "when the storm is";
+			VERSE "in the lone-ly";
+bar
+//3
+1: 4ec; ae; 8; eb;
+2: 4aa-; c+a-; 8ac; ge;
+
+			VERSE "sad-ness,\(emdash) Sow-ing";
+			VERSE "sweep-ing O'er our";
+			VERSE "val-ley, When we";
+bar
+//4
+1: 4.c+e; 8d+f; e+e; c+e;
+2 1: 4.a; 8; bg; a;
+2 2: 4.s; 8; s; a;
+
+			VERSE "much and reap-ing";
+			VERSE "path-way dark and";
+			VERSE "cross the chill-ing";
+bar
+//5
+1: 2be; 8be; c+e;
+2: 2ge; 8ge; ae;
+
+			VERSE "none,\(emdash) Tell-ing";
+			VERSE "drear; Walk-ing";
+			VERSE "stream; Light-ing";
+bar
+//6
+1: [up]4.d+g; [up]8c+a; bg; af;
+2: 4.be; 8e+e; d+e; c+f;
+
+			VERSE "us that in the";
+			VERSE "hope with-in our";
+			VERSE "up the steps to";
+bar
+//7
+1: 8bg bm; af ebm; ge bm; fd ebm; ec; dnb-n;
+2: 4d+d; ad; 8aa-;;
+
+			VERSE 4; 4; 8; 8; "fu-ture Gold-en";
+			VERSE 4; 4; 8; 8; "bo-soms, Still-ing";
+			VERSE 4; 4; 8; 8; "glo-ry With sal-";
+bar
+//8
+1: 8ec; ae; 4bg; 8ae bm; gd ebm;
+2 1: 8aa-; 8ac; 4d+e; 8c+ bm; b ebm;
+2 2: 8s;; 4; e;
+
+			VERSE 8; 8; 4; 4; "har-vests shall be";
+			VERSE 8; 8; 4; 4; "ev-'ry anx-ious";
+			VERSE 8; 8; 4; 4; "va-tion's ra-diant";
+bar
+//9
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			VERSE "won.";
+			VERSE "fear.";
+			VERSE "beam.";
+dblbar
+//10
+1: 8ae; be; 2s;
+2: 8c+a; d+a; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"\"Lo, I'm";
+bar
+//11
+1: [up]4c+a; ae; 8c+e; d+e;
+2 1: 4e+a; c+a; 8a; b;
+2 2: 4s;; 8a;;
+
+			VERSE [c]"with you, with you";
+bar
+//12
+1: 4e+a; c+e; 8ae; be;
+2 1: 4c+a; a; 8ac; ge;
+2 2: 4s; a; 8s;;
+
+			VERSE "al-way,\"\(emdash) Words of";
+bar
+//13
+1: 4.c+e; 8adn; be; c+e;
+2 1: 4.a; 8af; ge; ae;
+2 2: 4.a; 8s;;;
+
+			VERSE "cheer, and words of";
+bar
+//14
+1: 2bg; 8c+a; d+b;
+2: 2e+e; 8e+e;;
+
+			VERSE "love,\(emdash) Thus the";
+bar
+//15
+1: 4.c+a; 8bg; af; gen;
+2: 4.e+a; 8d+e; c+f; bc;
+
+			VERSE "ris-en Sav-iour";
+bar
+//16
+1 1: 8f; 4.af; 8gd; fb-;
+1 2: 8f; 4.s; 8;;
+2: 8ad; 4.; 8; 8adn;
+
+			VERSE "whis-pers, From his";
+bar
+//17
+1: 8ec; ae; 4bg; 8ae bm; gd ebm;
+2 1: 8ae; c+e; 4d+e; 8c+ bm; b ebm;
+2 2: 8s;; 4; e;
+
+			VERSE 8; 8; 4; 4; "dwell-ing place a-";
+bar
+//18
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			VERSE "bove.";
+endbar

@@ -1,0 +1,211 @@
+// Coded with Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gates Ajar
+//		Hymns and Tunes for 
+//		Use In Sunday Schools, Praise and Prayer Meetings, ertc.
+//		By J. H. Kurzenknabe
+//		J. H. Kurzenknabe & Sons, Publishers,
+//		Harrisburg, PA.:
+//		Copyright: 1885
+//		Hymn No.: 5
+//		
+// Transcribed by: Ted Gatza, Jr. 02/20/2012; Rev. 08/20/2021
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I'll Be With Thee" ""
+   title (2)""
+   title (11) "A - 3 - SOL" "\s(17)\f(TI)\:We\ trust\ in\ the\ liv\|ing\ God,\ who\ is\ the Saviour\ of\ all\ \^men.\ -\ 1\ Tim.\ 4:10" ""   
+   title (13) "John H. Kurzenknabe" "" "W. A. Ogden, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8ec; ac; 2s;
+2: 8aa-;; 2s;
+
+			VERSE "<1. >-1|I will";
+			VERSE "<2. >-1|Je-sus";
+			VERSE "<3. >-1|Tho' my";
+			VERSE "<4. >-1|When at";			
+bar
+//2
+1: 4.c+e; 8; d+e; bd;
+2: 4.aa-; 8; ge;;
+
+			VERSE "put my trust in";
+			VERSE "gives His pre-cious";
+			VERSE "way seem dark and";
+			VERSE "last I hear the";
+bar
+//3
+1: 4ac; ec; 8ge; ae;
+2: 4aa-;; 8be; c+e;
+
+			VERSE "Je-sus, As His";
+			VERSE "coun-sel, And He";
+			VERSE "gloom-y, E-ven";
+			VERSE "sum-mons, \"Pil-grim,";
+bar
+//4
+1 1: 4.be; 8e; ae; be;
+1 2: 4.s; 8e; 8s;;
+2: 4.d+e; 8bd; ac; ge;
+
+			VERSE "ser-vant did of";
+			VERSE "says, \"Be not a-";
+			VERSE "dark as Is-rael's";
+			VERSE "lay thy staff a-";
+bar
+//5
+1: 2c+e; 8ec; ac;
+2 1: 2a; 8;;
+2 2: 2a; 8;;
+
+			VERSE "old; Though be-";
+			VERSE "fraid;\" Nev-er";
+			VERSE "night, An-gel";
+			VERSE "side,\" Je-sus,";
+bar
+//6
+1: 4.c+e; 8; d+e; bd;
+2 1: 4.a; 8aa-; ge;;
+2 2: 4.a; 8s;;;
+
+			VERSE "set by man-ny";
+			VERSE "can my foes o'er-";
+			VERSE "watch-ers are be-";
+			VERSE "Thou art my De-";
+bar
+//7
+1: 4ac; ec; 8ac; c+e;
+2: 4aa-;; 8;;
+
+			VERSE "dan-gers, I'll be";
+			VERSE "take me While I";
+			VERSE "side me; They shall";
+			VERSE "liv-'rer, And with";
+bar
+//8
+1: 4.be; 8ge; gd#; fd;
+2: 4.gb-; 8bb-;;;
+
+			VERSE "safe with-in the";
+			VERSE "have His prom-ised";
+			VERSE "make my path-way";
+			VERSE "Thee I shall a-";
+bar
+//9
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2ge; 4s;
+
+			VERSE "fold.";
+			VERSE "aid.";
+			VERSE "bright.";
+			VERSE "bide.";
+dblbar
+//10
+1: 8ge; ae; 2s;
+2: 8be; c+e; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"\"I'll be";
+bar
+//11
+1 1: 4.be; 8e; ae; be;
+1 2: 4.s; 8e; s;;
+2: 4.d+e; 8bd; ac; ge;
+
+			VERSE "with thee,\" says my";
+bar
+//12
+1: 4c+e;; 8bg; c+a;
+2 1: 4a;; 8e+e;;
+2 2: 4a;; 8s;;
+
+			VERSE "Sav-iour, \"Where-so-";
+bar
+//13
+1: 4.d+b; 8bg; c+a; d+b;
+2: 4.e+e; 8d+e; c+e; be;
+
+			VERSE "e'er thy steps may";
+bar
+//14
+1: 2e+c+; 8ec; ac;
+2: 2aa-; 8;;
+
+			VERSE "roam; I will";
+bar
+//15
+1: 4.c+e; 8; d+e; bd;
+2: 4.aa-; 8; ge;;
+
+			VERSE "be thy Guide and";
+bar
+//16
+1: 4ac; ec; 8ac; ge;
+2: 4aa-;; 8; ac;
+
+			VERSE "Lead-er, I will";
+bar
+//17
+1: 4.fd; 8bf; c+e; bd;
+2: 4.ad; 8; ae; ge;
+
+			VERSE "bring thee safe-ly";
+bar
+//18
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			VERSE "home.\"";
+endbar

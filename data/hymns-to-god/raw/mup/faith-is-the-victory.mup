@@ -1,0 +1,367 @@
+// Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Christian Endeavor Hymns
+//		By Ira D. Sankey
+//		Published by: United Society of Christian Endeavor
+//		646 Washington Street, Boston, Mass.
+//		The Biglow & Main Co.
+//		76 East 9th Str. New York
+//		215 Wabash Ave. Chicago
+//		Copyright 1894
+//		Hymn No. 151
+		
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 07/23/2020
+
+//Revisions:
+//	11/28/2022
+//	11/29/2022
+
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Faith Is The Victory" ""
+   title (2) ""
+   title (11)"" "\f(TI)For whatsoever is begotten of God overcometh the world: and this is" ""
+   title (11)"" "\f(TI)the victory that hath overcome the world, even our faith. - 1 John 5:4" ""
+
+   title (11)"F - 2 - SOL" "" ""  
+   title (13) "John H. Yates" "" "Ira D. Sankey, 1891"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+//Chorus
+	define CHORUS ital (13) above 1: 1 "Chorus"; @	
+	define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+
+//1
+1: 4.s; 4; 8fc+;
+2: 4.s; 4; 8fa;
+	
+	VERSE "<1. >-1|En-";
+	VERSE "<2. >-1|His";
+	VERSE "<3. >-1|On";
+	VERSE "<4. >-1|To";
+
+bar
+
+//2
+1: 4fc+; 8cf; 4; 8cg;
+2: 4fa; 8; 4; 8fb;
+
+	VERSE "camped a-long the";
+	VERSE "ban-ner o-ver";
+	VERSE "ev-ery hand the";
+	VERSE "Him that o-ver-";
+bar
+
+//3
+1: 4cf; 8ce; 4; 8eb;
+2: 4ca; 8cg; 4; 8;
+
+	VERSE "hills of light, Ye";
+	VERSE "us is love, Our";
+	VERSE "foe we find Drawn";
+	VERSE "comes the foe, White";
+bar
+newscore
+//4
+1: 4gb; 8eg; 4fc+; 8gb;
+2: 4cc+; 8cb; 4ca; 8cc+;
+
+	VERSE "Chris-tian sol-diers,";
+	VERSE "sword the word of";
+	VERSE "up in dread ar-";
+	VERSE "rai-ment shall be";
+bar
+
+//5
+1: 4.f~a~; 4; 8s;
+2: 4.f~c+~; 4; 8s;
+
+	VERSE "rise,";
+	VERSE "God;";
+	VERSE "ray;";
+	VERSE "giv'n;";
+bar
+
+//6
+1: 4.s; 4s; 8fc+;
+2: 4.s; 4s; 8fa;
+
+	VERSE "And";
+	VERSE "We";
+	VERSE "Let";
+	VERSE "Be-";
+bar
+
+//7
+1: 4fc+; 8cf; 4; 8cg;
+2: 4fa; 8; 4; 8fb;
+
+	VERSE "press the bat-tle";
+	VERSE "tread the road the";
+	VERSE "tents of ease be";
+	VERSE "fore the an-gels";
+bar
+newscore
+//8
+1: 4cf; 8ce; 4; 8eb;
+2: 4ca; 8cg; 4; 8;
+	
+	VERSE "ere the night Shall";
+	VERSE "saints a-bove With";
+	VERSE "left be-hind, And";
+	VERSE "he shall know His";
+bar
+
+//9
+1: 4eb; 8eg; 4ec+; 8ce;
+2: 4cc+; 8; 4; 8cb;
+
+	VERSE "veil the glow-ing";
+	VERSE "shouts of tri-umph";
+	VERSE "on-ward to the";
+	VERSE "name con-fessed in";
+bar
+
+//10
+1: 4.c~f~; 4; 8s;
+2: 4.f~a~; 4; 8s;
+
+	VERSE "skies;";
+	VERSE "trod;";
+	VERSE "fray;";
+	VERSE "heaven;";
+bar
+newscore
+//11
+1: 4.s; 4s; 8fa;
+2: 4.s; 4s; 8fc+;
+
+	VERSE "A-";
+	VERSE "By";
+	VERSE "Sal-";
+	VERSE "Then";
+bar
+
+//12
+1: 4fa; 8eg; 4; 8gb;
+2: 4cc+; 8; 4; 8;
+
+	VERSE "gainst the foe in";
+	VERSE "faith they, like a";
+	VERSE "va-tion's hel-met";
+	VERSE "on-ward from the";
+bar
+
+//13
+1: 4gb; 8fa; 4; 8fc+;
+2: 4fc+; 8; 4; 8fa;
+
+	VERSE "vales be-low, Let";
+	VERSE "whirl-wind's breath, Swept";
+	VERSE "on each head, With";
+	VERSE "hills of light, Our";
+bar
+
+//14
+1: 4ec+; 8eg; 4fa; 8fbn;
+2 1: 4g; 8gc+; 4gbn; 8g;
+2 2: 4g; 8s; 4; 8g;
+
+	VERSE "all our strength be";
+	VERSE "on o'er ev-ery";
+	VERSE "truth all girt a-";
+	VERSE "hearts with love a-";
+bar
+
+//15
+1 1: 4.c+~; 4c+; 8s;
+1 2: 4e; 8f; 4g; 8s;
+   phrase below 1: 1 til 4;
+2 1: 4.gslur; 4c+; 8s;
+2 2: 4c; 8d; 4e; 8s;
+   phrase below 2: 1 til 4;
+   mussym (9) above 1: 4 "ferm";
+   mussym (9) below 2: 4 "uferm";
+
+	VERSE "hurled;";
+	VERSE "field;";
+	VERSE "bout,";
+	VERSE "flame;";
+bar
+
+//16
+1: 4.s; 4s; 8gb;
+2: 4.s; 4s; 8cc+;
+
+	VERSE "Faith";
+	VERSE "The";
+	VERSE "The";
+	VERSE "We'll";
+bar
+
+//17
+1: 4fa; 8fc+; 4af+; 8fc+;
+2: 4fc+; 8fa; 4fc+; 8a-c+;
+
+	VERSE "is the vic-to-";
+	VERSE "faith by which they";
+	VERSE "earth shall trem-ble";
+	VERSE "van-quish all the";
+bar
+
+//18
+1: 4fe+; 8fd+; 4; 8;
+2: 4b-c+; 8b-b; 4; 8;
+   mussym (9) above 1: 4 "ferm";
+   mussym (9) below 2: 4 "uferm";
+
+	VERSE "ry, we know, That";
+	VERSE "con-quered death Is";
+	VERSE "'neath our stead, And";
+	VERSE "hosts of night, In";
+bar
+
+//19
+1 1: 4fc+; 8f; 4fa; 8eg;
+1 2: 4s; 8f; 4s; 8s;
+2: 4ca; 8da; 4cc+; 8cb;
+
+	VERSE "o-ver-comes the";
+	VERSE "still our shin-ing";
+	VERSE "ech-o with our";
+	VERSE "Je-sus' con-qu'ring";
+bar
+
+//20
+1 1: 4.f~; 4; 8r;
+1 2: 4.f~; 4; 8s;
+2: 4.f~a~; 4; 8r;
+
+	VERSE "world.";
+	VERSE "shield.";
+	VERSE "shout.";
+	VERSE "name.";
+dblbar
+
+//21
+CHORUS
+1 1: 4.c+~; 8; fd+; fa;
+1 2: 4r; 8r; 8f; s;s;
+2 1: 4r; 8r; 8fa; ; 8f;
+2 2: 4.s; 8;; f;
+
+	VERSE  4.; 4.s; "<>";
+	VERSE 4.; 8s; 8; 8; "Faith is the";
+	VERSE 4.s; 8; 8; 8s; "Faith is";
+bar
+
+//22
+1: 4ec+; 8eb; 4.;
+2: 4cg; 8; 4.;
+
+	VERSE  4.; 4.s; "<>";
+	VERSE "vic-to-ry!";
+bar
+
+//23
+1 1: 4.b~; 8; ec+; eg;
+1 2: [dist -8]4r; [dist -8]8r; e; s;;
+2: 4r; 8r; cg;; cc+;
+
+	VERSE 4.; 8s; 8; 8; "Faith is the";
+	VERSE 4s; 8s; 8; 8; 8s; "Faith is";
+bar
+
+//24
+1: 4fb; 8fa; 4.;
+2: 4fd+; 8fc+; 4.;
+
+	VERSE "vic-to-ry!";
+bar
+
+//25
+1: 4. fd+; 8; fe+; ff+;
+2: 4.b-b; 8; b-c+; b-d+;
+
+	VERSE "Oh, glo-ri-ous";
+bar
+
+//26
+1: 4af+; 8ac+; 4fc+; 8fb;
+2: 4fc+; 8fe&+; 4b-d+; 8b-d&+;
+
+	VERSE "vic-to-ry, That";
+bar
+
+//27
+1: 4fa; 8; 4eb; 8eg;
+2: 4cc+; 8cf; 4cg; 8cb;
+
+	VERSE "o-ver-comes the";
+bar
+
+//28
+1 1: 4.f~; 4f; 8s;
+1 2: 4.f~; 4f; 8s;
+2: 4.f~a~; 4; 8s;
+
+	VERSE "world.";
+endbar

@@ -1,0 +1,230 @@
+// Coded with Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Songs,
+//		A Choice Collection of
+//		Hymns and Tunes
+//		New and Old, For
+//		Gospel Meetings, Prayer Meetings
+//		Sunday Schools, etc.
+//		By P. P. Bliss,
+//		Cincinnati:
+//		Published by John Church & Co., 
+//		66 W. 24th St.
+//		Copyright 1874	
+//		Hymn no. 37
+
+// Transcribed by: Ted Gatza, Jr. 03/16/2011; Rev. 04/11/2020
+// HymnsToGod.org
+
+//********************************************
+
+top
+
+   title bold (19) "" "The Pearl of Greatest Price" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:Mat.\ 13:45-46 \(space)" ""
+   title (13) "John Mason, 1683" "" "P. P. Bliss"
+
+ 
+footer
+
+title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+//********************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4.s; 8db-; 8.db-; 16gb-;
+2 1: 4.s; 8g; 8.g; 16g;
+2 2: 4.s; 8g; 8.g; 16g;
+
+			lyrics 1: 4.s; 8; 8.; 16; "<1. >-1|I've found the";
+			lyrics 1: 4.s; 8; 8.; 16; "<2. >-1|Christ is my";
+			lyrics 1: 4.s; 8; 8.; 16; "<3. >-1|For he in-";
+			lyrics 1: 4.s; 8; 8.; 16; "<4. >-1|Christ is my";
+			lyrics 1: 4.s; 8; 8.; 16; "<5. >-1|Christ Je-sus";
+bar
+//2
+1: 4.bd; 8c+e; 8.bd; 16ac;
+2 1: 4.g; 8g; 8.g; 16g;
+2 2: 4.g; 8g; 8.g; 16g;
+
+			lyrics 1: "pearl of great-est";
+			lyrics 1: "Proph-et; Priest, and";
+			lyrics 1: "deed is Lord of";
+			lyrics 1: "peace; he died for";
+			lyrics 1: "is my all in";
+bar
+//3
+1 1: 2gb-; 4g;
+1 2: 2s; 4g;
+2 1: 2g; 4bg;
+2 2: 2g; 4s;
+	
+			lyrics 1: "price! My";
+			lyrics 1: "King; My";
+			lyrics 1: "lords, And";
+			lyrics 1: "me, For";
+			lyrics 1: "all, My";
+bar
+//4
+1: 4.af; 8af; 8.bg; 16c+a;
+2: 4.d+d; 8d+d; 8.d+d; 16d+d;
+
+			lyrics 1: "heart doth sing for";
+			lyrics 1: "Proph-et full of";
+			lyrics 1: "he the King of";
+			lyrics 1: "me he shed his";
+			lyrics 1: "com-fort and my";
+bar
+//5
+1: 4.bg; 8db-; 8.db-; 16gb-;
+2: 4.d+g; 8g; 8.g; 16g;
+2 2: 4.s; 8g; 8.g; 16g;
+
+			lyrics 1: "joy; And sing I";
+			lyrics 1: "light; My great High";
+			lyrics 1: "kings; He is the";
+			lyrics 1: "blood; And as my";
+			lyrics 1: "love; My life be-";
+bar
+//6
+1: 4.bd; 8c+e; 8.bd; 16ac;
+2 1: 4.g; 8g; 8.g; 16g;
+2 2: 4.g; 8g; 8.g; 16g;
+
+			lyrics 1: "must, for Christ is";
+			lyrics 1: "Priest be-fore the";
+			lyrics 1: "Sun of Right-eous-";
+			lyrics 1: "won-drous Sac-ri-";
+			lyrics 1: "low, and he shall";
+bar
+//7
+1: 2gb-; 4bg;
+2 1: 2g; 4d+g;
+2 2: 2g; 4s;
+
+			lyrics 1: "mine! Christ";
+			lyrics 1: "throne, My";
+			lyrics 1: "ness, With";
+			lyrics 1: "fice, Of-";
+			lyrics 1: "be My";
+bar
+newscore
+//8
+1: 4.af; 8af; 8.bg; 16c+#g;
+2 1: 4.d+a; 8d+a; 8.a; 16a;
+2 2: 4.s; 8s; 8.a; 16a;
+
+			lyrics 1: "shall my song em-";
+			lyrics 1: "King of heaven-ly";
+			lyrics 1: "heal-ing in his";
+			lyrics 1: "fered him-self to";
+			lyrics 1: "joy and crown a-";
+bar
+//9
+1: 4.d+f; 4.s;
+2: 4.ad; 4.s;
+
+			lyrics 1: "ploy.";
+			lyrics 1: "might.";
+			lyrics 1: "wings.";
+			lyrics 1: "God.";
+			lyrics 1: "bove.";
+dblbar
+//10
+1: 8d+f; 8.d+f; 16e+f; 4.s;
+2: 8d+d; 8.d+d; 16c+d; 4.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"I've found the";
+bar
+//11
+1: 4.d+g; 8bg; 8.bg; 16ad;
+2: 4.bg; 8d+g; 8.d+d; 16c+d;
+
+			lyrics 1: [c]"pearl of great-est";
+bar
+newscore
+//12
+1 1: 2gd; 4g;
+1 2: 2s; 4g;
+2: 2bg; 4bg;
+
+			lyrics 1: [c]"price! My";
+bar
+//13
+1: 4.af; 8af; 8.bg; 16c+a;
+2: 4.d+d; 8d+d; 8.d+d; 16d+d;
+
+			lyrics 1: [c]"heart doth sing for";
+bar
+//14
+1: 4.bg; 8d+g; 8.d+g; 16e+g;
+2: 4.d+g; 8bg; 8.bg; 16c+g;
+
+			lyrics 1: [c]"joy; And sing I";
+bar
+newscore
+//15
+1: 4.d+g; 8bg; 8.bg; 16af;
+2: 4.bg; 8d+g; 8.d+d; 16c+d;
+
+			lyrics 1: [c]"must, for Christ is";
+bar
+//16
+1: 2ge; 4c+g;
+2: 2be; 4e+c;
+
+			lyrics 1: [c]"mine! Christ";
+bar
+//17
+1: 4.bg; 8gd; 8.ad; 16gd;
+2: 4.d+d; 8bd; 8.c+d; 16bd;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: [c]"shall my song em-";
+bar
+//18
+1: 4.gd; 4.s;
+2: 4.bg-; 4.s;
+
+			lyrics 1: [c]"ploy.";
+endbar

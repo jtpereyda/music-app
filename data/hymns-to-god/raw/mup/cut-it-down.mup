@@ -1,0 +1,234 @@
+// !Mup vs. 6.6 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:
+//	Gospel Hymns No. 3
+//	Edited by Ira D. Sankey, James MeBganahan,
+//	and Geo. C. Stebbins
+//	Published by Biglow % Main
+//	76 East Ninth Street, New York
+//	73 Randolph Street, Chicago
+//	John Church % Co.
+//	66 West Fourth Street, Cincinnati
+//	Root % Son's Music Co., Chicago
+//	Copyright 1878
+//	Hymn no. 17
+			
+// Transcribed by:
+//	Ted Gatza, Jr. 03/24/2019
+
+// Revisions:
+//	09/16/2022
+
+// HymnsToGod.org
+
+//=====================
+//Letter Page Format
+
+top
+	title bold (19) "" "Cut It Down" ""
+	title (2)""
+	title (11) "" "\f(TI)Cut it down, why cumbereth it the ground? - Luke 13:7" ""   
+	title (11) "E \(flat) - 4 - MI" "" ""
+	title (13) "P. P. Bliss" "" "P. P. Bliss"
+ 
+footer
+	title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scale=.9
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=====================
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+	mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+	mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+	mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+	mussym (10) below 2: COUNT "uferm"; @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+//=====================
+
+//1
+1: 4eg;; 2df;
+2: eb;; 2b-b;
+	lyrics above 1: 4; 4s; 2s; "\f(TI)Slow";
+	VS "< \f(TI) \s(11) (Justice)\f(PV) \s(PV) 1. >-1|Cut it down,";
+	VS "< \f(TI) \s(11) (Mercy)\f(PV) \s(PV) 2. >-1|One year more,";
+	VS "< \f(TI) \s(11) (Justice)\f(PV) \s(PV) 3. >-1|Cut it down,";
+	VS "< \f(TI) \s(11) (Mercy)\f(PV) \s(PV) 4. >-1|One year more,";
+	VS "<5. >-1|Still it stands,";
+bar
+
+//2
+1: 4ce;; 4.b-nd; 8;
+2: 4cg;; 4.g-g; 8;
+
+	VS "cut it down, Spare";
+	VS "one year more, Oh";
+	VS "cut it down, And";
+	VS "one year more, For";
+	VS "still it stands, A";
+bar
+
+//3
+1 1: 4c; fa; eg; f;
+1 2: 4c; s;; e;
+2: 4ea-; c+f-; bg-; c+a-;
+
+	VS "not the fruit-less";
+	VS "spare the fruit-less";
+	VS "burn the worth-less";
+	VS "mer-cy spare the";
+	VS "fair, but fruit-less";
+bar
+
+//4
+1: 2eg slur; 4df; 8r; 8df;
+2: 2.bb-; 8r; 8bb-;
+
+	VS "tree! It";
+	VS "tree! Be-";
+	VS "tree! For";
+	VS "tree! An-";
+	VS "tree! The";
+bar
+
+//5
+1: 4df; db;can;db;
+2 1: 4bb-;; f; bf;
+2 2: 4s;; f; s;
+
+	VS "spreads a harm-ful";
+	VS "hold its branch-es";
+	VS "oth-er use the";
+	VS "oth-er year of";
+	VS "Mas-ter, seek-ing";
+bar
+
+//6
+1: 4.fd+; 8ec+; 4.db; 8df;
+2: 4.fb; 8fan; 4.b-b; 8;
+
+	VS "shade a-round, It";
+	VS "broad and green, Its";
+	VS "soil pre-pare, Some";
+	VS "care be-stow, On";
+	VS "fruit there-on Has";
+bar
+//7
+1: 4df; db; can; db;
+2 1: 4b-b;; f; fb;
+2 2: 4s;; f; s;
+
+	VS "spoils what else were";
+	VS "spread-ing leaves have";
+	VS "oth-er tree will";
+	VS "its fair form some";
+	VS "come\(emdash) but griev'd at";
+bar
+
+//8
+1 1: 4.fd+; 8ec+; 4.db; 8b;
+1 2: 4.s; 8; 4.; 8a;
+2: 4.fb; 8fan; 4.b-b; 8b-d+;
+
+	VS "use-ful ground, No";
+	VS "hope-ful been, Some";
+	VS "flour-ish there, And";
+	VS "fruit may grow, If";
+	VS "find-ing none, Now";
+bar
+
+//9
+1: 4gb; ge+; 4.gb; 8fbn;
+2: 4ee+;; 4.gd+; 8;
+
+	VS "fruit for years on";
+	VS "fruit there-on may";
+	VS "in my vine-yard";
+	VS "not\(emdash) then lay the";
+	VS "speaks to Jus-tice\(emdash)";
+bar
+
+//10
+1 1: 4ec+;; 2f;
+1 2: 4s;; 2f;
+2: 4ac+;; 2;
+
+	VS "it I've found,";
+	VS "yet be seen,";
+	VS "much fruit bear,";
+	VS "cumb'-er low,";
+	VS "Mer-cy flown\(emdash)";
+bar
+
+//11
+1 1: 4f; eng; fa; r;
+1 2: 4f; s;;;
+2: 4ac+; gc+; fc+; r;
+
+	VS "Cut it down,";
+	VS "One year more,";
+	VS "Cut it down,";
+	VS "One year more,";
+	VS "Cut it down,";
+bar
+
+//12
+1: 4bd;; 2b-e;
+2: 4bb-;; 2eg;
+
+	VS "cut it down.";
+	VS "one year more.";
+	VS "cut it down.";
+	VS "one year more.";
+	VS "cut it down.";
+endbar

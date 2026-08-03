@@ -1,0 +1,202 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1895
+//		Hymn No.: 242
+//		
+// Transcribed by: Ted Gatza, Jr. 10/24/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "He Will Keep Me" ""
+   title (2)""
+   title (11) "F - 3 - DO" "\s(17)\f(TI)\:For\ thou\ art\ my\ rock\ and\ \|my\ fortress;\ Therefore\ for thy\ name's\ sake\ lead\ me\ \|and\ guide\ me.\ -\ Ps.\ 31:3" ""   
+   title (13) "Kate Ulmer" "" "M. L. McPhail, 1900"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8.fc; 16gc; 2s;
+2: 8.af; 16bf; 2s;
+
+
+			VERSE "<1. >-1|O'er the";
+			VERSE "<2. >-1|Tho' thro'";
+			VERSE "<3. >-1|When up-";
+			VERSE "<4. >-1|Joy or";
+bar
+//2
+1: 4af; fc; {8db- bm; fd ebm; db;}3;
+2: 4c+f; af; {fb-; 8fd;}3;
+
+			VERSE 4;; {; 8;}3; "rug-ged path of";
+			VERSE 4;; {; 8;}3; "un-known paths He";
+			VERSE 4;; {; 8;}3; "on the mount re-";
+			VERSE 4;; {; 8;}3; "sor-row, pain or";
+bar
+//3
+1: 4ca-; fc; 8.af; 16bg;
+2 1: 4f; af; 8.c+f; 16;
+2 2: 4f;s; 8.; 16;
+
+			VERSE "dut-y, Where my";
+			VERSE "takes me, I can";
+			VERSE "joic-ing, Thrill'd with";
+			VERSE "pleas-ure, On the";
+bar
+//4
+1 1: 4c+a; af; {8f bm; a ebm; 8f;}3;
+1 2: 4s; s; {4f; 8;}3;
+2 1: 4f+f; c+f; {8a bm; c+ ebm; af;}3;
+2 2: 4s; s; {4f; 8f;}3;
+
+			VERSE 4;; {; 8;}3; "feet would fear to";
+			VERSE 4;; {; 8;}3; "nev-er go a-";
+			VERSE 4;; {; 8;}3; "bound-less love and";
+			VERSE 4;; {; 8;}3; "mount or in the";
+bar
+//5
+1: 2ge; 8.fc; 16gc;
+2: 2c+c; 8.af; 16bf;
+
+			VERSE "tread, By the";
+			VERSE "stray, Not a";
+			VERSE "peace, There a";
+			VERSE "vale, I am";
+bar
+//6
+1: 4af; fc; {8db- bm; 8fd ebm; db-;}3;
+2: 4c+f; 4af; {4fb-; 8fd;}3;
+mussym (9) above 1: 1 "sign";
+
+			VERSE 4;; {; 8;}3; "lov-ing hand of";
+			VERSE 4;; {; 8;}3; "cross can o-ver-";
+			VERSE 4;; {; 8;}3; "still doth go be-";
+			VERSE 4;; {; 8;}3; "His and He will";
+			lyrics below 2: "<\f(TX)D.S. -\f(PV) >-4|days are crowned with";
+bar
+//7
+1: 4ca-; fc; 8.af; 16bg;
+2 1: 4f; af; 8.c+f; 16c+f;
+2 2: 4f; s; 8.; 16;
+
+			VERSE "Je-sus, Gen-tly";
+			VERSE "come me, While the";
+			VERSE "fore me, High-est";
+			VERSE "keep me, His is";
+			lyrics below 2: 4; ; 8.; 16; "prais-es, Songs He";
+bar
+//8
+1: 8.c+a; 16bg; 4af; ge;
+2: 8.f+f; 16d+b-; 4c+c; bc;
+
+			VERSE "I am on-ward";
+			VERSE "Sav-ior is my";
+			VERSE "rap-ture to in-";
+			VERSE "love that can-not";
+			lyrics below 2: "gives me in the";
+bar
+//9
+1 1: 2f; 4s;
+1 2: 2f; 4s;
+2: 2af; 4s;
+ital (13) above 1: 1 "Fine";
+
+			VERSE "led.";
+			VERSE "stay.";
+			VERSE "crease.";
+			VERSE "fail.";
+			lyrics below 2: "night.";
+dblbar
+//10
+1: 8.d+f; 16; 2s;
+2: 8.bb-; 16; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"As I";
+bar
+//11
+1: 4.d+f; 8; 8.s; 16s;
+2: 4.bb-; 8; 8.s; 16s;
+
+			VERSE [c]"fol-low";
+invisbar
+newscore
+
+1: 4.s; 8; 8.c+f; 16af;
+2: 4.s; 8; 8.af; 16c+f;
+
+			VERSE [c]"where He";
+
+bar
+//12
+1: 4c+f; ac; 8.fd; 16fd;
+2 1: 4af; f; 8.ad; 16;
+2 2: 4s; f; 8.s; 16;
+
+			VERSE "lead-eth, I am";
+bar
+//13
+1 1: 4.fd; 8f; 8.g; 16af;
+1 2: 4.s; 8f; 8.; 16s;
+2: 4.ad; 8; 8.bng-; 16bb-;
+
+			VERSE "kept in God's own";
+bar
+//14
+1: 2ge; 8.af; 16;
+2: 2cc+; 8.c+f; 16;
+ital (13) above 1: 3.825 "D.S.";
+
+			VERSE "light, All my";
+endbar

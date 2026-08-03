@@ -1,0 +1,225 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Kingdom of Song
+//	 	T. M. Bowdish, editor
+//		Copyright 1900 by the W. W. Whitney Co.
+//		hymn no. 4
+
+// Transcribed by: Ted Gatza, Jr. 01/24/2010
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Living For Christ" ""
+   title (2)""
+title (11) "B \(flat) - 2 - MI" "\f(TI)We should live soberly, righteously, and godly. - Tit. 2:12"""
+   title (13) "WM. H. Loomis" " " "Chas. Edw. Pollock"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1: 4.s; 4s; 16db-<c>; 16ec;
+2: 4.s; 4s; 16fb- tie; 16fb-;
+phrase above 1: 6 til 7;
+
+
+			lyrics 1: 4.s; 4s; 16; 16; "<1. >-1|In this";
+			lyrics 1: 4.s; 4s; 16; 16s; "<2. >-1|A";
+			lyrics 1: 4.s; 4s; 16; 16; "<3. >-1|There are";
+bar
+//2
+1 1: 8fd tie; 8fd; 8fd; 8fd<e>; 8ge; 8ae;
+2: 8bb- tie; 8bb-; 8bb-; 8bb- tie; 8bb-; 8bb-;
+phrase above 1: 4 til 5;
+
+			lyrics 1: 4; 8; 8; 8; 8; "life of pit-falls and";
+			lyrics 1: 4; 8; 8; 8; 8; "kind word lov-ing-ly";
+			lyrics 1: 8; 8; 8; 4; 8; "words that should be un-";
+bar
+//3
+1 1: 4.bd; 4fd; 8fd;
+1 2: 4.s; 4s; 8r;
+2: 4.bb-; 4bb-; 8bb-;
+
+			lyrics 1: 4.; 4; 8s; "dan-gers";
+			lyrics 1: "spo-ken May";
+			lyrics 1: "spo-ken, And";
+bar
+//4
+1: 8ge; 8af; 8s; 8s; 8s; 8s;
+2: 8be; 8be; 8s; 8s; 8s; 8s;
+
+			lyrics 1: 8; 8; 8s; 8s; 8s; 8s; "We should";
+			lyrics 1: 8; 8; 8s; 8s; 8s; 8s; "cheer a";
+			lyrics 1: 8; 8; 8s; 4s; 8s; "deeds that";
+
+invisbar
+newscore
+
+1: 8s; 8s; 8bg; 8c+g~; 8bg; 8ge;
+2: 8s; 8s; 8be; 8be tie; 8be; 8be;
+phrase above 1: 4 til 5;
+
+
+			lyrics 1: 8s; 8s; 8; 8; 8; 8; "be ten-der and";
+			lyrics 1: 8s; 8s; 8; 8; 8; 8; "faint heart by the";
+			lyrics 1: 8s; 8s; 8; 4; 8; "were best un-";
+
+
+bar
+//5
+1: 4.fd tie; 4fd; 16fd tie; 16fd;
+2: 4.bb- tie; 4bb-; 16bb- tie; 16bb-;
+
+			lyrics 1: 4.; 4s; 16; 16; "true; Ev-er";
+			lyrics 1: "way; Let";
+			lyrics 1: "done. If";
+bar
+//6
+1: 8fd~; 8bd; 8bd; 8bd bm; c+e ebm; 8d+f;
+2: 8bb- tie; 8bb-; 8bb-; 4bb-; 8bb-;
+phrase above 1: 1 til 2;
+
+			lyrics 1: 8; 8; 8; 4; 8; "try-ing to let our";
+			lyrics 1: 8; 8; 8; 4; 8; "us not be one day";
+			lyrics 1: 8; 8; 8; 4; 8; "we would be like the";
+bar
+newscore
+//7
+1: 4.c+g; 4ge; 16e+g; 16e+g;
+2: 4.be; 4be; 16be; 16be;
+
+			lyrics 1: "light shine, And be";
+			lyrics 1: "Christ-ians, But be";
+			lyrics 1: "Sav-iour And a";
+bar
+//8
+1: 8d+f bm; 8c+e ebm; 8bd; 8ac bm; 8bd ebm; 8c+e;
+2 1: 8b bm; 8a ebm; 8bf; 8c+ bm; 8b ebm; 8af;
+2 2: 4f; 8s; 4f; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "Christ-ians through and";
+			lyrics 1: 4; 8; 4; 8; "Christ-like ev-'ry";
+			lyrics 1: 4; 8; 4; 8; "crown with stars be";
+bar
+//9
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			lyrics 1: "through.";
+			lyrics 1: "day.";
+			lyrics 1: "won.";
+dblbar
+newscore
+//10
+1: 4.s; 4s; 16bf; 16bf;
+2: 4.s; 4s; 16bd; 16bd;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "We should";
+bar
+//11
+1: 8bg; 8bg; 8bg; 8bg bm; 8af ebm; 8ge;
+2: 8be; 8be; 8be; 4be; 8be;
+
+			lyrics 1: 8; 8; 8; 4; 8; "go where our Mas-ter";
+bar
+//12
+1: 4.fd; 4bd; 8bf;
+2: 4.bb-; 4fb-; 8bd;
+
+			lyrics 1: "calls us, And";
+bar
+//13
+1 1: 8c+f; 8c+f; 8s; 8s; 8s; 8s;
+1 2: 8s; 8s; 8s; 4s; 8s;
+2 1: 8af; 8af; 8s; 8s; 8s; 8s;
+2 2: 8s; 8s; 8s; 4s; 8s;
+
+			lyrics 1: 8; 8; 8s; 4s; 8s; "do what";
+
+invisbar
+newscore
+
+1 1: 8s; 8s; 8c+f; 8c+ bm; 8b ebm; 8c+f;
+1 2: 8s; 8s; 8s; 4f; 8s;
+2 1: 8s; 8s; 8af; 8a bm; 8g ebm; 8af;
+2 2: 8s; 8s; 8s; 4f; 8s;
+
+			lyrics 1: 8s; 8s; 8; 4; 8; "he'd have us";
+
+bar
+//14
+1: 4.d+f tie; 4d+f; 8r;
+2 1: 4.b tie; 4b; 8r;
+2 2: 4.b tie; 4b; 8s;
+
+			lyrics 1: "do;";
+bar
+//15
+1: 8ge; 8ge; 8ge; 8bg; 8af; 8ge;
+2: 8be; 8be; 8be; 8be; 8be; 8be;
+
+			lyrics 1: "Trust-ing for strength in him";
+bar
+newscore
+//16
+1: 4.fd; 4bd; 16bd; 16bd;
+2: 4.bb-; 4fb-; 16fb-; 16fb-;
+
+			lyrics 1: "al-ways, And the";
+bar
+//17
+1: 8ac; 8bd; 8c+e; 8c+e; 8bd; 8ac;
+2 1: 8f; 8f; 8f;8f; 8f; 8f;
+2 2: 8f; 8f; 8f; 8f; 8f; 8f;
+
+			lyrics 1: "grace that will car-ry us";
+bar
+//18
+1: 4.bd tie; 4bd; 8s;
+2: 4.fb- tie; 4fb-; 8s;
+
+			lyrics 1: "through.";
+endbar

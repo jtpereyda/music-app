@@ -1,0 +1,252 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Friend'sHymnal
+//		A Collection of Hymns and Tunes
+//		for the Public Worship of the Society
+//		Funk and Wagnalls Co.
+//		44-60 East Twenty-Third Street, New York
+//		Copyright 1908
+
+// Transcribed by: Ted Gatza, Jr. 10/01/2009
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (18) "" "'Tis Finished!, So The Saviour Cried" ""
+   title (2) " "
+   title ital (10) "he said, It is finished: and he bowed his head, and gave up his spirit. - Jn. 19:30"
+   title (9) "D minor - 4 - DO" "" ""
+   title "Sameul Stennett" "J. B. Dykes"
+bottom
+   title (10) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4 	
+	key=1&
+	packexp = 0.0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=.8
+	scoresep=6,6
+	scale = .9
+	lyricssize = 14
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.250
+	bottommargin=.250
+
+staff 2
+	key=1&
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+// 1
+1: 2fd; 4fd; 4ge;
+2: 2ad; 4ad; 4c+c;
+
+			lyrics 1: "<1. >-1|`Tis fin-ished!";
+			lyrics 1: "<2. >-1|`Tis fin-ished!";
+			lyrics 1: "<3. >-1|`Tis fin-ished!";
+			lyrics 1: "<4. >-1|`Tis fin-ished!";
+
+bar
+//2
+1: 2.af; 4d+f;
+2: 2. c+f; 4bb-;
+
+			lyrics 1: "so the";
+			lyrics 1: "all that";
+			lyrics 1: "this My";
+			lyrics 1: "let the";
+bar
+
+//3
+1 1: 2c+; 2b;
+1 2: 4f <c>; 4c; 4d<e>; 4e;
+2 1: 2.a; 4g;
+2 2: 2c; 2c;
+
+			lyrics 1: "Sav-iour";
+			lyrics 1: "heav'n de-";
+			lyrics 1: "dy-ing";
+			lyrics 1: "joy-ful";
+bar
+
+//4
+1: 1af;
+2: 1af;
+
+			lyrics 1: "cried";
+			lyrics 1: "creed";
+			lyrics 1: "groan";
+			lyrics 1: "sound";
+dblbar
+
+//5
+1: 2af; 4ae; 4bd;
+2: 2fd; 4fc; 4fb-;
+
+			lyrics 1: "And meek-ly";
+			lyrics 1: "And all the";
+			lyrics 1: "Shall sins of";
+			lyrics 1: "Be heard thro'";
+bar
+
+//6
+1 1: 2c+c; 2f;
+1 2: 2s; 2f;
+2 1: 4f<g>; 4g; 4a<b>; 4b;
+2 2: 2a-; 2d;
+
+			lyrics 1: "bowed His";
+			lyrics 1: "an-cient";
+			lyrics 1: "ev-ery";
+			lyrics 1: "all the";
+bar
+
+//7
+1: 2af; 2ge;
+2 1: 2.c+; 4b;
+2 2: 2c; 2c;
+
+			lyrics 1: "head and";
+			lyrics 1: "pro-phets";
+			lyrics 1: "kind a-";
+			lyrics 1: "na-tions";
+bar
+
+//8
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			lyrics 1: "died:";
+			lyrics 1: "said";
+			lyrics 1: "tone;";
+			lyrics 1: "round;";
+dblbar
+
+//9
+1: 4ac; 2.s;
+2: 4af; 2.s;
+
+			lyrics 1: "'Tis";
+			lyrics 1: "Is";
+			lyrics 1: "Mil-";
+			lyrics 1: "'Tis";
+bar
+
+//10
+1: 2.ac; 4ad;
+2: 2.af; 4af;
+
+			lyrics 1: "fin-ished!";
+			lyrics 1: "now ful-";
+			lyrics 1: "lions shall";
+			lyrics 1: "fin-ished!";
+bar
+
+//11
+1: 2gd; 2ac#;
+2: 2be; 2aa-;
+
+			lyrics 1: "yes, the";
+			lyrics 1: "filled, as";
+			lyrics 1: "be re-";
+			lyrics 1: "let the";
+bar
+
+//12
+1 1: 2fd; 2g;
+1 2: 2s; 4e<d>; 4d;
+2: 2ad; 2bg-;
+
+			lyrics 1: "race is";
+			lyrics 1: "was de-";
+			lyrics 1: "deemed from";
+			lyrics 1: "ech-o";
+bar
+
+//13
+1: 1ec#;
+2: 1a;
+
+			lyrics 1: "run,";
+			lyrics 1: "signed,";
+			lyrics 1: "death,";
+			lyrics 1: "fly";
+bar
+ 
+//14
+1 1: 2d; 4d; 4d;
+1 2: 2d; 4d; 4d;
+2 1: 2d; 4d; 4d;
+2 2: 2d; 4d; 4d;
+
+			lyrics 1: "The bat-tle";
+			lyrics 1: "In Me, the";
+			lyrics 1: "By this My";
+			lyrics 1: "Thro' heav'n and";
+bar
+
+//15
+1 1: 2.a; 4gd;
+1 2: 2.a; 4s;
+2 1: 2.a; 4bg-;
+2 2: 2.a; 4s;
+
+			lyrics 1: "fought, the";
+			lyrics 1: "Sav-iour";
+			lyrics 1: "last ex-";
+			lyrics 1: "hell, thro'";
+bar
+
+//16
+1: 2fd; 2ec#;
+2: 2aa-; 2ga-;
+
+			lyrics 1: "vic-t'ry";
+			lyrics 1: "of man-";
+			lyrics 1: "spir-ing";
+			lyrics 1: "earth and";
+bar
+
+//17
+1 1: 1d;
+1 2: 1d;
+2: 1fd;
+
+			lyrics 1: "won.";
+			lyrics 1: "kind.";
+			lyrics 1: "breath.";
+			lyrics 1: "sky.";
+endbar
+
+//18
+1: 1db-;
+2: 1gg-;
+			lyrics 1: 1; "<>";
+			lyrics 1: 1; "<>";
+			lyrics 1: 1; "<>";
+			lyrics 1: "\f(TI)A-";
+bar
+
+//19
+1: 1da-;
+2: 1f#d;
+
+			lyrics 1: 1; "<>";
+			lyrics 1: 1; "<>";
+			lyrics 1: 1; "<>";
+			lyrics 1: "men.";
+endbar

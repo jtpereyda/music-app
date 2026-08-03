@@ -1,0 +1,315 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Gospel Pilot Hymnal
+//		A Collection of New and Standard Hymns
+//		for Sunday Schools, Young Peoples' Societies,
+//		Gospel and Social Meetings
+//		Edited By D. B. Towner and French E. Oliver
+//		Published by: Towner and Oliver
+//		80 Institute Place, Chicago
+//		Copyright 1899
+//		Hymn No.: 18
+//		
+// Transcribed by: Ted Gatza, Jr. 11/29/2011 rev. 04/17/14
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Search The Scriptures" ""
+   title (2)""
+   title (11) "F - 3 - DO" "\s(17)\f(TI)\:Ye\ search\ the\ scripture\^s,...\ and\ these\ are\ they which\ bear\ witness\ \|of\ me;\ -\ Jn.\ 5:39" ""   
+   title (13) "Mary B. Wingate" "" "D. B. Towner, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1 1: 8.f; 16g; 2s;
+1 2: 8.f; 16; 2s;
+2: 8.af; 16bf; 2s;
+			VERSE "<1. >-1|Search the";
+			VERSE "<2. >-1|Search the";
+			VERSE "<3. >-1|Search the";
+			VERSE "<4. >-1|Search the";
+bar
+//2
+1: 4.af; 8c+f; 8.bf; 16af;
+2: 4.c+f; 8af; 8.d+f; 16c+f;
+
+			VERSE "scrip-tures! search them";
+			VERSE "scrip-tures! search them";
+			VERSE "scrip-tures! won-drous";
+			VERSE "scrip-tures! learn of";
+bar
+//3
+1: 4af; ge; 8ec; fc;
+2: 4c+c;; 8gc; ac;
+
+			VERSE "dai-ly, Feast-ing";
+			VERSE "ev-er, Saf-est";
+			VERSE "treas-ures In the";
+			VERSE "Je-sus, Claim the";
+bar
+//4
+1 1: 8gc; c; 4.ac; 8ge;
+1 2: 8s; c; 4.s; 8s;
+2: 8bc; ec; 4.fc; 8bc;
+
+			VERSE "on the \"Bread of";
+			VERSE "guide of age or";
+			VERSE "store-house thou shalt";
+			VERSE "rich-es of His";
+bar
+//5
+1 1: 2f; 8.f; 16g;
+1 2: 2f; 8.f; 16f;
+2: 2af; 8.; 16bf;
+
+			VERSE "Life.\" Gain-ing";
+			VERSE "youth, Learn-ing";
+			VERSE "find, Strength and";
+			VERSE "grace, Till the";
+bar
+//6
+1: 4.af; 8c+f; 8.bf; 16af;
+2: 4.c+f; 8af; 8.d+f; 16c+f;
+
+			VERSE "strength in hours of";
+			VERSE "as the years roll";
+			VERSE "heal-ing for the";
+			VERSE "light of life e-";
+bar
+//7
+1: 4af; 4ge; 8ge; 8c+g;
+2: 4c+c;; 8; c+e;
+
+			VERSE "weak-ness, Find-ing";
+			VERSE "o'er thee Les-sons";
+			VERSE "bod-y, \"Hid-den";
+			VERSE "ter-nal Shines and";
+bar
+//8
+1: 4.bnf; 8c+f; 8.d+f; 16bf;
+2: 4.d+g; 8c+g; 8.bng; 16d+g;
+
+			VERSE "rest in toil and";
+			VERSE "rare of love and";
+			VERSE "Man-na\" for the";
+			VERSE "glows on ev-'ry";
+bar
+//9
+1: 2c+e; 8.d+e; 16c+e;
+2: 2c+c;  8.bc; 16ac;
+
+			VERSE "strife. Naught of";
+			VERSE "truth. Search the";
+			VERSE "mind. Search the";
+			VERSE "face. Through the";
+bar
+//10
+1: 4.be; 8ge; 8.c+e; 16be;
+2: 4.gc; 8c+c; 8.gc; 16c+c;
+
+			VERSE "earth-ly wit and";
+			VERSE "scrip-tures! fount of";
+			VERSE "scrip-tures! doubts will";
+			VERSE "\"Val-ley of the";
+bar
+//11
+1: 4af; c+f; 8.d+e; 16c+e;
+2: 4c+f; af; 8.bc; 16ac;
+
+			VERSE "wis-dom For one";
+			VERSE "wis-dom, A-ble";
+			VERSE "van-ish, And thy";
+			VERSE "shad-ow\" Let it";
+bar
+//12
+1: 4.be; 8ge; 8.c+e; 16be;
+2: 4.gc; 8c+c; 8.; 16;
+
+			VERSE "mo-ment can com-";
+			VERSE "still to make thee";
+			VERSE "soul shall tru-ly";
+			VERSE "light thy lone-ly";
+bar
+newscore
+//13
+1 1: 2af; 8.af; 16a;
+1 2: 2s; 8.; 16g;
+2: 2c+f; 8.c+f; 16 c#+e;
+
+			VERSE "pare With the";
+			VERSE "wise Un-to";
+			VERSE "know Thou art";
+			VERSE "way, Till the";
+bar
+//13
+1: 4.af; 8; 8.be; 16;
+2: 4.d+d; 8d+f; 8.c+g; 16;
+
+			VERSE "\"Word of Life\" e-";
+			VERSE "full and free sal-";
+			VERSE "saved and saved for-";
+			VERSE "ear-ly glow of";
+bar
+//14
+1 1: 4bne; c+e; 8f; fc;
+1 2: 4s;; 8f; 8s;
+2: 4c+g#; c+a; 8; af;
+
+			VERSE "ter-nal, With its";
+			VERSE "va-tion, More and";
+			VERSE "ev-er! Per-fect";
+			VERSE "morn-ing Bright-ens";
+bar
+newscore
+//15
+1 1: 8gc; c; 4.ac; 8gc;
+1 2: 8s; c; 4.s; 8s;
+2: 8ge; ec; 4.fc; 8bc;
+
+			VERSE "pre-cepts, rich and";
+			VERSE "more its full-ness";
+			VERSE "cleans-ing, White as";
+			VERSE "to the per-fect";
+bar
+//16
+1: 2fc; 4s;
+2: 2af; 4s;
+
+			VERSE "rare.";
+			VERSE "prize.";
+			VERSE "snow.";
+			VERSE "day.";
+dblbar hidechanges
+score time=4/4
+music
+midi all: 0 "tempo=100";
+//17
+1 1: 8.c+; 16; 2.s;
+1 2: 4r; 2.s;
+2 1: 8.c+; 16; 2.s;
+2 2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 4; 2.s; "<>";
+			VERSE "Search the";
+bar
+//18
+1 1: 2c+ tie; 8; af; 8.s; 16s;
+1 2: [dist -4]4r; 8.a; 16; 8; 8s; 8.s; 16s;
+2 1: 2c+ tie; 8; af; 8.s; 16s;
+2 2: [dist 0]4r; 8.f; 16; 8; s; 8.; 16;
+
+			VERSE  2; 2s; "<>";
+			VERSE "scrip-tures!";
+			VERSE 4s; 8.; 16; 8; 8; 8.s; 16s; "Search the scrip-tures!";
+invisbar
+newscore
+
+1 1: 2s; 8s; s; 8.g; 16f;
+1 2: 4s; 8.s; 16s; 8s; 8s; 8.s; 16s;
+2 1: 2s; 8s; s; 8.g; 16f;
+2 2: 4s; 8.s; 16s; 8s; s; 8.; 16;
+
+			VERSE "Search the";
+//			VERSE 4s; 8.; 16; 8; 8; 8.s; 16s; "Search the
+
+bar
+//19
+1 1: 4c+c; 2c; 8ge; 8af;
+1 2: 4s; 2c; 8s; 8s;
+2 1: 4c+c; 2c; 8c+; c+a;
+2 2: 4s; 2c; 8b; s;
+
+			VERSE "scrip-tures! For 'tis";
+bar
+//20
+1: 8.bg; 16; 8be; ge; 4c+f; bg;
+2: 8.c+g; 16c+e; 8c+c; bc; 4ac; c+e;
+
+			VERSE "they which tes-ti-fy of";
+bar
+//21
+1 1: 2.af; 8.c+; 16c;
+1 2: 2.s; [dist -4]4r;
+2 1: 2.c+f; 8.c+; 16;
+2 2: 2.s; [dist 0]4r;
+
+			VERSE "me; Search the";
+bar
+//22
+1 1: 2c+ tie; [up]8; 8af; 8.g; 16f;
+1 2: [dist -4]4r; 8.a; 16; 8; s; 8.g; 16f;
+2 1: 2c+ tie; 8; af; 8.g; 16f;
+2 2: [dist 0]4r; 8.f; 16; 8; s; 8.g; 16f;
+
+			VERSE "scrip-tures! Search the";
+			VERSE 4s; 8.; 16; 8; 8; 8.s; 16s; "Search the scrip-tures!";
+bar
+//23
+1 1: 4c+c; 2c; 8d+e; [up]e+g;
+1 2: 4s; 2c; 8s;;
+2 1: 4c+c; 2c; 8c+;;
+2 2: 4s; 2c; 8b;;
+
+			VERSE "scrip-tures! For in";
+bar
+//24
+1: 8.f+f; 16; 8c+f; 8af; 4.c+e; 8;
+2: 8.c+a; 16af; 8; c+f; 4.bc; 8;
+
+			VERSE "them ye find the way of";
+bar
+//25
+1 1: 2.f;4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			VERSE "Life.";
+endbar

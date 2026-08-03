@@ -1,0 +1,325 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymns, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church
+//	E. L. Jorgenson, Compiler
+//	Word and Work
+//	Louisville, Kentucky
+//	Copyright 1921
+//	Hymn No.: 82	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 12/22/2023
+
+//	Revisions:
+//		01/04/2024 [1] Corrected public domain statement.
+
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (21) "" "Hear The Sweet Voice of Jesus Say" ""
+   title (2)""
+   title (11) "" "\f(TI)Jesus saith unto him, I am the way, and the truth, and the life:"""
+   title (11) "" "\f(TI)no one cometh unto the Father but by me. - Jm. 14:6"""
+   title (12) "E \(flat) - 3 - MI" "" ""
+   title (13) "Charles H. Gabriel" "" "Charles H. Gabriel, 1890"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=9/8
+	key=e&
+
+
+staff 2
+	key=e&
+	clef=bass
+
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=110";
+
+//=========================
+
+//Verse
+
+//1
+1 1: 2.s; 8eg; f; e;
+1 2: 2.s; 8; e; ;
+2: 2.s; 8eb; ea; eg;
+
+
+	VS "<1. >-1|Hear the sweet";
+	VS "<2. >-1|Cast-ing your";
+	VS "<3. >-1|O-pen, for";
+bar
+
+//2
+1 1: 4.gb tie; 4; 8ac+; 4gb; 8e;
+1 2: 2.s; 4; 8e;
+2: 4.ee+ tie; 4; 8; 4; 8eg;
+
+	VS "voice of Je-sus";
+	VS "heav-y bur-den";
+	VS "you, the pearl-y";
+bar
+
+//3 
+1 1: 2.eg; 8s; ; ;
+1 2: 2.s; 8s; ; ;
+2: 2.eb; 8s; ; ;
+
+	VS "say,";
+	VS "down,";
+	VS "gate;";
+invisbar
+1 1: 2.s; 8eg; f; e;
+1 2: 2.s; 8; e; ;
+2: 2.s; 8eb; ea; eg;
+
+	VS "\"Come un-to";
+	VS "Come to the";
+	VS "Loved ones for";
+bar
+
+//4
+1: 4.df tie; 4; 8fa; ac+ bm; gb ebm; fa;
+2: 4.b-b tie; 4; 8; 4; 8; 
+
+	VS21 "me, I am the";
+	VS21 "cross, the world may";
+	VS21 "you now watch and";
+bar
+
+//5
+1: 2.eg; 4.s;
+2: 2.eb; 4.s;
+
+	VS "way;\"";
+	VS "frown;";
+	VS "wait;";
+bar
+
+//6
+SIGN (1);
+1 1: 2.s; 8eg; f; e;
+1 2: 2.s; 8; e; ;
+2: 2.s; 8eb; ea; eg;
+
+	VS "Hark-en, the";
+	VS "Yet you shall";
+	VS "Ter-ri-ble";
+	BVS "<\f(TX)D. S. -\f(PV) >-4|He's the same";
+bar
+
+//7
+1 1: 4.gb tie; 4; 8ac+; 4gb; 8e;
+1 2: 2.s; 4; 8e;
+2: 4.ee+ tie; 4; 8; 4; 8eg;
+
+	VS "lov-ing call o-";
+	VS "wear a glo-rious";
+	VS "tho't, to cry \"too";
+	BVS "lov-ing Sav-ior";
+bar	
+
+//8
+1 1: 2.eg; 8s; ; ;
+1 2: 2.s; 8s; ; ;
+2: 2.eb; 8s; ; ;
+
+	VS "obey,";
+	VS "crown,";
+	VS "late\"\(emdash)";
+	BVS "yet,";
+invisbar
+1 1: 2.s; 8eg; f; e;
+1 2: 2.s; 8; e; ;
+2: 2.s; 8eb; ea; eg;
+
+	VS "Come, for He";
+	VS "When He makes";
+	VS "\"Je-sus, I";
+	BVS "Je-sus, the";
+bar
+
+//9
+1: 2.db; 4.b-d;
+2: 2.b-f; 4.b-a;
+
+	VS "loves you";
+	VS "up His";
+	VS "come to";
+	BVS "Cru-ci-";
+bar
+
+//10
+FINE (1);
+1: 2.b-e; 4.s;
+2: 2.eg; 4.s;
+
+	VS "so.";
+	VS "own.";
+	VS "Thee.\"";
+	BVS "fied.";
+dblbar
+
+//11
+CHORUS
+1: 2.s; 8ge+; gd+; gc+;
+2: 2.s; 8eb; ; ;
+
+	VS [c]"On-ly a";
+bar
+
+//12
+1: 2.ad+; 8ac+; gb; fa;
+2: 2.fb; 8b-b; b-c+; b-d+;
+
+	VS [c]"step, on-ly a";
+bar
+
+//13
+1: 2.gb; 8s; ; ;
+2: 2.ee+; 8s; ; ;
+
+	VS "step,";
+invisbar
+1: 2.s; 8eg; da; eb;
+2: 2.s; 8eb; fb; gb;
+
+	VS "Come, for He";
+bar
+
+//14
+1: 4.ec+ tie; 4; 8eb; 4; 8eg;
+2 1: 4.a tie; 4; 8eg; 4; 8eb;
+2 2: 4.a tie; 4; 2s;
+
+	VS "bled for you and";
+bar
+
+//15
+DS (1)
+1: 2.df; 4.s;
+2: 2.b-b; 4.s;
+
+	VS "died;";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

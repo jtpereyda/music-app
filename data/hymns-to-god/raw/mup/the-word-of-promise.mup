@@ -1,0 +1,202 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Kingdom Of Song
+//		A Collections of Songs for Sunday Schools,
+//		Young People Societies and all Religious Services
+//		Edited by T. M. Bowdish
+//		Published by: The W. W. Whitney Co 
+//		Copyright 1900
+//		Hymn No.: 123
+//		
+// Transcribed by: Ted Gatza, Jr. 09/20/12
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Word Of Promise" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - MI" " \s(17)\f(TI)\:For\ how\ many\ soever\ be\ the\ pro\|mises\ of\ God,\ in\ him\ is\ the\ yea: wherefore\ also\ through\ him\^\ is\ the\ Amen,\ -\ 1\ Cor.\ 1:20" ""   
+   title (13) "Adaline H. Berry" "" "T. M. Bowdish"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8c+e; bd; 2.s;
+2: 8aa-;; 2.s;
+
+			VERSE "<1. >-1|In the";
+			VERSE "<2. >-1|When I";
+			VERSE "<3. >-1|This of";
+bar
+//2
+1: 4ac; fd; 8; ec; ca-; db-;
+2: 4ea-; aa-; 8;; ea-;;
+
+			VERSE "Lord's good prom-is-es my";
+			VERSE "walk in shad-ow and my";
+			VERSE "all is dear-est to the";
+bar
+//3
+1: 4ec; fd; ec; 8ae; be;
+2: 4aa-;;; 8ac; ge;
+
+			VERSE "heart is glad, They are";
+			VERSE "life seems lone, His sweet";
+			VERSE "sons of men, 'Tis a";
+bar
+//4
+1: 8c+e;; 8.ae; 16c+a; 4e+a; c+e;
+2 1: 8a;; 8.c+a; 16e+a; 4c+a; a;
+2 2: 8a;; 8.s; 16; 4; a;
+
+			VERSE "full of lov-ing kind-ness";
+			VERSE "com-pa-ny my Lord will";
+			VERSE "ref-uge from all sin and";
+bar
+//5
+1: 2.be; 8c+e; bd;
+2: 2.ge; 8aa-;;
+
+			VERSE "true, And they";
+			VERSE "give; And with";
+			VERSE "care; \"All who";
+bar
+//6
+1: 4ac; fd; 8; ec; ca-; db-;
+2: 4ea-; aa-; 8;; ea-;;
+
+			VERSE "lift me when I'm faint-ing";
+			VERSE "strength and cour-age I will";
+			VERSE "on the bless-ed Son of";
+bar
+//7
+1: 4ec; fd; ec; 8ae; bf;
+2: 4aa-;;; 8ac; ad;
+
+			VERSE "by the way, For each";
+			VERSE "work and sing, On the";
+			VERSE "God be-lieve, Ev-er-";
+bar
+//8
+1: 8c+e;; bd; ac; 4c+e; bd;
+2 1: 8ae;; ge; ae; 4; e;
+2 2: 8s;;;; 4; e;
+
+			VERSE "tri-al they are ev-er";
+			VERSE "man-na of his Word I";
+			VERSE "last-ing life in heav-en";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.ea-; 4s;
+
+			VERSE "new.";
+			VERSE "live.";
+			VERSE "share.\"";
+dblbar
+newscore
+//10
+1: 8c+a; d+b; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Bless-ed";
+bar
+//11
+1: 2e+c+ tie; 8; c+a; 8.; 16bg;
+2: 4r; 8e+a;;;; 8.e+e; 16d+e;
+
+			VERSE "Word!_ that keeps me";
+			VERSE 4s; 8; 8; 8; 8s; 8.s; 16s; "Bless-ed Word!";
+bar
+//12
+1 1: 4a; af; ae; 8bg; c+a;
+1 2: 4a; s;; 8;;
+2: 4c+f; d+d; c+a-; 4r;
+
+			VERSE "all the day; Bless-ed";
+bar
+//13
+1: 2d+b tie; 8; c+a; be; ae;
+2: 4r; 8ge;;; af; bg; c+a;
+
+			VERSE "Guide!_ be al-ways";
+			VERSE 4s; 8; 8; 8; 8s; 8s; 8s; "Bless-ed guide!";
+bar
+//14
+1: 4e+a; c+e; be; 8c+e; bd;
+2 1: 4c+a; a; ge; 8aa-;;
+2 2: 4s; a; s; 8;;
+
+			VERSE "near I pray; Let me";
+bar
+//15
+1: 4ac; fd; 8; ec; ca-; db-;
+2: 4ea-; aa-; 8;; ea-;;
+
+			VERSE "rest for-ev-er on the";
+bar
+//16
+1: 4ec; fd; ec; 8ae; bf;
+2: 4aa-;;; 8ac; ad;
+
+			VERSE "Rock of truth, And thy";
+bar
+//17
+1: 8c+e;; bd; ac; 4c+e; bd;
+2 1: 8ae;; ge; ae; 4; e;
+2 2: 8s;;;; 4; e;
+
+			VERSE "per-fect law for e'er o-";
+bar
+//18
+1: 2.ac; 4s;
+2: 2.ea-; 4s;
+
+			VERSE "bey.";
+endbar

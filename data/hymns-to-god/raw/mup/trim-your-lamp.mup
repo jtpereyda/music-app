@@ -1,0 +1,231 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom Of Song
+//		A collection of Songs for
+//		Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited by T. M. Bowdish
+//		Published by the W. W. Whitney Co.
+//		Entered At Stationers Hall, London England
+//		Copyrigght 1900
+//		Hymn No.: 8
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 03/27/2012;l Rev. 05/24/2022
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Trim Your Lamp" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:Even\ so\ let\ your\ light\ shine\ bef\|ore\ men;\ that\ they\ may\ see\ your\ good works,\ and\ glorify\ your\ Fat\|her\ who\ is\ in\ heaven.\ -\ Matt.\ 5:16" ""
+   title (13) "E. Lena Griswald" " " "T. Martin Towne" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+//1
+1: 8fd; 4.s; 4;
+2:8bb-; 4.s; 4;
+
+			VERSE "<1. >-1|Now";
+			VERSE "<2. >-1|Now";
+			VERSE "<3. >-1|Now";
+			VERSE "<4. >-1|Then";
+			
+bar
+//2
+1: 4bd; 8; bd bm; ac ebm; bd;
+2: 4bb-; 8; 4; 8;
+
+			VERSE 4; 8; 4; 8;"trim your lamp for";
+			VERSE 4; 8; 4; 8;"trim your lamp for";
+			VERSE 4; 8; 4; 8;"trim your lamp for";
+			VERSE 4; 8; 4; 8;"trim your lamp for";
+bar
+//3
+1 1: 4.c+e; 4fc; 8f;
+1 2: 4.s; 4; 8f;
+2: 4.af; 4; 8;
+
+			VERSE "Je-sus, Let";
+			VERSE "Je-sus, Nor";
+			VERSE "Je-sus; 'Tis";
+			VERSE "Je-sus, Nor";
+bar
+//4
+1 1: 4d+f; 8; 8d+bm; c+ ebm; bf;
+1 2: 4s; 8; 4f; 8s;
+2 1: 4b; 8; bb- bm; ac ebm; bd;
+2 2: 4b; 8; 8s;;;
+
+			VERSE 4; 8; 4; 8; "not your light be";
+			VERSE 4; 8; 4; 8; "let it hid-den";
+			VERSE 4; 8; 4; 8; "he who bids you";
+			VERSE 4; 8; 4; 8; "deem it e'er a";
+bar
+newscore
+//5
+1 1: 4.c+f tie; 4; 8f;
+1 2: 4.s; 4; 8e;
+2: 4.af tie; 4; 8af;
+
+			VERSE "dim; Full";
+			VERSE "be; Be";
+			VERSE "shine; And";
+			VERSE "cross To";
+bar
+//6
+1: 4bd; 8; 8 bm; c+e ebm; 8d+f;
+2 1: 4b; 8; 4; 8; 
+2 2: 4b; 8; 4; 8;
+
+			VERSE 4; 8; 4; 8; "well he knows each";
+			VERSE 4; 8; 4; 8; "not a-shamed of";
+			VERSE 4; 8; 4; 8; "his shall be the";
+			VERSE 4; 8; 4; 8; "brave-ly shine for";
+bar
+//7
+1: 4.ge; 4bg; 8e+g;
+2: 4.be; 4e+e; 8be;
+
+			VERSE "ac-tion That";
+			VERSE "Je-sus, He's";
+			VERSE "glo-ry, A";
+			VERSE "Je-sus 'Mid";
+bar
+//8
+1: 8d+f bm; c+e ebm; bd; c+e bm; bd ebm; ac;
+2 1: 8b bm; f ebm; bf; a bm; b ebm; f;
+2 2: 4f; 8s; 4f; 8f;
+
+			VERSE 4; 8; 4; 8; "you may do for";
+			VERSE 4; 8; 4; 8; "not a-shamed of";
+			VERSE 4; 8; 4; 8; "crown of life be";
+			VERSE 4; 8; 4; 8; "earth-ly sin and";
+bar
+//9
+1: 4.bd tie; 4; 8s;
+2: 4.fb- tie; 4; 8s;
+
+			VERSE "him.";
+			VERSE "thee.";
+			VERSE "thine.";
+			VERSE "loss.";
+dblbar
+//10
+1 1: 8f; 4.s; 4;
+1 2: 8f; 4.s; 4;
+2 1: 8f; 4.s; 4;
+2 2: 8f; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Then";
+bar
+//11
+1 1: 4c+f; 8; 8c+ bm; d+ ebm; e+f;
+1 2: 4s; 8; 4f; 8s;
+2 1: 4af; 8; a bm; b ebm; 8c+f;
+2 2: 4s; 8; 4f; 8s;
+
+			VERSE 4; 8; 4; 8; [c]"trim your lamp for";
+bar
+//12
+1: 4.d+f; 4bf; 8d+f;
+2 1: 4.b; 4d+b-; 8bb-;
+2 2: 4.b; 4s; 8;
+
+			VERSE [c]"Je-sus, And";
+bar
+//13
+1: 4c+f; 8; 4c+en; 8;
+2: 4ac; 8; 4bc; 8;
+
+			VERSE [c]"to your faith be";
+bar
+//14
+
+1 1: 4.c+f tie; 4; 8f;
+1 2: 4.s; 4; 8f;
+2: 4.af tie; 4; 8af;
+
+			VERSE [c]"true; The";
+bar
+//15
+1 1: 8d+f bm; c+#en ebm; 8d+f; b bm; c+n ebm; b;
+1 2: 8s;;; 4a&; 8;
+2 1: 4b; 8; 4d+b; 8bd;
+2 2: 4b; 8; 4s; 8;
+
+			VERSE 4; 8; 4; 8; "world will judge of";
+bar
+//16
+1 1: 4.g; 4c+g; 8e+g;
+1 2: 4.g; 4s; 8;
+2: 4.be; 4e+e; 8bc;
+
+			VERSE "Je-sus By";
+bar
+//17
+1 : 8d+f bm; c+e ebm; bd; c+e bm; bd ebm; ac;
+2 1: 8b bm; f ebm; 8bf; 8a bm; b ebm; 8f;
+2 2: 4f; 8s; 4f; 8f;
+
+			VERSE 4; 8; 4; 8; "what they see in";
+bar
+//18
+1: 4.bd tie; 4; 8s;
+2: 4.fb- tie; 4; 8s;
+
+			VERSE "you.";
+endbar
+
+			

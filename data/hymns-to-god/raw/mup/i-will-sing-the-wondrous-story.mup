@@ -1,0 +1,397 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 5 & 6 Combined
+//		Editors:Ira D. Sankey, James McGranahan and George Stebbins
+//		Publishers: The Biglow and Main 
+//		76 East Ninth Street, New York
+//		215 Wabash Avenue, Chicago
+//		The Joyn Church Co.
+//		74 West Fourth St., Cincinnati
+//		13 East 16th Street, New York 	
+// 		Copyright 1892
+//		Hymn No.: 149
+
+// Transcribed by: Ted Gatza, Jr. 06/02/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.98
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+staffs=2
+	time=3/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "I Will Sing The Wondrous Story" ""
+   title (2) ""
+   title (11) "" "\f(TI)All we like sheep have gone astray; we have turned every one to his own way;" ""
+   title (11) "" "\f(TI)All and the LORD has laid on him the iniquity of us all. - Is. 53:6" ""
+   title (11) "" 
+   title (12)" E\(flat) - 3 - MI" "" ""
+   title (13) "Francis H. Rowley, 1886" "" "Peter P. Bilhorn, 1887"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1: 2s; 8.eg; 16fa;
+2: 2s; 8.eb; 16; 
+
+	VS "<1. >-1|I will";
+	VS "<2. >-1|I was";
+	VS "<3. >-1|He will";
+bar
+
+//2
+1: 4.gb; 8; 8.ac+; 16gb;
+2: 4.ee+; 8; 8.; 16;
+
+	VS "sing the won-drous";
+	VS "lost, but Je-sus";
+	VS "keep me till the";
+bar
+
+//3a
+1: 4ge+; gb; 8.s; 16s;
+2: 4eb; ee+; 8.s; 16s;
+
+	VS "sto-ry";
+	VS "found me,";
+	VS "riv-er";
+invisbar
+
+//3b
+1: 4s; ; 8.gb; 16;
+2: 4s; ; 8.ee+; 16;
+
+	VS "Of the";
+	VS "Found the";
+	VS "Rolls its";
+bar
+
+//4
+1 1: 4.b; 8; 8.ac+; 16b;
+1 2: 4.a; 8; 8.s; 16a;
+2: 4.fd+; 8; 8.b-d+; 16;
+
+	VS "Christ who died for";
+	VS "sheep that went a-";
+	VS "wa-ters at my";
+bar
+
+//5a
+1: 2gb; 8.s; 16;
+2: 2ee+; 8.s; 16;
+
+	VS "me,";
+	VS "stray,";
+	VS "feet,";
+invisbar
+
+//5b
+1: 2s; 8.eg; 16fa;
+2: 2s; 8.eb; 16;
+
+	VS "How He";
+	VS "Threw His";
+	VS "Then He'll";
+bar
+
+//6
+1: 4.gb; 8; 8.ac+; 16gb;
+2: 4.ee+; 8; 8.; 16;
+
+	VS "left His home in";
+	VS "lov-ing arms a-";
+	VS "bear me safe-ly";
+bar
+
+//7a
+1: 4ge+; gb; 8.s;16 ;
+2: 4eb; ee+; 8.s; 16;
+
+	VS "glo-ry";
+	VS "round me,";
+	VS "o-ver,";
+invisbar
+
+//7b
+1: 4s; ; 8.gb; 16ge+;
+2: 4s; ; 8.ee+; 16eb;
+
+	VS "For the";
+	VS "Drew me";
+	VS "Where the";
+bar
+
+//8
+1: 4.fd+; 8db; 8.da; 16df;
+2: 4.b-b; 8; 8.b-f; 16b-a;
+
+	VS "cross of Cal-va-";
+	VS "back un-to His";
+	VS "loved ones I shall";
+bar
+
+//9
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2eg; 4s;
+
+	VS "ry.";
+	VS "way.";
+	VS "meet.";
+dblbar hidechanges
+newscore 
+
+
+score time=4/4; key=3&
+music
+
+CHORUS
+
+//10
+1 1: 2.s; {8b bm; 8c+ ebm; 8a&d+;}3;
+1 2: 2.s; {8b bm; an ebm; 8s;}3;
+2: 2.s; 4r;
+
+	VS "Yes, <> I'll";
+bar
+
+//11
+1: 2ge+ tie; 8.; 16; 8.bd+; 16ac+;
+2: 4r; 8.eb; 16; 8.; 16r; 4r;
+
+	VS "sing the won-drous";
+	VS21 "Yes, I'll sing";
+bar
+
+//12a
+1: 2gb; 4eg; 8.s; 16;
+2: 8.r; 16ee+; 8.; 16; 8.eb; 16; 8.s; 16;
+
+	VS "sto-ry";
+	VS21 "the won-drous sto-ry";
+invisbar
+
+//12b
+
+1: 2s; 4; 8.gb; 16;
+2: 2s; 4; 4r;
+
+	VS "Of the";
+bar
+
+//13a
+1 1: 2b tie; 8.; 16s; 8.; 16;
+1 2: 4a; 8.; 16; 8.; 16s; 8.; 16;
+2: 4r; 8.b-d+; 16; 8.; 16s; 4s;
+	VS "Christ";
+	VS21 "Of the Christ";
+invisbar
+newscore
+
+//13b
+1 1: 2s; 8.; 16b; 8.ac+; 16b;
+1 2: 2s; 8.; 16a; 8.s; 16a;
+2: 4s; 8.; 16; 8.; 16r; 4r;
+
+	VS "who died for";
+//	VS21 "Of the Christ";
+bar
+
+//14
+1 1: 2b tie; 8; [dist 0]8r; 8.s; 16;
+1 2: 8.g; 16; 8.; 16; 8; 8r; 8.s; 16;
+2: 8.r; 16ee+; 8.; 16; 8; 8r; 8.s; 16;
+
+	VS "me,";
+	VS21 "who died for me,";
+bar
+newscore
+
+//15
+1 1: 2.s; {8b bm; 8c+ ebm; 8a&d+;}3;
+1 2: 2.s; {8b bm; an ebm; 8s;}3;
+2: 2.s; 4r;
+
+	VS "Sing <> it";
+bar
+
+//16
+1: 2ge+ tie; 8.; 16; 8.bd+; 16ac+;
+2: 4r; 8.eb; 16; 8.; 16r; 4r;
+
+	VS "with the saints in";
+	VS21 "Sing it with";
+bar
+newscore
+
+//17
+1: 2gb; 4eg; 8.s; 16;
+2: 8.r; 16ee+; 8.; 16; 8.eb; 16; 8.s; 16;
+
+	VS "glo-ry,";
+	VS21 "the saints in glo-ry,";
+bar
+
+//18
+
+1: 2s; 8; 8; 8.gb; 16ge+;
+2: 8.s; 16; 8.; 16; 8; 8; 4r;
+
+	VS "Gath-ered";
+bar
+
+//19
+1: 2fd+ tie; 8.; 16db; 8.da; 16df;
+2: 4r; 8.b-b; 16; 8.; 16; 8.b-f; 16b-a;
+
+	VS "by the crys-tal";
+	VS21 "Gath-ered by <> <> <>";
+bar
+
+//20
+1 1: 2e tie; 4; 4s;
+1 2: 8.b-; 16; 8.c; 16; 4b-; 4s;
+ FST(3)
+2 1: 8.g; 16; 8.a; 16; 4g; 4s;
+2 2: 2e tie; 4; 4s;
+ FBB(3)
+
+	VS "sea.";   
+	VS21 "<> the crys-tal sea.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

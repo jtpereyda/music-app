@@ -1,0 +1,265 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Favorite Songs and Hymns A Complete Church Hymnal
+//		Compiled by Homer F. Morris, J. R. Baxter, Jr.,	
+//		Virgil O. Stamps, W. W. Combs
+//		Stamps-Baxter Music & Printing
+//		Dallas 8, Texas, Pangburn Arkansas, Chattanooga 1, Tennessee
+//		Copyright 1939
+//		Hymn No.: 27
+//		
+// Transcribed by: Ted Gatza, Jr. 02/21/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Where The Soul Never Dies" ""
+   title (2)""
+   title (11)"" "\f(TI)receiving the end of your fairh, even the salvation of your souls. - 1 Pet.1:9" ""
+   title (11) "F - 4 - SOL" "" ""
+   title (13) "William M. Golden" "" "William M. Golden, 1914"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+ 
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=105";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1: 4cf; 2.s;
+2: 4fa; 2.s;
+
+
+	VS 4; 2.s; "<1. >-1|To";
+	VS 4; 2.s; "<2. >-1|A";
+	VS 4; 2.s; "<3. >-1|A";
+	VS 4; 2.s; "<4. >-1|My";
+	VS 4; 2.s; "<5. >-1|I'm";
+bar
+//2
+1 1: 4fa; 4g; 4f; 4fa;
+1 2: 4s; 4f; ; s;
+2: 4fc+; fb; fa; fc+;
+
+	VS "Ca-naan's land I'm";
+	VS "rose is bloom-ing";
+	VS "love-light beams a-";
+	VS "life will end in";
+	VS "on my way to";
+bar
+//3
+1: 4ac+; bd+; ac+; 8.fc+; 16eb;
+2: 4ff+; ; ; 8.ac+; 16gc+;
+
+	VS "on my way, Where the";
+	VS "there for me, Where the";
+	VS "cross the foam, Where the";
+	VS "death-less sleep, Where the";
+	VS "that fair land, Where the";
+bar
+//4
+1 1: 2a tie; 4a; 8.dg; 16fa;
+1 2: 4f; ; ; 8.s; 16s;
+2: 4fc+; dd+; fc+; 8.gbn; 16;
+
+	VS 4; 4; 4; 8.; 16;"soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16;"soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16;"soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16;"soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16;"soul (of man) nev-er";
+bar
+//5
+1: 2.eg; 4cf;
+2: 2.cc+; 4fa;
+
+	VS "dies, My";
+	VS "dies, And";
+	VS "dies, It";
+	VS "dies, And";
+	VS "dies, Where";
+bar
+//6
+1 1: 4fa; g; f; fa;
+1 2: 4s; 4f; ; s;
+2: 4fc+; fb; fa; fc+;
+
+	VS "dark-est night will";
+	VS "I will spend e-";
+	VS "shines to light the";
+	VS "ev-er-last-ing";
+	VS "there will be no";
+bar
+//7
+1: 4fc+; fd+; fc+; 8.fc+; 16eb;
+2: 4fa; fb; fa; 8.ac+; 16gc+;
+
+	VS "turn to day, Where the";
+	VS "ter-ni-ty, Where the";
+	VS "shores of home, Where the";
+	VS "joys I'll reap, Where the";
+	VS "part-ing hand, And the";
+bar
+//8
+1 1: 2a tie; 4a; 8.eg; 16eg;
+1 2: 4f; ; ; 8.s; 16s;
+2: 4fc+; dbn; cc+; 8.cb&; 16;
+
+	VS 4; 4; 4; 8.; 16; "soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16; "soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16; "soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16; "soul (of man) nev-er";
+	VS 4; 4; 4; 8.; 16; "soul (of man) nev-er";
+bar
+//9
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.f-fa; 4s;
+
+	VS 2.; 4s; "dies.";
+	VS 2.; 4s; "dies.";
+	VS 2.; 4s; "dies.";
+	VS 2.; 4s; "dies.";
+	VS 2.; 4s; "dies.";
+dblbar
+newscore
+//10
+1: 4cf; 2.s;
+2: 4fa; 2.s;
+CHORUS
+
+	VS 4; 2.s; "No";
+	VS 4; 2.s; "Dear";
+bar
+//11
+1 1: 2a tie; 4a; 4fd+;
+1 2: 4f; ; ; s;
+2: 4fc+; cc+; fc+; fb;
+
+	VS "sad fare-";
+	VS 4;;;; "friends, there'll be no";
+bar
+//12
+1 1: 2c+ tie; 4c+; 4cf;
+1 2: 4f; 8e bm; 8g ebm; 4f; 4s;
+2 1: 4fa; 8g bm; 8b ebm; 4fa; ;
+2 2: 4s; 4c; 4s; s;
+
+	VS "wells, No";
+	VS 4;;;; "sad fare-wells, There'll";
+bar
+//13
+1 1: 2a tie; 4a; 4df;
+1 2: 4f; g; f; s;
+2: 4fc+; ec#+; dd+; dbn;
+
+	VS "tear-dimmed";
+	VS 4;;;; "be no tear-dimmed";
+bar
+//14
+1: 2.eg; 4s;
+2: 2.cc+; 4s;
+
+	VS "eyes,";
+	VS "eyes,";
+bar
+//15
+1: 4cf; 2.s;
+2: 4fa; 2.s;
+
+	VS "Where";
+	VS "Where";
+bar
+//16
+1 1: 2a tie; 4a; 4fd+;
+1 2: 4f; ; ; s;
+2: 4fc+; cc+; fc+; fb;
+
+	VS "all is";
+	VS 4;;;; "all is peace and";
+bar
+//17
+1 1: 2c+ tie; 4c+; 8.fc+; 16eb;
+1 2: 4f; e; f; 8.s; 16s;
+2: 4fa; gb; ac+; 8.ac+; 16gc+;
+
+	VS "love, And the";
+	VS 4;;; 8.; 16; "joy and love, And the";
+bar
+//18
+1 1: 2a tie; 4a; 8.eg; 16;
+1 2: 4f;;; 8.s; 16;
+2: 4fc+; dbn; cc+; 8.cb&; 16;
+
+	VS "soul nev-er";
+	VS 4;;; 8.; 16; "soul of man nev-er";
+bar
+1: 2.cf; 4s;
+2: 2.f-fa; 4s;
+
+	VS "dies.";
+	VS "dies.";
+endbar

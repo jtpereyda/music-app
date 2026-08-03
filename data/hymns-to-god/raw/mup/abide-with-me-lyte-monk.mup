@@ -1,0 +1,315 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Living Hymns
+//		For Use In The Sabbath School, Christian 
+//		Endeavor Meetings,The Church And Home
+//		Compiled By: John Wanamaker, and John R. Sweney
+//		Publisher: John J. Hood
+//		Philadelphia: 1024 Arch St.
+//		Chicage: 940 W. Madison St.
+// 		Copyright 1890
+//		Hymn No.: 254
+
+// Transcribed by: Ted Gatza, Jr. 07/01/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+staffs=2
+	time=4/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Abide With Me" ""
+   title (2) ""
+   title (11) "" "\f(TI)I am with you always, even unto the end of the world. - Matt.28:20" ""
+   title (11) "" 
+   title (11)" E\(flat) - 4 - MI" "" ""
+   title (13) "Henry F. Lyte, 1820" "" "Henry H. Monk, 1861"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1: 2eg; 4dg; df;
+2: 2eb; 4b-b; b-a;
+ 
+
+	VS "<1. >-1|A-bide with";
+	VS "<2. >-1|Swift to its";
+	VS "<3. >-1|I need Thy";
+bar
+
+//2
+1 1: 2e; eb;
+1 2: 2e; s;
+2: 2cg; g-e;
+
+	VS "me! fast";
+	VS "close ebbs";
+	VS "pres-ence";
+bar
+
+//3
+1: 4ec+; db; eb; fa;
+2: 4a-e; b-b; cb; db;
+
+	VS "falls the e-ven-";
+	VS "out life's lit-tle";
+	VS "ev-'ry pass-ing";
+bar
+
+//4
+1: 1eg;
+2: 1eb;
+
+	VS "tide;";
+	VS "day;";
+	VS "hour,";
+bar
+
+//5
+1: 2eg; 4ea; eb;
+2 1: 2b; s;
+2 2: 4e slur; d; ca; b-g;
+
+	VS "The dark-ness";
+	VS "Earth's joys grow";
+	VS "What but Thy";
+bar
+
+//6
+1: 2ec+; eb;
+2: 2a-a; eg;
+
+	VS "deep-ens,";
+	VS "dim, its";
+	VS "grace can";
+bar
+
+//7
+1 1: 4ea; f; eg; ean;
+1 2: 4s; f; s; ;
+2: 4fc+; db; eb; ce;
+
+	VS "Lord, with me a-";
+	VS "glo-ries pass a-";
+	VS "foil; the tempt-er's";
+bar
+
+//8
+1: 1db;
+2: 1b-f;
+
+	VS "bide!";
+	VS "way;";
+	VS "pow'r?";
+bar
+
+//9
+1: 2eg; 4dg; df;
+2 1: 4g slur; a; b-b; b-a;
+2 2: 2e; 4s; ; 
+
+	VS "When oth-er";
+	VS "Change and de-";
+	VS "Who, like Thy-";
+bar
+
+//10
+1 1: 2e; eb;
+1 2: 2e; s;
+2 1: 2s; 4e+ slur; d+;
+2 2: 2cg; g-;
+
+	VS "help-ers";
+	VS "cay in";
+	VS " self, my";
+bar
+
+//11
+1: 4eb; ea; ena; eg;
+2 1: 4c+; ; cc+; c+b-;
+2 2: 4.a-; 8b-; 4s; ;
+
+	VS "fail, and com-forts";
+	VS "all a-round I";
+	VS "guide and stay can";
+bar
+
+//12
+1: 1f;
+2: 1fa;
+
+	VS "flee,";
+	VS "see;";
+	VS "be?";
+bar
+
+//13
+1: 2df; 4eg; da;
+2 1: 2b; 4gb; fb;
+2 2: 2a; 4s; ;
+
+	VS "Help of the";
+	VS "O Thou who";
+	VS "Thru clouds and";
+bar
+
+//14
+1 1: 4eg; df; e; fa;
+1 2: 4s; ; e; s;
+2: 4eb; b-a; cg; a-c+;
+
+	VS "help-less, O, a-";
+	VS "chang-est not, a-";
+	VS "sun-shine, O, a-";
+bar
+
+//15
+1: 2eg; df;
+2 1: 2.b; 4a;
+2 2: 2b-; ;
+
+	VS "bide with";
+	VS "bide with";
+	VS "bide with";
+bar
+
+//16
+1: 1e;
+2: 1eg;
+
+	VS "me!";
+	VS "me!";
+	VS "me!";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

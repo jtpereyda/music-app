@@ -1,0 +1,225 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Notes Of Praise
+//		A Collection of choice original hymns and tunes,
+//		by our best composers for the
+//		Sunday school, Devotional, and Praise Meetings
+//		Especially adapted to the international
+//		Sunday School lessons,
+//		Edited by Frank M. Davis
+//		Frank M. Davis, Publisher,
+//		Vicksburg, Niss.
+//		Copyright: 1890
+//		Hymn No.: 66
+
+// Transcribed by: Ted Gatza, Jr. 07/29/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Rejoice In The Lord" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(17)\f(TI)\:Rejoice\ in\ the\ Lord\ always\ -\ Phil.\ 4:4 \(space)" ""
+   title (13) "Frank M. Davis" " " "T. C. O'Kane"	
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+
+//1
+1 1: 8g bm; a ebm; 2.s;
+1 2: 4d; 2.s;
+2 1: 8b bm; c+ ebm; 2.s;
+2 2: 4g; 2.s;
+
+			VERSE 4; 2.s; "<1. >-1|Re-";
+			VERSE 4; 2.s; "<2. >-1|Re-";	
+			VERSE 4; 2.s; "<3. >-1|Re-";
+
+bar
+//2
+1 1: 4bg; 8.; 16af; 4g; 8.gd; 16fd;
+1 2: 4s; 8.; 16; 4g; 8.s; 16;
+2: 4d+g; 8.; 16c+d; 4be; 8.bb-; 16ab-;
+
+			VERSE "joice in the Lord and ex-";
+			VERSE "joice in the Lord and pro-";
+			VERSE "joice in the Lord and give";
+bar
+//3
+1 1: 8e bm; g ebm; f bm; e ebm; 4db-; d;
+1 2: 4e; c; s; d;
+2: 4gc;; gg-; bg-;
+
+			VERSE 4; 4; 4; 4; "alt His name, In";
+			VERSE 4; 4; 4; 4; "claim Him King Who";
+			VERSE 4; 4; 4; 4; "thanks and sing; His";
+bar
+//4
+1: 4gd; 8.; 16af; 4bg; 8.ad; 16ge;
+2: 4bg-; 8.d+b-; 16d+d; 4d+g; 8.d+f; 16c+#e;
+
+			VERSE "praise let our voic-es ac-";
+			VERSE "gave us His un-fail-ing";
+			VERSE "serv-ants shall gain great re-";
+bar
+//5
+1 1: 2.af; 8g bm; a ebm;
+1 2: 2.s; 8g bm; a ebm;
+2 1: 2.d+d; 8g bm; a ebm;
+2 2: 2.s; 8g bm; a ebm;
+
+			VERSE 2.; 4; "cord; Be";
+			VERSE 2.; 4; "word; That";
+			VERSE 2.; 4; "ward; His";
+bar
+//6
+1 1: 4b; 8a; g; 4c+; 8b; a;
+1 2: 4b; 8a; g; 4c+; 8b; a;
+2 1: 4b; 8a; g; 4c+; 8b; a;
+2 2: 4b; 8a; g; 4c+; 8b; a;
+
+			VERSE "glo-ry to Him, Great De-";
+			VERSE "death and the grave shall be";
+			VERSE "king-dom shall nev-er, no,";
+bar
+//7
+1: [up]4d+b; 8c+a bm; bg ebm; [up]4e+g; [up];
+2 1: 4g; 8fd bm; gb- ebm; 4c+c; c+;
+2 2: 4g; 8s;; 4; 8c bm; e ebm;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE 4; 4; 4; 4; "liv-er-er; Re-";
+			VERSE 4; 4; 4; 4; "van-quished foes; Re-";
+			VERSE 4; 4; 4; 4; "nev-er fail; Re-";
+bar
+//8
+1: [up]4d+g; 8.d+f; [up]16d+g; 4d+f; 8.fd; 16;
+2: 8bg bm; d+b ebm; 8.c+a; 16bg; 4ad; 8.; 16c+d;
+
+			VERSE "joice, O re-joice in the";
+			VERSE "joice, O re-joice in the";
+			VERSE "joice, O re-joice in the";
+bar
+//9
+1: 2.gd; 4s;
+2: 2.bgg-; 4s;
+
+			VERSE "Lord.";
+			VERSE "Lord.";
+			VERSE "Lord. ";
+dblbar
+newscore
+//10
+1 1: 4g; 2.s;
+1 2: 4g; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "Re-";
+bar
+//11
+1: 2.c+e; 8.bg; 16af;
+2: 4r; gc;; r; 
+
+			VERSE "joice in the";
+			VERSE 4s; 4; 4; 4s; "Re-joice";
+bar
+//12
+1: 2.bg; 4;
+2: 4r; 8.bg; 16d+g; 4; r;
+
+			VERSE "Lord, Re-";
+			VERSE 4s; 8.; 16; 4; 4s; "in the Lord,";
+bar
+//13
+1 1: 2.af; {8c+# bm; b ebm; c+;}3;
+1 2: 2.s; {4g; 8;}3;
+2: 4r; aa-;; 8.; 16;
+
+			VERSE 2.; {4; 8;}3; "joice in the";
+			VERSE 4s; 4; 4; 8.; 16; "Re-joice in the";
+bar
+//14
+1 1: 2.d+; 4c+f;
+1 2: 4f ph; g; f eph; s;
+2: 4ad; 8.bd; 16; 4ad; s;
+
+
+			VERSE 4; 4; 4; 4; "Lord (the Lord), In";
+			VERSE 4s; 8.; 16; 4; 4s; "in the Lord,";
+bar
+//15
+1: 4bg; 8.bd; 16; 4; 8.bg; 16bfn;
+2 1: 4g; 8.; 16; 4; 8.s; 16;
+2 2: 4g; 8.; 16; 8 g bm; fn ebm; 8.ge; 16gd;
+
+			VERSE "praise let your voi-ces ac-";
+bar
+newscore
+//16
+1: 4c+e slur; [up]2e+g; [up]4;
+2 1: 4g slur; 2c+; 4c+;
+2 2: 2.c; 8c bm; e ebm;
+
+			VERSE "cord; Re-";
+bar
+//17
+1: [up]4d+g; 8.d+f; [up]16d+g; 4d+f; 8.fd; 16;
+2: 8bg bm; d+b ebm; 8.c+g; 16bg; 4ad; 8.; 16c+d;
+
+			VERSE "joice, O re-joice in the";
+bar
+//18
+1: 2.gd; 4s;
+2: 2.bgg-; 4s;
+
+			VERSE "Lord.";
+endbar

@@ -1,0 +1,239 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymnal For American Youth
+//		Edited by H. Augustine Smith, A.M.
+//		New York
+//		The Century Co.
+//		Copyright 1922
+//		Hymn no. 104
+
+// Transcribed by: Ted Gatza, Jr. 03/14/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "All Glory, Laud and Honor" ""
+   title (2)""
+   title (11) "C - 4 - DO" "\s(17)\f(TI)\:Hosanna\ to\ the\ son\ of\ D\|avid:\ Blessed\ is\ he\ that cometh\ in\ the\ name\ o\|f\ the\ Lord\ -\ Mt.\ 21:9"""
+   title (13) "Theodulph of Orleans, Circa 820\nTrans. by John M. Neale, 1854" " " "Melchior Teschner, 1615"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= c major
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1 1: 2.s; 4c;
+1 2: 2.s; 4c;
+2: 2.s; 4ec;
+
+			lyrics 1: "<1. >-1|All";
+			lyrics 1: "<2. >-1|Thou";
+			lyrics 1: "<3. >-1|Thou";
+bar
+//2
+1: 4gd; 4ge; 4af; 4bf;
+2 1: 4gb-; 4c+c; 4c+f; 8f bm; 8a ebm;
+2 2: 4s; 4s; 4s; 4d; 
+
+			lyrics 1: "glo-ry, Laud and";
+			lyrics 1: "art the King of";
+			lyrics 1: "didst ac-cept their";
+bar
+//3
+1 1: 2c+; 4c+e; 4e+g;
+1 2: 4f; 8e bm; 8d ebm; 4s; 4s;
+2 1: 4a; 8g bm; 8f ebm; 4gc; 4c+c;
+2 2: 2c; 4s; 4s;
+phrase below 1: 1 til 2.5;
+phrase above 2: 1 til 2.5;
+
+			lyrics 1: "hon-or To";
+			lyrics 1: "Is-rael, Thou";
+			lyrics 1: "prais-es; Ac-";
+bar
+//4
+1: 4d+f; 4c+e; 4c+d; 4bd;
+2 1: 4bg; 4c+e; 4af; 4g;
+2 2: 4s; 4s; 4s; 4g;
+
+			lyrics 1: "thee, Re-deem-er,";
+			lyrics 1: "Da-vid's roy-al";
+			lyrics 1: "cept the prayers we";
+bar
+//5
+1 1: 2.c+e; 4c;
+1 2: 2.s; 4c;
+2: 2.gc; 4ec;
+
+			lyrics 1: "King, To";
+			lyrics 1: "Son, Who";
+			lyrics 1: "bring, Who";
+
+bar
+//6
+1: 4gd; 4ge; 4af; 4bf;
+2 1: 4gb-; 4c+c; 4c+f; 8f bm; 8a ebm;
+2 2: 4s; 4s; 4s; 4d;
+
+			lyrics 1: "whom the lips of";
+			lyrics 1: "in the Lord's name";
+			lyrics 1: "in all good de-";
+bar
+//7
+1 1: 2c+; 4c+e; 4e+g;
+1 2: 4f; 8e bm; 8d ebm; 4s; 4s;
+2 1: 4a; 8g bm; 8f ebm; 4gc; 4c+c;
+2 2: 2c; 4s; 4s;
+phrase below 1: 1 til 2.5;
+phrase above 2: 1 til 2.5;
+
+			lyrics 1: "chil-dren Made";
+			lyrics 1: "com-est, The";
+			lyrics 1: "light-est, Thou";
+bar
+//8
+1: 4d+f; 4c+e; 4c+d; 4bd;
+2 1: 4bg; 4c+e; 4af; 4g;
+2 2: 4s; 4s; 4s; 4g;
+
+			lyrics 1: "sweet ho-san-nas";
+			lyrics 1: "King and bless-ed";
+			lyrics 1: "good and gra-cious";
+bar
+//9
+1: 2.c+e; 4c+e;
+2: 2.gc; 4gc;
+
+			lyrics 1: "ring! The";
+			lyrics 1: "One! To";
+			lyrics 1: "King! All";
+
+bar
+//10
+1 1: 4e+g; 4e+; 4d+f#; 4c+g;
+1 2: 4s; 8a bm; 8g ebm; 4s; 4s;
+2 1: 4c+c; 8c+ bm; 8b ebm; 4ad; 4e+;
+2 2: 4s; 4c; 4s; 8e bm; 8f# ebm;
+
+			lyrics 1: "peo-ple of the";
+			lyrics 1: "thee, be-fore thy";
+			lyrics 1: "glo-ry, laud and";
+bar
+//11
+1 1: 4bg slur; 4af#; 4g; 4bg;
+1 2: 4s; 4s; 4g; 4s;
+2: 4d+g slur; 4c+d; 4be; 4e+e;
+
+			lyrics 1: "He-brews With";
+			lyrics 1: "pas-sion, They";
+			lyrics 1: "hon-or To";
+bar
+//12
+1 1: 4c+; 4gb; 4a; 4af;
+1 2: 8e bm; 8f# ebm; 4s; 4g; 4s;
+2 1: 4c+a-; 4d+b-; 4e+c; 8d+ bm; 8c+ ebm;
+2 2: 4s; 4s; 4s; 4d;
+
+			lyrics 1: "palms be-fore thee";
+			lyrics 1: "sand their hymns of";
+			lyrics 1: "thee, Re-deem-er,";
+bar
+//13
+1 1: 2.g; 4gd;
+1 2: 2.g; 4s;
+2: 2.bg-; 4gb-;
+
+			lyrics 1: "went; Our";
+			lyrics 1: "praise; To";
+			lyrics 1: "King, To";
+
+bar
+//17
+1 1: 4ec; 4gc; 4a; 4ge;
+1 2: 4s; 4s; 8c bm; 8d ebm; 4s;
+2 1: 4gc; 4c+e; 8a bm; b ebm; 4c+c;
+2 2: 4s; 4s; 4f; 4s;
+
+			lyrics 1: "praise and prayer and";
+			lyrics 1: "thee, now nigh ex-";
+			lyrics 1: "whom the lips of";
+bar
+//18
+1 1: 4g slur; 4f; 4ec; 4gc;
+1 2: 4d; 8c bm; 8d ebm; 4s; 4s;
+2 1: 4b slur; 4a; 4gc; 4ge;
+2 2: 4g-; 8a- bm; 8b- ebm; 4s; 4s;
+phrase below 1: 1 til 2.5;
+phrase below 2: 1 til 2.5;
+
+			lyrics 1: "an-thems Be-";
+			lyrics 1: "alt-ed Our";
+			lyrics 1: "chil-dren Made";
+bar
+//19
+1 1: 4fc; 4ec; 4d; 4db;
+1 2: 4s; 4s; 4c; 4s;
+2 1: 4af; 4gc; 4.g; 8f;
+2 2: 4s; 4s; 4g-; 4g-; 
+
+			lyrics 1: "fore thee we pre-";
+			lyrics 1: "mel-o-dy we";
+			lyrics 1: "sweet ho-san-nas";
+dblbar
+//20
+1 1: 2.c; 4s;
+1 2: 2.c; 4s;
+2: 2.ec; 4s;
+
+			lyrics 1: "sent.";
+			lyrics 1: "raise.";
+			lyrics 1: "ring!";
+endbar
+//21
+1: 2fc; 2ec;
+2: 2af; 2gc;
+
+			lyrics 1: 2; 2s; "<>";
+			lyrics 1: 2; 2s; "<>";
+			lyrics 1: "A-MEN.";
+endbar

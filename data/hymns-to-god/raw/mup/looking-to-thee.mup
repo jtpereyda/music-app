@@ -1,0 +1,337 @@
+// !Mup vs.7.0 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source:
+//	Glory Songs
+//	Compiled by Mr. and Mrs. John T. Benson
+//	Published by 
+//	Pentecostal Mission Publishing Co.
+//	Nashville Tennessee
+//	Copyright 1916?
+//	Hymn No. 135 (Hymn Page No. 140)
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 12/29/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Looking To Thee" ""
+   title (2)""
+   title (11)"" "\f(TI)looking unto Jesus the author and" ""
+   title (11)"" "\f(TI)perfector of our faith,... - Heb. 12:2" ""
+   title (11) "A - 4 - SOL" "" ""
+   title (13) "James Rowe" "" "H. M. Eagle, 1911"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.96
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+staffs=2
+	time=12/8	
+	key=a
+
+
+staff 2
+	key=a
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus - Refrain
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+      //Trebble Cleff
+        define FST(COUNT)
+        mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+        mussym (10) below 1: COUNT "uferm"; @
+ 
+      //Bass Cleff
+        define FBT(COUNT)
+        mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+        mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=115";
+
+//=========================
+//Verse 1
+
+//1
+1: 4.s; ; ; 8ce; ; ; 
+2: 4.s; ; ; 8a-a; ; ;
+
+	VS1 "<1. >-1|Look-ing to";
+	VS1 "<2. >-1|Look-ing to";
+	VS1 "<3. >-1|Aft-er a-";
+bar
+
+//2
+1: 4df; 8ce; 4ca; 8db; 4.ec+; 8s; s; s;
+2: 4a-a; 8; 4; 8; 4.; 8s; s; s;
+
+	VS1 "Thee from day to day,";
+	VS1 "Thee for all I need,";
+	VS1 "while, in heav-en bright,"; 
+invisbar
+
+1: 8ec+; eb; ea; 4.s; ; ;
+2: 8a-a; b-g; ca; 4.s; ; ;
+
+	VS1 "Trust-ing Thy";
+	VS1 "Find-ing in";
+	VS1 "Where there is";
+bar
+
+//3
+1: 4.s; 4df; 8fb; 4fa; 8df; 4.ce;
+2: 4.s; 4da; 8dd+; 4; 8da; 4.a-a;
+
+	VS1 "grace a-long the way";
+	VS1 "Thee a friend in-deed,";
+	VS1 "nei-ther sin nor night,";
+invisbar
+
+1: 8ce; ; ; 4.s; ; ;
+2: 8a-a; ; ; 4.s; ; ;
+
+	VS1 "Know-ing that";
+	VS1 "All of the";
+	VS1 "I shall be-";
+bar
+
+//4
+1: 4ca; 8dg; 4ea; 8eb; 4.ec+; 8d#a; ; ;
+2 1: 4a-e; 8b-e; 4ca; 8eg; 4.a; 8fa; ; ;
+2 2: 4s; 8; 4; 8; 4.a; 4.s;
+
+	VS1 "Thou wilt safe-ly keep all; that is";
+	VS1 "bur-dens of the day meek-ly I";
+	VS1 "hold Thee, face to face, Je-sus my";
+bar
+
+//5
+1: 2.eb tie; 4.; s;
+2: 2.eg tie; 4.; s;
+
+	VS1 "Thine;_";
+	VS1 "bear;_";
+	VS1 "own;_";
+bar
+
+//6
+1: 8ce; ; ; 4.s; ; ;
+2: 8a-a; ; ; 4.s; ; ;
+
+	VS1 "Sure of Thy";
+	VS1 "Nei-ther the";
+	VS1 "Then, with the";
+bar
+
+//7
+1: 4df; 8ce; 4ca; 8db; 4.ec+; 8s; ; ;
+2: 4a-a; 8; 4; 8; 4.; 8s; ; ;
+
+	VS1 "soul re-deem-ing love,";
+	VS1 "foe nor storm I fear,";
+	VS1 "dear ones gone be-fore,";
+invisbar
+newscore
+
+1: 8ec+; eb; ea; 4.s; ; ;
+2: 8a-a; b-g; ca; 4.s; ; ;
+
+	VS1 "Sure of a";
+	VS1 "Sav-ior di-";
+	VS1 "I shall with";
+bar
+
+//8
+1: 4df; 8fb; 4fa; 8df; 4.ce; 4.s;
+2: 4da; 8dd+; 4; 8da; 4.a-a; 4.s;
+
+	VS1 "crown of life a-bove,";
+	VS1 "vine, for Thou art near,";
+	VS1 "rap-ture, more and more,";
+bar
+
+//9
+1: 8ce; ; ; 4.s; ; ;
+2: 8a-a; ; ; 4.s; ; ;
+
+	VS1 "Sing-ing Thy";
+	VS1 "Read-y my";
+	VS1 "Praise Thee for-";
+bar
+
+//10
+1: 4ca; 8dg; 4ea; 8fb; 4.ec+; 8db; ; ;
+2: 4a-e; 8b-e; 4ca; 8da; 4.ea; 8eg; ; ;
+
+	VS1 "praise I press a-long, Sav-ior di-";
+	VS1 "cares and trou-bles all free-ly to";
+	VS1 "ev-er, near Thy bright, beau-ti-ful";
+bar
+
+//11
+1: 2.ca tie; 4.; 8r; 4s;
+2: 2.a-a tie; 4.; 8r; 4s;
+
+	VS1 "vine._";
+	VS1 "share._";
+	VS1 "throne._";
+dblbar
+newscore
+
+//12
+repeatstart
+REFRAIN
+1 1: 8c+; b; a; 4.s; 4.s; 4.s;
+1 2: 4.r; 4.s; 4.s; 4.s;
+2: 4.r; 4.s; 4.s; 4.s;
+
+	VS1 "Look-ing to";
+	VS1 "<> <> <>";
+	VS1" Near-ing my";
+bar
+
+//13
+1 1: 4.e+ tie; tie; ; 8s; ; ;
+1 2: 8a; ; ; g; ; ; 4.a; 4.s;
+2: 8ac+; ; ; eb; ; ; 4.ac+; 4.s;
+
+	VS1 "Thee,_";
+	VS21 "Con-stant-ly look-ing to Thee,";
+	VS1 "own_";
+	VS21 "Near-ing, dear Sav-ior, my own";
+invisbar
+
+1 1: 8c+; b; a; 4.s; ; ;
+1 2: 4.r; s; ; ;
+2: 4.r; s; ; ;
+
+	VS1 "Trust-ing Thy";
+	VS1 "<> <> <>";
+	VS1 "Heav-en-ly";
+bar
+
+//14
+1 1: 4.c+ tie; tie; ; 4.s;
+1 2: 8f; ; ; e#; ; ; 4.f; 4.s;
+2: 8fa; ; ; cg; ; ; 4.fa; 4.s;
+
+	VS1 "grace,_";
+	VS21 "Trust-ing Thy won-der-ful grace,";
+	VS1 "place,_";
+	VS21 "Beau-ti-ful, heav-en-ly place,";
+invisbar
+
+1: 8cen; ; ; 4.s; ; ;
+2: 8a-a; ; ; 4.s; ; ;
+
+	VS1 "I am as";
+	VS1 "<> <> <>";
+	VS1 "Trust-ing Thy";
+bar
+
+//15
+1: 4ca; 8dg; 4ea; 8eb; 4.ec+; 8s; ; ;
+2 1: 4a-e; 8be; 4ca; 8eg; 4.a; 8s; ; ;
+2 2: 4.s; ; 4.a; 4.s;
+
+	VS1 "hap-py as a true";
+	VS1 "<> <> <> <> <>";
+	VS1 "love I press a-long,";
+
+invisbar ending "1"
+
+1: 4s; 8; 4; 8; 4.; 8fa; ; ;
+2 1: 4s; 8; 4; 8; 4.; 8fc+; ; ;
+2 2: 4.s; ; 4.s; 4.s;
+
+	VS1 "sol-dier can";
+bar
+
+//16
+1 1: 4.b tie; tie; ; 4.s;
+1 2: 4.g; 8f; ; ; 4.g; 4.s;
+2: 4.ee+; 8b-d#+; ; ; 4.ee+; 4.s;
+
+	VS1 "be;_";
+	VS21 "be, ev-er can be;";
+
+repeatend ending "2"
+
+//19
+1: 4s; 8; 4; 8; 4.; 8db; ; ;
+2: 4s; 8; 4; 8; 4.; 8eg; ; ;
+
+	VS1 "look-ing to";
+bar
+
+//20
+1 1: 4.a tie; 4.a tie; 4a; 8r; 4.s;
+1 2: 4c; 8e; f; ; ; 4e; 8s; 4.s;
+2 1: 4a; 8c+; d+; ; ; 4c+; 8s; 4.s;
+2 2: 4.a- tie; tie; 4; 8r; 4.s;
+
+	VS1 "Thee._";
+	VS 4s; 8; 8; 8; 8; 4; 8s; 4.s; "yes, look-ing to Thee.";
+
+endbar

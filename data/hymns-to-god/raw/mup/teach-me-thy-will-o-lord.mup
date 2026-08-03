@@ -1,0 +1,241 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Hymns And Sacred Songs
+//		Edited by: E. O. Excell
+//		Associate Editors: G. H. Shorney, F. G. Kingsbury
+//		Publisher : Hope Publishing Company, Chicago
+//		Copyright 1918
+//		Hymn no. 166
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 01/22/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Teach Me Thy Will, O Lord" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - MI" "\s(17)\f(TI)\:Teach\ me\ thy\ way,\ O\ Jehovah\|;\ I\ will\ walk\ in\ thy\ truth: Unite\ my\ heart\ to\ fear\ th\^y\ name.\ -\ Ps.\ 86:11" ""   
+   title (13) "Katharine A. Grimes" "" "E. O. Excell, 1912"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+
+//1
+1 1: 8c+e; d+f; d+e; 4bd; 8e;
+1 2: 8s;;; 4; 8d;
+2: 8aa-;;; 4ge; 8;
+
+	VERSE "<1. >-1|Teach me Thy will, O";
+	VERSE "<2. >-1|Teach me Thy won-drous";
+	VERSE "<3. >-1|Teach me by pain Thy";
+	VERSE "<4. >-1|Teach Thou my lips to";
+bar
+//2
+1: 4.ac tie; 4. ac;
+2: 4.aa- tie; 4. aa-;
+
+	VERSE "Lord,";
+	VERSE "grace,";
+	VERSE "pow'r";
+	VERSE "sing,";
+bar
+//3
+1: 4. af; 4ge; 8fd;
+2: 4. ad; 4; 8;
+
+	VERSE "Teach me Thy";
+	VERSE "Bound-less and";
+	VERSE "Teach me by";
+	VERSE "My heart to";
+bar
+//4
+1: 4.ec tie;;
+2: 4.aa- tie;;
+
+	VERSE "way;";
+	VERSE "free;";
+	VERSE "love;";
+	VERSE "praise;";
+bar
+//5
+1: 8ec; fd; ge; 4ae; 8d+e;
+2: 8aa-; ad; be; 4ac; 8gb-;
+
+	VERSE "Teach me to know Thy";
+	VERSE "Lord, let Thy bless-ed";
+	VERSE "Teach me to know, each";
+	VERSE "Be Thou my Lord and";
+bar
+//6
+1: 4.c+e tie;;
+2: 4.aa- tie;;
+
+	VERSE "word,";
+	VERSE "face";
+	VERSE "hour,";
+	VERSE "King";
+bar
+//7
+1: 4.bdn; 4fd; 8c+d;
+2: 4.ab-; 4; 8;
+
+	VERSE "Teach me to";
+	VERSE "Shine up-on";
+	VERSE "Thou art a-";
+	VERSE "Thro' all my";
+bar
+//8
+1: 4.be tie;;
+2: 4.ge tie;;
+
+	VERSE "pray.";
+	VERSE "me.";
+	VERSE "bove.";
+	VERSE "days.";
+bar
+//9
+1: 8be; c+e; d+e; 4c+e; 8bg;
+2: 8ge; ae; be; 4ae; 8c+en;
+
+	VERSE "What-e'er seems best to";
+	VERSE "Heal Thou sin's ev-'ry";
+	VERSE "Teach me as seem-eth";
+	VERSE "Teach Thou my soul to";
+bar
+//10
+1: 4.af tie;;
+2: 4.c+f tie;;
+
+	VERSE "Thee,";
+	VERSE "smart,";
+	VERSE "best";
+	VERSE "cry,";
+bar
+//11
+1: 8af; bf; af; 4ge; 8fd;
+2: 8d+d;;; 4ad; 8;
+
+	VERSE "That be my ear-nest";
+	VERSE "Dwell Thou with-in my";
+	VERSE "In Thee to find sweet";
+	VERSE "\"Be thou, dear Sav-ior,";
+bar
+//12
+1: 4.ec tie;;
+2: 4.aa- tie;;
+
+	VERSE "plea,";
+	VERSE "heart;";
+	VERSE "rest;";
+	VERSE "nigh,";
+bar
+//13
+1: 8ec; fd; ae; 4e+g; 8e+g&;
+2: 8aa-; ad; ac; 4d+b-; 8anb-n;
+
+	VERSE "So that Thou draw-est";
+	VERSE "Grant that I nev-er";
+	VERSE "Lean-ing up-on Thy";
+	VERSE "Teach me to live, to";
+bar
+//14
+1: 4.e+g& tie;;
+2: 4.a&c tie;;
+
+	VERSE "me";
+	VERSE "part,";
+	VERSE "breast,";
+	VERSE "die,";
+bar
+//15
+1: 4.af; 4ae; 8bd;
+2: 4.bdn; 4c+e; 8ge;
+
+	VERSE "Clo-ser each";
+	VERSE "Sav-ior, from";
+	VERSE "All doubt re-";
+	VERSE "Saved by Thy";
+bar
+//16
+1: 4.ac tie;;
+2: 4.aa- tie;;
+
+	VERSE "day.";
+	VERSE "Thee.";
+	VERSE "move.";
+	VERSE "grace.\"";
+dblbar
+//17
+1: 2.ad;
+2: 2.fd;
+
+	VERSE "<>";
+	VERSE "<>";
+	VERSE "<>";
+	VERSE "A-";
+bar
+//18
+1: 2.ac;
+2: 2.ea-;
+
+	VERSE "<>";
+	VERSE "<>";
+	VERSE "<>";
+	VERSE "MEN.";
+endbar

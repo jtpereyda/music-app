@@ -1,0 +1,376 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Songs of Joy and Gladness No. 2
+//		Editors: W. McDonald, Joshua Gill, John R. Sweney, William J. Kirkpatrick
+// 		Publisher: McDonald, Gill & Co.
+// 		36 Nromfield St, Boston
+// 		57 Washington St., Chicago
+// 		Copyright 1891
+//		Hymn No.: 66
+
+// Transcribed by: Ted Gatza, Jr. 05/08/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/4
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "No Other Plea" ""
+   title (2) ""
+   title (9) "" "\f(TI)While we were yet sinners, Christ died for us. - Rom. 5:8" ""
+
+   title (11) "" 
+   title (11)" A\(flat) - 3 - SOL" "" "\s(13)Norse Melody"
+   title (13) "Lidie H. Edmunds" "" "arr., William J. Kirkpatrick, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1: 2s; 4ce;
+2: 2s; 4a-a;
+
+	VS "<1. >-1|My";
+	VS "<2. >-1|E-";
+	VS "<3. >-1|My";
+	VS "<4. >-1|My";
+bar
+
+//2
+1: 8ce; df; 4ce; ca;
+2: 8a-a; ; 4; ;
+
+	VS "faith has found a";
+	VS "nough for me that";
+	VS "heart is lean-ing";
+	VS "Great Phy-si-cian";
+bar
+
+//3a
+1: 8eg; df; 4; s;
+2: 8da; ; 4; s;
+
+	VS "rest-ing place,";
+	VS "Je-sus saves,";
+	VS "on the Word,";
+	VS "heals the sick,";
+invisbar
+
+//3b
+1: 8s; ; 4; df;
+2: 8s; ; 4; da;
+
+	VS "Not";
+	VS "This";
+	VS "The";
+	VS "The";
+bar
+
+//4
+1: 8fd+; fb; 4ea; eg;
+2: 8b-b;  b-d+; 4ec+; eb;
+
+	VS "in de-vice nor";
+	VS "ends my fear and";
+	VS "writ-ten Word of";
+	VS "lost He came to";
+bar
+
+//5a
+1: 2ea; 4s;
+2: 2a-c+; 4s;
+
+	VS "creed;";
+	VS "doubt,";
+	VS "God,";
+	VS "save;";
+invisbar
+
+//5b
+//1
+1: 2s; 4ce;
+2: 2s; 4a-a;
+
+	VS "I";
+	VS "A";
+	VS "Sal-";
+	VS "For";
+bar
+
+//6
+1: 8ce; df; 4ce; ca;
+2: 8a-a; ; 4; ;
+
+	VS "trust the Ev-er-";
+	VS "sin-ful soul, I";
+	VS "va-tion by my";
+	VS "me His pre-cious";
+bar
+
+//7a
+1: 8eg; df; 4; s;
+2: 8da; ; 4; s;
+
+	VS "liv-ing one,";
+	VS "come to Him,";
+	VS "Sav-iour's name,";
+	VS "blood, He shed,";
+invisbar
+
+//7b
+1: 8s; ; 4; df;
+2: 8s; ; 4; da;
+
+	VS "His";
+	VS "He'll";
+	VS "Sal-";
+	VS "For";
+bar
+
+//8
+1: 8fd+; fb; 4ea; eg;
+2: 8b-b;  b-d+; 4ec+; eb;
+
+	VS "wounds for me shall";
+	VS "nev-er cast me";
+	VS "va-tion thro' His";
+	VS "me His life He";
+bar
+
+//9
+1: 2ea; 4s;
+2: 2a-c+; 4s;
+
+
+	VS "plead.";
+	VS "out.";
+	VS "blood.";
+	VS "gave.";
+dblbar	
+newscore
+
+CHORUS
+
+//10
+1 1: 2s; 4e;
+1 2: 2s; 4e;
+2: 2s; 4ac+;
+
+	VS "I";
+bar
+
+//11
+1: 8ea; ac+; 4ae+; ec+;
+2 1: 8ac+; ae+; 4ac+; a;
+2 2: 8s; ; 4; e;
+
+	VS "need no oth-er";
+bar
+
+//12a
+1: 8ec+; eb; 4; s;
+2: 8ea; eg; 4; s;
+
+	VS "ar-gu-ment,";
+invisbar
+
+//12b
+1: 8s; ; 4; ec+;
+2 1: 8s; ; 4; a;
+2 2: 8s; ; 4; a;
+
+	VS "I";
+bar
+
+//13
+1: 8ea; eg; 4df; fb;
+2: 8ca; ; 4da; dd+;
+
+	VS "need no oth-er";
+bar
+
+//14a
+1 1: 4a slur; g; s;
+1 2: 2e; 4s;
+2 1: 4c+ slur; b; s;
+2 2: 2e; 4s;
+
+	VS "plea,";
+invisbar
+
+//14b
+1 1: 2s; 4e;
+1 2: 2s; 4d;
+2: 2s; 4eg;
+
+	VS "It";
+bar
+
+//15
+1: 8ce; df; 4ce; ca;
+2: 8a-a; ; 4; ;
+
+	VS "is e-nough that";
+
+bar
+
+//16a
+1: 8eg; df; 4; s;
+2: 8da; ; 4; s;
+
+	VS "Je-sus died,";
+invisbar
+
+//16b
+1: 8s; ; 4; df;
+2: 8s; ; 4; da;
+
+	VS "And";
+bar
+
+//17
+1: 8fd+; fb; 4ea; eg;
+2: 8b-b;  b-d+; 4ec+; eb;
+
+	VS "that He died for";
+bar
+
+//18
+1: 2ea; 4s;
+2: 2a-c+; 4s;
+
+	VS "me.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

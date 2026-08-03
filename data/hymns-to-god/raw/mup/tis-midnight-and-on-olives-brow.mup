@@ -1,0 +1,295 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Church Melodies
+//		A Collection of Psalms And Hymns
+//		With Appropriate Music
+//		By Thomas Hastings, Mus. Doc. and Thomas S. Hastings
+//		New York;
+//		Published by: Anson D. F. Randolph
+//		683 Broadway
+//		Chicago: William Tomlinson, Cincinnati: George Crosby,
+//		Boston: Henry Hoyt
+// 		Copyright 1859
+//		Hymn No.: 59
+
+// Transcribed by: Ted Gatza, Jr. 06/08/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "'Tis Midnight; And On Olive's Brow" ""
+   title (2) ""
+   title (11) "" "\f(TI)And He came out...to the mount of Olives...and being in agony" ""
+   title (11) "" "\f(TI)He prayed more earnestly... - Lk. 22:39-46" ""
+   title (11) "" 
+   title (12)" A\(flat) - 4 - SOL" "" ""
+   title (15) "William B. Tappan, 1822" "" "William B. Bradbury, 1853"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1: 2s; ce;
+2: 2s; a-a; 
+
+	VS "<1. >-1|'Tis";
+	VS "<2. >-1|'Tis";
+	VS "<3. >-1|'Tis";
+bar
+
+//2
+1: 4ce; ; df; ;
+2: 4a-a; ; da; ;
+
+	VS "mid-night; and on";
+	VS "mid-night; and for";
+	VS "mid-night; and from";
+bar
+
+//3
+1: 2ce; b-e;
+2: 2ea; eg;
+
+	VS "Ol-ive's";
+	VS "oth-er's'";
+	VS "heav'n-ly";
+bar
+
+//4a
+1: 2ce; s;
+2: 2a-a; s;
+	VS "brow";
+	VS "guilt";
+	VS "plains";
+invisbar
+newscore
+
+//4b
+1: 2s; ca;
+2: 2s; a-a;
+
+	VS "The";
+	VS "The";
+	VS "Is";
+bar
+
+//5
+1: 4ca; ; eb; ec+;
+2: 4fa; ; eg; a-a;
+
+	VS "star is dimmed that";
+	VS "Man of Sor-rows";
+	VS "borne the song that";
+bar
+
+//6
+1 1: 2fb; b;
+1 2: 2s; 4e slur; d;
+2: 2da; eg;
+
+	VS "late-ly";
+	VS "weeps in";
+	VS "an-gels";
+bar
+
+//7a
+1: 2ca; s;
+2: 2a-a; s;
+
+	VS "shone;";
+	VS "blood;";
+	VS "know;";
+invisbar
+newscore
+
+//7b
+1: 2s; ec+;
+2: 2s; a-a;
+
+	VS "'Tis";
+	VS "Yet";
+	VS "Un-";
+bar
+
+//7b
+1: 4eb; ; ; ;
+2: 4eg; ; ; ;
+
+	VS "mid-night; in the";
+	VS "He that hath in";
+	VS "heard by mor-tals";
+bar
+
+//8
+1: 2dnb; fa;
+2 1: 4f slur; b; 2s;
+2 2: 2b-; b-b;
+
+	VS "gar-den,";
+	VS "an-guish";
+	VS "are the";
+bar
+
+//9a
+1: 2eg; s;
+2: 2eb; s;
+
+	VS "now";
+	VS "knelt";
+	VS "strains";
+invisbar
+newscore
+
+//9b
+1: 2s; eg;
+2: 2s; db;
+
+	VS "The";
+	VS "Is";
+	VS "That";
+bar
+
+//10
+1: 4ea; ; fa; df;
+2: 4ca; ; da; ;
+
+	VS "suf-f'ring Sav-ior";
+	VS "not for-sak-en";
+	VS "sweet-ly soothe the";
+bar
+
+//11
+1 1: 2e; ;
+1 2: 4c slur; b-; 2d;
+2 1: 4a slur; g; 2s;
+2 2: 2e; eb;
+
+	VS "prays a-";
+	VS "by His";
+	VS "Sav-ior's";
+bar
+
+//12
+1: 2ce; s;
+2: 2a-a; s;
+
+	VS "lone.";
+	VS "God.";
+	VS "woe.";
+endbar

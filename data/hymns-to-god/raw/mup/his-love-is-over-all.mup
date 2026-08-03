@@ -1,0 +1,304 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs for Work and Worship
+//		For us in Sunday Schools, Young peoples'
+//		Societies, Devotional Meetings, Camp
+//		Meetings, Etc.
+//		By E.S. Lorenz, J.H. Entwisle, Powell G. Fithian,
+//		Adam Geibel, and R.F. Lehman
+//		Published by The Lorenz Publishing Co.
+//		Dayton, Ohio
+//		Copyright 1903
+//		Hymn no. 82
+
+// Transcribed by: Ted Gatza, Jr. 08/09/2010 Rev. 09/11/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "His Love Is Over All" ""
+   title (2)""
+   title (11) "F - 4 - SOL" "\s(17)\f(TI)\:and\ to\ know\ the\ love\ of\ Christ\ \|which\ passeth\ knowledge,\ that\ ye may\ be\ filled\ unto\ all\ the\|\ fulness\ of\ God.\ -\ Eph.\ 3:19"""
+   title (13) "Lizzie De Armond" " " "Adam Geibel, 1900"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=105";
+
+//1
+1 1: 2.s; 4c;
+1 2: 2.s; 4c;
+2: 2.s; 4af;
+
+			lyrics 1: "<1. >-1|O";
+			lyrics 1: "<2. >-1|How";
+			lyrics 1: "<3. >-1|My";
+bar
+//2
+1 1: 4c; 4fc; 4fc; 4ge;
+1 2: 4c; 4s; 4s; 4s;
+2: 4af; 4af; 4af; 4c+c;
+
+			lyrics 1: "mag-ni-fy the";
+			lyrics 1: "can I ev-er";
+			lyrics 1: "wak-ing hours he";
+bar
+//3
+1: 4af; 4c+e; 4c+f; 4d+f;
+2 1: 4c+f; 4bg; 4c+a; 4b;
+2 2: 4s; 4s; 4s; 4b;
+
+			lyrics 1: "Lord with me, His";
+			lyrics 1: "go a-stray, His";
+			lyrics 1: "fills with songs, His";
+bar
+//4
+1: 4.c+f; 8af; 4ge; 4fd;
+2: 4.c+a; 8c+f; 4bng; 4bg;
+
+			lyrics 1: "love is o-ver";
+			lyrics 1: "love is o-ver";
+			lyrics 1: "love is o-ver";
+bar
+newscore
+//5
+1 1: 2.ge; 4c;
+1 2: 2.s; 4c;
+2: 2.c+c; 4bc;
+
+			lyrics 1: "all, The";
+			lyrics 1: "all, My";
+			lyrics 1: "all, I";
+bar
+//6
+1 1: 4c; 4fc; 4fc; 4ge;
+1 2: 4c; 4s; 4s; 4s;
+2: 4af; 4af; 4af; 4c+c;
+
+			lyrics 1: "foun-tain of my";
+			lyrics 1: "feet he'll keep from";
+			lyrics 1: "know to whom my";
+bar
+//7
+1: 4af; 4c+e; 4c+f; 4d+f;
+2: 4c+f; 4bg; 4c+a; 4f+b;
+
+			lyrics 1: "soul is he, His";
+			lyrics 1: "day to day, His";
+			lyrics 1: "soul be-longs, His";
+bar
+//8
+1: 4.af; 8af; 4be; 4ge;
+2 1: 4.c+; 8c+; 4gc; 4bc;
+2 2: 4.c+; 8c+; 4s; 4s; 
+
+			lyrics 1: "love is o-ver";
+			lyrics 1: "love is o-ver";
+			lyrics 1: "love is o-ver";
+bar
+newscore
+//9
+1 1: 2.f; 4fc;
+1 2: 2.f; 4s;
+2: 2.af; 4af;
+
+			lyrics 1: "all. O";
+			lyrics 1: "all. I";
+			lyrics 1: "all. I";
+bar
+//10
+1: 4.ec; 8gc; 4gc; 4ec;
+2: 4.gc; 8bc; 4bc; 4gc;
+
+			lyrics 1: "life is such a";
+			lyrics 1: "ne'er can pay the";
+			lyrics 1: "would not if I";
+bar
+//11
+1: 4fc; 4af; 4af; 4fc;
+2: 4af; 4c+f; 4c+f; 4af;
+
+			lyrics 1: "bless-ed thing, When";
+			lyrics 1: "debt I owe, Un-";
+			lyrics 1: "could be free, His";
+bar
+//12
+1: 4.ge; 8bg; 4s; 4s;
+2: 4.c+c; 8c+c; 4s; 4s;
+
+			lyrics 1: "safe-ly";
+			lyrics 1: "to the";
+			lyrics 1: "ser-vice";
+invisbar
+newscore
+
+1: 4.s; 8s; 4bg; 4ge;
+2: 4.s; 8s; 4c+c; 4c+c;
+
+			lyrics 1: "shel-tered";
+			lyrics 1: "Lord who";
+			lyrics 1: "is a";
+bar
+//13 
+1: 4af; 4c+f; 4c+f; 4c+f;
+2:4c+f; 4af; 4af; 4af;
+
+			lyrics 1: "by his wing, I";
+			lyrics 1: "loves me so, Praise";
+			lyrics 1: "joy to me; My";
+bar
+//14
+1: 4.d+f; 8d+f; 4f+f; 4d+f;
+2 1: 4.bb-; 8b; 4d+b; 4b;
+2 2: 4.s; 8b; 4s; 4b;
+
+			lyrics 1: "sure-ly must re-";
+			lyrics 1: "God from whom all";
+			lyrics 1: "eyes shall soon His";
+bar
+//15
+1: 4c+f; 4be; 4af; 4af;
+2: 4c+a; 4c+g; 4c+f; 4c+f;
+
+			lyrics 1: "joice and sing, His";
+			lyrics 1: "bless-ings flow, His";
+			lyrics 1: "beau-ty see, His";
+bar
+//16
+1: 4.ge; 8ge; 4bnf; 4d+f;
+2: 4.c+g; 8c+g; 4d+g; 4bng;
+
+			lyrics 1: "love is o-ver";
+			lyrics 1: "love is o-ver";
+			lyrics 1: "love is o-ver";
+bar
+//17
+1: 2.c+e; 4s;
+2: 2.c+c; 4s;
+
+			lyrics 1: "all.";
+			lyrics 1: "all.";
+			lyrics 1: "all.";
+dblbar
+//18
+1: 2.s; 4d+e;
+2: 2.s; 4bc;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "His";
+bar
+//19
+1 1: 4.c+f; 8af; 4ge; 4f;
+1 2: 4.s; 8s; 4s; 4f;
+2: 4.af; 8c+f; 4bf; 4af;
+
+			lyrics 1: "love is o-ver,";
+bar
+//20
+1 1: 2.a; 4s;
+1 2: 4f; 4f; 4f; 4s;
+2: 4c+f; 4c+f; 4c+f; 4s;
+
+			lyrics 1: 2.; 4s; "all,";
+			lyrics 1: 4; 4; 4; 4s; "o-ver all";
+invisbar
+newscore
+
+1 1: 2.s; 4d+f;
+1 2: 4s; 4s; 4s; 4s;
+2: 4s; 4s; 4s; 4bf;
+
+			lyrics 1: "So";
+bar
+//21
+1 1: 4.c+f; 8af; 4gc; 4f;
+1 2: 4.s; 8s; 4s; 4f;
+2: 4.af; 8c+f; 4c+e; 4bnd;
+
+			lyrics 1: "bound-less, full, and";
+			lyrics 1: 4.s; 8s; 4s; 4; "so";
+bar
+//22
+1 1: 2.g; 4ge;
+1 2: 4e; 4e; 4e; 4s;
+2: 4c+c; 4c+c; 4c+c; 4c+c;
+
+			lyrics 1: "free, O";
+			lyrics 1: 4; 4; 4; 4s; "full and free,";
+bar
+//23
+1: 4.af; 8af; 4s; 4s;
+2: 4.c+f; 8c+f; 4s; 4s;
+
+			lyrics 1: "bless-ed";
+invisbar
+newscore
+
+1: 4.s; 8s; 4be; 4be;
+2: 4.s; 8s; 4c+g; 4c+g;
+
+			lyrics 1: "nev-er";
+
+bar
+//24
+1: 4c+f; 4e&+f; 4d+f; 4bg;
+2 1: 4c+a; 4c+a; 4b; 4d+b-;
+2 2: 4s; 4s; 4b; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "dy-ing love That";
+bar
+//25
+1: 4.af; 8af; 4be; 4ge;
+2: 4.c+c; 8c+c; 4gc; 4bc;
+
+			lyrics 1: "paid the price for";
+bar
+//26
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			lyrics 1: "me.";
+endbar

@@ -1,0 +1,275 @@
+// !Mup vs.6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 22
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/28/2022
+
+// Revisions:
+
+	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Almost Persuaded" ""
+   title (2)""
+   title (11)"" "\f(TI)\"almost thou persuadest me to be a Christian.\" - Acts 26:28" ""
+   title (11) "G - 2 - MI" "" ""
+   title (13) "Philip P. Bliss (1871)" "" "Philip P. Bliss"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+ 
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+
+//1
+1: 4.db; 4ec+; 8;
+2 1: 4.g; 4; 8; 
+2 2: 4.g; 4; 8;
+
+	VS1 "<1. >-1|\"Al-most per-";
+	VS1 "<2. >-1|\"Al-most per-";
+	VS1 "<3. >-1|\"Al-most per-";
+bar
+
+//2
+1: 4.db; b-g;
+2 1: 4.g; ;
+2 2: 4.g; ;
+
+	VS1 "suad-ed\"";
+	VS1 "suad-ed\"";
+	VS1 "suad-ed\"";
+bar
+
+//3
+1: 4.eg; 4fa; 8;
+2: 4.eb; 4dd+; 8;
+
+	VS1 "now to be-";
+	VS1 "come, come to-";
+	VS1 "har-vest is";
+bar
+
+//4
+1: 4.gb tie; ;
+2: 4.gd+ tie; ;
+
+	VS1 "lieve;";
+	VS1 "day;";
+	VS1 "past;";
+bar
+
+//5
+1: 4.db; 4ec+; 8;
+2 1: 4.g; 4; 8;
+2 2: 4.g; 4; 8;
+
+	VS1 "\"Al-most per-";
+	VS1 "\"Al-most per-";
+	VS1 "\"Al-most per-";
+bar
+
+//6
+1: 4.db; b-g;
+2 1: 4.g; ;
+2 2: 4.g; ;
+
+	VS1 "suad-ed\"";
+	VS1 "suad-ed\"";
+	VS1 "suad-ed\"";
+bar
+
+//7
+1: 4.da; 4db; 8ca;
+2: 4.df; 4dg; 8df;
+
+	VS1 "Christ to re-";
+	VS1 "turn not a-";
+	VS1 "doom comes at";
+bar
+
+//8
+1: 4.b-g tie; ;
+2: 4.g-g tie; ;
+
+	VS1 "ceive.";
+	VS1 "way.";
+	VS1 "last.";
+bar
+
+//9
+1: 4.ec+; 4; 8;
+2: 4.cg; 4; 8eg;
+
+	VS1 "Seems now some";
+	VS1 "Je-sus in-";
+	VS1 "\"Al-most\" can";
+bar
+
+//10
+1: 4ec+; 8db; 4.;
+2 1: 4g; 8; 4.;
+2 2: 4g; 8; 4.;
+
+	VS1 "soul to say,";
+	VS1 "vites you here,";
+	VS1 "not a-vail";
+bar
+
+//11
+1: 4.fd+; 4fa; 8ac+;
+2: 4.df; 4dd+; 8fd+;
+
+	VS1 "\"Go, Spir-it,";
+	VS1 "An-gels are";
+	VS1 "\"Al-most\" is";
+bar
+
+//12	
+1: 4ac+; 8gb; 4.gb;
+2: 4gd+; 8; 4.;
+
+	VS1 "go thy way,";
+	VS1 "lin-g'ring near,";
+	VS1 "but to fail!";
+bar
+
+//13
+1: 4.b-g; 4cg; 8dg;
+2: 4.g-g; 4a-g; 8b-g;
+
+	VS1 "Some more co-";
+	VS1 "Prayers rise from";
+	VS1 "sad, sad that";
+bar
+
+//14
+1: 4eg; 8ea; 4.db;
+2: 4cg; 8; 4.g-g;
+
+	VS1 "ven-ient day";
+	VS1 "hearts so dear;";
+	VS1 "bit-ter wail\(emdash)";
+bar
+
+//15
+1 1: 4.b; 4fb; 8fa;
+1 2: 4d slur; 8g; 4.s;
+2 1: 4g slur; 8b; 4dd+; 8dc+;
+2 2: 4.d; 4.s;
+FST(4)
+FBT(4)
+
+	VS1 "On thee I'll";
+	VS1 "O wan-d'rer";
+	VS1 "\"Al-most, but";
+bar
+
+//16
+1 1: 4.g tie; ;
+1 2: 4.g tie; ;
+2: 4.g-b tie; ;
+
+	VS1 "call.\"";
+	VS1 "come!";
+	VS1 "lost!\"";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+

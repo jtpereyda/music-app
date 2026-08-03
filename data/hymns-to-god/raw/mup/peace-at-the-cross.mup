@@ -1,0 +1,205 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Royal Hymnal For the Sunday School
+//		by Robert Lowry and Ira D. Sankey
+//		Published by the Biglow and Main Co.
+//		74 East Ninth Street, NewYork
+//		Lakeside buildng, Chicageo
+//		Copyright, 1898
+//		Hymn no.: 129 / 133
+
+// Transcribed by: Ted Gatza, Jr. 03/07/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "Peace at the Cross" ""
+   title (2)""
+title (11) "A \(flat) - 4 - SOL" "\s(18)\f(TI)\:Having\ made\ peace\ through\ the\ blood\ of\ his\ cross\ -\ Col.\ 1:20 \(space)"""
+   title (13) "Roger H Lyon" " " "Robert Lowry, 1895"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=105";
+
+//1
+1: 2.s; 4ec;
+2: 2.s; 4aa-;
+
+
+			lyrics 1: "<1. >-1|I";
+			lyrics 1: "<2. >-1|I";
+			lyrics 1: "<3. >-1|I";
+bar
+//2
+1: 4ec; 8ac bm; 8bd ebm; 4c+e; 4c+e;
+2: 4aa-; 4aa-; 4aa-; 4aa-;
+
+			lyrics 1: 4; 4; 4; 4; "lost my bur-den";
+			lyrics 1: 4; 4; 4; 4; "found sweet par-don";
+			lyrics 1: 4; 4; 4; 4; "rest, be-liev-ing";
+bar
+//3
+1: 4.d+f; 8c+e; 4c+e; 4ae;
+2: 4.aa-; 8aa-; 4aa-; 4ac;
+
+			lyrics 1: "at the cross, Where";
+			lyrics 1: "at the cross, In";
+			lyrics 1: "at the cross, In";
+bar
+//4
+1: 4be; 4be; 4.s; 8s;
+2: 4ge; 4ge; 4.s; 8s;
+
+			lyrics 1: "Je-sus";
+			lyrics 1: "an-swer";
+			lyrics 1: "Him, the";
+invisbar
+newscore
+
+1: 4s; 4s; 4.c+dn; 8bd;
+2: 4s; 4s; 4.ab-; 8ab-;
+
+			lyrics 1: "died for";
+			lyrics 1: "to my";
+			lyrics 1: "cru-ci";
+bar
+//5
+1 1: 2.b; 4e;
+1 2: 2e slur; 4d; 4d;
+2: 2.ge; 4ge;
+
+			lyrics 1: "me; My";
+			lyrics 1: "pray'r; Thro'";
+			lyrics 1: "fied, For";
+bar
+//6
+1: 4ec; 8ac bm; 8bd ebm; 4c+e; 4c+e;
+2: 4aa-; 4aa-; 4aa-; 4aa-;
+
+			lyrics 1: 4; 4; 4; 4; "heart leaps up with";
+			lyrics 1: 4; 4; 4; 4; "Je-sus, my Re-";
+			lyrics 1: 4; 4; 4; 4; "in His life my";
+bar
+//7
+1: 4.d+f; 8c+e; 4s; 4s;
+2: 4.aa-; 8aa-; 4s; 4s;
+
+			lyrics 1: "ho-ly";
+			lyrics 1: "deem-er";
+			lyrics 1: "life is";
+invisbar
+newscore
+
+1: 4.s; 8s; 4c+e; 4ae;
+2: 4.s; 8s; 4aa-; 4c+a-;
+
+			lyrics 1: "joy, For";
+			lyrics 1: "Lord, My";
+			lyrics 1: "found, His";
+
+
+bar
+//8
+1 1: 4bf; 4d+f; 4c+f; 8b bm; 8a ebm;
+1 2: 4s; 4s; 4s; 4f;
+2 1: 4bd; 4bb-; 4anc; 4b;
+2 2: 4s; 4s; 4s; 8d bm; 8dn ebm;
+
+			lyrics 1: 4; 4; 4; 4; "He hath made me";
+			lyrics 1: 4; 4; 4; 4; "sins lie bur-ied";
+			lyrics 1: 4; 4; 4; 4; "Spir-it is my";
+bar
+//9
+1 1: 2.ge; 8.fd; 16e;
+1 2: 2.s; 8.s; 16d;
+2: 2.be; 4r;
+
+			lyrics 1: "free. At the";
+			lyrics 1: "there. At the";
+			lyrics 1: "guide. At the";
+bar
+//10
+1: 2.ec; 8.s; 16s;
+2: 4r; 8.aa-; 16aa-; 4aa-; 4s;
+
+			lyrics 1: "cross,";
+			lyrics 1: "cross,";
+			lyrics 1: "cross,";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "At the cross,";
+invisbar
+newscore
+
+1: 2.s; 8.ac; 16ge;
+2: 4s; 8.s; 16s; 4s; 4r;
+
+			lyrics 1: "at the";
+			lyrics 1: "at the";
+			lyrics 1: "at the";
+
+bar
+//11
+1: 2.fd; 4bf;
+2: 4r; 8.ad; 16ad; 4ad; 4d+b-;
+
+			lyrics 1: "cross, Where";
+			lyrics 1: "cross, In";
+			lyrics 1: "cross, In";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "at the cross,";
+bar
+//12
+1: 4ae; 8gd bm; 8ac ebm; 4.c+e; 8bd;
+2 1: 4c+e; 8b bm; 8a ebm; 4.ge; 8ge;
+2 2: 4s; 4e; 4.s; 8s;
+
+			lyrics 1: 4; 4; 4.; 8; "Je-sus died for";
+			lyrics 1: 4; 4; 4.; 8; "an-swer to my";
+			lyrics 1: 4; 4; 4.; 8; "Him, the cru-ci-";
+bar
+//13
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			lyrics 1: "me.";
+			lyrics 1: "pray'r.";
+			lyrics 1: "fied.";
+endbar

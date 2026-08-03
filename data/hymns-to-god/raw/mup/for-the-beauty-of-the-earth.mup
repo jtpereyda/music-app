@@ -1,0 +1,312 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	The New Cokesbury Hymnal
+//	For General Use in Religious Meetings
+//	Music Editor Charles C. Washburn
+//	Professor Of Church Music, Scarritt College For Christian Workers
+//	Published By The Cokesbury Press
+//	Nashville, Tenn.
+//	Date: 1928
+//	Hymn No.: 32
+
+// Transcribed by: Ted Gatza, Jr. 11/08/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.87
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	extendlyrics=y
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=3#
+
+staff 2
+	key=3#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "For The Beauty Of The Earth" ""
+   title (2) ""
+   title (11) "" "\f(TI)Every good gift and every perfect gift is from above," ""
+   title (11) "" "\f(TI)and cometh down from the Father... - Jas. 1:17" ""
+   title (11) "A - 4 - DO" "" ""
+   title (13) "Folliott S. Pierpont" "" "Conrad Kocher, arr."
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 4s; 8g bm; a ebm; 4s; ;
+1 2: 4ea; e; eb; ea;
+2: 4ac+; 8bd+ bm; ac+ ebm; 4gb; ac+;
+
+	VS12 "<1. >-1|For the beau-ty";
+	VS12 "<2. >-1|For the beau-ty";
+	VS12 "<3. >-1|For the joy of";
+	VS12 "<4. >-1|For the joy of";
+	VS12 "<5. >-1|For the church that";
+	VS12 "<6. >-1|For Thy-self, best";
+
+bar
+
+//2
+1: 4dd+; ed+; 2ec+;
+2 1: 4fa; gb; 2a;
+2 2: 4s; ; 2a;
+
+	VS "of the earth,";
+	VS "of each hour";
+	VS "ear and eye;";
+	VS "hu-man love,";
+	VS "ev-er-more";
+	VS "Gift Di-vine!";
+bar
+
+//3
+1 1: 4f; eg; ea; df;
+1 2: 4f; s; ; ;
+2: 4da; db; ca; da;
+
+	VS "For the beau-ty";
+	VS "Of the day and";
+	VS "For the heart and";
+	VS "Broth-er, sis-ter,";
+	VS "Lift-eth ho-ly";
+	VS "To our race so";
+bar
+
+//4
+1: 4ce; b-e; 2ce;
+2: 4ea; eg; 2a-a;
+
+	VS "of the skies,";
+	VS "of the night,";
+	VS "mind's de-light;";
+	VS "par-ent, child,";
+	VS "hands a-bove,";
+	VS "free-ly giv'n;";
+bar
+
+
+//5
+//1
+1 1: 4s; 8g bm; a ebm; 4s; ;
+1 2: 4ea; e; eb; ea;
+2: 4ac+; 8bd+ bm; ac+ ebm; 4gb; ac+;
+
+	VS12 "For the love which";
+	VS12 "Hill and vale, and";
+	VS12 "For the mys-tic";
+	VS12 "Friends on earth, and";
+	VS12 "Of-f'ring up on";
+	VS12 "For that great, great";
+bar
+
+//6
+1: 4dd+; ed+; 2ec+;
+2 1: 4fa; gb; 2a;
+2 2: 4s; ; 2a;
+
+	VS "from our birth";
+	VS "tree and flow'r";
+	VS "har-mo-ny";
+	VS "friends a-bove;";
+	VS "ev-'ry shore";
+	VS "love of Thine,";
+bar
+
+//7
+1 1: 4f; eg; ea; df;
+1 2: 4f; s; ; ;
+2: 4da; db; ca; da;
+
+	VS "O-ver and a-";
+	VS "Sun and moon, and";
+	VS "Link-ing sense to";
+	VS "For all gen-tle";
+	VS "Its pure sac-ri-";
+	VS "Peace on earth, and";
+bar
+
+//8
+1: 4ce; b-e; 2ce;
+2: 4ea; eg; 2a-a;
+	
+	VS "round us lies,";
+	VS "stars of light,";
+	VS "sounds and sight,";
+	VS "thot's and mild,";
+	VS "fice of love,";
+	VS "joy in heav'n,";
+
+bar
+newscore
+
+//9
+1: 4ec+; eb; ea; ec+;
+2 1: 4a; 8e+ bm; d+ ebm; 4ac+; a;
+2 2: 4a; g; s; a;
+
+	VS "Christ our God, to";
+bar
+
+//10
+1 1: 4.e+; 8d+; 2s;
+1 2: 4e; ; 2ec+;
+2 1: 4gb; eg; 2a;
+2 2: 4s; ; 2a;
+
+	VS12 "Thee we raise";
+bar
+
+//11
+1 1: 4f; eg; ea; dd+;
+1 2: 4f; s; ; ;
+2: 4da; db; ca; fa;
+
+	VS "This our hymn of";
+bar
+//12
+1 1: 4c+; b; 2ca;
+1 2: 4.e; 8d; 2s;
+2: 4ea; eg; 2a-a;
+
+	VS "grate-ful praise.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

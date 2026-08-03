@@ -1,0 +1,236 @@
+
+
+// Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Gospel Jewel Songs
+//			Suitable for all kinds of religious services; 
+//			Author: John T. Benson; 
+//			Publisher: Nashville Pentecostal Mission Publishing Co.
+//			Copyright 1910
+//			Hymn no. 200
+		
+		
+// Transcribed by: Ted Gatza, Jr. 04/09/2019
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Hallelujah! We Shall Rise" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - SOL" "\s(17)\f(TI)\:\ then\ we\ that\ are\ alive,\ that\ are\ l\^eft,\ shall\ together\ with\ them be\ caught\ up\ in\ the\ clouds,\ to\ m\^eet\ the\ Lord\ in\ the\ air:\ and so\ shall\ we\ ever\ be\ with\ th\^e\ Lord.\ -\ 1\ Thes.\ 4:17" ""   
+   title (13) "J. E. Thomas" "" "J. E. Thomas, 1904"
+   title (13) "Vs. 4 by R. E. W." "" ""
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 2.s; 8df; eg;
+2: 2.s; 8bb-;;
+
+
+	VERSE 2.s; 8; 8; "<1. >-1|In the";
+	VERSE 2.s; 8; 8; "<2. >-1|In the";
+	VERSE 2.s; 8; 8; "<3. >-1|In the";
+	VERSE 2.s; 8; 8; "<4. >-1|In the";
+bar
+//2
+1: 8fb;;; fc+; fb; eg; df; eg;
+2: 8b-d+;;; b-e+; b-d+; b-b;;;
+
+	VERSE "res-ur-ec-tion morn-ing, When the";
+	VERSE "res-ur-ec-tion morn-ing, What a";
+	VERSE "res-ur-ec-tion morn-ing, Bless-ed";
+	VERSE "res-ur-ec-tion morn-ing, We shall";
+bar
+//3-1
+1 1: 8fb; fc+; fb; eg; 4df; 8b; c+;
+1 2: 8s;;;; 4s; [dist -8] 4r;
+2: 8b-d+; b-e+; b-d+; b-b; 4b-b; 4s;
+// 2 2: 8s;;; 4s; 8s; 4s; 4r;
+
+	VERSE "trump of God shall sound, We shall";
+	VERSE 8; 8; 8; 8; 4; 4s;"meet-ing it will be,";
+	VERSE 8; 8; 8; 8; 4; 4s;"tho't it is to me,";
+	VERSE 8; 8; 8; 8; 4; 4s;"meet Him in the air,";
+
+bar
+//4
+1 1: 2.d+; 8fc+;;
+1 2: 4r; 8.g; 16; 8f;; 8s;;
+2: 4r; 8.gb; 16; 8db;; fe+;;
+
+	VERSE "rise, we shall";
+	VERSE  4s; 8.; 16; 8; 8; 8s; 8s; "Hal-le-lu-jah!";
+
+bar
+//5
+1: 2.fb; 8df; eg;
+2: 2.b-d+; 8b-b;;
+
+	VERSE "rise! Then the";
+	VERSE 2.s; 8; 8; "When our";
+	VERSE 2.s; 8; 8; "I shall";
+	VERSE 2.s; 8; 8; "And be";
+bar
+//6 
+1: 8fb;;; fc+; fb; eg; df; eg;
+2: 8b-b;;; b-e+; b-d+; b-b;;;
+
+	VERSE "saints will come re-joic-ing, And no";
+	VERSE "fa-thers and our moth-ers, And our";
+	VERSE "see my bless-ed Sav-iour, Who so";
+	VERSE "car-ried up to glo-ry, To our";
+bar
+//7
+1: 8fb; fc+; fb; eg; 4df; 8gb; ac+;
+2: 8b-d+; b-e+; b-d+; b-b; 4; 4r;
+
+	VERSE "tears will e'er be found, We shall";
+	VERSE 8; 8; 8; 8; 4; 4s; "loved ones we shall see,";
+	VERSE 8; 8; 8; 8; 4; 4s; "free-ly died for me,";
+	VERSE 8; 8; 8; 8; 4; 4s; "home so bright and fair,";
+bar
+//8
+1 1: 2.d+; 8fc+;;
+1 2: 4b; 8.g; 16; 8f;; 8s;;
+2: 4r; 8.gb; 16; 8db;; fe+;;
+
+	VERSE "rise, we shall";
+	VERSE  4s; 8.; 16; 8; 8; 8s; 8s; "Hal-le-lu-jah!";
+
+bar
+//9
+1: 2.fb; 4s;
+2: 2.b-d+; 4s;
+
+	VERSE "rise!";
+dblbar
+//Chorus
+//10
+1: 2.s; 4r;
+2 1: 2.s; 4r;
+2 2: 2.s; 8b-; d;
+
+	VERSE 2.s; 8; 8; "We shall";
+	ital (13) above 1: 1 "Chorus";
+bar
+//11
+1: 4r; 8.fb; 16; 8; df; 4r;
+2 1: 4r; 8.d+; 16; 8; b; 4r;
+2 2: 2.f; 8d; f;
+
+	VERSE "Hal-le-lu-jah!";
+	VERSE 2.; 8; 8; "rise, we shall";
+bar
+//12
+1 1: 4r; 4bd+;; 8b; d+;
+1 2: 4s;;; [dist -5] 4r;
+2 1: 4r; 4f+;; 4r;
+2 2: 2.b; 4r;
+
+	VERSE "A-men! We shall";
+	VERSE 2.; 4s; "rise!";
+bar
+//13
+1 1: 2.f+; 8fd+; f#c+;
+1 2: 4r; 8.b; 16; 8;; s;s;
+2:  4r; 8.bd+; 16; 8;; 8b-b; da&;
+
+	VERSE 2.; 8; 8; "rise! In the";
+	VERSE 4s; 8.; 16; 8; 8; 8s; 8s; "Hal-le-lu-jah!";
+bar
+//14-A
+1: 8gb;; ec+; eb; eg; df; s; s;
+2: 8eg;;;; b-b;; s; s;
+
+	VERSE 8; 8; 8; 8; 8; 8; 8s; 8s; "res-ur-rec-tion morn-ing,";
+invisbar
+newscore
+//14-B
+1: 8s; s; s; s; s; s; b-d; ce;
+2: 8s; s; s; s; s; s; b-f;;
+
+	VERSE 8s; 8s; 8s; 8s; 8s; 8s; 8; 8; "When death's";
+bar
+//15
+1: 8df; c#en; df; ce; df; e&g; gb; ac+;
+2: 8b-b;;;;;; 4r;
+	
+	VERSE "pris-on bars are brok-en, We shall";
+bar
+//16
+1 1: 2.d+; 8fc+;;
+1 2: 4b; 8.g; 16; 8f;; 8s;;
+2: 4r; 8.gb; 16; 8db;; fe+;;
+
+	VERSE "rise, we shall";
+	VERSE  4s; 8.; 16; 8; 8; 8; 8; "Hal-le-lu-jah! in that";
+
+bar
+//17
+1 1: 2.fb; 4s;
+1 2: 8b; f; d; e; 4f; 4s;
+2 1: 2.b-d+; 4s;
+2 2: 8d+;; b; c+; 4d+; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) above 2: 3 "ferm";
+
+
+	VERSE "rise!";
+	VERSE 8; 8; 8; 8; 4; 4s; "morn-ing we shall rise.";
+
+endbar

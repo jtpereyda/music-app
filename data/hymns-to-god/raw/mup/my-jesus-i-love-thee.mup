@@ -1,0 +1,349 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 202	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 02/12/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "My Jesus, I Love Thee" ""
+   title (2)""
+   title (11) "" "\f(TI)We love, because he first loved us. - 1 Jn. 4:19" ""
+   title (10) "F - 4 - DO" "" ""
+   title "William R. Featherston, 1862" "" "Adoniram J. Gordon, 1876"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+//Verse
+
+//1
+1: 2.s; 4cf;
+2: 2.s; 4fa;
+
+	VS "<1. >-1|My";
+	VS "<2. >-1|I";
+	VS "<3. >-1|In";
+bar
+
+//2
+1: 2fa; 4fb; ;
+2: 2fc+; 4fd+; ;
+
+	VS "Je-sus, I";
+	VS "love Thee, be-";
+	VS "man-sions of";
+bar
+
+//3
+1: 4.fa slur; 8cg; 4cf; fa;
+2 1: 4.c+ slur; 8b; 4fa; fc+;
+2 2: 2f; 4s; ;
+
+	VS "love Thee, I";
+	VS "cause Thou hast";
+	VS "glo-ry and";
+bar
+
+//4
+1: 2eg; 4ce; ;
+2:2cb; 4cg; cb;
+
+	VS "know Thou art";
+	VS "first lov-ed";
+	VS "end-less de-";
+bar
+
+//5
+1: 2.cf; 4s;
+2: 2.fa; 4s;
+
+	VS "mine;";
+	VS "me,";
+	VS "light,";
+invisbar
+newscore
+
+1: 2.s; 4cf;
+2: 2.s; 4fa;
+
+	VS "For";
+	VS "And";
+	VS "I'll";
+bar
+
+//6
+1: 2fa; 4fb; ;
+2: 2fc+; 4fd+; ;
+
+	VS "Thee all the";
+	VS "pur-chased my";
+	VS "ev-er a-";
+bar
+
+//7
+1: 4.fa slur; 8cg; 4cf; fa;
+2 1: 4.c+ slur; 8b; 4fa; fc+;
+2 2: 2f; 4s; ;
+
+	VS "fol-lies of";
+	VS "par-don on";
+	VS "dore Thee in";
+bar
+
+//8
+1: 2eg; 4ce; ;
+2:2cb; 4cg; cb;
+
+	VS "sin I re-";
+	VS "Cal-va-ry's";
+	VS "heav-en so";
+bar
+
+//9
+1: 2.cf; 4s;
+2: 2.fa; 4s;
+
+	VS "sign;";
+	VS "tree;";
+	VS "bright;";
+dblbar
+newscore
+
+//10
+1: 2.s; 4fa;
+2: 2.s; 4fc+;
+
+	VS "My";
+	VS "I";
+	VS "I'll";
+bar
+
+//11
+1: 2fc+; 4fd+; fc+;
+2 1: 2ac+; 4b; ac+;
+2 2: 2s; 4b; s;
+
+	VS "gra-cious Re-";
+	VS "love Thee for";
+	VS "sing with the";
+bar
+
+//12
+1 1: 4eb slur; fa; cg; c;
+1 2: 4s; ; ; c;
+2 1: 2c+; 4s; 4;
+2 2: 4g slur; f; ec+; cc+;
+
+	VS "deem-er my";
+	VS "wear-ing the";
+	VS "glit-ter-ing";
+bar
+
+//13
+1 1: 4a slur; c+; db; dg;
+1 2: 2c; 4s; ;
+2 1: 4c+ slur; a; 4b-g; b-b;
+2 2: 2f; 4s; ;
+
+	VS "Sav-ior art";
+	VS "thorns on Thy";
+	VS "crown on my";
+bar
+
+//14
+1 1: 2f slur; 4e; s;
+1 2: 2.c; 4s;
+2 1: 2a slur; 4g; s;
+2 2: 2.c; 4s;
+
+	VS "Thou;";
+	VS "brow;";
+	VS "brow;";
+invisbar
+newscore
+
+1: 2.s; 4cf;
+2: 2.s; 4fa;
+
+	VS "If";
+	VS "If";
+	VS "If";
+bar
+
+//15
+1: 2fa; 4fb; ;
+2: 2fc+; 4fd+; ;
+
+	VS "ev-er I";
+	VS "ev-er I";
+	VS "ev-er I";
+bar
+
+//16
+1: 4.fa slur; 8cg; 4cf; fa;
+2 1: 4.c+ slur; 8b; 4fa; fc+;
+2 2: 2f; 4s; ;
+
+	VS "loved Thee, my";
+	VS "loved Thee, my";
+	VS "loved Thee, my";
+bar
+
+//17
+1: 4fc+ slur; eb; ea; eg;
+2 1: 4a slur; g; cc+; cb;
+2 2: 2c; 4s; ;
+
+	VS "Je-sus, 'tis";
+	VS "Je-sus, 'tis";
+	VS "Je-sus, 'tis";
+bar
+
+//18
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.fa; 4s;
+
+	VS "now.";
+	VS "now.";
+	VS "now.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

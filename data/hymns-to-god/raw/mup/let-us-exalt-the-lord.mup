@@ -1,0 +1,218 @@
+// Mup 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Winning Songs
+//		for use in Meetings 
+//		For Christian Worship or Work 
+//		Pub. by John J. Hood 1024 Arch St., 
+//		Copyright, 1892
+
+// Transcribed by: Ted Gatza, Jr. 01/17/2010; rev. 04/25/2013
+// HymnsToGod.org
+
+// ************************************
+top
+
+   title bold (19) "" "Let Us Exalt The Lord" ""
+   title (2)""
+title (11) "A \(flat) - 4 - SOL" "\s(18)\f(TI)\:Oh\ magnify\ Jehovah\ \|with\ me,\ And\ let\ us exalt\ his\ name\ tog\|ether.\ -\ Ps.\ 34:3"""
+   title (13) "E. A. Barnes" " " "John R. Sweney, 1892"	
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=110";
+
+//1
+1: 4s; 4s; 4s; 4ec;
+2: 4s; 4s; 4s; 4aa-;
+
+
+			lyrics 1: "<1. >-1|As";
+			lyrics 1: "<2. >-1|As";
+			lyrics 1: "<3. >-1|As";
+			lyrics 1: "<4. >-1|As";
+bar
+//2
+1: 4ec; 4ca-; 4ec; 4ac;
+2: 4aa-; 4ea-; 4aa-; 4ea-;
+
+			lyrics 1: "here we come to";
+			lyrics 1: "we be-lieve in";
+			lyrics 1: "we will keep his";
+			lyrics 1: "here we ask that";
+bar
+//3
+1: 4.c+e; 8d+f; 8c+e; 8bd; 8ac; 8bd;
+2 1: 4.aa-; 8a; 8a; 8a; 8a; 8a;
+2 2: 4.s; 8a; 8a; 8a; 8a; 8a; 
+
+			lyrics 1: "praise and wor-ship In the";
+			lyrics 1: "our re-demp-tion, By the";
+			lyrics 1: "gos-pel pre-cepts, In the";
+			lyrics 1: "he will keep us In the";
+bar
+//4
+1: 4c+e; 4c+e; 4s; 4s;
+2 1: 4a; 4a; 4s; 4s;
+2 2: 4a; 4a; 4s; 4s; 
+
+			lyrics 1: "pre-sence";
+			lyrics 1: "shed-ding";
+			lyrics 1: "midst of";
+			lyrics 1: "hol-low";
+
+invisbar
+newscore
+
+1: 4s; 4s; 4be; 4adn;
+2 1: 4s; 4s; 4bg; 4bf;
+2 2: 4s; 4s; 4s; 4s; 
+
+			lyrics 1: "of the";
+			lyrics 1: "of his";
+			lyrics 1: "sin and";
+			lyrics 1: "of his";
+
+bar
+//5
+1: 2.be; 4be;
+2: 2.ge; 4ge;
+
+			lyrics 1: "Lord; As";
+			lyrics 1: "blood; As";
+			lyrics 1: "strife. As";
+			lyrics 1: "hand; As";
+bar
+//6
+1 1: 4be; 4e; 4ge; 4bg;
+1 2: 4s; 4e; 4s; 4s;
+2: 4ge; 4ge; 4be; 4be;
+
+			lyrics 1: "here we meet that";
+			lyrics 1: "we re-joice that";
+			lyrics 1: "we be-hold his";
+			lyrics 1: "we draw near to";
+bar
+//7
+1: 4.d+g; 8e+g; 8d+a; 8c+a; 8be; 8ae;
+2: 4.be; 8be; 8f+a; 8e+a; 8d+a; 8c+a;
+
+			lyrics 1: "we may list-en To the";
+			lyrics 1: "he has bought us, And has";
+			lyrics 1: "love and good-ness All a-";
+			lyrics 1: "our pos-sess-ions, Wait-ing";
+bar
+//8
+1: 4c+e; 4c+e; 4bd; 4bd;
+2: 4ae; 4ae; 4ge; 4ge;
+
+			lyrics 1: "teach-ings of his";
+			lyrics 1: "made our peace with";
+			lyrics 1: "long the way of";
+			lyrics 1: "in the prom-ised";
+bar
+//9
+1: 2ac tie; 8ac; 4.s;
+2: 2aa- tie; 8aa-; 4.s;
+
+			lyrics 1: "word.";
+			lyrics 1: "God.";
+			lyrics 1: "life.";
+			lyrics 1: "land.";
+dblbar
+//10
+1: 2s; 8s; 8c+e; 8c+e; 8d+e;
+2 1: 2s; 8s; 8a; 8a; 8b;
+2 2: 2s; 8s; 8a; 8a; 8a;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Let us ex-";
+bar
+//11
+1: 4.e+a; 8c+a; 4d+a; 4c+a;
+2: 4.c+a; 8e+a; 4f+a; 4e+a;
+
+			lyrics 1: [c]"alt the Lord to-";
+bar
+newscore
+//12
+1: 4c+a; 4bg; 8r; 8be; 8be; 8c+e;
+2: 4e+e; 4e+e; 8r; 8ge; 8ge; 8ae;
+
+			lyrics 1: [c]"geth-er, And mag-ni-";
+bar
+//13
+1: 4.d+e; 8d+e; 4c+e; 4be;
+2: 4.be; 8be; 4ae; 4ge;
+
+			lyrics 1: [c]"fy his glo-ious";
+bar
+//14
+1: 2c+e tie; 8c+e; 8c+e; 8c+e; 8d+e;
+2 1: 2a tie; 8a; 8a; 8a; 8b;
+2 2: 2a tie; 8a; 8a; 8a; 8a; 
+
+			lyrics 1: [c]"name; Let us ex-";
+bar
+newscore
+//15
+1: 4.e+a; 8c+a; 4d+a; 4c+a;
+2: 4.c+a; 8e+a; 4f+a; 4e+a;
+
+			lyrics 1: [c]"alt the Lord to-";
+bar
+//16
+1: 4bf; 4fd; 4r; 4d+f;
+2: 4d+d; 4ad; 4r; 4ad;
+
+			lyrics 1: [c]"geth-er, And";
+bar
+//17
+1: 4.c+e; 8ae; 4be; 4ge;
+2: 4.ae; 8c+e; 4d+e; 4be;
+
+			lyrics 1: [c]"mag-ni-fy his";
+bar
+//18
+1: 2.ae; 4s;
+2: 2.c+a-; 4s;
+
+			lyrics 1: [c]"name.";
+endbar

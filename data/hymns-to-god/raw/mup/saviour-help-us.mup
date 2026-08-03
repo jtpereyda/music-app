@@ -1,0 +1,195 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs of Redemption
+//		Joshua Gill, FGeo. A. McLaughlin,
+//		W. J. Kirkpatrick, Dr. H. L. Gilmour
+//		The Christian Witness Company
+//		Boston, Mass.
+//		36 Bromfield Street,
+//		Copyright 1899
+//		Hymn no. 11 / 18
+
+// Transcribed by: Ted Gatza, Jr. 03/27/2010 rev. 04/10/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Saviour, Help Us" ""
+   title (2)""
+   title (11) "F - 4 - MI" "\s(17)\f(TI)\:...our\ hope\ set\ on\ the\ livin\|g\ God,\ who\ is\ the\ Saviour\ of all\ men,\ specially\ of\ them\|\ that\ believe.\ -\ 1\ Tim.\ 4:10"""
+   title (13) "E. E. Hewitt" " " "Wm. J. Kirkpatrick, 1898"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4af; 4af; 8af bm; 8bg ebm; 4c+a;
+2 1: 4c+f; 4c+f; 4c+f; 4c+;
+2 2: 4s; 4s; 4s; 8f bm; 8a- ebm;
+
+			lyrics 1: 4; 4; 4; 4; "<1. >-1|Sav-iour, help us";
+			lyrics 1: 4; 4; 4; 4; "<2. >-1|Noth-ing can we";
+			lyrics 1: 4; 4; 4; 4; "<3. >-1|Help us take Thy";
+			lyrics 1: 4; 4; 4; 4; "<4. >-1|May we grow like";
+bar
+//2
+1: 4ge; 4ge; 8ge bm; 8af ebm; 4bg;
+2 1: 4c+c; 4c+c; 4c+c; 4c+;
+2 2: 4s; 4s; 4s; 8c bm; 8e ebm;
+
+			lyrics 1: 4; 4; 4; 4; "in our weak-ness,";
+			lyrics 1: 4; 4; 4; 4; "do with-out Thee,";
+			lyrics 1: 4; 4; 4; 4; "yoke u-pon us,";
+			lyrics 1: 4; 4; 4; 4; "Thee, our Sav-iour,";
+bar
+//3
+1 1: 4af; 4fc; 8d bm; 8b ebm; 8a bm; g ebm;
+1 2: 4s; 4s; 4d; 4d;
+2 1: 4c+f; 4fa-; 4fb-; 8c+ bm; 8b ebm;
+2 2: 4s; 4s; 4s; 4b-;
+
+			lyrics 1: 4; 4; 4; 4; "Guide and keep us";
+			lyrics 1: 4; 4; 4; 4; "But all grace, we";
+			lyrics 1: 4; 4; 4; 4; "And Thy bless-ed";
+			lyrics 1: 4; 4; 4; 4; "Whom, tho' still un-";
+bar
+//4
+1: 4fc; 4ec; 2fc;
+2: 4ac; 4gc; 2af;
+
+			lyrics 1: "hour by hour;";
+			lyrics 1: "know, is Thine;";
+			lyrics 1: "word o-bey,";
+			lyrics 1: "seen, we love;";
+bar
+//5
+1: 4af; 4af; 8af bm; 8bg ebm; 4c+a;
+2 1: 4c+f; 4c+f; 4c+f; 4c+;
+2 2: 4s; 4s; 4s; 8f bm; 8a- ebm;
+
+			lyrics 1: 4; 4; 4; 4; "Help us meet the";
+			lyrics 1: 4; 4; 4; 4; "Strength-en us for";
+			lyrics 1: 4; 4; 4; 4; "Learn of Thee, the";
+			lyrics 1: 4; 4; 4; 4; "Help us show the";
+bar
+//6
+1: 4ge; 4ge; 8ge bm; 8af ebm; 4bg;
+2 1: 4c+c; 4c+c; 4c+c; 4c+;
+2 2: 4s; 4s; 4s; 8c bm; 8e ebm;
+
+			lyrics 1: 4; 4; 4; 4; "world's temp-ta-tions,";
+			lyrics 1: 4; 4; 4; 4; "ev-'ry du-ty,";
+			lyrics 1: 4; 4; 4; 4; "\"Meek and Low-ly,\"";
+			lyrics 1: 4; 4; 4; 4; "light to oth-ers";
+bar
+//7
+1 1: 4af; 4fc; 8d bm; 8b ebm; 8a bm; g ebm;
+1 2: 4s; 4s; 4d; 4d;
+2 1: 4c+f; 4fa-; 4fb-; 8c+ bm; 8b ebm;
+2 2: 4s; 4s; 4s; 4b-;
+
+			lyrics 1: 4; 4; 4; 4; "With Thine o-ver-";
+			lyrics 1: 4; 4; 4; 4; "Fill us with Thy";
+			lyrics 1: 4; 4; 4; 4; "Hum-bly serv-ing";
+			lyrics 1: 4; 4; 4; 4; "Show the light that";
+bar
+//8
+1: 4fc; 4ec; 2fc;
+2: 4ac; 4gc; 2af;
+
+			lyrics 1: "com-ing pow'r.";
+			lyrics 1: "love di-vine.";
+			lyrics 1: "day by day.";
+			lyrics 1: "leads a-bove.";
+dblbar
+//9
+1: 4ge; 4ge; 8ge bm; 8af ebm; 4bg;
+2: 4c+c; 4c+c; 4c+c; 4c+c;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: 4; 4; 4; 4; [c]"Pre-cious Sav-iour,";
+bar
+newscore
+//10
+1: 4af; 4af; 8af bm; 8bg ebm; 4c+a;
+2: 4c+f; 4c+f; 4c+f; 4c+c;
+
+			lyrics 1: 4; 4; 4; 4; [c]"pre-cious Sav-iour,";
+bar
+//11
+1 1: 4ge; 4ge; 8g bm; 8c+ ebm; 8c+g bm; 8d+a ebm;
+1 2: 4s; 4s; 4e; 4s;
+2 1: 4c+g; 4c+e; 4c+c; 4c+;
+2 2: 4s; 4s; 4s; 8e bm; 8f ebm;
+
+			lyrics 1: 4; 4; 4; 4; [c]"Sweet it is to";
+bar
+//12
+1: 4e+g; 4d+f; 2c+e;
+2: 4c+g; 4bng; 2c+c;
+mussym (10) above 1: 3 "ferm";
+mussym (10) below 2: 3 "uferm";
+
+			lyrics 1: [c]"trust in Thee;";
+bar
+newscore
+//13
+1: 4af; 4c+a; 8c+a bm; 8bg ebm; 4af;
+2: 4c+f; 4c+f; 4c+f; 4c+f;
+
+			lyrics 1: 4; 4; 4; 4; [c]"Pre-cious Sav-iour,";
+bar
+//14
+1 1: 4af; 4fc; 8d bm; 8b ebm; 8af# bm; 8gd ebm;
+1 2: 4s; 4s; 8d bm; 8g ebm; 8s; 8s;
+2: 4c+f; 4fa-; 8fb- bm; 8d+g- ebm; 8c+a- bm; 8bb- ebm;
+
+			lyrics 1: 4; 4; 4; 4; [c]"Smile up-on us";
+bar
+//15
+1: 4fc; 4ec; 2fc;
+2: 4ac; 4gc; 2aff-;
+
+			lyrics 1: [c]"gra-cious-ly.";
+endbar

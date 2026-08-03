@@ -1,0 +1,305 @@
+// !Mup vs.6.7 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The New Praiseworthy For The Church And Sunday School
+//		Edited and Compiled by E. O. Excell
+//		Published by E. O. Excell
+//		814 The Fine Arts Building
+//		Copyright 1916
+//		Hymn No.: 61
+//		
+// Transcribed by: Ted Gatza, Jr. 02/02022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Love Lifted Me" ""
+   title (2)""
+   title (11)"" "\f(TI)...in his love and in his pity he redeemed them; and he bare" "" 
+   title (11)"" "\f(TI)them, and carried them all the days of old. - Is. 63:9" ""
+   title (11) "B\(flat) - 2 - MI" "" ""
+   title (13) "James Rowe" "" "Howard E. Smith, 1912"
+
+footer 
+   title(11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	staffpad=2 //1
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=100";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1: 4df; 8dg; 4df; 8b-d;
+2: 4b-b; 8; 4; 8b-f;
+
+
+	VS "<1. >-1|I was sink-ing";
+	VS "<2. >-1|All my heart to";
+	VS "<3. >-1|Souls in dan-ger,";
+
+bar
+//2
+1: 4df; 8dg; 4.df;
+2: 4b-b; 8; 4.;
+
+	VS "deep in sin,";
+	VS "Him I give,";
+	VS "look a-bove,";
+bar
+//3
+1: 8df; dg; da; 4db; 8dc+;
+2: 8b-b;;; 4; 8;
+
+	VS "Far from the peace-ful";
+	VS "ev-er to Him I'll";
+	VS "Je-sus com-plete-ly";
+bar
+//4
+1: 4.ea tie; 4ea; 8r;
+2: 4.fc+ tie; 4fc+; 8r;
+
+	VS "shore,";
+	VS "cling,";
+	VS "saves;";
+bar
+//5
+1: 4eg; 8ea; 4eg; 8ce;
+2: 4fa; 8; 4; 8; 
+
+	VS "Ver-y deep-ly";
+	VS "In His bless-ed";
+	VS "He will lift you";
+bar
+//6
+1: 4eg; 8ea; 4.eg;
+2: 4fa; 8; 4.;
+
+	VS "stained with-in";
+	VS "pres-ence lives,";
+	VS "by His love";
+bar
+//7
+1: 8eg; ea; eb; 4ea; 8eg;
+2: 8fa; fc+;; 4; 8fa;
+
+	VS "Sink-ing to rise no";
+	VS "Ev-er His prais-es";
+	VS "Out of the an-gry";
+bar
+//8
+1: 4.df tie; 4df; 8r;
+2: 4.b-b tie; 4b-b; 8r;
+
+	VS "more;";
+	VS "sing.";
+	VS "waves.";
+bar
+//9
+1: 4df; 8dg; 4df; 8b-d;
+2: 4b-b; 8; 4; 8b-f;
+
+	VS "But the Mas-ter";
+	VS "Love so might-y";
+	VS "He's the Mas-ter";
+bar
+//10
+1: 4df; 8dg; 4.df;
+2: 4b-b; 8; 4.;
+
+	VS "of the sea";
+	VS "and so true";
+	VS "of the sea,";
+bar
+//11
+1: 8df; dg; da; 4db; 8df;
+2: 8b-b;;; 4; 8;
+
+	VS "Heard my de-spair-ing";
+	VS "Mer-its my soul's best";
+	VS "Bil-lows His will o-";
+bar
+//12
+1: 4.eg tie; 4eg; 8r;
+2: 4.eb tie; 4eb; 8r;
+
+	VS "cry,";
+	VS "songs;";
+	VS "bey;";
+bar
+//13
+1: 4eg; 8fa; 4gb; 8g&c+;
+2: 4eb; 8; 4; 8;
+
+	VS "From the wa-ters";
+	VS "Faith-ful, lov-ing";
+	VS "He you Sav-ior";
+bar
+//14
+1: 4fd+; 8db; 4fa; 8eg;
+2: 4b-b; 8b-f; 4db; 8eb;
+
+	VS "lift-ed me, Now";
+	VS "ser-vice, too, To";
+	VS "wants to be\(emdash) Be";
+bar
+//15
+1: 4.df; ec+;
+2: 4.fb; fa;
+
+	VS "safe am";
+	VS "Him be-";
+	VS "saved to-";
+bar
+//16
+1: 4.db tie; 4db; 8r;
+2: 4.b-b tie; 4b-b; 8r;
+
+	VS "I.";
+	VS "longs.";
+	VS "day.";
+dblbar
+newscore
+//17
+repeatstart
+1 1: 4.fd+; 4f; 8ec+;
+1 2: 4.s; 4e; 8s;
+2: 4.b-b; 4fa; 8;
+CHORUS
+	VS[c] "Love lift-ed";
+bar
+//18
+1 1: 4.b tie; 4b; 8r;
+1 2: 4d; 8e; 4d; 8s;
+2: 4b-b; 8b-g; 4b-f; 8r;
+
+	VS "me!";
+	VS 4; 8; 4; 8s; "e-ven me!";
+bar
+//19
+1: 4.db; 4b-d; 8b-a;
+2: 4.b-f; 4b-f; 8df;
+
+	VS "Love lift-ed";
+bar
+//20
+1 1: 4.g tie; 4g; 8r;
+1 2: 4b-; 8b-n; 4c; 8s;
+2 1: 4e; 8df; 4ce; 8r;
+2 2: 4e; 8s; 4s; 8s;
+
+	VS "me!";
+	VS 4; 8; 4; 8s; "e-ven me!";
+bar
+//21
+1 1: 4.eg; 8g bm; 8a ebm; 8db;
+1 2: 4.s; 4e; 8s;
+2: 4.eb; 8eb bm; 8cf ebm; 8b-f;
+
+	VS 4.; 4; 8; "When noth-ing";
+bar
+//22
+1: 4df; 8db; 4.db;
+2: 4b-b; 8b-f; 4.;
+
+	VS "else could help";
+bar ending "1."
+//23
+1: 4.enc+; 4eg; 8ed+;
+2: 4.cc+; 4cb; 8;
+
+	VS "Love lift-ed";
+bar
+//24
+1: 4.ec+ tie; 4.ec+;
+2: 4.fa tie; 4.fa;
+
+	VS "me.";
+repeatend ending "2."
+//25
+1: 4.fd+; 8; 4ec+;
+2: 4.fb; 8; 4fa;
+
+	VS "Love lift-ed";
+bar
+//26
+1: 4.db tie; 4.db;
+2: 4.b-b tie; 4. b-b;
+
+	VS "me.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

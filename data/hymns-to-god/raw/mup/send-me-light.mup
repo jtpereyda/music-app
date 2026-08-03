@@ -1,0 +1,233 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		Compiled and published under the direction of a
+//		Committee appointed by Mennonite conferences
+//		J. D. Brunk, Musical Editor
+// 		Mennonite Publishing House
+//		Scottsdale, Penn.
+//		Copyright 1902
+//		Hymn no. 75
+
+// Transcribed by: Ted Gatza, Jr. 01/18/2010 rev, 04/17/14
+// HymnsToGod.org
+
+// ***********************************
+
+top
+
+   title bold (19) "" "Send Me Light" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:I\ am\ the\ light\ of\ the\ world:\ he\ that\|\ followeth\ me\ shall\ not\ walk in\ darkness,\ but\ shall\ have\ th\|e\ light\ of\ life.\ -\ Jn.8:12"""
+   title (13) "Horatius Bonar" " " "Geo. C. Hugg, 1894"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4ec; 8.ec; 16ac; 4c+e; 4c+e;
+2 1: 4a; 8.a; 16a; 4a; 4a;
+2 2: 4a; 8.a; 16a; 4a; 4a; 
+
+
+			lyrics 1: "<1. >-1|Lord, give me light to";
+			lyrics 1: "<2. >-1|The way is nar-row,";
+			lyrics 1: "<3. >-1|Oh, send me light to";
+			lyrics 1: "<4. >-1|The work is thine, not";
+bar
+//2
+1: 4ad; 4fd; 4ec; 4ae;
+2 1: 4fd; 4ad; 4a; 4c+a;
+2 2: 4s; 4s; 4a; 4s;
+
+			lyrics 1: "do thy work, For";
+			lyrics 1: "of-ten dark, With";
+			lyrics 1: "do thy work! More";
+			lyrics 1: "mine, O Lord; It";
+bar
+//3
+1: 4.be; 8be; 4ae; 4be;
+2: 4.ge; 8ge; 4c+e; 4ge;
+
+			lyrics 1: "on-ly, Lord, from";
+			lyrics 1: "lights and shad-ows";
+			lyrics 1: "light, more wis-dom";
+			lyrics 1: "is thy race we";
+bar
+//4
+1: 2.c+e; 4c+e;
+2 1: 2.a; 4a;
+2 2: 2.a; 4a;
+
+			lyrics 1: "thee Can";
+			lyrics 1: "strewn; I";
+			lyrics 1: "give; Then";
+			lyrics 1: "run; Give";
+
+bar
+//5
+1: 4.e+a; 8e+a; 4c+a; 4ae;
+2: 4.c+a; 8c+a; 4e+a; 4c+a;
+
+			lyrics 1: "come the light, by";
+			lyrics 1: "wan-der oft, and";
+			lyrics 1: "shall I work thy";
+			lyrics 1: "light! and then shall";
+bar
+//6
+1: 4bf; 4af; 4fd; 4fd;
+2: 4d+d; 4d+d; 4ad; 4ad;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "which these eyes The";
+			lyrics 1: "think it thine, When";
+			lyrics 1: "work in-deed, While";
+			lyrics 1: "all I do Be";
+bar
+//7
+1: 4ec; 4ae; 4.c+a; 8bg;
+2: 4ae; 4c+e; 4.e+e; 8d+e;
+
+			lyrics 1: "way of life can";
+			lyrics 1: "walk-ing in my";
+			lyrics 1: "on thine earth I";
+			lyrics 1: "well and tru-ly";
+bar
+//8
+1 1: 2.a; 4s;
+1 2: 2.a; 4s;
+2: 2.c+a; 4s;
+
+			lyrics 1: "see.";
+			lyrics 1: "own.";
+			lyrics 1: "live.";
+			lyrics 1: "done.";
+dblbar
+//9
+1: 2s; 4s; 8.c+e; 16bd;
+2: 2s; 4s; 4r;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: 2; 4s; 8.s; 16s; "<>";
+			lyrics 1: "Send me";
+bar
+//10
+1: 2.ac; 8.af; 16fd;
+2: 4r; 8.ea-; 16ea-; 4ea-; 4r;
+
+			lyrics 1: 2.; 8.s; 16s; "<>";
+			lyrics 1: "light! send me";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "Send me light";
+bar
+//11	
+1: 2. ec; 8.ac; 16s;
+2 1: 4r; 8.aa-; 16aa-; 4aa-; 8.a; 16s;
+2 2: 4s; 8.s; 16s; 4s; 8.a; 16s;
+
+			lyrics 1: 2.; 8.s; 16s; "<>";
+			lyrics 1: "light! Light";
+			lyrics 1: 4s; 8.; 16; 4; 8.s; 16s; "Send me light";
+
+
+invisbar
+newscore
+
+1: 2.s; 8.s; 16bd;
+2 1: 4s; 8.s; 16s; 4s; 8.s; 16a;
+2 2: 4s; 8.s; 16s; 4s; 8.s; 16a;
+
+			lyrics 1: "a-";
+
+
+
+bar
+//12
+1: 4c+e; 4c+e; 4be; 4adn;
+2 1: 4a; 4a; 4bg; 4bf;
+2 2: 4a; 4a; 4s; 4s; 
+
+			lyrics 1: "long the toil-some";
+bar
+//13
+1: 2.be; 8.c+a; 16d+a;
+2 1: 2.ge; 8.e+a; 16b;
+2 2: 2.s; 8.s; 16a;
+
+			lyrics 1: "way! Send me";
+bar
+//14
+1: 4e+a; 4e+a; 4c+e; 4ae;
+2 1: 4c+a; 4c+a; 4a; 4g&c;
+2 2: 4s; 4s; 4a; 4s;
+
+			lyrics 1: "light, dear Lord, that";
+bar
+//15
+1: 8.bd; 16ad; 8.s; 16s; 4s; 8.s; 16s;
+2: 8.fd; 16fd; 8.s; 16s; 4s; 8.s; 16s;
+
+			lyrics 1: "I may";
+
+
+invisbar
+newscore
+
+1: 8.s; 16s; 8.gd; 16fd; 4ec; 8.ac; 16bd;
+2: 8.s; 16s; 8.fd; 16ad; 4aa-; 8.aa-; 16aa-;
+
+			lyrics 1: "la-bor on, Till I";
+
+bar
+//16
+1: 4c+e; 8.c+e; 16c+e; 4bd; 4bd;
+2: 4ae; 8.ae; 16ae; 4ge; 4ge;
+
+			lyrics 1: "rest in e-ter-nal";
+bar
+//17
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			lyrics 1: "day.";
+endbar

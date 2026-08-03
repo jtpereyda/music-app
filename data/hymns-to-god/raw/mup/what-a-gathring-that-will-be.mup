@@ -1,0 +1,247 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs of Redeeming Love
+//		Edited by: Jn. R. Sweeney, C.C. McBride,
+//		T.C. O'Kane, W.J. Kirkpatrick
+//		Philadelphia: John J. Hood, 1018 Arch Street
+//		Cincinnati: Walden & Stowe, St. Louis and Chicago
+//		Copyright 1882	
+//		Hymn no. 68
+
+// Transcribed by: Ted Gatza, Jr. 04/07/11
+// HymnsToGod.org
+
+//********************************************
+
+top
+
+   title bold (19) "" "What A Gath'ring That Will Be!" ""
+   title (2)""
+   title (11) "D - 4 - DO" "\s(17)\f(TI)\:Gather\ my\ saints\ together\ unto\ me.\ -\ Ps.\ 1:5 \(space)" ""
+   title (13) "J. H. Kurzenknabe, arr." "" "J. H. Kurzenknabe, 1879"
+
+ 
+footer
+
+title (11) "" "Public Domain" "HymnsToGod.org\s(9)\:TM"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+//********************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1 1: 8d; 8fd; 2.s;
+1 2: 8d; 8s; 2.s;
+2: 8fd; 8ad; 2.s;
+
+			lyrics 1: 8; 8; 2.s; "<1. >-1|At the";
+			lyrics 1: 8; 8; 2.s; "<2. >-1|When the";
+			lyrics 1: 8; 8; 2.s; "<3. >-1|At the";
+			lyrics 1: 8; 8; 2.s; "<4. >-1|When the";
+
+bar
+//2
+1 1: 8af; 8af; 8bg; 8af; 8fd; 8fd; 8d; 8af;
+1 2: 8s; 8s; 8s; 8s; 8s; 8s; 8d; 8s;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 8ad; 8ad; 8fd; 8d+d;
+
+			lyrics 1: "sound-ing of the trum-pet, when the";
+			lyrics 1: "an-gel of the Lord pro-claims that";
+			lyrics 1: "great and fi-nal judg-ment, when the";
+//			lyrics 1: "gold-en harps are sound-ing, and the"; //original lyrics
+			lyrics 1: "trump of God is sound-ing, and the";
+bar
+//3
+1: 8bg; 8bg; 8bg; 8d+g; 4af; 8fd; 8ge;
+2: 8d+g; 8d+g; 8d+g; 8bg; 4d+d; 8ad; 8ad;
+
+			lyrics 1: "saints are gath-er'd home, We will";
+			lyrics 1: "time shall be no more, We shall";
+			lyrics 1: "hid-den comes to light, When the";
+			lyrics 1: "an-gel bands pro-claim, In tri-";
+bar
+//4
+1: 8af; 8af; 8af; 8s; 8s; 8s; 8ss; 8s;
+2: 8d+d; 8d+d; 8d+d; 8s; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "greet each oth-";
+			lyrics 1: "gath-er, and";
+			lyrics 1: "Lord in all";
+			lyrics 1: "um-phant strains";
+invisbar
+newscore
+
+1: 8s; 8s; 8s; 8af; 8bg; 8af; 8d+f; 8fd;
+2: 8s; 8s; 8s; 8d+d; 8d+d; 8d+d; 8ad; 8ad;
+
+			lyrics 1: "er by the crys-tal";
+			lyrics 1: "the saved and ran-som'd";
+			lyrics 1: "his glo-ry we shall";
+			lyrics 1: "the glo-rious ju-bi-";
+
+bar
+//5
+1: 2.ec; 8fd; 8ge;
+2 1: 2.a; 8af; 8ae;
+2 2: 4a-; 8.a; 16a; 8a bm; 8g ebm; 8s; 8s;
+
+			lyrics 1: 4; 8.; 16; 4; 8; 8; "sea, (crys-tal sea;) With the";
+			lyrics 1: 4; 8.; 16; 4; 8; 8; "see; (ran-som'd see;) Then to";
+			lyrics 1: 4; 8.; 16; 4; 8; 8; "see; (we shall see;) At the";
+			lyrics 1: 4; 8.; 16; 4; 8; 8; "lee; (ju-bi-lee;) Then to";
+			
+bar
+//6
+1 1: 8af; 8af; 8bg; 8af; 8fd; 8fd; 8d; 8af;
+1 2: 8s; 8s; 8s; 8s; 8s; 8s; 8d; 8s;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 8ad; 8ad; 8fd; 8d+d;
+
+			lyrics 1: "friends and all the lov'd one there  a-";
+			lyrics 1: "meet a-gain to-geth-er, on the";
+			lyrics 1: "bid-ding of our Sav-iour, Come, ye";
+			lyrics 1: "meet and join to sing the song of";
+bar
+//7
+1: 8bg; 8bg; 8bg; 8c+g; 4d+g; 8s; 8s;
+2: 8d+g; 8d+g; 8d+g; 8d+g; 4bg; 8s; 8s;
+
+			lyrics 1: "wait-ing us to come,";
+			lyrics 1: "bright ce-les-tial shore,";
+			lyrics 1: "bless-ed to my right,";
+			lyrics 1: "Mos-es and the Lamb,";
+
+invisbar
+newscore
+
+1: 8s; 8s; 8s; 8s; 4s; 8c+g; 8d+g;
+2: 8s; 8s; 8s; 8s; 4s; 8bg; 8bg;
+
+			lyrics 1: "What a";
+			lyrics 1: "What a";
+			lyrics 1: "What a";
+			lyrics 1: "What a";
+
+
+bar
+//8
+1 1: 8e+g; 8d+g; 8c+g; 8bg; 8a; 8a; 8bg; 8c+g;
+1 2: 8s; 8s; 8s; 8s; 8g; 8g; 8s; 8s;
+2: 8bg; 8bg; 8c+g; 8d+g; 8c+a; 8c+a; 8e+a; 8e+a;
+
+			lyrics 1: "gath-'ring of the faith-ful that will";
+			lyrics 1: "gath-'ring of the faith-ful that will";
+			lyrics 1: "gath-'ring of the faith-ful that will";
+			lyrics 1: "gath-'ring of the faith-ful that will";
+bar
+//9
+1: 2.d+f; 4s;
+2: 2.d+d; 4s;
+
+			lyrics 1: "be!";
+			lyrics 1: "be!";
+			lyrics 1: "be!";
+			lyrics 1: "be!";
+dblbar
+//10
+1: 8fd; 8ge; 2.s;
+2: 8d+d; 8d+d; 2.s;
+ital (13) above 1: 1 "Chorus";
+			
+			lyrics 1: 1; "<>";
+			lyrics 1: "What a";
+			lyrics 1: "What a";
+bar
+//11
+1: 2a; 2d+;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 8ad; 8ad; 8ad; 8ad;
+
+			lyrics 1: "gath-'ring";
+			lyrics  above 2: "gath-'ring of the loved ones when we'll";
+bar
+//12
+1 1: 2d+; 4b; 8bg; 8bg;
+1 2: 8g; 8g; 8g; 8g; 8g; 8g; 8s; 8s;
+2: 8bg; 8bg; 8bg; 8bg; 8d+g; 8d+g; 8d+g; 8d+g;
+
+			lyrics 1: "gath-'ring, At the";
+			lyrics above 2: 8; 8; 8; 8; 8; 8; 8s; 8s; "meet with one an-oth-er,";
+bar
+//13
+1: 8af; 8af; 8af; 8af; 8bg; 8af; 8d+f; 8fd;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8ad; 8ad;
+
+			lyrics 1: "sound-ing of the glo-rious ju-bi-";
+bar
+//14
+1 1: 2.e; 8fd; 8ge;
+1 2: 4c; 8c; 8c; 4c; 8s; 8s;
+2 1: 4a; 8a; 8a; 4a; 8af; 8ae;
+2 2: 4a; 8a; 8a; 8a bm; 8g ebm; 8s; 8s;
+
+			lyrics 1: "lee! What a";
+			lyrics 1: 4s; 8; 8; 4; 8; 8; "ju-bi-lee! What a";
+bar
+//15
+1 1: 2a; 2f+;
+1 2: 8f; 8f; 8f; 8f; 8a; 8a; 8a; 8a;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d;
+
+			lyrics 1: "gath-'ring,";
+			lyrics above 2: "gath-'ring when the friends and all the";
+bar
+//16
+1 1: 2d+; 4b; 8c+g; 8d+g;
+1 2: 8g; 8g; 8g; 8g; 8g; 8g; 8s; 8s;
+2: 8bg; 8bg; 8bg; 8bg; 8d+g; 8d+g; 8bg; 8bg; 
+
+			lyrics 1: "gath-'ring, What a";
+			lyrics above 2: 8; 8; 8; 8; 8; 8; 8s; 8s; "dear ones meet each oth-er,";
+bar
+//17
+1 1: 8e+g; 8d+g; 8c+g; 8bg; 8a; 8a; 8bg; 8c+g;
+1 2: 8s; 8s; 8s; 8s; 8g; 8g; 8s; 8s;
+2: 8bg; 8bg; 8c+g; 8d+g; 8c+a; 8c+a; 8e+a; 8e+a;
+
+			lyrics 1: "gath-'ring of the faith-ful that will";
+bar
+//18
+1: 2.d+f; 4s;
+2: 2.d+d; 4s;
+
+			lyrics 1: "be!";
+endbar

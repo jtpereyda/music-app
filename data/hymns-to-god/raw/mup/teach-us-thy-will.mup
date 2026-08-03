@@ -1,0 +1,300 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 62
+//		
+// Transcribed by: Ted Gatza, Jr. 11/06/2011; rev. 08/20/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Teach Us Thy Will" ""
+   title (2)""
+   title (11) "D - 4 - SOL" "\s(17)\f(TI)\:Teach\ me\ thy\ way,\ \^O\ Jehovah;\ And\ lead me\ in\ a\ plain\ p\|ath,\ -\ Ps.\ 27:11" ""   
+   title (13) "Violet E. King" "" "B. B. Funk"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=110";
+
+//1
+1 1:4a; 2.s;
+1 2:4a; 2.s;
+2 1: 4a; 2.s;
+2 2: 4a; 2.s;
+
+			VERSE "<1. >-1|Teach";
+			VERSE "<2. >-1|Teach";
+			VERSE "<3. >-1|Teach";
+bar
+//2
+1: 4d+f;; af; fd;
+2: 4ad;; d+d; ad;
+			VERSE "us thy will, O";
+			VERSE "us thy will, O";
+			VERSE "us thy will, O";
+bar
+//3
+1: 4gd; 2bg; 4bg;
+2: 4bg-; 2d+g-; 4;
+
+			VERSE "Fa-ther, For";
+			VERSE "Fa-ther, For";
+			VERSE "Fa-ther, Thy";
+bar
+//4
+1: 4.af; 8bg; 4af; ge;
+2: 4.d+a-; 8c+#a-; 4d+a-; aa-;
+
+			VERSE "we sould do the";
+			VERSE "we are poor and";
+			VERSE "gra-cious truths im-";
+bar
+//5
+1: 2.fd; 4s;
+2: 2.ad; 4s;
+
+			VERSE "right;";
+			VERSE "weak;";
+			VERSE "part;";
+dblbar
+newscore
+//6
+1: 4af; 2.s;
+2: 4d+d; 2.s;
+
+			VERSE "We";
+			VERSE "We";
+			VERSE "And";
+bar
+//7
+1: 4d+f;; af; fd;
+2: 4ad;; d+d; ad;
+			VERSE "know that we are";
+			VERSE "come to thee for";
+			VERSE "give us grace to";
+bar
+//8
+1: 4gd; 2bg; 4bg;
+2: 4bg-; 2d+g-; 4;
+
+			VERSE "way-ward, But";
+			VERSE "wis-dom, The";
+			VERSE "con-quer All";
+bar
+//9
+1: 4.af; 8af; 4ge; ec;
+2: 4.d+a-; 8d+a-; 4aa-;;
+
+			VERSE "by thy won-drous";
+			VERSE "way of life we";
+			VERSE "wrongs with-in our";
+bar
+//10
+1 1: 2.d; 4s;
+1 2: 2.d; 4s;
+2: 2.fd; 4s;
+
+			VERSE "might";
+			VERSE "seek;";
+			VERSE "heart;";
+dblbar
+newscore
+//11
+1: 4af; 2.s;
+2: 4ad; 2.s;
+
+			VERSE "Our";
+			VERSE "With";
+			VERSE "O";
+bar
+//12
+1: 4.d+f; 8e+g; 4d+f; 4bg;
+2: 4.ad; 8; 4; d+d;
+
+			VERSE "steps may all be";
+			VERSE "heart of faith up-";
+			VERSE "keep us ev-er";
+bar
+//13
+1: 2af; 4fd; 4af;
+2: 2d+d; 4ad; 4d+d;
+
+			VERSE "guid-ed A-";
+			VERSE "lift-ed, We";
+			VERSE "faith-ful, Thou";
+bar
+//14
+1: 4.d+f; 8; 4c+e; bd;
+2: 4.ad; 8; 4; g#e;
+
+			VERSE "long the \"nar-row";
+			VERSE "look to thee on";
+			VERSE "might-y One to";
+bar
+//15
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "way;\"";
+			VERSE "high,";
+			VERSE "save,";
+dblbar
+newscore
+//16
+1 1:4a; 2.s;
+1 2:4a; 2.s;
+2 1: 4a; 2.s;
+2 2: 4a; 2.s;
+
+			VERSE "Be";
+			VERSE "Teach";
+			VERSE "In";
+bar
+//17
+1: 4d+f;; af; fd;
+2: 4ad;; d+d; ad;
+			VERSE "thou our strength in";
+			VERSE "us thy will, O";
+			VERSE "thee we hope to";
+bar
+//18
+1: 4gd; 2bg; 4bg;
+2: 4bg-; 2d+g-; 4;
+
+			VERSE "weak-ness, Through-";
+			VERSE "Fa-ther, In";
+			VERSE "con-quer, And";
+bar
+//19
+1: 4.af; 8; 4bg; 4c+g;
+2: 4.d+a-; 8d+a-; 4aa-;;
+
+			VERSE "out each com-ing";
+			VERSE "mer-cy now draw";
+			VERSE "tri-umph o'er the";
+bar
+//20
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+			VERSE "day.";
+			VERSE "nigh.";
+			VERSE "grave.";
+dblbar
+newscore
+//21
+1 1: 4a; 2.s;
+1 2: 4a; 2.s;
+2 1: 4a; 2.s;
+2 2: 4s; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Teach";
+bar
+//22
+1: 4.d+f; 8; 4d+g; 4bg;
+2: 4.ad; 8; 4bg; d+g;
+
+			VERSE "us, our heaven-ly";
+bar
+//23
+1: 2af; 4fd; 4af;
+2: 2d+d; 4ad;;
+
+			VERSE "Fa-ther, Teach";
+bar
+//24
+1: 4.d+f; 8; 4c+e; 4bd;
+2 1: 4.ad; 8; 4ae; 4e;
+2 2: 4.s; 8; 4; 4e;
+
+			VERSE "us thy heaven-ly";
+bar
+//25
+1 1: 2.a; 4s;
+1 2: 4c ph; d; e eph; s;
+2 1: 4e ph; f; g eph; s;
+2 2: 2.a-; 4s;
+
+			VERSE "will,";
+dblbar
+newscore
+//26
+1 1: 4a; 2.s;
+1 2: 4g; 2.s;
+2: 4ac; 2.s;
+
+			VERSE "Help";
+bar
+//27
+1: 4.d+f; 8; 4af; fd;
+2: 4.ad; 8; 4d+d; 4ad;
+
+			VERSE "us to fol-low";
+bar
+//28
+1: 4gd; 2bg; 4bg;
+2: 4bg-; 2d+g-; 4;
+
+			VERSE "Je-sus, In";
+bar
+//29
+1: 4.af; 8; 4bg; c+g;
+2: 4.d+a-; 8; 4aa-;;
+
+			VERSE "mer-cy help us";
+bar
+//30
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+			VERSE "still.";
+endbar

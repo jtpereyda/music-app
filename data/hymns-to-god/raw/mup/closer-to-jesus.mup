@@ -1,0 +1,215 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Awakening Songs
+//		For the Church, Sunday Schools and
+//		Evangelistic Services
+//		Compiler: Homer A. Rodeheaver
+//		Music Editor: Charles H. Gabriel
+//		Publisher The Rodeheaver Company
+//		419-421 Elm St. Cincinnati, O. 
+//		Monon Building, Chicago
+//		Commercial Building, Philadelphia
+//		Copyright 1917
+//		Hymn no. 139
+
+// Transcribed by: Ted Gatza, Jr. 05/06/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Closer To Jesus" ""
+   title (2)""
+   title (11) "G - 2 - DO" "\s(17)\f(TI)\:Draw\ nigh\ to\ God,\ and\ he\ will\ draw\ nigh\ to\ you.\ Jms.\ 4:8 \(space)" ""
+   title (13) "Rufus H. McDaniel" " " "Chas. H. Gabriel, 1916"	
+//Rufus Henry McDaniel 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.4
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=68";
+
+
+//1
+1: 8gd; 4.s; 4;
+2: 8bg; 4.s; 4;
+
+			VERSE "<1. >-1|The";
+			VERSE "<2. >-1|His";	
+			VERSE "<3. >-1|His";
+			VERSE "<4. >-1|I'm";
+
+bar
+//2
+1: 8.bg; 16ad; 8gd; bg; ad; gd;
+2: 8.d+g; 16c+g; 8bg; d+g; c+g; bg;
+
+			VERSE "Sav-ior is dear-er to";
+			VERSE "serv-ice grows sweet-er and";
+			VERSE "love more a-bund-ant-ly";
+			VERSE "long-ing the more in His";
+bar
+//3
+1: [up]8d+g; c+d; bd; [up]4d+g; 8c+g;
+2 1: 8bg; a; g; 4bg; 8e+c;
+2 2: 8s; g;; 4s; 8s;
+
+			VERSE "me ev-'ry day, The";
+			VERSE "sweet-er to me, The";
+			VERSE "flows thro' my heart, The";
+			VERSE "like-ness to be, The";
+bar
+//4
+1: 8.bg; 16; 8; 4af; 8ad;
+2: 8.d+d; 16; 8; 4c+d; 8;
+
+			VERSE "clo-ser I live to";
+			VERSE "clo-ser I live to";
+			VERSE "clo-ser I live to";
+			VERSE "clo-ser I live to";
+bar
+//5
+1: 4.gd tie; 4; 8;
+2: 4.bg- tie; 4; 8bg;
+
+			VERSE "Him; And";
+			VERSE "Him; And";
+			VERSE "Him; And";
+			VERSE "Him; And";
+bar
+//6
+1: 8.bg; 16ad; 8gd; bg; ad; gd;
+2: 8.d+g; 16c+g; 8bg; d+g; c+g; bg;
+
+			VERSE "bright-er His glo-ry il-";
+			VERSE "more of His good-ness and";
+			VERSE "rich-er the bless-ings that";
+			VERSE "sur-er I am that His";
+bar
+//7
+1: [up]8d+g; c+d; bd; [up]4d+g; [up]8e+g;
+2 1: 8bg; a; g; 4bg; 8c+c;
+2 2: 8s; g;; 4s; 8s;
+
+			VERSE "lu-mines my way, The";
+			VERSE "mer-cy I see, The";
+			VERSE "He doth im-part, The";
+			VERSE "face I shall see, The";
+bar
+//8
+1: [up]... 8.d+g; 16; 8; 8bg bm; gd ebm; ad;
+2 1: 8.bd; 16; 8; d+ bm; b ebm; c+d;
+2 2: 8.s; 16; 8; 4d; 8s;
+
+			VERSE 8.; 16; 8; 4; 8; "clo-ser I live to";
+			VERSE 8.; 16; 8; 4; 8; "clo-ser I live to";
+			VERSE 8.; 16; 8; 4; 8; "clo-ser I live to";
+			VERSE 8.; 16; 8; 4; 8; "clo-ser I live to";
+bar
+//9
+1: 4.gd tie; 4; 8s;
+2: 4.bg tie; 4; 8s;
+
+			VERSE "Him.";
+			VERSE "Him.";
+			VERSE "Him.";
+			VERSE "Him.";
+dblbar
+//10
+1 1: 8.af; 16; 8; 4.d+;
+1 2: 8.s; 16; 8; f; g; a;
+2: 8.d+d; 16; 8; ad; ae; d+f;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Clo-ser to Him,";
+			VERSE 8.s; 16s; 8s; 8s; 8; 8; "Ev-er";
+bar
+//11
+1 1: 8.bg; 16; 8; 4d+; 8d+g;
+1 2: 8.s; 16; 8; g; f; s;
+2: 8.d+g; 16; 8; bg; c+a; d+b;
+
+			VERSE "clo-ser to Him I";
+			VERSE 8.s; 16s; 8s; 8s; 8; 8s; "oh,";
+bar
+//12
+1 1: [up]... 8.e+g; 16; 8; d+g; bg; g;
+1 2: 8.s; 16; 8;;; g;
+2 1: 8.c+; 16; 8; d+b; d+g; c#+e;
+2 2: 8.c+; 16; 8; s;;;
+
+			VERSE "want to live clo-ser to";
+bar
+//13
+1: 4.bg; 4af; [up]8c+a;
+2: 4.d+d; 4; 8;
+
+			VERSE "Je-sus; There's";
+bar
+//14
+1: 8.bg; 16ad; 8gd; bg; ad; gd;
+2: 8.d+g; 16c+g; 8bg; d+g; c+g; bfn;
+
+			VERSE "no one so pre-cious, so";
+bar
+//15
+1: 8c+g; [up]... d+g; e+g; 4d+g; 16bg; c+g;
+2 1: 8c+e; bd; c+c; 4bg; 16d+g; a;
+2 2: 8s;;; 4; 16; g;
+
+			VERSE "faith-ful to me, And I";
+bar
+//16
+1: [up]... 8.d+g; 16; 8; 16bg; 8.gd; 8ad;
+2: 8.bg; 16; 8; 16d+d; 8.bd; 8c+d;
+
+			VERSE "want to live clo-ser to";
+bar
+//17
+1: 4.gd tie; 4; 8s;
+2: 4.bg- tie; 4; 8s;
+
+			VERSE "Him.";
+endbar

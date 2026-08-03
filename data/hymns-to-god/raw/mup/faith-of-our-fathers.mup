@@ -1,0 +1,269 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Joy To The World
+//		For The Church And Sunday School
+//		Edited and Compiled by E. O. Excell
+//		Hope Publishing Company, Chicago
+//		Copyright 1915
+//		Hymn No.: 150
+//		
+// Transcribed by: Ted Gatza, Jr. 02/11/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Faith Of Our Fathers!" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - MI" "\s(17)\f(TI)\:Fight\ the\ good\ fight\ \|of\ the\ faith,\ lay\ hold on\ the\ life\ etern\^al,\ -\ 1\ Tim.\ 6:12" ""   
+   title (13) "Frederick W. Faber, 1849" "" "H. F. Hemy, adpt."
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 4c+e; be; ae;
+2: 4e+a; d+a; c+a;
+
+			VERSE "<1. >-1|Faith of our";
+			VERSE "<2. >-1|Our fa-thers,";
+			VERSE "<3. >-1|Faith of our";
+			VERSE "<4. >-1|Faith of our";			
+bar
+//2
+1 1: 4a slur; g; ae;
+1 2: 2e; 4s;
+2: 4c+a slur; d+b; c+a;
+
+			
+			VERSE "fa-thers!";
+			VERSE "chained in";
+			VERSE "fa-thers,";
+			VERSE "fa-thers,";
+bar
+//3
+1 1: 4b slur; f; ge;
+1 2: 2f; 4s;
+2: 2d+d; 4d+e;
+
+			VERSE "liv-ing";
+			VERSE "pris-ons";
+			VERSE "God's great";
+			VERSE "we will";
+bar
+//4
+1: 2.ae;
+2: 2.c+a-;
+
+			VERSE "still";
+			VERSE "dark,";
+			VERSE "pow'r";
+			VERSE "love";
+bar
+//5
+1: 4af; ge; fd;
+2: 4d+d;;;
+
+			VERSE "In spite of";
+			VERSE "Were still in";
+			VERSE "Shall soon all";
+			VERSE "Both friend and";
+bar
+//6
+1 1: 2e; 4ae;
+1 2: 2e; 4s;
+2: 2c+a; 4c+a-;
+
+			VERSE "dun-geon,";
+			VERSE "heart and";
+			VERSE "na-tions";
+			VERSE "foe in";
+bar
+//7
+1 1: 4a slur; g; ad;
+1 2: 2dn; 4s;
+2: 2bb-; 4ab-;
+
+			VERSE "fire and";
+			VERSE "con-science";
+			VERSE "win for";
+			VERSE "all our";
+bar
+//8
+1: 2.be;
+2: 2.ge;
+
+			VERSE "sword;";
+			VERSE "free;";
+			VERSE "thee;";
+			VERSE "strife,";
+bar
+//9
+1: 4c+e; be; ae;
+2: 4e+a; d+a; c+a;
+
+			VERSE "O how our";
+			VERSE "How sweet would";
+			VERSE "And thro' the";
+			VERSE "And preach thee,";
+bar
+//10
+1 1: 4a slur; g; ae;
+1 2: 2e; 4s;
+2: 4c+a slur; d+b; c+a;
+
+			VERSE "hearts beat";
+			VERSE "be their";
+			VERSE "truth that";
+			VERSE "too, as";
+bar
+//11
+1 1: 4b slur; f; ge;
+1 2: 2f; 4s;
+2: 2d+d; 4d+e;
+
+			VERSE "high with";
+			VERSE "child-ren's";
+			VERSE "comes from";
+			VERSE "love knows";
+bar
+//12
+1: 2.ae;
+2: 2.c+a-;
+
+			VERSE "joy,";
+			VERSE "fate";
+			VERSE "God,";
+			VERSE "how,";
+bar
+//13
+1: 4af; ge; fd;
+2: 4d+d;;;
+
+			VERSE "When-e'er we";
+			VERSE "If they, like";
+			VERSE "Man-kind shall";
+			VERSE "By kind-ly";
+bar
+//14
+1 1: 2e; 4c+a;
+1 2: 2e; 4s;
+2: 2c+a; 4e+a-;
+
+			VERSE "hear that";
+			VERSE "them, could";
+			VERSE "then be";
+			VERSE "words and";
+bar
+//15
+1 1: 4b slur; c+; bg;
+1 2: 2a; 4s;
+2: 2d+nb-; 4d+&e;
+
+			VERSE "glor-ious";
+			VERSE "die for";
+			VERSE "tru-ly";
+			VERSE "vir-tuous";
+bar
+//16
+1 1: 2.a;
+1 2: 2.a;
+2: 2.c+a-;
+
+			VERSE "word:";
+			VERSE "thee!";
+			VERSE "free.";
+			VERSE "life.";
+dblbar
+//17
+1: 4d+a;;;
+2: 4f+d;;;
+
+			VERSE "Faith of our";
+bar
+//18
+1: 2c+a; 4;
+2: 2e+a; 4;
+
+			VERSE "fa-thers!";
+bar
+//19
+1: 2bg; 4;
+2: 2e+e; 4;
+
+			VERSE "ho-ly";
+bar
+//20
+1: 2.c+a;
+2: 2.e+a;
+
+			VERSE "faith!";
+bar
+//21
+1: 4c+e; be; ae;
+2: 4e+a; d+a; c+a;
+
+			VERSE "We will be";
+bar
+//22
+1 1: 2f; 4af;
+1 2: 2f; 4s;
+2: 2d+d; 4c+f;
+
+			VERSE "true to";
+bar
+//23
+1: 2bg; 4;
+2: 2e+e; 4d+e;
+
+			VERSE "thee till";
+bar
+//24
+1: 2.ae;
+2: 2.c+a-;
+
+			VERSE "death.";
+endbar

@@ -1,0 +1,209 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church Hymns and Gospel Songs
+// 		for use in Church Services 
+//		Prayer Meetings and other
+//		Religious Gatherings
+//		by Ira. D. Sankey, James Mc Granahan
+//		And Geo. C. Stebbins
+//		410th Thousand.
+//		Published by The Biglow and Main Co.
+//		New York Chicago
+//		Copyright: 1898
+//		Hymn No.: 345
+
+// Transcribed by: Ted Gatza, Jr. 06/25/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+   title bold (19) "" "Trusting Jesus, That is All " ""
+   title (2)""
+   title (11) "A \(flat) - 2 - MI" "\s(18)\f(TI)\:Though\ he\ slay\ me,\ yet\ will\ I\ trust\ him.\ -\ Job\ 13:15 \(space)"""
+   title (13) "Edgar P. Stites" " " "Ira D. Sankey, 1870"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=105";
+
+//1
+1: 4c+e; 8bd; 4d+f; 8c+e;
+2: 4aa-; 8aa-; 4aa-; 8aa-;
+
+
+			lyrics 1: "<1. >-1|Sim-ply trust-ing";
+			lyrics 1: "<2. >-1|Bright-ly doth His";
+			lyrics 1: "<3. >-1|Sing-ing, if my";
+			lyrics 1: "<4. >-1|Trust-ing Him while";
+bar
+//2
+1: 4c+e; 8bd; 4.ac;
+2: 4ge; 8ge; 4.aa-;
+
+			lyrics 1: "ev-'ry day,";
+			lyrics 1: "Spir-it shine";
+			lyrics 1: "way is clear";
+			lyrics 1: "life shall last,";
+bar
+//3
+1: 4af; 8fd; 4af; 8fd;
+2: 4ad; 8ad; 4ad; 8ad;
+
+			lyrics 1: "Trust-ing through a";
+			lyrics 1: "In-to this poor";
+			lyrics 1: "Pray-ing, if the";
+			lyrics 1: "Trust-ing Him till";
+bar
+//4
+1 1: 8e bm; 8a ebm; 8c+e; 4.be;
+1 2: 4c; 8s; 4.s;
+2: 4aa-; 8aa-; 4.ge;
+
+			lyrics 1: 4; 8; 4.; "storm-y way;";
+			lyrics 1: 4; 8; 4.; "heart of mine;";
+			lyrics 1: 4; 8; 4.; "path is drear;";
+			lyrics 1: 4; 8; 4.; "earth is past;";
+bar
+//5
+1: 4c+e; 8bd; 4d+f; 8c+e;
+2: 4aa-; 8aa-; 4aa-; 8aa-;
+
+			lyrics 1: "E-ven when my";
+			lyrics 1: "While He leads I";
+			lyrics 1: "If in dan-ger,";
+			lyrics 1: "Till with-in the";
+bar
+//6
+1: 4bf; 8af; 4.fd;
+2: 4ad; 8ad; 4.ad;
+
+			lyrics 1: "faith is small,";
+			lyrics 1: "can-not fall.";
+			lyrics 1: "for Him call;";
+			lyrics 1: "jas-per wall,";
+bar
+newscore
+//7
+1 1: 8e bm; 8a ebm; 8c+e; 4e+a; 8c+e;
+1 2: 4c; 8s; 4s; 8s;
+2 1: 8a bm; 8e ebm; 8aa-; 4c+a; 8a;
+2 2: 4a-; 8s; 4s; 8a;
+
+			lyrics 1: 4; 8; 4; 8; "Trust-ing Je-sus";
+			lyrics 1: 4; 8; 4; 8; "Trust-ing Je-sus";
+			lyrics 1: 4; 8; 4; 8; "Trust-ing Je-sus";
+			lyrics 1: 4; 8; 4; 8; "Trust-ing Je-sus";
+bar
+//8
+1: 4c+e; 8bd; 4.ac;
+2: 4ge; 8ge; 4.aa-;
+
+			lyrics 1: "that is all.";
+			lyrics 1: "that is all.";
+			lyrics 1: "that is all.";
+			lyrics 1: "that is all.";
+dblbar
+//9
+1: 4e+a; 8c+e; 4e+a; 8c+e;
+2 1: 4c+a; 8a; 4c+a; 8aa-;
+2 2: 4s; 8a; 4a; 8s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Trust-ing as the";
+bar
+newscore
+//10
+1: 4c+e; 8be; 4.be;
+2: 4ae; 8ge; 4.ge;
+
+			lyrics 1: "mo-ments fly,";
+bar
+//11
+1: 4c+en; 8ge; 4af; 8af;
+2: 4gc; 8c+c; 4c+f; 8c+f;
+
+			lyrics 1: "Trust-ing as the";
+bar
+//12
+1: 4bdn; 8fd; 4.ge;
+2 1: 4bb-; 8bb-; 4.b;
+2 2: 4s; 8s; 4e slur; 8d&;
+
+			lyrics 1: "days go by;";
+bar
+//13
+1: 4ae; 8ac; 4s; 8s;
+2: 4ac; 8aa-; 4s; 8s;
+
+			lyrics 1: "Trust-ing";
+invisbar
+newscore
+
+1: 4s; 8s; 4be; 8be;
+2: 4s; 8s; 4ge; 8ge;
+
+			lyrics 1: "Him What-";
+
+bar
+//14
+1: 4c+e; 8c+g&; 4.d+f;
+2 1: 4a; 8aa-; 4.ad;
+2 2: 4a; 8s; 4.s;
+
+			lyrics 1: "e'er be-fall,";
+bar
+//15
+1 1: 4e+e; 8f+a; 8e+ bm; 8c+ ebm; 8a;
+1 2: 4s; 8s; 4a; 8a;
+2 1: 4ac; 8ad; 8c+ bm; 8e+ ebm; 8c+f;
+2 2: 4s; 8s; 4e; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "Trust-ing Je-sus.";
+bar
+//16
+1 1: 4c+a; 8bg; 4.a;
+1 2: 4s; 8s; 4.a;
+2: 4e+e; 8d+e; 4.c+a-;
+mussym (9) above 1: 4 "ferm";
+mussym (9) above 2: 4 "ferm";
+
+			lyrics 1: "that is all.";
+endbar

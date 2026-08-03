@@ -1,0 +1,218 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sermons In Song
+//		Edite by: Grant C. Tullar
+//		and Issac H. Meredith
+//		For use in Gospel Meetings and other
+//		Religious Services
+//		Published by Meyer & Beother
+//		108 Washington St. Chicago. Il.
+//		Copyright 1894
+//		Hymn no. 10
+
+// Transcribed by: Ted Gatza, Jr. 03/11/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "He Leadeth My Soul" ""
+   title (2)""
+   title (11) "C - 2 - SOL" "\s(17)\f(TI)\:Psalm\ 23 \(space)" ""
+   title (13) "Arr., Cho. by Grant C. Tullar" " " "Grant C. Tullar, 1894"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = .9
+	pad =0
+	vscheme = 2f
+	staffscale=.99
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=75";
+
+
+//1
+1: 8ge; 4.s; 4;
+2: 8c+c; 4.s; 4;
+
+
+			VERSE "<1. >-1|The";
+			VERSE "<2. >-1|In";	
+			VERSE "<3. >-1|E'en";
+			VERSE "<4. >-1|A";
+bar
+//2
+1 1: 8ge; f#d#; ge; e+ bm; d+ ebm; c+g;
+1 2: 8s;;; 4g; 8s;
+2: 8c+c;;; bm; bd ebm; c+e;
+
+			VERSE 8; 8; 8; 4; 8; "Lord is my Shep-herd,";
+			VERSE 8; 8; 8; 4; 8; "mer-cy I cry, re-";
+			VERSE 8; 8; 8; 4; 8; "tho' I shall tread the";
+			VERSE 8; 8; 8; 4; 8; "ta-ble be-fore me";
+bar
+//3
+1: 8c+f; bg; af; 4ge; 8ge;
+2: 8af; bf; c+f; 4c+c; 8;
+
+			VERSE "I shall not want; In";
+			VERSE "store me a-gain, Give";
+			VERSE "val-ley of death, I'll";
+			VERSE "Thou shalt pre-pare, Tho'";
+bar
+//4
+1: 8ge bm; fd ebm; ec; 4fd; 8ge;
+2 1: 4g; 8; 4gg-; 8;
+2 2: 4g; 8; 4s; 8;
+
+			VERSE 4; 8; 4; 8; "Him I now a-";
+			VERSE 4; 8; 4; 8; "wis-dom to my";
+			VERSE 4; 8; 4; 8; "nev-er shrink or";
+			VERSE 4; 8; 4; 8; "en-e-mies sur-";
+bar
+//5
+1: 4.ec tie; 4; 8ge;
+2: 4.gc tie; 4; 8c+c;
+
+			VERSE "bide; In";
+			VERSE "heart, To";
+			VERSE "fear; Thy";
+			VERSE "round; With";
+bar
+//6 
+1 1: 8ge bm; f#d# ebm; ge; e+ bm; d+ ebm; c+g;
+1 2: 8s;;; 4g; 8s;
+2: 4c+c; 8; bm; bd ebm; c+e;
+
+			VERSE 4; 8; 4; 8; "pas-tures green He";
+			VERSE 4; 8; 4; 8; "choose the path of";
+			VERSE 4; 8; 4; 8; "rod and staff shall";
+			VERSE 4; 8; 4; 8; "oil shalt Thou my";
+bar
+//7
+1: 8c+f bm; bg ebm; af; 4ge; 8;
+2 1: 8a bm; b ebm; 8c+f; 4c+c; 8;
+2 2: 4f; 8s; 4; 8;
+
+			VERSE 4; 8; 4; 8; "lead-eth me, Where";
+			VERSE 4; 8; 4; 8; "right-eous-ness, And";
+			VERSE 4; 8; 4; 8; "com-fort me, Thy";
+			VERSE 4; 8; 4; 8; "head a-noint, With";
+bar
+//8
+1: 4f#d; 8c+f; bm; bg ebm; af;
+2 1: 4ad; 8; a bm; b ebm; c+d;
+2 2: 4s; 8; 4d; 8s;
+
+			VERSE 4; 8; 4; 8; "qui-et wa-ters";
+			VERSE 4; 8; 4; 8; "from it ne'er de-";
+			VERSE 4; 8; 4; 8; "pres-ence shall be";
+			VERSE 4; 8; 4; 8; "joy shall I a-";
+bar
+//9
+1 1: 4.g tie; 4; 8s;
+1 2: 4.g tie; 4; 8s;
+2: 4.bgg- tie; 4; 8s;
+
+			VERSE "glide.";
+			VERSE "part.";
+			VERSE "near.";
+			VERSE "bound.";
+dblbar
+newscore
+//10
+1 1: 8g; 4.s; 4;
+1 2: 8g; 4.s; 4;
+2: 8bg; 4.s; 4;
+ital (13) above 1: 1 " Chorus";
+
+			VERSE"He";
+bar
+//11
+1: 8d+f;;;; c+e; bd;
+2 1: 8bg;;;; g;;
+2 2: 8s;;;; g;;
+
+			VERSE "lead-eth my soul to the";
+bar
+//12
+1: 8c+e;;; 4ge; 8;
+2: 8gc;;; 4c+c; 8;
+
+			VERSE "fount-ain of life; Be-";
+bar
+//13
+1: 8ge; f#d#; ge; 4fndn; 8;
+2: 8c+g;;; 4bg-; 8gg-;
+
+			VERSE "neath it I plunge, my";
+bar
+//14
+1: 8fd; ec#; fd; 4ecn; 8ge;
+2: 8gg-;;; 4gc; 8c+c;
+
+			VERSE "robes are made white; No";
+bar
+//15
+1: 8ge; f#d#; ge; e+g; d+g; c+g;
+2: 8c+c;;;; bd; c+e;
+
+			VERSE "long-er I walk 'mid the";
+bar
+//16
+1: 8c+f; bg; af; 4ge; 8;
+2: 8af; bf; c+f; 4c+c; 8;
+
+			VERSE "bil-lows of strife, He";
+bar
+//17
+1: 8af;; af#; bfn; af; bf;
+2: 8c+f;; d+d; d+g;; gg-;
+
+			VERSE "lead-eth by day and by";
+bar
+//18
+1: 4.c+e tie; 4; 8s;
+2: 4.gc tie; 4; 8s;
+
+			VERSE "night.";
+endbar

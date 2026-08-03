@@ -1,0 +1,228 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Lyric Source: Sowing and Reaping: hymns, tunes, 
+//		 and carols for the Sunday school, 
+//		 prayer, praise and gospel service. 
+//		 Author: John H. Kurzenknabe. 
+//		 Publisher: J.H. Kurzenknabe & Sons, 
+//		 Copyright 1889
+//		 Hymn No. 115
+
+
+		
+// Transcribed by: Ted Gatza, Jr. 08/01/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "All Glory To thee" ""
+   title (2)""
+   title (11) "A - 3 - SOL" "\s(17)\f(TI)\:Worthy\ art\ thou,\ our\ Lord\|\ and\ our\ God,\ to\ receive\ the glory\ and\ the\ honor\ an\|d\ the\ power:\ -\ Rev.\ 4:11" ""
+   title (13) "R. N. Turner, arr." "" "J. H. Kurzenknabe"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,30
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key= 3#
+
+
+staff 2
+	key=3 #
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 2s; 4ce;
+2: 2s; 4aa-;
+
+
+			VERSE "<1. >-1|All";
+			VERSE "<2. >-1|Su-";
+			VERSE "<3. >-1|O";
+			VERSE "<4. >-1|Im-";
+			
+bar
+//2
+1: 4ac; 4ae; 4be;
+2: 4aa-; 4ac; 4ge;
+
+			VERSE "glo-ry at-";
+			VERSE "preme in Thy";
+			VERSE "joy be-yond";
+			VERSE "mor-tal Thou";
+			lyrics below 2: "<\f(TI)D.S.-\f(PV) >-5|glo-ry at-";
+bar
+//3
+1: 4c+e; 4c+e; 4ae;
+2 1: 4a; 4a; 4ac;
+2 2: 4a; 4a; 4s;
+
+			VERSE "tend Thee, all";
+			VERSE "wis-dom, E-";
+			VERSE "meas-ure, O";
+			VERSE "liv-est, we";
+			lyrics below 2: 4; 4; 4; "tend Thee, all";
+bar
+//4
+1: 4fd; 4ad; 4d+f;
+2: 4ad; 4fd; 4ad;
+
+			VERSE "prais-es be";
+			VERSE "ter-nal in";
+			VERSE "sweet-est and";
+			VERSE "live at Thy";
+			lyrics below 2: "prais-es be";
+bar
+//5
+1 1: 2c+e; 8c+ bm; 8d+ ebm;
+1 2: 2s; 4e;
+2 1: 2aa-; 8a bm; 8b ebm;
+2 2: 2s; 4a;
+
+			VERSE 2; 4; "Thine; Thou";
+			VERSE 2; 4; "might, We";
+			VERSE 2; 4; "best; Through";
+			VERSE 2; 4; "side; Through";
+			lyrics below 2: 2; 4; "Thine; Thou";
+bar
+//6
+1: 4e+e; 4c+e; 4ae;
+2: 4c+a; 4e+a; 4c+a;
+
+			VERSE "Prince of the";
+			VERSE "bow in Thy";
+			VERSE "pa-tient en-";
+			VERSE "ag-es un-";
+			lyrics below 2: "Prince of the";
+bar
+//7
+1: 4af; 4fd; 4d+f;
+2: 4d+d; 4ad; 4ad;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+//			VERSE "peo-ple, In-"; // Original lyrics
+			VERSE "peo-ple, Our";
+			VERSE "pres-ence, O";
+			VERSE "dur-ance, We'll";
+			VERSE "end-ing, With";
+//			lyrics below 2: "peo-ple, In-"; // Original lyrics
+			lyrics below 2:	"peo-ple, Our";
+bar
+//8
+1: 4c+e; 4ae; 4be;
+2: 4ae; 4c+e; 4d+e;
+
+//			VERSE "car-nate Di-"; // Original lyrics
+			VERSE "Sav-ior Di-";
+			VERSE "In-fi-nite";
+			VERSE "taste of Thy";
+			VERSE "Thee we a-";
+//			lyrics below 2: "car-nate Di-"; // Original lyrics
+			lyrics below 2: "Sav-ior Di-";
+bar
+//9
+1: 2ae; 4s;
+2: 2c+a-; 4s;
+ital above 1: 2 "Fine";
+
+			VERSE "vine.";
+			VERSE "Light.";
+			VERSE "rest.";
+			VERSE "bide.";
+			lyrics below 2: "vine.";
+dblbar
+newscore
+//10
+1: 8ge bm; 8af ebm; 2s;
+2: 4be; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 4; 2s; [c]"All";
+bar
+//11
+1: 4bg; 4bg; 4c+a;
+2: 4e+e; 4e+e; 4e+e;
+
+			VERSE [c]"glo-ry and";
+bar
+//12
+1: 4bg; 4bg; 8ge bm; 8bg ebm;
+2: 4e+e; 4e+e; 4be;
+
+			VERSE 4; 4; 4; [c]"hon-or, All";
+bar
+//13
+1: 4af; 4ge; 4fd#;
+2: 4bb-; 4bb-; 4bb-;
+
+			VERSE [c]"bless-ings and";
+bar
+//14
+1: 2ge; 8ge bm; 8af ebm; 
+2: 2be; 4be;
+
+			VERSE 2; 4; [c]"praise; To";
+bar
+//15
+1: 4bg; 4bg; 4c+a;
+2: 4e+e; 4e+e; 4e+e;
+
+			VERSE [c]"crown Thee for-";
+bar
+//16
+1: 4bg; 4e+g; 8ge bm; 8bg ebm;
+2: 4 e+e; 4be; 4be;
+
+			VERSE 4; 4; 4; [c]"ev-er, Our";
+bar
+//17
+1: 4af; 4fd#; 4bd;
+2: 4bb-; 4bb-; 4bb-;
+
+			VERSE [c]"voic-es we";
+bar
+//18
+1 1: 2e; 4en;
+1 2: 2e; 4d;
+2: 2ge; 4ge;
+ital (13) above 1: 3.5 "D.S.";
+
+			VERSE [c]"raise: All";
+
+endbar

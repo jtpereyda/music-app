@@ -1,0 +1,250 @@
+//!Mup vs.6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	
+//	The Best Gospel Songs And Their Composers
+//	By A. J. Showalter
+//	Published by The A. J. Show Alter Co.,
+//	Dalton, Georgia.
+//	The Showalter-Patton Co.,
+//	Dallas, Texas
+//	Copyright 1904
+//	Hymn No. 28
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 11/17/2020
+
+// Revisions:
+//	09/03/2022
+
+// HymnsToGod.org
+
+// ******************************************
+//6x9 Hymn Format
+
+top
+	title bold (19) "" "Beautiful" ""
+   	title (2) ""
+   	title (11)"" "\f(TI)And I say unto him, My lord, thou knowest. And he said to me, These" ""
+   	title (11)"" "\f(TI)are they that come out of the great tribulation, and they washed their" ""
+   	title (11)"" "\f(TI)robes, and made them white in the blood of the Lamb. - Rev. 7:14" ""
+   	title (11)"D\(flat) - 4 - DO" "" ""  
+   	title (13) "Barney Elliott Warren" "" "Barney Elliott Warren, 1897"
+
+footer
+   	title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffpad=0
+	scorepad=0
+	scale=.95
+	rightmargin=.750
+	leftmargin=.750
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=12/8	
+	key=d&
+
+staff 2
+	key=d&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (10) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (10) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=127";
+
+//============
+
+//1
+1 1: 8d; e; df; 4.s;;;
+1 2: 8d;; s; 4.s;;;
+2: 8df; dg; da; 4.s;;;
+
+	
+	VS 8; 8; 8; 4.s; 4.s; 4.s; "<1. >-1|Beau-ti-ful";
+	VS 8; 8; 8; 4.s; 4.s; 4.s; "<2. >-1|Beau-ti-ful";
+	VS 8; 8; 8; 4.s; 4.s; 4.s; "<3. >-1|Beau-ti-ful";
+
+bar
+
+//2
+1: 4.fa;; df; 8af+; ge+; fd+;
+2: 4.dd+;; da; 8dd+;;;
+
+	VS "robes so white, Beau-ti-ful";
+	VS "tho't to me, We shall for-";
+	VS "things on high, O-ver in";
+bar
+
+//3
+1: 4.fa;; df; 8fa; eg; df;
+2: 4.dd+;; da; 8;;;
+
+	VS "land of light, Beau-ti-ful";
+	VS "ev-er be Thine in e-";
+	VS "yon-der sky, Thus I shall";
+bar
+
+//4
+1: 4.eg;; ce; 8gb; fa; eg;
+2: 4.a-a;;; 8a-a; b-a; ca;
+
+	VS "home so bright, Where there shall";
+	VS "ter-ni-ty, When from this";
+	VS "leave this shore, Count-ing my";
+bar
+
+//5
+1: 4.df; cg; da; 8fa; engn; fa;
+2: 4.da; ea; fa; 8dd+;;;
+
+	VS "come no night; Beau-ti-ful";
+	VS "world we're free; Free from its";
+	VS "treas-ures o'er, Where we shall";
+bar
+
+//6
+1: 4.af+;; fd+; 8; gc+; ad+;
+2: 4.dd+;; da; 8da; ea; fd+;
+
+	VS "crown I'll wear, Shin-ing with";
+	VS "toils and care, Heav-en-ly";
+	VS "nev-er die, Car-ry me";
+bar
+
+//7
+1: 4.gb;; bd+; 8bd+; ac+; gb;
+2: 4.gd+;;; 8;;;
+
+	VS "stars o'er there, Yon-der in";
+	VS "joys to share, Let me cross";
+	VS "by and by, Nev-er to";
+bar
+
+//8
+1: 4.fa;; 4.gc+; 8ge+; fd+; ec+;
+2: 4.ad+;; ae+; 8a-a;;;
+
+	VS "man-sions fair, Gath-er us";
+	VS "o-ver there, This is my";
+	VS "sor-row more, Heav-en-ly";
+bar
+
+//9
+1: 4.f~d+~; 4.f~d+~; 4fd+; 8r; 8s;;;
+2: 4.d~a~; 4.d~a~; 4da; 8r; 8s;;;
+
+	VS "there.";
+	VS "pray'r.";
+	VS "store.";
+dblbar
+newscore
+//10
+REFRAIN
+1: 8fd+; ec+; fd+; 4.s;;;
+2: 4.r; 4.s;;;
+
+	VS "Beau-ti-ful";
+bar
+
+//11
+1: 4.g~e+~; 4. g~e+~; 4.ge+; 8bd+; ac+; gb;
+2: 8ac+;;; 4ac+; 8; 4.; 4.r;
+
+	VS 4.; 4.s; 4.s; 8; 8; 8; "robes,_ Beau-ti-ful";
+	VS 8; 8; 8; 4; 8; 4.; 4.s; "Beau-ti-ful robes of white,";
+bar
+
+//12
+1: 4.f~a~; 4.f~a~; 4; 8r; fa; eg; df;
+2: 8dd+;;; 4; 8; 4; 8r; 4.r;
+
+	VS 4.; 4.s; 4.s; 8; 8; 8; "land,_ Beau-ti-ful";
+	VS 8; 8; 8; 4; 8; 4; 8s; 4.s; "Beau-ti-ful land of light";
+bar
+
+//13
+1: 4.e~g~; 4.e~g~; 4.eg; 8gb; fa; eg;
+2: 8a-a;;; 4; 8; 4.; 4.r;
+
+	VS 4.; 4.s; 4.s; 8; 8; 8; "home,_ Beau-ti-ful";
+	VS 8; 8; 8; 4; 8; 4.; 4.s; "Beau-ti-ful home so bright,";
+bar
+
+//14
+1: 4.d~f~; 4.d~f~; 4df; 8r; fa; engn; fa;
+2: 8da;;; 4; 8; 4; 8r; 4.r;
+
+	VS 4.; 4.s; 4.s; 8; 8; 8; "band,_ Beau-ti-ful";
+	VS 8; 8; 8; 4; 8; 4; 8s; 4.s; "Beau-ti-ful band of might,";
+bar
+
+//15
+1: 4.a~f+~; 4.a~f+~; 4.af+; 8; ge+; fd+;
+2: 8dd+;;;;;; 4.; 4.r;
+
+	VS 4.; 4.s; 4.s; 8; 8; 8; "crown,_ Shin-ing so";
+	VS 8; 8; 8; 8; 8; 8; 4.; 4.s;"Beau-ti-ful, beau-ti-ful crown,";
+bar
+
+//16
+1: 4.g~b~; 4.g~b~; 4gb; 8r; 8bd+; ac+; gb;
+2: 8gd+;;;;;; 4; 8r; 4.r;
+
+	VS 4.; 4.s; 4.s; 8; 8; 8; "fair,_ Beau-ti-ful";
+	VS 8; 8; 8; 8; 8; 8; 4; 8s; 4.s;"Shin-ing, yes, shin-ing so fair,";
+bar
+
+//17
+1: 4.fa; ea; fa; 8ge+; fd+; ec+;
+2: 8ad+;;; 4ac+; 8ac+; 4.ad+; 8a-a;;;
+
+	VS "man-sion bright, gath-er us";
+	VS 8; 8; 8; 4; 8; 4.; 8; 8; 8; "Beau-ti-ful man-sion bright, gath-er us";
+bar
+
+//18
+1 1: 4.d+~; 4.d+~; 4d+; 8r; 4.s;
+1 2: 4f; 8; g;;; 4f; 8s; 4.s;
+2 1: 4a; 8; b;;; 4a; 8r; 4.s;
+2 2: 4.d~; 4.d~; 4d; 8s; 4.s;
+
+	VS 4.; 4.s; 4.s; 4.s; "there._";
+	VS 4; 8; 8; 8; 8; 4; 8s; 4.s; "there, yes gath-er us there.";
+endbar
+
+
+

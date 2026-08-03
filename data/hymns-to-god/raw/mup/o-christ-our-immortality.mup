@@ -1,0 +1,238 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1895
+//		Hymn No.: 194
+//		
+// Transcribed by: Ted Gatza, Jr. 10/25/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "O Christ, Our Immortality" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:For\ the\ wages\ of\ sin\ is\ dea\|th;\ but\ the\ free\ gift\ of\ God is\ eternal\ life\ in\ Christ\ Je\^sus\ our\ Lord.\ -\ Rom.\ 6:23" ""   
+   title (13) "F. G. Burroughs" "" "M. L. McPhail, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 4ec; 2.s;
+2: 4aa-; 2.s;
+
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|O";
+			VERSE "<3. >-1|O";
+			VERSE "<4. >-1|O";
+			VERSE "<5. >-1|O";
+
+bar
+//2
+1: 4.ec; 8; fd; ec; ca-; ec;
+2: 4.aa-; 8;;; ea-; aa-;
+
+			VERSE "Christ, our im-mor-tal-i";
+			VERSE "Christ, our im-mor-tal-i";
+			VERSE "Christ, our im-mor-tal-i";
+			VERSE "Christ, our im-mor-tal-i";
+			VERSE "Christ, our im-mor-tal-i";
+bar
+//3
+1: 2.ac; 4c+e;
+2: 2.ea-; 4aa-;
+
+			VERSE "ty, We";
+			VERSE "ty, A-";
+			VERSE "ty, Our";
+			VERSE "ty, Death";
+			VERSE "ty; No";
+bar
+//4
+1 1: 4.be; 8ane; be; gd; s; s;
+1 2: 4.s; 8;;;; s;
+2 1: 4.ge; 8f#; ge; be; s; s;
+2 2: 4.s; 8e; s;;;;
+
+			VERSE "have no life ex-";
+			VERSE "mid earth's storms to";
+			VERSE "safe-ty is to";
+			VERSE "has no sting nor";
+			VERSE "dark-ness can be";
+invisbar
+newscore
+
+1 1: 4.s; 8s; s; s; fd; e;
+1 2: 4.s; 8;;;; d;
+2 1: 4.s; 8s; s; s; ae; ge;
+2 2: 4.s; 8s; s;;;;
+
+			VERSE "cept in";
+			VERSE "Thee we";
+			VERSE "hide in";
+			VERSE "vic-to-";
+			VERSE "found in";
+
+bar
+//5
+1: 2.c+ec; 4c+e;
+2: 2.aa-; 4;
+
+			VERSE "Thee; Thou";
+			VERSE "flee! No";
+			VERSE "Thee; Thy";
+			VERSE "ry, Since";
+			VERSE "Thee; And";
+bar
+//6
+1: 4.e+e; 8c+e; ac; ec;; ac;
+2: 4.c+a-; 8aa-; ea-; aa-;;;
+
+			VERSE "art our res-ur-rec-tion";
+			VERSE "wind this Sol-id Rock can";
+			VERSE "blest Re-demp-tion now we";
+			VERSE "for Thy peo-ple Thou didst";
+			VERSE "in-to ev-'ry trust-ing";
+bar
+//7
+1: 2.fd; 4d+f;
+2: 2.ad; 4;
+
+			VERSE "breath, And";
+			VERSE "break, No";
+			VERSE "claim, And";
+			VERSE "win The";
+			VERSE "heart Thou";
+bar
+//8
+1: 4.d+f; 8c+e;; be; ae; ge;
+2: 4.ad; 8;; d+e; c+e; be;
+
+			VERSE "with-out Thee is end-less";
+			VERSE "flood this Sure Foun-da-tion";
+			VERSE "life re-ceive thro' Je-sus'";
+			VERSE "great sal-va-tion from all";
+			VERSE "dost the light and life im-";
+bar
+//9
+1: 2. ae; 4r;
+2: 2. c+a-; 4r;
+
+			VERSE "death.";
+			VERSE "shake.";
+			VERSE "name.";
+			VERSE "sin.";
+			VERSE "part.";
+dblbar
+//10
+1: 8c+a; e+a; 8.; 16c+a; 2ae;
+2: 8e+a; c+a; 8.; 16e+a; 2c+a;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Im-mor-tal-i-ty,";
+bar
+//11
+1: 8fd; af; 8.; 16fd; 4.ec; 8;
+2 1: 8ad; d+d; 8.; 16af; 4.a; 8;
+2 2: 8s;; 8.; 16; 4.a; 8;
+
+			VERSE "Im-mor-tal-i-ty is";
+bar
+//12
+1: 4ac; ae; c+a; e+a;
+2 1: 4a; c+a; e+a; e+c;
+2 2: 4a; s;;;
+
+			VERSE "Je-sus' gift to";
+bar
+//13
+1: 2.bg; 4r;
+2: 2.e+e; 4r;
+
+			VERSE "me;";
+bar
+//14
+1: 8c+a; e+a; 8.s; 16s; 2s;
+2: 8e+a; c+a; 8.s; 16s; 2s;
+
+			VERSE "Life and";
+invisbar
+newscore
+
+1: 8s; s; 8.e+a; 16c+a; 2ae;
+2: 8s; s; 8.c+a; 16e+a; 2c+a;
+
+			VERSE "light di-vine,";
+
+bar
+//15
+1: 8fd; af; 8.; 16fd; 4.ec; 8;
+2 1: 8d+d;; 8.; 16af; 4.a; 8;
+2 2: 8s;; 8.; 16; 4.a; 8;
+
+			VERSE "thro' the blood are mine; And";
+bar
+//16
+1: 4ac;; 4.c+e; 8bd;
+2 1: 4a;; 4.ae; 8ge;
+2 2: 4a;; 4.s; 8;
+
+			VERSE "end-less vic-to-";
+bar
+//17
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			VERSE "ry.";
+endbar

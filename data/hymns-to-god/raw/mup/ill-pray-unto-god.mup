@@ -1,0 +1,317 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Grateful Praise
+//	A collection of new songs for the Sunday School
+//	By J. H. Fillmore
+//	Cincinnati:
+//	Fillmore Brothers, Publishers
+//	185 Race St,
+//	Published: 1884
+//	Hymn No. 42
+
+
+// Transcribed by:
+//	Ted Gatza, Jr. 11/23/2022
+
+// Revisions:
+	
+// HymnsToGod.org
+
+// ****************************************
+top
+
+   title bold (19) "" "I'll Pray Unto God" ""
+   title (2)""
+   title (11)"" "\f(TI)Hearken unto the voice of my cry, my King," "" 
+   title (11)"" "\f(TI)and my God; For unto thee do I pray. - Ps. 5:2" ""
+
+   title (11) " G - 4 - SOL" "" ""
+   title (13) "Henry Robert Trickett" "" "Edmund Simon Lorenz, 1884"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=1
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+       define DSV1 lyrics below 2 using 1: @
+       define DSV12 lyrics below 2 using 1 2: @
+       define DSV21 lyrics below 2 using 2 1:@
+       define DSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+
+  //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=83";
+
+//=========================
+//Verse 1
+
+//1
+1: 2.s; 8b-d; ; 
+2 1: 2.s; 8g; ;
+2 2: 2.s; 8g; ;
+
+	VS1 "<1. >-1|When my";
+	VS1 "<2. >-1|When I";
+	VS1 "<3. >-1|When my";
+bar
+
+//2
+1: 4b-g; 8; ; bm; db ebm; ca; b-g;
+2 1: 4g; 8; ; 4; 8; ; 
+2 2: 4g; 8; ; 4; 8; ; 
+
+	VS21 "heart is dis-tressed and I";
+	VS21 "sin a-gainst God and my";
+	VS 4; 4; 4; 8; ; "last hour comes and death";
+bar
+
+//3
+1: 4s; ec+; 8; 8; 8 bm; ge+ ebm;
+2: 4s; cg; 8; ; 4;
+
+	VS21 "faint by the way,";
+	VS21 "soul knows its guilt,";
+	VS21 "knocks at my door,";
+invisbar
+newscore
+1: 8fd+; ec+; 2.s;
+2: 8cg; 8eg; 2.s;
+
+	VS21 "And the";
+	VS21 "And I";
+	VS21 "And the";
+bar
+
+//4
+1 1: 2s; 8b bm; d+ ebm; 4s;
+1 2: 4db; 8; ; 4g; 8fc+; gb;
+2 1: 4g; 8; gb; 4d+; 8ad+;gd+ ; 
+2 2: 4g; 8; s; g bm; b ebm; 8s; ;
+
+	VS12 "dark-ness is black as a";
+	VS12 "know that I've wan-dered a-";
+	VS12 "sum-mons my soul must o-";
+bar
+
+//5
+1: 2.fa; 4s;
+2: 2.dd+; 4s;
+
+	VS1 "pall,";
+	VS1 "way,";
+	VS1 "bey,";
+bar
+
+//6
+1 1: 8d; ; 2.s;
+1 2: 8d; ; 2.s;
+2: 8df; ; 2.s;
+
+	VS1 "I will";
+	VS1 "I will";
+	VS1 "I will";
+bar
+
+//7
+1: 4b-g; 8; ; bm; db ebm; ca; b-g;
+2 1: 4g; 8; ; 4; 8; 8;
+2 2: 4g; 8; ; 4; 8; 8; 
+
+	VS21 "cast off my fear and to";
+	VS21 "turn to the cross and my";
+	VS21 "trust in the cross and to";
+bar
+
+//8
+1: 4s; 4ec+; 8; ; bm; ge+ ebm;
+2: 4s; 4cg; 8; ; 4;
+
+	VS21 "God, I will pray\(emdash)";
+	VS21 "sin will con-fess,";
+	VS21 "Christ I will cling,";
+invisbar
+
+1: 2.s; 8fd+ bm; ec+ ebm;
+2: 2.s; 4cg;
+
+	VS21 "To";
+	VS21 "To";
+	VS21 "To";
+bar
+
+//9
+1 1: 4s; 8g; a; 2s;
+1 2: 4db; 8g; ; 4gb; 8fa; ;
+2: 4dg; 8eb; ec+#; 4dd+; 8dc+n; dc+;
+
+	VS12 "God, who will hear when I";
+	VS12 "God for for-give-ness I'll";
+	VS12 "Je-sus when dy-ing I'll";
+bar
+
+//10
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2. g-b; 4s;
+
+	VS1 "call.";
+	VS1 "pray.";
+	VS1 "pray.";
+dblbar
+newscore
+
+//11
+CHORUS
+1: 2.s; 8b-g; df;
+2: 2.s; 4r;
+
+	VS1 [c]"I will";
+bar
+
+//12
+1: 4ce; 8eg; ec+; 4ge+; 8eg; ce;
+2: 4r; 8cc+; cg; 4cc+; 4r;
+
+	VS1 [c]"pray, yes, I'll pray, un-to";
+bar
+
+//13
+1: 4s; 4b-d; 8dg; gb; 4gd+;
+2: 4s; 4r; 8gb; gd+; 4gb;
+
+	VS1 "God I will pray,";
+invisbar
+1: 8ge+; gb; 2.s;
+2: 8gb; gd+; 2.s;
+
+	VS1 "Tho' the";
+bar
+
+//14
+1: 4fa; 8; ; 4ec+#; 8gb; gc+;
+2 1: 4ad+; 8; a; 4a-a; 8; ;
+2 2: 4.s; 8a; 2s;
+
+	VS1 "bil-lows should o-ver me";
+bar
+
+//15
+1: 2.fd+; 4s;
+2: 2.da; 4s;
+
+	VS1 "roll;";
+invisbar
+
+//DC ADDED HERE===============================
+
+1 1: 8d; ; 2.s;
+1 2: 8d; ; 2.s;
+2: 8df; ; 2.s;
+
+	VS1 "I will";
+bar
+
+//7
+1: 4b-g; 8; ; bm; db ebm; ca; b-g;
+2 1: 4g; 8; ; 4; 8; 8;
+2 2: 4g; 8; ; 4; 8; 8; 
+
+	VS21 "pray, yes, I'll pray un-to";
+bar
+
+//8
+1: 4s; 4ec+; 8; ; bm; ge+ ebm;
+2: 4s; 4cg; 8; ; 4;
+
+	VS21 "God I will pray,";
+invisbar
+
+1: 2.s; 8fd+ bm; ec+ ebm;
+2: 2.s; 4cg;
+
+	VS21 "And";
+bar
+
+//9
+1 1: 4s; 8g; a; 2s;
+1 2: 4db; 8g; ; 4gb; 8fa; ;
+2: 4dg; 8eb; ec+#; 4dd+; 8dc+n; dc+;
+
+	VS21 "he will de-liv-er my";
+bar
+
+//10
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2. g-b; 4s;
+
+	VS21 "soul.";
+endbar
+
+
+

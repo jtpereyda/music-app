@@ -1,0 +1,273 @@
+// Coded with Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 33
+//		
+// Transcribed by: Ted Gatza, Jr. 11/05/2011; Rev. 04/17/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Word Of Life" ""
+   title (2)""
+   title (11) "E - 4 - SOL" "\s(17)\f(TI)\:unto\ an\ inheritance\ incorrup\|tible,\ and\ undefiled,\ and\ that fadeth\ not\ away,\ reserved\ in\|\ heaven\ for\ you,\ -\ 1\ Pet.\ 1:4" ""   
+   title (13) "Violet E. King" "" "B. B. Funk"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4#
+
+
+staff 2
+	key=4#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1 1:8b-; eb-; 2.s;
+1 2:8b-; 8s; 2.;
+2: 8ge;; 2.s;
+
+			VERSE "<1. >-1|In the";
+			VERSE "<2. >-1|In the";
+			VERSE "<3. >-1|And we";
+bar
+//2
+1: 4ge;;;;
+2: 4be;;;;
+
+			VERSE "pre-cious word of";
+			VERSE "pre-cious word of";
+			VERSE "read of snow-white";
+bar
+//3
+1: 2.be; 8af; ge;
+2: 2.ge; 8be;;
+
+			VERSE "life, In the";
+			VERSE "life, We the";
+			VERSE "robes, That in";
+bar
+//4
+1: 4fd;; ge; af;
+2: 4bb-;;;;
+
+			VERSE "ho-ly book di-";
+			VERSE "gold-en prom-ise";
+			VERSE "beau-ty we shall ";
+bar
+//5 
+1 1: 2.ge; 8b-; eb-;
+1 2: 2.s; 8b-; 8s;
+2: 2.be; 8ge;;
+
+			VERSE "vine; There we";
+			VERSE "see; He that";
+			VERSE "wear; And the";
+bar
+//6
+1: 4ge;;;;
+2: 4be;;;;
+
+			VERSE "learn that by and";
+			VERSE "hath the son hath";
+			VERSE "palms with glo-ry";
+bar
+//7
+1: 2.bg; 8af; ge;
+2: 2.e+e; 8be;;
+
+			VERSE "by We like";
+			VERSE "life, \"Ye shall";
+			VERSE "bright, That in";
+bar
+//8
+1: 4fd;; bd; db-;
+2: 4bb-;; fb-; ab-;
+
+			VERSE "stars may bright-ly";
+			VERSE "my dis-ci-ples";
+			VERSE "tri-umph we shall";
+bar
+//9
+1 1: 2.eb-; 8g; 8bg;
+1 2: 2.s; 8g; s;
+2: 2.ge; 8be;;
+
+			VERSE "shine, In that";
+			VERSE "be,\" When the";
+			VERSE "bear; And the";
+bar
+//10
+1 1: 4c+a; a; e+a; c+a;
+1 2: 4s; a; s; s; 
+2: 4e+a-; c+a-;; e+a-;
+
+			VERSE "coun-try o-ver";
+			VERSE "night of death is";
+			VERSE "splen-dor of the";
+bar
+//11
+1 1: 2.bg; 8g; bg;
+1 2: 2.s; 8g; s;
+2: 2.e+e; 8; 8; 
+
+			VERSE "there, Just be-";
+			VERSE "o'er, And we";
+			VERSE "King, We in";
+bar
+//12
+1 1: 4c+a; a; e+a; c+a;
+1 2: 4s; a; s; s; 
+2: 4e+a-; c+a-;; e+a-;
+
+			VERSE "yond this fleet-ing";
+			VERSE "wake in glad sur-";
+			VERSE "glad-ness shall be-";
+bar
+newscore
+//13
+1: 2.bg; 4r;
+2: 2.e+e; 4r;
+
+			VERSE "life,";
+			VERSE "prise";
+			VERSE "hold,";
+bar
+//14
+1 1:8e+g;;;; 4bg; 4g;
+1 2: 8s;;;; 4; 4g;
+2: 8be;;;; 4e+e; 4be;
+
+			VERSE "When we join the ran-somed";
+			VERSE "In that par-a-dise a-";
+			VERSE "When we reach that bless-ed";
+bar
+//15
+1 1: 2c+ slur; 4e+; 8d+a; c+a;
+1 2: 2.a; 8s;;
+2 1: 2e+ slur; 4c+; 8c+a-; e+a-;
+2 2: 2.a-; 8s;;
+mussym (9) above 1: 3 "ferm";
+mussym (9) above 2: 3 "ferm";
+
+			VERSE "throng, Where there";
+			VERSE "bove, In that";
+			VERSE "land With its";
+bar
+newscore
+//16
+1: 4bg;; d+f; d+a;
+2: 4e+b-;; bb-;;
+
+			VERSE "is no pain or";
+			VERSE "land be-yond the";
+			VERSE "streets of shin-ing";
+bar
+//17
+1: 2.e+g; 4r;
+2: 2.be; 4r;
+
+			VERSE "strife.";
+			VERSE "skies.";
+			VERSE "gold.";
+dblbar
+//18
+1:4bg; ge; 8; fd; ge; af;
+2: 1r;
+ital above 1: 1 " Refrain";
+
+			VERSE [c]"In the pre-cious word of";
+bar
+//19
+1: 2.bg; 4r;
+2: 8be;; e+e;; 4be; 4r;
+
+			VERSE 2.; 4s; "life,";
+			VERSE 8; 8; 8; 8; 4; 4s; "pre-cious word of life";
+bar
+//20
+1 1:4c+a; a; 8c+a; e+c+; d+b; c+a;
+1 2: 4s; a; 8s;;;;
+2: 1r;
+
+			VERSE "In the ho-ly book di-";
+bar
+newscore
+//21
+1: 2.bg; 4r;
+2: 8e+e;; be;; 4; 4r;
+
+			VERSE "vine,";
+			VERSE 8;;;; 4; 4s;"ho-ly book di-vine,";
+bar
+//22
+1 1:8e+g;;;; 4bg; 4g;
+1 2: 8s;;;; 4; 4g;
+2: 8be;;;; 4e+e; 4be;
+
+			VERSE "In the pre-cious word of";
+bar
+//23
+1 1: 2c+ slur; 4e+; 8d+a; c+a;
+1 2: 2.a; 8s;;
+2 1: 2e+ slur; 4c+; 8c+a-; e+a-;
+2 2: 2.a-; 8s;;
+mussym (9) above 1: 3 "ferm";
+mussym (9) above 2: 3 "ferm";
+
+			VERSE "life, We a";
+bar
+//24
+1: 4bg;; d+f; d+a;
+2: 4e+b-;; bb-;;
+
+			VERSE "glo-rious re-fuge";
+bar
+//25
+1: 2.e+g; 4r;
+2: 2.be; 4r;
+
+			VERSE "find.";
+endbar

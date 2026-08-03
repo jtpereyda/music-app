@@ -1,0 +1,256 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Praise and Rejoicing
+//		
+//		Edited by A. J. Showalter, Geo. C. Hugg and
+//		john J. Hood
+//		Published by: The A. J. Showalter Co.,
+//		Dalton, GA.
+//		Geo. C Hugg, 2133 Newkirk Street, Philadelphia, PA
+//		John J. Hood 1024 Arch Street, Philadelphia, PA
+//		The Showalter-Patton Co., Dallas Texas
+//		Copyright 1904
+//		Hymn No.: 75
+//		
+// Transcribed by: Ted Gatza, Jr. 09/24/12
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I Am Sheltered In Thee" ""
+   title (2)""
+   title (11) "D - 3 - DO" " \s(17)\f(TI)\:My\ strong\ rock\ for\ a\ house\ of\ defence.\ -\ Ps.\ 31:2 \(space)" ""   
+   title (13) "Frank M. Davis" "" "Frank M. Davis"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1 1: 8.d; 16e; 2s;
+1 2: 8.d; 16; 2s;
+2: 8.fd; 16gd; 2s;
+
+			VERSE 8.; 16; 2s; "<1. >-1|I am";
+			VERSE 8.; 16; 2s; "<2. >-1|I am";
+			VERSE 8.; 16; 2s; "<3. >-1|I am";
+			
+bar
+//2
+1 1: 4fd; e; d;
+1 2: 4s; d; d;
+2: 4ad; gd; fd;
+
+			VERSE "safe in the";
+			VERSE "safe in the";
+			VERSE "safe in the";
+bar
+//3
+1: 2af; 8.; 16;
+2: 2d+d; 8.; 16;
+
+			VERSE "Rock that is";
+			VERSE "Cleft that was";
+			VERSE "Rock let what-";
+bar
+//4
+1: 4bg; d+b; bg;
+2: 4d+g;;;
+
+			VERSE "high-er than";
+			VERSE "riv-en for";
+			VERSE "ev-er be-";
+bar
+//5
+1 1: 2af; 8.d; 16e;
+1 2: 2s; 8.d; 16;
+2: 2d+d; 8.fd; 16gd;
+
+
+			VERSE "I; This my";
+			VERSE "me; From the";
+			VERSE "tide; Death and";
+bar
+//6
+1: 4fd;; ge;
+2: 4ad;;;
+
+			VERSE "ref-uge thro'";
+			VERSE "pow'r of the";
+			VERSE "hell have no";
+bar
+//7
+1: 4af;; fd;
+2: 4d+d;; ad;
+
+			VERSE "storms e'er shall";
+			VERSE "temp-ter I'm";
+			VERSE "ter-ror to";
+bar
+//8
+1 1: 2ec; 8.d; 16e;
+1 2: 2s; 8.d; 16;
+2: 2aa-; 8.fd; 16gd;
+
+			VERSE "be; Tho' my";
+			VERSE "free; Tho' my";
+			VERSE "me; I can";
+bar
+//9
+1 1: 4fd; e; d;
+1 2: 4s; d;;
+2: 4ad; gd; fd;
+
+			VERSE "frail bark is";
+			VERSE "path-way be";
+			VERSE "walk with-out";
+bar
+//10
+1: 2af; 8.; 16;
+2: 2d+d; 8.; 16;
+
+			VERSE "toss'd on the";
+			VERSE "dark and the";
+			VERSE "fear thro' the";
+bar
+//11
+1: 4bg; d+b; bg;
+2: 4d+g;;;
+
+			VERSE "bil-lows' mad";
+			VERSE "storms sweep the";
+			VERSE "shad-ow-y";
+bar
+//12
+1 1: 2af; 8.d; 16e;
+1 2: 2s; 8.d; 16;
+2: 2d+d; 8.fd; 16gd;
+
+			VERSE "foam, Yet I'm";
+			VERSE "sky, Yet se-";
+			VERSE "vale, For se-";
+bar
+//13
+1: 4fd;; gd;
+2: 4ad;; bg-;
+
+			VERSE "shel-tered for-";
+			VERSE "cure-ly I'm";
+			VERSE "cure-ly I'm";
+bar
+//14
+1 1: 4fd; d; ec;
+1 2: 4s; d; s;
+2: 4aa-; fa-; ga-;
+
+			VERSE "ev-er in";
+			VERSE "shel-tered in";
+			VERSE "shel-tered in";
+bar
+//15
+1 1: 2d; 4r;
+1 2: 2d; 4s;
+2: 2fd; 4r;
+
+			VERSE "Thee.";
+			VERSE "Thee.";
+			VERSE "Thee.";
+dblbar
+//16
+1: 4fd; bg; af;
+2: 2.r;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "Shel-tered in";
+bar
+//17
+1: 2.ge;
+2: 4c+a-;;;
+
+			VERSE "Thee,";
+			VERSE 4; 4; 4; "Shel-tered in";
+bar
+//18
+1: 4ec; af; ge;
+2: 2aa-; 4ac;
+
+			VERSE "Shel-tered in";
+			VERSE 2; 4; "Thee, in";
+bar
+//19
+1: 2fd; 8.af; 16;
+2: 2ad; 8.d+d; 16;
+
+			VERSE "Thee, O Thou";
+			VERSE 2; 8.s; 16s; "Thee,";
+bar
+//20
+1: 4d+f; c+a; bg;
+2: 4ad; d+d;;
+
+			VERSE "blest Rock of";
+bar
+//21
+1 1: 4af; fd; 8d; gd;
+1 2: 4s;; 8d; s;
+2: 4d+d; ad; 8bg-;;
+
+			VERSE "A-ges, I am";
+bar
+//22
+1 1: 4fd; d; ec;
+1 2: 4s; d; s;
+2: 4aa-; fa-; ga-;
+
+			VERSE "shel-tered in";
+bar
+//23
+1 1: 2d; 4s;
+1 2: 2d; 4s;
+2: 2fd; 4s;
+
+			VERSE "Thee.";
+endbar

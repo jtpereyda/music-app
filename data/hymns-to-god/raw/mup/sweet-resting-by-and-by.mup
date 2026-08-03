@@ -1,0 +1,208 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Jasper and Gold:
+//		A Choice Collection of Song-Gems
+//		For Sunday Schools, Social Meetings
+//		And Times of Refreshing.
+//		by T. C. O'Kane
+//		Cincinnati: Hitchcock & Walden
+//		New York: Nelson & Phillips
+//		Copyright 1877		
+//		Hymn no. 62
+
+// Transcribed by: Ted Gatza, Jr. 02/19/2011; Rev. 07/21/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sweet Resting By And By" ""
+   title (2)""
+   title (11) "A \(flat)- 2 - SOL" "\s(17)\f(TI)\:For\ we\ who\ have\ believed\ do\ enter\ into\ that\ rest;\ -\ Heb.\ 4:3 \(space)" ""
+   title (13) "Elisha A. Hoffman" "" "T. C. O'Kane"
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4.s; 4s; 8ec;
+2: 4.s; 4s; 8aa-;
+
+			lyrics 1: "<1. >-1|We'll";
+			lyrics 1: "<2. >-1|We'll";
+			lyrics 1: "<3. >-1|We'll";
+bar
+//2
+1: 8ec bm; 8c+e ebm; 8c+e; 8c+e bm; 8be ebm; 8ae;
+2: 4aa-; 8aa-; 8aa- bm; 8gb- ebm; 8ac;
+
+			lyrics 1: 4; 8; 4; 8; "lay our heav-y";
+			lyrics 1: 4; 8; 4; 8; "sing with all the";
+			lyrics 1: 4; 8; 4; 8; "be with Je-sus";
+bar
+//3
+1: 4fd; 8ge; 4af; 8r;
+2: 4ad; 8ad; 4ad; 8r;
+
+			lyrics 1: "bur-dens down,";
+			lyrics 1: "ran-som'd there,";
+			lyrics 1: "where he is,";
+bar
+//4
+1: 4ge; 8ae; 4bg; 8r;
+2: 4e+e; 8c+e; 4e+e; 8r;
+
+			lyrics 1: "By and by,";
+			lyrics 1: "By and by,";
+			lyrics 1: "By and by,";
+bar
+newscore
+//5
+1: 4ae; 8be; 4c+e; 8ec;
+2 1: 4e+c; 8ge; 4a; 8aa-;
+2 2: 4s; 8s; 4a; 8s;
+
+			lyrics 1: "By and by, Ex-";
+			lyrics 1: "By and by, And";
+			lyrics 1: "By and by, A";
+bar
+//6
+1: 8ec bm; 8c+e ebm; 8c+e; 8e~c+ slur; 8be; 8ae;
+2: 4aa-; 8aa-; 8aa- slur; 8gb-; 8ac;
+
+			lyrics 1: 4; 8; 8; 8; 8; "change the cross for the";
+			lyrics 1: 4; 8; 8; 8; 8; "swell our praise on the";
+			lyrics 1: 4; 8; 4; 8; "home more bright-ly";
+bar
+//7
+1: 4fd; 8ge; 4af; 8r;
+2: 4ad; 8ad; 4ad; 8r;
+
+			lyrics 1: "gold-en crown";
+			lyrics 1: "balm-y air,";
+			lyrics 1: "fair than this,";
+bar
+newscore
+//8
+1: 4.e+a; 4c+e slur; 8bd;
+2: 4.c+e; 4.ge;
+
+			lyrics 1: "By and";
+			lyrics 1: "By and";
+			lyrics 1: "By and";
+bar
+//9
+1: 4.ac tie; 4ac; 8s;
+2: 4.aa- tie; 4aa-; 8s;
+
+			lyrics 1: "by.";
+			lyrics 1: "by.";
+			lyrics 1: "by.";
+dblbar
+//10
+1: 8ae; 4.s; 4s;
+2: 8ac; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"There'll";
+bar
+//11
+1 1: 8a bm; 8d+ ebm; 8d+f; 4d+f; 8d+f;
+1 2: 4f; 8s; 4s; 8s;
+2: 4ad; 8ad; 4ad; 8ad;
+
+			lyrics 1: 4; 8; 4; 8; [c]"be sweet rest-ing";
+bar
+//12
+1: 8d+f bm; 8c+e ebm; 8c+e; 4c+e; 8r;
+2: 4aa-; 8aa-; 4aa-; 8r;
+
+			lyrics 1: 4; 8; 4; 8s; [c]"By and by,";
+bar
+newscore
+//13
+1: 8c+a bm; 8bg ebm; 8bg; 4bg; 8r;
+2 1: 8b bm; 8e+ ebm; 8e+e; 4e+e; 8r;
+2 2: 4e; 8s; 4s; 8s;
+
+			lyrics 1: 4; 8; 4; 8s; "By and by,";
+bar
+//14
+1 1: 8b bm; 8e+ ebm; 8d+n; 4e+ slur; 8d+&;
+1 2: 4g; 8f; 4.g;
+2 1: 8e+e bm; 8bg ebm; 8b; 4.be;
+2 2: 8s; 8s; 8b; 4.s;
+
+			lyrics 1: 4; 8; 4.; "By and by,";
+bar
+//15
+1: 4.c+e slur; 4ac; 8r;
+2: 4aa-; 8aa-; 4aa-; 8r;
+
+			lyrics 1: 4.; 4s; 8s; "Sweet,";
+			lyrics 1: 4; 8; 4; 8s; "Oh how sweet,";
+bar
+newscore
+//16
+1: 4.fd slur; 4af; 8r;
+2: 4ad; 8ad; 4d+d; 8r;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: 4.; 4s; 8s; "Sweet,";
+			lyrics 1: 4; 8; 4; 8s; "Oh how sweet";
+bar
+//17
+1: 4ge; 8bg; 4d+g; 8ge;
+2: 4be; 8e+e; 4e+e; 8d+e;
+
+			lyrics 1: "Rest-ing By and";
+bar
+//18
+1: 4.ae tie; 4ae; 8s;
+2: 4.c+aa- tie; 4c+aa-; 8s;
+
+			lyrics 1: "by.";
+endbar

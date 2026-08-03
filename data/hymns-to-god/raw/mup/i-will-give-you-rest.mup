@@ -1,0 +1,218 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs of Redeeming Love
+//		Edited by: Jn. R. Sweeney, C.C. McBride,
+//		T.C. O'Kane, W.J. Kirkpatrick
+//		Philadelphia: John J. Hood, 1018 Arch Street
+//		Cincinnati: Walden & Stowe, St. Louis and Chicago
+//		Copyright 1882	
+//		Hymn no. 51
+
+// Transcribed by: Ted Gatza, Jr. 04/04/11
+// HymnsToGod.org
+
+//********************************************
+
+top
+
+   title bold (19) "" "I Will Give You Rest" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(17)\f(TI)\:Come\ unto\ me,\ all\ ye\ that\|\ labor\ and\ are\ heavy\ laden, and\ I\ will\ give\ you\|\ rest.\ -\ Mat.\ 11:28" ""
+   title (13) "Catherine Harbison Waterman Esling" " " "T. C. O'Kane, 1883"
+   title (13) "C. Wesley, arr." "" ""
+
+ 
+footer
+
+title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+//********************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4gd; 8.bg; 16ad; 4gd; 4db-;
+2:4bgg-; 8.d+gg-; 16c+gg-; 4bgg-; 4gg-;
+
+			lyrics 1: "<1. >-1|Come un-to me when";
+			lyrics 1: "<2. >-1|Large are the man-sions";
+			lyrics 1: "<3. >-1|There, like an Ed-en";
+			
+bar
+//2
+1: 8gd; 8fd; 8gd; 8af; 4bg; 4af;
+2: 8bg-; 8c+a-; 8d+b-; 8d+d; 4d+g; 4d+d;
+
+			lyrics 1: "shad-ows dark-ly gath-er,";
+			lyrics 1: "in thy Fa-ther's dwell-ing,";
+			lyrics 1: "blos-som-ing in glad-ness,";
+bar
+//3
+1: 4bg; 8bd; 8c+d; 4s; 4s;
+2 1: 4d+g; 8g; 8a; 4s; 4s;
+2 2: 4s; 8g; 8g; 4s; 4s;
+
+			lyrics 1: "When the sad";
+			lyrics 1: "Glad are the";
+			lyrics 1: "Bloom the fair";
+invisbar
+newscore
+
+1: 4s; 8s; 8s; 4d+g; 4bg;
+2 1: 4s; 8s; 8s; 4bg; 4d+g;
+2 2: 4s; 8s; 8s; 4s; 4s;
+
+			lyrics 1: "heart is";
+			lyrics 1: "homes that";
+			lyrics 1: "flowers the";
+
+bar
+//4
+1 1: 8g; 8g; 8fd; 8gd; 4.af; 8r;
+1 2: 8g; 8g; 8s; 8s; 4.s; 8s;
+2: 8d+b; 8d+b; 8c+a; 8bg; 4.d+d; 8r;
+
+			lyrics 1: "Wea-ry and dis-tressed,";
+			lyrics 1: "sor-rows nev-er dim;";
+			lyrics 1: "earth too rude-ly pressed;";
+bar
+//5
+1 1: 4gd; 8.bg; 16ad; 4gd; 4d;
+1 2: 4s; 8.s; 16s; 4s; 4d;
+2: 4bgg-; 8.d+gg-; 16c+gg-; 4bgg-; 4gb-;
+
+			lyrics 1: "seek-ing for com-fort";
+//			lyrics 1: "Sweet are the harps in"; //original lyrics
+			lyrics 1: "Sweet are the songs in";
+			lyrics 1: "Come un-to me, all";
+bar
+//6
+1: 8gd; 8fd; 8gd; 8ad; 4bd; 4ad;
+2 1: 8gb-; 8c+a-; 8bb-; 8ad; 4g; 4fd;
+2 2: 8s; 8s; 8s; 8s; 4g; 4s;
+
+			lyrics 1: "from your heaven-ly Fa-ther,";
+			lyrics 1: "ho-ly mu-sic swell-ing,";
+			lyrics 1: "ye who droop in sad-ness,";
+bar
+//7
+1: 4bd; 8d+g; 8d+fn; 4.c+e; 8ae;
+2 1: 4g; 8gb-; 8gb-; 4.gc; 8c+c;
+2 2: 4g; 8s; 8s; 4.s; 8s;
+
+			lyrics 1: "Come un-to me, and";
+			lyrics 1: "Soft are the tones which";
+			lyrics 1: "Come un-to me, and";
+bar
+//8
+1 1: 8gd; 8fd; 8e; 8fd; 2gd;
+1 2: 8s; 8s; 8d; 8s; 2s;
+2: 8bd; 8ad; 8gd; 8ad; 2bgg-;
+
+			lyrics 1: "I will give you rest.";
+			lyrics 1: "raise the heaven-ly hymn.";
+			lyrics 1: "I will give you rest.";
+dblbar
+//9
+1: 4bd; 8.bd; 16bd; 4bd; 4r;
+2 1: 4g; 8.g; 16g; 4g; 4r;
+2 2: 4g; 4r; 8g bm; 8fn ebm; 8e; 8d;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "Come un-to me,";
+			lyrics 1: 4; 8.s; 16s; 4; 8; 8; "Come, Come un-to";
+bar
+//10
+1: 4c+e; 8.c+e; 16s; 4s; 4s;
+2: 4gc; 8.gc; 16s; 4s; 4s;
+
+			lyrics 1: "come un-";
+			lyrics 1: "me, un-";
+invisbar
+newscore
+
+1: 4s; 8.s; 16c+e; 4c+e; 4r;
+2: 4s; 8.s; 16gc; 4gc; 4r;
+
+			lyrics 1: "to me,";
+			lyrics 1: "to me,";
+
+bar
+//11
+1: 4d+g; 8.e+g; 16d+g; 4d+g; 4c+f;
+2: 4bg; 8.c+g; 16bg; 4bg; 4d+d;
+
+			lyrics 1: "Come un-to me, and";
+bar
+//12
+1: 8bg; 8ae; 8ae; 8ae; 4.af; 8r;
+2: 8e+a-; 8c#+a-; 8c+a-; 8c+a-; 4.d+d; 8r;
+
+			lyrics 1: "I will give you rest:";
+bar
+newscore
+//13
+1: 4bg; 8.bg; 16bg; 4bg; 4r;
+2 1: 4d+g; 8.d+; 16d+; 4d+; 4r;
+2 2: 4s; [dist 0]4r; 8g bm; 8fn ebm; 8e; 8d; 
+
+			lyrics 1: "Come un-to me";
+			lyrics 1: 4; 4s; 4; 8; 8; "Come, Come un-to";
+bar
+//14
+1: 4c+g; 8.c+g; 16c+g; 4c+g; 4r;
+2: 4e+c; 8.e+c; 16e+c; 4e+c; 4r;
+
+			lyrics 1: "come un-to me,";
+			lyrics 1: "me, un-to me,";
+bar
+newscore
+//15
+1: 4d+g; 8.e+g;16d+g; 8d+g; 8bd; 8c+e; 8ae;
+2 1: 4bg; 8.c+g; 16bg; 8bg; 8g; 8gc; 8c+c;
+2 2: 4s; 8.s; 16s; 8s; 8g; 8s; 8s;
+
+			lyrics 1: "Come un-to me, and I will";
+bar
+//16
+1 1: 8g bm; 8f ebm; 4ad; 2gd;
+2 1: 8b bm; 8a ebm; 4c+d; 2bg-;
+2 2: 4d; 4s; 2s;
+
+			lyrics 1: 4; 4; 2; "give you rest.";
+endbar

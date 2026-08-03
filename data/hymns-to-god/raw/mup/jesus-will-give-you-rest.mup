@@ -1,0 +1,347 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be  
+// in the public domain in the United States of America.
+
+// This mup code is donated to the public domain.
+// 
+
+// Hymn Source: Songs Of Triumph
+//		Adapted To Prayer Meetings, Camp Meetings,
+//		and all other Seasons of Religious Worship.
+//		Selected  and arranged by J. S. Inskip.
+//		921 Arch St., Philadelphia
+//		National Pttblishing Association for the Promotion of Holiness.
+//		Copyright, 1882
+//		Hymn No. 44
+
+			
+// Transcribed by: Ted Gatza, Jr. 04/21/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.98
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Jesus Will Give You Rest" ""
+   title (2) ""
+   title (11) "" "\f(TI)Come unto me, all ye that labor and are heavy laden," ""
+   title (11) "" "\f(TI)and I will give you rest. - Matt. 11:28" ""
+   title (12) "G - 4 - SOL" "" ""
+   title (13) "Fanny J. Crosby" " " "John R. Sweney, 1879" 
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse 1
+
+//1
+1 1: 2.s; 8d; ;
+1 2: 2.s; 8d; ;
+2: 2.s; 8gb; ;
+
+	VS "<1. >-1|Will you";
+	VS "<2. >-1|Will you";
+	VS "<3. >-1|Will you";
+bar
+
+//2a
+1: 4dg; 8gb; da; 4dg; 8s; ;
+2: 4gb; 8gd+; gc+; 4gb; 8s; ;
+
+	VS "come, will you come,";
+	VS "come, will you come?";
+	VS "come, will you come?";
+invisbar
+
+//2b
+1: 4s; 8; ; 4; 8dg; gb;
+2: 4s; 8; ; 4; 8gb; gd+;
+
+	VS "With your";
+	VS "There is";
+	VS "How He";
+bar
+
+//3
+1: 4gd+; 8ge+; gd+; 2gb;
+2: 4gb; 8gc+; gb; 2gd+;
+
+	VS "poor brok-en heart,";
+	VS "mer-cy for you,";
+	VS "pleads with you now;";
+bar
+
+//4
+1: 4fd+; 8fa; gb; 4ac+; 8gb bm; da ebm;
+2 1: 4s; 8; ; 4; 8d+ bm; c+ ebm;
+2 2: 4dd+; 8; ; 4; d;
+
+	VS22 "Bur-dened and sin o-";
+	VS22 "Balm for your ach-ing";
+	VS22 "Fly to His lov-ing";
+bar
+
+//5a
+1 1: 2g slur; 4d; 8s; ;
+1 2: 2.d; 8s; ; 
+2: 2.gb; 8s; ;
+
+	VS "press'd";
+	VS "breast;";
+	VS "breast;";
+invisbar
+
+//5b
+1 1: 2.s; 8d; ;
+1 2: 2.s; 8d; ;
+2: 2.s; 8gb; ;
+
+	VS "Lay it";
+	VS "O-bey";
+	VS "And what-";
+bar
+
+//6a
+
+1: 4dg; 8gb; da; 4dg; 8s; ;
+2: 4gb; 8gd+; gc+; 4gb; 8s; ;
+
+	VS "down at the feet";
+	VS "Je-sus your Lord,";
+	VS "ev-er your sin";
+
+invisbar
+
+//6b
+1: 4s; 8; ; 4; 8dg; gb;
+2: 4s; 8; ; 4; 8gb; gd+;
+
+	VS "of your";
+	VS "heed His";
+	VS "or your";
+bar
+
+//7
+1: 4gd+; 8ge+; gd+; 2gb;
+2: 4gb; 8gc+; gb; 2gd+;
+
+	VS "Sav-ior and Lord,";
+	VS "ev-'ry com-mand,";
+	VS "sor-row may be,";
+bar
+
+//8
+1: 4fd+; 8fa; gb; 4ac+; 8gb bm; da ebm;
+2 1: 4s; 8; ; 4; 8d+ bm; c+ ebm;
+2 2: 4dd+; 8; ; 4; d;
+
+	VS22 "Je-sus will give you";
+	VS22 "Je-sus will give you";
+	VS22 "Je-sus will give you";
+bar
+
+//9
+1: 2.dg; 4r;
+2: 2.gb; 4r;
+
+	VS "rest.";
+	VS "rest.";
+	VS "rest.";
+dblbar
+
+CHORUS
+
+//10
+1: 4fd+; 8fa; fb; 2ac+;
+2: 4da; 8dd+; ; 2;
+
+	VS "O hap-py rest,";
+bar
+
+//11
+1: 4gb; 8dg; da; 2dg;
+2: 4gd+; 8gb; gc+; 2gb;
+
+	VS "sweet hap-py rest,";
+bar
+
+//12
+1 1: 4d; 8dg; gb; 4gd+; 8ac+ bm; gb ebm;
+1 2: 4d; 8s; ; 4; 4;
+2 1: 4gb; 8; gd+; 4gb; 4d+;
+2 2: 4s; 8; ; 4; 8f bm; g ebm;
+
+	VS21 "Je-sus will give you";
+bar
+
+//13a
+1: 2.fa; 4s;
+2 1: 2.d+; 4s;
+2 2: 4d; 8; ; d bm; c ebm; 4s;
+
+	VS22 "rest. (hap-py rest.) <>";
+invisbar
+
+//13b
+1 1: 2.s; 4d;
+1 2: 2.s; 4d;
+2: 2.s; 8b-d+ bm; a-c+ ebm;
+
+	VS "O";
+bar
+
+//14
+1 1: 4dg; 8gb; da; 4dg; 8g bm; b ebm;
+1 2: 4s; 8; ; 4; g;
+2 1: 4s; 8; ; 4; 8b bm; d+ ebm;
+2 2: 4g-b; 8gd+; gc+; 4gb; g;
+
+	VS22 "why won't you come in";
+bar
+
+//15
+1: 8gd+; ; ge+; gd+; 2gb;
+2: 8gb; ; gc+; gb; 2gd+;
+
+
+	VS "sim-ple trust-ing faith?";
+bar
+
+//16
+1: 4fd+; 8fa; gb; 4ac+; 8gb bm; da ebm;
+2 1: 4s; 8; ; 4; 8d+ bm; c+ ebm;
+2 2: 4dd+; 8; ; 4; d;
+
+	VS22 "Je-sus will give you";
+bar
+
+//17
+1: 2.dg; 4r;
+2: 2.g-gb; 4r;
+
+	VS "rest.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

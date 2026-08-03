@@ -1,0 +1,273 @@
+// Coded with Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns New and Old
+//		For use in Gospel Meetings 
+//		and other Religious Services
+//		by D. B. Towner
+//		Published by Fleming H. Revell,
+//		Chicago, 148 and 150 Madison Street
+//		New York, 12 Bible House
+//		Copyright 1887
+//		Hymn no. 128
+
+// Transcribed by: Ted Gatza, Jr. 09/23/2010; rev. 09/26/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Oh! Word of Words!" ""
+   title (2)""
+   title (11) "D - 4 - FA" "\s(17)\f(TI)\:Let\ the\ word\ of\ Christ\ dwell\ in\ you\ richly;\ -\ Col.\ 3:16 \(space)"""
+   title (13) "J. H. Sammis" " " "Daniel B. Towner, 1887"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key= 2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 4ad;
+2: 2.s; 4fd;
+
+			lyrics 1: "<1. >-1|More";
+			lyrics 1: "<2. >-1|For";
+			lyrics 1: "<3. >-1|Oh!";
+bar
+//2
+1 1:4.fd; 8fd; 4e; 4d;
+1 2: 4.s; 8s; 4d; 4d;
+2: 4.ad; 8ad; 4gd; 4fd;
+
+			lyrics 1: "pre-cious than the";
+			lyrics 1: "when the heart is";
+			lyrics 1: "Book of books the";
+bar
+//3
+1: 2gd; 4fd; 4fd;
+2: 2bd; 4ad; 4ad;
+
+			lyrics 1: "ru-by, Or";
+			lyrics 1: "sad-dest, By";
+			lyrics 1: "dear-est, Oh!";
+bar
+//4
+1: 4.ad; 8ad; 4gc; 4fd;
+2: 4.d+f; 8d+f; 4ae; 4ad;
+
+			lyrics 1: "sil-v'ry mer-chan-";
+			lyrics 1: "sin and sor-row";
+			lyrics 1: "true and Liv-ing";
+bar
+//5
+1: 2.ec; 4gc;
+2: 2.aa-; 4aa-;
+
+			lyrics 1: "dise; Yea,";
+			lyrics 1: "pressed, Thy";
+			lyrics 1: "Word, Of";
+bar
+//6
+1 1:4.fd; 8fd; 4e; 4d;
+1 2: 4.s; 8s; 4d; 4d;
+2: 4.ad; 8ad; 4gd; 4fd;
+
+			lyrics 1: "more than all the";
+			lyrics 1: "words a-lone can";
+			lyrics 1: "ti-dings glad the";
+bar
+//7
+1: 2gd; 4fd; 4fd;
+2: 2bd; 4ad; 4ad;
+
+			lyrics 1: "splen-dors That";
+			lyrics 1: "com-fort And";
+			lyrics 1: "glad-dest That";
+bar
+//8
+1: 4ec; 4ac; 4ad; 4g#d;
+2: 4ae; 4ae; 4be; 4be;
+
+			lyrics 1: "stud the star-ry";
+			lyrics 1: "soothe the trou-bled";
+			lyrics 1: "mor-tal ev-er";
+bar
+//9
+1: 2.ac; 4ae;
+2: 2.aa-; 4c+a;
+
+			lyrics 1: "skies, This";
+			lyrics 1: "breast, And";
+			lyrics 1: "heard, How";
+bar
+//10
+1 1: 4.c+g; 8bg; 4a; 4gc;
+1 2: 4.s; 8s; 4g; 4s;
+2 1: 4.e+a; 8d+a; 4c+a; 4a;
+2 2: s; s; s; 4a;
+
+			lyrics 1: "dear, this ho-ly";
+			lyrics 1: "when the night is";
+			lyrics 1: "sweet-er than the";
+bar
+//11
+1: 2fd; 4af; 4af;
+2: 2ad; 4d+d; 4d+d;
+
+			lyrics 1: "Bi-ble; This";
+			lyrics 1: "dark-est And";
+			lyrics 1: "hon-ey That";
+bar
+//12
+1: 4.bf; 8bf; 4ae; 4g#d;
+2: 4.d+b-; 8d+b-; 4c+e; 4be;
+
+			lyrics 1: "treas-u-ry of";
+			lyrics 1: "gloom ob-scures the";
+			lyrics 1: "drop-peth from the";
+bar
+//13
+1 1: 2.ac; 4a;
+1 2: 2.s; 4g;
+2 1: 2.aa-; 4a;
+2 2: 2.s; 4a;
+
+			lyrics 1: "God; Filled";
+			lyrics 1: "way, Thy";
+			lyrics 1: "comb, Thy";
+bar
+//14
+1: 4.d+f; 8d+f; 4c+g; 4bg;
+2 1: 4.ad; 8ad; 4ad; 8b bm; 8c+ ebm;
+2 2: 4.s; 8s; 4s; 4d;
+
+			lyrics 1: "full with grace and";
+			lyrics 1: "light a-lone can";
+			lyrics 1: "words of lov-ing";
+bar
+//15
+1 1: 2af; 4fd; 4d;
+1 2: 2s; 4s; 4d;
+2: 2d+d; 4ad; 4fb-;
+
+			lyrics 1: "wis-dom, With";
+			lyrics 1: "guide us With";
+			lyrics 1: "fa-vor That";
+bar
+//16
+1: 4.eb-; 8ge; 4fd; 4ec;
+2: 4.gg-; 8bg-; 4aa-; 4ga-;
+
+			lyrics 1: "hope and pro-mise";
+			lyrics 1: "bright and cheer-ing";
+			lyrics 1: "woo the wan-der'r";
+bar
+//17
+1 1: 2.d; 4s;
+1 2: 2.d; 4s;
+2: 2.fd; 4s;
+
+			lyrics 1: "broad.";
+			lyrics 1: "ray.";
+			lyrics 1: "home.";
+dblbar
+newscore
+//18
+1: 4ad; 2.s;
+2: 4fd; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "Oh!";
+bar
+//19
+1: 4.d+f; 8d+f; 4c+g; 4bg;
+2 1: 4.ad; 8ad; 4ad; 8b bm; 8c+ ebm;
+2 2: 4.s; 8s; 4s; 4d;
+
+			lyrics 1: "Word of words su-";
+bar
+//20
+1: 2af; 4fd; 4af;
+2: 2d+d; 4ad; 4ad;
+
+			lyrics 1: "per-nal, Oh!";
+bar
+//21
+1: 4.d+a; 8d+a; 4c+g; 4d+f;
+2: 4.af; 8af; 4ae; 4ad;
+
+			lyrics 1: "mes-sage from a-";
+bar
+//22
+1 1: 2.e+a; 4a;
+1 2: 2.s; 4g;
+2: 2.c+a; 4c+a;
+
+			lyrics 1: "bove, Oh!";
+bar
+//23
+1: 4.d+f; 8d+f; 4c+g; 4bg;
+2 1: 4.d+d; 8ad; 4ad; 8b bm; 8c+ ebm;
+2 2: 4.s; 8s; 4s; 4d;
+
+			lyrics 1: "Word of Life e-";
+bar
+//24
+1 1: 2af; 4fd; 4d;
+1 2: 2s; 4s; 4d;
+2: 2d+d; 4ad; 4fb-;
+
+			lyrics 1: "ter-nal, Of";
+bar
+//25
+1: 4.eb-; 8ge; 4fd; 4ec;
+2: 4.gg-; 8bg-; 4aa-; 4ga-;
+
+			lyrics 1: "Grace and Truth and";
+bar
+//26
+1 1: 2.d; 4s;
+1 2: 2.d; 4s;
+2: 2.fd; 4s;
+
+			lyrics 1: "Love.";
+endbar

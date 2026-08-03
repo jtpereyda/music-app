@@ -1,0 +1,207 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Songs Of Redeeming Love No. 2
+//		Edited by: Jno. R. Sweney, C. C. McCabe,
+//		T. C. O'Kane, Wm. J. Kirkpatrick
+//		Publisher : John J. Hood, 1018 Arch Street, Philadelphia
+//		Cranston & Stowe, Cincinnati, Chicago, and St. Louis
+//		Copyright 1887
+//		Hymn no. 37
+		
+		
+// Transcribed by: Ted Gatza, Jr. 01/26/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "No Other Refuge" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - MI" "\s(17)\f(TI)\:Trust\ in\ him\ at\ all\ times,\ y\|e\ people;\ Pour\ out\ your\ heart Before\ him:\ God\ is\ a\ ref\|uge\ for\ us.\ Selah\ -\ Ps.\ 62:8" ""   
+   title (13) "Jennie Garnett" "" "William J. Kirkpatrick, 1887"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+
+//1
+1 1: 8ge;;; 4f#; 8ge;
+1 2: 8s;;; 4e; 8s;
+2: 8be;;; 4ane; 8be;
+
+	VERSE "<1. >-1|Trou-bled in heart and";
+	VERSE "<2. >-1|O-ver the cold, dark";
+	VERSE "<3. >-1|Trou-bled in heart and";
+	VERSE "<4. >-1|Trou-bled in heart and";
+bar
+//2
+1: 4.ae; ge;
+2: 4.c+e; be;
+
+	VERSE "spir-it;";
+	VERSE "moun-tain,";
+	VERSE "spir-it";
+	VERSE "spir-it";
+bar
+//3
+1: 8fd;;; 4ge; 8fd;
+2: 8ab-;;; 4; 8;
+
+	VERSE "Je-sus I come to";
+	VERSE "Soft-ly I heard thee";
+	VERSE "bur-dened with anx-ious";
+	VERSE "Sav-iour, to thee I";
+bar
+//4
+1: 4.eb- tie; 4; 8r;
+2: 4.ge tie; 4; 8r;
+
+	VERSE "thee;";
+	VERSE "say;";
+	VERSE "fears,";
+	VERSE "come;";
+bar
+//5
+1: 8be;;; 4ane; 8be;
+2 1: 8ge;;; 4f#; 8ge;
+2 2: 8s;;; 4e; 8s;
+
+	VERSE "Hast thou a word of";
+	VERSE "None from the door of";
+	VERSE "Je-sus, be-hold me";
+	VERSE "Now to thy fold I";
+bar
+//6
+1: 4. c+e; be;
+2: 4.ae; ge;
+
+	VERSE "wel-come?";
+	VERSE "mer-cy";
+	VERSE "kneel-ing,";
+	VERSE "hast-en:";
+bar
+//7
+1: 8fd;;; 4ge; 8ane;
+2 1: 8bf;;; 4anf; 8f;
+2 2: 8s;;; 4; 8f;
+
+	VERSE "Hast thou a smile for";
+	VERSE "Ev-er were turned a-";
+	VERSE "Bath-ing thy feet with";
+	VERSE "Take the poor wan-der'er";
+//8
+bar
+1: 4.bd tie; 4bd; 8r;
+2: 4.fb- tie; 4fb-; 8r;
+
+	VERSE "me?";
+	VERSE "way.";
+	VERSE "tears.";
+	VERSE "home.";
+dblbar
+//9
+1: 8af;;; 4bg; 8af;
+2: 8bb-;;; 4; 8;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE [c]"I have no oth-er";
+bar
+//10
+1: 4.af; ge;
+2: 4.be;;
+
+	VERSE "ref-uge,";
+bar
+//11
+1: 8c+e;;; 4d+f; [up]8c+a;
+2 1: 8a;;; 4; 8e+a;
+2 2: 8a;;; 4; 8s;
+
+	VERSE "No oth-er place to";
+bar
+//12
+1: 4.bg tie; 4; 8r;
+2: 4.e+e tie; 4; 8r;
+
+	VERSE "go;";
+bar
+//13
+1 1: 8e+g;;; 4d+f; 8g;
+1 2: 8s;;; 4; 8f;
+2 1: 8c+;;; 4bng; 8;
+2 2: 8c+;;; 4s; 8;
+
+	VERSE "On-ly thy blood can";
+bar
+//14
+1 1: 4c+e; [up]8c+a; 4bg; 8e;
+1 2: 4s; 8; 4; 8e;
+2: 4c+a; 8e+a; 4e+e; 8bg;
+
+	VERSE "wash me clean, And";
+bar
+//15
+1: 4ad; 8; af; ge; fd;
+2: 4bf; 8; bb-;;;
+
+	VERSE "make me whit-er than";
+bar
+//16
+1: 4.ge tie; 4; 8r;
+2: 4.be tie; 4; 8r;
+
+	VERSE "snow.";
+endbar

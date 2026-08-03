@@ -1,0 +1,193 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Friend's Hymnal
+//		A Collection of Hymns and Tunes
+//		for the Public Worship of the Society
+//		Funk and Wagnalls Co.
+//		44-60 East Twenty-Third Street, New York
+//		Copyright 1908
+//		Hymn No.: 113
+
+// Transcribed by: Ted Gatza, Jr. 10/21/2009 rev.3/21/2013
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "Lead Me, O My Saviour, Lead Me" ""
+   title (2) " "
+   title (11) "A \(flat) - 4 - MI" "\s(18)\f(TI)\:For\ thou\ art\ my\ rock\ and\ \|my\ fortress;\ Therefore\ for thy\ name\ sake\ lead\ me\ \|and\ guide\ me.\ -\ Ps.\ 31:3"""
+   title (13) "Fanny J. Crosby" "B. C. Unseld, 1894"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4 	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,15
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+// 1
+1: 4c+e; 4ac; 8d+f; 8d+f; 8af; 8bf;
+2: 4aa-; 4aa-; 8aa-; 8aa-; 8aa-; 8aa-;
+
+
+					lyrics 1: "<1. >-1|Lead me, O my Sav-iour,";
+					lyrics 1: "<2. >-1|Lead me, O my Sav-iour,";
+					lyrics 1: "<3. >-1|Lead me, O my Sav-iour,";
+bar
+//2
+1: 2c+e; 2ac;
+2: 2aa-; 2aa-;
+
+					lyrics 1: "lead me,";
+					lyrics 1: "lead me,";
+					lyrics 1: "lead me,";
+bar
+//3
+1 1: 4bd; 4e; 8fd; 8e; 8s; 8s;
+1 2: 4s; 4d; 8s; 8d; 8s; 8s;
+2: 4ge; 4ge; 8ge; 8ge; 8s; 8s;
+
+					lyrics 1: "Whom have I to";
+					lyrics 1: "Thro' the rug-ged";
+					lyrics 1: "With a Shep-herd's";
+
+invisbar
+newscore
+
+1 1: 4s; 4s; 8s; 8s; 8gd; 8ac;
+1 2: 4s; 4s; 8s; 8s; 8s; 8s;
+2: 4s; 4s; 8s; 8s; 8be; 8ae;
+
+					lyrics 1: "trust be-";
+					lyrics 1: "path I";
+					lyrics 1: "ten-der";
+bar
+//4
+1: 2.be; 4r;
+2: 2.ge; 4r;
+
+					lyrics 1: "beside;";
+					lyrics 1: "tread;";
+					lyrics 1: "love;";
+bar
+//5
+1: 4c+e; 4ac; 8d+f; 8d+f; 8af; 8bf;
+2: 4aa-; 4aa-; 8aa-; 8aa-; 8aa-; 8aa-;
+
+					lyrics 1: "While a pil-grim and a";
+					lyrics 1: "With the Bread of Life Thou";
+					lyrics 1: "And at last thro' grace re-";
+bar
+//6
+1 1: 2c+e; 2e+;
+1 2: 2s; 4e slur; 4g&;
+2: 2aa-; 2ac;
+		
+					lyrics 1: "strang-er,";
+					lyrics 1: "giv-est,";
+					lyrics 1: "ceive me,";
+bar
+//7
+1: 4d+f; 4fd; 8ac; 8gc; 8fd; 8gd;
+2: 4ad; 4ad; 8ae; 8ae; 8be; 8be;
+
+					lyrics 1: "Be Thou still my faith-ful";
+					lyrics 1: "Let my hun-gry soul be";
+					lyrics 1: "To Thy bless-ed fold a-";
+bar
+//8
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+					lyrics 1: "guide.";
+					lyrics 1: "fed.";
+					lyrics 1: "bove.";
+dblbar
+//9
+1: 2be; 2eg;
+2: 2ge; 2be;
+					ital (14) above 1: 1 "Chorus";
+					lyrics 1: [c]"Lead me,";
+bar
+//10
+1: 2e+a; 2c+e;
+2 1: 2c+a; 2a;
+2 2: 2s; 2a;
+
+					lyrics 1: [c]"lead me,";
+bar
+newscore
+//11
+1: 4.c+dn; 8bd; 8bd; 8fd; 8fd; 8c+d;
+2: 4.af; 8af; 8ab-; 8ab-; 8ab-; 8ab-;
+
+					lyrics 1: "All my jour-ney here be-";
+bar
+//12
+1: 2.be; 4r;
+2: 2.ge; 4r;
+
+					lyrics 1: "low;";
+bar
+//13
+1: 4c+e; 4ac; 8d+f; 8d+f; 8s; 8s;
+2: 4aa-; 4aa-; 8aa-; 8aa-; 8s; 8s;
+			
+					lyrics 1: "If Thy grac-ious";
+
+invisbar
+newscore
+
+1: 4s; 4s; 8s; 8s; 8af; 8bf;
+2: 4s; 4s; 8s; 8s; 8aa-; 8aa-;
+			
+					lyrics 1: "hand up-";
+bar
+//13
+1 1: 2c+e; 2e+;
+1 2: 2s; 4e slur; 4g&;
+2: 2aa-; 2ac;
+	
+					lyrics 1: "hold me,";
+bar
+//14
+1: 4d+f; 4fd; 8ac; 8gc; 8fd; 8gd;
+2: 4ad; 4ad; 8ae; 8ae; 8be; 8be;
+
+					lyrics 1: "Then how glad-ly will I";
+bar
+//15
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+			
+					lyrics 1: "go.";
+endbar

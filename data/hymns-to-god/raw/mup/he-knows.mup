@@ -1,0 +1,172 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// This source code and the hymn produced by this source code is 
+// licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. 
+// To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ 
+// or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA. 
+// in the United States of America.
+
+// The lyrics to this song are in the the Public Domain of the United States of America.
+
+// 
+
+// Lyric Source: Salvation Echoes
+//		 A New Collection of Spiritual Songs
+//		 Humning the Tidings of full Salvation
+//		 Edited by Barney E. Warren and 
+//		 Suitable for Evangelistic Work and 
+//		 Gopel Services
+//		 Edited By: B. E. Warren, A.L. Byers, C. e. Hynter,
+//		 And D. O. Teasley
+//		 Gospel Trumpet Company
+//		 Anderson, Indiana, U.S.A.
+//		 Copyright 1900
+//		 Hymn No.: 23
+
+//
+//		 Lyrics from http://library.timelesstruths.org/music/Do_You_Love_the_World/
+//		 Copyright 1911
+//		
+// Transcribed by: Ted Gatza, Jr. 07/26/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "He Knows" ""
+   title (2)""
+   title (11) "C - 3 - SOL" "\s(17)\f(TI)\:casting\ all\ your\ anxi\|ety\ upon\ him,\ because he\ careth\ for\ y\|ou.\ -\ 1\ Pet.\ 5:7" ""
+   title (13) "Georgia Elliott" "" "Clarence E. Hunter, 1900"
+ 
+//footer
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key= c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=75";
+
+//1
+1: 2s; 4ge;
+2: 2s; 4c+c;
+
+
+			VERSE "<1. >-1|He";
+			VERSE "<2. >-1|He";
+			VERSE "<3. >-1|He";
+			VERSE "<4. >-1|He";
+
+bar
+//2
+1 1: 4g slur; 4c+; 8ec; 8ae;
+1 2: 2e; 8s; 8s;
+2 1: 4c+ slur; 4g; 8gc; 8c+c;
+2 2: 2c; 8s; 8s;
+
+			VERSE 2; 8; 8; "knows and he";
+			VERSE 2; 8; 8; "knows and he";
+			VERSE 2; 8; 8; "knows and he";
+			VERSE 2; 8; 8; "knows yes he";
+bar
+//3
+1 1: 4g slur; 4f; 8fd; 8ec;
+1 2: 2d; 8s; 8s;
+2: 2bg-; 8gg-; 8gg-;
+
+			VERSE 2; 8; 8; "hears When you";
+			VERSE 2; 8; 8; "sees When your";
+			VERSE 2; 8; 8; "cares When you're";
+			VERSE 2; 8; 8; "knows, Why not";
+bar
+//4
+1: 4fd; 4ab-; 4gd;
+2: 4gg-; 4gg-; 4fb-;
+
+			VERSE "cry un-to";
+			VERSE "soul's in dis-";
+			VERSE "trou-bled and";
+			VERSE "trust in him";
+bar
+//5
+1 1: 4g slur; 4e;8ge; 8ge;
+1 2: 2c; 8s; 8s;
+2 1: 4e slur; 4g; 8c+c; 8c+c;
+2 2: 2c; 8s; 8s;
+
+			VERSE 2; 8; 8; "him, Tho' it";
+			VERSE 2; 8; 8; "tress, And if";
+			VERSE 2; 8; 8; "tried, Tho' it";
+			VERSE 2; 8; 8; "then, And con-";
+bar
+//6
+1: 4ge slur; 4e+g; 8c+e; 8c+g;
+2: 2c+c; 8gc; 8b&e;
+
+			VERSE "may be your";
+			VERSE "found on your";
+			VERSE "seems that your";
+			VERSE "fide joys and";
+bar
+//7
+1 1: 4c+ slur; 4a; 8gd; 8fd;
+1 2: 2f; 8s; 8s;
+2 1: 4a slur; 4c+; 8af-; 8af-;
+2 2: 2f; 8s; 8s;
+
+			VERSE "tears Make the";
+			VERSE "knees He more";
+			VERSE "prayers Fall so";
+			VERSE "woes To the";
+bar
+//8
+1: 4ec; 4gb-; 4fb-;
+2: 4gg-; 4gg-; 4gg-;
+
+			VERSE "path-way seem";
+			VERSE "oft-en could";
+			VERSE "emp-ty and";
+			VERSE "Sav-ior of";
+bar
+//9
+1: 2ec; 4s;
+2: 2gc; 4s;
+
+			VERSE "dim.";
+			VERSE "bless.";
+			VERSE "void.";
+			VERSE "men?";
+endbar
+
+   title (11) "" 
+   title (11) "" "Public Domain" "HymnsToGod.org"

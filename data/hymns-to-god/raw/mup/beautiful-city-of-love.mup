@@ -1,0 +1,336 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Good News Hymns
+//	Edited and Compiled by Benjamin Franklin Butts
+//	For use in Church and Evangelistic Services
+//	Published by The Biglow and Main Co.
+//	Madison Terminal Building, Chicago
+//	205-209 West 19th Street, New York
+//	Copyright 1914
+//	Hymn No. 109 (pdf page 112)
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 08/03/2023
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "Beautiful City Of Love" ""
+   title (2)""
+   title (11)"" "\f(TI)and he shall wipe away every tear from their eyes; and death shall be no more; " ""
+   title (11)"" "\f(TI)neither shall there be mourning, nor crying, nor pain, any more" ""
+   title (11)"" "\f(TI)the first things are passed away - Rev. 21:4." ""
+
+   title (11) "B\(flat) - 2 - MI" "" ""
+   title (13) "Charles H. Mead" "" "Charles H. Mead, 1913"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+   
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+staffs=2
+	time=6/8	
+	key=b&
+
+
+staff 2
+	key=b&
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=65";
+
+//=========================
+
+//Verse 1
+
+//1
+1: 4.s; 4; 16b-d; ce;
+2: 4.s; 4; 16b-f; ; 
+
+	VS "<1. >-1|Have you";
+	VS "<2. >-1|Have you";
+	VS "<3. >-1|Have you";
+bar
+
+//2
+1: 4df; 8; 16; 8.db; 16fb; ;
+2: 4b-b; 8; 16; 8.b-f; 16db; ;
+
+	VS "heard the sto-ry, it has";
+	VS "heard the sto-ry, of the";
+	VS "heard the sto-ry, have you";
+bar
+
+//3
+1: 8gb; fa; eg; 4df; 8s;
+2: 8eb; ; ; 4b-b; 8s;
+
+	VS "oft-en been told,";
+	VS "rest that re-mains,";
+	VS "let it be known,";
+invisbar
+
+1: 4.s; 4; 16df; ;
+2: 4.s; 4; 16b-b; ;
+
+	VS "Of the";
+	VS "In the";
+	VS "Of the";
+bar
+
+//4
+1: 8.df; 16ce; 8b-d; a-c; b-d; ce;
+2 1: 8.fb; 16f; 8; f-f; ; ;
+2 2: 8.s; 16f; 8; 8s; ; ;
+
+	VS "cit-y and land where they";
+	VS "land of no tears and the";
+	VS"land of no night and the";
+bar
+
+//5
+1: 8.eg; 16df; 8ce; 4b-d; 8s;
+2: 8.f-a; 16; 8a-f; 4b-f; 8s;
+
+	VS "nev-er grow old?";
+	VS "land of no pains!";
+	VS "king on His throne?";
+invisbar
+newscore
+
+1: 4.s; 4; 16b-d; ce;
+2: 4.s; 4; 16b-f; ; 
+
+	VS "Of its";
+	VS "Of the";
+	VS "As He";
+bar
+
+//6
+1: 8df; ; ; 4db; 16fb; ;
+2: 8b-b; ; ; 4b-f; 16db; ;
+
+	VS "bright jas-per walls and its";
+	VS "glo-ry and joy, and the";
+	VS "waits to re-ceive and to";
+bar
+
+//7
+1: 8gc+; gb; eg; 4gb; 8s;
+2: 8eb; ; ; 4; 8s;
+
+	VS "streets of pure gold;";
+	VS "in-fi-nite gains";
+	VS "wel-come His own";
+invisbar
+newscore
+
+1: 4.s; 4; 16c#g; ;
+2: 4.s; 4; 16enb; ;
+
+FST(6)
+FBB(6)
+
+	VS "Oh, that";
+	VS "Oh that";
+	VS "Oh, that";
+bar
+
+//8
+1: 8.df; 16db; 8; 16ea; 8.db; 8ec+;
+2 1: 8.fb; 16f; 8; 16fc+; 8.fb; 8f-fa;
+2 2: 8.s; 16f; 8; 4.s;
+
+	VS "beau-ti-ful cit-y of";
+	VS "beau-ti-ful cit-y of";
+	VS "beau-ti-ful cit-y of";
+bar
+
+//9
+1 1: 4.b tie; 4b; 8r;
+1 2: 4d; 8e; 4d; 8s;		  // 8d; 4e; d; 8s; (original music)
+2 1: 4b; 8g&; 4f; 8r;	 	  // 8b bm; 8g&; 8g ebm; 4f; 8r; (original music)
+2 2: 4.b- tie; 4b-; 8s;
+
+phrase below 1: 1 til 4;
+phrase above 2: 1 til 4;
+
+	VS1 "love._";
+	VS1 "love._";
+	VS1 "love._";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 8.fd+; 16; 8; 16ec+; 8.db; 8fb;
+2: 8.b-b; 16; 8; 16b-f; 8.; 8db;
+
+	VS "Sor-row-less cit-y on";
+bar
+
+//11
+1: 8gc+; gb; eg; 4df; 8r;
+2: 8eb; ; ; 4b-b; 8r;
+
+	VS "Ca-naan's bright shore";
+bar
+
+//12
+1: 8.df; 16db; 8; fb; fc+; fd+;
+2: 8.b-b; 16b-f; 8; db; ca; b-b;
+
+	VS "There are my loved ones who've";
+bar
+
+//13
+1: 8end+; ec+; eb; 4fc+ slur; 8e&c+#;
+2: 8cg; cc+; cg; 4.fa;
+
+< above 1: 4 til 6;
+
+
+	VS "gone on be-fore,";
+bar
+newscore
+
+//14
+1 1: 8.dd+; 16fd+; 8; ec+; db; f;
+1 2: 4.s; 4; 8f;
+2: 8.b-b; 16; 8; a-f; b-f; db;
+
+	VS "Sing-ing the prais-es of";
+bar
+
+//15
+
+1: 8eg; ; gb; 4ge+;8 r;
+2: 8eb; ; ; 4; 8r;
+
+FST(4)
+FBB(4)
+
+	VS "Christ ev-er-more,";
+bar
+newscore
+
+//16
+1: 8.fd+; 16ec+; 8db; 16ea; 8.db; 8ec+;
+2 1: 8.fb; 16f; 8; 16fc+; 8.fb; 8f-fa;
+2 2: 8.s; 16f; 8; 4.s;
+
+	VS "Beau-ti-ful cit-y of";
+bar
+
+//17
+1 1: 4.b tie; 4; 8s;
+1 2: 4d; 8e; 4d; 8s;
+2 1: 4b; 8g; 4f; 8s;
+2 2: 4.b- tie; 4; 8s;
+
+FST(4)
+FBB(4)
+phrase below 1: 1 til 4;
+phrase above 2: 1 til 4;
+
+	VS "love._";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

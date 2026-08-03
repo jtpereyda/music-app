@@ -1,0 +1,292 @@
+//!Mup 7.0 Arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	The Best Gospel Songs And Their Composers
+//		By A. J. Showalter
+//		Published by The A. J. Show Alter Co.,
+//		Dalton, Georgia.
+//		The Showalter-Patton Co.,
+//		Dallas, Texas
+//		Copyright 1904
+//		Hymn No. 1
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 11/30/2020
+
+// Revisions:
+//	11/27/2023 [1] Updated MUP code
+
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "We Worship Thee" ""
+   title (2) ""
+   title (11)"" "\f(TI)whom not having seen ye love; on whom, though now" ""
+   title (11)"" "\f(TI)ye see him not, yet believing, ye rejoice greatly with" ""
+   title (11)"" "\f(TI)joy unspeakable and full of glory: - 1 Pet. 1:8" ""
+   title (11)"F - 4 - DO" "" ""  
+   title (13) "Frances R. Havergal" "" "Anthony J. Showalter"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4	
+	key=f
+
+staff 2
+	key=f
+	clef=bass
+
+//==========================
+
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (12) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (12) above 1: 1 "Refrain"; @
+         define RALL ital (12) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//==========================
+
+// Set midi
+       midi all: 0 "tempo=100";
+
+//==========================
+
+//Verse
+
+//1
+1: 4cf; 2.s;
+2: 4fa; 2.s;
+	
+	VS 4; 2.s; "<1. >-1|O";
+	VS 4; 2.s; "<2. >-1|O";
+	VS 4; 2.s; "<3. >-1|In";
+bar
+
+//2
+1 1: 4fa;; cg; f;
+1 2: 4s;;; f;
+2: 4fc+;; fb; fa;
+
+	VS "Sav-iour pre-cious";
+	VS "Bring-er of sal-";
+	VS "Thee all full-nes";
+bar
+
+//3
+1: 2ec+; 4; fc+;
+2: 2cg; 4; ac+;
+
+	VS "Sav-iour, Whom";
+	VS "va-tion, Who";
+	VS "dwell-eth, All";
+bar
+
+//4
+1: 4fd+; fc+; eb; fa;
+2 1: 4b; ac+; gc+; fc+;
+2 2: 4b; s;;;
+
+	VS "yet un-seen we";
+	VS "won-drous-ly hast";
+	VS "grace and pow'r di-";
+bar
+
+//5
+1: 2.eg; 4gb;
+2: 2.cc+; 4ec+;
+
+	VS "love; O";
+	VS "wrought, Thy-";
+	VS "vine; The";
+bar
+
+//6
+1: 4fa;; f#d+; fa;
+2: 4fc+;; dd+;;
+
+	VS "name or might and";
+	VS "self the rev-e-";
+	VS "glo-ry that ex-";
+bar
+
+//7
+1: 2gc+; 4gb; dg;
+2: 2gd+; 4; b-b;
+
+	VS "fa-vor, All";
+	VS "la-tion Of";
+	VS "cel-leth, O";
+bar
+
+//8
+1: 4cf; ce; ca; cg;
+2: 4ca; cg; cc+; cb;
+
+	VS "oth-er names a-";
+	VS "love be-yond our";
+	VS "Son of God, is";
+bar
+
+//9
+1: 2.cf; 4s;
+2: 2.fa; 4s;
+
+	VS "bove.";
+	VS "thought.";
+	VS "Thine.";
+dblbar
+newscore
+
+//10
+REFRAIN
+1 1: 4f; 2.s;
+1 2: 4f; 2.s;
+2 1: 4f; 2.s;
+2 2: 4f; 2.s;
+
+	VS "We";
+bar
+
+//11
+1 1: 4.g; 8e; 4c; eb;
+1 2: 4.g; 8e; 4c; 4s;
+2 1: 4.g; 8e; 4c; cc+;
+2 2: 4.g; 8e; 4c; 4s;
+
+	VS "wor-ship Thee! we";
+bar
+
+//12
+1 1: 2fa; 4f; fa;
+1 2: 2s; 4f; 4s;
+2: 2fc+; 4fa; fc+;
+
+	VS "bless Thee! To";
+bar
+
+//13
+1: 4fd+; cc+; dc+; fbn;
+2 1: 4db; eg; fa; g;
+2 2: 4s;;; g;
+
+	VS "Thee a-lone we";
+bar
+
+//14
+1: 2.ec+; 4gb;
+2: 2.cg; 4ec+;
+
+	VS "sing! We";
+bar
+
+//15
+1: 4fa;; f#d+; fa;
+2: 4fc+;; dd+;;
+
+	VS "praise Thee and con-";
+bar
+
+//16
+1: 2gc+; 4gb; dg;
+2: 2gd+; 4; b-b;
+
+	VS "fess Thee, Our";
+bar
+
+//17
+1: 4cf; ce; ca; cg;
+2: 4ca; cg; cc+; cb;
+
+	VS "Sav-iour and our";
+bar
+
+//18
+1: 2.cf; 4s;
+2: 2.fa; 4s;
+
+	VS "King.";
+endbar

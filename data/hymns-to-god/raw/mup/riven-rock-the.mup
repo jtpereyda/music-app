@@ -1,0 +1,352 @@
+// !Mup vs.6.9 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: 
+//	Google Books
+//	Gospel Praise Book
+//	A Collection Of Choice Gems Of Song
+//	Suiitable For Church Service, Gospel Praise Meetings
+//	And Family Devotions
+//	By Asa Hull
+//	New York:
+//	Published by D. W. Knowles
+//	240 Fourth Avenue, Boston
+//	James P. Magee, 38 Bromfield Street
+//	Cincinnati, OH; John Church & Co,
+//	Chicago, Il.; Henry A Sumner & Co.
+//	Copyright: 1880
+//	Hymn No.: 1
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 09/05/2022
+
+// Revisions:
+
+// HymnsToGod.org
+
+// ****************************************
+//Letter Size Page
+
+top
+   	title bold (19) "" "The Riven Rock" ""
+   	title (2)""
+   	title (11)"" "\f(TI)But Jehovah hath been my high tower, And my" ""
+   	title (11)"" "\f(TI)God the rock of my refuge. - Ps. 94:22" ""
+   	title (11) "G - 4 - DO" "" ""
+   	title (13) "Mary D. James" "" "Asa Hull, 1877"
+ 
+footer
+   	title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+ 	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Time Signature - Use on projection hymns only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+         print (t.w - 2, t.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4";
+	 @
+
+
+// set midi
+	midi all: 0 "temp=105";
+
+//=========================
+
+//1
+1: 4dg; 2.s;
+2: 4gb; 2.s;
+
+	VS 4; 2.s; "<1. >-1|Be-";
+	VS 4; 2.s; "<2. >-1|Tho'";
+	VS 4; 2.s; "<3. >-1|Je-";
+	VS 4; 2.s; "<4. >-1|My";
+bar
+
+//2
+1: 4.db; 8da; 4.dg; 8gb;
+2: 4.gd+; 8gc+; 4.gb; 8gd+;
+
+	VS "hold the Rock, the";
+	VS "Thund'-ring Si-nai's";
+	VS "sus, dear re-fuge";
+	VS "peace, un-brok-en";
+bar
+
+//3
+1: 4gd+; ; gb; 4s;
+2: 4gb; ; gd+; 4s;
+
+	VS "smit-ten Rock!";
+	VS "ter-rors sound";
+	VS "of my soul!";
+	VS "by life's storms,";
+invisbar
+
+//4
+1: 2.s; 4dg;
+2: 2.s; 4gb;
+
+	VS "With-";
+	VS "As-"; //VS Ap-"; //origianl word is "Appalling"
+	VS "My";
+	VS "While";
+bar
+
+//5
+1 1: 4.fa; 8g; 4fa; fb;
+1 2: 4.s; 8g; 4s; ;
+2: 4.dc+; 8db; 4dc+; dd+;
+
+	VS "in its rift-ed";
+	VS "tound-ing to the"; // VS "pall-ing to the"; //origianl word is "Appalling"
+	VS "hope, my joy, my";
+	VS "I in Christ a-";
+bar
+
+//6
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.gb; 4s;
+
+	VS "side";
+	VS "ear,";
+	VS "rest;";
+	VS "bide,";
+bar
+
+//7
+1: 4dg; 2.s;
+2: 4gb; 2.s;
+
+	VS "I've";
+	VS "Con-";
+	VS "Con-";
+	VS "My";
+bar
+
+//8
+1: 4.db; 8da; 4.dg; 8gb;
+2: 4.gd+; 8gc+; 4.gb; 8gd+;
+
+	VS "found a bless-ed";
+	VS "cealed with-in the";
+	VS "fid-ing in Thy";
+	VS "spir-it rests in";
+bar
+
+//9
+1: 4gd+; ; gb; 4s;
+2: 4gb; ; gd+; 4s;
+
+	VS "ref-uge, where";
+	VS "cleft, I'm safe:";
+	VS "change-less love,";
+	VS "sweet-est calm,";
+invisbar
+
+//10
+1: 2.s; 4dg;
+2: 2.s; 4gb;
+
+	VS "I";
+	VS "No";
+	VS "I";
+	VS "As";
+bar
+newscore
+
+//11
+1 1: 4.fa; 8g; 4fa; fb;
+1 2: 4.s; 8g; 4s; ;
+2: 4.dc+; 8db; 4dc+; dd+;
+
+	VS "may se-cure-ly";
+	VS "dan-ger will I";
+	VS "am su-preme-ly";
+	VS "in the Cleft I";
+bar
+
+//12
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.gb; 4s;
+
+	VS "hide.";
+	VS "fear.";
+	VS "blest.";
+	VS "hide.";
+dblbar
+
+//13
+CHORUS
+1: 8.bd+; 16ac+; 2.s;
+2: 8.gd+; 16; 2.s;
+SFT (1)
+BFT (1)
+
+	VS [c]"O, the";
+bar
+
+//14
+1: 4.gb; 8da; 4.dg; 8df;
+2: 4.gd+; 8gc+; 4.gb; 8b-g;
+
+	VS [c]"Rock, the Rock, the";
+bar
+
+//15
+1: 4ce; cg; 4.b-d; 8s;
+2 1: 4cg; eg; 4.g; 8s;
+2 2: 4s; ; 4.g; 8s;
+
+	VS [c]"riv-en Rock!";
+invisbar
+newscore
+
+//16
+1: 8b-d; 8s; 2.s;
+2 1: 8g; 8s; 2.s;
+2 2: 8g; 8s; 2.s;
+
+	VS "My";
+bar
+
+//17
+1: 4dg; ; db; gd+;
+2: 4b-g; ; g-g; b-g;
+
+	VS "Sav-iour cru-ci-";
+bar
+
+//18
+1: 2.fa; 4s;
+2: 2.dd+; 4s;
+
+	VS "fied;";
+invisbar
+
+//19
+1 1: 8.d+ bm; 16c+ ebm; 2.s;
+1 2: 4f; 2.s;
+2: 4dd+; 2.s;
+
+	VS 4; 2.s; "No";
+bar
+
+//20
+1: 4.gb; 8da; 4.dg; 8df;
+2: 4.gd+; 8gc+; 4.gb; 8b-g;
+
+	VS "oth-er shel-ter";
+bar
+
+//21
+1: 4ce; cg; b-d; 4s;
+2 1: 4cg; eg; g; 4s;
+2 2: 4s; ; g; 4s;
+SFT(3)
+BFB(3)
+
+	VS "is se-cure";
+invisbar
+
+//22
+1 1: 8.g bm; 16a ebm; 2.s;
+1 2: 8.g; 16s; 2.s;
+2: 4ec+#; 2.s;
+
+	VS 4; 2.s; "But";
+bar
+
+//23
+1: 4gb; gd+; fa; fb;
+2: 4dd+; db; dc+; dd+;
+
+	VS "Je-sus' wound-ed";
+bar
+
+//24
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.gb; 4s;
+
+	VS "side.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

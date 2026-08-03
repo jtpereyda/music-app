@@ -1,0 +1,278 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Emory Hymnal
+//		A Collection Of Sacred Hymns And Music
+//		For use In Public Worship, Sunday Schools,
+//		Social Meetings and Family Worship
+//		Publisher John J. Hood
+//		1018 Arch Street, Philadelphia
+//		203 Camden Street, Baltimore
+//		Copyright 1887
+//		Hymn no. 125
+
+// Transcribed by: Ted Gatza, Jr. 01/07/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come, Prodigal, Come" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - DO" "\s(17)\f(TI)\:I\ will\ arise\ and\ go\ to\ my\ father\|,\ and\ will\ say\ unto\ him,\ Father, I\ have\ sinned\ against\ heaven\|,\ and\ in\ thy\ sight:\ -\ Lk.\ 15:18" ""
+   title (13) "W. A. Ogden" " " "W. A. Ogden, 1883"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+
+//1
+1: 8ac; 4.s; 4;
+2: 8aa-; 4.s; 4;
+
+			VERSE "<1. >-1|The";
+			VERSE "<2. >-1|I";	
+			VERSE "<3. >-1|His";
+bar
+//2
+1 1: 4c+e; 8ac; 8b bm; a ebm; 8fd;
+1 2: 4s; 8; 4f; 8s;
+2: 4aa-; 8; 4ad; 8;
+
+			VERSE 4; 8; 4; 8; "foun-tain of sal-";
+			VERSE 4; 8; 4; 8; "hear his cry, \"'Tis";
+			VERSE 4; 8; 4; 8; "bles-sed in-vi-";
+bar
+//3
+1: 4.ec; 4ca-; 8ec;
+2: 4.aa-; 4ea-; 8aa-;
+
+			VERSE "va-tion Is";
+			VERSE "fin-ished,\" His";
+			VERSE "ta-tion I";
+bar
+//4
+1 1: 4ac; 8; 8a bm; b ebm; 8c+d;
+1 2: 4s; 8; 4dn; 8s;
+2: 4af; 8; 4ab-; 8;
+
+			VERSE 4; 8; 4; 8; "flow-ing full and";
+			VERSE 4; 8; 4; 8; "bleed-ing bo-dy";
+			VERSE 4; 8; 4; 8; "will no long-er";
+bar
+//5
+1: 4.be tie; 4; 8ac;
+2: 4.ge tie; 4; 8aa-;
+
+			VERSE "free, And";
+			VERSE "see; His";
+			VERSE "spurn, And";
+bar
+//6
+1 1: 4c+e; 8ac; 8b bm; a ebm; 8fd;
+1 2: 4s; 8; 4f; 8s;
+2: 4aa-; 8; 4ad; 8;
+
+			VERSE 4; 8; 4; 8; "Je-sus stands in-";
+			VERSE 4; 8; 4; 8; "lov-ing ac-cents";
+			VERSE 4; 8; 4; 8; "from my great ex-";
+bar
+//7
+1: 4.ec; 4ca-; 8ec;
+2: 4.aa-; 4ea-; 8aa-;
+
+			VERSE "vit-ing: O";
+			VERSE "thrill me, His";
+			VERSE "exam-ple I";
+bar
+//8
+1: 4ac; 8; 4c+e; 8bd;
+2: 4af; 8; 4ae; 8ge;
+
+			VERSE "sin-ner, come to";
+			VERSE "bless-ed \"Come to";
+			VERSE "will no long-er";
+bar
+//9
+1: 4.ac tie; 4; 8c+e;
+2 1: 4.aa- tie; 4; 8a;
+2 2: 4.s; 4; 8a;
+
+			VERSE "me. <>";
+			VERSE "me.\" I";
+			VERSE "turn. <>";
+
+			rom above 1 dist -20!: 4 "\s(15)\(bracerighttp)"; 
+			rom above 1 dist -24.3!: 4 "\s(15)\(bracerightmid)"; 
+			rom above 1 dist -28.6!: 4 "\s(15)\(bracerightbt)";
+
+bar
+//10
+1 1: 4e+e; 8c+e; 8c+ bm; b ebm; a;
+1 2: 4s; 8s; 4e; 8a;
+2 1: 4c+a; 8a; 8a bm; b ebm; 8c+a;
+2 2: 4s; 8a; 4a; 8s;
+
+			
+			VERSE 4; 8; 4; 8; [c]"hear his sweet voice";
+			
+
+			
+			
+bar
+//11
+1: 4.bg; 4; 8c+e;
+2 1: 4.e+e; 4; 8a;
+2 2: 4.s; 4; 8a;
+			
+			
+			VERSE [c]"plead-ing, For";
+			
+bar
+//12
+1 1: 4e+e; 8c+e; 8c+ bm; b ebm; a;
+1 2: 4s; 8; 4e; 8a;
+2 1: 4c+a; 8a; a bm; b ebm; 8c+a;
+2 2: 4s; 8a; 4; 8s;
+
+			
+			VERSE 4; 8; 4; 8; [c]"me 'tis in-ter-";
+			
+bar
+newscore
+//13
+1: 4.bg; 4; 8c+a;
+2: 4.e+e; 4; 8;
+			
+			VERSE [c]"ced-ing; The";
+					
+bar
+//14
+1: 4d+b; 8; 4; 8bg;
+2: 4e+e; 8; 4; 8;
+
+			
+			VERSE "way I know, And";			
+bar
+//15
+1 1: 4c+a; 8; 4; 8a;
+1 2: 4s; 8; 4; 8a;
+2: 4e+a; 8; 4; 8e+c;
+
+			
+			VERSE "I will go,\(emdash) My";
+			
+bar
+//16
+1: 4bg; 8; 4c+g; 8bg;
+2: 4d+e; 8; 4e+e; 8d+e;
+		
+			VERSE "Sav-iour calls for";
+			
+bar
+//17
+1 1: 4.a tie; 4; 8r;
+1 2: 4.a tie; 4; 8s;
+2: 4.c+a- tie; 4; 8r;
+
+			VERSE "me.";
+dblbar
+//18
+1 1: 4.ec; 8c; ea; ac;
+1 2: 4.s; 8c; s;;
+2: 4.aa-; 8ea-;;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Come, pro-di-gal,";
+bar
+//19
+1: 4.ec tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+			VERSE "come,";
+bar
+//20
+1: 4.fd; 8af bm; ge ebm; 8fd;
+2: 4.ad; 4; 8;
+
+			VERSE 4.; 4; 8; "While yet there's";
+bar
+//21
+1: 4.ec tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+			VERSE "room;";
+bar
+//22
+1: 4.ac; 8; bd; c+e;
+2 1: 4.aa-; 8a;;;
+2 2: 4.s; 8a;;;
+
+			VERSE "Come, pro-di-gal,";
+bar
+//23
+1: 4.d+f tie; 4; 8bf;
+2: 4.ad tie; 4; 8d+d;
+
+			VERSE "come! Thy";
+bar
+//24
+1: 4ae; 8; 4c+e; 8bd;
+2: 4c+e; 8; 4ae; 8ge;
+
+			VERSE "Sav-iour call-eth";
+bar
+//25
+1: 4.ac tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+			VERSE "thee.";
+endbar
+
+
+//20

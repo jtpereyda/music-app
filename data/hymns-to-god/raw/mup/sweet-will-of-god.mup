@@ -1,0 +1,237 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For all Christian gatherings
+//		Edited by M. L. McPhail
+//		Publisher: M. L. McPhail
+//		806 W. 67th Street, Chicago, Ill.
+//		Copyright: 1908
+//		Hymn No. 49
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 04/21/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Sweet Will Of God" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - MI" "\s(17)\f(TI)\:Wherefore\ let\ them\ also\ that\ suffer\|\ according\ to\ the\ will\ of\ God\ commit their\ souls\ in\ well-doing\ unto\ \|a\ faithful\ Creator.\ -\ 1\ Pet.\ 4:19" ""   
+   title (13) "Flora Kirkland" "" "M. L. McPhail, 1900"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=110";
+
+// Enter music
+
+//1
+1: 4ge; 2.s; 2;
+2: 4be; 2.s; 2;
+ital (13) above 1: 1 "Not too fast";
+
+	VERSE 4; 2.s; 2s; "<1. >-1|Sweet";
+	VERSE 4; 2.s; 2s; "<2. >-1|Not";
+	VERSE 4; 2.s; 2s; "<3. >-1|Tho'";
+	VERSE 4; 2.s; 2s; "<4. >-1|Tho'";
+	VERSE 4; 2.s; 2s; "<5. >-1|So";
+bar
+//2
+1 1: 2ge; 4af; 2bg; 4e;
+1 2: 2s; 4; 2; 4e;
+2: 2be; 4; 2e+e; 4ge;
+
+	VERSE "will of God, my";
+	VERSE "as I will, tho'";
+	VERSE "from my life He";
+	VERSE "sor-row fall up-";
+	VERSE "spare me not, but";
+bar
+//3
+1 1: 2gd; 4fd; 2e; 4;
+1 2: 2s; 4; 2e; 4d&;
+2: 2bb-; 4ab-; 2ge; 4;
+
+	VERSE "ref-uge Thou, My";
+	VERSE "dark the way, I";
+	VERSE "seems to take What";
+	VERSE "on my life And";
+	VERSE "do thy will, Thy";
+bar
+//4
+1: 2ec; 4ae; 2; 4c+e;
+2: 2aa-; 4c+a-; 2; 4aa-;
+
+	VERSE "safe a-bid-ing";
+	VERSE "know my Lord is";
+	VERSE "I tho't who-ly";
+	VERSE "dark-ness hide the";
+	VERSE "bless-ed will, in";
+bar
+//15
+1: 2.be tie; 2; 4ge;
+2: 2.ge tie; 2; 4be;
+
+	VERSE "place, Till";
+	VERSE "nigh: His";
+	VERSE "blest; E'en";
+	VERSE "light; 'Tis";
+	VERSE "me: Work";
+bar
+//16
+1 1: 2ge; 4af; 2bg; 4e;
+1 2: 2s; 4; 2; 4e;
+2: 2be; 4; 2e+e; 4ge;
+
+	VERSE "all the storms of";
+	VERSE "pres-ence turn-eth";
+	VERSE "if I might I";
+	VERSE "bet-ter so; He";
+	VERSE "out Thine own good";
+bar
+//17
+1: 2gd; 4fd; 2ec; 4ge;
+2: 2bb-; 4ab-; 2gc; 4c+b-;
+
+	VERSE "life are past And";
+	VERSE "night to day He";
+	VERSE "would not choose, My";
+	VERSE "can-not err! My";
+	VERSE "pleas-ure, till Mine";
+bar
+//18
+1 1: 2f; 4c+e; 2bd; 4ane;
+1 2: 2e; 4s; 2; 4;
+2: 2c+an-; 4anf; 2bf; 4c+f;
+
+	VERSE "I shall see His";
+	VERSE "hear-eth ev-'ry";
+	VERSE "Fa-ther know-eth";
+	VERSE "Fa-ther's way is";
+	VERSE "eyes my King shall";
+bar
+//19
+1: 2.bd tie; 4; 4r; s;
+2: 2.bb- tie; 4; 4r; s;
+
+	VERSE "face.";
+	VERSE "sigh.";
+	VERSE "best.";
+	VERSE "right.";
+	VERSE "see.";
+dblbar
+//20
+1 1: 4b; 2.s; 2;
+1 2: 4a; 2.s; 2;
+2: 4bd; 2.s; 2;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "Not";
+bar
+//21
+1: 2e+g; 4d+b; 2c+a; 4bg;
+2: 2be; 4e+e; 2; 4d&+en;
+
+	VERSE "as I will, my";
+bar
+//22
+1: 2bg; 4af; 2; 4c+a;
+2: 2c+f; 4; 2; 4c+e;
+
+	VERSE "song shall be, Tho'";
+bar
+//23
+1: 2f+a; 4e+a; 2d+a; 4c+a;
+2: 2bd; 4e+c; 2f+b-; 4e+b-;
+
+	VERSE "some-times sung thro'";
+bar
+//24
+1 1: 2.b tie; 2; 4af;
+1 2: 2.a tie; 2; 4s;
+2: 2.d+b- tie; 2; 4bd;
+
+	VERSE "tears; Faith's";
+bar
+//25
+1: 2ge; 4af; 2bg; 4e+g;
+2: 2be; 4; 2e+e; 4be;
+
+	VERSE "rain-bow lights the";
+bar
+//26
+1: 2e+g; 4d+b; 2c+a; 4c+g&;
+2: 2be; 4e+g; 2e+a; 4e+an;
+
+	VERSE "dark-est cloud And";
+bar
+//27
+1 1: 2bg; 4e; 2ge; 4fb-;
+1 2: 2s; 4e; 2s; 4s;
+2 1: 2e+b; 4c+an; 2b; 4ab-;
+2 2: 2s; 4; 2b; 4s;
+
+	VERSE "sweet, God's will ap-";
+bar
+//28
+1: 2.eb- tie; 2; 4s;
+2: 2.ge tie; 2; 4s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+	VERSE "pears.";
+endbar

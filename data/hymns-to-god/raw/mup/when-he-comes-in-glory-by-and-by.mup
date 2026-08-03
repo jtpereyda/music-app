@@ -1,0 +1,345 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Hymnary.org
+//		Website Location: https://hymnary.org/hymn/NWSW1938/page/33
+//		Hymnal: The New Wonderful Songs for Work and Worship‎
+//		Hymn Copyright by the Trio Publishing Company
+//		Copyright of Hymn: 1911
+//		Hymn No.: 33
+
+// Transcribed by: Ted Gatza, Jr. 08/27/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=4/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "When He Comes In Glory, By And By" ""
+   title (4) ""
+   title (9) "" "\f(TI)For the Lord himself shall descend from heaven, with a shout,... the dead in Christ shall" "" 
+   title (9) "" "\f(TI)rise first; then we that are alive,... shall together with them be caught up in the clouds," "" 
+   title (9) "" "\f(TI)to meet the Lord in the air: and so shall we ever be with the Lord. - 1 Thess. 4:16-17" ""   
+   title (11) "" 
+   title (11) "B\(flat) - 4 - SOL" "" ""
+   title (13) "Arthur Allen Westbrook" "" "Arthur Allen Westbrook, 1911"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 8df; ;
+2: 2.s; 8b-b; ;
+
+	VS "<1. >-1|Oh how";
+	VS "<2. >-1|We will";
+	VS "<3. >-1|I am";
+
+bar
+
+//2
+1: 4db; ; fd+; fb;
+2: 4b-f; ; b-b; db;
+
+	VS "sweet 'twill be to";
+	VS "have our robes all";
+	VS "long-ing for that";
+bar
+
+//3a
+1: 4gb; eg; df; 8s; ;
+2 1: 4eb; gb; b; 8s; ;
+2 2: 4s; ; b; 8s; ;
+
+	VS "meet the Lord,";
+	VS "white as snow,";
+	VS "hap-py day,";
+invisbar
+
+//3b
+1: 4s; ; ; 8df; ;
+2: 4s; ; ; 8b-b; ;
+
+	VS "When He";
+	VS "When He";
+	VS "When He";
+bar
+
+//4
+1: 4db; ; 8fd+; ; fc+; fb;
+2: 4b-f; ; 8b-b; ; ca; db;
+
+	VS "comes in glo-ry, by and";
+	VS "comes in glo-ry, by and";
+	VS "comes in glo-ry, by and";
+bar
+
+//5a
+1: 2.fc+; 8s; ;
+2: 2.fa; 8s; ;
+
+	VS "by;";
+	VS "by;";
+	VS "by;";
+invisbar
+
+//5b
+1 1: 2.s; 8f; ;
+1 2: 2.s; 8e; ; 
+2: 2.s; 8fa; ;
+
+	VS "What a";
+	VS "O be";
+	VS "For with";
+bar
+
+//6
+1: 4db; ; fd+; fb;
+2: 4b-f; ; b-b; db;
+
+	VS "song of praise will";
+	VS "read-y, with the";
+	VS "Him I hope to";
+bar
+
+//7a
+1: 4gb; eg; df; 8s; ;
+2 1: 4eb; gb; b; 8s; ;
+2 2: 4s; ; b; 8s; ;
+
+	VS "be out-poured,";
+	VS "Lord to go,";
+	VS "soar a-way,";
+invisbar
+
+//7b
+SIGN(1)
+1: 4s; ; ; 8db; ec+;
+2 1: 4s; ; ; 8b; ;
+2 2: 4s; ; ; 8b; ;
+
+	VS [c]"When He";
+bar
+
+//8
+1: 4fd+; ; 8; db; ec+; ;
+2 1: 4b; ; 8fb; f; ; ;
+2 2: 4b; ; 8s; f; ; ;
+
+	VS [c]"comes in glo-ry, by and";
+bar
+
+//9
+FINE(2)
+1: 2.db; 4s;
+2: 2.b-f; 4s;
+
+	VS [c]"by.";
+dblbar
+newscore
+CHORUS
+
+//10
+1: 2.s; 4fd+;
+2: 2.s; 4b-b;
+
+	VS "How";
+bar
+
+//11
+1 1: 2.b; 4eg;
+1 2: 4d; e; d; s;
+2: 4b-f; b-g; b-f; b-b;
+
+	VS "sweet! how";
+	VS21 "<> 'twill be! <>";
+bar
+
+//12a
+1 1: 2.f; 8s; ;
+1 2: 4d; c; d; 8s; ;
+2: 4b-b; f-a; b-b; 8s; ;
+
+	VS "sweet!";
+	VS21 "<> 'twill be!";
+invisbar
+
+//12b
+1: 2.s; 8fb; fc+;
+2: 4s; ; ; 8db; fa;
+
+	VS "When He";
+	VS "When He";
+bar
+
+//13a
+1 1: 2d+ tie; 4; 8s; ;
+1 2: 4f; f#; g; 8s; ;
+2 1: 4b; ac+; gb; 8s; ;
+2 2: 4b; s; ; 8s; ;
+
+	VS "comes_{3}";
+	VS21 "comes a-gain";
+invisbar
+
+//13a
+1 1: 2s; 4; 8enc+; eb;
+1 2: 4s; s; ; 8s; ;
+2 1: 4s; ; ; 8cg; ;
+2 2: 4s; s; ; 8; ;
+
+	VS "in the";
+	VS21 "in the";
+bar
+
+//14a
+1 1: 2.c+; 4s;
+1 2: 4f; en; f; s;
+2: 4fa; gb; fa; s;
+
+	VS "sky!";
+	VS21 "love-lit sky!";
+
+invisbar
+
+//14b
+1: 2.s; 4fd+;
+2 1: 4s; ; ; b;
+2 2: 4s; ; ; b;
+
+	VS "What";
+bar
+
+//15	
+1 1: 2.f+; 4fb;
+1 2: 4b; a; b; s;
+2: 4bd+; fc+; bd+; ;
+
+	VS "joy! what";
+	VS21 "<> twill be! <>";
+bar
+
+//16
+DS(3)
+1 1: 2.d+; 4s;
+1 2: 4f; g; f; s;
+2 1: 4b; gb; b; s;
+2 2: 4b; s; b; s;
+
+	VS "joy!";
+	VS21 "<> 'twill be!";
+endbar

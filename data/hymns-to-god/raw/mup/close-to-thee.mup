@@ -1,0 +1,214 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+
+// Transcribed by: Ted Gatza, Jr. 12/12/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Close To Thee" ""
+   title (2)""
+   title (11) "G-3-SOL" "\s(18)\f(TI)\:for\ who\ is\ he\ tha\|t\ hath\ had\ boldness to\ approach\ unt\|o\ me?\ -\ Jer.\ 30:21"""
+//  title (11) "F-4-SOL" "\f(TI)Joy cometh in the morning - Ps. 30:5"""
+   title (13) "Fanny Crosby, 1874" " " "Silas J. Vail"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=1#
+	clef=bass
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1 1: 4s; 4s; 8d; 8gd;
+1 2: 4s; 4s; 8d; 8s;
+2: 4s; 4s; 8bg; 8bg;
+
+			lyrics 1: "<1. >-1|Thou my";
+			lyrics 1: "<2. >-1|Not for";
+			lyrics 1: "<3. >-1|Lead me";
+bar
+//2
+1: 4.bg; 8gd; 8.fd; 16ad;
+2: 4. d+g; 8bg; 8.ad; 16c+d;
+
+			lyrics 1: " ev-er-last-ing";
+			lyrics 1: "ease or world-ly";
+			lyrics 1: "through the vale of";
+bar
+//3
+1 1: 4gd; 4d; 8gd; 8bd;
+1 2: 4s; 4d; 8s; 8s;
+2: 4bg; 4bg; 8bg; 8bg;
+
+			lyrics 1: "por-tion, more than";
+			lyrics 1: "plea-sure, nor for";
+			lyrics 1: "sha-dows, bear me";
+bar
+//4
+1 1: 4.d+g; 8bg; 8.g; 16bg;
+1 2: 4.s; 8s; 8.g; 16s;
+2: 4.bg; 8d+g; 8.d+b; 16d+g;
+
+			lyrics 1: "friend or life to";
+			lyrics 1: "fame my pray'r shall";
+			lyrics 1: "o'er life's fit-ful";
+
+bar
+//5
+1 1: 2af; 8d; 8gd;
+1 2: 2s; 8d; 8s;
+2: 2d+d; 8bg; 8bg;
+
+			lyrics 1: "me, All a-";
+			lyrics 1: "be; Glad-ly";
+			lyrics 1: "sea; Then the";
+
+bar
+//6
+1: 4.bg; 8bg; 8.bg; 16d+fn;
+2: 4.d+g; 8d+g; 8.d+g; 16gb-;
+
+			lyrics 1: "long my pil-grim";
+			lyrics 1: "will I toil and";
+			lyrics 1: "gate of life e-";
+bar
+//7
+1: 4d+e; 4c+e; 8be; 8ae;
+2: 4gc; 4gc; 8gc; 8ac;
+
+			lyrics 1: "jour-ney, Sav-iour";
+			lyrics 1: "suf-fer, on-ly";
+			lyrics 1: "ter-nal may I";
+bar
+//8
+1: 4.gd; 8bg; 8.bf; 16af;
+2: 4.bd; 8d+d; 8.d+d; 16c+d;
+
+			lyrics 1: "let me walk with";
+			lyrics 1: "let me walk with";
+			lyrics 1: "en-ter, Lord with";
+bar
+//9
+1 1: 2g; 4s;
+1 2: 2g; 4s;
+mussym (10) above 1: 1 "ferm";
+2: 2bg; 4s;
+mussym (10) below 2: 1 "uferm";
+
+			lyrics 1: "Thee.";
+			lyrics 1: "Thee.";
+			lyrics 1: "Thee.";
+dblbar
+//10
+1: 4s; 4s; 8.fd; 16gd;
+	boldital (13) above 1: 3 "Refrain";
+2: 4s; 4s; 8.ad; 16bd;
+
+			lyrics 1: "Close to";
+			lyrics 1: "Close to";
+			lyrics 1: "Close to";
+bar
+//11
+1: 2af; 8.c+f; 16fd;
+2:2c+d; 8.ad; 16c+d;
+
+			lyrics 1: "Thee, close to";
+			lyrics 1: "Thee, close to";
+			lyrics 1: "Thee, close to";
+bar
+//12
+1: 2gd; 8.bg; 16c+a;
+2: 2bg; 8.d+g; 16d+g;
+
+			lyrics 1: "Thee, close to";
+			lyrics 1: "Thee, close to";
+			lyrics 1: "Thee, close to";
+bar
+//13
+1: 2d+b; 8.d+b; 16bg;
+2: 2d+g; 8.d+g; 16d+g;
+
+			lyrics 1: "Thee, close to";
+			lyrics 1: "Thee, close to";
+			lyrics 1: "Thee, close to";
+bar
+//14
+1 1: 2af; 8d; 8gd;
+1 2: 2s; 8d; 8s;
+2: 2d+d; 8bg; 8bg;
+
+			lyrics 1: "Thee, All a-";
+			lyrics 1: "Thee, Glad-ly";
+			lyrics 1: "Thee, Then the";
+bar
+//15
+1: 4.bg; 8bg; 8.bg; 16d+fn;
+2: 4.d+g; 8d+g; 8.d+g; 16gb-;
+
+			lyrics 1: "long my pil-grim";
+			lyrics 1: "will I toil and";
+			lyrics 1: "gate of life e-";
+bar
+//16
+1: 4d+e; 4c+e; 8be; 8ae;
+2: 4gc; 4gc; 8gc; 8ac;
+
+			lyrics 1: "jour-ney, Sav-ior,";
+			lyrics 1: "suf-fer, on-ly";
+			lyrics 1: "ter-nal may I";
+bar
+//17
+1: 4.gd; 8bg; 8.bf; 16af;
+2: 4.bd; 8d+d; 8.d+d; 16c+d;
+
+			lyrics 1: "let me walk with";
+			lyrics 1: "let me walk with";
+			lyrics 1: "en-ter, Lord with";
+bar
+//18
+1 1: 2g; 4s;
+1 2: 2g; 4s;
+2: 2bg-; 4s;
+
+			lyrics 1: "Thee.";
+			lyrics 1: "Thee.";
+			lyrics 1: "Thee.";
+endbar
+

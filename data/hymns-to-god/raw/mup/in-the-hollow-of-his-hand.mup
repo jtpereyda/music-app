@@ -1,0 +1,250 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 1 to 6
+//		by Ira D. Sankey, James McGranahan, and Gep. C. Stebbins
+//		Excelsior Edition
+//		Published by: The Biglow & Main Co. New York, Chicago
+//		The John Church Co. Cincinnati, New York, Chicago
+//		Copyright, 1895
+//		Hymn no. 270
+
+// Transcribed by: Ted Gatza, Jr. 04/28/2010; rev. 06/17/2013; Rev. 02/14/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "In The Hollow of His Hand" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - MI" "\s(17)\f(TI)\:\"Neither\ shall\ any\ man\ pluck\ them\ out\ of\ my\ hand.\"\ -\ Jn.\ 10:28 \(space)"""
+   title (13) "Louise J. Kirkwood, alt." " " "Geo. C. Stebbins, 1887"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/4	
+	key= 2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=145";
+
+//1
+1: 2.s; 2s; 8db- bm; 8ec ebm;
+2: 2.s; 2s; 4fb-;
+
+
+			lyrics 1: 2.s; 2s; 4; "<1. >-1|Oh,";
+			lyrics 1: 2.s; 2s; 4; "<2. >-1|Tho'";
+			lyrics 1: 2.s; 2s; 4; "<3. >-1|When";
+			lyrics 1: 2.s; 2s; 4; "<4. >-1|When";
+			lyrics 1: 2.s; 2s; 4; "<5. >-1|And";
+			
+bar
+//2
+1: 2fd; 4fd; 4fd slur; 4ge; 4fd;
+2: 2bb-; 4bb-; 2bb-; 4bb-;
+
+			lyrics 1: "soul toss'd on the";
+			lyrics 1: "rag-ing winds may";
+			lyrics 1: "strength is spent in";
+			lyrics 1: "by the swell-ing";
+			lyrics 1: "when at last we're";
+bar
+//3
+1: 4fd; 2.bd; 4r; 4af;
+2: 4bb-; 2.fb-; 4r; 4bd;
+
+			lyrics 1: "bil-lows, a-";
+			lyrics 1: "drive thee, a";
+			lyrics 1: "toil-ing, and";
+			lyrics 1: "Jor-dan, your";
+			lyrics 1: "gath-ered, with";
+bar
+//4
+1 1: 2ge; 4bg; 4s; 4s; 4s;
+1 2: 2s; 4s; 2s; 4s;
+2 1: 2be; 4e+e; 4s; 4s; 4s;
+2 2: 2s; 4s; 2s; 4s;
+
+			lyrics 1: "far from";
+			lyrics 1: "wreck up-";
+			lyrics 1: "wea-ri-";
+			lyrics 1: "feet in";
+			lyrics 1: "all the";
+invisbar
+newscore
+
+1 1: 2s; 4s; 4b slur; 4a; 4c+e;
+1 2: 2s; 4s; 2f; 4s;
+2 1: 2s; 4s; 4d+ slur; 4c+; 4af;
+2 2: 2s; 4s; 2f; 4s;
+
+			lyrics 1: "friend-ly";
+			lyrics 1: "on the";
+			lyrics 1: "ly you";
+			lyrics 1: "sink-ing";
+			lyrics 1: "ran-somed";
+
+bar
+//5
+1: 2.bd tie; 4bd; 4r; 8 bd bm; 8c+e ebm;
+2: 2.bb- tie; 4bb-; 4r; 4bb-;
+
+			lyrics 1: 2.; 4s; 4s; 4; "land, Look";
+			lyrics 1: 2.; 4s; 4s; 4; "strand, Still";
+			lyrics 1: 2.; 4s; 4s; 4; "stand, Then";
+			lyrics 1: 2.; 4s; 4s; 4; "sand, Re-";
+			lyrics 1: 2.; 4s; 4s; 4; "band, We'll";
+
+bar
+//7
+1: 2d+f; 4d+f; 4d+f slur; 4e+g; 4d+f;
+2: 2bb-; 4bb-; 2bb-; 4bb-;
+
+			lyrics 1: "up to Him who";
+			lyrics 1: "cling to Him who";
+			lyrics 1: "rest in Him who";
+			lyrics 1: "mem-ber still He";
+			lyrics 1: "praise our God who";
+bar
+newscore
+//8
+1: 4d+f; 2c+f; 2c+f; 4bf;
+2: 4bf; 2af; 2c+a-; 4d+b-;
+
+			lyrics 1: "holds thee in \"The";
+			lyrics 1: "holds thee in \"The";
+			lyrics 1: "holds thee in \"The";
+			lyrics 1: "holds thee in \"The";
+			lyrics 1: "holds us in \"The";
+bar
+//9
+1: 4af; 2c+f; 2ben; 4ge;
+2: 4c+c; 2ac; 2gc; 4bc;
+
+			lyrics 1: "hol-low of His";
+			lyrics 1: "hol-low of His";
+			lyrics 1: "hol-low of His";
+			lyrics 1: "hol-low of His";
+			lyrics 1: "hol-low of His";
+bar
+//10
+1 1: 2.f; 2s; 4s;
+1 2: 2.f; 2s; 4s;
+2: 2.af; 2s; 4s;
+
+			lyrics 1: "hand.\"";
+			lyrics 1: "hand.\"";
+			lyrics 1: "hand.\"";
+			lyrics 1: "hand.\"";
+			lyrics 1: "hand.\"";
+dblbar
+//11
+1: 2fd; 4ec; 2s; 4s;
+2: 2bb-; 4fb-; 2s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"In \"The";
+bar
+//12
+1: 4db-; 2fd; 2s; 4s;
+2: 4fb-; 2bb-; 2s; 4s;
+
+			lyrics 1: [c]"hol-low";
+invisbar
+newscore
+
+1: 4s; 2s; 2ge; 4be;
+2: 4s; 2s; 2bb-; 4gb-;
+
+			lyrics 1: "of His";
+
+bar
+//13
+1: 2.fd; 2db-; 4ec;
+2: 2.bb-; 2fb-; 4fb-;
+	
+			lyrics 1: "hand,\" In the";
+bar
+//14
+1: 4fd; 2bd; 2ae; 4bf;
+2: 4fb-; 2fb-; 2fb-; 4bd;
+
+			lyrics 1: "hol-low of His";
+bar
+//15
+1: 2.c+f; 2bf; 4c+f;
+2: 2.af; 2bd; 4af;
+
+			lyrics 1: "hand, O how";
+bar
+//16
+1 1: 2d+f; 4e+g; 4s; 4s; 4s;
+1 2: 2s; 4s; 2s; 4s;
+2 1: 2b; 4b; 4s; 4s; 4s;
+2 2: 2b; 4b; 4s; 4s; 4s; 
+
+			lyrics 1: "safe are";
+invisbar
+newscore
+
+1 1: 2s; 4s; 4d+ slur; 4c+; 4bf;
+1 2: 2s; 4s; 2f; 4s;
+2 1: 2s; 4s; 4bb- slur; 4ac; 4bd;
+2 2: 2s; 4s; 4s; 4s; 4s; 
+
+			lyrics 1: "all who";
+
+bar
+//17
+1: 4bg; 2ge; 2af; 4bg;
+2: 4be; 2be; 2be; 4be;
+
+			lyrics 1: "trust Him, In \"The";
+bar
+//18
+1: 4fd; 2bf; 2ae; 4c+e;
+2: 4bf; 2d+f; 2c+f; 4af;
+
+			lyrics 1: "hol-low of His";
+bar
+//19
+1: 2.bd tie; 2bd; 4s;
+2: 2.bb- tie; 2bb-; 4s;
+
+			lyrics 1: "hand.\"";
+endbar

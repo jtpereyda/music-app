@@ -1,0 +1,221 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Glad Hallelujahs,Replete With Sacred Songs
+//		John R. Sweney and William J. Kirkpatrick,
+//		Philadelphia:
+//		thos. T. Tasker, Sr., Publisher
+//		No. 921 Arch Street
+//		Copyright: 1887
+//		Hymn No.: 34
+//		
+// Transcribed by: Ted Gatza, Jr. 03/15/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Blood Of My Redeemer" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(17)\f(TI)\:and\ the\ blood\ of\ Jesus\ his\ Son\ cleanseth\ us\ from\ all\ sin.\ -\ 1\ Jn.\ 1:7 \(space)" ""   
+   title (13) "Henrietta E. Blair" "" "Wm. J. Kirkpatrick, 1887" 
+
+// Henrietta E. Blair is a pseudonym for Fanny J. Crosby.
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1: 8gd; ad; 2.s;
+2: 8bg; c+g; 2.s;
+
+			VERSE "<1. >-1|I will";
+			VERSE "<2. >-1|I am";
+			VERSE "<3. >-1|What a";
+			VERSE "<4. >-1|I will";
+bar
+//2
+1: 4bg; d+g;; 8bg; af;
+2: 4d+g; bg;; 8d+g;;
+
+			VERSE "praise the Lord for his";
+			VERSE "sav'd by grace, and to";
+			VERSE "con-stant peace in my";
+			VERSE "lift my voice while on";
+bar
+//3
+1: 4bg; gd; ge; 8fd; ec;
+2: 4d+g; bg; c+c; 8gc;;
+
+			VERSE "love to me, I am";
+			VERSE "him brought near, I am";
+			VERSE "heart I feel, I am";
+			VERSE "earth I stay, I am";
+bar
+//4
+1 1: 4db-; 8.; 16; 8ec; d; ec; fc;
+1 2: 4s; 8.; 16; 8; c; s;;
+2: 4gd; 8.; 16; 8fd;; 8gd; ad;
+
+			VERSE "wash'd in the blood of my re-";
+			VERSE "wash'd in the blood of my re-";
+			VERSE "wash'd in the blood of my re-";
+			VERSE "wash'd in the blood of my re-";
+bar
+//5
+1: 2ac; 4gb-; 8gd; ad;
+2: 2fd; 4gg-; 8bg; c+g;
+
+			VERSE "deem-er; In the";
+			VERSE "deem-er; I would";
+			VERSE "deem-er; There's a";
+			VERSE "deem-er; Then my";
+bar
+//6
+1: 4bg; d+g;; 8bg; af;
+2: 4d+g; bg;; 8d+g;;
+
+			VERSE "fount that flows at the";
+			VERSE "sing so loud that the";
+			VERSE "ho-ly joy I can";
+			VERSE "soul shall sing in the";
+bar
+//7
+1: 4bg; gd; ge; 8fd; ec;
+2: 4d+g; bg; c+c; 8gc;;
+
+			VERSE "Cross so free, I am";
+			VERSE "world might hear, I am";
+			VERSE "ne'er re-veal, I am";
+			VERSE "realms of day, I am";
+bar
+//8
+1 1: 4db-; 8.; 16; 8ec; d; ec; fc;
+1 2: 4s; 8.; 16; 8; c; s;;
+2: 4gd; 8.; 16; 8fd;; 8gd; ad;
+
+			VERSE "wash'd in the blood of my re-";
+			VERSE "wash'd in the blood of my re-";
+			VERSE "wash'd in the blood of my re-";
+			VERSE "wash'd in the blood of my re-";
+			
+bar
+//9
+1: 2ac; 4gb-; 4r;
+2: 2fd; 4gg-; 4r;
+
+			VERSE "deem-er.";
+			VERSE "deem-er.";
+			VERSE "deem-er.";
+			VERSE "deem-er.";
+dblbar
+//10
+1: 4bd; d+g;;;
+2 1: 4g; bg;;;
+2 2: 4g; s;;;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE [c]"Glo-ry, glo-ry,";
+bar
+//11	
+1: 8.bg; 16; 8.; 16ad; 4gd; 8fd; gd;
+2: 8.d+g; 16; 8.; 16c+g; 4bg; 8ad; bd;
+
+			VERSE "glo-ry to the lamb, I am";
+bar
+//12
+1: 4af; d+f;; 8.bf; 16af;
+2: 4ad;;; 8.d+d; 16c+d;
+
+			VERSE "saved from sin and he";
+bar
+//13
+1 1: 8ge;; f; ge; 4af; 8g bm; a ebm;
+1 2: 8s;; e; s; 4; g;
+2 1: 8be;; c+#a-;; 4d+d; 8b bm; c+ ebm;
+2 2: 8s;;;; 4; g;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE 8; 8; 8; 8; 4; 4; "makes me what I am; Oh,";
+bar
+//14
+1: 4bg; d+g;;;
+2: 4d+g; bg;;;
+
+			VERSE "glo-ry, glo-ry";
+bar
+//15
+1: 8.bg; 16; 8.; 16s; 4s; 8s; s;
+2: 8.d+g; 16; 8.; 16s; 4s; 8s; s;
+
+			VERSE "glo-ry to";
+invisbar
+newscore
+
+1: 8.s; 16; 8.; 16ad; 4gd; 8fd; ec;
+2: 8.s; 16; 8.; 16c+g; 4bg; 8gb-; gc;
+
+			VERSE "the Lamb, I am";
+
+bar
+//16
+1 1: 4db-; 8.; 16; 8ec; d; ec; fc;
+1 2: 4s; 8.; 16; 8; c; s;;
+2: 4gd; 8.; 16; 8fd;; 8gd; ad;
+
+			VERSE "wash'd in the blood of my re-";
+			
+bar
+//17
+1: 2ac; 4gb-; 4s;
+2: 2fd; 4gg-; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "deem-er.";
+endbar

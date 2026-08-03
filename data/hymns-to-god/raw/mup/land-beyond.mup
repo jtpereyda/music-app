@@ -1,0 +1,242 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Gospel Echoes
+//		A Choice Collections of Songs
+//		For use in the Sundat-school, 
+//		Prayer and Praise Meetings
+//		And the Home Circle
+//		By R. G. Staples
+//		Associate Editor "The Golden Sheaf"
+//		Oskaloosa, Iowa
+//		Central Book Concern, Publishers
+//		Copyright 1877
+//		Hymn No. 110
+		
+// Transcribed by: Ted Gatza, Jr. 12/06/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Land Beyond" ""
+   title (2) ""
+   title (11)"" "\f(TI)And the city hath no need of the sun, neither of the moon," ""
+   title (11)"" "\f(TI)to shine upon it: for the glory of God did lighten it," ""
+   title (11)"" "\f(TI)and the lamp thereof is the Lamb. - Rev. 21:23" ""
+
+   title (11)"G - 4 - SOL" "" ""  
+   title (13) "Mary Bridges Canady Slade, 1876" "" "Asa Brooks Everett, 1876"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=1 //2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=g
+
+
+staff 2
+	key=g
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=100";
+
+// Enter music
+//============
+//1
+1: 4b-d; 2.s;
+2 1: 4g; 2.s;
+2 2: 4g; 2.s;
+
+	
+	VS 4; 2.s; "<1. >-1|Be-";
+	VS 4; 2.s; "<2. >-1|Be-";
+	VS 4; 2.s; "<3. >-1|Be-";
+	VS 4; 2.s; "<4. >-1|Be-";
+bar
+//2
+1: 8dg;;;; 4; gb;
+2: 8gb;;;; 4; gd+;
+
+	VS "yond this land of part-ing,";
+	VS "yond this land of toil-ing,";
+	VS "yond this land of sin-ning,";
+	VS "yond this land of wait-ing,";
+bar
+//3
+1: 4gd+; 8; ge+; 4gd+; gb;
+2: 4gb; 8; gc+; 4gb; gd+;
+
+	VS "los-ing and leav-ing,";
+	VS "sow-ing and reap-ing,";
+	VS "faint-ing and fall-ing,";
+	VS "seek-ing and sigh-ing,";
+bar
+//4
+1: 8fa;;;; 4; fd+;
+2: 8dd+;;;; 4;;
+
+	VS "Far be-yond the loss-es";
+	VS "Far be-yond the shad-ows";
+	VS "Far be-yond the doubt-ings";
+	VS "Far be-yond the sor-rows";
+bar
+//5
+1: 4gb; 8; gc+; 4gb; b-d;
+2: 4gd+; 8; ge+; 4gd+; gb;
+
+	VS "dark-en-ing this, And";
+	VS "dark-en-ing this, And";
+	VS "dark-en-ing this, And";
+	VS "dark-en-ing this, And";
+bar
+//6
+1: 8dg;;;; 4; gb;
+2: 8gb;;;; 4; gd+;
+
+	VS "far be-yond the tak-ing";
+	VS "far be-yond the sigh-ing";
+	VS "far be-yond the griefs and";
+	VS "far be-yond the pain and";
+bar
+//7
+1: 4gd+; 8; ge+; 4gd+; gb;
+2: 4gb; 8; gc+; 4gb; gd+;
+
+	VS "and the be-reav-ing";
+	VS "moan-ing and weep-ing";
+	VS "dan-gers be-fall-ing,";
+	VS "sick-ness, and dy-ing,";
+bar
+//8
+1: 8fa;;;; 4gb; da;
+2: 8dd+;;;; 4; dc+;
+
+	VS "Lies the sum-mer land of";
+	VS "Lies the sum-mer land of";
+	VS "Lies the sum-mer land of";
+	VS "Lies the sum-mer land of";
+bar
+//9
+1: 2.dg; 4s;
+2: 2.g-b; 4s;
+
+	VS "bliss.";
+	VS "bliss.";
+	VS "bliss.";
+	VS "bliss.";
+dblbar
+//10
+1: 8b-g; df; 2.s;
+2: 4r; 2.s;
+REFRAIN
+
+	VS 8; 8s; 2.s; "<>";
+	VS "Land be-";
+bar
+//11
+1: 2c~e~; 8ce; df; eg; ce;
+2: 4cg;; 8;;;;
+
+	VS 2; 8s; 8s; 8s; 8s; "<>";
+	VS "yond,_ so fair and";
+	VS 4; 4; 8; 8s; 8s; 8s; "Land be-yond,";
+bar
+//12
+1: 2.b-d; 8b-g; da;
+2: 2.g-g; 4r;
+
+	VS "bright! Land be-";
+bar
+//13
+1: 2g~b~; 8gb; ac+; bd+; gb;
+2: 4gd+;; 8;;;;
+
+	VS "yond,_ where is no";
+	VS 4; 4; 8; 8s; 8s; 8s; "Land be-yond,";
+bar
+//14
+1: 2.fa; 8gb; gd+;
+2: 2.dd+; 4r;
+
+	VS "night! Sum-mer";
+bar
+//15
+1: 2g~e+~; 8ge+; ec+;; ge+;
+2: 4cc+;; 8; cg;; cc+;
+
+	VS "Land,_ God is its";
+	VS 4; 4; 8; 8s; 8s; 8s; "Sum-mer Land,";
+bar
+//16
+1: 2.gd+; 4gb;
+2: 2.gb; 4gd+;
+
+	VS "light, Oh,";
+bar
+//17
+1: 8fa;;;; 4gb; da;
+2: 8dd+;;;; 4; dc+;
+
+	VS "hap-py Sum-mer land of";
+bar
+//18
+1: 2.dg; 4s;
+2: 2.g-b; 4s;
+
+	VS "bliss.";
+endbar

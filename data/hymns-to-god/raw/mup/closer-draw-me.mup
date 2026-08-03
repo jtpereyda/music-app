@@ -1,0 +1,261 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Melody
+//		A Collection Of Sacred Songs For The
+//		Sunday-School and Young people's and
+//		Other Devotional Meetings
+//		Edited by E. S. Lorenz
+//		United Brethren Publishing House
+//		Dayton, OH
+//		Copyright: 1899
+//		Hymn No.: 48
+//		
+// Transcribed by: Ted Gatza, Jr. 10/06/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Closer Draw Me" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - MI" "\s(17)\f(TI)\:Draw\ nigh\ to\ God,\ and\ he\ will\ draw\ nigh\ to\ you.\ -\ Jms.\ 4:8 \(space)" ""   
+   title (13) "Kate Ulmer" "" "Charles H. Gabriel, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+//1
+1: 8.c+e; 16bd; 2s;
+2: 8.aa-; 16ea-; 2s;
+
+			VERSE "<1. >-1|Clos-er";
+			VERSE "<2. >-1|When my";
+			VERSE "<3. >-1|Safe with";
+			
+bar
+//2
+1 1: 4.ac; 8c+e; {8b bm; a ebm; fd;}3;
+1 2: 4.s; 8; {4d; 8s;}3;
+2: 4.ea-; 8aa-; {4fd; 8ad;}3;
+phrase above 1: 3 til 4;
+phrase above 2: 3 til 4;
+
+			VERSE 4.; 8; {4; 8;}3; "Lord, oh, clos-er";
+			VERSE 4.; 8; {4; 8;}3; "doubts are spread be-";
+			VERSE 4.; 8; {4; 8;}3; "thee! oh, tho't of";
+bar
+//3
+1: 4fd; ec; 8.ac; 16bd;
+2: 4aa-;; 8.; 16;
+
+			VERSE "draw me, To thy";
+			VERSE "fore me, And my";
+			VERSE "sweet-ness, Safe with";
+bar
+//4
+1: 4.c+e; 8ae; gd; ac;
+2: 4.aa-; 8ac; eb-; aa-;
+
+			VERSE "pre-cious, bleed-ing";
+			VERSE "heart grows faint with";
+			VERSE "thee in heav'n a-";
+bar
+//5
+1: 2be; 8.c+e; 16bd;
+2: 2ge; 8.aa-; 16ea-;
+
+			VERSE "side; When temp-";
+			VERSE "fear, Clos-er,";
+			VERSE "bove; There to";
+bar
+//6
+1 1: 4.ac; 8c+e; {8b bm; a ebm; fd;}3;
+1 2: 4.s; 8; {4d; 8s;}3;
+2: 4.ea-; 8aa-; {4fd; 8ad;}3;
+phrase above 1: 3 til 4;
+phrase above 2: 3 til 4;
+
+			VERSE 4.; 8; {4; 8;}3; "ta-tions hov-er";
+			VERSE 4.; 8; {4; 8;}3; "Lord, still clos-er";
+			VERSE 4.; 8; {4; 8;}3; "know the full com-";
+bar
+//7
+1: 4fd; ec; 8.ae; 16bf;
+2: 4aa-;; 8.ac; 16;
+
+			VERSE "o'er me, Let me";
+			VERSE "draw me, let me";
+			VERSE "plete-ness Of thine";
+bar
+//8
+1: 4.c+e; 8; 8.bd; 16;
+2: 4.ae; 8; 8.ge; 16;
+
+			VERSE "ev-er in thee";
+			VERSE "feel thy pres-ence";
+			VERSE "ev-er-last-ing";
+bar
+//9
+1: 2ac; 8.ge; 16ae;
+2: 2aa-; 8.be; 16c+e;
+
+			VERSE "hide; Fu-tile";
+			VERSE "near: Thus, oh,";
+			VERSE "love. There to";
+bar
+//10
+1: 4.be; 8; {d+f bm; c+e ebm; bd;}3;
+2: 4.d+e; 8; {4ge; 8;}3;
+phrase above 1: 3 til 4;
+
+			VERSE 4.; 8; {4; 8;}3; "is my best en-";
+			VERSE 4.; 8; {4; 8;}3; "Sav-ior, keep me";
+			VERSE 4.; 8; {4; 8;}3; "taste my full sal-";
+bar
+//11
+1: 4ac; c+e; 8.; 16d+e;
+2 1: 4aa-;; 8.a; 16b;
+2 2: 4s;; 8.a; 16;
+
+			VERSE "deav-or To with-";
+			VERSE "ev-er Bound to";
+			VERSE "va-tion; There from";
+bar
+//12
+1: 4.e+e; 8ae; 8d+e; c+e;
+2 1: 4.c+a; 8; bg; a;
+2 2: 4.s; 8;; a;
+
+			VERSE "stand the tempt-er's";
+			VERSE "thee with cords of";
+			VERSE "all temp-ta-tions";
+bar
+//13
+1: 2be; 8.e+e; 16d+e;
+2: 2ge; 8.c+e; 16be;
+mussym (10) above 1: 3 "sign";
+
+			VERSE "pow'r, Hu-man";
+			VERSE "love; Stray from";
+			VERSE "free; Bow-ing";
+			DSVERSE 2s; 8.; 16; "<\f(TI)D.S. - \f(PV)>-7|Safe-ly";
+bar
+//14
+1 1: 4.c+e; 8; {b bm; a ebm; fd;}3;
+1 2: 4.s; 8s; {4d; 8s;}3;
+2 1: 4.a; 8ac; {4fd; 8ad;}3;
+2 2: 4.a; 8s; {4; 8;}3;
+phrase above 1: 3 til 4;
+
+			VERSE 4.; 8; {4; 8;}3; "strength can con-quer";
+			VERSE 4.; 8; {4; 8;}3; "thee, oh, let me";
+			VERSE 4.; 8; {4; 8;}3; "low in ad-o-";
+			DSVERSE 4.; 8; {4; 8;}3; "kept in thy pa-";
+bar
+//15
+1: 4fd; ec; 8.ae; 16bf;
+2: 4aa-;; 8.ac; 16ad;
+
+			VERSE "nev-er, Thou must";
+			VERSE "nev-er, Bring me";
+			VERSE "ra-tion, Clos-er";
+			DSVERSE "vil-ion, Lord, I";
+bar
+//16
+1: 4.c+e; 8; 8.bd; 16;
+2: 4.ae; 8; 8.ge; 16;
+
+			VERSE "save in ev-'ry";
+			VERSE "safe to thee a-";
+			VERSE "still, my pray'r shall";
+			DSVERSE "ev-er would a-";
+bar
+//17
+1: 2.ac;
+2: 2.aa-;
+ital (13) above 1: 1 "Fine";
+
+			VERSE "hour.";
+			VERSE "bove.";
+			VERSE "be.";
+			DSVERSE "bide.";
+dblbar
+//18
+1: 4bd;; 8.c+e; 16bd;
+2: 8.ge; 16; 4; 4r;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Clos-er, draw me";
+			VERSE 8.; 16; 4; 4s; "Clos-er, Lord,";
+bar
+//19
+1: 4ac; ec; 8ac; c+e;
+2 1: 8.ea-; 16; 8aa-;; a;;
+2 2: 8.s; 16; 8;; a;;
+
+			VERSE "clos-er, Clos-er";
+			VERSE 8.; 16; 8; 8; 8; 8; "draw me clos-er, Clos-er,";
+bar
+//20
+1 1: 4.c+; 8b; f; b;
+1 2: 8dn;; 4;;
+2: 8af;; 4ab-;;
+
+			VERSE "to thy bleed-ing";
+			VERSE 8; 8; 4; 4; "clos-er to thy";
+bar
+//21
+1 1: 2b; 4s;
+1 2: 8e; dn; 4d&; 4s;
+2: 8ge; af; 4bg; 4s;
+ital (13) above 1: 1 "Rit.";
+ital (13) above 1: 2 "D.S.";
+
+			VERSE "side;";
+			VERSE 8; 8; 4; 4s; "bleed-ing side;";
+endbar

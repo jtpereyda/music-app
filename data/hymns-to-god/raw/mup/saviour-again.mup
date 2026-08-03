@@ -1,0 +1,219 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Lyric Source: Gospel Melodies New And Old
+//		 For use in the Universalist Church
+//		 Editor: Chester Gore Miller
+//		 Universalist Publishing House, Boston
+//		 Copyright 1904
+//		 Hymn No. 25
+
+
+
+		
+// Transcribed by: Ted Gatza, Jr. 08/18/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Saviour, Again" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:The\ Lord\ will\ Bless\ His\ people\ with\ peace.\ -\ Ps.\ 29:11 \(space)" ""
+   title (13) "John Ellerton" "" "E. J. Hopkins"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key= 4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1: 2ec; 4ec; 4fc;
+2: 2aa-; 4aa-; 4aa-;
+
+
+			VERSE "<1. >-1|Sav-iour, a-";
+			VERSE "<2. >-1|Grant us Thy";
+			VERSE "<3. >-1|Grant us Thy";
+			VERSE "<4. >-1|Grant us Thy";
+			
+bar
+//2
+1 1: 2e; 2ae;
+1 2: 2e; 2s;
+2: 2ac; 2ac;
+
+			
+			VERSE "gain to";
+			VERSE "peace up-";
+			VERSE "peace, Lord";
+			VERSE "peace through-";
+bar
+//3
+1: 4ad; 4gd; 4ad; 4bd;
+2: 4eb-; 4eb-; 4fb-; 4gb-;
+
+			VERSE "Thy dear name we";
+			VERSE "on our home-ward";
+			VERSE "thro' the com-ing";
+			VERSE "out our earth-ly";
+bar
+//4
+1: 1c+c;
+2: 1aa-;
+
+			VERSE "raise";
+			VERSE "way;";
+			VERSE "night,";
+			VERSE "life,";
+bar
+//5
+1: 2ae; 4ae; 4be;
+2: 2c+a; 4c+a; 4c+a;
+
+			VERSE "With one ac-";
+			VERSE "With Thee be-";
+			VERSE "Turn Thou for";
+			VERSE "Our balm in";
+bar
+//6
+1: 2af; 2c+a;
+2: 2c+f; 2c+f;
+
+			VERSE "cord our";
+			VERSE "gun, with";
+			VERSE "us its";
+			VERSE "sor-row,";
+bar
+//7
+1 1: [with .]... 4c+a; 4b; 4c+a; 4dn+a;
+1 2: 4s; 4a; 4s; 4s;
+2: [with.]... 4dn+b-; 4d+b-; 4c+b-; bb-;
+
+			VERSE "part-ing hymn of";
+			VERSE "Thee shall end the";
+			VERSE "dark-ness in-to";
+			VERSE "and our stay in";
+bar
+//8
+1: 1e+g;
+2: 1be;
+
+			VERSE "praise;";
+			VERSE "day;";
+			VERSE "light;";
+			VERSE "strife;";
+bar
+//9
+1: 2e+e;4ae; 4ae;
+2: 2ac; 4ac; 4ac; 
+
+			VERSE "Once more we";
+			VERSE "Guard Thou the";
+			VERSE "From harm and";
+			VERSE "Then, when Thy";
+bar
+//10
+1: 2d+f; 2d+f;
+2: 2ab-; 2ab-;
+
+			VERSE "bless Thee";
+			VERSE "lips from";
+			VERSE "dan-ger";
+			VERSE "voice shall";
+
+bar
+//11
+1: 4d+e; 4be;4c+e; 4d+e;
+2: ge; 4ge; 4ae; 4be;
+
+			VERSE "ere our wor-ship";
+			VERSE "sin, the hearts from";
+			VERSE "keep Thy chil-dren";
+			VERSE "bid our con-flict";
+bar
+//12
+1: 1c+e;
+2: 1aa-;
+
+			VERSE "cease,";
+			VERSE "shame,";
+			VERSE "free,";
+			VERSE "cease,";
+bar
+//13
+1: 2ac; 4bc; 4ac;
+2: 2af; 4af; 4af;
+
+			VERSE "Then low-ly";
+			VERSE "That in this";
+			VERSE "For dark and";
+			VERSE "Call us, O";
+bar
+//14
+1: 2ab-; 2fb-;
+2: 2fd; 2ad;
+
+			VERSE "kneel-ing";
+			VERSE "house have";
+			VERSE "light are";
+			VERSE "Lord, to";
+bar
+//15
+1 1: 4eb-; 4eb-; 4fd; 4e;
+1 2: 4s; 4s; 4s; 4d;
+2: 4ge; 4ge; 4ae; 4ge;
+
+			VERSE "wait Thy word of";
+			VERSE "called up-on Thy";
+			VERSE "both a-like to";
+			VERSE "Thine e-ter-nal";
+bar
+//16
+1: 1ec;
+2: 1aa-;
+
+			VERSE "peace.";
+			VERSE "name.";
+			VERSE "Thee.";
+			VERSE "peace.";
+endbar

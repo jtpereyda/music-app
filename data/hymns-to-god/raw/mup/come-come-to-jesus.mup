@@ -1,0 +1,158 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Good News Hymns
+//		Edited and Compiled by
+//		Benjamin Franklin butts
+//		For use in Church and
+//		Evangelistic Services
+//		Published by the Biglow & Main Co.
+//		Madison Terminal Building, Chicago
+//		205-209 West 19th Street, new York
+//		Copyright 1914
+//		Hymn no. 62
+
+// Transcribed by: Ted Gatza, Jr. 10/12/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come, Come To Jesus" ""
+   title (2)""
+   title (11) "G - 2 - DO" "\s(17)\f(TI)\:behold,\ now\ is\ the\ acce\|ptable\ time;\ behold,\ now is\ the\ day\ of\ salv\|ation:\ -\ 2\ Cor.\ 6:2"""
+   title (13) "Geroge B. Peck" " " "Hubert P. Main"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=75";
+
+//1
+1 1: 4.gd; 8b bm; 8a ebm; 8g;
+1 2: 4.s; 4g; 8g;
+2 1: 4.bg; 8d+ bm; 8c+ ebm; 8bg;
+2 2: 4.s; 4g; 8g;
+
+
+			lyrics 1: 4.; 4; 8; "<1. >-1|Come, come to";
+			lyrics 1: 4.; 4; 8; "<2. >-1|Come, come to";
+			lyrics 1: 4.; 4; 8; "<3. >-1|Come, come to";
+			lyrics 1: 4.; 4; 8; "<4. >-1|Come, come to";
+			lyrics 1: 4.; 4; 8; "<5. >-1|Come, come to";
+bar
+//2
+1: 4.d+f; 4.af;
+2: 4.ad; 4.d+d;
+
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+bar
+//3
+1 1: 4.bg; 8b bm; 8a ebm; 8g;
+1 2: 4.s; 4g; 8s;
+2: 4.d+g; 4c+#e; 8c+e;
+
+			lyrics 1: 4.; 4; 8; "He waits to";
+			lyrics 1: 4.; 4; 8; "He waits to";
+			lyrics 1: 4.; 4; 8; "He waits to";
+			lyrics 1: 4.; 4; 8; "He waits to";
+			lyrics 1: 4.; 4; 8; "He waits to";
+bar
+//4
+1: 4af; 8bg; 4.af;
+2: 4d+d; 8d+d; 4.d+d;
+
+			lyrics 1: "wel-come thee,";
+			lyrics 1: "ran-som thee,";
+			lyrics 1: "light-en thee,";
+			lyrics 1: "shel-ter thee,";
+			lyrics 1: "car-ry thee,";
+bar
+newscore
+//5
+1: 4.bd; 8c+e bm; 8bd ebm; 8ac;
+2 1: 4.g; 4g; 8fd;
+2 2: 4.g; 4g; 8s;
+
+			lyrics 1: 4.; 4; 8; "O wand-'rer!";
+			lyrics 1: 4.; 4; 8; "O slave! so";
+			lyrics 1: 4.; 4; 8; "O bur-den'd!";
+			lyrics 1: 4.; 4; 8; "O wea-ried!";
+			lyrics 1: 4.; 4; 8; "O lamb! so";
+bar
+//6
+1: 4gb-; 8ec; 4.ec;
+2: 4ge; 8gc; 4.gc;
+
+			lyrics 1: "ea-ger-ly";
+			lyrics 1: "will-ing-ly";
+			lyrics 1: "trust-ing-ly";
+			lyrics 1: "bless-ed-ly";
+			lyrics 1: "lov-ing-ly";
+bar
+//7
+1: 4.db-; 8gd bm; 8ac ebm; 8bb-;
+2 1: 4.gd; 8b bm; 8a ebm; 8gd;
+2 2: 4.s; 4d; 8s;
+
+			lyrics 1: 4.; 4; 8; "Come, come to";
+			lyrics 1: 4.; 4; 8; "Come, come to";
+			lyrics 1: 4.; 4; 8; "Come, come to";
+			lyrics 1: 4.; 4; 8; "Come, come to";
+			lyrics 1: 4.; 4; 8; "Come, come to";
+bar
+//8
+1: 4.ac; 4.gb-;
+2: 4.fd; 4. gg-;
+
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+			lyrics 1: "Je-sus!";
+endbar
+   title (22) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

@@ -1,0 +1,220 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Alexander's Gospel Songs
+//		Compiled by Charles M. Alexander
+//		Published by the Fleming H. Revell Company
+//		New York, 158 Fifth Avenue
+//		Chicago, 80 Wabash Avenue
+//		Toronto, London, Edinburgh
+//		Copyright 1908
+//		Hymn no. 63
+
+// Transcribed by: Ted Gatza, Jr. 08/20/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "When He Shed His Blood" ""
+   title (2)""
+   title (11) "D - 4 - DO" "\s(17)\f(TI)\:for\ this\ is\ my\ blood\ of\ th\|e\ covenant,\ which\ is\ poured\ out for\ many\ unto\ rem\|ission\ of\ sins.\ -\ Mat.\ 26:28" ""
+   title (13) "Robert Harkness" " " "Robert Harkness, 1908"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 2#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 2.s; 8d; 8e;
+1 2: 2.s; 8d; 8d;
+2: 2.s; 8fd; 8gd;
+
+
+			lyrics 1: "<1. >-1|On the";
+			lyrics 1: "<2. >-1|In His";
+			lyrics 1: "<3. >-1|In our-";
+			lyrics 1: "<4. >-1|What a";
+bar
+//2
+1: 4fd; 4bd; 4ad; 4fd;
+2: 4ad; 4gd; 4fd; 4ad;
+
+			lyrics 1: "cru-el cross they";
+			lyrics 1: "love He came to";
+			lyrics 1: "selves we mer-it";
+			lyrics 1: "won-der-ful sal-";
+bar
+//3
+1: 4fd; 2ec; 8ec; 8fd;
+2: 4aa-; 2aa-; 8aa-; 8aa-;
+
+			lyrics 1: "nailed Him, There to";
+			lyrics 1: "suf-fer, All the";
+			lyrics 1: "noth-ing, All our";
+			lyrics 1: "va-tion! What a";
+bar
+newscore
+//4
+1 1: 4ge; 4c+g; 4bg; 4a;
+1 2: 4s; 4s; 4s; 4g;
+2 1: 4a; 4e+a; 4d+a; 4c+a;
+2 2: 4a; 4s; 4s; 4s;
+
+			lyrics 1: "die in ag-o-";
+			lyrics 1: "fall-en to re-";
+			lyrics 1: "works must be in";
+			lyrics 1: "depth of love is";
+bar
+//5
+1 1: 2.af; 8d; 8e;
+1 2: 2.s; 8d; 8d;
+2: 2.d+d; 8fd; 8gd;
+
+			lyrics 1: "ny; But He";
+			lyrics 1: "deem, Mer-cy's";
+			lyrics 1: "vain: On-ly";
+			lyrics 1: "shown, In the";
+bar
+//6
+1: 4fd; 4bd; 4ad; 4fd;
+2: 4ad; 4gd; 4fd; 4ad;
+
+			lyrics 1: "gave His life a";
+			lyrics 1: "of-fer still is";
+			lyrics 1: "through the Blood of";
+			lyrics 1: "sac-ri-fice of";
+bar
+//7
+1 1: 4fc; 2ec; 8e; 8e;
+1 2: 4s; 2s; 8d; 8d;
+2: 4ae; 2ae; 8g#e; 8ge;
+
+			lyrics 1: "ran-som, Just to";
+			lyrics 1: "o-pen, Still there's";
+			lyrics 1: "Je-sus, Can we";
+			lyrics 1: "Je-sus, In the";
+bar
+//8
+1: 4ec; 4ae; 4ad; 4g#d; 
+2: 4ae; 4c+e; 4be; 4be;
+
+			lyrics 1: "set sin's cap-tives";
+			lyrics 1: "life in Cal-v'r'ys";
+			lyrics 1: "life E-ter-nal";
+			lyrics 1: "blood that does a-";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			lyrics 1: "free.";
+			lyrics 1: "stream.";
+			lyrics 1: "gain.";
+			lyrics 1: "tone.";
+dblbar
+//10
+1: 8fd; 8af; 2.s;
+2: 8ad; 8d+d; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"When He";
+bar
+newscore
+//11
+1: 2d+f; 2bg;
+2: 2ad; 2d+d;
+
+			lyrics 1: [c]"shed His";
+bar
+//12
+1: 2.af; 8fd; 8af;
+2: 2.d+d; 8ad; 8d+d;
+
+			lyrics 1: [c]"blood, When He";
+bar
+//13
+1: 2bg; 2d+g;
+2: 2d+g-; 2d+g-;
+
+			lyrics 1: [c]"shed His";
+bar
+//14
+1: 2.af; 8fd; 8af;
+2: 2.d+d; 8ad; 8ad;
+
+			lyrics 1: [c]"blood, Then He";
+bar
+//15
+1: 4ge; 4ec; 4s; 8s; 8s;
+2 1: 4aa-; 4aa-; 4s; 8s; 8s;
+2 2: 4s; 4s; 4s; 8s; 8s; 
+
+			lyrics 1: [c]"ran-somed";
+invisbar
+newscore
+
+1: 4s; 4s; 4ec; 8ge; 8bg;
+2 1: 4s; 4s; 4aa-; 8a; 8a;
+2 2: 4s; 4s; 4s; 8a; 8a; 
+
+			lyrics 1: [c]"me, For e-";
+
+bar
+//16
+1: 4af; 4fd; 4fd; 8af; 8af;
+2: 4d+d; 4ad; 4ad; 8ad; 8d+d;
+
+			lyrics 1: [c]"ter-ni-ty, When He";
+bar
+//17
+1: 2d+f; 2e+g;
+2 1: 2a; 2aa-;
+2 2: 2a; 2s;
+
+			lyrics 1: [c]"shed His";
+bar
+//18
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+			lyrics 1: [c]"Blood.";
+endbar

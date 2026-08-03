@@ -1,0 +1,496 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 274	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 02/08/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Sing On, Ye Joyful Pilgrims" ""
+   title (2)""
+   title (11) "" "\f(TI)Behold, my servants shall sing for joy of heart... - Is. 65:14" ""
+   title (10) "F - 4 - SOL" "" ""
+   title "Carrie M. Wilson" "" "John R. Sweney, 1885"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+//Verse
+
+//1
+1: 2.s; 4fc+;
+2: 2.s; 4fa;
+
+	VS "<1. >-1|Sing";
+	VS "<2. >-1|Sing";
+	VS "<3. >-1|Sing";
+bar
+
+//2
+1: 4.fc+; 8fa; 4fb; fa;
+2: 4.fa; 8fc+; 4cd+; fc+;
+
+	VS "on, ye joy-ful";
+	VS "on, ye joy-ful";
+	VS "on, ye joy-ful";
+bar
+
+//3
+1: 2fa; 4eg; s;
+2: 2cc+; 4; s;
+
+	VS "pil-grims,";
+	VS "pil-grims,";
+	VS "pil-grims,";
+invisbar
+1 1: 2s; 4s; c;
+1 2: 2s; 4s; c;
+2: 2s; 4s; eb;
+
+	VS "Nor";
+	VS "While";
+	VS "The";
+bar
+
+//4  
+1: 4.cf; 8; 4cg; df;
+2: 4.fa; 8; 4eb; dbn;
+
+	VS "think the mo-ments";
+	VS "here on earth we";
+	VS "time will not be";
+bar
+
+//5
+1: 2.ec+; 4s;
+2: 2.cc+; 4s;
+
+	VS "long;";
+	VS "stay;";
+	VS "long,";
+invisbar
+1: 2.s; 4ec+;
+2 1: 2.s; 4c+;
+2 2: 2.s; 4c+;
+
+	VS "My";
+	VS "Let";
+	VS "Till";
+bar
+
+//6
+1: 4.ed+; 8; 4fc+; ;
+2 1: 4.c+; 8; 4ac+; ;
+2 2: 4.b; 8; 4s; ;
+
+	VS "faith is heav'n-ward";
+	VS "songs of home and";
+	VS "in our Fa-ther's";
+bar
+
+//7
+1 1: 4.c+ slur; 8b; 4fa; s;
+1 2: 2e; 4s; ;
+2: 2gc+; 4fc+; s;
+
+	VS "ris-ing";
+	VS "Je-sus";
+	VS "king-dom";
+invisbar
+1: 2s; 4s; fa;
+2: 2s; 4s; fc+;
+
+	VS "With";
+	VS "Be-";
+	VS "We";
+bar
+
+//8
+1: 4.eg; 8ge+; 4; fd+;
+2: 4.gc+; 8; 4; g-bn;
+
+	VS "ev-'ry tune-ful";
+	VS "guile each fleet-ing";
+	VS "swell a no-bler";
+bar
+
+//9
+1: 2.ec+; 4s;
+2: 2.cc+; 4s;
+
+	VS "song;";
+	VS "day;";
+	VS "song,";
+invisbar
+1: 2.s; 4ec+;
+2 1: 2.s; 4c+;
+2 2: 2.s; 4c+;
+
+	VS "Lo!";
+	VS "Sing";
+	VS "Where";
+bar
+
+//10
+1: 4ed+; fc+; gb; fa;
+2 1: 4c+; ac+; ec+; fc+;
+2 2: 4b; s; ; ;
+
+	VS "on the mount of";
+	VS "on the grand old";
+	VS "those we love are";
+bar
+
+//11
+1 1: 4.c+ slur; 8b; 4fa; s;
+1 2: 2e; 4s; ;
+2: 2cc+; 4fc+; s;
+
+	VS "bless-ing,";
+	VS "sto-ry";
+	VS "wait-ing";
+invisbar
+1 1: 2s; 4; a;
+1 2: 2s; 4; a;
+2 1: 2s; 4; a;
+2 2: 2s; 4; a;
+
+	VS "The";
+	VS "Of";
+	VS "To";
+bar
+
+//12
+1 1: 4.a; 8e; 4f; d;
+1 2: 4.a; 8e; 4f; d;
+2 1: 4.a; 8e; 4f; d;
+2 2: 4.a; 8e; 4f; d;
+
+	VS "glor-ious mount I";
+	VS "His re-deem-ing";
+	VS "greet us on the";
+bar
+
+//13
+1: 2.c#e; 4s;
+2: 2.a-a; 4s;
+
+	VS "stand;";
+	VS "love,";
+	VS "shore,";
+invisbar
+1: 2.s; 4ce;
+2: 2.s; 4a-a;
+
+	VS "And";
+	VS "The";
+	VS "We'll";
+bar
+
+//14
+1: 4.df; 8; 4; db;
+2: 4.da; 8; 4b-b; b-f;
+
+	VS "look-ing o-ver";
+	VS "ev-er-last-ing";
+	VS "meet be-yond the";
+bar
+
+//15
+1: 2ca; 4fc+; s;
+2 1: 2f; 4fa; s;
+2 2: 2f; 4s; ;
+
+	VS "Jor-dan,";
+	VS "cho-rus,";
+	VS "riv-er,";
+invisbar
+
+1: 2s; 4; fc+;
+2: 2s; 4; fa;
+
+	VS "I";
+	VS "That";
+	VS "Where";
+bar
+
+//16
+1: 4.ec+; 8gb; 4fa; 4eg;
+2: 4.cg; 8cc+; 4; cb;
+
+	VS "see the prom-ised";
+	VS "fills the realms a-";
+	VS "surg-es roll no";
+bar
+
+//17
+1 1: 2.f; 4r;
+1 2: 2.f; 4s;
+2: 2.fa; 4r;
+
+	VS "land.";
+	VS "bove.";
+	VS "more.";
+dblbar
+newscore
+//18
+CHORUS
+1 1: 2a; 8.g; 16f; 8.g; 16a;
+1 2: mr;
+2 1: 2c+; 8.b; 16a; 8.b; 16c+;
+2 2: mr;
+
+	VS "Sing on, O bliss-ful";
+bar
+
+//19
+1 1: 2f; c;
+1 2: mr;
+2 1: 2a; ;
+2 2: mr;
+
+	VS "mu-sic!";
+bar
+
+//20
+1: 2ac+; 8.g#bn; 16ac+; 8.b&d+; 16ac+;
+2: mr;
+	VS "With ev-'ry note you";
+bar
+
+//21
+1: 2ac+ slur; fa;
+2: mr;
+
+	VS "raise";
+bar
+
+//22
+1: 2eg; 8.; 16fa; 8.gb; 16ec+;
+2: 2cc+; 8.; 16; 8.; 16;
+
+	VS "My heart is filled with";
+bar
+
+//23
+1: 4fa slur; ac+; af+; s;
+2: 2fc+; 4; s;
+
+	VS "rap-ture,";
+invisbar
+1: 4s; ; ; af+;
+2: 2s; 4; fc+;
+
+	VS "My";
+bar
+
+//24 
+1: 4.ge+; 8gd+; 4gc+; fbn;
+2: 4.gc+; 8gf+; 4ge+; gd+;
+
+	VS "soul is lost in";
+bar
+
+//25
+1: 2.ec+; 4r;
+2 1: 2.c+; 4r;
+2 2: 4c+; b&; a; g;
+phrase below 2: 1 til 4;
+
+	VS "praise;";
+bar
+
+//26
+1 1: 2a; 8.cg; 16cf; 8.cg; 16ca;
+1 2: 4f; ; 8.s; 16; 8.; 16;
+2: 4fc+; ; 8.fb; 16fa; 8.fb; 16fc+;
+
+	VS "Sing on, O bliss-ful";
+	VS21 "Sing on, biss-ful, bliss-ful";
+bar
+
+//27
+1 1: 2cf; c;
+1 2: 2s; c;
+2: 2fa; ; 
+
+	VS "mu-sic!";
+	VS "mu-sic!";
+bar
+
+//28
+1: 2ac+; 8.g#bn; 16ac+; 8.b&d+; 16ac+;
+2: 2fc+; 8.; 16; 8.; 16;
+
+	VS "With ev-'ry note you";
+bar
+
+//29
+1: 2ac+ slur; fa;
+2 1: 2f+ slur; c+;
+2 2: 1f;
+
+	VS "raise";
+bar
+
+//30
+1: 2eg; 8.; 16fa; 8.gb; 16ec+;
+2: 2cc+; 8.; 16; 8.; 16;
+
+	VS "My heart is filled with";
+bar
+
+//31
+1: 4fa slur; ac+; af+; s;
+2: 2fc+; 4; s;
+
+	VS "rap-ture,";
+invisbar
+1: 4s; ; ; fd+;
+2: 2s; 4; b-b;
+
+	VS "My";
+bar
+
+//32
+1: 4.fc+; 8; 4ec+; ce;
+2: 4.ca; 8; 4cg; cb;
+
+	VS "soul is lost in";
+bar
+
+//33
+1: 2.cf; 4s;
+2: 2.fa; 4s;
+
+	VS "praise.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 13
+//		
+// Transcribed by: Ted Gatza, Jr. 12/13/2021
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Must Jesus Bear The Cross Alone?" ""
+   title (2)""
+   title (11)"" "\f(TI)And he said unto all, If any man would come after me, let him deny" ""
+   title (11)"" "\f(TI)himself, and take up his cross daily, and follow me. - Lk. 9:23" ""
+   title (11) "B\(flat) - 2 - MI" "" ""
+   title (13) "Thomas Shepherd, 1693" "" "George Nelson Allen, 1844"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1: 8b-d bm; ce ebm; 2s; 2s; 4s;
+2: 4b-b; 2s; 2s; 4s;
+
+
+	VS 8; 8s; 2s; 2s; 4s; "<1. >-1|Must";
+	VS 8; 8s; 2s; 2s; 4s; "<2. >-1|How";
+	VS 8; 8s; 2s; 2s; 4s; "<3. >-1|The";
+	VS 8; 8s; 2s; 2s; 4s; "<4. >-1|Up-";
+	VS 8; 8s; 2s; 2s; 4s; "<5. >-1|O-";
+
+bar
+//2
+1: 2df; 4; 2db; 4fd+;
+2: 2b-b; 4; 2b-f; 4b-b;
+
+	VS "Je-sus bear the";
+	VS "hap-py are the";
+	VS "con-se-crat-ed";
+	VS "on the crys-tal";
+	VS "pre-cious cross! O";
+bar
+//3
+1 1: 2ec+; 4eb; 8g slur; 4.b; 8gb bm; eg ebm;
+1 2: 2s; 4; 2e; 4s;
+2: 2eg; 4; 2eb; 4;
+
+	VS 2; 4; 2; 4; "cross a-lone, And";
+	VS 2; 4; 2; 4; "saints a-bove, Who";
+	VS 2; 4; 2; 4; "cross I'll bear Till";
+	VS 2; 4; 2; 4; "pave-ment, down At";
+	VS 2; 4; 2; 4; "glor-ious crown! O";
+bar
+//4
+1 1: 2f; 4cf; 2fb; 4fd+;
+1 2: 2f; 4s; 2s; 4s;
+2 1: 2db; 4a; 2db; 4b-b;
+2 2: 2s; 8f bm; e ebm; 2s; 4s;
+
+	VS "all the world go";
+	VS "once went sorrow-ing";
+	VS "death shall set me";
+	VS "Je-sus' pierc-ed";
+	VS "res-ur-rec-tion";
+bar
+//5
+1: 2.fc+ tie; 2fc+; 4s;
+2: 2.fa tie; 2 fa; 4s;
+
+	VS "free?";
+	VS "here;";
+	VS "free,";
+	VS "feet,";
+	VS "day!";
+bar
+//6
+1 1: 8d+ bm; e+ ebm; 2s; 4s; 2s;
+1 2: 4f; 2s; 4s; 2s;
+2 1: 8b bm; c+ ebm; 2s; 4s; 2s;
+2 2: 4b; 2s; 4s; 2s;
+
+	VS 4; 2s; 4s; 2s; "No;";
+	VS 4; 2s; 4s; 2s; "But";	
+	VS 4; 2s; 4s; 2s; "And";	
+	VS 4; 2s; 4s; 2s; "Joy-";	
+	VS 4; 2s; 4s; 2s; "Ye";
+bar
+//7
+1: 2ff+; 4fd+; 2db; 4fd+;
+2 1: 2bd+; 4b; 2b-f; 4b-b;
+2 2:2s; 4b; 2s; 4s;
+
+	VS "there's a cross for";
+	VS "now they taste un-";
+	VS "then go home my";
+	VS "ful, I'll cast my";
+	VS "an-gels, from the";
+bar
+//8
+1 1: 2ec+; 4eb; 8g slur; 4.b; 8gb bm; 8eg ebm;
+1 2: 2s; 4s; 2e; 4s;
+2: 2eg; 4; 2eb; 4;
+
+	VS 2; 4; 2; 4; "ev-ery one, And";
+	VS 2; 4; 2; 4; "min-gled love, And";
+	VS 2; 4; 2; 4; "crown to wear, For";
+	VS 2; 4; 2; 4; "gold-en crown, And";
+	VS 2; 4; 2; 4; "stars come down, And";
+bar
+//9
+1 1: 2f; 4db; 2fd+; 4ec+;
+1 2: 2f; 4s; 2s; 4s;
+2: 2db; 4b-b; 2fb; 4fa;
+
+	VS "there's a cross for";
+	VS "joy with-out a";
+	VS "there's a crown for";
+	VS "his dear name re-";
+	VS "bear my soul a-";
+bar
+//10
+1: 2.db tie; 2db; 4s;
+2: 2.b-b tie; 2b-b; 4s;
+
+	VS "me.";
+	VS "tear.";
+	VS "me.";
+	VS "peat.";
+	VS "way.";
+endbar
+	

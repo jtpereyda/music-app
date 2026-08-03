@@ -1,0 +1,236 @@
+// Mup vs.6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Melody
+//		A Collection Of Sacred Songs For The
+//		Sunday-School and Young people's and
+//		Other Devotional Meetings
+//		Edited by E. S. Lorenz
+//		United Brethren Publishing House
+//		Dayton, OH
+//		Copyright: 1899
+//		Hymn No.: 140
+//		
+// Transcribed by: Ted Gatza, Jr. 10/17/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Send The Gospel Light" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - SOL" "\s(17)\f(TI)\:O\ send\ out\ thy\ light\ and\ thy\ truth\ -\ Ps.\ 43:3 \(space)" ""   
+   title (13) "Edward C. Avis" "" "Edward C. Avis, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+//1
+1: 8.fd; 16;2.s;
+2: 8.bb-; 16; 2.s;
+
+			VERSE "<1. >-1|Send the";
+			VERSE "<2. >-1|Send the";
+			VERSE "<3. >-1|Send the";			
+bar
+//2
+1 1: 4bd;; 8.b bm; 16a ebm; 8.b bm; 16c+ ebm;
+1 2: 4s;; d;;
+2: 4bb-;;; fb-;
+
+			VERSE 4; 4; 4; 4; "light of life to";
+			VERSE 4; 4; 4; 4; "light of joy to";
+			VERSE 4; 4; 4; 4; "light of peace to";
+bar
+//3
+1 1: 4bd; ac;; f;
+1 2: 4s;;; e;
+2 1: 4f;;; af;
+2 2: 4f;;; s;
+
+			VERSE "all man-kind, And";
+			VERSE "sad-dened homes, By";
+			VERSE "doubt-ing hearts, For";
+bar
+//4
+1 1: 4f; c+e; 8.s; 16s; 8.s; 16s;
+1 2: 4f; s; 8.; 16; 8.; 16;
+2 1: 4af;; 8.s; 16s; 8.s; 16s;
+2 2: 4s;; s;;
+
+			VERSE 4; 4; 4s; 4s; "help their";
+			VERSE 4; 4; 4s; 4s; "song and";
+			VERSE 4; 4; 4s; 4s; "whom our";
+invisbar
+newscore
+
+1 1: 4s; s; 8.c+e bm; 16bnd ebm; 8.c+e bm; 16d+f ebm;
+1 2: s; s; 8.; 16; 8.; 16;
+2 1: 4s;; 8.s; 16; 8.a bm; 16b ebm;
+2 2: 4s;; f;;
+
+			VERSE 4s; 4s; 4; 4; "pre-cious";
+			VERSE 4s; 4s; 4; 4; "word, by";
+			VERSE 4s; 4s; 4; 4; "bless-ed";
+
+bar
+//5
+1: 4c+e; bd;; fd;
+2: af; fb-;; bb-;
+
+			VERSE "souls to save; Tho'";
+			VERSE "praise and pray'r; By";
+			VERSE "Lord did die; Lift";
+bar
+//6
+1: 4fd; d+f; 8.d+f bm; 16c+#en ebm; 8.d+f bm; 16e+g ebm;
+2: 4bb-;;;;
+
+			VERSE 4; 4; 4; 4; "long in dark-ness,";
+			VERSE 4; 4; 4; 4; "deeds where love with";
+			VERSE 4; 4; 4; 4; "up the fal-len,";
+bar
+//7
+1 1: 4d+g; c+g; bg; g;
+1 2: 4s;;; 8e bm; c ebm;
+2 1: 4be;;; 4b;
+2 2: 4s;;; 8e bm; 8en ebm;
+
+			VERSE "lost and blind, Sal-";
+			VERSE "mer-cy comes And";
+			VERSE "point them to That";
+bar
+//8
+1: 4fd; bd; 8.ae; 16; 8ge; 8ae;
+2 1: 4bf;; 8.c+f; 16; 8bf; f;
+2 2: 4s;; 8.; 16; 8; f;
+
+			VERSE "va-tion now they deep-ly";
+			VERSE "light-ens hearts weighed down by";
+			VERSE "home, that heav'n-ly home on";
+bar
+//9
+1: 2.bd; 4s;
+2: 2.fb-; 4s;
+
+			VERSE "crave.";
+			VERSE "care.";
+			VERSE "high.";
+dblbar
+//10
+1 1: 8.f; 16f; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE [c]"Send the";
+bar
+
+//11
+1 1: 2d+ tie; 8.; 16b; {8f; en; g;}3;
+1 2: [dist -4]8.r; 16f; {8f;;;}3; 8.f; [dist -4]16r; 4r;
+2: 8.r; 16bb-; {8bb-;;;}3; 8.; 16r; 4r;
+
+			VERSE 2; 8.s; 16; {8; 8; 8;}3; "light,_ the beau-ti-ful";
+			VERSE 8.s; 16; {8; 8; 8;}3; 8.; 16s; 4s; "the beau-ti-ful light";
+bar
+//12
+1 1: 2f tie; 4; 8.b; 16a;
+1 2: 8.r; 16d; {8;;;}3; 4; [dist -6]4r;
+2: 8.r; 16bb-; {8;;;}3; 4; r;
+
+			VERSE "light,_ Send the";
+			VERSE 8.s; 16; {8; 8; 8;}3; 4; s; "the beau-ti-ful-light,";
+bar
+//13
+1 1: 2c+ tie; 8.; 16f; {8f bm; g ebm; a;}3;
+1 2: [dist -4]8.r; 16f; {8;;;}3; 8.; 16r; 4r;
+2: 8.r; 16af; {8;;;}3; 8.; 16r; 4;
+
+			VERSE 2; 8.s; 16; {8; 8s; 8;}3; "light,_ both far and";
+			VERSE 8.s; 16; {8; 8; 8;}3; 8.; 16s; 4s; "the beau-ti-ful light";
+bar
+//14
+1 1: 2b tie; 4; 8.f; 16;
+1 2: [dist -4]8.r; 16d; 8.e; 16; 4d; r;
+2: 8.r; 16fb-; 8.gb-; 16; 4fb-; r;
+
+			VERSE "wide,_ Send the";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "both far and wide,";
+bar
+//15
+1 1: 2d+ tie; 8.; 16bd; {8bd bm; c+e ebm; 8d+f;}3;
+1 2: [dist -4]8.r; 16f; {8;;;}3; 8.; 16s; {8;;;}3;
+2: 8.r; 16bb-; {8;;;}3; 8.; 16; {4; 8;}3;
+
+			VERSE 2; 8.s; 16; {8; 8s; 8;}3; "light,_ till ev-'ry";
+			VERSE 8.s; 16; {8; 8; 8;}3; 8.; 16s; {4s; 8s;}3; "the beau-ti-ful light";
+bar
+//16
+1: 4e+g; 2; {8ge bm; bg ebm; [up]e+g&;}3;
+2: 4be; 2; {4; 8;}3;
+
+			VERSE 4; 2; {8; 8s; 8;}3; "na-tion shall ac-";
+bar
+//17
+1: 2d+f tie; 8.; 16bd; 8.ac; 16c+e;
+2 1: 4bf; 8.; 16; 8.; 16f; 8.ff-; 16;
+2 2: 4s; 8.s; 16s; 8.s; 16f; 8.s; 16s;
+
+			VERSE "cept_ the cru-ci-";
+			VERSE 4s; 8.; 16; 8.; 16s; 8.s; 16s; "shall ac-cept";
+bar
+//18
+1 1: 2b tie; 4; 4s;
+1 2: 8.d; 16; 8.e; 16; 4d; 4s;
+2 1: 8.f; 16; 8.g; 16; 4f; 4s;
+2 2: 2b- tie; 4; 4s;
+
+			VERSE "fied._";
+			VERSE 8.s; 16; 8.; 16; 4; 4s; "the cru-ci-fied.";
+endbar

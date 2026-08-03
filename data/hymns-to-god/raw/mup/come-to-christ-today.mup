@@ -1,0 +1,201 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest And Best
+//		A Choice Collection of New Songs
+//		for the Sunday School
+//		and Meetings of prayer and Praise
+//		New York and Chicago
+//		Publishers: Biglow and Main
+//		Copyright 1875
+//		Hymn no. 40
+
+// Transcribed by: Ted Gatza, Jr. 02/15/2010; Rev. 06/25/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come To Christ To-Day" ""
+   title (2)""
+   title (11) "F - 4 - MI" "\s(17)\f(TI)\:Now\ is\ the\ day\ of\ salvation.\ -\ 2\ Cor.\ 6:2 \(space)"""
+   title (13) "W. Bennett" " " "W. Bennett"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1&
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=105";
+
+//1
+1: 4.af; 8bf; 4d+f; 4c+f;
+2 1: 4.f; 8g; 4bf; 4af;
+2 2: 4.f; 8f; 4s; 4s; 
+
+			lyrics 1: "<1. >-1|Come to Je-sus,";
+			lyrics 1: "<2. >-1|Come to Je-sus,";
+			lyrics 1: "<3. >-1|Come to Je-sus,";
+bar
+//2
+1 1: 4.f; 8ge; 2af;
+1 2: 4.f; 8s; 2s;
+2: 4.c+a-; 8c+c; 2c+f;
+
+			lyrics 1: "pre-cious soul,";
+			lyrics 1: "doubt-ing heart,";
+			lyrics 1: "don't de-lay,";
+bar
+//3
+1: 4.af; 8bf; 4af; 4ge;
+2: 4.c+f; 8d+f; 4c+c; 4bc;
+		
+			lyrics 1: "Come to Je-sus,";
+			lyrics 1: "Come to Je-sus,";
+			lyrics 1: "Come to Je-sus,";
+bar
+//4
+1 1: 4.ge; 8ae; 4ge; 4f;
+1 2: 4.s; 8s; 4s; 4f;
+2: 4.bc; 8c+c; 4bc; 4af;
+
+			lyrics 1: "come to Je-sus;";
+			lyrics 1: "come to Je-sus;";
+			lyrics 1: "come to Je-sus;";
+bar
+//5
+1: 4.af; 8bf; 4d+f; 4c+f;
+2 1: 4.f; 8g; 4bf; 4af;
+2 2: 4.f; 8f; 4s; 4s; 
+
+			lyrics 1: "He will make the";
+			lyrics 1: "Bid your un-be-";
+			lyrics 1: "Come to Je-sus";
+bar
+//6
+1 1: 4.f; 8ge; 2af;
+1 2: 4.f; 8s; 2s;
+2: 4.ad; 8c+c; 2c+f;
+
+			lyrics 1: "wound-ed whole,";
+			lyrics 1: "lief de-part,";
+			lyrics 1: "while you may,";
+bar
+//7
+1: 4.c+f; 8af; 4.af; 8gc;
+2: 4.af; 8c+f; 4.c+c; 8bc;
+
+			lyrics 1: "Come, O come to-";
+			lyrics 1: "Trust His word to-";
+			lyrics 1: "Come, O come to-";
+bar
+//8
+1: 2.fc; 4r;
+2: 2.af; 4r;
+
+			lyrics 1: "day;";
+			lyrics 1: "day;";
+			lyrics 1: "day;";
+bar
+//9
+1: 4.gc; 8fc; 4ec; 4fc;
+2: 4.bc; 8ac; 4gc; 4ac;
+
+			lyrics 1: "He will wash you";
+			lyrics 1: "Faith is strong and";
+			lyrics 1: "Let His love your";
+bar
+//10
+1: 4ge; 4af; 2bg;
+2: c+c; 4c+c; 2c+c;
+
+			lyrics 1: "in His blood,\(emdash)";
+			lyrics 1: "must pre-vail\(emdash)";
+			lyrics 1: "hearts con-strain,";
+bar
+//11
+1: 4.af; 8gc; 4fa; 4ge;
+2: 4.c+f; 8bf; 4af; 4c+c;
+
+			lyrics 1: "Free-ly flows the";
+			lyrics 1: "Come with faith, you";
+			lyrics 1: "Do not let Him";
+bar
+//12
+1: 4af; 4bf; 2c+f;
+2 1: 4c+f; 4g; 2af;
+2 2: 4s; 4f; 2s;
+
+			lyrics 1: "cleans-ing flood\(emdash)";
+			lyrics 1: "can-not fail\(emdash)";
+			lyrics 1: "plead in vain;";
+bar
+//13
+1: 4.af; 8af; 4bf; 4af;
+2: 4.c+f; 8c+f; 4d+f; 4c+f;
+
+			lyrics 1: "He will take your";
+			lyrics 1: "All your doubts and";
+			lyrics 1: "He hath died up-";
+bar
+//14
+1: 4bf; 4c+f; 2d+f;
+2: 4bd; 4ac; 2bb-;
+
+			lyrics 1: "sins a-way;";
+			lyrics 1: "fears shall fly;";
+			lyrics 1: "on the tree,";
+bar
+//15
+1 1: 4.c+f; 8d+f; 4c+f; 4f;
+1 2: 4.s; 8s; 4s; 4f;
+2: 4.c+a-; 8bb-; 4ac; 4ad;
+
+			lyrics 1: "Come, O come to";
+			lyrics 1: "Faith tri-um-phant";
+			lyrics 1: "Shed His pre-cious";
+bar
+//16
+1 1: 4af; 4ge; 2f;
+1 2: 4s; 4s; 2f;
+2: 4c+c; 4bc; 2aff-;
+
+			lyrics 1: "Christ to-day.";
+			lyrics 1: "mounts the sky.";
+			lyrics 1: "blood for Thee.";
+endbar

@@ -1,0 +1,287 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:Carols of Joy
+//		A Choice Collection of Songs and Hymns
+//		For The Sunday-School, Bible Class, 
+//		And the Home Circle
+//		By Frank M. Davis
+//		Publisher: J. L. Rust & Co.
+//		Springfield Ohio
+// 		Copyright 1882
+//		Hymn No.: 95
+
+// Transcribed by: Ted Gatza, Jr. 07/10/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+staffs=2
+	time=6/8
+	key=3#
+
+staff 2
+	key=3#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Precious Words" ""
+   title (2) ""
+   title (11) "" "\f(TI)The words that I speak unto you, they are spirit, and they are life. - Jn.6:63" ""
+   title (11) "" 
+   title (11)" A - 2 - SOL" "" ""
+   title (13) "Mrs. Loula K. Rogers" "" "Rigdon M. McIntosh, 1881"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1: 8ce; ; ; ; ; ;
+2: 8a-a; ; ; ; ; ;
+ 
+
+	VS "<1. >-1|Pre-cious for-ev-er! oh,";
+	VS "<2. >-1|Free-ly He of-fers their";
+	VS "<3. >-1|Wouldst thou re-fuse the sweet";
+bar
+
+//2
+1: 8df; eg; fa; 4.;
+2: 8da; ; ; 4.;
+
+	VS "won-der-ful words,";
+	VS "prom-ise to all,";
+	VS "sol-ace He gives,";
+bar
+
+//3
+1 1: 8ea; ; ; ; eg; a;
+1 2: 8s; ; ; ; ; a;
+2: 8a-c+; ; ; 8ce+; b-d+; a-c+;
+
+	VS "Teach me the path-way of";
+	VS "\"Come un-to me who-so-";
+	VS "In the mid-night of Thy";
+bar
+
+//4
+1: 4.ac+; gb;
+2: 4.ee+; ;
+	
+	VS "du-ty;";
+	VS "ev-er,\"";
+	VS "sor-row?";
+bar
+
+//5
+1: 8ce; ; ; ; ; ;
+2: 8a-a; ; ; ; ; ;
+	VS "Lead me be-side the still";
+	VS "Sin-ners op-pressed with a";
+	VS "Wouldst thou go on in the";
+bar
+
+//6
+1: 8df; eg; fa; 4.;
+2: 8da; ; ; 4.;
+
+	VS "wa-ters of life,";
+	VS "bur-den of woe,";
+	VS "dark-ness of sin,";
+bar
+
+//7
+1: 8ea; eg; ea; gb; ac+; gb;
+2: 8ec+; eb; ec+; ee+; ; ed+;
+
+	VS "Flow-ing thru val-leys of";
+	VS "Drink of the boun-ti-ful";
+	VS "Long-ing for no bright to-";
+bar
+
+//8
+1 1: 4.gb; a;
+1 2: 4.s; a;
+2: 4.ed+; a-c+;
+
+	VS "beau-ty.";
+	VS "riv-er.";
+	VS "mor-row?";
+dblbar
+
+REFRAIN
+
+//9
+1: 8gb; ; ; ; af; gb;
+2: 8ee+; ; ; ; ; ;
+
+	VS "Pre-cious for-ev-er to";
+bar
+
+//10
+1: 8ac+; ae+; ; 4.;
+2: 8ae+; ac+; ; 4.;
+
+	VS "you and to me,";
+bar
+
+//11
+1: 8ee+; ed+; ec+; ; eb; ea;
+2 1: 8ac+; b; a; a-a; b-g; ca;
+2 2: 8s; a; ; s; ; ;
+
+	VS "Words that our Sav-ior has";
+bar
+
+//12
+1: 4.ec+; eb;
+2: 4.ea; eg;
+
+	VS "spok-en,";
+bar
+
+//13
+1: 8ce; ; ; ; ; ;
+2: a-a; ; ; ; ; ;
+
+	VS "Bear-ing sal-va-tion far";
+bar
+
+//14
+1: 8df; eg; fa; 4.;
+2: 8da; ; ; 4.;
+
+	VS "o-ver the sea,";
+bar
+
+//15
+1: 8ea; eg; ea; gb; ac+; gb;
+2: 8ec+; eb; ec+; ee+; ; ed+;
+
+	VS "Heal-ing the hearts that are";
+bar
+
+//16
+1 1: 4.gb; a;
+1 2: 4.s; a;
+2: 4.ed+; a-c+;
+
+	VS "bro-ken!";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+

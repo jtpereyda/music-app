@@ -1,0 +1,171 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Chapel Hymnal
+//		The Pilgrim Press
+//		Congregational Sunday School
+//		and Publishing Society
+//		Boston and Chicago
+//		Copyright 1905
+
+// Transcribed by: Ted Gatza, Jr. 12/10/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "God the Father Almighty" ""
+   title (2)""
+   title (11) "C - 4- SOL" "\s(18)\f(TI)\:Lord,\ You\ have\ bee\|n\ our\ dwelling\ place throughout\ all\ gen\|erations.\ -\ Ps.\ 90:1"""
+   title (13) "Isaac Watts, 1719" " " "William Croft, 1708"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4 	
+	key=c
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=c
+	clef=bass
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1: 4s; 4s; 4s; 4gc;
+2: 4s; 4s; 4s; 4ec;
+
+			lyrics 1: "<1. >-1|Our";
+			lyrics 1: "<2. >-1|Be-";
+			lyrics 1: "<3. >-1|A";
+			lyrics 1: "<4. >-1|Time,";
+			lyrics 1: "<5. >-1|Our";
+bar
+//2
+1 1: 4ec; 4a; 4ge; 4c+e;
+1 2: 4s; 8c bm; 8d ebm; 4s; 4s;
+2 1: 4gc; 8a bm; 8b ebm; 4c+e; 4c+a;
+2 2: 4s; 4f; 4s; 4s; 
+
+			lyrics 1: "God, our Help in";
+			lyrics 1: "fore the hills in";
+			lyrics 1: "thou-sand ages in";
+			lyrics 1: "like an ev-er";
+			lyrics 1: "God, our Help in";
+bar
+//3
+1: 4c+d; 4bd; 4c+e; 4ge;
+2 1: 4af; 4g; 4gc; 4c+c;
+2 2: 4s; 4g; 4s; 4s;
+
+			lyrics 1: "a-ges past, Our";
+			lyrics 1: "or-der stood, Or";
+			lyrics 1: "Thy sight Are like";
+			lyrics 1: "roll-ing stream, Bears";
+			lyrics 1: "ag-es past; Our";
+bar
+newscore
+//4
+1: 4c+e; 4ge; 4ae; 4f#d;
+2: 4c+a-; 4be; 4c+c; 4ad;
+			
+			lyrics 1: "Hope for years to";
+			lyrics 1: "earth re-ceived her";
+			lyrics 1: "an ev-en-ing";
+			lyrics 1: "all its sons a-";
+			lyrics 1: "Hope for years to";
+bar
+//5
+1: 2.gd; 4bd;
+2: 2.bg-; 4g;
+2 2: 2.s; 4g;
+
+			lyrics 1: "come, Our";
+			lyrics 1: "frame, From";
+			lyrics 1: "gone; Short";
+			lyrics 1: "way; They";
+			lyrics 1: "come; Be";
+
+bar
+//6
+1: 4c+e; 4ac; 4d+f; 4bd;
+2 1: 4gc; 4af; 4ad; 4g;
+2 2: 4s; 4s; 4s; 4g;
+
+			lyrics 1: "Shel-ter from the";
+			lyrics 1: "ev-er-last-ing";
+			lyrics 1: "as the watch that";
+			lyrics 1: "fly for-got-ten,";
+			lyrics 1: "Thou our Guard while";
+bar
+newscore
+//7
+1 1: 4c+e; 4ac; 4be; 4g;
+1 2: 4s; 4s; 4s; 4g;
+2: 4gc; 4af; 4g#e; 4c+e;
+
+			lyrics 1: "storm-y blast, And";
+			lyrics 1: "Thou art God, To";
+			lyrics 1: "ends the night Be-";
+			lyrics 1: "as a dream Dies";
+			lyrics 1: "trou-bles last, And";
+bar
+//8
+1: 4af; 4c+c; 4d+f; 4bd;
+2 1: 4c+f; 4ge; 4ad; 4g;
+2 2: 4s; 4s; 4s; 4g;
+
+			lyrics 1: "our e-ter-nal";
+			lyrics 1: "end-less years the";
+			lyrics 1: "fore the ris-ing";
+			lyrics 1: "at the op'-ning";
+			lyrics 1: "our e-ter-nal";
+bar
+//9
+1: 2.c+e; 4s;
+2: 2.gc; 4s;
+
+			lyrics 1: "Home.";
+			lyrics 1: "same.";
+			lyrics 1: "sun.";
+			lyrics 1: "day.";
+			lyrics 1: "Home.";
+dblbar
+//10
+1: 2c+f; 2c+e;
+2: 2af; 2gc;
+
+			lyrics 1: 2s; 2s; "";
+			lyrics 1: 2s; 2s; "";
+			lyrics 1: 2s; 2s; "";
+			lyrics 1: 2s; 2s; "";
+			lyrics 1: "A-MEN.";
+endbar

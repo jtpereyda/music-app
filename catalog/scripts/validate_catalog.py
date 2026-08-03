@@ -198,7 +198,9 @@ def _validate_score(
     if generator == {"name": "abc2xml", "version": "268"}:
         if "abc2xml version 268" not in encoders:
             _error(errors, item_id, "score does not declare abc2xml version 268")
-    elif generator == {"name": "hymns-to-god-mup-satb", "version": "1"}:
+    elif generator.get("name") == "hymns-to-god-mup-satb" and generator.get(
+        "version"
+    ) in {"1", "2"}:
         if not any(value.startswith("music21 v.") for value in encoders):
             _error(errors, item_id, "HymnsToGod score does not declare music21")
     else:
@@ -353,6 +355,22 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
                     display_id,
                     "entry_path is only valid for container source collections",
                 )
+            if collection_id == "hymns-to-god-public-domain-usa":
+                arrangement_id = source.get("arrangement_id")
+                work_id = source.get("work_id")
+                if (
+                    not isinstance(arrangement_id, str)
+                    or not ID_RE.fullmatch(arrangement_id)
+                ):
+                    _error(errors, display_id, "invalid HymnsToGod arrangement_id")
+                if not isinstance(work_id, str) or not ID_RE.fullmatch(work_id):
+                    _error(errors, display_id, "invalid HymnsToGod work_id")
+                if record_reference != arrangement_id:
+                    _error(
+                        errors,
+                        display_id,
+                        "HymnsToGod record_reference must equal arrangement_id",
+                    )
             if isinstance(ordinal, int) and (
                 isinstance(x_reference, str)
                 or isinstance(record_reference, str)

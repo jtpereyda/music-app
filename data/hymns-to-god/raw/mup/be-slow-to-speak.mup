@@ -1,0 +1,193 @@
+// Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Zion's Glad Songs
+//		for All Christian Gatherings 
+//		by M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W.67th Street, Chicago, Il.
+//		Copyright 1908
+//		Hymn no. 93
+
+// Transcribed by: Ted Gatza, Jr. 02/24/2010; Rev. 07/23/2021
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Be Slow To Speak" ""
+   title (2)""
+   title (11)"" "\f(TI)let every man be swift to hear, slow" ""
+   title (11)"" "\f(TI)to speak, slow to wrath: - Jms. 1:19" ""
+   title (13) "Kate Ulmer" " " "M. L. McPhail, 1907"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 8c+e; 8c+e; 8bndn; 8c+e; 4ac; 4ec;
+2: 8aa-; 8aa-; 8aa-; 8aa-; 4ea-; 4aa-;
+
+
+			VS "<1. >-1|Oh, what pain and sor-row,";
+			VS "<2. >-1|Oh, re-mem-ber, Je-sus";
+			VS "<3. >-1|Love that thinks no e-vil,";
+			VS "<4. >-1|Make your life a bless-ing,";
+bar
+//2
+1: 8fd; 8af; 8af; 8fd; 2ec;
+2: 8ad; 8d+d; 8d+d; 8ad; 2aa-;
+
+			VS "bit-ter-ness and woe,";
+			VS "ev-'ry word doth hear,";
+			VS "dwell-ing in the heart,";
+			VS "fol-low aft-er peace,";
+bar
+//3
+1: 8fd; 8af; 8af; 8bf&; 8c+e; 8ae; 8d+e; 8c+e;
+2: 8ad; 8d+d; 8ad; 8ad; 8aa-; 8ac; 8gb-; 8aa-;
+
+			VS "E-vil speak-ing caus-eth in this";
+			VS "By His Ho-ly Spir-it He is";
+			VS "Will its bless-ed sweet-ness to the";
+			VS "Pa-tient-ly pur-sue it from all";
+bar
+//4
+1: 4bdn; 4fd; 2bd&;
+2: 4fb-; 4bb-; 2ge;
+
+			VS "world be-low;";
+			VS "ev-er near;";
+			VS "life im-part;";
+			VS "e-vil cease;";
+bar
+//5
+1: 8c+e; 8c+e; 8bndn; 8c+e; 4ac; 4ec;
+2: 8aa-; 8aa-; 8aa-; 8aa-; 4ea-; 4aa-;
+mussym (9) above 1: 1 "sign";
+
+			VS "Lov-ing hearts are bro-ken,";
+			VS "Think how much He suf-fered";
+			VS "Then each tho't and ac-tion";
+			VS "Scat-t'ring deeds of kind-ness";
+			DSVS "<\f(TX)D.S.\f(TR) - >-1|He will ev-er help you,";
+bar
+//6
+1: 8fd; 8af; 8af; 8d+f&; 2c+e;
+2: 8ad; 8d+d; 8d+d; 8ad; 2aa-;
+
+			VS "dear-est hopes de-stroyed";
+			VS "ere you wound Him more,";
+			VS "by its pow'r con-trolled";
+			VS "speak-ing words of love,";
+			DSVS "if His aid you seek,";
+bar
+//7
+1: 8e+e; 8e+e; 8d+e; 8c+e; 4bd; 4d+f;
+2: 8ac; 8ac; 8gb-; 8aa-; 4fd; 4ad;
+
+			VS "In their beau-ty blight-ed";
+			VS "When the world's re-vil-ing";
+			VS "Word un-kind, 'twill prompt us";
+			VS "Thus the path-way bright-en";
+			DSVS "What-so-e'er be-tid-eth,";
+bar
+//8
+1: 8c+e; 8ec; 8c+e; 8bd; 2ac;
+2: 8ae; 8ae; 8ae; 8ge; 2aa-;
+ital (13) above 1: 4 "Fine.";
+
+			VS "by the thought-less word.";
+			VS "for your sake He bore.";
+			VS "care-ful-ly with-hold.";
+			VS "to your home a-bove.";
+			DSVS "lov-ing-ly to speak.";
+dblbar
+//9
+1: 8e+a; 8e+a; 8d+na; 8e+a; 4c+a; 4ae;
+2 1: 8c+a; 8c+a; 8bn; 8c+a; 4e+a; 4c+aa-;
+2 2: 8s; 8s; 8a; 8s; 4s; 4s;
+//ital (13) above 1: 1 "Chorus";
+CHORUS
+			VS "Ye, who love the Sav-ior";
+bar
+//10
+1: 8fd; 8af; 8af; 8bf&; 2c+e;
+2: 8ad; 8d+d; 8ad; 8ad; 2aa-;
+
+			VS "and would win His smile,";
+bar
+//11
+1: 8be; 8be; 8ane; 8be; 8e+g; 8bg; 8bg; 8af;
+2 1: 8ge; 8ge; 8f#; 8ge; 8be; 8e+e; 8e+e; 8c+a;
+2 2:8s; 8s; 8e; 8s; 8s; 8s; 8s; 8s; 
+
+			VS "Keep your tongue from e-vil and your";
+bar
+//12
+1 1: 4ge; 4fdn; 2e;
+1 2: 4s; 4s; 2e;
+2 1: 4b; 4ab-; 2ge;
+2 2: 4b; 4s; 2s;
+ital above 1: 3 "D.S.";
+
+			VS "lips from guile;";
+endbar
+

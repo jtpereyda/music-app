@@ -1,0 +1,204 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public  domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+
+// 
+
+// Hymn Source: The Assembly Hymn and Song Collection
+//		For use in Chapel, Assembly, Convocation
+//		or General Exercises of Schools, Normals,
+//		Colleges, Universities, Etc.
+//		Compiled and Edited By C. Guy Hoover
+//		Professor of School Music, Theory and Conducting
+//		Chicago
+//		Published by the Author
+//		Authorized Distributers:
+//		Educational Music Bureau
+//		School-Music Supply Department
+//		218 So. Wabash Ave.
+//		Chicago
+//		Copyright: 1912; Revised 1915
+//		Hymn No. 49
+
+//		
+// Transcribed by: Ted Gatza, Jr. 06/16/11
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Praise The Lord! Ye Heavens, Adore Him" ""
+   title (2)""
+   title (11) "C - 3 - SOL" "\s(17)\f(TI)\:Praise\ ye\ Jehovah.\ Praise\ y\|e\ Jehovah\ from\ the\ heavens: Praise\ him\ in\ the\ h\|eights.\ -\ Ps.\ 148:1" ""
+   title (13) "John Kempthorne" "" "John Henry Wilcox, 1849"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/2	
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+
+	midi all: 0 "tempo=130";
+	define VERSE lyrics between 1&2: @
+
+
+//1
+1: 4ge; 4ge; 1s;
+2: 4c+c; 4c+c; 1s;
+
+
+			VERSE "<1. >-1|Praise the";
+			VERSE "<2. >-1|Praise the";
+bar
+//2
+1: 2.ge; 4e+g; 4d+f; 4e+g;
+2: 2.c+c; 4gc; 4ac; 4bc;
+
+			VERSE "Lord! ye heav'ns a-";
+			VERSE "Lord, for He is";
+bar
+//3
+1: 2c+e; ge; 4gc;;
+2: 2c+c;; 4c+e;;
+
+			VERSE "dore Him; Praise Him,";
+			VERSE "glo-rious: Nev-er";
+bar
+//4
+1: 2.fd; 4af; ge; fd;
+2: 2.c+g; 4bg;;;
+
+			VERSE "an-gels in the";
+			VERSE "shall His prom-ise";
+bar
+//5
+1: 2fd slur; ec; 4fb-;;
+2 1: 2c+ slur; g; 4gd;;
+2 2: 1c; 4s;;
+
+			VERSE "height; Sun and";
+			VERSE "fail; God hath";
+bar
+//6
+1: 2.gc; 4e+g; d+f; e+g;
+2: 2.ge; 4gc; ac; bc;
+
+			VERSE "moon, re-joice be-";
+			VERSE "made His saints vic-";
+bar
+//7
+1: 2c+e; 2ge; 4c+e;;
+2: 2c+c;; 4c+a-; aa-;
+
+			VERSE "fore Him; Praise Him,";
+			VERSE "to-rious; Sin and";
+bar
+//8
+1: 2.bd; 4ad; gd; f#c;
+2: 2.gd; 4c+d; bd; ad;
+
+			VERSE "all ye stars of";
+			VERSE "death shall not pre-";
+bar
+//9
+1: 1gb-; 4gd;;
+2: 1gg-; 4bg;;
+
+			VERSE "light. Praise the";
+			VERSE "vail. Praise the";
+bar
+//10
+1: 2. ae; 4; bf;;
+2: 2.c+g; 4; d+g;;
+
+			VERSE "Lord, for He hath";
+			VERSE "God of our sal-";
+bar
+//11
+1: 2c+e;; 4ae;;
+2: 2c+a;; 4;;
+
+			VERSE "spo-ken; Worlds His";
+			VERSE "va-tion; Hosts on";
+bar
+//12
+1: 2.ad#; 4c+d; bd; ad;
+2: 2.c+f; 4af; bf; c+f;
+
+			VERSE "might-y voice o-";
+			VERSE "high His pow'r pro";
+bar
+//13
+1 1: 2a slur; g#; 4gn;;
+1 2: 1e; 4f;;
+2 1: 2c+ slur; b; 4bg;;
+2 2: 1e; 4s;;
+
+			VERSE "bey'd; Laws which";
+			VERSE "claim; Heav'n and";
+bar
+//14
+1: 2.ge; 4e+g; d+f; e+e;
+2: 2.c+c; 4; bg; bg#;
+
+			VERSE "nev-er shall be";
+			VERSE "earth, and all cre-";
+bar
+//15
+1: 2c+e; gc; 4g#d;;
+2 1: 2a; ge; 4be;;
+2 2: 2a; s; 4;;
+
+			VERSE "bro-ken, For their";
+			VERSE "a-tion, Laud and";
+bar
+//16
+1: 4ac; d+f; 2c+e; bd;
+2 1: 4af; ad; 2g; gg-;
+2 2: 4s;; 2g; s;
+
+			VERSE "guid-ance He hath";
+			VERSE "mag-ni-fy His";
+bar
+//17
+1: 1c+e; 2s;
+2: 1gc; 2s;
+
+			VERSE "made.";
+			VERSE "name.";
+endbar

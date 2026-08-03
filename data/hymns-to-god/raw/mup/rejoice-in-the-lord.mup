@@ -1,0 +1,225 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gates Ajar
+//		Hymns and Tunes for 
+//		Use In Sunday Schools, Praise and Prayer Meetings, ertc.
+//		By J. H. Kurzenknabe
+//		J. H. Kurzenknabe & Sons, Publishers,
+//		Harrisburg, PA.:
+//		Copyright: 1885
+//		Hymn No.: 108
+//		
+// Transcribed by: Ted Gatza, Jr. 03/05/2012; Rev. 02/05/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Rejoice In The Lord" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - DO" "\s(17)\f(TI)\:Rejoice\ in\ the\ L\|ord\ always:\ again I\ will\ say,\ Rej\|oice.\ -\ Phil.\ 4:4" ""   
+   title (13) "E. A. Barnes" "" "H. J. Kurzenknabe, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,25
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1: 4bd; 8;; 4be; 8ae; ge;
+2: 4fb-; 8;; 4gb-; 8; ab-;
+
+			VERSE "<1. >-1|Shar-ing so free-ly the";
+			VERSE "<2. >-1|Trust-ing the prom-ise that";
+			VERSE "<3. >-1|Keep-ing the pre-cepts of";
+bar
+//2
+1: 4fd; 8db-; 8ge; 2fd;
+2: 4bb-; 8fb-;; 2bb-;
+
+			VERSE "gifts of the Lord,";
+			VERSE "He will pro-vide,";
+			VERSE "wis-dom and love,";
+bar
+//3
+1: 4bd; 8.; 16; 4s; 8;;
+2: 4fb-; 8.; 16; 4s; 8;;
+
+			VERSE "Lov-ing the";
+			VERSE "Need-ing and";
+			VERSE "Liv-ing that";
+invisbar
+newscore
+
+1: 4s; 8.; 16; 4bd; 8ad; bd;
+2: 4s; 8.; 16; 4gg-; 8;;
+
+			VERSE "gos-pel that";
+			VERSE "hav-ing a";
+			VERSE "our light re-";
+
+bar
+//4
+1 1: 4d+en; 8.c+e; 16be; 2c+;
+1 2: 4s; 8.; 16; 4f slur; e&;
+2: 4ac; 8.; 16; 2af;
+
+			VERSE "naught can de-stroy,";
+			VERSE "lamp at our feet,";
+			VERSE "splen-dent may shine,";
+bar
+//5
+1: 4bd; 8;;;; ae; ge;
+2: 4bb-; 8fb-;;;; gb-; ab-;
+
+			VERSE "Walk-ing as broth-ers in the";
+			VERSE "Know-ing the ref-uge where we";
+			VERSE "Com-ing as broth-ers to the";
+bar
+//6
+1 1: 4fd; 8db-; gd; 4.fd; 8f;
+1 2: 4s; 8;; 4.; 8f;
+2: 4bb-; 8fb-;; 4.bb-; 8bd;
+
+			VERSE "light of the word, Oh,";
+			VERSE "ev-er can hide, Oh,";
+			VERSE "king-dom a-bove, Oh,";
+bar
+//7
+1: 4ge; 8c+en; be; 4af; 8ge&; ae;
+2 1: 4be; 8bc; gc; 4f; 8ff-;;
+2 2: 4s; 8;; 4f; 8s;;
+
+			VERSE "join in our cho-rus of";
+			VERSE "join in our cho-rus so";
+			VERSE "join in our cho-rus di-";
+bar
+//8
+1: 2.bd; 4s;
+2: 2.fb-; 4s;
+
+			VERSE "joy!";
+			VERSE "sweet!";
+			VERSE "vine!";
+dblbar
+newscore
+//8
+1: 4bf; 2.s;
+2: 4bd; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Re-";
+bar
+//9
+1: 4c+f; 8.; 16; 4; 8bd bm; c+f ebm;
+2 1: 4af; 8.; 16; 4af; 8b bm; a ebm;
+2 2: 4s; 8.; 16; 4; 4f;
+
+			VERSE 4; 8.; 16; 4; 4; "joice in the Lord al-";
+			VERSE 4s; 8.s; 16s; 4s; 4; "re-";
+bar
+//10
+1 1: 2.d+; 8.bf; 16;
+1 2: 4f;;; 8.s; 16;
+2: 4bb-;;; 8.d+b-; 16bd;
+
+			VERSE "ways, And a-";
+			VERSE 4; 4; 4; 8.s; 16s; "joice al-ways,";
+bar
+//11
+1 1: 4c+e;; 8s;;;;
+1 2: 4s;;;;
+2: 4af;; s;;
+
+			VERSE 4; 4; 4s; 4s; "gain I";
+invisbar
+newscore
+
+1 1: 4s;; 8b bm; a ebm; g bm; a ebm;
+1 2: 4s;; 4e;;
+2: 4s;; c+f;;
+
+			VERSE 4s; 4s; 4; 4; "say, re-";
+
+bar
+//12
+1 1: 2.b; 4fd;
+1 2: 4d; e; d; s;
+2 1: 4b; g; f; bb-;
+2 2: 2.b-; 4s;
+
+			VERSE "joice! Re-";
+			VERSE 4s; 4; 4; 4s; "re-joice!";
+bar
+//13
+1 1: 4bd; 8.; 16; 8bd bm; d+f ebm; c+bm; b ebm;
+1 2: 4s; 8.s; 16s; 4; 4f;
+2: 4fb-; 8.; 16; 4bb-; 8ac bm; bd ebm;
+
+			VERSE 4; 8.; 16; 4; 4; "joice in the Lord al-";
+			VERSE 4s; 8.s; 16s; 4s; 4; "re-";
+bar
+//14
+1 1: 2.g; 8.e+g; 16c+e;
+1 2: 4e;;; 8.s; 16;
+2: 4be;;; 8.; 16ge;
+
+			VERSE "ways, And a-";
+			VERSE 4; 4; 4; 8.s; 16s; "joice al-ways,";
+bar
+//15
+1: 4bd;; ac; c+e;
+2 1: 4f;;; ff-;
+2 2: 4f;;; 4s;
+
+			VERSE "gain I say, re-";
+bar
+//16
+1: 2.bd; 4r;
+2: 2.fb-; 4r;
+
+			VERSE "joice!";
+endbar

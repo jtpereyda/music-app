@@ -1,0 +1,246 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Awakening Songs
+//		For The Church, Sunday School and
+//		Evangelistic Services
+//		Homer A. Rodeheraver, Compiler
+//		Chas. H. Gabriel Music Editor
+//		Publisher: The Rodeheaver Company
+//		Monon Building, Chicago
+//		commercial Building, Philadelphia
+//		Copyright 1917
+//		Hymn No.: 4
+//		
+// Transcribed by: Ted Gatza, Jr. 09/26/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "It Is Thy Blood, My Jesus" ""
+   title (2)""
+   title (11) "D \(flat) - 3 - MI" "\s(17)\f(TI)\:and\ the\ blood\ of\ Jesus\ his\ Son\ cleanseth\ us\ from\ all\ sin.\ -\ 1\ Jn.\ 1:7 \(space)" ""
+   title (13) "Helen Ashland Kean" "" "Chas. H. Gabriel, 1917"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1: 8fd; 8fd; 8af; 4.s;
+2: 8ad; 8ad; 8d+d; 4.s;
+
+
+			VERSE "<1. >-1|It is Thy";
+			VERSE "<2. >-1|It is Thy";
+			VERSE "<3. >-1|It was Thy";
+
+bar
+//2
+1: 2af; 4bg;
+2: 2d+d; 4d+g-;
+
+			VERSE "blood, my";
+			VERSE "cross, my";
+			VERSE "death, my";
+bar
+//3
+1: 4fd; 8ec; 8ec; 8ec; 8fd;
+2 1: 4aa-; 8aa-; 8aa-; 8a; 8af;
+2 2: 4s; 8s; 8s; 8g; 8s;
+
+			VERSE "Je-sus, That has re-";
+			VERSE "Sav-ior, That makes my";
+			VERSE "Je-sus, That bro't im-";
+bar
+//4
+1: 2ge; 4ac;
+2: 2ae; 4aa-;
+
+			VERSE "deemed my";
+			VERSE "cross so";
+			VERSE "mor-tal";
+bar
+//5
+1: 4.fd; 8af; 8af;8af;
+2: 4.ad; 8d+d; 8d+d; 8d+d;
+
+			VERSE "soul; It is Thy";
+			VERSE "light; It is Thy";
+			VERSE "life; Thy vic-t'ry";
+bar
+//6
+1: 2d+f; 4af;
+2: 2ad; 4d+d;
+
+			VERSE "love, O";
+			VERSE "strength, O";
+			VERSE "'twas, O";
+bar
+//7
+1 1: 4c+a; 8bg; 8bg; 8b; 8b;
+1 2: 4s; 8s; 8s; 8a; 8a;
+2: d+g; 8d+g; 8d+g; 8d+nf; 8d+f;
+
+			VERSE "Je-sus, That makes me";
+			VERSE "Je-sus, That makes my";
+			VERSE "Je-sus, That bids me";
+bar
+//8
+1: 2e+gn; 4d+g;
+2: 2d+e; 4e+e;
+
+			VERSE "pure and";
+			VERSE "weak-ness";
+			VERSE "cease from";
+bar
+//9
+1 1: 4.c+g&; 8a; 8bg; 8c+g;
+1 2: 4.s; 8g; 8s; 8s;
+2 1: 4.e+a-; 8c+a; 8c+a; 8a;
+2 2: 4.s; 8s; 8s; 8a;
+
+			VERSE "whole; It is Thy";
+			VERSE "might. Thy Spir-it's";
+			VERSE "strife. For Thou hast";
+bar
+//10
+1: 2d+f; 4af;
+2: 2ad; 4d+d;
+
+			VERSE "Spir-it";
+			VERSE "voice doth";
+			VERSE "con-quer'd";
+bar
+//11
+1 1: 8c+a; 8bg; 8bg; 8e; 8e; 8e;
+1 2: 8s; 8s; 8s; 8d; 8d; 8d;
+2: 8d+g; 8d+g; 8d+g; 8bg; 8bg; 8bg;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "call-ing me To light and";
+			VERSE "call me home, And bids me";
+			VERSE "all for me, I shall have";
+bar
+//12
+1: 4.ad; 8ge; 8fd; 8ec;
+2 1: 4.d+f; 8bg; 8a; 8ga-;
+2 2: 4.s; 8s; 8a; 8s;
+
+			VERSE "life and joy in";
+			VERSE "nev-er more to";
+			VERSE "peace e-ter-nal-";
+bar
+//13
+1 1: 2d; 4s;
+1 2: 2d; 4s;
+2: 2fd; 4s;
+
+			VERSE "Thee.";
+			VERSE "roam.";
+			VERSE "ly.";
+dblbar
+//14
+1: 4d+f; 2s;
+2: 4ad; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"It";
+bar
+//15
+1: [up]8d+g; 8c+g; 4c+g; 4bg;
+2: 8ae; 8ae; 4e+a; 4c+a-;
+
+			VERSE [c]"is Thy blood, O";
+bar
+//16
+1: 4bf; 4af; 4fd;
+2: 4d+d; 4d+d; 4ad;
+
+			VERSE [c]"Je-sus, That";
+bar
+//17
+1: 4.ac; 8ec; 8bc; 8ac;
+2: 4.ga-; 8ga-; 8ga-; 8aa-;
+
+			VERSE "makes me Thine for-";
+bar
+//18
+1: 4fd; 4af; 4d+f;
+2: 4ad; 4d+d; 4ad;
+
+			VERSE "ev-er; It";
+bar
+//19
+1: [up]8d+g; 8c+g; 4c+g; 4bg;
+2: 8ae; 8ae; 4e+g; 4c+a-;
+
+			VERSE "flowed for me to";
+bar
+//19
+1 1: 8bf; 8af; 4d+d; 4d;
+1 2: 8s; 8s; 4s; 4d;
+2: 8d+d; 8d+c&; 4gb-; 4gnb-&&;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "set me free, My";
+bar
+//20
+1: 8fd; 8bd; 4ad; 4fd;
+2: 8aa-; 8ga-; 4fa-; 4aa-;
+
+			VERSE "pre-cious Lord\(emdash) my";
+bar
+//21
+1 1: 4ec; 8d; 4.s;
+1 2: 4s; 8d; 4.s;
+2: 4ga-; 8fd; 4.s;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "Sav-ior.";
+endbar

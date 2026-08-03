@@ -1,0 +1,309 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Song Treasury
+//		 A collection of Songs and Music, especially adapted for
+//		 Sunday-Schools, Praise and Prayer Meetings,
+//		 Church Choirs and the Home Circle.
+//		 Also Containing Selections for
+//		 Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		 Together with a
+//		 Complete Course of Elementary Instruction of all the art of
+//		 Reading music at sight
+//		 By J. H. Kursenknabe,
+//		 Publishers: Crider & Brother
+//		 York, PA
+//		 Copyright 1879
+//		 Hymn No.: 158
+//		
+// Transcribed by: Ted Gatza, Jr. 09/21/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Be Thou Faithful Unto Death" ""
+   title (2)""
+   title (11) "D - 3 - MI" "\s(17)\f(TI)\:Be\ thou\ faithful\ unt\|o\ death,\ and\ I\ will give\ thee\ a\ crown\ \^of\ life.\ -\ Rev.\ 2:10" ""
+   title (13) "Anon." "" "Mary L. Melott"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/2	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=155";
+
+//1
+1: 4fd; 4ge; 2.s; 4s;
+2: 4ad; 4ad; 2.s; 4s;
+
+
+			VERSE "<1. >-1|Chris-tian";
+			VERSE "<2. >-1|It is";
+			VERSE "<3. >-1|Oh, then";
+			VERSE "<4. >-1|Though thy";
+
+bar
+//2
+1: 4af; 2.d+a; 4bg; 4d+g;
+2: 4d+d; 2.d+f; 4d+g; 4bg;
+
+			VERSE "work-er. be thou";
+			VERSE "Christ him-self has";
+			VERSE "go to work for";
+			VERSE "days of life be";
+bar
+//3
+1 1: 4af; 2.fd; 4d; 4e;
+1 2: 4s; 2.s; 4s; 4d;
+2: 4d+d; 2.ad; 4fd; 4ad;
+
+			VERSE "faith-ful Till life's";
+			VERSE "prom-ised, And his";
+			VERSE "Je-sus, Gird thy-";
+			VERSE "man-y, On-ly";
+bar
+//4
+1: 2.fd; 4bg; 4af; 4fd;
+2: 2.ad; 4d+d; 4d+d; 4ad;
+
+			VERSE "toil and care be";
+			VERSE "word is ev-er";
+			VERSE "self with strength a-";
+			VERSE "those who will en-";
+bar
+//5
+1: 1ec; 4fd; 4ge;
+2: 1aa-; 4ad; 4ad;
+
+			VERSE "o'er; See, a";
+			VERSE "sure. To re-";
+			VERSE "new; There is";
+			VERSE "dure, In the";
+bar
+//6
+1: 4af; 2.d+a; 4bg; 4d+g;
+2: 4d+d; 2.d+f; 4d+g; 4bg;
+
+			VERSE "crown is wait-ing";
+			VERSE "ward the faith-ful";
+			VERSE "room a-mong the";
+			VERSE "glo-ri-ous here-";
+bar
+//7
+1: 4af; 2.fd; 4d+f; 4d+f;
+2: 4d+d; 2.ad; 4ad; 4ad;
+
+			VERSE "for thee, O-ver";
+			VERSE "ser-vant, Who shall";
+			VERSE "reap-ers. Go be";
+			VERSE "af-ter, Shall the";
+bar
+//8
+1: 2.c+e; 4bd; 4ad; 4g#d;
+2: 2.ae; 4g#e; 4c+e; 4be;
+
+			VERSE "on the oth-er";
+			VERSE "to the end en-";
+			VERSE "faith-ful and be";
+			VERSE "crown of life se-";
+bar
+//9
+1: 1ac; 4fd; 4af;
+2: 1aa-; 4ad; 4ad;
+
+			VERSE "shore; When at";
+			VERSE "dure, That a";
+			VERSE "true; There to";
+			VERSE "cure. Then toil";
+bar
+//10
+1: 4d+f; 2.f+a; 4e+a; 4d+a;
+2: 4ad; 2.d+d; 4c+e; 4d+f;
+
+			VERSE "last thy jour-ney";
+			VERSE "crown of life a-";
+			VERSE "gath-er with the";
+			VERSE "on and work for";
+bar
+//11
+1: 4d+g; 2.bg; 4ec; 4fd;
+2 1: 4bg; 2.d+g; 4a; 4a;
+2 2: 4s; 2.s; 4a; 4a;
+
+			VERSE "end-ed, Thou shalt";
+			VERSE "waits them, Who are";
+			VERSE "glean-ers, Sheaves of";
+			VERSE "Je-sus, Work and";
+bar
+//12
+1: 2.ge; 4c+g; 4bg; 4ae;
+2: 2.aa-; 4c+a-; 4c+a-; 4c+a-;
+
+			VERSE "with the an-gels";
+			VERSE "faith-ful to the";
+			VERSE "bright and rip-end";
+			VERSE "la-bor for the";
+bar
+//13
+1: 2af slur; 2fd; 4fd; 4af;
+2: 1ad; 4d+d; 4d+d;
+
+			VERSE "join, And a";
+			VERSE "end, In a";
+			VERSE "grain; Help to";
+			VERSE "Lord, Till the";
+bar
+//14
+1: 4d+f; 2.f+a; 4s; 4s;
+2: 4d+d; 2.d+d; 4s; 4s;
+
+			VERSE "crown of";
+			VERSE "home at";
+			VERSE "fill the";
+			VERSE "Mas-ter";
+invisbar
+newscore
+
+1: 4s; 2.s; 4e+a; 4d+a;
+2: 4s; 2.s; 4c+e; 4d+f;
+
+			VERSE "fade-less";
+			VERSE "last in";
+			VERSE "Mas-ter's";
+			VERSE "of the";
+
+bar
+//15
+1: 4bg; 2.d+g; 4d+g; 4d+g;
+2: 4d+g; 2.bg; 4bg; 4bg;
+
+			VERSE "glo-ry, Then, Oh";
+			VERSE "heav-en, With the";
+			VERSE "gar-ner, None shall";
+			VERSE "vine-yard, Calls thee";
+bar
+//16
+1: 2.e+g; 4c+g; 4bg; 4c+g;
+2 1: 2.a; 4e+a; 4e+a; 4e+a;
+2 2: 2.a; 4s; 4s; 4s;
+
+			VERSE "chris-tian, shall be";
+			VERSE "dy-ing chris-tian's";
+			VERSE "la-bor e'er in";
+			VERSE "to thy great re-";
+bar
+//17
+1: 1d+f; 2s;
+2: 1d+d; 2s;
+
+			VERSE "thine!";
+			VERSE "friend.";
+			VERSE "vain.";
+			VERSE "ward.";
+dblbar
+//18
+1: 4fd; 4ge; 1s;
+2: 4r; 4r; 1s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Then be";
+bar
+//19
+1: 4af; 2.fd; 4bg; 4d+g;
+2: 4r; 4r; 4ad; 4ad; 4r; 4r;
+
+			VERSE "faith-ful, ev-er";
+			VERSE 4s; 4s; 4; 4; 4s; 4s; "faith-ful";
+bar
+//20
+1: 4af; 2.fd; 4af; 4fd;
+2: 4r; 4r; 4ad; 4ad; 4ad; 4ad;
+
+			VERSE "faith-ful, Faith-ful";
+			VERSE 4s; 4s; 4; 4; 4s; 4s; "faith-ful";
+bar
+//21
+1: 2.ec; 4bg; 4ac; 4gc;
+2: 2.aa-; 4aa-; 4aa-; 4aa-;
+
+			VERSE "to thy lat-est";
+bar
+//22
+1: 1fd; 4s; 4s;
+2: 1ad; 4s; 4s;
+
+			VERSE "breath,";
+invisbar
+newscore
+
+1: 1s; 4fd; 4af;
+2: 1s; 4d+d; 4d+d;
+
+			VERSE "For a";
+
+bar
+//23
+1: 4d+f; 2.f+a; 4e+a; 4d+a;
+2: 4d+d; 2.d+d; 4c+e; 4d+f;
+
+			VERSE "fade-less crown a-";
+bar
+//24
+1: 4bg; 2.d+g; 4d+g; 4d+g;
+2: 4d+g; 2.bg; 4bg; 4bg;
+
+			VERSE "waits them, Who prove";
+bar
+//25
+1: 2.e+g; 4e+g; 4d+f; 4c+e;
+2 1: 2.a; 4a; 4aa-; 4aa-;
+2 2: 2.a; 4a; 4s; 4s; 
+
+			VERSE "faith-ful un-to";
+bar
+//26
+1: 1d+f; 2s;
+2: 1ad; 2s;
+
+			VERSE "death.";
+endbar

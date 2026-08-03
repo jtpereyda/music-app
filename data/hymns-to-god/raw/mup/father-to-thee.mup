@@ -1,0 +1,149 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Thanksgiving
+//		Prepared by D. B. Towner Mus. Doc.
+//		Director of the Music Course of the
+//		Moody Bible Institute of Chicago
+//		Fleming H. Revell Company
+//		New York, 158 fifth Avenue
+//		Chicago, 125 N. Wabash Avenue
+//		Toronto, London, Edinburgh
+//		Copyright 1913
+//		Hymn No.: 103
+//		
+// Transcribed by: Ted Gatza, Jr. 01/04/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Father, To Thee" ""
+   title (2)""
+   title (11) "F - 4 - MI" "\s(17)\f(TI)\:...when\ my\ heart\ is\ over\|whelmed:\ Lead\ me\ to\ the rock\ that\ is\ highe\|r\ than\ I.\ -\ Ps.\ 61:2" ""   
+   title (13) "C. I. Stacy" "" "E. O. Sellers, 1903"
+ 
+footer
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 2af; 4bf; af;
+2: 2c+f; 4d+f; c+f;
+
+			VERSE "<1. >-1|Out of the";
+			VERSE "<2. >-1|Out of the";
+			VERSE "<3. >-1|Out of the";
+			VERSE "<4. >-1|Hear Thou this";
+			
+bar
+//2
+1 1: 4.af; 8g; 2ge;
+1 2: 4.s; 8f; 2s;
+2: 4.bnd; 8; 2c+c;
+
+			VERSE "dark-'ning sin,";
+			VERSE "fear and doubt,";
+			VERSE "gloom and woe";
+			VERSE "fee-ble prayer;";
+bar
+//3
+1: 2c+e; 4ge; 4bg;
+2: 2gc; 4c+c; c+e;
+
+			VERSE "'Mid foes with-";
+			VERSE "A-mid the";
+			VERSE "Of toil-some";
+			VERSE "Do Thou the";
+bar
+//4
+1: 4.bf; 8af; 2af;
+2: 4.d+f; 8c+f; 2;
+
+			VERSE "out, with-in,";
+			VERSE "strife with-out,";
+			VERSE "life be-low,";
+			VERSE "way pre-pare";
+bar
+//5
+1: 2c+f; 4bf; af;
+2: 2af; 4d+f; c+f;
+
+			VERSE "I would the";
+			VERSE "I would my";
+			VERSE "O let my";
+			VERSE "And take me";
+bar
+//6
+1 1: 4g; af; 2be;
+1 2: 4f; s; 2;
+2 1: 4b; c+a; 2c+g;
+2 2: 4b; s; 2;
+
+			VERSE "way be-gin,";
+			VERSE "hands reach out,";
+			VERSE "spir-it go,";
+			VERSE "o-ver there,";
+bar
+//7
+1 1: 2af; 4ae; g;
+1 2: 2s; 4; 8e bm; c ebm;
+2: 2c+c; 4; bc;
+
+			VERSE "Fa-ther, to";
+			VERSE "Fa-ther, to";
+			VERSE "Fa-ther, to";
+			VERSE "Fa-ther, to";
+bar
+//8
+1: 2.fc; 4r;
+2: 2.af; 4r;
+
+			VERSE "Thee.";
+			VERSE "Thee.";
+			VERSE "Thee.";
+			VERSE "Thee.";
+endbar
+title (20) ""
+title (11) "" "Public Domain" "HymnsToGod.org"

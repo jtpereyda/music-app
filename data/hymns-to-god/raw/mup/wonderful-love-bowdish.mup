@@ -1,0 +1,224 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom Of Song
+//		A collection of Songs for
+//		Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited by T. M. Bowdish
+//		Published by the W. W. Whitney Co.
+//		Entered At Stationers Hall, London England
+//		Copyrigght 1900
+//		Hymn No.: 26
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 03/29/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Wonderful Love" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - SOL" "\s(17)\f(TI)\:Behold\ what\ manner\|\ of\ love\ the\ Father hath\ bestowed\ up\^on\ us,\ -\ 1\ Jn.\ 3:1" ""
+   title (13) "Adaline H. Berry" " " "T. M. Bowdish" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=70";
+
+//1
+1: 8be; 4.s; 4s;
+2: 8ge; 4.s; 4s;
+
+			VERSE "<1. >-1|I'll";
+			VERSE "<2. >-1|I'll";
+			VERSE "<3. >-1|I'll";
+bar			
+//2
+1 1: 8.be; 16ae; 8ge;; f; ge;
+1 2: 8.s; 16; 8;; e; s;
+2: 8.ge; 16c+e; 8be;; ae; be;
+
+			VERSE "sing of the Sav-iour who";
+			VERSE "fol-low my Je-sus, he's";
+			VERSE "work where he needs me to";
+bar
+//3
+1: 8af; bg; af; 4ge; 8fb-;
+2: 8bb-;;; 4be; 8ae;
+
+			VERSE "came to my soul With";
+			VERSE "hold-ing my hand, What-";
+			VERSE "gath-er his sheaves, And";
+bar
+//4
+1: 8ec; ae; c+e; 8be tie;; ge;
+2: 8aa-; c+a-; aa-; 8ge tie;; be;
+
+			VERSE "won-der-ful love for";
+			VERSE "ev-er the path he";
+			VERSE 8; 8; 8; 8; 8; 8; "this my af-fec-tion shall";
+bar
+//5
+1: 4.fd; 4r; 8bd;
+2: 4.bb-; 4r; 8ab-;
+
+			VERSE "me; He";
+			VERSE "choose; I'll";
+			VERSE "prove; And";
+bar
+//6
+1: 8.be; 16ae; 8ge;; fb-; eb-;
+2: 8.ge; 16c+e; 8be;; ae; ge;
+
+			VERSE "can-celed my sin from the";
+			VERSE "give up my heart and my";
+			VERSE "all my life long let my";
+bar
+//7
+1: 8ge; ad; be; 4c+e; 8ae;
+2 1: 8be; bf; bg; 4a; 8c+a-;
+2 2: 8s;;; 4a; 8s;
+
+			VERSE "rec-ord on high, And";
+			VERSE "strength and my will, My";
+			VERSE "glad re-deemed soul, Give";
+bar
+//8
+1: 8.ge; 16fb-; 8eb-; db-; eb-; fd;
+2: 8.bb-; 16ab-; 8gb-; fb-; gb-; ab-;
+
+			VERSE "now from its bond-age I'm";
+			VERSE "all for the Mas-ter to";
+			VERSE "thanks for his won-der-ful";
+bar
+//9
+1 1: 4.e tie; 4; 8s;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "free.";
+			VERSE "use.";
+			VERSE "love.";
+dblbar
+//10
+1: 8bg; 4.s; 4;
+2: 8be; 4.s; 4;
+ital (13) above 1: 1 "Chorus";	
+
+			VERSE "I'll";
+bar
+//11
+1: 8.af; 16ge; 8af; fd; ge; af;
+2 1: 8.bb-; 16; 8; b; bg; bf;
+2 2: 8.s; 16; 8; a; s;;
+
+			VERSE "tell how he left his dear";
+bar
+//12
+1: 8bg; ge; c+e; 4be; 8e+g;
+2: 8be;; ae; 4ge; 8be;
+
+			VERSE "Fa-ther a-bove To";
+bar
+//13
+1: 8.d+f; 16c+e; 8bd; s; s; s;
+2 1: 8.bf; 16anf; 8bf; s;;;
+2 2: 8.s; 16; 8; s;;;
+
+			VERSE "live a-mong ";
+//			VERSE 8.s; 16s; 8s; 8s; 8s; 8; "yes,";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8anc; bd; c+e;
+2 1: 8.s; 16s; 8s; f;;;
+2 2: 8.s; 16; 8; f;;;
+
+			VERSE "sin-ners like";
+			VERSE 8.s; 16s; 8s; 8s; 8s; 8; "yes,";
+
+bar
+//14
+1 1: 4.b tie; 4; 8ad;
+1 2: 8d;; e; f bm; e ebm; s;
+2 1:8f;; g; a bm; g ebm; 8bb-;
+2 2: 4.b- tie; 4; 8s;
+
+			VERSE "me_ To";
+			VERSE 8; 8; 8; 4; 8s; "sin-ners like me;";
+bar
+//15
+1: 8.ge; 16fb-; 8eb-; be; ae; ge;
+2: 8.be; 16ae; 8ge;; c+e; be;
+
+			VERSE "die 'mid the thorns and the";
+bar
+//16
+1: 8ge; ad; be; 4c+e; 8ae;
+2 1: 8be; bf; bg; 4a; 8c+a-;
+2 2: 8s;;; 4a; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "shame on the cross\(emdash) O";
+bar
+//17
+1: 8.ge; 16fb-; 8eb-; db-; eb-; fd;
+2: 8.bb-; 16ab-; 8gb-; fb-; gb-; ab-;
+
+			VERSE "won-der-ful\(emdash) how could it";
+bar
+//18
+1 1: 4.e tie; 4; 8s;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8s;
+
+			VERSE "be.";
+endbar

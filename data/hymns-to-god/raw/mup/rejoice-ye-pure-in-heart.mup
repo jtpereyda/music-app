@@ -1,0 +1,250 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Hymnal For American Youth
+//		Edited By: H Augustine Smith, A. M.
+//		Professor of Church Worship, Music,
+//		Hymody and Pageantry, Boston University
+//		The Century Co.
+//		New York
+//		Copyright: 1919
+//		Hymn No.: 1
+//		
+// Transcribed by: Ted Gatza, Jr. 09/18/2012; rev. 05/04/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Rejoice, Ye Pure In Heart" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(17)\f(TI)\:Glory\ ye\ in\ his\ holy\ nam\|e:\ let\ the\ heart\ of\ them rejoice\ that\ seek\ the\|\ LORD.\ -\ Ps.\ 105:3" ""   
+   title (13) "Edward A. Plumptre, 1865" "" "Arthur H. Messiter, 1883"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=95";
+
+//1
+1: 4gd; 2.s;
+2: 4bg; 2.s;
+
+			VERSE "<1. >-1|Re-";
+			VERSE "<2. >-1|Bright";
+			VERSE "<3. >-1|With";
+			VERSE "<4. >-1|With";
+			VERSE "<5. >-1|Yes,";
+			VERSE "<6. >-1|Still";
+bar
+//2
+1 1: 4d+d; 8b bm; a ebm; 4g; ad;
+1 2: 4s; f; g; s;
+2 1: 4af; 8d+ bm; c+ ebm; 4be; fd;
+2 2: 4s; 4d; s;;
+
+			VERSE 4; 4; 4; 4; "joice, ye pure in";
+			VERSE 4; 4; 4; 4; "youth and snow-crowned";
+			VERSE 4; 4; 4; 4; "all the an-gel";
+			VERSE 4; 4; 4; 4; "voice as full and";
+			VERSE 4; 4; 4; 4; "on through life's long";
+			VERSE 4; 4; 4; 4; "lift your stan-dard";
+bar
+//3
+1: 2.bd; 4bd#;
+2 1: 2.g; 4af;
+2 2: 2.g; 4s;
+
+			VERSE "heart, Re-";
+			VERSE "age, Strong";
+			VERSE "choirs, With";
+			VERSE "strong As";
+			VERSE "path, Still";
+			VERSE "high, Still";
+bar
+//4
+1: 4be; 8ge bm; af ebm; 4s; s;
+2: 4ge; 8bg bm; af ebm; 4s; s;
+
+			VERSE 4; 4; 4s; 4s; "joice, give";
+			VERSE 4; 4; 4s; 4s; "men and";
+			VERSE 4; 4; 4s; 4s; "all the";
+			VERSE 4; 4; 4s; 4s; "o-cean's";
+			VERSE 4; 4; 4s; 4s; "chant-ing";
+			VERSE 4; 4; 4s; 4s; "march in";
+invisbar
+newscore
+
+1: 4s; 8s; s; 4bg; c+#g;
+2: 4s; 8s; s; 4ge; ae;
+
+			VERSE 4s; 4s; 4; 4; "thanks and";
+			VERSE 4s; 4s; 4; 4; "maid-ens";
+			VERSE 4s; 4s; 4; 4; "saints on";
+			VERSE 4s; 4s; 4; 4; "surg-ing";
+			VERSE 4s; 4s; 4; 4; "as ye";
+			VERSE 4s; 4s; 4; 4; "firm ar-";
+
+
+
+bar
+//5
+1: 2.d+f; 4d+fn;
+2: 2.ad; 4bg;
+
+			VERSE "sing; Your";
+			VERSE "fair, Raise";
+			VERSE "earth, Pour";
+			VERSE "praise, Send";
+			VERSE "go; From";
+			VERSE "ray, As";
+bar
+//6
+1 1: 4e+e; 8d+ bm; c+ ebm; 4be;;
+1 2: 4s; e; s;;
+2 1: 4c+c; 8b bm; a ebm; 4ae; g#e;
+2 2: 4s; c; s;;
+
+			VERSE 4; 4; 4; 4; "fes-tal ban-ner";
+			VERSE 4; 4; 4; 4; "high your free, ex-";
+			VERSE 4; 4; 4; 4; "out the strains of";
+			VERSE 4; 4; 4; 4; "forth the hymns our";
+			VERSE 4; 4; 4; 4; "youth to age, by";
+			VERSE 4; 4; 4; 4; "war-riors thro' the";
+bar
+//7
+1 1: 8b bm; a ebm; s; s; 4s; s;
+1 2: 4e; s; s; s;
+2 1: 4af; 8s; s; 4s; s;
+2 2: 4s; s; s;;
+
+			VERSE 4; 4s; 4s; 4s; "wave";
+			VERSE 4; 4s; 4s; 4s; "ult-";
+			VERSE 4; 4s; 4s; 4s; "joy ";
+			VERSE 4; 4s; 4s; 4s; "fa-";
+			VERSE 4; 4s; 4s; 4s; "night";
+			VERSE 4; 4s; 4s; 4s; "dark-";
+invisbar
+newscore
+
+1 1: 8s; s; g# bm; aebm; 4be; e;
+1 2: 4s; d#; s; e;
+2 1: 4s; 8b bm; a ebm; 4g#e; gd;
+2 2: 4s; b-; s;;
+
+			VERSE 4s; 4; 4; 4; "on high,\(emdash) The";
+			VERSE 4s; 4; 4; 4; "ing song, God's";
+			VERSE 4s; 4; 4; 4; "and bliss, True";
+			VERSE 4s; 4; 4; 4; "thers loved, The";
+			VERSE 4s; 4; 4; 4; "and day, In";
+			VERSE 4s; 4; 4; 4; "ness toil Till";
+
+bar
+//8
+1: 4ae; be; c+e; bd;
+2 1: 4ac; gnb-;; g;
+2 2: 4s;;; 8b- bm; c ebm;
+
+			VERSE "cross of Christ your";
+			VERSE "won-drous praise de-";
+			VERSE "rap-ture, no-blest";
+			VERSE "psalms of an-cient";
+			VERSE "glad-ness and in";
+			VERSE "dawns the gold-en";
+bar
+//9
+1: 2.ad; 4s;
+2: 2.fd; 4s;
+
+			VERSE "King;";
+			VERSE "clare.";
+			VERSE "mirth!";
+			VERSE "days.";
+			VERSE "woe.";
+			VERSE "day.";
+dblbar
+newscore
+//10
+1: 4d+d; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			
+			VERSE "Re-";
+bar
+//11
+1: 2.d+d; 4d+d;
+2: 4r; 8fd bm; ge ebm; 2af;
+
+			
+			VERSE "joice, re-";
+			VERSE 4s; 4; 2; "Re-joice,";
+bar
+//12
+1: 2.d+d; 4dg;
+2: 4r; 8ge bm; af ebm; 4bg; 4bfn;
+
+			VERSE "joice, Re-";
+			VERSE 4s; 4; 4; 4s; "re-joice,";
+bar
+//13
+1 1: 4c+g; 8b bm; a ebm; 4bg; af;
+1 2: 4s; g; s;;
+2: 4c+e; 8d+d bm; e+c ebm; 4d+d; c+d;
+
+			VERSE 4; 4; 4; 4; "joice, give thanks and";
+bar
+//14
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bgg-; 4s;
+
+			VERSE "sing!";
+endbar
+1: 2gc; gb-;
+2: 2ec; dg-;
+
+			VERSE "A-MEN.";
+endbar

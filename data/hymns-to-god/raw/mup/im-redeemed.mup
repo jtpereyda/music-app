@@ -1,0 +1,221 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs of Redeeming Love
+//		Edited by: Jno. R. Sweeney,
+//		C. C. McCabe, T. C. O'Kane,
+//		W. J. Kirkpatrick.
+//		Philadelphia: John J. Hood. 1018 Arch Street
+//		Cincinnati: Walden & Stowe, St. Louis & Chicago
+//		Copyright 1882	
+//		Hymn no. 20
+
+// Transcribed by: Ted Gatza, Jr. 02/14/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I'm Redeemed" ""
+   title (2)""
+   title (11) "A \(flat)- 4 - SOL" "\s(17)\f(TI)\:Behold\ the\ Lamb\ of\ God\ -\ Jn.\ 1:29 \(space)" ""
+   title (13) "T. C. O'Kane" "" "T. C. O'Kane, 1884"
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1: 2.s; 4ec;
+2: 2.s; 4aa-;
+
+			lyrics 1: "<1. >-1|O,";
+			lyrics 1: "<2. >-1|O,";
+			lyrics 1: "<3. >-1|All";
+bar
+//2
+1: 4.c+e; 8c+e; 8d+f bm; 8c+e ebm; 8bd bm; 8ac ebm;
+2: 4.aa-; 8aa-; 4aa-; 4aa-;
+
+			lyrics 1: 4.; 8; 4; 4; "sing of Je-sus,";
+			lyrics 1: 4.; 8; 4; 4; "won-drous power of";
+			lyrics 1: 4.; 8; 4; 4; "glo-ry now to";
+bar
+//3
+1 1: 4.af; 8af; 8b bm; 8a ebm; 8g bm; 8f ebm;
+1 2: 4.s; 8s; 4f; 4d;
+2 1: 4.ad; 8d+d; 8d+ bm; 8c+ ebm; 8b bm; 8a ebm;
+2 2: 4.s; 8s; 4d; 4d;
+
+			lyrics 1: 4.; 8; 4; 4; "\"Lamb of God,\" Who";
+			lyrics 1: 4.; 8; 4; 4; "love di-vine! So";
+			lyrics 1: 4.; 8; 4; 4; "Christ the Lord, And";
+bar
+//4
+1: 4ec; 4ae; 4be; 4c+e;
+2: 4aa-; 4ac; 4ge; 4ae;
+
+			lyrics 1: "died on Cal-va-";
+			lyrics 1: "pure, so full, so";
+			lyrics 1: "ev-er-more shall";
+bar
+
+//5
+1 1: 2be; 4r; 8a bm; 8b ebm;
+1 2: 2s; 4s; 4e;
+2: 2ge; 8c+e bm; 8bd ebm; 8ac bm; 8gb- ebm;
+phrase above 2: 1 til 3.5;
+phrase below 2: 1 til 3.5;
+
+			lyrics 1: 2; 4s; 4; "ry, And";
+			lyrics 1: 2; 4s; 4; "free! It";
+			lyrics 1: 2; 4s; 4; "be; He";
+bar
+//6
+1: 4.c+e; 8c+e; 8d+f bm; 8c+e ebm; 8bd bm; 8ac ebm;
+2: 4.aa-; 8aa-; 4aa-; 4aa-;
+
+			lyrics 1: 4.; 8; 4; 4; "for a ran-som";
+			lyrics 1: 4.; 8; 4; 4; "reach-es out to";
+			lyrics 1: 4.; 8; 4; 4; "hath re-deemed a";
+
+bar
+//7
+1 1: 4.af; 8af; 8b bm; 8a ebm; 8g bm; 8f ebm;
+1 2: 4.s; 8s; 4f; 4d;
+2 1: 4.ad; 8d+d; 8d+ bm; 8c+ ebm; 8b bm; 8a ebm;
+2 2: 4.s; 8s; 4d; 4d;
+
+			lyrics 1: 4.; 8; 4; 4; "shed his blood, For";
+			lyrics 1: 4.; 8; 4; 4; "all man-kind, Em-";
+			lyrics 1: 4.; 8; 4; 4; "world from sin, And";
+bar
+newscore
+//8
+1: 4ec; 4ae; 4be; 4c+e;
+2: 4ae; 4c+e; 4d+e; 4ge;
+
+			lyrics 1: "you and e-ven";
+			lyrics 1: "brac-es e-ven";
+			lyrics 1: "ran-somed e-ven";
+
+bar
+//9
+1: 2ac; 4r; 4s;
+2: 2aa-; 4r; 4s;
+
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+dblbar
+//10
+1: 8.c+a; 16d+b; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "I'm re-";
+bar
+//11
+1: 4.e+c+; 8dn+bn; 4e+c+; 8.c+a; 16c+a;
+2: 4r; 8.e+a; 16e+a; 4e+a; 4r;
+phrase above 1: 1 til 3;
+phrase below 1: 1 til 3;
+
+
+			lyrics 1: 4.; 8s; 4s; 8.; 16; "deemed,_ I'm re-";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "I'm re-deemed,";
+bar
+//12
+1: 4.d+b; 8c+a; 4d+g; 8.bg; 16bg;
+2: 4r; 8.e+e; 16e+e; 4be; 8.d+e; 16d+e;
+phrase above 1: 1 til3;
+phrase below 1: 1 til 3;
+
+			lyrics 1: 4.; 8s; 4s; 8.; 16; "deemed,_ Through the";
+			lyrics 1: 4s; 8.; 16; 4; 8.s; 16s; "I'm re-deemed,";
+bar
+//13
+1 1: 4a; 8.af; 16af; 4bg; 8.bg; 16bg;
+1 2: 4a; 8.s; 16s; 4s; 8.s; 16s;
+2: 4c+f; 8.c+f; 16c+f; 4d+e; 8.e+e; 16e+e;
+
+			lyrics 1: "blood of the Lamb that was";
+			lyrics 1: 4s; 8.s; 16s; 4s; 8.; 16; "of the";
+bar
+//14
+1: 2c+a slur; 4bg; 8.c+a; 16d+b;
+2: 4e+a; 8.e+a; 16e+a; 4e+e; 4r;
+
+			lyrics 1: "slain_ I'm re-";
+			lyrics 1: 4; 8.; 16; 4; 4s;"Lamb that was slain,";
+bar
+//15
+1: 4.e+c+; 8dn+bn; 4e+c+; 8.c+a; 16c+a;
+2: 4r; 8.e+a; 16e+a; 4e+a; 4r;
+phrase above 1: 1 til 3;
+phrase below 1: 1 til 3;
+
+			lyrics 1: 4.; 8s; 4s; 8.; 16; "deemed,_ I'm re-";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "I'm re-deemed,";
+bar
+newscore
+//16
+1: 2d+f slur; 4fd; 8.bf; 16bf;
+2: 4r; 8.d+d; 16bd; 4ad; 8.d+d; 16d+d;
+
+			lyrics 1: "deemed,_ Hal-le-";
+			lyrics 1: 4s; 8.; 16; 4; 8.s; 16s; "I'm re-deemed,";
+bar
+//17
+1: 4ae; 8ae; 8be; 4c+a; 4be;
+2: 4c+e; 8c+e; 8d+e; 4e+e; 4d+e;
+
+			lyrics 1: "lu-jah un-to his";
+bar
+//18
+1: 2.ae; 4s;
+2: 2.c+aa-; 4s;
+
+			lyrics 1: "name.";
+endbar
+		

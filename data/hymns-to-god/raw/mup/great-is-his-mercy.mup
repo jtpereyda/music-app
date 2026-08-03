@@ -1,0 +1,220 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Best Endeavor Hymns
+//		Edited and Compiled by
+//		I. Allen Sankey and John R. Clements
+//		Especially for use in Christian Endeavor Societies
+//		Young People's Meetings, Sunday Schools, and
+//		General Church Work
+//		Published by The Biglow and Main Co.
+//		Lakeside Building, Chicago
+//		135 Fifth Avenue, New York
+//		International Copyright Secured
+//		Copyright 1907
+//		Hymn No.: 8
+
+
+// Transcribed by: Ted Gatza, Jr. 12/28/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Great is His Mercy" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - DO" "\s(17)\f(TI)\:And\ his\ mercy\ is\ unto\ ge\|nerations\ and\ generations On\ them\ that\ fea\|r\ him.\ -\ Lk.\ 1:50"""
+   title (13) "Maud Frazer" " " "I. Allan Sankey, 1907"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1 1: 4.s; 4s; 16e bm; 16f ebm;
+1 2: 4.s; 4s; 8e;
+2 1: 4.s; 4s; 16g bm; 16a ebm;
+2 2: 4.s; 4s; 8e;
+	
+			lyrics 1: 4.s; 4s; 8; "<1. >-1|I'll";
+			lyrics 1: 4.s; 4s; 8; "<2. >-1|In";
+			lyrics 1: 4.s; 4s; 8; "<3. >-1|He";
+			lyrics 1: 4.s; 4s; 8; "<4. >-1|Tho'";
+			lyrics 1: 4.s; 4s; 8; "<5. >-1|It";
+bar
+//2
+1: 8.ge; 16ge; 8ge; 8e+g; 8d+b; 8c+a;
+2: 8.be; 16be; 8be; 8be; 8c+e; 8d+e;
+
+			lyrics 1: "sing and re-joice in my";
+			lyrics 1: "all that be-falls me, I";
+			lyrics 1: "sought me when wand'r-ing in";
+			lyrics 1: "oft' with ne-glect this dear";
+			lyrics 1: "can-not be told, all His";
+bar
+//3
+1: 8.bg; 16c+a; 8bg; 4.ge;
+2: 8.e+e; 16e+e; 8e+e; 4.be;
+
+			lyrics 1: "Sav-iour's dear name;";
+			lyrics 1: "know Je-sus cares;";
+			lyrics 1: "sin's dread-ful night;";
+			lyrics 1: "Friend I pass'd by,";
+			lyrics 1: "good-ness and love;";
+bar
+//4
+1: 8.fd; 16fd; 8fd; 8fd; 8ec; 8fd;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 8bb-; 8bb-;
+
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+bar
+//5
+1: 4.g<b>e~; 4be; 8be;
+2: 4.b<g>e~; 4ge; 8ge;
+
+			lyrics 1: "me; And";
+			lyrics 1: "me; He";
+			lyrics 1: "me; He";
+			lyrics 1: "me; He";
+			lyrics 1: "me; Oh,";
+bar
+//6
+1: 8.e+g; 16e+g; 8e+g; 8d+a; 8e+a; 8c+a;
+2: 8.be; 16be; 8be; 8bne; 8c+e; 8d+e;
+
+			lyrics 1: "ev-er His won-der-ful";
+			lyrics 1: "light-ens each bur-den, each";
+			lyrics 1: "brought me from dark-ness to";
+			lyrics 1: "o-pened His arms when to";
+			lyrics 1: "this is my song when I";
+bar
+//7
+1: 8.bg; 16c+a; 8bg; 4.ge;
+2: 8.e+e; 16e+e; 8e+e; 4.be;
+
+			lyrics 1: "love I'll pro-claim";
+			lyrics 1: "sor-row He shares;";
+			lyrics 1: "mar-vel-ous light,";
+			lyrics 1: "Him I did cry,";
+			lyrics 1: "meet Him a-bove,\(emdash)";
+bar
+//8
+1: 8.fd; 16fd; 8fd; 8fd; 8gd; 8fd;
+2: 8.ab-; 16ab-; 8ab-; 8ab-; 8bb-; 8ab-;
+
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+			lyrics 1: "Great is His mer-cy toward";
+bar
+//9
+1 1: 4.e tie; 4.e;
+1 2: 4.e tie; 4.e;
+2 1: 4.ge tie; 4.ge;
+
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+dblbar
+//10
+1: 8.fd; 16ge; 8af; 8af; 8ge; 8fd;
+2: 8.bb-; 16bb-;8bb-; 8bb-; 8bb-; 8bb-;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "Great is His mer-cy toward";
+bar
+//10
+1 1: 4.a tie; 4a; 8ad;
+1 2: 4d; 8e; 8f bm; 8e ebm; 8s;
+2 1: 4.b tie; 4b; 8bb-;
+2 2: 4b-; 8c; 8d bm; 8c ebm; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "me, (t'ward me), Yes,";
+bar
+//11
+1: 8.ge; 16af; 8bg; 8bg; 8af; 8ge;
+2: 8.be; 16be; 8be; 8e+e; 8be; 8be;
+
+			lyrics 1: "Great is His mer-cy toward";
+bar
+//12
+1 1: 4.b tie; 4b; 8be;
+1 2: 4e; 8d; 8e bm; 8d ebm; 8s;
+2: 4ge; 8af; 8bg bm; 8af ebm; 8ge;
+
+			lyrics 1: 4; 8; 4; 8; "me, (t'ward me), He";
+bar
+//13
+1: 8.e+g; 16d+b; 8c+a; 4bg; 8be;
+2: 8.be; 16c+e; 8d+e; 4e+e; 8ge;
+
+			lyrics 1: "par-dons my sin, Gives";
+bar
+//14
+1: 8.e+g; 16d+b; 8c+a; 4bg; 8af;
+2: 8.be; 16c+e; 8d+e; 4e+e; 8c+a-;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: "glo-ry with-in; Oh,";
+bar
+//15
+1: 8.ge; 16ge; 8ge; 8bd; 8ad; 8fd;
+2: 8.bb-; 16bb-; 8gb-; 8fb-; 8fb-; 8ab-;
+
+			lyrics 1: "great is His mer-cy toward";
+bar
+//16
+1 1: 4.e tie; 4e; 8s;
+1 2: 4.e tie; 4e; 8s;
+2: 4.ge tie; 4ge; 8s;
+
+			lyrics 1: "me.";
+endbar

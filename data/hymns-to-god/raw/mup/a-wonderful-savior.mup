@@ -1,0 +1,356 @@
+// !Mup vs.7.0 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source:
+//	Great Songs Of The Church
+//	A Comprehensive Collection of Psalms, Hymns and
+//	Spiritual songs of first rank, Suitable for all
+//	Services of the Church
+//	Compiler: E. I. Jorgenson
+//	Word and Work, Louisville, KY.
+//	Copyright 1921
+//	Hymn No. 2
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 12/22/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "A Wonderful Savior" ""
+   title (2)""
+   title (11)"" "\f(TI)...and have covered thee in the shadow of my hand... - Is. 51:16" ""
+   title (11) "D - 2 - SOL" "" ""
+   title (13) "Fanny J. Crosby" "" "William J. Kirkpatrick, 1890"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffsep=10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=6/8	
+	key=d
+
+
+staff 2
+	key=d
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=78";
+
+//=========================
+//Verse 1
+
+//1
+1: 4.s; 4; 8fa;
+2: 4.s; 4; 8da;
+
+	VS1 "<1. >-1|A";
+	VS1 "<2. >-1|A";
+	VS1 "<3. >-1|With";
+	VS1 "<4. >-1|When";
+bar
+
+//2
+1 1:8.fa; 16eg; 8df; ; e; d;
+1 2: 8.s; 16; 8; ; d; ; 
+2: 8.da; 16; 8; ; dg; df;
+
+	VS1 "won-der-ful Sav-ior is";
+	VS1 "won-der-ful Sav-ior is";
+	VS1 "num-ber-less bless-ings each"; 
+	VS1 "clothed in His bright-ness, trans-";
+bar
+
+//3
+1: 8.gb; 16; 8; 4fa; 8s;
+2: 8.g-d+; 16; 8; 4dd+; 8s;
+
+	VS1 "Je-sus my Lord,";
+	VS1 "Je-sus my Lord,";
+	VS1 "mo-ment he crowns,";
+	VS1 "port-ed, I rise,";
+invisbar
+
+1: 4.s; 4; 8fa;
+2: 4.s; 4; 8da;
+
+	VS1 "A";
+	VS1 "He";
+	VS1 "And";
+	VS1 "To";
+bar
+
+//4
+1: 8.fa; 16eg; 8df; ; eg; df;
+2: 8.da; 16; 8; ; ca; da;
+
+	VS1 "won-der-ful Sav-ior to";
+	VS1 "tak-eth my bur-den a-";
+	VS1 "filled with his full-ness di-";
+	VS1 "meet Him in clouds of the";
+bar
+
+//5
+1: 4.ce tie; 4; 8s;
+2: 4.a-a tie; 4; 8s;
+
+	VS1 "me;";
+	VS1 "way;";
+	VS1 "vine,";
+	VS1 "sky;";
+invisbar
+
+1 1: 8a; 4.s; 4; 
+1 2: 8g; 4.s; 4; 
+2: 8a-c+; 4.s; 4; 
+
+	VS1 "He";
+	VS1 "He";
+	VS1 "I";
+	VS1 "His";
+bar
+
+//6
+1 1: 8.fa; 16eg; 8df; ; e; d;
+1 2: 4s; 4s; 8d; d;
+2: 8.dd+; 16da; 8; 8; dg; df;
+
+	VS1 "hid-eth my soul in the";
+	VS1 "hold-eth me up, and I";
+	VS1 "sing in my rap-ture, \"Oh,";
+	VS1 "per-fect sal-va-tion, His";
+bar
+
+//7
+1: 8.gb; 16; 8; 4gd+; 8s;
+2: 8.g-d+; 16; 8; 4g-b; 8s;
+
+	VS1 "cleft of the rock,";
+	VS1 "shall not be moved,";
+	VS1 "glo-ry to God,";
+	VS1 "won-der-ful love,";
+invisbar
+
+1: 8gb; 4.s; 4;
+2: 8g-d+; 4.s; 4;
+
+	VS1 "Where";
+	VS1 "He";
+	VS1 "For";
+	VS1 "I'll";
+bar
+
+//8
+1: 8.fa; 16; 8da; ca; cg; ce;
+2: 8.a-d+; 16a-a; 8a-f; a-e; ; a-g;
+
+	VS1 "riv-ers of pleas-ure I";
+	VS1 "giv-eth me strength as my";
+	VS1 "such a Re-deem-er as";
+	VS1 "shout with the mil-lions on";
+bar
+
+//9
+1 1: 4.d tie; 4; 8s;
+1 2: 4.d tie; 4; 8s;
+2: 4.df tie; 4; 8s;
+
+	VS1 "see.";
+	VS1 "day.";
+	VS1 "mine!\"";
+	VS1 "high.";
+dblbar
+newscore
+
+//10
+CHORUS
+1 1: 8a; 4.s; 4;
+1 2: 8a; 4.s; 4;
+2 1: 8a; 4.s; 4;
+2 2: 8a; 4.s; 4;
+
+	VS1 "He";
+bar
+
+//11
+1: 8.gc+; 16; 8; 4; 16gb; gc+;
+2 1: 8.ae+; 16; 8; 4; 16a; ;
+2 2: 4s; 4.; 16a; ;
+
+	VS1 "hid-eth my soul in the";
+bar
+
+//12
+1: 8.fd+; 16ac+; 8fb; 4fa; 8s;
+2: 8.da; 16; 8dd+; 4; 8s;
+
+	VS1 "cleft of the rock,";
+invisbar
+
+1: 8fa; 4.s; 4;
+2: 8da; 4.s; 4;
+
+	VS1 "That";
+bar
+newscore
+
+//13
+1: 8eg; d#f; eg; ce; cb; ca;
+2: 8a-a; ; ; ; ; ;
+
+	VS1 "shad-ows a dry, thirst-y";
+bar
+
+//14
+1: 4.df tie; 4; 8s;
+2: 4.da tie; 4; 8s;
+
+	VS1 "land;";
+invisbar
+
+1: 8fa; 4.s; 4;
+2: 8da; 4.s; 4;
+
+	VS1 "He";
+bar
+
+//15
+1: 8.fd+; 16; 8; 4; 16; ;
+2: 8.da; 16; 8; 4; 16; ; 
+
+	VS1 "hid-eth my life in the";
+bar
+
+//16
+1: 8.ge+; 16gd+; 8; 4gd+; 8s;
+2: 8.gb; 16; 8; 4gb; 8s;
+FST(4)
+FBT(4)
+
+	VS1 "depths of His love,";
+invisbar
+
+1: 8gb; 4.s; 4;
+2: 8gd+; 4.s; 4;
+
+	VS1 "And";
+bar
+
+//17
+1 1: 8.fa; 16; 8; ea; fa; a;
+1 2: 4.s; 4; 8g;
+2: 8.ad+; 16; 8; a-c+; a-d+; a-e+;
+
+	VS1 "co-vers me there with His";
+bar
+newscore
+
+//18
+1 1: 4.a tie; 4; 8s;
+1 2: 4f; 8g; 4a; 8s;
+phrase below 1: 1 til 6;
+2: 4dd+; 8ec+; 4fd+; 8s;
+phrase above 2: 1 til 6;
+phrase below 2: 1 til 6;
+
+	VS1 "hand,";
+invisbar
+
+1: 8gb; 4.s; 4;
+2: 8g-d+; 4.s; 4;
+
+	VS1 "And";
+bar
+
+//19
+1 1: 8.fa; 16df; 8d; 8.cg; 16a-c; 8;
+1 2: 4s; 8d; 4.s;
+2: 8.a-d+; 16a-a; 8a-f; 8.a-e; 16a-g; 8;
+
+	VS1 "co-vers me there with His";
+bar
+
+//20
+1: 4.a-d tie; 4; 8s;
+2: 4.df tie; 4; 8s;
+
+	VS1 "hand.";
+endbar
+
+
+
+
+
+
+

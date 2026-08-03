@@ -1,0 +1,215 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+// This source code is donated to the public domain.
+// Hymn Source: Alexander's Gospel Songs 
+//	        Compiled by Charles M. Alexander, 
+//              Fleming H. Revell Co., New York, 158 Fifth Avenue, 
+//              Copyright 1908
+//	        Hymn 153
+// Transcribed by: Ted Gatza, Jr. 04/09/2010; Rev. 06/19/2014
+// HymnsToGod.org
+
+// ************************************
+
+top
+   
+	title bold (19) "" "Such Is His Love To Me" ""
+	title (2)""  
+	title (11) "F - 4 - SOL" "\s(18)\f(TI)\:But\ God,\ being\ rich\ i\|n\ mercy,\ for\ his\ great love\ wherewith\ he\|\ loved\ us,\ -\ Eph.\ 2:4"""  
+	title (13) "Fred P. Morris" " " "Robert Harkness, 1906"  
+
+bottom
+   
+	title (11) "" "Public Domain" "HymnsToGod.org"
+
+score  
+	label=""  
+	staffs=2  
+	time=4/4 
+ 	key=1&
+ 	packexp = 0.0
+	packfact = 0.0  
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f  
+	staffscale=1.0 
+	scoresep=6,6
+	scorepad=-1
+	scale = .72
+	lyricssize = 13 
+ 	pageheight=9.0  
+	pagewidth=6.0  
+	topmargin=.200  
+	bottommargin=.200   
+	withfontfamily=palatino
+	staff 2
+	key=1& 
+	clef=bass
+
+// ***********************************
+
+music
+
+	midi all: 0 "tempo=100";
+//1
+1 1: 2.s; 8c bm; 8f ebm;
+1 2: 2.s; 4c;
+2: 2.s; 4af;         
+
+	lyrics 1: 2.s; 4; "<1. >-1|My";
+        lyrics 1: 2.s; 4; "<2. >-1|My";
+        lyrics 1: 2.s; 4; "<3. >-1|My";
+        lyrics 1: 2.s; 4; "<4. >-1|My";
+bar
+//2
+1 1: 4af; 8.af; 16bf; 4af; 8.f; 16af;
+1 2: 4s; 8.s; 16s; 4s; 8.f; 16s;
+2: 4c+f; 8.c+f; 16d+f; 4c+f; 8.af; 16c+f;
+
+         lyrics 1: "Sav-iour has prom-ised to";
+         lyrics 1: "Sav-iour has lift-ed my";
+         lyrics 1: "Sav-iour is hold-ing my";
+         lyrics 1: "Sav-iour is wait-ing up-";
+bar
+//3
+1: 4c+f; 8.c+f; 16d+f; 4.c+f; 8af;
+2: 4af; 8.af; 16bf; 4.af; 8c+f;
+
+         lyrics 1: "stand by my side, For";
+         lyrics 1: "bur-den of sin, For";
+         lyrics 1: "hand all the way, For";
+         lyrics 1: "on the bright shore, For";
+bar
+//4
+1: 4c+f; 8.bf; 16af; 4s; 4s;
+2: 4ac; 8.d+c; 16c+c; 4s; 4s;
+
+         lyrics 1: "such is His";
+         lyrics 1: "such is His";
+         lyrics 1: "such is His";
+         lyrics 1: "such is His";
+invisbar
+newscore
+1: 4s; 8.s; 16s; 4ae; 4ge;
+2: 4s; 8.s; 16s; 4c+c; 4bc;
+
+         lyrics 1: "love to";
+         lyrics 1: "love to";
+         lyrics 1: "love to";
+         lyrics 1: "love to";
+bar
+//5
+1 1: 2.f; 8c bm; 8f ebm;
+1 2: 2.f; 4c;2: 2.af; 4af;
+
+         lyrics 1: 2.; 4; "me; Thro'";
+         lyrics 1: 2.; 4; "me, He";
+         lyrics 1: 2.; 4; "me, He";
+         lyrics 1: 2.; 4; "me, To";
+bar
+//6
+1 1: 4af; 8.af; 16bf; 4af; 8.f; 16af;
+1 2: 4s; 8.s; 16s; 4s; 8.f; 16s;
+2: 4c+f; 8.c+f; 16d+f; 4c+f; 8.af; 16c+f;
+
+         lyrics 1: "sun-shine and shad-ow what-";
+         lyrics 1: "suf-fered and died my sal-";
+         lyrics 1: "shows me that path where my";
+         lyrics 1: "wel-come me home, when the";
+bar
+//7
+1: 4c+a; 8.c+a; 16d+b; 4.c+a; 8af;
+2: 4f+f; 8.f+f; 16f+f; 4.f+f; 8c+f;
+        
+	 lyrics 1: "ev-er be-tide, For";
+         lyrics 1: "va-tion to win, For";
+         lyrics 1: "foot-steps would stray, For";
+         lyrics 1: "jour-ney is o'er, For";
+bar
+//8
+1: 4c+f; 8.bf; 16af; 4ae; 4ge;
+2: 4ac; 8.d+c; 16c+c; 4c+c; 4bc;
+
+         lyrics 1: "such is His love to";
+         lyrics 1: "such is His love to";
+         lyrics 1: "such is His love to";
+         lyrics 1: "such is His love to";
+bar
+//9
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+         lyrics 1: "me.";
+         lyrics 1: "me.";
+         lyrics 1: "me.";
+         lyrics 1: "me.";
+dblbar
+//10
+1 1: 8f bm; 8a ebm; 2.s;
+1 2: 4f; 2.s;
+2 1: 8a bm; 8c+ ebm; 2.s;
+2 2: 4f; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+         lyrics 1: 4; 2.s; [c]"For";
+bar
+//11
+1: 4c+f; 8.c+f; 16d+f; 4c+f; 4af;
+2: 4af; 8.af; 16bf; 4af; 4c+f;
+
+         lyrics 1: [c]"such is His love to";
+bar
+//12
+1 1: 2.f; 8af bm; 8bg ebm;
+1 2: 4f; 4d; 4c; 4s;
+2: 4af; 4bb-; 4af; 4c+f;
+
+         lyrics 1: 4; 4; 4; 4; [c]"me, (to me) Yes";
+bar
+//13
+1: 4c+a; 8.c+a; 16d+b; 4c+a; 4af;
+2: 4f+f; 8.f+f; 16f+f; 4f+f; 4c+f;
+
+         lyrics 1: [c]"such is His love to";
+bar
+//14
+1 1: 2.g; 8a bm; 8b ebm;
+1 2: 4e; 4f; 4e; 4f;
+2 1: 4c+c; 4bng-; 4c+c; 4c+;
+2 2: 2.s; 8f bm; 8g ebm;
+
+         lyrics 1: 4; 4; 4; 4; [c]"me, (to me) What-";
+bar
+//15
+1 1: 4c+f; 4c+e; 4c+f; 8af; 8f;
+1 2: 4s; 4s; 4s; 4f;
+2: 4c+a; 4bg; 4af; 8c+f; 8c+a;
+
+         lyrics 1: [c]"e'er be-tide, Je-sus";
+bar
+newscore
+//16
+1 1: 4d+f; 8.e+b; 16e+b; 4f+a; 8e+ bm; 8d+ ebm;
+1 2: 4s; 8.s; 16s; 4s; 4f;
+2 1: 4b; 8.c+g; 16c+g; 4c+f; 8c+ bm; 8b ebm;
+2 2: 4b; 8.s; 16s; 4s; 4b-;
+mussym (10) above 1: 3 "ferm";
+mussym (10) below 2: 3 "uferm";
+
+         lyrics 1: 4; 8.; 16; 4; 4; [c]"stands by my side, For";
+bar
+//17
+1: 4c+f; 8.bf; 16af; 4ae; 4ge;
+2: 4ac; 8.d+f; 16c+c; 4c+c; 4bc;
+
+         lyrics 1: [c]"such is His love to";
+bar
+//18
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+         lyrics 1: [c]"me.";
+endbar

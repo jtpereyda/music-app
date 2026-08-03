@@ -1,0 +1,227 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gloria Deo
+//		A collection of Hymns and Tunes 
+//		for public worship in all 
+//		departments of the church
+//		New York
+//		Funk & Wagnalls Company
+//		30 Lafayette Place
+//		Copyright 1901
+//		Hymn no. 177
+
+// Transcribed by: Ted Gatza, Jr. 04/15/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "O Thou Fount Of Every Blessing" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(17)\f(TI)\:For\ with\ thee\ is\ the\ f\|ountain\ of\ life:\ In\ thy light\ shall\ we\ se\^e\ light.\ -\ Ps.\ 36:9" ""
+   title (13) "Robert Robinson" " " "S. M. Bixby, 1892"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact =.8
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+
+//1
+1: 4.bd; 8c+d; 4d+d; bd;
+2 1: 4.g; 8a; 4bg; g;
+2 2: 4.g; 8; 4s; g;
+			VERSE "<1. >-1|O Thou Fount of";
+			VERSE "<2. >-1|Here I raise my";	
+			VERSE "<3. >-1|O to grace how";
+
+bar
+//2
+1: 4.ad; 8gd#; 4ge; ec;
+2: 4.gb-; 8; 4gc;;
+
+			VERSE "ev-'ry bless-ing,";
+			VERSE "Eb-en-e-zer;";
+			VERSE "great a debt-or";
+bar
+//3
+1 1: 4.d; 8; 4s; 4s;
+1 2: 4.c; 8; 4s;;
+2: 4.fd; 8; 4s; s;
+
+			VERSE "Tune my";
+			VERSE "Hith-er";
+			VERSE "Dai-ly";
+invisbar
+newscore
+
+1 1: 4.s; 8; 4gb-; 4gd;
+1 2: 4.s; 8; 4s;;
+2: 4.s; 8; 4ge; be;
+
+			VERSE "heart to";
+			VERSE "by Thy";
+			VERSE "I'm con-";
+
+bar
+//4
+1: 4ac#; bc; 2ad;
+2: 4aa-; ga-; 2fd;
+
+			VERSE "sing Thy grace;";
+			VERSE "help I'm come;";
+			VERSE "strained to be!";
+bar
+//5
+1: 4.bd; 8c+d; 4d+d; bg;
+2 1: 4.g; 8a; 4bg; d+g;
+2 2: 4.g; 8; 4s;;
+
+			VERSE "Streams of mer-cy,";
+			VERSE "And I hope, by";
+			VERSE "Let Thy good-ness,";
+bar
+//6
+1 1: 4.af; 8g; 4ge; ec;
+1 2: 4.s; 8fn; 4s;;
+2: 4.c+g; 8bg; 4c+c; gc;
+
+			VERSE "nev-er ceas-ing,";
+			VERSE "Thy good pleas-ure,";
+			VERSE "like a fet-ter,";
+bar
+//7
+1: 4.gc; 8ec; 4db-; gd;
+2: 4.ec; 8gc; 4gd; bd;
+
+			VERSE "Call for songs of";
+			VERSE "Safe-ly to ar-";
+			VERSE "Bind my wan-d'ring";
+bar
+//8
+1: 4gc; fc; 2gb-;
+2: 4ad;; 2gg-;
+
+			VERSE "loud-est praise.";
+			VERSE "rive at home.";
+			VERSE "heart to Thee:";
+bar
+//9
+1: 4.c+e; 8; 4bd;;
+2 1: 4.g; 8; 4;;
+2 2: 4.g; 8; 4;;
+
+			VERSE "Teach me ev-er";
+			VERSE "Je-sus sought me";
+			VERSE "nev-er let me";
+bar
+//10
+1: 4.ad; 8; 4bd; ad;
+2: 4.fd; 8; 4; fc;
+
+			VERSE "to a-dore Thee";
+			VERSE "when a stran-ger,";
+			VERSE "wan-der from Thee,";
+bar
+//11
+1: 4.gd; 8; 4s; s;
+2: 4.gb-; 8gb-; 4s; s;
+
+			VERSE "May I";
+			VERSE "Wan-d'ring";
+			VERSE "Nev-er";
+invisbar
+newscore
+
+1: 4.s; 8; 4bd; d+d;
+2: 4.s; 8s; 4gg-; bg;
+
+			VERSE "still Thy";
+			VERSE "from the";
+			VERSE "leave the";
+
+bar
+//12
+1: [up]4d+g; c#+g; 2d+f;
+2: 4be; aa-; 2ad;
+
+			VERSE "good-ness prove";
+			VERSE "fold of God;";
+			VERSE "God I love;";
+bar
+//13
+1: 4.d+g; 8; 4e+g; d+g;
+2: 4.bg; 8; 4c+g; bg;
+
+			VERSE "While the hope of";
+			VERSE "He, to res-cue";
+			VERSE "Here's my heart, O";
+bar
+//14
+1: 4.d+d; 8bd; 4; ad;
+2 1: 4.bg; 8g; 4fd; fc;
+2 2: 4.s; 8g; 4s;;
+
+			VERSE "end-less glo-ry";
+			VERSE "me from dan-ger,";
+			VERSE "take and seal it;";
+bar
+//15
+1: 4.gd; 8ec; 4db-; 4gb-;
+2: 4.gb-; 8gc; 4gg-; ge;
+
+			VERSE "Fills my heart with";
+			VERSE "In-ter-posed His";
+			VERSE "Seal it for Thy";
+bar
+//16
+1: 4gc; fc; 2gdb-;
+2: 4aa-; ad; 2gg-;
+
+			VERSE "joy and love!";
+			VERSE "pre-cious blood.";
+			VERSE "courts a-bove.";
+endbar

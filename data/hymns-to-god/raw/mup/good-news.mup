@@ -1,0 +1,283 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Praise in Song
+//		A Collection of
+//		Hymns and Sacred Melodies
+//		Editors: Jno. R. Sweney, W.J. Kirkpatrick
+//		and H.L. Gilmour
+//		Published by John J. Hood
+//		1024 Arch Street Philadelphia
+//		Copyright 1893
+
+// Transcribed by: Ted Gatza, Jr. 12/13/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Good News" ""
+   title (2)""
+   title (11) "C-4-SOL" "\s(18)\f(TI)\:Go\ ye\ therefore,\ and\ make\ disciples\ o\|f\ all\ the\ nations,\ baptizing\ them\ into the\ name\ of\ the\ Father\ and\ of\ the\ Son\|\ and\ of\ the\ Holy\ Spirit:\ -\ Matt.\ 28:19"""
+   title (13) "L. H. Edmund" " " "Wm. J. Kirkpatrick, 1891"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=12/8	
+	key=c
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=c
+	clef=bass
+music
+
+midi all: 0 "tempo=120";
+
+//1
+1: 4.s; 4.s; 4.s; 8ge; 8af; 8bf;
+2: 4.s; 4.s; 4.s; 8gc; 8gc; 8gc;
+
+
+			lyrics 1: "<1. >-1|Won-der-ful";
+			lyrics 1: "<2. >-1|Hark, a glad";
+			lyrics 1: "<3. >-1|On-ward the";
+			lyrics below 2:"<\f(TX)CHO.\f(TR) - >|O-ver the";
+
+bar
+//2
+1: 4.c+e; 4.bf; 4.c+c; 8ge; 8ge; 8ge;
+2: 4.gc; 4.gd; 4.ge; 8c+c; 8c+c; 8c+c;
+
+			lyrics 1: "tid-ings bring, Mes-sen-gers";
+			lyrics 1: "cho-rus rings, Praise to the";
+			lyrics 1: "tid-ings roll, On-ward from";
+			lyrics below 2:"sea of time, Com-eth a";
+bar
+//3
+1: 4.bf; 4.af; 4.gc; 8fb-; 8fb-; 8fb-;
+2: 4.c+f; 4.c+f; 4.ge; 8gd; 8gd; 8gd;
+
+			lyrics 1: "for the King, Sound-ing a-";
+			lyrics 1: "King of kings, Joy-ful-ly";
+			lyrics 1: "pole to pole, List to the";
+			lyrics below 2:"song sub-lime, Tend-er-ly";
+bar
+//4
+1 1: 4.ec; 4.af; 4.ge; 4.c;
+1 2: 4.s; 4.s; 4.s; 4.c;
+2: 4.gc; 4.c+c; 4.c+c; 4.ge;
+
+			lyrics 1: "loud the Sav-iour's";
+			lyrics 1: "now his work pro-";
+			lyrics 1: "song of rap-ture";
+			lyrics below 2:"sweet the chime of";
+bar
+//5
+1 1: 2.ec; 4.db-; 8g; 8af; 8bf;
+1 2: 2.s; 4.s; 8f; 8s; 8s;
+2 1: 2.g; 4.gg-; 8bg; 8c+g; 8d+g;
+2 2: 2.g; 4.s; 8s; 8s; 8s; 
+
+			lyrics 1: "glo-ry, Bear the good";
+			lyrics 1: "gress-ing; O-ver the";
+			lyrics 1: "swell-ing; Ris-ing from";
+			lyrics below 2:2.; 4.; 8; 8; 8; "voic-es; Voic-es of";
+bar
+//6
+1: 4.c+e; 4.bf; 4.c+c; 8ge; 8ge; 8ge;
+2: 4.c+c; 4.gd; 4.ge; 8c+c; 8c+c; 8c+c;
+
+			lyrics 1: "news a-long, Waft it in";
+			lyrics 1: "land and sea Tell of his";
+			lyrics 1: "souls new-born, Hail-ing the";
+			lyrics below 2:"grate-ful song; Ech-o the";
+bar
+//7
+1: 4.bf; 4.af; 4.d+f; 8c+d#; 8bd; 8ad;
+2: 4.c+f; c+f; 4.af; 8c+f#; 8c+f; 8c+f;
+
+			lyrics 1: "hap-py song, News of sal-";
+			lyrics 1: "grace so free, Car-ry the";
+			lyrics 1: "gos-pel morn, Won-der-ful";
+			lyrics below 2:"news a-long, Call-ing the";
+bar
+//8
+1 1: 4.ge; 4. c+e; 4.bf; 4.g;
+1 2: 4.s; 4.s; 4.s; 4.f;
+2: 4.c+g; 4.c+g; 4.d+g; 4.bg;
+
+			lyrics 1: "va-tion, pre-cious";
+			lyrics 1: "news of end-less";
+			lyrics 1: "joy its tones are";
+			lyrics below 2:"earth while heav'n re-";
+bar
+//9
+1: 2.d+f; 4.c+e; 8s; 8s; 8s;
+mussym (9) below 1: 7 "uferm";
+boldital dyn above 1: 8 "Fine.";
+2 1: 2.b; 4.gc; 8s; 8s; 8s;
+2 2: 4.g slur; 4.g-; 4.s; 8s; 8; 8s;
+mussym (9)above 2: 7 "ferm";
+
+			lyrics 1: "sto-ry.";
+			lyrics 1: "bless-ing.";
+			lyrics 1: "tell-ing.";
+			lyrics below 2: 2.; 4.; 8s; 8s; 8s; "joic-es.";
+
+
+
+
+
+dblbar
+newscore
+//10
+1: 2.s; 4.s; 4.ge;
+2: 2.s; 4.s; 4.c+c;
+
+			lyrics 1: "Good";
+			lyrics 1: "<>";
+			lyrics 1: "Oh,";
+			lyrics 1: "<>";
+			lyrics 1: "Oh,";
+bar
+//11
+1 1: 2.ge tie; 8ge; 8f#; 8ge; 8ad#; 8bd; 8c+d;
+1 2: 2.s; 8s; 8e; 8s; 8s; 8s; 8s;
+2 1: 2.c+ tie; 8c+; 8c+c; 8c+c; 8f#c; 8fc; 8fc; 
+2 2: 4.c; 4g; 8e; 8c; 8s; 8s; 8s; 8s; 8s; 
+
+			lyrics 1: "news from the reg-ions e-";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "bless-ed news";
+			lyrics 1: "tell of the deep, flow-ing";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "glad-ly tell";
+			lyrics 1: "spread the good news of re-";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "haste to spread";
+bar
+//12
+1: 2.ge; 4.ec; 4.s;
+2 1: 4.g slur; 4.c+; 4.gc; 4.s;
+2 2: 2.c; 4.s; 4.s;
+
+			lyrics 1: "ter-nal,";
+			lyrics 1: 2.; 4.s; 4.s; "<>";
+			lyrics 1: "foun-tain,";
+			lyrics 1:  2.; 4.s; 4.s;"<>";
+			lyrics 1: "demp-tion,";
+			
+
+bar
+//13
+1: 2.s; 4.s; 4.c+e;
+2: 2.s; 4.s; 4.gc;
+
+			lyrics 1: "Good";
+			lyrics 1:  "<>";
+			lyrics 1: "Oh";
+			lyrics 1:  "<>";
+			lyrics 1: "Let";
+bar
+//14
+1: 2.bd tie; 8bd; 8af; 8ge; 8fd; 8ec; 8db-;
+2 1: 2.g tie; 8g; 8g; 8g; 8g; 8g; 8g; 
+2 2: 4.g-; 4g; 8g; 8g; 8g; 8g; 8g; 8g; 8g; 
+
+			lyrics 1: "news from the Fath-er a-";
+			lyrics 1:  4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "bless-ed news";
+			lyrics 1: "tell of the robes white and";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "glad-ly tell";
+			lyrics 1: "love be our hap-py re-";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "sav-ing love";
+bar
+//15
+1: 2.ae slur; 4.ge; 4.ge;
+2 1: 4.g slur; 2.c+; 4.c+c; 
+2 2: 2.c tie; 4.c; 4.s;
+
+			lyrics 1: "bove, Good";
+			lyrics 1: 2.; 4.s; 4.s;"<>";
+			lyrics 1: "fair; The";
+			lyrics 1:  2.; 4.s; 4.s;"<>";
+			lyrics 1: "frain, The";
+bar
+//16
+1 1: 2.ge tie; 8ge; 8f#; 8ge; 8ad#; 8bd; 8c+d;
+1 2: 2.s; 8s; 8e; 8s; 8s; 8s; 8s;
+2 1: 2.c+ tie; 8c+; 8c+c; 8c+c;8f#c; 8fc; 8fc;
+2 2: 4.c; 4g; 8e; 8c; 8s; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "news and a mes-sage of";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "bless-ed news";
+			lyrics 1: "feast, for the sin-ners re-";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "roy-al feast";
+			lyrics 1: "love of a cru-ci-fied";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "might-y love";
+bar
+//17
+1: 2.e+e; 4.c+e; 4.ae;
+2 1: 4.g slur; 4.c+; 4.gc; 4.c+c;
+
+			lyrics 1: "mer-cy. Re-";
+			lyrics 1: 2.; 4.s; 4.s;"<>";
+			lyrics 1: "turn-ing, The";
+			lyrics 1: 2.; 4.s; 4.s;"<>";
+			lyrics 1: "Sav-iour, He";
+			lyrics 1: 2.; 4.s; 4.s;"<>";
+bar
+//18
+1: 2.d+d tie; 8d+d; 8gd; 8ad; 8bd; 8c+d; 8ad;
+2 1: 2.b tie; 8b; 8bd; 8f#d; 8gd; 8ad; 8c+d;
+2 2: 4.d; 4d; 8d; 8d; 8s; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "deemed thro' the Son of his";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "we're re-deemed";
+			lyrics 1: "home, and the glad wel-come";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "heav'-nly home.";
+			lyrics 1: "died and is ris-en a-";
+			lyrics 1: 4.s; 4; 8; 8; 8s; 8s; 8s; 8s; 8s; "we're re-deemed";
+bar
+//19
+1 1: 2.g tie; 4.g; 4.s;
+1 2: 4d; 8d; 8e; 8e; 8e; 4.f; 4.s;
+mussym (9) above 1: 7 "ferm";
+boldital dyn above 1: 5 "D.S. - Chorus";
+2 1: 4b; 8b; 8c+; 8c+; 8c+; 4.d+; 4.s;
+2 2: 2.gg- tie; 4.gg-; 4.s;
+mussym (9) below 2: 7 "uferm";
+
+
+			lyrics 1: "love.";
+			lyrics 1: 4s; 8; 8; 8; 8; 4.; 4.s; "the Son of his love.";
+			lyrics 1: "there.";
+			lyrics 1: 4s; 8; 8; 8; 8; 4.; 4.s; "the glad wel-come there.";
+			lyrics 1: "gain.";
+			lyrics 1: 4s; 8; 8; 8; 8; 4.; 4.s; "is ris-en a-gain.";
+endbar
+

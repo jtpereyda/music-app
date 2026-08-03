@@ -1,0 +1,303 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Golden Sheaf No. 2
+//		A colletcion of Gospel hymns, new and old
+//		Responsive readings, hymns for the Sunday school
+//		Young people societies, male voices
+//		Choruses, and general worship
+//		Edited by: Fim Murra
+//		Published by: The Advent Publication Society
+//		160 Warren Street
+//		Copyright 1916
+//		Hymn no. 200
+
+// Transcribed by: Ted Gatza, Jr. 02/11/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Pearly White City" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - DO" "\s(17)\f(TI)\:And\ I\ saw\ the\ holy\ city,\|\ new\ Jerusalem,\ coming down\ out\ of\ heaven\|\ of\ God\ -\ Rev.\ 21:2" ""
+   title (13) "Arthur F. Ingler" " " "Arthur F. Ingler, 1902"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = .9
+	pad =0
+	vscheme = 2f
+	staffscale=.99
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=75";
+
+
+//1
+1 1: 16e slur; f; 4.s; 4;
+1 2: 16e tie;; 4.s; 4;
+2 1: 16g slur; a; 4.s; 4;
+2 2: 16e tie; ; 4.s; 4s;
+
+			VERSE 16; 16; 4.s; 4s; "<1. >-1|There's a";
+			VERSE "<2. >-1|No";	
+			VERSE "<3. >-1|No";
+			VERSE "<4. >-1|My";
+
+bar
+//2
+1: 8ge;;; ad; be; c+e;
+2: 8be;;; bf; bg; ae;
+
+			VERSE "ho-ly and beau-ti-ful";
+			VERSE "sin is al-lowed in that";
+			VERSE "heart-aches are known in that";
+			VERSE "loved ones will soon gath-er";
+bar
+//3
+1: 8be; 4ge tie; 8; r; be;
+2: 8ge; 4be tie; 8; r; ge;
+
+			VERSE "cit-y, Whose";
+			VERSE "cit-y, And";
+			VERSE "cir-y, No";
+			VERSE "yon-der, My";
+bar
+//4
+1: 8bd; d+f; c+e; bd; ad; fd;
+2: 8fb-; bb-;;;;;
+
+			VERSE "build-er and rul-er is";
+			VERSE "noth-ing de-fil-ing nor";
+			VERSE "tears ev-er mois-ten the";
+			VERSE "friends, so fast pass-ing a-";
+bar
+//5
+1 1: 4.ge tie; 4; 8e;
+1 2: 4.s; 4; 8e;
+2: 4.be tie; 4; 8ge;
+
+			VERSE "God; John";
+			VERSE "mean; No";
+			VERSE "eye; There's";
+			VERSE "way; And";
+bar
+//6
+1: 8ge;;; ad; be; c+e;
+2: 8be;;; bf; bg; ae;
+
+			VERSE "saw it de-scend-ing from";
+			VERSE "pain and no sick-ness can";
+			VERSE "no dis-ap-point-ment in ";
+			VERSE "I, too shall join their bright";
+bar
+//7
+1: 8be; 4ge tie; 8; r; be;
+2: 8ge; 4 betie; 8; r; ge;
+
+			VERSE "Heav-en, When";
+			VERSE "en-ter, No";
+			VERSE "glo-ry, No";
+			VERSE "num-ber, And";
+bar
+//8
+1: 8bd; d+f; c+e; bd; fd; gd;
+2: 8fb-; bb-;; ab-;; bb-;
+
+			VERSE "Pat-mos, in ex-ile He";
+			VERSE "crape in that cit-y is";
+			VERSE "en-vy or strife can come";
+			VERSE "dwell in e-ter-ni-ty's";
+bar
+//9
+1 1: 4.e tie; 4; 8;
+1 2: 4.e tie; 4; 8;
+2: 4.ge tie; 4; 8;
+
+			VERSE "trod; Its";
+			VERSE "seen; Earth's";
+			VERSE "nigh; The";
+			VERSE "day; Then";
+bar
+//10
+1: 8fd; gd; ad;; bd; c+d;
+2: 8bb-;;;; ab-;;
+
+			VERSE "high, mas-sive wall is of";
+			VERSE "sor-row and cares are for-";
+			VERSE "saints, then all sanc-ti-fied";
+			VERSE "safe there in glo-ry with";
+bar
+//11
+1: 8be; 4ge tie; 8; r; ge;
+2: 8ge; 4be tie; 8; r; be;
+
+			VERSE "jas-per, The";
+			VERSE "got-ten, No";
+			VERSE "whol-ly, Will";
+			VERSE "Je-sus, We'll";
+bar
+//12
+1: 8fd; gd; ad;; bd; c+d;
+2: 8bb-;;;; ab-;;
+
+			VERSE "cit-y it-self is pure";
+			VERSE "tempt-er is there to an-";
+			VERSE "live in sweet har-mo-ny";
+			VERSE "sing \"All our tri-als are";
+bar
+//13
+1: 4.be tie; 4; 8bg;
+2: 4.ge tie; 4; 8e+e;
+ital (13) above 1: 6 "rit. ad lib.";
+
+			VERSE "gold, And";
+			VERSE "noy; No";
+			VERSE "there; My";
+			VERSE "past, We've";
+bar
+//14
+1: 8c+a; d+a; e+a;; d+a; c+a;
+2: 8e+a; e+b; e+c+;; e+b; e+a;
+
+			VERSE "when my frail tent here is";
+			VERSE "part-ing words ev-er are";
+			VERSE "heart is now set on that";
+			VERSE "o-ver-come sin and the";
+bar
+//15
+1: 8bg; 4ge tie; 8; r; be;
+2: 8e+e; 4be tie; 8; r; ge;
+
+			VERSE "fold-ed, Mine";
+			VERSE "spo-ken, There's";
+			VERSE "cit-y, And";
+			VERSE "tempt-er, And";
+bar
+
+//16
+1: 8bd; d+f; c+e; bd; fd; gd;
+2: 8fb-; bb-;; ab-;; bb-;
+
+			VERSE "eyes shall its glo-ry be-";
+			VERSE "noth-ing to hurt and de-";
+			VERSE "some day its bless-ings I'll";
+			VERSE "reached the fair cit-y at";
+bar
+//17
+1 1: 4.e tie; 4; 8s;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge-e tie; 4; 8s;
+
+			VERSE "hold.";
+			VERSE "stroy.";
+			VERSE "share.";
+			VERSE "last.\"";
+
+dblbar hidechanges
+score time=9/8
+music
+midi all: 0 "tempo=75";
+//18
+1: 8ge; ad; be; 4.s;;
+2: 8be; bf; bg; 4.s;;
+ital (13) above 1: 1 "Chorus   Slow";
+
+
+			VERSE "In that bright";
+bar
+//19
+1: 8c+a; 4 tie; 4.; 8.e+c+; 16d+b; 8c+a;
+2: 8e+a; 4 tie; 4.; 8.; 16; 8;
+
+			VERSE "cit-y, pearl-y white";
+bar
+//20
+1 1: 8c+a; 4bg tie;; 8r; 8.ge; 16f; 8e;
+1 2: 8s; 4;; 8; 8.; 16e; 8;
+2: 8e+e; 4 tie;; 8r; 8.be; 16ae; 8ge;
+
+			VERSE " cit-y, I have a";
+bar
+//21
+1 1: 8ge; 4be tie;; 8ge; 8.; 16f; 8e;
+1 2: 8s; 4;; 8; 8.; 16e; 8;
+2:8be; 4ge tie;; 8be; 8.anc; 16af-; 8;
+
+			VERSE "man-sion, a robe and a";
+//			VERSE "man-sion, a harp and a";		//Original lyrics
+bar
+//22
+1 1: 4.fd tie; 4; 8r; ge; f; e;
+1 2: 4.s; 4; 8;; e;;
+2 1: 4.f slur; 4a&; 8r; be; ae; ge;
+2 2: 4.b- tie; 4; 8s;;;;
+
+			VERSE "crown; Now I am";
+bar
+//23
+1: 8ge; 4bg tie;; 8r; 8c+a; e+a; c+a;
+2: 8be; 4e+e tie;; 8r; e+a; c+a; c+a;
+mussym (9) above 1: 8 "ferm";
+mussym (9) below 2: 8 "uferm";
+
+			VERSE "watch-ing, wait-ing and";
+bar
+//24
+1: 8bg; 4ge tie; 4.ge; 8.be; 16c+e; 8be;
+2: 8e+e; 4be tie; 4.; 8.ge; 16ae; 8ge;
+
+			VERSE "long-ing For the white";
+bar
+//25
+1 1: 8be; 4ge tie;; 8e; 8.fd; 16; 8gd;
+1 2: 8s; 4;; 8e; 8.s; 16; 8;
+2: 8ge; 4be tie;; 8b&&c&; 8.ab-; 16; 8bn&b-;
+
+			VERSE "cit-y, That's soon com-ing";
+bar
+//26
+1 1: 4.e tie;; 4.s;
+1 2: 4.e tie;; 4.s;
+2: 4.gee-tie;; 4.s;
+
+			VERSE "down.";
+endbar

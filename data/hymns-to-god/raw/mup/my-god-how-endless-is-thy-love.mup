@@ -1,0 +1,175 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Assembly Hymn and Song Collection
+//		For use ing Chapel, Assembly, Convocation
+//		or General Exercises of Schools, Normals, 
+//		Colleges, Universitues, Etc.
+//		Compiled and Edited by C. Guy Hoover
+//		Professor of School Music, Theory and 
+//		Conducting
+//		Published by the Author
+//		Authorized Distributer: Educational Music Bureau
+//		School-Music Supply Department
+//		218 So. Wabash Ave. Chicago.
+//		Sixth Edition
+//		Copyright 1915
+//		Hymn no. 41
+
+// Transcribed by: Ted Gatza, Jr. 11/29/2101
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "My God, How Endless is Thy Love" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:It\ is\ of\ Jehovah's\ lovingkindnes\|ses\ ....\ his\ compassions\ fail\ not.\ They are\ new\ every\ morning;\ gre\|at\ is\ thy\ faithfulness.\ -\ Lam.\ 3:22"""
+   title (13) "Isaac Watts" " " "Arr. from R. Schumann"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1 1: 2.s; 4d;
+1 2: 2.s; 4d;
+2 1: 2.s; 4d;
+2 2: 2.s; 4d;
+
+			lyrics 1: 2.s; 4; "<1. >-1|My";
+			lyrics 1: 2.s; 4; "<2. >-1|Thou";
+			lyrics 1: 2.s; 4; "<3. >-1|I";
+bar
+//2
+1 1: 4bd; 4bd#; 4be; 8c+ bm; 8b ebm;
+1 2: 4s; 4s; 4s; 4e;
+2 1: 4bg; 4af; 4ge; 8a bm; 8g ebm;
+2 2: 4s; 4s; 4s; 4a-;
+
+			lyrics 1: 4; 4; 4; 4; "God, how end-less";
+			lyrics 1: 4; 4; 4; 4; "spreadst the cur-tains";
+			lyrics 1: 4; 4; 4; 4; "yield my pow'rs to";
+bar
+//3
+1 1: 4ac; 8g bm; 8a ebm; 4bb-; 4d;
+1 2: 4s; 4c; 4s; 4d;
+2 1: 4fd; 8e bm; 8f ebm; 4gg-; 4gb-;
+2 2: 4s; 4d; 4s; 4s;
+
+			lyrics 1: 4; 4; 4; 4; "is Thy love! Thy";
+			lyrics 1: 4; 4; 4; 4; "of the night, Great";
+			lyrics 1: 4; 4; 4; 4; "Thy com-mand, To";
+bar
+//4
+1: 4ec; 4fc; 4s; 4s;
+2: 4gc; 4aa-; 4s; 4s;
+
+			lyrics 1: "gifts are";
+			lyrics 1: "guard-ian";
+			lyrics 1: "Thee I";
+invisbar
+newscore
+
+1: 4s; 4s; 4gd; 4ae;
+2: 4s; 4s; 4gb-; 4ec#;
+
+			lyrics 1: "ev-'ry";
+			lyrics 1: "of my";
+			lyrics 1: "con-se-";
+
+bar
+//5
+1 1: 4fd; 4ec#; 4d; 4d;
+1 2: 4s; 4s; 4d; 8d bm; 8cn ebm;
+2 1: 4ad; 4ga-; 4fd; 4d;
+2 2: 4s; 4s; 4s; 4d;
+
+			lyrics 1: 4; 4; 4; 4; "eve-ning new, And";
+			lyrics 1: 4; 4; 4; 4; "sleep-ing hours; Thy";
+			lyrics 1: 4; 4; 4; 4; "crate my days; Per-";
+bar
+//6
+1 1: 4bd; 4bd#; 4be; 8c+ bm; 8b ebm;
+1 2: 4s; 4s; 4s; 4e;
+2 1: 4gg-; 4fb-; 4g#e; 8a bm; 8gn ebm;
+2 2: 4s; 4s; 4s; 4a-;
+
+			lyrics 1: 4; 4; 4; 4; "morn-ing mer-cies";
+			lyrics 1: 4; 4; 4; 4; "sov-reign workd re-";
+			lyrics 1: 4; 4; 4; 4; "pet-ual bless-ings";
+bar
+newscore
+//7
+1 1: 4ac; 8g bm; 8a ebm; 4bb-; 4d;
+1 2: 4s; 4c; 4s; 4d;
+2 1: 4fd; 8e bm; 8f ebm; 4gg-; 4gg-;
+2 2: 4s; 4d; 4s; 4s;
+
+			lyrics 1: 4; 4; 4; 4; "from a-bove Gent-";
+			lyrics 1: 4; 4; 4; 4; "stores the light And";
+			lyrics 1: 4; 4; 4; 4; "from Thy hand De-";
+bar
+//8
+1 1: 4ec; 4fc; 4gc; 8b bm; 8a ebm;
+1 2: 4s; 4s; 4s; 4e;
+2 1: 4gc; 4aa-; 4ge; 8g# bm; 8a ebm;
+2 2: 4s; 4s; 4s; 4c;
+
+			lyrics 1: 4; 4; 4; 4; "ly dis-til like";
+			lyrics 1: 4; 4; 4; 4; "quick-ens all my";
+			lyrics 1: 4; 4; 4; 4; "mand per-pet-ual";
+bar
+//9
+1: 4gd; 4fd; 4gd; 4s;
+2: 4bd; 4ad; 4bgg-; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+			
+			lyrics 1: "eve-ning dew.";
+			lyrics 1: "drow-sy pow'rs.";
+			lyrics 1: "songs of praise.";
+endbar			
+
+   title (24) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

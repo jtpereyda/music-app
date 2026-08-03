@@ -1,0 +1,205 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest And Best
+//    A Choice Collection of New Songs
+//    for the Sunday School
+//    and Meetings of prayer and Praise
+//    New York and Chicago
+//    Publishers: Biglow and Main
+//    Copyright 1875
+//    Hymn no. 112
+
+// Transcribed by: Ted Gatza, Jr. 02/11/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Ever Near" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - DO" "\s(17)\f(TI)\:\"It\ is\ good\ for\ me\ to\ draw\ near\ to\ God\"\ -\ Ps.\ 73:28 \(space)"""
+   title (13) "Ellen M. Hastings" " " "Robert Lowry, 1875"  
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+   label=""
+   staffs=2
+   time=3/4 
+   key=4&
+   packexp = 0.0
+   packfact = 0.9
+   pad = 0
+   noteheads = "isostri semicirc diam righttri norm rect pie"
+   vscheme = 2f
+   staffscale=1.0
+   scoresep=6
+   scorepad=0
+   scale = .73
+   lyricssize = 13
+   pageheight=9.0
+   pagewidth=6.0
+   topmargin=.200
+   bottommargin=.200
+   withfontfamily=palatino
+
+
+staff 2
+   key=4&
+   clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 2s; 8ac; 8bd;
+2: 2s; 8aa-; 8aa-;
+
+         lyrics 1: "<1. >-1|Ev-er";
+         lyrics 1: "<2. >-1|Tho' the";
+         lyrics 1: "<3. >-1|When the";
+         lyrics 1: "<4. >-1|Shades of";
+bar
+//2
+1: 4.c+e; 8bd; 8ac; 8fd;
+2: 4.aa-; 8aa-; 8aa-; 8aa-;
+
+         lyrics 1: "near my Sav-iour's";
+         lyrics 1: "night be dark and";
+         lyrics 1: "cheer-ful light of";
+         lyrics 1: "death I will not";
+bar
+//3
+1: 2ec; 8ac; 8bd;
+2: 2aa-; 8aa-; 8aa-;
+   
+         lyrics 1: "side Would I";
+         lyrics 1: "drear, And no";
+         lyrics 1: "day Rais-es";
+         lyrics 1: "fear, Je-sus";
+bar
+//4
+1: 4.c+e; 8ae; 8gd; 8ac;
+2: 4.aa-; 8ac; 8eb-; 8aa-;
+
+         lyrics 1: "lin-ger night and";
+         lyrics 1: "ray of light I";
+         lyrics 1: "hope and makes me";
+         lyrics 1: "lights the dark-est";
+bar
+//5
+1: 2be; 8ac; 8bd;
+2: 2ge; 8aa-; 8aa-;
+
+         lyrics 1: "day; He a-";
+         lyrics 1: "see, I'll press";
+         lyrics 1: "strong, Still I";
+         lyrics 1: "way; And I";
+bar
+//6
+1: 4.c+e; 8be; 8af; 8fd;
+2: 4.aa-; 8ac; 8ad; 8ad;
+
+         lyrics 1: "lone shall be my";
+         lyrics 1: "on if He is";
+         lyrics 1: "would be-side Him";
+         lyrics 1: "know He will be";
+bar
+//7
+1: 2ec; 8gd; 8ac;
+2: 2aa-; 8be; 8be;
+
+         lyrics 1: "guide Thro' life's";
+         lyrics 1: "near To up-";
+         lyrics 1: "stay, Lift to";
+         lyrics 1: "near Till I";
+bar
+//8
+1: 4.be; 8ge; 8ge; 8fdn;
+2: 4.ge; 8be; 8bb-; 8bb-;
+
+         lyrics 1: "rough and thorn-y";
+         lyrics 1: "hold and com-fort";
+         lyrics 1: "Him my thank-ful";
+         lyrics 1: "reach the per-fect";
+bar
+//9
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2ge; 4s;
+
+         lyrics 1: "way.";
+         lyrics 1: "me.";
+         lyrics 1: "song.";
+         lyrics 1: "day.";
+dblbar
+//10
+1: 8d+e; 8c+e; 2s;
+2: 8be; 8ae; 2s;
+ital (13) above 1: 1 "Refrain";
+
+         lyrics 1: [c]"Ev-er";
+bar
+//11
+1: 2be; 8c+e; 8bd;
+2: 2ge; 8aa-; 8ea-;
+
+         lyrics 1: [c]"near, ev-er";
+bar
+//12
+1: 2ac; 8bd; 8ac;
+2: 2ea-; 8ge; 8ae;
+
+         lyrics 1: [c]"near, Dear-est";
+bar
+//13
+1: 4.ge; 8ge; 8ae; 8c+e;
+2: 4.be; 8bd; 8ac; 8aa-;
+
+         lyrics 1: [c]"Sav-iour, ev-er";
+bar
+//14
+1: 2be; 8c+e; 8bd;
+2: 2ge; 8aa-; 8ea-;
+
+         lyrics 1: [c]"near, Thou art";
+bar
+//15
+1: 4.ac; 8ge; 8fd; 8ad;
+2: 4.ea-; 8ac; 8ad; 8af;
+
+         lyrics 1: [c]"now the Liv-ing";
+bar
+//16
+1 1: 2ec; 8ac; 8e;
+1 2: 2s; 8s; 8e;
+2 1: 2a; 8ea-; 8ac;
+2 2: 2a; 8s; 8s; 
+
+         lyrics 1: [c]"Way, Near Thee";
+bar
+//17
+1 1: 8fd; 8bf; 4ae; 4g;
+1 2: 8s; 8s; 4s; 8e bm; d ebm;
+2: 8ad; 8d+b-; 4c+e; 4be;
+
+         lyrics 1: [c]"ev-er let me";
+bar
+//18
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+         lyrics 1: [c]"stay.";
+endbar

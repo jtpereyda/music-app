@@ -1,0 +1,384 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Voices of Praise
+//	Prepared with Especial Reference to the Needs of the Sunday School
+//	Will Also Be Found Suitable for the Prayer Meeting and Other Religious 
+//	Gatherings
+// 	Compiled b yWilliam B. Olmstead, David S. Warner, 
+//	Mary L. Coleman, Emma L. Hogue, William B. Rose.
+//	Published by W. B. ROSE
+//	1132 Washington Boulevard, Chicago, Illinois.
+//	Copyright 1909
+//	Hymn No.: 138
+
+// Transcribed by: Ted Gatza, Jr. 07/10/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "From The Cross To The Crown" ""
+   title (2) ""
+   title (11) "" "\f(TI)And when The Chief Shepherd will be revealed, you shall receive" ""
+   title (11) "" "\f(TI)a crown of glory from him that does not fade away. - 1 Pet. 5:4" ""
+   title (11) "E \(flat) - 4 - SOL" "" ""
+   title (13) "Fanny J. Crosby" "" "John R. Sweney, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 8; 8gb;
+2: 2.s; 8; eb;
+
+
+	VS "<1. >-1|Be";
+	VS "<2. >-1|His";
+	VS "<3. >-1|This";
+	VS "<4. >-1|Tho'";
+
+bar
+
+//2
+1 1: 4ge+; 8eg; fa; 4gb; 8e; eg;
+1 2: 4s; 8; ; 4; 8e; s;
+2 1: 4eb; 8; ; 4ee+; 8gb; 8b;
+2 2: 4s; 8; ; 4; 8; b;
+
+	VS "strong and cour-a-geous what-";
+	VS "cup of af-flic-tion was";
+	VS "life is a con-flict, a";
+	VS "friends that are dear-est have";
+bar
+
+//3
+1: 8.eg bm; 16b-f ebm; 8b-e; b-d; 4.b-e; 8s;
+2 1: 8.b bm; 16a ebm; 8s; 8s; 4.s; 8s;
+2 2: 4b-; 8b-g; 8b-f; 4.eg; 8s;
+
+	VS22 "e'er may be-fall,";
+	VS22 "filled to the brim,";
+	VS22 "bat-tle with sin,";
+	VS22 "gone from our sight,";
+invisbar
+newscore
+
+1: 8.s; 16; 8; ; 4.; 8eg;
+2: 8.s; 16; 8; ; 4.; 8eb;
+
+	VS "We";
+	VS "And";
+	VS "Yet";
+	VS "'Tis";
+bar
+
+//4
+1: 4df; 8; eg; 4fa; 8bd+; ac+;
+2: 4b-b; 8; ; 4; 8; 8;
+
+	VS "know our Re-deem-er will";
+	VS "are we not will-ing to";
+	VS "trust-ing in Je-sus thro'";
+	VS "on-ly to en-ter the";
+bar
+
+//5
+1: 8.ac+ bm; 16gb ebm; 8; fa; 4.eg; 8s;
+2: 4eb; 8; ; 4.; 8s;
+
+	VS21 "an-swer our call;";
+	VS21 "suf-fer for Him?";
+	VS21 "grace we shall win;";
+	VS21 "man-sions of light;";
+invisbar
+newscore
+
+1: 8.s; 16; 8; ; 4.; 8gb;
+2: 4s; 8; ; 4.s; 8eb;
+
+	VS21 "Tho'";
+	VS21 "The";
+	VS21 "The";
+	VS21 "Their";
+bar
+
+//6
+1 1: 4ge+; 8eg; fa; 4gb; 8e; eg;
+1 2: 4s; 8; ; 4; 8e; s;
+2 1: 4eb; 8; ; 4ee+; 8gb; 8b;
+2 2: 4s; 8; ; 4; 8; b;
+
+	VS "sor-row and tri-als are";
+	VS "robe of His glo-ry for";
+	VS "world may op-pose us, the";
+	VS "war-fare is o-ver, their";
+bar
+
+//7
+1: 8.eg bm; 16b-f ebm; 8b-e; b-d; 4.b-e; 8s;
+2 1: 8.b bm; 16a ebm; 8s; 8s; 4.s; 8s;
+2 2: 4b-; 8b-g; 8b-f; 4.eg; 8s;
+
+	VS22 "weigh-ing us down,";
+	VS22 "us He laid down,";
+	VS22 "tempt-er may frown,";
+	VS22 "bur-dens laid down,";
+
+invisbar
+newscore
+
+1: 8.s; 16; 8; ; 4.; 8eg;
+2: 8.s; 16; 8; ; 4.; 8eb;
+
+	VS "Yet";
+	VS "To";
+	VS "Yet";
+	VS "How";
+bar
+
+//8
+1 1: 4f; 8ec+; ; 4eb; 8eg; 8ge+;
+1 2: 4e; 8s; ; 4; 8; 8;
+2 1: 4ac+; 8a; ; 4gb; 8eb; ;
+2 2: 4s; 8a; ; 4s; 8; ;
+
+	VS "hope looks a-way from the";
+	VS "show us the path from the";
+	VS "faith lead-eth on from the";
+	VS "short was their path from the";
+bar
+
+//9
+1: 4ad+; 8ac+; ad+; 4.ge+; 8s;
+2 1: 4b; 8b-b; ; 4.eb; 8s;
+2 2: 4b; 8s; ; 4.; 8;
+
+
+	VS "cross to the crown.";
+	VS "cross to the crown.";
+	VS "cross to the crown.";
+	VS "cross to the crown.";
+dblbar
+
+CHORUS
+
+//10
+1: 2.s; 8gb; ge+;
+2: 2.s; 8eb; ;
+
+	VS "From the";
+bar
+
+//11
+1: 4ad+; 8df; eg; 4fa; 8bd+; ac+;
+2 1: 4fb; 8b; ; 4b-b; 8; 8;
+2 2: 4s; 8b; ; 4s; 8; ;
+
+	VS "cross to the crown let us";
+bar
+
+//12
+1 1: 8.ac+ bm; 16gb ebm; 8e; f; 4eg; 8s; 8s;
+1 2: 8.s; 16; 8e; ; 4s; 8; ;
+2: 4eb; 8eg; ea; 4eb; 8s; ; 
+
+	VS21 "fol-low our Lord,";
+invisbar
+newscore
+
+1: 8.s; 16; 8; ; 4; 8gb; ge+;
+2: 4s; 8; ; 4; 8eb; ;
+
+	VS "From the";
+bar
+
+//13
+1: 4ad+; 8df; eg; 4fa; 8bd+; ac+;
+2 1: 4fb; 8b; ; 4b-b; 8; ;
+2 2: 4s; 8b; ; 4s; 8; ;
+
+	VS "cross to the crown let us";
+bar
+
+//14
+1: 8.ac+ bm; 16gb ebm; 8; fa; 4.eg; 8s;
+2: 4eb; 8; ; 4.; 8s;
+
+	VS21 "cling to His Word;";
+invisbar
+newscore
+
+1: 8.s; 16; 8; ; 4.; 8eg;
+2: 4s; 8; ; 4.; 8eb;
+
+	VS "Tho'";
+bar
+
+//15
+1 1: 4g; 8; ; 4ec+; 8eg; ;
+1 2: 4f; 8; ; 4s; 8; ;
+2: 4dbn; 8; ; 4cc+; 8; ;
+
+	VS "sor-row and tri-als are";
+bar
+
+//16
+1 1: 4fd+; 8g; ; 4.ee+; 8s;
+1 2: 4s; 8f; ; 4.s; 8;
+2: 4gbn; 8; ; 4.cc+; 8s;
+
+	VS "weigh-ing us down,";
+invisbar
+newscore
+
+1: 4s; 8; ; 4.; 8ge+;
+2: 4s; 8; ; 4.; 8cc+;
+
+	VS "Yet,";
+bar
+
+//17
+1 1: 4ae+; 8bd+; ac+; 4gb; 8e; eg;
+1 2: 4s; 8; ; 4; 8e; s;
+2 1: 4ac+; 8ae+; ; 4ee+; 8gb; b;
+2 2: 4s; 8; ; 4; 8; b;
+
+	VS "faith leads us on from the";
+bar
+
+//18
+1: 8.eg bm; 16b-f ebm; 8b-e; b-d; 4.b-e; 8s;
+2 1: 8.b bm; 16a ebm; 8s; ; 4.; 8;
+2 2: 4b-; 8b-g; b-f; 4.eg; 8s;
+
+	VS22 "cross to the crown!";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

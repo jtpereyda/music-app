@@ -1,0 +1,240 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Sermons In Song No. 3
+//		For use in sunday school, church prayer meeting,
+//		young people's societies and general religious 
+//		work and worship
+//		Edited by I. H. Meredith and 
+//		Grant Colfax Tullar
+//		Publisher: Tullar - Meredith Co.
+//		108 Washington Street, Chicago Ill.
+//		150 Fifth Avenue, New York, N. Y.
+//		Copyright: 1901
+//		Hymn No. 69
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 03/24/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "More Like My Savior" ""
+   title (2)""
+   title (11) "D \(flat) - 4 - MI" "\s(17)\f(TI)\:For\ hereunto\ were\ ye\ called:\ because\ \|Christ\ also\ suffered\ for\ you,\ leaving you\ an\ example,\ that\ ye\ should\ \|follow\ his\ steps:\ -\ 1\ Pet.\ 2:21" ""   
+   title (13) "Charles C. Ackley" "" "Charles C. Ackley, 1901"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.85
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1: 2fd; 4;;
+2: 2ad; 4;;
+ital (13) above 1: 0 "Prayerfully";
+
+	VERSE "<1. >-1|More like my";
+	VERSE "<2. >-1|More like my";
+	VERSE "<3. >-1|O bless-ed";
+	VERSE "<4. >-1|More like my";
+bar
+//2
+1: 2af; fd;
+2: 2d+d; ad;
+
+	VERSE "Sav-ior";
+	VERSE "Sav-ior";
+	VERSE "Sav-ior";
+	VERSE "Sav-ior";
+bar
+//3
+1: 4fc; ec; da-; ec;
+2: 4aa-; ga-;fa-;aa-;
+
+	VERSE "I would ev-er";
+	VERSE "pa-tient, kind and";
+	VERSE "teach me thro' Thy";
+	VERSE "how my heart is";
+bar
+//4
+1: 2.fd; 4r;
+2: 2.ad; 4r;
+
+	VERSE "be,";
+	VERSE "true,";
+	VERSE "word,";
+	VERSE "stirred,";
+bar
+//5
+1: 2bd; 4; be;
+2 1: 2g; 4bg; c+g;
+2 2: 2g; 4s;;
+
+	VERSE "This is the";
+	VERSE "Seek-ing each";
+	VERSE "Give me a";
+	VERSE "When-e'er I";
+bar
+//6
+1: 2af; fd;
+2: 2d+d; ad;
+
+	VERSE "pray'r my";
+	VERSE "day the";
+	VERSE "vis-ion";
+	VERSE "read in";
+bar
+//7
+1: 4ec; ae; ad; bd;
+2 1: 4ae; c+e; f; gne;
+2 2: 4s;;e; s;
+
+	VERSE "heart would raise to";
+	VERSE "Fa-ther's will to";
+	VERSE "of my ris-en";
+	VERSE "His own bless-ed";
+bar
+//8
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+	VERSE "Thee,";
+	VERSE "do,";
+	VERSE "Lord,";
+	VERSE "word,";
+bar
+//9
+1: 2ec; 4fc; ec;
+2 1: 2a; 4;;
+2 2: 2a; 4; g;
+
+	VERSE "Thou who did'st";
+	VERSE "Find-ing in";
+	VERSE "O may it's";
+	VERSE "\"I shall be";
+bar
+//10
+1 1: 2d; ad;
+1 2: 2d; s;
+2: 2af;;
+
+	VERSE "give thine";
+	VERSE "Him, my";
+	VERSE "glo-ry";
+	VERSE "like Him\"\(emdash)";
+bar
+//11
+1: 4gd;; fc; ec;
+2 1: 4be; b&&e; a; aa-;
+2 2: 4s;; a; s;
+
+	VERSE "on-ly Son to";
+	VERSE "sphere of great-est";
+	VERSE "fill my life each";
+	VERSE "O what won-drous";
+bar
+//12
+1: 2.fd; 4r;
+2: 2.ad; 4r;
+
+	VERSE "die,";
+	VERSE "joy,";
+	VERSE "hour,";
+	VERSE "bliss,";
+bar
+//13
+1 1: 2d; 4fd; af;
+1 2: 2d; 4s;;
+2: 2fd; 4ad; c&+d;
+
+	VERSE "Hear me, O";
+	VERSE "Pleas-ures un-";
+	VERSE "That I may";
+	VERSE "For I at";
+bar
+//14
+1 1: 4af; ge; fd; e;
+1 2: 4s;;; d;
+2: 4bdn; be; af; bg;
+
+	VERSE "Fa-ther, while to";
+	VERSE "dimmed, and peace with-";
+	VERSE "wit-ness with the";
+	VERSE "last shall see Him";
+bar
+//15
+1 1: 2fd; e;
+1 2: 2s; 4d slur; c;
+2 1: 2a; 4 slur; g;
+2 2: 2a; a-;
+
+	VERSE "Thee I";
+	VERSE "out al-";
+	VERSE "Spir-it's";
+	VERSE "as He";
+bar
+//16
+1 1: 2.d; 4r;
+1 2: 2.d; 4s;
+2: 2.fd; 4r;
+
+	VERSE "cry.";
+	VERSE "loy.";
+	VERSE "pow'r.";
+	VERSE "is.";
+endbar

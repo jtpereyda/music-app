@@ -1,0 +1,248 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School Hymnal
+//		Compiled and published under the direction of a
+//		Committee appointed by Mennonite conferences
+//		J. D. Brunk, Musical Editor
+// 		Mennonite Publishing House
+//		Scottsdale, Penn.
+//		Copyright 1902
+//		Hymn no. 210
+
+// Transcribed by: Ted Gatza, Jr. 01/20/2010 Rev. 04/10/2014
+// HymnsToGod.org
+
+// ***********************************
+
+top
+
+   title bold (19) "" "Saviour, We Come To Thee" ""
+   title (2)""
+   title (11) "G - 2 - MI" "\s(17)\f(TI)\:Incline\ your\ ear,\ an\|d\ come\ unto\ me;\ hear, and\ your\ soul\ sh\|all\ live:\ -\ Is.\ 55:3"""
+   title (13) "L. M. Evilsizer" " " "S. J. Perry"
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1 1: 4.bg; 4c+g; 8g;
+1 2: 4.s; 4s; 8g;
+2: 4.d+g; 4e+g; 8bg;
+
+			lyrics 1: "<1. >-1|Sav-iour, we";
+			lyrics 1: "<2. >-1|Sav-iour, we";
+			lyrics 1: "<3. >-1|Sav-iour, we";
+
+bar
+//2
+1: 4bg; 8af; 4.af;
+2: 4d+d; 8c+d; 4.c+d;
+
+			lyrics 1: "come to thee";
+			lyrics 1: "pray to thee,";
+			lyrics 1: "trust in thee,";
+bar
+//3
+1: 4.af; 4bf; 8fd;
+2: 4.c+d; 4d+d; 8ad;
+
+			lyrics 1: "In our hu-";
+			lyrics 1: "Heed thou our";
+			lyrics 1: "In our sim-";
+bar
+//4
+1: 4ad; 8gd; 4.gd;
+2: 4c+g; 8bg; 4.bg;
+
+			lyrics 1: "mil-i-ty,";
+			lyrics 1: "ear-nest plea,";
+			lyrics 1: "plic-i-ty,";
+bar
+//5
+1: 4.ge; 4fd; 8ec;
+2: 4.c+c; 4gc; 8gc;
+
+			lyrics 1: "Lambs of thy";
+			lyrics 1: "Help us to";
+			lyrics 1: "Know-ing thine";
+bar
+//6
+1: 4db-; 8gb-; 4.bd;
+2: 4gg-; 8gg-; 4.gg-;
+
+			lyrics 1: "fold are we";
+			lyrics 1: "ev-er be";
+			lyrics 1: "eye doth see";
+bar
+//7
+1: 4.ac#; 4ac; 8bc;
+2: 4.ea-; 4ga-; 8ga-;
+
+			lyrics 1: "Seek-ing thy";
+			lyrics 1: "Gen-tle and";
+			lyrics 1: "Wher-e'er we";
+bar
+//8
+1: 4.ad tie; 4ad; 8r;
+2: 4.fd tie; 4fd; 8r;
+
+			lyrics 1: "love;";
+			lyrics 1: "pure;";
+			lyrics 1: "roam;";
+bar
+//9
+1: 4.bd; 4c+e; 8gd;
+2 1: 4.g; 4g; 8bg;
+2 2: 4.g; 4g; 8s; 
+
+			lyrics 1: "Grant us thy";
+			lyrics 1: "As in the";
+			lyrics 1: "And oh, 'tis";
+bar
+//10
+1: 4bg; 8af; 4.af;
+2: 4d+d; 8c+d; 4.c+d;
+
+			lyrics 1: "bless-ing now,";
+			lyrics 1: "days of old,";
+			lyrics 1: "sweet to know";
+bar
+//11
+1: 4.af; 4bf; 8fd;
+2: 4.c+d; 4d+d; 8ad;
+
+			lyrics 1: "While at thy";
+			lyrics 1: "Keep us with-";
+			lyrics 1: "That where-so-";
+bar
+//12
+1: 4ad; 8gd; 4.gd;
+2: 4c+a; 8bg; 4.bg;
+
+			lyrics 1: "feet we bow,";
+			lyrics 1: "in thy fold;";
+			lyrics 1: "e'er we go";
+bar
+//13
+1: 4.ge; 4fd; 8ec;
+2: 4.c+c; 4gc; 8gc;
+
+			lyrics 1: "O ten-der";
+			lyrics 1: "While we thy";
+			lyrics 1: "Thou dost the";
+bar
+//14
+1: 4db-; 8gd; 4.bg;
+2: 4gg-; 8bg-; 4.d+g-;
+
+			lyrics 1: "Shep-herd, thou,";
+			lyrics 1: "face be-hold,";
+			lyrics 1: "path-way show,";
+bar
+//15
+1: 4.ae; 4gd; 8fd;
+2: 4.c+c; 4bd; 8ad;
+
+			lyrics 1: "Guide us a-";
+			lyrics 1: "Rest we se-";
+			lyrics 1: "Lead-ing us";
+bar
+//16
+1: 4.gd tie; 4 gd; 8r;
+2: 4.bgg- tie; 4 bgg-; 8r;
+
+			lyrics 1: "bove.";
+			lyrics 1: "cure.";
+			lyrics 1: "home.";
+dblbar
+//17
+1: 4.d+g; 4e+g; 8bg;
+2:4.bg; 4c+g; 8d+g;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Sav-iour, O";
+bar
+//18
+1: 4d+g; 8c+f; 4.c+f;
+2: 4bd; 8ad; 4.ad;
+
+			lyrics 1: [c]"Sav-iour dear,";
+bar
+//19
+1: 4.c+a; 4d+b; 8af;
+2: 4.d+d; 4d+d; 8d+d;
+
+			lyrics 1: [c]"To thee our";
+bar
+//20
+1: 4c+a; 8bg; 4.bg;
+2: 4d+g; 8d+g; 4.d+g;
+
+			lyrics 1: [c]"hearts draw near;";
+bar
+newscore
+//21
+1: 4.bg; 4c+g; 8bg;
+2: 4.d+g; 4e+g; 8d+g;
+
+			lyrics 1: [c]"Hear thou our";
+bar
+//22
+1: 4ae; 8ge; 4fd; 8ec;
+2: 4c+c; 8c+c; 4gc; 8gc;
+
+			lyrics 1: [c]"pray'r sin-cere, And";
+bar
+//23
+1: 4.db-; 4af; 8bf;
+2: 4.gd; 4c+d; 8d+d;
+
+			lyrics 1: [c]"meet with us";
+bar
+//24
+1 1: 4.g tie; 4.g;
+1 2: 4.g tie; 4.g;
+2: 4.bgg- tie; 4. bgg-;
+
+			lyrics 1: [c]"here.";
+endbar

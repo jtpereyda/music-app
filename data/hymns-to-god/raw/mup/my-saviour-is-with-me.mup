@@ -1,0 +1,210 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs of Faith And Hope
+//		Edited By James M.Black
+//		For the Publishers
+//		Eaton And mains
+//		New York, Boston, Pittsburg, Detroit
+//		Jennings and Graham
+//		Chicago, Kansas City, San Francisco
+//		
+//		Copyright 1905		
+//		Hymn no. 106
+
+// Transcribed by: Ted Gatza, Jr. 01/26/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "My Saviour is With Me" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:teaching\ them\ to\ observe\ all\ things\|\ whatsoever\ I\ commanded\ you:\ and\ lo, I\ am\ with\ you\ always,\ even\ unto\ \|the\ end\ of\ the\ world.\ -\ Matt.\ 28:20" "\s(13)L. F. Jackson"
+   title (13) "Ada Blenkhorn" " " "Arr. by J. M. Black, 1898"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4.s; 4s; 8ec; 8ec; 8dnb-n; 8ec;
+2: 4.s; 4s; 8aa-; 8aa-; 8aa-; 8aa-;
+
+			lyrics 1: "<1. >-1|My Sav-iour is";
+			lyrics 1: "<2. >-1|His life-giv-ing";
+			lyrics 1: "<3. >-1|My Sav-iour is";
+bar
+//2
+1: 4.c+e; 4c+e; 8ac; 8bd; 8ad; 8fd;
+2: 4.aa-; 4aa-; 8aa-; 8fd; 8fd; 8ad;
+
+
+			lyrics 1: "with me, wher-ev-er I";
+			lyrics 1: "words faith and cour-age re-";
+			lyrics 1: "with me the tho't, O how";
+bar
+//3
+1: 4.ec tie; 4ec; 8ec; 8ec; 8dnb-n; 8ec;
+2: 4.aa- tie; 4aa-; 8aa-; 8aa-; 8aa-; 8aa-;
+
+			lyrics 1: "go, In dark-ness and";
+			lyrics 1: "new, They fall on my";
+			lyrics 1: "sweet! How bless-ed the";
+bar
+//4
+1: 4.be; 4be; 8be; 8be; 8c+e; d+e;
+2: 4.ge; 4ge; 8ge; 8ge; 8ae; 8be;
+
+			lyrics 1: "dan-ger the way He doth";
+			lyrics 1: "spir-it re-fresh-ing as";
+			lyrics 1: "les-sons I learn at His";
+bar
+//5
+1: 4.c+e tie; 4c+e; 8ec; 8ec; 8dnb-n; 8ec;
+2 1: 4.a tie; 4a; 8a; 8a; 8a; 8a;
+2 2: 4.a tie; 4a; 8a; 8a; 8a; 8a;
+
+			lyrics 1: "show; When storms rage a-";
+			lyrics 1: "dew; On heav-en-ly";
+			lyrics 1: "feet; How pre-cious the";
+bar
+//6
+1: 4.c+e; 4c+e; 8ae; 8ae; 8c+e; 8e+g&;
+2 1: 4.a; 4a; 8c+a; 8c+a; 8a; 8ac;
+2 2: 4.a; 4a; 8s; 8s; 8a; 8s;
+
+			lyrics 1: "round me, and sor-rows in-";
+			lyrics 1: "man-na my soul He doth";
+			lyrics 1: "wis-dom His love doth im-";
+bar
+//7
+1: 4.d+f tie; 4d+f; 8d+f; 8d+f; 8c+e; 8bd;
+2: 4.ad tie; 4ad; 8ad; 8bb-; 8anc; 8fd;
+
+			lyrics 1: "crease, He still-eth the";
+			lyrics 1: "feed, In paths of His";
+			lyrics 1: "part, With joy and de-";
+bar
+//8
+1: 4.ac; 4ec; 8ae; 8ge; 8ae; 8be;
+2 1: 4.e; 4ae; 8c+e; 8be; 8c+e; 8d+e;
+2 2: 4.e; 4s; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "temp-est and giv-eth me";
+			lyrics 1: "choos-ing my steps He doth";
+			lyrics 1: "vo-tion it fill-eth my";
+bar
+//9
+1: 4.ae tie; 4ae; 2s;
+2: 4.c+a- tie; 4c+a-; 2s;
+
+			lyrics 1: "peace.";
+			lyrics 1: "lead.";
+			lyrics 1: "heart.";
+dblbar
+newscore
+//10
+1 1: 8e; 8e; 8f; 8g; 4.s; 4s;
+1 2: 8e; 8e; 8f; 8g; 4.s; 4s;
+2 1: 8e; 8e; 8f; 8g; 4.s; 4s;
+2 2: 8e; 8e; 8f; 8g; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "I'll trust in my";
+bar
+//11
+1 1: 4.a; 4a; 8c+e; 8c+e; 8be; 8ae;
+1 2: 4.a; 4a; 8s; 8s; 8s; 8s;
+2 1: 4.a; 4a; 8a; 8a; 8d+a; 8c+a;
+2 2: 4.a; 4a; 8a; 8a; 8s; 8s;
+
+			lyrics 1: "Sav-iour, what-ev-er be-";
+bar
+//12
+1 1: 4.ge tie; 4ge; 8e; 8e; 8g; 8b;
+1 2: 4.s; 4s; 8e; 8e; 8g; 8b;
+2 1: 4.be tie; 4be; 8e; 8e; 8g; 8b;
+2 2: 4.s; 4s; 8e; 8e; 8g; 8b;
+
+			lyrics 1: "tide, I know all my";
+bar
+//13
+1: 4.d+g; 4d+g; 8d+g; 8d+g; 8e+g; 8d+g;
+2: 4.be; 4be; 8be; 8be; 8be; 8be;
+
+			lyrics 1: "foot-steps He safe-ly will";
+bar
+//14
+1 1: 4.c+e tie; 4c+e; 8c+a; 8c+a; 8bn; 8c+a;
+1 2: 4.s; 4s; 8s; 8s; 8a; 8s;
+2 1: 4.a tie; 4a; 8e+a; 8e+a; 8d+na; 8e+a;
+2 2: 4.a tie; 4a; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "guide; I know He will";
+bar
+//15
+1: 4.e+a; 4c+e; 8ac; 8ac; 8be; 8ae;
+2 1: 4.c+a; 4a; 8aa-; 8aa-; 8gb-; 8ac;
+2 2: 4.s; 4a; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "guard me with ten-der-est";
+bar
+//16
+1: 4.fd tie; 4fd; 8fd; 8af; 8ge; 8fd;
+2: 4.ad tie; 4ad; 8ad; 8ad; 8ad; 8ad;
+
+			lyrics 1: "love, Un-til I shall";
+bar
+//17
+1: 4.ec; 4ae; 8ae; 8ge; 8ae; 8be;
+2: 4.ae; 4c+e; 8c+e; 8be; 8c+e; 8d+e;
+
+			lyrics 1: "en-ter His glo-ry a-";
+bar
+//18
+1: 4.ae tie; 4ae; 2s;
+2: 4.c+a- tie; 4c+a-; 2s;
+
+			lyrics 1: "bove.";
+endbar

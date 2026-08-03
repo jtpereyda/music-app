@@ -1,0 +1,344 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Songs of Redemption
+// 	A Collection of Gospel Songs for Church, Sunday School, 
+//	Young People s Meetings, Evangelistic Meetings and General Singing
+//	Publisher: R. H. Cornelius
+//	Fort Worth, TX
+//	Copyright 1929
+//	Hymn No.: 91
+
+
+// Transcribed by:
+//	Ted Gatza, Jr. 04/25/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+staffs=2
+	time=6/4
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Where We'll Never Grow Old" ""
+   title (2)""
+   title (11) "" "\f(TI)and he shall wipe away every tear from their eyes; and death" ""
+   title (11) "" "\f(TI)shall be no more; neither shall there be mourning, nor crying" ""
+   title (11) "" "\f(TI)nor pain, any more: the first things are passed away. - Rev. 21:4" ""
+
+   title (11) "E \(flat) - 2 - DO" "" ""
+   title (11) "James C. Moore" "" "James C. Moore, 1914"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS11 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (13) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (13) above 1: 1 "Refrain"; @
+         define RALL ital (13) above 1: 1 "Rall."; @
+	define EFFECT ital (13) above 1: 1 "Effectively"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (13) above 1: COUNT "rit."; @
+        define FINE(COUNT)
+           ital (13) above 1: COUNT "fine"; @
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"; @
+        define DS(COUNT)
+	  ital (13) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+//Verse
+
+//1
+EFFECT
+1 1: 2.s; 2s; 8e; f;
+1 2: 2.s; 2s; 8e; ;
+2: 2.s; 2s; 8eg; ea;
+ 
+
+	VS "<1. >-1|I have";
+	VS "<2. >-1|In that";
+	VS "<3. >-1|When our";
+bar
+
+//2
+1 1: 4.eg; 8f#; 4eg; 2b-e; 8eg; fna;
+1 2: 4.s; 8e; 4s; 2; 8; 8;
+2: 4.eb; 8ean; 4eb; 2eg; 8eb; ;
+
+	VS "heard of a land on the";
+	VS "beau-ti-ful home where we'll";
+	VS "work here is done and the";
+bar
+
+//3
+1: 4.gb; 8f#an; 4gb; 2eg; 8s; ;
+2: 4.ee+; 8; 4; 2eb; 8s; ;
+
+	VS "far a-way strand,";
+	VS "nev-er-more roam,";
+	VS "life-crown is won,";
+invisbar
+
+//3
+1: 4.s; 8; 4; 2; 8gb; ;
+2: 4.s; 8; 4; 2; 8ee+; ;
+
+	VS "'Tis a";
+	VS "We shall";
+	VS "And our";
+bar
+
+//4
+1 1: 4ac+; ae+; ac+; 8gb; 4.eg; 4e;
+1 2: 4s; ; ; 8; 4.; 4e;
+2: 4ae+; ac+; ae+; 8ee+; 4.eb; 4can;
+
+	VS "beau-ti-ful home of the";
+	VS "be in the sweet by and";
+	VS "trou-bles and tri-als are";
+bar
+
+//5
+1: 2.df tie; 2df; 8s; ;
+2: 2.b-b tie; 2b-b; 8s; ;
+
+	VS "soul;";
+	VS "by;";
+	VS "o'er;";
+invisbar
+
+//5
+1 1: 2.s; 2s; 8e; f;
+1 2: 2.s; 2s; 8e; ;
+2: 2.s; 2s; 8eg; ea;
+
+	VS "Built by";
+	VS "Hap-py";
+	VS "All our"; 
+bar
+
+//6
+1 1: 4.eg; 8f#; 4eg; 2e; 8eg; fna;
+1 2: 4.s; 8e; 4s; 2e; 8s; 8;
+2: 4.eb; 8ean; 4eb; 2eg; 8eb; ;
+
+	VS "Je-sus on high, there we";
+	VS "praise to the king thru e-";
+	VS "sor-row will end, and our";
+bar
+
+//7
+1: 4.gb; 8f#an; 4gb; 2eg; 8s; ;
+2 1: 4.ee+; 8; 4; 2eb; 8s; ;
+
+	VS "nev-er shall die,";
+	VS "ter-ni-ty sing,";
+	VS "voic-es will blend,";
+
+invisbar
+
+//7
+1: 4.s; 8; 4; 2; 8gb; ;
+2: 4.s; 8; 4; 2; 8ee+; ;
+
+	VS "'Tis a";
+	VS "'Tis a";
+	VS "With the";
+bar
+
+//8
+1 1: 4ac+; ae+; ac+; 8gb; 4.eg; 4df;
+2 1: 4ae+; ac+; ae+; 8be+; 4.b; 4b-a;
+2 2: 4s; ; ; 8; 4.b; 4s;
+
+	VS "land where we nev-er grow";
+	VS "land where we nev-er shall";
+	VS "loved ones who've gone on be-";
+bar
+
+//9
+1 1: 2.e tie; 2; 8s; ;
+1 2: 2.e tie; 2; 8s; ;
+2: 2.eg tie; 2eg; 8s; ;
+
+	VS "old.";
+	VS "die.";
+	VS "fore.";
+dblbar
+
+REFRAIN
+//10
+1 1: 8gb; 4.eg; 4gb; 2.e+;
+1 2: 8s; 4.; 4; 4g; a; b;
+2 1: 8ee+; 4.eb; 4ee+; 2.e+;
+2 2: 8s; 4.; 4; e; f; g;
+
+	VS "Nev-er grow old,";
+	VS 8s; 4.s; 4s; 4s; 4; 4; "Where we'll";
+bar
+
+//11
+1: 8ac+; 4.ae+; 4ac+; 2gb; 8s; ;
+2: 8ae+; 4.ac+; 4ae+; 2ee+; 8s; ;
+
+	VS "Nev-er grow old,";
+invisbar
+
+//11
+1: 8s; 4.; 4; 2; 8gb; ;
+2: 8s; 4.;4; 2; 8ee+; ;
+
+	VS "In a";
+bar
+
+//12
+1: 4gb; eg; ; 8; 4.b-f; 4ce;
+2: 4ee+; eb; ; 8; 4.db; 4can;
+
+	VS "land where we'll nev-er grow";
+bar
+
+//13
+1: 2.db tie; 2.;
+2: 2.b-b tie; 2.;
+
+	VS "old;";
+bar
+
+//14
+//10
+1 1: 8gb; 4.eg; 4gb; 2.e+;
+1 2: 8s; 4.; 4; 4g; a; b;
+2 1: 8eb; 4.eb; 4ee+; 2.e+;
+2 2: 8s; 4.; 4; e; f; g;
+
+	VS "Nev-er grow old,";
+	VS 8s; 4.s; 4s; 4s; 4; 4; "Where we'll";
+bar
+
+//15
+1: 8ac+; 4.ae+; 4ac+; 2gb; 8s; ;
+2: 8ae+; 4.ac+; 4ae+; 2ee+; 8s; ;
+
+	VS "Nev-er grow old,";
+invisbar
+
+//16
+1: 8s; 4.; 4; 2; 8gb; ;
+2: 8s; 4.; 4; 2; 8ee+; ;
+
+	VS "In a";
+bar
+
+//17
+1 1: 4gb; eg; e; 8eg; 4.; 4df;
+1 2: 4s; ; e; 8s; 4.; 4;
+2: 4ee+; eb; can; 8b-b; 4.; 4b-a&;
+
+	VS "land where we'll nev-er grow";
+bar
+
+//18
+1: 2.b-e tie; 2.b-e;
+2: 2.eg tie; 2.eg; 
+
+	VS "old.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+

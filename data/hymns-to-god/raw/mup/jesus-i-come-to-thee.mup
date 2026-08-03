@@ -1,0 +1,201 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Songs Of Redeeming Love No. 2
+//		Edited by: Jno. R. Sweney, C. C. McCabe,
+//		T. C. O'Kane, Wm. J. Kirkpatrick
+//		Publisher : John J. Hood, 1018 Arch Street, Philadelphia
+//		Cranston & Stowe, Cincinnati, Chicago, and St. Louis
+//		Copyright 1887
+//		Hymn no. 74
+		
+		
+// Transcribed by: Ted Gatza, Jr. 02/16/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Jesus, I Come To Thee" ""
+   title (2)""
+   title (11) "G - 3 - MI" "\s(17)\f(TI)\:Come\ unto\ me,\ all\ ye\ that\ \|labor\ and\ are\ heavy\ laden, and\ I\ will\ give\ you\|\ rest.\ -\ Matt.\ 11:28" ""   
+   title (13) "Fanny J. Crosby" "" "William J. Kirkpatrick, 1884"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1: 4bd; gd; db-;
+2:4gg-; bg-; gg-;
+
+	VERSE "<1. >-1|Je-sus, I";
+	VERSE "<2. >-1|Je-sus, I";
+	VERSE "<3. >-1|Now let the";
+	VERSE "<4. >-1|Swift-ly the";
+bar
+//2
+1: 8.ec; 16ge; 2;
+2: 8.gc; 16c+c; 2;
+
+	VERSE "come to thee,";
+	VERSE "come to thee,";
+	VERSE "roll-ing waves";
+	VERSE "part-ing clouds";
+bar
+//3
+1: 4fd; gd; ad;
+2: ad; bd; fd;
+
+	VERSE "Long-ing for";
+	VERSE "Hear thou my";
+	VERSE "Bend to thy";
+	VERSE "Fade from my";
+bar
+//4
+1: 2.bd;
+2: 2.gg-;
+
+	VERSE "rest;";
+	VERSE "cry;";
+	VERSE "will,";
+	VERSE "sight;";
+bar
+//5
+1: 4bd; gd; db-;
+2: 4gg-; bg-; gg-;
+
+	VERSE "Fold thou thy";
+	VERSE "Save, or I";
+	VERSE "Say to the";
+	VERSE "Yon-der thy";
+bar
+//6
+1: 8.ec; 16ge; 2ge;
+2: 8.gc; 16c+c; 2c+c;
+
+	VERSE "wea-ry child";
+	VERSE "per-ish, Lord,";
+	VERSE "trou-bled deep,";
+	VERSE "bow ap-pears,";
+bar
+//7
+1: 4fd; gd; ad;
+2: 4ad; bd; c+d;
+
+	VERSE "Safe to thy";
+	VERSE "Save or I";
+	VERSE "Peace, peace be";
+	VERSE "Love-ly and";
+bar
+//8
+1: 2.gd;
+2: 2.bgg-;
+
+	VERSE "breast.";
+	VERSE "die.";
+	VERSE "still.";
+	VERSE "bright.";
+dblbar
+//9
+1: 4af; d+f; af;
+2: 4d+d; ad; d+d;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "Rocked on a";
+bar
+//10
+1: 8.bg; 16c+g; 2d+g;
+2: 8.d+g; 16c+g; 2bg;
+
+	VERSE "storm-y sea,";
+bar
+//11
+1: 4d+f; af; c+a;
+2: 4ad; d+d;;
+
+	VERSE "Oh, be not";
+bar
+//12
+1: 8.c+a; 16bg; 2;
+2: 8.d+g; 16; 2;
+
+	VERSE "far from me,";
+bar
+//13
+1: 4bg; ad; gd;
+2: 4d+g-; fa-; gb-;
+
+	VERSE "Lord, let me";
+bar
+//14
+1: 8.ec; 16c+e; 2;
+2: 8.gc; 16; 2;
+
+	VERSE "cling to thee,";
+bar
+//15
+1: 4bd; gd; ad;
+2: 4gd; bd; c+d;
+
+	VERSE "On-ly to";
+bar
+//16
+1: 2.gd;
+2: 2.bgg-;
+
+	VERSE "thee.";
+endbar
+

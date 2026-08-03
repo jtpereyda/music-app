@@ -1,0 +1,249 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Favorite Songs and Hymns A Complete Church Hymnal
+//		Compiled by Homer F. Morris, J. R. Baxter, Jr.,	
+//		Virgil O. Stamps, W. W. Combs
+//		Stamps-Baxter Music & Printing
+//		Dallas 8, Texas, Pangburn Arkansas, Chattanooga 1, Tennessee
+//		Copyright 1939
+//		Hymn No.: 44
+//		
+// Transcribed by: Ted Gatza, Jr. 02/27/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Way Of The Cross Leads Home" ""
+   title (2)""
+   title (11)"" "\f(TI)Then said Jesus unto his disciples, If any man would come after me," ""
+   title (11)"" "\f(TI)let him deny himself, and take up his cross, and follow me.- Matt. 16:24" ""
+   title (11) "A\(flat) - 4 - SOL" "" ""
+   title (13) "Jessie teal Pounds, 1906" "" "Charles H. Gabriel, 1906"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=100";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1: 8.ce; 16df; 2.s;
+2 :8.a-a; 16; 2.s;
+
+
+	VS 8.; 16; 2.s; "<1. >-1|I must";
+	VS 8.; 16; 2.s; "<2. >-1|I must";
+	VS 8.; 16; 2.s; "<3. >-1|Then I";
+bar
+//2
+1: 4ca; da; ca; 8.db; 16ca;
+2: 4a-e; a-f; a-e; 8.; 16;
+
+	VS "needs go home by the";
+	VS "needs go on in the";
+	VS "bid fare-well to the";
+bar
+//3
+1: 4ec+; 8.; 16fd+; 4.ec+; 8eb;
+2: 4a-a; 8.; 16; 4.a-a; 8ca;
+
+	VS "way of the cross, There's";
+	VS "blood-sprin-kled way, The";
+	VS "way of the world, To";
+bar
+//4
+1: 4fa; 8.eng; 16fa; 4fd+; df;
+2: 4dd+; 8.; 16; 4da;;
+
+	VS "no oth-er way but";
+	VS "path that the Sav-ior";
+	VS "walk in it nev-er-";
+bar
+//5
+1: 2.ce; 8.ca; 16cb;
+2: 2.a-a; 8.a-e; 16;
+
+	VS "this; I shall";
+	VS "trod, If I";
+	VS "more; For my";
+bar
+//6
+1: 4da; dg; db; 8.; 16ec+;
+2: 4b-e;; eg; 8.; 16;
+
+	VS "ne'er get sight of the";
+	VS "ev-er climb to the";
+	VS "Lord says \"Come,\" and I";
+bar
+//7
+1: 4db; ca; ec+; 8.ec+; 16;
+2 1: 4a;;; 8.a-a; 16;
+2 2: 4a;;; 8.s; 16;
+
+	VS "Gates of Light If the";
+	VS "heights sub-lime, Where the";
+	VS "seek my home, Where He";
+
+
+
+
+
+bar
+//8
+1: 4eb; 8ee+;; 4eg; dnf;
+2: 4b-g; 8;; 4b-b; b-a;
+
+	VS "way of the cross I";
+	VS "soul is at home with";
+	VS "waits at the o-pen";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2 1: 2g slur; 4a; 4s;
+2 2: 4e; 4d&; 4c; 4s;
+phrase below 2: 1 til 3;
+
+	VS "mis.";
+	VS "God.";
+	VS "door.";
+dblbar
+//10
+1 1: 4e; 2.s;
+1 2: 4d; 2.s;
+2: 4b-g; 2.s;
+CHORUS
+
+	VS "The";
+bar
+//11
+1: 4cec+; 8.ec+; 16; 4; fd+;
+2: 4a-a; 8.; 16; 4;;
+
+	VS "way of the cross leads";
+bar
+//12
+1 1: 2.c+; 8ca bm; ec+ ebm;
+1 2: 4e;;; 4s;
+2 1: 4a-a; a;;;
+2 2: 4s; 8c bm; e ebm; 4s;;
+
+	VS 2.; 4; "home, The";
+	VS 4s; 4; 4; 4s; "leads home,";
+bar
+//13
+1: 4ae+; 8.; 16; 4; af+;
+2: 4ac+; 8.; 16; 4; 4ad+;
+
+	VS "way of the cross leads";
+bar
+//14
+1 1: 2.e+; 8ec+;;
+1 2: 4a;;; 8s;;
+2 1: 4ac+;;; 8a;;
+2 2: 4s;;; 8a;;
+
+	VS "home; It is";
+	VS  4s; 4; 4; 8s; 8s; "leads home;";
+bar
+//15
+1: 4ed+;;; 8eb;;
+2: 4eb;;; 8eg;;
+
+	VS "sweet to know, as I";
+bar
+//16
+1: 4ec+; ed+; ae+; af+;
+2: 4a-a; b-g; ca; da;
+SFERM (3)
+SFERM (4)
+BFERM (3)
+BFERM (4)
+
+	VS "on-ward go, The";
+bar
+//17
+1: 4ae+; 8.fe+; 16fd+; 4ec+; eb;
+2: 4ca; 8.da; 16; 4ea; ed+;
+
+	VS "way of the cross leads";
+bar
+//18
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "home.";
+endbar
+
+
+
+
+
+
+
+
+

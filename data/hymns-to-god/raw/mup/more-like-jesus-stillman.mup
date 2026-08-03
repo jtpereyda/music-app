@@ -1,0 +1,358 @@
+// Mup vs. 7.1 arkkra.com
+
+
+// The hymn produced by this Mup file is believed to be in the public 
+// domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Augsburg Songs No. 2
+// For Sunday Schools and Other Services
+// Philadelphia
+// Lutheren Publican Society
+// Copyright 1893
+// Hymn no. 42
+
+// Transcribed by: 
+//	Ted Gatza, Jr. 06/2024/2024
+//
+// 	Revisions:
+//		
+//
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=6/8
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+
+//=========================
+
+header
+
+   title bold (19) "" "More Like Jesus" ""
+   title (2)""
+   title (11) "" "\f(TI)Have this mind in you, which was also in Christ Jesus: - Phil. 2:5"""
+   title (11) "F - 2 - SOL" "" ""
+   title (11) "J. M. Stillman" " " "Jarius Maxson Stillman, 1878"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//Define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS11 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (13) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (13) above 1: 1 "Refrain"; @
+         define RALL ital (13) above 1: 1 "Rall."; @
+	define EFFECT ital (13) above 1: 1 "Effectively"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (13) above 1: COUNT "rit."; @
+        define FINE(COUNT)
+           ital (13) above 1: COUNT "fine"; @
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"; @
+        define DS(COUNT)
+	  ital (13) above 1: COUNT "D. S."; @
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=83";
+
+//=========================
+
+//Verse
+
+
+//1
+1: 4.s; 4s; 8fc+;
+2: 4.s; 4s; 8fa;
+
+	VS "<1. >-1|I";
+	VS "<2. >-1|I";
+	VS "<3. >-1|I";
+	VS "<4. >-1|I";
+bar
+
+//2
+1 1: 8.fc+; 16; 8; f bm; g ebm; 8fa;
+1 2: 8.s; 16; 8; 4f; 8s;
+2 1: 8.s; 16; 8; 8a bm; c+ ebm; 8s;
+2 2: 8.fa; 16fb; 8fa; 4f; 8fc+;
+
+	VS22 "want to be more like";
+	VS22 "want to be kind and";
+	VS22 "want to be meek and";
+	VS22 "want to be pure and";
+bar
+
+//3
+1 1: 4b slur; 8a; 4s; 8s;
+1 2: 4.f; 4dg; 8s;
+2 1: 4d+ slur; 8c+; 4s; 8s;
+2 2: 4.b-; 4b-b; 8s;
+
+	VS12 "Je-sus,";
+	VS12 "gen-tle,";
+	VS12 "low-ly,";
+	VS12 "ho-ly,";
+invisbar
+
+//3
+1: 4s; 8; 4; 8df;
+2: 4s; 8; 4; 8b-ng;
+
+	VS "And";
+	VS "To";
+	VS "Like";
+	VS "As";
+bar
+//============================
+
+//4
+1: 8ce; df; eg; 4fa; 8dg;
+2: 8cg; ; cc+; 4g-bn; 8;
+
+	VS "fol-low Him day by";
+	VS "those who are in dis-";
+	VS "Je-sus, our Friend and";
+	VS "pure as the crys-tal";
+bar
+
+//5
+1: 4.eg tie; 4; 8s;
+2: 4. cc+ tie; 4; 8s;
+
+	VS "day;";
+	VS "tress;";
+	VS "King;";
+	VS "snow;";
+invisbar
+
+//5
+1: 4.s; 4; 8ec+;
+2: 4.s; 4; 8cb;
+
+	VS "I";
+	VS "To";
+	VS "I";
+	VS "I";
+bar
+
+//6
+//============
+
+//7
+1 1: 8.fc+; 16; 8; f bm; g ebm; 8fa;
+1 2: 8.s; 16; 8; 4f; 8s;
+2 1: 8.s; 16; 8; 8a bm; c+ ebm; 8s;
+2 2: 8.fa; 16fb; 8fa; 4f; 8fc+;
+
+	VS22 "want to be true and";
+	VS22 "com-fort the bro-ken";
+	VS22 "want to be strong and";
+	VS22 "want to love Je-sus";
+bar
+
+//8
+1 1: 4b slur; 8a; 4s; 8s;
+1 2: 4.f; 4dg; 8s;
+2 1: 4d+ slur; 8c+; 4s; 8s;
+2 2: 4.b-; 4b-b; 8s;
+
+	VS12 "faith-ful,";
+	VS12 "heart-ed,";
+	VS12 "ear-nest,";
+	VS12 "dear-ly,";
+invisbar
+
+//8
+1: 4s; 8; 4; 8df;
+2: 4s; 8; 4; 8b-ng;
+
+	VS "And";
+	VS "With";
+	VS "And";
+	VS "For";
+bar
+
+//9
+1: 8ce; cf; cg; 4ea; 8eg;
+2: 8cg; ca; cb; 4cc+; 8cb;
+
+	VS "ev-'ry com-mand o-";
+	VS "sweet words of ten-der-";
+	VS "souls to the Sav-iour";
+	VS "Je-sus loves me, I";
+bar
+
+//10
+1 1: 4.f tie; 4; 8r;
+1 2: 4.f tie; 4; 8s;
+2: 4.fa tie; 4; 8r;
+
+	VS "bey.";
+	VS "ness.";
+	VS "bring.";
+	VS "know.";
+dblbar
+newscore
+
+//11
+REFRAIN
+1 1: 4fd+; 8ec+#; 8d+ bm; e+ ebm; 8ff+;
+1 2: 4s; 8s; 4f; 8s;
+2 1: 4s; 8s; 8b bm; c+ ebm; 8s;
+2 2: 4b-b; 8; 4b-; 8b-b;
+
+	VS22 "More and more like";
+bar
+
+//12
+1 1: 4c+ slur; 8a; 4f; 8s;
+1 2: 4.f; 4f; 8r;
+2 1: 4a slur; 8c+; 4s; 8s;
+2 2: 4.f; 4fa; 8r;
+
+	VS "Je-sus,";
+bar
+
+//13
+1: 4eb; 8fa; 8gb bm; fa ebm; eg;
+2: 4cc+; 8; 4; 8;
+
+	VS21 "I would ev-er";
+bar
+
+//14
+1: 4fa; 8gb; 4ac+; 8r;
+2: 4fc+; 8; 4; 8r;
+  phrase above 1: 1 til 4;
+  phrase below 1: 1 til 4;
+
+	VS 4; 8s; 4s; 8s; "be;";
+	VS21 "ev-er be;";
+bar
+
+//15
+1 1: 4s; 8s; 8d+ bm; 8e+ ebm; 8s;
+1 2: 4fd+; 8ec+#; 4f; 8ff+;
+2 1: 4s; 8s; 8b bm; 8c+ ebm; 8s;
+2 2: 4b-b; 8; 4b-; 8b-d+;
+
+	VS12 "More and more like";
+bar
+
+//16
+1 1: 4c+ slur; 8a; 4s; 8s;
+1 2: 4.f;  4fc+; 8s;
+2 1: 4a slur; 8c+; 4s; 8s;
+2 2: 4.f; 4fa; 8s;
+
+	VS12 "Je-sus, ";
+invisbar
+
+//16
+1: 4.s; 4s; 8fd+;
+2: 4.s; 4s; 8b-b;
+
+	VS "My";
+bar
+
+//18
+1 1: 8fc+; fa; f; 4fa; 8eg;
+1 2: 8s; 8; f; 4s; 8;
+2: 8ca; cf; ca; 4cc+; 8cb;
+
+	VS "Sav-iour who died for";
+bar
+
+//19
+1 1: 4.f tie; 4f; 8r;
+1 2: 4.f tie; 4f; 8s;
+2: 4.fa tie; 4fa; 8r;
+
+	VS "me.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

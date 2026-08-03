@@ -1,0 +1,218 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: International Gospel Hymns and Songs
+//		by P. P. Bilhorn
+//		Published by the Bilhorn Brothers
+//		Chicago, Il.
+//		Copyright 1905
+//		Hymn no. 15
+
+// Transcribed by: Ted Gatza, Jr. 03/19/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "There is Always Time for Prayer" ""
+   title (2)""
+   title (11) "" "\s(17)\f(TI)\:Pray\ without\ ceasing.\ -\ 1\ Thess.\ 5:17 \(space)"""
+   title (11) "C - 2 - DO" " " "\s(13)Geo. O. Webster, 1904"
+   title (13) "Edith H. Kinney" " " "Arr. P. P. Bilhorn"
+
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key= c major
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=70";
+
+//1
+1 1: 4.s; 4s; 16c; 16d;
+1 2: 4.s; 4s; 16c; 16c;
+2: 4.s; 4s; 16ec; 16fc;
+ital (13) above 1: 1 "Prayerfully";
+
+
+			lyrics 1: "<1. >-1|Should the";
+			lyrics 1: "<2. >-1|With a";
+			lyrics 1: "<3. >-1|When your";
+			lyrics 1: "<4. >-1|When the";
+bar
+//2
+1 1: 4ec; 8ec; 8ec; 8d; 8c;
+1 2: 4s; 8s; 8s; 8c; 8c;
+2: 4gc; 8gc; 8gc; 8fc; 8ec;
+
+			lyrics 1: "new dawn, break-ing, a";
+			lyrics 1: "lift of heart let the";
+			lyrics 1: "wea-ry feet fal-ter";
+			lyrics 1: "late light dies with the";
+bar
+//3
+1: 4ge; 8ge; 4ge; 16ge; 16ge;
+2: 4c+c; 8c+c; 4c+c; 16c+c; 16c+c;
+
+			lyrics 1: "bur-den bring, That your";
+			lyrics 1: "day be-gin, And a";
+			lyrics 1: "on the path, Tho' to";
+			lyrics 1: "set-ting sun, Would you";
+bar
+//4
+1: 4af; 8af; 4c+a; 8af;
+2: 4c+f; 8c+f; 4c+f; 8c+f;
+
+			lyrics 1: "soul deems hard to";
+			lyrics 1: "mo-ment re-spite";
+			lyrics 1: "pause you do not";
+			lyrics 1: "taste a balm for";
+bar
+//5
+1: 4.ge tie; 4ge; 16ge; 16ge;
+2: 4.c+c tie; 4c+c; 16c+c; 16c+c;
+
+			lyrics 1: "bear, Seek a";
+			lyrics 1: "spare, Ere you";
+			lyrics 1: "dare. Would you";
+			lyrics 1: "care? With a";
+bar
+//6
+1: 4c+e; 8c+f; 4c+e; 16ge; 16ge;
+2: 4gc; 8ac; 4gc; 16c+c; 16c+c;
+< above 1: 1 til 2.8;
+> above 1: 3.2 til 4;
+
+			lyrics 1: "boon of grace for a";
+			lyrics 1: "press a-long with the";
+			lyrics 1: "find the stress of the";
+			lyrics 1: "lift of heart let the";
+bar
+//7
+1 1:8af; 4c+a; 4ge; 16c; 16db-;
+1 2: 8s; 4s; 4s; 16c; 16s;
+2: 8c+f; 4c+f; 4c+c; 16ge; 16gd;
+ital (13) above 1: 6 "Rit." til 2m+1;
+
+			lyrics 1: "lit-tle space, There is";
+			lyrics 1: "toil-ing throng; There is";
+			lyrics 1: "noon glow less? There is";
+			lyrics 1: "day de-part; There is";
+bar
+//8
+1: 8ec; 4ge; 4db-; 8eb-;
+2: 8gc; 4gc; 4fg-; 8gg-;
+
+			lyrics 1: "al-ways time for";
+			lyrics 1: "al-ways time for";
+			lyrics 1: "al-ways time for";
+			lyrics 1: "al-ways time for";
+bar
+//9
+1 1: 4.c tie; 4c; 8s;
+1 2: 4.c tie; 4c; 8s;
+2: 4.ec tie; 4ec; 8s;
+
+			lyrics 1: "pray'r.";
+			lyrics 1: "pray'r.";
+			lyrics 1: "pray'r.";
+			lyrics 1: "pray'r.";
+dblbar
+//10
+1: 16ge; 16ge; 4.s; 4s;
+2: 16gc; 16gc; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"There is";
+bar
+//11
+1: 4c+e; 8c+f; 4c+e; 16d+e; 16c+e;
+2: 4gc; 8ac; 4gc; 16gc; 16gc;
+> above 1: 1 til 3;
+
+			lyrics 1: [c]"al-ways time in the";
+bar
+//12
+1 1: 4c+f; 8bf; 4bf; 16g; 16g;
+1 2: 4s; 8s; 4s; 16f; 16f;
+2: 4gd; 8gd; 4gd; 16bg; 16bg;
+mussym (10) above 1: 4 "ferm";
+mussym (10) below 2: 4 "uferm";
+
+			lyrics 1: [c]"morn-ing's prime, And the";
+bar
+//13
+1: 4d+f; 8d+f; 4d+f; 8e+f;
+2: 4bg; 8bg; 4bg; 8bg; 
+
+			lyrics 1: [c]"gold-en noon-tide";
+bar
+//14
+1: 4.c+e tie; 4c+e; 16c+e; 16d+f;
+2: 4.c+~c<e>; 4c+e; 16c+c; 16c+c;
+
+			lyrics 1: [c]"fair; There is";
+bar
+//15
+1: 4e+g; 8e+g; 4e+g; 16d+g; 16c+g;
+2: 4c+c; 8c+c; 4c+c; 16bd; 16c+e;
+
+			lyrics 1: [c]"al-ways time 'neath the";
+bar
+//16
+1: 4d+f; 8c+f; 4af; 16c+a; 16af;
+2: 4af; 8af; 4c+f; 16c+f; 16c+f;
+mussym (10) above 1: 4 "ferm";
+mussym (10) below 2: 4 "uferm";
+
+			lyrics 1: [c]"e-ven-chime, There is";
+bar
+//17
+1: 8ge; 4ec; 4db-; 8eb-;
+2 1: 8c+g; 4g; 4fg-; 8gg-;
+2 2: 8s; 4g; 4s; 8s;
+ital (13) above 1: 1 "Rit." til 1m+1;
+
+			lyrics 1: [c]"al-ways time for";
+bar
+//18
+1: 4.cg- tie; 4cg-; 8s;
+2: 4.ec tie; 4ec; 8s;
+
+			lyrics 1: [c]"pray'r.";
+endbar

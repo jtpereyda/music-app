@@ -1,0 +1,298 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 253	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 02/03/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Purer In Heart, O God" ""
+   title (2)""
+   title (11) "" "\f(TI)Blessed are the pure in heart. - Matt. 5:8" ""
+   title (10) "G - 4 - MI" "" ""
+   title "Fannie E. Davison" "" "James H. Fillmore"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+
+//Verse
+
+//1
+1: 2db; 4ec+; db;
+2 1: 2g; 4; ;
+2 2: 2g; 4; ;
+
+	VS "<1. >-1|Pur-er in";
+	VS "<2. >-1|Pur-er in";
+	VS "<3. >-1|Pur-er in";
+bar
+
+//2
+1: 4.db; 8ca; 2b-g;
+2: 4.dg; 8df; 2eg;
+
+	VS "heart, O God,";
+	VS "heart, O God,";
+	VS "heart, O God,";
+bar
+
+//3
+1: 2eg; 4df; ce;
+2: 2cg; 4; ;
+
+	VS "Help me to";
+	VS "Help me to";
+	VS "Help me to";
+bar
+
+//4
+1: 2.b-d; 4r;
+2: 2.g-g; 4r;
+
+	VS "be;";
+	VS "be;";
+	VS "be;";
+bar
+newscore
+//5
+1: 2da; 4; ;
+2: 2df; 4; ;
+
+	VS "May I de-";
+	VS "Teach me to";
+	VS "That I Thy";
+bar
+
+//6
+1: 4.db; 8dc+; 2dd+;
+2 1: 4.g; 8a; 2gb;
+2 2: 4.g; 8; 2s;
+
+	VS "vote my life";
+	VS "do Thy will";
+	VS "Ho-ly face";
+bar
+
+//7
+1: 2fd+; 4ec+#; gc+;
+2 1: 2a; 4a-a; ;
+2 2: 2a; 4s; ;
+
+	VS "Whol-ly to";
+	VS "Most lov-ing-";
+	VS "One day may";
+bar
+
+//8
+1: 2.fd+; 4r;
+2: 2.da; 4r;
+
+	VS "Thee.";
+	VS "ly.";
+	VS "see.";
+bar
+newscore
+//9
+1: 2gd+; 4dc+; db;
+2 1: 2gb; 4a; g;
+2 2: 2s; 4g; ;
+
+	VS "Watch Thou my";
+	VS "Be Thou my";
+	VS "Keep me from";
+bar
+
+//10
+1: 4.db; 8ca; 2b-g;
+2: 4.dg; 8df; 2eg;
+
+	VS "way-ward feet,";
+	VS "Friend and Guide,";
+	VS "se-cret sin,";
+bar
+
+//11
+1: 2eg; 4df; ce;
+2: 2cg; 4; ;
+
+	VS "Guide me with";
+	VS "Let me with";
+	VS "Reign Thou my";
+bar
+
+//12
+1: 4.ce; 8b-d; 2;
+2: 4.g-g; 8; 2;
+
+	VS "coun-sel sweet;";
+	VS "Thee a-bide;";
+	VS "soul with-in;";
+bar
+
+//13
+1: 2da; 4; ;
+2: 2df; 4; ;
+
+	VS "Pur-er in";
+	VS "Pur-er in";
+	VS "Pur-er in";
+bar
+
+//14
+1: 2.db; 4r;
+2 1: 2.g; 4r;
+2 2: 2.g; 4s;
+
+	VS "heart,";
+	VS "heart,";
+	VS "heart,";
+bar
+
+//15
+1: 2ec+; 4db; da;
+2: 2cg; 4dg; dc+;
+
+	VS "Help me to";
+	VS "Help me to";
+	VS "Help me to";
+bar
+
+//16
+1: 2.dg; 4r;
+2: 2.g-b; 4r;
+
+	VS "be.";
+	VS "be.";
+	VS "be.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

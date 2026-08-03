@@ -1,0 +1,234 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Hymns Of The Heart
+//		For public worship, evangelistic
+//		campaigns, prayer meetings,
+//		young people's services, etc.
+//		Compiled by Joseph F. Berry
+//		and Charles H. Gabriel
+//		Publisher: The methodist Book Concern
+//		New York Cincinnati
+//		Copyright: 1914
+//		Hymn No. 4
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 03/10/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Take Wings To Thy Soul" ""
+   title (2)""
+   title (11) "" "\s(17)\f(TI)\:but\ they\ that\ wait\ for\ Jehovah\ \|shall\ renew\ their\ strength;\ they shall\ mount\ up\ with\ wings\ as\ \|eagles;\ they\ shall\ run,\ and\ not be\ weary;\ they\ shall\ walk\|,\ and\ not\ faint.\ -\ Is.\ 40;31" ""   
+   title (11) "A \(flat) - 2 - SOL" "" ""
+   title (13) "E. E. Hewitt" "" "Charles H. Gabriel, 1914"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=75";
+
+// Enter music
+
+//1
+1: 8ec; 4s; 4.;
+2: 8aa-; 4s; 4.;
+
+	VERSE 8; 4s; 4.s; "<1. >-1|Take";
+	VERSE 8; 4s; 4.s; "<2. >-1|Take";
+	VERSE 8; 4s; 4.s; "<3. >-1|Take";
+bar
+//2
+1 1: 8.c+e; 16; 8; 4; 16ae; a;
+1 2: 8.s; 16; 8; 4; 16; g&;
+2: 8.aa-; 16; 8; 4; 16ac;;
+
+	VERSE "wings to thy soul; take the";
+	VERSE "wings to thy soul; take the";
+	VERSE "wings to thy soul; take the";
+bar
+//3
+1: 8.af; 16; 8; 4; 8fd;
+2: 8.d+d; 16; 8; 4; 8ad;
+
+	VERSE "pin-ions of prayer To";
+	VERSE "pin-ions of praise; A-";
+	VERSE "pin-ions of love, All";
+bar
+//4
+1: 8.ec; 16; 8; ae; be; c+e;
+2 1: 8.aa-; 16; 8; ac; ge; a;
+2 2: 8.s; 16; 8;;; a;
+
+	VERSE "rise a-bove tri-als, temp-";
+	VERSE "rise, like the lark, in the";
+	VERSE "faith-ful-ly serv-ing the";
+bar
+//5
+1 1: 8e+e; d+e; c+e; 4be; 8e;
+1 2: 8s;;; 4; 8e;
+2 1: 8bg;; a; 4ge; 8;
+2 2: 8s;; a; 4s; 8;
+
+	VERSE "ta-tions and care; New";
+	VERSE "pure morn-ing rays; With";
+	VERSE "Mas-ter a-bove; O,";
+bar
+//6
+1 1: 8.c+e; 16; 8; 16; 8.; 8a;
+1 2: 8.s; 16; 8; 16; 8.; 16e bm; g& ebm;
+2: 8.aa-; 16; 8; 16; 8.; 8ac;
+
+	VERSE "meas-ures of bless-ing so";
+	VERSE "car-ols of glad-ness as";
+	VERSE "haste to the need-y with";
+bar
+//7
+1: 8.af; 16; 8; 4; 8fd;
+2: 8.d+d; 16; 8; 4; 8ad;
+
+	VERSE "trust-ful-ly bring, And";
+	VERSE "fresh as the dew, Give";
+	VERSE "tid-ings of cheer; Spread";
+bar
+//8
+1: 8ec; ae; be; 16c+e; 8.e+e; 8d+f;
+2 1: 8aa-; ac; ge; 16a; 8.c+a; 8ad;
+2 2: 8s;;; 16a; 8.s; 8;
+
+	VERSE "hold sweet com-mun-ion with";
+	VERSE "thanks for His mer-cies, a-";
+	VERSE "heav-en-ly sun-shine where";
+bar
+//9
+1: 8.c+e; 16; 8bd; 4ac; 8s;
+2: 8.ae; 16; 8ge; 4aa-; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+	VERSE "Je-sus, thy King.";
+	VERSE "bun-dant and true.";
+	VERSE "path-ways are drear.";
+dblbar
+newscore
+//10
+1: 8c+e; 4s; 4.;
+2 1: 8a; 4s; 4.;
+2 2: 8a; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "Take";
+bar
+//11
+1 1: 4.e+ tie; 4; 8c+a;
+1 2: 4a; 8b; 4a; 8s;
+2: 4c+a; 8d+a; 4c+a; 8e+a;
+
+	VERSE "wings,_ bright";
+	VERSE 4s; 8; 4; 8s; "take wings";
+bar
+//12
+1 1: 4.a tie; 4; 8ec;
+1 2: 4e; 8f; 4e; 8s;
+2 1: 4c+; 8d+; 4c+; 8a;
+2 2: 4.a- tie; 4; 8a;
+
+	VERSE "wings,_ Take";
+	VERSE 4s; 8; 4; 8s; "bright wings,";
+bar
+//13
+1: 8.ac; 16; 8; 8c+dn; bd; ad;
+2: 8.af; 16; 8; ab-;; bb-;
+
+	VERSE "wings to thy soul, O be-";
+bar
+//14
+1: 16be; 8.; 8c+e; 4be; 8c+e;
+2 1: 16ge; 8.; 8ae; 4ge; 8a;
+2 2: 16s; 8.; 8; 4; 8a;
+
+	VERSE "liev-er, to-day! Take";
+bar
+//15
+1 1: 4.e+ tie; 4; 8c+g&;
+1 2: 4a; 8b; 4a; 8s;
+2: 4c+a; 8d+a; 4c+a; 8e+a;
+
+	VERSE "wings,_ bright";
+	VERSE 4s; 8; 4; 8s; "take wings,";
+bar
+//16
+1 1: 4.a tie; 4; 8fd;
+1 2: 4f; 8g&; 4f; 8s;
+2 1: 4d+; 8e+; 4d+; 8ad;
+2 2: 4.d tie; 4; 8s;
+
+	VERSE "wings;_ Mount";
+	VERSE 4s; 8; 4; 8s; "bright wings,";
+bar
+//17
+1: 8ec; ae; be; 16c+e; 8.e+e; 8d+f;
+2 1: 8aa-; ac; ge; 16a; 8.c+a; 8ad;
+2 2: 8s;;; 16a; 8.s; 8;
+
+	VERSE "up as the ea-gle, re-";
+bar
+//18
+1: 8.c+e; 16; 8bd; 4ac; 8s;
+2: 8.ae; 16; 8ge; 4aa-; 8s;
+
+	VERSE "joice in thy way.";
+endbar

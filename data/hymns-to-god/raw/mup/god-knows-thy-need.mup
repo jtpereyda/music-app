@@ -1,0 +1,222 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: ???
+
+// Transcribed by: Ted Gatza, Jr. 12/26/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "God Knows Thy Need" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - MI" "\s(18)\f(TI)\:for\ your\ Father\ knowe\|th\ what\ things\ ye\ have need\ of,\ before\ ye\ a\|sk\ him.\ -\ Mat.\ 6:8"""
+   title (13) "A. N." " " "Chas. H. Gabriel, 1907"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=3&
+	clef=bass
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1 1: 4s; 4s; 8s; 8g; 8f; 8e;
+1 2: 4s; 4s; 8s; 8r; 4r;
+2 1: 4s; 4s; 8s; 8b; 8a; 8g;
+2 2: 4s; 4s; 8s; 8r; 4r;
+
+			lyrics 1: "<1. >-1|Oh hearts that";
+			lyrics 1: "<2. >-1|Tho' oth-er";
+			lyrics 1: "<3. >-1|Tho' dark the";
+bar
+//2
+1 1: 2g tie; 8g; 8b; 8c+; 8g;
+1 2: 8r; 8e; 8e; 8e; 8e; 8r; 4r;
+2 1: 2b tie; 8b; 8g; 8a; 8e;
+2 2: 8r; 8e; 8e; 8e; 8e; 8r; 4r;
+
+			lyrics 1: "ache,_ and bleed and";
+			lyrics 1: "eyes,_ be dull and";
+			lyrics 1: "clouds,_ a-bove thy";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 8s; 8s; "oh hearts that ache,";
+bar
+//3
+1 1: 2b tie; 8b; 8ge; 8bg; 8e+g;
+1 2: 8r; 8e; 8e; 8e; 8e; 8s; 8s; 8s;
+2 1: 2g tie; 8g; 8r; 4r;
+2 2: 8r; 8e; 8e; 8e; 8e; 8s; 4s;
+
+			lyrics 1: "break,_ God know the";
+			lyrics 1: "blind,_ To mark thy";
+			lyrics 1: "head,_ The heav'ns be-";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 8s; 8s; "and bleed and break,";
+bar
+//4
+1: 2d+f tie; 8d+f; 8c+a; 8bg; 8af;
+2: 8r; 8bb-; 8bb-; 8bb-; 8bb-; 8r; 4r;
+
+			lyrics 1: "depths_ of all thy";
+			lyrics 1: "grief,_ to note thy";
+			lyrics 1: "yond_ are full of";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "God knows the depths";
+bar
+//5
+1 1: 2ge tie; 8ge; 8g; 8f; 8e;
+1 2: 2s; 8s; 8r; 4r;
+2 1: 8s; 8s; 8s; 8s; 8s; 8b; 8a; 8g;
+2 2: 8r; 8be; 8be; 8be; 8be; 8r; 4r;
+
+			lyrics 1: "woes;_ He will Him-";
+			lyrics 1: "tear,_ He sees; His";
+			lyrics 1: "light;_ Dis-miss thy";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 8s; 8s; "of all thy woes";
+bar
+//6
+1 1: 2g tie; 8g; 8b; 8c+; 8g;
+1 2: 8r; 8e; 8e; 8e; 8e; 8r; 4r; 
+2 1: 2b tie; 8b; 8g; 8a; 8e;
+2 2: 8r; 8e; 8e; 8e; 8e; 8r; 4r;
+
+			lyrics 1: "self,_ thy bur-dens";
+			lyrics 1: "heart_ is true and";
+			lyrics 1: "fears,_ sup-press thy";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 8s; 8s; "He will Him-self";
+bar
+//7
+1 1: 2b tie; 8b; 8bg; 8bg; 8c+g&;
+1 2: 8r; 8e; 8e; 8e; 8e; 8s; 8s; 8s;
+2 1: 2g tie; 8g; 8r; 4r;
+2 2: 8r; 8e; 8e; 8e; 8e; 8s; 4s;
+
+			lyrics 1: "take,_ And shield thee";
+			lyrics 1: "kind,_ He ev-'ry";
+			lyrics 1: "dread;_ For thee the";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "thy bur-dens take,";
+bar
+//8
+1: 2d+f tie; 8d+f; 8e+g; 8d+f; 8c+e;
+2: 8r; 8bf; 8bf; 8bf; 8anf; 8r; 4r;
+
+			lyrics 1: "from_ the heav-iest";
+			lyrics 1: "pray'r_ is swift to";
+			lyrics 1: "days_ are bright a-";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 8s; 8s; "And shield thee from";
+bar
+//9
+1 1: 2b tie; 8b; 8s; 4s;
+1 2: 8d; 8e; 8f; 8g; 8a; 8s; 4s;
+2: 8r; 8gb-; 8ab-; 8bb-; 8d+b-; 8s; 4s;
+mussym above 1: 3 "ferm";
+mussym below 2: 3 "uferm";
+
+			lyrics 1: "blows._";
+			lyrics 1: "hear._";
+			lyrics 1: "head._";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "the heav-iest blows.";
+dblbar
+//10
+1 1: 4s; 4s; 8s; 8b; 8c+; 8d+;
+1 2: 4s; 4s; 8s; 8r; 4r;
+boldital above 1: 1 "Chorus";
+
+			lyrics 1: "God know thy";
+			lyrics 1: "<> <> <>";
+			lyrics 1: "<> <> <>";
+bar
+//11
+1 1: 2e+ tie; 8e+; 8d+; 8c+; d+;
+1 2: 8r; 8g; 8b; 8a; 8g; 8r; 4r;
+2: 8r; 8e+e; 8d+e; 8c+e; 8be; 8r; 4r;
+
+			lyrics 1: "need,_ He will sup-";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "God knows thy need,";
+bar
+//12
+1 1: 2g tie; 8g; 8g; 8f#; 8g;
+1 2: 8r; 8e; 8e; 8e; 8e; 8r; 4r;
+2: 8r; 8e+e; 8d+e; 8c+e; 8be; 8r; 4r;
+
+			lyrics 1: "ply,_ He know-eth";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "He will sup-ply";
+bar
+//13
+1 1: 2b tie; 8b; 8f; 8e; 8f;
+1 2: 8r; 8f; 8en; 8f; 8a; 8r; 4r;
+2: 8r; 8ab-; 8gb-; 8ab-; 8d+b-; 8r; 4r;
+
+			lyrics 1: "what_ for thee is";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "He know-eth what";
+bar
+//14
+1 1: 2g tie; 8g; 8b; 8c+; 8d+;
+1 2: 8r; 8e; 8e; 8e; 8e; 8r; 4r;
+2: 8r; 8e+e; 8d+e; 8c+e; 8be; 8r; 4r;
+
+			lyrics 1: "best,_ Soon thou shalt";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "for thee is best";
+bar
+//15
+1 1: 2e+ tie; 8e+; 8d+; 8c+; 8d+;
+1 2: 8r; 8g; 8b; 8a; 8g; 8r; 4r;
+2: 8r; 8e+e; 8d+e; 8c+e; 8be; 8r; 4r;
+
+			lyrics 1: "see,_ with clear-er";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "Soon thou shalt see";
+bar
+//16
+1 1: 2g tie; 8g; 8g; 8f#; 8g;
+1 2: 8r; 8e; 8e; 8e; 8e; 8r; 4r;
+2: 8r; 8e+e; 8d+e; 8c+e; 8be; 8r; 4r;
+
+			lyrics 1: "eye,_ Soon en-ter";
+			lyrics 1: 8s; 8; 8; 8; 8; 8s; 4s; "with clear-er eye";
+bar
+//17
+1 1: 2b tie; 8b; 8ad; 8gd; 8fb-;
+1 2: [dist -4]8r; 8f; 8dn; 8f; 8d; 8s; 8s; 8s; 
+2: 8r; 8ab-; 8gb-; 8ab-; 8fb-; 8c+b-; 8bb-; 8ab-;
+
+			lyrics 1: "His_ e-ter-nal";
+			lyrics 1: 8s; 8; 8; 8; 8; 8; 8; 8; "Soon en-ter His e-ter-nal";
+bar
+//18
+1: 2eb- tie; 8eb-; 8s; 4s;
+2: 2ge tie; 8ge; 8s; 4s;
+
+			lyrics 1: "rest.";
+			lyrics 1: "rest.";
+endbar

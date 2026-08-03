@@ -1,0 +1,226 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Joy To The World 
+//		For The Church and Sunday School
+//		Edited and compiled by E. O. Excell
+//		Hope Publishing Company
+//		Chicage
+//		Copyright 1915
+//		Hymn no. 44
+
+// Transcribed by: Ted Gatza, Jr. 12/24/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "He Is So Precious To Me" ""
+   title (2)""
+   title (11) "G - 2 - SOL" "\s(17)\f(TI)\:Behold,\ I\ lay\ in\ Zion\ a\ chief\ cor\|ner\ stone,\ elect,\ precious:\ And\ he that\ believeth\ on\ him\ shall\ n\^ot\ be\ put\ to\ shame.\ -\ 1\ Pet.\ 2:6" ""
+   title (13) "Charles H. Gabriel" " " "Charles H. Gabriel, 1902"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=105";
+
+
+//1
+1: 4db; 2.s; 2;
+2: 4gg-; 2.s; 2;
+
+			VERSE "<1. >-1|So";
+			VERSE "<2. >-1|He";	
+			VERSE "<3. >-1|I";
+			VERSE "<4. >-1|I";
+bar
+//2
+1: 4bd;;; c+e; bd; ad#;
+2: 4gg-;;;;; gb-;
+
+			VERSE "Pre-cious is Je-sus, my";
+			VERSE "stood at my heart's door 'mid";
+			VERSE "stand on the moun-tain of";
+			VERSE "praise Him be-cause He ap-";
+bar
+//3
+1: 4ae; ge; ec; 2db-; 4db-;
+2: 4gc;;; 2gg-; 4;
+
+			VERSE "Sav-ior, my King, His";
+			VERSE "sun-shine and rain, And";
+			VERSE "bless-ing at last, No";
+			VERSE "point-ed a place Where,";
+bar
+//4
+1: 4fc;;;; ec; fd;
+2: 4da-; ad;;; gd; ac;
+
+			VERSE "praise all the day long with";
+			VERSE "pa-tient-ly wait-ed an";
+			VERSE "cloud in the heav-ens a";
+			VERSE "some day, thro' faith in His";
+bar
+//5
+1 1: 4gd; ad; bd; 2ad; 4d;
+1 2: 4s;;; 2; 4d;
+2: 4gb-; fa-; gg-; 2fd; 4;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "rap-ture I sing; To";
+			VERSE "en-trance to gain; What";
+			VERSE "shad-ow to cast; His";
+			VERSE "won-der-ful grace, I";
+bar
+//6
+1: 4bd;;; c+e; bd; ac;
+2: 4gg-;;;;;;
+
+			VERSE "Him in my weak-ness for";
+			VERSE "shame that so long He en-";
+			VERSE "smile is up-on me, the";
+			VERSE "know I shall see Him\(emdash) shall";
+bar
+//7
+1: 4gb-; ac; bd; 2c+e; 4c+e;
+2: 4gg-;;; 2gc; 4gc;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+mussym (9) above 1: 6 "ferm";
+mussym (9) below 2: 6 "uferm";
+
+			VERSE "strength I can cling, For";
+			VERSE "treat-ed in vain, For";
+			VERSE "val-ley is past, For";
+			VERSE "look on His face, For";
+bar
+//8
+1: 4bd; db-; gb-; 8ac; 4.bd; 4ac;
+2: 4gd;;; 8fd; 4.gd; 4fd;
+
+			VERSE "He is so pre-cious to";
+bar
+//9
+1: 2.gb- tie; 2; 4s;
+2: 2.gg- tie; 2; 4s;
+
+			VERSE "me._";
+dblbar
+1: 4bd; 2.s; 2;
+2: 4gg-; 2.s; 2;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "For";
+bar
+//10
+1 1: 4db-; eb-; fb-; 8gb-; 4.ac; 4g;
+1 2: 4s;;; 8; 4.; 4b-;
+2: 4gg-;;; 8; 4.; 4;
+
+			VERSE "He is so pre-cious to";
+			VERSE 4s; 4s; 4s; 8s; 4.s; 4; "so";
+bar
+//11
+1 1: 2.b tie; 2; 4d+f;
+1 2: 8d; 4.g; 4e; 2d; 4s;
+2 1: 2.gg- tie; 2; 4ad;
+2 2: [cue]8gg-; [cue]4.; [cue]4; 2s; 4s;
+mussym (9) above 1: 6 "ferm";
+mussym (9) below 2: 6 "uferm";
+
+			VERSE "me;_ For";
+			VERSE 8; 4.; 4; 2; 4s; "pre-cious to me;";
+bar
+//12
+1 1: 4ad;;; 8; 4.bd; 4c+;
+1 2: 4s;;; 8; 4.; 4d;
+2: 4fd;;; 8; 4.gd; 4ad;
+
+			VERSE "He is so pre-cious to";
+			VERSE  4s; 4s; 4s; 8s; 4.s; 4; "so";
+bar
+//13
+1 1: 2.b tie; 2; 4bd;
+1 2: 8d; 4.g; 4e; 2d; 4s;
+2 1: 2.gg- tie; 2;  4g;
+2 2: [cue]8gg-; [cue]4.; [cue]4; 2s; 4g;
+
+			VERSE "me,_ 'Tis";
+			VERSE 8; 4.; 4; 2; 4s; "pre-cious to me;";
+bar
+//14
+1: 4d+g; e+g; d+g; 2bg; 8af; bf;
+2: 4bg; c+g; bg; 2d+g; 8c+d;;
+
+			VERSE "Heav-en be-low My Re-";
+bar
+//15
+1: 4ge; af; bfn; 2c+e; 4;
+2: 4be; d+d; d+g; 2c+c; 4gc;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+mussym (9) above 1: 6 "ferm";
+mussym (9) below 2: 6 "uferm";
+ital (13) above 1: 1 "rit." til 3;
+
+			VERSE "deem-er to know, For";
+bar
+//16
+1: 4bd; db-; gb-; 8ac; 4.bd; 4ac;
+2: 4gd;;; 8fd; 4.gd; 4fd;
+
+			VERSE "He is so pre-cious to";
+bar
+//17
+1: 2.gb- tie; 2; 4s;
+2: 2.gg- tie; 2; 4s;
+
+			VERSE "me.";
+endbar

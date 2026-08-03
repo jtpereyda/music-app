@@ -1,0 +1,294 @@
+// !Mup vs. 6.9 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Favorite Gospel Songs
+//	A Hymn And Tune Book
+//	Adapted for Evangelistic meetings, Prayer meetings,
+//	Sabboth schools, Epworth leagues, Y. P. S. C. E. 
+//	orginizations, and all coi=nventions and all gatherings
+//	of Christian Workers
+//	Edited by Mrs. Grace Weiser Davis, Elisha A, Hoffman
+//	Ira Orwig Hoffman, Music Editor
+//	Published by J. N. Davis No. 83 Railroad Avenue, Jersey City, NJ
+//	Copyright: 1894
+//	Hymn No.: 29
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 10/12/2013
+
+// Revision: 
+//	08/30/2021
+//	09/02/2022
+
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "A Better Day Coming" ""
+   title (2)""
+   title (11) "" "\f(TI)But now they desire a better country, that is, a heavenly: wherefore God is not ashamed" ""   
+   title (11) "" "\f(TI)of them, to be called their God; for he hath prepared for them a city. - Heb. 11:14" ""
+   title (11) "F - 4 - DO" "" ""
+   title (13) "Grace Weiser Davis" "" "Grace Weiser Davis, 1894"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	scale = 1
+//	lyricssize = 13
+//	pageheight=9.0
+//	pagewidth=6.0
+//	topmargin=.200
+//	bottommargin=.200
+	rightmargin=.750
+	leftmargin=.750
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";@
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";@
+
+// Set midi	
+	midi all: 0 "tempo=100";
+
+//===============================
+
+//1
+1 1: 8f; g; 2.s;
+1 2: 8f;; 2.s;
+2: 8af; bf; 2.s;
+
+	VS "<1. >-1|O, a";
+	VS "<2. >-1|O, a";
+	VS "<3. >-1|O, the";
+	VS "<4. >-1|O, the";
+	VS "<5. >-1|If our";
+bar
+
+//2
+1: 8.af; 16; 8.; 16; 4c+f; 8.ac; 16gc#;
+2: 8.c+f; 16; 8.; 16; 4af; 8.; 16ae;
+
+	VS "bet-ter day is dawn-ing, a";
+	VS "bright-er day is dawn-ing, a";
+	VS "hap-py day is hast'n-ing when";
+	VS "glo-rious day is near-ing when";
+	VS "fel-low-ship on earth in the";
+bar
+
+//3
+1: 8.fd; 16gd; 8.s; 16; 4; 8.; 16;
+2: 8.ad; 16; 8.s; 16; 4; 8.; 16;
+
+	VS "day that";
+	VS "per-fect,";
+	VS "we shall";
+	VS "Je-sus";
+	VS "Sav-iour";
+invisbar
+//newscore
+1: 8.s; 16; 8.fd; 16db-; 4fa-; 8.fc; 16gc;
+2: 8.s; 16; 8.bb-; 16fb-; 4ff-; 8.fa-; 16ce;
+
+	VS "knows no night, When all";
+	VS "cloud-less day, Day of";
+	VS "meet a-gain! Those for";
+	VS "we shall see, And in";
+	VS "be so sweet What a";
+
+bar
+
+//4
+1 1: 8.ac; 16af; 8.; 16bf; 8.c+ bm; 16d+ ebm; 8.c+f; 16af;
+1 2: 8.s; 16; 8.; 16; 4f; 8.s; 16;
+2 1: 8.f; 16c+f; 8.; 16g; 8.a bm; 16b ebm; 8.af; 16c+f;
+2 2: 8.f; 16s; 8.; 16f; 4f; 8.s; 16;
+
+	VS 8.; 16; 8.; 16; 4; 8.; 16; "sor-row shall be ban-ished and";
+	VS 8.; 16; 8.; 16; 4; 8.; 16; "glo-rious rev-e-la-tion, all";
+	VS 8.; 16; 8.; 16; 4; 8.; 16; "whom we here have longed we shall";
+	VS 8.; 16; 8.; 16; 4; 8.; 16; "Heav'n in His com-mun-ion for-";
+	VS 8.; 16; 8.; 16; 4; 8.; 16; "rap-ture shall we know when a-";
+
+bar
+
+//5
+1 1: 8.af; 16ge; 8.f; 16af; 4ge; 8.af; 16bf;
+1 2: 8.s; 16; 8.f; 16s; 4; 8.; 16;
+2 1: 8.c+f; 16bf; 8.af; 16c+f; 4c+c; 8.c+f; 16g;
+2 2: 8.s; 16; 8.; 16; 4; 8.; 16f;
+
+	VS "ev-'ry wrong made right! God will";
+	VS "dark-ness rolled a-way! Free from";
+	VS "meet on E-den's plain; Death can";
+	VS "ev-er-more shall be; Friend, have";
+	VS "round His throne we meet? When the";
+
+bar
+
+//6
+1: 8.c+f; 16; 8.; 16s; 4; 8.; 16;
+2: 8.af; 16; 8.; 16s; 4; 8.; 16;
+
+	VS "take a-way";
+	VS "bur-dens now";
+	VS "nev-er en-";
+	VS "you this hope";
+	VS "hap-py day";
+invisbar
+//newscore
+1: 8.s; 16; 8.; 16d+f; 4c+f; 8.ac; 16fc#;
+2: 8.s; 16; 8.; 16bf; 4af; 8.; 16ae;
+
+	VS "all fear, wipe a-";
+	VS "we bear, free from";
+	VS "ter there, Je-sus";
+	VS "to-day? Can we";
+	VS "shall come, and the";
+
+bar
+
+//7
+1 1: 8.fd; 16gd; 8.fd; 16db-; 4fa-; 8.f; 16g;
+1 2: 8.s; 16; 8.; 16; 4; [dist -9]4r;
+2: 8.ad; 16; 8.bb-; 16fb-; 4ff-; 4r;
+
+	VS "way our ev-'ry tear, You'll be";
+	VS "all per-plex-ing care, You'll be";
+	VS "glo-ry we shall share, You'll be";
+	VS "tru-ly, tru-ly say, You'll be";
+	VS "pre-cious saints get home, You'll be";
+bar
+
+//8
+1 1: 2.a; 8.ge; 16ec;
+1 2: [dist -6]4r; 8.f; 16; 4; 8.s; 16s;
+2: 4r; 8.c+c; 16; 4; 8.bc; 16gc;
+mussym (9) above 1: 1 "sign";
+
+	VS "there, I'll be";
+	VS 4s; 8.; 16; 4; 8.s; 16s; "You'll be there,";
+bar
+
+//9
+1 1: 2.f; 4s;
+1 2: 4c; 8.d; 16; 4c; 4s;
+2 1: 4a; 8.b; 16; 4a; 4s;
+2 2: 2.f; 4s;
+ital (13) 1: 3.5 "fine";
+
+	VS 4; 8.; 16; 4; 4s; "there. (I'll be there.)";
+dblbar
+newscore
+
+//10
+CHORUS
+1 1: 8.c+; 16a; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+
+	VS "You'll be";
+bar
+
+//11
+1 1: 2.f; 8.c+; 16a;
+1 2: 4r; 8.c; 16; 4; r;
+2: 4r; 8.af;16; 4; r;
+
+	VS "there, I'll be";
+	VS 4s; 8.; 16; 4; 4s; "You'll be there";
+bar
+
+//12
+1 1: 2.g; 8.ge; 16af;
+1 2: [dist -7]4r; 8.e; 16; 4; 8.s; 16;
+2: 4r; 8.c+c; 16; 4; 8.; 16;
+
+	VS "there, In that";
+	VS 4s; 8.; 16; 4; 8.s; 16s; "I'll be there,";
+bar
+
+//13
+1: 8.bg; 16; 8.; 16; 8.; 16; 8.c+a; 16d+b;
+2: 8.c+c; 16; 8.; 16; 8.; 16; 8.e+c; 16;
+
+	VS "bet-ter day that's dawn-ing We'll be";
+bar
+
+//14
+1 1: 2.c+; 8.af; 16bf;
+1 2: 4a; 8.f; 16; 4; 8.s; 16;
+2 1: 4f+; 8.a; 16; 4; 8.f; 16g;
+2 2: 2.f; 8.; 16;
+
+	VS "there; When that";
+	VS 4s; 8.; 16; 4; 8.s; 16s; "We'll be there";
+bar
+
+//15
+1: 8.c+f; 16; 8.; 16d+f; 4c+f; 8.s; 16;
+2: 8.af; 16; 8.; 16bf; 4af; 8.s; 16;
+
+	VS "glo-r'ous morn shall come,";
+invisbar
+//newscore
+1: 8.s; 16; 8.; 16; 4; 8.ac; 16gc#;
+2: 8.s; 16; 8.; 16; 4; 8.af; 16ae;
+
+	VS "And the";
+bar
+
+//16
+1 1: 8.fd; 16gd; 8.fd; 16db-; 4fa-; 8.f; 16g;
+1 2: 8.s; 16; 8.; 16; 4; [dist -8]4r;
+2: 8.ad; 16; 8.bb-; 16fb-; 4ff-; 4r;
+ital dyn above 1: 4.9 "D.S.";
+
+	VS "pre-cious saints get home, You'll be";
+endbar

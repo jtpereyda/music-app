@@ -1,0 +1,281 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	His Praise
+//		By Charles D. Tillman
+//		Charlie Tillman Song Book Co.
+//		Tillman's Crossing Lee Street
+//		Atlanta, GA.
+//		Copyright 1916 by Charlie D. Tillman
+//		Hymn No. 45
+		
+		
+// Transcribed by: Ted Gatza, Jr. 09/25/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "God Is Love" ""
+   title (2) ""
+   title (11)"" "\f(TI)He that loveth not knoweth not God; for God is love. - 1 John 4:8" ""
+
+   title (11)"B\(flat) - 2 - SOL" "" ""  
+   title (13) "E. E. Hewitt" "" "Dan Ward Milam, 1914"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=b&
+
+
+staff 2
+	key=b&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VERSE lyrics between 1&2: @
+       define DSVERSE lyrics below 2: @
+
+  //Chorus
+      define CHORUS ital (13) above 1: 1 "Chorus"; @	
+      define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Fermatas
+      define SFERM(COUNT)
+      mussym (9) above 1: COUNT "ferm";
+      @
+      define BFERM(COUNT)
+      mussym (9) below 2: COUNT "uferm";
+      @
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1: 8df; 4.s; 4s;
+2: 8b-b; 4.s; 4s;
+
+	
+	VERSE 8; 4.s; 4s; "<1. >-1|At";
+	VERSE 8; 4.s; 4s; "<2. >-1|His";
+	VERSE 8; 4.s; 4s; "<3. >-1|O,";
+	VERSE 8; 4.s; 4s; "<4. >-1|He'll";
+
+bar
+//2
+1: 4db; 8da; 4dc+; 8db;
+2: 4b-f; 8; 4; 8; 
+
+	VERSE "Calv'-ry's cross, by";
+	VERSE "well be-lov-ed";
+	VERSE "come to-day and";
+	VERSE "save you from the";
+bar
+//3
+1: 4dd+; 8db; 4df; 8b-d;
+2: 4fb-; 8; 4b-b; 8b-f;
+
+	VERSE "faith I see, That";
+	VERSE "Son He gave, For";
+	VERSE "seek the Lord, For";
+	VERSE "depths of sin, For";
+bar
+//4
+1: 4. df;;
+2: 4.b-b; b-ng#;
+
+	VERSE "God is";
+	VERSE "God is";
+	VERSE "God is";
+	VERSE "God is";
+bar
+//5
+1 1: 4.f~; 4f; 8f;
+1 2: 4.e~; 4e; 8f;
+2 1: 4.a~; 4a; 8fa;
+2 2: 4c; 8a-; 4f-; 8s;
+
+	VERSE "love, My";
+	VERSE "love, Our";
+	VERSE "love, His";
+	VERSE "love, O,";
+	DSVERSE 4s; 8; 4; 8s; "is love,";
+bar
+//6
+1: 4ea; 8; 4db; 8dbn;
+2 1: 4fc+; 8; 4fb; 8g#;
+2 2: 4s; 8; 4; 8f;
+
+	VERSE "Sav-ior shed His";
+	VERSE "wand-'ring souls to";
+	VERSE "Word will cheer and";
+	VERSE "come and life e-";
+bar
+//7
+1: 4ec+; 8enc+; 4fc+; 8ed+;
+2: 4fa; 8gb; 4ac+; 8gb;
+
+	VERSE "blood for me, For";
+	VERSE "seek and save, For";
+	VERSE "peace af-ford, For";
+	VERSE "ter-nal win, For";
+bar
+//8
+1 1: 4.fa; g;
+1 2: 4.s; 8en bm; d; e ebm;
+2 1: 4.c+; ;
+2 2: 4.c+; b;
+
+	VERSE "God is";
+	VERSE "God is";
+	VERSE "God is";
+	VERSE "God is";
+bar
+//9
+1 1: 4.c+~; 4c+; 8s;
+1 2: 4f; 8en; 4e&; 8s;
+2: 4ac+; 8gb; 4fa; 8s;
+
+	VERSE 4; 8; 4; 8s; "love. (is love.)";
+	VERSE 4; 8; 4; 8s; "love. (is love.)";
+	VERSE 4; 8; 4; 8s; "love. (is love.)";
+	VERSE 4; 8; 4; 8s; "love. (is love.)";
+dblbar
+//10
+1 1: 8f; 4.s; 4s;
+1 2: 8e; 4.s; 4s;
+2: 8fa; 4.s; 4s;
+CHORUS
+
+	VERSE "<>";
+	VERSE "For";
+bar
+//11
+1: 4.db; dc+;
+2: 4.b-f;;
+
+	VERSE 4.; 4.s;"<>";
+	VERSE "God is";
+bar
+//12
+1 1: 4.a~; 4a; 8eg;
+1 2: 8e;;; 4; 8s;
+2: 8cf;;; 4; 8fa;
+
+	VERSE 4.; 4s; 8s;"<>";
+	VERSE "love,_ For";
+	VERSE 8; 8; 8; 4; 8s; "won-der-ful love,";
+bar
+//13
+1 1: 4.f; ge+;
+1 2: 4.f; s;
+2: 4.fa;;
+
+	VERSE "God is";
+bar
+//14
+1 1: 4.d+~; 4d+; 8fd+;
+1 2: 8f;;; 4f; 8s;
+2 1: 8b; fb; db; 4b-b; 8b-b;
+2 2: 8b; s;; 4; 8;
+
+	VERSE "love,_ His";
+	VERSE 8; 8; 8; 4; 8s; "won-der-ful love,";
+bar
+//15
+1: 4f#d+; 8fa; 4; 8fc+;
+2: 4da; 8dd+; 4; 8;
+
+	VERSE "on-ly Son He";
+bar
+//16
+1: 4gc+; 8gb; 4; 8db;
+2: 4gd+; 8; 4; 8gb;
+
+	VERSE "gave for me, Up-";
+bar
+//17
+1: 4enc+; 8eg; 4; 8gb;
+2: 4cg; 8cb; 4; 8enc+;
+
+	VERSE "on the cross of";
+bar
+//18
+1 1: 4fb; 8enb; 4e&a; 8f;
+1 2: 4s; 8; 4; 8f;
+2: 4fd+; 8fd+&; 4fc+; 8ec+;
+
+	VERSE "Cal-va-ry; How";
+bar
+//19
+1: 4fb; 8; 4fc+; 8;
+2: 4db; 8; 4fa; 8;
+
+	VERSE "won-der-ful, how";
+bar
+//20
+1: 4fd+; 8fe+; 4fa&f+; 8ge+;
+2: 4b-b; 8ca; 4db; 8eb;
+SFERM(4)
+BFERM(4)
+
+	VERSE "mar-vel-ous, To";
+bar
+//21
+1: 4.f~d+~; 4fd+; 8db;
+2: 4. f~b~; 4fb; 8;
+
+	VERSE "know that";
+bar
+//22
+1: 4.e~c+~; 4ec+; 8db;
+2: 4.f~a~; 4fa; 8b-fb;
+
+	VERSE "God is";
+bar
+//23
+1: 4.d~b~; 4db; 8s;
+2: 4.b-~f~b~; 4b-fb; 8s;
+
+	VERSE "love.";
+endbar

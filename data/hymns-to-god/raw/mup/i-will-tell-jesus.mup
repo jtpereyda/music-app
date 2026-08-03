@@ -1,0 +1,229 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom of Song
+//		A Collection of Songs
+//		For Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited By T. M. Bowdish
+//		Copyrigh by the W. W. Whitney Co.
+//		Entered at stationer's Hall, London, England
+//		Copyright 1900
+//		Hymn No.: 44
+//		
+// Transcribed by: Ted Gatza, Jr. 11/08/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Will Tell Jesus" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - MI" "\s(17)\f(TI)\:Let\ us\ therefore\ draw\ near\ with\ boldnes\|s\ unto\ the\ throne\ of\ grace,\ that\ we\ may receive\ mercy,\ and\ may\ find\ grace\ to\^\ help\ us\ in\ time\ of\ need.\ -\ Heb.\ 4:16" ""   
+   title (13) "T. M. Bowdish" "" "T. M. Bowdish"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1 1: 8ge; f; e; 4.s;;
+1 2: 8s; e; e; 4.s;;
+2: 8be; ae; ge; 4.s;;
+
+			VERSE "<1. >-1|I will tell";
+			VERSE "<2. >-1|I will tell";
+			VERSE "<3. >-1|Doubt-ings and";
+			VERSE "<4. >-1|Sin-ful and";
+bar
+//2
+1 1: 4.fd; e; 8; ge; bg;
+1 2: 4.s; e; 8; s;;
+2: 4.ab-; ge; 8; be; e+e;
+
+			VERSE "Je-sus all of my";
+			VERSE "Je-sus when in temp-";
+			VERSE "fears my soul o-ver-";
+			VERSE "weak, I have a dear";
+bar
+//3
+1: 4.c+a; bg; 8; ge; be;
+2: 4.e+e;; 8; be; ge;
+
+			VERSE "sor-row, I will in-";
+			VERSE "ta-tion, He will a-";
+			VERSE "shad-ows, Com-fort and";
+			VERSE "Sav-iour, One who in";
+bar
+//4
+1: 4.c+e; e+e; 8be; ge; be;
+2 1: 4.a; ac; 8ge; be; bg-;
+2 2: 4.a; s; 8;;;
+
+			VERSE "trust my all to his";
+			VERSE "bide so sweet-ly with-";
+			VERSE "peace he gives in his";
+			VERSE "mer-cy hears when I";
+bar
+//5
+1 1: 4.fd tie;; 8ge; f; e;
+1 2: 4.s;; 8; e;;
+2: 4.bb- tie;; 8be; ae; ge;
+
+			VERSE "care; Heav-i-ly";
+			VERSE "in, Trust-ing his";
+			VERSE "word; I can re-";
+			VERSE "call; He will be";
+bar
+//6
+1 1: 4.fd; e; 8s; s; s;
+1 2: 4.s; e; 8s; s;;
+2: 4.bb-; ge; 8s; s; s;
+
+			VERSE "la-den,";
+			VERSE "prom-ise,";
+			VERSE "ly on";
+			VERSE "near to";
+invisbar
+newscore
+
+1 1: 4.s; s; 8e; ge; bg;
+1 2: 4.s; s; 8e; s;;
+2: 4.s; s; 8ge; be; e+e;
+
+			VERSE "foot-sore and";
+			VERSE "trust-ing him";
+			VERSE "him to de-";
+			VERSE "bless and to";
+
+bar
+//7
+1: 4.c+a; bg; 8e+c+; d+b; c+a;
+2: 4.e+e;; 8e+a-;;;
+
+			VERSE "wea-ry, He will my";
+			VERSE "ful-ly, Je-sus will";
+			VERSE "liv-er, Oh, what a";
+			VERSE "cheer me, Je-sus my";
+bar
+//8
+1 1: 4.bg; ge; 8; e; fd;
+1 2: 4.s;; 8; e; s;
+2: 4.e+b-; bb-; 8; gb-; ab-;
+
+			VERSE "bur-dens will-ing-ly";
+			VERSE "save and keep me from";
+			VERSE "Friend is Je-sus, my";
+			VERSE "Sav-iour, Je-sus my";
+bar
+//9
+1 1: 4.e tie;; s;
+1 2: 4.e tie;; s;
+2: 4.ge tie;; s;
+
+			VERSE "bear.";
+			VERSE "sin.";
+			VERSE "Lord.";
+			VERSE "all.";
+dblbar
+//10
+1: 8bg; ge; bg; 4.s;;
+2: 8be;;; 4.s;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"I will tell";
+bar
+//11
+1: 4.e+g; bg; 8; ge; c+e;
+2: 4.be; e+e; 8; be; ae;
+
+			VERSE [c]"Je-sus, I will tell";
+bar
+//12
+1: 4.be; ge; 8; ae; be;
+2: 4.ge; be; 8; bf; bg;
+
+			VERSE [c]"Je-sus, He is a";
+bar
+//13
+1: 4.c+e; e+e; 8be; ge; be;
+2 1: 4.a; ac; 8ge; be; bg-;
+2 2: 4.a; s; 8;;;
+
+			VERSE "Friend in time of dis-";
+bar
+//14
+1 1: 4.fd tie;; 8ge; f; e;
+1 2: 4.s;; 8; e;;
+2: 4.bb- tie;; 8be; ae; ge;
+
+			VERSE "tress; I will tell";
+bar
+//15
+1 1: 4.fd; e; 8; ge; bg;
+1 2: 4.s; e; 8; s;;
+2: 4.bb-; ge; 8; be; e+e;
+
+			VERSE "Je-sus, I will tell";
+bar
+//16
+1: 4.c+a; bg; 8e+c+; d+b; c+a;
+2: 4.e+e;; 8e+a-;;;
+
+			VERSE "Je-sus, Je-sus will";
+bar
+//17
+1 1: 4.bg; ge; 8; e; fd;
+1 2: 4.s;; 8; e; s;
+2: 4.e+b-; bb-; 8; gb-; ab-;
+
+			VERSE "com-fort, Je-sus will";
+bar
+//18
+1 1: 4.e tie;; s;
+1 2: 4.e tie;; s;
+2: 4.ge tie;; s;
+
+			VERSE "bless.";
+endbar

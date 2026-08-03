@@ -1,0 +1,203 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Winning Songs for use in Meetings For Christian Worship or Work 
+//		Pub. by John J. Hood, 
+//		1024 Arch St. 
+//		Copyright 1892
+
+// Transcribed by: Ted Gatza, Jr. 01/08/2010
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "In The Master's Name" ""
+   title (2)""
+title (11) "C - 4 - MI" "\s(18)\f(TI)\:We\ must\ work\ the\ works\ of\ h\|im\ that\ sent\ me,\ while\ it\ is\ day: the\ night\ cometh,\ when\^\ no\ man\ can\ work.\ -\ Jn.\ 9:4"""
+   title (13) "E. A. Barnes" " " "Wm. J. Kirkpatrick, 1892"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=c major
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=c major
+	clef=bass
+music
+
+midi all: 0 "tempo=105";
+
+//1
+1: 4s; 4s; 4s; 8ec; 8fd;
+2: 4s; 4s; 4s; 8gc; 8gc;
+
+
+			lyrics 1: "<1. >-1|Are we";
+			lyrics 1: "<2. >-1|Are we";
+			lyrics 1: "<3. >-1|Are we";
+			lyrics 1: "<4. >-1|Are we";
+bar
+//2
+1: 8ge; 8ge; 8ge; 8ge; 4af; 4ge;
+2: 8c+c; 8c+c; 8c+c; 8c+c; 4c+c; 4c+c;
+
+			lyrics 1: "sow-ing, with a rea-dy";
+			lyrics 1: "seek-ing to re-claim the";
+			lyrics 1: "speak-ing for the good of";
+			lyrics 1: "liv-ing in his serv-ice";
+bar
+//3
+1: 2.c+e; 8bg; 8af;
+2: 2.gc; 8c+c; 8c+c;
+
+			lyrics 1: "hand, Gos-pel";
+			lyrics 1: "lost, By his";
+			lyrics 1: "all, Gos-pel";
+			lyrics 1: "here, Serv-ing";
+bar
+newscore
+//4
+1: 4ge; 4ge; 8af; 8ge; 8ge; 8ec;
+2: 4c+c; 4c+c; 8c+c; 8c+c; 8gc; 8gc;
+
+			lyrics 1: "words that hold the prec-ious";
+			lyrics 1: "call so ten-der and so";
+			lyrics 1: "words of his re-deem-ing";
+			lyrics 1: "well, our love and zeal to";
+bar
+//5
+1: 2.db-; 8ec; 8fd;
+2: 2.gg-; 8gc; 8gc;
+
+			lyrics 1: "seed? Are we";
+			lyrics 1: "sweet? Are we";
+			lyrics 1: "love? Are we";
+			lyrics 1: "show? Are we";
+bar
+//6
+1: 8ge; 8ge; 8ge; 8ge; 4af; 4ge;
+2: 8c+c; 8c+c; 8c+c; 8c+c; 4c+c; 4c+c;
+
+			lyrics 1: "help-ing with a lov-ing";
+			lyrics 1: "pray-ing that the world at";
+			lyrics 1: "bear-ing to the heart of";
+			lyrics 1: "giv-ing with a will-ing";
+bar
+//7
+1: 2.c+e; 8c+e; 8c+e;
+2: 2.gc; 8gc; 8gc;
+
+			lyrics 1: "heart, Where are";
+			lyrics 1: "large May be";
+			lyrics 1: "grief Prec-ious";
+			lyrics 1: "heart, To ad-";
+bar
+//8
+1 1: 4bd; 4bf; 8bf; 8g; 8af; 8bf;
+1 2: 4s; 4s; 8s; 8f; 8s; 8s;
+2 1: 4g; 4d+g; 8d+g; 8bg; 8c+g; 8d+g; 
+2 2: 4g; 4s; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "seen so man-y in their";
+			lyrics 1: "brought to wor-ship at his";
+			lyrics 1: "balm of com-fort from a-";
+			lyrics 1: "vance his king-dom here be-";
+bar
+//9
+1: 2.c+e; 4s;
+2: 2.c+c; 4s;
+
+			lyrics 1: "need?";
+			lyrics 1: "feet?";
+			lyrics 1: "bove?";
+			lyrics 1: "low?";
+dblbar
+newscore
+//10
+1: 4s; 4s; 4s; 8c+g; 8bg;
+2: 4s; 4s; 4s; 8c+e; 8c+e;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Are we";
+bar
+//11
+1: 4bg; 4af; 4af; 8c+f; 8af;
+2: 4c+f; 4c+f; 4c+f; 8af; 8c+f;
+
+			lyrics 1: "do-ing this? Are we";
+bar
+//12
+1: 4af; 4ge; 2ge;
+2: 4c+c; 4c+c; 2c+c;
+
+			lyrics 1: "do-ing this?";
+bar
+//13
+1 1: 4g; 4c+g; 4bf; 4c+e;
+1 2: 4g; 4s; 4s; 4s; 
+2: 4c+e; 4c+e; 4gd; 4gc;
+
+			lyrics 1: "Work-ing while we";
+bar
+//14
+1 1: 2.d+g; 8.g; 16g;
+1 2: 2.s; 8.g; 16g;
+2 1: 2.bg; 8.g; 16g;
+2 2: 2.s; 8.g; 16g;
+
+			lyrics 1: "may? In the";
+bar
+//15
+1: 4e+g; 4d+g; 4c+g; 8.ge; 16ge;
+2: 4c+c; 4bd; 4c+e; 8.c+c; 16c+c;
+
+			lyrics 1: "Mast-er's name, For the";
+bar
+//16
+1: 4bg; 4af; 2af;
+2: 4c+f; 4c+f; 2c+f;
+
+			lyrics 1: "Mast-er's sake,";
+bar
+//17
+1: 8ge; 4.c+e; 4bf; 4d+f;
+2 1: 8c+g; 4.c+g; 4d+g; 4g;
+2 2: 8s; 4.s; 4s; 4g;
+
+			lyrics 1: "La-bor while 'tis";
+bar
+//18
+1: 2.c+e; 4s;
+2: 2.gc; 4s;
+
+			lyrics 1: "day.";
+endbar

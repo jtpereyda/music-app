@@ -1,0 +1,197 @@
+// Coded with Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Christian Science Hymnal
+//		Published by
+//		The Christian Science Publishing Society
+//		Back Bay Station
+//		Boston, Massachusetts	
+//		Copyright 1898, 1903, 1905, 1909
+//		Hymn no. 139
+
+// Transcribed by: Ted Gatza, Jr. 10/04/2010; Rev. 06/23/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "'Tis God the Spirit Leads" ""
+   title (2)""
+   title (11) "G - 2 - SOL" "\s(17)\f(TI)\:Howbeit\ when\ he,\ the\ Spi\|rit\ of\ truth,\ is\ come,\ he shall\ guide\ you\ into\ all\ t\|he\ truth:\ -\ Jn.\ 16:13"""
+   title (13) "James Montgomery" " " "William Tansur"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=2/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=75";
+
+//1
+1 1: 4d; 4s;
+1 2: 4d; 4s;
+2 1: 4d; 4s;
+2 2: 4d; 4s;
+
+			lyrics 1: 4; 4s; "<1. >-1|'Tis";
+			lyrics 1: 4; 4s; "<2. >-1|Sup-";
+			lyrics 1: 4; 4s; "<3. >-1|'Tis";
+bar
+//2
+1: 4gd; 4gd;
+2: 4gb-; 4bg-;
+
+			lyrics 1: "God the";
+			lyrics 1: "port-ed";
+			lyrics 1: "He that";
+bar
+//3
+1: 4bd; 8ad bm; 8gc# ebm;
+2 1: 4g; 4a;
+2 2: 4g; 8f bm; 8e ebm;
+
+			lyrics 1: 4; 4; "Spir-it";
+			lyrics 1: 4; 4; "by His";
+			lyrics 1: 4; 4; "works to";
+bar
+//4
+1 1: 4af; 8.b bm; 16c+ ebm;
+1 2: 4s; 4d;
+2 1: 4ad; 4d+;
+2 2: 4s; 8.g bm; 16a ebm;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			lyrics 1: 4; 4; "leads In";
+			lyrics 1: 4; 4; "grace, We";
+			lyrics 1: 4; 4; "will, 'Tis";
+bar
+//5
+1: 4d+g; 8c+f bm; 8bg ebm;
+2: 4d+b; 8c+a bm; 8d+g ebm;
+
+			lyrics 1: 4; 4; "paths be-";
+			lyrics 1: 4; 4; "still pur-";
+			lyrics 1: 4; 4; "He that";
+bar
+//6
+1: 4c+f; 4bg;
+2: 4d+a; 4d+g;
+
+			lyrics 1: "fore un-";
+			lyrics 1: "sue our";
+			lyrics 1: "works to";
+bar
+//7
+1:4af; 4d+d;
+2: 4d+d; 4af;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			lyrics 1: "known; The";
+			lyrics 1: "way, As-";
+			lyrics 1: "do; His";
+bar
+//8
+1 1: 4bd; 4g;
+1 2: 4s; 4g;
+2 1: 4g; 4d+b-;
+2 2: 4g; 4s;
+
+			lyrics 1: "work to";
+			lyrics 1: "sured that";
+			lyrics 1: "is the";
+bar
+//9
+1 1: 4af; 4d;
+1 2: 4s; 4d;
+2: 4d+d; 4af;
+
+			lyrics 1: "be per-";
+			lyrics 1: "we shall";
+			lyrics 1: "pow'r by";
+bar
+//10
+1 1: 4gd; 8.b bm; 16c+# ebm;
+1 2: 4s; 4e;
+2: 4bg; 4ge;
+
+			lyrics 1: 4; 4; "formed is";
+			lyrics 1: 4; 4; "reach the";
+			lyrics 1: 4; 4; "which we";
+bar
+//11
+1: 4d+f; 4d+g;
+2: 4ad; 4d+b-;
+
+			lyrics 1: "ours, The";
+			lyrics 1: "prize, Se-";
+			lyrics 1: "act, His";
+bar
+//12
+1 1: 4e+g; 8d+ bm; 8c+ ebm;
+1 2: 4s; 4g;
+2: 4c+c; 8d+b- bm; 8e+c ebm;
+
+			lyrics 1: 4; 4; "strength is";
+			lyrics 1: 4; 4; "cure in";
+			lyrics 1: 4; 4; "be the";
+bar
+//13
+1: 4bg; 4af;
+2: 4d+d; 4c+d;
+
+			lyrics 1: "all His";
+			lyrics 1: "end-less";
+			lyrics 1: "glo-ry";
+bar
+//14
+1 1: 4g; 4s;
+1 2: 4g; 4s;
+2: 4bg-; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			lyrics 1: "own.";
+			lyrics 1: "day.";
+			lyrics 1: "too.";
+endbar
+   title (26) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

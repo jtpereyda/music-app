@@ -1,0 +1,193 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1895
+//		Hymn No.: 191
+//		
+// Transcribed by: Ted Gatza, Jr. 10/25/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "His Way Is Best" ""
+   title (2)""
+   title (11) "F - 2 - SOL" "\s(17)\f(TI)\:Show\ me\ thy\ ways,\ O\ Jehovah;\ Teach\ me\ thy\ paths.\ -\ Ps.\ 25:4 \(space)" ""   
+   title (13) "Gertrude W. Seibert" "" "M. L. McPhail, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=125";
+
+//1
+1: 4c+f; 2s; 2.;
+2: 4af; 2.s; 2;
+
+
+			VERSE "<1. >-1|How";
+			VERSE "<2. >-1|Oh";
+			VERSE "<3. >-1|To";
+			VERSE "<4. >-1|Then";
+bar
+//2
+1 1: 4c+ slur; bn; c+f; 2af; 4f;
+1 2: 2f; 4s; 2s; 4e&;
+2 1: 4a slur; g#; 4af; 2c+f; 4af;
+2 2: 2f; 4s; 2s; 4s;
+
+			VERSE 2; 4; 2; 4; "sweet to feel God's";
+			VERSE 2; 4; 2; 4; "how it helps us";
+			VERSE 2; 4; 2; 4; "those who take His";
+			VERSE 2; 4; 2; 4; "why should hearts grow";
+bar
+//3
+1: 2fd; 4db-; 2.ca-;
+2 1: 2bb-; 4fb-; 2.f;
+2 2: 2s; 4; 2.ff-?;
+
+			VERSE "will is best,";
+			VERSE "bear the pain,";
+			VERSE "will as best,";
+			VERSE "weak or faint,";
+bar
+//4
+1: 4fc; gc; af; 2bf; 4af;
+2: 4af; bf; c+f; 2d+f; 4c+f;
+
+			VERSE "And in this pre-cious";
+			VERSE "Oh, how it makes us";
+			VERSE "He grants His per-fect";
+			VERSE "Why should we ev-er";
+bar
+//5
+1 1: 2gc; 4f; 2ge; 4af;
+1 2: 2s; 4f; 2s; 4s;
+2: 2c+e; 4bnd; 2c+c; 4c+f;
+mussym (9) above 1: 6 "sign";
+
+			VERSE "tho't to rest; To";
+			VERSE "strong a-gain! The";
+			VERSE "peace and rest, And";
+			VERSE "make com-plaint. Let";
+			lyrics below 2: 2s; 4s; 2s; 4; "<\f(TX)D.S. -\f(PV) >-4|I";
+bar
+//6
+1 1: 4a slur; g; af; 2fc; 4gc;
+1 2: 2f; 4s; 2; 4;
+2 1: 4c+ slur; b#; 4c+f; 2af; 4bf;
+2 2: 2f; 4s; 2s; 4s;
+
+			VERSE 2; 4; 2; 4; "know, what-ev-er";
+			VERSE 2; 4; 2; 4; "cold and gloom of";
+			VERSE 2; 4; 2; 4; "ev-er gives them";
+			VERSE 2; 4; 2; 4; "us press on with";
+			lyrics below 2: 2; 4; 2; 4; "know, what-ev-er";
+bar
+//7
+1: 2af; 4c+e&; 2bd; 4db-;
+2: 2c+f; 4fa-; 2fb-; 4;
+
+			VERSE "may be-tide, 'Tis";
+			VERSE "dark-est night it";
+			VERSE "day by day His";
+			VERSE "up-turned face, And";
+			lyrics below 2: "may be-tide, He'll";
+bar
+//8
+1 1: 4d slur; e; fc; 2c+f; 4bg;
+1 2: 2b-; 4s; 2; 4; 
+2: 4fb- slur; gg-; af-; 2c+a-; 4d+b-;
+
+			VERSE 2; 4; 2; 4; "best, for He is";
+			VERSE 2; 4; 2; 4; "fills with warmth and";
+			VERSE 2; 4; 2; 4; "grace suf-fi-cient";
+			VERSE 2; 4; 2; 4; "fol-low where we";
+			lyrics below 2: "nev-er\(emdash) nev-er";
+bar
+//9
+1: 2af; 4gc; 2fc; 4r;
+2: 2c+c; 4bc; 2af; 4r;
+ital (13) above 1: 6 "Fine";
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "by our side!";
+			VERSE "heav'n-ly light!";
+			VERSE "on the way.";
+			VERSE "can-not trace!";
+			lyrics below 2: "leave my side.";
+dblbar
+//10
+1: 4ge; f#d#; ge; 2.bg;
+2: 4c+c;;; 2.;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"His way is best,";
+bar
+//10
+1 1: 4af; g#; af; 2.c+f;
+1 2: 4s; f; s; 2.;
+2: 4c+f; bnf; c+f; 2.af;
+
+			VERSE "His way is best\(emdash)";
+bar
+//11
+1: 4d+f; bf; d+f; 2c+f; 4af;
+2: 4bb-; d+b; bb-; 2af; 4c+f;
+
+			VERSE "And in this pre-cious";
+bar
+//12
+1 1: 2gc; 4f; 2ge; 4s;
+1 2: 2s; 4f; 2s; 4s;
+2: 2c+e; 4bnd; 2c+c; 4s;
+ital (13) above 1: 5 "D.S.";
+
+			VERSE "tho't I'll rest;";
+endbar

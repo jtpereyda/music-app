@@ -1,0 +1,300 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymns, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church
+//	E. L. Jorgenson, Compiler
+//	Word and Work
+//	Louisville, Kentucky
+//	Copyright 1921
+//	Hymn No.: 357	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 12/18/2023
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (21) "" "What A Friend We Have In Jesus" ""
+   title (2)""
+   title (11) "" "\f(TI)Ye are my friends, if ye do the things which I command you. - Jn. 15:14"""
+   title (15) "F - 4 - SOL" "" ""
+   title (15) "Joseph M. Scriven, 1855" "" "Charles C. Converse"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	scale=.9
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+staffs=2
+	time=4/4
+	key=f
+
+
+staff 2
+	key=f
+	clef=bass
+
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+//Verse
+
+//1
+1: 4.fc+; 8; fd+; fc+; fa; cf;
+2: 4.fa; 8; fb; fa; fc+; fa;
+
+
+	VS "<1. >-1|What a Friend we have in";
+	VS "<2. >-1|Have we tri-als and temp-";
+	VS "<3. >-1|Are we weak and heav-y-";
+bar
+
+//2
+1: 2df; 4b-d; 4r;
+2: 2b-b; 4b-f; 4r;
+
+	VS "Je-sus,";
+	VS "ta-tions?";
+	VS "la-den,";
+bar
+
+//3
+1 1: 4.c; 8cf; ca; cf; fc+; fa;
+1 2: 4.c; 8s; 2s;
+2: 4.fa; 8; ;;; fc+;
+
+	VS "All our sins and griefs to";
+	VS "Is there troub-le an-y-";
+	VS "Cum-bered with a load of";
+bar
+
+//4
+1: 2.eg; 4r;
+2: 2.cc+; 4r;
+
+	VS "bear!";
+	VS "where?";
+	VS "care?";
+bar
+
+//5
+1: 4.fc+; 8; fd+; fc+; fa; cf;
+2: 4.fa; 8; fb; fa; fc+; fa;
+
+	VS "What a priv-i-lege to";
+	VS "We should nev-er be dis-";
+	VS "Pre-cious Sav-ior, still our";
+bar
+
+//6
+1: 2df; 4b-d; 4r;
+2: 2b-b; 4b-f; 4r;
+
+	VS "car-ry";
+	VS "cour-aged.";
+	VS "ref-uge\(emdash)";
+bar
+
+//7
+1: 4.a-c; 8cf; fa; cg; cf; ce;
+2: 4.cf; 8ca; cc+; cb; ca; cg;
+
+	VS "Ev-'ry-thing to God in";
+	VS "Take it to the Lord in";
+	VS "Take it to the Lord in";
+bar
+
+//8
+1: 2.cf; 4r;
+2: 2.fa; 4r;
+
+	VS "prayer!";
+	VS "prayer.";
+	VS "prayer.";
+dblbar
+
+//9
+1: 4.eg; 8d#f#; eg; fna; gb; eg;
+2: 4.cc+; 8; ; ; ; ;
+
+	VS "O what peace we oft-en";
+	VS "Can we find a friend so";
+	VS "Do thy friends de-spise, for-";
+bar
+
+//10
+1: 2fa; 4fc+; 4r;
+2: 2fc+; 4fa; 4r;
+
+	VS "for-feit,";
+	VS "faith-ful,";
+	VS "sake thee?";
+bar
+
+//11
+1: 4.fd+; 8fd+; fc+; fa; gb; fa;
+2 1: 4.b; 8; ac+; fc+; ec+; fc+;
+2 2: 4.b; 8; 2s;
+
+	VS "O what need-less pain we";
+	VS "Who will all our sor-row";
+	VS "Take it to the Lord in";
+bar
+
+//12
+1: 2.eg; 4r;
+2: 2.cc+; 4r;
+
+	VS "bear,";
+	VS "share?";
+	VS "prayer;";
+bar
+
+//13	
+1: 4.fc+; 8; fd+; fc+; fa; cf;
+2: 4.fa; 8; fb; fa; fc+; fa;
+
+	VS "All be-cause we do not";
+	VS "Je-sus know our ev-'ry";
+	VS "In His arms He'll take and";
+bar
+
+//14
+1: 2df; 4b-d; 4r;
+2: 2b-b; 4b-f; 4r;
+
+	VS "car-ry";
+	VS "weak-ness;";
+	VS "shield thee,";
+bar
+
+//15
+1: 4.a-c; 8cf; fa; cg; cf; ce;
+2: 4.cf; 8ca; cc+; cb; ca; cg;
+
+	VS "Ev-'ry-thing to God in";
+	VS "Take it to the Lord in";
+	VS "Thou wilt find a sol-ace";
+bar
+
+//16
+1: 2.cf; 4r;
+2: 2.fa; 4r;
+
+	VS "prayer!";
+	VS "prayer.";
+	VS "prayer.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,301 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No. 2
+//		Compiled and arranged for use in
+//		Gospel Meetings, Sunday Schools, Prayer Meetings
+//		and other religious services
+//		ByIra D. Sankey, James McGranahan And Geo. C. Stebbins
+//		Published by the Biglow & Main Co., New York, Chicago
+//		Copyright 1899
+//		Hymn No.: 158
+
+// Transcribed by: Ted Gatza, Jr. 05/30/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "The Story Must be Told" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(18)\f(TI)\:It\ is\ the\ power\ of\ God\ unto\ salvation\ -\ Rom.\ 1:16 \(space)"""
+   title (13) "Fanny J. Crosby, 1899" " " "Ira D. Sankey"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=120";
+
+//1
+1: 2.s; 8.bd; 16c+e;
+2 1: 2.s; 8.g; 16g;
+2 2: 2.s; 8.g; 16g;
+
+			lyrics 1: "<1. >-1|O the";
+			lyrics 1: "<2. >-1|O the";
+			lyrics 1: "<3. >-1|O the";
+			
+bar
+//2
+1: 4bd; 4ac; 4ec; 4fc;
+2: 4fd; 4fd; 4fd; 4ad;
+
+			lyrics 1: "pre-cious gos-pel";
+			lyrics 1: "bless-ed gos-pel";
+			lyrics 1: "won-drous gos-pel";
+bar
+//3
+1: 4eb-; 2db-; 8.gd; 16ad;
+2: 4gg-; 2gg-; 8.bg; 16c+a;
+
+			lyrics 1: "sto-ry, How it";
+			lyrics 1: "sto-ry, Of His";
+			lyrics 1: "sto-ry; There is";
+bar
+//4
+1: 4bd; 4d+g; 4af; 4d+f;
+2: 4d+g; 4d+b-; 4d+d; 4c+d;
+
+			lyrics 1: "tells of love to";
+			lyrics 1: "meek and low-ly";
+			lyrics 1: "life in ev-'ry";
+bar
+//5
+1: 2.d+g; 4s;
+2: 2.bg; 4s; 
+
+			lyrics 1: "all,";
+			lyrics 1: "birth,";
+			lyrics 1: "word;";
+dblbar
+newscore
+//6
+1: 2.s; 8.bd; 16c+e;
+2 1: 2.s; 8.g; 16g;
+2 2: 2.s; 8.g; 16g;
+
+			lyrics 1: "How the";
+			lyrics 1: "And the";
+			lyrics 1: "There is";
+bar
+//7
+1: 4bd; 4ac; 4ec; 4fc;
+2: 4fd; 4fd; 4fd; 4ad;
+
+			lyrics 1: "Sav-iour in com-";
+			lyrics 1: "wel-come of the";
+			lyrics 1: "hope and con-so-";
+bar
+//8
+1: 4eb-; 2db-; 8.gd; 16ae;
+2: 4gg-; 2gg-; 8.gb-; 16gc;
+
+			lyrics 1: "pas-sion, Died to";
+			lyrics 1: "an-gels When they";
+			lyrics 1: "la-tion, Where the";
+bar
+//9
+1: 4bd; 4d+d; 4.bg; 8af;
+2: 4gd; 4bd; 4.d+d; 8c+d;
+
+			lyrics 1: "save us from the";
+			lyrics 1: "sang good-will to";
+			lyrics 1: "mes-sage sweet is";
+bar
+//10
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bg; 4s;
+
+			lyrics 1: "fall;";
+			lyrics 1: "earth;";
+			lyrics 1: "heard;";
+dblbar
+newscore
+//11
+1: 2.s; 8.gd; 16gd;
+2: 2.s; 8.bg; 16bg;
+
+			lyrics 1: "How He";
+			lyrics 1: "Of the";
+			lyrics 1: "Let us";
+bar
+//12
+1: 4ge; 4c+e; 4c+e; 4e+g;
+2: 4c+c; 4gc; 4gc; 4c+c;
+
+			lyrics 1: "came to seek the";
+			lyrics 1: "cross, on which He";
+			lyrics 1: "tell it to the";
+bar
+//13
+1: 4e+g; 2d+g; 8.d+g; 16d+g;
+2: 4c+g; 2bg; 8.bg; 16bg;
+
+			lyrics 1: "lost ones, And to";
+			lyrics 1: "suf-fered, As by";
+			lyrics 1: "wea-ry, And its";
+bar
+//14
+1: 4d+f; 4af; 4bg; 4c+#g;
+2 1: 4a; 4d+a; 4c+#a-; 4aa-;
+2 2: 4a; 4s; 4s; 4s;
+
+			lyrics 1: "bring them to His";
+			lyrics 1: "proph-ets seen of";
+			lyrics 1: "beau-ties all un-";
+bar
+//15
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+			lyrics 1: "fold;";
+			lyrics 1: "old,";
+			lyrics 1: "fold;";
+dblbar
+newscore
+//16
+1: 2.s; 8.bd; 16c+d;
+2: 2.s; 8.fd; 16fd;
+
+			lyrics 1: "Let us";
+			lyrics 1: "Of His";
+			lyrics 1: "'Tis the";
+bar
+//17
+1: 4bd; 4ac; 4ec; 4fc;
+2: 4fd; 4fd; 4fd; 4ad;
+			lyrics 1: "hast-en to pro-";
+			lyrics 1: "death and res-ur-";
+			lyrics 1: "on-ly guide to";
+bar
+//18
+1: 4eb-; 2db-; 8gd; 8ae; 
+2: 4gg-; 2gg-; 8gb-; 8gc;
+
+			lyrics 1: "claim it, For the";
+			lyrics 1: "rec-tion, Let the";
+			lyrics 1: "heav-en, And the";
+bar
+//19
+1: 8bd; 4.d+g; 4bg; 4af;
+2: 8gd; 4.bd; 4d+d; 4c+d;
+
+			lyrics 1: "sto-ry must be";
+			lyrics 1: "sto-ry now be";
+			lyrics 1: "sto-ry must be";
+bar
+//20
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bg; 4s;
+
+			lyrics 1: "told.";
+			lyrics 1: "told.";
+			lyrics 1: "told.";
+dblbar
+newscore
+//21
+1: 2.s; 4bd;
+2 1: 2.s; 4g;
+2 2: 2.s; 4g;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "The";
+bar
+//22
+1: 8d+g; 4.d+g; 4bd; 4c+d; 
+2 1: 8bg; 4.bg; 4g; 4a;
+2 2: 8s; 4.s; 4g; 4g;
+
+			lyrics 1: "sto-ry must be";
+bar
+//23
+1 1: 2.d+; 4bd;
+1 2: 4g; 4f; 4g; 4s;
+2 1: 4bg; 4c+a; 4d+b; 4g;
+2 2: 4s; 4s; 4s; 4g;
+
+			lyrics 1: "told, The";
+			lyrics 1: 4s; 4; 4; 4s; "be told,";
+bar
+//24
+1: 8c+d; 4.c+d; 4bg; 4af;
+2: 8ad; 4.ad; 4d+d; 4d+d;
+
+			lyrics 1: "sto-ry must be";
+bar
+//25
+1: 2.bg; 4s;
+2: 2.d+g; 4s;
+		
+			lyrics 1: "told,";
+dblbar
+newscore
+//26
+1: 4db-; 2.s;
+2: 4gg-; 2.s;
+
+			lyrics 1: "That";
+bar
+//27
+1: 4ec; 4fc; 4gb-; 4ad;
+2: 4gc; 4aa-; 4ge; 4d+f;
+
+			lyrics 1: "Je-sus died for";
+bar
+//28
+1 1: 4bd; 4c+#g; 4d+f; 4g;
+1 2: 4s; 4s; 4s; 4g;
+2 1: 4g; 4ae; 4ad; 4d+b-;
+
+			lyrics 1: "sin-ners lost, The";
+bar
+//29
+1: 8bg; 4.gd; 4ge; 4fd;
+2: 8d+d; 4.bd; 4ad; 4c+d;
+
+			lyrics 1: "sto-ry must be";
+bar
+//30
+1: 2.gd; 4s;
+2: 2.bg-; 4s;
+
+			lyrics 1: "told.";
+endbar

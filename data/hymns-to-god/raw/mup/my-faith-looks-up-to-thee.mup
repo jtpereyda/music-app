@@ -1,0 +1,291 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	Revival Gems No. 2
+//		Published by Samuel W. Beazley & Son
+//		53 W. Jackson Blvd
+//		Chicago, Ill.
+//		Date: 1927
+//		Hymn No. 45
+
+// Transcribed by: Ted Gatza, Jr. 06/17/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+
+staffs=2
+	time=4/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "My Faith Looks Up To Thee" ""
+   title (2) ""
+   title (11) "" "\f(TI)Looking to Jesus the author and finisher of our faith - Heb. 12:2" ""
+   title (11) "" 
+   title (11) "E\(flat) - 4 - DO" "" ""
+   title (13) "Ray Palmer, 1830" "" "Lowell Mason, 1832"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus - Faster"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 2e; 4eg; gb;
+1 2: 2e; 4s; ;
+2: 2eg; 4eb; ee+;
+
+	VS "<1. >-1|My faith looks";
+	VS "<2. >-1|May Thy rich";
+	VS "<3. >-1|While life's dark";
+bar
+
+//2
+1: 4.gb; 8fa; 2eg;
+2: 4.ee+; 8eb; 2;
+
+	VS "up to Thee,";
+	VS "grace im-part";
+	VS "maze I tread,";
+bar
+
+//3
+1: 2df; 4; fa;
+2: 2b-b; 4; ;
+
+	VS "Thou lamb of";
+	VS "Strength to my";
+	VS "And grief a-";
+bar
+
+//4
+1: 4.fa; 8eg; 2df;
+2: 4.b-b; 8; 2;
+
+	VS "Cal-va-ry,";
+	VS "faint-ing heart,";
+	VS "round me spread,";
+bar
+
+//5
+1: 2eg; 4df; ec+;
+2: 2eb; 4fb; fan;
+
+	VS "Sav-ior di-";
+	VS "My zeal in-";
+	VS "Be Thou my";
+bar
+
+//6
+1: 1db;
+2: 1b-b;
+
+	VS "vine;";
+	VS "spire;";
+	VS "guide;";
+bar
+
+//7
+1: 2gb; 4eg; fa;
+2: 2ee+; 4eb; ;
+
+	VS "Now hear me";
+	VS "As Thou hast";
+	VS "Bid dark-ness";
+bar
+
+//8
+1: 4.gb; 8ac+; 2gb;
+2: 4.ee+; 8; 2;
+
+	VS "while I pray,";
+	VS "died for me,";
+	VS "turn to day,";
+bar
+
+//9
+1: 2gb; 4eg; fa;
+2: 2ee+; 4eb; ;
+
+	VS "Take all my";
+	VS "O may my";
+	VS "Wipe sor-row's";
+bar
+
+//10
+1: 4.gb; 8ac+; 2gb;
+2: 4.ee+; 8; 2;
+
+	VS "sins a-way,";
+	VS "love to Thee";
+	VS "tears a-way,";
+bar
+
+//11
+1: 2ee+; 4ed+; ec+;
+2: 2ec+; 4eb; ea;
+
+	VS "O let me";
+	VS "Pure, warm, and";
+	VS "Nor let me";
+bar
+
+//12a
+1: 4.eb; 8ea; 4eg; s;
+2: 4.eg; 8ec+; 4eb; s;
+
+	VS "from this day";
+	VS "change-less be,";
+	VS "ev-er stray";
+invisbar
+
+//12b
+1 1: 4.s; 8; 4; 4e;
+1 2: 4.s; 8; 4; 4e;
+2: 4.s; 8; 4; g-b;
+
+	VS "Be";
+	VS "A";
+	VS "From";
+bar
+
+//13
+1: 2cf; db;
+2: 2a-a; b-f;
+
+	VS "whol-ly";
+	VS "liv-ing";
+	VS "Thee a-";
+bar
+
+//14
+1 1: 1e;
+1 2: 1e;
+2: 1eg;
+
+	VS "Thine!";
+	VS "fire!";
+	VS "side.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+

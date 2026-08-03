@@ -1,0 +1,274 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Praise In Song:
+//		A collection of
+//		Hymns and Sacred Melodies,
+//		Editors: Jno. R. Sweney, W.J. Kirkpatrick,
+//		and H. L. Gilmour
+//		Published by: John J. Hood
+//		1024 Arch Street, Philadelphia
+//		Copyright 1893
+
+
+// Transcribed by: Ted Gatza, Jr. 10/31/2009; Rev. 07/02/12
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "Dear Jesus, Canst Thou Help Me?" ""
+   title (2) " "
+   title (11) "F-2-DO" "\f(TI)But she came and worshipped him, saying, Lord, help me. - Mat. 15:25"""
+   title( 13) "Fanny J. Crosby" "Wm. J. Kirkpatrick, 1890"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/4	
+	key=1&
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=1&
+	clef=bass
+music
+
+midi all: 0 "tempo=155";
+
+//1
+1: 2.s; 2s; 4fc;
+2: 2.s; 2s; 4af;
+
+			lyrics 1: "<1. >-1|Dear";
+			lyrics 1: "<2. >-1|I";
+			lyrics 1: "<3. >-1|I've";
+			lyrics 1: "<4. >-1|Thy";
+			lyrics 1: "<5. >-1|Dear";
+bar
+//2
+1 1: 2af; 4af; 4a slur; 4g#; 4af;
+1 2: 2s; 4s; 2f; 4s;
+2 1: 2c+f; 4c+f; 4c+ slur; 4bn; 4c+f;
+2 2: 2s; 4s; 2f; 4s;
+
+			lyrics 1: "Je-sus, canst thou";
+			lyrics 1: "feel I am a";
+			lyrics 1: "heard there is a";
+			lyrics 1: "blood doth fill that";
+			lyrics 1: "Je-sus, lov-ing";
+bar
+//3
+1: 2.bf; 2af; 4af;
+2: 2.d+f; 2c+f; 4c+f;
+
+			lyrics 1: "help me? My";
+			lyrics 1: "sin-ner, And";
+			lyrics 1: "foun-tain, Where";
+			lyrics 1: "foun-tain, Thy";
+			lyrics 1: "Sav-iour, Thou";
+bar
+//4
+1: 2ge; 4ge; 4ge slur; 4af; 4gc;
+2 1: 2bc; 4bc; 4b slur; 4c+; 4bc;
+2 2: 2s; 4s; 2c; 4s;
+
+			lyrics 1: "soul is full of";
+			lyrics 1: "this my on-ly";
+			lyrics 1: "cleans-ing wa-ters";
+			lyrics 1: "blood so pure and";
+			lyrics 1: "pre-cious dy-ing";
+
+
+bar
+//5
+1: 2.fc tie; 2fc; 4f;
+1 2: 2.s; 2s; 4f;
+2: 2.af tie; 2af; 4af;
+
+			lyrics 1: "woe; My";
+			lyrics 1: "plea, The";
+			lyrics 1: "flow; My";
+			lyrics 1: "free; That";
+			lyrics 1: "Lamb, While";
+bar
+//6
+1 1: 2c+f; 4c+f; 4c+ slur; 4bn; 4c+f;
+1 2: 2s; 4s; 2f; 4s;
+2 1: 2af; 4af; 4a slur; 4g#; 4af;
+2 2: 2s; 4s; 2f; 4s;
+
+			lyrics 1: "heart is al-most";
+			lyrics 1: "sweet and blest as-";
+			lyrics 1: "sins, though red like";
+			lyrics 1: "blood a-vailed for";
+			lyrics 1: "here my faith is";
+bar
+//7
+1: 2.d+f; 2c+f; 4af;
+2: 2.bf; 2af; 4c+f;
+
+			lyrics 1: "break-ing, I've";
+			lyrics 1: "sur-ance, That";
+			lyrics 1: "crim-son, May";
+			lyrics 1: "oth-ers, and";
+			lyrics 1: "plead-ing, Now";
+
+
+bar
+//8
+1 1: 2ge; 4ge; 2af; 4g;
+1 2: 2s; 4s; 2s; 4f;
+2: 2c+g; 4c+g; 2bng; 4bg;
+
+			lyrics 1: "no-where else to";
+			lyrics 1: "thou hast died for";
+			lyrics 1: "now be white as";
+			lyrics 1: "now a-vails for";
+			lyrics 1: "take me as I";
+bar
+//9
+1: 2.ge tie; 2ge; 4s;
+2: 2.c+c tie; 2c+c; 4s;
+
+			lyrics 1: "go.";
+			lyrics 1: "me.";
+			lyrics 1: "snow.";
+			lyrics 1: "me.";
+			lyrics 1: "am.";
+dblbar
+newscore
+//10
+1 1: 2.s; 2s; 4c;
+1 2: 2.s; 2s; 4c;
+ital (13) above 1: 1 "Chorus";
+2: 2.s; 2s; 4c+c;
+
+			lyrics 1: "I've";
+bar
+//11
+1: 2bg; 4bg; 4bg slur; 4af; 4ge;
+2: 2c+c; 4c+c; 2c+c; 4c+c;
+
+			lyrics 1: "no-where else to";
+bar
+//12
+1: 2.af slur; 2c+f; 4d+f;
+2: 2.c+f slur; 2af; 4bf;
+
+			lyrics 1: "go, Dear";
+bar
+//13
+1: 2c+f; 4af; 4af slur; 4gc; 4fd; 
+2 1: 2af; 4c+f; 2c+; 4bnd; 
+2 2: 2s; 4s; 4f slur; 4e; 4s; 
+
+			lyrics 1: "Je-sus but to";
+bar
+
+//14
+1: 2.ge tie; 2ge; 4s;
+2: 2.c+c tie; 2c+c; 4s;
+			lyrics 1: "thee";
+			
+
+invisbar
+newscore
+1: 2.s; 2s; 4ge;
+mussym (9) above 1: 6 "sign";
+2: 2.s; 2s; 4c+c;
+			lyrics 1: "And";
+			lyrics 2: 2.s; 2s; 4; "<\f(TX)D.S.\f(TR) - >|And";
+
+
+bar
+//15
+1 1: 2af; 4af; 4a slur; 4b; 4c+f;
+1 2: 2s; 4s; 2f; 4s;
+2 1: 2c+f; 4c+f; 4c+ slur; 4d+; 4e&+f;
+2 2: 2s; 4s; 2f; 4s;
+
+			lyrics 1: "so I lift my";
+			lyrics 2: "so I lift my";
+
+bar
+//16
+1: 2c+f; 4bf; 2bf; 4gd;
+mussym (9) above 1: 4 "ferm";
+2: 2d+b-; 4d+b-; 2d+b-; 4bb-;
+mussym (9) above 2: 4 "ferm";
+
+			lyrics 1: "voice and cry, Have";
+			lyrics 2: "voice and cry, Have";
+
+bar
+//17
+1: 2fc; 4fc; 2af; 4gc;
+2: 2ac; 4ac; 2c+c; 4bc;
+
+			lyrics 1: "mer-cy, Lord on";
+			lyrics 2: "mer-cy, Lord on";
+bar
+//18
+1: 2.fc tie; 2fc; 4s;
+boldital dyn above 1: 4 "Fine.";
+2: 2.af tie; 2fa; 4s;
+
+			lyrics 1: "me;";
+			lyrics 2: "me.";
+dblbar
+newscore
+//19
+1: 2.s; 2s; 4c+f;
+boldital dyn above 1: 6 "f";
+2: 2.s; 2s; 4af;
+	
+			lyrics 1: "Have";
+bar
+//20
+1: 2c+f; 4c+f; 2d+f; 4d+f;
+2: 2af; 4af; 2bb-; 4bb-;
+
+			lyrics 1: "mer-cy, Lord, on";
+bar
+//21
+1: 2.c+f tie; 2c+f; 4af;
+boldital dyn above 1: 6 "p";
+2: 2.af tie; 2af; 4c+ff-?;
+
+			lyrics 1: "me, Have";
+bar
+//22
+1: 2af; 4af; 2c+a; 4af;
+2: 2c+ff-?; 4c+ff-?; 2c+ff-?; 4c+ff-?;
+
+			lyrics 1: "mer-cy, Lord, on";
+bar
+//23
+1: 2.ge tie; 2ge; 4s;
+boldital dyn above 1: 5 "D.S.";
+2: 2.c+c tie; 2c+c; 4s;
+
+			lyrics 1: "me,";
+endbar

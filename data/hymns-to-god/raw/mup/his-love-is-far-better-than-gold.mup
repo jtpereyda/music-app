@@ -1,0 +1,214 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The New Evangel
+//		Edited and Compiled By
+//		Robert H. Coleman
+//		American Baptist Publication Society
+//		Philadelphia - Boston - Chicago - St. Louis
+// 		Copyright 1911
+//		by Robert H. coleman
+//		Dallas. TX
+//		Hymn no. 130
+
+// Transcribed by: Ted Gatza, Jr. 01/25/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "His Love is Far Better Than Gold" ""
+   title (2)""
+   title (11) "B \(flat) - 3 - SOL" "\s(17)\f(TI)\:and\ to\ know\ the\ love\ of\ Chris\|t\ which\ passeth\ knowledge,\ that ye\ may\ be\ filled\ unto\ all\ th\|e\ fulness\ of\ God.\ -\ Eph.\ 3:19"""
+   title (13) "A. H. Ackley" " " "A. H. Ackley, 1910"
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=9/8	
+	key=2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 4.fd;
+2: 2.s; 4.bb-;
+
+			lyrics 1: "<1. >-1|The";
+			lyrics 1: "<2. >-1|He";
+			lyrics 1: "<3. >-1|My";
+bar
+//2
+1: 4.fd tie; 8fd; 8enc#; 8fd; 8d+f; 8c+f; 8bf;
+2: 4.bb- tie; 8bb-; 8bb-; 8bb-; 8bb-; 8ac; 8bd;
+
+			lyrics 1: "love of the Christ is so";
+			lyrics 1: "meets ev-'ry need with the";
+			lyrics 1: "heart ev-er yearns with a";
+bar
+//3
+1: 4.ge; 4.bg; 4af; 8ge;
+2: 4.be; 4.be; 4be; 8be;
+
+			lyrics 1: "pre-cious, That no";
+			lyrics 1: "prom-ise, No good";
+			lyrics 1: "long-ing, To be-";
+bar
+//4
+1: 4.fd tie; 8fd; 8ge; 8fd; 8ec; 8fc; 8ec;
+2 1: 4.bf tie; 8bf; 8bf; 8bf; 8af; 8af; 8f;
+2 2: 4.s; 8s; 8s; 8s; 8s; 8s; 8f;
+
+			lyrics 1: "mor-tal its wealth can un-";
+			lyrics 1: "thing from His own to with-";
+			lyrics 1: "hold the great joy of my";
+bar
+//5
+1: 2.db-; 4.fd;
+2: 2.fb-; 4.bb-;
+
+			lyrics 1: "fold; His";
+			lyrics 1: "hold; So";
+			lyrics 1: "soul, For-";
+bar
+//6
+1 1: 4.ge tie; 8ge; 8f#; 8ge; 8c+e; 8be; 8ge;
+1 2: 4.s; 8s; 8e; 8s; 8s; 8s; 8s;
+2: 4.be tie; 8be; 8ae; 8be; 8ge; 8ge; 8be;
+
+			lyrics 1: "grace is a store-house of";
+			lyrics 1: "dai-ly I trust in the";
+			lyrics 1: "ev-er to dwell in the";
+bar
+//7
+1: 8ge; 8fd; 8enc#; 4.fd; 4.d+f;
+2: 8bb-; 8bb-; 8bb-; 4.bb-; 4.bb-;
+
+			lyrics 1: "rich-es to me, His";
+			lyrics 1: "Cru-ci-fied One, His";
+			lyrics 1: "pres-ence on Him, Whose";
+bar
+//8
+1: 4.c+en tie; 8c+e; 8ge; 8ae; 8c+e; 8be; 8ge;
+2: 4.bc tie; 8bc; 8bc; 8ac; 8gc; 8gc; 8bc;
+
+			lyrics 1: [c]"love is far bet-ter than";
+bar
+//9
+1 1: 2.f; 4.s;
+1 2: 2.f; 4.s;
+2: 2.af; 4.s;
+
+			lyrics 1: [c]"gold.";
+dblbar
+newscore
+//10
+1 1: 4.f; 2.s;
+1 2: 4.e; 2.s;
+2: 4.af; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "His";
+			lyrics 1: "His";
+bar
+//11
+1 1: 4.d+ tie; 8d+; 8f+; 8d+; 8c+; 8b; 8g;
+1 2: 8f; 8f; 8f; 4.f; 4d; 8d;
+2 1: 8bb-; 8bd; 8bf; 4.b; 4bb-; 8bb-;
+2 2: 8s; 8s; 8s; 4.b; 4s; 8s;
+
+			lyrics 1: "love_ is far bet-ter than";
+			lyrics 1: 8; 8; 8; 4.; 4; 8; "love is far bet-ter, far";
+bar
+//12
+1 1: 4.a tie; 4.a; 4.f;
+1 2: 8e; 8e; 8e; 4.e; 4.f;
+2: 8fc; 8fc; 8fc; 4.c+f; 4.af;
+
+			lyrics 1: "gold,_ Its";
+			lyrics 1: 8; 8; 8; 4.; 4.; "bet-ter than gold, Its";
+bar
+//13
+1 1: 4.e+ tie; 8e+; 8d+; 8c+; 8a; 8g; 8f;
+1 2: 8f; 8f; 8f; 4.f; 4e; 8f;
+2: 8af; 8af; 8af; 4.af; 4c+f; 8af;
+
+			lyrics 1: "full-ness can nev-er be";
+			lyrics 1: 8; 8; 8; 4.; 4; 8; "full-ness can nev-er can";
+bar
+//14
+1 1: 4.d+ tie; 4.d+; 4.fd;
+1 2: 8f; 8f; 8f; 4.f; 4.s;
+2: 8bb-; 8bb-; 8bb-; 4.bb-; 4.bb-;
+
+			lyrics 1: "told,_ It";
+			lyrics 1: 8; 8; 8; 4.; 4.; "nev-er be told, It";
+bar
+//15
+1 1: 4.g tie; 8g; 8f#; 8g; 8c+; 8b; 8g;
+1 2: 8e; 8e; 8e; 4.e; 4e; 8e;
+2: 8be; 8be; 8be; 4.be; 4ge; 8be;
+
+			lyrics 1: "makes_ me an heir to the";
+			lyrics 1: 8; 8; 8; 4.; 4; 8; "makes me an heir to the";
+bar
+//16
+1: 8fd; 8bf; 8c+f; 4.d+f; 4e+g; 8d+f;
+2 1: 8bb-; 8bd; 8af; 4.g; 4bb-; 8bb-;
+2 2: 8s; 8s; 8s; 4.g; 4s; 8s; 
+
+			lyrics 1: "man-sions a-bove, for His";
+			lyrics 1: "man-sions a-bove, For His";
+bar
+//17
+1 1: 4.c+ tie; 8c+; 8g; 8b; 8a; 8d+; 8c+e&;
+1 2: 8en; 8e; 8e; 4.e; 4f; 8s;
+2: 8gc; 8gc; 8gc; 4.c+c; 4af; 8af;
+mussym above 1: 8 "ferm";
+mussym below 1: 7 "uferm";
+mussym above 2: 7 "ferm";
+
+			lyrics 1: "love_ is far bet-ter than";
+			lyrics 1: 8; 8; 8; 4.; 4; 8; "love is far bet-ter than";
+bar
+//18
+1: 4.bd tie; 4.bd; 4.s;
+2: 4.fb- tie; 4.fb-; 4.s;
+
+			lyrics 1: "gold.";
+			lyrics 1: "gold.";
+endbar

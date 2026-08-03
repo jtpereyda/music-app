@@ -1,0 +1,214 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No. 2
+//		Compiled and arranged by 
+//		Ira D. Sankey, James McGranahan and Geo. C. Stebbins
+//		Published by the Biglow & Main Co.
+//		New York, Chicago
+//		Copyright 1899
+//		Hymn no. 17
+
+// Transcribed by: Ted Gatza, Jr. 02/04/2010; Rev. 04/08/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Lord is my Refuge" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:God\ is\ the\ rock\ of\ my\ refuge.\ -\ Ps.\ 91:2 \(space)"""
+   title (13) "F. J. Crosby" " " "Ira D.Sankey, 1899"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8
+	key=2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4.s; 4s; 8fd;
+2: 4.s; 4s; 8bb-;
+
+			lyrics 1: "<1. >-1|The";
+			lyrics 1: "<2. >-1|The";
+			lyrics 1: "<3. >-1|The";
+bar
+//2
+1: 8.fd; 16gd; 8fd; 8db-; 8fd; 8bf;
+2: 8.bb-; 16bb-; 8bb-; 8fb-; 8bb-; 8d+b-;
+
+			lyrics 1: "Lord is my Re-fuge, my";
+			lyrics 1: "Lord is my Re-fuge, my";
+			lyrics 1: "Lord is my Re-fuge, my";
+bar
+//3
+1: 4bf; 8ae; 4ae; 8ec;
+2: 4d+f; 8c+f; 4c+f; 8af;
+
+			lyrics 1: "Strength and Shield, And";
+			lyrics 1: "Strength and Shield, All";
+			lyrics 1: "Strength and shield, My";
+bar
+//4
+1: 8.ec; 16db-n; 8ec; 4s; 8s;
+2 1: 8.af; 16af; 8af; 4s; 8s;
+2 2: 8.s; 16s; 8s; 4s; 8s;
+
+			lyrics 1: "this of a";
+			lyrics 1: "glo-ry to";
+			lyrics 1: "Sav-iour, my";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 4fc; 8ec;
+2 1: 8.s; 16s; 8s; 4af; 8f;
+2 2: 8.s; 16s; 8s; 4s; 8f;
+
+			lyrics 1: "truth I";
+			lyrics 1: "Him I'll";
+			lyrics 1: "Friend, and";
+
+bar
+//5
+1: 4.db- tie; 4db-; 8fd;
+2: 4.fb- tie; 4fb-; 8bb-;
+
+			lyrics 1: "know; His";
+			lyrics 1: "give; And";
+			lyrics 1: "Guide! He";
+bar
+//6
+1: 8.fd; 16ge; 8fd; 8db-; 8fd; 8bf;
+2: 8.bb-; 16bb-; 8bb-; 8fb-; 8bb-; 8d+b-;
+
+			lyrics 1: "ten-der pro-tec-tion is";
+			lyrics 1: "sing of His mer-cy by";
+			lyrics 1: "makes me a child and an";
+bar
+//7
+1: 4bf; 8af; 4af; 8bf;
+2: 4d+f; 8c+f; 4c+f; 8bd;
+
+			lyrics 1: "o'er me still, My";
+			lyrics 1: "night and day, For";
+			lyrics 1: "heir of grace, O";
+bar
+//8
+1: 8c+g; 8c+g; 8bg; 4d+f; 8c+e;
+2: 8be; 8be; 8ben; 4bf; 8af;
+
+			lyrics 1: "com-fort where'-er I";
+			lyrics 1: "on-ly in Him I";
+			lyrics 1: "what can I ask be-";
+bar
+//9
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			lyrics 1: "go.";
+			lyrics 1: "live.";
+			lyrics 1: "side?";
+dblbar
+//10
+1: 8d+f; 4.s; 4s; 
+2: 8bb-; 4.s; 4s; 
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Tho'";
+bar
+//11
+1: 8.d+f#; 16af; 8af; 8af;8bg; 8c+a;
+2: 8.ad; 16d+d; 8d+d; 8d+d; 8d+d; 8d+f#;
+
+			lyrics 1: [c]"bright with the joys that no";
+bar
+//12
+1: 4bg; 8bg; 4bg; 8f+f;
+2: 4d+g; 8d+g; 4d+g; 8d+b;
+
+			lyrics 1: [c]"tongue can tell E-";
+bar
+//13
+1 1: 8.f+a; 16c+f; 8c+f; 8c+ bm; d+ ebm; 8e+f;
+1 2: 8.s; 16s; 8s; 4f; 8s;
+2 1: 8.c+f; 16af; 8af; 8a bm; 8b ebm; 8c+f;
+2 2: 8.s; 16s; 8s; 4f; 8s;
+
+			lyrics 1: 8.; 16; 8; 4; 8; [c]"ter-ni-ty's years may";
+bar
+//14
+1: 4.d+f tie; 4d+f; 8fd;
+2: 4.bb- tie; 4bb-; 8bb-;
+
+			lyrics 1: [c]"be; O";
+bar
+//15
+1: 8.fd; 16ge; 8fd; 8s; 8s; 8s;
+2: 8.bb-; 16bb-; 8bb-; 8s; 8s; 8s;
+
+			lyrics 1: [c]"nev-er, no,";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8db-; 8fd; 8bf;
+2: 8.s; 16s; 8s; 8fb-; 8bb-; 8d+b-;
+
+			lyrics 1: [c]"nev-er can";
+
+bar
+//16
+1: 4bf; 8af; 4af; 8e+f;
+2: 4d+f; 8c+f; 4c+f; 8af;
+
+			lyrics 1: [c]"I for-get His";
+bar
+//17
+1: 8.e+g; 16d+f; 8c+e; 4ge; 8ae;
+2 1: 8.af; 16af; 8af; 4c+f; 8f;
+2 2: 8.s; 16s; 8s; 4s; 8f;
+
+			lyrics 1: [c]"won-der-ful love to";
+bar
+//18
+1: 4.bd tie; 4bd; 8s;
+2: 4.fb- tie; 4fb-; 8s;
+
+			lyrics 1: [c]"me.";
+endbar

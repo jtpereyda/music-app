@@ -1,0 +1,357 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 287	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 02/14/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=9/8
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Soul, A Savior Thou Art Needing" ""
+   title (2)""
+   title (11) "" "\f(TI)for all have sinned, and fall short of the glory of God; - Rom. 3:23" ""
+   title (10) "F - 3 - SOL" "" ""
+   title "Jessie Brown Pounds" "" "James H. Fillmore, 1887"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+//Verse
+
+//1
+1 1: 2.s; 8 c bm; f ebm; fa;
+1 2: 2.s; 4c; 8s;
+2: 2.s; 4fa; 8;
+
+	VS21 "<1. >-1|Soul, a";
+	VS21 "<2. >-1|He has";
+	VS21 "<3. >-1|Do not";
+bar
+
+//2
+1 1: 4.fc+; fa; 8a bm; g ebm; f;
+1 2: 4.s; ; 4f; 8;
+2 1: 4.s; ; 8c+ bm; b ebm; 8s;
+2 2: 4.fa; fc+; 4f; 8fa;
+
+	VS22 "Sav-ior thou art";
+	VS22 "died for thy trans-";
+	VS22 "lin-ger till the";
+bar
+
+//3
+1: 4.fa; eg; 8s; ;  ;
+2: 4.cc+; ; 4s; 8;
+
+	VS21 "need-ing!";
+	VS21 "gres-sion,";
+	VS21 "mor-row,";
+invisbar
+
+1 1: 4.s; ; 8c bm; e ebm; eg;
+1 2: 4.s; ; 4c; 8s;
+2: 4.s; ; 4cc+; 8;
+
+	VS21 "Soul, a";
+	VS21 "If thou";
+	VS21 "Let thy";
+bar
+
+//4
+1: 4.gb tie; 4gb; 8bd+; 8 bd+ bm; ac+ ebm; gb;
+2 1: 4.cc+ tie; 4; 8; 4c+; 8ec+;
+2 2: 4.s; 4; 8; 8c bm; d ebm; 8s;
+
+	VS21 "Sav-ior waits for";
+	VS21 "wilt, thou canst be";
+	VS21 "lov-ing an-swer";
+bar
+
+//5
+1: 2.fa; 4.s;
+2: 2.fc+; 4.s;
+
+	VS "thee!";
+	VS "free;";
+	VS "be.";
+invisbar
+
+//6
+1 1: 2.s; 8c bm; f ebm; fa;
+1 2: 2.s; 4c; 8s;
+2: 2.s; 4fa; 8;
+
+	VS21 "Hear His";
+	VS21 "Soul, He";
+	VS21 "\"Sav-ior,";
+bar
+
+//7
+1 1: 4.fc+; fa; 8a bm; b ebm; fc+;
+1 2: 4.s; ; 4f; 8s;
+2 1: 4.s; ; 8c+ bm; b ebm; 8s;
+2 2: 4.fa; fc+; 4f; 8fa;
+
+	VS22 "words of ten-der";
+	VS22 "waits for thy con-";
+	VS22 "in my joy or";
+bar
+
+//8
+1: 4.fd+; db; 8s; ; ;
+2: 4.b-b; ; 4s; 8;
+
+	VS21 "plead-ing,";
+	VS21 "fess-ion,";
+	VS21 "sor-row,";
+invisbar
+
+1: 4.s; ; 8db bm; fc+ ebm; fd+;
+2: 4.s; ; 4b-b; 8;
+
+	VS21 "Hear His";
+	VS21 "\"Sav-ior,";
+	VS21 "I will";
+bar
+
+//9
+1: 4.fc+ tie; 4; 8fa; 4ea; 8eg;
+2: 4.ca tie; 4; 8cf; 4cc+; 8cb;
+
+	VS "gra-cious \"Come to";
+	VS "I will go to";
+	VS "ev-er go to";
+bar
+
+//10
+1 1: 2.f; 4.s;
+1 2: 2.f; 4.s;
+2: 2.fa; 4.s;
+
+	VS "Me.\"";
+	VS "Thee.\"";
+	VS "Thee.\"";
+dblbar
+newscore
+
+//11
+CHORUS
+1 1: 2.s; 8f bm; e ebm; f;
+1 2: 2.s; 4.r;
+2: 2.s; 4.r;
+
+	VS 2.s; 4; 8; "He is";
+bar
+
+//12
+1 1: 4.g; ; 8g bm; f ebm; 8g;
+1 2: 4e; 8; 4; 8; 4.r;
+2: 4cc+; 8; 4; 8; 4.r;
+
+	VS 4.; 4.; 4; 8; "call-ing, soft-ly";
+	VS21 "He is call-ing,";
+bar
+
+//13
+1 1: 4.a; ; 8s; ; ;
+1 2: 4f; 8; 4; 8; 4.s;
+2: 4fc+; 8; 4; 8; 4.s;
+
+	VS 4.; 4.; 4s; 8s; "call-ing,";
+	VS21 "soft-ly call-ing,";
+invisbar
+newscore
+
+1 1: 4.s; ; 8a bm; g ebm; 8a;
+1 2: 4s; 8; 4; 8; 4.r;
+2: 4s; 8; 4; 8; 4.r;
+
+	VS 4.s; 4.s; 4; 8; "On thine";
+bar
+
+//14
+1 1: 4.b tie; 4; 8; 8b bm; c+ebm; 8fd+;
+1 2: 4f; 8; 4; 8; 4; 8s;
+2: 4db; 8; 4; 8; db bm; ca ebm; 8b-b;
+
+	VS 4.; 4s; 8; 4; 8; "ear His voice is";
+	VS 4; 8; 4; 8; 4; 8; "On thine ear His voice is";
+bar
+
+//15
+1: 4.fd+; fc+; 8s; ; ;
+2: 4.fb; fa; 4.s;
+
+	VS "fall-ing;";
+	VS "fall-ing;";
+invisbar
+newscore
+
+1: 4.s; ; 8ac+ bm; g#bn ebm; ac+;
+2: 4.s; ; r;
+
+	VS 4.s; s; 4; 8; "He is";
+bar
+
+//15
+1: 4.af+; ac+; 8ac+ bm; gb ebm; fa;
+2: 4fc+; 8; 4; 8; 4.r;
+
+	VS 4.; 4.; 4; 8; "call-ing, soft-ly";
+	VS21 "He is call-ing,";
+bar
+
+//16
+1: 4.fd+; db; 8s; ; ;
+2: 4b-b; 8; 4; 8; 4.s;
+
+	VS "call-ing,";
+	VS21 "soft-ly call-ing,";
+invisbar
+newscore
+
+1: 4.s; ; 8db bm; fc+ ebm; fd+;
+2: 4.s; ; 4.r;
+
+	VS 4.s; 4.s; 4; 8; "\"Come to";
+bar
+
+//17
+1: 4.fc+ tie; 4; 8fa; 4ea; 8eg;
+2: 4ca; 8; 4; 8cf; 4cc+; 8cb;
+
+	VS "Me and be at";
+	VS21 "\"Come to Me and be at";
+bar
+
+//18
+1 1: 2.f; 4.s;
+1 2: 2.f; 4.s;
+2: 2.fa; 4.s;
+
+	VS "rest.\"";
+	VS "rest.\"";
+endbar
+
+
+
+
+
+
+
+
+
+

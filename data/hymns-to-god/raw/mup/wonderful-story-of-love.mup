@@ -1,0 +1,287 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Favorite Songs and Hymns A Complete Church Hymnal
+//		Compiled by Homer F. Morris, J. R. Baxter, Jr.,	
+//		Virgil O. Stamps, W. W. Combs
+//		Stamps-Baxter Music & Printing
+//		Dallas 8, Texas, Pangburn Arkansas, Chattanooga 1, Tennessee
+//		Copyright 1939
+//		Hymn No.: 45
+//		
+// Transcribed by: Ted Gatza, Jr. 03/03/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Wonderful Story Of Love" ""
+   title (2)""
+   title (11)"" "\f(TI)We love, because he first loved us. - 1 Jn. 4:19" ""
+   title (11) "C - 2 - DO" "" ""
+   title (13) "John Merritte Driver " "" "John Merritte Driver, 1885"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=100";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1: 8ec+;;;; gb; fa;
+2: 8cg;;;; ca; cb;
+
+
+	VS "<1. >-1|Won-der-ful sto-ry of";
+	VS "<2. >-1|Won-der-ful sto-ry of";
+	VS "<3. >-1|Won-der-ful sto-ry of";
+bar
+//2
+1: 4.eg tie; 4eg; 8r;
+2: 4.cc+ tie; 4cc+; 8r;
+
+	VS "love,";
+	VS "love,";
+	VS "love,";
+bar
+//3
+1: 8ec+;;; 4db; 8fd+;
+2 1: 8cg;;; 4g; 8;
+2 2: 8s;;; 4g; 8;
+
+	VS "Tell it to me a-";
+	VS "Tho' you are far a-";
+	VS "Je-sus pro-vides a";
+bar
+//4
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4.cg tie; 4cg; 8r;
+
+	VS "gain,";
+	VS "way,";
+	VS "rest,";
+bar
+//5
+1: 8ec+;;;; gb; fa;
+2: 8cg;;;; ca; cb;
+
+
+	VS "Won-der-ful sto-ry of";
+	VS "Won-der-ful sto-ry of";
+	VS "Won-der-ful sto-ry of";
+bar
+//6
+1: 4.eg tie; 4eg; 8r;
+2: 4.cc+ tie; 4cc+; 8r;
+
+	VS "love,";
+	VS "love,";
+	VS "love,";
+bar
+//7
+1: 8ec+; db; ec+; 4ge+; 8fd+;
+2: 8cg;;; 4gc+; 8gb;
+
+	VS "Wake the im-mor-tal";
+	VS "Still He doth call to-";
+	VS "For all the pure and";
+bar
+//8
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4.cgc+ tie; 4cgc+; 8r;
+
+	VS "strain;";
+	VS "day,";
+	VS "blest;";
+bar
+//9
+1: 8ac+;;;; gb; fa;
+2: 8fc+;;;;;;
+
+	VS "An-gels with rap-ture an-";
+	VS "Call-ing from Cal-va-ry's";
+	VS "Rest in those man-sions a-";
+bar
+//10
+1: 4.fa; 4eg; 8r;
+2: 4.cc+; 4cc+; 8r;
+
+	VS "nounce it,";
+	VS "moun-tain,";
+	VS "bove us";
+bar
+//11
+1: 8ec+;;;; db; ec+;
+2: 8cg;;;;;;
+
+	VS "Shep-herds with won-der re-";
+	VS "Down from the crys-tal bright";
+	VS "With those who've gone on be-";
+bar
+//12
+1: 4.fd+; 4; 8r;
+2: 4.gb; 4; 8r;
+
+	VS "ceive it;";
+	VS "foun-tain,";
+	VS "fore us,";
+bar
+//13
+1: 8ge+;;;; gd+; gc+;
+2: 8cc+;;;; db; eb&;
+
+	VS "Sin-ner, O won't you be-";
+	VS "E'en from the dawn of cre-";
+	VS "Sing-ing the rap-tur-ous";
+bar
+//14
+1: 4.fd+; 4fa; 8r;
+2: 4.fa; 4fc+; 8r;
+
+	VS "live it?";
+	VS "a-tion,";
+	VS "cho-rus,";
+bar
+//15
+1: 8eg;; ec+; fb; fa; fb;
+2: 8gc+;;; gd+;;;
+
+	VS "Won-der-ful-sto-ry of";
+	VS "Won-der-ful-sto-ry of";
+	VS "Won-der-ful-sto-ry of";
+bar
+//16
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4.cc+ tie; 4cc+; 8r;
+
+	VS "love.";
+	VS "love.";
+	VS "love.";
+dblbar
+newscore
+//17
+1: 4.eg; fa;
+2: 8cc+;;;;;;
+CHORUS
+
+	VS "Won-der-";
+	VS 8;;;;;; "Won-der-ful sto-ry of";
+bar
+//18
+1: 4.eg tie; 4eg; 8r;
+2: 4.cc+ tie; 4cc+; 8r;
+
+	VS "ful,";
+	VS "love,";
+bar
+//19
+1: 4.ec+; 4.fc+;
+2: 8cg;;; 8ca;;;
+
+	VS "Won-der-";
+	VS 8;;;;;; "Won-der-ful sto-ry of";
+bar
+//20
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4.cg tie; 4cg; 8r;
+
+	VS "ful,";
+	VS "love,";
+bar
+//21
+1: 4.ge+; 4.ec+;
+2: 8cc+;;; 8cg;;;
+
+	VS "Won-der-";
+	VS 8;;;;;; "Won-der-ful sto-ry of";
+bar
+//22
+1: 4.f~d+<a>; 4fa; 8r;
+2: 4.f~a<c+>; 4fc+; 8r;
+
+	VS "ful,";
+	VS "love,";
+bar
+//23
+1: 8eg;; ec+; fb; fa; fb;
+2: 8gc+;;; gd+;;;
+
+	VS "Won-der-ful st-ory of";
+bar
+//24
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4.cc+ tie; 4cc+; 8r;
+
+	VS "love.";
+endbar
+
+
+
+
+
+
+
+
+

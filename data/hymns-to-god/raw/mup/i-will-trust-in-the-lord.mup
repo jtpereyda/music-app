@@ -1,0 +1,229 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 32
+//		
+// Transcribed by: Ted Gatza, Jr. 11/03/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Will Trust In The Lord" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:But\ whoso\ putteth\ his\ trust\ in\ Jehovah\ shall\ be\ safe.\ -\ Prov.\ 29:25 \(space) " ""   
+   title (13) "Abram C. Wisner" "" "B. B. Funk"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1 1: 8d; gd; 2.s;
+1 2: 8d; s; 2.s;
+2: 8bg;; 2.s;
+
+
+			VERSE "<1. >-1|Lord, In";
+			VERSE "<2. >-1|Lord, in";
+			VERSE "<3. >-1|Sin-ful";
+			VERSE "<4. >-1|There my";
+bar
+//2
+1: 4bg;; 8;; c+f; bg;
+2: 4d+g;; 8;; d+a; d+g;
+
+			VERSE "thee my hope and trust is";
+			VERSE "trust-ing thee, I'll find re-";
+			VERSE "flesh may suf-fer, crave, and";
+			VERSE "joys shall e-ver free-ly";
+bar
+//3
+1 1: 2.af; 8d; fd;
+1 2: 2.s; 8d; s;
+2: 2.d+d; 8c+d;;
+
+			VERSE "stayed, To the";
+			VERSE "lief From the";
+			VERSE "pine, E-ven";
+			VERSE "flow, With the";
+bar
+//4
+1 1: 4af;; 8; g; bg; ad;
+1 2: 4s;; 8; 8g; s;;
+2: 4c+d;; 8; bd; d+d; c+d;
+
+			VERSE "rock of thy sal-va-tion";
+			VERSE "tri-als here I'm bound to";
+			VERSE "groan be-neath its earth-ly";
+			VERSE "ran-somed of thy king-dom";
+bar
+//5
+1 1: 2.gd; 8d; gd;
+1 2: 2.s; 8d; s;
+2: 2.bg-; 8bg;;
+
+			VERSE "cling; To be";
+			VERSE "bear; Ev-en";
+			VERSE "load; Yet a";
+			VERSE "shine; All be-";
+bar
+//6
+1: 4bg;; 8; s; s; s;
+2: 4d+g;; 8; s; s; s;
+
+			VERSE "whol-ly thine";
+			VERSE "in my sor-";
+			VERSE "joy in my";
+			VERSE "cause I wor-";
+invisbar
+newscore
+
+1: 4s; s; 8; bg; c+f; bg;
+2: 4s; s; 8; d+g; d+a; d+g;
+
+			VERSE "I've of-ten";
+			VERSE "row and my";
+			VERSE "Re-deem-er";
+			VERSE "shiped thee be-";
+
+bar
+//7
+1 1: 2.af; 8d; fd;
+1 2: 2.s; 8d; s;
+2: 2.d+d; 8c+d;;
+
+			VERSE "prayed, And thy";
+			VERSE "grief, Joys from";
+			VERSE "find, In the";
+			VERSE "low, A re-";
+bar
+//8
+1 1: 4af;; 8; g; af; ad;
+1 2: 4s;; 8; g; s;;
+2: 4c+d;; 8; bd; d+d; c+d;
+
+			VERSE "prais-es are the songs I'll";
+			VERSE "heav-en by thy grace I'll";
+			VERSE "end a safe and sure a-";
+			VERSE "ward in heav-en I shall";
+bar
+//9
+1: 2.gd; 4s;
+2: 2.bg-; 4s;
+
+			VERSE "sing.";
+			VERSE "share.";
+			VERSE "bode.";
+			VERSE "find.";
+dblbar
+//10
+1: 8bg; c+a; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "I am";
+bar
+//11
+1: 2d+b tie; 8;; c+a; bg;
+2 1: 4r; 8g;;;; 4r;
+2 2: 4s; 8g;;;; 4s;
+
+			VERSE "trust-ing in the";
+			VERSE 4s; 8;;;; 4s; "I am trust-ing";
+bar
+//12
+1: 2.c+a; 8bg; af;
+2: 4r; 8d+d;; 4; 8;;
+
+			VERSE "Lord And I";
+			VERSE 4s; 8;; 4; 8s;s; "in the Lord,";
+bar
+newscore
+//13
+1: 4bg;; d+g; bg;
+2: 4d+g;; bg; d+g;
+
+			VERSE "know that he is";
+bar
+//14
+1 1: 2.a; 8d; gd;
+1 2: 4f; 8;; 4; 8d; s;
+2: 4d+d; 8;; 4; 8bg;;
+
+			VERSE "nigh; And by";
+			VERSE 4s; 8; 8; 4; 8s; s; "he is nigh;";
+bar
+//15
+1: 4bg;; 8;; 8.c+f; 16bf;
+2: 4d+g;; 8;; 8.d+a; 16d+g;
+
+			VERSE "trust-ing we can on-ly";
+bar
+//16
+1 1: 8.bg; 16af; 8;; 4; d;
+1 2: 8.s; 16; 8;; 4; d;
+2: 8.d+d; 16; 8;; 4;;
+
+			VERSE "see the bless-ed land, And";
+bar
+//17
+1 1: 4.af; 8g; 4bg; af;
+1 2: 4.s; 8g; 4s;;
+2: 4.c+d; 8bd; 4d+d; c+d;
+
+			VERSE "gain a home on";
+bar
+//18
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bg-; 4s;
+
+			VERSE "high";
+endbar

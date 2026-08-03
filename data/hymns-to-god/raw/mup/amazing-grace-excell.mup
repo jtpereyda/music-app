@@ -1,0 +1,237 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns And Sacred Songs
+//		E. O. Excell, Editor
+//		G. H. Shorney
+//		F. G. Kingsbury
+//		Hope Publishing Company, Chicago
+//		Copyright 1918
+//		Hymn no. 81
+
+// Transcribed by: Ted Gatza, Jr. 01/08/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Amazing Grace" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:But\ we\ believe\ that\ we\ shall\ \|be\ saved\ through\ the\ grace\ of the\ Lord\ Jesus,\ in\ like\ m\^anner\ as\ they.\ -\ Acts\ 15:11" ""
+   title (13) "John Newton, 1779" " " "McIntosh, C. M.1831"
+   title (13)"" "" "Arr. E. O. Excell, 1900"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+
+//1
+1: 4db-; 2s;
+2: 4gg-; 2s;
+
+			VERSE "<1. >-1|A-";
+			VERSE "<2. >-1|'Twas";	
+			VERSE "<3. >-1|Thro'";
+			VERSE "<4. >-1|When";
+bar
+//2
+1 1: 2gb-; 8b bm; g ebm;
+1 2: 2s; 4d;
+2 1: 2dg-; 4g;
+2 2: 2s; 8g- bm; b- ebm;
+
+			VERSE 2; 4; "maz-ing";
+			VERSE 2; 4; "grace that";
+			VERSE 2; 4; "man-y";
+			VERSE 2; 4; "we've been";
+bar
+//3
+1: 2bd; 4ac;
+2: 2gd; 4fd;
+
+			VERSE "grace! how";
+			VERSE "taught my";
+			VERSE "dan-gers,";
+			VERSE "there ten";
+bar
+//4
+1: 2gb-; 4ec;
+2: 2ge; 4gc;
+
+			VERSE "sweet the";
+			VERSE "heart to";
+			VERSE "toils and";
+			VERSE "thou-sand";
+bar
+//5
+1: 2db-; 4;
+2: 2gg-; 4;
+
+			VERSE "sound, That";
+			VERSE "fear, And";
+			VERSE "snares, I";
+			VERSE "years, Bright";
+bar
+//6
+1 1: 2gb-; 8b bm; g ebm;
+1 2: 2s; 4d;
+2 1: 2dg-; 4g;
+2 2: 2s; 8g- bm; b- ebm;
+
+			VERSE 2; 4; "saved a";
+			VERSE 2; 4; "grace my";
+			VERSE 2; 4; "have al-";
+			VERSE 2; 4; "shin-ing";
+bar
+//7
+1: 2bd; 4ad;
+2: 2gd; 4fc;
+
+			VERSE "wretch like";
+			VERSE "fears re-";
+			VERSE "read-y";
+			VERSE "as the";
+bar
+//8
+1: 2d+d; 4bd;
+2: 2gb-; 4gg-;
+
+			VERSE "me! I";
+			VERSE "lieved; How";
+			VERSE "come; 'Tis";
+			VERSE "sun, We've";
+bar
+//9
+1 1: 4.d+ slur; 8b; 8d+ bm; b ebm;
+1 2: 2d; 4;
+2 1: 4.b slur; 8g; 8b bm; g ebm;
+2 2: 2g; 4;
+
+			VERSE 2; 4; "once was";
+			VERSE 2; 4; "pre-cious";
+			VERSE 2; 4; "grace hath";
+			VERSE 2; 4; "no less";
+bar
+//10
+1 1: 2gd; 4d;
+1 2: 2s; 4d;
+2: 2gb-; 4;
+
+			VERSE "lost, but";
+			VERSE "did that";
+			VERSE "bro't me";
+			VERSE "days to";
+bar
+//11
+1 1: 4. ec slur; 8gd; 8g bm; e ebm;
+1 2: 4.s; 8s; 4c;
+2 1: 2g; 8e bm; g ebm;
+2 2: 4.c slur; 8b-; 4c;
+
+			VERSE 2; 4; "now am";
+			VERSE 2; 4; "grace ap-";
+			VERSE 2; 4; "safe thus";
+			VERSE 2; 4; "sing God's";
+bar
+//12
+1 1: 2db-; 4d;
+1 2: 2s; 4d;
+2: 2gg-; 4gb-;
+
+			VERSE "found, Was";
+			VERSE "pear The";
+			VERSE "far, And";
+			VERSE "praise Than";
+bar
+//13
+1 1: 2gb-; 8b bm; g ebm;
+1 2: 2s; 4d;
+2 1: 2ge; 8g bm; b ebm;
+2 2: 2s; 4d;
+
+			VERSE 2; 4; "blind, but";
+			VERSE 2; 4; "hour I";
+			VERSE 2; 4; "grace will";
+			VERSE 2; 4; "when we";
+bar
+//14
+1: 2bd; 4ac;
+2: 2gd; 4fd;
+
+			VERSE "now I";
+			VERSE "first be-";
+			VERSE "lead me";
+			VERSE "first be-";
+bar
+//15
+1: 2gb-; 4s;
+2: 2gg-; 4s;
+
+			VERSE "see.";
+			VERSE "lieved!";
+			VERSE "home.";
+			VERSE "gun.";
+dblbar
+//16
+1: 2.gc;
+2: 2.ec;
+
+			VERSE "<>";
+			VERSE "<>";
+			VERSE "<>";
+			VERSE "A-";
+bar
+//17
+1: 2.gb-;
+2: 2.dg-;
+
+			VERSE "<>";
+			VERSE "<>";
+			VERSE "<>";
+			VERSE "MEN.";
+endbar

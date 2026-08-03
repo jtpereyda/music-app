@@ -1,0 +1,233 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs for Work and Worship
+//		For use in Sunday Schools,
+//		young peoples' Societies,
+//		Devotional Meetings, Camp
+//		Meetings, Etc.
+//		By E. S. Lorenz, J. H. Entwisle,
+//		Powell G. Githian, Adam Geibel,
+//		and R. F. Lehman
+//		Published by The Lorenz publishing Company,
+//		Dayton, Ohio
+//		Copyright 1903
+//		Hymn no. 17
+
+// Transcribed by: Ted Gatza, Jr. 11/01/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Jesus Near" ""
+   title (2)""
+   title (11) "B \(flat) - 3 - MI" "\s(17)\f(TI)\:live\ in\ peace:\ and\ th\|e\ God\ of\ love\ and\ peace shall\ be\ with\ yo\|u.\ -\ 2\ Cor.\ 13:11"""
+   title (13) "WM. H. Clark" " " "Powell G. Fithian,1899 "
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4d+f; 4c+f; 4bf;
+2: 4bb-; 4ac; 4bd;
+ital (13) above 1: 1 "Tenderly";
+
+			lyrics 1: "<1. >-1|Je-sus is";
+			lyrics 1: "<2. >-1|Je-sus is";
+			lyrics 1: "<3. >-1|Je-sus is";
+			lyrics 1: "<4. >-1|Je-sus is";
+bar
+//2
+1: 2af; 4bf;
+2: 2c+e; 4bd;
+
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+bar
+//3
+1 1: 4c+ slur; 4g; 4ae&;
+1 2: 2en; 4s;
+2: 2bc; 4c+f;
+
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+bar
+//4
+1: 2.bd; 
+2: 2.bfb-;
+
+			lyrics 1: "near,";
+			lyrics 1: "near,";
+			lyrics 1: "near,";
+			lyrics 1: "near,";
+bar
+//5
+1: 4bg; 4af; 4ge;
+2: 4be; 4be; 4be;
+
+			lyrics 1: "His pres-ence";
+			lyrics 1: "He speaks and";
+			lyrics 1: "His love su-";
+			lyrics 1: "It doth not";
+bar
+newscore
+//6
+1: 2fd; 4bd;
+2: 2bb-; 4bg;
+
+			lyrics 1: "doth my";
+			lyrics 1: "scat-ters";
+			lyrics 1: "preme dries";
+			lyrics 1: "yet to";
+bar
+//7
+1 1: 4b slur; 4a; 4ge;
+1 2: 2en; 4s;
+2 1: 4g slur; 4c+; 4bc;
+2 2: 2c; 4s;
+
+			lyrics 1: "Spir-it";
+			lyrics 1: "ev-'ry";
+			lyrics 1: "ev-'ry";
+			lyrics 1: "us ap-";
+bar
+//8
+1 1: 2c+ slur; 4c#+;
+1 2: 2.e&;
+2: 2. af;
+
+			lyrics 1: "cheer;";
+			lyrics 1: "fear;";
+			lyrics 1: "tear;";
+			lyrics 1: "pear";
+bar
+//9
+1: 4d+d; 4c+f; 4bf;
+2: 4fb-; 4ac; 4bd;
+
+			lyrics 1: "His gra-coius";
+			lyrics 1: "I see his";
+			lyrics 1: "Each bur-den";
+			lyrics 1: "What we shall";
+bar
+//10
+1: 2af; 4bf;
+2: 2c+e; 4bd;
+
+			lyrics 1: "voice makes";
+			lyrics 1: "face, I";
+			lyrics 1: "bears, for";
+			lyrics 1: "be, but";
+bar
+newscore
+//11
+1 1: 4c+ slur; 4g; 4ae&;
+1 2: 2en; 4s;
+2: 2bc; 4c+f;
+
+			lyrics 1: "me re-";
+			lyrics 1: "taste his";
+			lyrics 1: "me he";
+			lyrics 1: "we shall";
+bar
+//12
+1: 2.bd;
+2: 2.bg;
+
+			lyrics 1: "joice";
+			lyrics 1: "grace,";
+			lyrics 1: "cares,";
+			lyrics 1: "see";
+bar
+//13
+1: 4bc#; 4ac; 4bc;
+2: 4gen; 4ae; 4be;
+
+			lyrics 1: "To find him";
+			lyrics 1: "For he is";
+			lyrics 1: "And holds me";
+			lyrics 1: "When Je-sus";
+bar
+//14
+1 1: 2fd; 4f;
+1 2: 2s; 4e;
+2: 2bf; 4af;
+
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+			lyrics 1: "near, so";
+			lyrics 1: "comes so";
+bar
+//15
+1 1: 2f slur; 4b slur;
+1 2: 2d; 4e;
+2 1: 2f; 4g;
+2 2: 2.b- slur;
+
+			lyrics 1: "near._";
+			lyrics 1: "near._";
+			lyrics 1: "near._";
+			lyrics 1: "near._";
+			lyrics 1: 2s; 4; "so";
+bar
+//16
+1 1: 2.b;
+1 2: 2.d;
+2 1: 2.f;
+2 2: 2.b-;
+
+			lyrics 1: " ";
+			lyrics 1: " ";
+			lyrics 1: " ";
+			lyrics 1: " ";
+			lyrics 1: 2.; "near.";
+endbar
+
+   title (20) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

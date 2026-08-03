@@ -1,0 +1,230 @@
+// Coded with Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest And Best
+//		A Choice Collection of New Songs
+//		for the Sunday School
+//		and Meetings of prayer and Praise
+//		New York and Chicago
+//		Publishers: Biglow and Main
+//		Copyright 1875
+//		Hymn no. 42
+
+// Transcribed by: Ted Gatza, Jr. 02/08/2010; rev. 05/29/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "More Faith In Thee" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:\"Increase\ our\ faith\"\ -\ Lk.\ 17:5 \(space)"""
+   title (13) "Fanny J. Crosby" " " "W. H. Doane, 1875"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1 1: 2s; 4d;
+1 2: 2s; 4d;
+2: 2s; 4bg;
+
+			lyrics 1: 2s; 4; "<1. >-1|More";
+			lyrics 1: 2s; 4; "<2. >-1|More";
+			lyrics 1: 2s; 4; "<3. >-1|A";
+			lyrics 1: 2s; 4; "<4. >-1|Let";
+bar
+//2
+1:4.bg; 8bg; 8c+g; 8bg;
+2: 4.d+g; 8d+g; 8e+g; 8d+g;
+
+			lyrics 1: "liv-ing faith, O";
+			lyrics 1: "earn-est faith to";
+			lyrics 1: "faith that will not";
+			lyrics 1: "this the one pe-";
+bar
+//3
+1: 4bg; 4d+g; 4gd;
+2: 4d+g; 4bg; 4gb-;
+
+			lyrics 1: "Sav-iour, We";
+			lyrics 1: "la-bor, More";
+			lyrics 1: "wa-ver, Tho'";
+			lyrics 1: "ti-tion Of";
+bar
+//4
+1: 4.ac; 8ac; 8ec; 8fc;
+2: 4.fd; 8fd; 8gd; 8ad;
+
+			lyrics 1: "dai-ly, hour-ly";
+			lyrics 1: "ar-dent faith to";
+			lyrics 1: "tried on ev-ery";
+			lyrics 1: "ev-ery Chris-tian";
+bar
+//5
+1 1: 2gb-; 4s;
+1 2: 2s; 4s;
+2: 2gg-; 4s;
+
+			lyrics 1: "need,";
+			lyrics 1: "pray,";
+			lyrics 1: "hand;";
+			lyrics 1: "be:";
+invisbar
+newscore
+
+1 1: 2s; 4d;
+1 2: 2s; 4d;
+2: 2s; 4bg;
+
+			lyrics 1: "That";
+			lyrics 1: "More";
+			lyrics 1: "A";
+			lyrics 1: "In-";
+
+bar
+//6
+1: 4.bg; 8bg; 8c+g; 8bg;
+2: 4.d+g; 8d+g; 8e+g; 8d+g;
+
+			lyrics 1: "we may come with";
+			lyrics 1: "stead-fast faith to";
+			lyrics 1: "faith a-gainst temp-";
+			lyrics 1: "crease, O bless-ed";
+bar
+//7
+1: 4bg; 4d+g; 4bg;
+2: 4d+g; 4bg; 4d+g;
+
+			lyrics 1: "bold-ness, For";
+			lyrics 1: "fol-low Where";
+			lyrics 1: "ta-tion, That";
+			lyrics 1: "Mas-ter, In-";
+bar
+//8
+1: 4.af; 8fd; 8.fd; 16ec#;
+2 1: 4.d+a; 8a; 8.aa-; 16ga-;
+2 2: 4.s; 8a; 8.s; 16s;
+
+			lyrics 1: "dy-ing souls to";
+			lyrics 1: "Thou dost lead the";
+			lyrics 1: "like a rock will";
+			lyrics 1: "crease our faith in";
+bar
+//9
+1 1: 2d; 4s;
+1 2: 2d; 4s;
+2: 2fd; 4s;
+
+			lyrics 1: "plead.";
+			lyrics 1: "way.";
+			lyrics 1: "stand.";
+			lyrics 1: "Thee.";
+dblbar
+newscore
+//10
+1 1: 4d; 2s;
+1 2: 4d; 2s;
+2: 4fd; 2s;
+ital (13) above 1: 1 "Refrain";
+	
+			lyrics 1: "That";
+bar
+//11
+1: 4.c+f; 8c+f; 8c+f; 8c+f;
+2: 4.d+d; 8d+d; 8d+d; 8d+f;
+
+			lyrics 1: "faith that fal-ters";
+bar
+//12
+1 1: 8c+g; 4.bg; 4g;
+1 2: 8s; 4.s; 4g;
+2: 8e+g; 4.d+g; 4bg;
+
+			lyrics 1: "nev-er, That";
+bar
+//13
+1: 4.e+g; 8e+g; 8e+g; 8e+g;
+2: 4.c+c; 8c+c; 8c+c; 8c+e;
+
+			lyrics 1: "clings to Thee for";
+bar
+//14
+1: 8e+g; 4.d+g; 4s;
+2: 8c+g; 4.bg; 4s;
+
+			lyrics 1: "ev-er,";
+invisbar
+newscore
+
+1: 8s; 4.s; 4d+g;
+2: 8s; 4.s; 4bg;
+
+			lyrics 1: "And";
+
+bar
+//15
+1: 4.d+f; 8af; 8ge; 8af;
+2: 4.ad; 8d+d; 8d+d; 8d+d;
+
+			lyrics 1: "will not let Thee";
+bar
+//16
+1: 2bg; 4e+g;
+2: 2d+g; 4c+c;
+
+			lyrics 1: "go, And";
+bar
+//17
+1 1: 4.d+g; 8g; 8af; 8bf;
+1 2: 4.s; 8g; 8s; 8s;
+2: 4.bd; 8bd; 8c+d; 8d+d;
+
+			lyrics 1: "will not let Thee";
+bar
+//18
+1 1: 2g; 4s;
+1 2: 2g; 4s;
+2: 2bgg-; 4s;
+
+			lyrics 1: "go.";
+endbar

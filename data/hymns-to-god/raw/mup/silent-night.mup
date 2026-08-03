@@ -1,0 +1,250 @@
+// !Mup vs.7.0 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source:
+//	Great Songs Of The Church
+//	A Comprehensive Collection of Psalms, Hymns and
+//	Spiritual songs of first rank, Suitable for all
+//	Services of the Church
+//	Compiler: E. I. Jorgenson
+//	Word and Work, Louisville, KY.
+//	Copyright 1921
+//	Hymn No. 273 (189)
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 12/18/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Silent Night" ""
+   title (2)""
+   title (11)"" "\f(TI)for there is born to you this day in the city of David" ""
+   title (11)"" "\f(TI) a Saviour, who is Christ the Lord. - Lk. 2:11" ""
+
+   title (11) "C - 2 - SOL" "" ""
+   title (13) "Joseph Mohr" "" "Franz Gruber"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.0
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=6/8	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=55";
+//=========================
+//Verse 1
+
+//1
+1: 8.eg bm; 16fa ebm; 8eg; 4.ce;
+2: 4cc+; 8; 4.cg;
+
+	VS21 "<1. >-1|Si-lent night!";
+	VS21 "<2. >-1|Si-lent night!";
+	VS21 "<3. >-1|Si-lent night!";
+bar
+
+//2
+1: 8.eg bm; 16fa ebm; 8eg; 4.ce;
+2: 4cc+; 8; 4.cg;
+
+	VS21 "hal-lowed night!";
+	VS21 "hal-lowed night!";
+	VS21 "hal-lowed night!";
+bar
+
+//3
+1 1: 4fd+; 16.d+ bm; 32b ebm; 4.fb;
+1 2: 4s; 8f; 4.s;
+2 1: 4s; 16.b bm; 32d+ ebm; 4.s;
+2 2: 4g-b; 8g-; 4.g-d+;
+
+	VS22 "Land and deep";
+	VS22 "On the plain";
+	VS22 "Earth a-wake,";
+bar
+
+//4
+1 1: 4ec+; 16.c+ bm; 32g ebm; 4.eg;
+1 2: 4s; 8e; 4.s;
+2: 4cc+; 8; 4.;
+
+	VS21 "si-lent sleep!";
+	VS21 "wakes the strain,";
+	VS21 "si-lence break;";
+bar
+
+//5
+1: 4fa; 8; 8.ac+; 16gb;  8fa;
+2: 4fc+; 8; 8.; 16; 8;
+
+	VS1 "Soft-ly glit-ters bright";
+	VS1 "Sung by heav-en-ly";
+	VS1 "High your an-thems of";
+bar
+
+//6
+1: 8.eg; 16fa; 8eg; 4.ce;
+2: 8.cc+; 16; 8; 4.;
+
+	VS1 "Beth-le-hem's star,";
+	VS1 "har-gin-gers bright,";
+	VS1 "mel-o-dy raise,";
+bar
+
+//7
+1: 4fa; 8; 8.s; 16s; 8s;
+2: 4fc+; 8; 8.s; 16; 8;
+
+	VS1 "Beck'-ning";
+	VS1 "Fraught with";
+	VS1 "Heav'n and";
+invisbar
+newscore
+
+1: 4s; 8; 8.ac+; 16gb; 8fa;
+2: 4s; 8; 8.fc+; 16; 8;
+
+	VS1 "Is-ra-el's";
+	VS1 "ti-dings of";
+	VS1 "earth in full";
+bar
+
+
+
+
+
+//8
+1: 8.eg; 16fa; 8eg; 4.ce;
+2: 8.cc+; 16; 8; 4.;
+
+	VS1 "eye from a-far,";
+	VS1 "bound-less de-light;";
+	VS1 "cho-rus of praise;";
+bar
+
+//9
+1: 4fd+; 8; 8.df+; 16fd+; 8fb;
+2: 4gb; 8; 8.; 16; 8gd+;
+
+	VS1 "Where the Sav-ior is";
+	VS1 "Christ the Sav-ior has";
+	VS1 "Peace for-ev-er shall";
+bar
+newscore
+
+//10
+1: 4.ec+ slur; 4ge+; 8r;
+2: 4.cc+ tie; 4; 8r;
+
+	VS1 "born,";
+	VS1 "come,";
+	VS1 "reign,";
+bar
+
+//11
+1 1: 8.c+ bm; 16g ebm; 8ce; 8.b-g; 16b-f; 8b-d;
+1 2: 4e; 4s; 4;
+2: 4cg; 8; 8.g-g; 16; 8g-f;
+
+	VS21 "Where the Sav-ior is";
+	VS21 "Christ the Sav-ior has";
+	VS21 "Peace for-ev-er shall";
+bar
+
+//12
+1 1: 4.c tie; 4; 8r;
+1 2: 4.c tie; 4; 8s;
+2: 4.ce tie; 4; 8r;
+
+	VS1 "born.";
+	VS1 "come.";
+	VS1 "reign.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,332 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 294	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 03/03/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Sun Of My Soul" ""
+   title (2)""
+   title (11) "" "\f(TI)Seeing it is God, that said, Light shall shine out of darkness" ""
+   title (11) "" "\f(TI)who shined in our hearts, to give the light of the knowledge of" ""
+   title (11) "" "\f(TI)the glory of God in the face of Jesus Christ. - 2 Cor. 4:6" ""
+   title (10) "F - 3 - DO" "" ""
+   title "John Keble" "" "Peter Ritter"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+//Verse
+
+//1
+1: 4cf; ; ;
+2: 4fa; ; ;
+
+
+	VS "<1. >-1|Sun of my";
+	VS "<2. >-1|When the soft";
+	VS "<3. >-1|A-bide with";
+	VS "<4. >-1|Come near and";
+bar
+
+//2
+1 1: 4f slur; e; cf;
+1 2: 2c; 4s;
+2 1: 4a slur; g; fa;
+2 2: 2f; 4s;
+
+	VS "soul, Thou";
+	VS "dews of";
+	VS "me from";
+	VS "bless us";
+bar
+
+//3
+1 1: 4g slur; a; eg;
+1 2: 2e; 4s;
+2 1: 4b slur; c+; cb;
+2 2: 2c; 4s;
+
+	VS "Sav-ior";
+	VS "kind-ly";
+	VS "morn till";
+	VS "when we";
+bar
+
+//4
+1 1: 2.f;
+1 2: 2.f;
+2: 2.fa;
+
+	VS "dear,";
+	VS "sleep";
+	VS "eve,";
+	VS "wake,";
+bar
+
+//5
+1: 4fa; ; ;
+2: 4fc+; ; ;
+
+	VS "It is not";
+	VS "My wea-ried";
+	VS "For with-out";
+	VS "Ere thro' the";
+bar
+
+//6
+1: 4fa slur; eg; fa;
+2: 2fc+; 4;
+
+	VS "night if";
+	VS "eye-lids";
+	VS "Thee I";
+	VS "world our";
+bar
+
+//7
+1: 4fc+ slur; eb; fa;
+2 1: 2c+; 4s;
+2 2: 4a slur; g; fc+;
+
+	VS "Thou be";
+	VS "gen-tly";
+	VS "can-not";
+	VS "way we";
+bar
+
+//8
+1: 2.eg;
+2: 2.cc+;
+
+	VS "near;";
+	VS "steep,";
+	VS "live;";
+	VS "take;";
+bar
+
+//9
+1 1: 4eg; g; f#a;
+1 2: 4s; g; s;
+2 1: 4c+; bd+; ac+;
+2 2: 4c+; s; ;
+
+	VS "O may no";
+	VS "Be my last";
+	VS "A-bide with";
+	VS "Till, in the";
+bar
+
+//20
+1 1: 2b; 4eg;
+1 2: 4g slur; d; s;
+2: 2gb; 4cc+;
+
+	VS "earth-born";
+	VS "tho't, how";
+	VS "me when";
+	VS "o-cean";
+bar
+
+//21
+1: 2fa; 4fb;
+2: 2fc+; 4df;
+
+	VS "cloud a-";
+	VS "sweet to";
+	VS "night is";
+	VS "of Thy";
+bar
+
+//22
+1: 2.ec+;
+2: 2.cg;
+
+	VS "rise";
+	VS "rest";
+	VS "nigh,";
+	VS "love,";
+bar
+
+
+//27
+1: 4fd+; ; ;
+2: 4b-b; ; ;
+
+	VS "To hide Thee";
+	VS "For-ev-er";
+	VS "For with-out";
+	VS "We lose our-";
+bar
+
+//27
+1 1: 2c+; 4fa;
+1 2: 4f slur; e; s;
+2: 2cg; 4df;
+
+	VS "from Thy";
+	VS "on My";
+	VS "Thee I";
+	VS "selves in";
+bar
+
+//28
+1 1: 4b slur; a; eg;
+1 2: 2f; 4s;
+2:4 b-d+ slur; cc+; cb;
+
+	VS "serv-ant's";
+	VS "Sav-ior's";
+	VS "dare not";
+	VS "heav'n a-";
+bar
+
+//29
+1 1: 2.f;
+1 2: 2.f;
+2: 2.fa;
+
+	VS "eyes.";
+	VS "breast.";
+	VS "die.";
+	VS "bove.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

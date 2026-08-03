@@ -1,0 +1,213 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest Glory
+//		A Collection of choice and original hymns and tunes
+//		By our best composers for the Sunday Schools,
+//		Young peoples meetins and all religious gatherings
+//		By Frank M. Davis
+//		Published by Frank M. Davis
+//		Vicksburg, Miss
+//		Copyright: 1896
+//		Hymn No.: 21
+
+// Transcribed by: Ted Gatza, Jr. 06/24/2013; Rev. 02/15/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Think Of A Land" ""
+   title (2)""
+   title (11) "F - 2 - SOL" "\s(17)\f(TI)\:There\ the\ weary\ be\ at\ rest\ -\ Job\ 3:17  \(space)" ""
+   title (13) "Frank M. Davis" " " "Frank M. Davis"	
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.4
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+
+//1
+1 1: 8c; 4.s; 4;
+1 2: 8c; 4.s; 4;
+2: 8af; 4.s; 4;
+
+			VERSE "<1. >-1|I";
+			VERSE "<2. >-1|I";	
+			VERSE "<3. >-1|I";
+bar
+//2
+1: 8.af; 16; 8; 4; 8;
+2: 8.c+f; 16; 8; 4; 8;
+
+			VERSE "think of a land, a";
+			VERSE "think of a land that";
+			VERSE "think of a land no";
+bar
+//3
+1: 8.bf; 16; 8; 4; 8af;
+2: 8.d+b-; 16; 8; 4; 8c+c;
+
+			VERSE "beau-ti-ful land, Which";
+			VERSE "know-eth no light; I";
+			VERSE "mor-tal has seen, Whose";
+bar
+newscore
+//4
+1: 8.ge; 16; 8;; [up]c+a; bg;
+2: 8.c+c; 16; 8;;;;
+
+			VERSE "oft in my dream-ing I";
+			VERSE "of-ten-times long to be";
+			VERSE "beau-ties can nev-er be";
+bar
+//5
+1 1: 4.af tie; 4; 8c;
+1 2: 4.s; 4; 8c;
+2: 4.c+f tie; 4; 8af;
+
+			VERSE "see. My";
+			VERSE "there, Where";
+			VERSE "told. The";
+bar
+//6
+1: 8.af; 16; 8; 4; 16ae&;;
+2: 8.c+f; 16; 8; 4; 16;;
+mussym (9) above 1: 1 "sign";
+
+			VERSE "loved ones are there, in the";
+			VERSE "wea-ry ones find in the";
+			VERSE "blest of all a-ges have";
+			DSVERSE "<\f(TI)D.S. - \f(PV)>-2|loved ones are there, in the";
+bar
+//7
+1 1: 8bd;;; 4db-; 16s; s;
+1 2: 8s;;; 4; 8s;
+2: 8bb-; fb-;; 4; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE 8; 8; 8; 4; 8s; "cit-y of light,";
+			VERSE 8; 8; 8; 4; 8s; "val-ley of rest,";
+			VERSE 8; 8; 8; 4; 8s; "found en-trance there";
+			DSVERSE "cit-y of light,";
+invisbar
+1 1: 8s;;; 4s; 16f bm; g ebm;
+1 2: 8s;;; 4; 8f;
+2: 8s; s;; 4; 8d+b-;
+
+			VERSE 8s; 8s; 8s; 4s; 8; "They're";
+			VERSE 8s; 8s; 8s; 4s; 8; "A";
+			VERSE 8s; 8s; 8s; 4s; 8; "Thro'";
+			DSVERSE "They're";
+
+
+bar
+//8
+1: 8af;;; ge; af; ge;
+2: 8c+c;;; bc; c+c; bc;
+
+			VERSE "wait-ing and watch-ing for";
+			VERSE "balm for their sor-rows and";
+			VERSE "beau-ti-ful gate-ways of";
+			DSVERSE "wait-ing and watch-ing for";
+bar
+//9
+1 1: 4.f tie; 4; 8s;
+1 2: 4.f tie; 4; 8s;
+2: 4.af tie; 4; 8s;
+
+			VERSE "me.";
+			VERSE "care.";
+			VERSE "gold.";
+			DSVERSE "me.";
+dblbar
+//10
+1 1: 16f;; 4.s; 4;
+1 2: 16f;; 4.s; 4;
+2 1: 16af;; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "O that";
+			VERSE "O that";
+bar
+//11
+1: 4.ge tie; 8; fd; ge;
+2: 8c+c;;; 4; 8;
+
+			VERSE "beau-ti-ful";
+			VERSE 8; 8; 8; 4; 8; "beau-ti-ful land, that";
+bar
+//12
+1: 4.af tie; 4; 8af;
+2: 8c+f;;; 4; 8;
+
+			VERSE "land, Which";
+			VERSE 8; 8; 8; 4; 8; "beau-ti-ful land, Which";
+bar
+//13
+1: 4.bd tie; 8; ac#; bd;
+2: 8bb-; fb-;;;;;
+
+			VERSE "oft in my";
+			VERSE 8; 8; 8; 8; 8; 8; "oft in my dream-ing, my";
+bar
+//14
+1: 4.c+f tie; 8; 8bg; af;
+2 1: 8af;;; a bm; c+ ebm; c+f;
+2 2: 8s;;; 4f; 8s;
+
+			VERSE "dream-ing I";
+			VERSE 8; 8; 8; 4; 8; "dream-ing I see, my";
+bar
+//15
+1: 4.ge tie; 4; 8ge;
+2: 8c+c;;; 4; 8;
+ital above 1: 6 "D. S.";
+
+			VERSE "see. My";
+			VERSE 8; 8; 8; 4; 8s; "dream-ing I see.";
+endbar

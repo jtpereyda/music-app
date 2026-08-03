@@ -1,0 +1,305 @@
+// Mup vs. 7.2 arkkra.com
+
+// The hymn produced by this Mup code is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup code is donated to the public domain.
+
+// Hymn Source: 
+//	The Psalter With Responsive Readings
+//	By The United Presbyterian Board Of Publication Presbyterian
+//	Pitsburgh
+//	Copyright 1912
+//	Hymn No.: 306	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 01/25/2026
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.93
+	staffscale=1.
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Praise God, Ye Servants Of The Lord" ""
+   title (2)""
+   title (11) "" "\f(TI)Praise you the LORD. Praise, O you servants of the LORD,"""
+   title (11) "" "\f(TI)praise the name of the LORD. - Psalm 113:1"""
+   title (12) "G - 4 - DO" "" ""
+   title (15) "Psalm 113" "" "William B. Bradbury"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+
+//Verse
+
+//1
+1 1: 2.s; 4g;
+1 2: 2.s; 4g;
+2 1: 2.s; 4g;
+2 2: 2.s; 4g;
+
+	VS "<1. >-1|Praise";
+	VS "<2. >-1|From";
+	VS "<3. >-1|On";
+	VS "<4. >-1|He";
+bar
+
+//2
+1: 4dg; db; dg; db;
+2: 4gb; gd+; gb; gd+;
+
+	VS "God, ye serv-ants";
+	VS "ris-ing un-to";
+	VS "whom but God can";
+	VS "lifts the poor and";
+bar
+
+//3a
+1 1: 8b bm; a ebm; 8g bm; f ebm; 4s; s;
+1 2: 4d; ; dg; s;
+2 1: 8d+ bm; c+ ebm; 8b bm; a ebm; 4s; ;
+2 2: 4d; d; gb; s;
+
+	VS12 "of the Lord,";
+	VS12 "set-ting sun";
+	VS12 "we re-ly,";
+	VS12 "makes them great";
+invisbar
+newscore
+
+//3b
+1 1: 2.s; 4g;
+1 2: 2.s; 4g;
+2: 2.s; 4gb;
+
+	VS "O,";
+	VS "Praised";
+	VS "The";
+	VS "With";
+bar
+
+//4
+1: 4gb; bd+; gb; bd+;
+2: 4gd+; ; ; ;
+
+	VS "praise His Name with";
+	VS "be the Lord, the";
+	VS "Lord our God Who";
+	VS "joy He fills the";
+bar
+
+//5a
+1: 8bd+ bm; ac+ ebm; 8gb bm; fa ebm; 4gb; s;
+2: 4dd+; ; gd+; s;
+
+	VS21 "one ac-cord;";
+	VS21 "Might-y One; ";
+	VS21 "reigns on high,";
+	VS21 "des-o-late;";
+invisbar
+newscore
+
+//5b
+1: 2.s; 4dg;
+2: 2.s; 4gb;
+
+	VS "Bless";
+	VS "He";
+	VS "Who";
+	VS "Praise";
+bar
+
+//6
+1: 4eg; ; 4.dg; 8;
+2: 4cc+; ; 4.gb; 8;
+
+	VS "ye the Lord, His";
+	VS "reigns o'er all, su-";
+	VS "con-de-scends to";
+	VS "ye the Lord and";
+bar
+
+//7a
+1: 4fa; ; gb; s;
+2: 4dd+; ; gd+; s;
+
+	VS "Name a-dore";
+	VS "preme in might,";
+	VS "see and know";
+	VS "bless His Name,";
+invisbar
+newscore
+
+//7b
+1: 2.s; 4gd+;
+2: 2.s; 4gb;
+
+	VS "From";
+	VS "A-";
+	VS "The";
+	VS "His";
+bar
+
+//8
+1: 4ge+; ; 4.gd+; 8db;
+2 1: 4cc+; c+; 4.bd+; 8g;
+2 2: 4s; ; 4.; 8g;
+
+	VS "this time forth for-";
+	VS "bove the heav'ns in";
+	VS "things of heav'n and";
+	VS "mer-cy and His";
+bar
+
+//9a
+1: 4da; dd+; db; s;
+2 1: 4df; ; g; s;
+2 2: 4s; ; g; s;
+
+	VS "ev-er-more,";
+	VS "glo-ry bright,";
+	VS "earth be-low;";
+	VS "might pro-claim, ";
+invisbar
+newscore
+
+//9b
+1: 2.s; 4gb;
+2: 2.s; 4gd+;
+
+	VS "From";
+	VS "A-";
+	VS "The";
+	VS "His";
+bar
+
+//10
+1: 4gc+; ; 4.gb; 8dg;
+2: 4ce+; ; 4.gd+; 8gb;
+
+	VS "this time forth for";
+	VS "bove the heav'ns in";
+	VS "things of heav'n and";
+	VS "mer-cy and His";
+bar
+
+//11
+1 1: 4df; fa; g; s;
+1 2: 4s; ; g; s;
+2: 4da; dc+; gb; s;
+FST(3)
+FBT(3)
+
+	VS "ev-er- more.";
+	VS "glo-ry bright.";
+	VS "earth be-low?";
+	VS "might pro-claim.";
+endbar
+

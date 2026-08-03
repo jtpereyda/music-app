@@ -1,0 +1,201 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 55
+//		
+// Transcribed by: Ted Gatza, Jr. 02/15/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Jesus Will Bear Me O'er" ""
+   title (2)""
+   title (11) "F - 2 - MI" "\s(17)\f(TI)\:then\ we\ that\ are\ alive,\ that\ ar\|e\ left,\ shall\ together\ with\ them be\ caught\ up\ in\ the\ clouds,\ to\|\ meet\ the\ Lord\ in\ the\ air:\ and so\ shall\ we\ ever\ be\ with\|\ the\ Lord.\ -\ 1\ Thess.\ 3:17" ""   
+   title (13) "L. E. Jones" "" "W. S. Nickle, 1892"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1 1: 8.af; 16; 8; 8a bm; g ebm; f;
+1 2: 8.s; 16; 8; 4f; 8f;
+2 1: 8.c+f; 16; 8; 8c+ bm; b ebm; af;
+2 2: 8.s; 16; 8; 4f; 8s;
+
+			VERSE 8.; 16; 8; 4; 8; "<1. >-1|When I have reached earth's";
+			VERSE "<2. >-1|Cit-y of glo-ry so";
+			VERSE "<3. >-1|Dwell-ing with Je-sus in";
+			
+bar
+//2
+1: 4bf; 8; 4; 8r;
+2: 4d+b-; 8; 4; 8r;
+
+			VERSE "bor-der-land,";
+			VERSE "bright and fair,";
+			VERSE "glo-ry-land,";
+bar
+//3
+1 1: 8.af; 16; 8; 8c+<a>f~; af; f;
+1 2: 8.s; 16; 8; 8; 8; f;
+2: 8.c+f; 16; 8; a<c+>f~; 8c+f; af;
+
+			VERSE 8.; 16; 8; 8; 8; 8; "Je-sus will bear me a-";
+			VERSE "Cit-y of peace a-";
+			VERSE "What could I ask be-";
+bar
+//4
+1: 4.ge tie; 4ge; 8r;
+2: 4.c+c tie; 4; 8r;
+
+			VERSE "way;";
+			VERSE "bove;";
+			VERSE "side?";
+bar
+//5
+1 1: 8.af; 16; 8;; g; f;
+1 2: 8.s; 16; 8;; f; f;
+2: 8.c+f; 16; 8;; bf; af;
+
+			VERSE "Take me to sing with the";
+			VERSE "I shall sing prais-es to";
+			VERSE "Sing-ing the song of the";
+bar
+//6		
+1: 4bf; 8; 4; 8r;
+2: 4d+b-; 8; 4; 8r;
+
+			VERSE "ran-somed band,";
+			VERSE "Je-sus there,";
+			VERSE "an-gel-band,";
+bar
+//6
+1 1: 8.af; 16gc; 8fc; 8c bm; d ebm; eb-;
+1 2: 8.s; 16; 8; 4b-; 8s;
+2: 8.c+c; 16bc; 8ac; 4gc; 8;
+
+			VERSE 8.; 16; 8; 4; 8; "Hap-py in end-less";
+			VERSE 8.; 16; 8; 4; 8; "Tell-ing His won-drous";
+			VERSE 8.; 16; 8; 4; 8; "Near to the Sav-iour's";
+bar
+//7
+1: 4.fa- tie; 4; 8r;
+2: 4.ff- tie; 4; 8r;
+
+			VERSE "day.";
+			VERSE "love.";
+			VERSE "side.";
+dblbar
+//8
+1: 8.bd; 16; 8; 4; 16;;
+2: 8.fb-; 16; 8; 4; 16;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Car-ried a-way to the";
+bar
+//9
+1: 4ac; 8; 4; 8r;
+2 1: 4f; 8; 4; 8r;
+2 2: 4f; 8; 4; 8s;
+
+			VERSE "realms of height.";
+bar
+//10
+1: 8.af; 16; 8; 4c+f; 8af;
+2: 8.c+f; 16; 8; 4c+a; 8c+f;
+
+			VERSE "Safe on the gold-en";
+bar
+//11
+1: 4.ge tie; 4; 8r;
+2: 4.c+c tie; 4; 8r;
+
+			VERSE "shore;";
+bar
+//12
+1 1: 8.af; 16; 8;s; s; s;
+1 2: 8.s; 16; 8;s; 8s;s;
+2: 8.c+f; 16; 8;s; s; s;
+
+			VERSE "In-to the";
+invisbar
+newscore
+
+1 1: 8.s; 16s; 8s; af; g; f;
+1 2: 8.s; 16; 8;; 8f;;
+2: 8.s; 16s; 8; c+f; bf; af;
+
+			VERSE "sum-mer-land";
+
+bar
+//13
+1: 4bf; 8; 4; 8r;
+2: 4d+b-; 8; 4; 8r;
+
+			VERSE "ev-er bright,";
+bar
+//14
+1 1: 8.af; 16gc; 8f; 8c bm; d ebm; 8eb-&;
+1 2: 8.s; 16; 8f; c bm; b-n ebm; 8s;
+2: 8.c+c; 16bc; 8ac; 4gc; 8;
+
+			VERSE 8.; 16; 8; 4; 8; "Je-sus will bear me";
+bar
+//15
+1: 4.fa- tie; 4; 8r;
+2: 4.ff- tie; 4; 8r;
+
+			VERSE "o'er.";
+endbar

@@ -1,0 +1,151 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Christian Science Hymnal
+//		Published by
+//		The Christian Science Publishing Society
+//		Back Bay Station
+//		Boston, Massachusetts	
+//		Copyright 1898, 1903, 1905, 1909
+//		Hymn no. 139
+
+// Transcribed by: Ted Gatza, Jr. 10/04/2010; rev. 06/05/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Word of Life, Most Pure" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(17)\f(TI)\:holding\ forth\ the\ word\ of\ l\|ife;\ that\ I\ may\ have\ whereof to\ glory\ in\ the\ day\ \|of\ Christ,\ -\ Phil.\ 2:16"""
+   title (13) "J.F. Bahnmaier" " " "Ignace Pleyel"
+   title (13) "Tr. by C. Winkworth" " " " "
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key= 1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4bg; 4d+g; 4.af; 8bg;
+2: 4d+g; 4d+b-; 4.d+d; 8d+b-;
+
+			lyrics 1: "<1. >-1|Word of Life, most";
+			lyrics 1: "<2. >-1|Lo! the rip-'ning";
+			lyrics 1: "<3. >-1|Lord of har-vest,";
+bar
+//2
+1: 4c+a; 4af; 2bg;
+2: 4e+a-; 4d+d; 2d+g;
+
+			lyrics 1: "pure, most strong!";
+			lyrics 1: "fields we see:";
+			lyrics 1: "let there be";
+bar
+//3
+1: 4bg; 4d+g; 4.af; 8s;
+2: 4d+g; 4d+b-; 4.d+d; 8s;
+
+			lyrics 1: "Lo! for thee";
+			lyrics 1: "Might-y shall";
+			lyrics 1: "Joy and strength";
+invisbar
+newscore
+
+1: 4s; 4s; 4.s; 8bg;
+2: 4s; 4s; 4.s; 8d+b-;
+
+			lyrics 1: "the";
+			lyrics 1: "the";
+			lyrics 1: "to";
+
+bar
+//4
+1 1: 4c+a; 4af; 2g;
+1 2: 4s; 4s; 2g;
+2 1: 4e+a-; 8d+ bm; 8c+ ebm; 2bg-;
+2 2: 4s; 4d; 2s;
+
+			lyrics 1: "na-tions long";
+			lyrics 1: "har-vest be;";
+			lyrics 1: "work for Thee,";
+bar
+//5
+1 1: 4af; 4bf; 4.g; 8ae;
+1 2: 4s; 4s; 4.g; 8s;
+2 1: 4d+d; 4d+#b-; 4e+ slur; 8b; 8ac#;
+2 2: 4s; 4s; 4.e; 8s;
+
+			lyrics 1: "Spread, till from its";
+			lyrics 1: "But the reap-ers";
+			lyrics 1: "Till the na-tions";
+bar
+newscore
+//6
+1 1: 4fd; 4ec#; 2d;
+1 2: 4s; 4s; 2d;
+2 1: 4ad; 8a bm; 8g ebm; 2fd;
+2 2: 4s; 4a-; 2s;
+
+			lyrics 1: "drea-ry night";
+			lyrics 1: "still are few;";
+			lyrics 1: "far and near";
+bar
+//7
+1: 4bg; 4d+g; 4.af; 8bg;
+2: 4d+g; 4d+b-; 4.d+d; 8d+b-;
+
+			lyrics 1: "All the world a-";
+			lyrics 1: "Great the work they";
+			lyrics 1: "See Thy light, Thy";
+bar
+//8
+1 1: 4c+a; 4af; 2g;
+1 2: 4s; 4s; 2g;
+2 1: 4e+a-; 8d+ bm; 8c+ ebm; 2bg-;
+2 2: 4s; 4d; 2s;
+		
+			lyrics 1: "wakes to light.";
+			lyrics 1: "have to do.";
+			lyrics 1: "law re-vere.";
+endbar
+   title (13) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

@@ -1,0 +1,363 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Sacred Songs and Solos
+//		Nos. 1 & 2 Combined
+//		Compiled  and Sung by
+//		Ira D. Sankey
+//		Publisher: London: Morgan and Scott
+//		Office of the Christian
+//		12, Paternoster Buildings, E.C
+//		Copyright: 1880
+//		Hymn No. 373
+
+		
+		
+// Transcribed by: Ted Gatza, Jr. 09/28/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "To God Be The Glory!" ""
+   title (2) ""
+   title (11)"" "\f(TI)Give unto the Lord the glory due to His name;" ""
+   title (11)"" "\f(TI)Worship the Lord in the beauty of holiness. - Ps. 29:2" ""
+
+   title (11)"A\(flat) - 3 - SOL" "" ""  
+   title (13) "Fanny J. Crosby, (arr.)" "" "William H. Doane, 1875"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=a&
+
+
+staff 2
+	key=a&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VERSE lyrics between 1&2: @
+       define DSVERSE lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=100";
+
+// Enter music
+//============
+//1
+1: 4ce; 2s;
+2: 4a-a; 2s;
+
+	
+	VERSE 4; 2s; "<1. >-1|To";
+	VERSE 4; 2s; "<2. >-1|O";
+	VERSE 4; 2s; "<3. >-1|Great";
+
+bar
+//2
+1 1: 2e; 8df; dg;
+1 2: 4c slur; e; 8s; s;
+2 1: 2a; 8s; 8e;
+2 2: 4a- slur; 4c; 8eg; e;
+
+	VERSE 2; 8; 8; "God be the";
+	VERSE 2; 8; 8; "per-fect re-";
+	VERSE 2; 8; 8; "things He hath";
+bar
+//3
+1: 4ca; ce; ea;
+2: 4a-e; a-a; ca;
+
+	VERSE "glo-ry! great";
+	VERSE "demp-tion, the";
+	VERSE "taught us, great";
+bar
+//4
+1 1: 4eb; e; eb;
+1 2: 4s; d; s;
+2: 4eg;;;
+
+	VERSE "things He hath";
+	VERSE "pur-chase of";
+	VERSE "things He hath";
+bar
+//5
+1: 2ec+; 4;
+2: 2a-a; 4;
+
+	VERSE "done; So";
+	VERSE "blood, To";
+	VERSE "done, And";
+bar
+//6
+1: 4fd+; df; fd+;
+2: 4da;;;
+
+	VERSE "loved He the";
+	VERSE "ev-'ry be-";
+	VERSE "great our re-";
+bar
+//7
+1: 4ec+; ea; ec+;
+2: 4a-a; ca; a-a;
+
+	VERSE "world that He";
+	VERSE "liev-er the";
+	VERSE "joic-ing thro'";
+bar
+//8
+1 1: 4dnc+; db; f;
+1 2: 4s;; f;
+2 1: 4s;; 8b bm; a ebm;
+2 2: 4b-f;; dn;
+
+	VERSE "gave us His";
+	VERSE "pro-mise of";
+	VERSE "Je-sus the";
+bar
+//9
+1 1: 2eb; 4e&;
+1 2: 2s; 4d;
+2: 2eg; 4;
+
+	VERSE "Son; Who";
+	VERSE "God; The";
+	VERSE "Son; But";
+bar
+//10
+1 1: 2e; 8df; dg;
+1 2: 4c slur; e; 8s;;
+2 1: 2a; 8s; e;
+2 2: 4a- slur; c; 8eg; e;
+
+	VERSE "yield-ed His";
+	VERSE "vil-est of-";
+	VERSE "pur-er, and";
+bar
+//11
+1: 4ca; ce; ea;
+2: 4a-e; a-a; ca;
+
+	VERSE "life an a-";
+	VERSE "fen-der who";
+	VERSE "high-er, and";
+bar
+//12
+1 1: 4eb; e; eb;
+1 2: 4s; e; s;
+2: 4eg;;;
+
+	VERSE "tone-ment for";
+	VERSE "tru-ly be-";
+	VERSE "great-er will";
+bar
+//13
+1: 2ec+; 4g&c+;
+2: 2a-a; 4;
+
+	VERSE "sin, And";
+//	VERSE "lieves, That";  //Uncomment for original lyrics
+	VERSE "lieves, When";
+	VERSE "be Our";
+bar
+//14
+1: 4fe+; fd+; fb;
+2: 4da; db; dd+;
+
+	VERSE "o-pened the";
+//	VERSE "mo-ment from"; //Uncomment for original lyrics
+	VERSE "bur-ied with";
+	VERSE "won-der, our";
+bar
+//15
+1: 4ea; eg; ea;
+2: 4ec+; eb; ec+;
+
+	VERSE "Life gate that";
+	VERSE "Je-sus a";
+	VERSE "trans-port, when";
+bar
+//16
+1: 4ec+;; db;
+2: 4ea;; eg;
+
+	VERSE "all may go";
+	VERSE "par-don re-";
+	VERSE "Je-sus we";
+bar
+//17
+1: 2ca; 4s;
+2: 2a-a; 4s;
+
+	VERSE "in.";
+	VERSE "ceives.";
+	VERSE "see.";
+dblbar
+newscore
+//18
+1: 8.ec+; 16ed+; 2s;
+2 1: 8.a; 16b; 2s;
+2 2: 8.a; 16a; 2s;
+REFRAIN
+	VERSE "Praise the";
+bar
+//19
+1: 2ee+; 8.ac+; 16gd+;
+2 1: 2ac+; 8.a; 16b;
+2 2: 2s; 8.a; 16a;
+
+	VERSE "Lord! praise the";
+bar
+//20
+1: 2ae+; 8.ee+; 16ec+;
+2: 2ac+; 8.; 16a-a;
+
+	VERSE "Lord! Let the";
+bar
+//21
+1: 4ea; eb; ec+;
+2: 4ca; b-g; a-a;
+
+	VERSE "earth hear His";
+bar
+//22
+1: 2eb; 4s;
+2: 2eg; 4s;
+
+	VERSE "voice!";
+bar
+//23
+1: 8.eb; 16ec+; 2s;
+2: 8.eg; 16ea; 2s;
+
+	VERSE "Praise the";
+bar
+//24
+1: 2ed+; 8.eb; 16ec+;
+2: 2eb; 8.eg; 16ea;
+
+	VERSE "Lord! praise the";
+bar
+//25
+1: 2ed+; 8ed+; eb;
+2: 2eb; 8; dg;
+
+	VERSE "Lord! Let the";
+bar
+//26
+1: 4ee+;; ed+;
+2: 4ca;; b-g;
+
+	VERSE "peo-ple re-";
+bar
+//27
+1 1: 2ec+; 4e&;
+1 2: 2s; 4d;
+2: 2a-a; 4;
+
+	VERSE "joice! Oh,";
+bar
+//28
+1 1: 2e; 8df; dg;
+1 2: 4c slur; e; 8s;;
+2 1: 2a; 8s; e;
+2 2: 4a- slur; c; 8eg; e;
+
+	VERSE "come to the";
+bar
+//29
+1: 4ca; ce; ea;
+2: 4a-e; a-a; ca;
+
+	VERSE "Fa-ther thro'";
+bar
+//30
+1 1: 4eb; e; eb;
+1 2: 4s; e; s;
+2: 4eg;;;
+
+	VERSE "Je-sus the";
+bar
+//31
+1: 2ec+; 4g&c+;
+2: 2a-a; 4;
+
+	VERSE "Son, And";
+bar
+//32
+1: 4fe+; fd+; fb;
+2: 4da; db; dd+;
+
+	VERSE "give Him the";
+bar
+//33
+1: 4ea; eg; ea;
+2: 4ec+; eb; ec+;
+
+	VERSE "glo-ry! great";
+bar
+//34
+1: 4ec+;; db;
+2: 4ea;; eg;
+
+	VERSE "things He hath";
+bar
+//35
+1: 2ca; 4s;
+2: 2a-a; 4s;
+
+	VERSE "done!";
+endbar
+

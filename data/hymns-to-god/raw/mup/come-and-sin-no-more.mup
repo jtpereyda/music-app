@@ -1,0 +1,218 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sermons In Song
+//		Edite by: Grant C. Tullar
+//		and Issac H. Meredith
+//		For use in Gospel Meetings and other
+//		Religious Services
+//		Published by Meyer & Beother
+//		108 Washington St. Chicago. Il.
+//		Copyright 1894
+//		Hymn no. 148
+
+// Transcribed by: Ted Gatza, Jr. 03/18/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come, And Sin No More" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - SOL" "\s(17)\f(TI)\:And\ she\ said,\ No\ man,\ Lord.\ And\|\ Jesus\ said,\ Neither\ do\ I\ condemn thee:\ go\ thy\ way;\ from\ henc\^eforth\ sin\ no\ more.\ -\ Jn.\ 8:11" ""
+   title (13) "Grant C. Tullar" " " "Grant C. Tullar, 1894"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = .9
+	pad =0
+	vscheme = 2f
+	staffscale=.99
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+
+//1
+1: 4fd; bd; 8; ae; bf; d+f;
+2: 4bb-; fb-; 8; fc; bd; bb-;
+
+			VERSE "<1. >-1|Ye, who in the world have";
+			VERSE "<2. >-1|Come to Je-sus with your";	
+			VERSE "<3. >-1|Hark! the Spir-it now is";
+bar
+//2
+1: 2c+e; ge;
+2: 2ge; be;
+
+			VERSE "wan-dered,";
+			VERSE "sor-row:";
+			VERSE "knock-ing;";
+bar
+//3
+1 1: 4ae;; 8; ge; s; s;
+1 2: 4s;; 8;; s; s;
+2: 4af; c+f; 8; bf; s; s;
+
+			VERSE "Turn-ing from thy";
+			VERSE "He your com-fort";
+			VERSE "You have heard it";
+invisbar
+newscore
+
+1 1: 4s;; 8; ; 8f; e+f;
+1 2: 4s;; 8;; 8f; s;
+2: 4s; s; 8; s; 8af; af;
+
+			VERSE "Fa-ther's";
+			VERSE "will re-";
+			VERSE "oft be-";
+
+
+bar
+//4
+1: 2.d+f; 4r;
+2: 2.bb-; 4r;
+
+			VERSE "door,";
+			VERSE "store;";
+			VERSE "fore:";
+bar
+//5
+1: 4fd; bd; 8; ae; bf; d+f;
+2: 4bb-; fb-; 8;; bd; bb-;
+
+
+			VERSE "See, thy Fa-ther waits to";
+			VERSE "Cast your ev-'ry care up-";
+			VERSE "Just a-rise and say to";
+bar
+//6
+1: 2c+e; 4ge; e+g;
+2: 2ge; 4be;;
+
+			VERSE "greet thee; Re-";
+			VERSE "on Him; Yes,";
+			VERSE "Je-sus, \"I'll";
+bar
+//7
+1 1: 4.d+f; 8c+f; 4bf; a;
+1 2: 4.s; 8; 4; 8f bm; e ebm;
+2: 4.bf; 8e+f; 4d+f; c+f;
+
+			VERSE "turn and sin no";
+			VERSE "come and sin no";
+			VERSE "come and sin no";
+bar
+//8
+1: 2.bd; 4r;
+2: 2.bb-; 4r;
+
+
+			VERSE "more.";
+			VERSE "more.";
+			VERSE "more.\"";
+dblbar
+//9
+1: 4c+e;; 8; bnd; c+e; d+f;
+2 1: 4af;; 8; g#; af;;
+2 2: 4s;; 8; f; s;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Je-sus died for you a";
+bar
+//10
+1: 2bd; d+f;
+2: 2bb-;;
+
+			VERSE [c]"ran-som;";
+bar
+//11
+1: 4c+en; ; 8c+a; bg; af; ge;
+2: 4gc;; 8c+c;;; bc;
+
+			VERSE "On the cross your sins He";
+bar
+//12
+1 1: 2.f; 4r;
+1 2: 2f slur; 4e; 4s;
+2: 2.af; 4r;
+
+			VERSE "bore;";
+bar
+//5
+1: 4fd; bd; 8; ae; s; s;
+2: 4bb-; fb-; 8;; s; s;
+
+
+			
+			VERSE "He is wait-ing";
+invisbar
+newscore
+
+1: 4s; s; 8; s; 8bf; d+f;
+2: 4s; s; 8;; 8bd; bb-;
+
+
+			
+			VERSE "now to";
+
+
+bar
+//6
+1: 2c+e; 4ge; e+g;
+2: 2ge; 4be;;
+
+
+			VERSE "par-don, Then";
+bar
+//7
+1 1: 4.d+f; 8c+f; 4bf; a;
+1 2: 4.s; 8; 4; 8f bm; e ebm;
+2: 4.bf; 8e+f; 4d+f; c+f;
+
+			VERSE "come and sin no";
+bar
+//8
+1: 2.bd; 4r;
+2: 2.bb-; 4r;
+
+			VERSE "more.";
+endbar

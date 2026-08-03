@@ -1,0 +1,378 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Gospel Praises
+//	For Use In Meetings Of Christian Worship
+//	Edited By Wm. J. Kirkpatrick, J. Lincoln Hall, H. L, Gilmour,
+//	Publishers: Hall-Mack Co.,
+//	1020 Arch St.. Philadelphia.
+//	Copyright 1899
+//	Hymn No.: 81
+
+// Transcribed by: Ted Gatza, Jr. 11/12/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=9/8
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Heavenly Sunlight" ""
+   title (2) ""
+   title (11) "" "\f(TI)Again therefore Jesus spake unto them, saying, I am the light" ""
+   title (11) "" "\f(TI)of the world: he that followeth me shall not walk in the" ""
+   title (11) "" "\f(TI)darkness, but shall have the light of life. - Jn. 8:12" ""
+   title (11) "G - 3 - SOL" "" ""
+   title (13) "Henry L. Zelley, 1899" "" "George H. Cook, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=115";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 4.s; ; 8d;e;f;
+1 2: 4.s; ; 8d;e;f;
+2 1: 4.s; ; 8d;e;f;
+2 2: 4.s; ; 8d;e;f;
+
+
+	VS "<1. >-1|Walk-ing in";
+	VS "<2. >-1|Sha-dows a-";
+	VS "<3. >-1|In the bright";
+bar
+
+//2
+1 1: 4.g; dg; 8gb; da; dg;
+1 2: 4.g; s; 8; ; ;
+2 1: 4.g; gb; 8gd+; gc+; gb;
+2 2: 4.g; s; 8; ; ;
+
+	VS "sun-light, all of my";
+	VS "round me, shad-ows a-";
+	VS "sun-light, ev-er re-";
+bar
+
+//3
+1: 4.fa; fd+; 8s; ; ;
+2: 4.dd+; da; 8s; ; ;
+
+	VS "jour-ney;";
+	VS "bove me,";
+	VS "joic-ing,";
+invisbar
+
+//3
+1: 4.s; ; 8gd+; ge+; gd+;
+2: 4.s; ; 8gb; gc+; gb;
+
+	VS "O-ver the";
+	VS "Nev-er con-";
+	VS "Press-ing my";
+bar
+
+//4
+1 1: 4.gb; dg; 8gb; a; g;
+1 2: 4.s; ; 8; g; ;
+2: 4.gd+; gb; 8ec+#; ; ;
+
+	VS "moun-tains, through the deep";
+	VS "ceal my Sav-iour and";
+	VS "way to man-sions a-";
+bar
+
+//5
+1: 4.fa tie; 4; 8r; s; ; ;
+2: 4.dd+ tie; 4; 8r; s; ; ;
+
+	VS "vale;";
+	VS "Guide;";
+	VS "bove;";
+invisbar
+
+//5
+1 1: 4.s; ; 8d; e; f;
+1 2: 4.s; ; 8d; e; f;
+2 1: 4.s; ; 8d; e; f;
+2 2: 4.s; ; 8d; e; f;
+
+	VS "Je-sus has";
+	VS "He is the";
+	VS "Sing-ing His";
+bar
+
+//6
+1 1: 4.g; dg; 8gb; da; dg;
+1 2: 4.g; s; 8; ; ;
+2 1: 4.g; gb; 8gd+; gc+; gb;
+2 2: 4.g; s; 8; ; ;
+
+	VS "said, \"I'll nev-er for-";
+	VS "light, in Him is no";
+	VS "prais-es, glad-ly I'm";
+bar
+
+//7
+1: 4.fa; fd+; 8s; ; ;
+2: 4.dd+; da; 8s; ; ;
+
+	VS "sake thee,\"";
+	VS "dark-ness,";
+	VS "walk-ing,";
+invisbar
+
+//7
+1: 4.s; ; 8gd+; ge+; gd+;
+2: 4.s; ; 8gb; gc+; gb;
+
+	VS "Prom-ise di-";
+	VS "Ev-er I'm";
+	VS "Walk-ing in";
+bar
+
+//8
+1: 4.gb; dg; 8fa; gb; fa;
+2: 4.gd+; gb; 8dc+; dd+; dc+;
+
+	VS "vine that nev-er can";
+	VS "walk-ing close to His";
+	VS "sun-light, sun-light of";
+bar
+
+//9
+1: 4.dg tie; 4; 8r; s; ; ;
+2: 4.gb tie; 4; 8r; s; ; ;
+
+	VS "fail.";
+	VS "side.";
+	VS "love.";
+dblbar
+newscore
+
+CHORUS
+
+1: 4.s; ; 8gd+; ; ;
+2: 4.s; ; 8gb; ; ;
+
+	VS "Heav-en-ly";
+bar
+
+//10
+1: 4.ge+; ec+; 8gc+; gd+; ge+;
+2: 4.cc+; cg; 8ec+; db; cc+;
+
+	VS "sun-light, heav-en-ly";
+bar
+
+//11
+1: 4.gd+; gb; 8s; ; ;
+2: 4.gb; gd+; 8s; ; ;
+
+	VS "sun-light;";
+invisbar
+newscore
+
+//11
+1: 4.s; ; 8gd+; ; ;
+2: 4.s; ; 8gb; ; ;
+
+	VS "Flood-ing my";
+bar
+
+//12
+1 1: 4.gd+; gb; 8gb; a; g;
+1 2: 4.s; ; 8; g; ;
+2: 4.gb; gd+; 8ec+#; ; ;
+
+	VS "soul with glo-ry di-";
+bar
+
+//13
+1 1: 4.f~a<d+>; 4.fd+; 8s; ; ;
+1 2: 4.s; ; 8s; ; ;
+  FST(4)
+2 1: 4.d~d+<a>; da; 8s; ; ;
+2 2: 4.s; 4.; 8; ;;
+  FBB(4)
+
+	VS 4.; 4.s; 4s; 8s; "vine:";
+invisbar
+newscore
+
+//13
+1 1: 4.s; ; 8d bm; e ebm; f;
+1 2: 4.s; ; 8d bm; e ebm; f;
+2 1: 4.s; ; 8d bm; e ebm; f;
+2 2: 4.s; 4.; 8d bm; e ebm; f;
+
+	VS 4.s; 4.s; 4; 8; "Hal-le-";
+bar
+
+//14
+1: 4.dg; ; 8gb; da; dg;
+2 1: 4.g; gb; 8gd+; gc+; gb;
+2 2: 4.g; s; 8; ; ;
+
+	VS "lu-jah, I am re-";
+bar
+
+//15
+1: 4.fa; fd+; 8s; ; ;
+2: 4.dd+; da; 8s; ; ;
+
+	VS "joic-ing,";
+invisbar
+newscore
+
+//15
+1: 4.s; ; 8gd+; ge+; gd+;
+2: 4.s; ; 8gb; gc+; gb;
+
+	VS "Sing-ing His";
+bar
+
+//16
+1: 4.gb; dg; 8fa; gb; fa;
+2: 4.gd+; gb; 8dc+; dd+; dc+;
+
+	VS "prais-es, Je-sus is";
+bar
+
+//17
+1: 4.dg tie; 4; 8r; s; ; ;
+2: 4.g-gb tie; 4; 8r; s; ; ;
+
+	VS "mine.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

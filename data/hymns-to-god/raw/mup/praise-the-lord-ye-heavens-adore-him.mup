@@ -1,0 +1,208 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymnal For American Youth
+//		Edited By H. Augustine Smith A.M.
+//		New York
+//		The Century Co,
+// 		Copyright, 1919
+//		Hymn no. 34
+
+// Transcribed by: Ted Gatza, Jr. 01/06/2010; rev 11/14/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Praise the Lord, Ye Heavens Adore Him" ""
+   title (2)""
+   title (11) "F - 4 - MI" "\s(17)\f(TI)\:Praise\ ye\ the\ Lord\ fr\|om\ the\ heavens:\ praise him\ in\ the\ heig\|hts.\ -\ Ps.\ 148:1"""
+   title (13) "Edward Osler, 1836" " " "Henry Smart, 1867"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4
+	key=1&
+	packexp = 0.0
+	packfact = 0.9 //0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=2
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=1&
+	clef=bass
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4af; 4d+f; 4c+f; 4ae;
+2: 4c+f; 4bb-; 4c+a-; 4c+c;
+
+			lyrics 1: "<1. >-1|Praise the Lord, ye";
+			lyrics 1: "<2. >-1|Praise the Lord, for";
+			lyrics 1: "<3. >-1|Wor-ship, hon-or";
+bar
+//2
+1 1: 4.f; [ho-10]8g; 4fc; 4ec;
+1 2: 4f; 4d; 4s; 4s;
+2: 4ad; 4bb-; 4bc; 4gc;
+
+			lyrics 1: 4; 4; 4; 4; "heav'ns, a-dore him,";
+			lyrics 1: 4; 4;4; 4; "he is glo-rious;";
+			lyrics 1: 4; 4; 4; 4; "glo-ry, bless-ing,";
+bar
+//3
+1: 4dg-; 4cg-; 4fc; 4af;
+2: 4eb-; 4eb-; 4fa-;4c+f-;
+
+			lyrics 1: "Praise him an-gels,";
+			lyrics 1: "Nev-er shall his";
+			lyrics 1: "Lord, we of-fer";
+bar
+//4
+1: 4c+f; 8bg bm; 8af ebm; 2ge;
+2 1: c+a-; 4d+b-; 4g slur; 4c+;
+2 2: 4s; 4s; 2c;
+
+			lyrics 1: 4; 4; 2; "in the height;";
+			lyrics 1: 4; 4; 2; "prom-ise fail;";
+			lyrics 1: 4; 4; 2; "un-to thee;";
+bar
+//5
+1: 4ac; 4d+f; 4c+g; 4ae;
+2: 4af; 4ad; 4ge; 4c+c;
+
+			lyrics 1: "Sun and moon, re-";
+			lyrics 1: "God hath made his";
+			lyrics 1: "Young and old, thy";
+bar
+//6
+1 1: 4.f; [ho-8]8g; 4fc; 4ec;
+1 2: 4d; 4bn-; 4s; 4s;
+2: 4ad; 4gg-; 4gc; 4gc;
+
+			lyrics 1: 4; 4; 4; 4; "joice be-fore him;";
+			lyrics 1: 4; 4; 4; 4; "saints vic-to-rious;";
+			lyrics 1: 4; 4; 4; 4; "praise ex-press-ing";
+bar
+//7
+1: 4dg-; 4cg-; 4fc; 4bf;
+2: 4eb-; 4eb-; 4fa-; 4fd;
+
+			lyrics 1: "Priase him, all ye";
+			lyrics 1: "Sin and death shall";
+			lyrics 1: "In glad hom-age";
+bar
+//8
+1 1: 4af; 4ge; 2f;
+1 2: 4s; 4s; 2f;
+2 1: 4c+c; 8c+ bm; b ebm; 2af;
+2 2: 4s; 4c; 2s;
+
+			lyrics 1: "stars of light.";
+			lyrics 1: "not pre-vail,";
+			lyrics 1: "bend the knee.";
+bar
+//9
+1: 4ge; 4c+g; 4c+g; 4bng;
+2: 4c+c; 4c+e; 4d+g; 4d+g-;
+
+			lyrics 1: "Praise the Lord, for";
+			lyrics 1: "Praise the God of";
+			lyrics 1: "All the saints in";
+bar
+//10
+1: 4af;;; ge;
+2: 4c+a-; d+b-n; c+c;;
+
+			lyrics 1: "he hath spo-ken;";
+			lyrics 1: "our sal-va-tion;";
+			lyrics 1: "heav'n a-dore thee;";
+bar
+//11
+1 1: 4g; 4e+g; 4d+f; 4ad;
+1 2: 4g; 4s; 4s; 4s;
+2: 4c+e; 4bc; 4af; 4af;
+
+			lyrics 1: "Worlds his might-y";
+			lyrics 1: "Hosts on high his";
+			lyrics 1: "We would bow be-";
+bar
+//12
+1: 4c+e; 4bnf; 2c+e;
+2 1: 4g; 4d+g; 2c+c;
+2 2: 4g; 4s; 2s;
+
+			lyrics 1: "voice o-beyed;";
+			lyrics 1: "power pro-claimed;";
+			lyrics 1: "fore thy throne:";
+bar
+//13
+1: 4e+g; 4c+e; 4f+f; 4c+f;
+2 1: 4c+; 4c+; 4c+a; 4af;
+2 2: 4c+; 4b; 4s; 4s; 
+
+			lyrics 1: "Laws which nev-er";
+			lyrics 1: "Heav'n and earth, and";
+			lyrics 1: "As thine an-gels";
+bar
+//14
+1 1: 4.b; [ho-10]8c+; 4bf; 4af;
+1 2: 4f; 4g; 4s; 4s;
+2: 4d+d; 4c+e; 4c+f; 4c+f;
+
+			lyrics 1: 4; 4; 4; 4; "shall be bro-ken";
+			lyrics 1: 4; 4; 4; 4; "all cre-a-tion,";
+			lyrics 1: 4; 4; 4; 4; "serve be-fore thee,";
+bar
+//15
+1: 4d+f; 4c+f#; 4bg; 4afn;
+2: 4bb-; 4ad; 4bg-; 4c+a-;
+
+			lyrics 1: "For their guid-ance";
+			lyrics 1: "Laud and mag-ni-";
+			lyrics 1: "So on earth thy";
+bar
+//16
+1 1: 4g; 4ge; 2f;
+1 2: 4f; 4s; 2f;
+2 1: 4d+b-; 8c+ bm; 8b ebm; 2af;
+2 2: 4s; 4c; 2s;
+
+			lyrics 1: "he hath made.";
+			lyrics 1: "fy his name.";
+			lyrics 1: "will be done.";
+endbar
+//17
+1: 2bf; 2af;
+2: 2d+b-; 2c+f;
+
+			lyrics 1: 2; 2; "<> <>";		
+			lyrics 1: 2; 2; "<> <>";
+			lyrics 1: "A-MEN.";
+endbar

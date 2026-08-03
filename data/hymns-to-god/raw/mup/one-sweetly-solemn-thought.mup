@@ -1,0 +1,229 @@
+// Coded with Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Jasper and Gold:
+//		A Choice Collection of Song-Gems
+//		For Sunday Schools, Social Meetings
+//		And Times of Refreshing.
+//		by T. C. O'Kane
+//		Cincinnati: Hitchcock & Walden
+//		New York: Nelson & Phillips
+//		Copyright 1877		
+//		Hymn no. 113
+
+// Transcribed by: Ted Gatza, Jr. 02/20/2011; Rev. 11/06/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "One Sweetly Solemn Thought" ""
+   title (2)""
+   title (11) "E \(flat)- 3 - MI" "\s(17)\f(TI)\:but\ exhorting\ one\ anothe\|r;\ and\ so\ much\ the\ more, as\ ye\ see\ the\ day\ draw\|ing\ nigh.\ -\ Heb.\ 10:25" ""
+   title (13) "Phoebe Carey" "" "T. C. O'Kane"
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 2s; 8ge bm; 8af ebm;
+2: 2s; 4be;
+
+			lyrics 1: 2s; 4; "<1. >-1|One";
+			lyrics 1: 2s; 4; "<2. >-1|Near-";
+			lyrics 1: 2s; 4; "<3. >-1|Near-";
+bar
+//2
+1: 8.bg; 16bf; 4be; 4ge;
+2: 8.e+e; 16d+f; 4e+g; 4be;
+
+			lyrics 1: "sweet-ly sol-emn";
+			lyrics 1: "er my Fa-ther's";
+			lyrics 1: "er the bound where";
+bar
+//3
+1: 2fd; 8fd bm; 8ge ebm;
+2: 2bb-; 4bb-;
+
+			lyrics 1: 2; 4; "thought Comes";
+			lyrics 1: 2; 4; "house, Where";
+			lyrics 1: 2; 4; "we Will";
+bar
+//4
+1: 8.af; 16ge; 4fd; 4bd;
+2: 8.bb-; 16bb-; 4bb-; 4bb-;
+
+			lyrics 1: "to me o'er and";
+			lyrics 1: "man-y man-sions";
+			lyrics 1: "lay our bur-dens";
+bar
+//5
+1: 2ge; 8ge bm; 8af ebm;
+2: 2be; 4be;
+
+			lyrics 1: 2; 4; "o'er, I'm";
+			lyrics 1: 2; 4; "be, Near-";
+			lyrics 1: 2; 4; "down; Near-";
+bar
+//6
+1: 8.bg; 16bg; 4bg; 4bng;
+2: 8.e+e; 16e+e; 4be; 4d+d;
+
+			lyrics 1: "near-er home to-";
+			lyrics 1: "er the great white";
+			lyrics 1: "er to leave the";
+bar
+//7
+1: 2c+g; 4c+a;
+2: 2e+c; 4e+a-;
+			lyrics 1: "day, Than";
+			lyrics 1: "throne, Near-";
+			lyrics 1: "cross, Near-";
+bar
+//8
+1 1: 8.bg; 16c+a; 4bg; 8s; 8s;
+1 2: 8.s; 16s; 4s; 4s;
+2 1: 8.e+b-; 16e+b-; 4bb-; 4s;
+
+			lyrics 1: 8.; 16; 4; 4s; "e'er I've been";
+			lyrics 1: 8.; 16; 4; 4s; "er the crys-";
+			lyrics 1: 8.; 16; 4; 4s; "er to wear";
+invisbar
+newscore
+
+1 1: 8.s; 16s; 4s; 8f bm; 8g ebm;
+1 2: 8.s; 16s; 4s; 4d;
+2 1: 8.s; 16s; 4s; 4bb-;
+
+			lyrics 1: 8.s; 16s; 4s; 4; "be-";
+			lyrics 1: 8.s; 16s; 4s; 4; "tal";
+			lyrics 1: 8.s; 16s; 4s; 4; "the";
+
+bar
+//9
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2ge; 4s;
+
+			lyrics 1: "fore.";
+			lyrics 1: "sea.";
+			lyrics 1: "crown.";
+dblbar hidechanges
+score time=4/4
+music
+
+//10
+repeatstart
+1: 4ge; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "I'm";
+			lyrics 1: "I'm";
+			
+bar
+//11
+1: 8.c+a; 16c+a; 2c+a; 4af;
+2: 4r; 8.e+a; 16e+a; 4e+a; 4r;
+
+			lyrics 1: "near-er home, I'm";
+			lyrics 1: "near-er home, I'm";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "near-er home,";
+bar
+//12
+1: 8.bg; 16bg; 2s; 4s;
+2: 4r; 8.s; 16s; 4s; 4s;
+
+			lyrics 1: "near-er";
+			lyrics 1: "near-er";
+invisbar
+newscore
+1: 8.s; 16s; 2be; 4s;
+2: 4s; 8.bg; 16af; 4ge; 4s;
+
+			lyrics 1: "home,";
+			lyrics 1: "home,";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "near-er home,";
+invisbar ending "1"
+
+1: 8.s; 16s; 2s; 4ge;
+2: 4s; 8.s; 16s; 4s; 4be;
+
+			lyrics 1: "Yes";
+
+bar
+//13
+1 1: 8.ge; 16fd; 8.e; 16fd; 4ge; 4anf;
+1 2: 8.s; 16s; 8.e; 16s; 4s; 4s;
+2: 8.be; 16bb-; 8.bg-; 16bb-; 4be; 4e+c;
+
+			lyrics 1: "near-er to the \"shin-ing";
+bar
+//14
+1: 2.bf; 4s;
+2: 2.d+b-; 4s;
+
+			lyrics 1: "shore.\"";
+repeatend ending "2"
+newscore
+//15
+1: 4ge; 2.s;
+2: 4be; 2.s;
+
+			lyrics 1: "Than";
+bar
+//16
+1 1: 8.af; 16ge; 8af; 8c+a; 8c+a bm; 8bg ebm; 8f bm; 8g ebm;
+1 2: 8.s; 16s; 8s; 8s; 8s; 8s; 4d;
+2: 8.c+a-; 16c+a-; 8c+a-; 8c+a-; 4e+b-; 4bb-;
+
+			lyrics 1: 8.; 16; 8; 8; 4; 4; "ev-er I have been be-";
+bar
+//17
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			lyrics 1: "fore.";
+endbar

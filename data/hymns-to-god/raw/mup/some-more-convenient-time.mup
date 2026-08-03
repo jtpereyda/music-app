@@ -1,0 +1,238 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Always Welcome
+//		A Choice Collection Of
+//		Song Gems
+//		For the Sunday School, Prayer and Praise
+//		Meetings and the Home Circle,
+//		By Frank M. Davis
+//		Cleveland, Ohio:
+//		Published by J. B, Clark 136 Bank Street
+//		Copyright 1879
+//		Hymn No. 51
+//		
+// Transcribed by: Ted Gatza, Jr. 06/04/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Some More Convenient Time" ""
+   title (2)""
+   title (11)"" "\f(TI)Today if ye will hear his voice - Ps. 95:7" ""
+   title (11) "G - 2 - MI" "" ""
+   title (13) "Eliza Sherrman" "" "Frank M. Davis"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffsep = 23
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .710 //.750
+	lyricssize=13
+	lyricsdist = 1
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=95";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1 1: 4.db; 4b-g; 8d;
+1 2: 4.s; 4s; 8d;
+2 1: 4. g; 4; 8b-g;
+2 2: 4.g; 4; 8s; 
+
+	VS "<1. >-1|Some more con-";
+	VS "<2. >-1|Some more con-";
+	VS "<3. >-1|Come to the";
+bar
+//2
+1: 4ce; 8eg; 4.;
+2: 4cg; 8cc+; 4.;
+
+	VS "ven-ient time,";
+	VS "ven-ient day!";
+	VS "Sa-vior now,";
+bar
+//3
+1 1: 4.d; 4dg; 8fa;
+1 2: 4.d; 4s; 8;
+2: 4.g-b; 4b-d+; 8;
+
+	VS "Oh! not to-";
+	VS "Sin-ner come";
+	VS "No more de-";
+bar
+//4
+1: 4.gb tie; 4gb; 8r;
+2: 4.gd+ tie; 4gd+; 8r;
+
+	VS "day;";
+	VS "now;";
+	VS "lay;";
+bar
+//5
+1 1: 4.db; 4b-g; 8d;
+1 2: 4.s; 4; 8d;
+2 1: 4.g; 4; 8b-g;
+2 2: 4.g; 4; 8s;
+
+	VS "Dark seems the";
+	VS "Low at the";
+	VS "Je-sus is";
+bar
+//6
+1: 4ce; 8eg; 4.;
+2: 4cg; 8cc+; 4.;
+
+	VS "Christ-ian's Life,";
+	VS "feet of Christ,";
+	VS "pass-ing by,";
+bar
+//7
+1 1: 4d slur; 8g; 4dg; 8df;
+1 2: 4d; 8s; 4s; 8s;
+2: 4.db; 4; 8da;
+
+	VS "Long is the";
+	VS "Prayer-ful-ly";
+	VS "Yield thee to-";
+bar
+//8
+1: 4.dg tie; 4dg; 8r;
+2: 4.gb tie; 4gb; 8r;
+
+	VS "way;";
+	VS "bow;";
+	VS "day;";
+dblbar
+//10
+1 1: 4.fa; 4g; 8fa;
+1 2: 4.s; 4g; 8s;
+2: 4.dd+; 4b-d+; 8dd+;
+
+	VS "Some more con-";
+	VS "Some more con-";
+	VS "Je-sus is";
+bar
+//11
+1: 4gb; 8gc+#; 4.fd+;
+2: 4gd+; 8ea; 4.da;
+
+	VS "ven-ient time,";
+	VS "ven-ient time!";
+	VS "call-ing now,";
+bar
+//12
+1: 4.fa; 4c#e; 8cg;
+2 1: 4.a; 4a-a; 8;
+2 2: 4.a; 4s; 8s;
+
+	VS "When I'm more";
+	VS "No lon-ger";
+	VS "No Lon-ger";
+bar
+//13
+1: 4.df tie; 4df; 8r;
+2: 4.da tie; 4da; 8r;
+
+	VS "free";
+	VS "roam,";
+	VS "roam,";
+bar
+//14
+1 1: 4.db; 4b-g; 8d;
+1 2: 4.s; 4s; 8d;
+2 1: 4.g; 4; 8b-g;
+2 2: 4.g; 4; 8s;
+
+	VS "From all these";
+	VS "While it is";
+	VS "A more con-";
+bar
+//15
+1: 4ce; 8eg; 4.;
+2: 4cg; 8cc+; 4.;
+
+	VS "lit-tle cares,";
+	VS "called to-day,";
+	VS "ven-ient time";
+bar
+//16
+1 1: 4d slur; 8g; 4dg; 8df;
+1 2: 4d; 8s; 4s; 8s;
+2: 4.db; 4; 8da;
+
+	VS "I'll come to";
+	VS "Sin-ner come";
+	VS "Will nev-er";
+bar
+//17
+1: 4.dg tie; 4dg; 8r;
+2: 4.gb tie; 4gb; 8r;
+
+	VS "thee.";
+	VS "home.";
+	VS "come.";
+endbar
+
+
+

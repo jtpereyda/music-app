@@ -1,0 +1,338 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Hymns of Praise
+//	For the Church and Sunday School
+//	Compiled by F. G. Kingsbury
+//	Hop Publishing Company
+//	Chicago
+//	Copyright 1922
+//	Hymn No. 4
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/23/2023
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "Where The Gates Swing Outward Never" ""
+   title (2)""
+   title (11)"" "\f(TI)And the gates thereof shall in no wise be shut by day" ""
+   title (11)"" "\f(TI)(for there shall be no night there) - Rev. 21:25" ""
+
+
+   title (11) "A\(flat) - 4 - SOL" "" ""
+   title (13) "Charles H. Gabriel" "" "Charles H. Gabriel, 1920"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+   
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=100";
+
+//=========================
+
+//Verse 1
+
+//1
+1: 2.s; 8.ce; 16;
+2: 2.s; 8.a-a; 16;
+
+	VS "<1. >-1|Just a";
+	VS "<2. >-1|Just a";
+	VS "<3. >-1|Tho' the";
+	VS "<4. >-1|What a";
+bar
+
+//2
+1: 4ca; ; ; 8.; 16db;
+2: 4a-e; ; ; 8.; 16;
+
+	VS "few more days to be";
+	VS "few more years with their";
+	VS "hills be steep and the";
+	VS "joy 'twill be when I";
+bar
+
+//3
+1: 4ec+; ; ; 8.s; 16s;
+2: 4a-a; ; ; 8.s; 16s;
+
+	VS "filled with praise,";
+	VS "toil and tears,";
+	VS "val-leys deep,";
+	VS "wake to see";
+invisbar
+newscore
+1: 2.s; 8.ec+; 16enb;
+2: 2.s; 8.a-a; 16ca;
+
+	VS "And to";
+	VS "And the";
+	VS "With no";
+	VS "Him for";
+bar
+
+//4
+1: 4.fa; 8fb; 4fa; df;
+2: 4.dd+; 8; 4; da;
+
+	VS "tell the old, old";
+	VS "jour-ney will be";
+	VS "flow'rs my way a-";
+	VS "whom my heart is";
+bar
+
+//5
+1: 4df; 2ce; 4s;
+2: 4a-a; 2; 4s;
+
+	VS "sto-ry;";
+	VS "end-ed;";
+	VS "dorn-ing;";
+	VS "burn-ing!";
+invisbar
+newscore
+1: 2.s; 8.ca; 16ea;
+2: 2.s; 8.a-a; 16ca;
+
+	VS "Then, when";
+	VS "Then I'll";
+	VS "Tho' the";
+	VS "Nev-er-";
+bar
+
+//6
+1: 4eg; db; ; 8.; 16;
+2: 4eb; eg; ; 8.; 16;
+
+	VS "twi-light falls, and my";
+	VS "be with Him, where the";
+	VS "night be lone and my";
+	VS "more to sigh, nev-er-";
+bar
+
+//7
+1: 4ca; ec+; ; 4s;
+2 1: 4a; ; ; 4s;
+2 2: 4a; ; ; 4s;
+
+	VS "Sav-ior calls,";
+	VS "tide of time";
+	VS "rest a stone,";
+	VS "more to die\(emdash)";
+invisbar
+newscore
+1: 2.s; 8.ec+; 16;
+2: 2.s; 8.a-a; 16;
+
+	VS "I shall";
+	VS "With e-";
+	VS "Joy a-";
+	VS "For that";
+bar
+
+//8
+1: 4dnb; ; dc+; adn+;
+2: 4b-a; ; b-f; b-b;
+
+	VS "go to Him in";
+	VS "ter-ni-ty is";
+	VS "waits me in the";
+	VS "day my heart is";
+bar
+
+//9
+1: 2ge+; 4; 4s;
+2: 2eb; 4; 4s;
+
+	VS "glo-ry.";
+	VS "blend-ed.";
+	VS "morn-ing.";
+	VS "yearn-ing.";
+dblbar
+newscore
+//10
+CHORUS
+1: 2.s; 8.ge+; 16 fd+;
+2: 2.s; 8.eb; 16eg;
+
+	VS "I'll ex-";
+bar
+
+//11
+1: 4ec+; ; ; 8.; 16enb;
+2: 4a-a; ; ; 8.; 16ca;
+
+	VS "change my cross for a";
+bar
+
+//12
+1: 4fa; 4; 4; 4s;
+2: 4dd+; 4; 4; 4s;
+
+	VS "star-ry crown,";
+invisbar
+newscore
+1: 2.s; 8.eg; 16df;
+2: 2.s; 8.dd+; 16da;
+
+	VS "Where the";
+bar
+
+//13
+1: 4ce; ; ea; ec+;
+2: 4a-a; ; ca; a-a;
+
+	VS "gates swing out-ward";
+bar
+
+//14
+1: 4ec+; 2eb; 4s;
+2: 4ea; 2eg; 4s;
+
+	VS "nev-er;";
+invisbar
+newscore
+1: 2.s; 8.ge+; 16fd+;
+2: 2.s; 8.eb; 16eg;
+
+	VS "At His";
+bar
+
+//15
+1: 4ec+; ; ; 8.; 16enb;
+2: 4a-a; ; ; 8.; 16ca;
+
+	VS "feet I'll lay ev-'ry";
+bar
+
+//16
+1: 4fa; 4; 4; 4s;
+2: 4dd+; 4; 4; 4s;
+
+	VS "bur-den down,";
+invisbar
+newscore
+1: 2.s; 8.eg; 16df;
+2: 2.s; 8.dd+; 16da;
+
+	VS "And with";
+bar
+
+//17
+1: 4ce; ; ea; ec+;
+2: 4ea; ; ec+; ea;
+
+	VS "Je-sus reign for-";
+bar
+
+//18
+1: 2db; 4ca; 4s;
+2: 2eg; 4a-ea; 4s;
+
+	VS "ev-er.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

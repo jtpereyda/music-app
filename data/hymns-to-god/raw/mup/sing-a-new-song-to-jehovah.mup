@@ -1,0 +1,222 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Psalter 
+//		With Responsive Readings
+//		The United Presbyterian Board of Publication
+//		Pittsburgh,PA
+//		Copyright, 1912
+//		Hymn No. 261
+
+// Transcribed by: Ted Gatza, Jr. 03/20/2010; Rev. 04/24/2014
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "Sing A New Song To Jehovah" ""
+   title (2)""
+title (11) "F - 4 - DO" "\s(18)\f(TI)\:Sing\ to\ the\ Lord\ a\ \|new\ song,\ for\ He\ has done\ marvelous\|\ things.\ -\ Ps.\ 98:1"""
+   title (13) "Unknown" " " "Franz Joseph Haydn, 1797"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 4.fc; 8gc; 4af; 4ge;
+2: 4.af; 8bf; 4c+f; 4c+c;
+
+
+			lyrics 1: "<1. >-1|Sing a new song";
+			lyrics 1: "<2. >-1|Truth and mer-cy";
+			lyrics 1: "<3. >-1|Seas with all your";
+bar
+//2
+1 1: 4bc; 4ac; 8g<e> bm; 8e ebm; 4fc;
+1 2: 4s; 4s; 4c; 4s;
+2: 4ge; 4af; 4bc; 4af;
+
+			lyrics 1: 4; 4; 4; 4; "to Je-ho-vah,";
+			lyrics 1: 4; 4; 4; 4; "toward His peo-ple";
+			lyrics 1: 4; 4; 4; 4; "ful-ness, thun-der,";
+bar
+//3
+1: 4d+f; 4c+f; 4bg; 4af;
+2 1: 4b; 4c+a; 4c+e; 4c+f;
+2 2: 4b; 4s; 4s; 4s; 
+
+			lyrics 1: "For the won-ders";
+			lyrics 1: "He hath ev-er";
+			lyrics 1: "All earth's peo-ples,";
+bar
+//4
+1 1: 4gd; 8s; 8s; 2s;
+1 2: 4s; 4s; 2s;
+2: 4d+b-; 4s; 2s;
+
+			lyrics 1: "He";
+			lyrics 1: "kept";
+			lyrics 1: "now";
+
+invisbar
+newscore
+
+1 1: 4s; 8a<f> bm; 8f ebm; 2c+e;
+1 2: 4s; 4f; 2s;
+2: 4s; 4d+b-n; 2c+c;
+
+			lyrics 1: 4s; 4; 2; "has wrought,";
+			lyrics 1: 4s; 4; 2; "in mind,";
+			lyrics 1: 4s; 4; 2; "re-joice,";
+
+bar
+//5
+1: 4.fc; 8gc; 4af; 4ge;
+2: 4.af; 8bf; 4c+f; 4c+c;
+
+			lyrics 1: "His right hand and";
+			lyrics 1: "And His full and";
+			lyrics 1: "Floods and hills, in";
+bar
+//6
+1 1: 4bc; 4ac; 8g<e> bm; 8e ebm; 4fc;
+1 2: 4s; 4s; 4c; 4s;
+2: 4ge; 4af; 4bc; 4af;
+
+			lyrics 1: 4; 4; 4; 4; "arm most ho-ly";
+			lyrics 1: 4; 4; 4; 4; "free sal-va-tion";
+			lyrics 1: 4; 4; 4; 4; "praise u-nit-ing";
+bar
+//7
+1: 4d+f; 4c+f; 4bg; 4af;
+2 1: 4b; 4c+a; 4c+e; 4c+f;
+2 2: 4b; 4s; 4s; 4s;
+
+			lyrics 1: "Tri-umph to His";
+			lyrics 1: "He has shown to";
+			lyrics 1: "To the Lord lift";
+bar
+//7
+1 1: 4gd; 8a<f> bm; 8f ebm; 2c+e;
+1 2: 4s; 4f; 2s;
+2: 4d+b-; 4d+b-n; 2c+c;
+
+			lyrics 1: 4; 4; 2; "cause have brought.";
+			lyrics 1: 4; 4; 2; "all man-kind.";
+			lyrics 1: 4; 4; 2; "up your voice.";
+bar
+//8
+1 1: 4gc; 4ac; 8g<e> bm; 8e ebm; 4c;
+1 2: 4s; 4s; 4c; 4c;
+2 1: 4ec; 4fc; 8e<g> bm; 8g ebm; 8b<a> bm; 8a ebm;
+2 2: 4s; 4s; 4c; 4c; 
+
+			lyrics 1: 4; 4; 4; 4; "In His love and";
+			lyrics 1: 4; 4; 4; 4; "Sing, O earth sing";
+			lyrics 1: 4; 4; 4; 4; "For, be-hold, Je-";
+bar
+//9
+1 1: 4b; 4fa; 8g<e>e<c> bm; 8ec ebm; 4c;
+1 2: 8d<e> bm; 8e ebm; 4s; 8s; 8s; 4c;
+2 1: 4gc; 8f<a> bm; 8a ebm; 8c+<a> bm; 8a ebm; 4e;
+2 2: 4s; 4c; 4c; 8c<b-> bm; 8b- ebm;
+
+			lyrics 1: "ten-der mer-cy";
+			lyrics 1: "to Je-ho-vah";
+			lyrics 1: "ho-vah com-eth";
+bar
+//10
+1 1: 4c+c; 4b; 4.af; 8af;
+1 2: 4s; 8d<e> bm; 8e ebm; 4.s; 8s;
+2 1: 4aa-; 4g; 4.fd; 8d+d;
+2 2: 4s; 8b-<c> bm; 8c ebm; 4.s; 8s;
+
+			lyrics 1: "He has made sal-";
+			lyrics 1: "Prais-es to Je-";
+			lyrics 1: "Robed in jus-tice";
+bar
+//11
+1: 4.bnf; 8bf; 2c+e;
+2: 4.d+g; 8d+g; 2c+c;
+
+			lyrics 1: "va-tion known,";
+			lyrics 1: "ho-vah sing;";
+			lyrics 1: "and in might;";
+bar
+//12
+1: 4.f+f; 8e+f; 4d+f; 4c+f;
+2 1: 4.c+a; 8c+a; 4b; 4af;
+2 2: 4.s; 8s; 4b; 4s;
+
+			lyrics 1: "In the sight of";
+			lyrics 1: "With the swell-ing";
+			lyrics 1: "He a-lone will";
+bar
+newscore
+//13
+1 1: 4.d+f; 8c+f; 8c+<b> bm; 8b ebm; 4af;
+1 2: 4.s; 8s; 4e; 4s;
+2 1: 4.b; 8c+a; 4c+g; 4c+f;
+2 2: 4.b; 8s; 4s; 4s; 
+
+			lyrics 1: 4.; 8; 4; 4; "ev-ery na-tion";
+			lyrics 1: 4.; 8; 4; 4; "notes of mu-sic";
+			lyrics 1: 4.; 8; 4; 4; "judge the na-tions";
+bar
+//14
+1 1: 4ge; 8a<b> bm; 8b ebm; 8c+<d+> bm; 8d+ ebm; 8b<g> bm; 8g ebm;
+1 2: 4s; 4e; 4f; 4d;
+2 1: 4c+c; 4c+b-; 8c+<f> bm; 8f ebm; 8d+<b> bm; 8b ebm;
+2 2: 4s; 4s; 4a-; 4b-;
+
+			lyrics 1: 4; 4; 4; 4; "He His right-eous-";
+			lyrics 1: 4; 4; 4; 4; "Shout be-fore the";
+			lyrics 1: 4; 4; 4; 4; "And His judg-ment";
+bar
+//15
+1 1: 4fc; 8a<g> bm; 8g ebm; 2f;
+1 2: 4s; 4e; 2f;
+2: 4ac; 4bc; 2af;
+
+			lyrics 1: 4; 4; 2; "ness has shown.";
+			lyrics 1: 4; 4; 2; "Lord, the King.";
+			lyrics 1: 4; 4; 2; "shall be right.";
+endbar

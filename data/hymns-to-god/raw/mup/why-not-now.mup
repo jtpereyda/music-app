@@ -1,0 +1,390 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Gospel Hymns Nos. 5 and 6 Combined
+//		For use in gospel meetings and other religious services
+//		By Ira D. Sankey, James Mc Granahanand George C. Stebbins
+//		Publishers: 
+//		The Biglow and Main Co.
+//		76 East Ninth Street, NewYork
+//		215 Wabash Avenue, Chicago
+//		The John Church Co.
+//		74 West Fourth St. Cincinnati
+//		13 East 16th Streetm, New York
+//		Copyright: Pre 1892
+//		Hymn No.: 252
+
+// Transcribed by: Ted Gatza, Jr. 08/25/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=15
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+
+staffs=2
+	time=9/8
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Why Not Now?" ""
+   title (2) ""
+   title (11) "" "\f(TI)Behold, now is the accepted time. - 2 Cor. 6:2" ""
+   title (11) "" 
+   title (11) "D - 3 - SOL" "" ""
+   title (13) "El Nathan (Daniel  Webster Whittle), 1891" "" "Charles Clinton Case, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=115";
+
+//=========================
+
+// Verse
+
+//1
+1: 4.s; ; 4fa; 8fd+;
+2: 4.s; ; 4da; 8;
+
+	VS "<1. >-1|While we";
+	VS "<2. >-1|You have";
+	VS "<3. >-1|Come to";
+
+bar
+
+//2
+1: 4.gc+; ce; 4ec+; 8gb;
+2: 4.a-a; ; 4; 8a-c+;
+
+	VS "pray, and while we";
+	VS "wan-dered for a-";
+	VS "Christ, con-fes-sion";
+bar
+
+//3a
+1: 4.fa slur; df; 4s; 8;
+2: 4.d~d+<a>; da; 4s; 8;
+
+	VS "plead;";
+	VS "way;";
+	VS "make;";
+invisbar
+
+//3b
+1: 4.s; ; 4db; 8da;
+2 1: 4.s; ; 4g; 8fa;
+2 2: 4.s; ; 4g; 8s;
+
+	VS "While you";
+	VS "Do not";
+	VS "Come to";
+bar
+
+//4
+1: 4.cg; ce; 4fa; 8eg;
+2: 4.ea; a-a; 4; 8;
+
+	VS "see your soul's deep";
+	VS "risk an-oth-er";
+	VS "Christ, and par-don";
+bar
+
+//5a
+1: 4.df tie; ; 4s; 8;
+2: 4.da tie; ;4s; 8;
+
+	VS "need,";
+	VS "day,";
+	VS "take;";
+invisbar
+
+//5b
+1: 4.s; ; 4fa; 8fd+;
+2: 4.s; ; 4da; 8;
+
+	VS "While your";
+	VS "Do not";
+	VS "Trust in";
+bar
+
+//6
+1: 4.gc+; ce; 4ec+; 8gb;
+2: 4.a-a; ; 4; 8a-c+;
+
+	VS "Fa-ther calls you";
+	VS "turn from God your";
+	VS "Him from day to";
+bar
+
+//7a:
+1: 4.fa slur; df; 4s; 8;
+2: 4.d~d+<a>; da; 4s; 8;
+
+	VS "home,";
+	VS "face,";
+	VS "day,";
+invisbar
+
+//7b
+1: 4.s; ; 4gb; 8fa;
+2: 4.s; ; 4da; 8;
+
+	VS "Will you";
+	VS "But to-";
+	VS "He will";
+bar
+
+//8
+1: 4eg; 8df; 4.eg; ce;
+2: 4a-a; 8; 4.; 4.a-g;
+
+	VS "not, dear sin-ner,";
+	VS "day ac-cept His";
+	VS "keep you all the";
+bar
+
+//9
+1 1: 4.d tie; ; 4s; 8;
+1 2: 4.d tie; ; 4s; 8;
+2: 4.df tie;  ; 4s; 8;
+
+	VS "come?";
+	VS "grace.";
+	VS "way.";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 4.s; ; 4fd+; 8ac+;
+2: 4.s; ; 4.r;
+
+	VS "Why not";
+bar
+
+//11
+1: 4.gb tie; ; 4ac+; 8gb;
+2: 4gd+; 8; 4.; r;
+
+	VS "now?_ why not";
+	VS21 "Why not now?";
+bar
+
+//12a
+1: 4.fa tie; ; 4s; 8; 
+2: 4dd+; 8; 4.; 4s; 8; 
+
+	VS "now?_";
+	VS21 "why not now?";
+invisbar
+
+//12b
+1:  4.s; ; 4gb; 8fa;
+2:  4s; 8; 4.; 4dd+; 8da;
+
+	VS "Why not";
+bar
+
+//13
+1: 4eg; 8df; 4.eg; 4.fa;
+2: 4a-a; 8; 4.; ;
+
+	VS "come to Je-sus";
+bar
+
+//14a
+1: 4.df tie; ; 4s; 8;
+2: 4.da tie; ; 4s; 8;
+
+	VS "now?";
+invisbar
+
+//14b
+1: 4.s; ; 4fd+; 8ac+;
+2: 4.s; ; 4.r;
+
+	VS "Why not";
+bar
+
+//15
+1: 4.gb tie; ; 4ac+; 8gb;
+2: 4gd+; 8; 4.; r;
+
+	VS "now?_ why not";
+	VS21 "Why not now?";
+bar
+
+//16a
+1: 4.fa tie; ; 4s; 8;
+2: 4dd+; 8; 4.; 4s; 8;
+
+	VS "now?_";
+	VS21 "why not now?";
+invisbar
+
+//16b
+1: 4.s; ; 4gb; 8fa;
+2: 4s; 8; 4.; 4dd+; 8da;
+
+	VS "Why not";
+bar
+
+//17
+1: 4eg; 8df; 4.eg; ce;
+2: 4a-a; 8; 4.; a-g;
+
+	VS "come to Je-sus";
+bar
+
+//18
+1 1: 4.d tie; ; 4s; 8;
+1 2: 4.d tie; ; 4s; 8;
+2: 4.df tie; ; 4s; 8;
+
+	VS "now?";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

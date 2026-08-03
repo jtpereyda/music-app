@@ -1,0 +1,258 @@
+// Coded with Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns New and Old
+//		For use in Gospel Meetings 
+//		and other Religious Services
+//		by D. B. Towner
+//		Published by Fleming H. Revell,
+//		Chicago, 148 and 150 Madison Street
+//		New York, 12 Bible House
+//		Copyright 1887
+//		Hymn no. 122
+
+// Transcribed by: Ted Gatza, Jr. 09/20/2010; Rev. 04/10/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The New Song" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:Jehovah\ is\ my\ streng\|th\ and\ song,\ And\ he is\ become\ my\ salv\|ation:\ -\ Ex.\ 15:2"""
+   title (13) "John H. Sammis" " " "Daniel B. Towner,1887"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key= 3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 2.s; 8eb-; 8fb-;
+2: 2.s; 8ge; 8ae;
+
+			lyrics 1: "<1. >-1|Who is";
+			lyrics 1: "<2. >-1|Tho' a";
+			lyrics 1: "<3. >-1|Then we'll";
+			lyrics 1: "<4. >-1|With ten-";
+bar
+//2
+1: 8.ge; 16ge; 8ge; 8ge; 8ge; 8fb-; 8eb-; 8ge;
+2: 8.be; 16be; 8be; 8be; 8be; 8ae; 8ge; 8be;
+
+			lyrics 1: "like un-to Je-ho-vah? Who is";
+			lyrics 1: "host should rise a-gainst us, Our sal-";
+			lyrics 1: "come be-fore His pre-sence With a";
+			lyrics 1: "thou-sand times ten-thou-sand Gath-ered";
+bar
+//3
+1: 8.bg; 16bg; 8bg; 8s; 4s; 8s; 8s;
+2: 8.e+e; 16e+e; 8e+e; 8s; 4s; 8s; 8s;
+
+			lyrics 1: "like un-to";
+			lyrics 1: "va-tion to";
+			lyrics 1: "glad and hap-";
+			lyrics 1: "round a-bout";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; 8ge; 4bg; 8bg; 8bg;
+2: 8.s; 16s; 8s; 8be; 4e+e; 8e+e; 8e+e;
+
+			lyrics 1: "our God, Strong and";
+			lyrics 1: "op-pose, Tho' the";
+			lyrics 1: "py song; We will";
+			lyrics 1: "the throne, And the";
+
+bar
+//4
+1: 8.c+a; 16c+a; 8c+a; 8c+a; 8c+a; 8bg; 8bg; 8ge;
+2: 8.e+a; 16e+a; 8e+a; 8e+a; 8e+e; 8e+e; 8e+e; 8be;
+
+			lyrics 1: "migh-ty to de-liv-er, With His";
+			lyrics 1: "wick-ed in high plac-es Be our";
+			lyrics 1: "praise the Great Re-deem-er Un-to";
+			lyrics 1: "voice of man-y an-gels We will";
+bar
+//5
+1: 8.eb-; 16ge; 8bg; 8ge; 4fd; 8eb-; 8fb-;
+2: 8.ge; 16be; 8e+e; 8be; 4bb-; 8ge; 8ae;
+
+			lyrics 1: "won-der-work-ing rod? On-ly";
+			lyrics 1: "strong and bit-ter foes, He will";
+			lyrics 1: "whom we now be-long. He is";
+			lyrics 1: "make His glo-ries known, Prais-ing";
+bar
+//6
+1: 8.ge; 16ge; 8ge; 8ge; 8ge; 8fb-; 8eb-; 8ge;
+2: 8.be; 16be; 8be; 8be; 8be; 8ae; 8ge; 8be;
+
+			lyrics 1: "trust Him and go for-ward, Bold-ly";
+			lyrics 1: "hold them in de-ri-sion, And o'er-";
+			lyrics 1: "wor-thy, He is wor-thy, Who re-";
+			lyrics 1: "God the Lord Al-migh-ty, Prais-ing";
+bar
+//7
+1: 8.bg; 16bg; 8bg; 8ge; 4bg; 8bg; 8bg;
+2: 8.e+e; 16e+e; 8e+e; 8be; 4e+e; 8e+e; 8e+e;
+
+			lyrics 1: "march-ing thro' the sea, He'll re-";
+			lyrics 1: "whelm them in the sea, And He'll";
+			lyrics 1: "deem'd us by His blood, And hath";
+			lyrics 1: "God the Liv-ing Lamb, Prais-ing";
+bar
+//8
+1 1: 8.e+a; 16d+a; 8e+a; 8c+a; 16bg; 8.ge; 8s; 8s;
+1 2: 8.s; 16s; 8s; 8s; 16s; 8.s; 8s; 8s;
+2: 8.c+a-; 16bna-; 8c+a-; 8e+a-; 16e+e; 8.b&e; 8s; 8s;
+
+			lyrics 1: "strain the storm-y bil-lows,";
+			lyrics 1: "gath-er us in glo-ry,";
+			lyrics 1: "made us to His glo-ry,";
+			lyrics 1: "God the Spir-it Ho-ly,";
+invisbar
+newscore
+
+1 1: 8.s; 16s; 8s; 8s; 16s; 8.s; 8e; 8f;
+1 2: 8.s; 16s; 8s; 8s; 16s; 8.s; 8e; 8e;
+2: 8.s; 16s; 8s; 8s; 16s; 8.s; 8bg-; 8c+a-;
+
+			lyrics 1: "He will";
+			lyrics 1: "With a";
+			lyrics 1: "Kings and";
+			lyrics 1: "Ev-er";
+
+bar
+//9
+1 1: 8.ge; 16eb-; 8ge; 8fd; 4e; 4s;
+1 2: 8.s; 16s; 8s; 8s; 4e; 4s;
+2: 8.bb-; 16gb-; 8bb-; 8ab-; 4ge; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "tri-umph glo-rious-ly.";
+			lyrics 1: "migh-ty vic-to-ry.";
+			lyrics 1: "priests un-to our God.";
+			lyrics 1: "Great and Bless-ed Name.";
+dblbar
+//10
+1: 8ge; 8af; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: 8; 8s; 2.s; "<>";
+			lyrics 1: "And we'll";
+bar
+//11
+1: 2bg tie; 8bg; 8s; 4s;
+2: 4r; 8e+e; 8e+e; 8e+e; 8s; 4s;
+
+			lyrics 1: 2; 8s; 8s; 4s; "<>";
+			lyrics 1: "sing_";
+			lyrics 1: 4s; 8; 8; 8; 8s; 4s; "And we'll sing";
+invisbar
+newscore
+
+1: 2s; 8s; 8ge; 4e+g;
+2: 4s; 8s; 8s; 8s; 8be; 4be;
+
+			lyrics 1: 2s; 8s; 8; 4; "the new";
+			lyrics 1: 4s; 8s; 8s; 8s; 8; 4; "the new";
+
+bar
+//12
+1: 2d+f tie; 4d+f; 8fd; 8ge;
+2: 4bb-; 8bb-; 8bb-; 4bb-; 8bb-; 8bb-;
+
+			lyrics 1: "song,_ Glo-ry,";
+			lyrics 1: 4; 8; 8; 4; 8s; 8s; "song, We will sing,";
+bar
+//13
+1: 8.af; 16ge; 8af; 8bg; 8c+a; 8bg; 8af; 8bg;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 4bb-; 4bb-;
+
+			lyrics 1: "glo-ry, hal-le-lu-jah to His";
+			lyrics 1: 8.s; 16s; 8; 8; 4; 4; "hal-le-lu-jah";
+bar
+newscore
+//14
+1: 2ge tie; 4ge; 8ge; 8af;
+2: 4be; 4be; 4be; 4r;
+
+			lyrics 1: "name._ Yes we'll";
+			lyrics 1: 4; 4; 4; 4s; "to His Name";
+bar
+//15
+1: 2bg tie; 8bg; 8ge; 4af;
+2: 4r; 8e+e; 8e+e; 8e+e; 8be; 4be;
+
+			lyrics 1: "sing_ the new";
+			lyrics 1: 4s; 8; 8; 8; 8; 4; "We will sing the new";
+bar
+//16
+1: 2d+f tie; 4d+f; 8s; 8s;
+2: 4bb-; 8bb-; 8bb-; 4bb-; 8s; 8s;
+
+			lyrics 1: "song,_";
+			lyrics 1: 4; 8; 8; 4; 8s; 8s; "song, We will sing,";
+invisbar
+newscore
+
+1: 2s; 4s; 8fd; 8ge;
+2: 4s; 8s; 8s; 4s; 8bb-; 8bb-;
+
+			lyrics 1: "We will";
+bar
+//17
+1: 8.af; 16ge; 8af; 8bg; 8c+a; 8bg; 8.af; 16fd;
+2: 8.bb-; 16bb-; 8bb-; 8bb-; 8bb-; 8bb-; 8.bb-; 16ab-;
+
+			lyrics 1: "sing the song of Mo-ses and the";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 4e; 8c; 8c; 4b-; 4s;
+2 1: 4g; 8a; 8a; 4g; 4s;
+2 2: 2.e; 4s;
+
+			lyrics 1: 2.; 4s; "Lamb.";
+			lyrics 1: 4s; 8; 8; 4; 4s; "and the Lamb";
+endbar

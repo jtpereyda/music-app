@@ -1,0 +1,209 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Glorious Things In Sacred Song
+//		For Sabbath Schools
+//		By T. C. O'Kane,
+//		Perkinpine & Higgins
+//		Sunday School and Theological Book Store
+//		914 Arch St., Philadelphia, Penn.
+//		Copyright 1886
+//		Hymn no. 78
+
+// Transcribed by: Ted Gatza, Jr. 04/01/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Can You Stand For God?" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:Wherefore,\ my\ brethren\ beloved\ \|and\ longed\ for,\ my\ joy\ and\ crown, so\ stand\ fast\ in\ the\ Lor\^d,\ my\ beloved.\ -\ Phil.\ 4:1" ""
+   title (13) "Horace L. Hastings" " " "Frank M. Davis, 1886"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+
+//1
+1 1: 8.d; 16; 2.s;
+1 2: 8.d; 16; 2.s;
+2: 8.bg; 16; 2.s;
+
+			VERSE "<1. >-1|Can you";
+			VERSE "<2. >-1|Can you";	
+			VERSE "<3. >-1|Can you";
+bar
+//2
+1: 4gd;;; 8.; 16af;
+2: 4bg;;; 8.; 16c+g;
+
+			VERSE "stand for God, though you";
+			VERSE "stand for God, when the";
+			VERSE "stand with faith, though the";
+bar
+//3
+1: 4bg;;; 8.bfn; 16;
+2: 4d+g;;; 8.; 16;
+
+			VERSE "stand a-lone, With your";
+			VERSE "heart grows faint, And your";
+			VERSE "time be long, Tho' the";
+bar
+//4
+1: 4c+e;;; 8.ae; 16;
+2: 4c+c;;; 8.gc#; 16;
+
+			VERSE "heart at rest, and your";
+			VERSE "soul looks thro' ma-ny";
+			VERSE "night be dark and the";
+bar
+//5
+1: 4bd; af;; 8.bg; 16c+a;
+2: 4gd; d+d;; 8.d+g; 16;
+
+			VERSE "soul se-cure With the";
+			VERSE "blind-ing tears, Can you";
+			VERSE "day-star dim, Can you";
+bar
+//6
+1: 4d+b;;; 8.bg; 16af;
+2: 4d+g;;; 8.d+d; 16c+d;
+
+			VERSE "rock be-neath and in";
+			VERSE "bear life's sor-rows with";
+			VERSE "stand for truth and in";
+bar
+//7
+1 1: 4g; ge;; 8.ae; 16bg#;
+1 2: 4g; s;; 8.; 16;
+2: 4be;;; 8.c+e; 16d+d;
+
+			VERSE "front the throne, Can you";
+			VERSE "out com-plaint Thro' the";
+			VERSE "Christ be strong, Till you";
+bar
+//8
+1: 4c+a; ae; gd; fd;
+2: 4e+c; c+c; bd; ad;
+
+			VERSE "stand and still en-";
+			VERSE "te-dious toil-some";
+			VERSE "stand com-plete in";
+bar
+//9
+1: 2.gd; 4s;
+2: 2.bg; 4s;
+
+			VERSE "dure?";
+			VERSE "years?";
+			VERSE "him?";
+dblbar
+//10
+1: 8.bg; 16c+g; 2.s;
+2: 8.d+g; 16c+g; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Can you";
+bar
+//11
+1 1: 2.d+; 8.d+g; 16e+g;
+1 2: 4g; 8.f; 16; 4g; 8.s; 16;
+2: 4bg; 8.c+d; 16; 4bg; 8.; 16c+g;
+
+			VERSE "stand, can you";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "can you stand,";
+bar
+//12
+1 1: 2.d+; 8.d+g; 16bg;
+1 2: 4g; 8.f; 16g; 4a; 8.s; 16;
+2: 4bg; 8.ad; 16bd; 4c+d; 8.bg; 16d+g;
+
+			VERSE "stand, Can you";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "can you stand,";
+bar
+//13
+1: 4c+a; bg; c+a; bg;
+2: 4d+d; d+g; d+d; d+g;
+
+			VERSE "stand for Christ a-";
+bar
+//14
+1 1: 2.af; 8.a; 16;
+1 2: 2.s; 8.g; 16;
+2: 2.d+d; 8.e+c; 16;
+
+			VERSE "lone? If we";
+bar
+//15
+1: 4bf; 8.; 16; 4; 8.; 16af;
+2: 4d+#b-; 8.; 16; 4; 8.; 16;
+
+			VERSE "stand in the strife, till the";
+bar
+//16
+1 1: 4g; ge; c+e; 8.a; 16;
+1 2: 4g; s;; 8.g; 16;
+2: 4e+c; c+c;; 8.e+c#; 16;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "end of life, We shall";
+bar
+//17
+1: 4bg; 8.af; 16; 4bg; af;
+2: 4d+d; 8.c+d; 16; 4d+d; c+d;
+
+			VERSE "stand at the heav'n-ly";
+bar
+//18
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bg; 4s;
+
+			VERSE "throne.";
+endbar

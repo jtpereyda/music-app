@@ -1,0 +1,271 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Finest of The Wheat
+//		Hymns New and Old,
+//		for Missionary and Revival meetings
+//		and Sabbath - Schools
+//		Ed. by Geo. D. Elderkin
+//		for C.C. McCabe, Jno. R. Sweney, Wm. J. Kirkpatrick,
+//		The Whyte Brothers of Canadam and F.A. Hardin
+//		seventy-first Edition
+//		Chicage: R.R. McCabe & Co. Publishers
+//		Copyright 1890
+//		Hymn 107
+
+// Transcribed by: Ted Gatza, Jr. 05/03/2010; Rev. 05/08/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sing, O Sing The Love Of Jesus" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - MI" "\s(17)\f(TI)\:Sing\ unto\ him,\ sing\ pr\|aises\ unto\ him;\ Talk\ ye of\ all\ his\ marvellous\ \|works.\ -\ 1\ Chron.\ 16:9"""
+   title (13) "May Clifton" " " "Wm. J. Kirkpatrick, 1885"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key= 3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1: 2s; 8.eb-; 16fb-;
+2: 2s; 8.ge; 16ae;
+
+
+			lyrics 1: 2s; 8.; 16; "<1. >-1|Sing, O";
+			lyrics 1: 2s; 8.; 16; "<2. >-1|Sing, O";
+			lyrics 1: 2s; 8.; 16; "<3. >-1|An-gel";
+			lyrics 1: 2s; 8.; 16; "<4. >-1|Pow'r and";
+			
+bar
+//2
+1 1: 4..ge; 16ge; {8a bm; 8b ebm; 8c+e;}3;
+1 2: 4..s; 16s; {4e; 8s;}3n;
+2: 4..be; 16be; {4c+e; 8ae;}3;
+
+			lyrics 1: 4..; 16; {4; 8;}3; "sing the love of";
+			lyrics 1: 4..; 16; {4; 8;}3; "sing the love of";
+			lyrics 1: 4..; 16; {4; 8;}3; "lips will join our";
+			lyrics 1: 4..; 16; {4; 8;}3; "might and bliss e-";
+bar
+//3
+1: 4be; 4ge; 8.eb-; 16fb-;
+2: 4ge; 4be; 8.ge; 16ae;
+
+			lyrics 1: "Je-sus, Bound-less,";
+			lyrics 1: "Je-sus, Ren-der";
+			lyrics 1: "an-them, Thro' the";
+			lyrics 1: "ter-nal Now and";
+bar
+//4
+1 1: 4..ge; 16ge; {8s; 8s; 8s;}3;
+1 2: 4..s; 16s; {4s; 8s;}3n;
+2: 4..be; 16be; {4s; 8s;}3;
+
+			lyrics 1: 4..; 16; {4s; 8s;}3; "deep un-";
+			lyrics 1: 4..; 16; {4s; 8s;}3; "heart-y";
+			lyrics 1: 4..; 16; {4s; 8s;}3; "sky the";
+			lyrics 1: 4..; 16; {4s; 8s;}3; "ev-er-";
+invisbar
+newscore
+
+1 1: 4..s; 16s; {8b bm; 8a ebm; 8ge;}3;
+1 2: 4..s; 16s; {4f; 8s;}3n;
+2: 4..s; 16s; {4bd; 8be;}3;
+
+			lyrics 1: 4..s; 16s; {4; 8;}3; "measur-ed";
+			lyrics 1: 4..s; 16s; {4; 8;}3; "thanks and";
+			lyrics 1: 4..s; 16s; {4; 8;}3; "sound pro-";
+			lyrics 1: 4..s; 16s; {4; 8;}3; "more shall";
+
+bar
+//5
+1: 2fd; 8.eb-; 16fb-;
+2: 2bb-; 8.ge; 16ae;
+
+			lyrics 1: "love; Let the";
+			lyrics 1: "praise; While he";
+			lyrics 1: "long; Heav'n-ly";
+			lyrics 1: "be Un-to";
+bar
+//6
+1 1: 4..ge; 16ge; {8a bm; 8b ebm; 8c+e;}3;
+1 2: 4..s; 16s; {4e; 8s;}3n;
+2: 4..be; 16be; {4c+e; 8ae;}3;
+
+			lyrics 1: 4..; 16; {4; 8;}3; "soul in-spir-ing";
+			lyrics 1: 4..; 16; {4; 8;}3; "gives us life and";
+			lyrics 1: 4..; 16; {4; 8;}3; "hosts take up the";
+			lyrics 1: 4..; 16; {4; 8;}3; "him who lov'd and";
+bar
+//7
+1: 4be; 4ge; 8.be; 16c+e;
+2: 4ge; 4be; 8.ge; 16ge;
+
+			lyrics 1: "cho-rus Ring thro'";
+			lyrics 1: "be-ing, Praise him";
+			lyrics 1: "cho-rus, And with";
+			lyrics 1: "sav'd us With a";
+bar
+//8
+1: 4..bd; 16fd; 8.ad; 16db-;
+2: 4..fb-; 16bb-; 8.bb-; 16ab-;
+
+			lyrics 1: "all the courts a-";
+			lyrics 1: "on thro' end-less";
+			lyrics 1: "rap-ture swell the";
+			lyrics 1: "love so full and";
+bar
+//9
+1: 2eb-; 4s;
+2: 2ge; 4s;
+
+			lyrics 1: "bove.";
+			lyrics 1: "days.";
+			lyrics 1: "song.";
+			lyrics 1: "free.";
+
+
+// Time change
+
+dblbar hidechanges
+score time=4/4 ; key = 3&
+music
+
+//10
+1: {8bd bm; 8c+e ebm; 8d+f;}3; 2.s;
+2 1: {4b; 8b;}3n; 2.s;
+2 2: {4b; 8b;}3; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: {4; 8;}3; 2.s;"<> <>";
+			lyrics 1: {4; 8;}3; 2.s; "Sing, O";
+bar
+//11
+1: 2e+g tie; 8.e+g; 16bg; {8s; 8s; 8s;} above 3;
+2: 8.be; 16be; 8.be; 16be; 8.be; 16be; {4s; 8s;}3;
+
+			lyrics 1: 2; 8.s; 16s; {8s; 8s; 8s;}3; "<>";
+			lyrics 1: 2; 8.s; 16; {8s; 8s; 8s;}3; "sing_ the";
+			lyrics 1: 8.s; 16; 8.; 16; 8.; 16; {4s; 8s;}3; "the love of Je-sus,";
+invisbar
+newscore
+
+1: 2s; 8.s; 16s; {8e+g bm; 8d+b ebm; 8c+a;} above 3;
+2: 8.s; 16s; 8.s; 16s; 8.s; 16s; {4be; 8e+e;}3;
+
+			lyrics 1: 2s; 8.s; 16s; {8; 8s; 8;}3; "love of";
+			lyrics 1: 8.s; 16s; 8.s; 16s; 8.s; 16s; {4; 8;}3; "Sing O";
+
+bar
+//12
+1: 2bg; 4ge; 8.bg; 16bg;
+2: 8.e+e; 16e+e; 8.e+e; 16e+e; 8.be; 16be; 8.e+e; 16e+e;
+
+			lyrics 1: 2; 4; 8.; 16; "Je-sus, Heav'n and";
+			lyrics 1: 8.; 16; 8.; 16; 8.; 16; 8.s; 16s; "sing the love of Je-sus,";
+
+bar
+//13
+1: 2c+a tie; 8.c+a; 16bg; 8.s; 16s;
+2: 8.e+a; 16e+a; 8.e+a; 16e+a; 4e+a; 8.s; 16s;
+
+			lyrics 1: 2; 8.s; 16; 8.s; 16s; "earth_ re-";
+			lyrics 1: 8.s; 16; 8.; 16; 4; 8.s; 16s; "re-peat the strain,";
+invisbar
+newscore
+
+1: 2s; 8.s; 16s; 8.af; 16ge;
+2: 8.s; 16s; 8.s; 16s; 4s; 8.bd; 16bd;
+
+			lyrics 1: 2s; 8.s; 16s; 8.; 16; "peat the";
+			lyrics 1: 8.s; 16s; 8.s; 16s; 4s; 8.; 16; "Heav'n and";
+
+bar
+//14
+1: 2.fd; {8bd bm; 8c+e ebm; 8d+f;}3;
+2 1: 8.bb-; 16b; 8.b; 16b; [ho .1] 4b; {4bg; 8bf;}3;
+2 2: 8.s; 16b; 8.b; 16b; 8.b bm; 16a ebm; {4s; 8s;}3;
+
+			lyrics 1: 2.; {8; 8s; 8;}3; "strain; Sing, O";
+			lyrics 1: 8.; 16; 8.; 16; 8.; 16s; {4s; 8s;}3; "earth re-peat the strain;";
+bar
+//15
+1: 2e+g tie; 8.e+g; 16bg; {8s; 8s; 8s;} above 3;
+2: 8.be; 16be; 8.be; 16be; 8.be; 16be; {4s; 8s;}3;
+
+			lyrics 1: 2; 8.s; 16; {8s; 8s; 8s;}3; "sing_ till";
+			lyrics 1: 8.s; 16; 8.; 16; 8.; 16; {4s; 8s;}3; "till ev-'ry na-tion,";
+invisbar
+newscore
+
+1: 2s; 8.s; 16s; {8e+g bm; 8d+b ebm; 8c+a;} above 3;
+2: 8.s; 16s; 8.s; 16s; 8.s; 16s; {4be; 8be;}3;
+
+			lyrics 1: 2s; 8.s; 16s; {8; 8s; 8;}3; "ev-'ry";
+			lyrics 1: 8.s; 16s; 8.s; 16s; 8.s; 16s; {4; 8;}3; "Sing, O";
+
+bar
+//16
+1: 2bg; 4ge; 8.bg; 16bg;
+2: 8.e+e; 16e+e; 8.e+e; 16e+e; 8.be; 16be; 8.e+e; 16e+e;
+
+			lyrics 1: "na-tion Ech-oes";
+			lyrics 1: 8.; 16; 8.; 16; 8.; 16; 8.s; 16s; "sing, till ev-'ry na-tion";
+bar
+newscore
+//17
+1: 2c+~a<a>; 8.c+an; 16c+a; 8.d+f; 16d+a&;
+2 1: 8.e+a; 16e+a; 8.e+a; 16e+a; 4f+f; 8.b; 16b;
+2 2: 8.s; 16s; 8.s; 16s; 4s; 8.b; 16b;
+
+			lyrics 1: "on_ the sweet re-";
+			lyrics 1: 8.s; 16; 8.; 16; 4; 8.; 16; "the sweet re-frain, Ech-oes";
+bar
+//18
+1 1: 2.e+; 4s;
+1 2: 8.g; 16g; 8.a; 16a; 4g; 4s;
+2: 8.be; 16be; 8.c+e; 16c+e; 4be; 4s;
+
+			lyrics 1: "frain.";
+			lyrics 1: 8.; 16; 8.; 16; 4; 4s; "on the sweet re-frain.";
+endbar

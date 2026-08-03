@@ -1,0 +1,213 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Jewels
+//		By R. E. Hudson
+//		Cleveland.
+//		Publishing House of the 
+//		Evangelical Association	
+//		Copyright pre.1890
+//		Hymn No.: 29
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 06/28/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "That Beautiful Land" ""
+   title (2)""
+   title (11) "G - 4 - DO" "\s(17)\f(TI)\:In\ my\ Father's\ house\ are\ many\ ma\|nsions;\ if\ it\ were\ not\ so,\ I\ would have\ told\ you;\ for\ I\ go\ to\ prepa\|re\ a\ place\ for\ you.\ -\ Jn.\ 14:2" ""
+   title (13) "H. E. Engle" " " "H. E. Engle, 1883" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8.gd; 16ad;
+2: 2.s; 8.bg; 16c+g;
+
+			VERSE "<1. >-1|There's a";
+			VERSE "<2. >-1|I have";
+			VERSE "<3. >-1|We shall";
+bar
+//2
+1: 4bg; 8.; 16; 4; 8.e+g; 16;
+2: 4d+g; 8.; 16; 4; 8.c+c; 16c+e;
+
+			VERSE "beau-ti-ful land far be-";
+			VERSE "friends who have gone to that";
+			VERSE "meet in that beau-ti-ful";
+bar
+//3
+1 1: 4d+g; bg;; 8.g bm; 16a ebm;
+1 2: 4s;;; 8.d tie; 16;
+2 1: 4bg; d+g;; 8.b bm; 16c+ ebm;
+2 2: 4s;;; 8.g tie; 16;
+
+			VERSE 4; 4; 4; 4; "yond the sky, And";
+			VERSE "land on high, They are";
+			VERSE 4; 4; 4; 4; "land on high, And";
+bar
+//4
+1: 4bd; 8.bg; 16; 4d+b; 8.bg; 16;
+2: 4d+g; 8.; 16; 4; 8.; 16;
+
+			VERSE "Je-sus, my Sav-iour, is";
+			VERSE "free from all sor-row and";
+			VERSE "be with the bright and the";
+bar
+//5
+1: 2.af; 8.gd; 16ad;
+2: 2.d+d; 8.bg; 16c+g;
+
+			VERSE "there; He has";
+			VERSE "care; And I";
+			VERSE "fair; Where the";
+bar
+//6
+1: 4bg; 8.; 16; 4; 8.e+g; 16;
+2: 4d+g; 8.; 16; 4; 8.c+c; 16c+e;
+
+			VERSE "gone to pre-pare me a";
+			VERSE "trust I shall meet them a-";
+			VERSE "wa-ters of life sweet-ly";
+bar
+//7
+1 1: 4d+b; 4bg;; 8.g; 16af;
+1 2: 4s;;; 8.g; 16s;
+2: 4bg; d+g;; 8.bg; 16c+g;
+
+			VERSE "home on high\(emdash) Oh, I";
+			VERSE "bove the sky\(emdash) Oh, I";
+			VERSE "mur-mur by\(emdash) Oh, I";
+bar
+//8
+1: 4bg; 8.d+g; 16bg; 4af; 8.bf; 16af;
+2: 4d+g; 8.bg; 16d+g; 4d+d; 8.; 16c+d;
+
+			VERSE "long, oh, I long to be";
+			VERSE "long, oh, I long to be";
+			VERSE "long, oh, I long to be";
+bar
+//9
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bg; 4s;
+
+			VERSE "there!";
+			VERSE "there!";
+			VERSE "there!";
+dblbar
+//10
+1: 8.bg; 16c+g; 2.s;
+2 1: 8.g; 16a; 2.s;
+2 2: 8.g; 16; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"In that";
+			
+bar
+//11
+1: 2.d+g; 8.bg; 16c+g;
+2 1: 4bg; 8.; 16; 4; 8.g; 16a;
+2 2: 4s; 8.; 16; 4; 8.g; 16;
+
+			VERSE "beau-ti-ful";
+			VERSE 4; 8.; 16; 4; 8.; 16; "beau-ti-ful land, In that";
+bar
+//12
+1: 2.d+g; 8.d+g; 16c+g;
+2: 4bg; 8.; 16; 4; 8.; 16c+g;
+
+			VERSE "land, Where the";
+			VERSE 4; 8.; 16; 4; 8.s; 16s; "beau-ti-ful land,";
+bar
+//13
+1: 2.bg; 4bg;
+2: 2.d+g; 4d+b-;
+
+			VERSE "an-gels";
+bar
+//14
+1 1: 2.af; 8.g; 16af;
+1 2: 2.s; 8.g; 16s;
+2: 2.d+d; 4r;
+
+			VERSE "stand, We shall";
+bar
+//15
+1: 2.bg; 8.e+c+; 16;
+2: 4r; d+g;; r;
+
+			VERSE "meet, We shall";
+			VERSE 4s; 4; 4; 4s; "shall meet,";
+bar
+//16
+1 1: 2.d+b; 8.g; 16af;
+1 2: 2.s; 8.g; 16s;
+2: 4r; d+g;; 8.bd; 16c+d;
+
+			VERSE "meet, We shall";
+			VERSE 4s; 4; 4; 8.s; 16s; "shall meet,";
+bar
+//17
+1: 4bg; 8.d+g; 16bg; 4af; 8.bf; 16af;
+2: 4d+d; 8.; 16; 4; 8.; 16;
+
+			VERSE "meet in that beau-ti-ful";
+bar
+//18
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bgg-; 4s;
+
+			VERSE "land.";
+endbar

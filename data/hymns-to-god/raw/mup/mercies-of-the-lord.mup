@@ -1,0 +1,199 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs for Work and Worship
+//		For us in Sunday Schools, Young peoples'
+//		Societies, Devotional Meetings, Camp
+//		Meetings, Etc.
+//		By E.S. Lorenz, J.H. Entwisle, Powell G. Fithian,
+//		Adam Geibel, and R.F. Lehman
+//		Published by The Lorenz Publishing Co.
+//		Dayton, Ohio
+//		Copyright 1903
+//		Hymn no. 40
+
+// Transcribed by: Ted Gatza, Jr. 08/03/2010; rev. 05/23/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Mercies of The Lord" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:Great\ are\ thy\ tender\ mercies,\ O\ Jehovah\ -\ Ps.\ 119:156 \(space)" ""
+   title (13) "Jennie Wilson" " " "E. C. Avis, 1900"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 2.s; 8d; 8gd;
+1 2: 2.s; 8d; 8s;
+2 1: 2.s; 8g; 8bg;
+2 2: 2.s; 8g; 8s;
+
+			lyrics 1: "<1. >-1|I will";
+			lyrics 1: "<2. >-1|I will";
+			lyrics 1: "<3. >-1|I will";
+			lyrics 1: "<4. >-1|I will";
+bar
+//2
+1: 4bg; 8bg; 8bg; 8c+g; 8bg; 8af; 8bf;
+2: 4d+g; 8d+g; 8d+g; 8e+g; 8d+g; 8c+d; 8d+d;
+
+			lyrics 1: "sing of the mer-cies of the";
+			lyrics 1: "sing of his rich, un-bound-ed";
+			lyrics 1: "sing of the bless-ings of his";
+			lyrics 1: "sing of the nev-er-fail-ing";
+bar
+//3
+1 1: 2.g; 8g; 8bg;
+1 2: 2.g; 8g; 8s;
+2: 2.bg; 8bg; 8d+g;
+
+			lyrics 1: "Lord: As the";
+			lyrics 1: "grace, Which for";
+			lyrics 1: "love, On my ";
+			lyrics 1: "pow'r, That se-";
+bar
+//4
+1: 8d+g; 8d+g; 8d+g; 8d+g; 8e+g; 8d+g; 8c+g; 8d+g;
+2 1: 8bg; 8bg; 8bg; 8bg; 8c+g; 8bg; 8a; 8bg;
+2 2: 8s; 8s; 8s; 8s; 8s; 8s; 8g; 8s;
+
+			lyrics 1: "num-ber of the sands up-on the";
+			lyrics 1: "sin-ful ones their cost-ly ran-som";
+			lyrics 1: "spir-it fall-ing like re-fresh-ing";
+			lyrics 1: "cure from ev-'ry harm doth guard my";
+bar
+//5
+1: 2.bg; 8bg; 8c+g;
+2 1: 2.d+g; 8g; 8a;
+2 2: 2.s; 8g; 8g;
+mussym (9) above 1: 4 "sign";
+
+			lyrics 1: "shore Of a";
+			lyrics 1: "paid; In the";
+			lyrics 1: "dew; I will";
+			lyrics 1: "soul, And will";
+			lyrics 2: 2.s; 8; 8; "<\f(TX)D.S.\f(TR) -  >-1|And my";
+bar
+//6
+1 1: 8.d+g; 16d+g; 8g; 8g; 4c+g; 8bg; 8bg;
+1 2: 8.s; 16; 8g; 8g; 4s; 8s; 8s;
+2: 8.bg; 16bg; 8bg; 8bg; 4e+g; 8d+g; 8d+g;
+
+			lyrics 1: "vast and might-y sea are his";
+			lyrics 1: "sac-ri-fi-cial tide flow-ing";
+			lyrics 1: "sing of light di-vine glow-ing";
+			lyrics 1: "keep me till I stand safe up-";
+			lyrics 2: "grate-ful voice I raise un-to";
+bar
+//7
+1 1: 8be; 8ae; 8ae; 8e; 4ae; 8ge; 8ec;
+1 2: 8s; 8s; 8s; 8e; 4s; 8s; 8s;
+2: 8c+c; 8c+c; 8c+c; 8c+c; 4c+c; 8gc; 8gc;
+
+			lyrics 1: "ben-e-fits to me, And I";
+			lyrics 1: "when my Sav-ior died, All my";
+			lyrics 1: "on this path of mine, As, re-";
+			lyrics 1: "on the death-less strand Where the";
+			lyrics 2: "Him in notes of praise, As his";
+bar
+//8
+1: 8db-; 8db-; 8db-; 8db-; 8gd; 8fd; 8.bd; 16ad;
+2: 8gd; 8gd; 8gd; 8gd; 8bd; 8ad; 8.gd; 16c+d;
+
+			lyrics 1: "will ex-alt his name for ev-er-";
+			lyrics 1: "hope of ev-er-last-ing life is";
+			lyrics 1: "joic-ing, I my up-ward course pur-";
+			lyrics 1: "ar-mies of the blest their King ex-";
+			lyrics 2: "ten-der lov-ing kind-ness I would";
+bar
+//9
+1: 2.gd; 4s;
+2: 2.bg-; 4s;
+ital (13) above 1: 2 "Fine";
+
+			lyrics 1: "more.";
+			lyrics 1: "staid.";
+			lyrics 1: "sue.";
+			lyrics 1: "tol.";
+			lyrics 2: "own.";
+dblbar
+newscore
+//10
+1: 2.s; 8bg; 8c+g;
+2 1: 2.s; 8g; 8a;
+2 2: 2.s; 8g; 8g;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "I will";
+bar
+//11
+1: 4d+g; 8d+g; 8d+g; 8e+g; 8d+g; 8c+f; 8bg;
+2 1: 4bg; 8bg; 8bg; 8c+; 8d+b; 8d+a; 8d+g;
+2 2: 4s; 8s; 8s; 8c+; 8s; 8s; 8s;
+
+			lyrics 1: "sing of the mer-cies of the";
+bar
+//12
+1: 2.c+f; 8af; 8bg;
+2: 4d+d; 8.d+d; 16d+d; 4d+d; 8d+d; 8d+d;
+
+			lyrics 1: "Lord, Count-less";
+			lyrics 1: 4s; 8.; 16; 4; 8s; 8s; "of the Lord,";
+bar
+//13
+1: 8c+a; 8c+a; 8c+a; 8c+a; 8d+b; 8c+a; 8bg; 8af;
+2: 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d;
+
+			lyrics 1: "gifts from his dear hand my life has";
+bar
+//14
+1: 2.bg; 4s;
+2: 4d+g; 8.d+g; 16d+g; 4d+g; 4s;
+ital above 1: 3.5 "D.S.";
+
+			lyrics 1: "known;";
+			lyrics 1: 4s; 8.; 16; 4; 4s; "life has known;";
+endbar

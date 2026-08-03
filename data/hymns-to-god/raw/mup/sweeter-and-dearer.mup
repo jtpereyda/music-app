@@ -1,0 +1,334 @@
+// !Mup vs.7.0 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+// 
+
+// Hymn Source:
+//	Glory Songs
+//	Compiled by Mr. and Mrs. John T. Benson
+//	Published by 
+//	Pentecostal Mission Publishing Co.
+//	Nashville Tennessee
+//	Copyright 1916?
+//	Hymn No. 11
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 01/19/2023
+
+// Revisions:
+	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sweeter and Dearer" ""
+   title (2)""
+   title (11)"" "\f(TI)Oh give thanks unto the God of heaven; For his" ""
+   title (11)"" "\f(TI)lovingkindness endureth for ever. - Ps. 136:26" ""
+   title (11) "G - 2 - SOL" "" ""
+   title (13) "James Rowe" "" "I. E. Reynolds, 1915"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+staffs=2
+	time=6/8	
+	key=g
+
+
+staff 2
+	key=g
+	clef=bass
+
+//==========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+   //Chorus - Refrain
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+      //Trebble Cleff
+        define FST(COUNT)
+        mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+        mussym (10) below 1: COUNT "uferm"; @
+ 
+      //Bass Cleff
+        define FBT(COUNT)
+        mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+        mussym (10) below 2: COUNT "uferm"; @
+
+//========================
+
+music
+
+//========================
+
+// set midi
+	midi all: 0 "temp=70";
+
+//=========================
+
+//Verse 1
+
+//1
+1:4.s; 4; 8b-d;
+2 1: 4.s; 4; 8g;
+2 2: 4.s; 4; 8g;
+
+	VS1 "<1. >-1|How";
+	VS1 "<2. >-1|It";
+	VS1 "<3. >-1|It";
+bar
+
+//2
+1: 8.db; 16ca; 8db; gd+; gc+; gb;
+2 1: 8.g; 16; 8; gb; a; gd+;
+2 2: 8.g; 16; 8; s; g; s;
+
+	VS1 "sweet is the love of my";
+	VS1 "light-ens my sor-rows, and";
+	VS1 "gives me a car-ol to";
+bar
+
+//3
+1: 8s; 8fa; eg; fa; 4gb;
+2: 8s; 8dc+; eb; dd+; 4gd+;
+
+	VS1 "Sav-ior and King,";
+	VS1 "troub-le and care.";
+	VS1 "sing thro, the night,";
+invisbar
+
+1: 4.s; 4; 8dg;
+2: 4.s; 4; 8gb;
+
+	VS1 "For-";
+	VS1 "And";
+	VS1 "And";
+bar
+
+//4
+1: 8.db; 16da; 8dg; dg; df; dg;
+2: 8.gd+; 16fc+; 8gb; 8gb; ac+; gb;
+
+	VS1 "ev-er my song it shall";
+	VS1 "caus-es my path-way to";
+	VS1 "cheers my soul on-ward each";
+bar
+
+//5
+
+1: 8s; 4.fa tie; 4;
+2: 8s; 4.dc+ tie; 4;
+
+	VS1 "be;";
+	VS1 "shine;";
+	VS1 "day;";
+invisbar
+
+1 1: 8d; 4.s; 4;
+1 2: 8d; 4.s; 4;
+2: 8fa; 4.s; 4;
+
+	VS1 "For";
+	VS1 "It";
+	VS1 "So";
+bar
+
+//6
+1: 8.db; 16ca; 8db; dd+; dc+; db;
+2 1: 8.g; 16; 8; gb; fa; g;
+2 2: 8.g; 16; 8; s; s; g;
+
+	VS1 "day af-ter day, while its";
+	VS1 "helps me for Je-sus to";
+	VS1 "tru-ly I trust it till";
+bar
+
+//7
+1: 8s; ea; ce; ea; 4ec+;
+2: 8s; cg; ca; ; 4a-a;
+
+	VS1 "prais-es I sing,";
+	VS1 "do and to dare,";
+	VS1 "faith end in sight,";
+invisbar
+
+1: 8ge+; 4.s; 4;
+2: 8c#a#; 4.s; 4;
+
+	VS1 "'Tis";
+	VS1 "And";
+	VS1 "And";
+bar
+
+//8
+1: 16gd+; 8.gb; 8gc+; 16gb; 8.fb; 8fa;
+2: 16db; 8.dd+;	8de+; 16dd+; 8.; 8dc+;
+
+	VS1 "grow-ing still sweet-er to";
+	VS1 "nev-er will let me re-";
+	VS1 "shad-ows have fad-ed a-";
+bar
+
+//9
+1: 8s; 4.dg tie; 4;
+2: 8s; 4.g-gb tie; 4;
+
+	VS1 "me";
+	VS1 "pine.";
+	VS1 "way.";
+dblbar
+newscore
+//10
+CHORUS
+1 1: 8d; 4.s; 4;
+1 2: 8d; 4.s; 4;
+2: 8gb; 4.s; 4;
+
+	VS1 "'Tis";
+bar
+
+//11
+1: 16db; 8.; 8; 16; 8.da; 8db;
+2 1: 16g; 8.; 8; 16; 8.fa; 8g;
+2 2: 16g; 8.; 8; 16; 8.s; 8g;
+
+	VS1 "sweet-er and dear-er each";
+bar
+
+//12
+1 1: 8s; 4.c+ tie; 4;
+1 2: 8s; 8d bm; f ebm; e; 4d;
+2 1: 8s; 8f bm; a ebm; g; 4f;
+2 2: 8s; 4.d tie; 4;
+
+	VS1 "day,_";
+	VS 4.s; 8; 4; "each day,";
+invisbar
+
+1 1: 8d; 4.s; 4;
+1 2: 8d; 4.s; 4;
+2 1: 8df; 4.s; 4;
+2 2: 4.s; ;
+
+	VS1 "And";
+bar
+
+//13
+1 1: 16fc+; 8.; 8; 16; 8.gb; 8a;
+1 2: 4.s; 4; 8a;
+2: 16da; 8.; 8; 16dd+; 8.; 8fd+;
+
+	VS1 "sweet-er and dear-er 'twill";
+bar
+
+//14
+1 1: 8s; 4.b tie; 4;
+1 2: 8s; 8g bm; f ebm; e; 4d;
+2: 8s; 4.gd+ tie; 4; 
+
+	VS1 "be;_";
+	VS 8s; 4s; 8; 4; "'twill be;";
+invisbar
+
+1 1: 8d; 4.s; 4;
+1 2: 8d; 4.s; 4;
+2: 8gb; 4.s; 4;
+
+	VS1 "While";
+bar
+
+//15
+1: 8.db; 16ca; 8db; dd+; dc+; db;
+2 1: 8.g; 16; 8g; gb; fa; g;
+2 2: 8.g; 16; 8g; 8s; ; g;
+
+	VS1 "here I re-main, and when";
+bar
+
+//16
+1: 8s; 8ea; ce; ea; 4ec+;
+2: 8s; 8cg; ca; ; 4a-a;
+
+	VS1 "heav-en I gain,";
+invisbar
+
+1: 8ge+; 4.s; 4;
+2: 8c#a#; 4.s; 4;
+
+	VS1 "It";
+bar
+
+//17
+1: 8.gd+; 16gb; 8gc+; 16gb; 8.fb; 8fa;
+2: 8.db; 16dd+; 8de+; 16dd+; 8.; 8dc+;
+
+	VS1 "still will grow sweet-er to";
+bar
+
+//18
+1: 8s; 4.dg tie; 4;
+2: 8s; 4.g-gb tie; 4;
+
+	VS1 "me.";
+endbar
+
+
+
+
+
+
+
+
+
+
+

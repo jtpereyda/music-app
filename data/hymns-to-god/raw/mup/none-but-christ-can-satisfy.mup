@@ -1,0 +1,242 @@
+
+
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Victorious Life Hymns
+//			Edited by Charles M. Alexander
+//			and the Council of the Victorious Life Testimony
+//			The Sunday School Times Company
+//			Philadelphia
+//			Copyright 1919
+//			Hymn no. 107
+		
+		
+// Transcribed by: Ted Gatza, Jr. 05/04/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "None But Christ Can Satisify" ""
+   title (2)""
+   title (11) "F - 4 - SOL" "\s(17)\f(TI)\:Unto\ thee\ it\ was\ showed,\ that\ t\|hou\ mightest\ know\ that\ Jehovah he\ is\ God;\ there\ is\ none\ els\|e\ besides\ him.\ -\ Deut.\ 4:35" ""   
+   title (13) "Emma F. Bevan, 1860" "" "James McGranahan, 1881"
+
+// Lyrics and dates verified at http://www.hymnary.org/tune/none_but_christ_mcgranahan
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 2.s; 8c bm; f ebm;
+1 2: 2.s; 4c;
+2 2: 2.s; 4af;
+
+	VERSE 2.s; 4; "<1. >-1|O";
+	VERSE 2.s; 4; "<2. >-1|I";
+	VERSE 2.s; 4; "<3. >-1|I";
+	VERSE 2.s; 4; "<4. >-1|The";
+bar
+//2
+1 1: 4af;;; 8f bm; a ebm;
+1 2: 4s;;; f;
+2 1: 4c+f; d+f; c+f; 8a bm; c+ ebm;
+2 2: 4s;;; f;
+
+	VERSE 4; 4; 4; 4; "Christ, in Thee my";
+	VERSE 4; 4; 4; 4; "sighed for rest and";
+	VERSE 4; 4; 4; 4; "tried the brok-en";
+	VERSE 4; 4; 4; 4; "pleas-ures lost I";
+bar
+//3
+1: 4c+f; c+e; c+f; 8c+a bm; af ebm;
+2: 4af; bg; c+a; c+f;
+
+	VERSE 4; 4; 4; 4; "soul hath found, And";
+	VERSE 4; 4; 4; 4; "hap-pi-ness. I";
+	VERSE 4; 4; 4; 4; "cis-terns, Lord, But";
+	VERSE 4; 4; 4; 4; "sad-ly mourned, But";
+bar
+//4
+1: 4.ge; 8; 4; 8fd bm; ge ebm;
+2: 4.c+c; 8; 4;;
+
+	VERSE 4.; 8; 4; 4; "found in Thee a-";
+	VERSE 4.; 8; 4; 4; "yearned for them, not";
+	VERSE 4.; 8; 4; 4; "ah! the wa-ters";
+	VERSE 4.; 8; 4; 4; "nev-er wept for";
+bar
+//5
+1 1: 2.af; 8c bm; f ebm;
+1 2: 2.s; 4c;
+2: 2.c+f; 4af;
+
+	VERSE 2.; 4; "lone, The";
+	VERSE 2.; 4; "Thee; But";
+	VERSE 2.; 4; "failed! E'en";
+	VERSE 2.; 4; "Thee, Till";
+bar
+//6
+1 1: 4af;;; 8f bm; a ebm;
+1 2: 4s;;; f;
+2 1: 4c+f; d+f; c+f; 8a bm; c+ ebm;
+2 2: 4s;;; f;
+
+	VERSE 4; 4; 4; 4; "peace, the joy I";
+	VERSE 4; 4; 4; 4; "while I passed my";
+	VERSE 4; 4; 4; 4; "as I stooped to";
+	VERSE 4; 4; 4; 4; "grace the sight-less";
+bar
+//7
+1: 4c+f; c+e; c+f; 8c+a bm; af ebm;
+2: 4af; bg; c+a; c+f;
+
+	VERSE 4; 4; 4; 4; "sought so long, The";
+	VERSE 4; 4; 4; 4; "Sav-iour by, His";
+	VERSE 4; 4; 4; 4; "drink they'd fled, And";
+	VERSE 4; 4; 4; 4; "eyes re-ceived, Thy";
+bar
+//8
+1 1: 4.ge; 8c+e; c+ bm; bn ebm; a bm; b ebm;
+1 2: 4.s; 8; 4f;;
+2 1: 4.c+g; 8; 4d+g; 8d+ bm; g ebm;
+2 2: 4.s; 8; 4; g;
+
+	VERSE 4.; 8; 4; 4; "bliss till now un-";
+	VERSE 4.; 8; 4; 4; "love laid hold on";
+	VERSE 4.; 8; 4; 4; "mocked me as I";
+	VERSE 4.; 8; 4; 4; "love-li-ness to";
+bar
+//9
+1 1: 4s; 2.c+;
+1 2: 4s; e ph; f; g eph;
+2 1: 4s; g ph; a; b eph;
+2 2: 4s; 2.c;
+
+	VERSE 4s; 2.; "known.";
+	VERSE 4s; 2.; "me.";
+	VERSE 4s; 2.; "wailed.";
+	VERSE 4s; 2.; "see.";
+dblbar
+newscore
+//10
+1: 2.s; 4c+g;
+2: 2.s; 4bc;
+ital (13) above 1: 4 "Chorus";
+
+	VERSE 2.s; 4; "Now";
+bar
+//11
+1 1: 4.c+f; 8; 8c+ bm; a ebm; 8d+ bm; c+ ebm;
+1 2: 4.s; 8; 4f; 4;
+2 1: 4.af; 8; 8a bm; c+ ebm; 8b bm; 8a ebm;
+2 2: 4.s; 8; 4f;;
+
+	VERSE 4.; 8; 4; 4; "none but Christ can";
+bar
+//12
+1 1: 4.c+f; 8bf; 4af; 8f bm; g ebm;
+1 2: 4.s; 8; 4; 4f;
+2 1: 4.af; 8d+f; 4c+f; 8a bm; b ebm;
+2 2: 4.s; 8; 4; 4f;
+
+	VERSE 4.; 8; 4; 4; "sat-is-fy, None";
+bar
+//13
+1: 4.af; 8; 8af bm; c+a ebm; bg bm; af ebm;
+2 1: 4.c+f; 8; 4; c+;
+2 2: 4.s; 8; 4; 8e bm; f ebm;
+
+	VERSE 4.; 8; 4; 4; "oth-er name for";
+bar
+//14
+1 1: 2.ge; 4c;
+1 2: 2.s; 4c;
+2 1: 2.c+; 4af;
+2 2: 4c; b; a; s;
+
+	VERSE 4; 4; 4; 4; "me; (for me;) There's";
+bar
+//15
+1: 4.fc; 8; 4.af; 8;
+2: 4.af; 8; 4.c+f; 8;
+
+	VERSE "love, and life, and";
+bar
+//16
+1 1: 8c+ bm; a ebm; b bm; c+ ebm; 4d+f;;
+1 2: 4f;; s;;
+2 1: 8a bm; c+ ebm; b bm; a ebm; 4bb-;;
+2 2: 4f;; s;;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE 4; 4; 4; 4; "last-ing joy, Lord";
+bar
+//17
+1 1: 8c+ bm; a ebm; b bm; g ebm; 4f; ec;
+1 2: 4f; e; f; s;
+2 1: 8a bm; c+ ebm; g bm; b ebm; 4ac; bc;
+2 2: 4c;; s;;
+
+	VERSE 4; 4; 4; 4; "Je-sus, found in";
+bar
+//18
+1: 4s; 2.fc;
+2: 4s; 2.af;
+
+	VERSE 4s; 2.; "Thee.";
+endbar

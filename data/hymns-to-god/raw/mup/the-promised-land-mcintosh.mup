@@ -1,0 +1,398 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	The Revival Number Four
+//	Publisher Charlie D. Tillman
+//	Atlanta, GA,., Cincinnati, Ohio, Kansas City, MO.
+//	Copyright 1903
+//	Hymn No.: 232
+
+// Transcribed by: Ted Gatza, Jr. 07/30/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "The Promised Land" ""
+   title (2) ""
+   title (11) "" "\f(TI)But now they desire a better country, that is an heavenly: why God is not" ""   
+   title (11) "" "\f(TI)ashamed to be called their God: for he has prepared for them a city. - Heb. 11:16" ""
+   title (11) "F - 4 - DO" "" ""
+   title (13) "Samuel Stennett, 1787" "" "Arr. by Rigdon M. McIntosh, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=97";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 2.s; [ho 0] 8.f bm; 16g ebm;
+1 2: 2.s; 4f;
+2 1: 2.s; 8.a bm; 16 b ebm;
+2 2: 2.s; 4f;
+
+
+	VS12 "<1. >-1|On";
+	VS12 "<2. >-1|O'er";
+//	VS12 "<3. >-1|No";
+	VS12 "<3. >-1|When";
+
+bar
+
+//2
+1: 4fa; ; 8 bm; gb ebm; 4ac+;
+2 1: 4fc+; ; f; a-f;
+2 2: 4s; ; f; s;
+
+	VS21 "Jor-dan's storm-y";
+	VS21 "all those wide-ex-";
+//	VS21 "chill-ing winds nor";
+	VS21 "shall I reach that";
+bar
+
+//3
+1: 4gb; ; 8 bm; af ebm; 4s;
+2: 4ce; ; cc+; s;
+
+	VS21 "banks I stand,";
+	VS21 "tend-ed plains";
+//	VS21 "poi-sonous breath";
+	VS21 "hap-py place,";
+invisbar
+
+//3
+1: 4s; ; ; eg;
+2: 4s; ; ; cc+;
+
+
+	VS "And";
+	VS "Shines";
+//	VS "Can";
+	VS "And";
+bar
+
+//4
+
+1 1: 4fa; ; 8a bm; b ebm; 4fc+;
+1 2: 4s; ; f; s;
+2: 4fc+; ; ; a-c+;
+
+	VS21 "cast a wish-ful";
+	VS21 "one e-ter-nal";
+//	VS21 "reach that health-ful";
+	VS21 "be for-ev-er";
+bar
+
+//5
+1: 2.eg; 4s;
+2: 2.cc+; 4s;
+
+	VS "eye,";
+	VS "day;";
+//	VS "shore;";
+	VS "blest?";
+bar
+
+//6
+1 1: 2.s; 8.a bm; 16g ebm;
+1 2: 2.s; 4e;
+2 1: 2.s; 8.c+ bm; 16b ebm;
+2 2: 2.s; 4c;
+
+	VS12 "To";
+	VS12 "There";
+//	VS12 "Sick-";
+	VS12 "When";
+bar
+
+//7
+1 1: 4f; 8 bm; g ebm; 4s; ;
+1 2: 4f; ; fa; gb;
+2 1: 4s; 8a bm; b ebm; 4s; ;
+2 2: 4fa; f; fc+; ; 
+
+	VS12 "Ca-naan's fair and";
+	VS12 "God, the Sun, for-";
+//	VS12 "ness and sor-row,";
+	VS12 "shall I see my";
+bar
+
+//8
+1: 4ac+; af+; ac+; 4s;
+2: 4fc+; ; ; s;
+
+	VS "hap-py land,";
+	VS "ev-er reigns,";
+//	VS "pain and death,";
+	VS "Fa-ther's face,";
+invisbar
+
+//8 
+1 1: 4s; ; ; 8c+ bm; b ebm;
+1 2: 4s; ; ; 4f;
+2: 4s; ; ; 8a-c+ bm; b-d+ ebm;
+
+	VS12 "Where";
+	VS12 "And";
+//	VS12 "Are";
+	VS12 "And";
+bar
+
+//9
+1 1: 4s; 8a bm; f ebm; 4s; ; 
+1 2: 4fa; f; eg; ;
+2 1: 4s; 8c+bm; a ebm; 4s; ;
+2 2: 4cc+; c; cc+; cb;
+
+	VS12 "my pos-ses-sions";
+	VS12 "scat-ters night a-";
+//	VS12 "felt and feared no";
+	VS12 "in His bo-som";
+bar
+
+//10	
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.fa; 4s;
+
+	VS "lie.";
+	VS "way.";
+//	VS "more.";
+	VS "rest?";
+
+dblbar
+newscore
+
+REFRAIN
+
+//11
+1 1: 2.s; 8.f; 16g;
+1 2: 2.s; 8.f; 16;
+2: 2.s; 8.fa; 16fb;
+
+	VS "I am";
+bar
+
+//12
+1: 4fa; 8.; 16; 8 bm; gb ebm; 4ac+;
+2 1: 4fc+; 8.; 16; 4f; a-f;
+2 2: 4s; 8.; 16; 4f; s;
+
+	VS21 "bound for the prom-ised";
+bar
+
+//13
+1: 4.gb; 8ac+; gb bm; fa ebm; 8s; ; 
+2: 4ce; 8.; 16; 4cc+; 8s; ; 
+   phrase above 1: 1 til 3.5;
+   phrase below 1: 1 til 3.5;
+
+	VS 4.; 8s; 8s; 8s; 8s; 8s; "land,_";
+	VS 4s; 8.; 16; 4; 8s; 8s; "prom-ised land,";
+invisbar
+
+//13
+1: 8eg; ; 2.s;
+2: 8cc+; 8; 2.s;
+
+
+	VS "I am";
+bar
+
+//14
+1 1: 4fa; 8.; 16; 8a bm; b ebm; 4fc+;
+1 2: 4s; 8.; 16; 4f; s;
+2: 4fc+; 8.; 16; 4; a-c+;
+
+	VS21 "bound for the prom-ised";
+bar
+
+//15
+1: 2.eg; 4s;
+2: 2.cc+; 4s;
+
+	VS "land;";
+invisbar
+
+//15
+1 1: 2.s; 8.a bm; 16g ebm;
+1 2: 2.s; 4e;
+2 1: 2.s; 8.c+ bm; 16b ebm;
+2 2: 2.s; 4c;
+
+	VS12 "O,";
+bar
+
+//16
+1 1: 4f; 8f bm; g ebm; 4s; ;
+1 2: 4f; f; fa; gb;
+2 1: 4s; 8a bm; b ebm; 4s; ;
+2 2: 4fa; f; fc+; ;
+
+	VS12 "who will come and";
+bar
+
+//17
+1: 4ac+; af+; ac+; 8s; ;
+2: 4fc+; ; ; 8s; ;
+
+	VS "go with me,";
+invisbar
+
+//17
+1: 4s; ; ; 8fc+; fb;
+2: 4s; ; ; 8a-c+; b-d+;
+
+	VS "I am";
+bar
+
+//18
+1 1: 4fa; 8; f; 4eg; ;
+1 2: 4s; 8; f; 4s; ;
+2: 4cc+; 8; ca; 4cc+; cb;
+
+	VS "bound for the prom-ised";
+bar
+
+//19
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.fa; 4s;
+
+	VS "land.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

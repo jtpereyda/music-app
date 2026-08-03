@@ -1,0 +1,215 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest Glory
+//		A Collection of choice and original hymns and tunes
+//		By our best composers for the Sunday Schools,
+//		Young peoples meetins and all religious gatherings
+//		By Frank M. Davis
+//		Published by Frank M. Davis
+//		Vicksburg, Miss
+//		Copyright: 1896
+//		Hymn No.: 13
+
+// Transcribed by: Ted Gatza, Jr. 06/03/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "'Tis Found Alone In Prayer" ""
+   title (2)""
+   title (11) "F - 2 - DO" "\s(17)\f(TI)\:Pray\ to\ thy\ Father\ which\ is\ in\ secret.\ Matt.\ 6:6 \(space)" ""
+   title (13) "Frank M. Davis" " " "Frank M. Davis"	
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.4
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+
+//1
+1 1: 8f; 4.s; 4;
+1 2: 8f; 4.s; 4;
+2: 8af; 4.s; 4;
+
+			VERSE "<1. >-1|When";
+			VERSE "<2. >-1|When";	
+			VERSE "<3. >-1|There";
+			VERSE "<4. >-1|When";
+bar
+//2
+1: 4af; 8; 4bf; 8af;
+2: 4c+f; 8; 4d+f; 8c+f;
+
+			VERSE "wea-ry with the";
+			VERSE "tempt-ed by the";
+			VERSE "grace to help in";
+			VERSE "doubts a-rise and";
+bar
+//3
+1: 4ge; 8af; 4ge; 8af;
+2: 4c+c; 8; 4; 8c+f;
+
+			VERSE "ills of life, Its";
+			VERSE "pow'r of sin, That";
+			VERSE "time of need, A";
+			VERSE "faith is weak, And";
+bar
+//4
+1 1: 4c+f; 8af; 4f; 8ge;
+1 2: 4s; 8; 4f; 8s;
+2: 4af; 8c+f; 4c+a-; 8c+c;
+
+			VERSE "bur-dens and its";
+			VERSE "would the soul en-";
+			VERSE "full sup-ply is";
+			VERSE "cross-es hard to";
+bar
+//5
+1: 4.af tie; 4; 8;
+2: 4.c+f tie; 4; 8;
+
+			VERSE "care, There";
+			VERSE "snare, There";
+			VERSE "there, Go";
+			VERSE "bear, Then";
+bar
+//6
+1: 4ge; 8af; 4bg; 8ge;
+2: 4c+c; 8; 4; 8;
+
+			VERSE "is a balm, a";
+			VERSE "is a sure, a";
+			VERSE "find it at the";
+			VERSE "seek the Fa-ther";
+bar
+//7
+1: 4af; 8be; 4c+f; 8d+f;
+2: 4c+f; 8c+g; 4c+a; 8bb-;
+
+			VERSE "sa-cred joy, 'Tis";
+			VERSE "safe re-treat, 'Tis";
+			VERSE "Mas-ter's feet, In";
+			VERSE "at His throne, And";
+bar
+//8
+1 1: 4c+f; 8f; 4af; 8ge;
+1 2: 4s; 8f; 4s; 8;
+2: 4c+a-; 8d+b-; 4c+c; 8bc;
+
+			VERSE "found a-lone in";
+			VERSE "found a-lone in";
+			VERSE "hum-ble heart-felt";
+			VERSE "find re-lief in";
+bar
+//9
+1 1: 4.f tie; 4; 8s;
+1 2: 4.f tie; 4; 8s;
+2: 4.af tie; 4; 8s;
+
+			VERSE "prayer.";
+
+dblbar
+//10
+1: 8c+f; 4.s; 4;
+2: 8af; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"A-";
+bar
+//11
+1 1: 4.c+f; 4.c+;
+1 2: 4.s; 8e bm; f; g ebm;
+2 1: 4. ac; 8g bm; a; b ebm;
+2 2: 4.s; 4.c;
+
+			VERSE [c]"lone in";
+bar
+//12
+1: 4.c+f tie; 4; 8;
+2: 4.af tie; 4; 8;
+
+			VERSE [c]"prayer, A-";
+bar
+//13
+1: 4.d+f; 4.;
+2: 4.bb-; 4.bd;
+
+			VERSE [c]"lone in";
+bar
+//14
+1 1: 4.c+f tie; 4; 8f;
+1 2: 4.s; 4; 8f;
+2: 4.af tie; 4; 8;
+
+			VERSE [c]"prayer; There";
+bar
+//15
+1: 4af; 8; 4bf; 8;
+2: 4c+f; 8; 4d+f; 8;
+
+			VERSE "is a balm, a";
+bar
+//16
+1: 4af; 8be; 4c+f; 8d+f;
+2: 4c+f; 8c+g; 4c+a; 8bb-;
+
+			VERSE "sa-cred joy, 'Tis";
+bar
+//17
+1 1: 4c+f; 8f; 4af; 8ge;
+1 2: 4s; 8f; 4s; 8;
+2: 4c+a-; 8d+b-; 4c+c; 8bc;
+
+			VERSE "found a-lone in";
+bar
+//18
+1 1: 4.f tie; 4; 8s;
+1 2: 4.f tie; 4; 8s;
+2: 4.fa tie; 4; 8s;
+
+			VERSE "prayer.";
+endbar

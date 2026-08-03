@@ -1,0 +1,202 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Fair as the Morning.
+//		Hymns and Tunes For Praise
+//		In the Sunday-School
+//		By J. H. Kurzenknabe and
+//		W. W. Bentley.
+//		With A Full Arrangement for the
+//		Sunday School Orchestra.
+//		By Harry J. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright 1891
+//		Hymn No.: 16
+//		
+// Transcribed by: Ted Gatza, Jr. 01/23/2012; Rev. 04/06/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Glad New Song" ""
+   title (2)""
+   title (11) "A - 3 - MI" "\s(17)\f(TI)\:and\ they\ sing\ as\ it\ were\ a\ new\ song\ before\ the\ throne,\ -\ Rev.\ 14:3 \(space)" ""   
+   title (13) "Lizzie Ashbaugh" "" "J. H. Kurzenknabe, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1: 8.c+e; 16bd; 2s;
+2: 8.aa-; 16; 2s;
+
+			VERSE "<1. >-1|Shall our";
+			VERSE "<2. >-1|We shall";
+			VERSE "<3. >-1|Yes, we'll";
+			
+bar
+//2
+1: 4.ac; 8be; 8.af; 16fd;
+2: 4.aa-; 8ac; 8.ad; 16;
+
+			VERSE "lips be tuned to";
+			VERSE "tell the ran-somed";
+			VERSE "sweet-ly join the";
+bar
+//3
+1: 8ec; 4.ac; 8.ae; 16bd;
+2: 8aa-; 4.; 8.; 16;
+
+			VERSE "sing-ing, When we";
+			VERSE "sto-ry Of the";
+			VERSE "cho-rus O-ver";
+bar
+//4
+1: 4.c+e; 8; d+e; c+e;
+2 1: 4.a; 8; bg; a;
+2 2: 4.a; 8; s; 8a;
+
+			VERSE "join the ran-somed";
+			VERSE "Lamb for sin-ners";
+			VERSE "on the gold-en";
+bar
+//5
+1: 2be; 8.c+e; 16bd;
+2: 2ge; 8.ge; 16;
+
+			VERSE "throng? O-ver";
+			VERSE "slain. There from";
+			VERSE "shore; With ten";
+bar
+//6
+1: 4.ac; 8be; 8.af; 16fd;
+2: 4.aa-; 8ac; 8.ad; 16;
+
+			VERSE "in the gold-en";
+			VERSE "glo-ry un-to";
+			VERSE "thou-sand times ten";
+bar
+//7
+1: 8ec; 4.ac; 8.; 16bd;
+2: 8aa-; 4.; 8.; 16;
+
+			VERSE "ci-ty Shall we";
+			VERSE "glo-ry Swells the";
+			VERSE "thou-sand, We shall";
+bar
+//8
+1: 4.c+e; 8ac; 8.bd; 16bd;
+2: 4.aa-; [down]8ea-; 8.ge; 16;
+
+			VERSE "join the glad new";
+			VERSE "glad tri-ump-ant";
+			VERSE "praise for ev-er-";
+bar
+//9
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			VERSE "song?";
+			VERSE "strain.";
+			VERSE "more.";
+dblbar
+//10
+1: 8.c+e; 16d+e; 2s;
+2 1: 8.a; 16b; 2s;
+2 2: 8.a; 16a; 2s;
+ital (13) above 1: 1" Chorus";
+
+			VERSE [c]"Un-to";
+bar//11
+1: 4.e+a; 8c+a; d+b; c+a;
+2: 4.c+a; 8e+a; e+g; e+a;
+
+			VERSE [c]"Him who has re-";
+bar
+//11
+1: 8c+a; 4.bg; 8.; 16c+a;
+2: 8e+e; 4.; 8.; 16;
+
+			VERSE [c]"deemed us, And from";
+bar
+//12
+1: 4.d+b; 8; 8.c+a; 16bg;
+2: 4.e+e; 8; 8.; 16;
+
+			VERSE "sin has set us";
+bar
+//13
+1: 2c+a; 8.; 16d+a;
+2: 2e+a; 8.; 16;
+
+			VERSE "free, Glo-ry,";
+bar
+//14
+1 1: 4.e+a; 8c+a; 8.bg; 16a;
+1 2: 4.s; 8; 8.; 16a;
+2: 4.c+a; 8e+a; 8.d+e; 16c+f;
+
+			VERSE "hon-or, pow'r and";
+bar
+//15
+1: 8af; 4.fd; 8.af; 16fd;
+2: 8d+d; 4.ad; 8.; 16;
+
+			VERSE "bless-ing, Now and";
+bar
+//16
+1: 4.ec; 8ae; 8.gd; 16ac;
+2: 4.ae; 8c+e; 8.be; 16aa-;
+
+			VERSE "ev-er-more shall";
+bar
+//17
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			VERSE "be.";
+endbar

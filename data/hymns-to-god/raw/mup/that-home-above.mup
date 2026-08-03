@@ -1,0 +1,232 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Song Treasury
+//		A collection of Songs and Music, especially adapted for
+//		Sunday-Schools, Praise and Prayer Meetings,
+//		Church Choirs and the Home Circle.
+//		Also Containing Selections for
+//		Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		Together with a
+//		Complete Course of Elementary Instruction of all the art of
+//		Reading music at sight
+//		By J. H. Kursenknabe,
+//		Publishers: Crider & Brother
+//		York, PA
+//		Copyright 1879
+//		Hymn No.: 96
+//		
+// Transcribed by: Ted Gatza, Jr. 10/05/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "That Home Above" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:In\ my\ Father's\ house\ a\|re\ many\ mansions;...\ for I\ go\ to\ prepare\ a\ pla\|ce\ for\ you.\ -\ Jn.\ 14:2" ""   
+   title (13) "Fanny Chadwick" "" "Frank M. Davis, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,40
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1 1: 8e bm; 8f ebm; 2.s;
+1 2: 4e; 2.s;
+2 1: 8g bm; 8a ebm; 2.s;
+2 2: 4e;  2.s;
+
+
+
+			VERSE 4; 2.s; "<1. >-1|No";
+			VERSE 4; 2.s; "<2. >-1|But";
+			VERSE 4; 2.s; "<3. >-1|My";
+			VERSE 4; 2.s; "<4. >-1|So";
+
+bar
+//2
+1: 4ge; 4ge; 4ge; 8fd bm; 8ge ebm;
+2 1:4be; 4be; 4be; 8b; 8s;
+2 2: 4s; 4s; 4s; 8a bm; 8bg ebm;
+
+			VERSE 4; 4; 4; 4; "earth-ly home have";
+			VERSE 4; 4; 4; 4; "in that home a-";
+			VERSE 4; 4; 4; 4; "Je-sus is my";
+			VERSE 4; 4; 4; 4; "here I'll work and";
+bar
+//3
+1: 2.af; 8fd bm; 8ge ebm;
+2: 2.bf; 4bb-;
+
+			VERSE 2.; 4; "I, Nor";
+			VERSE 2.; 4; "bove, Where";
+			VERSE 2.; 4; "all, On";
+			VERSE 2.; 4; "wait, Un-";
+bar
+//4
+1: 4af; 4af; 4af; 8ge bm; 8fd ebm;
+2: 4bb-; 4bb-; 4bb-; 4bb-;
+
+			VERSE 4; 4; 4; 4; "much to call my";
+			VERSE 4; 4; 4; 4; "saints and an-gels";
+			VERSE 4; 4; 4; 4; "him I can de-";
+			VERSE 4; 4; 4; 4; "til I hear him";
+bar
+//5
+1 1: 4g; 4c+; 4b; 8ge bm; 8af ebm;
+1 2: 2.e; 8s; 8s;
+2 1: 4b; 4a; 4g; 4be;
+2 2: 2.e; 4s;
+phrase above 1: 1 til 3;
+phrase above 2: 1 til 3;
+
+			VERSE 2.; 4; "own, And";
+			VERSE 2.; 4; "are, I";
+			VERSE 2.; 4; "pend! For";
+			VERSE 2.; 4; "say: Come,";
+bar
+//6
+1: 4bg; 4bg; 4bg; 4e+g;
+2: 4e+e; 4e+e; 4e+e; 4be;
+
+			VERSE "man-y tri-als";
+			VERSE "know a voice of";
+			VERSE "kind-ly doth he";
+			VERSE "en-ter heav-en's";
+bar
+//7
+1: 2.c+a; 4c+a;
+2: 2.e+a-; 4e+a-;
+
+			VERSE "lie A-";
+			VERSE "love, Of";
+			VERSE "call Each";
+			VERSE "gate, And";
+bar
+//8
+1: 4bg; 4ge; 4ge; 4fd;
+2: 4e+b-; 4bb-; 4bb-; 4ab-;
+
+			VERSE "round my path-way";
+			VERSE "wel-come waits me";
+			VERSE "trust-ing soul a";
+			VERSE "with me live for";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "lone.";
+			VERSE "there.";
+			VERSE "friend.";
+			VERSE "aye.";
+dblbar
+//10
+1: 8ge bm; 8bg ebm; 2.s;
+2: 8be; 8be; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"In my";
+bar
+//11
+1: 4.e+g; 8f+a; 4e+g; 4c+a;
+2: 4.be; 8be; 4be; 4ae;
+
+			VERSE [c]"Fa-ther's house so";
+bar
+//12
+1 1: 4. b; 8g; 4b; 4bg;
+1 2: 2.e; 4s;
+2 1: 4.g; 8b; 4g; 4be;
+2 2: 2.e; 4s;
+phrase above 1: 1 til 3;
+phrase above 2: 1 til 3;
+
+			VERSE 2.; 4; [c]"fair, Where";
+bar
+//13
+1: 4.e+g; 8ca; 4bg; 4ge;
+2: 4.be; 8e+e; 4e+e; 4be;
+
+			VERSE [c]"man-y man-sions";
+bar
+//14
+1 1: 2.fd; 8e; 8f;
+1 2: 2.s; 8e; 8e;
+2: 2.bb-; 8ge; 8ae;
+
+			VERSE "be, I, thy";
+bar
+//15
+1: 4ge; 4ge; 4ge; 4ae;
+2: 4be; 4be; 4be; 4ae;
+
+			VERSE "Sav-iour, will pre-";
+bar
+//16
+1 1: 4.b; 8c+; 4b; 4ge;
+1 2: 2.e; 4s;
+2 1: 4.g; 8a; 4g; 4be;
+2 2: 2.e; 4s;
+phrase above 1: 1 til 3;
+phrase above 2: 1 til 3;
+
+			VERSE 2.; 4; "pare A";
+bar
+//17
+1 1: 4f; 4ae; 4ge; 4fd;
+1 2: 4e; 4s; 4s; 4s;
+2: 4c+a-; 4c+a-; 4bb-; 4ab-;
+
+			VERSE "dwell-ing place for";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "thee.";
+endbar

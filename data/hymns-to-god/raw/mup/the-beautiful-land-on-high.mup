@@ -1,0 +1,225 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Melodies New and Old
+//			For use In the Universalist Church
+//			Chester Gore Miller, Editor
+//			Boston, Universalist Publishing House
+//			Copyright: 1904
+//			Hymn No.: 101
+//		
+// Transcribed by: Ted Gatza, Jr. 03/20/2012; rev. 02/19/2015
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Beautiful Land On High" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - DO" "\s(17)\f(TI)\:In\ my\ Father`s\ house\ are\ many\ ma\|nsions;\ if\ it\ were\ not\ so,\ I\ would have\ told\ you;\ for\ I\ go\ to\ prepa\|re\ a\ place\ for\ you.\ -\ Jn.\ 14:2" ""   
+   title (13) "James Nicholson" "" "William U. Butcher" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=130";
+
+//1
+1 1: 8e; fd; 2.s; 2;
+1 2: 8e; s; 2.s; 2s;
+2: 8ge; ae; 2.s; 2;
+
+			VERSE "<1. >-1|There's a";
+			VERSE "<2. >-1|There's a";
+			VERSE "<3. >-1|There's a";
+			VERSE "<4. >-1|There's a";
+			VERSE "<5. >-1|There's a";
+bar
+//2
+1 1: 4.ge; 8f#; 4ge; 2bd; 4db-;
+1 2: 4.s; 8e; 4s; 2; 4;
+2: 4.be; 8ane; 4be; 2bb-; 4ab-;
+
+			VERSE "beau-ti-ful land on";
+			VERSE "beau-ti-ful land on";
+			VERSE "beau-ti-ful land on";
+			VERSE "beau-ti-ful land on";
+			VERSE "beau-ti-ful land on";
+bar
+//3
+1: 2.eb- tie; 2; 8db- slur; ec;
+2: 2.ge tie; 2; 8bb- tie; 8;
+
+			VERSE 2.; 2s; 8; 8; "high, To its";
+			VERSE 2.; 2s; 8; 8; "high, I shall";
+			VERSE 2.; 2s; 4; "high, Then";
+			VERSE 2.; 2s; 8; 8; "high, And my";
+			VERSE 2.; 2s; 8; 8; "high, Where we";
+bar
+//3
+1: 4.fd; 8enc#; 4fd; 2af; 4ge&;
+2: 4.bb-; 8; 4; 2bb-; 4;
+
+			VERSE "glo-ries I fain would";
+			VERSE "en-ter it by and";
+			VERSE "why should I fear to";
+			VERSE "kin-dred its bliss en-";
+			VERSE "nev-er shall say \"good-";
+bar
+//4
+1: 2.fd tie; 2; 8ge slur; af;
+2 1: 2.bb- tie; 2; 8e tie;;
+2 2: 2.s; 2; 8e tie;;
+
+			VERSE 2.; 2s; 8; 8; "fly, When by";
+			VERSE 2.; 2s; 8; 8; "by; There with";
+			VERSE "die, When";
+			VERSE 2.; 2s; 8; 8; "joy; And me";
+			VERSE 2.; 2s; 8; 8; "bye;\" Where the";
+bar
+//5
+1: 4.bg; 8anf#; 4bg; 2ge; 8bg tie;;
+2 1:4.e; 8; 4; 2; 8be tie;;
+2 2: 4.e; 8; 4; 2; 8s;;
+
+			VERSE 4.; 8; 4; 2; 4; "sor-rows press'd down, I";
+			VERSE 4.; 8; 4; 2; 8; 8; "friends hand in hand, I shall";
+			VERSE 4.; 8; 4; 2; 8; 8; "death is the way To the";
+			VERSE 4.; 8; 4; 2; 8; 8; "thinks I now see How they're";
+			VERSE 4.; 8; 4; 2; 8; 8; "right-eous will sing, And their";
+bar
+//6
+1: 4.e+g; 8d+f; 4e+g; 2c+a; 8c+a;;
+2: 4.be; 8; 4; 2aa-; 8e+a-;;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "long for my crown, In that";
+			VERSE "walk on the strand, In that";
+			VERSE 2; 4; 2; 8; 8;"realms of day, In that";
+			VERSE "wait-ing for me, In that";
+			VERSE "cho-rus will ring, In that";
+bar
+//7
+1: 4.bg; 8af; 4ge; 2ad; 4db-;
+2: 4.e+b-; 8bb-; 4; 2; 4ab-;
+
+			VERSE "beau-ti-ful land on";
+bar
+//8
+1: 2.eb- tie; 2; 4s;
+2: 2.ge tie; 2; 4s;
+
+			VERSE "high.";
+dblbar
+//9
+1: 8ge;; 2.s; 2s;
+2: 8be;; 2.s; 2s;
+ital (13) above 1: 1 "Chorus";
+
+
+			VERSE "In that";
+bar
+//10
+1: 4.ge; 8; 4; 2bg; 4c+a;
+2 1: 4.be; 8; 4; 4b slur; e+; e+e;
+2 2: 4.s; 8; 4; 2e; 4s;
+
+			VERSE "beau-ti-ful land I'll";
+bar
+//11
+1: 2.bg tie; 2; 4ge;
+2: 2.e+e tie; 2; 4be;
+
+			VERSE "be, From";
+bar
+//12
+1 1: 4.fd; 8; 4; 2; 4e;
+1 2:4.s; 8; 4; 2; 4e;
+2 1: 4.bb-; 8; 4; 4.b slur; 8a; 4gc;
+2 2: 4.s; 8; 4; 2b-; 4s;
+
+			VERSE "earth and its cares set";
+bar
+//13
+1: 2.fd tie; 2; 4;
+2: 2.bb- tie; 2; 4;
+
+			VERSE "free; My";
+bar
+//14
+1: 4.ge; 8; 4; 2bg; 4be;
+2: 4.be; 8; 4; 2e+e; 4ge;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "Je-sus is there, He's";
+bar
+//15
+1 1: 4.c+e; 8; 4; 2e+e; 8d+ bm; c+ ebm;
+1 2: 4.s; 8; 4; 2; 4e;
+2 1: 4.aa-; 8; 4; 2c+a?a-; 8b bm; a ebm;
+2 2: 4.s; 8; 4; 2; 4a-;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			
+			VERSE 4.; 8; 4; 2; 4; "gone to pre-pare A";
+bar
+//16
+1: 4.be; 8ad; 4ge; 2ad; 4db-;
+2 1: 4.gb-; 8fb-; 4eb-; 2fb-; 8f bm; a ebm;
+2 2: 4.s; 8; 4; 2; 4b-;
+
+			VERSE "place in that land for";
+bar
+//17
+1: 2.eb- tie; 2; 4s;
+2: 2.ge tie; 2; 4s;
+
+			VERSE "me.";
+endbar

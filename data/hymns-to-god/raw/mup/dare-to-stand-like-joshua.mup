@@ -1,0 +1,271 @@
+// !Mup 7.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs of Redemption and Praise - Revised
+//		Compiled and Edited by
+//		John A. Davis and Jno. R. Clements
+//		Published by
+//		Bilhorn Brothers
+//		152 E. Lake Street
+//		Chicago Ill.
+//		Copyright 1906
+//		Hymn No.: 74
+
+// Transcribed by: 
+//	Ted Gatza, Jr. 10/28/2009
+
+// Revisions:
+//	07/02/2012
+//	07/19/2022 [1]Updated Mup code
+
+// HymnsToGod.org
+
+//===============
+top
+
+   title bold (18) "" "Dare To Stand Like Joshua" ""
+   title (4)"" 
+   title (11) "" "\f(TI)choose you this day whom ye will serve;.... but as for me"""
+   title (11) "" "\f(TI)and my house, we will serve Jehovah. - Josh. 24:15"""
+   title (11) "C - 4 - DO" "" ""
+   title (13) "C. M. Robinson" "" "P. P. Bilhorn, 1898"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+
+//==========================
+
+staffs=2
+	time=4/4
+	key=c
+
+staff 2
+	key=c
+	clef=bass
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+
+//=========================
+// set midi
+	midi all: 0 "tempo=110";
+
+//=========================
+
+//Verses
+
+//1
+1 1: 4c+e; 4c+e; 8c+ bm; 8g ebm; 8ec bm; 8ge ebm;
+1 2: 4s; 4s; 4e; 4s;
+2: 4gc; 4gc; 4gc; 4c+c; 
+
+
+	VS21 "<1. >-1|We are bound for";
+	VS21 "<2. >-1|Ma-ny tri-als";
+	VS21 "<3. >-1|When the dark Red";
+	VS21 "<4. >-1|Can we safe-ly";
+	VS21 "<5. >-1|Just be-fore us";
+bar
+
+//2
+1: 4c+e; 4c+f; 2c+e;
+2: 4gc; 4ac; 2gc;
+
+	VS "Ca-naan land,";
+	VS "we have seen,";
+	VS "sea of doubt,";
+	VS "trust a guide";
+	VS "Jor-dan rolls,";
+bar
+
+//3
+1: 4.e+g; 8e+g; 4d+f#; 4af;
+2: 4.c+c; 8c+c; 4ad; 4d+d;
+
+	VS "Tent-ing by the";
+	VS "Thus far on our";
+	VS "Bil-low'd in our";
+	VS "Who knows not the";
+	VS "Right a-cross the";
+bar
+
+//4
+1: 2.d+fn; 4r;
+2 1: 2.b; 4r;
+2 2: 4g; 4f; 4e; 4d;
+phrase below 2: 1 til 4;
+
+	VS "way;";
+	VS "way;";
+	VS "way;";
+	VS "way;";
+	VS "way;";
+bar
+
+//5
+1 1: 4c+e; 4c+e; 8c+ bm; 8g ebm; 8ec bm; 8ge ebm;
+1 2: 4s; 4s; 4e; 4s;
+2: 4gc; 4gc; 4gc; 4c+c;
+
+	VS21 "Who shall lead us";
+	VS21 "He hath led us ";
+	VS21 "Then He part-ed";
+	VS21 "God hath trav-eled";
+	VS21 "We can safe-ly";
+bar
+//6
+1: 4c+e; 4c+f; 2c+e;
+2: 4gc; 4ac; 2gc;
+
+	VS "on the road?";
+	VS "safe-ly thro',";
+	VS "ev'-ry wave\(emdash)";
+	VS "ev'-ry foot,";
+	VS "trust the Lord,";
+bar
+//7
+1: 4.e+g; 8c+e; 4d+f; 4d+f;
+2: 4.c+c; 8gc; 4bg; 4bg;
+
+	VS "Choose your king to-";
+	VS "Shall He lead to-";
+	VS "So He will to-";
+	VS "Shall He lead to-";
+	VS "He shall lead to-";
+bar
+//8
+1: 2.c+e; 4r;
+2: 2.c+c; 4r;
+
+	VS "day.";
+	VS "day?";
+	VS "day.";
+	VS "day?";
+	VS "day.";
+dblbar
+newscore
+
+//9
+CHORUS
+1: 4.c+e; 8ge; 4ge; 4c+g;
+2: 4.gc; 8c+c; 4c+c; 4c+e;
+
+
+	VS "Dare to stand like";
+bar
+
+//10
+1: 4.c+a; 8af; 2af;
+2: 4.c+f; 8c+f; 2c+f;
+
+	VS "Josh-u-a,";
+bar
+
+//11
+1: 4.d+f#; 8c+f; 4bf; 4af;
+2: 4.d+d; 8d+d; 4d+d; 4c+d;
+
+	VS "Dare to say the";
+bar
+
+//12
+1 1: 2.g; 4r;
+1 2: 4g; 4a; 4g; 4f;
+phrase below 1: 1 til 4;
+2 1: 2.b; 4r;
+2 2: 4g; 4f; 4e; 4d;
+phrase below 2: 1 til 4;
+
+	VS "word;_";
+bar
+newscore
+
+//13
+1: 4.c+e; 8c+g; 4d+g; 4d+g;
+2: 4.c+c; 8c+e; 4bg; 4bg;
+
+	VS "As for me and";
+bar
+
+//14
+1: 4e+g; 4c+g; 2af;
+2 1: 4c+; 4c+e; 2c+f;
+2 2: 4c+; 4s; 2s;
+
+	VS "for my house,";
+bar
+
+//15
+1: 4ge; 4c+g; 4bg; 4d+f;
+2: 4c+g; 4e+g; 4d+g; 4bg;
+
+	VS "We will serve the";
+bar
+
+//16
+1: 2.c+e; 4r;
+2: 2.c+c; 4r;
+
+	VS "Lord.";
+endbar

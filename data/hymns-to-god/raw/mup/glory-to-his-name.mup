@@ -1,0 +1,305 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Voices of Praise
+// 	Prepared With Especial Reference To The Needs Of The Sunday School
+//	Will Also Be Found Suitable For The Prayer Meeting And Other Religious Gatherings
+//	Compiled By William B. Olmstead, David S. Warner, Mary L. Coleman,
+// 	Emma L. Hogue, William B. Rose.
+// 	Published by W. B. RosE, Agent,
+//	1132 WashingtonBoulevard, Chicago, IL.
+//	Copyright 1900
+//	Hymn No.: 129
+
+// Transcribed by:
+//	Ted Gatza, Jr. 04/03/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Glory To His Name" ""
+   title (2)""
+   title (11) "" "\f(TI)I will praise thee, O Lord my God, with my whole heart" ""
+   title (11) "" "\f(TI)And I will glorify thy name for evermore. - Ps. 86:12" ""
+   title (11) "A \(flat) - 4 - SOL" "" ""
+   title (11) "Elisha A. Hoffman, 1878" "" "John H. Stockton"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+//Verse
+
+//1
+1: 4ec+; 8.; 16db; 4ca; 8.ea; 16eg;
+2: 4a-a; 8.; 16; 4; 8.ca; 16;
+
+
+	VS "<1. >-1|Down at the cross where my";
+	VS "<2. >-1|I am so won-drous-ly";
+	VS "<3. >-1|Oh, pre-cious foun-tain that";
+	VS "<4. >-1|Come to this foun-tain so";
+bar
+
+//2
+1: 4df; da; 2ce;
+2 1: 4da; fa; 2a;
+2 2: 4s; ; 2a;
+
+	VS "Sav-ior died,";
+	VS "saved from sin,";
+	VS "saves from sin,";
+	VS "rich and sweet;";
+bar
+
+//3
+1: 4ec+; 8.; 16; 4ee+; 8.; 16ec+;
+2 1: 4a; 8.; 16; 4ac+; 8.; 16ae+;
+2 2: 4a; 8.; 16; 4s; 8.; 16;
+
+	VS "Down where for cleans-ing from";
+	VS "Je-sus so sweet-ly a-";
+	VS "I am so glad I have";
+	VS "Cast thy poor soul at the";
+bar
+
+//4
+1: 4ea; ec+; 2eb;
+2 1: 4ac+; a; 2eg;
+2 2: 4s; a; 2s;
+
+	VS "sin I cried,";
+	VS "bides with-in,";
+	VS "en-tered in;";
+	VS "Sav-ior's feet;";
+bar
+
+//5
+1: 4ec+; 8.; 16db; 4ca; 8.ea; 16eg;
+2: 4a-a; 8.; 16; 4; 8.ca; 16;
+
+	VS "There to my heart was the";
+	VS "There at the cross where He";
+	VS "There Je-sus saves me and";
+	VS "Plunge in to-day and be";
+bar
+
+//6
+1: 4df; da; 2ce;
+2 1: 4da; fa; 2a;
+2 2: 4s; ; 2a;
+
+	VS "blood ap-plied;";
+	VS "took me in;";
+	VS "keeps me clean;";
+	VS "made com-plete;";
+bar
+newscore
+//7
+1: 4.ec+; 8ca; 4ec+; db;
+2: 4.ea; 8; 4; eg;
+
+	VS "Glo-ry to His";
+bar
+
+//8
+1: 2.ca; 4r;
+2: 2.a-a; 4r;
+
+	VS "name.";
+dblbar
+//9
+CHORUS
+1: 4.da; 8; 4fa; df;
+2: 4.df; 8; 4da; ;
+
+	VS "Glo-ry to His";
+bar
+
+//10
+1: 4.ce; 8df; 4ca; 4r;
+2: 2.a-a; 4r;
+  phrase above 1: 1 til 3;
+  phrase below 1: 1 til 3;
+
+	VS21 "name,";
+bar
+
+//11
+1: 4.ec+; 8; 4; ea;
+2 1: 4.a; 8; 4; ca;
+2 2: 4.a; 8; 4; s;
+
+	VS "Glo-ry to His";
+bar
+
+//12
+1 1: 4.b; 8c+; 4b; r;
+1 2: 2.e; 4s;
+2 1: 4.g; 8a; 4g; r;
+2 2: 2.e; 4s;
+  phrase above 1: 1 til 3;
+  phrase above 2: 1 til 3;
+
+	VS12 "name;";
+bar
+
+//13
+//5
+1: 4ec+; 8.; 16db; 4ca; 8.ea; 16eg;
+2: 4a-a; 8.; 16; 4; 8.ca; 16;
+
+	VS "There to my heart was the";
+bar
+
+//6
+1: 4df; da; 2ce;
+2 1: 4da; fa; 2a;
+2 2: 4s; ; 2a;
+
+	VS "blood ap-plied;";
+bar
+
+//7
+1: 4.ec+; 8ca; 4ec+; db;
+2: 4.ea; 8; 4; eg;
+
+	VS "Glo-ry to His";
+bar
+
+//8
+1: 2.ca; 4r;
+2: 2.a-a; 4r;
+
+	VS "name.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

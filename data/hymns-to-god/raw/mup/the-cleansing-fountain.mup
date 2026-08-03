@@ -1,0 +1,248 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 1 to 6
+//		by Ira D. Sankey, James McGranahan, and Gep. C. Stebbins
+//		Excelsior Edition
+//		Published by: The Biglow & Main Co. New York, Chicago
+//		The John Church Co. Cincinnati, New York, Chicago
+//		Copyright, 1895
+//		Hymn no. 273
+
+// Transcribed by: Ted Gatza, Jr. 04/22/2010; Rev. 04/05/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Cleansing Fountain" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - SOL" "\s(17)\f(TI)\:A\ fountain\ opened\ for\ sin\ and\ for\ uncleanness.\ -\ Zech.\ 13:1 \(space)"""
+   title (13) "Rian A. Dykes" " " "Ira D. Sankey, 1887"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key= 4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4.s; 4s; 8ec;
+2: 4.s; 4s; 8aa-;
+
+			lyrics 1: "<1. >-1|Be-";
+			lyrics 1: "<2. >-1|From";
+			lyrics 1: "<3. >-1|O";
+			lyrics 1: "<4. >-1|And";
+			
+bar
+//2
+1 1: 4ec; 8ec; 8e bm; 8f ebm; 8gd;
+1 2: 4s; 8s; 4d; 8s;
+2 1: 4aa-; 8aa-; 8g bm; 8a ebm; 8be;
+2 2: 4s; 8s; 4e; 8s; 
+
+			lyrics 1: 4; 8; 4; 8; "hold a Foun-tain";
+			lyrics 1: 4; 8; 4; 8; "Cal-vary's cross, where";
+			lyrics 1: 4; 8; 4; 8; "may we all the";
+			lyrics 1: 4; 8; 4; 8; "when at last the";
+bar
+//3
+1 1: 4ac; 8ac; 8a bm; g ebm; 8ae;
+1 2: 4s; 8s; 4e; 8s;
+2: 4aa-; 8aa-; 8c+a- bm; 8bb- ebm; 8ac;
+
+			lyrics 1: 4; 8; 4; 8; "deep and wide, Be-";
+			lyrics 1: 4; 8; 4; 8; "Je-sus died In";
+			lyrics 1: 4; 8; 8; 8; 8; "heal-ing pow-er Of";
+			lyrics 1: 4; 8; 4; 8; "mes-sage comes, And";
+bar
+//4
+1: 4be; 8bd; 4s; 8s;
+2: 4ge; 8ge; 4s; 8s;
+
+			lyrics 1: "hold its";
+			lyrics 1: "sor-row,";
+			lyrics 1: "that bless'd";
+			lyrics 1: "we are";
+invisbar
+newscore
+
+1: 4s; 8s; 4ac; 8be;
+2: 4s; 8s; 4af; 8ge;
+
+			lyrics 1: "on-ward";
+			lyrics 1: "pain and";
+			lyrics 1: "Foun-tain";
+			lyrics 1: "called to";
+
+bar
+//5
+1: 4.c+e tie; 4c+e; 8c+a;
+2 1: 4.a tie; 4a; 8e+a;
+2 2: 4.a tie; 4a; 8s;
+
+			lyrics 1: "flow; 'Twas";
+			lyrics 1: "woe, Burst";
+			lyrics 1: "know; Trust";
+			lyrics 1: "go, Our";
+bar
+//6
+1: 4d+g; 8c+a; 4be; 8adn;
+2: 4e+b; 8e+a; 4bg; 8bf;
+
+			lyrics 1: "o-pened in the";
+			lyrics 1: "forth the won-drous";
+			lyrics 1: "on-ly in the";
+			lyrics 1: "trust shall still be";
+bar
+//7
+1: 4ge; 8adn; 4be; 8be;
+2: 4be; 8bf; 4bg; 8ge;
+
+			lyrics 1: "Sav-iour's side, And";
+			lyrics 1: "crim-son tide That";
+			lyrics 1: "pre-cious blood That";
+			lyrics 1: "in the blood That";
+bar
+//8
+1 1: 4c+e; 8c+e; 8d+n bm; 8c+ ebm; 8d+a;
+1 2: 4s; 8s; 4a; 8s;
+2 1: 4a; 8a; 4bf; 8b;
+2 2: 4a; 8a; 4s; 8b;
+
+			lyrics 1: 4; 8; 4; 8; "cleans-eth \"white as";
+			lyrics 1: 4; 8; 4; 8; "cleans-eth \"white as";
+			lyrics 1: 4; 8; 4; 8; "cleans-eth \"white as";
+			lyrics 1: 4; 8; 4; 8; "cleans-eth \"white as";
+bar
+//9
+1: 4.e+g tie; 4e+g; 8d+&e;
+2: 4.be tie; 4be; 8bg;
+
+			lyrics 1: "snow, And";
+			lyrics 1: "snow, That";
+			lyrics 1: "snow, That";
+			lyrics 1: "snow, That";
+bar
+//10
+1 1: 4c+e; 8ae; 8b bm; a ebm; 8gd;
+1 2: 4s; 8s; 4d; 8s;
+2 1: 4a; 8ac; 8g bm; 8a ebm; 8be;
+2 2: 4a; 8s; 4e; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "cleans-eth white as";
+			lyrics 1: 4; 8; 4; 8; "cleans-eth white as";
+			lyrics 1: 4; 8; 4; 8; "cleans-eth white as";
+			lyrics 1: 4; 8; 4; 8; "cleans-eth white as";
+bar
+//11
+1: 4.ac tie; 4ac; 8r;
+2: 4.aa- tie; 4aa-; 8r;
+
+			lyrics 1: "snow.\"";
+			lyrics 1: "snow.\"";
+			lyrics 1: "snow.\"";
+			lyrics 1: "snow.\"";
+dblbar
+newscore
+//12
+1: 4.c+e; 4ac; 8fd;
+2: 4.aa-; 4aa-; 8aa-;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Come to this";
+bar
+//13
+1: 4ec slur; 8dnb-n; 4ec; 8ac;
+2 1: 4a slur; 8f; 4aa-; 8a;
+2 2: 4.a-; 4s; 8a;
+
+			lyrics 1: [c]"Foun-tain, 'Tis";
+bar
+//14
+1: 4.c+e; 4be; 8ae;
+2 1: 4.a; 4d+g; 8c+a;
+
+			lyrics 1: [c]"flow-ing to-";
+bar
+//15
+1: 4.e+g tie; 4e+g; 8d+e;
+2: 4.be tie; 4be; 8bg;
+
+			lyrics 1: [c]"day; And";
+bar
+//16
+1: 4c+e; 8d+f; 4s; 8s;
+2 1: 4a; 8a; 4s; 8s;
+2 2: 4a; 8a; 4s; 8s; 
+
+			lyrics 1: [c]"all who";
+invisbar
+newscore
+
+1: 4s; 8s; 4c+e; 8be;
+2 1: 4s; 8s; 4aa-; 8gb-;
+2 2: 4s; 8s; 4s; 8s; 
+
+			lyrics 1: [c]"will may";
+
+bar
+//17
+1 1: 4ae; 8gen; 8b bm; 8a ebm; 8fd;
+1 2: 4s; 8s; 4f; 8s;
+2: 4ac; 8bc; 4ad; 8ad;
+
+			lyrics 1: 4; 8; 4; 8; [c]"free-ly come And";
+bar
+//18
+1: 8ec bm; 8dnb-n ebm; 8ec; 4c+e; 8bd&;
+2 1: 4a; 8ae; 4ge; 8ge;
+2 2: 8e bm; 8f ebm; 8s; 4s; 8s;
+mussym (10) above 1: 4 "ferm";
+mussym (10) below 2: 4 "uferm";
+
+			lyrics 1: 4; 8; 4; 8; [c]"wash their sins a-";
+bar
+//19
+1: 4.ac tie; 4ac; 8s;
+2: 4.aa- tie; 4aa-; 8s;
+
+			lyrics 1: [c]"way.";
+endbar

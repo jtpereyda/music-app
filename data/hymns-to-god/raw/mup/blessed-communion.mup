@@ -1,0 +1,336 @@
+// !Mup vs. 7.0 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Praises
+//	For use in Gospel Meetings
+//	Young Peoples Societies
+//	Sunday Schools
+//	Edited by William J. Kirkpatrick, H.L. Gilmour,
+//	J. Lincoln Hall
+//	Publisher: Hall Mack Co.
+//	1020 Arch Street, Philadelphia
+//	Copyright: 1899
+//	Hymn No.: 64
+//		
+//   Transcribed by:
+//		Ted Gatza, Jr. 01/27/2014
+//   Revisions:
+//		10/13/2023 [1] Updated Mup code 
+
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "Blessed Communion" ""
+   title (2)""
+   title (11) "" "\f(TI)The grace of the Lord Jesus Christ, and the love of God, and the" ""   
+   title (11) "" "\f(TI)communion of the Holy Spirit, be with you all. - 2 Cor. 13:14" "" 
+   title (11) "A \(flat) - 2 - MI" "" ""
+   title (13) "Burton H. Winslow" "" "William J. Kirkpatrick, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1: @
+         define VS22 lyrics between 1&2 using 2 2: @ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1: 4.c+e; 8; be; ae;
+2: 4.aa-; 8; gb-; ac;
+
+	VS "<1. >-1|Near, near to my";
+	VS "<2. >-1|Sweet, sweet is my";
+	VS "<3. >-1|Free, free is the";
+bar
+
+//2
+1: 4.bd; fd;
+2: 4.fd; bd;
+
+	VS "Sav-iour,";
+	VS "por-tion,";
+	VS "foun-tain,";
+bar
+
+//3
+1: 8gd;;; gd bm; ac ebm; bd;
+2 1: 8s;;; b bm; a ebm; s;
+2 2: 8be;;; 4e; 8ge;
+
+	VS22 "Close to his bleed-ing";
+	VS22 "Sit-ting at Je-sus'";
+	VS22 "Flow-ing for all who";
+bar
+
+//4
+1: 4.ac tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+	VS "side;";
+	VS "feet,";
+	VS "will;";
+bar
+
+//5	
+1: 4c+e; 8;; be; ae;
+2: 4aa-; 8;; gb-; ac;
+
+	VS "Drink-ing deep of his";
+	VS "Learn-ing les-sons most";
+	VS "Come and feast on his";
+bar
+
+//6
+1: 4.bd; fd;
+2: 4.fd; bd;
+
+	VS "Spir-it,";
+	VS "bless-ed,";
+	VS "boun-ty,";
+bar
+
+//7
+1: 8ge;;; 4adn; 8fd;
+2: 8bb-;;; 4; 8ab-;
+
+	VS "Ev-er would I a-";
+	VS "Here at the mer-cy";
+	VS "He will re-ceive thee";
+bar
+
+//8
+1 1: 4.e tie; 4; 8r;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8r;
+
+	VS "bide.";
+	VS "seat.";
+	VS "still.";
+bar
+
+//9
+1: [up]4d+g; [up]8; d+e; c+e; be;
+2: 4be; 8;; ae; ge;
+
+	VS "There no trou-ble can";
+	VS "In his sa-cred pa-";  // original verse
+	VS "Bring thy bur-den and";
+bar
+
+//10
+1: 4.c+e; ae;
+2 1: 4.a; c+a;
+2 2: 4.a; s;
+
+	VS "harm me,";
+	VS "vil-ion"; // original verse
+	VS "leave it,";
+bar
+
+//11
+1: 8e+e;;; 4d+e; 8c+e;
+2 1: 8c+a;;; 4bg; 8a;
+2 2: 8s;;; 4; 8a;
+
+	VS "Shel-tered from ev-'ry";
+	VS "He doth a feast pre-";
+	VS "Cast on the Lord thy";
+bar
+
+//12
+1: 4.be tie; 4; 8r;
+2: 4.ge tie; 4; 8r;
+
+	VS "snare;";
+	VS "pare,\(emdash)";
+	VS "care;";
+bar
+
+//13
+1: 4c+en; 8;; be; ge;
+2: 4gc; 8;;;;
+
+	VS "Sweet-ly rest-ing in";
+	VS "Sa-cred, lov-ing com-";
+	VS "There's a joy in his";
+bar
+
+//14
+1: 4.bf; fd;
+2: 4.fd; ad;
+
+	VS "Je-sus,";
+	VS "mun-ion,";
+	VS "pre-sence,";
+bar
+
+//15
+1: 8.ec; 16c+e; 8;; ac; bd;
+2: 8.ae; 16; 8;;; ge;
+
+	VS "O it is good to be";
+	VS "O it is good to be";
+	VS "O it is good to be";
+bar
+
+//16
+1: 4.ac tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+	VS "there!";
+	VS "there!";
+	VS "there!";
+dblbar
+newscore
+
+//17
+CHORUS
+1: 8.e+e; 16c+e; 8;; d+e; e+e;
+2 1: 8.c+a; 16a; 8;; b; c+a;
+2 2: 8.s; 16a; 8;;; s;
+
+	VS "O it is good to be";
+	VS 8.s; 16s; 8s; 8s; 8; 8; "it is";
+bar
+
+//18
+1: [up]4.d+g tie; [up];
+2 1: 8.be; 16bg; 8b; 4.be;
+2 2: 8.s; 16; 8b; 4.s;
+
+	VS "there!_";
+	VS21 "good to be there!";
+bar
+
+//19
+1: [up]8.d+g; 16be; 8;; c+e; d+e;
+2: 8.be; 16ge; 8;; ae; be;
+
+	VS "O it is good to be";
+	VS 8.s; 16s; 8s; 8s; 8; 8; "it is";
+bar
+
+//20
+1: 4.c+e tie; 4; 8r;
+2: 8.aa-; 16ac; 8ae; 4aa-; 8r;
+
+	VS "there!_";
+	VS21 "good to be there!";
+bar
+
+//21
+1: 4c+en; 8;; be; ge;
+2: 4gc; 8;;;;
+
+	VS "In this bless-ed com-";
+bar
+
+//22
+1: 4.bf; fd;
+2: 4.fd; ad;
+
+	VS "mun-ion,";
+bar
+
+//23
+1: 8.ec; 16c+e; 8;; ac; bd;
+2: 8.ae; 16; 8;;; ge;
+
+	VS "O it is good to be";
+bar
+
+//24
+1: 4.ac tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+	VS "there!";
+endbar

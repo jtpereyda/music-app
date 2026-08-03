@@ -1,0 +1,219 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Assembly Hymn and Song Collection
+//		For use ing Chapel, Assembly, Convocation
+//		or General Exercises of Schools, Normals, 
+//		Colleges, Universitues, Etc.
+//		Compiled and Edited by C. Guy Hoover
+//		Professor of School Music, Theory and 
+//		Conducting
+//		Published by the Author
+//		Authorized Distributer: Educational Music Bureau
+//		School-Music Supply Department
+//		218 So. Wabash Ave. Chicago.
+//		Sixth Edition
+//		Copyright 1915
+//		Hymn no. 74
+
+// Transcribed by: Ted Gatza, Jr. 12/02/2001; Rev. 02/27/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Lord, How Thy Wonders Are Displayed" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:And\ the\ heavens\ shall\ praise\ thy\ wonders,\ O\ Jehovah;\ -\ Ps.\ 89:5 \(space)"""
+   title (13) "Isaac Watts" " " "Samuel Webbe"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 2s; 4ec;
+2: 2s; 4aa-;
+
+			lyrics 1: 2s; 4; "<1. >-1|Lord,";
+			lyrics 1: 2s; 4; "<2. >-1|There's";
+			lyrics 1: 2s; 4; "<3. >-1|Crea-";
+bar
+//2
+1: 2c+e; 4bd;
+2 1: 4a slur; 4e; 4ge;
+2 2: 2a-; 4s;
+
+			lyrics 1: "how Thy";
+			lyrics 1: "not a";
+			lyrics 1: "tures, as";
+bar
+//3
+1: 2ac; 4ge;
+2: 2af; 4ac;
+
+			lyrics 1: "won-ders";
+			lyrics 1: "plant or";
+			lyrics 1: "num-'rous";
+bar
+//4
+1: 4ge slur; 4fd; 4ad;
+2: 2ad; 4af;
+
+			lyrics 1: "are dis-";
+			lyrics 1: "flow'r be-";
+			lyrics 1: "as they";
+bar
+//5
+1: 2ec; 4e+e;
+2 1: 2a; 4c+a-;
+2 2: 2a; 4s;
+
+			lyrics 1: "play'd Where-";
+			lyrics 1: "low But";
+			lyrics 1: "be, Are";
+bar
+//6
+1 1: 4e+ slur; 4d+; 4c+e;
+1 2: 2e; 4s;
+2: 4c+a- slur; 4gb-; 4ac;
+
+			lyrics 1: "'er I";
+			lyrics 1: "makes Thy";
+			lyrics 1: "sub-jects";
+bar
+//7
+1 1: 4c+ slur; 4b; 4af;
+1 2: 2f; 4s;
+2 1: 4f slur; 4b; 4bndn;
+2 2: 2d; 4s;
+
+			lyrics 1: "turn my";
+			lyrics 1: "glo-ries";
+			lyrics 1: "to Thy";
+bar
+//8
+1: 2.a<g>e~;
+2: 2.c+<b>e~;
+
+			lyrics 1: "eye,";
+			lyrics 1: "known;";
+			lyrics 1: "care;";
+bar
+//9
+1 1: 4ge; 4r; 4e;
+1 2: 4s; 4s; 4e;
+2: 4be; 4r; 4ge;
+
+			lyrics 1: 4s; 4s; 4; "If";
+			lyrics 1: 4s; 4s; 4; "And";
+			lyrics 1: 4s; 4s; 4; "There's";
+
+bar
+//10
+1: 2c+e; 4be;
+2 1: 2a; 4ge;
+2 2: 2a; 4s;
+
+			lyrics 1: "I sur-";
+			lyrics 1: "clouds a-";
+			lyrics 1: "not a";
+bar
+//11
+1: 2ac; 4ge;
+2: 2af; 4ac;
+
+			lyrics 1: "vey the";
+			lyrics 1: "rise, and";
+			lyrics 1: "place where";
+bar
+newscore
+//12
+1: 4ge slur; 4fd; 4ad;
+2: 2ad; 4af;
+
+			
+			lyrics 1: "ground I";
+			lyrics 1: "tem-pests";
+			lyrics 1: "we can";
+bar
+//13
+1: 2ec; 4e+g&;
+2 1: 2a; 4ac;
+2 2: 2a; 4s;
+
+			lyrics 1: "tread, Or";
+			lyrics 1: "blow, By";
+			lyrics 1: "flee, But";
+bar
+//14
+1 1: 4e+ slur; 4d+; 4bf;
+1 2: 2f; 4s;
+2: 2ad; 4bd;
+
+			lyrics 1: "gaze up-";
+			lyrics 1: "or-der";
+			lyrics 1: "God is";
+bar
+//15
+1 1: 4a slur; 4c+; 4bd;
+1 2: 2e; 4s;
+2 1: 4c+ slur; 4a; 4ge;
+2 2: 2e; 4s;
+
+			lyrics 1: "on the";
+			lyrics 1: "from Thy";
+			lyrics 1: "pres-ent";
+bar
+//16
+1: 2ac; 4s;
+2: 2aa-; 4s;
+
+			lyrics 1: "sky!";
+			lyrics 1: "throne.";
+			lyrics 1: "there.";
+
+endbar			
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

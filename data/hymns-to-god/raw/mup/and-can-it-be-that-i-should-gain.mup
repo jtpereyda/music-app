@@ -1,0 +1,402 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: http://ccm.gospelcom.net/hymns/detail/and-can-it-be
+
+// Transcribed by: Ted Gatza, Jr. 10/23/2009
+
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (19) "" "And Can It Be That I Should Gain" ""
+   title (2) " "
+   title (11) "G-4-DO" "\f(TI)But God commendeth his own love toward us, in that, while\n we were yet sinners, Christ died for us. - Rom. 5:8"""
+   title "Charles Wesley, 1738" "Thomas Campbell, 1825"
+
+bottom
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4 	
+	key=1#
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+
+// ***********************************
+
+staff 2
+	key=1#
+	clef=bass
+music
+
+midi all: 0 "tempo=130";
+
+//1
+1: 2gb-; 4.gd; 8ad;
+2: 2dg-; 4.gb; 8fd;
+
+
+				lyrics 1: "<1. >-1|And can it";
+				lyrics 1: "<2. >-1|He Left His";
+				lyrics 1: "<3. >-1|No Con-dem-";
+bar
+//2
+1: 2.bd; 4d+d;
+2 1: 2.g; 4bg-;
+2 2: 4g; 4d; 4b-; 4s;
+phrase below 2: 1 til 3;
+
+				lyrics 1: "be that";
+				lyrics 1: "Fa-ther's";
+				lyrics 1: "na-tion";
+bar
+//3
+1 1: 4c+e slur; 4ec; 4f slur; 4a;
+1 2: 4s; 4s; 2c;
+2 1: 2ac; 4a slur; 4f;
+2 2: 2s; 2d;
+
+				lyrics 1: "I should";
+				lyrics 1: "throne a-";
+				lyrics 1: "now I";
+bar
+//4
+1: 2.gb-; 4db-;
+2: 2.gg-; 4gg-;
+
+				lyrics 1: "gain An";
+				lyrics 1: "bove So";
+				lyrics 1: "dread; Je-";
+bar
+//5
+1 1: 4e slur; 4a; 4f slur; 4d;
+1 2: 2c; 2a-;
+2 1: 4g slur; 4e; 4ad slur; 4fc;
+2 2: 2c; 4s; 4s;
+
+				lyrics 1: "in-t'rest";
+				lyrics 1: "free, so";
+				lyrics 1: "sus, and";
+bar
+//6
+1 1: 2gd; 4a slur; 4g;
+1 2: 2s; 2d;
+2: 2gb-; 4c+f- slur; 4bg-;
+
+				lyrics 1: "in the";
+				lyrics 1: "in-fi-";
+				lyrics 1: "all in";
+bar
+//7
+1: 2fd; 2ec#;
+2: 2aa-; 2ga-;
+
+				lyrics 1: "Sav-iour's";
+				lyrics 1: "nite His";
+				lyrics 1: "Him, is";
+bar
+1 1: 1d;
+1 2: 1d;
+2: 1fd;
+		
+				lyrics 1: "blood?";
+				lyrics 1: "grace!";
+				lyrics 1: "mine;";
+bar
+//8
+1 1: 2d; 4fd; 4gd;
+1 2: 2d; 4s; 4s;
+2: 2fd; 4ad; 4bd;
+
+				lyrics 1: "Died He for";
+				lyrics 1: "Emp-tied Him-";
+				lyrics 1: "A-live in";
+bar
+//9
+1 1: 2g slur; 4f; 4d;
+1 2: 2.d; 4d;
+2 1: 2b slur; 4a; 4fc;
+2 2: 2.d; 4s;
+
+				lyrics 1: "me, who";
+				lyrics 1: "self of";
+				lyrics 1: "Him, my";
+bar
+//10
+1: 2gd; 2bd;
+2: 2gb-; 2gg-;
+
+				lyrics 1: "caused His";
+				lyrics 1: "all but";
+				lyrics 1: "liv-ing";
+bar
+//11
+1 1: 2.ad; 4d;
+1 2: 2.s; 4d;
+2: 2.fd; 4gb-;
+
+				lyrics 1: "pain? For";
+				lyrics 1: "love, And";
+				lyrics 1: "Head, And";
+bar
+//12
+1: 4ec slur; 2ge; 4ec;
+2: 2.gc; 4gc;
+
+				lyrics 1: "me, who";
+				lyrics 1: "bled for";
+				lyrics 1: "clothed in";
+bar
+//13
+1 1: 4d slur; 2g; 4ae;
+1 2: 2.d; 4s;
+2: 2.gb-; 4gc;
+
+				lyrics 1: "Him to";
+				lyrics 1: "A-dam's";
+				lyrics 1: "right-eous-";
+bar
+//14
+1: 2bd; 2ac;
+2: 2gd; 2fd;
+
+				lyrics 1: "death pur-";
+				lyrics 1: "help-less";
+				lyrics 1: "ness di-";
+bar
+//15
+1: 1gb-;
+2: 1gg-;
+
+				lyrics 1: "sued?";
+				lyrics 1: "race:";
+				lyrics 1: "vine,";
+bar
+//16
+1 1: 2bd; 4ad; 4d;
+1 2: 2s; 4s; 4d;
+2: 2gg-; 4fd; 4fc;
+
+				lyrics 1: "A-maz-ing";
+				lyrics 1: "'Tis mer-cy";
+				lyrics 1: "Bold I ap-";
+bar
+//17
+1 1: 2gd; 4a slur; 4b;
+1 2: 2s; 2d;
+2: 2gb-; 4fa- slur; 4gg-;
+
+				lyrics 1: "love! How";
+				lyrics 1: "all, im-";
+				lyrics 1: "proach th'e-";
+bar
+//18
+1 1: 4c+ slur; 4e; 4a slur; 4g;
+1 2: 2e; 2e;
+2 1: 2gc; 4e slur; 4a;
+2 2: 2s; 2c#;
+
+				lyrics 1: "can it";
+				lyrics 1: "mense and";
+				lyrics 1: "ter-nal";
+bar
+//19
+1 1: 4.f; 8e; 4d; 4da-;
+phrase above 1: 1 til 3;
+1 2: 2.d; 4s;
+2 1: 4.a; 8g; 4f; 4fd;
+phrase above 2: 1 til 3;
+2 2: 2.d; 4s;
+
+				lyrics 1: 4.; 8s; 4s; 4; "be, That";
+				lyrics 1: 4.; 8s; 4s; 4; "free, For";
+				lyrics 1: 4.; 8s; 4s; 4; "throne, And";
+bar
+//20
+1 1: 4b-; 4d; 4g; 4db-;
+phrase above 1: 1 til 3;
+1 2: 2.b-; 4s;
+2: 2.gg-; 4gg-;
+
+				lyrics 1: 4; 4s; 4s; 4; "Thou, my";
+				lyrics 1: 4; 4s; 4s; 4; "O my";
+				lyrics 1: 4; 4s; 4s; 4; "claim the";
+bar
+//21
+1 1: 4e; 4g; 4c+; 4e;
+phrase above 1: 1 til 3;
+1 2: 4c slur; 2e; 4e;
+2: 2.gc; 4ac;
+
+				lyrics 1: 4; 4s; 4s; 4; "God shouldst";
+				lyrics 1: 4; 4s; 4s; 4; "God, it";
+				lyrics 1: 4; 4s; 4s; 4; "crown, through";
+bar
+//22
+1 1: 4f; 4a; 4d+; 4fc;
+phrase above 1: 1 til 3;
+1 2: 2.d; 4s;
+2 1: 4a slur; 2f; 4ad;
+2 2: 2.d; 4s;
+
+				lyrics 1: 4; 4s; 4s; 4; "die for";
+				lyrics 1: 4; 4s; 4s; 4; "found out";
+				lyrics 1: 4; 4s; 4s; 4; "Christ my";
+bar
+//23
+1 1: 2.gb-; 4s;
+1 2: 2.s; 4s;
+2 1: 2.gg-; 4s;
+
+				lyrics 1: "me? ";
+				lyrics 1: 2.; 4s; "me!";
+				lyrics 1: 2.; 4s; "own.";
+
+invisbar
+
+1 1: 2.s; 4g;
+1 2: 2.s; 4r;
+2 1: 2.s; 4r;
+
+				lyrics 1: "A-";
+
+bar
+//24
+1 1: 2b; 2b;
+1 2: 2r; 2d;
+2: 2r; 2gg-;
+
+				lyrics 1: "maz-ing";
+				lyrics 1: 2s; 2; "A-";
+bar
+//25
+1 1: 2.a; 4a;
+1 2: 4d; 4d; 4d; 4r;
+2: 4fd; 4fd; 4fd; 4r;
+
+				lyrics 1: "love! How";
+				lyrics 1: 4; 4; 4; 4s; "maz-ing love!";
+bar
+//26
+1 1: 2c+; 2c+;
+1 2: 2r; 2d;
+2: 2r; 2fd;
+
+				lyrics 1: "can it";
+				lyrics 1: 2s; 2; "How";
+bar
+//27
+1 1: 2.b; 4b;
+1 2: 4d; 4d; 4d; 4r;
+2 1: 4g; 4bg; 4bg; 4r;
+2 2: 4g; 4s; 4s; s;
+
+				lyrics 1: "be, That";
+				lyrics 1: 4; 4; 4; 4s; "can it be,";
+bar
+//28
+1 1: 2e+; 2e+;
+1 2: 4r; 4g; 4g; 4g;
+2: 4r; 4c+c; 4c+e; 4c+c;
+
+				lyrics 1: "Thou, my";
+				lyrics 1: 4s; 4; 4; 4; "That Thou, my";
+bar
+//29
+1 1: 2d+; 4c+ slur; 4a;
+1 2: 2g; 2e;
+2 1: 2ge; 4a slur; 4c+;
+2 2: 2s; 2c;
+
+				lyrics 1: "God, shouldst";
+				lyrics 1: "God, shouldst";
+bar
+//30
+1: 2gd; 2fc;
+2: 2bd; 2ad;
+
+				lyrics 1: "die for";
+				lyrics 1: "die for";
+bar
+//31
+1: 1gb-;
+2: 1gg-;
+
+				lyrics 1: "me?";
+				lyrics 1: "me?";
+endbar
+
+
+// =====================================
+
+// Complete Lyrics 
+ 
+// And can it be that I should gain
+// An interest in the Savior's blood?
+// Died He for me, who caused His pain
+// For me, who Him to death pursued?
+// Amazing love! How can it be,
+// That Thou, my God, shouldst die for me?
+// Amazing love! How can it be,
+// That Thou, my God, shouldst die for me?
+// 
+// 'Tis mystery all: th' Immortal dies:
+// Who can explore His strange design?
+// In vain the firstborn seraph tries
+// To sound the depths of love divine.
+// 'Tis mercy all! Let earth adore,
+// Let angel minds inquire no more.
+// Tis mercy all! Let earth adore;
+// Let angel minds inquire no more.
+// 
+// He left His Father's throne above
+// So free, so infinite His grace
+// Emptied Himself of all but love,
+// And bled for Adam's helpless race:
+// 'Tis mercy all, immense and free,
+// For O my God, it found out me!
+// 'Tis mercy all, immense and free,
+// For O my God, it found out me!
+// 
+// Long my imprisoned spirit lay,
+// Fast bound in sin and nature's night;
+// Thine eye diffused a quickening ray-
+// I woke, the dungeon flamed with light;
+// My chains fell off, my heart was free,
+// I rose, went forth, and followed Thee.
+// My chains fell off, my heart was free,
+// I rose, went forth, and followed Thee.
+//  
+// Still the small inward voice I hear,
+// That whispers all my sins forgiven;
+// Still the atoning blood is near,
+// That quenched the wrath of hostile Heaven.
+// I feel the life His wounds impart;
+// I feel the Savior in my heart.
+// I feel the life His wounds impart;
+// I feel the Savior in my heart.
+// 
+// No condemnation now I dread;
+// Jesus, and all in Him, is mine;
+// Alive in Him, my living Head,
+// And clothed in righteousness divine,
+// Bold I approach th' eternal throne,
+// And claim the crown, through Christ my own.
+// Bold I approach th' eternal throne,
+// And claim the crown, through Christ my own.

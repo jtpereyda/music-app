@@ -1,0 +1,204 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 1 to 6
+//    by Ira D. Sankey, James McGranahan,
+//    and Geo. C. Stebbins
+//    The John Church Co.
+//    Cincinnatti, New York, Chicage
+//    The Biglow & Main Co.
+//    76 East 9th Street, New York
+//    215 Wabash Avenue, Chicago
+//    Copyright 1894
+//    Hymn No. 310
+
+// Transcribed by: Ted Gatza, Jr. 02/13/2010; Rev. 09/20/2013
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "Oh, Wondrous Name!" ""
+   title (2)""
+title (11) "C - 4 - SOL" "\s(18)\f(TI)\:Wonderful\ Counselor,\ M\|ighty\ God,\ Everlasting Father,\ Prince\ of\|\ Peace.\ -\ Is.\ 9:6"""
+   title (13) "Victoria Frances" " " "Ira D. Sankey"  
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+   label=""
+   staffs=2
+   time=4/4 
+   key=c major
+   packexp = 0.0
+   packfact = 0.0
+   pad = 0
+   noteheads = "isostri semicirc diam righttri norm rect pie"
+   vscheme = 3f
+   staffscale=1.0
+   scoresep=6,20
+   scorepad=0
+   scale = .73
+   lyricssize = 13
+   pageheight=9.0
+   pagewidth=6.0
+   topmargin=.200
+   bottommargin=.200
+   withfontfamily=palatino
+
+
+staff 2
+   key=c major
+   clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=112";
+
+//1
+1: 2.s; 4ge;
+2: 2.s; 4c+c;
+
+         lyrics 1: "<1. >-1|Oh,";
+         lyrics 1: "<2. >-1|Oh,";
+         lyrics 1: "<3. >-1|Oh,";
+bar
+//2
+1: 4.ge; 8fd; 4ec; 4c+e;
+2: 4.c+c; 8gc; 4gc; 4gc;
+
+         lyrics 1: "won-drous Name, by";
+         lyrics 1: "glor-ious Name the";
+         lyrics 1: "prec-ious Name, ex-";
+bar
+//3
+1: 4.c+f; 8bf; 4af; 4af;
+2: 4.af; 8bf; 4c+f; 4c+f;
+
+         lyrics 1: "pro-phets heard Long";
+         lyrics 1: "an-gels praise, And";
+         lyrics 1: "alt-ed high, To";
+bar
+//4
+1: 4.ge; 8af; 4ge; 4ec;
+2: 4.c+c; 8c+c; 4c+c; 4gc;
+
+         lyrics 1: "years be-fore His";
+         lyrics 1: "ran-somed saints a-";
+         lyrics 1: "Him all pow'r is";
+bar
+//5
+1 1: 2.db-; 4g;
+1 2: 2.s; 4f;
+2: 2.gg-; 4bg-;
+
+         lyrics 1: "birth; They";
+         lyrics 1: "dore,\(emdash) The";
+         lyrics 1: "giv'n; Through";
+bar
+//6
+1: 4.ge; 8fd; 4ec; 4c+g;
+2: 4.c+c; 8gc; 4gc; 4c+e;
+
+         lyrics 1: "saw Him com-ing";
+         lyrics 1: "Name a-bove all";
+         lyrics 1: "Him we tri-umph";
+bar
+//7
+1: 4.c+a; 8bg; 4af; 4af;
+2: 4.c+f; 8c+f; 4c+f; 4c+f;
+
+         lyrics 1: "from a-far, The";
+         lyrics 1: "oth-er names, Our";
+         lyrics 1: "o-ver sin, By";
+bar
+//8
+1: 4.ge; 8ge; 4af; 4bf;
+2 1: 4.c+g; 8g; 4bg-; 4gg-;
+2 2: 4.s; 8g; 4s; 4s;
+
+         lyrics 1: "Prince of Peace on";
+         lyrics 1: "re-fuge ev-er-";
+         lyrics 1: "Him we en-ter";
+bar
+//9
+1: 2.c+e; 4s;
+2: 2.gc; 4s;
+
+         lyrics 1: "earth.";
+         lyrics 1: "more.";
+         lyrics 1: "Heav'n.";
+dblbar
+//10
+1 1: 4g; 2.s;
+1 2: 4g; 2.s;
+2 1: 4g; 2.s;
+2 2: 4g; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+         lyrics 1: [c]"The";
+bar
+//11
+1 1: 4.d+f; 8bf; 4g; 4g;
+1 2: 4.s; 8s; 4f; 4g;
+2 1: 4.bg; 8d+g; 4bg; 4g;
+2 2: 4.s; 8s; 4s; 4g;
+
+         lyrics 1: [c]"Won-der-ful! The";
+bar
+//12
+1 1: 4.e+g; 8c+e; 4ge; 4g;
+1 2: 4.s; 8s; 4s; 4g;
+2 1: 4.c+c; 8gc; 4c+c; 4g;
+2 2: 4.s; 8s; 4s; 4g;
+
+         lyrics 1: [c]"Coun-sel-or! The";
+bar
+//13
+1: 4f+f; 4e+g; 4d+a; 4c+a;
+2 1: 4d+b; 4c+; 4d+f; 4d+#f#;
+2 2: 4s; 4c+; 4s; 4s; 
+
+         lyrics 1: [c]"Great and Might-y";
+bar
+//14
+1 1: 2c+ slur; 4b; 4g;
+1 2: 2.g; 4g;
+2 1: 2e+ slur; 4d+; 4c+e;
+2 2: 2.g; 4s;
+
+         lyrics 1: [c]"Lord! The";
+bar
+//15
+1: 4.af; 8bf; 4c+e; 4c+e;
+2: 4.c+f; 8gd; 4gc; 4c+c;
+
+         lyrics 1: [c]"ev-er-last-ing";
+bar
+//16
+1: 4d+f; 4f+a; 4e+a; 4d+a;
+2: 4af; 4d+d; 4c+#e; 4d+f;
+
+         lyrics 1: [c]"Prince of Peace! The";
+bar
+//17
+1: 4.c+g; 8c+e; 4.d+f; 8c+e;
+2: 4.e+g; 8c+g; 4.bg; 8c+g;
+
+         lyrics 1: [c]"King, the Son of";
+bar
+//18
+1: 2.c+e; 4s;
+2: 2.c+c; 4s;
+
+         lyrics 1: [c]"God!";
+endbar

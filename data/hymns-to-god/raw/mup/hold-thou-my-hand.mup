@@ -1,0 +1,305 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	Good News Hymns
+//	Edited and Compiled by Benjamin Franklin Butts
+//	For use in Church and Evangelistic Services
+//	Published by The Biglow and Main Co.
+//	Madison Terminal Building, Chicago
+//	205-209 West 19th Street, New York
+//	Copyright 1914
+//	Hymn No. 55 (pdf page 56)
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 07/24/2023
+
+// Revisions:
+//	08/02/2023 [1]Corrected spelling in scripture quote.
+//	
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "Hold Thou My Hand" ""
+   title (2)""
+   title (11)"" "\f(TI)I, Jehovah, have called thee in righteousness, and will" ""
+   title (11)"" "\f(TI)hold thy hand, and will keep thee, - Is. 42:6" ""
+   title (11) "A\(flat) - 2 - SOL" "" ""
+   title (13) "Fanny J. Crosby" "" "Hubert P. Main, 1880"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+   
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=2/4	
+	key=a&
+
+
+staff 2
+	key=a&
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=65";
+
+//=========================
+
+//Verse 1
+
+//1
+1: 4ce; 8b-ndn; 8ce;
+2: 4a-a; 8; 8;
+
+	VS "<1. >-1|Hold Thou my";
+	VS "<2. >-1|Hold Thou my";
+	VS "<3. >-1|Hold Thou my";
+	VS "<4. >-1|Hold Thou my";
+bar
+
+//2
+1: 4.d&f; 8ce;
+2: 4.a-a; 8;
+
+	VS "hand; so";
+	VS "hand; and";
+	VS "hand; the";
+	VS "hand, that";
+bar
+
+//3
+1: 8ce; ec+; eb; ea;
+2: 8a-a; ; ca; ;
+
+	VS "weak I am, and";
+	VS "clos-er, clos-er";
+	VS "way is dark be-";
+	VS "when I reach the";
+bar
+
+//4
+1: 4ea; eg;
+2: 4ec+; eb;
+
+	VS "help-less,";
+	VS "draw me";
+	VS "fore me";
+	VS "mar-gin";
+bar
+
+//5
+1: 4eb; 8eg; ea;
+2: 4eg; 8eb; ec+;
+
+	VS "I dare not";
+	VS "To Thy dear";
+	VS "With-out the";
+	VS "Of that lone";
+bar
+
+//6
+1: 4eb; ec+;
+2: 4eg; a-a;
+
+	VS "take one";
+	VS "self\(emdash) my";
+	VS "sun-light";
+	VS "riv-er";
+bar
+
+//7
+1 1: 8e; ; 8.dng; 16df;
+1 2: 8e; ; 4s;
+2: 8b-g; ; 8.b-b; 16b-a;
+
+	VS "step with-out Thy";
+	VS "hope, my joy, my";
+	VS "of Thy face di-";
+	VS "Thou didst cross for";
+bar
+
+//8
+1 1: 2e;
+1 2: 4e slur; d&;
+2: 2eg;
+
+	VS "aid;";
+	VS "all;";
+	VS "vine;";
+	VS "me;";
+dblbar
+
+//9
+1: 4ce; 8b-ndn; ce;
+2: 4a-a; 8; 8;
+
+	VS "Hold Thou my";
+	VS "Hold Thou my";
+	VS "But when by";
+	VS "A hean'n-ly";
+bar
+
+//10
+1: 4.d&f; 8ce;
+2: 4.a-a; 8;
+
+	VS "hand; for";
+	VS "hand, lest";
+	VS "faith I";
+	VS "light may";
+bar
+
+//11
+1: 8ea; ec+; ee+; fd+;
+2: 8ca; a-a; ca; da;
+
+	VS "then, O lov-ing";
+	VS "Hap-ly I should";
+	VS "catch its ra-diant";
+	VS "flash a-long its";
+bar
+
+//12
+1: 4ec+; eb;
+2: ea; eg;
+
+	VS "Sav-iour,";
+	VS "wan-der,";
+	VS "glo-ry,";
+	VS "wa-ters,";
+bar
+
+//13
+1: 4ee+; 8ed+; ec+;
+2: 4ca; 8b-g; a-a;
+
+	VS "No dread of";
+	VS "And, miss-ing";
+	VS "What heights of";
+	VS "And ev-ery";
+bar
+
+//14
+1: 4df; fb;
+2: 4da; b-d+;
+
+	VS "ill shall";
+	VS "Thee, my";
+	VS "joy, what";
+	VS "wave like";
+bar
+
+//15
+1: 8ea; eg; 8.gc+; 16gb;
+2: 8ec+; eb; 8.ee+; 16ed+;
+
+	VS "make my soul a-";
+	VS "trem-bling feet should";
+	VS "rap-turous songs are";
+	VS "crys-tal bright shall";
+bar
+
+//16
+1 1: 2a;
+1 2: 2a;
+2: 2a-c+;
+
+	VS "fraid.";
+	VS "fall.";
+	VS "mine!";
+	VS "be.";
+endbar
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

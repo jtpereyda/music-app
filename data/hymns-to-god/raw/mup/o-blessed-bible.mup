@@ -1,0 +1,231 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gems of Song For The Sunday School 
+//		complied and arranged by Ira D. Sankey and Hybert P. Main
+//		The Biglow & Main Co. 135 Fifth Avenue, New York
+//		Copyright 1901
+
+// Transcribed by: Ted Gatza, Jr. 10/11/2009; rev. 09/13/2013
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+   title bold (18) "" "O Blessed Bible" ""
+   title (11) "A \(flat)- 2 - SOL" "\s(17)\f(TI)\:...I\ love\ thy\ comma\|ndments\ above\ gold, yea,\ above\ fine\ g\|old.\ -\ Ps.\ 119:127"""
+   title (13) "Fanny J. Crosby" "Frank M. Davis"
+bottom
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""	
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+//1
+1: 4.s; 4s; 8ec;
+2: 4.s; 4s; 8aa-;
+
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|Our";
+			VERSE "<3. >-1|Thou";
+			VERSE "<4. >-1|O";
+bar
+//2
+1: 4c+e; 8c+e; 8d+f bm; 8c+e ebm; 8bd;
+2: 4aa-; 8aa-; 4aa-; 8ea-;
+
+			VERSE 4; 8; 4; 8; "bless-ed, bless-ed";
+			VERSE 4; 8; 4; 8; "chart u-pon life's";
+			VERSE 4; 8; 4; 8; "tell-est us of";
+			VERSE 4; 8; 4; 8; "bless-ed, bless-ed";
+bar
+//3
+1: 4.ac; 4ec; 8ec;
+2: 4.ea-; 4aa-; 8aa-;
+			VERSE "Bi-ble, Our";
+			VERSE "o-cean, Our";
+			VERSE "Je-sus, The";
+			VERSE "Bi-ble, That";
+bar
+//4
+1 1: 8s; 8s; 8s; 4fd; 8ad; 
+1 2: 8s; 8s; 8s; 4s; 8s; 
+2 1: 8s; 8s; 8s; 4ad; 8fd; 
+2 2: 4s; 8s; 4s; 8s; 
+
+			VERSE 4s; 8s; 4; 8; "trea-sured";
+			VERSE 4s; 8s; 4; 8; "com-pass";
+			VERSE 4s; 8s; 4; 8; "Son of";
+			VERSE 4s; 8s; 4; 8; "God Him-";
+
+invisbar
+newscore
+
+1 1: 8g bm; 8a ebm; 8bd; 4s; 8s;
+1 2: 4d; 8s; 4s; 8s;
+2 1: 8e bm; 8f ebm; 8ge; 4s; 8s; 
+2 2: 4e; 8s; 4s; 8s; 
+
+			VERSE 4; 8; 4s; 8s; "book di-";
+			VERSE 4; 8; 4s; 8s; "day by";
+			VERSE 4; 8; 4s; 8s; "God a-";
+			VERSE 4; 8; 4s; 8s; "self hath";
+
+bar
+//5
+1: 4.ac tie; 4ac; 8ec;
+2: 4.aa- tie; 4aa-; 8aa-;
+
+			VERSE "vine, With";
+			VERSE "day, The";
+			VERSE "bove, Who";
+			VERSE "giv'n, To";
+bar
+//6
+1: 4c+e; 8c+e; 8d+f bm; 8c+e ebm; 8bd;
+2: 4aa-; 8aa-; 4aa-; 8ea-;
+
+			VERSE 4; 8; 4; 8; "hope, and joy, and";
+			VERSE 4; 8; 4; 8; "lamp our feet di-";
+			VERSE 4; 8; 4; 8; "came the world to";
+			VERSE 4; 8; 4; 8; "fit us for His";
+bar
+//7
+1: 4.a c; 4ec; 8ae;
+2: 4.ea-; 4aa-; 8c+a-;
+
+			VERSE "com-fort, Thy";
+			VERSE "rect-ing, The";
+			VERSE "ran-som, So";
+			VERSE "king-dom, Of";
+bar
+newscore
+//8
+1 1: 4ge; 8ge; 8b bm; 8a ebm; 8fd;
+1 2: 4s; 8s; 4dn; 8s;
+2: 4bb-; 8bb-; 4fb-; 8ab-;
+
+			VERSE 4; 8; 4; 8; "pa-ges bright-ly";
+			VERSE 4; 8; 4; 8; "light that guides our";
+			VERSE 4; 8; 4; 8; "great His won-drous";
+			VERSE 4; 8; 4; 8; "end-less life in";
+bar
+//9
+1 1: 4.e tie; 4e; 8s;
+1 2: 4.e tie; 4e; 8s;
+2: 4.ge tie; 4ge; 8s;
+
+			VERSE "shine.";
+			VERSE "way.";
+			VERSE "love.";
+			VERSE "heav'n.";
+dblbar
+//10
+1 1: 4.s; 4s; 8e;
+1 2: 4.s; 4s; 8e;
+2: 4.s; 4s; 8ge;
+
+			ital (13) above 1: 1 "Chorus";
+			VERSE [c]"More";
+bar
+//11
+1 1: 4d+e; 8d+e; 8d+ bm; 8c+ ebm; 8be;
+1 2: 4s; 8s; 4e; 8s;
+2 1: 4be; 8be; 8b bm; 8a ebm; 8ge;
+2 2: 4s; 8s; 4e; 8s;
+
+			VERSE 4; 8; 4; 8; [c]"pre-cious still than";
+bar
+newscore
+//12
+1: 4.c+e; 4 ae; 8ae;
+2: 4.aa-; 4c+a-; 8c+a-;
+
+			VERSE "ru-bies, More";
+bar
+
+//13
+1: 4c+e; 8c+e; 4be; 8af;
+2 1: 4a; 8a; 4bg; 8c+f;
+2 2: 4a; 8a; 4s; 8s;
+
+			VERSE  "pure than pur-est";
+
+bar
+//14
+1: 4.af slur; 4gen; 8ge;
+2: 4.c+c tie; 4c+c; 8bc;
+
+			VERSE "gold, Our";
+bar
+//15
+1 1: 4f; 8fd; 8s; 8s; 8s;
+1 2: 4f; 8s; 8s; 8s; 8s;
+2: 4ad; 8ad; 4s; 8s;
+
+			VERSE 4; 8; 4s; 8s; "bless-ed,";
+
+invisbar
+newscore
+
+1 1: 4s; 8s; 8af bm; 8ge ebm; 8fd;
+1 2: 4s; 8s; 8s; 8s; 8s;
+2: 4s; 8s; 4ad; 8ad;
+
+			VERSE 4s; 8s; 8; 8s; 8;"bless-ed";
+
+bar
+//16
+1: 4.ec; 4ac; 8c+e;
+2: 4.aa-; 4ea-; 8aa-;
+
+			VERSE "Bi-ble, Thy";
+bar
+//17
+1: 4bd; 8fd; 8gd bm; ac ebm; 8bd;
+2 1: 4fd; 8ad; 8e; 8e; 8e;
+2 2: 4s; 8s; 8e; 8e; 8e;
+
+			VERSE "worth can ne-ver be";
+bar
+//18
+1: 4.ac tie; 4ac; 8s;
+2: 4.ea- tie; 4ea-; 8s;
+		
+			VERSE "told.";
+endbar

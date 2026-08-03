@@ -1,0 +1,233 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest And Best
+//		A Choice Collection of New Songs
+//		for the Sunday School
+//		and Meetings of prayer and Praise
+//		New York and Chicago
+//		Publishers: Biglow and Main
+//		Copyright 1875
+//		Hymn no. 50
+
+// Transcribed by: Ted Gatza, Jr. 02/15/2010; Rev. 04/09/2020
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Loving Voice" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - DO" "\s(17)\f(TI)\:Fear\ thou\ not,\ for\ I\ am\ with\ thee.\ -\ Is.\ 41:10 \(space)"""
+   title (13) "Frances J. Crosby" " " "W. H. Doane"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 2s; 8.ae; 16be;
+2: 2s; 8.c+a; 16d+a;
+
+
+			lyrics 1: "<1. >-1|Long I";
+			lyrics 1: "<2. >-1|On the";
+			lyrics 1: "<3. >-1|Soon my";
+bar
+//2
+1: 4.c+a; 8c+a; 8.d+a; 16c+a;
+2: 4.e+a; 8e+a; 8.f+a; 16e+a;
+
+			lyrics 1: "tried to bear the";
+			lyrics 1: "mar-gin of a";
+			lyrics 1: "feet will tread the";
+bar
+//3
+1: 4c+a; 4bg; 8.c+g; 16bg;
+2: 4e+e; 4d+e; 8.c+en; 16c+e;
+
+			lyrics 1: "bur-den, In the";
+			lyrics 1: "riv-er, Where the";
+			lyrics 1: "val-ley On-ward";
+bar
+//4
+1: 4.af; 8af; 8.c+f; 16s;
+2: 4.c+f; 8c+f; 8.e+d; 16s;
+
+			lyrics 1: "toil and heat";
+			lyrics 1: "storm-y bil-";
+			lyrics 1: "to the stream";
+invisbar
+newscore
+
+1: 4.s; 8s; 8.s; 16bf;
+2: 4.s; 8s; 8.s; 16d+d;
+
+			lyrics 1: "of";
+			lyrics 1: "lows";
+			lyrics 1: "of";
+
+bar
+//5
+1 1: 4a slur; 4g; 8.ae; 16ge;
+1 2: 2e; 8.s; 16s;
+2 1: 4c+ slur; 4b; 8.ac; 16ac;
+2 2: 4.e slur; 8d; 8.s; 16s;
+
+			lyrics 1: "day, Till my";
+			lyrics 1: "roll, How I";
+			lyrics 1: "death; I shall";
+bar
+//6
+1: 4.fd; 8fd; 8.af; 16fd;
+2: 4.ad; 8ad; 8.ad; 16ad;
+
+			lyrics 1: "spir-it sank with-";
+			lyrics 1: "trem-bled when I";
+			lyrics 1: "hear its wa-ters";
+bar
+//7
+1: 4ec; 4ae; 8be; 8c+e;
+2: 4aa-; 4ac; 8gb-; 8aa-;
+
+			lyrics 1: "in me, And my";
+			lyrics 1: "felt them Break-ing";
+			lyrics 1: "mov-ing, I shall";
+bar
+//8
+1: 4.be; 8ge; 8.gdn; 16fd;
+2: 4.gb-; 8bb-; 8.bb-; 16ab-;
+
+			lyrics 1: "fee-ble strength gave";
+			lyrics 1: "wild-ly o'er my";
+			lyrics 1: "feel their chil-ly";
+bar
+//9
+1 1: 2e; 8e; 8e;
+1 2: 2e; 8e; 8e; 
+2: 2ge; 8r; 8r; 
+
+			lyrics 1: "way; Then like";
+			lyrics 1: "soul; I was";
+			lyrics 1: "breath; But my";
+bar
+//10
+1: 4e+c+; 4d+b; 8.c+a; 16c+a;
+2 1: 4r; 4r; 8.e; 16e;
+2 2: 4s; 4s; 8.e; 16e;
+
+			lyrics 1: "mu-sic, heav'n-ly";
+			lyrics 1: "pass-ing through the";
+			lyrics 1: "foot-steps will not";
+bar
+//11
+1: 4c+a; 4bg; 8.ae; 16ae;
+2: 4e+e; 4d+e; 8.c+e; 16c+e;
+
+			lyrics 1: "mu-sic, Breath-ing";
+			lyrics 1: "wa-ters, But my";
+			lyrics 1: "fal-ter, For my";
+bar
+//12
+1: 4ae; 4ge; 8ae; 8c+e;
+2: 4c+e; 4be; 8ac; 8aa-;
+
+			lyrics 1: "com-fort on my";
+			lyrics 1: "Fa-ther still was";
+			lyrics 1: "Sav-iour watch-ing";
+bar
+//13
+1 1: 4c+ slur; 4b; 8.ge; 16ge;
+1 2: 2e; 8.s; 16s;
+2 1: 4a slur; 4g; 8.be; 16bd;
+2 2: 2e; 8.s; 16s;
+
+			lyrics 1: "ear, Came a";
+			lyrics 1: "near, And he";
+			lyrics 1: "near, In a";
+bar
+//14
+1: 4.ae; 8s; 8s; 8s;
+2: 4.ac; 8s; 8s; 8s;
+
+			lyrics 1: "lov-";
+			lyrics 1: "said";
+			lyrics 1: "lov-";
+invisbar
+newscore
+
+1: 4.s; 8ae; 8be; 8c+a;
+2: 4.s; 8c+a; 8d+g; 8e+g&;
+
+			lyrics 1: "ing voice that";
+			lyrics 1: "a-mid the";
+			lyrics 1: "ing voice will";
+
+bar
+//15
+1 1: 8.e+ bm; 16d+ ebm; 4d+f; 8.c+f; 16bf;
+1 2: 4a; 4s; 8.s; 16s; 
+2: 4d+f; 4d+d; 8.e+d; 16d+d;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			lyrics 1: 4; 4; 8.; 16; "whis-pered, I am";
+			lyrics 1: 4; 4; 8.; 16; "dark-ness, I am";
+			lyrics 1: 4; 4; 8.; 16; "whis-per, I am";
+bar
+//16
+1: 4ae; 4ec; 8.c+e; 16be;
+2: 4c+e; 4ae; 8.ae; 16d+e;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			lyrics 1: "with thee, do not";
+			lyrics 1: "with thee, do not";
+			lyrics 1: "with thee, do not";
+bar
+//17
+1: 2ae; 4s;
+2: 2c+a-; 4s;
+
+			lyrics 1: "fear.";
+			lyrics 1: "fear.";
+			lyrics 1: "fear.";
+endbar

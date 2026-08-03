@@ -1,0 +1,632 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Songs of Redemption
+// 	By Thoro Harris
+// 	Publisher Eureka Springs, Ark
+//	1132 WashingtonBoulevard, Chicago, IL.
+//	Copyright 1937
+//	Hymn No.: 104
+
+
+// Transcribed by:
+//	Ted Gatza, Jr. 04/09/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1
+	scale=.85
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+staffs=2
+	time=4/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Anywhere is Home" ""
+   title (2)""
+   title (11) "" "\f(TI)Not that I speak in respect of want: for I have learned" ""
+   title (11) "" "\f(TI)in whatsoever state I am, therein to be content - Phil. 4:1" ""
+   title (11) "A \(flat) - 4 - SOL" "" ""
+   title (13) "John. M. Henson" "" "Homer F. Morris"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS11 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (13) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (13) above 1: 1 "Refrain"; @
+         define RALL ital (13) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (13) above 1: COUNT "rit."; @
+        define FINE(COUNT)
+           ital (13) above 1: COUNT "fine"; @
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"; @
+        define DS(COUNT)
+	  ital (13) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+//Verse
+
+//1
+1 1: 2.s; 8.e; 16f;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+
+	VS11 "<1. >-1|Earth-ly";
+	VS11 "<> <>";
+
+	VS11 "<2. >-1|Oft I'm";
+	VS11 "<> <>";
+
+	VS11 "<3. >-1|I will";
+	VS11 "<> <>";
+bar
+
+//2
+1 1: 2.a; 4ea;
+1 2: 4e; d; c; s;
+2: 4a-c+; a-f; a-e; a-c+;
+
+	VS11 "wealth and";
+	VS21 "Earth-ly wealth and";
+
+	VS11 "tossed a-";
+	VS21 "Oft I'm tossed, am";
+
+	VS11 "la-bor";
+	VS21 "I will la-bor,";
+bar
+
+//3
+1 1: 2.c+; 4enb;
+1 2: 4e; 8a bm; 8f ebm; 4e; s;
+2 1: 4s; 8f bm; g ebm; 4s; ca;
+2 2: 4a-a; a-; a-a; s;
+
+	VS11 "fame may";
+	VS22 "hon-ored fame";
+
+	VS11 "bout and";
+	VS22 "tossed a-bout";
+
+	VS11 "on till";
+	VS22 "la-bor on,";
+bar
+
+//4
+1: 4fa; eng; fa; df;
+2: 4dd+; ; ; da;
+
+	VS "nev-er come to";
+	VS "<> <> <> <>";
+
+	VS "driv-en by the";
+	VS "<> <> <> <>";
+
+	VS "I am called a-";
+	VS "<> <> <> <>";
+bar
+
+//5
+1: 2.ce; 4s;
+2: 2.a-a; 4s;
+
+	VS "me,";
+	VS "<>";
+
+	VS "foe,";
+	VS "<>";
+
+	VS "way,";
+	VS "<>";
+invisbar
+newscore
+
+1 1: 2.s; 8.e; 16f;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+
+	VS11 "And a";
+	VS11 "<> <>";
+
+	VS11 "Sad with-";
+	VS11 "<> <>";
+
+	VS11 "'Till the";
+	VS11 "<> <>";
+bar
+
+//6
+1 1: 2.a; 4ea;
+1 2: 4e; d; c; s;
+2: 4a-c+; a-f; a-e; a-c+;
+
+	VS11 "pal-ace";
+	VS21 "And an earth-ly";
+
+	VS11 "in, with-";
+	VS21 "Sad with-in and";
+
+	VS11 "morn shall";
+	VS21 "'Till the morn at";
+bar
+
+//7
+1 1: 2.c+; 4ea;
+1 2: 4e; 8a bm; 8f ebm; 4e; s;
+2 1: 4s; 8f bm; g ebm; 4s; ca;
+2 2: 4a-a; a-; a-a; s;
+
+	VS11 "fair, here";
+	VS22 "pal-ace fair";
+
+	VS11 "out wher-";
+	VS22 "sad with-out";
+
+	VS11 "dawn, of";
+	VS22 "last shall dawn,";
+bar
+
+//8
+1: 4dnc+; db; ; dc+;
+2: 4b-a; b-f; ; b-a;
+
+	VS11 "mine may nev-er";
+	VS11 "<> <> <> <>";
+
+	VS11 "ev-er I may";
+	VS11 "<> <> <> <>";
+
+	VS11 "that e-ter-nal";
+	VS11 "<> <> <> <>";
+bar
+
+//9
+1: 2.eb; 4s;
+2: 2.eg; 4s;
+
+	VS11 "be;";
+	VS11 "<>";
+
+	VS11 "go;";
+	VS11 "<>";
+
+	VS11 "day;";
+	VS11 "<>";
+invisbar
+newscore
+
+1 1: 2.s; 8.e; 16f;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS11 "But let";
+	VS11 "<> <>";
+
+	VS11 "But I";
+	VS11 "<> <>";
+
+	VS11 "Look-ing";
+	VS11 "<> <>";
+bar
+
+//10
+1 1: 2.a; 4ea;
+1 2: 4e; d; c; s;
+2: 4a-c+; a-f; a-e; a-c+;
+
+	VS11 "come what";
+	VS21 "But let come, let";
+
+	VS11 "press a-";
+	VS21 "So I press, I";
+
+	VS11 "un-to";
+	VS21 "Ev-er look-ing";
+	
+bar
+
+//11
+1 1: 2.c+; 4enb;
+1 2: 4e; 8a bm; 8f ebm; 4e; s;
+2 1: 4a-a; 4a; 4a-a; s;
+2 2: 4s; 8e bm; c ebm; 4s; ca;
+
+	VS11 "may, if";
+	VS21 "come what may,";
+
+	VS11 "long still";
+	VS21 "press a-long,";
+
+	VS11 "Him, who";
+	VS21 "un-to Christ";
+
+bar
+
+//12
+1: 4fa; eng; fa; df;
+2: 4dd+; ; ; da;
+
+	VS11 "Christ for me doth";
+	VS11 "<> <> <> <>";
+
+	VS11 "look-ing up in";
+	VS11 "<> <> <> <>";
+
+	VS11 "keeps me in His";
+	VS11 "<> <> <> <>";
+bar
+
+//13
+1: 2.ce; 4s;
+2: 2.a-a; 4s;
+
+	VS11 "care,";
+	VS11 "<>";
+
+	VS11 "pray'r,";
+	VS11 "<>";
+
+	VS11 "care,";
+	VS11 "<>";
+invisbar
+newscore
+
+1 1: 2.s; 8.a; 16c+;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS11 "An-y-";
+	VS11 "<> <>";
+
+	VS11 "For its";
+	VS11 "<> <>";
+
+	VS11 "An-y";
+	VS11 "<> <>";
+bar
+
+//14
+1 1: 2.e+; 8f+ bm; e+ ebm;
+1 2: 4a; g; a; ;
+2 1: 2.s; 8d+ bm; c+ ebm;
+2 2: 4ac+; eb; ac+; a;
+
+	VS 2.; 4; "where is";
+	VS12 "An-y-where is";
+
+	VS 2.; 4; "home, sweet";
+	VS12 "Oh, I know 'tis";
+
+	VS 2.; 4; "where is";
+	VS12 "An-y-where is";
+
+bar
+
+//15
+1 1: 2.c+; 4ea;
+1 2: 4a; ; ; s;
+2: 4ae+; eae+; a-ae+; ca;
+
+	VS11 "home, if";
+	VS12 "home, sweet home,";
+	VS11 "home, if";
+
+	VS12 "home, sweet home,";
+	VS11 "home, if";
+
+	VS12 "home, sweet home,";
+
+bar
+
+//16
+1: 4ec+; ac+; ; gb;
+2: 4ea; ec+; ee+; ed+;
+
+	VS11 "He is on-ly";
+	VS11 "<> <> <> <>";
+
+	VS11 "Christ is on-ly";
+	VS11 "<> <> <> <>";
+
+	VS11 "Christ, my Lord is";
+
+bar
+
+//17
+1 1: 2.a; 4s;
+1 2: 4a; f; e; 4s;
+2 1: 4c+; d+; c+; 4s;
+2 2: 2.a-a; 4s;
+
+	VS11 "there.";
+	VS12 "on-ly there.";
+
+	VS11 "there.";
+	VS12 "on-ly there.";
+
+	VS11 "there.";
+	VS12 "on-ly there.";
+
+dblbar
+newscore
+
+//18
+REFRAIN
+1 1: 2.s; 8.a; 16c+;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+
+	VS11 "An-y-";
+bar
+
+//19
+1 1: 2.e+; 8f+ bm; e+ ebm;
+1 2: 4a; g; a; a;
+2 1: 2.s; 8d+ bm; c+ ebm;
+2 2: 4ac+; eb; ac+; a;
+
+
+	VS 2.; 4; "where is";
+	VS 4; 4; 4; 4s; "An-y-where";
+bar
+
+//20
+1 1: 2.c+; 4s;
+1 2: 4a; ; ; s;
+2: 4ae+; ; ; s;
+
+	VS11 "home";
+	VS 4s; 4; 4; 4s; "sweet home";
+invisbar
+
+1 1: 2.s; 8b bm; c+ ebm;
+1 2: 4s; ; ; g&;
+2 1: 4s; ; ; 8c+ bm; e+ ebm;
+2 2: 4s; ; ; 4a;
+
+	VS 2.s; 4; "Let";
+bar
+
+//21
+1: 4fa; fb; fa; df;
+2: 4dd+; ; ; da;
+
+	VS11 "come and go what";
+bar
+
+//22
+1: 2.ce; 4s;
+2 1: 2.a; 4s;
+2 2: 4a-; 8.c; 16e; 4a; s;
+
+	VS11 "may,";
+	VS 4s; 8.; 16; 4; 4s; "come what may,";
+invisbar
+
+1 1: 2.s; 8.a; 16c+;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS "An-y-";
+bar
+
+//23
+1 1: 2.e+; 8f+ bm; e+ ebm;
+1 2: 4a; g; a; ;
+2 1: 4s; ; ; 8d+ bm; c+ ebm;
+2 2: 4ac+; eb; ac+; a;
+
+	VS 2.; 4; "where I";
+	VS12 "An-y-where I";
+bar
+
+//24
+1 1: 2.c+; 4s;
+1 2: 4a; ; ; s;
+2: 4ae+; eae+; a-ae+; s;
+
+	VS11 "roam,";
+	VS12 "chance to roam,";
+invisbar
+
+1: 2.s; 4ea;
+2: 2.s; 4ca;
+
+	VS "He";
+bar
+
+//25
+1: 4dnc+; db; ; dc+;
+2: 4b-a; b-f; ; b-a;
+
+	VS11 "keeps me all the";
+bar
+
+//26
+1 1: 2.b; 4s;
+1 2: 4e; dn; e; s;
+2: 4eg; b-f; eg; s;
+
+	VS11 "way;";
+	VS 4s; 4; 4; 4s; "each day;";
+invisbar 
+
+1 1: 2.s; 8.e; 16f;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS11 "So for";
+
+bar
+
+//27
+1 1: 2.a; 4ea;
+1 2: 4e; d; c; s;
+2: 4a-c+; a-f; a-e; a-c+;
+
+
+	VS11 "His dear";
+	VS21 "So for my dear";
+bar
+
+//28
+1 1: 2.c+; 4enb;
+1 2: 4e; 8a bm; 8f ebm; 4e; s;
+2 1: 4a-a; 4a; 4a-a; s;
+2 2: 4s; 8e bm; c ebm; 4s; ca;
+
+
+	VS11 "sake, my";
+	VS 4; 4; 4; 4s; "Mas-ter's sake";
+bar
+
+//29
+1: 4fa; eng; fa; df;
+2: 4dd+; ; ; da;
+
+
+	VS11 "cross I'll meek-ly";
+bar
+
+//30
+1: 2.ce; 4s;
+2: 2.a-a; 4s;
+
+	VS11 "bear,";
+invisbar
+
+1 1: 2.s; 8.a; 16c+;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+
+	VS11 "An-y";
+bar
+
+//15
+1 1: 2.e+; 8f+ bm; e+ ebm;
+1 2: 4a; g; a; ;
+2 1: 2.s; 8d+ bm; c+ ebm;
+2 2: 4ac+; eb; ac+; a;
+
+
+	VS 2.; 4; "where is";
+	VS12 "An-y-where is";
+bar
+
+//31
+1 1: 2.c+; 4ea;
+1 2: 4a; ; ; s;
+2: 4ae+; eae+; a-ae+; ca;
+
+
+	VS11 "home, If";
+	VS21 "home, sweet home, If";
+bar
+
+//32
+1: 4ec+; ac+; ; gb;
+2: 4ea; ec+; ee+; ed+;
+
+
+	VS11 "Christ, my Lord is";
+bar
+
+//33
+1 1: 2.a; 4s;
+1 2: 4a; f; e; 4s;
+2 1: 4c+; d+; c+; 4s;
+2 2: 2.a-a; 4s;
+
+
+	VS11 "there.";
+	VS12 "on-ly there.";
+endbar

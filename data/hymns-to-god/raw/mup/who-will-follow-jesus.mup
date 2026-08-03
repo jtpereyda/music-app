@@ -1,0 +1,305 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Junior Songs
+//		A Collection of Sacred Hymns And Songs
+//		For use in Meetings of Junior Societies,
+//		Sunday Schools, etc.
+//		Editors: John R. Sweney, William J. Kirkpatrick
+//		Copyright: 1892
+//		Hymn No.: 90
+
+// Transcribed by: Ted Gatza, Jr. 07/19/2025
+
+// Revisions:
+//	07/21/2025 [1] Corrected spelling of the starting syllable of the melody.
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Who Will Follow Jesus?" ""
+   title (2) ""
+   title (9) "" "\f(TI)And he saith unto them, Come ye after me, and I will make you fishers of men. - Matt. 4:19" ""
+   title (11) "" 
+   title (11) "D - 4 - SOL" "" ""
+   title (13) " Eliza E. Hewitt, 1891" "" "William J. Kirkpatrick, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1: 8.fa; 16; 8.; 16gb; 4fa; 4df;
+2: 8.dd+; 16; 8.; 16; 4; 4da;
+
+	VS "<1. >-1|Who will fol-low Je-sus";
+	VS "<2. >-1|Who will fol-low Je-sus";
+	VS "<3. >-1|Who will fol-low Je-sus";
+
+bar
+
+//2
+1 1: 8.df; 16; 8.cf; 16ce; 2d;
+1 2: 8.s; 16; 8.; 16; 2d;
+2 1: 8.a; 16; 8.a- a; 16a-g; 2df;
+2 2: 8.a; 16; 8.s; 16; 2;
+
+	VS "Stand-ing for the right!";
+	VS "In life's bus-y ways,";
+	VS "In His work of love,";
+bar
+
+//3
+1: 8.db; 16; 8.; 16dc+; 4dd+; gb;
+2 1: 8.g; 16; 8.; 16a; 4gb; gd+;
+2 2: 8.g; 16; 8.; 16; 4s; ;
+
+	VS "Hold-ing up His ban-ner";
+	VS "Work-ing for the Mas-ter,";
+	VS "Lead-ing oth-ers to Him,";
+bar
+
+//4
+1: 8.fa; 16; 8.; 16df; 2ce;
+2: 8.dd+; 16; 8.; 16da; 2a-a;
+
+	VS "In the thick-est fight?";
+	VS "Giv-ing Him the praise;";
+	VS "Lift-ing prayers a-bove?";
+bar
+
+//5
+1: 8.ce; 16; 8.; 16df; 4eg; ce;
+2: 8.a-a; 16; 8.; 16; 4; ;
+
+	VS "Lis-t'ning for His or-ders,";
+	VS "Earn-est in His vine-yard,";
+	VS "Cour-age, faith-ful serv-ant!";
+bar
+
+//6
+1: 8.df; 16; 8.; 16eg; 2fa;
+2: 8.da; 16; 8.; 16; 2dd+;
+
+	VS "Read-y to o-bey,";
+	VS "Hon-or-ing His laws";
+	VS "In His word we see,";
+bar
+
+//7
+1: 8.gb; 16gd+; 8.gc+; 16gb; 4fa; fd+;
+2 1: 8.gd+; 16gb; 8.gc+; 16gd+; 4ad+; a;
+2 2: 8.s; 16; 8.; 16; 4; a;
+
+	VS "Who will fol-low Je-sus,";
+	VS "Faith-ful to His coun-sel";
+	VS "On our side for-ev-er";
+bar
+
+//8
+1: 8.ce; 16eg; 8.df; 16ce; 2a-d;
+2: 8.a-a; 16; 8.; 16a-g; 2df;
+
+	VS "Serv-ing Him to-day?";
+	VS "Watch-ful for His cause?";
+	VS "Will this Sav-ior be.";
+dblbar
+
+CHORUS
+
+//9
+1: 8.fa; 16; 8.; 16gb; 4fa; df;
+2: 8.dd+; 16; 8.; 16; 4; da;
+
+	VS "Who will fol-low Je-sus?";
+bar
+
+//10
+1: 8.fd+; 16; 8.; 16gb; 2fa;
+2: 8.da; 16; 8.; 16dd+; 2;
+
+	VS "Who will make re-ply,";
+bar
+
+//11
+1: 8.eg; 16; 8.;16ea; 4eg; ce;
+2: 8.a-c+; 16; 8.; 16; 4; a-a;
+
+	VS "\"I am on the Lord's side;";
+bar
+
+//12
+1: 8.gc+; 16gb; 8.fa; 16eg; 2df;
+2: 8.a-e+; 16; 8.a-a; 16; 2da;
+
+	VS "Mas-ter, here am I?\"";
+bar
+
+//13
+1: 8.fa; 16; 8.; 16gb; 4fa; df;
+2: 8.dd+; 16; 8.; 16; 4dd+; da;
+
+	VS "Who will fol-low Je-sus?";
+bar
+
+//14
+1: 8.fd+; 16; 8.; 16gb; 2fa;
+2: 8.da; 16; 8.; 16dd+; 2;
+
+	VS "Who will make re-ply,";
+bar
+
+//15
+1 1: 8.d; 16e; 8.f; 16g; 4a; fd+;
+FST(4)
+1 2: 8.d; 16e; 8.f; 16g; 4a; s;
+2 1: 8.d; 16e; 8.f; 16g; 4a; da;
+2 2: 8.d; 16e; 8.f; 16g; 4a; s;
+FBB(4)
+
+	VS "\"I am on the Lord's side;";
+bar
+
+//16
+1: 8.ce; 16eg; 8.df; 16ce; 2a-d;
+2: 8.a-a; 16; 8.; 16a-g; 2df;
+
+	VS "Mas-ter, here am I.\"";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

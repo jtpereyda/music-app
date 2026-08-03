@@ -1,0 +1,213 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 66
+//		
+// Transcribed by: Ted Gatza, Jr. 02/14/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Jesus, Our Wonderful Saviour" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:who\ gave\ himself\ for\ our\ sins,\ that\ h\|e\ might\ deliver\ us\ out\ of\ this\ present evil\ world,\ according\ to\ the\ will\ \|of\ our\ God\ and\ Father:\ -\ Gal.\ 1:4" ""   
+   title (13) "Ida L. Reed" "" "J. H. Kurzenknabe, 1894"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 4ec; 8;; 4fd; 8ec; ca-;
+2: 4aa-; 8;; 4; 8;;
+
+			VERSE "<1. >-1|Slain for the sins of the";
+			VERSE "<2. >-1|Dy-ing for us, oh, the";
+			VERSE "<3. >-1|Strong is the love that for";
+			
+bar
+//2
+1: 4ec; ac; 2;
+2: 4aa-;; 2;
+
+			VERSE "world was He,";
+			VERSE "fear-ful pain,";
+			VERSE "us He bore,";
+bar
+//3
+1: 4be; 8;; 4c+e; 8be; ae;
+2 1: 4ge; 8;; 4a; 8ge; ac;
+2 2: 4s; 8;; 4a; 8s;;
+
+			VERSE "Je-sus, our won-der-ful";
+			VERSE "Je-sus, our won-der-ful";
+			VERSE "Je-sus, our won-der-ful";
+bar
+//4
+1: 2be; 4; 4r;
+2: 2ge; 4; 4r;
+
+			VERSE "Sav-iour;";
+			VERSE "Sav-iour;";
+			VERSE "Sav-iour;";
+bar
+//5
+1: 4c+e; 8;; 4bf; 8af; fd;
+2 1: 4a; 8;; 4d+d; 8; ad;
+2 2: 4a; 8;; 4s; 8;;
+
+			VERSE "Slain that we all might for-";
+			VERSE "That with the Lord we may";
+			VERSE "Strong-er than death, touch-ing";
+bar
+//6
+1: 4ec; ac; 2;
+2: 4aa-;; 2;
+
+			VERSE "giv-en be,";
+			VERSE "live a-gain,";
+			VERSE "ev-'ry shore,";
+bar
+//7
+1: 4c+e; 8be; ae; 4s; 8s;;
+2: 4ae; 8d+e; c+e; 4s; 8s; s;
+
+			VERSE "Je-sus, our";
+			VERSE "Je-sus, our";
+			VERSE "Je-sus, our";
+invisbar
+newscore
+
+1: 4s; 8; s; 4be; 8ae; ge;
+2: 4s; 8s; s; 4d+e; 8c+e; be;
+
+			VERSE "won-der-ful";
+			VERSE "won-der-ful";
+			VERSE "won-der-ful";
+
+bar
+//8
+1: 2ae; 4; 4r;
+2: 2c+a-; 4; 4r;
+
+			VERSE "Sav-iour:";
+			VERSE "Sav-iour:";
+			VERSE "Sav-iour:";
+bar
+//9
+1: 4be; 8;; 4; 8ae; 8be;
+2: 4ge; 8;; 4; 8ac; ge;
+
+			VERSE "King o-ver all, He was";
+			VERSE "Bear-ing the death on the";
+			VERSE "Still it is sweep-ing from";
+bar
+//10
+1: 4c+e; e+e; 2c+e;
+2 1: 4a; c+a; 2a;
+2 2: 4a; s; 2a;
+
+			VERSE "cru-ci-fied,";
+			VERSE "cross, that we";
+			VERSE "ev-'ry strand,";
+bar
+//11
+1:4be; 8;; 4; 8ae; be;
+2: 4ge; 8;; 4; 8ac; ge;
+
+			VERSE "Un-der our bur-den of";
+			VERSE "Might from our bur-den of";
+			VERSE "Bless-ing the pil-grims of";
+bar
+//12
+1: 4c+e; e+e; 2c+e;
+2 1: 4a; c+a; 2a;
+2 2: 4a; s; 2s;
+
+			VERSE "sins He died,";
+			VERSE "sins be free";
+			VERSE "ev-'ry land,";
+bar
+//13
+1: 4ac; 8;; 4c+e; 8be; ae;
+2: 4aa-; 8;; 4; 8gb-; ac;
+
+			VERSE "Died, that we all might be";
+			VERSE "And be-come heirs of e-";
+			VERSE "Je-sus, that won-der-ful";
+bar
+//14
+1: 4bf; 8af bm; fd ebm; 2ec;
+2: 4ad;; 2aa-;
+
+			VERSE 4; 4; 2; "jus-ti-fied,";
+			VERSE 4; 4; 2; "ter-ni-ty,";
+			VERSE 4; 4; 2; "heav-'nly Friend,";
+bar
+//15
+1: 4c+e; 8be; ae; 4be; 8ae; ge;
+2: 4ae; 8d+e; c+e; 4d+e; 8c+e; be;
+
+			VERSE "Je-sus, our won-der-ful";
+			VERSE "Je-sus, our won-der-ful";
+			VERSE "Je-sus, our won-der-ful";
+bar
+//16
+1: 2ae; 4; r;
+2: 2c+a-; 4; r;
+
+			VERSE "Sav-iour.";
+			VERSE "Sav-iour.";
+			VERSE "Sav-iour.";
+endbar

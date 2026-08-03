@@ -1,0 +1,230 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns New and Old
+//		For use in Gospel Meetings 
+//		and other Religious Services
+//		by D. B. Towner
+//		Published by Fleming H. Revell,
+//		Chicago, 148 and 150 Madison Street
+//		New York, 12 Bible House
+//		Copyright 1887
+//		Hymn no. 24
+
+// Transcribed by: Ted Gatza, Jr. 09/22/2010; Rev. 03/05/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Room in the Heart of Jesus!" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - MI" "\s(17)\f(TI)\:Come\ unto\ me,\ all\ ye\ that\ l\^abor\ and\ are\ heavy\ laden, and\ I\ will\ give\ you\ \|rest.\ -\ Matt.\ 11:28"""
+   title (13) "C. B. Comfort" " " "Daniel B. Towner,1887"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key= 3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4.s; 4s; 16ge; 16af;
+2: 4.s; 4s; 16be; 16be;
+
+			lyrics 1: 4.s; 4s; 16; 16; "<1. >-1|There is";
+			lyrics 1: 4.s; 4s; 16; 16; "<2. >-1|There is";
+			lyrics 1: 4.s; 4s; 16; 16; "<3. >-1|There is";
+bar
+//2
+1 1: 8.bg; 16bg; 8bg; 8b bm; 8c+ ebm; 8d+a;
+1 2: 8.s; 16s; 8s; 4a; 8s;
+2 1: 8.e+e; 16e+e; 8e+e; 8d+ bm; 8e+ ebm; 8e+b-;
+2 2: 8.s; 16s; 8s; 4b-; 8s;
+
+			lyrics 1: 8.; 16; 8; 4; 8; "room in the heart of";
+			lyrics 1: 8.; 16; 8; 4; 8; "room in the heart of";
+			lyrics 1: 8.; 16; 8; 4; 8; "room in the heart of";
+bar
+//3
+1 1: 4.e+g; 4bg; 16e; 16f;
+1 2: 4.s; 4s; 16e; 16e;
+2: 4.e+e; 4e+e; 16ge; 16ae;
+
+			lyrics 1: "Je-sus, For the";
+			lyrics 1: "Je-sus, And He";
+			lyrics 1: "Je-sus, Yes, there's";
+bar
+//4
+1: 8.ge; 16ge; 8s; 8s; 8s; 8s;
+2: 8.be; 16be; 8s; 4s; 8s;
+
+			lyrics 1: 8.; 16; 8s; 4s; 8s; "wea-ry,";
+			lyrics 1: 8.; 16; 8s; 4s; 8s; "com-eth";
+			lyrics 1: 8.; 16; 8s; 4s; 8s; "room, come";
+invisbar
+newscore
+
+1: 8.s; 16s; 8ge; 8bg bm; 8af ebm; 8ge;
+2: 8.s; 16s; 8be; 4be; 8be;
+
+			lyrics 1: 8.s; 16s; 8; 4; 8; "and worn and";
+			lyrics 1: 8.s; 16s; 8; 4; 8; "in grace to";
+			lyrics 1: 8.s; 16s; 8; 4; 8; "and find it";
+
+bar
+//5
+1: 4.fd tie; 4fd; 16ge; 16af;
+2: 4.bb- tie; 4bb-; 16be; 16be;
+
+			lyrics 1: "sad. There is";
+			lyrics 1: "all, With a";
+			lyrics 1: "true. Why in";
+bar
+//6
+1 1: 8.bg; 16bg; 8bg; 8b bm; 8c+ ebm; 8d+a;
+1 2: 8.s; 16s; 8s; 4a; 8s;
+2 1:8.e+e; 16e+e; 8e+e; 8d+ bm; 8e+ ebm; 8e+b-;
+2 2: 8.s; 16s; 8s; 4b-; 8s;
+
+			lyrics 1: 8.; 16; 8; 4; 8; "room in the heart of";
+			lyrics 1: 8.; 16; 8; 4; 8; "mes-sage of full for-";
+			lyrics 1: 8.; 16; 8; 4; 8; "sin will you long-er";
+bar
+newscore
+//7
+1: 4.e+g; 4bg; 16ge; 16ge;
+2: 4.e+e; 4e+e; 16be; 16be;
+
+			lyrics 1: "Je-sus, And a";
+			lyrics 1: "give-ness With a";
+			lyrics 1: "wand-er? Come, oh,";
+bar
+//8
+1: 8fd; 8bd; 8bd; 8anc bm; 8bd ebm; 8c+e;
+2 1: 8bf; 8f; 8f; 8c+ bm; 8b ebm; 8anf;
+2 2: 8s; 8f; 8f; 4f; 8s;
+
+			lyrics 1: 8; 8; 8; 4; 8; "wel-come to make them";
+			lyrics 1: 8; 8; 8; 4; 8; "sweet and a lov-ing";
+			lyrics 1: 8; 8; 8; 4; 8; "come, while He calls for";
+bar
+//9
+1: 4.bd tie; 4bd; 8s;
+2: 4.bb- tie; 4bb-; 8s;
+
+			lyrics 1: "glad.";
+			lyrics 1: "call.";
+			lyrics 1: "you.";
+dblbar
+//10
+1: 16bd; 16bd; 4.s; 4s;
+2: 8r; 4.s; 4s;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"There is";
+bar
+1: 4.af tie; 4af; 16af; 16af;
+2: 4r; 16bb-; 16bb-; 4bb-; 16s; 16s;
+
+			lyrics 1: "room,_ there is";
+			lyrics 1: 4s; 16; 16; 4; 16s; 16s; "There is room";
+bar
+//11
+1: 4.ge tie; 4ge; 16be; 16be;
+2: 4r; 16be; 16be; 4be; 16ge; 16ge;
+
+			lyrics 1: "room,_ There is";
+			lyrics 1: 4s; 16; 16; 4; 16s; 16s; "There is room,";
+bar
+//12
+1 1: 8.c+e; 16c+e; 8c+e; 8s; 8s; 8s;
+1 2: 8.s; 16s; 8s; 4s; 8s;
+2 1: 8.aa-; 16aa-; 8aa-; 8s; 8s; 8s;
+2 2: 8.s; 16s; 8s; 4s; 8s;
+
+			lyrics 1: 8.; 16; 8; 4s; 8s; "room in the";
+invisbar
+newscore
+
+1 1: 8.s; 16s; 8s; 8e+ bm; 8d+ ebm; 8c+e;
+1 2: 8.s; 16s; 8s; 4e; 8s;
+2 1: 8.s; 16s; 8s; 8c+ bm; 8b ebm; 8aa-;
+2 2: 8.s; 16s; 8s; 4a-; 8s;
+
+			lyrics 1: 8.s; 16s; 8s; 4; 8; "heart of";
+
+bar
+//13
+1: 4.c+e; 4be; 16bg; 16bg;
+2: 4.ae; 4ge; 8r;
+
+			lyrics 1: "Je-sus, There is";
+bar
+//13
+1 1: 4.d+a tie; 4d+a; 16b; 16b;
+1 2: 4.s; 4s; 16a; 16a;
+2 1: 4r; 16b; 16b; 4b; 8s;
+2 2: 4s; 16b; 16b; 4b; 8r;
+
+			lyrics 1: "room,_ there is";
+			lyrics 1: 4s; 16; 16; 4; 8s; "There is room";
+bar
+newscore
+//14
+1:4.e+g tie; 4e+g; 16ge; 16ge;
+2: 4r; 16be; 16be; 4be; 16be; 16be;
+
+			lyrics 1: "room,_ there is";
+			lyrics 1: 4s; 16; 16; 4; 16s; 16s; "there is room,";
+bar
+//15
+1: 8be; 8ad; 8ge; 4gd; 8fd;
+2: 8gb-; 8fb-; 8eb-; 4bb-; 8ab-;
+
+			lyrics 1: "room in His heart for";
+bar
+//16
+1 1: 4.e tie; 4e; 8s;
+1 2: 4.e tie; 4e; 8s;
+2: 4.ge tie; 4ge; 8s;
+
+			lyrics 1: "thee.";
+endbar

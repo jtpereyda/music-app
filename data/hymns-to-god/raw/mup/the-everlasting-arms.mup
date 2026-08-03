@@ -1,0 +1,954 @@
+//!Mup-Arkkra-6.9 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+ 
+// Hymn Source:	
+//	Great Tabernacle Hymns
+//	For use in Gospel Meetings,
+//	Evangelistic Srvices, Prayer
+//	Meetings, And Young People's 
+//	Societies
+//	Compiled by: Charles F. Weigle
+//	And George J. Meyer
+//	Published By Meyer and Brother
+//	75-77 W. Washington Street
+//	Chicago, Ill.
+//	Copyright Unknown
+//	Hymn No. 27
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 6/27/2021
+
+// Revisons:
+//	09/01/2022
+
+// HymnsToGod.org
+
+// ******************************************
+// Overhead presentation source code.
+
+top
+   title (100)""
+
+   title bold (19) "" "The Everlasting Arms" ""
+   title (11) ""
+   title (11)"" "\f(TI)In peace will I both lay me down and sleep; For thou," ""
+   title (11)"" "\f(TI)Jehovah, alone makest me dwell in safety. - Ps. 4:8" ""
+
+   title (11) "" 
+   title (11)"A\(flat) - 4 - MI" "" ""  
+   title (13) "Mrs. C. H. Morris" "" "Mrs. C. H. Morris, 1912"
+footer
+
+  title (11) "" "Public Domain" ""
+  title (11) "" 
+  title (11) "" "HymnsToGod.org" ""
+
+score
+    label=""
+    packexp = 0.0
+    packfact = 0.5
+    pad = 1
+    vscheme = 2f
+    staffsep = 15
+    scorepad= -20
+    scoresep= 6
+    scale = 1.65 //1.67  
+    lyricssize = 14
+    pageheight=7.5
+    pagewidth=10.0
+    topmargin=.350
+    bottommargin=.350
+    withfontfamily=palatino
+    noteheads = "isostri semicirc diam righttri norm rect pie" 
+
+
+staffs=2
+	time=4/4	
+	key=a&
+
+
+staff 2
+	key=a&
+	clef=bass
+
+// ****************************************
+block
+newpage
+
+music
+
+//define macros
+
+   //Lyric Placement
+      define VS lyrics between 1&2: @
+      define DSVS lyrics below 2: @
+
+  //Chorus / Refrain
+      define CHORUS ital (13) above 1: 1 "Chorus"; @	
+      define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Time Signature
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+         print (t.w - 2, t.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4";
+	 @
+
+  //Fermatas
+      define SFERM( COUNT )
+      mussym (9) above 1: COUNT "ferm";
+      @
+      define BFERM( COUNT )
+      mussym (9) below 2: COUNT "uferm";
+      @
+
+// Set midi
+	midi all: 0 "tempo=100";
+
+// Enter music
+
+bar // Remove this page in PDF editor
+newpage
+
+//================================
+//Verse 1
+
+//1
+1: P1 2.s; 8.a-c; 16b-d;
+2: P2 2.s; 8.a-e; 16;
+TIME
+
+	VS 2.s; 8.; 16; "<1. >-1|I have";
+//	VS 2.s; 8.; 16; "<2. >-1|When my";
+//	VS 2.s; 8.; 16; "<3. >-1|When my";
+//	VS 2.s; 8.; 16; "<4. >-1|There is";
+ bar
+
+//2
+1: 4ce; ec+; ; 8.db; 16ec+;
+2: 4a-a; ; ; 8.eg; 16;
+
+	VS "found sweet rest for my";
+//	VS "way grows dark and no";
+//	VS "faith is weak He is";
+//	VS "naught too hard for my";
+bar
+
+//3
+1: 4db; ca; ce; 8.s; 16s;
+2: 4a-e; ; a-a; 8.s; 16s;
+
+	VS "wea-ry soul,";
+//	VS "light I see,";
+//	VS "near my side;";
+//	VS "Lord to do;";
+dblbar
+newscore
+1: 4s; s; s; 8.ce; 16cf;
+2: 4s; s; s; 8.a-a; 16;
+
+	VS "Found a";
+//	VS "When my";
+//	VS "When my";
+//	VS "I can";
+bar
+
+//4
+1 1: 4e; ed+; ; 8.ec+; 16eb;
+1 2: 4d; s; s; 8.s; 16s;
+2: 4b-g; ; eg; 8.ea; 16dg;
+
+	VS "har-bor safe, tho' the";
+//	VS "friends for-sake and life's";
+//	VS "heart grows faint He will";
+//	VS "safe-ly trust all life's";
+bar
+
+//5
+1: 4ea; eb; ec+; 8.s; 16s;
+2 1: 4ca; eg; a; 8.s; 16s;
+2 2: 4s; s; a; 8.s; 16s;
+
+	VS "bil-lows roll,";
+//	VS "com-forts flee,";
+//	VS "strength pro-vide;";
+//	VS "jour-ney thro';";
+dblbar
+newscore
+1: 4s; s; s; 8.ac+; 16ad+;
+2 1: 4s; s; s; 8.a; 16b;
+2 2: 4s; s; s; 8.a; 16;
+
+	VS "Found a";
+//	VS "Then I";
+//	VS "When the";
+//	VS "He will";
+bar
+
+//6
+1: 4ae+; ; ; 8.ad+; 16ac+;
+2: 4ac+; ; ; 8.af+; 16ae+;
+
+	VS "might-y One who can";
+//	VS "know His grace will suf-";
+//	VS "dan-gers press then will";
+//	VS "bear me up, and my";
+bar
+
+//7
+1: 4fb; fc+; 2fd+;
+2: 4dd+; can; 2b-b;
+
+	VS "storms con-trol,";
+//	VS "fi-cient be,";
+//	VS "seas di-vide,";
+//	VS "bur-dens too,";
+bar
+
+//8
+1: 8ce; ; ; ; ce; ec+; 8.; 16db;
+2: 8ea; ; ; ; ea; ea; 8.eg; 16;
+
+	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+
+bar
+//9
+1: 2.ca; 4s;
+2: 2.a-e; 4s;
+
+	VS "arms.";
+//	VS "arms.";
+//	VS "arms.";
+//	VS "arms.";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 8.ec+; 16fd+; 2.s;
+2: 8.a-a; 16; 2.s;
+
+	VS "Oh, the";
+bar
+
+//11
+1 1: 8ec+; db; ; can; 4db; 8.e; 16df;
+1 2: 8s; ; ; ; 4; 8.d; 16s;
+2 1: 8ea; eg; ; f#; 4eg; 8.eg; 16eg;
+2 2: 8s; ; ; e; 4s; 8.s; 16s;
+
+	VS "ev-er-last-ing arms how they";
+bar
+
+//12
+1: 4ce; 2ca; 8.s; 16s;
+2: 4a-a; 2a-e; 8.s; 16s;
+
+	VS "hold me,";
+dblbar
+newscore
+1: 4s; 2s; 8.ca; 16db;
+2: 4s; 2s; 8.a-a; 16;
+
+	VS "Ev-er";
+bar
+
+//13
+1: 4dg; 2db; 8.; 16ec+;
+2: 4eb; 2eg; 8.; 16;
+
+	VS "hold me and en-";
+bar
+//14
+1: 4ca; 2ec+; 8s; s;
+2: 4a-e; 2a-a; 8s; s;
+
+	VS "fold me;";
+dblbar
+newscore
+1: 4s; 2s; 8ce; ;
+2: 4s; 2s; 8a-a; ;
+
+	VS "I am";
+bar
+//15
+1: 8df; ; ; ; 4da; 8s; s;
+2: 8da; ; ; ; 4df; 8s; s;
+
+	VS "safe in life or death";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8eg; df;
+2: 8s; s; s; s; 4s; 8da; ;
+
+	VS "for a-";
+bar
+//16
+1: 8df; ce; bn-dn; ce; 4ca; 8s; s;
+2 1: 8a; ; ; ; 4fa; 8s; s;
+2 2: 8a; ; ; ; 4s; 8s; s;
+SFERM (3)
+BFERM (3)
+
+	VS "round and un-der-neath";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8ea; fb;
+2 1: 8s; s; s; s; 4s; 8ca; da;
+2 2: 8s; s; s; s; 4s; 8s; s;
+
+	VS "Are the";
+bar
+//17
+1: 8ec+; ea; ad+; ac+; 4gb; gc+;
+2: 8ea; ec+; ef+; ee+; 4ed+; ee+;
+
+	VS "might-y, ev-er-last-ing";
+bar
+
+//18
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "arms.";
+
+right (139, 1.5) "End of Verse 1";
+endbar
+newpage
+
+//================================
+//Verse 2
+
+//1
+1: P1 2.s; 8.a-c; 16b-d;
+2: P2 2.s; 8.a-e; 16;
+TIME
+
+//	VS 2.s; 8.; 16; "<1. >-1|I have";
+	VS 2.s; 8.; 16; "<2. >-1|When my";
+//	VS 2.s; 8.; 16; "<3. >-1|When my";
+//	VS 2.s; 8.; 16; "<4. >-1|There is";
+bar
+
+//2
+1: 4ce; ec+;; 8.db; 16ec+;
+2: 4a-a;;; 8.eg; 16;
+
+//	VS "found sweet rest for my";
+	VS "way grows dark and no";
+//	VS "faith is weak He is";
+//	VS "naught too hard for my";
+bar
+
+//3
+1: 4db; ca; ce; 8.s; 16s;
+2: 4a-e;; a-a; 8.s; 16s;
+
+//	VS "wea-ry soul,";
+	VS "light I see,";
+//	VS "near my side;";
+//	VS "Lord to do;";
+dblbar
+newscore
+1: 4s; s; s; 8.ce; 16cf;
+2: 4s; s; s; 8.a-a; 16;
+
+//	VS "Found a";
+	VS "When my";
+//	VS "When my";
+//	VS "I can";
+bar
+
+//4
+1 1: 4e; ed+; ; 8.ec+; 16eb;
+1 2: 4d; s; s; 8.s; 16s;
+2: 4b-g; ; eg; 8.ea; 16dg;
+
+//	VS "har-bor safe, tho' the";
+	VS "friends for-sake and life's";
+//	VS "heart grows faint He will";
+//	VS "safe-ly trust all life's";
+bar
+
+//5
+1: 4ea; eb; ec+; 8.s; 16s;
+2 1: 4ca; eg; a; 8.s; 16s;
+2 2: 4s; s; a; 8.s; 16s;
+
+//	VS "bil-lows roll,";
+	VS "com-forts flee,";
+//	VS "strength pro-vide;";
+//	VS "jour-ney thro';";
+dblbar
+newscore
+1: 4s; s; s; 8.ac+; 16ad+;
+2 1: 4s; s; s; 8.a; 16b;
+2 2: 4s; s; s; 8.a; 16;
+
+//	VS "Found a";
+	VS "Then I";
+//	VS "When the";
+//	VS "He will";
+bar
+
+//6
+1: 4ae+; ; ; 8.ad+; 16ac+;
+2: 4ac+; ; ; 8.af+; 16ae+;
+
+//	VS "might-y One who can";
+	VS "know His grace will suf-";
+//	VS "dan-gers press then will";
+//	VS "bear me up, and my";
+bar
+
+//7
+1: 4fb; fc+; 2fd+;
+2: 4dd+; can; 2b-b;
+
+//	VS "storms con-trol,";
+	VS "fi-cient be,";
+//	VS "seas di-vide,";
+//	VS "bur-dens too,";
+bar
+
+//8
+1: 8ce; ; ; ; ce; ec+; 8.; 16db;
+2: 8ea; ; ; ; ea; ea; 8.eg; 16;
+
+//	VS "Lean-ing on the ev-er-last-ing";
+	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+
+bar
+//9
+1: 2.ca; 4s;
+2: 2.a-e; 4s;
+
+//	VS "arms.";
+	VS "arms.";
+//	VS "arms.";
+//	VS "arms.";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 8.ec+; 16fd+; 2.s;
+2: 8.a-a; 16; 2.s;
+
+	VS "Oh, the";
+bar
+
+//11
+1 1: 8ec+; db; ; can; 4db; 8.e; 16df;
+1 2: 8s; ; ; ; 4; 8.d; 16s;
+2 1: 8ea; eg; ; f#; 4eg; 8.eg; 16eg;
+2 2: 8s; ; ; e; 4s; 8.s; 16s;
+
+	VS "ev-er-last-ing arms how they";
+bar
+
+//12
+1: 4ce; 2ca; 8.s; 16s;
+2: 4a-a; 2a-e; 8.s; 16s;
+
+	VS "hold me,";
+dblbar
+newscore
+1: 4s; 2s; 8.ca; 16db;
+2: 4s; 2s; 8.a-a; 16;
+
+	VS "Ev-er";
+bar
+
+//13
+1: 4dg; 2db; 8.; 16ec+;
+2: 4eb; 2eg; 8.; 16;
+
+	VS "hold me and en-";
+bar
+//14
+1: 4ca; 2ec+; 8s; s;
+2: 4a-e; 2a-a; 8s; s;
+
+	VS "fold me;";
+dblbar
+newscore
+1: 4s; 2s; 8ce; ;
+2: 4s; 2s; 8a-a; ;
+
+	VS "I am";
+bar
+//15
+1: 8df; ; ; ; 4da; 8s; s;
+2: 8da; ; ; ; 4df; 8s; s;
+
+	VS "safe in life or death";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8eg; df;
+2: 8s; s; s; s; 4s; 8da; ;
+
+	VS "for a-";
+bar
+//16
+1: 8df; ce; bn-dn; ce; 4ca; 8s; s;
+2 1: 8a; ; ; ; 4fa; 8s; s;
+2 2: 8a; ; ; ; 4s; 8s; s;
+SFERM (3)
+BFERM (3)
+
+	VS "round and un-der-neath";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8ea; fb;
+2 1: 8s; s; s; s; 4s; 8ca; da;
+2 2: 8s; s; s; s; 4s; 8s; s;
+
+	VS "Are the";
+bar
+//17
+1: 8ec+; ea; ad+; ac+; 4gb; gc+;
+2: 8ea; ec+; ef+; ee+; 4ed+; ee+;
+
+	VS "might-y, ev-er-last-ing";
+bar
+
+//18
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "arms.";
+
+right (139, 1.5) "End of Verse 2";
+endbar
+newpage
+
+//================================
+//Verse 3
+
+//1
+1: P1 2.s; 8.a-c; 16b-d;
+2: P2 2.s; 8.a-e; 16;
+TIME
+
+//	VS 2.s; 8.; 16; "<1. >-1|I have";
+//	VS 2.s; 8.; 16; "<2. >-1|When my";
+	VS 2.s; 8.; 16; "<3. >-1|When my";
+//	VS 2.s; 8.; 16; "<4. >-1|There is";
+bar
+
+//2
+1: 4ce; ec+;; 8.db; 16ec+;
+2: 4a-a;;; 8.eg; 16;
+
+//	VS "found sweet rest for my";
+//	VS "way grows dark and no";
+	VS "faith is weak He is";
+//	VS "naught too hard for my";
+bar
+
+//3
+1: 4db; ca; ce; 8.s; 16s;
+2: 4a-e;; a-a; 8.s; 16s;
+
+//	VS "wea-ry soul,";
+//	VS "light I see,";
+	VS "near my side;";
+//	VS "Lord to do;";
+dblbar
+newscore
+1: 4s; s; s; 8.ce; 16cf;
+2: 4s; s; s; 8.a-a; 16;
+
+//	VS "Found a";
+//	VS "When my";
+	VS "When my";
+//	VS "I can";
+bar
+
+//4
+1 1: 4e; ed+; ; 8.ec+; 16eb;
+1 2: 4d; s; s; 8.s; 16s;
+2: 4b-g; ; eg; 8.ea; 16dg;
+
+//	VS "har-bor safe, tho' the";
+//	VS "friends for-sake and life's";
+	VS "heart grows faint He will";
+//	VS "safe-ly trust all life's";
+bar
+
+//5
+1: 4ea; eb; ec+; 8.s; 16s;
+2 1: 4ca; eg; a; 8.s; 16s;
+2 2: 4s; s; a; 8.s; 16s;
+
+//	VS "bil-lows roll,";
+//	VS "com-forts flee,";
+	VS "strength pro-vide;";
+//	VS "jour-ney thro';";
+dblbar
+newscore
+1: 4s; s; s; 8.ac+; 16ad+;
+2 1: 4s; s; s; 8.a; 16b;
+2 2: 4s; s; s; 8.a; 16;
+
+//	VS "Found a";
+//	VS "Then I";
+	VS "When the";
+//	VS "He will";
+bar
+
+//6
+1: 4ae+; ; ; 8.ad+; 16ac+;
+2: 4ac+; ; ; 8.af+; 16ae+;
+
+//	VS "might-y One who can";
+//	VS "know His grace will suf-";
+	VS "dan-gers press then will";
+//	VS "bear me up, and my";
+bar
+
+//7
+1: 4fb; fc+; 2fd+;
+2: 4dd+; can; 2b-b;
+
+//	VS "storms con-trol,";
+//	VS "fi-cient be,";
+	VS "seas di-vide,";
+//	VS "bur-dens too,";
+bar
+
+//8
+1: 8ce; ; ; ; ce; ec+; 8.; 16db;
+2: 8ea; ; ; ; ea; ea; 8.eg; 16;
+
+//	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+
+bar
+//9
+1: 2.ca; 4s;
+2: 2.a-e; 4s;
+
+//	VS "arms.";
+//	VS "arms.";
+	VS "arms.";
+//	VS "arms.";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 8.ec+; 16fd+; 2.s;
+2: 8.a-a; 16; 2.s;
+
+	VS "Oh, the";
+bar
+
+//11
+1 1: 8ec+; db; ; can; 4db; 8.e; 16df;
+1 2: 8s; ; ; ; 4; 8.d; 16s;
+2 1: 8ea; eg; ; f#; 4eg; 8.eg; 16eg;
+2 2: 8s; ; ; e; 4s; 8.s; 16s;
+
+	VS "ev-er-last-ing arms how they";
+bar
+
+//12
+1: 4ce; 2ca; 8.s; 16s;
+2: 4a-a; 2a-e; 8.s; 16s;
+
+	VS "hold me,";
+dblbar
+newscore
+1: 4s; 2s; 8.ca; 16db;
+2: 4s; 2s; 8.a-a; 16;
+
+	VS "Ev-er";
+bar
+
+//13
+1: 4dg; 2db; 8.; 16ec+;
+2: 4eb; 2eg; 8.; 16;
+
+	VS "hold me and en-";
+bar
+//14
+1: 4ca; 2ec+; 8s; s;
+2: 4a-e; 2a-a; 8s; s;
+
+	VS "fold me;";
+dblbar
+newscore
+1: 4s; 2s; 8ce; ;
+2: 4s; 2s; 8a-a; ;
+
+	VS "I am";
+bar
+//15
+1: 8df; ; ; ; 4da; 8s; s;
+2: 8da; ; ; ; 4df; 8s; s;
+
+	VS "safe in life or death";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8eg; df;
+2: 8s; s; s; s; 4s; 8da; ;
+
+	VS "for a-";
+bar
+//16
+1: 8df; ce; bn-dn; ce; 4ca; 8s; s;
+2 1: 8a; ; ; ; 4fa; 8s; s;
+2 2: 8a; ; ; ; 4s; 8s; s;
+SFERM (3)
+BFERM (3)
+
+	VS "round and un-der-neath";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8ea; fb;
+2 1: 8s; s; s; s; 4s; 8ca; da;
+2 2: 8s; s; s; s; 4s; 8s; s;
+
+	VS "Are the";
+bar
+//17
+1: 8ec+; ea; ad+; ac+; 4gb; gc+;
+2: 8ea; ec+; ef+; ee+; 4ed+; ee+;
+
+	VS "might-y, ev-er-last-ing";
+bar
+
+//18
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "arms.";
+
+right (139, 1.5) "End of Verse 3";
+endbar
+newpage
+
+//================================
+//Verse 4
+
+//1
+1: P1 2.s; 8.a-c; 16b-d;
+2: P2 2.s; 8.a-e; 16;
+TIME
+
+//	VS 2.s; 8.; 16; "<1. >-1|I have";
+//	VS 2.s; 8.; 16; "<2. >-1|When my";
+//	VS 2.s; 8.; 16; "<3. >-1|When my";
+	VS 2.s; 8.; 16; "<4. >-1|There is";
+bar
+
+//2
+1: 4ce; ec+;; 8.db; 16ec+;
+2: 4a-a;;; 8.eg; 16;
+
+//	VS "found sweet rest for my";
+//	VS "way grows dark and no";
+//	VS "faith is weak He is";
+	VS "naught too hard for my";
+bar
+
+//3
+1: 4db; ca; ce; 8.s; 16s;
+2: 4a-e;; a-a; 8.s; 16s;
+
+//	VS "wea-ry soul,";
+//	VS "light I see,";
+//	VS "near my side;";
+	VS "Lord to do;";
+dblbar
+newscore
+1: 4s; s; s; 8.ce; 16cf;
+2: 4s; s; s; 8.a-a; 16;
+
+//	VS "Found a";
+//	VS "When my";
+//	VS "When my";
+	VS "I can";
+bar
+
+//4
+1 1: 4e; ed+; ; 8.ec+; 16eb;
+1 2: 4d; s; s; 8.s; 16s;
+2: 4b-g; ; eg; 8.ea; 16dg;
+
+//	VS "har-bor safe, tho' the";
+//	VS "friends for-sake and life's";
+//	VS "heart grows faint He will";
+	VS "safe-ly trust all life's";
+bar
+
+//5
+1: 4ea; eb; ec+; 8.s; 16s;
+2 1: 4ca; eg; a; 8.s; 16s;
+2 2: 4s; s; a; 8.s; 16s;
+
+//	VS "bil-lows roll,";
+//	VS "com-forts flee,";
+//	VS "strength pro-vide;";
+	VS "jour-ney thro';";
+dblbar
+newscore
+1: 4s; s; s; 8.ac+; 16ad+;
+2 1: 4s; s; s; 8.a; 16b;
+2 2: 4s; s; s; 8.a; 16;
+
+//	VS "Found a";
+//	VS "Then I";
+//	VS "When the";
+	VS "He will";
+bar
+
+//6
+1: 4ae+; ; ; 8.ad+; 16ac+;
+2: 4ac+; ; ; 8.af+; 16ae+;
+
+//	VS "might-y One who can";
+//	VS "know His grace will suf-";
+//	VS "dan-gers press then will";
+	VS "bear me up, and my";
+bar
+
+//7
+1: 4fb; fc+; 2fd+;
+2: 4dd+; can; 2b-b;
+
+//	VS "storms con-trol,";
+//	VS "fi-cient be,";
+//	VS "seas di-vide,";
+	VS "bur-dens too,";
+bar
+
+//8
+1: 8ce; ; ; ; ce; ec+; 8.; 16db;
+2: 8ea; ; ; ; ea; ea; 8.eg; 16;
+
+//	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+//	VS "Lean-ing on the ev-er-last-ing";
+	VS "Lean-ing on the ev-er-last-ing";
+
+bar
+//9
+1: 2.ca; 4s;
+2: 2.a-e; 4s;
+
+//	VS "arms.";
+//	VS "arms.";
+//	VS "arms.";
+	VS "arms.";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 8.ec+; 16fd+; 2.s;
+2: 8.a-a; 16; 2.s;
+
+	VS "Oh, the";
+bar
+
+//11
+1 1: 8ec+; db; ; can; 4db; 8.e; 16df;
+1 2: 8s; ; ; ; 4; 8.d; 16s;
+2 1: 8ea; eg; ; f#; 4eg; 8.eg; 16eg;
+2 2: 8s; ; ; e; 4s; 8.s; 16s;
+
+	VS "ev-er-last-ing arms how they";
+bar
+
+//12
+1: 4ce; 2ca; 8.s; 16s;
+2: 4a-a; 2a-e; 8.s; 16s;
+
+	VS "hold me,";
+dblbar
+newscore
+1: 4s; 2s; 8.ca; 16db;
+2: 4s; 2s; 8.a-a; 16;
+
+	VS "Ev-er";
+bar
+
+//13
+1: 4dg; 2db; 8.; 16ec+;
+2: 4eb; 2eg; 8.; 16;
+
+	VS "hold me and en-";
+bar
+//14
+1: 4ca; 2ec+; 8s; s;
+2: 4a-e; 2a-a; 8s; s;
+
+	VS "fold me;";
+dblbar
+newscore
+1: 4s; 2s; 8ce; ;
+2: 4s; 2s; 8a-a; ;
+
+	VS "I am";
+bar
+//15
+1: 8df; ; ; ; 4da; 8s; s;
+2: 8da; ; ; ; 4df; 8s; s;
+
+	VS "safe in life or death";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8eg; df;
+2: 8s; s; s; s; 4s; 8da; ;
+
+	VS "for a-";
+bar
+//16
+1: 8df; ce; bn-dn; ce; 4ca; 8s; s;
+2 1: 8a; ; ; ; 4fa; 8s; s;
+2 2: 8a; ; ; ; 4s; 8s; s;
+SFERM (3)
+BFERM (3)
+
+	VS "round and un-der-neath";
+dblbar
+newscore
+1: 8s; s; s; s; 4s; 8ea; fb;
+2 1: 8s; s; s; s; 4s; 8ca; da;
+2 2: 8s; s; s; s; 4s; 8s; s;
+
+	VS "Are the";
+bar
+//17
+1: 8ec+; ea; ad+; ac+; 4gb; gc+;
+2: 8ea; ec+; ef+; ee+; 4ed+; ee+;
+
+	VS "might-y, ev-er-last-ing";
+bar
+
+//18
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "arms.";
+
+right (139, 1.5) "End of Hymn";
+endbar

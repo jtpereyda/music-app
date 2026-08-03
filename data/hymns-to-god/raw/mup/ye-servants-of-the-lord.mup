@@ -1,0 +1,173 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Science Hymnal
+//		Published by the Christian 
+//		Science Publishing  Society
+//		Boston, Massachusetts
+//		Copyright 1898, 1903, 1905, 1909
+//		Hymn no. 105
+
+// Transcribed by: Ted Gatza, Jr. 09/18/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Ye Servants of the Lord!" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - DO" "\s(17)\f(TI)\:Watch\ therefore:\ fo\|r\ ye\ know\ not\ on\ what day\ your\ Lord\ co\|meth.\ -\ Matt.\ 24:42"""
+   title (13) "Philip Doddridge" " " "Ralph Harrison"	
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+	staffs=2
+	time=4/4	
+	key= 4&
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 2.s; 4ae;
+2: 2.s; 4c+a;
+
+			lyrics 1: "<1. >-1|Ye";
+			lyrics 1: "<2. >-1|Let";
+			lyrics 1: "<3. >-1|Watch,";
+			lyrics 1: "<4. >-1|Oh,";
+bar
+//2
+1 1: 4c+e; 4af; 4bf; 8a bm; 8g ebm;
+1 2: 4s; 4s; 4s; 4e;
+2 1: 4a; 4c+f; 4d+d; 8c+bm; 8b ebm;
+2 2: 4a; 4s; 4s; 4e;
+
+			lyrics 1: 4; 4; 4; 4; "ser-vants of the";
+			lyrics 1: 4; 4; 4; 4; "all your lamps be";
+			lyrics 1: 4; 4; 4; 4; "'tis your Lord's com";
+			lyrics 1: 4; 4; 4; 4; "hap-py ser-vant";
+bar
+//3
+1: 2.ae; 4be;
+2: 2.c+a-; 4ge; 
+
+			lyrics 1: "Lord! Each";
+			lyrics 1: "bright, And";
+			lyrics 1: "mand; And";
+			lyrics 1: "he, In";
+bar
+//4
+1 1: 4c+e; 4e+e; 4s; 4s;
+1 2: 4s; 4s; 8s; 8s; 4s;
+2 1: 4a; 4ac; 8s; 8s; 8s; 8s;
+2 2: 4a; 4s; 4s; 4s;
+
+			lyrics 1: "in his";
+			lyrics 1: "trim the";
+			lyrics 1: "while we";
+			lyrics 1: "which a";
+invisbar
+newscore
+
+1 1: 4s; 4s; 4d+; 4c+a;
+1 2: 4s; 4s; 8f bm; 8g ebm; 4s;
+2 1: 4s; 4s; 8a bm; 8b ebm; 8c+ bm; 8d+ ebm;
+2 2: 4s; 4s; 4d; 4a-;
+
+			lyrics 1: "of-fice";
+			lyrics 1: "gold-en";
+			lyrics 1: "speak He's";
+			lyrics 1: "pos-ture";
+
+bar
+//5
+1 1: 2.bg; 4e;
+1 2: 2.s; 4e;
+2: 2.e+e; 4ge;
+
+			lyrics 1: "wait, Ob-";
+			lyrics 1: "flame; Gird";
+			lyrics 1: "near; Mark";
+			lyrics 1: "found! He";
+bar
+//6
+1 1: 4ae; 8a bm; 8g ebm; 4fd; 4f;
+1 2: 4s; 4c; 4s; 4f;
+2 1: 4ac; 4aa-; 4ad; 4an;
+2 2: 4s; 4s; 4s; 8f bm; 8e ebm;
+
+			lyrics 1: 4; 4; 4; 4; "ser-vant of His";
+			lyrics 1: 4; 4; 4; 4; "up your loins as";
+			lyrics 1: 4; 4; 4; 4; "the first sig-nal";
+			lyrics 1: 4; 4; 4; 4; "shall his Lord with";
+bar
+newscore
+//7
+1 1: 4bf; 8b bm; 8a ebm; 4ge; 4e;
+1 2: 4s; 4f; 4s; 4e;
+2 1: 4bd; 8d+ bm; 8c+ ebm; 4be; 4ac;
+2 2: 4s; 4b-; 4s; 4s;
+
+			lyrics 1: 4; 4; 4; 4; "heav'n-ly word, And";
+			lyrics 1: 4; 4; 4; 4; "in His sight, For";
+			lyrics 1: 4; 4; 4; 4; "of His hand, And";
+			lyrics 1: 4; 4; 4; 4; "rap-ture see, And";
+bar
+//8
+1 1: 4fd; 4d+d; 4c+e; 4b; 
+1 2: 4s; 4s; 4s; 8e bm; 8d ebm;
+2: 4ad; 4bb-; 4ae; 4ge;
+
+			lyrics 1: "watch-ful at His";
+			lyrics 1: "Per-fect is His";
+			lyrics 1: "read-y all ap-";
+			lyrics 1: "be with hon-or";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			lyrics 1: "gate.";
+			lyrics 1: "name.";
+			lyrics 1: "pear.";
+			lyrics 1: "crowned.";
+endbar
+
+   title (20) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

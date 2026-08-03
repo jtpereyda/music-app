@@ -1,0 +1,235 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Lyric Source: Fair As The Morning
+//		 Hymns and Tunes For
+//		 Praise In The Sunday-School 
+//		 Author: John H. Kurzenknabe and W. W. Bentley
+//               With Full Arrangement for the 
+//		 Sunday School Orchestra
+//		 By Harry J. Kurzenknabe
+//		 Publisher: J.H. Kurzenknabe & Sons,
+//		 Harrisburg, PA. 
+//		 Copyright 1891
+//		 Hymn No. 69
+
+
+		
+// Transcribed by: Ted Gatza, Jr. 08/29/2011; Rev. 08/07/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sweetest Praises We Will Sing" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - MI" "\s(17)\f(TI)\:Sing\ unto\ him,\ sing\ pr\|aises\ unto\ him;\ Talk\ ye of\ all\ his\ marvellous\ \|works\ -\ 1\ Chron.\ 16:9" ""
+   title (13) "E. P. Parker" "" "Frank M. Davis"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key= 3&
+
+
+staff 2
+	key= 3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8ge bm; 8af ebm; 2.s;
+2: 4be; 2.s;
+
+
+			VERSE 4; 2.s; "<1. >-1|O";
+			VERSE 4; 2.s; "<2. >-1|Thee";
+			VERSE 4; 2.s; "<3. >-1|Thou";
+			VERSE 4; 2.s; "<4. >-1|O";
+			
+bar
+//2
+1: 4bg; 4bg; 4bg; 8ge bm; 8af ebm;
+2: 4e+e; 4e+e; 4e+e; 4be;
+
+			VERSE 4; 4; 4; 4; "Fa-ther blest! E-";
+			VERSE 4; 4; 4; 4; "too, we sing, E-";
+			VERSE 4; 4; 4; 4; "Ho-ly Spir-it,";
+			VERSE 4; 4; 4; 4; "Tri-une God in";
+bar//3
+1: 4bg; 4bg; 4bg; 8c+a bm; 8bg ebm;
+2: 4e+e; 4e+e; 4e+e; 4e+e;
+
+			VERSE 4; 4; 4; 4; "ter-nal King! With";
+			VERSE 4; 4; 4; 4; "ter-nal Son, Who";
+			VERSE 4; 4; 4; 4; "Fount of Love! Pour";
+			VERSE 4; 4; 4; 4; "whom we live! All";
+bar
+//4
+1: 4af; 4af; 4af; 8bg bm; 8af ebm;
+2: 4d+b-; 4d+b-; 4d+b-; 4bb-;
+
+			VERSE 4; 4; 4; 4; "grate-ful hearts Thy";
+			VERSE 4; 4; 4; 4; "hast for men sal-";
+			VERSE 4; 4; 4; 4; "out Thy bless-ings";
+			VERSE 4; 4; 4; 4; "praise and hon-or";
+bar
+//5
+1: 4ge; 4ge; 4ge; 8ge bm; 8af ebm;
+2: 4be; 4be; 4be; 4be;
+
+			VERSE 4; 4; 4; 4; "praise we sing; Whose";
+			VERSE 4; 4; 4; 4; "va-tion won! Thy";
+			VERSE 4; 4; 4; 4; "from a-bove; Dwell";
+			VERSE 4; 4; 4; 4; "Thee we give; The";
+bar
+//6
+1: 4bg; 4bg; 4bg; 8e+g bm; 8d+g ebm;
+2: 4e+e; 4e+e; 4e+e; 4be;
+
+			VERSE 4; 4; 4; 4; "glori-ous power the";
+			VERSE 4; 4; 4; 4; "con-stant pres-ence,";
+			VERSE 4; 4; 4; 4; "in our souls, de-";
+			VERSE 4; 4; 4; 4; "church on earth her";
+bar
+//7
+1 1: 4c+e; 4c+e; 4c+e; 8c+ bm; 8e+ ebm;
+1 2: 4s; 4s; 4s; 4e;
+2 1: 4aa-; 4aa-; 4aa-; 8a bm; 8c+ebm;
+2 2: 4s; 4s; 4s; 4a-;
+
+			VERSE 4; 4; 4; 4; "world up-holds, Whose";
+			VERSE 4; 4; 4; 4; "Lord, be-stow, To";
+			VERSE 4; 4; 4; 4; "light-ful Guest! Pre-";
+			VERSE 4; 4; 4; 4; "songs shall raise, With";
+bar
+//8
+1: 4.bg; [up]8c+a; 8bg bm; 8af ebm; 8ge bm; 8fd ebm;
+2 1: 4.e+e; 8e+a-; 4bb-; 8b bm; 8a ebm;
+2 2: 4.s; 8s; 4s; 4b-;
+
+			VERSE 4.; 8; 4; 4; "bound-less love the";
+			VERSE 4.; 8; 4; 4; "cheer Thy strug-gling";
+			VERSE 4.; 8; 4; 4; "pare our hearts and";
+			VERSE 4.; 8; 4; 4; "those in heav'n, to";
+bar
+//9
+1 1: 4.e; 8ec; 4eb-; 4s;
+1 2: 4.e; 8s; 4s; 4s;
+2: 4.ge; 8ae; 4ge; 4s;
+
+			VERSE "world en-folds.";
+			VERSE "Church be-low.";
+			VERSE "in them rest.";
+			VERSE "swell Thy praise.";
+dblbar
+//10
+1: 8.ge; 16bg; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 1; "<>";
+			VERSE "Sweet-est";
+bar
+//11
+1: 2e+g tie; 8.e+g; 16bg; 8.s; 16s;
+2: 4r; 8.be; 16be; 8.be; 16be; 8.s; 16s;
+
+			VERSE 1; "<>";
+			VERSE "prais-es,";
+			VERSE 4s; 8.; 16; 8.; 16; 8.s; 16s; "Sweet-est prais-es";
+invisbar
+newscore
+
+1: 2s; 8.s; 16s; 8.ge; 16af;
+2: 4s; 8.s; 16s; 8.s; 16s; 8.be; 16be;
+
+			VERSE "we will";
+			VERSE 4s; 8.s; 16s; 8.s; 16s; 8.; 16; "we will";
+
+bar
+//12
+1: 2.bg; 8.ge; 16bg;
+2: e+e; 8.e+e; 16e+e; 4e+e; 4r;
+
+			VERSE "sing_ To our";
+			VERSE 4; 8.; 16; 4; 4s; "sing, we will sing,";
+bar
+//13
+1: 2af tie; 8.af; 16ge; 8.fd; 16af;
+2: 4r; 8.d+b-; 16d+b-; 8.d+d; 16bb-;8.bb-; 16bb-;
+
+			VERSE "Fa-ther, Lord and";
+			VERSE 4s; 8.; 16; 8.; 16; 8.; 16; "To our Fa-ther, Lord and";
+
+bar
+//14
+1: 2.ge; 8.ge; 16bg;
+2: 4be; 8.be; 16be; 4be; 4r;
+
+			VERSE "King;_ Be to";
+			VERSE 4; 8.; 16; 4; 4s; "King, Lord and King;";
+bar
+//15
+1: 2e+g tie; 8.e+g; 16bg; 8.ge; 16e+g;
+2: 4r; 8.be; 16be; 8.be; 16be; 8.be; 16be;
+
+			VERSE "Him_ our love and";
+			VERSE 4s; 8.; 16; 8.; 16; 8.; 16; "Be to Him our love and";
+bar
+newscore
+//16
+1: 2e~d+ slur; 4ec+; 8.ae; 16c+a;
+2: 4bg; 8.bg; 16bg; 4c+a; 8.c+a; 16e+a;
+
+			VERSE "praise,_ Who has";
+			VERSE 4; 8.; 16; 4; 8.s; 16s; "praise, love and praise";
+bar
+//17
+1: 4.bg; 8af; 4ge; 4fd;
+2 1: 4.e+b; 8b; 4bb-; 4ab-;
+2 2: 4.s; 8b; 4s; 4s; 
+
+			VERSE "blessed us all our";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "days.";
+endbar
+			

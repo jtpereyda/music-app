@@ -1,0 +1,223 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Heavenly Highway Hymns
+//		A Choice Collection of Gospel Songs
+//		Both Old and New, Suitable for Religious
+//		Work and Worship
+//		Compiled By
+//		Luther G. Presley
+//		Stamps-Baxter Music & Printing Co.
+//		Dallas, Texas Pangburn, Ark. Chattanooga, Tenn	
+//		Copyright 1956
+//		Hymn No.: 201
+
+
+// Transcribed by: Ted Gatza, Jr. 01/09/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Need The Prayers" ""
+   title (2)""
+   title (11) "D - 4 - SOL" "\s(17)\f(TI)\:and\ pray\ one\ for\ another,...\ \|The\ supplication\ of\ a\ righteous man\ availeth\ much\ in\ i\|ts\ working.\ -\ Jms.\ 5:16"""
+   title (13) "James David Vaughan" " " "James David Vaughan, 1908"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+transpose = up major 2
+staffs=2
+	time=4/4
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 2.s; 4ge;
+2: 2.s; 4c+c;
+
+
+	
+			lyrics 1: "<1. >-1|I";
+			lyrics 1: "<2. >-1|I";
+			lyrics 1: "<3. >-1|I";
+
+bar
+//2
+1: 4.ge; 8fd; 8ec; 8fd; 8ge; 8af;
+2: 4.c+c; 8gc; 8gc; 8gc; 8c+c; 8c+c;
+
+			lyrics 1: "need the prayers of those I";
+			lyrics 1: "need the prayers of those I";
+			lyrics 1: "want my friends to pray for";
+bar
+//3
+1: 2.ge; 4ec;
+2: 2.c+c; 4gc;
+
+			lyrics 1: "love, While";
+			lyrics 1: "love, To";
+			lyrics 1: "me, To";
+bar
+//4
+1: 4.db-; 8ec; 8fd; 8ec; 8s; 8s;
+2: 4.gg-; 8gg-; 8ag-; 8gg-; 8s; 8s;
+
+			lyrics 1: "trav-'ling o'er life's";
+			lyrics 1: "help me in each";
+			lyrics 1: "hold me up on";
+invisbar
+newscore
+
+1: 4.s; 8s; 8s; 8s; 8db-; 8eb-;
+2: 4.s; 8s; 8s; 8s; 8fg-; 8gg-;
+
+			lyrics 1: "rug-ged";
+			lyrics 1: "try-ing";
+			lyrics 1: "wings of";
+
+bar
+//5
+1 1: 2.c; 4ge;
+1 2: 2.c; 4s;
+2: 2.ec; 4c+c;
+
+			lyrics 1: "way, That";
+			lyrics 1: "hour, To";
+			lyrics 1: "faith, That";
+bar
+//6
+1: 4.ge; 8fd; 8ec; 8fd; 8ge; 8af;
+2: 4.c+c; 8gc; 8gc; 8gc; 8c+c; 8c+c;
+
+			lyrics 1: "I may true and faith-ful";
+			lyrics 1: "bear my tempt-ed soul to";
+			lyrics 1: "I may walk the nar-row";
+bar
+//7
+1: 2.ge; 4ec;
+2: 2.c+c; 4gc;
+
+			lyrics 1: "be, And";
+			lyrics 1: "Him, That";
+			lyrics 1: "way, Kept";
+bar
+//8
+1: 4.db-; 8ec; 8fd; 8ec; 8db-; 8eb-;
+2: 4.gg-; 8gg-; 8ag-; 8gg-; 8fg-; 8gg-;
+
+			lyrics 1: "live for Je-sus ev-ery";
+			lyrics 1: "He may keep me by His";
+			lyrics 1: "by our Fa-ther's glor-ious";
+bar
+//9
+1 1: 2.c; 4s;
+1 2: 2.c; 4s;
+2: 2.ec; 4s;
+
+			lyrics 1: "day.";
+			lyrics 1: "pow'r.";
+			lyrics 1: "grace.";
+dblbar
+//10
+1: 4ge; 2.s;
+2: 4c+c;2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"I";
+bar
+//11
+1: 4.af; 8af; 8c+f; 8c+a; 8bg; 8af;
+2: 4.c+f; 8c+f; 8af; 8c+f; 8c+f; 8c+f;
+
+			lyrics 1: [c]"want my friends to pray for";
+bar
+newscore
+//12
+1: 2.ge; 4ec;
+2: 2.c+c; 4gc;
+
+			lyrics 1: "me, To";
+bar
+//13
+1 1: 4.ge; 8af; 8ge; 8ec; 8c; 8ec;
+1 2: 4.s; 8s; 8s; 8s; 8c; 8s;
+2: 4.c+c; 8c+c; 8c+c; 8gc; 8ec; 8gc;
+
+			lyrics 1: "bear my tempt-ed soul a-";
+bar
+//14
+1: 2ec slur; 4db-; 4ge;
+2: 2.gg-; 4c+c;
+
+			lyrics 1: "bove, And";
+bar
+//15
+1: 4.af; 8af; 8c+f; 8s; 8s; 8s;
+2: 4.c+f; 8c+f; 8af; 8s; 8s; 8s;
+
+			lyrics 1: "in-ter-cede";
+invisbar
+newscore
+
+1: 4.s; 8s; 8s; 8c+a; 8bg; 8af;
+2: 4.s; 8s; 8s; 8c+f; 8c+f; 8c+f;
+
+			lyrics 1: "with God for";
+
+bar
+//16
+1: 2.ge; 4ec;
+2: 2.c+c; 4gc;
+
+			lyrics 1: "me; I";
+bar
+//17
+1: 4.db-; 8ec; 8fd; 8ec; 8db-; 8eb-;
+2: 4.gg-; 8gg-; 8ag-; 8gg-; 8fg-; 8gg-;
+
+			lyrics 1: "need the prayers of those I";
+bar
+//18
+1 1: 2.c; 4s;
+1 2: 2.c; 4s;
+2: 2.ec; 4s;
+
+			lyrics 1: "love.";
+endbar

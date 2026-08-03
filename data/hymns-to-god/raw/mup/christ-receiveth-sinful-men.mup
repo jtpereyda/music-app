@@ -1,0 +1,330 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Gospel Choir
+//	By Ira D. Sankey and James McGranahan
+//	Toronto:
+//	The Copp, CLark Comapny (Limited),
+//	No. 9 Front Street West
+//	Published: 1886
+//	Hymn No. 10
+
+
+// Transcribed by:
+//	Ted Gatza, Jr. 11/15/2022
+
+// Revisions:
+//	11/26/2022
+	
+// HymnsToGod.org
+
+// ****************************************
+top
+
+   title bold (19) "" "Christ Receiveth Sinful Men" ""
+   title (2)""
+   title (11)"" "\f(TI)But when he heard it, he said, They that are whole have no " ""
+   title (11)"" "\f(TI)need of a physician, but they that are sick - Mat. 9:12." ""
+
+
+   title (11) " D - 3 - MI" "" ""
+   title (13) "Erdmann Neumeister, 1671" "" "James McGranahan, 1882"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=1
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=3/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+
+  //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=80";
+
+//=========================
+//Verse 1
+
+//1
+1: 2s; 8.df; 16eg;
+2: 2s; 8.da; 16;
+
+	VS1 "<1. >-1|Sin-ners";
+	VS1 "<2. >-1|Come: and";
+	VS1 "<3. >-1|Now my";
+	VS1 "<4. >-1|Christ re-";
+bar
+
+//2
+1: 4.fa; 8gb; 8.df; 16gb;
+2: 4.dd+; 8; 8.; 16;
+
+	VS1 "Je-sus will re-";
+	VS1 "He will give you";
+	VS1 "heart con-demns me";
+	VS1 "ceiv-eth sin-ful";
+bar
+
+//3
+1: 4s; 2fa;
+2: 4s; 2dd+;
+
+	VS1 "ceive;";
+	VS1 "rest;";
+	VS1 "not,";
+	VS1 "men,";
+invisbar
+1: 8.fa; 16fd+; 2s;
+2: 8.dd+; 16da; 2s;
+
+	VS1 "Sound this";
+	VS1 "Trust Him";
+	VS1 "Pure be-";
+	VS1 "E-ven";
+bar
+
+//4
+1: 4.ec+; 8gb; 8.fa; 16eg;
+2: 4.a-a; 8; 8.a-d+; 16a-a;
+
+	VS1 "word of grace to";
+	VS1 "for His word is";
+	VS1 "fore the law I";
+	VS1 "me with all my";
+bar
+
+//5
+1: 4s; 2df;
+2: 4s; 2da;
+
+	VS1 "all";
+	VS1 "plain;";
+	VS1 "stand;";
+	VS1 "sin;";
+invisbar
+1: 8.df; 16eg; 2s;
+2: 8.da; 16; 2s;
+
+	VS1 "Who the";
+	VS1 "He will";
+	VS1 "He who";
+	VS1 "Purged from";
+bar
+
+//6
+1: 4.fa; 8gb; 8.df; 16gb;
+2: 4.dd+; 8; 8.; 16;
+
+	VS1 "heav'n-ly path-way";
+	VS1 "take the sin-ful-";
+	VS1 "cleansed me from all";
+	VS1 "ev-'ry spot and";
+bar
+
+//7
+1: 4s; 2fa;
+2: 4s; 2dd+;
+
+	VS1 "leave,";
+	VS1 "est;";
+	VS1 "spot,";
+	VS1 "stain,";
+invisbar
+
+1: 8.fa; 16fd+; 2s;
+2: 8.dd+; 16da; 2s;
+	VS1 "All who";
+	VS1 "Christ re-";
+	VS1 "Sat-is-";
+	VS1 "Heav'n with";
+bar
+
+//8
+1: 4.ec+; 8fa; 8.gb; 16gc+;
+2: 4.a-a; 8a-d+; 8.a-a; 16a-a;
+
+	VS1 "lin-ger, all who";
+	VS1 "ceiv-eth sin-ful";
+	VS1 "fied its last de-";
+	VS1 "Him I en-ter";
+bar
+
+//9
+1: 2fd+; 4s;
+2: 2da; 4s;
+
+	VS1 "fall.";
+	VS1 "men.";
+	VS1 "mand.";
+	VS1 "in.";
+dblbar hidechanges
+newscore
+score time=12/8
+music
+midi all: 0 "tempo=105";
+
+//10
+REFRAIN
+1: 8df bm; eg ebm; fa; 2.s; 4.; 
+2: 4r; 8r; 2.s; 4.; 
+
+	VS 4; 8; 2.s; 4.s; "Sing it";
+bar
+
+//11
+1: 2.gb tie; [up]8 bm; bd+ ebm; [up]8; [up]bm; ac+ ebm; [up]gb;
+2: 4gd+; 8; 4; 8; 4; 8r; 4; 8;
+
+	VS 2.; 4s; 8; 4; 8; "o'er_ and o'er a-";
+	VS21 "Sing it o'er a-gain.";
+bar
+
+//12
+1 1: 4.s; 2.fa tie; 4.;
+2: 4.s; 4dd+; 8; 4; 8; 4.;
+
+	VS1 "gain_ ";
+	VS21 "Sing it o'er a-gain:";
+invisbar
+1 1:8a bm; b ebm; 8f; 2.s; 4.s;
+1 2: 4f; 8; 2.s; 4.s;
+2: 4dd+; 8; 2.s; 4.s;
+
+	VS12 "Christ re-";
+	VS21 "Christ re-";
+bar
+//13
+1 1: 2.a tie; 4; 8a; a bm; b ebm; f;
+1 2: 4g; 8; 4; 8; 4.f; 4; 8;
+2: 4ec+; 8; 4a-c+; 8; 4.dd+; 4; 8;
+
+	VS 2.; 4s; 8; 4; 8; "ceiv-eth sin-ful";
+	VS21 "ceiv-eth sin-ful men, Christ re-";
+bar
+
+//14
+1 1: 4.s; 2.a tie; 4.;
+1 2: 4.s; 4e; 8f; 4g; 8; 4.f;
+2: 4.s; 4a-c+; 8a-d+; 4a-e+; 8; 4.dd+;
+
+	VS1 "men;_";
+	VS21 "ceiv-eth sin-ful men;";
+invisbar
+
+1: 8df bm; eg ebm; fa; 2.s; 4.s;
+2: 4r; 8; 2.s; 4.s;
+
+	VS 4; 8; 2.s; 4.s; "Make the";
+bar
+
+//15
+1: 2.gb tie; 8 bm; bd+ ebm; 8; bd+ bm; ac+ ebm; [down]gb;
+2: 4gd+; 8; 4; 8; 4.; 4r; 8;
+
+	VS 2.; 4s; 8; 4; 8; "mes-sage clear and";
+	VS21 "Make the mes-sage plain,";
+bar
+
+//16
+1: 4.s; 2.fa tie; 4.;
+2: 4.s; 4dd+; 8; 4; 8; 4.;
+
+	VS1 "plain:_ ";
+	VS 4.s; 4; 8; 4; 8; 4.; "Make the mes-sage plain:";
+invisbar
+1: [up]4ad+; [up]8; 2.s; 4.;
+2: 4fc+n; 8; 2.s; 4.;
+
+	VS1 "Christ re-";
+bar
+
+//17
+1 1: 4.ge+ tie; 4; 8; 4.fd+; 4.c+;
+1 2: 4.s; ; ; 4e slur; 8g;
+2 1: 4.gb; eb; a; a-a;
+2 2: 4.s; ; a; s;
+
+	VS21 "ceiv-eth sin-ful";
+bar
+
+//18
+1: 2.fd+ tie; 4.; s;
+2: 2.da tie; 4.; s;
+
+	VS1 "men.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+

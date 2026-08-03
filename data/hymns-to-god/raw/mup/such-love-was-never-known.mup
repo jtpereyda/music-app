@@ -1,0 +1,253 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The New Century Hymnal
+//		For Church Services, Prayer Meetings,
+//		Young people's Meetings, Sunday Schools
+//		Edited by Will L. Thompson
+//		Published by Will L. Thompson & Co.
+//		East Liverpool, Ohio
+//		Copyright 1904	
+//		Hymn no. 141
+
+// Transcribed by: Ted Gatza, Jr. 01/24/2011; Rev. 06/19/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Such Love Was Never Known" ""
+   title (2)""
+   title (11) "B \(flat) - 3 - SOL" "\s(17)\f(TI)\:and\ to\ know\ the\ love\ of\ Christ\ \|which\ passeth\ knowledge,\ that\ ye may\ be\ filled\ unto\ all\ the\|\ fulness\ of\ God.\ -\ Eph.\ 3:19"""
+   title (13) "W. C. Martin" " " "M. L. McPhail, 1900"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1: 2s; 8s; 8fd;
+2: 2s; 8s; 8bb-;
+
+			lyrics 1: 2s; 8s; 8; "<1. >-1|The";
+			lyrics 1: 2s; 8s; 8; "<2. >-1|The";
+			lyrics 1: 2s; 8s; 8; "<3. >-1|Such";
+bar
+//2
+1: 8fd; 8db-; 4.bd; 8af;
+2: 8bb-; 8fb-; 4.fb-; 8bd;
+
+			lyrics 1: "world has nev-er";
+			lyrics 1: "world com-pas-ion";
+			lyrics 1: "ho-li-ness was";
+bar
+//3
+1: 8af; 8ge; 4ge; 4ge;
+2: 8be; 8be; 4be; 4be;
+
+			lyrics 1: "known a love Like";
+			lyrics 1: "nev-er knew Like";
+			lyrics 1: "nev-er seen As";
+bar
+//4
+1 1: 4.ae; 8ge; 8f; 8e+f;
+1 2: 4.s; 8s; 8e; 8s;
+2 1: 4.f; 8bf; 8af; 8af;
+2 2: 4.f; 8s; 8s; 8s;
+
+			lyrics 1: "that of Christ our";
+			lyrics 1: "that of Christ our";
+			lyrics 1: "that of Christ our";
+bar
+//5
+1: 4e+f; 4d+f; 8r; 8fd;
+2: 4af; 4bb-; 8r; 8bb-;
+
+			lyrics 1: "Sav-iour; A";
+			lyrics 1: "Sav-iour; There";
+			lyrics 1: "Sav-iour; The";
+bar
+//6
+1: 8fd; 8db-; 4.bd; 8af;
+2: 8bb-; 8fb-; 4.fb-; 8bd;
+
+			lyrics 1: "might-y love that";
+			lyrics 1: "is no oth-er";
+			lyrics 1: "sun is not so";
+bar
+//7
+1: 8af; 8ge; 4.ge; 8ge;
+2: 8be; 8be; 4.be; 8be;
+
+			lyrics 1: "falt-ers not Nor";
+			lyrics 1: "heart that knows Such";
+			lyrics 1: "full of light, Nor";
+bar
+//8
+1: 8gen; 8ge; 4.c+e; 8bg;
+2: 8c+c; 8c+c; 4.gc; 8c+c;
+
+			lyrics 1: "fails what-ev-er";
+			lyrics 1: "lov-ing ten-der-";
+			lyrics 1: "driv-en snow so";
+bar
+//9
+1: 8bg; 8af; 4.af; 8af;
+2: 8c+f; 8c+f; 4.c+f; 8c+f;
+
+			lyrics 1: "be our lot, That";
+			lyrics 1: "ness for foes, For";
+			lyrics 1: "pure and white, Nor";
+bar
+//10
+1: 8af#; 8af; 4.d+f; 8c+a;
+2: 8d+d; 8d+d; 4.ad; 8d+d;
+
+			lyrics 1: "ris-es o'er our";
+			lyrics 1: "friends com-pas-sion";
+			lyrics 1: "saints on bend-ed";
+bar
+//11
+1 1: 8c+a; 8bg; 4b; 4ge;
+1 2: 8s; 8s; 8g bm; 8d ebm; 4s;
+2 1: 8d+g; 8d+g; 8d+ bm; 8b ebm; 4be;
+2 2: 8s; 8s; 4g; 4s;
+
+			lyrics 1: "sins a-bove, Great";
+			lyrics 1: "quite so true As";
+			lyrics 1: "knee so clean As";
+bar
+//12
+1 1: 4.fd; 8fd; 8f; 8c+e;
+1 2: 4.s; 8s; 8e; 8s;
+2: 4.bf; 8bf; 8bf; 8bf;
+
+			lyrics 1: "love of Christ our";
+			lyrics 1: "that of Christ our";
+			lyrics 1: "Je-sus Christ our";
+bar
+//13
+1: 4c+e; 4bd; 4s;
+2: 4af; 4bb-; 4s;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			lyrics 1: "Sav-iour.";
+			lyrics 1: "Sav-iour.";
+			lyrics 1: "Sav-iour.";
+dblbar
+//14
+1: 4fd; 2s;
+2: 4bb-; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "Such";
+			lyrics 1: "Such";
+bar
+//15
+1 1: 4.d+; 8b; 8f; 8g;
+1 2: 8d; 8d; 4d; 4d;
+2: 8bb-; 8bb-; 4bb-; 4bb-;
+
+			lyrics 1: "love was nev-er";
+			lyrics 1: 8; 8; 4; 4; "love was nev-er,";
+bar
+newscore
+//16
+1 1: 2f; 4f;
+1 2: 8e; 8e; 4e; 4e;
+2: 8ac; 8ac; 4ac; 4af;
+
+			lyrics 1: "known, Such";
+			lyrics 1: 8; 8; 4; 4; "nev-er known, Such";
+bar
+//17
+1 1: 4.e+; 8c+; 8a; 8f;
+1 2: 8f; 8f; 4f; 4f;
+2 1: 8af; 8af; 4af; 8c+ bm; 8a ebm;
+2 2: 8s; 8s; 4s; 4f;
+
+			lyrics 1: "pit-y nev-er";
+			lyrics 1: 8; 8; 4; 4; "pit-y nev-er,";
+bar
+//18
+1 1: 2d+; 4fd;
+1 2: 8f; 8f; 4f; 4s;
+2 1: 8bb-; 8bb-; 4bb-; 4bb-;
+
+			lyrics 1: "shown, Such";
+			lyrics 1: 8; 8; 4; 4; "nev-er shown, Such";
+bar
+//19
+1 1: 4.d+; 8b; 8c+; 8d+;
+1 2: 8f; 8f; 8f bm; 8d ebm; 8d bm; 8f ebm;
+2 1: 8bb-; 8b; 4b; 4b;
+2 2: 8s; 8b; 4a&; 4a;
+
+			lyrics 1: "kind-ness to His";
+			lyrics 1: 8; 8; 4; 4; "kind-ness to His";
+bar
+//20
+1 1: 2e+; 4ge;
+1 2: 8e; 8e; 4e; 4s;
+2 1: 8bg; 8bg; 4bg; 4be;
+
+			lyrics 1: "own As";
+			lyrics 1: 8; 8; 4; 4s; "own, His own";
+bar
+//21
+1 1: 4.fd; 8fd; 8f; 8c+e;
+1 2: 4.s; 8s; 8e; 8s;
+2 1: 4.bf; 8bf; 8af; 8af;
+
+			lyrics 1: "that of Christ our";
+bar
+//22
+1: 4c+e; 4bd; 8r; 8s;
+2 1: 8a bm; 8f ebm; 4fb-; 8s; 8s;
+2 2: 4f; 4s; 8r; 8s;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			lyrics 1: "Sav-iour.";
+endbar

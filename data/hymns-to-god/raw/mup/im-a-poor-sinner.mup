@@ -1,0 +1,340 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Alexander's Gospel Songs
+//		Compiled by Charles M. Alexander
+//		Fleming H. Revell Company
+//		New York, 158 Fifth Avenue
+//		Chicage, 80 Wabash Avenue
+//		Toronto London Edinburgh
+//		Copyright 1908
+//		Hymn No.: 83
+
+
+// Transcribed by: Ted Gatza, Jr. 12/25/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I'm a Poor Sinner" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:But\ Christ\ is\ all,\ and\ in\ all.\ -\ Col.\ 3:2 \(space)"""
+   title (13) "Ada R. Habershon" " " "Robert Harkness, 1908"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=95";
+
+//1
+1: 2s; 4ec;
+2: 2s; 4aa-;
+	
+			lyrics 1: 2s; 4; "<1. >-1|So";
+			lyrics 1: 2s; 4; "<2. >-1|I'm";
+			lyrics 1: 2s; 4; "<3. >-1|I'm";
+			lyrics 1: 2s; 4; "<4. >-1|Tho'";
+
+bar
+//2
+1: 4ec; 4ca-; 4ec;
+2: 4aa-; 4ea-; 4aa-;
+
+			lyrics 1: "wea-ry am";
+			lyrics 1: "sin-ful, but";
+			lyrics 1: "rest-less and";
+			lyrics 1: "naught I de-";
+bar
+//3
+1: 2ac; 8.ec; 16ac;
+2: 2ea-; 8.aa-; 16aa-;
+
+			lyrics 1: "I, but the";
+			lyrics 1: "He can my";
+			lyrics 1: "trou-bled He";
+			lyrics 1: "serve, yet I'm";
+bar
+//4
+1: 4.c+e; 8ae; 4fd;
+2 1: 4.aa-; 8ac; 4a;
+2 2: 4.s; 8s; 8d bm; 8f ebm;
+
+			lyrics 1: "Lord can give";
+			lyrics 1: "sin put a-";
+			lyrics 1: "gives me His";
+			lyrics 1: "saved by His";
+bar
+//5
+1 1: 2ec; 4e;
+1 2: 2s; 4e;
+2 1: 2a; 4c+a;
+2 2: 2a; 4s;
+
+			lyrics 1: "rest; So";
+			lyrics 1: "way; In";
+			lyrics 1: "peace; Tho'";
+			lyrics 1: "grace, Tho'";
+bar
+//6
+1: 4ge; 4gd; 4gd;
+2: 4be; 4be; 4be;
+
+			lyrics 1: "need-y. but";
+			lyrics 1: "debt, but my";
+			lyrics 1: "cold is my";
+			lyrics 1: "hope-less and";
+bar
+//7
+1: 4ac; 4ac; 4ac;
+2: 4ae; 4ae; 4ae;
+
+			lyrics 1: "com-ing to";
+			lyrics 1: "debts He most";
+			lyrics 1: "heart, yet His";
+			lyrics 1: "help-less He";
+bar
+//18
+1: 4be; 4.be; 8c+e;
+2: 4ge; 4.ge; 8ae;
+
+			lyrics 1: "Him I am";
+			lyrics 1: "free-ly doth";
+			lyrics 1: "love will ne'er";
+			lyrics 1: "took up my";
+bar
+//19
+1 1: 2be; 4e;
+1 2: 2s; 4d;
+2: 2ge; 4bg;
+
+			lyrics 1: "blest; I'm";
+			lyrics 1: "pay; So";
+			lyrics 1: "cease; I'm";
+			lyrics 1: "case, Im";
+bar
+//20
+1: 2ec; 8.ca-; 16ec;
+2 1: 2a; 8.aa-; 16aa-;
+2 2: 2a; 8.s; 16s;
+
+			lyrics 1: "blind, but the";
+			lyrics 1: "thirs-ty my";
+			lyrics 1: "fool-ish, He";
+			lyrics 1: "lost with-out";
+bar
+//21
+1: 4.ac; 8ec; 4ac;
+2: 4.ea-; 8aa-; 4aa-;
+
+			lyrics 1: "Sav-iour can";
+			lyrics 1: "soul, but He";
+			lyrics 1: "calls me to";
+			lyrics 1: "Him, but my";
+bar
+//22
+1: 4c+e; 4be; 4ae;
+2: 4aa-; 4gb-; 4ac;
+
+			lyrics 1: "give to me";
+			lyrics 1: "gives me to";
+			lyrics 1: "learn at His";
+			lyrics 1: "Sav-iour is";
+bar
+//23
+1: 2d+f; 4fd;
+2: 2ad; 4ad;
+
+			lyrics 1: "light; By";
+			lyrics 1: "drink; So";
+			lyrics 1: "feet, I'm";
+			lyrics 1: "He; I'm";
+bar
+//24
+1: 2ec; 8.ae; 16ae;
+2: 2ae; 8.c+e; 16c+e;
+
+			lyrics 1: "guilt I am";
+			lyrics 1: "poor, yet He";
+			lyrics 1: "lone-ly, He";
+			lyrics 1: "noth-ing at";
+bar
+//25
+
+1: 4.ae; 8ge; 4ae;
+2: 4.c+e; 8be; 4c+e;
+
+			lyrics 1: "stained, But He";
+			lyrics 1: "grants me e'en";
+			lyrics 1: "gives me His";
+			lyrics 1: "all but He's";
+bar
+//26
+1: 4c+e; 4ae; 4be;
+2: 4ae; 4c+e; 4d+e;
+
+			lyrics 1: "mak-eth me";
+			lyrics 1: "more than I";
+			lyrics 1: "fel-low-ship";
+			lyrics 1: "all things to";
+bar
+//27
+1: 2ae; 4s;
+2: 2c+a; 4s;
+
+			lyrics 1: "white.";
+			lyrics 1: "think.";
+			lyrics 1: "sweet";
+			lyrics 1: "me.";
+
+dblbar
+//28
+1: 4c+e; 2s;
+2: 4aa-; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Yes!";
+bar
+//29
+1: 4.ac; 8ac; 4ac;
+2: 4.ea-; 8ea-; 4ea-;
+
+			lyrics 1: [c]"I'm a poor";
+bar
+//30
+1: 8fd; 4.ec; 4fd;
+2: 8aa-; 4.aa-; 4ad;
+
+			lyrics 1: [c]"sin-ner and";
+bar
+//31
+1: 8ac; 4.ac; 4bd;
+2: 8ae; 4.ae; 4ge;
+
+			lyrics 1: [c]"noth-ing at";
+bar
+//32
+1: 2ac; 4ec;
+2: 2aa-; 4aa-;
+
+			lyrics 1: [c]"all, But";
+bar
+//33
+1: 4.ac; 8ec; 4ac;
+2 1: 4.a; 8a; 4a;
+2 2: 4.a; 8a; 4a;
+
+			lyrics 1: "Je-sus my";
+bar
+//34
+1: 4c+e; 4d+f; 4c+e;
+2 1: 4a; 4a; 4aa-;
+2 2: 4a; 4a; 4s;
+
+			lyrics 1: "Sav-iour is";
+bar
+//35
+1: 4bdn; 4.fd; 8c+d;
+2: 4ab-; 4.ab-; 8ab-;
+
+			lyrics 1: "my All in";
+bar
+//36
+1: 2be; 4e+g;
+2 1: 4a slur; 4g; 4be;
+2 2: 2e; 4s;
+
+			lyrics 1: "all, Yes!";
+bar
+//37
+1: 4.c+e; 8bd; 4c+e;
+2 1: 4.a; 8a; 4a;
+2 2: 4.a; 8a; 4a;
+
+
+			lyrics 1: "I'm a poor";
+bar
+//38
+1: 8ac; 4.ac; 4ae;
+2: 8aa-; 4.aa-; 4ac;
+
+			lyrics 1: "sin-ner and";
+bar
+//39
+1: 8bf; 4.ad; 4fd;
+2: 8ad; 4.fd; 4ad;
+
+			lyrics 1: "noth-ing at";
+bar
+//40
+1: 2ec; 4ca-;
+2: 2aa-; 4ea-;
+
+			lyrics 1: "all, But";
+bar
+//41
+1: 4ec; 4ae; 4be;
+2: 4aa-; 4ac; 4ge;
+
+			lyrics 1: "Je-sus my";
+bar
+//42
+1: 4c+e; 4e+e; 4d+f;
+2 1: 4a; 4c+a; 4ad;
+2 2: 4a; 4s; 4s;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			lyrics 1: "Sav-iour is";
+bar
+//43
+1: 4c+e; 4.ae; 8be;
+2: 4ae; 4.c+e; 8d+e;
+
+			lyrics 1: "my All in";
+bar
+//44
+1: 2ae; 4s;
+2: 2c+aa-; 4s;
+
+			lyrics 1: "all.";
+endbar

@@ -6,8 +6,8 @@
   </work>
   <movement-title>More About Jesus</movement-title>
   <identification>
-    <creator type="lyricist">Eliza E. Hewitt</creator>
-    <creator type="composer">John R. Sweney</creator>
+    <creator type="lyricist">Hewitt, Eliza E.</creator>
+    <creator type="composer">Sweney, John R.</creator>
     <encoding>
       <encoding-date>2026-07-21</encoding-date>
       <software>music21 v.10.5.0</software>
@@ -23,15 +23,15 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="P35cbe79d5a167d0dd2a0691dfdfb63dc">
+    <score-part id="P4dd674750333400f3a37c2ec18559e88">
       <part-name>Soprano and Alto</part-name>
     </score-part>
-    <score-part id="P9e34559e2381d6443630e31b793d18ec">
+    <score-part id="P6b4ce328fd09e540b83806d38ea4cb30">
       <part-name>Tenor and Bass</part-name>
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="P35cbe79d5a167d0dd2a0691dfdfb63dc">
+  <part id="P4dd674750333400f3a37c2ec18559e88">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -437,7 +437,7 @@
           <text>His</text>
         </lyric>
         <lyric name="3" number="3">
-          <syllabic>single</syllabic>
+          <syllabic>begin</syllabic>
           <text>com</text>
         </lyric>
         <lyric name="4" number="4">
@@ -1163,7 +1163,7 @@
           <text>faith</text>
         </lyric>
         <lyric name="4" number="4">
-          <syllabic>begin</syllabic>
+          <syllabic>single</syllabic>
           <text>com</text>
         </lyric>
       </note>
@@ -1189,7 +1189,7 @@
           <text>ful</text>
         </lyric>
         <lyric name="4" number="4">
-          <syllabic>end</syllabic>
+          <syllabic>single</syllabic>
           <text>ing,</text>
         </lyric>
       </note>
@@ -1723,7 +1723,7 @@
     </measure>
   </part>
   <!--=========================== Part 2 ===========================-->
-  <part id="P9e34559e2381d6443630e31b793d18ec">
+  <part id="P6b4ce328fd09e540b83806d38ea4cb30">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -2312,6 +2312,10 @@
         <duration>10080</duration>
         <voice>1</voice>
         <type>quarter</type>
+        <lyric name="1" number="1">
+          <syllabic>begin</syllabic>
+          <text>full</text>
+        </lyric>
       </note>
       <note>
         <pitch>
@@ -2322,6 +2326,10 @@
         <duration>5040</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <lyric name="1" number="1">
+          <syllabic>end</syllabic>
+          <text>ness</text>
+        </lyric>
       </note>
       <note>
         <pitch>
@@ -2333,6 +2341,10 @@
         <voice>1</voice>
         <type>quarter</type>
         <dot />
+        <lyric name="1" number="1">
+          <syllabic>single</syllabic>
+          <text>see,</text>
+        </lyric>
       </note>
       <backup>
         <duration>30240</duration>
@@ -2497,6 +2509,10 @@
         <duration>10080</duration>
         <voice>1</voice>
         <type>quarter</type>
+        <lyric name="1" number="1">
+          <syllabic>single</syllabic>
+          <text>died</text>
+        </lyric>
       </note>
       <note>
         <pitch>
@@ -2507,6 +2523,10 @@
         <duration>5040</duration>
         <voice>1</voice>
         <type>eighth</type>
+        <lyric name="1" number="1">
+          <syllabic>single</syllabic>
+          <text>for</text>
+        </lyric>
       </note>
       <note>
         <pitch>
@@ -2518,6 +2538,10 @@
         <voice>1</voice>
         <type>quarter</type>
         <dot />
+        <lyric name="1" number="1">
+          <syllabic>single</syllabic>
+          <text>me.</text>
+        </lyric>
       </note>
       <backup>
         <duration>30240</duration>

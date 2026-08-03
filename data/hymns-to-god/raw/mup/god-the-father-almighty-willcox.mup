@@ -1,0 +1,230 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Chapel Hymnal
+//		The Pilgrim Press
+//		Congregational Sunday School 
+//		and Publiishing Society
+//		Boston and Chicago
+//		Copyright 1905
+
+// Transcribed by: Ted Gatza, Jr. 12/10/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "God the Father Almighty" ""
+   title (2)""
+   title (11) "C-3-SOL" "\s(18)\f(TI)\:Praise\ ye\ Jehovah.\ Praise\ \|ye\ Jehovah\ from\ the\ heavens: Praise\ him\ in\ the\ h\|eights.\ -\ Ps.\ 148:1"""
+   title (13) "Anon, 1801" " " "John H. Willcox, 1849"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4	
+	key=c
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=c
+	clef=bass
+music
+
+midi all: 0 "tempo=85";
+
+//1
+1: 4s; 4s; 8ge; 8ge;
+2: 4s; 4s; 8c+c; 8c+c;
+
+			lyrics 1: "<1. >-1|Praise the";
+			lyrics 1: "<2 >-1|Praise the";
+bar
+//2
+1: 4.ge; 8e+g; 8d+f; 8e+f;
+2: 4.c+c; 8gc; 8ac; 8bc;
+
+			lyrics 1: "Lord: ye heav'ns a-";
+			lyrics 1: "Lord, for He is";
+bar
+//3
+1: 4c+e; 4ge; 8gc; 8gc;
+2: 4c+c; 4c+c; 8c+e; 8c+e;
+
+			lyrics 1: "dore Him; Praise Him,";
+			lyrics 1: "glo-rious; Nev-er";
+bar
+//4
+1: 4.fd; 8af; 8s; 8s;
+2 1: 4c+ slur; 8b; 8g; 8s; 8s;
+2 2: 4.g; 8g; 8s; 8s;
+
+			lyrics 1: "an-gels,";
+			lyrics 1: "shall His";
+invisbar
+newscore
+
+1: 4.s; 8s; 8ge; 8fd;
+2 1: 4.s; 8s; 8a; 8b;
+2 2: 4.s; 8s; 8g; 8g;
+
+			lyrics 1: "in the";
+			lyrics 1: "prom-ise";
+
+bar
+//5
+1: 4fd slur; 4ec; 8fb-; 8fd;
+2 1: 4b slur; 4c+; 8gd; 8gd;
+2 2: 2c; 8s; 8s;
+
+			lyrics 1: "height; Sun and";
+			lyrics 1: "fail; God hath";
+bar
+//6
+1: 4.gc; 8e+g; 8d+f; 8e+f;
+2: 4.ge; 8gc; 8ac; 8bc;
+
+			lyrics 1: "moon, re-joice be-";
+			lyrics 1: "made His saints vic-";
+bar
+//7
+1: 4c+e; 4ge; 8c+e; 8c+a;
+2: 4c+c; 4c+c; 8c+a-; 8e+a-;
+
+			lyrics 1: "fore him; Praise Him,";
+			lyrics 1: "to-rious; Sin and";
+bar
+//8
+1: 4.bg; 8ad; 8gd; 8f#c;
+2: 4.d+d; 8c+d; 8bd; 8ad;
+
+			lyrics 1: "all ye stars and";
+			lyrics 1: "death shall not pre-";
+bar
+//9
+1: 2gb-; 8gd; 8gd;
+2: 2gg-; 8bg; 8bg;
+
+			lyrics 1: "light. Praise the";
+			lyrics 1: "vail. Praise the";
+bar
+//10
+1: 4.ae; 8ae; 8bf; 8bf;
+2: 4.c+g; 8c+g; 8d+g; 8d+g;
+
+			lyrics 1: "Lord, for he hath";
+			lyrics 1: "God, of our sal-";
+bar
+//11
+1: 4c+e; 4c+e; 8s; 8s;
+2: 4c+a; 4c+a; 8s; 8s;
+
+			lyrics 1: "spo-ken;";
+			lyrics 1: "va-tion;";
+
+invisbar
+newscore
+
+1: 4s; 4s; 8ae; 8ae;
+2: 4s; 4s; 8c+a; 8c+a;
+
+			lyrics 1: "Worlds His";
+			lyrics 1: "Host on";
+
+bar
+//12
+1: 4.ad#; 8c+d; 8bd; 8ad;
+2: 4.c+f; 8af; 8bf; 8cf;
+
+			lyrics 1: "might-y voice o-";
+			lyrics 1: "high, His pow'r pro-";
+bar
+//13
+1 1: 4a slur; 4g#; 8gn; 8g;
+1 2: 2e; 8f; 8f;
+2 1: 4c+ slur; 4b; 8bg; 8bg;
+2 2: 2e; 8s; 8s;
+
+			lyrics 1: "beyed; Laws which";
+			lyrics 1: "claim; Heav'n and";
+bar
+//14
+1: 4.ge; 8e+g; 8s; 8s;
+2: 4.c+c; 8c+c; 8s; 8s; 
+
+			lyrics 1: "nev-er";
+			lyrics 1: "earth and";
+
+invisbar
+newscore
+
+1: 4.s; 8s; 8d+f; 8e+e;
+2: 4.s; 8s; 8bg;8bg#; 
+
+			lyrics 1: "shall be";
+			lyrics 1: "all cre-";
+
+bar
+//15
+1: 4c+e; 4ge; 8g#d; 8gd;
+2 1: 4a; 4c+e; 8be; 8be;
+2 2: 4a; 4s; 8s; 8s;
+
+			lyrics 1: "bro-ken For their";
+			lyrics 1: "a-tion, Laud and";
+bar
+//16
+1: 8ac; 8d+f; 4c+e; 4bd;
+2 1: 8af; 8ad; 4g; 4gg-;
+2 2: 8s; 8s; 4g; 4s;
+
+			lyrics 1: "guid-ance hath He";
+			lyrics 1: "mag-ni-fy His";
+bar
+//17
+1: 2c+e; 4s;
+2: 2gc; 4s;
+
+			lyrics 1: "made.";
+			lyrics 1: "Name.";
+dblbar
+//18
+1: 2.c+f;
+2: 2.af;
+
+			lyrics 1: 2.s; "";
+			lyrics 1: "A-";
+bar
+//19
+1: 2.c+e;
+2: 2.gc;
+
+			lyrics 1: 2.s; "";
+			lyrics 1: "MEN.";
+endbar

@@ -1,0 +1,284 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Hymns of His Grace No. 1
+//		For the Evangelist, Church Sunday School,
+//		And young People's society
+//		Compiled and Edited by:
+//		P.P. Bilhorn, F.G. Fisher,
+//		John R. Clements, W.Stillman martin
+//		Published by the Bilhorn Brothers 
+//		Music Publishers and Folding Organ Mfgs.
+//		152 lake St. Chicage, Ill.
+//		Copyright 1907
+//		Hymn no. 34
+
+// Transcribed by: Ted Gatza, Jr. 01/10/11
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come and Walk With Jesus" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - SOL" "\s(17)\f(TI)\:As\ therefore\ ye\ received\ Christ\ Jesus\ the\ Lord,\ so\ walk\ in\ him,\ -\ Col.\ 2:6 \(space)"""
+   title (13) "H. L. Frisbie" " " "P. P. Bilhorn, 1907"
+
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 2.s; 4b-;
+1 2: 2.s; 4b-;
+2: 2.s; 4ge;
+
+			lyrics 1: "<1. >-1|All";
+			lyrics 1: "<2. >-1|All";
+			lyrics 1: "<3. >-1|All";
+bar
+//2
+1: 4eb-; 4eb-; 4fd; 4bd;
+2: 4ge; 4ge; 4ab-; 4ab-;
+
+			lyrics 1: "they who walk with";
+			lyrics 1: "they who walk with";
+			lyrics 1: "they who walk with";
+bar
+//3
+1: 2be; 4ge; 4eb-;
+2: 2ge; 4be; 4bg-;
+
+			lyrics 1: "Je-sus No";
+			lyrics 1: "Je-sus Should";
+			lyrics 1: "Je-sus, He";
+bar
+//4
+1 1: 4c; 4fc; 4eb-; 4db-;
+1 2: 4c; 4s; 4s; 4s;
+2: 4aa-; 4af-; 4gb-; 4ab-;
+
+			lyrics 1: "sad-ness ev-er";
+			lyrics 1: "nev-er feel a";
+			lyrics 1: "ev-er will de-";
+bar
+//5
+1 1: 2.eb-; 4b-;
+1 2: 2.s; 4b-;
+2: 2.ge; 4ge;
+
+			lyrics 1: "know; In";
+			lyrics 1: "fear; His";
+			lyrics 1: "fend; A";
+bar
+//6
+1: 4eb-; 4eb-; 4fd; 4fd;
+2: 4ge; 4ge; 4ab-; 4bb-; 
+
+			lyrics 1: "lone-ly ways He";
+			lyrics 1: "lov-ing voice as-";
+			lyrics 1: "com-fort-er is";
+bar
+//7
+1: 2ge; 4be; 4ae;
+2: 2be; 4ge; 4c+a-;
+
+			lyrics 1: "cheers them, And";
+			lyrics 1: "sures them, To";
+			lyrics 1: "with them, And";
+bar
+//8
+1: 4.ge; 8fc; 4eb-; 4fb-;
+2: 4.bb-; 8ab-; 4gb-; 4ab-;
+
+			lyrics 1: "com-forts as they";
+			lyrics 1: "help He's ev-er";
+			lyrics 1: "will be to the";
+bar
+//9
+1: 2.eb-; 4bg;
+2: 2.ge; 4e+e;
+
+			lyrics 1: "go; The";
+			lyrics 1: "near; His";
+			lyrics 1: "end; His";
+bar
+//10
+1 1: 4.b; 8b; 4c+a; 4d+a;
+1 2: 4.a; 8a; 4s; 4s;
+2: 4.d+b-; 8d+b-; 4d+b-; 4f+b-;
+
+			lyrics 1: "dark-est hours He";
+			lyrics 1: "words all doubts dis-";
+			lyrics 1: "yoke is nev-er";
+bar
+//11
+1: 2e+g; 4bg; ge;
+2: 2e+e; 4; be;
+
+			lyrics 1: "bright-ens; The";
+			lyrics 1: "pell-ing, And";
+			lyrics 1: "gall-ing; O";
+bar
+//12
+1: 4.ad; 8gd; 4fd; c+d;
+2: 4.bb-; 8; 4ab-;;
+
+			lyrics 1: "sor-est bur-dens";
+			lyrics 1: "ev-'ry tu-mult";
+			lyrics 1: "hear His ac-cents";
+bar
+//13
+1: 2c+e; 4be; bg;
+2: 2ae; 4ge; e+e;
+
+			lyrics 1: "light-ens, And";
+			lyrics 1: "quell-ing; To";
+			lyrics 1: "fall-ing; A";
+bar
+//14
+1: 4.e+g; 8d+a; 4c+a; 4e+a;
+2: 4.be; 8d+e; 4e+e; 4c+e;
+
+			lyrics 1: "ev-'ry joy He";
+			lyrics 1: "songs of praise-es";
+			lyrics 1: "lov-ing Friend is";
+bar
+//15
+1 1: 2bg; 4ae;4f;
+1 2: 2s; 4s; 4e;
+2: 2e+e; 4c+a-; 4anc;
+
+			lyrics 1: "height-ens Be-";
+			lyrics 1: "pell-ing, He";
+			lyrics 1: "call-ing And";
+bar
+//16
+1: 4.ge; 8fc; 4eb-; 4fb-;
+2: 4.bb-; 8ab-; 4gb-; 4ab-;
+
+			lyrics 1: "cause He loves them";
+			lyrics 1: "lends a will-ing";
+			lyrics 1: "Je-sus is that";
+bar
+//17
+1: 2.eb-; 4s;
+2: 2.ge; 4s;
+
+			lyrics 1: "so.";
+			lyrics 1: "ear.";
+			lyrics 1: "Friend.";
+dblbar
+newscore
+//18
+1: 8bg; 8e+g; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Come and";
+bar
+//19
+1: 2d+a tie; 8d+a; 8d+a; 8c+a; 8d+a;
+2: 4r; 8f+b-; 8f+b-; 8f+b-; 8r; 4r;
+
+			lyrics 1: "walk,_ O walk with";
+			lyrics 1: 4s; 8; 8; 8; 8s; 4s; "Come and walk,";
+bar
+//20
+1: 2e+g; 4bg; 8ge; 8bg;
+2: 4r; 8e+e; 8e+e; 8e+e; 8e+e; 4r;
+
+			lyrics 1: "Je-sus He will";
+			lyrics 1: 4s; 8; 8; 8; 8; 4s;"walk with Je-sus";
+bar
+//21
+1: 2af tie; 8af; 8ge; 8fd; 8c+a;
+2: 4r; 8d+b-; 8d+b-; 8d+b-; 8r; 4r;
+
+			lyrics 1: "make_ your bur-dens";
+			lyrics 1: 4s; 8; 8; 8; 8s; 4s; "He will make,";
+bar
+//22
+1: 2bg tie; 4bg; 8ge; 8bg;
+2 1: 8r; 8e+e; 8e+g; 8e+b; 4e+; 4r;
+2 2: 8s; 8s; 8s; 8s; 4e+; 4s;
+
+			lyrics 1: "light;_ He will";
+			lyrics 1: 8s; 8; 8; 8; 4; 4s; "your bur-dens light;";
+bar
+newscore
+//23
+1: 2e+g tie; 8e+g; 8e+g; 8d+a; 8e+b;
+2: 4r; 8be; 8be; 8be;8be; 8bf; 8bg;
+
+			lyrics 1: "guide_ your steps to";
+			lyrics 1: 4s; 8; 8; 8; 8s; 8s; 8s; "He will guide";
+bar
+//24
+1: 2f+a; 4e+c+; 8d+b; 8c+a;
+2: 8c+a; 8c+a; 8c+a; 8c+a; 4e+a; 4r;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: "heav-en; He will";
+			lyrics 1: 8; 8; 8; 8; 4; 4s; "heav'n your steps to heav'n";
+bar
+//25
+1: 2bg tie; 8bg; 8bg; 8af; 8fd;
+2 1: 4r; 8e+b; 8e+b; 8e+b; 8e+b; 8b; 8ab-;
+2 2: 4s; 8s; 8s; 8s; 8s; 8b; 8s;
+
+			lyrics 1: "make_ your path-way";
+			lyrics 1: 4s; 8; 8; 8; 8s; 8s; 8s; "he will make";
+bar
+//26
+1 1: 2e tie; 4e; 4s;
+1 2: 8e; 8b-; 8d; 8c; 4b-; 4s;
+2 1: 8g; 8g; 8b; 8a; 4g; 4s;
+2 2: 2e tie; 4e; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			lyrics 1: "bright._";
+			lyrics 1: 8s; 8; 8; 8; 4; 4s; "your path-way bright.";
+endbar

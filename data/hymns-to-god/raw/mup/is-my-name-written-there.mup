@@ -1,0 +1,409 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 77
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/23/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Is My Name Written There?" ""
+   title (2)""
+   title (11)"" "\f(TI)Rejoice because your names are written in heaven. - Lk. 10:20" ""
+   title (11) "A\(flat) - 3 - SOL" "" ""
+   title (13) "Mrs. Mary A. Kidder (arr.)" "" "Frank M. Davis"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==== FOR Letter ==========
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+//==========================
+staffs=2
+	time=3/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+//6"x9"page size
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=95";
+
+//=========================
+//Verse 1
+
+//1
+1: 8.ce; 16ce; 2s;
+2:8.a-a; 16a-a; 2s;
+
+	VS1 "<1. >-1|Lord, I";
+	VS1 "<2. >-1|Lord, my";
+	VS1 "<3. >-1|Oh! the";
+bar
+
+//2
+1: 4ca; ea; eb;
+2: 4a-a; ca; eg;
+
+	VS1 "care not for";
+	VS1 "sins they are";
+	VS1 "beau-ti-ful";
+bar
+
+//3
+1: 4ec+; ca; 8.s; 16s;
+2 1: 4a; a; 8.s; 16s;
+2 2: 4a; a; 8.s; 16s;
+
+	VS1 "rich-es,";
+	VS1 "man-y,";
+	VS1 "cit-y,";
+invisbar
+
+1: 4s; s; 8.ce; 16ce;
+2 1: 4s; ; 8.a-a; 16a-a;
+2 2: 4s; s; 8.s; 16s;
+
+	VS1 "Neith-er";
+	VS1 "Like the";
+	VS1 "With its";
+bar
+
+//4
+1: 4df; fa; fd+;
+2: 4da; da; da;
+
+	VS1 "sil-ver nor";
+	VS1 "sands of the";
+	VS1 "man-sions of";
+bar
+
+//5
+1: 2ec+; 4s;
+2 1: 2a; 4s;
+2 2: 2a; 4s;
+
+	VS1 "gold;";
+	VS1 "sea;";
+	VS1 "light;";
+invisbar
+
+1: 2s; 8.ca; 16db;
+2: 2s; 8.a-a; 16a-a;
+
+	VS1 "I would";
+	VS1 "But Thy";
+	VS1 "With its";
+bar
+
+//6
+1: 4ec+; ec+; ed+;
+2: 4a-a; a-a; a-b;
+
+	VS1 "make sure of";
+	VS1 "blood, O my";
+	VS1 "glo-ri-fied";
+bar
+
+//7
+1: 4ee+; ee+; 4s;
+2: 4a-c+; a-c+; 4s;
+
+	VS1 "heav-en,";
+	VS1 "Sav-ior!";
+	VS1 "be-ings,";
+invisbar
+
+1: 2s; 8.ec+; 16ec+;
+2: 2s; 8.a-a; 16a-a;
+
+	VS1 "I would";
+	VS1 "Is suf-";
+	VS1 "In pure";
+bar
+
+//8
+1: 4dnb; da; dc+;
+2: 4b-f; b-f; b-a;
+
+	VS1 "ent-er the";
+	VS1 "fi-cient for";
+	VS1 "gar-ments of";
+bar
+
+//9
+1: 2eb; 4s;
+2: 2eg; 4s;
+
+	VS1 "fold.";
+	VS1 "me;";
+	VS1 "white;";
+invisbar
+
+1 1: 2s; 8.e; 16e;
+1 2: 2s; 8.e; 16d;
+2: 2s; 8.eg; 16eg;
+
+	VS1 "In the";
+	VS1 "For Thy";
+	VS1 "Where no";
+bar
+
+//10
+1: 4ca; ea; eb;
+2: 4a-a; ca; eg;
+
+	VS1 "book of Thy";
+	VS1 "prom-ise is";
+	VS1 "e-vil thing";
+bar
+
+//11
+1: 4ec+; ca; 4s;
+2 1: 4a; a; 4s;
+2 2: 4a; a; 4s;
+
+	VS1 "king-dom,";
+	VS1 "writ-ten,";
+	VS1 "com-eth,";
+invisbar
+
+1: 2s; 8.ce; 16ce;
+2: 2s; 8.a-a; 16a-a;
+
+	VS1 "With its";
+	VS1 "In bright";
+	VS1 "To de-";
+bar
+
+//12
+1: 4df; fa; fd+;
+2: 4da; da; da;
+
+	VS1 "pag-es so";
+	VS1 "let-ters that";
+	VS1 "spoil what is";
+bar
+
+//13
+1: 2ec+; 4s;
+2 1: 2a; 4s;
+2 2: 2a; 4s;
+
+	VS1 "fair,";
+	VS1 "glow,";
+	VS1 "fair;";
+invisbar
+
+1: 2s; 8.ec+; 16ed+;
+2: 2s; 8.a-a; 16a-b;
+
+	VS1 "Tell me,";
+	VS1 "\"Tho' your";
+	VS1 "Where the";
+bar
+
+//14
+1: 4ee+; ee+; ec+;
+2: 4a-c+; a-c+; ca;
+
+	VS1 "Je-sus, my";
+	VS1 "sins be as";
+	VS1 "an-gels are";
+bar
+
+//15
+1: 4db; da; 4s;
+2: 4df; df; 4s;
+FST(2)
+FBB(2)
+
+	VS1 "Sav-ior,";
+	VS1 "scar-let,";
+	VS1 "watch-ing";
+invisbar
+
+1: 2s; 8.ea; 16fb;
+2: 2s; 8.ca; 16da;
+
+	VS1 "Is my";
+	VS1 "I will";
+	VS1 "Is my";
+bar
+
+//16
+1: 4ec+; ec+; db;
+2: 4ea; ea; eg;
+
+	VS1 "name writ-ten";
+	VS1 "make them like";
+	VS1 "name writ-ten";
+bar
+
+//17
+1: 2ca; 4s;
+2: 2a-a; 4s;
+
+	VS1 "there?";
+	VS1 "snow.\"";
+	VS1 "there.";
+dblbar
+newscore
+
+//18
+CHORUS
+1: 8.ca; 16db; 2s;
+2: 8.a-a; 16a-a; 2s;
+
+	VS1 "Is my";
+bar
+
+//19
+1: 4ec+; ec+; db;
+2: 4a-a; ca; eg;
+
+	VS1 "name writ-ten";
+bar
+
+//20
+1: 2ca; 4s;
+2 1: 2a; 4s;
+2 2: 2a; 4s;
+
+	VS1 "there,";
+invisbar
+
+1: 2s; 8.ca; 16db;
+2: 2s; 8.a-a; 16a-a;
+
+	VS1 "On the";
+bar
+
+//21
+1: 4ec+; 4ec+; 4ee+;
+2: 4a-a; 4a-a; 4ca;
+
+	VS1 "page white and";
+bar
+//22
+1: 2eb; 4s;
+2: 2eg; 4s;
+
+	VS1 "fair?";
+invisbar
+
+1: 2s; 8.ec+; 16ed+;
+2: 2s; 8.a-a; 16a-b;
+
+	VS1 "In the";
+bar
+
+//23
+1: 4ee+; 4ee+; 4ec+;
+2: 4a-c+; 4a-c+; 4ca;
+
+	VS1 "book of Thy";
+bar
+
+//24
+1: 4eb; 4da; 4s;
+2: 4df; 4df; 4s;
+FST(2)
+FBB(2)
+
+	VS1 "king-dom,";
+invisbar
+
+1: 2s; 8.ea; 16eb;
+2: 2s; 8.ca; 16da;
+
+	VS1 "Is my";
+bar
+
+//25
+1: 4ec+; 4ec+; 4db;
+2: 4ea; 4ea; 4eg;
+
+	VS1 "name writ-ten";
+bar
+
+//26
+
+1: 2ca; 4s;
+2: 2a-a; 4s;
+
+	VS1 "there?";
+endbar
+
+
+

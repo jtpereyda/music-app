@@ -1,0 +1,263 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Thanksgiving
+//		Prepared by D. B. Towner Mus. Doc.
+//		Director of the Music Course of the
+//		Moody Bible Institute of Chicago
+//		Fleming H. Revell Company
+//		New York, 158 fifth Avenue
+//		Chicago, 125 N. Wabash Avenue
+//		Toronto, London, Edinburgh
+//		Copyright 1913
+//		Hymn No.: 7
+//		
+// Transcribed by: Ted Gatza, Jr. 01/05/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Under His Care" ""
+   title (2)""
+   title (11) "F - 4 - DO" "\s(17)\f(TI)\:Casting\ all\ your\ care\ upon\ him;\ for\ he\ careth\ for\ you.\ -\ 1\ Pet.\ 5:7 \(space)" ""   
+   title (13) "F. R. Havergal" "" "George S. Schuler, 1913"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 4f; ge; g#d;
+1 2: 4f; s;;
+2: 4af; bf; bnf;
+
+			VERSE "<1. >-1|God will take";
+			VERSE "<2. >-1|God will take";
+			VERSE "<3. >-1|God will take";
+			
+bar
+//2
+1: 4.ac; 8gc; 4fc;
+2: 4.c+f; 8bf; 4af;
+
+			VERSE "care of you";
+			VERSE "care of you";
+			VERSE "care of you";
+bar
+//3
+1: 4ec;; fc;
+2: 4bg;; af;
+
+			VERSE "all thro' the";
+			VERSE "all thro' the";
+			VERSE "all thro' the";
+bar
+//4
+1: 2.gc; 
+2: 2.be;
+
+			VERSE "day;";
+			VERSE "night,";
+			VERSE "year,";
+bar
+//5
+1: 4ge;; af;
+2: 4bc;;;
+
+			VERSE "He who has";
+			VERSE "Hold-ing thy";
+			VERSE "Crown-ing each";
+bar
+//6
+1: 4.be; 8ad#; 4be;
+2: 4.gc; 8f#c; 4gc;
+
+			VERSE "loved you so";
+			VERSE "hand, He so";
+			VERSE "day with His";
+bar
+//7
+1: 4d+e; c+f; be;
+2: 4bc; ac; gc;
+
+			VERSE "keeps you from";
+			VERSE "ten-der-ly";
+			VERSE "kind-ness and";
+bar
+//8
+1: 2.af;
+2 1: 2.f;
+2 2: 2.f;
+
+			VERSE "ill;";
+			VERSE "keeps;";
+			VERSE "love,";
+bar
+//9
+1: 4af; be; bnd;
+2 1: 4f; g; g#;
+2 2: 4f;;;
+
+			VERSE "Wak-ing or";
+			VERSE "Dark-ness to";
+			VERSE "Send-ing you";
+bar
+//10
+1: 4.c+c; 8af; 4ge;
+2: 4.af; 8c+f; 4c+g;
+
+			VERSE "rest-ing, at";
+			VERSE "Him is the";
+			VERSE "bless-ings and";
+bar
+//11
+1 1: 4f; af; bg;
+1 2: 4f; s;;
+2: 4c+a; c+f; bf;
+
+			VERSE "work or at";
+			VERSE "same as the";
+			VERSE "shield-ing from";
+bar
+//12
+1: [up]2c+a slur; 4c+#g;
+2 1: 2.a;
+2 2: 2f slur; 4e;
+
+			VERSE "play,";
+			VERSE "light;";
+			VERSE "fear,";
+bar
+//13
+1: 4d+f; e+g; f+g#;
+2: 4ad; bd; bnd&;
+
+			VERSE "He will be";
+			VERSE "He nev-er";
+			VERSE "Lead-ing you";
+bar
+//14
+1: 4f+a; c+f; af;
+2: c+c; ac; ad;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "with you and";
+			VERSE "slum-bers and";
+			VERSE "on to that";
+bar
+//15
+1: 4d+f; c+f; ec;
+2: 4gb-; ac; bc;
+
+			VERSE "watch-ing you";
+			VERSE "He nev-er";
+			VERSE "bright home a-";
+bar
+//16
+1: 2. fc;
+2: 2.af;
+
+			VERSE "still.";
+			VERSE "sleeps.";
+			VERSE "bove.";
+dblbar
+//17
+1: 4ge;; af;
+2: 2.r;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Un-der His";
+bar
+//18
+1: 2.bg;
+2: 4ec; fd; ge;
+
+			VERSE "care";
+			VERSE 4; 4; 4; "Un-der His";
+bar
+//19
+1: 4af;; bg;
+2 1: 2af; 4f;
+2 2: 2s; 4f;
+
+			VERSE "Un-der His";
+			VERSE 2; 4; "care, His";
+bar
+//20
+1: 2c+a slur; 4c+#g;
+2 1: 2f slur; 4a;
+2 2: 2f slur; 4e;
+
+			VERSE "care,";
+			VERSE "care,";
+bar
+//21
+1: 4d+f; e+g; f+g#;
+2: 4ad; bd; bnd&;
+
+			VERSE "Safe-ly I'm";
+bar
+//22
+1: 4f+a; c+f; af#;
+2: 4c+c; ac; c+d;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "dwell-ing while";
+bar
+//23
+1: 4e+g; d+f; c+e;
+2: 4bng;; b&c;
+
+			VERSE "un-der His";
+bar
+//24
+1 1: 2.f;
+1 2: 2.f;
+2: 2.af;
+
+			VERSE "care.";
+endbar

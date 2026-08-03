@@ -1,0 +1,215 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Praise
+//		Edited and Compiled by James M. Black
+//		Publised by Jennings and Graham, Ethan and mains
+//		Copyright 1912
+//		Hymn No. 65
+
+
+// Transcribed by: Ted Gatza, Jr. 01/11/2010; Rev. 08/02/2012
+// HymnsToGod.org
+
+// ********************************
+
+top
+
+   title bold (19) "" "He Brings Me Peace" ""
+   title (2)""
+   title (11) "F - 2 - MI" "\s(17)\f(TI)\:Now\ the\ Lord\ of\ peace\ hims\|elf\ give\ you\ peace at\ all\ times\ in\ all\ ways.\^\ -\ 2\ Thes.\ 3:16"""
+   title (13) "Kathrine S. Wadsworth" " " "James M. Black, 1912"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/4	
+	key=1&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=160";
+
+//1
+1 1: 4af; 4g#; 4af; 2c+f; 4fc;
+1 2: 4s; 4f; 4s; 2s; 4s;
+2: 4c+f; 4bnf; 4c+f; 2af; 4af;
+
+
+			lyrics 1: "<1. >-1|Look-ing a-way to";
+			lyrics 1: "<2. >-1|Lean-ing on Him, He";
+			lyrics 1: "<3. >-1|Lov-ing me so wher-";
+			lyrics 1: "<4. >-1|Sav-iour and Guide, I";
+bar
+//2
+1 1: 4fc; 4ec; 4d; 2.ec;
+1 2: 4s; 4s; 4c; 2.s;
+2: 4bg; 4bg; 4bg; 2.bg;
+
+			lyrics 1: "Je-sus each day,";
+			lyrics 1: "keeps me from sin,";
+			lyrics 1: "ev-er I go,";
+			lyrics 1: "walk by His side,";
+bar
+//3
+1 1: 4c; 4bc; 4bc; 2bc; 4bc;
+1 2: 4c; 4s; 4s; 2s; 4s;
+2: 4bc; 4gc; 4gc; 2gc; 4ge;
+
+			lyrics 1: "Won-der-ful peace He";
+			lyrics 1: "Won-der-ful peace He";
+			lyrics 1: "Won-der-ful peace He";
+			lyrics 1: "Won-der-ful peace He";
+bar
+//4
+1: 2.bf; 2af; 4r;
+2: 2.d+f; 2c+f; 4r;
+			lyrics 1: "brings me;";
+			lyrics 1: "brings me;";
+			lyrics 1: "brings me;";
+			lyrics 1: "brings me;";
+bar
+//5
+1 1: 4af; 4g#; 4af; 2c+f; 4af;
+1 2: 4s; 4f; 4s; 2s; 4s;
+2: 4c+f; 4bnf; 4c+f; 2af; 4c+f;
+
+			lyrics 1: "Sav-iour di-vine, I";
+			lyrics 1: "Scat-ters my fears and";
+			lyrics 1: "O-ver life's sea, my";
+			lyrics 1: "Trust-ing His word, I";
+bar
+//6
+1 1: 4f; 4ge; 4ae&; 2.bd;
+1 2: 8c bm; 8febm; 4s; 4s; 2.s;
+2 1: 4af; 4bf; 4f; 2.fb-;
+2 2: 4s; 4s; 4f; 2.s;
+
+			lyrics 1: "know He is mine,";
+			lyrics 1: "drys all my tears,";
+			lyrics 1: "Pi-lot is He,";
+			lyrics 1: "lean on my Lord,";
+bar
+//7
+1: 4d+f; 4d+f; 4d+f; 2s; 4s;
+2: 4bb-; 4bb-; 4bb-; 2s; 4s;
+
+			lyrics 1: "Won-der-ful";
+			lyrics 1: "Won-der-ful";
+			lyrics 1: "Won-der-ful";
+			lyrics 1: "Won-der-ful";
+
+invisbar
+newscore
+
+1: 4s; 4s; 4s; 2c+f; 4af;
+2: 4s; 4s; 4s; 2ac; 4c+c;
+
+			lyrics 1: "peace He";
+			lyrics 1: "peace He";
+			lyrics 1: "peace He";
+			lyrics 1: "peace He";
+
+
+bar
+//8
+1 1: 2.g; 2fc; 4r;
+1 2: 2e slur; 4c; 2s; 4s;
+2: 2.bc; 2aff-; 4r;
+
+			lyrics 1: "brings me.";
+			lyrics 1: "brings me.";
+			lyrics 1: "brings me.";
+			lyrics 1: "brings me.";
+dblbar
+//9
+1: 2.c+f; 2af; 4c+f;
+2 1: 4s; 4s; 4s; 2c+ slur; 4a;
+2 2: 4af; 4af; 4af; 2.f;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: 2.; 2.s; "<>";
+			lyrics 1: "Peace, peace He";
+			lyrics 1: 4; 4; 4; 2.; "Won-der-ful peace,";
+bar
+//10
+1: 2.d+f; 2d+f; 4r;
+2: 4bb-; 4bb-; 4bb-; 2bb-; 4r;
+
+			lyrics 1: 2.; 2.s; "<>";
+			lyrics 1: "brings me,";
+			lyrics 1: 4; 4; 4; 2; 4s; "won-der-ful peace,";
+bar
+//11
+1 1:4d+f; 4c+f; 4af; 2g; 8d+f bm; 8e+g ebm;
+1 2: 4s; 4s; 4s; 2f; 8s; 8s;
+2 1: 4af; 4af; 4c+f; 2bng; 4g;
+2 2: 4s; 4s; 4s; 2s; 4g;
+
+			lyrics 1: 4; 4; 4; 2; 4; "Won-der-ful peace He";
+bar
+//12
+1: 2.d+e; 2c+e; 4r;
+2 1: 2.s; 2g slur; 4b;
+2 2: 2.gc; 2c; 4r;
+
+			lyrics 1: "brings me,";
+bar
+//13
+1: 4c+f; 4d+f; 4c+f; 2af; 4gc;
+2: 4af; 4bf; 4af; 2c+f; 4bf;
+
+			lyrics 1: "Look-ing a-way to";
+bar
+newscore
+//14
+1 1: 4f; 4ge; 4ae&; 2.bd;
+1 2: 8c bm; 8f ebm; 4s; 4s; 2.s;
+2 1: 4af; 4bf; 4f; 2.fb-;
+2 2: 4s; 4s; 4f; 2.s;
+
+			lyrics 1: "Je-sus each day,";
+bar
+//15
+1: 4d+f; 4d+f; 4d+f; 2c+f; 4af;
+2: 4bb-; 4bb-; 4bb-; 2ac; 4c+c;
+
+			lyrics 1: "Won-der-ful peace He";
+bar
+//16
+1: 2.ge; 2fc; 4r;
+2: 2.bc; 2aff-; 4r;
+
+			lyrics 1: "brings me.";
+endbar

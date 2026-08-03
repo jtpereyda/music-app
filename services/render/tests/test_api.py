@@ -247,6 +247,6 @@ def test_catalog_paths_cannot_escape_root(tmp_path: Path) -> None:
 def test_default_catalog_loads_all_catalog_additions() -> None:
     catalog = HymnCatalog()
 
-    assert len(catalog.entries()) == 290
+    assert len(catalog.entries()) == 869
     assert catalog.entry("rescue-the-perishing").title == "Rescue the Perishing"
     assert catalog.source_available("rescue-the-perishing")

@@ -1,0 +1,187 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Endeavor Hymns
+//		by Ira D. Sankey
+//		pub by The United Society of Christian Endeavor
+//		646 Washington St., Boston, Mass. 
+//		The Biglow and Main Co. 76 East 9th St. New York 
+//		Copyright 1894
+//		Hymn No. 93
+
+// Transcribed by: Ted Gatza, Jr. 12/29/2009; rev. 02/15/2014
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Hear Me, Blessed Jesus" ""
+   title (2)""
+   title (11) "D - 2 - SOL" "\f(TI)They shall call on my name, and I will hear them - Zech.13:9"""
+   title (13) "Words arr." " " "J. H. Burk, 1891"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=2#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=2#
+	clef=bass
+music
+
+midi all: 0 "tempo=110";
+
+//1
+1: 4af; 8af; 8fd bm; 8ge ebm; 8af;
+2: 4ad; 8ad; 4ad; 8d+d;
+
+			lyrics 1: 4; 8; 4; 8; "<1. >-1|Hear me, bless-ed";
+			lyrics 1: 4; 8; 4; 8; "<2. >-1|Let me ful-ly";
+			lyrics 1: 4; 8; 4; 8; "<3. >-1|Hid-ing in the";
+bar
+//2
+1: 4.d+f; 4af slur; 8ge;
+2: 4.d+d; 4.d+d;
+
+			lyrics 1: "Je-sus,";
+			lyrics 1: "trust Thee,";
+			lyrics 1: "shad-ow";
+bar
+//3
+1 1: 4fd; 8fd; 8a bm; 8g ebm; 8fd;
+1 2: 4s; 8s; 4d; 8s;
+2 1: 4ad; 8ad; 4a; 8ad;
+2 2: 4s; 8s; 8f bm; 8e ebm; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "Bid all fear de-";
+			lyrics 1: 4; 8; 4; 8; "Rest-ing on Thy";
+			lyrics 1: 4; 8; 4; 8; "Of Thy shelt'-ring";
+bar
+//4
+1: 4.ec slur; 4.ac;
+2: 4.aa- slur; 4.ga-;
+
+			lyrics 1: "part;";
+			lyrics 1: "Word;";
+			lyrics 1: "wings,";
+bar
+//5
+1: 4ad; 8ad; 8fd bm; 8ge ebm; 8af;
+2: 4fd; 8fd; 4ad; 8ad;
+
+			lyrics 1: 4; 8; 4; 8; "Let Thy Spir-it";
+			lyrics 1: 4; 8; 4; 8; "Let me still with";
+			lyrics 1: 4; 8; 4; 8; "I shall rest con-";
+bar
+//6
+1: 4.d+f; 4af slur; 8gd;
+2: 4.ad; 4c+nd slur; 8bg;
+
+			lyrics 1: "whis-per";
+			lyrics 1: "pa-tience";
+			lyrics 1: "fid-ing";
+bar
+//7
+1: 4fd; 8fd; 4gc; 8ec;
+2 1: 4a; 8a; 4aa-; 8ga-;
+2 2: 4a; 8a; 4s; 8s;
+
+			lyrics 1: "Peace with-in my";
+			lyrics 1: "Wait on Thee, O";
+			lyrics 1: "In the King of";
+bar
+//8
+1 1: 4.d tie; 4.d;
+1 2: 4.d tie; 4.d;
+2: 4.fd tie; 4.fd;
+	
+			lyrics 1: "heart.";
+			lyrics 1: "Lord.";
+			lyrics 1: "Kings.";
+dblbar
+//9
+1 1: 4bd; 8bd; 8b bm; 8c+ ebm; 8d+d;
+1 2: 4s; 8s; 4e; 8s;
+2 1: 4g; 8g; 8g bm; 8a ebm; 8bg;
+2 2: 4g; 8g; 4g; 8s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: 4; 8; 4; 8; "Then, what-e'er Thou";
+bar
+//10
+1: 4.d+d; 4.c+e;
+2 1: 4.af; 4.a;
+2 2: 4.s; 4.a;
+
+			lyrics 1: "send-est,";
+bar
+//11
+1: 4bg#; 8bg; 4c+g; 8bg;
+2: 4d+e; 8d+e; 4e+e; 8d+e;
+
+			lyrics 1: "Hap-py shall I";
+bar
+//12
+1 1: 4.a tie; 4.a;
+1 2: 4.a slur; 4.g;
+2: 4.c+a tie; 4.c+a;
+
+			lyrics 1: "be;";
+bar
+newscore
+//13
+1: 4af; 8af; 8fd bm; ge ebm; 8af;
+2: 4d+d; 8d+d; 4ad; 8ad;
+
+			lyrics 1: 4; 8; 4; 8; "Je-sus, my Re-";
+bar
+//14
+1 1: 4.d+f; 4a slur; 8g;
+1 2: 4.s; 4f slur; 8d;
+2 1: 4.ad; 4c+n slur; 8b;
+2 2: 4.s; 4d slur; 8g;
+
+			lyrics 1: "deem-er,";
+bar
+//15
+1: 4fd; 8fd; 4gc; 8ec;
+2 1: 4a; 8a; 4aa-; 8ga-;
+2 2: 4a; 8a; 4s; 8s;
+
+			lyrics 1: "Look-ing un-to";
+bar
+//16
+1 1: 4.d tie; 4.d;
+1 2: 4.d tie; 4.d;
+2: 4.fd tie; 4. fd;
+
+			lyrics 1: "Thee.";
+endbar

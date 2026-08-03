@@ -1,0 +1,210 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Great Awakening
+//		A choice collection of new and
+//		standard Gospel Songs
+//		Author: Sam. P. Jones
+//		Publisher: John Church Co.
+//		74 W. Fourth St.
+//		Chicago: Root & Sons Music Co. 200 Wabash Ave.
+//		New York: The J. Church Co. 55 E. 13th St.
+//		Copyright: 1886
+//		Hymn No.: 83
+//		
+// Transcribed by: Ted Gatza, Jr. 11/11/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "The Solid Rock" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:The\ Lord\ is\ my\ defence,\ and\ rock\ of\ my\ refuge.\ -\ Ps.\ 94:22 \(space)" ""   
+   title (13) "Edward Mote, 1825" "" "William B. Bradbury, 1863"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 4d; 2s;
+1 2: 4d; 2s;
+2 1: 4d; 2s;
+2 2: 4d; 2s;
+
+	VERSE "<1. >-1|My";
+	VERSE "<2. >-1|When";
+	VERSE "<3. >-1|His";
+	VERSE "<4. >-1|When";
+
+bar
+//2
+1: 8gd; bd; 4d+g; bg;
+2: 8bg;; 4; d+g;
+
+	VERSE "hope is built on";
+	VERSE "dark-ness veils His";
+	VERSE "oath, His cov-e-";
+	VERSE "He shall come with";
+bar
+//3
+1: 8bg; af; 4; bg;
+2: 8d+d;; 4; d+g;
+
+	VERSE "noth-ing less Than";
+	VERSE "love-ly face, I";
+	VERSE "nant, His blood, Sup-";
+	VERSE "trum-pet sound, Oh,";
+bar
+//4
+1: 8c+g;; 4; ae;
+2: 8e+c;; 4; c+c;
+
+	VERSE "Je-sus' blood and";
+	VERSE "rest on his un-";
+	VERSE "port me in the";
+	VERSE "may I then in";
+bar
+//5
+1 1: 8gd; fd; 4gd; 4d;
+1 2: 8s;; 4; d;
+2 1: 8bd; ad; 4bg; d;
+2 2: 8s;; 4; d;
+
+	VERSE "right-eous-ness; I";
+	VERSE "chang-ing grace; In";
+	VERSE "whelm-ing flood; When";
+	VERSE "Him be found; Drest";
+bar
+//6
+1: 8gd; bd; 4d+g; bg;
+2: 8bg;; 4; d+g;
+
+	VERSE "dare not trust the";
+	VERSE "eve-ry high and";
+	VERSE "all a-round my";
+	VERSE "in His right-eous-";
+bar
+//7
+1: 8bg; af; 4; bg;
+2: 8d+d;; 4; d+g;
+
+	VERSE "sweet-est frame, But";
+	VERSE "storm-y gale, My";
+	VERSE "soul gives way, He";
+	VERSE "ness a-lone, Fault-";
+bar
+//8
+1: 8c+g;; 4; ae;
+2: 8e+c;; 4; c+c;
+
+	VERSE "whol-ly lean on";
+	VERSE "an-chor holds with-";
+	VERSE "then is all my";
+	VERSE "less to stand be-";
+bar
+//9
+1: 8gd; fd; 4gd; s;
+2: 8bd; ad; 4bg; s;
+
+
+	VERSE "Je-sus' name.";
+	VERSE "in the vail.";
+	VERSE "hope and stay.";
+	VERSE "fore the throne!";
+dblbar
+newscore
+//10
+1: 4d+g; 2s;
+2: 4bg; 2s;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE "On";
+bar
+//11
+1: 8d+g; d+f; 4d+g;;
+2: 8bg; c+a; 4d+b; bg;
+
+	VERSE "Christ, the Sol-id";
+bar
+//12
+1: 8e+g;; 4;;
+2: 8c+c;; 4;;
+
+	VERSE "Rock, I stand; All";
+bar
+//13
+1: 8d+g; bd; 4; gd;
+2 1: 8bg; g; 4; bg;
+2 2: 8s; g; 4; s;
+
+	VERSE "oth-er ground is";
+bar
+//14
+1 1: 8bd;; 4ad; d;
+1 2: 8s;; 4; d;
+2: 8gg-; gb-; 4fd;;
+
+	VERSE "sink-ing sand, All";
+bar
+//15
+1: 8gd; gb-; 4ge; bd;
+2: 8gb-; gg-; 4gc; gg-;
+
+	VERSE "oth-er ground is";
+bar
+//16
+1: 8ad;; 4gb-; 4s;
+2: 8gd; fd; 4gg-; s;
+
+	VERSE "sink-ing sand.";
+endbar

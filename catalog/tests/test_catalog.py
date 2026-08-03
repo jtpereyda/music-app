@@ -11,7 +11,7 @@ CATALOG_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(CATALOG_ROOT / "scripts"))
 
 from validate_catalog import RIGHTS_STATUS, validate_catalog_data  # noqa: E402
-from build_open_hymnal_catalog import _abc_key, _key_name  # noqa: E402
+from build_open_hymnal_catalog import _abc_key, _assign_ids, _key_name  # noqa: E402
 
 
 LANDMARK_IDS = {
@@ -58,7 +58,8 @@ class CatalogTests(unittest.TestCase):
     def test_expanded_catalog_and_safety_status(self) -> None:
         ids = {item["id"] for item in self.catalog["items"]}
         self.assertTrue(LANDMARK_IDS <= ids)
-        self.assertEqual(len(self.catalog["items"]), 290)
+        self.assertEqual(self.catalog["catalog_revision"], "6")
+        self.assertEqual(len(self.catalog["items"]), 869)
         for item in self.catalog["items"]:
             self.assertEqual(item["rights"]["status"], RIGHTS_STATUS)
             self.assertEqual(item["lyrics"]["scope"], "soprano_only")
@@ -73,12 +74,13 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["summary"],
             {
-                "catalog_items": 290,
-                "exact_public_domain_candidates": 299,
-                "hymns_to_god_items": 13,
-                "rights_holds": 19,
-                "source_records": 318,
-                "structure_holds": 9,
+                "catalog_items": 869,
+                "exact_public_domain_candidates": 875,
+                "hymns_to_god_items": 592,
+                "rights_holds": 20,
+                "source_holds": 0,
+                "source_records": 895,
+                "structure_holds": 6,
                 "supplement_items": 8,
             },
         )
@@ -92,7 +94,46 @@ class CatalogTests(unittest.TestCase):
             8,
         )
         self.assertEqual(
-            report["source_breakdown"]["hymns_to_god"]["catalog_items"], 13
+            report["source_breakdown"]["hymns_to_god"],
+            {
+                "catalog_items": 592,
+                "index_pages": 593,
+                "public_domain_arrangements": 592,
+                "public_domain_pages": 591,
+                "rights_holds": 2,
+                "source_holds": 0,
+                "source_records": 594,
+                "structure_holds": 0,
+            },
+        )
+
+    def test_hymns_to_god_work_and_arrangement_identity_is_preserved(self) -> None:
+        hymns_to_god = [
+            item
+            for item in self.catalog["items"]
+            if item["source"]["collection_id"]
+            == "hymns-to-god-public-domain-usa"
+        ]
+        self.assertEqual(len(hymns_to_god), 592)
+        for item in hymns_to_god:
+            source = item["source"]
+            self.assertTrue(source["work_id"])
+            self.assertTrue(source["arrangement_id"])
+            self.assertEqual(
+                source["record_reference"], source["arrangement_id"]
+            )
+
+        sweet_by_and_by = [
+            item
+            for item in hymns_to_god
+            if item["source"]["work_id"] == "sweet-by-and-by"
+        ]
+        self.assertEqual(
+            {
+                item["source"]["arrangement_id"]
+                for item in sweet_by_and_by
+            },
+            {"sweet-by-and-by-arr-1", "sweet-by-and-by-arr-2"},
         )
 
     def test_split_zip_additions_preserve_entry_identity(self) -> None:
@@ -134,6 +175,57 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(_key_name(-3, "minor"), "C minor")
         self.assertEqual(_key_name(3, "minor"), "F-sharp minor")
         self.assertEqual(_abc_key(-3, "minor"), "Cm")
+
+    def test_arrangement_ids_do_not_rename_existing_open_hymnal_routes(self) -> None:
+        records = [
+            {
+                "title": "Amazing Grace",
+                "tune_name": "New Britain",
+                "source": {
+                    "collection_id": "open-hymnal-2014-06",
+                    "record_ordinal": 1,
+                },
+            },
+            {
+                "title": "Amazing Grace",
+                "tune_name": "Alternate Setting",
+                "_arrangement_id": "amazing-grace",
+                "source": {
+                    "collection_id": "hymns-to-god-public-domain-usa",
+                    "record_ordinal": 2,
+                },
+            },
+        ]
+        _assign_ids(records)
+        self.assertEqual(records[0]["id"], "amazing-grace")
+        self.assertEqual(records[1]["id"], "amazing-grace-hymns-to-god")
+
+    def test_original_hymns_to_god_routes_remain_stable(self) -> None:
+        records = [
+            {
+                "title": "Near The Cross",
+                "tune_name": "Doane",
+                "_arrangement_id": "near-the-cross-doane",
+                "source": {
+                    "collection_id": "hymns-to-god-public-domain-usa",
+                    "record_ordinal": 1,
+                },
+            },
+            {
+                "title": "Rejoice, The Lord Is King",
+                "tune_name": "Darwall",
+                "_arrangement_id": "rejoice-the-lord-is-king-darwall",
+                "source": {
+                    "collection_id": "hymns-to-god-public-domain-usa",
+                    "record_ordinal": 2,
+                },
+            },
+        ]
+        _assign_ids(records)
+        self.assertEqual(
+            [record["id"] for record in records],
+            ["near-the-cross", "rejoice-the-lord-is-king"],
+        )
 
     def test_validator_detects_score_hash_mutation(self) -> None:
         mutated = copy.deepcopy(self.catalog)

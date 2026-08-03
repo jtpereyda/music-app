@@ -1,0 +1,222 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1895
+//		Hymn No.: 167
+//		
+// Transcribed by: Ted Gatza, Jr. 10/23/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Fullness Of Joy" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - SOL" "\s(17)\f(TI)\:Thou\ wilt\ show\ me\ the\ path\ of\ life:\|\ In\ thy\ presence\ is\ fulness\ of\ joy; In\ thy\ right\ hand\ there\ are\ pleas\|ures\ for\ evermore.\ -\ Ps.\ 16:11" ""   
+   title (13) "M. L. Herr" "" "M. L. McPhail, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1: 8ec; 4.s; 4;
+2: 8aa-; 4.s; 4;
+
+
+			VERSE "<1. >-1|'Tis";
+			VERSE "<2. >-1|A-";
+			VERSE "<3. >-1|To";
+			VERSE "<4. >-1|O";
+bar
+//2
+1: 8ec; c+e; bd; ac; gd; ae;
+2: 8aa-;; ea-;; eb-; ac;
+
+			VERSE "sweet in the pres-ence of";
+			VERSE "bun-dant-ly fur-nished with";
+			VERSE "work for our Lord is a";
+			VERSE "glo-ri-ous pros-pect\(emdash) if";
+bar
+//3
+1: 8bf; af; fd; 4ec; 8ac;
+2: 8d+d;; ad; 4aa-; 8;
+
+			VERSE "Je-sus to dwell, Tho'";
+			VERSE "grace for our needs, When";
+			VERSE "priv-i-lege rare, Each";
+			VERSE "faith-ful till death\(emdash) Of";
+bar
+//4
+1: 8be;;;; c+e; d+e;
+2: 8ge;;;; ae; be;
+
+			VERSE "troub-les and tri-als an-";
+			VERSE "Sa-tan at-tempts to de-";
+			VERSE "mo-ment of time to em-";
+			VERSE "bliss that no foe can de-";
+bar
+//5
+1: 4.c+e tie; 4; 8;
+2 1: 4.aa- tie; 4; 8a;
+2 2: 4.s; 4; 8a;
+
+			VERSE "noy, To";
+			VERSE "coy, Christ";
+			VERSE "ploy; Co-";
+			VERSE "stroy! Made";
+
+bar
+//6
+1: 8.e+e; 16d+e; 8c+e;; be; ae;
+2 1: 8.c+a; 16b; 8a; aa-; gb-; ac;
+2 2: 8.s; 16a; 8; 8s;;;
+
+			VERSE "con-stant-ly feel His ap-";
+			VERSE "flies to our res-cue\(emdash) to";
+			VERSE "reap-ers with Him in the";
+			VERSE "one with the Bride-groom, all";
+bar
+//7
+1: 8bf; af; fd; 4d+f; 8s;
+2: 8ad;;; 4; 8s;
+
+			VERSE "prov-al and smile:";
+			VERSE "vic-to-ry leads:";
+			VERSE "har-vest to share:";
+			VERSE "na-tions to bless:";
+invisbar
+newscore
+
+1: 8s; ; ; 4s; 8d+f;
+2: 8s;;; 4; 8ad;
+
+			VERSE "In";
+			
+bar
+//8
+1: 8c+e; be; ae; ge; c+e; bd;
+2: 8ae; d+e; c+e; be; ae; ge;
+mussym (9) above 1: 5 "ferm";
+mussym (9) below 2: 5 "uferm";
+
+			
+			VERSE "this there is full-ness of";
+bar
+//9
+1: 4.ac tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+			VERSE "joy!";
+dblbar
+newscore
+//9
+1: 8c+a; 8.e+a; 16d+a; 4c+a; 8ae;
+2: 8e+a; 8.c+a; 16f+a; 4e+a; 8c+a;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Full-ness of joy! yes,";
+bar
+//10
+1: 8bf; af; fd; 4.ec;
+2 1: 8d+d; ; af; 4.a;
+2 2: 8s;;; 4.a;
+
+			VERSE "full-ness of joy!";
+bar
+//11
+1: 8ec; ac; ; ae; be; c+e;
+2 1: 8aa-;;; ac; ge; a;
+2 2: 8s;;;;; a;
+
+			VERSE "Serv-ing our Mas-ter with";
+bar
+//12
+1: 8c+e; e+e; c+e; 4.be;
+2 1: 8a; c+a; a; 4.ge;
+2 2: 8a; s;; 4.s;
+
+			VERSE "hearts full of joy!";
+bar
+//13
+1: 8c+a; 8.e+a; 16d+a; 8c+a; be; ae;
+2: 8e+a-; 8.c+a; 16f+a; 8e+a; d+a; c+a;
+
+			VERSE "Soon we will fin-ish our";
+bar
+//14
+1: 8bf; af; s; 4s; 8s;
+2: 8d+d; ; s; 4; 8;
+
+			VERSE "work here";
+invisbar
+newscore
+
+1: 8s; ; fd; 4d+f; 8fd;
+2: 8s; ; ad; 4; 8;
+
+			VERSE "be-low, With";
+
+bar
+//15
+1: 8ec; ac; be; c+e; e+e; d+f;
+2: 8ae; af; ge; aa-; ac; ad;
+
+			VERSE "full-ness of joy un-to";
+bar
+//16
+1: 8c+e; ; bd; 4ac; 8s;
+2: 8ae; ; ge; 4aa-; 8s;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "Him we shall go!";
+endbar

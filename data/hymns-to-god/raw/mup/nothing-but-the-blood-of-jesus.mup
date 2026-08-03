@@ -1,0 +1,331 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Gospel Music
+//		A Choice Collection of
+//		Hymns and Melodies
+//		For use In Gospel, Revival,
+//		Prayer and Social Meetings
+//		By Robert Lowry anbd W. Howard Doane
+//		The Biglow & Main Co.,
+// 		76 East Ninth st.,New York and 91 Washington St., Chicago
+//		Date: 1876
+//		Hymn No. 7
+
+
+// Transcribed by: Ted Gatza, Jr. 10/13/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Nothing But The Blood Of Jesus" ""
+   title (2) ""
+   title (11) "" "\f(TI)And according to the law, I may almost say, all things are cleansed with blood," "" 
+   title (11) "" "\f(TI)and apart from shedding of blood there is no remission. - Heb. 9:22 " "" 
+   title (11) "" 
+   title (11) "G - 4 - DO" "" ""
+   title (13) "Robert Lowry" "" " Robert Lowry, 1876"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define SLOWLY ital (15) above 1: 1 "Slowly"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+     //Misc. Texts
+	 define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+	 define ATEMPO(COUNT)
+           ital (15) above 1: COUNT "a tempo";@
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=115";
+
+//=========================
+
+// Verse
+
+//1
+1: 4dg; ; ; fa;
+2: 4gb; ; ; dd+;
+
+	VS "<1. >-1|What can wash a-";
+	VS "<2. >-1|For my cleans-ing";
+	VS "<3. >-1|Noth-ing can for";
+	VS "<4. >-1|This is all my";
+bar
+
+//2
+1: 4gb; bd+; 2gb;
+2: 4gd+; ; 2;
+
+	VS "way my sins?";
+	VS "this I see\(emdash)";
+	VS "sin a tone\(emdash)";
+	VS "hope and peace\(emdash)";
+bar
+
+//3
+1: 8dg; ; ; da; 4gb; ;
+2: 8gb; ; ; fc+; 4gd+; ;
+
+	VS "Noth-ing but the blood of";
+	VS "Noth-ing but the blood of";
+	VS "Noth-ing but the blood of";
+	VS "Noth-ing but the blood of";
+bar
+
+//4
+1 1: 2fa; g;
+1 2: 2s; g;
+2: 2dc+; g-b;
+
+	VS "Je-sus;";
+	VS "Je-sus;";
+	VS "Je-sus;";
+	VS "Je-sus;";
+bar
+
+//5
+1: 4dg; ; ; fa;
+2: 4gb; ; ; dd+;
+
+	VS "What can make me";
+	VS "For my par-don";
+	VS "Naught of good that";
+	VS "This is all my";
+
+bar
+
+//6
+1: 4gb; bd+; 2gb;
+2: 4gd+; ; 2;
+
+	VS "whole a-gain?";
+	VS "this my plea\(emdash)";
+	VS "I have done\(emdash)";
+	VS "right-eou-nes\(emdash)";
+
+bar
+
+//7
+1: 8dg; ; ; da; 4gb; ;
+2: 8gb; ; ; fc+; 4gd+; ;
+
+	VS "Noth-ing but the blood of";
+	VS "Noth-ing but the blood of";
+	VS "Noth-ing but the blood of";
+	VS "Noth-ing but the blood of";
+bar
+
+//8
+1 1: 2fa; g;
+1 2: 2s; g;
+2: 2dc+; g-b;
+
+	VS "Je-sus;";
+	VS "Je-sus;";
+	VS "Je-sus;";
+	VS "Je-sus;";
+dblbar
+
+newscore
+
+REFRAIN
+
+//9
+1: 2gd+; 4gb; af;
+2: 2gb; 4gd+; dd+;
+
+	VS "Oh, pre-cious";
+bar
+
+//10
+1: 4gb; gd+; 2gb;
+2: 4gd+; gb; 2gd+;
+
+	VS "is the flow,";
+bar
+
+//11
+1 1: 2fa; 4; g;
+1 2: 2s; 4; g;
+2: 2dc+; 4; db;
+
+	VS "That makes me";
+bar
+
+//12
+1 1: 4s; ;b slur; d+;
+  FST(4)
+1 2: 4fa; ; 2g;
+  FSB(3)
+2 1: 4dd+; ; 4d+ slur; b;
+  FBT(4)
+2 2: 4s; ; 2g;
+  FBB(3)
+
+	VS12 "white as snow,";
+bar
+
+//13
+
+1: 2gd+; 4gb; af;
+2: 2gb; 4gd+; dd+;
+
+	VS "No oth-er";
+bar
+
+//14
+1: 4gb; gd+; 2gb;
+2: 4gd+; gb; 2gd+;
+
+	VS "fount I know,";
+bar
+
+//15
+//7
+1: 8dg; ; ; da; 4gb; ;
+2: 8gb; ; ; fc+; 4gd+; ;
+
+	VS "Noth-ing but the blood of";
+bar
+
+//8
+1 1: 2fa; g;
+1 2: 2s; g;
+2: 2dc+; g-b;
+
+	VS "Je-sus.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

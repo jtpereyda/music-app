@@ -1,0 +1,244 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Gospel Music A Choice Collection Of
+//		Hymns And Melodies New And Old For
+//		Gospel, Revival, Prayer And Social Meetings,
+//		Family Worship, Ect.
+//		By Robert Lowry and W. Howard Doane
+//		Successors to William B. Bradbury
+//		76 East Ninth St., N. Y. 
+//		91 Washington St., Chicago		
+//		Published by Biglow & Main
+//		Copyright 1876
+//		Hymn No. 37
+		
+// Transcribed by: Ted Gatza, Jr. 10/25/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Precious Name" ""
+   title (2) ""
+   title (11)"" "\f(TI)And blessed be his glorious name for ever; And let the whole" ""
+   title (11)"" "\f(TI)earth be filled with his glory. Amen, and Amen. - Ps. 72:19" ""
+
+   title (11)"A\(flat) - 4 - SOL" "" ""  
+   title (13) "Lydia Baxter, arr., 1870" "" "William H. Doane, 1871"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=a&
+
+
+staff 2
+	key=a&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VERSE lyrics between 1&2: @
+       define DSVERSE lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=100";
+
+// Enter music
+//============
+//1
+1: 4ce; ca; 8.ec+; 16db; 8.ca; 16db;
+2: 4a-a;; 8.; 16; 8.; 16;
+
+	
+	VERSE "<1. >-1|Take the name of Je-sus";
+	VERSE "<2. >-1|Take the name of Je-sus";
+	VERSE "<3. >-1|Oh! the pre-cious name of";
+	VERSE "<4. >-1|At the name of Je-sus";
+
+bar
+//2
+1: 2ca; ce;
+2: 2a-a;;
+
+	VERSE "with you,";
+	VERSE "ev-er,";
+	VERSE "Je-sus";
+	VERSE "bow-ing,";
+bar
+//3
+1: 4df; fa; 8.eg; 16df; 8.fa; 16df;
+2: 4da;; 8.; 16; 8.; 16;
+
+	VERSE "Child of sor-row and of";
+	VERSE "As a shield from eve-ry;";
+	VERSE "How it thrills our souls with";
+	VERSE "Fall-ing pros-trate at His";
+bar
+//4
+1: 2.ce; 4r;
+2: 2.a-a; 4r;
+
+	VERSE "woe\(emdash)";
+	VERSE "snare;";
+	VERSE "joy,";
+	VERSE "feet,";
+bar
+newscore
+//5
+1 1: 4e; 4eb; 8.ea; 16eg; 8.ea; 16eb;
+1 2: 4e; 4s; 8.; 16; 8.; 16;
+2: 4eg; ed+; 8.ec+; 16eb; 8.ec+; 16eg;
+
+	VERSE "It will joy and com-fort";
+	VERSE "If temp-ta-tions 'round you";
+	VERSE "When His lov-ing arms re-";
+	VERSE "King of kings in heav-en";
+//	VERSE "King of kings in heav'n we'll"; // Original Lyrics - Jesus has already received His Crown - Rev. 14:14
+bar
+//6
+1: 2ec+; ea;
+2: 2a-a; a-c+;
+
+	VERSE "give you,";
+	VERSE "gath-er,";
+	VERSE "ceive us,";
+	VERSE "reign-ing,";
+//	VERSE "crown Him,"; // Original Lyrics - Jesus has already received His Crown - Rev. 14:14
+bar
+//7
+1 1: 4eb; e; 8.ec+; 16eb; 8.ea; 16dg;
+1 2: 4s; e; 8.s; 16; 8.; 16;
+2: 4ed+; eg; 8.ea; 16ed+; 8.ec+; 16eb;
+
+	VERSE "Take it then where'-er you";
+	VERSE "Breathe that ho-ly name in";
+	VERSE "And His songs our tongues em-";
+	VERSE "As we stand in Him com-";
+//	VERSE "When our jour-ney is com-"; // Original lyrics
+bar
+//8
+1: 2.ca; 4s;
+2: 2.a-a; 4s;
+
+	VERSE "go.";
+	VERSE "prayer.";
+	VERSE "ploy.";
+	VERSE "plete.";
+//	VERSE "plete."; // Original lyrics
+dblbar
+newscore
+//9
+1: 8.ca; 16eg; 2.s;
+2: 4r; 2.s;
+REFRAIN
+
+	VERSE [c]"Pre-cious";
+bar
+//10
+1: 2.df; 8fa; df;
+2: 4r; 8da;; 4; 4r;
+
+	VERSE "name, oh how";
+	VERSE 4s; 8; 8; 4; 4s; "Pre-cious name,";
+bar
+//11
+1: 2.ce; 8ea; eb;
+2: 4r; 8a-a;; 4; 8ca; eg;
+
+	VERSE "sweet!; Hope of";
+	VERSE 4s; 8; 8; 4; 8s; 8s; "oh, how sweet!";
+bar
+//12
+1: 4ec+; ce; ea; ac+;
+2 1: 4a;; ac+; a-e+;
+2 2: 4a;; s;;
+
+	VERSE "earth and Joy of";
+bar
+//13
+1: 2.gb; 8.ec+; 16db;
+2: 2.ee+; 4r;
+
+	VERSE "heav'n; Pre-cious";
+bar
+//14
+1: 2.ca; 8; eg;
+2: 4r; 8a-a;; 4; 8; ca;
+
+	VERSE "name, oh how";
+	VERSE 4s; 8; 8; 4; 8; 8; "Pre-cious name, oh how";
+bar
+//15
+1: 2df slur; 4fa; 8; f&b;
+2: 4da;;; 8;;
+SFERM (3)
+BFERM (3)
+
+	VERSE "sweet!_ Hope of";
+	VERSE 4; 4; 4; 8s; 8s; "sweet, how sweet!";
+bar
+//16
+1: 4ec+; ea; ec+; db;
+2: 4ea; ec+; ea; eg;
+
+	VERSE "earth and Joy of";
+bar
+//16
+1: 2.ca; 4r;
+2: 2.a-a; 4r;
+
+	VERSE "heav'n.";
+endbar
+
+

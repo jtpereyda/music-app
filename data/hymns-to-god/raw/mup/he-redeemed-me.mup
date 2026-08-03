@@ -1,0 +1,237 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Melody
+//		A Collection Of Sacred Songs For The
+//		Sunday-School and Young people's and
+//		Other Devotional Meetings
+//		Edited by E. S. Lorenz
+//		United Brethren Publishing House
+//		Dayton, OH
+//		Copyright: 1899
+//		Hymn No.: 63
+//		
+// Transcribed by: Ted Gatza, Jr. 10/08/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "He Redeemed Me" ""
+   title (2)""
+   title (11) "F - 4 - MI" "\s(17)\f(TI)\:who\ gave\ himself\ for\ u\|s,\ that\ he\ might redeem\ us\ from\ all\ iniq\|uity,\ -\ Tit.\ 2:14" ""   
+   title (13) "Edward C. Avis" "" "Edward C. Avis, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+//1
+1: 8af; bg; 2.s;
+2: 8c+f;; 2.s;
+
+			VERSE "<1. >-1|Glo-ry";
+			VERSE "<2. >-1|Not with";
+			VERSE "<3. >-1|Oh, what";
+			
+bar
+//2
+1: 8.c+a; 16bng#; 8.c+a; 16d+b; 4c+a; 8af; ge;
+2: 8.f+f; 16; 8.; 16; 4; 8c+f; bc;
+
+			VERSE "be to God on high, For the";
+			VERSE "sil-ver nor with gold, But his";
+			VERSE "won-drous, won-drous love God the";
+bar
+//3
+1 1: 8.fd; 16gd; 8.fd; 16s; 4s; 8s; s;
+1 2: 8.s; 16; 8.; 16s; 4s; 8s;;
+2: 8.ad; 16bd; 8.bb-; 16s; 4s; 8s; s;
+
+			VERSE 8.; 16; 8.; 16s; 4s; 8s; 8s; "gift of his";
+			VERSE 8.; 16; 8.; 16s; 4s; 8s; 8s; "blood the word";
+			VERSE 8.; 16; 8.; 16s; 4s; 8s; 8s; "Fa-ther had";
+invisbar
+newscore
+
+1 1: 8.s; 16s; 8.s; 16db-; 4fd; 8f; g;
+1 2: 8.s; 16s; 8.s; 16; 4; 8f;;
+2: 8.s; 16s; 8.s; 16fb-; 4bb-; 8af; bf;
+
+			VERSE 8.s; 16s; 8.s; 16; 4; 8; 8; "own Son, Who so";
+			VERSE 8.s; 16s; 8.s; 16; 4; 8; 8; "has told, That re-";
+			VERSE 8.s; 16s; 8.s; 16; 4; 8; 8; "for me, Since his";
+
+bar
+//4
+1: 8af;;; bg; 8.c+a; 16; 8bg; af;
+2: 8c+f;;;; 8.; 16; 8c+e; c+f;
+
+			VERSE "free-ly shed his blood for  you and";
+			VERSE "deems us, saves and cleans-es from all";
+			VERSE "own be-lov-ed Son he gave to";
+bar
+//5
+1: 2.ge; 8af; bg;
+2: 2.c+c; 8c+f;;
+
+			VERSE "me; By his";
+			VERSE "sin; 'Tis the";
+			VERSE "die; He will";
+bar
+//6
+1: 8.c+a; 16d+b; 8.c+a; 16af; 4c+a; 8af; ge;
+2: 8.f+f; 16; 8.; 16; 4; 8c+f; bc;
+
+			VERSE "blood we are made nigh, By his";
+			VERSE "sto-ry new and old, Call-ing";
+			VERSE "bring me safe a-bove, And his";
+bar
+//7
+1 1: 8.fd; 16gd; 8.fd; 16db-; 4fd; 8f; g;
+1 2: 8.s; 16; 8.; 16; 4; 8f;;
+2: 8.ad; 16bd; 8.bb-; 16fb-; 4bb-; 8d+b-;;
+
+			VERSE "blood our crown is won, Glo-ry,";
+			VERSE "lost ones to the fold Of the";
+			VERSE "glo-ry I shall see, And be";
+bar
+//8
+1: 8.af; 16; 8gc; fc; ;s; 8.s; 16s;
+2: 8.c+c; 16; 8bc; ac; bc;s; 8.s; 16s;
+
+			VERSE "glo-ry, for e-ter-";
+			VERSE "Sav-ior, Je-sus Christ";
+			VERSE "made for-ev-er like";
+invisbar
+newscore
+
+1: 8.s; 16s; 8s; s; s; gc; 8.fc; 16ec;
+2: 8.s; 16s; 8s; s; s; bc; 8.ac; 16gc;
+
+			VERSE "nal life so";
+			VERSE "our Lord and";
+			VERSE "him by and";
+
+bar
+//9
+1: 2.fc; 4s;
+2: 2.af; 4s;
+
+			VERSE "free.";
+			VERSE "King.";
+			VERSE "by.";
+repeatstart
+//10
+1: 8.c+a; 16d+b; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "He re-";
+bar
+//11
+1 1: 2c+a; 4af; 8.a; 16b;
+1 2: 2s; 4; [dist -6]4r;
+2 1: 4r; 8.f+f; 16; 8c+f;; 8.c+; 16d+;
+2 2: 4s; 8.; 16; 8;; [dist 0]4r;
+
+			VERSE "deemed me, he re-";
+			VERSE 1; "<>";
+			VERSE 4s; 8.; 16; 8; 8; 4s; "He re-deemed me,";
+bar
+//12
+1 1: 2a; 4f; 8s;;
+1 2: [dist -6]4r; 8.f; 16; 8c;; s;;
+2 1: 2c+; 4a; 8s;;
+2 2:[dist 0]4r; 8.f; 16; 8f;; s;;
+
+			VERSE "deemed me";
+			VERSE 4s; 8.; 16; 8; 8; 8s; 8s; "he re-deemed me,";
+
+invisbar ending "1st"
+
+1 1: 2s; 4s; 8fc;;
+1 2: 4s; 8.s; 16; 8s;; s;;
+2 1: 2s; 4s; 8af;;
+2 2: 4s; 8.s; 16; 8s;; s;;
+
+			VERSE "He re-";
+
+
+bar
+//13
+1 1: 8ge;;;; 4ge; 8f; ge;
+1 2: 8s;;;; 4s; 8f; s;
+2: 8c+c;;;; 4; 8c+a-; c+c;
+
+			VERSE "deemed me by his own pre-cious";
+			
+bar
+//14
+1: 2.af; 4s;
+2 1: [cue]...4s; 8c+;;;; 4s;
+2 2: 2.fc+; 4s;
+			VERSE "blood;";
+			DSVERSE 4s; 8; 8; 8; 8; 4s;"\s(10)hal-le-lu-jah!";
+repeatend ending "2nd"
+//15
+1: 2.s; 8fc;;
+2: 2.s; 8af;;	
+
+			VERSE "I am";
+bar
+//16
+1: 8ge;;;; 4ae; gc;
+2: 8c+c;;;; 4c+c; bc;
+
+			VERSE "now a child, an heir of";
+bar
+//17
+1: 2.fc; 4s;
+2: 2.af; 4s;
+
+			VERSE "God.";
+endbar

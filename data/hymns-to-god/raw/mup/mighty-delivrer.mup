@@ -1,0 +1,327 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Songs of Redeeming Love
+//		Edited By: Jno. R. Sweney,
+//		C. C. McBride, T.C. O'Kane,
+//		W. J. Kirkpatrick
+//		Publishers: Phidadelphia: John J. Hood,
+//		1018 Arch Street.
+//		Cincinnati: Walden & Stowe, St. Louis
+//		and Chicage.
+//		Copyright 1882
+//		Hymn No.: 6
+//		
+// Transcribed by: Ted Gatza, Jr. 12/29/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Mighty Deliv'rer" ""
+   title (2)""
+   title (11) "D - 3 - MI" "\s(17)\f(TI)\:O\ God:\ Thou\ art\ my\ help\ an\|d\ my\ deliverer;\ -\ Ps.\ 70:5 \(space)" ""   
+   title (13) "C. L. Shacklock" "" "Wm. J. Kirkpatrick, 1880"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 4fd;;;
+2: 4ad;;;
+
+			VERSE "<1. >-1|Hope of the";
+			VERSE "<2. >-1|Leave me not";
+			VERSE "<3. >-1|Faith in thy";
+			VERSE "<4. >-1|And when my";
+bar
+//2
+1 1: 4.fd; 8ec; 4d;
+1 2: 4.s; 8; 4d;
+2: 4.ad; 8gd; 4fd;
+
+			VERSE "des-o-late,";
+			VERSE "com-fort-less,";
+			VERSE "prom-is-es,";
+			VERSE "earth-ly life";
+bar
+//3
+1: 4bd;;;
+2: 4gg-;; gb-;
+
+			VERSE "Lord o-ver";
+			VERSE "plead-ing in";
+			VERSE "trust in thy";
+			VERSE "near-eth its";
+bar
+//4
+1: 2.ad;
+2: 2.fd;
+
+			VERSE "all,";
+			VERSE "vain,";
+			VERSE "love,";
+			VERSE "close,";
+bar
+//5
+1: 4c+e;;;
+2: 4aa-;;;
+
+			VERSE "Heed while I";
+			VERSE "With thine a-";
+			VERSE "(Ten-der, com-";
+			VERSE "O may I";
+bar
+//6
+1: 4.c+e; 8bd; 4ac;
+2: 4.aa-; 8ea-; 4;
+
+			VERSE "sup-pli-cate,";
+			VERSE "bund-ant grace";
+			VERSE "pas-sion-ate),";
+			VERSE "peace-ful-ly";
+bar
+//7
+1: 4bd; fd; g#d;
+2: 4g#e; ae; be;
+
+			VERSE "hear when I";
+			VERSE "my soul sus-";
+			VERSE "draws me a-";
+			VERSE "sink to re-";
+bar
+//8
+1: 2. ac;
+2: 2.aa-;
+
+			VERSE "call;";
+			VERSE "tain;";
+			VERSE "bove;";
+			VERSE "pose;";
+bar
+//9
+1: 4e+g; d+f; c+e;
+2 1: 4c+a; a;;
+2 2: 4s; a;;
+
+			VERSE "O thou most";
+			VERSE "Strength-en my";
+			VERSE "From ev'-ry";
+			VERSE "As thy be-";
+bar
+//10
+1: 4.d+f; 8af; 4;
+2: 4.ad; 8d+d; 4;
+
+			VERSE "mer-ci-ful,";
+			VERSE "faint-ing heart,";
+			VERSE "bond of sin";
+			VERSE "lov-ed sleep,";
+bar
+//11
+1: 4bg; ad; gc;
+2: 4d+g; af; ae;
+
+			VERSE "fain would I";
+			VERSE "lead me a-";
+			VERSE "let me be";
+			VERSE "trust-ing in:";
+bar
+//12
+1: 2.fd;
+2: 2.ad;
+
+			VERSE "be";
+			VERSE "right,";
+			VERSE "free,";
+			VERSE "thee;";
+bar
+//13
+1: 4gd; ad; bd;
+2: 4gb-; fa-; gg-;
+
+			VERSE "Near to thy";
+			VERSE "Out of sin's";
+			VERSE "From the great";
+			VERSE "Out of death's";
+bar
+//14
+1: 4.ad; 8gd; 4fd;
+2: 4.fd; 8bd; 4ad;
+
+			VERSE "fount of grace,";
+			VERSE "night of gloom,";
+			VERSE "Tempt-er's pow'r";
+			VERSE "sol-emn hour";
+bar
+//15
+1: 4ge; fd; ec;
+2: 4aa-;;;
+
+			VERSE "near un-to";
+			VERSE "in-to thy";
+			VERSE "de-liv-er";
+			VERSE "de-liv-er";
+bar
+//14
+1 1: 2.d;
+1 2: 2.d;
+2: 2.fd;
+
+			VERSE "thee.";
+			VERSE "light.";
+			VERSE "me.";
+			VERSE "me.";
+dblbar
+newscore
+//15
+1 1: 4.a; 8; 4;
+1 2: 4.a; 8; 4;
+2 1: 4.a; 8; 4;
+2 2: 4.a; 8; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Migh-ty De-";
+bar
+//16
+1 1: 4a;; r;
+1 2: 4a;; s;
+2 1: 4a;; r;
+2 2: 4a;; s;
+
+			VERSE "liv-'rer,";
+bar
+//17
+1: 4c+g; bg; c+g;
+2: 4e+a;;;
+
+			VERSE "to thee I";
+bar
+//18
+1: 2.d+f;
+2: 2.d+d;
+
+			VERSE "flee;";
+bar
+//19
+1 1: 4.a; 8; 4;
+1 2: 4.a; 8; 4;
+2 1: 4.a; 8; 4;
+2 2: 4.a; 8; 4;
+
+			VERSE "Migh-ty De-";
+bar
+//20
+1 1: 4a;; r;
+1 2: 4a;; s;
+2 1: 4a;; r;
+2 2: 4a;; s;
+
+			VERSE "liv-'rer,";
+bar
+//21
+1: 4be; c+e; d+e;
+2: 4g#e; ae; be;
+
+			VERSE "my re-fuge";
+bar
+//22
+1: 2.c+e;
+2 1: 2.a;
+2 2: 2.a;
+
+			VERSE "be!";
+bar
+//23
+1: 4d+f;;;
+2: 4ad;;;
+
+			VERSE "From sin's cap-";
+bar
+//24
+1: 4.d+f; [up]8c+a; 4bg;
+2: 4.ad; 8; 4bd;
+
+			VERSE "tiv-i-ty";
+bar
+//25
+1: 4af;;;
+2: 4d+d;;;
+
+			VERSE "Haste to de-";
+bar
+//26
+1: 4.af; 8ge; 4fd;
+2: 4.d+d; 8ad; 4;
+
+			VERSE "liv-er me,";
+bar
+//27
+1: 4.bd; 8; 4bg;
+2 1: 4.g; 8bg; 4d+g;
+2 2: 4.g; 8s; 4;
+
+			VERSE "Migh-ty De-";
+bar
+//28
+1: 4af; d+f;;
+2: 4d+d; ad;;
+
+			VERSE "liv-'rer, my";
+bar
+//29
+1: 4c+e; bg; c+g;
+2 1: 4a;;;
+2 2: 4a;;;
+
+			VERSE "trust is in";
+bar
+//30
+1: 2.d+f;
+2: 2.ad;
+
+			VERSE "thee.";
+endbar
+			

@@ -1,0 +1,375 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source: Triumphant Songs No. 2
+//		By: E. O. Excell
+//		Publisher: E. O. Excell
+//		148 Madison Street
+//		Chicago, Ill.
+//		Copyright: 1889
+
+//		Hymn No.: 254
+
+// Transcribed by: Ted Gatza, Jr. 07/11/2026
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "He Is Able To Deliver Thee" ""
+   title (2) ""
+   title (11) "" "\f(TI)Call upon Me in the day of trouble; I will deliver thee... - Ps. 50:15" ""
+   title (11) "" 
+   title (11)" B\(flat) - 4 - SOL" "" ""
+   title (13) "William A. Ogden" "" "William A. Ogden, 1887"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1: 2s; 4; 8.df; 16;
+2: 2s; 4; 8.b-b; 16;
+ 
+	VS "<1. >-1|'Tis the";
+	VS "<2. >-1|'Tis the";
+	VS "<3. >-1|'Tis the";
+bar
+
+//2
+1 1: 4db; ; b; 8.fb; 16gc+;
+1 2: 4s; ; 8d bm; e ebm; 8.s; 16;
+2 1: 4b-f; ; f; 8.db; 16ee+;
+2 2: 4s; ; 8b- bm; c ebm; 8.s; 16;
+
+	VS "grand-est theme, thru the";
+	VS "grand-est theme, in the";
+	VS "grand-est theme, let the";
+bar
+
+//3a
+1: 4fb; fa; ; 8.s; 16;
+2: 4fd+; fc+; ; 8.s; 16;
+
+	VS "a-ges rung;";
+	VS "earth or main;";
+	VS "ti-dings roll";
+invisbar
+
+//3b
+1: 4s; ; ; 8.fa; 16fb;
+2: 4s; ; ; 8.fc+; 16fd+;
+
+	VS "'Tis the";
+	VS "'Tis the";
+	VS "'Tis the";
+bar
+
+//4
+1: 4fa; eg; ; 8.; 16ea;
+2: 4fc+; ; ; 8.; 16;
+
+	VS "grand-est theme, for a";
+	VS "grand-est theme, for a";
+	VS "guilt-y heart, to the";
+bar
+
+//5a
+1: 4eg; df; ; 8.s; 16;
+2: 4b-b; ; ; 8.s; 16;
+
+	VS "mor-tal tongue;";
+	VS "mor-tal strain;";
+	VS "sin-ful soul,";
+invisbar
+
+//5b
+1: 4s; ; ; 8.df; 16db;
+2: 4s; ; ; 8.b-b; 16b-f;
+
+	VS "'Tis the";
+	VS "'Tis the";
+	VS "Look to";
+bar
+
+//6
+1: 4fd+; ; ; 8.ge+; 16fd+;
+2: 4b-b; ; ; 8.; 16;
+
+	VS "grand-est theme that the";
+	VS "grand-est theme tell the";
+	VS "God in faith He will";
+bar
+
+//7a
+1 1: 4ec+; eg; 8c+bm; b ebm; 4s;
+1 2: 4s; ; g; s;
+2: 4eg; ec+; ee+; s;
+
+	VS21 "world e'er sung,";
+	VS21 "world a-gain,";
+	VS21 "make thee whole,";
+invisbar
+newscore
+
+//7b
+1: 4s; ; ; 8fa bm; eg ebm;
+2: 4s; ; ; eb;
+
+	VS21 "\"Our";
+bar
+
+//8
+1: 4df; ; 8cg; ; 8.eg; 16ea;
+2 1: 4fb; ; 8fa; ; 8.fc+; 16f;
+2 2: 4s; ; 8; ; 8.; 16f;
+
+	VS "God is a-ble to de-";
+bar
+
+//9
+1: 8.ec+; 16db; 2; 4s;
+2: 8.b-f; 16; 2; 4s;
+
+	VS "liv-er thee.\"";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1 1: 2s; 4; 8.f; 16;
+1 2: 2s; 4; 8.f; 16;
+2 1: 2s; 4; 8.f; 16;
+2 2: 2s; 4; 8.f; 16;
+
+	VS "He is";
+bar
+
+//11
+1: 2db tie; 8.; 16fd+; 8.ec+; 16db;
+2: 8.b-f; 16; 8.; 16; 8.; 16b-b; 8.b-g; 16b-f;
+
+	VS "a-ble to de-";
+	VS21 "a-ble, He is ab-le <> <>";
+bar
+
+//12a
+1: 8.eb; 16ea; 2; 8.s; 16;
+2: 8.cf; 16; 2; 8.s; 16;
+
+	VS "liv-er thee,";
+invisbar
+newscore
+
+//12b
+1: 8.s; 16; 2; 8.ea; 16db;
+2: 8.s; 16; 2; 8.fc+; 16fb;
+
+	VS "He is";
+bar
+
+//13
+1: 2ec+ tie; 8.; 16ge+; 8.fd+; 16ec+;
+2: 8.fa; 16; 8.; 16; 8.; 16; 8.; 16;
+
+	VS "a-ble to de-";
+	VS21 "a-ble, He is ab-le <> <>";
+bar
+
+//14a
+1: 8.ec+; 16db; 2; 8.s; 16;
+2: 8.b-g; 16b-f; 2; 8.s; 16;
+
+	VS "liv-er thee;";
+invisbar
+newscore
+
+//14b
+1: 8.s; 16; 2; 8.db; 16ec+;
+2: 8.s; 16; 2; 8.b-f; 16;
+
+	VS "Tho' by";
+bar
+
+//15a
+1: fd+; a&f+; af+; 8.s; 16;
+2: 4b-b; b-d+; ; 8.s; 16;
+
+	VS "sin op-prest,";
+invisbar
+
+//15b
+1: 4s; ; ; 8.fd+; 16;
+2: 4s; ; ; 8.b-b; 16;
+
+	VS "Go to";
+bar
+
+//16a
+1 1: 4ec+; eg; 8c+ bm; b ebm; 8s; ;
+1 2: 4s; ; g; 8s; ;
+2: eg; ec+; ee+; s;
+
+	VS21 "Him for rest,";
+invisbar
+
+//16b
+1: 4s; ; 4; 8fa bm; eg ebm;
+2: 4s; ; ; eb;
+
+	VS21 "\"Our";
+bar
+
+//17
+1: 4df; ; 8cg; ; 8.eg; 16ea;
+2 1: 4fb; ; 8fa; ; 8.fc+; 16f;
+2 2: 4s; ; 8; ; 8.; 16f;
+
+	VS "God is a-ble to de-";
+bar
+
+//18
+1: 8.ec+; 16db; 2; 4s;
+2: 8.b-f; 16; 2; 4s;
+
+	VS "liv-er thee.\"";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

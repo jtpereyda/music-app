@@ -1,0 +1,303 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+// Hymn Source: The Master's Call
+//		A Collection Of New Songs and Standard Hymns
+//		For The Use Of Sunday Schools, Young Peoples
+//		Societies, Devotional Meetings, etc.
+//		Edited by: E. S. Lorenz
+//		Assisted by: Chas. H. Gabriel, J.H. Tenney,
+//		M. L. McPhail, and Wm. Edie Marks
+//		Lorenz & Co., Publishers
+//		Dayton Ohio
+//		Copyright 1901	
+//		Hymn no. 115
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/08/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "My Greatest Desires" ""
+   title (2)""
+   title (11) "B \(flat) - 3 - SOL" "\s(17)\f(TI)\:Whom\ have\ I\ in\ heaven\ but\ t\|hee?\ And\ there\ is\ none\ upon earth\ that\ I\ desire\ be\^sides\ thee.\ -\ Ps.\ 73:25" ""   
+   title (13) "Henry J. Zelly" "" "M. L. McPhail, 1901"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 4fd; 2s;
+2: 4bb-; 2s;
+	VERSE "<1. >-1|I";
+	VERSE "<2. >-1|I";
+	VERSE "<3. >-1|I";
+bar
+//2
+1: 4.d+d; 8c+d; 4bd;
+2: 4.fb-; 8; 4;
+
+	VERSE "want to know";
+	VERSE "want to be";
+	VERSE "want to see";
+bar
+//3
+1: 4fd; db-; fd;
+2: 4bb-; fb-; bb-;
+
+	VERSE "Je-sus, my";
+	VERSE "like him, my";
+	VERSE "Je-sus in";
+bar
+//4
+1: 4ge; bg; ge;
+2: 4be;;;
+
+	VERSE "Sav-ior so";
+	VERSE "Sav-ior and";
+	VERSE "beau-ty ar-";
+bar
+//5
+1: 2fd; 4ec;
+2: 2bb-; 4fb-;
+
+	VERSE "dear, Far";
+	VERSE "Lord, So";
+	VERSE "rayed, The";
+bar
+//6
+1: 4db-; fd; bd;
+2: 4fb-; bb-;;
+
+	VERSE "bet-ter than";
+	VERSE "pa-tient and";
+	VERSE "glo-ri-fied";
+bar
+//7
+1: 4gen; ae; be;
+2: 4bc; ac; gc;
+
+	VERSE "loved ones be-";
+	VERSE "ten-der and";
+	VERSE "Sav-ior so";
+bar
+//8
+1 1: 2c+f; 4f;
+1 2: 2s; 4e;
+2: 2af; 4;
+
+	VERSE "low; His";
+	VERSE "true; I'd";
+	VERSE "fair; In";
+bar
+//9
+1: 4.d+d; 8c+d; 4bd;
+2: 4.fb-; 8; 4;
+
+	VERSE "heart I would";
+	VERSE "walk where he";
+	VERSE "man-sions of";
+bar
+//10
+1: 4fd; db-; fd;
+2: 4bb-; fb-; bb-;
+
+	VERSE "find ver-y";
+	VERSE "walked and I'd";
+	VERSE "light, oh, so";
+bar
+//11
+1: 4ge; bg; ge;
+2: 4be;;;
+
+	VERSE "gra-cious and";
+	VERSE "talk as he";
+	VERSE "beau-teous  and";
+bar
+//12
+1: 2fd; 8bd bm; c+e ebm;
+2: 2bb-; 4fb-;
+
+	VERSE 2; 4; "kind, His";
+	VERSE 2; 4; "talked, And";
+	VERSE 2; 4; "bright, I";
+bar
+//13
+1: 4d+f; [up]e+g; d+f;
+2: 4bb-;;;
+
+	VERSE "full-ness of";
+	VERSE "glad-ly his";
+	VERSE "want in his";
+bar
+//14
+1: 4c+en; ge; ae&;
+2: 4gc; c+c; c+f;
+
+	VERSE "love I would";
+	VERSE "will I would";
+	VERSE "glo-ry to";
+bar
+//15
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+	VERSE "know.";
+	VERSE "do.";
+	VERSE "share.";
+dblbar
+//16
+1: 4d+f; 2s;
+2: 4bb-; 2s;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE [c]"The";
+bar
+//17
+1: [up]4.e+f; 8d+f; 4c+e;
+2: 4.c+f; 8bf; 4af;
+
+	VERSE [c]"great-est de-";
+bar
+//18
+1: 4c+e; bd; c+e;
+2: 4af; bf; af;
+
+	VERSE [c]"sires of my";
+bar
+//19
+1: 4d+f slur; bd; gc#;
+2 1: 4b slur; f; enb-;
+2 2: 2b-; 4s;
+
+	VERSE "life are";
+bar
+//20
+1: 2fd; 4;
+2: 2fb-; 4bb-;
+
+	VERSE "these, That";
+bar
+//21
+1: 4ge;;;
+2: 4be;;;
+
+	VERSE "I may know";
+bar
+//22
+1: 4gen; 4.c+e; 8d+e;
+2: 4c+c; 4.gc; 8bc;
+
+	VERSE "Je-sus di-";
+bar
+//23
+1 1: 2c+f; 4f;
+1 2: 2s; 4e;
+2: 2af; 4;
+
+	VERSE "vine, And";
+bar
+//24
+1: 4bd; 4.; 8;
+2: 4bb-; 4.fb-; 8;
+
+	VERSE "like him to";
+bar
+//25
+1: 2d+f; 4fd;
+2: 2bb-; 4;
+
+	VERSE "be his";
+bar
+//26
+1: 4ge; 4.; 8;
+2: 4be; 4.; 8;
+
+	VERSE "glo-ry to";
+bar
+//27
+1: 2c+en; 4be;
+2: 2c+c; 4;
+
+	VERSE "see, And";
+bar
+//28
+1 1: 4ae&; ge; f;
+1 2: 4s;; e;
+2: 4c+f; bf; af;
+
+	VERSE "in that bright";
+bar
+//29
+1 1: 4f; d+f; c+e;
+1 2: 4e; s;;
+2 1: 4af; bf; f;
+2 2: 4s;; f;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+	VERSE "im-age to";
+bar
+//30
+1: 2bd; 4s;
+2: 2fb-; 4s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+	VERSE "shine.";
+endbar

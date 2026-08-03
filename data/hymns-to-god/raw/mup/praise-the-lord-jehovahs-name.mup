@@ -1,0 +1,204 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: On Joyful Wing
+//		A Book fo Praise and Song
+//		By John R Sweney and Wm. J. Kirkpatrick
+//		Pub by: John J. Hood
+//		1018 Arch St., Philadelphia
+//		Copyright: 1886
+//		Hymn No.: 2
+
+// Transcribed by: Ted Gatza, Jr. 07/30/10; rev. 11/13/13
+// HymnsToGod.org
+
+// ************************************
+
+top
+   title bold (19) "" "Praise The Lord Jehovah's Name" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - MI" "\s(18)\f(TI)\:While\ I\ live\ will\ I\ praise\ \|Jehovah:\ I\ will\ sing\ praises unto\ my\ God\ while\ I\ h\|ave\ any\ being.\ -\ Ps.\ 146:2"""
+   title (13) "Jennie Garnett" " " "Jno. R. Sweney, 1886"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=4&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .71
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4c+e; 4c+e; 4.c+e; 8c+e;
+2: 4aa-; 4aa-; 4.aa-; 8aa-;
+
+
+			lyrics 1: "<1. >-1|Hail, all hail, the";
+			lyrics 1: "<2. >-1|Bring our hearts, a";
+			lyrics 1: "<3. >-1|Ev-er-last-ing";
+			lyrics 1: "<4. >-1|Let our grate-ful";
+bar
+//2
+1: 8c+e bm; 8bd ebm; 8ac bm; 8bd ebm; 4ac; 4ec;
+2: 4aa-; 4ea-; 4ea-; 4aa-;
+
+			lyrics 1: 4; 4; 4; 4; "Prince of glo-ry!";
+			lyrics 1: 4; 4; 4; 4; "will-ing of-f'ring,";
+			lyrics 1: 4; 4; 4; 4; "are his mer-cies;";
+			lyrics 1: 4; 4; 4; 4; "souls a-dore him";
+bar
+//3
+1: 4e+e; 4e+e; 4.e+e; 8d+e;
+2: 4ge; 4ge; 4.ge; 8be;
+
+			lyrics 1: "Shout for joy, ye";
+			lyrics 1: "Come with songs be-";
+			lyrics 1: "Like a rock his";
+			lyrics 1: "For his kind and";
+bar
+//4
+1: 8c+e bm; 8bd ebm; 8ac bm; 8c+e ebm; 2be;
+2 1: 4aa-; 8e bm; 8a ebm; 2ge;
+2 2: 4s; 4a-; 2s;
+
+			lyrics 1: 4; 4; 2; "saints a-bove!";
+			lyrics 1: 4; 4; 2; "fore his throne;";
+			lyrics 1: 4; 4; 2; "prom-ise stands;";
+			lyrics 1: 4; 4; 2; "gra-cious care;";
+bar
+//5
+1: 4c+e; 4c+e; 4.c+e; 8c+e;
+2 1: 4aa-; 4aa-; 4.aa-; 8a;
+2 2: 4s; 4s; 4.s; 8a;
+
+			lyrics 1: "Tell, O earth, the";
+			lyrics 1: "We are his, for";
+			lyrics 1: "Praise from ev-'ry";
+			lyrics 1: "Let our grate-ful";
+bar
+//6
+1 1: 8c+ bm; 8a ebm; 8be bm; 8c+g& ebm; 4e+f; 4d+f;
+1 2: 4e; 8s; 8s; 4s; 4s;
+2 1: 8a bm; 8c+ ebm; 8b bm; 8a ebm; 4ad; 4ad;
+2 2: 4a; 8g bm; 8a ebm; 4s; 4s;
+
+			lyrics 1: 4; 4; 4; 4; "grand old sto-ry";
+			lyrics 1: 4; 4; 4; 4; "he has made us,";
+			lyrics 1: 4; 4; 4; 4; "liv-ing crea-ture";
+			lyrics 1: 4; 4; 4; 4; "souls a-dore him,";
+bar
+//7
+1: 4.c+e; 8c+e; 8c+e; 8be; 8ae; 8gd;
+2: 4.ae; 8ae; 8ae; 8d+e; 8c+e; 8be;
+
+			lyrics 1: "Of Je-ho-vah's might-y";
+			lyrics 1: "We are his, and not our";
+			lyrics 1: "He by sov'-reign right de-";
+			lyrics 1: "And our lives his truth de-";
+bar
+//8
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			lyrics 1: "love.";
+			lyrics 1: "own.";
+			lyrics 1: "mands.";
+			lyrics 1: "clares.";
+dblbar
+//9
+1 1: 4.be; 8e+e; 8e+ bm; 8d+ ebm; 8c+ bm; 8b ebm;
+1 2: 4.s; 8s; 4e; 4e;
+2 1: 4.ge; 8ge; 8g bm; 8b ebm; 8a bm; 8g ebm;
+2 2: 4.s; 8s; 4e; 4e;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: 4.; 8; 4; 4; [c]"Hal-le-lu-jah!";
+bar
+newscore
+//10
+1: 4c+e; 4ac; 4fd; 4ec;
+2 1: 4a; 4ea-; 4aa-; 4aa-;
+2 2: 4a; 4s; 4s; 4s;
+
+			lyrics 1: [c]"winds and wa-ters";
+bar
+//11
+1: 4.be; 8e+g; 4.e+g; 8bg;
+2: 4.ge; 8be; 4.be; 8e+e;
+
+			lyrics 1: [c]"Send a-far the";
+bar
+//12
+1: 4c+a; 4d+na; 2e+g;
+2 1: 4e+a; 4bf; 4b slur; 4d+;
+2 2: 4s; 4s; 2e;
+
+			lyrics 1: [c]"glad ac-claim;";
+bar
+//13
+1: 4.e+e; 8c+e; 8s; 8s; 8s; 8s;
+2 1: 4.c+a; 8a; 4s; 4s; 
+2 2: 4.s; 8a; 4s; 4s;
+
+			lyrics 1: [c]"Hal-le-";
+invisbar
+newscore
+
+1: 4.s; 8s; 8d+f bm; 8c+e ebm; 8bd bm; 8ac ebm;
+2 1: 4.s; 8s; 4a; 4a; 
+2 2: 4.s; 8s; 4a; 4a;
+
+			lyrics 1: 4.s; 8s; 4; 4; [c]"lu-jah!";
+
+bar
+//14
+1: 4ae; 8be bm; 8c+g& ebm; 4e+f; 4d+f;
+2 1: 4c+a; 8b bm; 8a ebm; 4ad; 4ad;
+2 2: 4s; 8g bm; 8a ebm; 4s; 4s;
+
+			lyrics 1: 4; 4; 4; 4; [c]"hal-le-lu-jah!";
+bar
+//15
+1: 4.c+e; 8c+e; 8c+e; 8be; 8ae; 8gd;
+2: 4.ae; 8ae; 8ae; 8d+e; 8c+e; 8be;
+
+			lyrics 1: [c]"Praise the Lord Je-ho-vah's";
+bar
+//16
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			lyrics 1: [c]"name!";
+endbar

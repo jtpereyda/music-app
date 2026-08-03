@@ -1,0 +1,390 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Crowning Glory No. 2
+//		A collection of gospel hymns
+//		Editor: Peter Bilhorn
+//		Publisher: Peter Bilhorn
+//		148 Madison St. Chicago Ill.
+//		Y. M. C. A., Fifth Floor
+//		Copyright: Unknown
+//		Hymn No.: 57
+
+// Transcribed by: Ted Gatza, Jr. 07/28/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.90
+	staffscale=1
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=5&
+
+staff 2
+	key=5&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "For Christ And The Church" ""
+   title (2) ""
+   title (11) "" "\f(TI)...Christ Also loved the church, and gave Himself for it - Eph. 5:25" ""
+ 
+   title (11) "D\(flat) - 4 - SOL" "" ""
+   title (13) "Eliza E. Hewitt, arr." "" "William J. Kirkpatrick, 1890"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 4fa;
+2: 2.s; 4dd+;
+
+	VS "<1. >-1|For";
+	VS "<2. >-1|For";
+	VS "<3. >-1|For";
+	VS "<4. >-1|For";
+bar
+
+//2
+1 1: 4fa; 8.df; 16eg; 4af; 8fd; e;
+1 2: 4s; 8.; 16; 4; 8; d;
+2: dd+; 8.da; 16; 4dd+; 8da; dg;
+
+	VS "Christ and the church, let our";
+	VS "Christ and the church, be our";
+	VS "Christ and the church, will-ing";
+	VS "Christ and the church, let us";
+bar
+
+//3a
+1 1: 4d; ; fd+; 8s; ;
+1 2: 4d; ; s; 8; ;
+2: 4df; ; da; 8s; ;
+
+	VS "voi-ces ring;";
+	VS "earn-est pray'r,";
+	VS "off'-rings make,";
+	VS "cast a-side,";
+invisbar
+newscore
+
+//3b
+1: 4s; ; ; 8ac+; gb;
+2: 4s; ; ; 8dd+; ;
+
+	VS "Let us";
+	VS "Let us";
+	VS "Time and";
+	VS "By His";
+bar
+
+//4
+1: 4fa; 8.; 16gb; 4fa; 8eg; df;
+2: 4dd+; 8.; 16; 4; 8ca; da;
+
+	VS "hon-or the name of our";
+	VS "fol-low His ban-ner, the";
+	VS "tal-ents and work, for the";     //Original words: "talents and gold, for the"
+	VS "con-quer-ing grace, chains of";
+bar
+
+//5a
+1: 4df; 8b-e; b-d; 4ce; 8s; ;
+FST(3)
+2: 4b-b; 8egn; ; 4a-a; 8s; ;
+FBT(3)
+
+	VS "own bless-ed King,";
+	VS "cross dai-ly bear,";
+	VS "dear Mas-ter's sake;";
+	VS "self, fear, and pride;";
+invisbar 
+newscore
+
+//5b
+1: 4s; 8; ; 4; 8ca; eg;
+2: 4s; 8; ; 4; 8a-a; ;
+
+	VS "Let us";
+	VS "Let us";
+	VS "We'll re-";
+	VS "May our";
+bar
+
+//6
+1 1: 4df; 8.; 16ce; 4d; 8df; eg;
+1 2: 4s; 8.; 16; 4d; 8s; ;
+2: 4da; 8.; 16dg; 4df; 8da; ;
+
+	VS "work with a will in the";
+	VS "yield, whol-ly yield, to His";
+	VS "mem-ber the best we can";
+	VS "lives be en-riched by an";
+bar
+
+//7a
+1: 4fa; fd+; 4.; 8s;
+2: 4da; ; 4.; 8s;
+
+	VS "strength of youth,";
+	VS "gos-pel's pow'r,"; 	   // original verse "Spirit's pow'r
+	VS "bring to Him,";
+	VS "aim so grand,";
+invisbar 
+newscore
+
+//7b
+1: 4s; ; 4.; 8fa;
+2: 4s; ; 4.; 8dd+;
+
+	VS "And";
+	VS "And";
+	VS "The";
+	VS "Then";
+bar
+
+//8
+1 1: 4gb; 8.gd+; 16gb; 4fa; 8d; dg;
+1 2: 4s; 8.; 16; 4; 8d; s;
+2: 4gd+; 8.gb; 16gd+; 4dd+; 8fa; gb;
+
+	VS "loy-al-ly stand for the";
+	VS "faith-ful-ly serve Him in";
+	VS "heart's wealth of love, that will";
+	VS "hap-py the call to the";
+bar
+
+//9a
+1 1: 4df; 8.ce; 16; 4d; s;
+1 2: 4s; 8.; 16; 4d; s;
+FST(3)
+2 1: 4a; 8.a-a; 16; 4df; s;
+2 2: 4a; 8.s; 16; 4; s;
+FBT(3)
+
+	VS "king-dom of truth.";
+	VS "life's bright-est hour.";
+	VS "nev-er grow dim.";
+	VS "Sav-ior's right hand.";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1 1: 2.s; 4a;
+1 2: 2.s; 4s;
+2: 2.s; 4r;
+
+	VS "For";
+bar
+
+//11
+1: 2gc+ tie; 8.; 16; 8.gb; 16gc+;
+2 1: 4r; ae+; 8.; 16; 8.; 16a;
+2 2: 4s; 4; 8.; 16; 8.; 16a;
+
+	VS "Christ our dear Re-";
+	VS21 "For Christ <> <> <>";
+bar
+
+//12a
+1: 2fd+; 4fa; s;
+2: 2da; 4dd+; s;
+
+	VS "deem-er,";
+invisbar 
+newscore
+
+//12b
+1: 2s; 4; fa;
+2: 2s; 4; r;
+
+	VS "For";
+bar
+
+//13
+1: 2gb tie; 8.; 16bd+; 8.ac+; 16gb;
+2: 4r; gd+; 8.; 16; 8.; 16;
+
+	VS "Christ who died to";
+	VS21 "For Christ <> <> <>";
+bar
+
+//14a
+1: 2.fa; 8.s; 16;
+2: 2.dd+; 8.s; 16;
+
+	VS "save;";
+invisbar 
+newscore
+
+//14b
+1: 2.s; 8.fa; 16;
+2: 2.s; 4r;
+
+	VS "For the";
+bar
+
+//15
+1: 2fd+ tie; 8.; 16; 8.gc+; 16ad+;
+2: 4r; 8.da; 16; 8.; 16; 8.ea; 16fa;
+
+	VS "Church His blood hath";
+	VS21 "For the Church <> <> <>";
+bar
+
+//16a
+1: 4ge+; 2gd+; 4s;
+2: 4gb; 2; 4s;
+
+	VS "pur-chased,";
+invisbar 
+newscore
+
+1: 4s; 2; 4gb;
+2: 4s; 2; 4gd+;
+
+	VS "Lord,";
+bar
+
+//17
+1: 4.fa; 8; 4gb; gc+;
+2: 4.ad+; 8; 4ac+; 4a-a;
+
+	VS "make us pure and";
+bar
+
+//18
+1: 2.fd+; 4s;
+2: 2.da; 4s;
+
+	VS "brave.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

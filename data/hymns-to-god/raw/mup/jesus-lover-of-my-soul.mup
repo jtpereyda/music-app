@@ -1,0 +1,288 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Lyric Source: Fair As The Morning
+//		 Hymns and Tunes For
+//		 Praise In The Sunday-School 
+//		 Author: John H. Kurzenknabe and W. W. Bentley
+//               With Full Arrangement for the 
+//		 Sunday School Orchestra
+//		 By Harry J. Kurzenknabe
+//		 Publisher: J.H. Kurzenknabe & Sons,
+//		 Harrisburg, PA. 
+//		 Copyright 1891
+//		 Hymn No. 144
+
+
+		
+// Transcribed by: Ted Gatza, Jr. 08/30/2011; Rev. 02/15/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Jesus, Lover Of My Soul" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - SOL" "\s(17)\f(TI)\:Even\ as\ the\ Father\ hat\|h\ loved\ me,\ I\ also\ have loved\ you:\ abide\ ye\ i\|n\ my\ love.\ -\ Jn.\ 15:9" ""
+   title (13) "Charles Wesley" "" "Anon., 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key= 3&
+
+
+staff 2
+	key= 3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 4.s; 4.s; 8b bm; 8e+ ebm; 8d+;
+1 2: 4.s; 4.s; 4r; 8r;
+2: 4.s; 4.s; 4r; 8r;
+
+
+			VERSE 4.s; 4.s; 4; 8; "<1. >-1|Je-sus,";
+			VERSE 4.s; 4.s; 4; 8; "<2. >-1|Oth-er";
+			VERSE 4.s; 4.s; 4; 8; "<3. >-1|Thou, O";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			
+bar
+//2
+1 1: 4.c+; 4.a; 8a bm; 8d+ ebm; 8c+;
+1 2: 4e; 8e; 4e; 8e; 4r; 8r;
+2: 4aa-; 8aa-; 4c+a-; 8c+a-; 4r; 8r;
+
+			VERSE 4.; 4.; 4; 8; "lov-er of my";
+			VERSE 4.; 4.; 4; 8; "ref-uge have I";
+			VERSE 4.; 4.; 4; 8; "Christ, art all I";
+			VERSE 4.s; 4.s; 4s; 8;"<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "<1. >-1|Je-sus, lov-er";
+bar
+//3
+1 1: 4.b slur; 4.g; 8g bm; 8c+ ebm; 8b;
+1 2: 4g; 8g; 4.e; 4r; 8r;
+2: 4e+e; 8e+e; 4.be; 4r; 8r;
+
+			VERSE 4.; 4.s; 4; 8; "soul, Let me";
+			VERSE 4.; 4.s; 4; 8; "none; Hangs my";
+			VERSE 4.; 4.s; 4; 8; "want; More than";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "of my soul";
+bar
+//4
+1 1: 4.b; 4.a; 8f bm; 8g ebm; 8a;
+1 2: 4f; 8f; 4f; 8f; 4r; 8r;
+2: 4d+b-; 8d+b-; 4d+b-; 8d+b-; 4r; 8r;
+
+			VERSE 4.; 4.; 4; 8; "to Thy bo-som";
+			VERSE 4.; 4.; 4; 8; "help-less soul on";
+			VERSE 4.; 4.; 4; 8; "all in Thee I";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "Let me to Thy";
+bar
+//5
+1 1: 4.g tie; 4.g; 8b bm; 8e+ ebm; 8d+;
+1 2: 4e; 8e; 4.e; 4r; 8r;
+2: 4be; 8be; 4.be; 4r; 8r;
+
+			VERSE 4.; 4.s; 4; 8; "fly, While the";
+			VERSE 4.; 4.s; 4; 8; "Thee; leave, ah!";
+			VERSE 4.; 4.s; 4; 8; "find; Raise the";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "bo-som fly,";
+bar
+//6
+1 1: 4.c+; 4.a; 8s; 8s; 8s;
+1 2: 4e; 8e; 4e; 8e; 4s; 8s;
+2: 4aa-; 8aa-; 4c+a-; 8c+a-; 4s; 8s;
+
+			VERSE 4.; 4.; 4s; 8s; "near-er";
+			VERSE 4.; 4.; 4s; 8s; "leave me";
+			VERSE 4.; 4.; 4s; 8s; "fall-en,";
+			VERSE 4.; 4.s; 4s; 8s; "<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "While the near-er";
+invisbar
+newscore
+
+1 1: 4.s; 4.s; 8a bm; 8d+ ebm; 8c+;
+1 2: 4s; 8s; 4s; 8s; 4s; 8s;
+2: 4s; 8s; 4s; 8s; 4r; 8r;
+
+			VERSE 4.s; 4.s; 4; 8; "wa-ters";
+			VERSE 4.s; 4.s; 4; 8; "not a-";
+			VERSE 4.s; 4.s; 4; 8; "cheer the";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+
+
+bar
+//7
+1 1: 4.b slur; 4.g; 8g bm; 8c+ ebm; 8b;
+1 2: 4g; 8g; 4.e; 4r; 8r;
+2: 4e+e; 8e+e; 4.be; 4r; 8r;
+
+			VERSE 4.; 4.s; 4; 8; "roll, While the";
+			VERSE 4.; 4.s; 4; 8; "lone, Still sup-";
+			VERSE 4.; 4.s; 4; 8; "faint, Heal the";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "wa-ters roll,";
+
+bar
+//8
+1 1: 4.b; 4.a; 8f bm; 8g ebm; 8a;
+1 2: 4f; 8f; 4f; 8f; 4r; 8r;
+2: 4d+b-; 8d+b-; 4d+b-; 8d+b-; 4r; 8r;
+
+			VERSE 4.; 4.; 4; 8; "tem-pest still is";
+			VERSE 4.; 4.; 4; 8; "port and com-fort";
+			VERSE 4.; 4.; 4; 8; "sick, and lead the";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "While the temp-est";
+bar
+//9
+1 1: 4.e tie; 4.e; 8f bm; 8b ebm; 8a;
+1 2: 4b-; 8c; 4.b-; 4r; 8r;
+2: 4ge; 8ae; 4.ge; 4r; 8r;
+
+			VERSE 4.; 4.s; 4; 8; "high; Hide me,";
+			VERSE 4.; 4.s; 4; 8; "me! All my";
+			VERSE 4.; 4.s; 4; 8; "blind. Just and";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "still is high";
+bar
+//10
+1 1: 4.a; 4.f; 8a bm; 8c+ ebm; 8b;
+1 2: 4f; 8f; 4d; 8d; 4r; 8r;
+2: 4bb-; 8bb-; 4bb-; 8bb-; 4r; 8r;
+
+			VERSE 4.; 4.; 4; 8; "O my Sav-iour,";
+			VERSE 4.; 4.; 4; 8; "trust on Thee is";
+			VERSE 4.; 4.; 4; 8; "ho-ly is Thy";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "Hide me, O my";
+bar
+//11
+1 1: 4.b slur; 4.g; 8s; 8s; s;
+1 2: 4g; 8g; 4.e; 4s; 8s;
+2: 4e+e; 8e+e; 4.be; 4s; 8s;
+
+			VERSE 4.; 4.s; 4s; 8s; "hide,";
+			VERSE 4.; 4.s; 4s; 8s; "stayed,";
+			VERSE 4.; 4.s; 4s; 8s; "name,";
+			VERSE 4.; 4.s; 4s; 8s; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "Sav-iour, hide,";
+invisbar
+newscore
+
+1 1: 4.s; 4.s; 8g bm; 8c+ebm; 8b;
+1 2: 4s; 8s; 4.s; 4r; 8r;
+2: 4s; 8s; 4.s; 4r; 8r;
+
+			VERSE 4.s; 4.s; 4; 8; "Till the";
+			VERSE 4.s; 4.s; 4; 8; "All my";
+			VERSE 4.s; 4.s; 4; 8; "I am";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+
+bar
+//12
+1 1: 4.an; 4.a; 8c+ bm; 8d+ ebm; 8e+;
+1 2: 4f; 8f; 4f; 8f; 4r; 8r;
+2: 4c+f; 8c+f; 4c+f; 8c+f; 4r; 8r;
+
+			VERSE 4.; 4.; 4; 8; "storm of life is";
+			VERSE 4.; 4.; 4; 8; "help from Thee I";
+			VERSE 4.; 4.; 4; 8; "all un-right-eous-";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "Till the storm of";
+bar
+//13
+1 1: 4.d+ tie; 4.d+; 8b bm; 8e+ ebm; 8d+;
+1 2: 4f; 8f; 4.f; 4r; 8r;
+2: 4bb-; 8bb-; 4.bb-; 4r; 8r;
+
+			VERSE 4.; 4.s; 4; 8; "past; Safe in-";
+			VERSE 4.; 4.s; 4; 8; "bring; Cov-er";
+			VERSE 4.; 4.s; 4; 8; "ness; Vile and";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "life is past;";
+bar
+//14
+1 1: 4.c+; 4.a; 8a bm; 8d+ ebm; 8c+;
+1 2: 4e; 8e; 4e; 8e; 4r; 8r;
+2: 4aa-; 8aa-; 4c+a-; 8c+a-; 4r; 8r;
+
+			VERSE 4.; 4.; 4; 8; "to the ha-ven";
+			VERSE 4.; 4.; 4; 8; "my de-vence-less";
+			VERSE 4.; 4.; 4; 8; "full of sin I";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "Safe in-to the";
+
+bar
+//15
+1 1: 4.b slur; 4.g; 8g bm; 8c+ ebm; 8b;
+1 2: 4g; 8g; 4.e; 4r; 8r;
+2: 4e+e; 8e+e; 4.be; 4r; 8r;
+
+			VERSE 4.; 4.s; 4; 8; "guide, O re-";
+			VERSE 4.; 4.s; 4; 8; "head With the";
+			VERSE 4.; 4.s; 4; 8; "am, Thou art";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "Ha-ven guide,";
+
+bar
+//16
+1 1: 4.b; 4.a; 8f bm; 8g ebm; 8a;
+1 2: 4f; 8f; 4f; 8f; 4r; 8r;
+2: 4d+b-; 8d+b-; 4d+b-; 8d+b-; 4r; 8r;
+
+			VERSE 4.; 4.; 4; 8; "ceive my soul at";
+			VERSE 4.; 4.; 4; 8; "shad-ow of Thy";
+			VERSE 4.; 4.; 4; 8; "full of truth and";
+			VERSE 4.s; 4.s; 4s; 8; "<>";
+			VERSE 4; 8; 4; 8; 4s; 8s; "O re-ceive my";
+bar
+//17
+1 1: 4.e tie; 4.e; 4s; 8s;
+1 2: 4b-; 8c; 4.b-; 4s; 8s;
+2: 4ge; 8ae; 4.ge; 4s; 8s;
+
+			VERSE "last!";
+			VERSE "wing.";
+			VERSE "grace";
+			VERSE 4; 8s; 4.s; 4s; 8s; "<>";
+			VERSE 4; 8; 4.; 4s; 8s; "soul at last!";
+endbar

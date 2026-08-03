@@ -1,0 +1,223 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Thanksgiving
+//		Prepared by D. B. Towner Mus. Doc.
+//		Director of the Music Course of the
+//		Moody Bible Institute of Chicago
+//		Fleming H. Revell Company
+//		New York, 158 fifth Avenue
+//		Chicago, 125 N. Wabash Avenue
+//		Toronto, London, Edinburgh
+//		Copyright 1913
+//		Hymn No.: 27
+//		
+// Transcribed by: Ted Gatza, Jr. 01/10/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Wonderful Blood" ""
+   title (2)""
+   title (11) "C - 2 - SOL" "\s(17)\f(TI)\:in\ whom\ we\ have\ our\ rede\|mption\ through\ his\ blood, the\ forgiveness\ of\ our\ t\|respasses,\ -\ Eph.\ 1:7" ""   
+   title (13) "E. S. Lorenz" "" "E. S. Lorenz, 1905"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1: 8ge; 4.s; 4;
+2: 8gc; 4.s; 4;
+
+			VERSE "<1. >-1|I";
+			VERSE "<2. >-1|I";
+			VERSE "<3. >-1|The";
+			VERSE "<4. >-1|O";
+			
+bar
+//2
+1: 8.c+e; 16; 8; 4; 8;
+2: 8.gc; 16; 8; 4; 8; 
+
+			VERSE "stood in a-maze and";
+			VERSE "stood in per-verse re-";
+			VERSE "blood of my Lord has";
+			VERSE "tell of its pow'r trans-";
+bar
+//3
+1 1: 4.be; 4; 8e;
+1 2: 4.s; 4; 8d;
+2: 4.g#e; 4; 8;
+
+			VERSE "won-der, That";
+			VERSE "bel-lion, De-";
+			VERSE "cleansed me, Day";
+			VERSE "form-ing, Wher-";
+bar
+//4
+1: 8.ac; 16; 8af; 4bf; 8af;
+2: 8.af; 16; 8c+f; 4d+f; 8c+f;
+
+			VERSE "God should for-give my";
+			VERSE "ny-ing my Lord's con-";
+			VERSE "breaks on my soul's dark";
+			VERSE "ev-er men yearn for";
+bar
+//5
+1: 4.ge tie; 4; 8ec;
+2: 4.c+c tie; 4; 8gc;
+
+			VERSE "sin! That";
+			VERSE "trol; The";
+			VERSE "night; Once";
+			VERSE "peace; The";
+bar
+//6
+1: 8.fd; 16ec#; 8fd; 4bf; 8af;
+2: 8.bg-; 16a#g-; 8bg-; 4d+g-; 8bg-;
+
+			VERSE "e-vil of heart and";
+			VERSE "Sav-iour's sweet call, the";
+			VERSE "foul, now I'm clean, once";
+			VERSE "err-ing it guides, brings";
+bar
+//7
+1: 8.ge; 16f#d#; 8ge; 4c+e; 8bg;
+2: 8.c+c; 16; 8; 4gc; 8c+e;
+
+			VERSE "e-vil of life, Sal-";
+			VERSE "Spir-it's low plea, Bro't";
+			VERSE "dead, now I live, Once";
+			VERSE "strength to the weak, For";
+bar
+//8
+1 1: 8.af; 16g#; 8af; 4bf#; 8c+f;
+1 2: 8.s; 16f; 8s; 4; 8;
+2: 8.c+f; 16bf; 8c+f; 4d+d; 8c+d;
+
+			VERSE "va-tion I still may";
+			VERSE "hope to my sin-sick";
+			VERSE "blind, I have found my";
+			VERSE "sin gives com-plete re-";
+bar
+//9
+1 1: 4.d+~upfn~down; 4; 8s;
+1 2: 4s; [up]8b?; [up]4a?; 8s; 
+2 1: [down]4.b~g~; 4; 8s;
+2 2: 4s; [up]8d+?; [up]4c+?; 8s; 
+
+			VERSE "win!";
+			VERSE "soul.";
+			VERSE "sight.";
+			VERSE "lease.";
+dblbar
+//10
+1 1: 16g;; 4.s; 4;
+1 2: 16f;; 4.s; 4;
+2: 16bg;; 4.s; 4s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "'Tis the";
+bar
+//11
+1: 8.ge; 16f#d#; 8ge; 4c+e; 8bg;
+2: 8.c+c; 16; 8; 4gc; 8c+e;
+
+			VERSE "won-der-ful blood, the";
+bar
+//11
+1 1: 8.af; 16g#; 8af; 4d+f; 8c+f;
+1 2: 8.s; 16f; 8s; 4; 8; 
+2: 8.c+f; 16bf; 8c+f; 4af; 8;
+
+			VERSE "blood of my Lord That";
+bar
+//12
+1: 8.bf; 16af; 8bf; 4e+g; 8d+f;
+2 1: 8.g; 16; 8; 4bg; 8g;
+2 2: 8.g; 16; 8; 4s; 8g;
+
+			VERSE "pur-ges my sin and";
+bar
+//13
+1 1: 8.c+e; 16bg; 8af; 4ge; 16g;;
+1 2: 8.s; 16; 8; 4; 16f;;
+2: 8.gc; 16ac; 8bc; 4c+c; 16bg;;
+
+			VERSE "cleans-es my soul! 'Tis the";
+bar
+//14
+1: 8.ge; 16f#d#; 8ge; 4c+e; 8r;
+2: 8.c+c; 16; 8; 4c+a; 8r;
+
+			VERSE "won-der-ful blood,";
+bar
+//15
+1 1: 8.af; 16g#; 8af; 4d+f#; 8c+f;
+1 2: 8.s; 16f; 8s; 4s; 8s;
+2: 8.c+f; 16bf; 8c+f; 4d+d; 8d+d;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "mar-vel-ous flood, That";
+bar
+//16
+1 1: 8bg; af#; g; 4e+g; 8d+fn;
+1 2: 8s;; g; 4s; 8;
+2 1: 8d+g; c+g; bg; 4; 8g;
+2 2: 8s;;; 4; 8g;
+
+			VERSE "saves me and makes me";
+bar
+//17
+1 1: 4.c+ tie; 4; 8s;
+1 2: 4e; 8f; 4e; 8s;
+2 1: 4g; 8a; 4g; 8s;
+2 2: 4.c tie; 4; 8s;
+
+			VERSE "whole._";
+			VERSE 4; 8; 4; 8s; "makes me whole.";
+endbar

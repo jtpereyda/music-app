@@ -1,0 +1,205 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Hosannas
+//		A Collection Of Hymns And Tunes For use In
+//		Evangeslistic, Brotherhood and Mission
+//		Meetings; Sunday School, Etc.
+//		Compiled by: John R. Sweney, 
+//		and J. Howard Entwisle
+//		John J. Hood, Publisher
+//		1024 Arch Street, Philadelphia
+//		The Union Press 1816 Chestnut Street
+//		Copyright: 1898
+//		Hymn No.: 13
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/23/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Into His Marvellous Light" ""
+   title (2)""
+   title (11) "G - 2 - MI" "\s(17)\f(TI)\:I\ am\ the\ light\ of\ the\ world:\ he\|\ that\ followeth\ me\ shall\ not\ walk in\ the\ darkness,\ but\ shall\ h\|ave\ the\ light\ of\ life.\ -\ Jn.\ 8:12" ""
+   title (13) "E. E. Hewitt" " " "John R. Sweney, 1898" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=130";
+
+//1
+1 1: 4.bg; 8ad; 4gd; e; f; ge;
+1 2: 4.s; 8; 4; e;; s;
+2: 4.d+g; 8c+g; 4bg; c+c;;;
+
+			VERSE "<1. >-1|Won-der-ful mer-cy that";
+			VERSE "<2. >-1|Sing-ing love's beau-ti-ful";
+			VERSE "<3. >-1|Out from the sin and its";
+			VERSE "<4. >-1|Soon shall we meet by the";
+bar
+//2
+1 1: 2.d; gd;
+1 2: 2.d; s;
+2: 2.bg;;
+
+			VERSE "sought us,";
+			VERSE "sto-ry,";
+			VERSE "sor-row,";
+			VERSE "riv-er";
+bar
+//3
+1 1: 4.bg; 8c+g; 4d+g; g; af; bg;
+1 2: 4.s; 8; 4; g; s;;
+2: 4.d+g; 8c+g; 4bg; d+b; d+a; d+g;
+
+			VERSE "Wand'r-ing a-far in the";
+			VERSE "Ech-o the heav'n-ly re-";
+			VERSE "In-to the life pure and";
+			VERSE "There in sweet songs we'll u-";
+bar
+
+//4
+1: 2.af tie; 2; 4r;
+2: 2.d+d tie; 2; 4r;
+
+			VERSE "night;";
+			VERSE "frain;";
+			VERSE "free;";
+			VERSE "nite;";
+bar
+//5
+1 1: 4.bg; 8ad; 4gd; e; f; ge;
+1 2: 4.s; 8;4; e; ; s;
+2: 4.d+g; 8c+g; 4bg; c+c;;;
+mussym (9) above 1: 1 "sign";
+
+			VERSE "Prec-ious the Sav-iour who";
+			VERSE "Bless-ing and hon-or and";
+			VERSE "Wait-ing the glo-ri-ous";
+			VERSE "Je-sus will bring us for-";
+			DSVERSE "<\f(TX)D.S. -\f(PV) >-4|Bro't from the king-dom of";
+bar
+//6
+1 1: 2.d; bd;
+1 2: 2.d; s;
+2 1: 2.bg; g;
+2 2: 2.s; g;
+
+			VERSE "brought us";
+			VERSE "glo-ry";
+			VERSE "mor-row,";
+			VERSE "ev-er";
+			DSVERSE 2.; 2.; "dark-ness";
+bar
+//7
+1: 4.d+f; 8c+f; 4s; s; s; s;
+2: 4.ad; 8; 4s; s; s; s;
+
+			VERSE "In-to";
+			VERSE "Be to";
+			VERSE "When our";
+			VERSE "In-to";
+			DSVERSE "In-to";
+
+invisbar
+
+
+1: 4.s; 8s; 4bf; af; bf; af;
+2: 4.s; 8s; 4d+d; c+d; d+d; c+d;
+
+			VERSE "his mar-vel-lous";
+			VERSE "the Lamb that was";
+			VERSE "Re-deem-er we'll";
+			VERSE "his mar-ve-lous";
+			DSVERSE "his mar-vel-lous";
+
+bar
+//8
+1: 2.gd tie;  2; 4r;
+2: 2.bg tie; 2; 4r;
+ital (13) above 1: 6 "Fine";
+
+			VERSE "light.";
+			VERSE "slain.";
+			VERSE "see.";
+			VERSE "light.";
+			DSVERSE "light.";
+dblbar
+//9
+1: 4.e+g; 8; 4;; c+g; e+g;
+2: 4.c+c; 8; 4;; c+e; c+c;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Saved to the glo-ry of";
+bar
+//10
+1 1: 2d+ slur; 4b; 2.d+g;
+1 2: 2.g; s;
+2 1: 2b slur; 4d+; 2.bg;
+2 2: 2.g; s;
+
+			VERSE "Je-sus!";
+bar
+//11
+1 1: 4.g; 8af; 4bg; d+g;; bg;
+1 2: 4.g; 8s; 4;;;;
+2: 4.bg; 8c+g; 4d+g; d+b;; d+g;
+
+			VERSE "Saved by the Pow'er of his";
+bar
+//12
+1: 2.af tie; 2; 4r;
+2: 2.d+d tie; 2; 4r;
+ital (13) above 1: 6 "D.S.";
+
+			VERSE "might!";
+endbar
+

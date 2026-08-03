@@ -1,0 +1,217 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Sacred Songs No. 2
+//		Compiled and arranged for use in
+//		Gospel Meetings, Sunday Schools, Prayer Meetings
+//		and other religious services
+//		ByIra D. Sankey, James McGranahan And Geo. C. Stebbins
+//		Published by the Biglow & Main Co., New York, Chicago
+//		Copyright 1899
+//		Hymn No.: 126
+
+// Transcribed by: Ted Gatza, Jr. 06/12/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "The Wonderful Story" ""
+   title (2)""
+   title (11) "D \(flat) - 3 - SOL" "\s(18)\f(TI)\:I\ will\ speak\ of\ Thy\ wondrous\ work.\ -\ Ps.\ 145:5 \(space)"""
+   title (13) "Chas. H. Gabriel" " " "Chas. H. Gabriel, 1897"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=9/8	
+	key=5&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=110";
+
+//1
+1: 4.s; 4.s; 4.af;
+2: 4.s; 4.s; 4.d+d;
+
+			lyrics 1: 4.s; 4.s; 4.; "<1. >-1|O";
+			lyrics 1: 4.s; 4.s; 4.; "<2. >-1|He";
+			lyrics 1: 4.s; 4.s; 4.; "<3. >-1|His";
+			
+bar
+//2
+1: 4.af tie; 8af; 8gnen; 8af; 8bg&; 8af; 8ge&;
+2: 4.d+d tie; 8d+d; 8d+d; 8d+d; 8d+d; 8d+d; 8ad;
+
+			lyrics 1: "sweet is the sto-ry of";
+			lyrics 1: "came from the man-sions of";
+			lyrics 1: "mer-cy flows on like a";
+bar
+//3
+1: 4.fd; 4.af; 4.d+a;
+2: 4.ad; 4.d+d; 4.c+&f;
+
+			lyrics 1: "Je-sus, The";
+			lyrics 1: "glo-ry; His";
+			lyrics 1: "riv-er, His";
+bar
+//4
+1: 4.d+g tie; 8d+g; 8c+g; 8d+g; 8e+g; 8d+g; 8bg;
+2 1: 4.bg tie; 8bg; 8an; 8bg; 8bg; 8bg; 8d+g;
+2 2: 4.s; 8s; 8g; 8s; 8s; 8s; 8s;
+
+			lyrics 1: "won-der-ful Sav-iour of";
+			lyrics 1: "blood as a ran-som He";
+			lyrics 1: "love is un-meas-ured and";
+bar
+//5
+1: 4.af tie; 4.af; 4.fd;
+2: 4.d+d tie; 4.d+d; 4.ad;
+
+			lyrics 1: "men, Who";
+			lyrics 1: "gave, To";
+			lyrics 1: "free; His";
+bar
+//6
+1: 4.ge tie; 8ge; 8fdn; 8ge; 8bg; 8af; 8ge;
+2: 4.aa- tie; 8aa-; 8aa-; 8aa-; 8aa-; 8aa-; 8aa-;
+
+			lyrics 1: "suf-fered and died for the";
+			lyrics 1: "pur-chase e-ter-nal re-";
+			lyrics 1: "grace is for-ev-er suf-";
+bar
+//7
+1: 4.fd; 4.af; 4.d+f;
+2: 4.ad; 4.d+d; 4.ad;
+
+			lyrics 1: "sin-ner I'll";
+			lyrics 1: "demp-tion, And";
+			lyrics 1: "fi-cient, It";
+bar
+//8
+1: 4.c+e tie; 8c+e; 8bd; 8ac; 8bd; 8ac; 8gnd;
+2: 4.ae tie; 8ae; 8gne; 8ae; 8ge; 8ae; 8be;
+
+			lyrics 1: "tell it a-gain and a-";
+			lyrics 1: "oh, He is might-y to";
+			lyrics 1: "reach-es and pu-ri-fies";
+bar
+//9
+1: 4.ac tie; 4.ac; 4.s;
+2: 4.aa- tie; 4.aa-; 4.s;
+
+			lyrics 1: "gain.";
+			lyrics 1: "save!";
+			lyrics 1: "me.";
+dblbar
+//10
+1 1: 4.a; 4.s; 4.s;
+1 2: 4.g; 4.s; 4.s;
+2 1: 4.a; 4.s; 4.s;
+2 2: 4.a; 4.s; 4.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "O";
+			lyrics 1: "<>";
+			lyrics 1: "O";
+bar
+//11
+1 1: 4.d+ tie; 8d+; 8c+; 8d+; 8e+; 8d+; 8b;
+1 2: 8f; 8f; 8f; 4.f; 4g; 8g;
+2 1: 8ad; 8af; 8a; 4.ad; 4bd; 8d+d;
+2 2: 8s; 8s; 8a; 4.s; 4s; 8s;
+
+			lyrics 1: "won-der-ful. won-der-ful";
+			lyrics 1: 8; 8; 8; 4.; 4; 8; "won-der-ful sto-ry, O";
+bar
+//12
+1 1: 4.a; 4.f; 4.af;
+1 2: 8f; 8f; 8f; 4d; 8d; 4.s;
+2: 8d+d; 8d+d; 8d+d; 4ad; 8ad; 4.d+d;
+
+			lyrics 1: "sto-ry, The";
+			lyrics 1: 8; 8; 8; 4; 8; 4.; "won-der-ful sto-ry, The";
+bar
+//13
+1 1: 4.d+ tie; 8d+; 8c+; 8d+; 8b; 8c+; 8d+g;
+1 2: 8f; 8f; 8f; 4.f; 4gn; 8s;
+2 1: 8d+b-; 8d+b-; 8d+b-; 4.bb-; 8d+ bm; 8c+ ebm; 8be;
+2 2: 8s; 8s; 8s; 4.s; 4e; 8s;
+
+			lyrics 1: "dear-est that ev-er was";
+			lyrics 1: 8; 8; 8; 4.; 4; 8; "dear-est that ev-er, that";
+bar
+//14
+1 1: 4.e+ tie; 8e+; 8a; 8b; 8c+; 8d+; 8e+;
+1 2: 8a; 8a; 8a; 8a; 4r; 4r; 8r;
+2: 8c+a-; 8c+c; 8c+e; 8c+a; 4r; 4r; 8r;
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: "told,_ I'll re-peat it in";
+			lyrics 1: 8; 8; 8; 8; 4s; 4s; 8s; "ev-er was told:";
+bar
+//15
+1 1: 4.f+ tie; 8f+; 8e+; 8d+; 8c+; 8d+; 8b;
+1 2: 4a; 8a; 8a; 8g; 8f; 8g; 8g; 8g;
+2: 4d+d; 8d+d; 8d+d; 8d+d; 8ad; 8bd; 8bd; 8d+d;
+
+			lyrics 1: "glo-ry, The won-der-ful";
+			lyrics 1: 4; 8; 8; 8; 8; 8; 8; 8; "I'll re-peat it in glo-ry, The";
+bar
+//16
+1 1: 4.a; 4.f; 4.d+f;
+1 2: 8f; 8f; 8f; 4d; 8d; 4.s;
+2: 8d+d; 8d+d; 8d+d; 4ad; 8ad; 4.ad;
+
+			lyrics 1: "sto-ry, Where";
+			lyrics 1: 8; 8; 8; 4; 8; 4.; "won-der-ful sto-ry, Where";
+bar
+//17
+1 1: 4.c+ tie; 8c+; 8b; 8a; 8c+; 8b; 8a;
+1 2: 8g; 8g; 8g; 4.g; 4g; 8g;
+2 1: 8a; 8a; 8a; 4.e+a; 4aa-; 8a;
+2 2: 8a; 8a; 8a; 4.s; 4s; 8a;
+
+			lyrics 1: "I_ shall His beau-ty be-";
+			lyrics 1: 8; 8; 8; 4.; 4; 8; "I shall His beau-ty, His";
+bar
+//18
+1 1: 4.d+ tie; 4.d+; 4.s;
+1 2: 8f; 8f; 8g; 4.f; 4.s;
+2: 8ad; 8ad; 8bd; 4.ad; 4.s;
+
+			lyrics 1: "hold._";
+			lyrics 1: 8; 8; 8; 4.; 4.s; "beau-ty be-hold.";
+endbar

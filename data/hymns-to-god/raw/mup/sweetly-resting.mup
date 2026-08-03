@@ -1,0 +1,196 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs Tried and Proved
+//		For the use of Prayer Meetings, Sunday Schools,
+//		General Evangelistic Work,
+//		and the Home Circle
+//		Russell H. Conwell, Hymn Editor
+//		Theodore E. Perkins, Musical Editor,
+//		Philadelphia
+//		A.J. Rowland
+//		1420 Chestnut Street
+//		Copyright 1896
+
+// Transcribed by: Ted Gatza, Jr. 11/14/2009; rev. 07/21/2014
+// HymnsToGod.org
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Sweetly Resting" ""
+   title (2) ""
+   title (11) "E-3-DO" "\s(18)\f(TI)\:The\ fear\ of\ man\ bringeth\ a\ \^snare;\ But\ whoso\ putteth\ his trust\ in\ Jehovah\ shall\|\ be\ safe.\ -\ Prov.\ 29:25"""
+   title (13) "Mary D. James" " " "W. Warren Bentley"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/2 	
+	key=4#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 1
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+// ***********************************
+
+staff 2
+	key=4#
+	clef=bass
+music
+
+midi all: 0 "tempo=140";
+
+//1
+1 1: 4e; 4f; 2ge; 2ge;
+1 2: 4e; 4e; 2s; 2s;
+2: 4ge; 4ae; 2be; 2be;
+
+			lyrics 1: "<1. >-1|In the rift-ed";
+			lyrics 1: "<2. >-1|Long pur-sued by";
+			lyrics 1: "<3. >-1|Peace, which pass-eth";
+			lyrics 1: "<4. >-1|In the rift-ed";
+bar
+//2
+1 1: 4fd; 4e; 2ge; 2bg;
+1 2: 4s; 4e; 2s; 2s;
+2: 4ae; 4ge; 2be; 2e+e;
+
+			lyrics 1: "Rock I'm rest-ing,";
+			lyrics 1: "sin and Sa-tan,";
+			lyrics 1: "un-der-stand-ing";
+			lyrics 1: "Rock I'll hide me,";
+bar
+//3
+1: 4c+a; 4c+a; 2bg; 2ge;
+2: 4e+a-; 4e+a-; 2e+e; 2be;
+
+			lyrics 1: "Safe-ly shel-ter'd";
+			lyrics 1: "Wear-y, sad, I";
+			lyrics 1: "Joy, the world can";
+			lyrics 1: "Till the storms of";
+bar
+//4
+1 1: 4fd; 4e; 2.fd; 4r;
+1 2: 4s; 4e; 2.s; 4s;
+2: 4bb-; 4a#c; 2.bb-; 4r;
+
+			lyrics 1: "I a-bide;";
+			lyrics 1: "longed for rest;";
+			lyrics 1: "nev-er give,";
+			lyrics 1: "life are past.";
+bar
+//5
+1 1: 4e; 4f; 2ge; 2ge;
+1 2: 4e; 4e; 2s; 2s;
+2: 4ge; 4ae; 2be; be;
+
+			lyrics 1: "There no foes nor";
+			lyrics 1: "Then I found this";
+			lyrics 1: "Now in Je-sus";
+			lyrics 1: "All se-cure in";
+bar
+//6
+1 1: 4fd; 4e; 2ge; 2bg;
+1 2: 4s; 4e; 2s; 2s;
+2: 4ae; 4ge; 2be; 2e+e;
+
+			lyrics 1: "storms mo-lest me,";
+			lyrics 1: "heav'n-ly shelt-er,";
+			lyrics 1: "I am find-ing;";
+			lyrics 1: "this blest re-fuge";
+bar
+//7
+1: 4c+a; 4c+a; 2bg; 2ge;
+2: 4e+a-; 4e+a-; 2e+b-; 2bb-;
+
+			lyrics 1: "While with-in the";
+			lyrics 1: "Open-ed in my";
+			lyrics 1: "In His smiles of";
+			lyrics 1: "Heed-ing not the";
+bar
+//8
+1 1: 4fd; 4fd; 2.e; 4r;
+1 2: 4s; 4s; 2.e; 4s;
+2: 4bb-; 4ab-; 2.ge; 4r;
+
+			lyrics 1: "cleft I hide.";
+			lyrics 1: "Sav-iours breast.";
+			lyrics 1: "love I live.";
+			lyrics 1: "fierc-est blast.";
+dblbar
+//9
+1: 4bg; 4bg; 2e+g; 2bg;
+2: 4e+e; 4e+e; 2be; 2e+e;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Now I'm rest-ing,";
+bar
+newscore
+
+//10
+1: 4ge; 4ge; 2be; 2ge;
+2: 4be; 4be; 2ge; 2be;
+
+			lyrics 1: [c]"Sweet-ly rest-ing,";
+bar
+//11
+1: 4ge; 4ge; 2fd; 2ge;
+2: 4be; 4be; 2bb-; 2bb-;
+
+			lyrics 1: [c]"In the cleft once";
+bar
+//12
+1: 4af; 4ge; 2.fd; 4r;
+2: 4bb-; 4bb-; 2.bb-; 4r;
+
+			lyrics 1: [c]"made for me:";
+bar
+newscore
+//13
+1: 4bg; 4bg; 2e+g; 2bg;
+2: 4e+e; 4e+e; 2be; 2e+e;
+
+			lyrics 1: "Je-sus, bless-ed";
+bar
+//14
+1: 4ge; 4ge; 2be; 2ge;
+2: 4be; 4be; 2ge; 2be;
+
+			lyrics 1: "Rock of A-ges,";
+bar
+//15
+1: 4c+e; 4c+e; 2be; 2ge;
+2: 4aa-; 4aa-; 2gb-; 2bb-;
+
+			lyrics 1: "I will hide my-";
+bar
+//16
+1 1: 4fd; 4fd; 2.e; 4r;
+1 2: 4s; 4s; 2.e; 4s;
+2: 4bb-; 4bb-; 2.ge; 4r;
+
+			lyrics 1: "self in thee.";
+endbar

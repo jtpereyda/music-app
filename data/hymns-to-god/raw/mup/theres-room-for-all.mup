@@ -1,0 +1,223 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Songs of Redeeming Love No. 2
+//		Edited by: John R. Sweney, C. C. McCabe,
+//		T. C. O'Kane, Wm. J. Lirkpatrick
+//		Publisher: John J. Hood
+//		1018 Arch Street, Philadelphia
+//		Cranston & Stowe, Chicage and St. Louis, Cincinnati
+//		Copyright: 1887
+//		Hymn No. 59
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 05/19/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "There's Room For All" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - MI" "\s(17)\f(TI)\:...not\ wishing\ that\ any\|\ should\ perish,\ but\ that all\ should\ come\ to\ re\|pentance.\ -\ 2\ Pet.\ 3:9" ""   
+   title (13) "Laura Miller" "" "Jno. R. Sweney, 1887"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1: 8db- bm; ec ebm; 2.s;
+2: 4fb-; 2.s;
+
+	VERSE 4; 2.s; "<1. >-1|There's";
+	VERSE 4; 2.s; "<2. >-1|There's";
+	VERSE 4; 2.s; "<3. >-1|There's";
+	VERSE 4; 2.s; "<4. >-1|There's";
+bar
+//2
+1: 4fd; bd;; 8.; 16;
+2: 4fb-;;; 8.; 16;
+
+	VERSE "room for all and the";
+	VERSE "room for all at the";
+	VERSE "room for all at the";
+	VERSE "room for all in our";
+bar
+//3
+1: 4be; ae;; 8ac bm; bd ebm;
+2 1: 4fc;;; f;
+2 2: 4s;;; f;
+
+
+	VERSE 4; 4; 4; 4; "feast is spread,\(emdash) Re-";
+	VERSE 4; 4; 4; 4; "blood stain'd cross, There's";
+	VERSE 4; 4; 4; 4; "door of grace, But";
+	VERSE 4; 4; 4; 4; "Fa-ther's home, Pre-";
+bar
+//4
+1: 4c+e; 8.; 16; 4d+f; c+e;
+2: 4af; 8.; 16; 4;;
+
+	VERSE "mem-ber the price it";
+	VERSE "room by the streams that";
+	VERSE "why do you still de-";
+	VERSE "pared by re-deem-ing";
+bar
+//5
+1 1: 2b slur; 4f; 8db- bm; ec ebm;
+1 2: 2.d; 8s;;
+2 1: 2f slur; 4b; fb-;
+2 2: 2.b-; 4s;
+
+	VERSE 2.; 4; "cost; The";
+	VERSE 2.; 4; "flow; And,";
+	VERSE 2.; 4; "lay? The";
+	VERSE 2.; 4; "love; But";
+bar
+//6
+1: 4fd; bd;; 8.; 16;
+2: 4fb-;;; 8.; 16;
+
+	VERSE "Sav-iour's blood for the";
+	VERSE "though your sins are of";
+	VERSE "light that shines on your";
+	VERSE "on-ly they who are";
+bar
+//7
+1: 4be; ae;; 8ac bm; bd ebm;
+2 1: 4fc;;; f;
+2 2: 4s;;; f;
+
+	VERSE 4; 4; 4; 4; "world was shed,\(emdash) Oh";
+	VERSE 4; 4; 4; 4; "crim-son hue, Come,";
+	VERSE 4; 4; 4; 4; "path-way now May";
+	VERSE 4; 4; 4; 4; "faith-ful here Can";
+bar
+//8
+1: 4c+e; 8.; 16; 4d+f; c+e;
+2: 4af; 8.; 16; 4;;
+
+	VERSE "why need a soul be";
+	VERSE "wash them as white as";
+	VERSE "set ere the close of";
+	VERSE "hope for the joys a-";
+bar
+//9
+1: 2.bd; 4r;
+2: 2.fb-; 4r;
+
+	VERSE "lost?";
+	VERSE "snow.";
+	VERSE "day.";
+	VERSE "bove.";
+dblbar
+//10
+1: 4.d+f; 8c+e; 2bd;
+2: 4.bb-; 8fb-; 2;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE [c]"Room for all,";
+bar
+//11
+1 1: 8c+ bm; b ebm; 4ge; 2fd;
+1 2: 4e; s; 2;
+2 1: 4ge; bg; 2b;
+2 2: 4s;; 2b;
+
+	VERSE 4; 4; 2; "room for all,";
+bar
+//12
+1: 4bf; 8.; 16; 4; 8af; 8bf;
+2: 4d+b; 8.; 16; 4; 8e+c+; d+b;
+
+	VERSE "Come, sin-ner, come, 'tis the";
+bar
+//13
+1: 4d+f; c+f; 2;
+2: 4bf; af; 2;
+
+	VERSE "Sav-iour's call;";
+bar
+//14
+1 1: 8.d+f; [up]16e+g; 8.d+f; 16c+e; 4bd; f;
+1 2: 8.s; 16; 8.; 16; 4; f;
+2: 8.bb-; 16; 8.; 16fb-; 4; bd;
+
+	VERSE "\"Who-so-ev-er will\" is";
+bar
+//15
+1 1: 8.ge; 16f#; 8.ge; 16afn; 4bg; 8af; ge;
+1 2: 8.s; 16e; 8.s; 16; 4; 8; 8;
+2: 8.be; 16; 8.; 16; 4e+e; 8eb;;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+	VERSE "roll-ing on-ward still, \"Who-so-";
+bar
+//16
+1: 8.ge; 16fd; 8.db-; 16fd; 4bf; d+f;
+2: 8.bb-; 16; 8.fb-; 16bb-; 4bd; bb-;
+
+	VERSE "ev-er will may come to";
+bar
+//17
+1: 2c+e; 4bd; s;
+2: 2af; 4bb-; s;
+
+	VERSE "Je-sus.\"";
+endbar

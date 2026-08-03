@@ -1,0 +1,242 @@
+
+
+// Mup vs. 6.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Gospel Voices of Praise
+//			Prepared withe especial reerence
+//			to the needs of the Sunday School
+//			it will also be found suitable
+//			for the prayer meeting and other
+//			religious gatherings.
+//			Compiled by: William B Olmstead,
+//			David S. Warner, Mary Coleman,
+//			Emma L. Hogue, William B. Rose
+//			Published by W. B. Rose
+//			1132 Wasington Boulevard
+//			Chicage, Illinois
+//			Copyright 1909
+//			Hymn no. 84
+		
+		
+// Transcribed by: Ted Gatza, Jr. 03/26/2019
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "God Leads Us Along" ""
+   title (2)""
+   title (11) "E \(flat) - 2 - DO" "\s(17)\f(TI)\:He\ leadeth\ me\ in\ pat\^hs\ of\ righteousness for\ his\ name's\ s\^ake\ -\ Ps.\ 23:3 \(space)" ""   
+   title (13) "George A. Young" "" "George A. Young, 1903, arr."
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=80";
+
+// Enter music
+
+//1
+1 1: 4.s; 4s; 8e;
+1 2: 4.s; 4s; 8e;
+2: 4.s; 4s; 8eg;
+
+	VERSE 4.s; 4s; 8; "<1. >-1|In";
+	VERSE 4.s; 4s; 8; "<2. >-1|Some-";
+	VERSE 4.s; 4s; 8; "<3. >-1|Tho'";
+	VERSE 4.s; 4s; 8; "<4. >-1|A-";
+bar
+//2
+1 1: 8.eg; 16; 8; 8.; 16f; 8eg;
+1 2: 8.s; 16; 8; 8.; 16e; 8s;
+2: 8.eb; 16; 8; 8.; 16; 8;
+
+	VERSE "sha-dy green pas-tures, so";
+	VERSE "times on the mount where the";
+	VERSE "sor-rows be-fall us and";
+	VERSE "way from the mire, and a-";
+bar
+//3
+1 1: 8.gb; 16; 8; 4eg; 8e;
+1 2: 8.s; 16; 8; 4; 8e;
+2: 8.ee+; 16; 8; 4eb; 8eg;
+
+	VERSE "rich and so sweet, God";
+	VERSE "sun shines so bright, God";
+	VERSE "Sa-tan op-ose, God";
+	VERSE "way from the clay God";
+bar
+//4
+1: 8.df; 16; 8;; ce; df;
+2: 8.b-b; 16; 8;; cg; b-b;
+
+	VERSE "leads His dear chil-dren a-";
+	VERSE "leads His dear chil-dren a-";
+	VERSE "leads His dear chil-dren a-";
+	VERSE "leads His dear chil-dren a-";
+bar
+//5
+1 1: 4.e~g~;4eg; 16e<>; 16f;
+1 2: 4.s; 4; 16e~;;
+2: 4.e~b~; 4; 16e~g<a>; 16ea;
+
+	VERSE 4.; 4s; 16; 16; "long, Where the";
+	VERSE 4.; 4s; 16; 16; "long, Some-times";
+	VERSE 4.; 4s; 16; 16s; "long. Through";
+	VERSE 4.; 4s; 16; 16; "long. A- <>";
+bar
+//6
+1 1: 8.eg; 16; 8; 8.; 16f; 8eg;
+1 2: 8.s; 16; 8; 8.; 16e; 8s;
+2: 8.eb; 16; 8; 8.; 16; 8;
+
+	VERSE "wa-ter's cool flow bathe the";
+	VERSE "in the val-ley in the";
+	VERSE "grace we can con-quer, de-";
+	VERSE "way up in glo-ry, e-";
+bar
+//7
+1 1: 8.gb; 16; 8; 4eg; 8e;
+1 2: 8.s; 16; 8; 4; 8e;
+2: 8.ee+; 16; 8; 4eb; 8eg;
+
+	VERSE "wea-ry one's feet, God";
+	VERSE "dark-est of night, God";
+	VERSE "feat all our foes, God";
+	VERSE "ter-ni-ty's day, God";
+bar
+//8
+1: 8.df; 16; 8;; eg; b-f;
+2: 8.b-a; 16; 8;; b-b; b-a;
+
+	VERSE "leads His dear chil-dren a-";
+	VERSE "leads His dear chil-dren a-";
+	VERSE "leads His dear chil-dren a-";
+	VERSE "leads His dear chil-dren a-";
+bar
+//9
+1: 4.b-~e~; 4; 8r;
+2: 4.e~g~; 4; 8r;
+
+	VERSE 4.; 4s; 8s; "long.";
+	VERSE 4.; 4s; 8s; "long.";
+	VERSE 4.; 4s; 8s; "long.";
+	VERSE 4.; 4s; 8s; "long.";
+
+dblbar
+//9
+//Chorus
+//1 1: 8e; 16eg; 8gb; 16; 4.ge+;  // Uncomment for original notes
+//1 2: 8e; 16s; 8; 16; 4.;  // Uncomment for original notes
+//2 1: 8eg; 16eb; 8ee+; 16; 4b<e+>; 8e+;  // Uncomment for original notes
+//2 2: 8s; 16; 8; 16; 4.e;  // Uncomment for original notes
+
+1 1: 8e; 8.eg; 16gb; 8; 4ge+;
+1 2: 8e; 8.s; 16; 8; 4;
+2 1: 8eg; 8.eb; 16ee+; 8; 8b<e+>; 8e+;
+2 2: 8s; 8.; 16; 8; 4e;
+
+
+	ital (13) above 1: 1 "Chorus";
+	VERSE [c]"Some thro' the wa-ters,";
+bar
+//10
+1: 8ac+; 8.ae+; 16ac+; 4.gb;
+2: 8ae+; 8.ac+; 16ae+; 4.ee+;
+
+	VERSE "some thro' the flood,";
+bar
+//11
+1: 8gb; 8.; 16; 16ac+ bm; 8.gb ebm; 8eg;
+2: 8ee+; 8.; 16; 4; 8eb;
+
+	VERSE 8; 8.; 16; 4; 8; "Some thro' the fire, but";
+bar
+//12
+1 1: 8eg; f; eg; 4.df;
+1 2: 8s; e; s; 4.s;
+2 1: 8can;; fa; 8b slur; 4a&;
+2 2: 8s;;; 4.b-;
+
+	VERSE "all thro' the Blood;";
+bar
+//13
+// 1 1: 8e; 16eg; 8gb; 16; 4ge+; 8gb;  // Uncomment for original notes
+// 1 2: 8e; 16s; 8; 16; 4; 8;   // Uncomment for original notes
+// 2: 8eg; 16eb; 8ee+; 16; 4eb; 8ee+;  // Uncomment for original notes
+
+1 1: 8e; 8.eg; 16gb; 8; 8.ge+; 16gb;
+1 2: 8e; 8.s; 16; 8; 8.; 16; 
+2: 8eg; 8.eb; 16ee+; 8; 8.eb; 16ee+;
+
+	VERSE "Some thro' great sor-row, but";
+bar
+//14
+1: 8ac; 8.ae+; 16ac+; 4.gb;
+2: 8ae+; 8.ac+; 16ae+; 4.ee+;
+
+	VERSE "God gives a song,";
+bar
+//15
+1 1: 8gb; 8.ac+; 16gb;; 8.eg; 8e;
+1 2: 8s; 8.; 16;; 8.; 8e;
+2: 8ee+; 8.; 16;; 8.eb; 8eg;
+
+	VERSE "In the night sea-son And";
+bar
+//16
+1: 8.df; 16b-e; 8b-f; 4b-e; 8s;
+2: 8.b-a; 16b-g; 8b-a; 4eg; 8s;
+	ital (13) above 1: 1 "Ritard.";
+	VERSE "all the day long.";
+endbar
+

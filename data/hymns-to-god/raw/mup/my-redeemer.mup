@@ -1,0 +1,363 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 19
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/25/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "My Redeemer" ""
+   title (2)""
+   title (11)"" "\f(TI)O Lord, my strength, and my redeemer. - Ps. 19:14"""
+   title (11) "A \(flat) - 3 - SOL" "" ""
+   title (13) "P. P. Bliss" "" "James McGranahan"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==== FOR Letter ==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=9/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=110";
+
+//=========================
+//Verse 1
+
+//1
+1 1: 8e bm; ae ebm; db; 4.s; 4.s;
+1 2: 4c; 8s; 4.s; 4.s;
+2 1: 4a; 8a; 4.s; 4.s;
+2 2: 4a; 8a; 4.s; 4.s;
+
+	VS21 "<1. >-1|I will";
+	VS21 "<2. >-1|I will";
+	VS21 "<3. >-1|I will";
+	VS21 "<4. >-1|I will";
+bar
+
+//2
+1: 4.ec+; ; 8ec+ bm; 8db ebm; 8ca;
+2 1: 4.a; ; 4; 8;
+2 2: 4.a; ; 4; 8;
+
+	VS21 "sing of my Re-";
+	VS21 "tell the won-d'rous";
+	VS21 "praise my dear Re-";
+	VS21 "sing of my Re-";
+bar
+
+//3
+1 1: 4.eb; ; 4s; 8s;
+2: 4.eg; ; 4s; 8s;
+
+	VS1 "deem-er,";
+	VS1 "sto-ry,";
+	VS1 "deem-er,";
+	VS1 "deem-er,";
+invisbar
+
+1 1:4.s; ; 8e bm; 8g ebm; 8eb;
+1 2: 4.s; ; 4e; 8s;
+2: 4.s; ; 4eg; 8;
+
+	VS21 "And His";
+	VS21 "How my";
+	VS21 "His tri-";
+	VS21 "And His";
+bar
+
+//4
+1 1: 4.ed+ tie; 4ed+; 8; 8d+ bm; c+ ebm; 8eb;
+1 2: 4.s; 4; 8; 4e; 8s;
+2 1: 4.s; 4s; 8; 8b bm; a ebm; 8s;
+2 2: 4.eb tie; 4eb; 8; 4e; 8eg;
+
+	VS22 "won-d'rous love to";
+	VS22 "lost es-tate to";
+	VS22 "um-phant pow'r I'll";
+	VS22 "heav'n-ly love for";
+bar
+
+//5
+1: 4.ec+ tie; 4.ec+; 4s; 8s;
+2: 4.a-a tie; 4.a-a; 4s; 8s;
+
+	VS1 "me;";
+	VS1 "save,";
+	VS1 "tell,";
+	VS1 "me;";
+invisbar
+1 1: 4.s; 4.s; 8e bm; 8a ebm; 8db;
+1 2: 4.s; 4.s; 4c; 8s;
+2 2: 4.s; 4.s; 4a-a; 8a-a;
+
+	VS22 "On the";
+	VS22 "In His";
+	VS22 "How the";
+	VS22 "He from";
+bar
+
+//6
+1: 4.ec+; ; 8ec+ bm; 8db ebm; 8ca;
+2: 4.a-a; ; 4; 8;
+
+	VS21 "cru-el cross He";
+	VS21 "bound-less love and";
+	VS21 "vic-to-ry He";
+	VS21 "death to life has";
+bar
+
+//7
+1 1: 4.eb; ; 8s; s; 8s;
+1 2: 4.s; ; 4s; 8s;
+2 1: 4.s; 4.s; 8s; s; 8s;
+2 2: 4.eg; ; 4s; 8s;
+
+	VS22 "suf-fered,";
+	VS22 "mer-cy";
+	VS22 "giv-eth";
+	VS22 "brought me,";
+invisbar
+
+1 1:4.s; ; 8e bm; 8g ebm; 8s;
+1 2: 4.s; ; 4e; 8ea;
+2 1: 4.s; ; 8g bm; b ebm; 8s;
+2 2: 4.s; ; 4e; 8ac+;
+
+	VS12 "From the";
+	VS12 "He the";
+	VS12 "O-ver";
+	VS12 "Son of";
+bar
+
+//8
+1 1: 4.s; 4; 8; 8b bm; 8a ebm; 8s;
+1 2: 4.eb tie; 4eb; 8; 4e; 8eg;
+2 1: 4.s; 4; 8; 8d+ bm; 8c+ ebm; 8s;
+2 2: 4.ed+ tie; 4ed+; 8; 4e; 8eb;
+
+	VS12 "curse to set me";
+	VS12 "ran-som free-ly";
+	VS12 "sin, and death, and";
+	VS12 "God, with Him to";
+bar
+
+//9
+1: 4.ea tie; 4.ea; 4.s;
+2: 4.a-ac+ tie; 4.a-ac+; 4.s;
+
+	VS1 "free.";
+	VS1 "gave.";
+	VS1 "hell.";
+	VS1 "be.";
+
+dblbar hidechanges
+score time=12/8
+music
+midi all: 0 "tempo=110";
+
+//10
+CHORUS
+1: 8ca bm; db ebm; 8ec+; 2.s; 4.s;
+2 1: 4a; 8; 2.s; 4.s;
+2 2: 4a; 8; 2.s; 4.s;
+
+	VS21 "Sing, oh,";
+bar
+
+//11
+1: 2.fd+ tie; 4fd+; 8fd+; 4.s;
+2: 4da; 8; 4; 8; 4; 8; 4.s;
+
+	VS1 "sing_ of";
+	VS 4s; 8; 4; 8; 4; 8; 4.s; "of my Re-deem-er,";
+invisbar
+
+1: 2.s; 4.s; 8df bm; fa ebm; 8fd+;
+2: 2.s; 4.s; 4da; 8;
+
+	VS21 "my Re-";
+	VS21 "Sing, oh,";
+bar
+
+//12
+1: 4.ec+; 2.; 4.s;
+2: 4a-a; 8; 4; 8; 4; 8; 4.s;
+
+	VS1 "deem-er,";
+	VS21 "sing of my Re-deem-er,";
+invisbar
+
+1: 4.s; 2.s; 8ce bm; 8ea ebm; 8ec+;
+2 1: 4.s; 2.s; 8a bm; c+ ebm; 8s;
+2 2: 4.s; 2.s; 4a-; 8a-e+;
+
+	VS22 "With His";
+//	VS22 "With His";
+bar
+
+//13
+1 1: 2.b tie; 4b; 2s;
+1 2: 4e; 8; 4; 8; 4; 2s;
+2 1: 2.d+ tie; 4d+; 2s;
+2 2: 4e; 8; 4; 8; 4; 2s;
+
+	VS1 "blood_";
+	VS 4s; 8; 4; 8; 4; 2s; "He pur-chased me,";
+invisbar
+newscore
+
+1 1: 8s; 8b bm; a ebm; 8s; 2.s; 4s; 
+1 2: 8eb; 4e; 8eb; 2.s; 4s; 
+2 1: [up]8d+; 8d+ bm; 8c+ ebm; b; 2.s; 4s; 
+2 2: 8s; 8e bm; 8f ebm; 8g; 2.s; 4s; 
+
+	VS12 "He pur-chased";
+	VS 8s; 4; 8; 2.s; 4s; "With His";
+bar
+
+//14
+1: 2.ec+ tie; 4.ec+; 4.s;
+2 1: 4a; 8; 4; 8; 4.; 4.s;
+2 2: 4a; 8; 4; 8; 4.; 4.s;
+
+	VS1 "me,_";
+	VS21 "blood He pur-chased me;";
+invisbar
+
+1: 2.s; 4.s; 8ca bm; db ebm; 8ec+;
+2 1: 2.s; 4.s; 4a; 8a;
+2 2: 2.s; 4.s; 4a; 8a;
+
+	VS21 "On the";
+//	VS21 "On the";
+bar
+
+//15
+1: 2.fd+ tie; 4fd+; 8fd+; 4.s;
+2: 4da; 8; 4; 8; 4; 8; 4.s;
+
+	VS1 "cross_ He";
+	VS 4s; 8; 4; 8; 4; 8; 4.s; "He sealed my par-don";
+invisbar
+
+1: 2.s; 4s; 8s; 8df bm; 8fa ebm; 8fd+;
+2: 2.s; 4.s; 4da; 8;
+
+	VS21 "sealed my";
+	VS21 "On the";
+bar
+
+//16
+1: 4.ec+; 2.; 4.s;
+2: 4a-a; 8; 4; 8; 4; 8; 4.s;
+
+	VS1 "par-don,";
+	VS21 "cross He sealed my par-don,";
+invisbar
+
+1: 4.s; 2.s; 8ce bm; 8ea ebm; 8ac+;
+2 1: 4.s; 2.s; 8a bm; 8c+ ebm; 8s;
+2 2: 4.s; 2.s; 4a; 8ae+;
+
+	VS22 "Paid the";
+//	VS22 "Paid the";
+bar
+
+//17
+1: 2.c+e+ tie; 4c+e+; 8ed+; 4ac+; 8gb;
+2: 4ee+; 8; 4; 8; 4; 8; 4; 8ed+;
+
+	VS1 "debt,_ and made me";
+	VS 4s; 8; 4; 8; 4; 8s; 4s; 8s; "and made me free,";
+bar
+
+//18
+1 1:2.a tie; 4.ea; 4.s;
+1 2: 4a; 8e; 4f; 8; 4.s; 4.s;
+2 1: 4c+; 8; 4d+; 8; 4.s; 4.s;
+2 2: 2.a-a tie; 4.a-ac+; 4.s;
+
+	VS1 "free._";
+	VS 4s; 8; 4; 8; 4.; 4.s; "and made me free.";
+endbar

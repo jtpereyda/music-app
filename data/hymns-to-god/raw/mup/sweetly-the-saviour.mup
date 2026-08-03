@@ -1,0 +1,189 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Consectrated Hymns
+//		For use in: Devotional Meetings
+//		Young people's Societies
+//		The Sunday School
+//		Editors: Adam Geibel, R. Frank lehman,
+//		And H. C. Lincoln
+//		Published by: Geibel & Lehman
+//		1022 Arch Street, Philadelphia, PA
+//		Copyright: 1902
+//		Hymn no. 55
+
+// Transcribed by: Ted Gatza, Jr. 01/17/2011; rev. 08/07/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sweetly The Saviour" ""
+   title (2)""
+   title (11) "G - 4 - MI" "\s(17)\f(TI)\:Come\ unto\ me,\ all\ ye\ that\ \|labor\ and\ are\ heavy\ laden, and\ I\ will\ give\ you\ \|rest.\ -\ Matt.\ 11:28"""
+   title (13) "Minnie Greiner Edington" " " "Florence W. Williams, 1902"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2bg; 4c+g; 4bg;
+2: 2d+g; 4e+g; 4d+g;
+
+			lyrics 1: "<1. >-1|Sweet-ly the";
+			lyrics 1: "<2. >-1|Soft-ly, O";
+			lyrics 1: "<3. >-1|Gent-ly, O";
+bar
+//2
+1: 2bf; 2af;
+2: 2d+d; 2d+d;
+
+			lyrics 1: "Sav-iour";
+			lyrics 1: "soft-ly,";
+			lyrics 1: "gent-ly";
+bar
+//3
+1: 2d+f; 4af; 4bf;
+2: 2d+d; 4c+d; 4d+d;
+
+			lyrics 1: "Speaks to the";
+			lyrics 1: "Un-to the";
+			lyrics 1: "Pleads he with";
+bar
+//4
+1: 2.gd; 4r;
+2: 2.bg; 4r;
+
+			lyrics 1: "heart,";
+			lyrics 1: "sad,";
+			lyrics 1: "thee,";
+bar
+//5
+1 1: 2g; 4af; 4bfn;
+1 2: 2g; 4s; 4s;
+2: 2bg; 4c+g; 4d+g;
+
+			lyrics 1: "\"Come, O thou";
+			lyrics 1: "Whis-pers the";
+			lyrics 1: "\"I have re-";
+bar
+//6
+1: 2be; 4ae; 4c+a;
+2: 2c+c; 4c+c; 4e+a-;
+
+			lyrics 1: "wea-ry, I'll";
+			lyrics 1: "Sav-iour, \"I'll";
+			lyrics 1: "deemed thee, Mine";
+bar
+//7
+1: 2bg; 2af;
+2: 2d+d; 2d+d;
+
+			lyrics 1: "peace im-";
+			lyrics 1: "make thee";
+			lyrics 1: "thou shouldst";
+bar
+//8
+1: 2.bg; 4r;
+2: 2.d+g; 4r;
+
+			lyrics 1: "part.\"";
+			lyrics 1: "glad.\"";
+			lyrics 1: "be.\"";
+dblbar
+//9
+1: 2d+f; 4af; 4bf;
+2: 2c+d; 4c+d; 4d+d;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Sweet-ly, O";
+bar
+//10
+1: 2ad; 4gd; 4r;
+2: 2c+g; 4bg; 4r;
+
+			lyrics 1: [c]"sweet-ly,";
+bar
+newscore
+//11
+1: 2d+f; 4af; 4bf;
+2: 2c+d; 4c+d; 4d+d;
+
+			lyrics 1: [c]"Whis-pers to";
+bar
+//12
+1: 2.gd; 4r;
+2: 2.bg; 4r;
+
+			lyrics 1: [c]"thee,";
+bar
+//13
+1 1: 2g; 4af; 4bfn;
+1 2: 2g; 4s; 4s;
+2: 2bg; 4c+g; 4d+g;
+
+			lyrics 1: "Je-sus the";
+bar
+//14
+1: 2be; 4ae; 4c+a;
+2: 2c+c; 4c+c; 4e+a-;
+
+			lyrics 1: "Sav-iour, \"Come";
+bar
+//15
+1: 2bg; 2af;
+2: 2d+d; 2c+d;
+
+			lyrics 1: "un-to";
+bar
+//16
+1: 2.gd; 4r;
+2: 2.bg; 4r;
+
+			lyrics 1: "Me.\"";
+
+endbar
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

@@ -1,5 +1,5 @@
 {
-  "catalog_revision": "5",
+  "catalog_revision": "6",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
@@ -9,7 +9,7 @@
     "hymns_to_god": {
       "generator": {
         "name": "hymns-to-god-mup-satb",
-        "version": "1"
+        "version": "2"
       },
       "mup_version": "7.2"
     },
@@ -136,12 +136,21 @@
         "title": "Awake My Soul, An Offering Bring"
       },
       {
+        "arrangement_id": "amazing-grace-king-david-r",
         "collection_id": "hymns-to-god-public-domain-usa",
-        "reason": "individual_page_rights_unknown",
-        "record_ordinal": 7,
+        "reason": "Individual page contradicts or replaces the public-domain index classification.",
+        "record_ordinal": 26,
+        "title": "Amazing Grace"
+      },
+      {
+        "arrangement_id": "i-surrender-all",
+        "collection_id": "hymns-to-god-public-domain-usa",
+        "reason": "Individual page contradicts or replaces the public-domain index classification.",
+        "record_ordinal": 223,
         "title": "I Surrender All"
       }
     ],
+    "source_holds": [],
     "structure_holds": [
       {
         "ordinal": 10,
@@ -196,27 +205,6 @@
         "soprano_lyrics": true,
         "title": "O Trinity of Blessed Light",
         "voices": 5
-      },
-      {
-        "collection_id": "hymns-to-god-public-domain-usa",
-        "detail": "The refrain contains a non-monophonic secondary bass voice and falls outside the four-principal-line SATB profile.",
-        "reason": "unsupported_satb_shape",
-        "record_ordinal": 12,
-        "title": "Softly And Tenderly"
-      },
-      {
-        "collection_id": "hymns-to-god-public-domain-usa",
-        "detail": "Two cadences contain three principal pitches on the lower staff and fall outside the four-principal-line SATB profile.",
-        "reason": "unsupported_satb_shape",
-        "record_ordinal": 13,
-        "title": "Stand Up, Stand Up For Jesus!"
-      },
-      {
-        "collection_id": "hymns-to-god-public-domain-usa",
-        "detail": "The final cadence contains three principal pitches on the lower staff and falls outside the four-principal-line SATB profile.",
-        "reason": "unsupported_satb_shape",
-        "record_ordinal": 14,
-        "title": "There Is Power In The Blood"
       }
     ]
   },
@@ -228,11 +216,14 @@
       "source_records": 293
     },
     "hymns_to_god": {
-      "catalog_items": 13,
-      "public_domain_page_declarations": 16,
-      "rights_holds": 1,
-      "source_records": 17,
-      "structure_holds": 3
+      "catalog_items": 592,
+      "index_pages": 593,
+      "public_domain_arrangements": 592,
+      "public_domain_pages": 591,
+      "rights_holds": 2,
+      "source_holds": 0,
+      "source_records": 594,
+      "structure_holds": 0
     },
     "split_zip": {
       "archive_exact_public_domain_candidates": 285,
@@ -241,12 +232,13 @@
     }
   },
   "summary": {
-    "catalog_items": 290,
-    "exact_public_domain_candidates": 299,
-    "hymns_to_god_items": 13,
-    "rights_holds": 19,
-    "source_records": 318,
-    "structure_holds": 9,
+    "catalog_items": 869,
+    "exact_public_domain_candidates": 875,
+    "hymns_to_god_items": 592,
+    "rights_holds": 20,
+    "source_holds": 0,
+    "source_records": 895,
+    "structure_holds": 6,
     "supplement_items": 8
   }
 }

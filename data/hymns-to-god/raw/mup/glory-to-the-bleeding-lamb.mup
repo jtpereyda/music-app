@@ -1,0 +1,230 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Peacemaker No. 1
+//		A collection of sacred songs and
+//		hymns for use in all services
+//		of the church, Sunday - School
+//		Home circle and all kinds of Evangelistic work
+//		Edited by: W. S. Weeden and Geo. Beaverson
+//		Published by: Weeden and Van De Venter
+//		New York: W. S. Weeden, 149 Fifth Avenue
+//		Pittsburg, PA.: J. W. Van De Venter, 905-806 Lewis Block
+//		Copyright 1894
+//		Hymn no. 173
+
+// Transcribed by: Ted Gatza, Jr. 03/04/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Glory To The Bleeding Lamb" ""
+   title (2)""
+   title (11) "F - 4 - SOL" "\s(17)\f(TI)\:knowing\ that\ ye\ were\ redeemed,\ not\ with\|\ corruptible\ things,...\ but\ with\ precious blood,\ as\ of\ a\ lamb\ without\ spot,\ eve\^n\ the\ blood\ of\ Christ:\ 1\ Pet.\ 1:18-29" ""
+   title (13) "Carrie Ella Breck" " " "Grant C. Tullar, 1894"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = .9
+	pad =0
+	vscheme = 2f
+	staffscale=.99
+	scoresep=6,20
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+
+//1
+1 1: 4c; 2.s;
+1 2: 4c; 2.s;
+2: 4af; 2.s;
+
+			VERSE "<1. >-1|Come";
+			VERSE "<2. >-1|Come";	
+			VERSE "<3. >-1|Oh";
+			VERSE "<4. >-1|O";
+			VERSE "<5. >-1|Dear";
+
+bar
+//2
+1: 4.fc; 8gc; af; bg; c+a; d+b;
+2: 4.af; 8bf; c+f;; f+f;;
+
+			VERSE "sing a-gain the song of";
+			VERSE "sing of Je-sus, wound-ed,";
+			VERSE "wor-thy, wor-thy is the";
+			VERSE "Lord, who hast my sins for-";
+			VERSE "Bleed-ing Lamb of God, who";
+bar
+//3
+1 1: 2.c+a; 4f;
+1 2: 2.s; 4f;
+2: 2.f+f; 4af;
+
+			VERSE "love, The";
+			VERSE "slain, For";
+			VERSE "Lamb, All";
+			VERSE "giv'n, My";
+			VERSE "came, For";
+bar
+//4
+1 1: 4.af; 8; 4; f;
+1 2: 4.s; 8; 4; f;
+2: 4.c+f; 8; 4; af;
+
+			VERSE "love of God to";
+			VERSE "sin-ners lost like";
+			VERSE "glo-ry to re-";
+			VERSE "joy, my song, art";
+			VERSE "sac-ri-fice di-";
+bar
+//5
+1 1: 2.ge; 4c;
+1 2: 2.s; 4c;
+2: 2.c+c; 4af;
+
+			VERSE "man; The";
+			VERSE "me; He";
+			VERSE "cieve; Dear";
+			VERSE "Thou; I'll";
+			VERSE "vine; Wilt";
+bar
+//6
+1: 4.fc; 8gc; af; bg; c+a; d+b;
+2: 4.af; 8bf; c+f;; f+f;;
+
+			VERSE "love that wrought in heav'n a-";
+			VERSE "came in love to break my";
+			VERSE "Sav-ior, take me as I";
+			VERSE "sing no oth-er song in";
+			VERSE "Thou, who bore my guilt and";
+bar
+//7
+1 1: 2.c+a; 4f;
+1 2: 2.s; 4f;
+2: 2.f+f; 4af;
+
+			VERSE "bove The";
+			VERSE "chains, And";
+			VERSE "am, And";
+			VERSE "heav'n, I'll";
+			VERSE "shame, Now";
+bar
+//8
+1: 4.af; 8bf; 4af; ge;
+2 1: 4.c+f; 8d+f; 4c+f; 8c+ bm; b ebm;
+2 2: 4.s; 8; 4; 4c;
+
+			VERSE "great re-demp-tion";
+			VERSE "set the cap-tive";
+			VERSE "help me now be-";
+			VERSE "sing no oth-er";
+			VERSE "make me whol-ly";
+bar
+//9
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			VERSE "plan.";
+			VERSE "free.";
+			VERSE "lieve.";
+			VERSE "now.";
+			VERSE "Thine.";
+dblbar
+//10
+1 1: 4f; 2.s;
+1 2: 4f; 2.s;
+2: 4af; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Oh,";
+bar
+//10
+1: 4.d+f; 8; 4bd; d+f;
+2: 4.bb-; 8; 4fb-; bb-;
+
+			VERSE [c]"Glo-ry to the";
+bar
+//11
+1: 4.c+f; 8; 4af; c+f;
+2: 4.af; 8; 4c+f; af;
+
+			VERSE "Bleed-ing Lamb, For";
+bar
+//12
+1: 4.c+e; 8d+e; 4be; c+e;
+2: 4.gc; 8; 4c+c;;
+
+			VERSE "me He bled and";
+bar
+//13
+1 1: 2.af; 4f;
+1 2: 2.s; 4f;
+2: 2. c+f; 4af;
+
+			VERSE "died; I";
+bar
+//14
+1: 4.d+f; 8; 4bd; d+f;
+2: 4.bb-; 8; 4fb-; bb-;
+
+			VERSE "plunge be-neath the";
+bar
+//15
+1: 4.c+f; 8; 4af; c+f;
+2: 4.af; 8; 4c+f; af;
+
+			VERSE "cleans-ing blood, The";
+bar
+//16
+1: 4.c+e; 8be; 4af; ge;
+2 1: 4.gc; 8; 4c+c; 8c+ bm; b ebm;
+2 2: 4.s; 8; 4; c;
+
+			VERSE "foun-tain deep and";
+bar
+//17
+1: 2.fc; 4s;
+2: 2.af; 4s;
+
+			VERSE "wide.";
+endbar

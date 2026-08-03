@@ -1,0 +1,266 @@
+// !Mup vs.6.9 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Google Books
+//		Gospel Praise Book
+//		A Collection Of Choice Gems Of Song
+//		Suiitable For Church Service, Gospel Praise Meetings
+//		And Family Devotions
+//		By Asa Hull
+//		New York:
+//		Published by D. W. Knowles
+//		240 Fourth Avenue, Boston
+//		James P. Magee, 38 Bromfield Street
+//		Cincinnati, OH; John Church & Co,
+//		Chicago, Il.; Henry A Sumner & Co.
+//		Copyright: 1880
+//		Hymn No.: 71
+//		
+// Transcribed by: Ted Gatza, Jr. 08/19/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sweet By And By" ""
+   title (2)""
+   title (11)"" "\f(TI)In my Father's house are many mansions; if it were not so, I would" ""
+   title (11)"" "\f(TI)have told you; for I go to prepare a place for you. - John 14:2" ""
+   title (11) "G - 4 - DO" "" ""
+   title (13) "Sanford Fillmore Bennett, 1868" "" "Joseph. P. Webster"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+score
+
+	label=""
+	packexp = 0.4
+	packfact = 0.4
+	pad = 1.4 //2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=5
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+ 	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+   //Time Signature - Use on projection hymns only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+         print (t.w - 2, t.y) "\f(newcentury bold)\s(16)6";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)6";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4;
+	 @
+
+
+// set midi
+	midi all: 0 "temp=90";
+
+//Enter music	
+//=========================
+
+//1
+1: 8.dg; 16da; 2.s;
+2: 8.gb; 16gc+; 2.s;
+
+	VS "<1. >-1|There's a";
+	VS "<2. >-1|We shall";
+	VS "<3. >-1|To Our";
+	VS "<4. >-1|We shall";
+	VS "<5. >-1|We shall";
+bar
+//2
+1: 4db; 8da; dg; 4ea; 8.eg; 16ce;
+2: 4gd+; 8gc+; gb; 4cc+; 8.cc+; 16eg;
+
+	VS "land that is fair-er than";
+	VS "sing on that beau-ti-ful";
+	VS "boun-ti-ful fath-er a-";
+	VS "rest on that beau-ti-ful";
+	VS "meet, we shall sing, we shall";
+bar
+//3
+1: 2.b-d; 8.dg; 16da;
+2 1: 2.g; 8.gb; 16gc+;
+2 2: 2.g; 8.s; 16;
+
+	VS "day, And by";
+	VS "shore The me-";
+	VS "bove, We will";
+	VS "shore, In the";
+	VS "reign, In the";
+
+bar
+//4
+1: 4db; 8; 8; 4dd+; 8.dd+; 16gb;
+2: 4gd+; 8; 8; 4gb; 8.; 16gd+;
+
+
+	VS "faith we can see it a-";
+	VS "lo-di-ous songs of the";
+	VS "of-fer our trib-ute of";
+	VS "joys of the saved we shall";
+	VS "land where the saved nev-er";
+bar
+//5
+1: 2.fa; 8.dg; 16da;
+2: 2.dd+; 8.gb; 16gc+;
+
+	VS "far; For the";
+	VS "blest; And our";
+	VS "praise For the";
+	VS "share All the";
+	VS "die! We shall";
+bar
+//6
+1: 4db; 8da; dg; 4ea; 8.eg; 16ce;
+2: 4gd+; 8gc+; gb; 4cc+; 8.cc+; 16eg;
+
+//	VS "Fa-ther waits o-ver the"; //Original Lyrics
+	VS "Sav-ior waits o-ver the"; //The Savior is preparing the dwelling place (Jn. 14:2)
+	VS "spir-its shall sor-row no";
+	VS "glo-ri-ous gift of His";
+	VS "pil-grim-age toil will be";
+	VS "rest free from sor-row and";
+bar
+//7
+1: 2.b-d; 8.dg; 16da;
+2 1: 2.g; 8.gb; 16gc+;
+2 2: 2.g; 8.s; 16s;
+
+	VS "way, To pre-";
+	VS "more, Not a";
+	VS "love And the";
+	VS "o'er, And the";
+	VS "pain, Safe at";
+bar
+//8
+1: 4db; 8da; dg; 4ea; 8dg; 8df;
+2: 4gd+; 8gc+; gb; 4cc+; 8db; da;
+
+	VS "pare us a dwell-ing place";
+	VS "sigh for the bless-ing of";
+	VS "bless-ings that hal-low our";
+	VS "con-quer-ors crown we shall";
+	VS "home in the sweet by and";
+bar
+//10
+1: 2.dg; 4s;
+2: 2.g-b; 4s;
+
+	VS "there.";
+	VS "rest.";
+	VS "days.";
+	VS "wear.";
+	VS "by.";
+dblbar
+newscore
+//11
+1: 8.gb; 16ac+; 2.s;
+2: 4r; 2.s;
+CHORUS
+
+	VS "In the";
+bar
+//12
+1: 2.bd+; 8.; 16gb;
+2: 4r; 8.gd+; 16; 4; 8.; 16;
+
+	VS "sweet by and";
+	VS 4s; 8.; 16; 4; 8.s; 16s; "In the sweet";
+bar
+//13
+1: 2.fa; 8fa; 8gb;
+2: 4dd+; 8; 8; 4; 8; 8;
+
+	VS "by; We shall";
+	VS 4; 8; 8; 4; 8s; 8s;  "by, by and by,";
+bar
+//14
+1: 4ac+; 8; 8; 4; 8gb; fa;
+2: 4dd+; 8; 8; 4; 8; 8;
+
+	VS "meet on that beau-ti-ful";
+bar 
+//15
+1: 2.gb; 8.; 16ac+;
+2: 4gd+; 8;; 4; 4r;
+
+	VS "shore, In the";
+	VS 4s; 8; 8; 4; 8.s; 16s; "by and by,";
+bar
+//16
+1: 2.bd+; 8.db; 16da;
+2 1: 4r; 8.gd+; 16; 4; 8.; 16b-g;
+
+	VS "sweet by and";
+	VS 4s; 8.; 16; 4; 8.; 16; "In the sweet by and";
+bar
+//17
+1: 2.eg; 8df; ce;
+2: 4cg; 8cc+; ; 4;  8cg; ;
+
+	VS "by; We shall";
+	VS 4; 8; 8; 4; 8s; 8s; "by, by and by,";
+bar
+//18//
+1: 4b-d; 8dg; db; 4da; 8dg; df;
+2: 4dg;8 db; dd+; 4dc+; 8db; da;
+
+	VS "meet on that beau-ti-ful";
+bar
+//19
+1: 2.dg; 4s;
+2: 2.gb; 4s;
+
+	VS "shore.";
+endbar

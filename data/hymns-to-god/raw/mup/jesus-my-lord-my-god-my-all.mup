@@ -1,0 +1,296 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gloria Deo
+//		A collection of Hymns and Tunes 
+//		for public worship in all 
+//		departments of the church
+//		New York
+//		Funk & Wagnalls Company
+//		30 Lafayette Place
+//		Copyright 1901
+//		Hymn no. 131
+
+// Transcribed by: Ted Gatza, Jr. 04/10/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Jesus, My Lord, My God, My All" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - MI" "\s(17)\f(TI)\:...And\ he\ said\ unto\ him,\ Lo\|rd,\ thou\ knowest\ all\ things; thou\ knowest\ that\ I\ \|love\ thee...\ Jn.\ 21:17" ""
+   title (13) "Henry Collins, 1854" " " "Joseph Barnby, 1872"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.4
+	packfact = .8
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+
+//1
+1: 4gb-; ge; gd;
+2: 4be;;;
+
+			VERSE "<1. >-1|Je-sus, my";
+			VERSE "<2. >-1|Je-sus, too";	
+			VERSE "<3. >-1|Je-sus, what";
+			VERSE "<4. >-1|Je-sus, of";
+bar
+//2
+1: 2gc; 4fc;
+2: 2ba-; 4aa-;
+
+			VERSE "Lord, my";
+			VERSE "late I";
+			VERSE "didst Thou";
+			VERSE "Thee shall";
+bar
+//3
+1: 2eb-; 4fd;
+2: 2gb-; 4bb-;
+
+			VERSE "God, my";
+			VERSE "Thee have";
+			VERSE "find in";
+			VERSE "be my";
+bar
+//4
+1: 2.ge;
+2: 2.be;
+
+			VERSE "all,";
+			VERSE "sought:";
+			VERSE "me,";
+			VERSE "song,";
+bar
+//5
+1: 4bd; bg; bf;
+2: 4bg; d+g;;
+
+			VERSE "Hear me, blest";
+			VERSE "How can I";
+			VERSE "That Thou hast";
+			VERSE "To Thee my";
+bar
+//6
+1: 2be; 4ane;
+2 1: 4d+ slur; g; c+c;
+2 2: 2c; 4s;
+
+			VERSE "Sav-iour,";
+			VERSE "love Thee";
+			VERSE "dealt so";
+			VERSE "heart and";
+bar
+//7
+1 1: 2g; 4anf#;
+1 2: 4d slur; g; 4s;
+2: 2bd; 4c+d;
+
+			VERSE "when I";
+			VERSE "as I";
+			VERSE "lov-ing-";
+			VERSE "soul be-";
+bar
+//8
+1: 2.bg;
+2: 2.bg;
+
+			VERSE "call;";
+			VERSE "aught?";
+			VERSE "ly?";
+			VERSE "long:";
+bar
+//9
+1: 4bd; c+e; d+f;
+2: 4a&f;; ab-;
+
+			VERSE "Hear me, and";
+			VERSE "And how ex-";
+			VERSE "How great the";
+			VERSE "All that I";
+bar
+//10
+1: 2e+e; 4be;
+2: 2ge; 4bg;
+
+			VERSE "from Thy";
+			VERSE "tol Thy";
+			VERSE "joy that";
+			VERSE "have or";
+bar
+//11
+1 1: 4g slur; a; be;
+1 2: 2e; 4s;
+2 1: 2e+; 4d&+g;
+2 2: 4e slur; f; s;
+
+			VERSE "dwell-ing-";
+			VERSE "match-less";
+			VERSE "Thou hast";
+			VERSE "am is";
+bar
+//12
+1: 2c+e; 4;
+2 1: 2c+a; 4a;
+2 2: 2s; 4a;
+
+			VERSE "place Pour";
+			VERSE "fame, The";
+			VERSE "brought, So";
+			VERSE "Thine, And";
+bar
+//13
+1 1: 2c+; 4g;
+1 2: 4en slur; f; g;
+2 1: 2g; 4c+en;
+2 2: 4c slur; d; s;
+
+			VERSE "down the";
+			VERSE "glo-rious";
+			VERSE "far ex-";
+			VERSE "Thou, blest";
+bar
+//14
+1: 2bg; 4af;
+2: 2c+f; 4;
+
+			VERSE "rich-es";
+			VERSE "beau-ty";
+			VERSE "ceed-ing";
+			VERSE "Sav-iour,";
+bar
+//15
+1: 4af slur; bg; c+a;
+2 1: c+ slur; b; aa-;
+2 2: 2a-; 4s;
+
+			VERSE "of Thy";
+			VERSE "of Thy";
+			VERSE "hope or";
+			VERSE "Thou art";
+bar
+//16
+1: 2.fd;
+2: 2.ab-;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			VERSE "grace,";
+			VERSE "name?";
+			VERSE "thought.";
+			VERSE "mine.";
+bar
+//17
+1 1: 4e;;;
+1 2: 4e;;;
+2: 4gc;;;
+ital (13) above 1: 1 "Slower";
+
+			VERSE [c]"Je-sus, my";
+bar
+//18
+1: 2fd&; 4;
+2: 2bb-; 4;
+
+			VERSE [c]"Lord, I";
+bar
+//19
+1 1: 4g slur; f; e;
+1 2: 2d&; 4;
+2 1: 4b slur; a; ge;
+2 2: 2e; 4s;
+
+			VERSE "Thee a-";
+bar
+//20
+1: 2.ac;
+2: 2.aa-;
+
+			VERSE "dore:";
+bar
+//21
+1 1: 4a; g; f;
+1 2: 4a; g; f;
+2 1: 4a; g; f;
+2 2: 4a; g; f;
+
+			VERSE "Oh, make me";
+bar
+//22
+1 1: 2e; 4;
+1 2: 2e; 4;
+2 1: 2e; 4;
+2 2: 2e; 4;
+
+			VERSE "love Thee";
+bar
+//23
+1 1: 2e; 4ec;
+1 2: 4e slur; d; s;
+2 1: 4c+ slur; b; aa-;
+2 2: 2a-; 4s;
+
+			VERSE "more and";
+bar
+//24
+1: 2.eb-;
+2: 2.ge;
+
+			VERSE "more.";
+endbar
+//25
+1: 2.ae;
+2: 2.c+a-;
+
+			VERSE "A-";
+bar
+//26
+1: 2.ge;
+2: 2.be;
+
+			VERSE "men.";
+endbar

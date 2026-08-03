@@ -1,0 +1,261 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Song Treasury
+//		 A collection of Songs and Music, especially adapted for
+//		 Sunday-Schools, Praise and Prayer Meetings,
+//		 Church Choirs and the Home Circle.
+//		 Also Containing Selections for
+//		 Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		 Together with a
+//		 Complete Course of Elementary Instruction of all the art of
+//		 Reading music at sight
+//		 By J. H. Kursenknabe,
+//		 Publishers: Crider & Brother
+//		 York, PA
+//		 Copyright 1879
+//		 Hymn No.: 64
+//		
+// Transcribed by: Ted Gatza, Jr. 09/19/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Beautiful Home" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:I\ go\ to\ prepare\ a\ place\ for\ you.\ -\ Jn.\ 14:2 \(space)" ""
+   title (13) "John H. Kurzenknabe" "" "John H. Kurzenknabe"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 8d; 8gd; 2.s;
+1 2: 8d; 8s; 2.s;
+2: 8bg; 8bg; 2.s;
+
+
+			VERSE "<1. >-1|There's a";
+			VERSE "<2. >-1|There's no";
+			VERSE "<3. >-1|There a";
+			VERSE "<4. >-1|Soon that";
+
+bar
+//2
+1: 4gd; 8fd; 8gd; 4ad; 8.ge; 16ec;
+2: 4bg; 8ad; 8bg; 4c+c; 8.c+c; 16ac;
+
+			VERSE "beau-ti-ful home ov-er";
+			VERSE "sin in that beau-ti-ful";
+			VERSE "robe and a crown is the";
+			VERSE "beau-ti-ful home shall be";
+bar
+//3
+1 1: 2.d; 8gd; 8ad;
+1 2: 4b-; 8.b-; 16b-; 4b-; 8s; 8s;
+2: 4gg-; 8.gg-; 16gg-; 4gg-; 8gb-; 8fd;
+
+			VERSE 4; 8.; 16; 4; 8; 8; "there, (ov-er there,) Where the";
+			VERSE 4; 8.; 16; 4; 8; 8; "home, (bless-ed home,) And no";
+			VERSE 4; 8.; 16; 4; 8; 8; "prize, (is the prize,) Which his";
+			VERSE 4; 8.; 16; 4; 8; 8; "mine, (shall be mine,) Yon-der";
+bar
+//4
+1: 4bd; 8bg; 8bg; 4d+g; 8.bg; 16gd;
+2 1: 4a; 8d+g; 8d+g; 4bg; 8.d+g; 16bg;
+2 2: 4a; 8s; 8s; 4s; 8.s; 16s;
+
+			VERSE "bless-ed re-ward shall be";
+			VERSE "sor-row can e'er en-ter";
+			VERSE "chil-dren at last shall ob-";
+			VERSE "home on the ev-er-green";
+bar
+//5
+1 1: 2.a; 8gd; 8bg;
+1 2: 4f; 8.f; 16f; 4f; 8s; 8s;
+2: 4d+d; 8.d+d; 16d+d; 4d+d; 8bg; 8d+g;
+
+			VERSE 4; 8.; 16; 4; 8; 8; "giv'n, (shall be giv'n;) In the";
+			VERSE 4; 8.; 16; 4; 8; 8; "there, (en-ter there;) There no";
+			VERSE 4; 8.; 16; 4; 8; 8; "tain, (shall ob-tain;) And no";
+			VERSE 4; 8.; 16; 4; 8; 8; "shore, hap-py shore;) Then with";
+bar
+//6
+1 1: 4d+g; 8bg; 8d+g; 8c+ bm; 8b ebm; 8.af; 16g;
+1 2: 4s; 8s; 8s; 4g; 8.s; 16g;
+2 1: 4bg; 8d+g; 8bg; 8e+ bm; 8d+ ebm; 8.c+d; 16be;
+2 2: 4s; 8s; 8s; 4g; 8.s; 16s;
+
+			VERSE 4; 8; 8; 4; 8.; 16; "beau-ti-ful man-sion so";
+			VERSE 4; 8; 8; 4; 8.; 16; "death can in-vade with its";
+			VERSE 4; 8; 8; 4; 8.; 16; "tear there shall mois-ten our";
+			VERSE 4; 8; 8; 4; 8.; 16; "an-gels and saints I shall";
+bar
+//7
+1 1: 2.e+; 8c+g; 8e+g;
+1 2: 4g; 8.g; 16g; 4g; 8s; 8s;
+2: 4c+c; 8.c+c; 16c+c; 4c+c; 8c+c; 8c+c;
+
+			VERSE 4; 8.; 16; 4; 8; 8; "fair, (of so fair!) To the";
+			VERSE 4; 8.; 16; 4; 8; 8; "gloom, (with its gloom,) All are";
+			VERSE 4; 8.; 16; 4; 8; 8; "eyes, (bless-ed eyes,) When with";
+			VERSE 4; 8.; 16; 4; 8; 8; "join, (I shall join,) In  the";
+bar
+//8
+1: 4d+g; 8d+g; 8c+e; 4bd; 8.ad; 16ad;
+2: 4bd; 8gb-; 8gc; 4gd; 8.c+d; 16c+d;
+
+			VERSE "saints in the king-dom of";
+			VERSE "ho-ly and live ev-er-";
+			VERSE "Je-sus our Sav-ior we'll";
+			VERSE "bliss of the bright ev-er-";
+bar
+//9
+1 1: 2.g; 4s;
+1 2: 4d; 8.d; 16d; 4d; 4s;
+2: 4bg; 8.bg; 16bg; 4bg; 4s;
+
+			VERSE 4; 8.; 16; 4; 4s; "heav'n, (there in heav'n.)";
+			VERSE 4; 8.; 16; 4; 4s; "more, (ev-er-more.)";
+			VERSE 4; 8.; 16; 4; 4s; "reign, (ev-er reign.)";
+			VERSE 4; 8.; 16; 4; 4s; "more, (ev-er-more.)";
+dblbar
+//10
+1 1: {[up]8d; 8g; [up]8b;}3; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+phrase above 1: 1 til 1.8;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE {8; 8; 8;}3; 2.s; [c]"Beau-ti-ful";
+bar
+//11
+1 1: 2d+ tie; 8.d+ bm; 16b ebm; {8c+; 8d+; 8e+;}3;
+1 2: [dist -4]4r; {8g; 8g; 8g;}3; 4g; 4r;
+2: 4r; {8bg; 8bg; 8bg;}3; 4bg; 4r;
+phrase below 1: 2 til 2.8;
+phrase above 1: 4 til 4.8;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2; 8.s; 16s; {8; 8; 8;}3; "home!_ Beau-ti-ful";
+			VERSE 4s; {8; 8; 8;}3; 4; 4s; "Beau-ti-ful home!";
+bar
+//12
+1 1: 2.d+; {8g; 8b; 8d+;}3;
+1 2: 4r; {8g; 8g; 8g;}3; 4g; 4r;
+2: 4r; {8bg; 8bg; 8bg;}3; 4bg; 4r;
+phrase below 1: 2 til 2.75;
+phrase above 1: 4 til 4.75;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2.; {8; 8; 8;}3; "rest! Nev-er to";
+			VERSE 4s; {8; 8; 8;}3; 4; 4s; "Beau-ti-ful rest!";
+bar
+//13
+1 1: 2c+ tie; 8.c+ bm; 16a ebm; {8e+; 8d+; 8c+;}3;
+1 2: 4r; {8f; 8f; 8f;}3; 4f; 4r;
+2: 4r; {8ad; 8ad; 8ad;}3; 4ad; 4r;
+phrase below 1: 2 til 2.75;
+phrase above 1: 4 til 4.75;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2; 8.s; 16s; {8; 8; 8;}3; "roam,_ Hap-py and";
+			VERSE 4s; {8; 8; 8;}3; 4; 4s; "Nev-er to roam,";
+bar
+//14
+1 1: 2.b; {8d; 8g; 8b;}3; 
+1 2: [dist -6]4r; {8g; 8g; 8g;}3; 4g; 4r;
+2: 4r; {8d+g; 8d+g; 8d+g;}3; 4d+g; 4r;
+phrase below 1: 2 til 2.75;
+phrase above 1: 4 til 4.75;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2.; {8; 8; 8;}3; "Blest, Beau-ti-ful";
+			VERSE 4s; {8; 8; 8;}3; 4; 4s; "Hap-py and blest,";
+bar
+//15
+1 1: 2d+ tie; 8.d+ bm; 16b ebm; {8c+; 8d+; 8e+;}3;
+1 2: [dist -4]4r; {8g; 8g; 8g;}3; 4g; 4r;
+2: 4r; {8bg; 8bg; 8bg;}3; 4bg; 4r;
+phrase below 1: 2 til 2.8;
+phrase above 1: 4 til 4.8;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2; 8.s; 16s; {8; 8s; 8;}3; "saints,_ Ev-ery-";
+			VERSE 4s; {8; 8; 8;}3; 4; 4s; "Beau-ti-ful saints";
+bar
+//16
+1 1: 2.d+; {8g; 8b; 8d+;}3;
+1 2: [dist -4]4r; {8g; 8g; 8g;}3; 4g; 4r;
+2: 4r; {8bg; 8bg; 8bg;}3; 4bg; 4r;
+phrase below 1: 2 til 2.75;
+phrase above 1: 4 til 4.75;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2.; {8; 8; 8;}3; "where; Beau-ti-ful";
+			VERSE 4s; {8; 8s; 8;}3; 4; 4s; "Ev-ery where";
+bar
+//17
+1 1: 2c+ tie; 8.c+ bm; 16 a ebm; {8f; 8g; 8a;}3;
+1 2: [dist -6]4r; {8f; 8f; 8f;}3; 4f; 4r;
+2: 4r; {8ad; 8ad; 8ad;}3; 4ad; 4r;
+phrase below 1: 2 til 2.75;
+phrase above 1: 4 til 4.75;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2; 8.s; 16s; {8; 8; 8;}3; "strains,_ Dis-tant and";
+			VERSE 4s; {8; 8; 8;}3; 4; 4s; "Beau-ti-ful strains,";
+bar
+//18
+1 1: 2.g; 4s;
+1 2: 4r; {8d; 8d; 8d;}3; 4d; 4s;
+2: 4r; {8bg; 8bg; 8bg;}3; 4bg; 4s;
+phrase below 1: 2 til 2.75;
+phrase below 2: 2 til 2.75;
+
+			VERSE 2.; 4s; "near!";
+			VERSE 4s; {8; 8; 8;}3; 4; 4s; "Dis-tant and near.";
+endbar

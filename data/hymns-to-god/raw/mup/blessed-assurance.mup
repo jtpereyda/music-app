@@ -1,0 +1,286 @@
+// !Mup vs.6.9 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: 
+//	The Church Hymnal
+//	Editor C. Harold Lowden
+//	The Heidelberg Press
+//	Publishers for Discriminators
+//	200-14 N. Fifteenth St., Philadelphia
+//	Copyright: 1922
+//	Hymn No.: 145
+//		
+// Transcribed by: 
+//	Ted Gatza, Jr. 01/20/2014
+
+// Revisions:
+//	09/03/2022
+
+// HymnsToGod.org
+
+// ******************************************
+//8-1/2x11 page format
+
+top
+   	title bold (19) "" "Blessed Assurance" ""
+   	title (2)""
+   	title (11) "" "\f(TI)let us hold fast the confess|ion of our hope that it waver not;" ""   
+   	title (11) "" "\f(TI)for he is faithful that promised: - Heb. 10:23" ""   
+   	title (11) "D - 3 - MI" "" ""
+   	title (13) "Fanny J. Crosby" "" "Mrs. Jos. F. Knapp, 1873"
+ 
+footer
+   	title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.8
+	pad=0
+	vscheme=2f
+	scoresep=6
+	scorepad=0
+	lyricsdist = 1
+	rightmargin=.750
+	leftmargin=.750
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=9/8	
+	key=2#
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+midi all: 0 "tempo=105";
+//======================
+
+//1
+1 1:8fd; e; d; 4.s;;
+1 2: 8s; d;; 4.s;;
+2: 8ad; gd; fd; 4.s;;
+
+	VS "<1. >-1|Bless-ed as-";
+	VS "<2. >-1|Per-fect sub-";
+	VS "<3. >-1|Per-fect sub-";
+bar
+
+//2
+1: 4.af;; 8gd; ad; bd;
+2: 4.ad;; 8bd; fd; gd;
+
+	VS "sur-ance, Je-sus is";
+	VS "mis-sion, per-fect de-";
+	VS "mis-sion, all is at";
+bar
+
+//3
+1: 4.ad tie;; 8s; s; s;
+2: 4.fd tie;; 8s; s; s;
+
+	VS "mine!";
+	VS "light,";
+	VS "rest,";
+dblbar
+newscore
+1: 4.s; s; 8af; fd; af;
+2: 4.s; s; 8ad; ; ;
+
+	VS "Oh, what a";
+	VS "Vis-ions of";
+	VS "I in my";
+bar
+
+//4
+1: 4.d+f; 4c+e; 8; be; ae; g#e;
+2: 4.ad; 4ae; 8; d+e; c+e; be;
+
+	VS "fore-taste of glo-ry di-";
+	VS "rap-ture now burst on my";
+	VS "Sav-iour am hap-py and";
+bar
+
+//5
+1 1: 4.ae tie;; 8s; s; s;
+1 2: 4.s;; 8s; s; s;
+2: 4.c+a- tie;; 8s; s; s;
+
+	VS "vine!";
+	VS "sight;";
+	VS "blest;";
+dblbar
+newscore
+1 1: 4.s; s; 8fd; e; d;
+1 2: 4.s; s; 8; d;;
+2: 4.s; s; 8ad; gd; fd;
+
+	VS "Heir of sal-";
+	VS "An-gels de-";
+	VS "Watch-ing and";
+bar
+
+//6
+1: 4.af;; 8gd; ad; bd;
+2: 4.ad;; 8bd; fd; gd;
+
+	VS "va-tion, pur-chase of";
+	VS "scend-ing, bring from a-";
+	VS "wait-ing, look-ing a-";
+bar
+
+//7
+1 1: 4.ad tie;; 8s; s; s;
+1 2: 4.s;; 8s; s; s;
+2: 4.fd tie;; 8s; s; s;
+
+	VS "God,";
+	VS "bove";
+	VS "bove,";
+dblbar
+newscore
+1 1: 4.s; s; 8d; e; fd;
+1 2: 4.s; s; 8d;; s;
+2: 4.s; s; 8fd; gd; ad;
+
+	VS "Born of His";
+	VS "Ech-oes of";
+	VS "Filled with His";
+bar
+
+//8
+1 1: 4.ge; eb-; 8d; ec; ca-;
+1 2: 4.s;; 8d; s;;
+2: 4.bg-; gg-; 8fa-; ga-;;
+
+	VS "Spir-it, washed in His";
+	VS "mer-cy, whis-pers of";
+	VS "good-ness, lost in His";
+bar
+
+//9
+1: 4.da- tie;; s;
+2: 4.fd tie;; s;
+
+	VS "blood.";
+	VS "love.";
+	VS "love.";
+dblbar
+newscore
+//10
+REFRAIN
+1: 8af;;; 4.s;;
+2: 8d+d;;; 4.s;;
+
+	VS "This is my";
+bar
+
+//11
+1: 4.d+f; af; 8bg;;;
+2: 4. ad; d+d; 8d+g;;;
+
+	VS "sto-ry, this is my";
+bar
+
+//12
+1: 4.af tie;; 8s; s; s;
+2: 4.d+d tie;; 8s; s; s;
+
+	VS "song,";
+dblbar
+newscore
+1: 4.s; s; 8af;;;
+2: 4.s; s; 8d+d;;;
+
+	VS "Prais-ing my";
+bar
+
+//13
+1: 4.bg; d+a; 8c+a;; bg#;
+2: 4.d+g; d+f; 8e+e;;;
+
+	VS "Sav-iour all the day";
+bar
+
+//14
+1: 4.c+a tie;; 8s; s; s;
+2 1: 4.e+a tie;; 8s; s; s;
+2 2: 4.s;; 8s; s; s;
+
+	VS "long;";
+dblbar
+newscore
+1: 4.s; s; 8c+g; d+g; e+g;
+2 1: 4.s; s; 8a; b; c+a;
+2 2: 4.s; s; 8a;; s;
+
+	VS "This is my";
+bar
+
+//15
+1: 4.d+f; af; 8bg; af; bg;
+2: 4.d+d;; 8;;;
+
+	VS "sto-ry, this is my";
+bar
+
+//16
+1 1: 4.af tie;; 8s; s; s;
+1 2: 4.s;; 8s; s; s;
+2: 4.d+d tie;; 8s; s; s;
+
+	VS "song,";
+dblbar
+newscore
+1 1: 4.s; s; 8d; ce; fd;
+1 2: 4.s; s; 8d; s;;
+2: 4.s; s; 8af; ae; ad;
+
+	VS "Prais-ing my";
+bar
+
+//17
+1 1: 4.ge; eb-; 8.d; 16ec; 8ca-;
+1 2: 4.s;; 8.d; 16s; 8;
+2: 4.bg-; gg-; 8.fa-; 16ga-; 8ea-;
+
+	VS "Sav-iour all the day";
+bar
+
+//19
+1: 4.da- tie;; 4.s;
+2: 4.fd tie;; 4.s;
+
+	VS "long.";
+endbar

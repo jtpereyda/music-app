@@ -1,0 +1,256 @@
+// !Mup vs.7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 93
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 10/24/2022
+
+// Revisions:
+//	07/30/2025 [1] Corrected spelling in second verse first measure.
+//		   [2] Corrected spelling mistake in scripture.
+
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Jesus Is Calling" ""
+   title (2)""
+   title (11)"" "\f(TI)...Today if ye shall hear his voice," ""
+   title (11)"" "\f(TI)Harden not your hearts... - Heb. 3:7-8" ""
+   title (11) "C - 2 - SOL" "" ""
+   title (13) "Fanny J. Crosby, 1883" "" "George C. Stebbins, 1883"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+//==========================
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+//==========================
+staffs=2
+	time=6/8	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+// ****************************************
+//6"x9"page size
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+//Verse 1
+
+//1
+1: 8eg; ; ; ; 8ce; 8df;
+2: 8cc+; ; ; ; 8cg; ; 
+	VS1 "<1. >-1|Je-sus is ten-der-ly";
+	VS1 "<2. >-1|Je-sus us call-ing the";
+	VS1 "<3. >-1|Je-sus is wait-ing, oh,";
+	VS1 "<4. >-1|Je-sus is plead-ing, oh,";
+bar
+
+//2
+1: 8eg; fa; fb; 4.ec+;
+2: 8cc+; ; ; 4.cg;
+
+	VS1 "call-ing thee home\(emdash)";
+	VS1 "wea-ry to rest\(emdash)";
+	VS1 "come to Him now\(emdash)";
+	VS1 "list to His voice\(emdash)";
+bar
+
+//3
+1: 8fc+; fb; fa; 4.fb;
+2 1: 8g; gd+; ; 4.;
+2 2: 8g; 8s; 2s;
+
+	VS1 "Call-ing to-day,";
+	VS1 "Call-ing to-day,";
+	VS1 "Wait-ing to-day,";
+	VS1 "Hear Him to-day,";
+bar
+
+//4
+1: 8fa; eg; d#f#; 4.eg;
+2: 8cc+; ; ; 4.;
+
+	VS1 "call-ing to-day;";
+	VS1 "call-ing to-day;";
+	VS1 "wait-ing to-day;";
+	VS1 "hear Him to-day;";
+bar
+
+//5
+1: 8eg; ; ; ; ce; df;
+2: 8cc+; ; ; ; cg; ; 
+
+	VS1 "Why from the sun-shine of";
+	VS1 "Bring Him thy bur-den and";
+	VS1 "Come with thy sins, at His";
+	VS1 "They who be-lieve on His";
+bar
+
+//6
+1: 8eg; fa; fb; 4.ec+;
+2: 8cc+; ; ; 4.cg;
+
+	VS1 "love wilt thou roam?";
+	VS1 "thou shalt be blest;";
+	VS1 "feet low-ly bow;";
+	VS1 "name shall re-joice;";
+bar
+
+//7
+1: 8db; da; db; f#d+; fc+; fa;
+2: 8dg; df#; dg; da; dd+; dc+;
+
+	VS1 "Far-ther and far-ther a-";
+	VS1 "He will not turn thee a-";
+	VS1 "Come, and no long-er de-";
+	VS1 "Quick-ly a-rise and a-";
+bar
+
+//8
+1 1: 4.g tie; 4g; 8r;
+1 2: 4.g slur; 4f; 8s;
+2: 4.gb tie; 4gb; 8r;
+
+	VS1 "way?";
+	VS1 "way.";
+	VS1 "lay.";
+	VS1 "way.";
+dblbar
+
+//9
+REFRAIN
+1: 4.ec+ tie; 8ec+; eb; ea;
+2: 4cg; 8; ; ; ;
+	VS1 "<> <> <>";
+	VS1 "Call-ing to-";
+	VS21 "Call-ing, call-ing to-";
+bar
+
+//10
+1: 4.fb tie; 4fb; 8r;
+2: 4dg; 8; 4; 8r;
+
+	VS1 "<>";
+	VS1 "day,";
+	VS21 "day, to-day;";
+bar
+
+//11
+1: 4.fd+ tie; 8fd+; ec+; db;
+2 1: 4gb; 8; ; gc+; g;
+2 2: 2s; 8s; 8g;
+
+	VS1 "call-ing to-";
+	VS21 "Call-ing, call-ing to-";
+bar
+
+//12
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4cg; 8; 4; 8r;
+
+	VS1 "day,";
+	VS21 "day, to-day;";
+bar
+
+//13
+1: 4.gb&e+ tie; 8gbe+; 8fbd+; 8ebc+;
+2: 8.cc+; 16; 8; ; ; ;
+
+	VS1 "Je-sus is";
+	VS21 "Je-sus is ten-der-ly";
+bar
+
+//14
+1: 4.ac+ tie; 8ac+; gbn; fa;
+2: 8fc+; ; ; 4; 8;
+
+	VS1 "call-ing, is";
+	VS 8; 8; 8; 4; 8s; "call-ing to-day,";
+bar
+
+//15
+1 1: 8.eg; 16; 8; g; fa; fb;
+1 2: 4.s; 8f; 4s;
+2: 8.gc+; 16; 8; gb; gc+; gd+;
+
+	VS1 "ten-der-ly call-ing to-";
+bar
+
+//16
+1: 4.ec+ tie; 4ec+; 8r;
+2: 4.cc+ tie; 4cc+; 8r;
+
+	VS1 "day.";
+endbar
+
+
+

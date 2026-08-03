@@ -1,0 +1,203 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: His Worthy Praise
+//		A Collection of Sundat School Songs
+//		Edited bu E. S. Lorenz and Ira B. Wilson
+//		Pub. by Lorenz Publishing Co.
+//		Dayton, Ohio
+//		150 Fifth Avenue, New York
+//		218 S. Wabash Ave., Chicago
+//		Copyright: 1915
+//		Hymn No.: 21
+
+// Transcribed by: Ted Gatza, Jr. 07/24/10
+// HymnsToGod.org
+
+// ************************************
+
+top
+   title bold (19) "" "Jesus Remembers You" ""
+   title (2)""
+   title (11) "G - 2 - SOL" "\s(18)\f(TI)\:Remember\ me,\ O\ Jehovah,\ with\ t\|he\ favor\ that\ thou\ bearest\ unto thy\ people;\ Oh\ visit\ me\ wit\|h\ thy\ salvation,\ -\ Ps.\ 106:4"""
+   title (13) "Francis McKinnon Morton" " " "E. S. Lorenz, 1915"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=6/8	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 4.s; 4s; 8db-;
+2: 4.s; 4s; 8gg-;
+
+
+			lyrics 1: 4.s; 4s; 8; "<1. >-1|There's";
+			lyrics 1: 4.s; 4s; 8; "<2. >-1|There's";
+			lyrics 1: 4.s; 4s; 8; "<3. >-1|There's";
+			lyrics 1: 4.s; 4s; 8; "<4. >-1|There's";
+bar
+//2
+1: 8.gb-; 16gb-; 8gb-; 8.fb-; 16fb-; 8fb-;
+2: 8.dg-; 16dg-; 8dg-; 8.dg-; 16dg-; 8dg-;
+
+			lyrics 1: "nev-er a breath of your";
+			lyrics 1: "nev-er a cry of your";
+			lyrics 1: "nev-er a ten-der tho't";
+			lyrics 1: "nev-er a path that your";
+bar
+//3
+1: 4eb-; 8ec; 4db-; 8db-;
+2: 4eg-; 8fg-; 4gg-; 8gg-;
+
+			lyrics 1: "pray'r is lost, You";
+			lyrics 1: "soul for-got, How-";
+			lyrics 1: "of your mind But";
+			lyrics 1: "steps may lead, But";
+bar
+//4
+1: 8.gb-; 16ge; 8ge; 4af; 8af;
+2: 8.ge; 16be; 8be; 4d+d; 8d+d;
+
+			lyrics 1: "have His sweet prom-ise";
+			lyrics 1: "ev-er so faint it";
+			lyrics 1: "comes from the Sav-ior's";
+			lyrics 1: "Je-sus is wait-ing";
+bar
+//5
+1: 4.bg tie; 4bg; 8bfn;
+2: 4.d+g tie; 4d+g; 8d+g;
+
+			lyrics 1: "true; That";
+			lyrics 1: "be; And";
+			lyrics 1: "love; And";
+			lyrics 1: "there, To";
+bar
+//6
+1: 8.c+e; 16c+e; 8c+e; 8ec; 8ge; 8ae;
+2: 8.c+c; 16gc; 8gc; 8gc; 8gc; 8gc;
+
+			lyrics 1: "there in the midst of His";
+			lyrics 1: "ne'er on this earth is so";
+			lyrics 1: "nev-er a deed that is";
+			lyrics 1: "give you the strength that your";
+bar
+//7
+1: 4bd; 8bd; 4db-; 8gd;
+2: 4gg-; 8gg-; 4gg-; 8bg-;
+
+			lyrics 1: "an-gel host, The";
+			lyrics 1: "drear a spot, But";
+			lyrics 1: "true and kind. But";
+			lyrics 1: "soul shall need, And";
+bar
+//8
+1: 8fd; 8ad; 8gd; 4fd; 8ec#;
+2: 8aa-; 8fa-; 8ba-; 4aa-; 8ga-;
+			
+			lyrics 1: "Sav-ior re-mem-bers";
+			lyrics 1: "God in his love can";
+			lyrics 1: "links you to heav'n a-";
+			lyrics 1: "an-swer your ev-'ry";
+bar
+//9
+1 1: 4.d tie; 4d; 8r;
+1 2: 4.d tie; 4d; 8s;
+2: 4.fd tie; 4fd; 8r;
+
+			lyrics 1: "you.";
+			lyrics 1: "see.";
+			lyrics 1: "bove.";
+			lyrics 1: "pray'r.";
+dblbar
+//10
+1: 4.c+f; 4bf; 8ad;
+2: 4.e+d; 4d+d; 8c+d;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"Je-sus re-";
+bar
+//11
+1 1: 4ad; 8gd; 4.d;
+1 2: 4s; 8s; 4.d;
+2: 4c+g; 8bg; 4.bg;
+
+			lyrics 1: [c]"mem-bers you!";
+bar
+//12
+1: 4.d+g; 4c+f; 8bg;
+2: 4.d+b; 4d+a; 8d+g;
+
+			lyrics 1: [c]"Je-sus re-";
+bar
+//13
+1 1: 4bg; 8af; 4af; 8d;
+1 2: 4s; 8s; 4s; 8c;
+2: 4d+d; 8d+d; 4d+d; 8fd;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: [c]"mem-bers you! Yes,";
+bar
+//14
+1: 8.db-; 16gd; 8gd; 8gd; 8ad; 8bfn;
+2 1: 8.g; 16bg; 8bg; 8bg; 8c+g; 8d+g;
+2 2: 8.g; 16s; 8s; 8s; 8s; 8s;
+
+			lyrics 1: [c]"there in the midst of his";
+bar
+//15
+1: 4c+e; 8c+e; 4ec; 8c+e;
+2: 4c+c; 8gc; 4gc; 8gc;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			lyrics 1: [c]"an-gel host, The";
+bar
+//16
+1: 16bd; 8.d+g; 8c+g; 4bg; 8ad;
+2: 16gd; 8.bd; 8e+d; 4d+d; 8c+d;
+
+			lyrics 1: [c]"Sav-ior re-mem-bers";
+bar
+//17
+1: 4.gd tie; 4gd; 8s;
+2: 4.bg- tie; 4bg-; 8s;
+
+			lyrics 1: [c]"you!";
+endbar

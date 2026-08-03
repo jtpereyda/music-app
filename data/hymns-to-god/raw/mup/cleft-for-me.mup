@@ -1,0 +1,209 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs of Redeeming Love
+//		Edited by: Jno. R. Sweeney,
+//		C. C. McCabe, T. C. O'Kane,
+//		W. J. Kirkpatrick.
+//		Philadelphia: John J. Hood. 1018 Arch Street
+//		Cincinnati: Walden & Stowe, St. Louis & Chicago
+//		Copyright 1882	
+//		Hymn no. 71
+
+// Transcribed by: Ted Gatza, Jr. 02/01/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Cleft for Me" ""
+   title (2)""
+   title (11) "A- 3- MI" "\s(17)\f(TI)\:And\ a\ man\ shall\ be\ as\ a\ hidin\|g-place\ from\ the\ wind,\ ...\ as the\ shade\ of\ a\ great\ rock\ i\|n\ a\ weary\ land.\ -\ Is.\ 32:2" ""
+   title (13) "Fanny J. Crosby" "" "T. C. O'Kane, 1879"
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=80";
+
+//1
+1: 2s; 8.ca-; 16db-;
+2: 2s; 8.ea-; 16ea-;
+
+			lyrics 1: "<1. >-1|Might-y";
+			lyrics 1: "<2. >-1|Of the";
+			lyrics 1: "<3. >-1|Might-y";
+			lyrics 1: "<4. >-1|When I";
+bar
+//2
+1: 4.ec; 8fd; 8.ec; 16ae;
+2: 4.aa-; 8aa-; 8.aa-; 16c+a-;
+
+			
+			lyrics 1: "Rock, whose tow-ring";
+			lyrics 1: "springs that from thee";
+			lyrics 1: "Rock, the pil-grim's";
+			lyrics 1: "near the stream of";
+bar
+//3
+1: 2c+e; 8.c+e; 16be#;
+2: 2aa-; 8.aa-; 16gc;
+
+			lyrics 1: "form Looks a-";
+			lyrics 1: "burst, Let me";
+			lyrics 1: "home, Re-fuge";
+			lyrics 1: "death, When I";
+bar
+//4
+1: 4.af; 8af; 8.ge; 16fd;
+2: 4.fd; 8ad; 8.ad; 16ad;
+
+			lyrics 1: "bove the frown-ing";
+			lyrics 1: "drink and quench my";
+			lyrics 1: "from the bil-low's";
+			lyrics 1: "feel its chil-ly";
+bar
+//5
+1: 4fd slur; 4ec; 8.ca-; 16db-;
+2: 2aa-; 8.ea-; 16ea-;
+
+			lyrics 1: "storm: Rock a-";
+			lyrics 1: "thirst; Wea-ry,";
+			lyrics 1: "foam, Rock, by";
+			lyrics 1: "breath, Rock, where";
+bar
+//6
+1: 4.ec; 8fd; 8.ec; 16ae;
+2: 4.aa-; 8aa-; 8.aa-; 16c+a-;
+
+			lyrics 1: "mid the des-ert";
+			lyrics 1: "faint-ing, toil op-";
+			lyrics 1: "count-less mil-lions";
+			lyrics 1: "all my hopes a-";
+bar
+//7
+1: 2c+e; 8.bf; 16c+f;
+2: 2aa-; 8.ad; 16a#c;
+
+			lyrics 1: "waste, To thy";
+			lyrics 1: "pressed, In thy";
+			lyrics 1: "blest, In thy";
+			lyrics 1: "bide, In thy";
+bar
+newscore
+//8
+1: 4.d+f; 8ge; 8.fd#; 16gdn;
+2: 4.bb-; 8be; 8.be; 16be;
+
+			lyrics 1: "shad-ow now I";
+			lyrics 1: "shad-ow let me";
+			lyrics 1: "shad-ow let me";
+			lyrics 1: "shad-ow let me";
+bar
+//9
+1: 2ac; 4s;
+2: 2aa-;4s;
+
+			lyrics 1: "haste.";
+			lyrics 1: "rest.";
+			lyrics 1: "rest.";
+			lyrics 1: "hide.";
+dblbar
+//10
+1: 8.b-e; 16ge; 2s;
+2: 8.ge; 16be; 2s;
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Un-to";
+bar
+//11
+1 1: 4.b slur; 8d+; 8.c+e; 16bd;
+1 2: 2g; 8.s; 16s;
+2 1: 4.d+ slur; 8b; 8.ae; 16ge;
+2 2: 2e; 8.s; 16s;
+
+			lyrics 1: [c]"thee, un-to";
+bar
+//12
+1: 2ac; 8.ae; 16be;
+2: 2aa-; 8.c+a-; 16d+a-;
+
+			lyrics 1: [c]"thee, Pre-cious";
+bar
+//13
+1: 4.ae; 8ge; 8.fd#; 16ge;
+2: 4.c+a-; 8bb-; 8.bb-; 16bb-;
+
+			lyrics 1: [c]"Sa-viour, now I";
+bar
+//14
+1 1: 4e slur; 4d; 8.ca-; 16db-;
+1 2: 2b-; 8.s; 16s;
+2: 2gee-; 8.ea-; 16ea-;
+
+			lyrics 1: [c]"flee; \"Rock of";
+bar
+//15
+1: 4.ec; 8fd; 8.ec; 16ae;
+2: 4.aa-; 8aa-; 8.aa-; 16c+a-;
+
+			lyrics 1: [c]"A-ges, cleft for";
+bar
+//16
+1: 2c+e; 8.bf; 16c+f;
+2: 2aa-; 8.ad; 16a#c;
+
+			lyrics 1: [c]"me. let me";
+bar
+//17
+1 1: 4.d+f; 8ge; 8.f; 16ge;
+1 2: 4.s; 8s; 8.e; 16s;
+2: 4.bb-; 8be; 8.d+e; 16be;
+
+			lyrics 1: [c]"hide my-self in";
+bar
+//18
+1: 2ae; 4s;
+2: 2c+a-; 4s;
+
+			lyrics 1: [c]"thee.\"";
+endbar

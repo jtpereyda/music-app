@@ -1,0 +1,240 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1895
+//		Hymn No.: 72
+//		
+// Transcribed by: Ted Gatza, Jr. 07/19/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Stand Firm, Be Not Afraid" ""
+   title (2)""
+   title (11) "A - 4 - SOL" "\s(17)\f(TI)\:Be\ strong\ and\ of\ good\ courage;\ be\ not\|\ affrighted,\ neither\ be\ thou\ dismayed: for\ Jehovah\ thy\ God\ is\ with\ thee\ wh\|ithersoever\ thou\ goest.\ -\ Josh.\ 1:9" ""   
+   title (13) "Gertrude W. Seibert" "" "M. L. McPhail, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+//1
+1 1: 4e; 2.s;
+1 2: 4e; 2.s;
+2 1: 4e; 2.s;
+2 2: 4e; 2.s;
+
+
+			VERSE "<1. >-1|Ye";
+			VERSE "<2. >-1|Lay";
+			VERSE "<3. >-1|Be";
+			VERSE "<4. >-1|We";
+			VERSE "<5. >-1|This";
+bar
+//2
+1 1: 4a; 8c+ bm; b ebm; 4a; e;
+1 2: 4a; 8c+ bm; b ebm; 4a; e;
+2 1: 4a; 8c+ bm; b ebm; 4a; e;
+2 2: 4a; 8c+ bm; b ebm; 4a; e;
+
+			VERSE 4; 4; 4; 4; "sol-diers of the";
+			VERSE 4; 4; 4; 4; "hold up-on the";
+			VERSE 4; 4; 4; 4; "brave, be firm, be";
+			VERSE 4; 4; 4; 4; "soon shall see the";
+			VERSE 4; 4; 4; 4; "hope sup-ports us";
+bar
+//3
+1 1: 2a tie; 4; ec;
+1 2: 4e ph; f; e eph; s;
+2 1: 4c+ ph; d+; c+ eph; aa-;
+2 2: 2a tie; 4; s;
+
+			VERSE 2; 4s; 4; "cross, Why";
+			VERSE 2; 4s; 4; "sword, Turn";
+			VERSE 2; 4s; 4; "strong, Be";
+			VERSE 2; 4s; 4; "day When";
+			VERSE 2; 4s; 4; "here; It";
+bar
+//4
+1: 4fd; d+d; c+e; bd;
+2: 4ad; bb-; ae; ge;
+
+			VERSE "should ye doubt or";
+			VERSE "not to left or";
+			VERSE "fear-less in the";
+			VERSE "all our toils shall";
+			VERSE "makes our bur-dens";
+bar
+//5
+1 1: 2.ac; 4c;
+1 2: 2.s; 4c;
+2 1: 2.aa-; 4c;
+2 2: 2.s; 4c;
+
+			VERSE "fear? Ye";
+			VERSE "right, And";
+			VERSE "fight, The";
+			VERSE "cease; When";
+			VERSE "light; 'Twill";
+
+bar
+//6
+1 1: 4f; 8a bm; g ebm; 4f; c;
+1 2: 4f; 8a bm; g ebm; 4f; c;
+2 1: 4f; 8a bm; g ebm; 4f; c;
+2 2: 4f; 8a bm; g ebm; 4f; c;
+
+			VERSE 4; 4; 4; 4; "can-not know de-";
+			VERSE 4; 4; 4; 4; "stand-ing fast up-";
+			VERSE 4; 4; 4; 4; "night of bat-tle";
+			VERSE 4; 4; 4; 4; "we shall cast our";
+			VERSE 4; 4; 4; 4; "serve our droop-ing";
+bar
+//7
+1 1: 4f; 8a bm; g ebm; 4f;;
+1 2: 4f; 8a bm; g ebm; 4f;;
+2 1: 4f; 8a bm; g ebm; 4f;;
+2 2: 4f; 8a bm; g ebm; 4f;;
+
+			VERSE 4; 4; 4; 4; "feat or loss, With";
+			VERSE 4; 4; 4; 4; "on His word, Be";
+			VERSE 4; 4; 4; 4; "may seem long, But";
+			VERSE 4; 4; 4; 4; "arms a-way, And";
+			VERSE 4; 4; 4; 4; "hearts to cheer, Till";
+bar
+//8
+1: 4. bd#; 8ad; 4gd; fd;
+2: 4.bb-; 8; 4; ab-;
+
+			VERSE "Christ, our Cap-tain,";
+			VERSE "vic-tors thro' His";
+			VERSE "sweet the morn-ing's";
+			VERSE "dwell in end-less";
+			VERSE "faith shall end in";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			VERSE "near.";
+			VERSE "might.";
+			VERSE "light.";
+			VERSE "peace.";
+			VERSE "sight.";
+dblbar
+newscore
+//10
+1 1: 4e; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Stand";
+bar
+//11
+1 1: 2.d+; 4d+d;
+1 2: [dist -4]4r; e; e; s; 
+2: 4r; ge; af; bg;
+
+			VERSE "firm, be";
+			VERSE 4s; 4; 4; 4s; "Stand firm,";
+bar
+//12
+1 1: 4d+d; 8c+ bm; b ebm; 4c+e; f;
+1 2: 4s; e; s; r;
+2 1: 4a;;; r;
+2 2: 4a;;; s;
+
+			VERSE 4; 4; 4; 4; "not a-fraid, Cour-";
+bar
+//13
+1 1: 2.e+; 4e+f;
+1 2: [dist -4]4r; f;; s;
+2: 4r; a#f; bg#; c+a#;
+
+			VERSE "age-ous";
+			VERSE 4s; 4; 4; 4; "Cour-age-ous";
+bar
+//14
+1 1: 4e+f; 8d+ bm; c+ ebm; 4d+f; d+fn;
+1 2: 4s; f; s;;
+2 1: 4b;;;;
+2 2: 4b;;; a;
+
+			VERSE 4; 4; 4; 4; "not dis-mayed, For";
+bar
+//15
+1: 4d+e;;;;
+2: 4bg; ge; af; bg;
+
+			VERSE "one with God must";
+bar
+//16
+1 1: 4d+e; 8c+ bm; b ebm; 4c+e; e+gn;
+1 2: 4s; e; s;;
+2 1: 4a;;; ac;
+2 2: 4a;;; s;
+
+			VERSE 4; 4; 4; 4; "al-ways win A-";
+bar
+//17
+1: 4af; d+fn; c+e; bd;
+2: 4ad; ab-; ae; ge;
+
+			VERSE "gainst the host of";
+bar
+//18
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "sin.";
+endbar

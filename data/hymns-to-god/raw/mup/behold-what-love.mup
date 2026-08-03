@@ -1,0 +1,237 @@
+// !Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gipsy Smith's
+//		Mission Hymnal
+//		Published by the Biglow and Main Co.
+//		lakeside Building, Chicage
+//		135 Fifth Avenue, New York
+// 		Copyright unknown
+//		Hymn no. 326
+
+// Transcribed by: Ted Gatza, Jr. 01/14/2010; Rev. 10/05/2021
+// HymnsToGod.org
+
+// ***********************************
+
+top
+
+   title bold (19) "" "Behold, What Love" ""
+   title (2)""
+   title (11) "C - 4 - DO" "\s(17)\f(TI)\:Behold,\ what\ manner\|\ of\ love\ the\ Father hath\ bestowed\ upo\|n\ us,\ -\ 1\ Jn.\ 3:1"""
+   title (13) "M.S.S." " " "James McGranahan,1879"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+// ***********************************
+staffs=2
+	time=4/4	
+	key=2#
+
+staff 2
+	key=c major
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4s; 4s; 4s; 8c bm; 8e ebm;
+2: 4s; 4s; 4s; 4ec;
+
+
+			lyrics 1: 4s; 4s; 4s; 4; "<1. >-1|Be-";
+			lyrics 1: 4s; 4s; 4s; 4; "<2. >-1|No";
+			lyrics 1: 4s; 4s; 4s; 4; "<3. >-1|What";
+			lyrics 1: 4s; 4s; 4s; 4; "<4. >-1|With";
+bar
+//2
+1: 4gc; 4gd; 4ge; 4c+d#;
+2: 4ec; 4fc; 4gc; 4af#c;
+
+			lyrics 1: "hold, what love, what";
+			lyrics 1: "lon-ger far from";
+			lyrics 1: "we in glo-ry";
+			lyrics 1: "such a bless-ed";
+bar
+//3
+1: 4.ge; 8fd; 4ec; 8c bm; 8d ebm;
+2 1: 4.gc; 8gc; 4gc; 8e bm; 8f ebm;
+2 2: 4.s; 8s; 4s; 4c;
+
+			lyrics 1: 4.; 8; 4; 4; "bound-less love, The";
+			lyrics 1: 4.; 8; 4; 4; "Him, but now By";
+			lyrics 1: 4.; 8; 4; 4; "soon shall be, It";
+			lyrics 1: 4.; 8; 4; 4; "hope in view, We";
+bar
+
+//4
+1: 4ec; 8ge bm; 8fd ebm; 4ec; 4db-;
+2 1: 4gc; 4c+c; 4c+g-; 8g bm; 8f ebm;
+2 2:4s; 4s; 4s; 4g-;
+
+			lyrics 1: 4; 4; 4; 4; "Fa-ther hath be-";
+			lyrics 1: 4; 4; 4; 4; "\"pre-cious blood\" made";
+			lyrics 1: 4; 4; 4; 4; "doth not yet ap-";
+			lyrics 1: 4; 4; 4; 4; "would more ho-ly";
+
+bar
+//5
+1 1: 2.c; 8ec bm; 8ge ebm;
+1 2: 2.c; 4s;
+2 1: 2.ec; 8g bm; 8c+ ebm;
+2 2: 2.s; 4c;
+
+			lyrics 1: 2.; 4; "stowed On";
+			lyrics 1: 2.; 4; "nigh; Ac-";
+			lyrics 1: 2.; 4; "pear; But";
+			lyrics 1: 2.; 4; "be, More";
+bar
+//6
+1: 4af; 4af; 4af; 8fc bm; 8af ebm;
+2: 4c+f; 4c+f; 4c+f; 4af;
+
+			lyrics 1: 4; 4; 4; 4; "sin-ners lost, that";
+			lyrics 1: 4; 4; 4; 4; "cept-ed in the";
+			lyrics 1: 4; 4; 4; 4; "when our prec-ious";
+			lyrics 1: 4; 4; 4; 4; "like our ris-en";
+bar
+//7
+1 1: 4c+e; 4c+e; 4c+e; 8g bm; 8c+ ebm;
+1 2: 4s; 4s; 4s; 4e;
+2 1: 4gc; 4gc; 4gc; 8c+ bm; g ebm;
+2 2: 4s; 4s; 4s; 4c;
+
+			lyrics 1: 4; 4; 4; 4; "we should be Now";
+			lyrics 1: 4; 4; 4; 4; "\"Well be-loved,\" Near";
+			lyrics 1: 4; 4; 4; 4; "Lord we see, We";
+			lyrics 1: 4; 4; 4; 4; "glo-rious Lord, Whose";
+bar
+//newscore
+//8
+1 1: 8b slur; 4d+; 8c+f#; 4bg; 4ad;
+1 2: 4.g; 8s; 4s; 4s;
+2 1: 8g slur; 4b; 8ad; 4d+d; 4c+d;
+2 2: 4.d; 8s; 4s; 4s; 
+
+			lyrics 1: "called the sons of";
+			lyrics 1: "to God's heart we";
+			lyrics 1: "shall His im-age";
+			lyrics 1: "face we soon shall";
+bar
+//9
+1: 2.gd; 4s;
+2: 2.bg; 4s;
+
+			lyrics 1: "God!";
+			lyrics 1: "lie.";
+			lyrics 1: "bear.";
+			lyrics 1: "see.";
+dblbar hidechanges
+//newscore 
+score time=12/8 ; key = c major
+music
+//10
+1 1: 2.s; 4.s; 4.g;
+1 2: 2.s; 4.s; 4.f;
+2 1: 2.s; 4.s; 4.g;
+2 2: 2.s; 4.s; 4.g;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"\"Be-";
+bar
+//11
+1: 2.c+e tie; 4c+e; 8c+e; 8c+e; 8bg; 8af;
+2: 2.gc tie; 4gc; 8gc; 8gc; 8gc; 8c+c;
+
+			lyrics 1: [c]"hold, what man-ner of";
+bar
+//12
+1: 2.ge tie; 4ge; 8ge; 8ac; 8gc; 8fc;
+2 1: 4c+c; 8c+c; 8c+c; 8c+e; 8c+g; 4c+; 8c+; 8c+f; 8bf; 8af;
+2 2: 4s; 8s; 8s; 8s; 8s; 4c+; 8c+; 8s; 8s; 8s; 
+
+			lyrics 1: "love!_ What man-ner of";
+			lyrics 1: 4s; 8; 8; 8; 8; 4; 8s; 8s; 8s; 8s; "What man-ner of love,";
+bar
+//13
+1: 4ec; 8ec; 4db-; 8ec; 4s; 8s; 4s; 8s;
+2: 4gc; 8gc; 4gg-; 8gg-; 4s; 8s; 4s; 8s;
+
+			
+			lyrics 1: "love the Fa-ther";
+
+
+invisbar
+newscore
+
+1: 4s; 8s; 4s; 8s; 4fd; 8ge; 4af; 8bg;
+2: 4s; 8s; 4s; 8s; 4gg-; 8c+g-; 4c+g-; 8c+g-;
+
+			
+			lyrics 1: "hath, be-stowed up-";
+
+
+bar
+//14
+1: 4.af; 2.ge; 4.ge;
+2: 4.c+c; 2.c+c; 4.c+c;
+
+			lyrics 1: "on us, That";
+bar
+//15
+1: 2.e+g tie; 4e+g; 8d+b&; 8c+a; 8bng; 8af;
+2: 2.c+c tie; 4c+c; 8c+c; 8c+f; 8c+f; 8c+f;
+
+			lyrics 1: "we,_ That we should be";
+bar
+newscore
+//16
+1: 2.ge tie; 4.; 8c+e bm; 8d+f ebm; 8e+g;
+2 1: 4c+c; 8c+c; 4c+e; 8c+g; 4.c+; 4gc; 8c+c;
+2 2: 4s; 8s; 4s; 8s; 4.c+; 4s; 8s;
+
+			lyrics 1: 2.; 4.s; 4; 8;"called_ Should be";
+			lyrics 1: 4s; 8; 4; 8; 4.; 4s; 8s; "the sons of God,";
+bar
+//17
+1 1: 4.d+f; 4.d+f; 4.c+e; 4.b;
+1 2: 4.s; 4.s; 4.s; 8d bm; 8e; f ebm;
+2 1: 4.af; 4.ad; 4.g; 4.gg-;
+2 2: 4.s; 4.s; 4.g; 4.s;
+
+			lyrics 1: "called the sons of";
+bar
+//18
+1: 2.c+e tie; 4.c+e; 4.s;
+2: 2.gc tie; 4.gc; 4.s;
+
+			lyrics 1: "God.\"";
+endbar

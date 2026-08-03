@@ -1,0 +1,315 @@
+//!Mup-Arkkra-6.8
+//http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Hallowed Songs (Newly Revised)
+//		By Phillip Phillips
+//		Published by Phillip Phillips
+//		DNew York, 37 Union Square, Broadway
+//		Cincinnati, Chicago, and St. Louis:
+//		Hitchcock and Walden
+//		Copyright 1871
+//		Hymn No. 184
+		
+// Transcribed by: Ted Gatza, Jr. 11/29/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I Love To Tell The Story" ""
+   title (2) ""
+   title (11)"" "\f(TI)And he suffered him not, but saith unto him, Go to thy house unto" ""
+   title (11)"" "\f(TI)thy friends, and tell them how great things the Lord hath done" ""
+   title (11)"" "\f(TI)for thee, and how he had mercy on thee. - Mark 5:19" ""
+
+   title (11)"A\(flat) - 4 - SOL" "" ""  
+   title (13) "Katherine Hankey, 1866" "" "William G. Fischer, 1869"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=1 //2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=a&
+
+
+staff 2
+	key=a&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// Set midi
+       midi all: 0 "tempo=100";
+
+// Enter music
+//============
+//1
+1: 4ce; 2.s;
+2: 4a-a; 2.s;
+	
+	VS "<1. >-1|I";
+	VS "<2. >-1|I";
+	VS "<3. >-1|I";
+	VS "<4. >-1|I";
+bar//2
+1: 4.ca; 8ce; 4; ca;
+2: 4.a-e; 8a-a; 4;;
+
+	VS "love to tell the";
+	VS "love to tell the";
+	VS "love to tell the";
+	VS "love to tell the";
+bar
+//3
+1: 4.e<d>c+<b>; 8db; 4ca; ea;
+2: 2a-a; 4; ca;
+
+	VS "sto-ry Of";
+	VS "sto-ry; More";
+	VS "sto-ry; 'Tis";
+	VS "sto-ry; For";
+bar
+//4
+1 1: 4.fa; 8df; 8b bm; a ebm; 4df;
+1 2: 4.s; 8s; 4f; s;
+2: 4.da; 8; 4;;
+
+	VS 4.; 8; 4; 4; "un-seen things a-";
+	VS 4.; 8; 4; 4; "won-der-ful it";
+	VS 4.; 8; 4; 4; "pleas-ant to re-";
+	VS 4.; 8; 4; 4; "those who know it";
+bar
+//5
+1 1: 2.ce; 4e;
+1 2: 2.s; 4e;
+2 1: 2.a-a; 4e;
+2 2: 2.s; 4e;
+
+	VS "bove, Of";
+	VS "seems Than";
+	VS "peat What";
+	VS "best Seem";
+bar
+//6
+1: 4.gb; 8f#an; 4gb; gc+;
+2: 4.ed+; 8ec+; 4ed+; ee+;
+
+	VS "Je-sus and His";
+	VS "all the gold-en";
+	VS "seems, each time I";
+	VS "hun-ger-ing and";
+bar
+//7
+1 1: 4gb; 2a; 8a bm; c+ ebm;
+1 2: 4s; 2a; 4e;
+2: 4ad+; 2ac+; 4ac+;
+
+	VS 4; 2; 4; "glo-ry Of";
+	VS 4; 2; 4; "fan-cies Of";
+	VS 4; 2; 4; "tell it, More";
+	VS 4; 2; 4; "thirst-ing To";
+bar
+//8
+1 1: 4.ae+; 8ec+; 8c+ bm; b ebm; 4ea;
+1 2: 4. s; 8; 4e; s;
+2: 4.ac+; 8a-a; 4; ca;
+
+	VS 4.; 8; 4; 4; "Je-sus and His";
+	VS 4.; 8; 4; 4; "all our gold-en";
+	VS 4.; 8; 4; 4; "won-der-ful-ly";
+	VS 4.; 8; 4; 4; "hear it like the";
+bar
+//9
+1: 2.eb; 4;
+2: 2.eg; 4;
+
+	VS "love. I";
+	VS "dreams. I";
+	VS "sweet. I";
+	VS "rest. And";
+bar
+//10
+1: 4.eb; 8ec+; 4ed+;;
+2: 4.eg; 8ea; 4eb;;
+
+	VS "love to tell the";
+	VS "love to tell the";
+	VS "love to tell the";
+	VS "when, in scenes of";
+bar
+//11
+1: 4ed+; 2ec+; 4;
+2 1: 4a-b; 2a-a; 4a;
+2 2: 4s; 2s; 4a;
+
+	VS "sto-ry, Be-";
+	VS "sto-ry, It";
+	VS "sto-ry, For";
+	VS "glo-ry, I";
+bar
+//12
+1: 4.ac+; 8gb; 4fa; 8gb bm; fa ebm;
+2: 4.fa; 8fb; 4fc+;;
+
+	VS 4.; 8; 4; 4; "cause I know 'tis";
+	VS 4.; 8; 4; 4; "did so much for";
+	VS 4.; 8; 4; 4; "some have nev-er";
+	VS 4.; 8; 4; 4; "sing the new, new";
+bar
+//13
+1: 2.eng; 4;
+2: 2.cc+; 4cb;
+
+	VS "true; It";
+	VS "me; And";
+	VS "heard The";
+	VS "song, 'Twill";
+bar
+//14
+1 1: 4.f; 8eng; 4fa; df;
+1 2: 4.f; 8s; 4;;
+2: 4.da; 8; 4;;
+
+	VS "sat-is-fies my";
+	VS "that is just the";
+	VS "mes-sage of sal-";
+	VS "be the old, old";
+bar
+//15
+1: 4df; 2ce; 4ea;
+2: 4a-a; 2; 4a-c+;
+
+	VS "long-ings as";
+	VS "rea-son I";
+	VS "va-tion From";
+	VS "sto-ry That";
+bar
+//16
+1 1: 4.gb; 8a; 4.ac+; 8eb;
+1 2: 4.s; 8a; 4.s; 8;
+2: 4.ed+; 8ec+; 4.ee+; 8ed+;
+
+	VS "noth-ing else would";
+	VS "tell it now to";
+	VS "God's own ho-ly";
+	VS "I have lov'd so";
+bar
+//17
+1: 2.ea; 4s;
+2: 2.a-c+; 4s;
+
+	VS "do.";
+	VS "thee.";
+	VS "word.";
+	VS "long.";
+dblbar
+newscore
+//18
+1: 4ce; 2.s;
+2: 4a-a; 2.s;
+CHORUS
+
+	VS "I";
+bar
+//19
+1 1: 4.e; 8eg; 4.eb; 8ec+;
+1 2: 4.e; 8s; 4.s; 8s;
+2: 4.eg; 8eb; 4.ed+; 8ee+;
+
+	VS "love to tell the";
+bar
+//20
+1: 4eb; 2ea; 4ea;
+2: 4a-d+; 2a-c+; 4ca;
+
+	VS "sto-ry, 'Twill";
+bar
+//21
+1: 4.fa; 8fd+; 4;;
+2: 4.da; 8; 4;;
+
+	VS "be my theme in";
+bar
+//22
+1: 4fd+; 2ec+; 4;
+2 1: 4a-a; 2; 4a;
+2 2: 4s; 2s; 4a;
+
+	VS "glo-ry, To";
+bar
+//23
+1 1: 4.ae+; 8ec+; 8c+ bm; 8b ebm; 4ea;
+1 2: 4.s; 8s; 4e; 4s;
+2: 4.ac+; 8a-a; 8a-a bm; 8b-g ebm; 4ca;
+
+	VS 4.; 8; 4; 4; "tell the old, old";
+bar
+//24
+1: 4fb; 2fa; 4df;
+2: 4da; 2; 4;
+
+	VS "sto-ry Of";
+bar
+//25
+1: 4ce; ca; 4.db; 8ca;
+2: 4ea; ; 4.eg; 8a-a;
+
+	VS "Je-sus and His";
+bar
+//26
+1: 2.ca; 4s;
+2: 2.a-a; 4s;
+
+	VS "love.";
+endbar

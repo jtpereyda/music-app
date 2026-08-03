@@ -1,0 +1,335 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Best Endeavor Hymns
+//		 Edited and Compiled by
+//		 I. Allen Sankey and John R. Clements
+//		 Especially for Use In
+//		 Christian Endeavor Societies Young People's
+//		 Meetings, Sunday Schools, and General Church Work
+//		 Published by The Biglow and Main Co.
+//		 Lakeside Building, Chicago
+//		 135 Fifth Avenue, New York
+//		 Copyright 1907
+//		 Hymn No.: 67
+//		
+// Transcribed by: Ted Gatza, Jr. 09/09/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "There Is Joy In My Soul" ""
+   title (2)""
+   title (11) "G - 3 - SOL" "\s(17)\f(TI)\:Now\ the\ God\ of\ hope\ fill\ you\ with\ \|all\ joy\ and\ peace\ in\ believing,\ that ye\ may\ abound\ in\ hope,\ in\ the\ pow\|er\ of\ the\ Holy\ Spirit.\ -\ Rom.\ 15:13" ""
+   title (13) "Fanny J. Crosby" "" "I. Allan Sankey, 1902"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1 1: 2s; 4d;
+1 2: 2s; 4d;
+2 1: 2s; 4d;
+2 2: 2s; 4d;
+
+			VERSE "<1. >-1|I";
+			VERSE "<2. >-1|I";
+			VERSE "<3. >-1|There's";
+
+bar
+//2
+1: 4db-; 4eb&-; 4fc;
+2: 4dg-; 4c#g-; 4e&g-;
+
+			VERSE "will not be";
+			VERSE "can-not be";
+			VERSE "joy that no";
+bar
+//3
+1 1: 4ab-; 4gd; 4e;
+1 2: 4s; 4s; 4d;
+2: 4dg-; 4gb-; 4gb&-;
+
+			VERSE "wea-ry, tho'";
+			VERSE "wea-ry when";
+			VERSE "lan-guage or";
+bar
+//4
+1: 4gc; 4.fc;8ec;
+2: 4aa-; 4.ad; 8gd;
+
+			VERSE "tri-als may";
+			VERSE "He is my";
+			VERSE "thought can ex-";
+bar
+//5
+1 1: 2fc; 4d;
+1 2: 2s; 4d;
+2: 2ad; 4fd;
+
+			VERSE "come, And";
+			VERSE "rest; What-";
+			VERSE "press, It";
+bar
+//6
+1: 4c+f; 4bf; 4af;
+2: 4ad; 4d+d; 4c+d;
+
+			VERSE "trou-bles be-";
+			VERSE "e'er my tempt-";
+			VERSE "comes from His";
+bar
+//7
+1: 4ec; 4fc; 4ac;
+2: 4fd; 4ad; 4fd;
+
+			VERSE "fore me I";
+			VERSE "a-tions may";
+			VERSE "pres-ence di-";
+bar
+//8
+1: 2.db- tie;
+2 1: 2.g tie;
+2 2: 2.g tie;
+
+			VERSE "see,_";
+			VERSE "be,_";
+			VERSE "vine;_";
+bar
+//9
+1: 2db-; 4db-;
+2 1: 2g; 4gg-;
+2 2: 2g; 4s;
+
+			VERSE 2s; 4; "But";
+			VERSE 2s; 4; "I'll";
+			VERSE 2s; 4; "And";
+bar
+//10
+1 1: 4ec; 4d#; 4ec;
+1 2: 4s; 4c; 4s;
+2: 4gc; 4fc; 4gc;
+
+			VERSE "count them as";
+			VERSE "trust in His";
+			VERSE "when in His";
+bar
+//11
+1: 4ae; 4ge; 4ec;
+2: 4c+c; 4c+c; 4gc;
+
+			VERSE "noth-ing com-";
+			VERSE "prom-ise be-";
+			VERSE "like-ness at";
+bar
+//12
+1: 4eb-; 4.db-; 8c#a-#;
+2: 4gg-; 4.gg-; 8eg-;
+
+			VERSE "pared with the";
+			VERSE "cause He has";
+			VERSE "last I a-";
+bar
+//13
+1 1: 2db-; 4d;
+1 2: 2s; 4d;
+2: 2gg-; 4gb-;
+
+			VERSE "love of";
+			VERSE "said: \"My";
+			VERSE "wake, Its";
+bar
+//14
+1: 4c#a-; 4ec; 4gc;
+2: 4ea-; 4ea-; 4ea-;
+
+			VERSE "Je-sus, my";
+			VERSE "grace is suf-";
+			VERSE "full-ness I";
+bar
+//15
+1 1: 4bc#; 4.ac; 8e;
+1 2: 4s; 4.s; 8e;
+2: 4aa-; 4.ea-; 8gc#;
+
+			VERSE "Sav-iour, to";
+			VERSE "fi-cient for";
+			VERSE "know will be";
+bar
+//16
+1: 2.ad tie;
+2: 2.fd tie;
+
+			VERSE "me._";
+			VERSE "thee.\"_";
+			VERSE "mine!_";
+bar
+//17
+1: 2ad; 4s;
+2: 2fd; 4s;
+
+dblbar
+//18
+1 1: 8b bm; 8c+ ebm; 2s;
+1 2: 4d; 2s;
+2 1: 8g bm; 8a ebm; 2s;
+2 2: 4g; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE 4; 2s; "<>";
+			VERSE 4; 2s; "I'll";
+			VERSE 4; 2s; "<>";
+bar
+//19
+1: [up]4d+g; 4c#+g; [up]4e+g;
+2 1: 4bg; 4a#; 4c+g;
+2 2: 4s; 4g; 4s;
+
+			VERSE 4; 4s; 4s; "<>";
+			VERSE "sing of His";
+			VERSE 4; 4s; 4s; "<>";
+bar
+//20
+1: [up]2d+g; 8gd; 8af;
+2: 2bg; 8d+b; 8d+a;
+
+			VERSE 2; 8s; 8s; "<>";
+			VERSE "love, of His";
+			VERSE 2; 8s; 8s; "<>";
+bar
+//21
+1 1: 4bg; 4a#; 4c+g;
+1 2: 4s; 4g; 4s;
+2: 4d+g; 4c#+g; 4e+g;
+
+			VERSE 4; 4s; 4s; "<>";
+			VERSE "won-der-ful";
+			VERSE 4; 4s; 4s; "<>";
+bar
+//22
+1: 2bg; 4bd;
+2 1: 2d+g; 4g;
+2 2: 2s; 4g;
+
+			VERSE 2; 4s; "<>";
+			VERSE "love, Tho'";
+			VERSE 2; 4s; "<>";
+bar
+//23
+1: 4d+f; 4af; 4g#e#;
+2: 4ad; 4c+d; 4bd;
+
+			VERSE "bil-lows like";
+bar
+//24
+1: 4af; 4bf; 4c+f;
+2: 4c+d; 4d+d; 4e+d;
+
+			VERSE "moun-tains may";
+bar
+//25
+1: 2.g~c+ slur;
+2: 2.g~e+ slur;
+
+			VERSE "roll;_";
+bar
+//26
+1: 2bg; [up]4d+g;
+2: 2d+g; 4bg;
+	
+			VERSE 2s; 4; "I";
+bar
+//27
+1: [up]4e+g; 4c+g; [up]4e+g;
+2: 4c+c; 4c+e; 4c+c;
+
+			VERSE "fear not the";
+bar
+//28
+1: [up]4d+g; 4bd; 4d+d;
+2 1: 4bg; 4g; 4bg;
+2 2: 4s; 4g; 4s;
+
+			VERSE "tem-pest, I";
+bar
+//29
+1: 4c+f; 4.af; [up]8c+a;
+2: 4ad; 4.d+d; 8d+f;
+			
+			VERSE "dread not the";
+bar
+//30
+1 1: 2bg; 4d;
+1 2: 2s; 4d;
+2: 2d+g; 4gb-;
+
+			VERSE "storm, For";
+bar
+//31
+1: 4ec; 4ae; 4ge;
+2: 4gc; 4c+a-; 4ac#;
+
+			VERSE "Je-sus gives";
+bar
+//32
+1: 4fd; 4.bf; 8af;
+2: 4ad; 4.d+d; 8c+d;
+
+			VERSE "joy to my";
+bar
+//33
+1 1: 2.g tie;
+1 2: 2.g tie;
+2: 2.bg- tie;
+
+			VERSE "soul.";
+bar
+//34
+1 1: 2g; 4s;
+1 2: 2g; 4s;
+2: 2bg-; 4s;
+
+endbar

@@ -1,0 +1,376 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Good News Or Songs And Tunes For Sunday Schools, Christian Associations, And Special Meetings
+//	Edited By R. M. Mcintosh.
+//	Boston: Published By Oliver Ditson & Company.
+//	New York: C. H. Ditson & Co. Chicago: Lyon & Healy. Phil.: J. E. Ditson A Oo.
+//	Copyright: 1876
+//	Hymn No.: 117
+
+// Transcribed by: Ted Gatza, Jr. 11/23/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=16
+	extendlyrics=y
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=g
+
+staff 2
+	key=g
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "There's A Fountain Free" ""
+   title (2) ""
+   title (11) "" "\f(TI)...but whosoever drinketh of the water that I shall give him shall never thirst; but the water" "" 
+   title (11) "" "\f(TI)that I shall give him shall become in him a well of water springing up unto eternal life. - John 4:14 " ""
+   title (11) "" 
+   title (11) "G - 4 - DO" "" ""
+   title (13) "Mrs. Mary B. C. Slade" "" "Asa Brooks Everett, 1875"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1 1: 2.s; 8g; a;
+1 2: 2.s; 8g; ;
+2: 2.s; 8gb; gc+;
+
+	VS "<1. >-1|There's a";
+	VS "<2. >-1|There's a";
+	VS "<3. >-1|There's a";
+	VS "<4. >-1|There's a";
+
+bar
+
+//2
+1: 4gb; ; ; 8ac+; gb;
+2: 4gd+; ; ; 8fd+; gd+;
+
+	VS "foun-tain free, 'tis for";
+	VS "liv-ing stream, with a";
+	VS "liv-ing well and its";
+	VS "rock that's cleft and no";
+bar
+
+//3
+1: 4fa; ; ; 8s; ;
+2: 4dd+; ; ; 8s; ;
+
+	VS "you and me,";
+	VS "crys-tal gleam,";
+	VS "wat-ers swell,";
+	VS "soul is left,";
+invisbar
+newscore
+
+//3
+1: 4s; ; ; 8gb; fa;
+2: 4s; ; ; 8dd+; dc+;
+
+	VS "Let us";
+	VS "From the";
+	VS "And e-";
+	VS "That may";
+bar
+
+//4
+1 1: 4eg; ; ; 8f; eg;
+1 2: 4s; ; ; 8e; s;
+2: 4eb; ; ; 8; ; 
+
+	VS "haste, oh haste to its";
+	VS "throne of life now it";
+	VS "ter-nal life they can";
+	VS "not its pure wa-ters";
+bar
+
+//5
+1: 2.fa; 8s; ;
+2: 2.dd+; 8s; ;
+
+	VS "brink;";
+	VS "flows;";
+	VS "give;";
+	VS "share;";
+invisbar
+newscore
+
+//5
+1 1: 2.s; 8g; a;
+1 2: 2.s; 8g; ;
+2: 2.s; 8gb; gc+;
+
+	VS "'Tis the";
+	VS "While the";
+	VS "And we";
+	VS "'Tis for";
+bar
+
+//6
+1: 4gb; ; ; 8ac+; gb;
+2: 4gd+; ; ; 8fd+; gd+;
+
+	VS "fount of love from the";
+	VS "wa-ters roll let the";
+	VS "joy-ful sing, ev-er";
+	VS "you and me, and its";
+bar
+
+//7
+1: 4fa; ; ; 8s; ;
+2: 4dd+; ; ; 8s; ;
+
+	VS "source a-bove,";
+	VS "wea-ry soul";
+	VS "spring, oh spring,";
+	VS "stream I see,";
+invisbar
+newscore
+
+//7
+1: 4s; ; ; 8gb; fa;
+2: 4s; ; ; 8dd+; dc+;
+
+	VS "And he";
+	VS "Hear the";
+	VS "As we";
+	VS "Let us";
+bar
+
+//8
+1: 4eg; ; ea; 8dg; df;
+2: 4eb; ; cc+; 8db; da;
+
+	VS "bids us all fee-ly";
+	VS "call that forth free-ly";
+	VS "haste to drink and to";
+	VS "has-ten joy-ful-ly";
+bar
+
+//9
+1: 2.dg; 8s; ;
+2: 2.g-b; 8s; ;
+
+	VS "drink.";
+	VS "goes.";
+	VS "live.";
+	VS "there.";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 2.s; 8gb; ac+;
+2: 2.s; 4r;
+
+	VS "Will you";
+bar
+
+//11
+1: 2.bd+; 8ac+; gb;
+2: 4r; 8.gd+; 16; 4; 8fd+; gd+;
+
+	VS "come to the";
+	VS 4s; 8.; 16; 4; 8s; 8s; "Will you come,";
+bar
+
+//12
+1: 4fa; ; ; 8s; ;
+2: 4dd+; ; ; 8s; ;
+
+	VS "foun-tain free?";
+invisbar
+
+//12
+1: 4s; ; ; 8fa; gb;
+2: 4s; ; ; 4r;
+
+	VS "Will you";
+bar
+
+//13
+1: 2.ac+; 8gb; fa;
+2: 4r; 8.dd+; 16; 4; 8dd+; ;
+
+	VS "come? 'tis for";
+	VS 4s; 8.; 16; 4; 8s; 8s; "Will you come,";
+bar
+
+//14 
+1: 4gb; ; ; 8s; ;
+2: 4gd+; ; ; 8s; ;
+
+	VS "you and me;";
+invisbar
+1: 4s; ; ; 8gb; ac+;
+2: 4s; ; ; 4r;
+
+	VS "Thirst-y";
+
+bar
+
+//15
+1: 2.bd+; 8ac+; gb;
+2: 4r; 8.gd+; 16; 4; 8fd+; gd+;
+
+	VS "soul, hear the";
+	VS 4s; 8.; 16; 4; 8s; 8s; "Thirst-y soul,";
+bar
+
+//16
+1: 4fa; ; ; 8s; ;
+2: 4dd+; ; ; 8s; ;
+
+	VS "wel-come call,";
+invisbar
+
+//16
+1: 4s; ; ; 8gb; fa;
+2: 4s; ; ; 8dd+; ;
+
+	VS "'Tis a";
+bar
+
+//17
+1: 4eg; ; ea; 8dg; df;
+2: 4eb; ; cc+; 8db; da;
+
+	VS "foun-tain o-pened for";
+bar
+
+//18
+1: 2.dg; 4s;
+2: 2.g-b; 4s;
+
+	VS "all.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

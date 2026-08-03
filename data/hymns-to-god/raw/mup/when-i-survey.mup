@@ -1,0 +1,232 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Alexander's Gospel Songs
+//		Complied by Charles M. Alexander
+//		Fleming H. evell Company
+//		New York, 158 Fifth Avenue
+//		Chicago, 80 Wabash Avenue
+//		Copyright 1908	
+
+// Transcribed by: Ted Gatza, Jr. 11/25/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "When I Survey" ""
+   title (11) "E \(flat)-3-DO" "\f(TI)Howbeit what things were gain to me, these\n have I counted loss for Christ. - Phil.3:7"""
+   title (13) "Isaac Watts" " " "E. Miller"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=3/4 	
+	key=3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=3&
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 4s; 4s; 4e;
+1 2: 4s; 4s; 4e;
+2: 4s; 4s; ge;
+
+			lyrics 1: "<1. >-1|When";
+			lyrics 1: "<2. >-1|For-";
+			lyrics 1: "<3. >-1|See!";
+			lyrics 1: "<4. >-1|Were";
+bar
+//2
+1 1: 4g slur; 4a; 4fd;
+1 2: 2e; 4s;
+2: 4be slur; 4c+a-; 4ab-;
+
+			lyrics 1: "I sur-";
+			lyrics 1: "bid it,";
+			lyrics 1: "from His";
+			lyrics 1: "the whole";
+bar
+//3
+1 1: 2e; 4ge;
+1 2: 2e; 4s;
+2: 2ge; 4be;
+
+			lyrics 1: "vey the";
+			lyrics 1: "Lord, that";
+			lyrics 1: "head, His";
+			lyrics 1: "realm of";
+bar
+//4
+1: 2be; 4c+a;
+2: 2bg; 4e+a;
+
+			lyrics 1: "won-drous";
+			lyrics 1: "I should";
+			lyrics 1: "hands, His";
+			lyrics 1: "na-ture";
+bar
+//5
+1: 2bg; 4bf;
+2: 2e+e; 4bd;
+
+			lyrics 1: "cross On";
+			lyrics 1: "boast Save";
+			lyrics 1: "feet, Sor-";
+			lyrics 1: "mine, That";
+bar
+newscore
+//6
+1 1: 2e+; 4d+g;
+1 2: 4e slur; 4f; 4s;
+2 1: 4g slur; 4a; 4bb-;
+2 2: 2c; 4s;
+
+			lyrics 1: "which the";
+			lyrics 1: "in the";
+			lyrics 1: "row and";
+			lyrics 1: "were an";
+bar
+//7
+1 1: 2c+; 4bg;
+1 2: 4g slur; 4f; 4s;
+2: 4c+a- slur; 4d+a; 4e+g;
+
+			lyrics 1: "Prince of";
+			lyrics 1: "death of";
+			lyrics 1: "love flow";
+			lyrics 1: "off-'ring";
+bar
+//8
+1: 4bd slur; 4af; 4ge;
+2 1: 2b; 4be;
+2 2: 4f slur; 4d; 4s;
+
+			lyrics 1: "glo-ry";
+			lyrics 1: "Christ my";
+			lyrics 1: "ming-led";
+			lyrics 1: "far to";
+bar
+newscore
+//9
+1: 4ge slur; 4fd; 4fd;
+2: 2bb-; 4bb-;
+
+			lyrics 1: "died, My";
+			lyrics 1: "God! All";
+			lyrics 1: "down! Did";
+			lyrics 1: "small; Love";
+bar
+//10
+1: 2bf; 4c+f;
+2: 2bd; 4anf;
+
+			lyrics 1: "rich-est";
+			lyrics 1: "the vain";
+			lyrics 1: "e'er such";
+			lyrics 1: "so a-";
+bar
+//11
+1: 2d+f; 4db;
+2 1: 2b; 4b;
+2 2: 2b; 4a&;
+
+			lyrics 1: "gain I";
+			lyrics 1: "things that";
+			lyrics 1: "love and";
+			lyrics 1: "maz-ing";
+bar
+//12
+1 1: 4e+ slur; 4g; 4ane;
+1 2: 2e; 4s;
+2: 4bg slur; 4c+e; 4c+f;
+
+			lyrics 1: "count but";
+			lyrics 1: "charm me";
+			lyrics 1: "sor-row";
+			lyrics 1: "so di-";
+bar
+newscore
+//13
+1 1: 2bd; 4e;
+1 2: 2s; 4e;
+2: 2bb-; 4bg;
+
+			lyrics 1: "loss, And";
+			lyrics 1: "most, I";
+			lyrics 1: "meet, or";
+			lyrics 1: "vine, De-";
+bar
+//14
+1 1: 2a; 4ge;
+1 2: 4e slur; 4d; 4s;
+2 1: 4c+ slur; 4a; 4be;
+2 2: 2f; 4s;
+
+			lyrics 1: "pour con-";
+			lyrics 1: "sac-ri-";
+			lyrics 1: "thorns com-";
+			lyrics 1: "mands my";
+bar
+//15
+1 1: 2fd; 4e;
+1 2: 2s; 4e;
+2: 2ab-; 4gc;
+
+			lyrics 1: "tempt on";
+			lyrics 1: "fice them";
+			lyrics 1: "pose so";
+			lyrics 1: "soul, my";
+bar
+//16
+1 1: 8e bm; 8f ebm; 4g; 4fd;
+1 2: 2e; 4s;
+2: 4c+a slur; 4bb-; 4ab-;
+phrase above 1: 1 til 2;
+
+			lyrics 1: 8; 8s; 4s; 4; "all my";
+			lyrics 1: 8; 8s; 4s; 4; "to His";
+			lyrics 1: 8; 8s; 4s; 4; "rich a";
+			lyrics 1: 8; 8s; 4s; 4; "life, my";
+bar
+//17
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2ge; 4s;
+
+			lyrics 1: "pride.";
+			lyrics 1: "blood.";
+			lyrics 1: "crown?";
+			lyrics 1: "all!";
+endbar
+	

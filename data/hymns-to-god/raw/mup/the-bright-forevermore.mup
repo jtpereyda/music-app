@@ -1,0 +1,252 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Endeavor Hymns
+//		by Ira D. Sankey
+//		Published by
+//		United Society of Christian Endeavor
+//		646 Washington Street, Boston, Mass.
+//		The Biglow and Main Co.
+//		76 East 9th St. New York
+//		215 Wabash Ave. Chicago
+//		Copyright 1894
+//		Hymn no. 77
+
+// Transcribed by: Ted Gatza, Jr. 05/01/2010; Revised 04/02/2020
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "The Bright Forevermore" ""
+   title (2)""
+title (11) "C - 4 - MI" "\s(18)\f(TI)\:And\ he\ said\ unto\ all,\ If\ any\ man\|\ would\ come\ after\ me,\ let\ him\ deny himself,\ and\ take\ up\ his\ cross\|\ daily,\ and\ follow\ me.\ -\ Lk.\ 9:23"""
+   title (13) "Henry Wadsworth Longfellow" " " "W. A. Ogden"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=c major
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8ec bm; 8fd ebm;
+2: 2.s; 4gc;
+
+
+			lyrics 1: 2.s; 4; "<1. >-1|There";
+			lyrics 1: 2.s; 4; "<2. >-1|There";
+			lyrics 1: 2.s; 4; "<3. >-1|There";
+			lyrics 1: 2.s; 4; "<4. >-1|We";
+bar
+//2
+1 1: 4ge; 4ge; 4ge; 8c+ bm; 8b ebm;
+1 2: 4s; 4s; 4s; 4g;
+2: 4c+c; 4c+c; 4c+c; 4c+e;
+
+			lyrics 1: 4; 4; 4; 4; "is a land, a";
+			lyrics 1: 4; 4; 4; 4; "is a clime, a";
+			lyrics 1: 4; 4; 4; 4; "is a home, a";
+			lyrics 1: 4; 4; 4; 4; "soon shall leave these";
+bar
+//3
+1: 4af; 4af; 4af; 4c+f;
+2: c+f; c+f; c+f; 4af;
+
+			lyrics 1: "sun-ny land, Whose";
+			lyrics 1: "peace-ful clime, Be-";
+			lyrics 1: "glo-rious home, A";
+			lyrics 1: "fad-ing  scenes, That";
+bar
+//4
+1 1: 4g; 4c+g; 4bf; 4c+e;
+1 2: 4g; 4s; 4s; 4s; 
+2: 4c+e; 4ge; 4gd; 4c+c;
+
+			lyrics 1: "skies are ev-er";
+			lyrics 1: "yond life's nar-row";
+			lyrics 1: "heav'n-ly man-sion";
+			lyrics 1: "glide so quick-ly";
+
+bar
+//5
+1: 2.d+g; 4d+g;
+2: 2.bg; 4bg;
+
+			lyrics 1: "bright; Where";
+			lyrics 1: "sea; Where";
+			lyrics 1: "fair; And";
+			lyrics 1: "by; And";
+bar
+//6
+1: 4d+g; 4d+g; 4d+g; 4d+g;
+2: 4bg; 4bg; 4bg; 4bg;
+
+			lyrics 1: "eve-ning shad-ows";
+			lyrics 1: "ev-ery storm is";
+			lyrics 1: "those who lov'd so";
+			lyrics 1: "join the shin-ing";
+bar
+//7
+1 1: 4e+g; 8e+g bm; 8d+f ebm; 4c+e; 8c+ bm; 8b ebm;
+1 2: 4s; 8s; 8s; 4s; 4g;
+2: 4c+c; 4c+c; 4gc; 4c+e;
+mussym (10) above 1: 3 "ferm";
+mussym (10) below 2: 3 "uferm";
+
+			lyrics 1: 4; 4; 4; 4; "nev-er fade, The";
+			lyrics 1: 4; 4; 4; 4; "hush'd to rest, There";
+			lyrics 1: 4; 4; 4; 4; "fond-ly here, Will";
+			lyrics 1: 4; 4; 4; 4; "hosts a-bove, Where";
+bar
+//8
+1: 4af; 4d+f; 4s; 4s;
+2 1: 4c+f; 4af; 4s; 4s;
+2 2: 4s; 4s; 4s; 4s;
+
+			lyrics 1: "Sav-iour";
+			lyrics 1: "let our";
+			lyrics 1: "bid us";
+			lyrics 1: "joy can";
+invisbar
+newscore
+
+1: 4s; 4s; 4c+e; 4bd;
+2 1: 4s; 4s; 4g; 4gg-;
+2 2: 4s; 4s; 4g; 4s;
+
+			lyrics 1: "is its";
+			lyrics 1: "treas-ure";
+			lyrics 1: "wel-come";
+			lyrics 1: "nev-er";
+
+bar
+//9
+1: 2.c+e; 4s;
+2: 2.gc; 4s;
+
+			lyrics 1: "light.";
+			lyrics 1: "be.";
+			lyrics 1: "there.";
+			lyrics 1: "die.";
+dblbar
+//10
+1: 8.c+e; 16d+f; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "<> <>";
+			lyrics 1: "If the";
+bar
+//11
+1: 2e+g tie; 8e+g; 8d+f; 8.c+e; 16af;
+2: 4c+c; 4c+c; 4c+c; 4c+c;
+
+			lyrics 1: " <> <> <> <>";
+			lyrics 1: "cross we meek-ly";
+			lyrics 1: 4; 4; 4; 4; "If the cross we";
+bar
+//12
+1: 2ge tie; 4ge; 8.s; 16s;
+2: 4c+c; 4c+c; 4c+c; 4s;
+
+			lyrics 1: "<>";
+			lyrics 1: "bear,";
+			lyrics 1: 4; 4; 4; 4s; "meek-ly bear,";
+invisbar
+newscore
+
+1: 2s; 4s; 8.bd; 16c+e;
+2: 4s; 4s; 4s; 4r;
+
+			lyrics 1: "Then a";
+//			lyrics 1: 4; 4; 4; 4s; "meek-ly bear,";
+
+bar
+//13
+1: 2d+f tie; 4d+f; 8.c+e; 16d+f;
+2 1: 4bg; 4bg; 4bg; 4g;
+2 2: 4s; 4s; 4s; 4g;
+
+			lyrics 1: "crown, we shall";
+			lyrics 1: 4; 4; 4; 4; "We a gold-en";
+bar
+//14
+1: 2e+g tie; 4e+g; 8.c+e; 16d+f;
+2: 4c+c; 4c+c; 4c+c; 4r;
+
+			lyrics 1: "wear, When we";
+			lyrics 1: 4; 4; 4; 4s; "crown shall wear,";
+
+bar
+//15
+1: 2e+g tie; 8e+g; 8d+f; 8.s; 16s;
+2: 4c+c; 4c+c; 4c+c; 4s;
+
+			lyrics 1: "dwell a-";
+			lyrics 1: 4; 4; 4; 4s; "When we dwell";
+invisbar
+newscore
+
+1: 2s; 8s; 8s; 8.c+e; 16af;
+2: 4s; 4s; 4s; 4c+c;
+
+			lyrics 1: "mong the";
+			lyrics 1: 4s; 4s; 4s; 4; "a-";
+
+bar
+//16
+1: 2ge tie; 4ge; 8.c+e; 16e+g;
+2: 4c+c; 4c+c; 4c+c; 8.gc; 16c+c;
+
+			lyrics 1: "fair, In the";
+			lyrics 1: 4; 4; 4; 8.s; 16s; "mong the fair,";
+bar
+//17
+1: 4.d+f; 8d+f; 4c+e; 4bd; 
+2 1: 4.af; 8af; 4g; 4gg-;
+2 2: 4.s; 8s; 4g; 4s;
+
+			lyrics 1: "bright for-ev-er-";
+bar
+//18
+1: 2.c+e; 4s;
+2: 2.gc; 4s;
+
+			lyrics 1: "more.";
+endbar

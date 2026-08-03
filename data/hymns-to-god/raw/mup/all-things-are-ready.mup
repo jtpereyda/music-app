@@ -1,0 +1,342 @@
+// Mup vs. 7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be 
+// in the Choral Public Domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Church
+//	A Comprehensive Collection of Psalms, Hymns, 
+//	and Spiritual Songs of first rank. Suitable
+//	for all Services of the Church
+//	E. L. Jorgenson, Compiler
+//	Date: 1921
+//	Hymn No.: 6	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 11/29/2023
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (21) "" "All Things Are Ready" ""
+   title (2)""
+   title (11) "" "\f(TI)Again he sent forth other servants, saying, Tell them that are bidden, " ""
+   title (11) "" "\f(TI)Behold, I have made ready my dinner; my oxen and my fatlings are killed," ""
+   title (11) "" "\f(TI)and all things are ready: come to the marriage feast. - Matt. 22:4" ""
+   title (11) "B\(flat) - 4 - SOL" "" ""
+   title (13) "Charlotte G. Homer" "" "W. A. Ogden, 1895"
+ 
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+staffs=2
+	time=4/4
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (12) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (12) above 1: 1 "Refrain"; @
+         define RALL ital (12) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+//Verse
+
+//1
+1: 4df; 8.; 16; 8eg; 4df; 8r;
+2: 4b-b; 8.; 16; 8; 4; 8r;
+
+	VS "<1. >-1|\"All things are read-y,\"";
+	VS "<2. >-1|\"All things are read-y,\"";	
+	VS "<3. >-1|\"All things are read-y,\"";
+	VS "<4. >-1|\"All things are read-y,\"";
+bar
+
+//2
+1: 4fd+; 8.ec+; 16; 2db;
+2: 4fb; 8.fa; 16; 2b-b;
+
+	VS "come to the feast!";
+	VS "come to the feast!";
+	VS "come to the feast!";
+	VS "come to the feast!";
+bar
+
+//3
+1: 4gb; 8.eg; 16fa; 8.gb; 16; 8.fa; 16eg;
+2: 4eb; 8.; 16; 8.; 16; 8.; 16;
+
+	VS "Come, for the ta-ble now is";
+	VS "Come, for the door is o-pen";
+	VS "Come, while He waits to wel-come";
+	VS "Leave ev-'ry care and world-ly";
+bar
+
+//4
+1: 2.df; 4s;
+2: 2.b-b; 4s;
+
+	VS "spread;";
+	VS "wide;";
+	VS "thee;";
+	VS "strife;";
+invisbar
+1 1: 2.s; 4f;
+1 2: 2.s; 4f;
+2: 2.s; 4db;
+
+	VS "Ye";
+	VS "A";
+	VS "De-";
+	VS "Come,";
+bar
+
+//5
+1 1: 4f; ec+; ; 8a bm; g ebm;
+1 2: 4e; 2s; 4e;
+2 1: 2.s; 8c+bm; a ebm;
+2 2: 4fa; ; ; f;
+
+	VS22 "fam-ish-ing, ye";
+	VS22 "place of hon-or";
+	VS22 "lay not while this";
+	VS22 "feast up-on the";
+bar
+
+//6
+1: 4df; fb; ; s;
+2 1: 4b; bd+; ; s;
+2 2: 4b; 2.s;
+
+	VS "wear-y, come,";
+	VS "is re-served,";
+	VS "day is thine,";
+	VS "love of God,";
+invisbar
+1: 4s; s; ; fd+;
+2 1: 4s; s; ; b-b;
+2 2: 4s; 2.s;
+
+	VS " And";
+	VS "For";
+	VS "To-";
+	VS "And";
+bar
+
+//7
+1: 4fc+; 8.fa; 16; 4enc+; gb;
+2: 4ca; 8.cc+; 16; 4cg; 4cc+;
+
+	VS "thou shalt be rich-ly";
+	VS "you at the Mas-ter's";
+	VS "mor-row may nev-er";
+	VS  "drink ev-er-last-ing";
+bar
+
+//8
+1: 2fa slur; e&g;
+2: 2f~c+ slur; fa;
+
+	VS "fed.";
+	VS "side.";
+	VS "be.";
+	VS "life.";
+dblbar
+newscore
+
+//9
+CHORUS
+1 1: 2f tie; 8.; 16f; 8.g; 16a;
+1 2: 8.d; 16; 8.; 16; 4; 4;
+2: 8.b-b; 16; 8.; 16; 4; 4b-f;
+
+	VS "Hear_ the in-vi-";
+	VS21 "Hear the in-vi-ta-tion,";
+bar
+
+//10
+1 1: 2b; 4; s;
+1 2: 8.d; 16; 8.; 16; 4; s;
+2: 8.b-f; 16; 8.; 16; 4; s;
+
+	VS "ta-tion,";
+	VS21 "\"who-so-ev-er will,\"";
+invisbar
+//10
+1 1: 2s; 4; 4b;
+1 2: 8.s; 16; 8.; 16; 4; r;
+2: 8.s; 16; 8.; 16; 4; r;
+
+	VS "Come";
+bar
+
+//11
+1 1: 2c+ tie; 8.; 16; 8.b; 16c+;
+1 2: 8.f; 16; 8.; 16; 8.f bm; 16e ebm; 8.d bm; 16e ebm;
+2: 8.fa; 16; 8.; 16; 4; ; 
+
+	VS "\"who-so-ev-er";
+	VS21 "Hear the in-vi-ta-tion,";
+bar
+
+//12
+1 1: 2d+ tie; 4; 4s;
+1 2: 8.f; 16; 8.; 16; 4; s;
+2 1: 8.b; 16; 8.fb; 16db; 4b-b; 4s;
+2 2: 8.b; 16; 2.s;
+
+	VS "will;\"_";
+	VS21 "\"Who-so-ev-er will;\"";
+invisbar
+1: 2s; 4; 4fb;
+2: 2.s; 4db;
+
+	VS "Praise";
+	VS21 "Praise";
+bar
+
+//13
+1 1: 2b tie; 8.; 16; 8.a; 16g;
+1 2: 8.g; 16; 8.; 16; 4; 8.f; 16e;
+2: 8.eb; 16; 8.; 16; 4; 8.; 16;
+
+	VS "God_ for full sal-";
+	VS21 "God for full sal-va-tion, For";
+bar
+
+//14
+1 1: 2f; 4b; 4s;
+1 2: 8.d; 16; 8.; 16; 4; 4s;
+2 : 8.b-b; 16; 8.; 16; 4; 4s;
+
+	VS "va-tion";
+	VS21 "\"who-so-ev-er will,\"";
+invisbar
+1 1: 2.s; 4fb;
+2 : 2.s; 4db;
+
+	VS "For";
+bar
+
+//15
+1: 4.fd+; 8db; ec+; 4.;
+2 1: 4.fb; 8; 8fa; 4.f;
+2 2: 2s; 8; 4.f;
+
+	VS "\"who-so-ev-er";
+bar
+
+//16
+1: 2.db; 4r;
+2: 2.b-f; 4r;
+
+	VS "will.\"";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+

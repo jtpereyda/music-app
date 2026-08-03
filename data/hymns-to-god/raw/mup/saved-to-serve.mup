@@ -1,0 +1,358 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	CONSECRATED Hymns
+//	For Use In
+//Devotional Meetings
+//	Young People's Societies
+//	The Sunday School
+//	Editors: Adam Geibel, R. Fran Lehman
+//	And H.C. Lincoln
+//	Published by: Geibel and Lehman
+//	1022 Arch Street, Philapdelphia, PA.
+//	Copyright 1902
+//	Hymn No. 34
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 07/13/2023
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+//==========================
+
+top
+
+   title bold (19) "" "Saved To Serve" ""
+   title (2)""
+   title (11)"" "\f(TI)Serve Jehovah with gladness: - Ps. 100:2" ""
+   title (11) "D\(flat) - 2 - SOL" "" ""
+   title (13) "John D, Morgan" "" "Percy F. Foster, 1901"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+   
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+
+staffs=2
+	time=6/8	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+//==========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+
+//Verse 1
+
+//1
+1: 4s; 4.s; 8fa;
+2: 4s; 4.s; 8da;
+
+	VS 4s; 4.s; 8; "<1. >-1|To";
+	VS 4s; 4.s; 8; "<2. >-1|To";
+	VS 4s; 4.s; 8; "<3. >-1|Tho'";
+bar
+
+//2
+
+1: 4fd+; 8ac+; 4gb; 8fa;
+2: 4da; 8dd+; 4; 8;
+
+	VS "dai-ly die to";
+	VS "dai-ly die to";
+	VS "dark the way, tho'";
+bar
+
+//3
+1: 8s; 4gb; 8fa; 4df;
+2: 8s; 4dd+; 8; 4da;
+
+	VS "self and sin,";
+	VS "all things past,";
+	VS "long the strife,";
+invisbar
+
+1: 4s; 4.s; 8af;
+2: 4s; 4.s; 8da;
+
+	VS "and";
+	VS "by";
+	VS "I";
+bar
+
+//4
+1: 4fa; 8eg; 8eg bm; 8df ebm; 8ce;
+2: 4a-c+; 8a-a; 4a-a; 8a-g;
+
+	VS21 "dai-ly to re-";
+	VS21 "spir-it, prayer, and";
+	VS21 "thro' the Spir-it's";
+bar
+
+//5
+1: 8s; 4.df tie; 4df;
+2: 8s; 4.da tie; 4da;
+
+	VS "ceive";
+	VS "word,";
+	VS "might";
+invisbar
+
+//6
+1: 4s; 4.s; 8fa;
+2: 4s; 4.s; 8da;
+
+	VS "New";
+	VS "May";
+	VS "Shall";
+bar
+
+//7
+1: 4fd+; 8ac+; 4gb; 8fa;
+2: 4da; 8dd+; 4; 8;
+
+	VS "life from Thee, I";
+	VS "I in-crease in";
+	VS "strive for Thee, Thy";
+bar
+
+//8
+1: 8s; 4gb; 8fa; 4df;
+2: 8s; 4dd+; 8; 4da;
+
+	VS "pray, O Lord,";
+	VS "faith and deed";
+	VS "king-dom's weal,";
+invisbar
+
+1: 4s; 4.s; 8af;
+2: 4s; 4.s; 8da;
+
+	VS "and";
+	VS "un-";
+	VS "and";
+bar
+
+//9
+1: 4fa; 8eg; 8eg bm; 8df ebm; 8ce;
+2: 4a-c+; 8a-a; 4a-a; 8a-g;
+
+	VS21 "more like Thee to";
+	VS21 "to Thy stat-ure,";
+	VS21 "for e-ter-nal";
+bar
+
+//10
+1 1: 8s; 4.d tie; 4d;
+1 2: 8s; 4.d tie; 4d;
+2: 8s; 4.df tie; 4df;
+
+	VS "live.";
+	VS "Lord.";
+	VS "right;";
+bar
+
+//11
+1 1: 4s; 4.s; 8d;
+1 2: 4s; 4.s; 8d;
+2: 4s; 4.s; 8df;
+
+	VS "O";
+	VS "O";
+	VS "Then";
+bar
+
+//12
+1 1: 8d bm; 8g ebm; 8gb; 4gd+; 8;
+1 2: 4d; 2s;
+2: 4gb; 8gd+; 4gb; 8;
+
+	VS21 "saved to serve! by";
+	VS21 "saved to serve! the";
+	VS21 "saved to serve! in";
+bar
+
+//13
+1: 8s; 4fd+; 8fa; 4;
+2: 8s; 4da; 8dd+; 4;
+
+	VS "Je-sus' blood";
+	VS "field is wide;";
+	VS "heav'ns bright sphere";
+invisbar
+
+1: 4s; 4.s; 8fa;
+2: 4s; 4.s; 8dd+;
+
+	VS "from";
+	VS "what";
+	VS "I";
+bar
+
+//14
+1: 4egn; 8gb; 8.g~ d+ slur; 16gc+; 8gb;
+2: 4eb; 8egn; 8.e~ b slur; 16ee+; 8ee+;
+
+	VS "sin and self made";
+	VS "I can do is";
+	VS "shall with an-gels";
+bar
+
+//15
+1: 8s; 4.g&c+ tie; 4gc+;
+2: 8s; 4.ae+ tie; 4ae+;
+
+	VS "free,";
+	VS "small;";
+	VS "sing,";
+bar
+
+//16
+1 1: 4s; 4.s; 8a;
+1 2: 4s; 4.s; 8g;
+2 1: 4s; 4.s; 8a;
+2 2: 4s; 4.s; 8a;
+
+	VS "To";
+	VS "With";
+	VS "And";
+bar
+
+//17
+1: 4fd+; 8ac+; 4gb; 8fa;
+2: 4da; 8dd+; 4; 8;
+
+	VS "praise His name, to";
+	VS "joy-ful heart and";
+	VS "saved by grace be-";
+bar
+
+//18
+1: 8s; 4gb; 8fa; 4df;
+2: 8s; 4dd+; 8; 4da;
+
+	VS "do His will,";
+	VS "hand, O Lord,";
+	VS "hold Thy face,";
+invisbar
+newscore
+
+1: 4s; 4.s; 8fa;
+2: 4s; 4.s; 8dd+;
+
+	VS "thro'-";
+	VS "<>";
+	VS "I";
+	VS "<>";
+	VS "my";
+bar
+
+//19
+1 1: 4a; 8; 8a bm; 8b ebm; 8g&c+;
+1 2: 4g; 8; 8a bm; 8gn ebm; 8s;
+2 1: 4ac+; 8ae+; 8c+ bm; 8d+ ebm; 8a-e+;
+2 2: 4s; 8; 4a; 8s;
+
+	VS 4; 8; 4; 8; "out e-ter-ni-";
+	VS 4s; 8; 4; 8; "thro'-out e-";
+	VS 4; 8; 4; 8; "give to Thee my";
+	VS 4s; 8; 4; 8; "I give to";
+	VS 4; 8; 4; 8; "Sav-iour, Lord, and";
+	VS 4s; 8s; 4; 8; "Sav-iour,";
+bar
+
+//20
+1 1: 8s; 4.d+ tie; 4d+;
+1 2: 8s; 4f; 8g; 4f;
+2 1: 8s; 4d+; 8b; 4a;
+2 2: 8s; 4.d tie; 4d;
+
+	VS "ty._";
+	VS12 "ter-ni-ty.";
+	VS "all._";
+	VS12 "Thee my all.";
+	VS "King._";
+	VS12 "Lord, and king.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+

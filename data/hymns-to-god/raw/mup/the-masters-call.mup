@@ -1,0 +1,195 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest Glory
+//		A Collection of choice and original hymns and tunes
+//		By our best composers for the Sunday Schools,
+//		Young peoples meetins and all religious gatherings
+//		By Frank M. Davis
+//		Published by Frank M. Davis
+//		Vicksburg, Miss
+//		Copyright: 1896
+//		Hymn No.: 8
+
+// Transcribed by: Ted Gatza, Jr. 07/08/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "The Master's Call" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:But\ what\ think\ ye?\ A\ man\ had\ tw\|o\ sons;\ and\ he\ came\ to\ the\ first, and\ said,\ Son,\ go\ work\ to-day\ \|in\ the\ vineyard.\ -\ Matt.\ 21:28" ""
+   title (13) "Fanny J. Crosby" " " "Frank M. Davis"	
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+
+//1
+1: 4ec; 8.; 16fd; 4ec; 4c+e;
+2: 4aa-; 8.; 16; 4;;
+
+			VERSE "<1. >-1|Hark to the Mas-ter's";
+			VERSE "<2. >-1|Go in the morn-ing,";	
+			VERSE "<3. >-1|Haste to the fields, O";
+
+bar
+//2
+1: 4bd; fd; 2d+f;
+2: 4fd; ad; 2;
+
+			VERSE "ear-nest call,";
+			VERSE "do not wait,";
+			VERSE "reap-ers, haste,";
+bar
+//3
+1: 4c+e; 8.ae; 16; 4gd; ac;
+2: 4aa-; 8.ac; 16; [down]4eb-; 4aa-;
+
+			VERSE "Ring-ing o'er field and";
+			VERSE "Je-sus is call-ing";
+			VERSE "Work ere the night shall";
+bar
+//4
+1: 2.be; 4r;
+2: 2.ge; 4r;
+
+			VERSE "plain;";
+			VERSE "you;";
+			VERSE "come;";
+bar
+//5
+1: 4ec; 8.; 16fd; 4ec; 4c+e;
+2: 4aa-; 8.; 16; 4;;
+
+			VERSE "Hast-en, then reap-ers";
+			VERSE "Few are the reap-ers";
+			VERSE "When fall the shades of";
+bar
+//6
+1: 4bd; fd; 2d+f;
+2: 4fd; ad; 2;
+
+			VERSE "go ye forth,";
+			VERSE "in the field,";
+			VERSE "eve-ning round,";
+bar
+//7
+1 1: 4c+e; 8.ac; 16c+e; 4bd; e;
+1 2: 4s; 8.s; 16s; 4s; d;
+2 1: 4ae; 8.e; 16ae; 4ge;;
+2 2: 4s; 8.e; 16s; 4s;;
+
+			VERSE "Gath-er the gold-en";
+			VERSE "Great is the work to";
+			VERSE "Shout then the \"Har-vest";
+bar
+//8
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			VERSE "grain.";
+			VERSE "do.";
+			VERSE "Home.\"";
+dblbar
+//9
+1 1: 4e+e;; 4.; 8e;
+1 2: 4s;; 4.; 8e;
+2: 4ge; af; 4.bg; 8ge;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"See you not the";
+bar
+//10
+1 1: 8.f; 16g; 8.a; 16b; 2c+;
+1 2: 8.f; 16g; 8.a; 16b; 2c+;
+2 1: 8.f; 16g; 8.a; 16b; 2c+;
+2 2: 8.f; 16g; 8.a; 16b; 2c+;
+
+			VERSE "fields al-read-y white?";
+bar
+//11
+1: 4e+e;; 4.; 8c+e;
+2 1: 4c+a; d+b; 4.e+c+; 8a;
+2 2: 4s;; 4.; 8a;
+
+			VERSE "Je-sus bids you";
+bar
+//12
+1: 8.be; 16ane; 8.be; 16c+e; 4be; 4r;
+2 1: 8.ge; 16f#; 8.ge; 16ae; 4ge; 4r;
+2 2: 8.s; 16e; 8.s; 16; 4; 4;
+
+			VERSE "work while yet 'tis light;";
+bar
+//13
+1: 4ec; 8.; 16fd; 4ec; c+e;
+2: 4aa-; 8.; 16; 4;;
+
+			VERSE "Rich-est re-ward He";
+bar
+//14
+1: 4bd; fd; 2d+f;
+2: 4fd; ad; 2;
+
+			VERSE "of-fers you;";
+bar
+//15
+1 1: 4c+e; 8.ac; 16c+e; 4bd; e;
+1 2: 4s; 8.; 16; 4; d;
+2 1: 4ae; 8.e; 16ae; 4ge;;
+2 2: 4s; 8.e; 16s; 4;;
+
+			VERSE "Go bear the sheaves a-";
+bar
+//16
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+
+			VERSE "way.";
+endbar

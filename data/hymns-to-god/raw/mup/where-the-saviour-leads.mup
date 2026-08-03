@@ -1,0 +1,196 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Sacred Songs No.1
+//		Compiled and arranged for use in
+//		Gospel Meetings, Sunday Schools, Prayer Meetings,
+//		And Other Religious Services
+//		Edited by Ira D. Sankey, James McGranahan, and
+//		Geo. C. Stebbins
+//		Published by The Biglow and Main Co.
+//		New York and Chicago
+//		Copyright 1896
+//		Hymn No.: 58
+//		
+// Transcribed by: Ted Gatza, Jr. 10/02/12
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Where The Saviour Leads" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - MI" " \s(17)\f(TI)\:I\ will\ follow\ thee\ whithersoever\ thou\ goest\ -\ Matt.\ 8:19 \(space)" ""   
+   title (13) "Fanny J. Crosby" "" "Ira D. Sankey, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 4ge; 8.; 16fd; 8; e;; ge;
+1 2: 4s; 8.; 16; 8; e;; s;
+2: 4be; 8.; 16ae; 8; ge;; be;
+
+			VERSE "<1. >-1|If in the val-ley where the";
+			VERSE "<2. >-1|Out on the bar-ren moun-tains";
+			VERSE "<3. >-1|Wher-e'er the Sav-iour leads me,";
+bar
+//2
+1: 4bg; 8.; 16c+a; 2bg;
+2: 4e+e; 8.; 16; 2;
+
+			VERSE "bright wa-ters flow,";
+			VERSE "drear-y and cold,";
+			VERSE "I'll fol-low still,";
+bar
+//3
+1: 4ge; 8.; 16; 8c+e; be; ae; ge;
+2 1: 4be; 8.; 16; 8a; bg; bf; be;
+2 2: 4s; 8.; 16; 8a; s;;;
+
+			VERSE "Je-sus, my Sav-iour leads me,";
+			VERSE "Seek-ing the sheep that wan-der";
+			VERSE "Pa-tient in joy or sor-row,";
+bar
+//4
+1 1:4f; 8.; 16; 4fd slur; af;
+1 2: 4f; 8.e; 16; 4s;;
+2: 4bd; 8.anc; 16; 2bb-;
+
+			VERSE "glad-ly I'll go;";
+			VERSE "far from the fold;";
+			VERSE "bid-ing His will;";
+bar
+//5
+1 1: 4ge; 8.; 16fd; 8; e;; ge;
+1 2: 4s; 8.; 16; 8; e;; s;
+2: 4be; 8.; 16ae; 8; ge;; be;
+
+			VERSE "If, by His hands dir-ect-ed";
+			VERSE "Storm-clouds may frown a-bove me,";
+			VERSE "He knows the path of safe-ty,";
+bar
+//6
+1: 4bg; 8.; 16c+a; 2bg;
+2: 4e+e; 8.; 16; 2;
+
+			VERSE "o'er o-cean's wave,";
+			VERSE "fierce winds may blow,";
+			VERSE "He knows the way,";
+bar
+//7
+1 1: 4e+g;8.bg; 16c+a; 8bg; ge; e; ae;
+1 2: 4s; 8.; 16; 8;; e; s;
+2: 4be; 8.e+e; 16; 8; be; ge; c+a-;
+
+			VERSE "Glad-ly I'll bear his mes-sage,";
+			VERSE "Yet if my Sav-iour leads me,";
+			VERSE "Home to the ma-ny man-sions,";
+bar
+//8
+1 1:4ge; 8.gd; 16fd; 2e;
+1 2: 4s; 8.; 16; 2e;
+2: 4bb-; 8.; 16ab-; 2ge;
+
+			VERSE "lost ones to save.";
+			VERSE "on-ward I'll go.";
+			VERSE "bright, bright as day.";
+dblbar
+//9
+1: 2bg tie; 8; af; ge; bg;
+2: 4be;;;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Where_ the Sav-iour";
+			VERSE 4; 4; 4; 4; "Where the lov-ing";
+bar
+//10
+1: 2e+g; bg;
+2: 4be;; e+e;;
+
+			VERSE "leads me,";
+			VERSE 4; 4; 4; 4; "Sav-iour leads me,";
+bar
+//11
+1: 2c+a tie; 8; e+c+; d+b; c+a;
+2: 4e+a;;;;
+
+			VERSE "I_ will glad-ly";
+			VERSE 4; 4; 4; 4; "I will glad-ly";
+bar
+//12
+1: 2c+a; bg;
+2: 4e+e;;;;
+
+			VERSE "fol-low,";
+			VERSE 4; 4; 4; 4; "glad-ly fol-low,";
+bar
+//13
+1 1: 4e+g; be; 8ae; ge; fd; e;
+1 2: 4s;; 8;;; e;
+2: 4be; ge; 8c+e; be; ae; ge;
+
+			VERSE "Where the lov-ing Sav-iour";
+bar
+//14
+1: 2c+e; e+f;
+2 1: 2a; c+an;
+2 2: 2a; s;
+
+			VERSE "leads me,";
+bar
+//15
+1: 4d+f; bd; ad; db-;
+2 1: 4b;; bb-; ab-;
+2 2: 4b;; s;;
+
+			VERSE "I will glad-ly";
+bar
+//16
+1: 1eb-;
+2: 1ge;
+
+			VERSE "go.";
+endbar

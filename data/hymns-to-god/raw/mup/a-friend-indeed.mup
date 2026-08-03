@@ -1,0 +1,199 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Praise in Song
+//		A Collection of
+//		Hymns and Sacred Melodies
+//		Editors: Jno. R. Sweeney, W.J. Kikrpatrick,
+//		and H.L. Gilmour
+//		Philadelphia:
+//		John J. Hood, 
+//		1024 Arch Street
+//		Copyright 1893
+
+// Transcribed by: Ted Gatza, Jr. 12/18/2009
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "A Friend Indeed" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(18)\f(TI)\:I\ have\ called\ you\ friends;\|\ for\ all\ things\ that\ I\ heard from\ my\ Father,\ I\ have\ made\|\ known\ unto\ you.\ -\ Jn.\ 15:15"""
+   title (13) "J. B. Mackay" " " "John R. Sweney, 1893"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=1#
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 4s; 4s; 4s; 8d; 8gd;
+1 2: 4s; 4s; 4s; 8d; 8s;
+2: 4s; 4s; 4s; 8bg; 8bg;
+
+			lyrics 1: "<1. >-1|In the";
+			lyrics 1: "<2. >-1|When my";
+			lyrics 1: "<3. >-1|Sa-tan";
+			lyrics 1: "<4. >-1|Soon this";
+bar
+//2
+1: 4bg; 4bg; 8bg; 8ad; 8gd; 8bg;
+2: 4d+g; 4d+g; 8d+g; 8c+g; 8bg; 8d+g;
+
+			lyrics 1: "day of tri-al, in the";
+			lyrics 1: "soul was wild-ly beat, and";
+			lyrics 1: "and his le-gions may my";
+			lyrics 1: "ev-er chang-ing, rest-less";
+bar
+//3
+1: 4d+g; 4e+g; 4d+g; 8c+a; 8bg;
+2: 4bg; 4c+g; 4bg; 8d+g; 8d+g;
+
+			lyrics 1: "hour of need, I have";
+			lyrics 1: "tossed a-bout On the";
+			lyrics 1: "soul as-sail, Ev'-ry";
+			lyrics 1: "life will cease, And I'll";
+bar
+//4
+1: 4af; 4af; 4bg; 4c+a;
+2: 4d+d; 4d+d; 4d+d; 4d+d;
+
+			lyrics 1: "found a friend in-";
+			lyrics 1: "waves of sin and";
+			lyrics 1: "earth-ly friend may";
+			lyrics 1: "reach the shores of";
+bar
+//5
+1 1: 2.bg; 8d; 8gd;
+1 2: 2.s; 8d; 8s;
+2: 2.d+g-; 8bg; 8bg;
+
+			lyrics 1: "deed; Yes a";
+			lyrics 1: "doubt; When I";
+			lyrics 1: "fail; Hon-or,";
+			lyrics 1: "peace; Where the";
+bar
+//6
+1: 4bg; 4bg; 8bg; 8ad; 8gd; 8bg;
+	mussym (9) above 1: 1 "sign";
+2: 4d+g; 4d+g; 8d+g; 8c+g; 8bg; 8d+g;
+	
+			lyrics 1: "faith-ful friend, whom I have";
+			lyrics 1: "had no help-er, and no";
+			lyrics 1: "fame and rich-es, each in";
+			lyrics 1: "friends and loved ones wait-ing";
+			lyrics below 2: "<\f(TX)D.S.\f(TR) - >|with me al-ways, ev-en";
+bar
+//7
+1: 4d+g; 4e+g; 4d+g; 8c+a; 8bg;
+2: 4bg; 4c+g; 4bg; 8d+g; 8d+g;
+
+			lyrics 1: "oft-en tried, Je-sus";
+			lyrics 1: "hope I knew, Je-sus";
+			lyrics 1: "turn may flee, Je-sus";
+			lyrics 1: "I shall see, Saved thro'";
+			lyrics below 2: "to the end, Je-sus";
+bar
+//8
+1: 4af; 4af; 4.bg; 8ad;
+2: 4d+d; 4d+d; 4.d+d; 8c+d;
+
+			lyrics 1: "who was cru-ci-";
+			lyrics 1: "brought me safe-ly";
+			lyrics 1: "will be true to";
+			lyrics 1: "him who died for";
+			lyrics below 2: "is a friend to";			
+bar
+//9
+1: 2.gd; 4r;
+2: 2.bg; 4r;
+ital (13) above 1: 3.5 "Fine";
+
+
+			lyrics 1: "fied.";
+			lyrics 1: "thro'.";
+			lyrics 1: "me.";
+			lyrics 1: "me.";
+			lyrics below 2: "me.";
+dblbar
+//10
+1: 8ge; 8c+e; 8c+e; 8c+e; 4.s; 8s;
+2: 8c+c; 8gc; 8gc; 8gc; 4.s; 8s;
+ital (13) above 1: 1 "Chorus";
+
+
+			lyrics 1: [c]"Je-sus is a";
+invisbar
+newscore
+
+1: 8s; 8s; 8s; 8s; 4.c+e; 8ec;
+2: 8s; 8s; 8s; 8s; 4.gc; 8gc;
+
+			lyrics 1: "friend, a";
+
+
+bar
+//11
+1: 4db-; 4gd; 2bg;
+2 1: 4g; 4bg; 2d+g;
+2 2: 4g; 4s; 2s;
+
+			lyrics 1: "con-stant friend,";
+bar
+//12
+1: 8af; 8d+f; 8fd; 8ad; 8gc#; 4gc; 8ec;
+2 1: 8d+a; 8a; 8aa-; 8fa-; 8ea-; 4ea-; 8ga-;
+2 2: 8s; 8a; 8s; 8s; 8s; 4s; 8s; 
+
+			lyrics 1: "Clos-er than a broth-er to";
+bar
+//13
+1 1: 2.d; 8d; 8gd;
+1 2: 4d; 4b-; 4c; 8d; 8s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) above 1: 3 "ferm";
+ital dyn above 1: 4.5 "D.S.";
+2 1: 4f; 4g; 4a; 8bg; 8bg;
+2 2: 2.d; 8s; 8s;
+mussym (9) below 2: 1 "uferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: 2.; 8; 8; "me; He'll be";
+			lyrics 1: 4s; 4; 4; 8s; 8s; "to me;";
+endbar

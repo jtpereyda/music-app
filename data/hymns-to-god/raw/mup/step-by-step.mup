@@ -1,0 +1,190 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1895
+//		Hymn No.: 200
+//		
+// Transcribed by: Ted Gatza, Jr. 10/25/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Step By Step" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - MI" "\s(17)\f(TI)\:But\ thanks\ be\ unto\ Go\|d,\ who\ always\ leadeth us\ in\ triumph\ in\ C\^hrist,\ -\ 2\ Cor.\ 2:14" ""   
+   title (13) "Kate Ulmer" "" "M. L. McPhail, 1908"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 4. ce; 8bd;; ac; ec; ac;
+2: 4.aa-; 8ea-;;; aa-;;
+
+
+			VERSE "<1. >-1|When the shad-ows thick-ly";
+			VERSE "<2. >-1|Should the com-ing days bring";
+			VERSE "<3. >-1|Dai-ly strength He ev-er";
+			VERSE "<4. >-1|Then why should we shrink or";
+bar
+//2
+1: 2ge; fd;
+2: 2ad;;
+
+			VERSE "gath-er,";
+			VERSE "bur-dens,";
+			VERSE "giv-eth,";
+			VERSE "fal-ter,";
+bar
+//3
+1: 4.d+f; 8c+e;; bd; s; s;
+2: 4.bb-; 8anc;; bd; s;;
+
+			VERSE "Cloud-ing all thy";
+			VERSE "Or be fraught with";
+			VERSE "For each day rich";
+			VERSE "When the on-ward";
+invisbar
+
+1: 4.s; 8s;;; fdn; gd;
+2: 4.s; 8s;;; bb-;;
+
+			VERSE "on-ward";
+			VERSE "grief or";
+			VERSE "grace be-";
+			VERSE "path looks";
+
+bar
+//4
+1 1: 1e;
+1 2: 4e ph; c; 2d& eph;
+2 1: 4e ph; a; 2b eph;
+2 2: 1e;
+
+			VERSE "way;";
+			VERSE "care;";
+			VERSE "stows;";
+			VERSE "dim;";
+bar
+//5
+1: 4.c+e; 8bd;; ac; c+e; e+g&;
+2: 4.aa-; 8ea-;;; aa-; ac;
+mussym (9) above 1: 1 "sign";
+
+			VERSE "Think not what shall be to-";
+			VERSE "Trust him in the hour of";
+			VERSE "And each mo-row as it";
+			VERSE "Know-ing light will nev-er";
+			lyrics below 2: "<\f(TX)D.S. -\f(PV) >-4|But what in the fu-ture";
+bar
+//6
+1: 2e+g&; d+f;
+2: 2ac; ad;
+
+			VERSE "mor-row,";
+			VERSE "tri-al,";
+			VERSE "dawn-eth,";
+			VERSE "fail us,";
+			lyrics below 2: "li-eth,";
+bar
+//7 
+
+1 1: 4.c+e; 8e; fdn; ad; 8gd&; 8bd;
+1 2: 4.s; 8e; s;;;;
+2: 4.ae; 8ac; ab-;; be; ge;
+
+			VERSE "Seek God's help just for to-";
+			VERSE "He will make thee strong to";
+			VERSE "Still His lov-ing kind-ness";
+			VERSE "While we walk by faith with";
+			lyrics below 2: "In His mer-cy He con-";
+
+bar
+//8
+1: 2.ac; 4r;
+2: 2.aa-; 4r;
+ital (13) above 1: 3.5 "Fine";
+
+			VERSE "day.";
+			VERSE "bear.";
+			VERSE "shows.";
+			VERSE "Him.";
+			lyrics below 2: "ceals.";
+dblbar
+//9
+1: 4.c+e; 8ac; bf; c+e; bd; ae;
+2: 4.aa-; 8; 8; 8; gb; ac;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Step by step He leads me";
+bar
+//10
+1: 2ge; fd;
+2: 2ad;;
+
+			VERSE "on-ward,";
+bar
+//11
+1: 4.bdn; 8bd; c+d; bb-;ad; fd;
+2: 4.ab-; 8fb-;;;; ab-;
+
+			VERSE "Step by step the way re-";
+bar
+//12
+1 1: 1e;
+1 2: 4e ph; c; 2d& eph;
+2 1: 4g ph; a; 2b eph;
+2 2: 1e;
+ital (13) above 1: 3.5 "D. S.";
+
+			VERSE "veals:";
+
+endbar

@@ -1,0 +1,343 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom of Song
+//		A Collection of Songs
+//		For Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited By T. M. Bowdish
+//		Copyrigh by the W. W. Whitney Co.
+//		Entered at stationer's Hall, London, England
+//		Copyright 1900
+//		Hymn No.: 28
+//		
+// Transcribed by: Ted Gatza, Jr. 11/14/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Lord Is My Light" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:Jehovah\ is\ my\ light\ and\ my\ salvat\^ion;\ Whom\ shall\ I\ fear?\ Jehovah\ is the\ strength\ of\ my\ life;\ Of\ who\|m\ shall\ I\ be\ afraid?\ -\ Ps.\ 27:1" ""   
+   title (13) "James Nicholson" "" "J. W. Bischoff"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=2/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1 1: 8f; 4.s;
+1 2: 8f; 4.s;
+2 1: 8f; 4.s;
+2 2: 8f; 4.s;
+
+			VERSE "<1. >-1|The";
+			VERSE "<2. >-1|The";
+			VERSE "<3. >-1|The";
+			VERSE "<4. >-1|The";
+bar
+//2
+1: 4d+f; 8e+g; d+f;
+2: 4bb-; 8;;
+	
+			VERSE "Lord is my";
+			VERSE "Lord is my";
+			VERSE "Lord is my";
+			VERSE "Lord is my";
+bar 
+//3
+1 1: 4c+e; f;
+1 2: 4s; e;
+2: af;;
+
+			VERSE "light, then";
+			VERSE "light, though";
+			VERSE "light, the";
+			VERSE "light, my";
+bar
+//4
+1: 4c+e; 8d+f; c+e;
+2: 4af; 8;;
+
+			VERSE "why should I";
+			VERSE "clouds may a-";
+			VERSE "Lord is my";
+			VERSE "all and in";
+bar
+//5
+1:  4bd; 8r; bf;
+2:  4bb-; 8r; bd;
+
+			VERSE "fear? By";
+			VERSE "rise; Faith";
+			VERSE "strength; I";
+			VERSE "all; There";
+bar
+//6
+1: 4bg; 8af; ge;
+2: 4be; 8;;
+
+			VERSE "day and by";
+			VERSE "strong-er than";
+			VERSE "know in his";
+			VERSE "is in his";
+bar
+//7
+1: 4fd; 8bf bm; c+f ebm;
+2: 4bb-; 8bd bm; af ebm;
+
+			VERSE 4;; "night his";
+			VERSE 4;; "sight looks";
+			VERSE 4;; "might I'll";
+			VERSE 4;; "sight no";
+bar
+//8
+1: 4d+f; 8e+f; d+f;
+2 1: 4b; 8c+a; b;
+2 2: 4b; 8s; b;
+
+			VERSE "pres-ence is";
+			VERSE "up to the";
+			VERSE "con-quer at";
+			VERSE "dark-ness at";
+
+bar
+//9
+1 1: 4c+f; 8r; f;
+1 2: 4s; 8s; f;
+2 1: 4af; 8r; f;
+2 2: 4s; 8s; f;
+
+			VERSE "near; He";
+			VERSE "skies; When";
+			VERSE "length; My";
+			VERSE "all; He";
+bar
+//10
+1: 4d+f; 8e+g; d+f;
+2: 4bb-; 8;;
+
+			VERSE "is my sal-";
+			VERSE "Je-sus for-";
+			VERSE "weak-ness in";
+			VERSE "is my re-";
+bar
+//11
+1 1: 4c+e; 8f;;
+1 2: 4s; 8e;;
+2: 4af; 8;;
+
+			VERSE "va-tion from";
+			VERSE "ev-er in";
+			VERSE "mer-cy he";
+			VERSE "deem-er, my";
+bar
+//12
+1: 4c+e; 8d+f; c+e;
+2: 4af; 8;;
+
+			VERSE "sor-row and";
+			VERSE "glo-ry doth";
+			VERSE "cov-ers with";
+			VERSE "Sav-iour and";
+bar
+//13
+1: 4bd; 8r; bf;
+2: 4bb-; 8r; bd;
+
+			VERSE "sin; this";
+			VERSE "reign, Then";
+			VERSE 4; s; "pow'r";
+			VERSE "king; With";
+bar
+//14
+1:4bg; 8af; ge;
+2: 4be; 8;;
+
+			VERSE "bless-ed per-";
+			VERSE "how can I";
+			VERSE "And walk-ing";
+			VERSE "saints and with";
+bar
+//15
+1: 4fd; 8bd; c+en;
+2: 4bb-; 8bg;;
+
+			VERSE "sua-sion the";
+			VERSE "ev-er in";
+			VERSE "by faith he";
+			VERSE "an-gels his";
+bar
+//16
+1: 4d+f; 8.c+e; 16bd;
+2: 4bf; 8.af; 16bb-;
+
+			VERSE "Spir-it brings";
+			VERSE "dark-ness re-";
+			VERSE "saves me each";
+			VERSE "prais-es I ";
+bar
+//17
+
+1: 4bd; 8r; s;
+2: 4bb-; 8r; s;
+
+			VERSE "in.";
+			VERSE "main?";
+			VERSE "hour.";
+			VERSE "sing.";
+
+dblbar
+//18
+1: 8bf; 4.s;
+2: 8d+b; 4.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"The";
+bar
+//19
+1: 4f+f; 8d+f; bf;
+2 1: 4d+b; 8b; bd;
+2 2: 4s; 8b; s;
+
+			VERSE [c]"Lord is my";
+bar
+//20
+1 1: 4c+f; f;
+1 2: 4s; f;
+2 1: 4af; f;
+2 2: 4s; f;
+
+			VERSE [c]"light, my";
+bar
+//21
+1: 4f+f; 8d+f; bf;
+2 1: 4d+b; 8b; bd;
+2 2: 4s; 8b; s;
+
+			VERSE [c]"joy and my";
+bar
+//22
+1: 4c+f; 8r; d+f;
+2: 4af; 8r; bb-;
+
+			VERSE [c]"song; By";
+bar
+//23
+1: 4d+f#; 8af;;
+2: 4ad; 8d+d;;
+
+			VERSE "day and by";
+bar
+//24
+1 1: 4bg; 4d+;
+1 2: 4s; 8g bm; f ebm;
+2: 4d+g; 4bg;
+
+			VERSE "night He";
+bar
+//25
+1: 4d+en; 8.c+e; 16d+e;
+2: 4bc; 8.; 16;
+
+			VERSE "leads me a-";
+bar
+//26
+1 1: 4c+f; 8r; f;
+1 2: 4s; 8s; f;
+2 1: 4af; 8r; 8f;
+2 2: 4s; 8s; 8f;
+
+			VERSE "long. The";
+bar
+//27
+1: 4d+f; 8e+g; d+f;
+2: 4bb-; 8;;
+
+			VERSE "Lord is my";
+bar
+//28
+1 1: 4c+e; f;
+1 2: 4s; e;
+2: 4af;;
+
+			VERSE "light, my";
+bar
+//29
+1: 4c+e; 8d+f; c+e;
+2: 4af; 8;;
+
+			VERSE "joy and my";
+bar
+//30
+1: 4bd; 8r; bf;
+2: 4bb-; 8r; bd;
+
+			VERSE "song, By";
+bar
+//31
+1: 4bg; 8af; ge;
+2: 4be; 8;;
+
+			VERSE "day and by";
+bar
+//32
+1: 4fd; 8bd bm; 8c+en ebm;
+2: 4bb-; bg;
+
+			VERSE 4;;"night he";
+bar
+//33
+1: 4d+f; 8.c+e; 16bd;
+2: 4bf; 8.af; 16bb-;
+
+			VERSE "leads me a-";
+bar
+//34
+1: 4.bd; 8s;
+2: 4.bb-; 8s;
+
+			VERSE "long.";
+endbar

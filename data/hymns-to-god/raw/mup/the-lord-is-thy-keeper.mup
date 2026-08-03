@@ -1,0 +1,331 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Hosannas
+//		For Church And Sabbath School
+//		Young People's Services And
+//		Evangelistic Meetings
+//		Compiled and Edited by: C. B. Strouse, 
+//		Milford H. Lyon, C. G. Jordan,
+//		W. E. Biederwolf, Henry M Stough,
+//		John S. Milton, R. Sam Kirkland
+//		Published by The Glad Tidings Publishing Co.
+//		Lakeside Bldg. Chicago
+//		Copyright: 1911
+//		Hymn No.: 78
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/24/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Lord Is Thy Keeper" ""
+   title (2)""
+   title (11) "B \(flat) - 3 - SOL" "\s(17)\f(TI)\:And,\ behold,\ I\ am\ with\ \|thee,\ and\ will\ keep\ thee whithersoever\ thou\ \|goest,\ -\ Gen.\ 28:15" ""
+   title (13) "Lizzie De Armond" " " "Russell De Koven, 1911" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+//1
+1: 4fd; 2s;
+2: 4bb-; 2s;
+
+			VERSE "<1. >-1|The";
+			VERSE "<2. >-1|The";
+			VERSE "<3. >-1|The";
+bar
+//2
+1: 4bd;;;
+2: 4fb-;;;
+
+			VERSE "Lord is thy";
+			VERSE "Lord is thy";
+			VERSE "Lord is thy";
+bar
+//3
+1: 4bd; ad; gd;
+2: 4fb-;; ab-;
+
+			VERSE "keep-er; O";
+			VERSE "keep-er; trust";
+			VERSE "keep-er, O";
+bar
+//4
+1: 4fd; gd; db-;
+2: 4bb-;; fb-;
+
+			VERSE "sad heart be";
+			VERSE "all to His";
+			VERSE "sing on the";
+bar
+//5
+1: 2fd; 4; 
+2: 2bb-; 4;
+
+			VERSE "still, In";
+			VERSE "love, That";
+			VERSE "way, His";
+bar
+//6
+1: 4bd;;;
+2: 4bg;;;
+
+			VERSE "qui-et sub-";
+			VERSE "shines in full";
+			VERSE "arm will up-";
+bar
+//7
+1: 4ben;; be;
+2: 4gc;; c+gc;
+
+			VERSE "mis-sion ac-";
+			VERSE "glo-ry from";
+			VERSE "hold thee, His";
+bar
+//8
+1: 4gen; ae; be;
+2 1: 4c+; s;;
+2 2: 4b; c+a; c+g;
+
+			VERSE "cept His dear";
+			VERSE "heav-en a-";
+			VERSE "rod be thy";
+bar
+//9
+1 1: 2c+e&; 4f;
+1 2: 2s; 4f;
+2: 2af; 4;
+
+			VERSE "will; The";
+			VERSE "bove; Be";
+			VERSE "stay; Life's";
+bar
+//10
+1: 4d+f;;;
+2: 4bb-;;;
+
+			VERSE "tri-als that";
+			VERSE "pa-tient, be";
+			VERSE "tur-bu-lent";
+bar
+//11
+1: 4c+e; bd; bf;
+2: 4bb-;; bd;
+
+			VERSE "fret thee, the";
+			VERSE "hope-ful, nor";
+			VERSE "bil-lows His";
+bar
+//12
+1: 4c+e; ge;;
+2: 4ge; c+e;;
+
+			VERSE "need-less a-";
+			VERSE "fal-ter nor";
+			VERSE "hand will con-";
+bar
+//13
+1: 2c+e; 4bg;
+2: 2ge; 4c+en;
+
+			VERSE "larms, Can";
+			VERSE "fear, In";
+			VERSE "trol, The";
+bar
+//14
+1: 4af;;;
+2: 4c+f;;;
+
+			VERSE "nev-er dis-";
+			VERSE "light and in";
+			VERSE "peace that He";
+bar
+//15
+1: 4ae;; ge;
+2: 4c+f;; bf;
+
+			VERSE "turb thee when";
+			VERSE "dark-ness the";
+			VERSE "giv-eth brings";
+bar
+//16
+1 1: 4f; ge; ae;
+1 2: 4e; s;;
+2: 4af; bf; c+f;
+
+			VERSE "safe in His";
+			VERSE "Sav-ior is";
+			VERSE "rest to the";
+bar
+//17
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+			VERSE "arms.";
+			VERSE "near.";
+			VERSE "soul.";
+dblbar
+//18
+1: 4fd; 2s;
+2: 4bb-; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Thy";
+bar
+//19
+1: 4bd; ad; gd;
+2: 4fb-;; gb-;
+
+			VERSE [c]"Lord is thy";
+bar
+//20
+1: 4fd; db-; bd;
+2: 4bb-; fb-;;
+
+			VERSE "keep-er, be";
+bar
+//20
+1: 4gc#; ac; gc;
+2: 4enb-;; gb-;
+
+			VERSE "still and o-";
+bar
+//21
+1: 2fd; 4bd;
+2: 2bb-; 4;
+
+			VERSE "bey; His";
+bar
+//22
+1: 4bd;;;
+2: 4bg;;;
+
+			VERSE "love shall en-";
+bar
+//23
+1: 4bd; ad; bd;
+2: 4bg; c+f#; bg;
+
+			VERSE "fold thee thro'";
+bar
+//24
+1: 4c+en; ge; c+e;
+2: 4bc;;;
+
+			VERSE "life's lit-tle";
+bar
+//25
+1 1: 2c+f; 4f;
+1 2: 2s; 4f;
+2: 2af; 4;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			VERSE "day; The";
+bar
+//26
+1: 4d+f; c+e; bd;
+2: 4bb-;;;
+
+			VERSE "Lord is thy";
+bar
+//26
+1: 4bd; ae; bg;
+2: 4fb-; fc; bd;
+
+			VERSE "keep-er, be";
+bar
+//27
+1: 4bd; c+f; d+a&;
+2 1: 4bg; af; b;
+2 2: 4s;; b;
+
+			VERSE "glad and re-";
+bar
+//28
+1: 2e+g; 4;
+2: 2be; 4;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+			VERSE "joice! O";
+bar
+//21
+1: 4d+f;; c+e;
+2: 4bf;; af#;
+
+			VERSE "praise Him for-";
+bar
+//22
+1: 4c+d; bd; gc#;
+2: 4bg;; ben;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "ev-er with";
+bar
+//23
+1: 4fd; c+e; bd;
+2 1: 4bf; af; f;
+2 2: 4s;; f;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "heart, soul and";
+bar
+//24
+1: 2bd; 4s;
+2: 2fb-; 4s;
+
+			VERSE "voice.";
+endbar

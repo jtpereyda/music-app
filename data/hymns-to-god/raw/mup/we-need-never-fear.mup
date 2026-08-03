@@ -1,0 +1,212 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gates Ajar
+//		Hymns and Tunes for 
+//		Use In Sunday Schools, Praise and Prayer Meetings, ertc.
+//		By J. H. Kurzenknabe
+//		J. H. Kurzenknabe & Sons, Publishers,
+//		Harrisburg, PA.:
+//		Copyright: 1885
+//		Hymn No.: 84
+//		
+// Transcribed by: Ted Gatza, Jr. 02/27/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "We Need Never Fear" ""
+   title (2)""
+   title (11) "A - 2 - SOL" "\s(17)\f(TI)\:Jehovah\ is\ my\ light\ and\ my\ salvat\|ion;\ Whom\ shall\ I\ fear?\ Jehovah\ is the\ strength\ of\ my\ life;\ Of\ wh\^om\ shall\ I\ be\ afraid?\ -\ Ps.\ 27:1" ""   
+   title (13) "John H. Kurzenknabe" "" "S. W. Straub, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DCVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=70";
+
+//1
+1: 8ec; 2s; 8;
+2: 8aa-; 2s; 8;
+
+			VERSE "<1. >-1|While";
+			VERSE "<2. >-1|Though";
+			VERSE "<3. >-1|And";
+bar
+//2
+1: 8ac; c+e;;; bd; ac;
+2: 8aa-;;;;;;
+
+			VERSE "out on the voy-age of";
+			VERSE "of-ten we wea-ry of";
+			VERSE "then when our sigh-ing and";
+bar
+//3
+1: 8af; ge; fd; 4ec; 8;
+2: 8aa-;;; 4; 8; 
+
+			VERSE "life's storm-y sea, Our";
+			VERSE "toil all the day, Then";
+			VERSE "weep-ing is done, Our";
+bar
+//4
+1: 8fd;;; gb-; ge;;
+2 1: 8ad;;; e; be;;
+2 2: 8s;;; e; s;;
+
+			VERSE "ref-fuge and shel-ter in";
+			VERSE "watch and keep wait-ing thro'";
+			VERSE "ves-sel is an-chored and";
+bar
+//5
+1 1: 8ac;; ae; 4be; 8e;
+1 2: 8s;;; 4s; 8d;
+2:8aa-;; ac; 4ge; 8;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "Je-sus shall be; He";
+			VERSE "night's long de-lay, The";
+			VERSE "heav-en is won, Our";
+bar
+//6
+1: 8ac; c+e;;; bd; ac;
+2: 8aa-;;;;;;
+
+			VERSE "stills the loud tem-pest and";
+			VERSE "bright dawn of morn-ing to";
+			VERSE "glad hal-le-lu-jahs for";
+bar
+//7
+1: 8af; ge; fd; 4ec; 8;
+2: 8aa-;;; 4; 8; 
+
+			VERSE "calms the wild roar, And";
+			VERSE "all our brave crew Brings";
+			VERSE "ev-er shall ring In";
+bar
+//8
+1 1: 8e;;; fd;;;
+1 2: 8e;;; s;;;
+2: 8ac;;; ad;; bb-;
+
+			VERSE "pi-lots His peo-ple in";
+			VERSE "near-er and near-er the";
+			VERSE "hon-or and glo-ry to";
+bar
+//9
+1: 8g<f>d~<d>; fd; 8gd; 4ac; 8s;
+2: 8be tie;;; 4aa-; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "safe-ty o'er.";
+			VERSE "har-bor view.";
+			VERSE 8; 8; 8; 4; 8s; "Je-sus our King.";
+dblbar
+//10
+1: 8c+e; 2s; 8;
+2 1: 8a; 2s; 8;
+2 2: 8a; 2s; 8;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"We";
+bar
+//11
+1: 8c+e;;; 4e+e; 8c+e;
+2 1: 8a;;; 4c+a; 8a;
+2 2: 8a;;; 4s; 8a;
+
+			VERSE "nev-er need fear the";
+bar
+//12
+1: 8af;;; 4c+f; 8ac;
+2: 8c+f;;; 4af; 8;
+
+			VERSE "tem-pest and wave, For";
+bar
+//13
+1: 8be;;; 4; 8;
+2: 8ge;;; 4; 8;
+
+			VERSE "Je-sus is near and";
+bar
+//14
+1 1: 8bd#;; c+d; 4be; 8e;
+1 2: 8s;;; 4; 8d;
+2: 8fb-;; ab-; 4ge; 8;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "rea-dy to save; Through";
+bar
+//15
+1: 8ac; c+e;;; bd; ac;
+2: 8aa-;;;;;;
+
+			VERSE "break-ers may roar 'midst the";
+bar
+//16
+1: 8af; ge; fd; 4ec; 8;
+2: 8aa-;;; 4; 8;
+
+			VERSE "dark-ness and gloom, He";
+bar
+//17
+1 1: 8e;;; fd;;;
+1 2: 8e;;; s;;;
+2: 8ac;;; ad;; bb-;
+
+			VERSE "takes us safe o'er to the";
+bar
+//18
+1: 8gd; fd; gd; 4ac; 8s;
+2: 8be;;; 4aa-; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "heav-en-ly home.";
+endbar

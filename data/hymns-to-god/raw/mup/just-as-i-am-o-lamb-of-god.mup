@@ -1,0 +1,204 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gloria Deo
+//		A collection of Hymns and Tunes 
+//		for public worship in all 
+//		departments of the church
+//		New York
+//		Funk & Wagnalls Company
+//		30 Lafayette Place
+//		Copyright 1901
+//		Hymn no. 311
+
+// Transcribed by: Ted Gatza, Jr. 04/11/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Just As I Am, O Lamb Of God" ""
+   title (2)""
+   title (11) "A \(flat) - 3 - SOL" "\s(17)\f(TI)\:Look,\ the\ Lamb\ o\|f\ God,\ who\ takes\ away the\ sin\ of\ the\|\ world!\ -\ Jn.\ 1:29" ""
+   title (13) "Horace L. Hastings, 1886" " " "S. M. Bixby, 1894"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+
+//1
+1 1: 4e; 2s;
+1 2: 4e; 2s;
+2 1: 4e; 2s;
+2 2: 4e; 2s;
+
+			VERSE "<1. >-1|Just";
+			VERSE "<2. >-1|Just";	
+bar
+//2
+1: 8.c+e; 16; 4; ae;
+2: 8.aa-; 16; 4; ac;
+
+			VERSE "as I am, O";
+			VERSE "as I am, with-";
+bar
+//3
+1: 8.be; 16; 4; 8ge; ae;
+2: 8.ge; 16; 4; 8be; bf;
+
+			VERSE "Lamb of God, Now I";
+			VERSE "out de-lay, Now I";
+bar
+//4
+1 1: 4b slur; d+; 8.c+e; 16bd;
+1 2: 2e; 8.s; 16s;
+2: 4bg slur; ge; 8.; 16;
+
+			VERSE "come, now I";
+			VERSE "come, now I";
+bar
+//5
+1 1: 2ac; 4e;
+1 2: 2s; 4e;
+2 1: 2aa-; 4e;
+2 2: 2s; 4e;
+
+			VERSE "come; To";
+			VERSE "come; To";
+bar
+//6
+1: 8.c+e; 16; 4; ae;
+2: 8.aa-; 16; 4; ac;
+
+			VERSE "wash me in Thy";
+			VERSE "Christ the true and";
+bar
+//7
+1: 8.be; 16; 4; 8ge; ae;
+2: 8.ge; 16; 4; 8be; bf;
+
+			VERSE "cleans-ing blood, Now I";
+			VERSE "liv-ing Way, Now I";
+bar
+//8
+1 1: 4b slur; d+; 8.c+e; 16bd;
+1 2: 2e; 8.s; 16;
+2: 4bg slur; ge; 8.ge; 16;
+
+			VERSE "come, now I";
+			VERSE "come, now I";
+bar
+//9
+1: 2ac; 4c+e;
+2: 2aa-; 4;
+
+			VERSE "come. While";
+			VERSE "come. For";
+bar
+//10
+1: 8.be; 16c+e; 4d+e; be;
+2: 8.ge; 16ae; 4be; ge;
+
+			VERSE "mer-cy's guid-ing";
+			VERSE "par-don pur-chased";
+bar
+//11
+1: 8.c+e; 16d+e; 4.e+e; 8c+e;
+2 1: 8.a; 16b; 4.c+a; 8a;
+2 2: 8.a; 16; 4.s; 8a;
+
+			VERSE "bea-cons beam To";
+			VERSE "on the tree, For";
+bar
+//12
+1: 8.be; 16c+e; 4d+e;;
+2: 8.ge; 16ae; 4be; ge;
+
+			VERSE "point me to the";
+			VERSE "grace and mer-cy";
+bar
+//13
+1 1: 8.c+e; 16ae; 4be; e;
+1 2: 8.s; 16; 4; e;
+2 1: 8.aa-; 16ac; 4ge; e;
+2 2: 8.s; 16; 4; e;
+
+			VERSE "crim-son stream That";
+			VERSE "rich and free, O";
+bar
+//14
+1: 8.c+e; 16; 4; be;
+2 1: 8.a; 16; 4; ge;
+2 2: 8.a; 16; 4; s;
+
+			VERSE "makes the foul-est";
+			VERSE "Lamb of God, I";
+bar
+//15
+1: 8.c+e; 16d+e; 4e+e; 8.c+e; 16ae;
+2: 8.aa-; 16ba-; 4c+a-; 8.aa-; 16ac;
+mussym (9) above 1: 2 "ferm";
+mussym (9) below 2: 2 "uferm";
+
+			VERSE "sin-ner clean, Now I";
+			VERSE "come to Thee, Now I";
+bar
+//16
+1: 2bf; 8.ae; 16ge;
+2 1: 4a slur; d+; 8.c+e; 16be;
+2 2: 2d; 8.s; 16s;
+
+			VERSE "come, now I";
+			VERSE "come, now I";
+bar
+//17
+1: 2ae; 4s;
+2: 2c+a-; 4s;
+
+			VERSE "come.";
+			VERSE "come.";
+endbar

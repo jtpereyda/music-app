@@ -1,0 +1,205 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Jewels
+//		By R. E. Hudson
+//		Cleveland.
+//		Publishing House of the 
+//		Evangelical Association	
+//		Copyright: 1890
+//		Hymn No.: 3
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/03/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Rest By And By" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - SOL" "\s(17)\f(TI)\:yea,\ saith\ the\ Spirit,\ that\ t\|hey\ may\ rest\ from\ their\ labors; for\ their\ works\ follo\|w\ with\ them.\ -\ Rev.\ 14:13" ""
+   title (13) "Fanny Crosby, arr." " " "J. B. O. Clemm, 1885" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1: 8.e+a; 16d+a; 2.s;
+2: 8.c+a; 16f+a; 2.s;
+
+			VERSE "<1. >-1|'Tis a";
+			VERSE "<2. >-1|'Tis a";
+			VERSE "<3. >-1|With a";
+bar
+//2
+1: 4c+a;;; 8.c+e; 16bd;
+2: 4e+a;;; 8.aa-; 16;
+
+
+			VERSE "bless-ed hope and it";
+			VERSE "bless-ed hope which my";
+			VERSE "stead-fast faith I shall";
+bar
+//3
+1: 4ac;; 8.ge; 16fd; 8.ec; 16fd;
+2: 4aa-;; 8.; 16; 8.; 16;
+
+			VERSE "cheers my soul, that I shall";
+			VERSE "Sav-iour gives, that I shall";
+			VERSE "la-bor on, that I may";
+bar
+//4
+1: 4ec; 8.ac; 16bd; 4c+e; 8.be; 16adn;
+2 1: 4aa-; 8.a; 16; 4; 8.bg; 16bf;
+2 2: 4s; 8.a; 16; 4; 8.s; 16s;
+
+			VERSE "rest, sweet-ly rest, by and";
+			VERSE "rest, sweet-ly rest, by and";
+			VERSE "rest, sweet-ly rest, by and";
+bar
+//5
+1: 2g~e+ slur; 4gb; 8.e+b; 16d+b;
+2:2e~b slur; 4ee+; 8.e+g; 16;
+
+			VERSE "by. When my";
+			VERSE "by. I shall";
+			VERSE "by. O what";
+bar
+//6
+1: 4c+a;;; 8.c+e; 16bd;
+2: 4e+a;;; 8.aa-; 16;
+
+			VERSE "work is done and my";
+			VERSE "see Him there in His";
+			VERSE "joy 'twill be the re-";
+bar
+//7
+1: 4ac;; 8.ge; 16fd; 8.ec; 16fd;
+2: 4aa-;; 8.; 16ab-; 8.ac; 16ad;
+
+			VERSE "crown is won, Then I shall";
+			VERSE "man-sion fair, When I shall";
+			VERSE "deemed to see, When I shall";
+bar
+//8
+1: 4ec; 8.ac; 16bd; 4c+e; 8.bd; 16ac;
+2: 4ae; 8.; 16; 4; 8.ge; 16ea-;
+
+			VERSE "rest, sweet-ly rest by and";
+			VERSE "rest, sweet-ly rest by and";
+			VERSE "rest, sweet-ly rest by and";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.ea-; 4s;
+
+			VERSE "by.";
+			VERSE "by.";
+			VERSE "by.";
+dblbar
+//10
+1: 8.a-c; 16db-; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "By and";
+bar
+//11
+1: 2.ec; 8.ae; 16bg;
+2: 4r; 8.aa-; 16; 4; 4r;
+
+			VERSE "by, By and";
+			VERSE 4s; 8.; 16; 4; 4s; "By and by,";
+bar
+//12
+1: 2.c+a; 8.; 16d+a;
+2 1: 4r; 8.e+a; 16; 4; 8.a; 16c+a;
+2 2: 4s; 8.s; 16s; 4; 8.a; 16s;
+
+			VERSE "by, I shall";
+			VERSE 4s; 8.; 16; 4; 8.s; 16s; "By and by,";
+bar
+//13
+1: 4e+a; 8.; 16f+a; 4e+a; 8.d+b; 16c+a;
+2: 4c+a; 8.; 16d+a; 4c+a; 8.e+a; 16c+a;
+
+			VERSE "rest, sweet-ly rest, by and";
+bar
+//14
+1: 2c+a slur; 4bg; 8.e+b; 16d+b;
+2: 2e+e tie; 4; 8.e+g; 16;
+
+			VERSE "by, 'Tis a";
+bar
+//15
+1: 4c+a;;; 8.c+e; 16bd;
+2: 4e+a;;; 8.aa-; 16;
+
+			VERSE "pre-cious hope, 'tis a";
+bar
+//16
+1: 4ac;; 8.ge; 16fd; 8.ec; 16fd;
+2: 4aa-;; 8.; 16gb-; 8.ac; 16ad;
+
+			VERSE "bless-ed hope, That I shall";
+bar
+//17
+1: 4ec; 8.ac; 16bd; 4c+e; 8.bd; 16ac;
+2: 4ae; 8.; 16; 4; 8.ge; 16ea-;
+
+			VERSE "rest, sweet-ly rest by and";
+bar
+//18
+1: 2.ac; 4s;
+2: 2.ea-; 4s;
+
+			VERSE "by.";
+endbar

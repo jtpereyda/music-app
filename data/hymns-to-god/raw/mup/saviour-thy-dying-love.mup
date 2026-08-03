@@ -1,0 +1,334 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Popular Hymns No. 3
+//	By C. C. Cline
+//	Popular Songs and Standard Hymns, suitable
+//	for the Bible School, Church Services,
+//	Christian Endeavor, E:vangelistic
+//	Meetings and for the Family Circle
+//	Publised By Christian Publishing Company
+//	2712 Pine Street, SAINT LOUIS, MO.
+//	Copyright: 1920
+//	Hymn No.: 9
+
+// Transcribed by: Ted Gatza, Jr. 07/16/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//========================
+
+staffs=2
+	time=4/4
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Saviour, Thy Dying Love" ""
+   title (2) ""
+   title (11) "" "\f(TI)...what doth Jehovah require of thee, but to do justly, and to love kindness," ""
+   title (11) "" "\f(TI)and to walk humbly with thy God? - Mic. 6:8" ""
+   title (11) "" 
+   title (11) "G - 4 - MI" "" ""
+   title (13) " Sylvanus Dryden Phelps, 1862" "" "Robert Lowry, 1871"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1: 2db; 4ec+; db;
+2 1: 2g; 4; ;
+2 2: 2g; 4; ;
+
+	VS "<1. >-1|Sav-iour, Thy";
+//	VS "<2. >-1|At the blest";
+	VS "<2. >-1|Give me a";
+	VS "<3. >-1|All that I";
+
+bar
+
+//2
+1 1: 4.ea; 8e; 2ea;
+1 2: 4.s; 8e; 2s;
+2: 4.cc+; 8; 2;
+
+	VS "dy-ing love";
+//	VS "mer-cy seat,";
+	VS "faith-ful heart\(emdash)";
+	VS "am and have\(emdash)";
+bar
+
+//3
+1 1: 4g slur; f; ce; cf;
+1 2: 2d; 4s; ;
+2 1: 4b slur; a; 4dg; da;
+2 2: 2d; 4s; ;
+
+	VS "Thou gav-est";
+//	VS "Plead-ing for";
+	VS "Like-ness for";
+	VS "Thy gifts so";
+bar
+
+//4
+1 1: 2g slur; d;
+1 2: 1b-;
+2: 1g-g;
+
+	VS "me,";
+//	VS "me,";
+	VS "Thee\(emdash)";
+	VS "free\(emdash)";
+bar
+
+//5
+1: 2gb; 4gc+; gb;
+2: 2gd+; 4ge+; gd+;
+
+	VS "Nor should I";
+//	VS "My fee-ble";
+	VS "That each de-";
+	VS "In joy, in";
+bar
+
+//6
+1 1: 4.ea; 8e; 2ea;
+1 2: 4.s; 8e; 2s;
+2: 4.cc+; 8; 2;
+
+	VS "aught with-hold,";
+//	VS "faith looks up,";
+	VS "part-ing day";
+	VS "grief, thru life,";
+bar
+
+//7
+1 1: 4g slur; f; 4.gb; 8fa;
+1 2: 2d; 4.s; 8;
+2 1: 4b slur; a; 4.dd+; 8dc+;
+2 2: 2d; 4.s; 8;
+
+	VS "Dear Lord, from";
+//	VS "Je-sus, to";
+	VS "Hence-forth may";
+	VS "Dear Lord, for";
+bar
+
+//8
+1 1: 1g;
+1 2: 1g;
+2: 1gb;
+
+	VS "Thee.";
+//	VS "Thee.";
+	VS "see.";
+	VS "Thee.";
+bar
+
+//9
+
+1: 2fa; 4; gb;
+2: 2dd+; 4; ;
+
+	VS "In love my";
+//	VS "Help me the";
+	VS "Some work of";
+	VS "And when Thy";
+bar
+
+//10
+1: 4.ac+; 8gb; 2fa;
+2: 4.dd+; 8; 2;
+
+	VS "soul would bow,";
+//	VS "cross to bear,";
+	VS "love be-gun,";
+	VS "face I see,";
+bar
+
+//11
+1: 2db; 4; dc+;
+2 1: 2g; 4; a;
+2 2: 2g; 4; ;
+
+	VS "My heart ful-";
+//	VS "Thy won-drous";
+	VS "Some deed of";
+	VS "My ran-somed";
+bar
+
+//12
+1: 4.gd+; 8dc+; 2db;
+2 1: 4.bg; 8a; 2g;
+2 2: 4.s; 8g; 2;
+
+	VS "fill its vow,";
+//	VS "love de-clare;";
+	VS "kind-ness done,";
+	VS "soul shall be,";
+bar
+
+//13
+1: 2gd+; 4dc+; db;
+2 1: 2gb; 4fa; g;
+2 2: 2s; 4; g;
+
+	VS "Some of-f'ring";
+//	VS "Some song to";
+	VS "Some wan-d'rer";
+	VS "Thru all e-";
+bar
+
+//14
+1: 4.ea; 8eb; 2ec+;
+2: 4.ca; 8b-g#; 2a-a;
+
+	VS "bring Thee now,";
+//	VS "raise, or pray'r,";
+	VS "sought and won,";
+	VS "ter-ni-ty,";
+bar
+
+//15
+1 1: 4g slur; f; 4.gb; 8fa;
+1 2: 2d; 4.s; 8;
+2 1: 4b slur; a; 4.dd+; 8dc+;
+2 2: 2d; 4.s; 8;
+
+	VS "Some-thing for";
+//	VS "Some-thing for";
+	VS "Some-thing for";
+	VS "Some-thing for";
+bar
+
+//16
+1 1: 1g;
+1 2: 1g;
+2: 1g-b;
+
+	VS "Thee.";
+//	VS "Thee.";
+	VS "Thee.";
+	VS "Thee.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+

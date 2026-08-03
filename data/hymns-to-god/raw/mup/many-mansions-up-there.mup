@@ -1,0 +1,231 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Songs For Work And Worship
+//		For use in Sunday School,
+//		Young peoples' Societies,
+//		Devotional Meetings
+//		Camp Meetings, Etc.
+//		By E.S. Lorenz, J.H. Entwisle,
+//		Powell G. Fithian, Adam Geibel,
+//		and R.F. lehman
+//		Published by The Lorenz Publishing Company
+//		Dayton, Ohio 2903
+//		Copyright 1900
+////		Hymn no. 77
+
+// Transcribed by: Ted Gatza, Jr. 08/30/2010
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Many Mansions Up There" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - Do" "\s(17)\f(TI)\:In\ my\ Father's\ house\ are\ many\ ma\|nsions;\ if\ it\ were\ not\ so,\ I\ would have\ told\ you;\ for\ I\ go\ to\ prepa\|re\ a\ place\ for\ you.\ -\ Jn.\ 14:2"""
+   title (13) "R. F. Lehman" " " "R. F. Lehman, 1900"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key= 3&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 4eb-;
+2: 2.s; 4ge;
+
+			lyrics 1: "<1. >-1|Our";
+			lyrics 1: "<2. >-1|My";
+			lyrics 1: "<3. >-1|When";
+			lyrics 1: "<4. >-1|O";
+bar
+//2
+1 1: 4ge; 8f; 8e; 4ge; 4be;
+1 2: 4s; 8e; 8e; 4s; 4s;
+2: 4be; 8ae; 8ge; 4be; 4ge;
+
+			
+			lyrics 1: "home-less and low-ly";
+			lyrics 1: "heav-en-ly Fa-ther's";
+			lyrics 1: "tired of my earth-ly";
+			lyrics 1: "wan-d'rers of earth op-";
+bar
+//3
+1 1: 4c+e; 4c+e; 4be; 8e; 8e;
+1 2: 4s; 4s; 4s; 8e; 8e;
+2: 4aa-; 4ac; 4ge; 8gc; 8gc;
+
+			lyrics 1: "Sav-ior said, There are";
+			lyrics 1: "house o'er-flows, With the";
+			lyrics 1: "home I know There are";
+			lyrics 1: "pressed with care, There are";
+bar
+//4
+1: 8ge; 4.ge; 8ge; 8ge; 4fd;
+2: 8bb-; 4.bb-; 8bb-; 8bb-; 4ab-;
+
+			lyrics 1: "ma-ny man-sions up";
+			lyrics 1: "ma-ny man-sions up";
+			lyrics 1: "ma-ny man-sions up";
+			lyrics 1: "ma-ny man-sions up";
+bar
+//5
+1 1: 2.e; 4eb-;
+1 2: 2.e; 4s;
+2: 2.ge; 4ge;
+
+			lyrics 1: "there; No";
+			lyrics 1: "there; The";
+			lyrics 1: "there; Where";
+			lyrics 1: "there; You're";
+bar
+//6
+1 1: 4ge; 8f; 8e; 4ge; 4be;
+1 2: 4s; 8e; 8e; 4s; 4s;
+2: 4be; 8ae; 8ge; 4be; 4ge;
+
+			lyrics 1: "place in the earth to";
+			lyrics 1: "joys of that place no";
+			lyrics 1: "death nev-er comes nor";
+			lyrics 1: "wel-come to come with";
+bar
+//7
+1 1: 4c+e; 4c+e; 4be; 8e; 8e; 
+1 2: 4s; 4s; 4s; 8e; 8e;
+2: 4aa-; 4ac; 4ge; 8gc; 8gc;
+
+			lyrics 1: "lay his head, Yet the";
+			lyrics 1: "mor-tal knows, There are";
+			lyrics 1: "e-vils grow, There are";
+			lyrics 1: "us and share In those";
+bar
+//8
+1: 8ge; 4.ge; 8ge; 8ge; 4fd;
+2: 8bb-; 4.bb-; 8bb-; 8bb-; 4ab-;
+
+			lyrics 1: "ma-ny man-sions up";
+			lyrics 1: "ma-ny man-sions up";
+			lyrics 1: "ma-ny man-sions up";
+			lyrics 1: "ma-ny man-sions up";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			lyrics 1: "there.";
+			lyrics 1: "there.";
+			lyrics 1: "there.";
+			lyrics 1: "there.";
+dblbar
+//10
+1 1: 8b; 8b; 2.s;
+1 2: 8b; 8b; 2.s;
+2 1: 8b; 8b; 2.s;
+2 2: 8b; 8b; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: [c]"There are";
+bar
+//11
+1: 4e+g; 4e+g; 8f+a; 8e+a; 4c+e;
+2 1: 4be; 4be; 8c+a; 8c+a; 4a;
+2 2: 4s; 4s; 8s; 8s; 4a;
+
+			lyrics 1: [c]"ma-ny man-sions up";
+bar
+//12
+1 1: 2.b; 4b;
+1 2: 4e; 4d; 4e; 4b;
+2 1: 4ge; 4af; 4bg; 4b;
+2 2: 4s; 4s; 4s; 4b;
+
+			lyrics 1: 4; 4; 4; 4; [c]"there, (up there,) Which";
+bar
+//13
+1: 4e+g; 8d+b; 8c+a; 4bg; 8s; 8s;
+2: 4be; 8e+e; 8e+e; 4e+e; 8s; 8s;
+
+			lyrics 1: [c]"Je-sus has gone";
+invisbar
+newscore
+
+1: 4s; 8s; 8s; 4s; 8af; 8ge;
+2: 4s; 8s; 8s; 4s; 8bd; 8be;
+
+			lyrics 1: [c]"to pre-";
+
+bar
+//14
+1: 4fd; 8.d+b; 16c+a; 4bg; 4af;
+2: 4bb-; 8.bb-; 16bb-; 4bb-; 4bb-;
+
+			lyrics 1: [c]"pare, to pre-pare; There's";
+bar
+//15
+1 1: 4ge; 4ge; 4gd&; 8f bm; 8e ebm;
+1 2: 4s; 4s; 4s; 4d;
+2 1: 4be; 4be; 4be; 8a bm; 8g ebm;
+2 2: 4s; 4s; 4s; 4e;
+
+			lyrics 1: 4; 4; 4; 4; [c]"one for you and";
+bar
+newscore
+//16
+1: 4ac; 4ac; 4c+e; 8c+e; 8c+e;
+2: 4aa-; 4aa-; 4aa-; 8f#a-n; 8fa-;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			lyrics 1: [c]"one for me, If we";
+bar
+//17
+1: 8be; 4e+e; 8ge; 4ge; 4fd;
+2: 8gb-; 4gb-; 8bb-; 4bb-; 4ab-;
+
+			lyrics 1: [c]"trust him to take us";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.ge; 4s;
+
+			lyrics 1: [c]"there.";
+endbar

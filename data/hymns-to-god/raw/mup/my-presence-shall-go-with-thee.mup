@@ -1,0 +1,221 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Song Treasury
+//		A collection of Songs and Music, especially adapted for
+//		Sunday-Schools, Praise and Prayer Meetings,
+//		Church Choirs and the Home Circle.
+//		Also Containing Selections for
+//		Church Festivals, Sunday-School Anniversaries, Concerts, Etc.
+//		Together with a
+//		Complete Course of Elementary Instruction of all the art of
+//		Reading music at sight
+//		By J. H. Kursenknabe,
+//		Publishers: Crider & Brother
+//		York, PA
+//		Copyright 1879
+//		Hymn No.: 105
+//		
+// Transcribed by: Ted Gatza, Jr. 10/05/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "My Presence Shall Go With Thee" ""
+   title (2)""
+   title (11) "B \(flat) - 3 - MI" "\s(17)\f(TI)\:Lo!\ I\ am\ with\ you\ always,\ even\ unto\ the\ end\ of\ the\ world.\ -\ Mat.\ 28:29 \(space)" ""   
+   title (13) "Lizzie Ashbach" "" "Frank M. Davis, 1879"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,40
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8.db- bm; 16ec ebm; 2s;
+2: 4fb-; 2s;
+
+
+			VERSE 4; 2s; "<1. >-1|These";
+			VERSE 4; 2s; "<2. >-1|Should";
+			VERSE 4; 2s; "<3. >-1|Through";
+			VERSE 4; 2s; "<4. >-1|Near-";
+
+bar
+//2
+1 1: 8.fd; 16fd; 4d+f; 8.c+ bm; 16b ebm;
+1 2: 8.s; 16s; 4s; 4f;
+2: 8.bb-; 16bb-; 4bb-; 8.ac bm; 16bd ebm;
+
+			VERSE 8.; 16; 4; 4; "words how they should";
+			VERSE 8.; 16; 4; 4; "man-y tri-als";
+			VERSE 8.; 16; 4; 4; "bit-ter tears may";
+			VERSE 8.; 16; 4; 4; "ing the grave, I";
+bar
+//3
+1: 8.bg bm; 16 ge ebm; 4ge; 8.af bm; 16ge ebm;
+2: 4be; 4be; 4be;
+
+			VERSE 4; 4; 4; "cheer thee, When";
+			VERSE 4; 4; 4; "meet thee, Thy";
+			VERSE 4; 4; 4; "blind thee, The";
+			VERSE 4; 4; 4; "see thee Trem-";
+bar
+newscore
+
+//4
+1: 8.fd; 16db-; 4fd; 4d+f;
+2: 8.bb-; 16bb-; 4bb-; 4bb-;
+
+			VERSE 8.; 16; 4; 4; "trou-bled and dis-";
+			VERSE 8.; 16; 4; 4; "way with cares be";
+			VERSE 8.; 16; 4; 4; "mourn-er shall be";
+			VERSE 8.; 16; 4; 4; "bling, and sore op-";
+bar
+//5
+1: 2c+f; 8.db- bm; 16ec ebm;
+2 1: 2af; 4f;
+2 2: 2s;  4f;
+
+			VERSE 2; 4; "tress'd. My";
+			VERSE 2; 4; "press'd, My";
+			VERSE 2; 4; "blest, My";
+			VERSE 2; 4; "press'd, My";
+bar
+//6
+1 1: 8.fd; 16fd; 4d+f; 8.c+bm; 16b ebm;
+1 2: 8.s; 16s; 4s; 4f;
+2: 8.bb-; 16bb-; 4bb-; 8.gc bm; 16bd ebm;
+
+			VERSE 8.; 16; 4; 4; "pres-ence shall go";
+			VERSE 8.; 16; 4; 4; "pres-ence shall go";
+			VERSE 8.; 16; 4; 4; "pres-ence shall go";
+			VERSE 8.; 16; 4; 4; "pres-ence shall go";
+bar
+//7
+1: 8.bg bm; 16ge ebm; 4ge; 8.af bm; 16ge ebm;
+2: 4be; 4be; 4be;
+
+			VERSE 4; 4; 4; "with thee, And";
+			VERSE 4; 4; 4; "with thee, And";
+			VERSE 4; 4; 4; "with thee, And";
+			VERSE 4; 4; 4; "with thee, And";
+bar
+//8
+1: 8.fd; 16bd; 4c+e; 4ae;
+2: 8.bf; 16bf; 4af; 4c+f;
+
+			
+			VERSE 8.; 16; 4; 4; "I will give thee";
+			VERSE 8.; 16; 4; 4; "I will give thee";
+			VERSE 8.; 16; 4; 4; "I will give thee";
+			VERSE 8.; 16; 4; 4; "I will give thee";
+bar
+//9
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+			VERSE "rest.";
+			VERSE "rest.";
+			VERSE "rest.";
+			VERSE "rest.";
+dblbar
+//10
+1: 4d+f; 2s;
+2: 4bb-; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"My";
+bar
+//11
+1: 8.e+g; 16ge; 4ge; 4e+g;
+2: 8.be; 16be; 4be; 4be;
+
+			 VERSE 8.; 16; 4; 4; [c]"pow-er shall sus-";
+bar
+//12
+1: 8.e+g bm; 16d+f ebm; 4d+f; 4d+f;
+2: 4bb-; 4bb-; 4bb-;
+
+			VERSE 4; 4; 4; [c]"tain thee, Where";
+bar
+//13
+1 1: 8.d+f; 16c+f; 4c+en; 8.g bm; 16b ebm;
+1 2: 8.s; 16s; 4s; 4e;
+2: 8.bf; 16af; 4gc; 4c+c;
+
+			VERSE 8.; 16; 4; 4; [c]"e'er it seem-eth";
+bar
+//14
+1 1: 2af; 8.g bm; 16f ebm;
+1 2: 2s; 4e;
+2: 2c+f; 4af;
+
+			VERSE 2; 4; [c]"best, My";
+bar
+//15
+1 1: 8.fd; 16fd; 4d+f; 8.c+ bm; 16b ebm;
+1 2: 8.s; 16s; 4s; 4f;
+2: 8.bb-; 16bb-; 4bb-; 8.ac bm; 16bd ebm;
+
+			VERSE 8.; 16; 4; 4; [c]"pres-ence shall go";
+bar
+//16
+1: 8.bg bm; 16ge ebm; 4ge; 8.af bm; 16ge ebm;
+2: 4be; 4be; 4be;
+
+			VERSE 4; 4; 4; [c]"with thee, And";
+bar
+//17
+1: 8.fd; 16bd; 4c+e; 4ae;
+2: 8.bf; 16bf; 4af; 4c+f;
+
+			VERSE [c]"I will give thee";
+bar
+//18
+1: 2bd; 4s;
+2: 2bb-; 4s;
+
+			VERSE [c]"rest.";
+endbar

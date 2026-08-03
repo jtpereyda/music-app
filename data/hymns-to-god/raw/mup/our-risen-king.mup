@@ -1,0 +1,220 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Brightest Glory
+//		A Collection of choice and original hymns and tunes
+//		By our best composers for the Sunday Schools,
+//		Young peoples meetins and all religious gatherings
+//		By Frank M. Davis
+//		Published by Frank M. Davis
+//		Vicksburg, Miss
+//		Copyright: 1896
+//		Hymn No.: 135
+
+// Transcribed by: Ted Gatza, Jr. 07/01/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Our Risen King" ""
+   title (2)""
+   title (11) "D \(flat) - 4 - DO" "\s(17)\f(TI)\:Now\ is\ Christ\ risen\ from\ the\ dead.\ -\ 1\ Cor.\ 15:20  \(space)" ""
+   title (13) "John H. Alleman" " " "John H. Alleman"	
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+
+//1
+1 1: 4.d; 8e; 8.fd; 16ec; 8.fd; 16ge;
+1 2: 4.d; 8; 8.s; 16; 8.; 16;
+2: 4.fd; 8gd; 8.ad; 16; 8.; 16;
+
+			VERSE "<1. >-1|An-gels came and rolled the";
+			VERSE "<2. >-1|Where, O grave, where is thy";	
+			VERSE "<3. >-1|Now be-hold His pierc-ed";
+			VERSE "<4. >-1|See as-cend-ing while at";
+			VERSE "<5. >-1|There he lives to in-ter-";
+bar
+//2
+1: 4af; bg; af; r;
+2: 4d+d;;; r;
+
+			VERSE "stone a-way,";
+			VERSE "vic-to-ry?";
+			VERSE "hands and side,";
+			VERSE "Beth-a-ny,";
+			VERSE "cede for thee,";
+bar
+//3
+1 1: 4.d+f; 8bg; 8.af; 16fd; 8.e; 16d;
+1 2: 4.s; 8; 8.; 16; 8.d; 16;
+2: 4.ad; 8d+d; 8.; 16ad; 8.gd; 16fd;
+
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+bar
+//4
+1: 2fd; 4ec; r;
+2: 2aa-; 4; r;
+
+			VERSE "ri-sen;";
+			VERSE "ri-sen;";
+			VERSE "ri-sen;";
+			VERSE "ri-sen;";
+			VERSE "ri-sen;";
+bar
+newscore
+//5
+1 1: 4.d; 8e; 8.fd; 16ec; 8.fd; 16ge;
+1 2: 4.d; 8; 8.s; 16; 8.; 16;
+2: 4.fd; 8gd; 8.ad; 16; 8.; 16;
+
+			VERSE "Je-sus reigns, our King of";
+			VERSE "Death's cold chains can ne'er His";
+			VERSE "O why doubt ye? 'twas for";
+			VERSE "Thro' the clouds he goes tri-";
+			VERSE "Come, O come, His faith-ful";
+bar
+//6
+1: 4af; bg; af; r;
+2: 4d+d;;; r;
+
+			VERSE "kings, to-day;";
+			VERSE "conq-'ror be;";
+			VERSE "you he died;";
+			VERSE "um-phant-ly;";
+			VERSE "fol-l'wer be;";
+bar
+//7
+1 1: 4.d+f; 8bg; 8.af; 16fd; 8.d; 16fd;
+1 2: 4.s; 8; 8.; 16; 8.d; 16s;
+2: 4.ad; 8d+d; 8.; 16ad; 8.fd; 16ad;
+
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+			VERSE "Hal-le-lu-jah! He is";
+bar
+//8
+1 1: 2ec; 4d; r;
+1 2: 2s; 4d; s;
+2: 2ga-; 4fd; r;
+			VERSE "ri-sen.";
+			VERSE "ri-sen.";
+			VERSE "ri-sen.";
+			VERSE "ri-sen.";
+			VERSE "ri-sen.";
+dblbar
+newscore
+//9
+1: 4.bg; 8; 4.c+g; 8;
+2: 4.d+g; 8; 4.ae; 8;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Glo-ry to the";
+bar
+//10
+1: 2.d+f; 4f+a;
+2: 2.ad; 4d+d;
+
+			VERSE "Lamb, He";
+bar
+//11
+1: 8e+a bm; d+gn ebm; c+a bm; bg ebm; 4s; s;
+2 1: 8c+ bm; b ebm; e+ bm; d+ ebm; 4s; 8s; s;
+2 2: 4e;; s; s;
+
+			VERSE 4; 4; 4s; 4s; "reigns, our";
+invisbar
+newscore
+
+1: 8s; s; s; s; 4ae; gne;
+2 1: 8s; s; s; s; 4c+e; 8b bm; d+ ebm;
+2 2: 4s;; s; e;
+
+			VERSE 4s; 4s; 4; 4; "ris-en";
+
+
+bar
+//12
+1: 2.ae; 4r;
+2: 2.c+a-; 4r;
+
+			VERSE "King;";
+bar
+//13
+1 1: 4.d; 8e; 8.fd; 16ge; 8.af; 16bg;
+1 2: 4.d; 8d; 8.s; 16; 8.; 16;
+2: 4.fd; 8gd; 8.ad; 16; 8.d+d; 16;
+
+			VERSE "Glo-ry to this low-ly";
+bar
+//14
+1: 4af; d+a; bg; e+g;
+2: 4d+d; d+f; d+g; bg;
+
+			VERSE "Naz-a-rene; He";
+bar
+//15
+1: 8d+f bm; c+e ebm; 8d+f bm; e+g ebm; 4.f+a; 8e+g;
+2 1: 4a;; 4.aa-; 8;
+2 2: 4a;; 4.s; 8;
+
+			VERSE 4; 4; 4.; 8; "lives, He reigns to-";
+bar
+//16
+1: 2.d+f; 4r;
+2: 2.ad; 4r;
+
+			VERSE "day.";
+endbar

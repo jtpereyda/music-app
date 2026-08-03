@@ -1,0 +1,314 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom Of Song
+//		A collection of Songs for
+//		Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited by T. M. Bowdish
+//		Published by the W. W. Whitney Co.
+//		Entered At Stationers Hall, London England
+//		Copyrigght 1900
+//		Hymn No.: 12
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 03/26/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "What Have I Done For Jesus?" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - MI" "\s(17)\f(TI)\:Wherefore,\ my\ beloved\ brethre\|n,\ be\ ye\ stedfast,\ unmoveable, always\ abounding\ in\ the\ wor\^k\ of\ the\ Lord,\ -\ 1\ Cor.\ 15:58" ""
+   title (13) "Laura E. Newell" " " "Frederick H. Pease" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=85";
+
+//1
+1 1: 8c+a; bg; a; 4ge; 8be;
+1 2: 8s;; a; 4s; 8s;
+2 1: 8e+a; d+a; c+a; 4b; 8d+a;
+2 2: 8s;;; 4a; 8s;
+ital (13) above 1: 1 "f";
+
+			VERSE "<1. >-1|What have I done for";
+			VERSE "<2. >-1|What have I done for";
+			VERSE "<3. >-1|This would I do for";
+			
+bar
+//2
+1: 4.ae; 4ec; 8r;
+2 1: 4. c+a; 4a; 8r;
+2 2: 4.s; 4a; 8s;
+
+			VERSE "Je-sus?";
+			VERSE "Je-sus";
+			VERSE "Je-sus,";
+bar
+//3
+1 1: 8d+e; c+e; bg; 4a; 8bg;
+1 2: 8s;;; 4a; 8s;
+2: 8ge; ae; d+e; 4c+e; 8be;
+
+			VERSE "Tell me O heart of";
+			VERSE "He who hath borne for";
+			VERSE "Live for him ev-'ry";
+bar
+//4
+1: 4.c+a tie; 4; 8r;
+2 1: 4.a tie; 4; 8r;
+2 2: 4.a tie; 4; 8s;
+
+			VERSE "mine?";
+			VERSE "me,";
+			VERSE "day,";
+bar
+//5
+1 1: 8c+a; be; ae; 8g bm; a ebm; 8be;
+1 2: 8s;;; 4e; 8s;
+2 1: 8e+a; d+a; c+a; b bm; c+ ebm; 8bg;
+2 2: 8s;;; 4e; 8s;
+
+			VERSE 8; 8; 8; 4; 8; "Have I been tru-ly";
+			VERSE 8; 8; 8; 4; 8; "Bit-ter re-proach, who";
+			VERSE 8; 8; 8; 4; 8; "First in my heart would";
+bar
+//6
+1: 4.c+e; 4e+e; 8r;
+2 1: 4.a; 4ac; 8r;
+2 2: 4.a; 4s; 8s;
+
+			VERSE "faith-ful,";
+			VERSE "suf-fered";
+			VERSE "keep him,";
+bar
+//7
+1 1: 8f; c+f; bf; 4ae; 8be;
+1 2: 8f; s;; 4s; 8s;
+2: 8ad; e+d; d+d; 4c+e; 8d+e;
+
+			VERSE "Un-to the Lord di-";
+			VERSE "On the ac-cur-sed";
+			VERSE "Watch-ing I'd work and";
+bar
+//8
+1: 4.ae tie; 4; 8r;
+2: 4.c+a- tie; 4; 8r;
+
+			VERSE "vine?";
+			VERSE "tree,";
+			VERSE "pray,";
+bar
+//9
+1 1: 8a; bg; a; a bm; b ebm; a;
+1 2: 8g; s; g; 4g; 8g;
+2: 8e+c;;; 4; 8;
+ital (13) above 1: 1 "cres.";
+
+			VERSE 8; 8; 8; 4; 8; "Have I been quick to";
+			VERSE 8; 8; 8; 4; 8; "What can I do for";
+			VERSE 8; 8; 8; 4; 8; "Then with his hand to";
+bar
+//10
+1: 4.af; 4d+f; 8r;
+2: 4.d+d; 4ad; 8r;
+
+			VERSE "heark-en";
+			VERSE "Je-sus?";
+			VERSE "lead me,";
+bar
+//11
+1 1: 8c+f; d+f; c+f; c+ bm; b ebm; ad;
+1 2: 8s;;; 4dn; 8s;
+2: 8af;;; 4; 8;
+
+			VERSE 8; 8; 8; 4; 8; "When he has bid me";
+			VERSE 8; 8; 8; 4; 8; "Who has done all for";
+			VERSE 8; 8; 8; 4; 8; "Lead in the nar-row";
+bar
+//12
+1: 4.e+<d+>e~; 4d+e; 8r;
+2: 4.ge slur; 4af slur; 8bg;
+
+			VERSE "\"come\"";
+			VERSE "me";
+			VERSE "way,";
+bar
+//13
+1: 8c+e; be; ae; 4ge; 8be;
+2: 8c+a; d+a; c+a; 4be; 8gd;
+
+			VERSE "Work-ing with zeal un-";
+			VERSE "That I may serve him";
+			VERSE "I would go home re-";
+bar
+//13
+1 1: 4.ae; 4e+ slur; 8d+;
+1 2: 4.s; 4.f;
+2: 4.ac;;
+
+			VERSE 4.; 4.; "tir-ing";
+			VERSE 4.; 4.; "ful-ly,";
+			VERSE 4.; 4.; "joic-ing";
+bar
+//14
+1: 8c+e; be; d+e; 4c+e; 8be;
+2: 8ae; ge; be; 4ae; 8d+e;
+
+			VERSE "Lead-ing his lost ones";
+			VERSE "Tru-ly ac-cep-ta-";
+			VERSE "Praise him as an-gels";
+bar
+//15
+1: 4.ae tie; 4; 8r;
+2: 4.c+a- tie; 4; 8r;
+
+			VERSE "home.";
+			VERSE "bly.";
+			VERSE "may.";
+dblbar
+//16
+1: 8e+c+; e+b; e+a; 4e+g; 8d+b;
+2: 8e+a; d+a; c+a; 4be; 8e+e;
+ital (13) 1: 1 "Refrain";
+ital (13) 1: 1 "f";
+
+			VERSE [c]"What have I done for";
+bar
+//17
+1: 4.c+a; 4ae; 8r;
+2: 4.e+a; 4c+a; 8r;
+
+			VERSE [c]"Je-sus?";
+bar
+//18
+1: 8f+d+; f+c+; f+b; 4f+a; 8f+b;
+2: 8ad;;; 4d+d; 8;
+ital (13) 1: 1 "cres.";
+
+			VERSE [c]"Je-sus, my Lord, My";
+bar
+//19
+1: 4.e+c+ tie; 4; 8r;
+2: 4.c+a tie; 4; 8r;
+
+			VERSE "King,";
+bar
+//20
+1: 8d+na; c+a; bdn; af bm; ge ebm; fd;
+2 1: 8b;;; 4bb-; 8;
+2 2: 8b;;; 4s; 8;
+ital (13) above 1: 1 "m";
+
+			VERSE 8; 8; 8; 4; 8; "What to his ho-ly";
+bar
+//21
+1: 4ge slur; 8af; 4bg slur; 8c+a;
+2: 4.be; e+e;
+< above 1: 1 til 3;
+
+			VERSE "al-tar";
+
+bar
+//22
+1: 8bg; c+a; be; 4ae; 8c+a;
+2: 8ge; ae; gd; 4ac; 8e+a-;
+
+			VERSE "Can I an off-'ring";
+bar
+//23
+1: 4.bg tie; 4; 8r;
+2: 4.e+e tie; 4; 8r;
+
+			VERSE "bring";
+bar
+//24
+1: 8e+a; d+g; c+a; 4be; 8d+g;
+2: 8e+c+; e+b; e+a; 4e+g; 8e+b;
+
+			VERSE "What can I do for";
+bar
+//24
+1: 4.c+a; 4 bg; 8r;
+2 1: 4.e+a; 4e+ slur; 8d+;
+2 2: 4.s; 4e; 8s;
+
+			VERSE "Je-sus?";
+bar
+//25
+1 1: 8ae; e; ec; 4eb-; 8e;
+1 2: 8s; d; s; 4s; 8d;
+2: 8e+c+; e+b; e+a; 4e+g; 8e+b;
+ital (13) above 1: 1 "m";
+
+			VERSE "What have I done for";
+bar
+//26
+1: 4.c+a; 4bg; 8r;
+2 1: 4. e+a; 4e+ slur; 8d+;
+2 2: 4.s; 4e; [dist 0] 8r;
+
+			VERSE "Je-sus?";
+bar
+//27
+1 1: 8ae; e; ec; 4eb-; 8e;
+1 2: 8s; d; s; 4s; 8d;
+2: 8c+e; be; ae; 4ge; 8be;
+ital (13) above 1: 1 "p";
+
+			VERSE "What have I done for";
+bar
+//28
+1: 4.ec tie; 4; 8r;
+2: 4.aa- tie; 4; 8r;
+
+			VERSE "him?";
+endbar

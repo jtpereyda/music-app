@@ -1,0 +1,229 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Thanksgiving
+//		Prepared by D. B. Towner Mus. Doc.
+//		Director of the Music Course of the
+//		Moody Bible Institute of Chicago
+//		Fleming H. Revell Company
+//		New York, 158 fifth Avenue
+//		Chicago, 125 N. Wabash Avenue
+//		Toronto, London, Edinburgh
+//		Copyright 1913
+//		Hymn No.: 98
+//		
+// Transcribed by: Ted Gatza, Jr. 01/03/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Christ, The Light" ""
+   title (2)""
+   title (11) "B \(flat) - 4 - MI" "\s(17)\f(TI)\:I\ am\ the\ light\ of\ the\ world:\ he\ \|that\ followeth\ me\ shall\ not\ walk in\ the\ darkness,\ but\ shall\ h\^ave\ the\ light\ of\ life.\ -\ Jn.\ 8:12" ""   
+   title (13) "Harriet H. Pierson" "" "D. B. Towner, 1909"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8db-; ec; 2.s;
+2: 8fb-;; 2.s;
+
+			VERSE "<1. >-1|When the";
+			VERSE "<2. >-1|For the";
+			VERSE "<3. >-1|O'er the";
+bar
+//2
+1: 4fd; 8; ge; fd; d+f; bf; fd;
+2: 4bb-; 8;;;; d+b-; bb-;
+
+			VERSE "clouds gath-er thick-ly, and the";
+			VERSE "feet that have wan-dered from the";
+			VERSE "hills comes the dawn-ing, with its";
+bar
+//3
+1 1: 4af; ge;; 8s; s;
+1 2: 4s;;; 8s;;
+2: 4be;;; 8s;;
+
+			VERSE "shad-ows lie";
+			VERSE "path a-stray,";
+			VERSE "ra-diance bright;";
+			
+invisbar
+newscore
+
+1 1: 4s; ;; 8c; d;
+1 2: 4s;;; 8c;;
+2: 4s;;; 8af;;
+
+			VERSE "Dark and";
+			VERSE "Lost in";
+			VERSE "'Tis the";
+
+bar
+//4
+1 1: 8.ec; 16db-n; 8ec; f; 4ae; 8ge; f;
+1 2: 8.s; 16; 8; 8e; 4s; 8; 8e;
+2 1: 8.af; 16g#; 8af;; 4c+f; 8af;;
+2 2: 8.s; 16f; 8s;; 4; 8;;
+
+			VERSE "deep a-cross the way We must";
+			VERSE "ma-zes dark and wild, By the";
+			VERSE "Sun of Right-eous-ness Come to";
+bar
+//5
+1: 8.ge; 16fd; 8; ec; 4db-; 8s; s;
+2: 8.bb-; 16; 8; fb-; 4; 8s;;
+
+			VERSE "tread from day to day,";
+			VERSE "lure of sin be-guiled,";
+			VERSE "heal a world's dis-tress;";
+invisbar
+newscore
+
+1: 8.s; 16; 8; ; 4; 8db-; ec;
+2: 8.s; 16; 8; ; 4; 8fb-;;
+
+			VERSE "There's a";
+			VERSE "Still the";
+			VERSE "Soon His";
+
+bar
+//6
+1: 4fd; 8; ge; fd; d+f; bf; fd;
+2: 4bb-; 8;;;; d+b-; bb-;
+
+			VERSE "light sent to cheer us; lo, it";
+			VERSE "Day-star is point-ing to the";
+			VERSE "rays will il-lu-mine all the";
+bar
+//7
+1: 4af; ge;; 8c+g;;
+2: 4be;;; 8e+e;;
+
+			VERSE "gleams on high, Like a";
+			VERSE "shin-ing way, Lead-ing";
+			VERSE "earth's dark night With a";
+bar
+//8
+1: 8bf; fd; bd; c+e; 4d+f; c+e;
+2: 8d+f; bf;;; 4; af;
+
+			VERSE "bea-con in the mid-night";
+			VERSE "up-ward to the gates of";
+			VERSE "glo-ry from the heav'n-ly";
+bar
+//9
+1: 2.bd; 4s;
+2: 2.bb-; 4s;
+
+			VERSE "sky.";
+			VERSE "day.";
+			VERSE "height.";
+dblbar
+//10
+1: 8.ac; 16bd; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "See the";
+bar
+1: 2. c+e; 8.bd; 16c+e;
+2: 4r; 8.af; 16; 4; 4r;
+
+			VERSE "light shin-ing";
+			VERSE 4s; 8.; 16; 4; 4s; "see the light";
+bar
+//11
+1: 2.d+f; 8d+f;;
+2: 4r; 8.bb-; 16; 4; 8;;
+
+			VERSE "clear! 'Tis the";
+			VERSE 4s; 8.; 16; 4; 8s; 8s; "shin-ing clear!";
+bar
+//12
+1: 4e+g; 8;; d+f;; c+e; bd;
+2: 4bb-; 8;;;;;;
+
+			VERSE "Christ that our long-ing eyes be-";
+			VERSE "Christ that our long-ing eyes, our";
+bar
+//13
+1: 2.c+f; 8.bf; 16c+f;
+2 1: 2.a; 8.s; 16s;
+2 2: 8f;; 8.; 16; 8bm; e ebm; 8.bd; 16ac;
+
+			VERSE "hold; He will";
+			VERSE 8; 8; 8.; 16; 4; 8.s; 16s; "long-ing eyes be-hold;";
+bar
+//14
+1: 4d+f;; bd; 8.fd; 16;
+2: 4bb-;; fb-; 8.bb-; 16;
+
+			VERSE "lead us on till the";
+bar
+//15
+1: 4ge; be; e+g; 8c+g;;
+2: 4be; ge; be; 8e+e;;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "night is gone, And the";
+bar
+//16
+1: 8bf; fd; bd; c+e; 4d+f; c+e;
+2: 8d+f; bf;;; 4; af;
+
+			VERSE "splen-dors of the morn un-";
+bar
+//17
+1: 2.bd; 4s;
+2: 2. bb-; 4s;
+
+			VERSE "fold.";
+endbar
+			

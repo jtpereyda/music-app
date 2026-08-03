@@ -1,0 +1,222 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Gospel Hymns Nos. 1 to 6
+//		by Ira D. Sankey, James McGranahan, and Gep. C. Stebbins
+//		Excelsior Edition
+//		Published by: The Biglow & Main Co. New York, Chicago
+//		The John Church Co. Cincinnati, New York, Chicago
+//		Copyright, 1895
+//		Hymn no. 122
+
+// Transcribed by: Ted Gatza, Jr. 04/21/2010; Rev. 12/12/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Jesus Calls Thee" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - MI" "\s(17)\f(TI)\:I\ the\ Lord\ have\ called\ thee.\ -\ Is.\ 42:6 \(space)"""
+   title (13) "S. A. Collins" " " "W. H. Doanne, 1876"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=1 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8
+	key=4&
+
+
+staff 2	
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=90";
+
+//1
+1 1: 4c+e; 8d+f; 8c+e; 8bd; 8ac;
+2: 4aa-; 8aa-; 8aa-; 8aa-; 8aa-;
+
+			lyrics 1: "<1. >-1|Je-sus, gra-cious One,";
+			lyrics 1: "<2. >-1|Still He waits for thee,";
+			lyrics 1: "<3. >-1|Wea-ry, sin-sick soul,";
+			
+bar
+//2
+1: 4af; 8bg; 8af; 8ge; 8fd;
+2: 4ad; 8ad; 8ad; 8ad; 8ad;
+
+			lyrics 1: "call-eth now to thee,";
+			lyrics 1: "plead-ing pa-tient-ly,";
+			lyrics 1: "called so gra-cious-ly";
+bar
+//3
+1: 4ec; 8ac; 4c+e; 8ae;
+2: 4aa-; 8ea-; 4aa-; 8ac;
+
+			lyrics 1: "\"Come, O sin-ner,";
+			lyrics 1: "\"Come, O come to";
+			lyrics 1: "\"Canst thou dare re-";
+bar
+//4
+1: 4.be tie; 4.be;
+2: 4.ge tie; 4.ge;
+
+			lyrics 1: "come!\"";
+			lyrics 1: "Me!\"";
+			lyrics 1: "fuse?\"";
+bar
+//5
+1 1: 4c+e; 8d+f; 8c+e; 8bd; 8ac;
+2: 4aa-; 8aa-; 8aa-; 8aa-; 8aa-;
+
+			lyrics 1: "Calls so ten-der-ly,";
+			lyrics 1: "\"Heav-y la-den one,";
+			lyrics 1: "Mer-cy of-fered thee,";
+bar
+//6
+1: 4af; 8bg; 8af; 8ge; 8fd;
+2: 4ad; 8ad; 8ad; 8ad; 8ad;
+
+			lyrics 1: "calls so lov-ing-ly,";
+			lyrics 1: "I thy grief have borne,";
+			lyrics 1: "free-ly, ten-der-ly,";
+bar
+//7
+1: 4ec; 8ae; 4ae; 8ge;
+2: 4ae; 8c+e; 4c+e; 8d+e;
+
+			lyrics 1: "\"Now, O sin-ner,";
+			lyrics 1: "Come and rest in";
+			lyrics 1: "Wilt thou still a-";
+bar
+//8
+1: 4.ae tie; 4.ae;
+2: 4.c+a tie; 4.c+a;
+
+			lyrics 1: "come.\"";
+			lyrics 1: "Me.\"";
+			lyrics 1: "buse?";
+bar
+//9
+1 1: 4be; 8be; 8b bm; 8a ebm; 8ge;
+1 2: 4s; 8s; 4e; 8s;
+2 1: 4d+e; 8d+e; 8d+ bm; 8c+ ebm; 8be;
+2 2: 4s; 8s; 4e; 8s;
+
+			lyrics 1: 4; 8; 4; 8; "Words of peace and";
+			lyrics 1: 4; 8; 4; 8; "Words with love o'er-";
+			lyrics 1: 4; 8; 4; 8; "Come, for time is";
+bar
+//10
+1 1: 4a slur; 8b; 4.c+a;
+1 2: 4.e; 4.s;
+2 1: 4c+ slur; 8d+; 4.e+a;
+2 2: 4.a; 4.s;
+
+			lyrics 1: "bless-ing,";
+			lyrics 1: "flow-ing";
+			lyrics 1: "fly-ing,";
+bar
+//11
+1 1: 4c+e; 8c+e; 8c+ bm; 8b ebm; 8ae;
+1 2: 4s; 8s; 4e; 8s;
+2 1: 4a; 8a; 8aa- bm; 8gb- ebm; 8ac;
+2 2: 4a; 8a; 8s; 8s; 8s; 
+
+			lyrics 1: 4; 8; 4; 8; "Christ's own love con-";
+			lyrics 1: 4; 8; 4; 8; "Life and bliss be-";
+			lyrics 1: 4; 8; 4; 8; "Haste, thy lamp is";
+bar
+//12
+1: 4b slur; 8c+; 4.d+e;
+1 2: 4.e; 4.s;
+2 1: 4g slur; 8a; 4.be;
+2 2: 4.e; 4.s;
+
+			lyrics 1: "fess-ing;";
+			lyrics 1: "stow-ing;";
+			lyrics 1: "dy-ing;";
+dblbar
+//13
+1: 8c+e; 8c+e; 8c+e; 4c+a; 8c+a;
+2 1: 8a; 8a; 8a; 4e+a; 8e+a;
+2 2: 8a; 8a; 8a; 4s; 8s; 
+ital (13) above 1: 1 "Refrain";
+
+			lyrics 1: [c]"Hear the sweet voice of";
+bar
+//14
+1: 4.d+a; 4.dn+a;
+2: 4.d+f; 4.bnf&;
+
+			lyrics 1: [c]"Je-sus,";
+bar
+//15
+1: 4.e+a; 4c+e; 8ac;
+2: 4.c+e; 4ae; 8ae;
+
+			lyrics 1: [c]"Full, full of";
+bar
+//16
+1: 4.b<b>e~; 4.bne;
+2: 4.ge tie; 4.ge;
+
+			lyrics 1: [c]"love;";
+bar
+//17
+1: 4c+e; 8d+f; 8c+e; 8bd; 8ac;
+2: 4aa-; 8aa-; 8aa-; 8aa-; 8aa-;
+
+			lyrics 1: [c]"Call-ing ten-der-ly,";
+bar
+//18
+1: 4af; 8bg; 8af; 8ge; 8fd;
+2: 4ad; 8ad; 8ad; 8ad; 8ad;
+
+			lyrics 1: [c]"call-ing lov-ing-ly,";
+bar
+//19
+1: 4ec; 8ae; 4ae; 8ge;
+2: 4ae; 8c+e; 4c+e; 8d+e;
+
+			lyrics 1: [c]"\"Come, O sin-ner,";
+bar
+//20
+1: 4.ae tie; 4.ae;
+2: 4.c+a- tie; 4.c+a-;
+
+			lyrics 1: [c]"come.\"";
+endbar

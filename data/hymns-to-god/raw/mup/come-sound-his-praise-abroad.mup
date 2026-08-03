@@ -1,0 +1,214 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: The Assembly Hymn and Song Collection
+//		For use ing Chapel, Assembly, Convocation
+//		or General Exercises of Schools, Normals, 
+//		Colleges, Universitues, Etc.
+//		Compiled and Edited by C. Guy Hoover
+//		Professor of School Music, Theory and 
+//		Conducting
+//		Published by the Author
+//		Authorized Distributer: Educational Music Bureau
+//		School-Music Supply Department
+//		218 So. Wabash Ave. Chicago.
+//		Sixth Edition
+//		Copyright 1915
+//		Hymn no.99
+
+// Transcribed by: Ted Gatza, Jr. 12/07/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Come, Sound His Praise Abroad" ""
+   title (2)""
+   title (11) "C - 4 - DO" "\s(17)\f(TI)\:Sing\ forth\ the\ glory\ of\ his\ name:\ Make\ his\ praise\ glorious.\ -\ Ps.\ 66:2 \(space)"""
+   title (13) "Isaac Watts" " " "Isaac Smith"
+
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=c
+
+
+staff 2
+	key=c
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1 1: 2c+c; 4g; 4g;
+1 2: 2s; 4g; 4g;
+2 1: 2c+c; 4g; 4g;
+2 2: 2s; 4g; 4g;
+
+			lyrics 1: "<1. >-1|Come, sound His";
+			lyrics 1: "<2. >-1|He formed the";
+			lyrics 1: "<3. >-1|Come, wor-ship";
+bar
+//2
+1 1: 2e; 2g;
+1 2: 2e; 2g;
+
+2 1: 2e; 2g;
+2 2: 2e; 2g;
+
+			lyrics 1: "praise a-";
+			lyrics 1: "deeps un-";
+			lyrics 1: "at His";
+bar
+//3
+1: 2.c+e; 4e+g;
+2: 2.gc; 4c+c;
+
+			lyrics 1: "broad, And";
+			lyrics 1: "known; He";
+			lyrics 1: "throne; Come";
+bar
+//4
+1 1: 2d+g; 2g;
+1 2: 2s; 2g;
+2: 2d+b-; 2be;
+
+			lyrics 1: "hymns of";
+			lyrics 1: "gave the";
+			lyrics 1: "bow be-";
+bar
+//5
+1 1: 4c+ slur; 4a; 4s; 4s;
+1 2: 2e; 2s;
+2 1: 4a slur; 4c+; 4s; 4s;
+2 2: 2c; 2s;
+
+			lyrics 1: "glo-";
+			lyrics 1: "seas";
+			lyrics 1: "fore";
+invisbar
+newscore
+
+1 1: 4s; 4s; 4g slur; 4f#;
+1 2: 2s; 2d;
+2 1: 4s; 4s; 4b slur; 4a;
+2 2: 2s; 2d;
+
+			lyrics 1: "ry";
+			lyrics 1: "their";
+			lyrics 1: "the";
+
+bar
+//6
+1: 2.gd; 4ge;
+2: 2.bg-; 4c+e;
+
+			lyrics 1: "sing; Je-";
+			lyrics 1: "bound; The";
+			lyrics 1: "Lord; We";
+bar
+//7
+1: 2c+e; 2e+g;
+2: 2gc; 2c+c;
+
+			lyrics 1: "ho-vah";
+			lyrics 1: "wat-'ry";
+			lyrics 1: "are His";
+bar
+//8
+1 1: 2.c+e; 4g;
+1 2: 2.s; 4g;
+2: 2.gc; 4c+e;
+
+			lyrics 1: "is the";
+			lyrics 1: "worlds are";
+			lyrics 1: "work, and";
+bar
+//9
+1 1: 4a<g>f<g>; 4g; 8a bm; 8b ebm; 4c+;
+1 2: 4s; 4g; 4f; 4g;
+2 1: 2c+; 4f+d slur; 4e+c;
+2 2: 4f slur; 4e; 4s; 4s; 
+phrase above 1: 3 til 4;
+phrase below 1: 3 til 4;
+
+			lyrics 1: 2; 2; "sov-'reign";
+			lyrics 1: 2; 2; "all His";
+			lyrics 1: 2; 2; "not our";
+bar
+newscore
+//10
+1 1: 2.bg; 4g;
+1 2: 2.s; 4g;
+2: 2.d+g; 4c+e;
+
+			lyrics 1: "God, The";
+			lyrics 1: "own; And";
+			lyrics 1: "own; He";
+bar
+//10
+1 1: 4a; 4b; 4c+; 4d+a;
+1 2: 4f; 2g; 4s;
+2 1:4c+; 4d+; 4c+; 4c+f;
+2 2: 2f; 4e; 4s;
+phrase above 1: 1 til 3;
+phrase below 1: 1 til 3;
+phrase above 2: 1 til 3;
+phrase below 2: 1 til 3;
+
+			lyrics 1: 2.; 4; "u-ni-";
+			lyrics 1: 2.; 4; "all The";
+			lyrics 1: 2.; 4; "formed us";
+bar
+//11
+1 1: 2e+g; 2d+;
+1 2: 2s; 4g slur; 4f;
+2: 2c+g; 2bg-;
+
+			lyrics 1: "ver-sal";
+			lyrics 1: "sol-id";
+			lyrics 1: "by His";
+bar
+//12
+1: 1c+e;
+2: 1c+c;
+
+			lyrics 1: "King.";
+			lyrics 1: "ground.";
+			lyrics 1: "word.";
+endbar			
+
+   title (11) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

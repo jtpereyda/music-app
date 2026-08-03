@@ -1,0 +1,168 @@
+// Coded with Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church Hymns and Gospel Songs
+//		For Sacred Services, Prayer Meetings and
+//		Other Religious Gatherings
+//		By Ira D.Sankey, James McGranahan,
+//		and Geo. C. Stebbins
+//		410th Thousand
+//		Published by: The Biglow and Main Co.
+//		New York Chicago
+//		Copyright: 1898
+//		Hymn No.: 360
+
+// Transcribed by: Ted Gatza, Jr. 06/30/2010; Rev. 02/15/2014
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Am Thine Own" ""
+   title (2)""
+   title (11) "G - 3 - FA" "\s(17)\f(TI)\:Let\ us\ draw\ near\ to\ God\ \|with\ a\ sincere\ heart\ in full\ assurance\ of\ fa\|ith,\ -\ Heb.\ 10:22" ""
+   title (13) "Helen Bradley" " " "A. A. Wright"	
+ 
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time= 3/4	
+	key= 1#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key= 1#
+	clef=bass
+
+// ****************************************
+
+music
+
+midi all: 0 "tempo=70";
+
+//1
+1 1: 2s; 4d;
+1 2: 2s; 4d;
+2: 2s; 4bg;
+
+			lyrics 1: "<1. >-1|I";
+			lyrics 1: "<2. >-1|No";
+			lyrics 1: "<3. >-1|My";
+			lyrics 1: "<4. >-1|I";
+bar
+//2
+1: 4.bd; 8ae; 8gd; 8ad;
+2: 4.d+g; 8c+c; 8bd; 8c+d;
+
+			lyrics 1: "am Thine own, O";
+			lyrics 1: "earth-ly joy can";
+			lyrics 1: "joy-ful song of";
+			lyrics 1: "can-not tell the";
+bar
+//3
+1: 2gd; 4bg;
+2: 2bg; 4d+g;
+
+			lyrics 1: "Christ; Hence-";
+			lyrics 1: "lure My";
+			lyrics 1: "praise In";
+			lyrics 1: "art By";
+bar
+//4
+1 1: 4.d+g; 8bg; 8e+g; 8a;
+1 2: 4.s; 8s; 8s; 8g;
+2: 4.bg; 8d+g; 8c+c; 8e+cn;
+
+			lyrics 1: "forth en-tire-ly";
+			lyrics 1: "qui-et soul from";
+			lyrics 1: "sweet con-tent I";
+			lyrics 1: "which such bliss Is";
+bar
+//5
+1: 2af; 4s;
+2: 2d+d; 4s;
+
+			lyrics 1: "Thine;";
+			lyrics 1: "Thee:";
+			lyrics 1: "sing:";
+			lyrics 1: "giv'n:";
+dblbar
+newscore
+//6
+1 1: 2s; 4d;
+1 2: 2s; 4d;
+2: 2s; 4bg;
+
+			lyrics 1: "And";
+			lyrics 1: "This";
+			lyrics 1: "To";
+			lyrics 1: "I";
+bar
+//7
+1: 4.bd; 8ae; 8gd; 8ad;
+2 1: 4.g; 8c+c; 8bd; 8c+d;
+2 2: 4.g; 8s; 8s; 8s;
+
+			lyrics 1: "life from this glad";
+			lyrics 1: "deep de-lights so";
+			lyrics 1: "Thee the note I";
+			lyrics 1: "know Thou hast my";
+bar
+//8
+1: 2gd; 4bg;
+2: 2bg; 4d+g;
+
+			lyrics 1: "hour, New";
+			lyrics 1: "pure, Is";
+			lyrics 1: "raise, My";
+			lyrics 1: "heart, And";
+bar
+//9
+1 1: 2d+g; 8a bm; 8b ebm;
+1 2: 2s; 4f;
+2 1: 2bd; 8c+ bm; 8d+ ebm;
+2 2: 2s; 4d;
+
+			lyrics 1: 2; 4; "life is";
+			lyrics 1: 2; 4; "heav'n to";
+			lyrics 1: 2; 4; "King! My";
+			lyrics 1: 2; 4; "I have";
+bar
+//10
+1 1: 2g; 4s;
+1 2: 2g; 4s;
+2: 2bg-; 4s;
+
+			lyrics 1: "mine.";
+			lyrics 1: "me.";
+			lyrics 1: "King!";
+			lyrics 1: "heav'n";
+endbar
+
+   title (15) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"

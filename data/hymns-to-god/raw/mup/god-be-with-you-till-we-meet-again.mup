@@ -1,0 +1,254 @@
+// Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Church School Hymnal
+//		The Heidelberg Press
+//		Publishers for Discriminators
+//		200-14 N. Fifteenth St., Philadelphia
+//		Editor C. Harold Lowden
+//		Copyright: 1922
+//		Hymn No.: 26
+//		
+// Transcribed by: 
+//	Ted Gatza, Jr. 11/19/2013
+
+// Revisions:
+//	11/29/2022
+
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "God Be With You Till We Meet Again" ""
+   title (2)""
+   title (11) "" "\f(TI)The grace of our Lord Jesus Christ be with you. - Rom. 16:20" ""   
+   title (11) "D \(flat) - 4 - MI" "" ""
+   title (13) "Jeremiah E. Rankin, 1880" "" "William G. Tomar, 1880"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+
+
+staffs=2
+	time=4/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+	define VERSE11 lyrics between 1&2 using 1 1: @
+	define VERSE12 lyrics between 1&2 using 1 2: @
+	define VERSE21 lyrics between 1&2 using 2 1: @
+	define VERSE22 lyrics between 1&2 using 2 2: @
+
+midi all: 0 "tempo=90";
+
+//1
+1: 4.fd; 8;;;;;
+2: 4.ad; 8;;;;;
+
+	VERSE "<1. >-1|God be with you till we";
+	VERSE "<2. >-1|God be with you till we";
+	VERSE "<3. >-1|God be with you till we";
+	VERSE "<4. >-1|God be with you till we";
+
+bar
+//2
+1: 4ad; ec; fd; r;
+2 1: 4af; a; ad; r;
+2 2: 4s; a; s; s;
+
+	VERSE "meet a-gain,";
+	VERSE "meet a-gain,";
+	VERSE "meet a-gain,";
+	VERSE "meet a-gain,";
+bar
+//3
+1: 4.bd; 8bg;;;;;
+2 1: 4.g; 8d+g;;;;;
+2 2: 4.g; 8s;;;;;
+
+	VERSE "By His coun-sels guide, up-";
+	VERSE "'Neath His wings pro-tect-ing";
+	VERSE "When life's per-ils thick con-";
+	VERSE "Keep love's ban-ner float-ing";
+bar
+//4
+1: 2bg; 4af; 4r;
+2: 2d+d; 4; r;
+
+	VERSE "hold you,";
+	VERSE "hide you,";
+	VERSE "found you,";
+	VERSE "o'er you,";
+bar
+//5
+1 1: 4. ae; 8;;; a;;
+1 2: 4.s; 8;;; g;;
+2: 4.c+a; 8;;; e+a-;;
+
+	VERSE "With His sheep se-cure-ly";
+	VERSE "Dai-ly man-na still pro-";
+	VERSE "Put His lov-ing arms a-";
+	VERSE "Smite death's threaten-ing wave be-";
+bar
+//6
+1: 2af; 4fd; r;
+2: 2d+d; 4ad; r;
+
+	VERSE "fold you;";
+	VERSE "vide you;";
+	VERSE "round you;";
+	VERSE "fore you;";
+bar
+//7
+1 1: 4.fd; 8; bg; af; d; e;
+1 2: 4.s; 8;;; d;;
+2: 4.ad; 8; d+d;; af; bg;
+
+	VERSE "God be with you till we";
+	VERSE "God be with you till we";
+	VERSE "God be with you till we";
+	VERSE "God be with you till we";
+bar
+//8
+1 1: 4fd; ec; d; s;
+1 2: 4s;; d; s;
+2 1: 4a; ga-; fd; s;
+2 2: 4a; s;;;
+
+	VERSE "meet a-gain!";
+	VERSE "meet a-gain!";
+	VERSE "meet a-gain!";
+	VERSE "meet a-gain!";
+dblbar
+newscore
+//9
+1: 8.fd; 16ge; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+	VERSE11 [c]"Till we";
+bar
+//10
+1 1: 4a ph; d+; f+ eph; 8.e+a; 16d+a;
+1 2: 2f slur; 4a; 8.s; 16;
+2: 4r; 8ad;; 4d+d; 8.d+f; 16;
+
+
+	VERSE 4; 4s; 4s; 8.; 16;"meet, till we";
+	VERSE21 "Till we meet, till we";
+bar
+//11
+1: 4bg slur; 2d+b; 8.c+a; 16bg;
+2: 4d+g;;; 8.; 16;
+
+	VERSE "meet, Till we";
+	VERSE21 "meet a-gain, Till we";
+bar
+//12
+1 1: 4.af; 8bg; 8af bm; fd ebm; d bm; f ebm;
+1 2: 4.s; 8;;; 4d; 
+2 1: 4.d+d; 8; 8d+ bm; a ebm; fbm; a ebm;
+2 2: 4.s; 8; 4d;;
+
+	VERSE 4.; 8; 4; 4; "meet at Je-sus'";
+	VERSE 4.; 8; 4; 4; "meet at Je-sus'";
+bar
+//13
+1: 2.ec; 8.fd; 16ge;
+2: 4aa-; 8;; 4; r;
+
+	VERSE "feet, Till we";
+	VERSE21	"feet, till we meet,";
+bar
+//14
+1 1: 4a ph; d+; f+ eph; 8.e+a; 16d+a;
+1 2: 2f slur; 4a; 8.s; 16;
+2: 4r; 8ad;; 4d+d; 8.; 16;
+
+
+	VERSE 4; 4s; 4s; 8.; 16;"meet, till we";
+	VERSE21 "Till we meet, till we";
+bar
+//15
+1: 4bg slur; 2d+b; 8.d+g; 16bg;
+2: 4d+g;;; 8.bg; 16d+g;
+mussym (9) above 1: 2 "ferm";
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 3 "uferm";
+mussym (9) below 2: 4 "uferm";
+
+	VERSE "meet; God be";
+	VERSE 4; 4; 4; 8.s; 16s; "meet a-gain,";
+bar
+//16
+1 1: 8af; fd; d; e; 4fd; ec;
+1 2: 8s;; d;; 4s;;
+2 1: 8d+d; ad; af; bg; 4a; ga-;
+2 2: 8s;;;; 4a; s;
+
+	VERSE "with you till we meet a-";
+bar
+//17
+1 1: 2.d; 4r;
+1 2: 2.d; 4s;
+2: 2.fd; 4r;
+
+	VERSE "gain!";
+endbar
+//18
+1: 1db-;
+2: 1gg-;
+
+	VERSE "A-";
+bar
+//19
+1: 1da-;
+2: 1fd;
+
+	VERSE "men.";
+endbar
+	

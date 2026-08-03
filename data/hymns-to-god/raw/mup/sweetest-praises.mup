@@ -1,0 +1,212 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+// Lyric Source: Sowing and Reaping: hymns, tunes, 
+//		 and carols for the Sunday school, 
+//		 prayer, praise and gospel service. 
+//		 Author: John H. Kurzenknabe. 
+//		 Publisher: J.H. Kurzenknabe & Sons, 
+//		 Copyright 1889
+//		 Hymn No. 61
+
+
+		
+// Transcribed by: Ted Gatza, Jr. 08/08/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Sweetest Praises" ""
+   title (2)""
+   title (11) "A - 4 - MI" "\s(17)\f(TI)\:Sing\ unto\ him,\ sing\ pr\|aises\ unto\ him;\ Talk\ ye of\ all\ his\ marvellous\ \|works.\ -\ 1\ Chron.\ 16:9" ""
+   title (13) "Lizzie Ashbaugh" "" "John E. Kurzenknabe"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,30
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key= 3#
+
+
+staff 2
+	key= 3#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8c+e; 8bd;
+2: 2.s; 8aa-; 8aa-;
+
+
+			VERSE "<1. >-1|We are";
+			VERSE "<2. >-1|Here we";
+			VERSE "<3. >-1|We are";
+			
+bar
+//2
+1: 4ac; 4ec; 8fd; 8ec; 8ac; 8ec;
+2: 4aa-; 4aa-; 8aa-; 8aa-; aea-; 8aa-;
+
+			VERSE "hap-py, trust-ing in our";
+			VERSE "learn of Je-sus and His";
+			VERSE "press-ing to the home be-";
+bar
+//3
+1: 4fd; 4fd; 4ec; 8gd; 8ac;
+2: 4ad; 4ad; 4aa-; 8be; 8ae;
+
+			VERSE "Fa-ther's care, And He";
+			VERSE "won-drous love, Of His";
+			VERSE "yond the sky, Which the";
+bar
+//4
+1: 4bd; 4bd; 8bd; 8ac; 8c+e; 8bd;
+2: 4ge; 4ge; 8ge; 8ae; 8ae; 8ge;
+
+			VERSE "bids us that we come be-";
+			VERSE "mer-cy and His roy-al";
+			VERSE "faith-ful Christ-ian shall in-";
+bar
+//5
+1: 2ac; 4ec; 8c+e; 8bd;
+2: 2aa-; 4aa-; 8aa-; 8aa-;
+
+			VERSE "fore Him; We will";
+			VERSE "fav-or; How He";
+			VERSE "her-it; And a";
+bar
+//6
+1: 4ac; 4ec; 8fd; 8ec; 8ac; 8ec;
+2: 4aa-; 4aa-; 8aa-; 8aa-; aea-; 8aa-;
+
+			VERSE "sing our sweet-est songs of";
+			VERSE "came to earth, and left His";
+			VERSE "man-sion there a-waits us";
+bar
+//7
+1: 4fd; 4fd; 4ec; 8gd; 8ac;
+2: 4ad; 4ad; 4aa-; 8be; 8ae;
+
+			VERSE "praise and pray'r, And with";
+			VERSE "throne a-bove, That, for";
+			VERSE "when we die, We have";
+bar
+//8
+1: 4bd; 4bd; 8bd; 8ac; 8c+e; 8bd;
+2: 4ge; 4ge; 8ge; 8ae; 8ae; 8ge;
+
+			VERSE "grate-ful, hap-py hearts a";
+			VERSE "us, He'd be a per-fect";
+			VERSE "learn'd it of the Ho-ly";
+bar
+//9
+1: 2ac; 4ac; 4s;
+2: 2aa-; 4aa-; 4s;
+
+			VERSE "dore Him.";
+			VERSE "Sav-iour.";
+			VERSE "Spir-it.";
+dblbar
+//10
+1 1: 8.c+; 16d+; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE "Sweet-est";
+bar
+//11
+1 1: 2e+ tie; 8e+; 8c+e; 8.c+e; 16bg;
+1 2: [dist -4]4r; 8.e; 16e; 8e; 8s; 8.s; 16s;
+2 1: 4r; 8.c+a; 16c+a; 8c+a; 8a; 8.a; 16d+e;
+2 2: 4s; 8.s; 16s; 8s; 8a; 8.a; 16s;
+
+			VERSE "prais-es now we'll";
+			VERSE 4s; 8.; 16; 8; 8; 8.; 16; "Sweet-est prais-es now we'll";
+bar
+//12
+1 1: 2.a; 8.g; 16a;
+1 2: 4f; 8.f; 16f; 4f; 4r;
+2: 4c+f; 8.c+f; 16c+f; 4c+f; 4r;
+
+			VERSE "sing,_ To our";
+			VERSE 4; 8.; 16; 4; 4s; "sing, we will sing,";
+bar
+//13
+1 1: 2b tie; 8b; 8ge; 8.ae; 16be;
+1 2: [dist -6]4r; 8.g; 16g; 8g; 8s; 8.s; 16s;
+2: 4r; 8.e+e; 16e+e; 8e+e; 8be; 8.ac; 16ge;
+
+			VERSE "Lord_ and to our";
+			VERSE 4s; 8.; 16; 8; 8; 8.; 16; "To our Lord and to our";
+bar
+//14
+1 1: 2.c+; 8.c+; 16d+;
+1 2: 4e; 4e; 4e; 4r;
+2: 4aa-; 4aa-; 4aa-; 4r;
+
+			VERSE "King,_ Un-to";
+			VERSE 4; 4; 4; 4s; " heav'n-ly King;";
+bar
+//15
+1 1: 2e+ tie; 8e+; 8c+e; 8.c+e; 16bg;
+1 2: [dist -4]4r; 8.e; 16e; 8e; 8s; 8.s; 16s;
+2 1: 4r; 8.c+a; 16c+a; 8c+a; 8a; 8.a; 16d+e;
+2 2: 4s; 8.s; 16s; 8s; 8a; 8.a; 16s;
+
+			VERSE "Him,_ for all His";
+			VERSE 4s; 8.; 16; 8; 8s; 8.s; 16s; "Un-to Him";
+bar
+//16
+1: 4af; 4af; 4af; 8af; 8bf;
+2: 4c+f; 4c+f; 4d+d; 8bd#; 8bd;
+
+			VERSE "lov-ing care To His";
+bar
+//17
+1 1: 4.c+a; 8a; 4c+a; 4bg;
+1 2: 4.s; 8a; 4s; 4s;
+2: 4.e+e; 8c+f; 4e+e; 4d+e;
+
+			VERSE "chil-dren ev-'ry-";
+bar
+//18
+1 1: 2.a; 4s;
+1 2: 2.a; 4s;
+2: 2.c+a; 4s;
+
+			VERSE "where.";
+endbar

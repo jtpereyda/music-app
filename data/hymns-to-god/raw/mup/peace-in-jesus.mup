@@ -1,0 +1,225 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Welcome Tidings:
+//		A new collection of sacred songs
+//		For the Sunday-School
+//		By: Robert Lowry, W. Howard Doane and Ira D. Sankey
+//		Embracing New hymns and music by the late P. P. Bliss
+//		Publisher Biglow & Main no. 76 East Ninth Street New York
+//		John Church & Co. No. 66 West Fourth Street Cincinnati
+//		Copyright: 1877
+//		Hymn No.: 80
+//		
+// Transcribed by: Ted Gatza, Jr. 10/05/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "Peace In Jesus" ""
+   title (2)""
+   title (11) "A \(flat) - 4 - DO" "\s(17)\f(TI)\:My\ peace\ I\ give\ unto\ you.\ -\ Jn.\ 14:27 \(space)" ""   
+   title (13) "A. Kenyon" "" "Robert Lowry, 1877"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+//1
+1: 8ac; bd; 2.s;
+2: 8aa-;; 2.s;
+
+			VERSE "<1. >-1|O the";
+			VERSE "<2. >-1|Yes, I";
+			VERSE "<3. >-1|By His";
+			VERSE "<4. >-1|Then still";
+bar
+//2
+1 1: 4c+e; 8be; ae; 4fd; 8e; gd;
+1 2: 4s; 8;; 4; 8d; s;
+2: 4aa-; 8gb-; ac; 4ad; 8ge; be;
+
+			VERSE "peace that in Je-sus I";
+			VERSE "know that my Sav-iour is";
+			VERSE "Spir-it He dwells with me";
+			VERSE "near-er to Him may I";
+bar
+//3
+1: 2.ac; 8ae; ge;
+2: 2.aa-; 8ac;;
+
+			VERSE "find! How it";
+			VERSE "mine, That He";
+			VERSE "now, And His";
+			VERSE "live; More and";
+bar
+//4
+1: 4fd; 8; ge; 4ae; 8be; c+e;
+2: 4ad; 8; bd; 4ac; 8gb-; aa-;
+
+			VERSE "cheers me a-mid all my";
+			VERSE "nev-er will leave me to";
+			VERSE "voice is so gen-tle and";
+			VERSE "more of His love, is my";
+bar
+//5
+1: 2.be; 8c+e; bd;
+2: 2.ge; 8;;
+
+			VERSE "care; It is";
+			VERSE "die; Tho' in";
+			VERSE "still; As be-";
+			VERSE "prayer; Eve-ry";
+bar
+//6
+1: 4ac; 8; ge; 4fd; 8af; fd;
+2: 4af; 8; ac; 4ad; 8;;
+
+			VERSE "sweet to the sor-row-ing";
+			VERSE "weak-ness I of-ten re-";
+			VERSE "fore Him in wor-ship I";
+			VERSE "bless-ing I need will He";
+bar
+//7
+1: 2.ec; 8;;
+2: 2.aa-; 8;;
+
+			VERSE "mind, In this";
+			VERSE "pine, He will";
+			VERSE "bow, It is";
+			VERSE "give, And re-";
+bar
+//8
+1: 4fd; 8ae; c+e; 4bd; 8fd; gd;
+2: 4ad; 8ac; aa-; 4ge; 8be;;
+
+			VERSE "pre-cious sal-va-tion to";
+			VERSE "fill all my soul by and";
+			VERSE "sweet to sub-mit to His";
+			VERSE "ceive me at home o-ver";
+bar
+//9
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "share.";
+			VERSE "by.";
+			VERSE "will.";
+			VERSE "there.";
+dblbar
+//10
+1: 8ge; af; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE [c]"O the";
+bar
+//11
+1: 2.bg; [up]8c+a; be;
+2 1: 4r; e;; r;
+2 2: 4s; e;; s;
+
+			VERSE "peace, O the";
+			VERSE 4s; 4; 4; 4s; "sweet peace,";
+bar
+//12
+1: 2.ac; 8bd; c+e;
+2: 4r; ea-;; 8fd; anc;
+ital dyn above 1: 4 "m";
+
+			VERSE "peace That my";
+			VERSE 4s; 4; 4; 8s; 8s; "sweet peace";
+bar
+//13
+1: 4d+f; 8c+f; bf; 4a&e; 8gd; ac;
+2: 4bb-; 8anc; bd; 4c+e; 8be; a&e;
+
+			VERSE "Sav-iour has giv-en to";
+bar
+//14
+1: 2.be; 8c+e; bd;
+2: 4ge;;; r;
+ital dyn above 1: 4 "p";
+
+			VERSE "me! O the";
+			VERSE 4s; 4; 4; 4s; " Sweet peace,";
+bar
+//15
+1: 2.ac; 8bc; ac;
+2: 4r; ea-;; r;
+
+			VERSE "peace, O the";
+			VERSE 4s; 4; 4; 4s; "sweet peace,";
+bar
+//16
+1: 2fd slur; 4af; 8ge; fd;
+2: 4r; ad;; 8;;
+ital dyn above 1: 1 "pp";
+mussym (9) above 1: 3 "ferm";
+ital dyn above 1: 4 "m";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "peace That my";
+			VERSE 4s; 4; 4; 8s; 8s; "sweet peace,";
+bar
+//17
+1: 4ec; 8ac; c+e; 4bd; 8fd; gd;
+2: 4ae; 8;; 4ge; 8be;;
+
+			VERSE "Sav-iour has giv-en to";
+bar
+//18
+1: 2.ac; 4s;
+2: 2.aa-; 4s;
+
+			VERSE "me!";
+endbar

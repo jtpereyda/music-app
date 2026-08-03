@@ -1,0 +1,287 @@
+// !Mup vs. 7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This MUP code is donated to the public domain.
+
+// Hymn Source:	
+//	Great Songs Of The Church
+//	A Comprehensive Collection of Psalms,
+//	Hymns, and Spiritual Songs of First Rank,
+//	Suuitable for all Services of the Church
+//	E. L. Jorgenson, Compiler
+//	Copyright 1921
+//	Hymn no. 329
+				
+// Transcribed by: Ted Gatza, Jr. 07/10/2022
+// HymnsToGod.org
+
+//=========================
+
+top
+
+   title bold (19) "" "There Stands A Rock" ""
+   title (2)""
+   title (11) "" "\f(TI)Be thou to me a rock of habitation, whereunto I may" "" 
+   title (11) "" "\f(TI)continually resort: Thou hast given commandment to" "" 
+   title (11) "" "\f(TI)save me; For thou art my rock and my fortress. - Ps. 71:3" "" 
+
+   title (11) "G - 4 - MI" "" ""
+   title (13) "S. S. Journal" "" "T. C. O'Kane"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4	
+	key=1#
+
+staff 2
+	key=1#
+	clef=bass
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BSV lyrics below 2: @
+         define BSV1 lyrics below 2 using 1: @
+         define BSV12 lyrics below 2 using 1 2: @
+         define BSV21 lyrics below 2 using 2 1:@
+         define BSV22 lyrics below 2 using 2 2:@ 
+
+   //Chorus
+       define CHORUS ital (12) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (12) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+       define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Repeats
+      define RIT(COUNT)
+           ital (12) above 1: COUNT "rit."@
+      define FINE(COUNT)
+           ital (12) above 1 :COUNT "fine"@
+      define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+
+//=========================
+
+// set midi
+	midi all: 0 "temp=95";
+
+//=========================
+
+//Verse
+
+//1
+1: 4db; 8.; 16ec+; 4db; 8r; d#a;
+2 1: 4g; 8.; 16; 4; 8r; 8b-f;
+2 2: 4g; 8.; 16; 4; 8s; 8s;
+
+	VS "<1. >-1|There stands a Rock, on";
+	VS "<2. >-1|That Rock's a cross, its";
+	VS "<3. >-1|That Rock's a tow'r, whose";
+bar
+
+//2
+1: 4eg; 8eg bm; fa ebm; 4.eg; 8s;
+2: 4ce; cg; 4.cc+; 8s;
+
+	VS21 "shores of time,";
+	VS21 "arms out-spread,";
+	VS21 "loft-y height,";
+invisbar
+1: 2s; 4.; 8ce;
+2: 2s; 4.; 8gc;
+
+	VS "That";
+	VS "Ce-";
+	VS "Il-";
+bar
+
+//3
+1 1: 4d; dg; 8g bm; a ebm; 4gb;
+1 2: 4d; s; 4d; 4s;
+2 1: 4s;; 8b bm; c+ ebm; 4s;
+2 2: 4b-g; g-b; g; 4gd+;
+
+	VS 4; 4; 4; 4; "rears to heav'n its";
+	VS 4; 4; 4; 4; "les-tial glo-ry";
+	VS 4; 4; 4; 4; "lumed with heav'n's un-";
+bar
+
+//4
+1 1: 4fa; fd+; d+ slur; c+;
+1 2: 4s; s; 2f;
+2: 4dd+; da; 2;
+
+	VS "head sub-lime;";
+	VS "bathes its head;";
+	VS "cloud-ed light,";
+bar
+
+//5
+1: 4db; 8.; 16ec+; 4db; 8r; d#a;
+2 1: 4g; 8.; 16; 4; 8r; 8b-f;
+2 2: 4g; 8.; 16; 4; 4s;
+
+	VS "That Rock is cleft, and";
+	VS "To its firm base my";
+	VS "Swings wide its gates be-";
+bar
+
+//6
+1: 4eg; 8eg bm; fa ebm; 4.eg; 8s;
+2: 4cg;; 4.cc+; 8s;
+
+	VS21 "they are blest,";
+	VS21 "all I bring,";
+	VS21 "neath the dome,";
+invisbar
+1: 2s; 4.; 8ce;
+2: 2s; 4.; 8gc;
+
+	VS "Who";
+	VS "And";
+	VS " Where";
+bar
+
+//7
+1 1: 4d; dg; 4.db; 8ea;
+1 2: 4d; 2.s;
+2: 4g-g; g-b;[down] 8g-g bm; a-f; b-g ebm; 8cc+;
+
+	VS "find with-in the";
+	VS "to the cross of";
+	VS "saints find rest with";
+bar
+
+//8
+1: 4dg; cf; 2b-g;
+2: 4db; da; 2g-g;
+
+	VS "cleft a rest.";
+	VS "a-ges cling.";
+	VS "Christ at home.";
+dblbar
+//9
+newscore
+CHORUS
+1: 4gd+; 8.; 16gc#+; 4gd+; 8.ge+; 16gd+;
+2 1: 4gb; 8.; 16a#; 4gb; 8.gc+; 16gb;
+2 2: 4s; 8.; 16g; 4s; 8.s; 16s;
+
+	VS "Some build their hopes on the";
+bar
+
+//10
+1: 8fd+; fc+; ; fb; 4fc+; 4r;
+2: 8db; da; ; dg#; 4da; 4r;
+
+	VS "ev-er drift-ing sand,";
+bar
+
+//11
+1: 4fc+; 8.; 16fb; 4fc+; 8.fd+; 16dc+;
+2: 4da; 8.; 16dg#; 4da; 8.db; 16da;
+
+	VS "Some on their fame or their";
+bar
+
+//12
+1: 8ec+; db; ; c#a#; 4db; 4r;
+2: 8g-g;;;; 4; 4r;
+
+	VS "treas-ure or their land;";
+bar
+
+//13
+1: 4gd+; 8.bd+; 16ac+; 4gb; 8.; 16da;
+2: 4gb; 8.gd+; 16; 4; 8.; 16gc+;
+
+	VS "Mine's on the Rock that for-";
+bar
+
+//14
+1 1: 8dg; ; 8g bm; f ebm; 2ce;
+1 2: 4s; d; 2s;
+2: 8gb; ; 4b-g; 2cg;
+
+	VS21 "ev-er shall stand,";
+bar
+
+//15
+1: 4ec+; 8.gb; 16ea; 4dg; df;
+2: 4a-a; 8.b-d+; 16cc+; 4db; da;
+
+	VS "Je-sus the \"Rock of";
+bar
+
+//16
+1: 2ca; b-g;
+2: 2df; g-g;
+
+	VS "A-ges.\"";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 47
+//		
+// Transcribed by: Ted Gatza, Jr. 02/14/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "From All Who Dwell Below The Skies" ""
+   title (2)""
+   title (11) "E \(flat) - 3 - SOL" "\s(17)\f(TI)\:O\ praise\ Jehovah,\ a\|ll\ ye\ nations;\ Laud him,\ all\ ye\ peop\|les.\ -\ Ps.\ 117:1" ""   
+   title (13) "Isaac Watts" "" "J. H. Kurzenknabe, 1896"
+ 
+footer
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 4bg; 2s;
+2: e+e; 2s; 
+
+			VERSE "<1. >-1|From";
+			VERSE "<2. >-1|E-";
+			VERSE "<3. >-1|Your";
+			
+bar
+//2
+1: 2e+g; 4d+b;
+2: 2be; 4e+g;
+
+			VERSE "all who";
+			VERSE "ter-nal";
+			VERSE "loft-y";
+bar
+//3
+1: 2c+a; 4e+a;
+2: 2e+a; 4c+a;
+
+			VERSE "dwell be-";
+			VERSE "are Thy";
+			VERSE "Themes, ye";
+bar
+//4
+1: 8.bg bm; 16af ebm; 4ge; fd;
+2 1: 2b; 4ad;
+2 2: 2b; 4s;
+phrase 1: 1 til 2;
+
+			VERSE 2; 4; "low the";
+			VERSE 2; 4; "mer-cies,";
+			VERSE 2; 4; "mor-tals,";
+bar
+//5
+1 1: 2e; 4fd;
+1 2: 2e; 4s;
+2: 2ge; 4bb-;
+
+			VERSE "skies, Let";
+			VERSE "Lord; E-";
+			VERSE "brings; In";
+bar
+//6
+1: 2ge; 4ane;
+2: 2be; 4fc;
+
+			VERSE "the Cre-";
+			VERSE "ter-nal";
+			VERSE "songs of";
+bar
+newscore
+//7
+1: 2bd; 4bf;
+2: 2fb-; 4bd;
+
+			VERSE "a-tor's";
+			VERSE "truth at-";
+			VERSE "praise di-";
+bar
+//8
+1: 4c+e slur; 4bd; 4ane;
+2 1: 4g slur; f; c+f;
+2 2: 4e slur; f; s;
+
+			VERSE "praise a-";
+			VERSE "tends Thy";
+			VERSE "vine-ly";
+bar
+//9
+1: 2bd; 4bg;
+2: 2bb-; 4be;
+
+			VERSE "rise; Let";
+			VERSE "word; Thy";
+			VERSE "sing; The";
+bar
+//10		
+1: 4.bg slur; 8af; 4ge;
+2: 2be; 4;
+
+			VERSE "the Re-";
+			VERSE "praise shall";
+			VERSE "great sal-";
+bar
+//10
+1: 2af; 4;
+2: 2bb-; 4;
+
+			VERSE "deem-er's";
+			VERSE "sound from";
+			VERSE "va-tion";
+bar
+newscore
+//11
+1: 4.af slur; 8ge; 4fd;
+2: 2bb-; 4;
+
+			VERSE "name be";
+			VERSE "shore to";
+			VERSE "loud pro-";
+bar
+//12
+1: 2ge; 4bg;
+2: 2be; 4e+e;
+
+			VERSE "sung, Thro'";
+			VERSE "shore, Till";
+			VERSE "claim, And";
+bar
+//13
+1 1: 4.c+ slur; 8d+; e+ bm; c+ ebm;
+1 2: 2a; 4;
+2 1: 4.e+ slur; 8d+; c+ bm; e+ ebm;
+2 2: 2a; 4a;
+
+			VERSE 2; 4; "ev-'ry";
+			VERSE 2; 4; "suns shall";
+			VERSE 2; 4; "shout for";
+bar
+//14
+1: 2bg; 4ae;
+2: 2e+e; 4c+a;
+
+			VERSE "land, by";
+			VERSE "rise and";
+			VERSE "joy the";
+bar
+//15
+1: 2ge; 4fd;
+2 1: 2b; 8b bm; a ebm;
+2 2: 2b; 4b-;
+
+			VERSE "ev-'ry";
+			VERSE "set no";
+			VERSE "Sav-iour's";
+bar
+//16
+1 1: 2e; 4s;
+1 2: 2e; 4s;
+2: 2ge; 4s;
+
+			VERSE "tongue.";
+			VERSE "more.";
+			VERSE "name.";
+endbar
+
+title (20) ""
+title (11) "" "Public Domain" "HymnsToGod.org"

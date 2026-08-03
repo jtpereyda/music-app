@@ -1,0 +1,266 @@
+// Coded with Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Gospel Pilot Hymnal
+//		A Collection of New and Standard Hymns
+//		for Sunday Schools, Young Peoples' Societies,
+//		Gospel and Social Meetings
+//		Edited By D. B. Towner and French E. Oliver
+//		Published by: Towner and Oliver
+//		80 Institute Place, Chicago
+//		Copyright 1899
+//		Hymn No.: 122
+//		
+// Transcribed by: Ted Gatza, Jr. 12/05/2011; Rev. 11/05/2013
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "On The Rock" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:He\ brought\ me\ up\ also\ out\ of\ a\ horrible\ \|pit,\ out\ of\ the\ miry\ clay;\ And he\ set\ my\ feet\ upon\ a\ rock,\ and\ establ\^ished\ my\ goings.\ -\ Ps.\ 40:2" ""   
+   title (13) "Harriet E. Jones" "" "D. B. Towner, 1893"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=90";
+
+//1
+1: 8fd; 4.s; 4;
+2: 8bb-; 4.s; 4;
+
+			VERSE "<1. >-1|He";
+			VERSE "<2. >-1|I";
+			VERSE "<3. >-1|He";
+bar
+//2
+1: 4bf; 8;; af; bf;
+2: 4d+b-; 8;; c+c; bd;
+
+			VERSE "brought me up from the";
+			VERSE "rest in peace when the";
+			VERSE "brought me up from the";
+bar
+//3
+1: 4c+g; 8bg; 4af slur; 8ge;
+2: 4be; 8; 4.;
+
+			VERSE "mir-y clay,";
+			VERSE "waves rise high,";
+			VERSE "mir-y clay,";
+bar
+//4
+1: 4fd; 8bf; 4af; 8c+f;
+2: 4bf; 8d+f; 4c+f; 8e+f;
+
+			VERSE "Glo-ry to His";
+			VERSE "Glo-ry to His";
+			VERSE "Glo-ry to His";
+bar
+//5
+1: 4.bf tie; 4;  8fd; 
+2: 4.d+b- tie; 4; 8bb-; 
+//2: 4.c+b- tie; 4; 8s; // Original notes in hymnal
+
+			VERSE "name! I";
+			VERSE "name! I";
+			VERSE "name! And";
+bar
+//6
+1: 4bf; 8;; af; bf;
+2: 4d+b-; 8;; c+c; bd;
+
+			VERSE "find sweet rest on the";
+			VERSE "have no fear when the";
+			VERSE "that is why I re-";
+bar
+//7
+1: 4c+g; 8bg; 4af slur; 8ge;
+2: 4be; 8; 4.;
+
+			VERSE "Rock to-day,";
+			VERSE "storms sweep by,";
+			VERSE "joice to-day,";
+bar
+//8
+1: 4fd; 8e+f; 4d+f; 8c+f; 
+2: 4bf; 8af; 4bf; 8e+f; 
+
+			VERSE "Glo-ry to His";
+			VERSE "Glo-ry to His";
+			VERSE "Glo-ry to His";
+bar
+//9
+1: 4.bf tie; 4; 8bd; 
+2: 4.d+b- tie; 4; 8bb-; 
+
+			VERSE "name! My";
+			VERSE "name! I'm";
+			VERSE "name! My";
+bar
+//10
+1 1: 4c+e; 8; ae; ge; f;
+1 2: 4s; 8;;; e;
+2: 4af; 8; c+f; c+g; c+a;
+
+			VERSE "heart is full of the";
+			VERSE "safe, I'm safe, in the";
+			VERSE "rock is Christ and my";
+bar
+//11
+1: 4bd; 8c+e; 4bd; 8;
+2 1: 4b; 8; 4; 8bb-;
+2 2: 4b; 8; 4; 8s;
+
+			VERSE "glad new song, I";
+			VERSE "cleft I hide, In";
+			VERSE "safe-ty sure, My";
+bar
+//12
+1 1: 4c+e; 8c+e; ae; ge; f;
+1 2: 4s; 8s;;; e;
+2: 4af; 8; c+f; c+g; c+a;
+
+			VERSE "join in praise with the";
+			VERSE "storm and calm, in my";
+			VERSE "rock is Christ and I";
+bar
+//13
+1: 4bd; 8c+e; 4d+f; 8fd;
+2 1: 4b; 8; 4; 8bb-;
+2 2: 4b; 8; 4; 8s;
+
+			VERSE "ran-somed throng, My";
+			VERSE "Lord a-bide, O";
+			VERSE "shall en-dure, Till";
+bar
+//14
+1: 4d+f; 8c+e;; bd; ge;
+2: 4bb-; 8;;;;
+
+			VERSE "faith is bright and my";
+			VERSE "sweet the rest of His";
+			VERSE "safe at home with the";
+bar
+//15
+1: 4fd; 8db-; 4.fd;
+2: 4bb-; 8fb-; 4.bb-;
+
+			VERSE "hope is strong,";
+			VERSE "shel-t'ring side,";
+			VERSE "host made pure,";
+bar
+//16
+1: 8ge bm; e+g ebm; d+f; 4; 8c+e;
+2: 8be bm; ac ebm; bd; 4bf; 8af;
+
+			VERSE 4; 8; 4; 8; "Glo-ry to His";
+			VERSE 4; 8; 4; 8; "Glo-ry to His";
+			VERSE 4; 8; 4; 8; "Glo-ry to His";
+bar
+//17
+1: 4.bd tie; 4; 8s;
+2: 4.bb- tie; 4; 8s;
+
+			VERSE "name!";
+			VERSE "name!";
+			VERSE "name!";
+dblbar
+//18
+1 1: 4c+e; 8ae; 4ge; 8f;
+1 2: 4s; 8; 4; 8e;
+2: 4af; 8c+f; 4; 8; 
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Glo-ry to His";
+			VERSE "Glo-ry, glo-ry";
+bar
+//19
+1: 4.ge slur; fd;
+2: 4bb-; 8; 4.;
+
+			VERSE "name!";
+			VERSE 4; 8; 4.; "to His name!";
+bar
+//20
+1 1: 4c+e; 8ae; 4ge; 8f;
+1 2: 4s; 8; 4; 8f;
+2: 4af; 8c+f; 4c+f; 8c+f;
+
+			VERSE "Glo-ry to His";
+			VERSE "Glo-ry, Glo-ry";
+bar
+//21
+1: 4.d+f tie; 4; 8fd;
+2 1: 4b; 8; 4; 8bb-;
+2 2: 4b; 8; 4; 8s;
+
+			VERSE "name! I";
+			VERSE 4; 8; 4; 8s; "to His name!";
+bar
+//22
+1: 4d+f; 8c+e;; bd; ge;
+2: 4bb-; 8;;;;
+
+			VERSE "rest se-cure on the";
+bar
+//23
+1: 4fd; 8db-; 4.fd;
+2: 4bb-; 8fb-; 4.bb-;
+
+			VERSE "Rock to-day";
+bar
+//24
+1: 8ge bm; e+g ebm; 8d+f; 4d+f; 8c+e;
+2: 8be bm; ac ebm; bd; 4bf; 8af;
+
+			VERSE 4; 8; 4; 8; "Glo-ry to His";
+bar
+//25
+1: 4.bd tie;;
+2: 4.bb- tie;;
+
+			VERSE "name!";
+endbar

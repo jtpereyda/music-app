@@ -1,0 +1,270 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Carols Of Joy
+//		A choice collection of songs and hymns
+//		for the Sunday-school, Bible class, 
+//		And the Home Circle
+//		Edited by Frank M. Davis
+//		Publisher: J. L. Rust & Co.
+//		Springfield, Ohio
+//		Copyright: 1882
+//		Hymn No.: 118
+//		
+// Transcribed by: Ted Gatza, Jr. 08/26/2013; Rev. 08/05/2022
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "No Night In Heaven" ""
+   title (2)""
+   title (11) "" "\f(TI)And the gates thereof shall in no wise be shut by day" "" 
+   title "" "\f(TI)(for there shall be no night there): - Rev. 21:25" ""   
+   title (11) "B \(flat) - 2 - MI" "" ""
+   title (13) "Charles H. Gabriel" "" "Frank M. Davis"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=6/8	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+//Time Signature
+	define P1 [pad5; =t]@
+	define P2 [=s]@
+	define TIME
+		print (t.w - 2, t.y) "\f(newcentury bold)\s(16)6"; // Adjust t.w - 2 as needed on all 4 lines
+		print (t.w -2, t.y -4) "\f(newcentury bold)\s(16)8"; // Adjust the \s(Number) as needed on all 4 lines
+		print (t.w - 2, s.y) "\f(newcentury bold)\s(16)6";
+		print (t.w -2, s.y -4) "\f(newcentury bold)\s(16)8";
+		@
+
+// set midi
+
+	midi all: 0 "tempo=80";
+//=========================
+// Verse 1
+
+//1
+1: 16db- bm; ec ebm; 4.s; 4;
+2: 8fb; 4.s; 4;
+
+	VS 8; 4.s; 4s; "<1. >-1|There";
+	VS 8; 4.s; 4s; "<2. >-1|There";
+	VS 8; 4.s; 4s; "<3. >-1|There";
+
+bar
+//2
+1: 4fd; 8; bm; ge ebm; ae;
+2: 4bb-; 8; af bm; ge ebm; fc;
+
+	VS 4; 8; 4; 8; "is no night in";
+	VS 4; 8; 4; 8; "storms of sor-row";
+	VS 4; 8; 4; 8; "we may meet those";
+bar
+//3
+1: 4bd; 8be; 4bd; 8bf;
+2: 4fb-; 8gb-; 4fb-; 8bd;
+
+	VS "heav'n a-bove, No";
+	VS "nev-er come, They";
+	VS "gone be-fore, And";
+bar
+//4
+1 1: 4c+f; 8; c+ bm; b ebm; c+f;
+1 2: 4s; 8; 4f; 8s;
+2 1: 4af; 8; a bm; g ebm; af;
+2 2: 4s; 8; 4f; 8s;
+
+	VS 4; 8; 4; 8; "grief, no toil, no";
+	VS 4; 8; 4; 8; "all have passed a-";
+	VS 4; 8; 4; 8; "blood-washed gar-ments";
+bar
+//5
+1 1: 4.d+f tie; 4; 16b bm; a ebm;
+1 2: 4.s; 4; 8f;
+2 1: 4.b tie; 4; 8bd;
+2 2: 4.b tie; 4; 8s;
+
+	VS 4.; 4s; 8; "pain; And";
+	VS 4.; 4s; 8; "way; The";
+	VS 4.; 4s; 8; "wear; With";
+bar
+//6
+1 1: 4ge; 8; g bm; a ebm; 8be;
+1 2: 4s; 8; 4e; 8s;
+2 1: 4be; 8; 8b bm; 8a ebm; ge;
+2 2: 4s; 8; 4e; 8s;
+
+	VS 4; 8; 4; 8; "blood washed souls who";
+	VS 4; 8; 4; 8; "Sav-ior's there, that";
+	VS 4; 8; 4; 8; "Je-sus dwell for-";
+bar
+//7
+1 1: 4fd; 8db-; 4fd; 8f;
+1 2: 4s; 8; 4; 8f;
+2: 4bb-; 8fb-; 4bb-; 8bd;
+
+	VS "reach that land, Shall";
+	VS "is His home, He";
+	VS "ev-er more, And";
+bar
+//8
+1 1: 8g bm; a ebm; be; a bm; g ebm; ae;
+1 2: 4e; 8s; 4e; 8s;
+2 1: 8b bm; a ebm; 8ge; 4c+f; 8f;
+2 2: 4e; 8s; 4; 8f;
+
+	VS 4; 8; 4; 8; "nev-er sigh a-";
+	VS 4; 8; 4; 8; "wipes all tears a-";
+	VS 4; 8; 4; 8; "shone for-ev-er";
+bar
+//9
+1: 4.bd tie; 4; 8s;
+2: 4.fb- tie; 4; 8s;
+
+	VS "gain.";
+	VS "way.";
+	VS "there.";
+dblbar
+newscore
+//10
+1: 8bd; 4.s; 4;
+2: 8fb-; 4.s; 4;
+CHORUS
+
+	VS [c]"No";
+bar
+//11
+1: 8c+f;;;; bf; c+f;
+2 1: 8af;;;; g; af;
+2 2: 8s;;;; f; s;
+
+	VS "night in that land where the";
+bar
+//12
+1: 4d+f; [up]8e+g; 4d+f; 8bd;
+2 1: 4b; 8; 4; 8;
+2 2: 4b; 8; 4; 8; 
+
+	VS "an-gels stay, No";
+bar
+newscore
+//13
+1: 8bd; af; bf; c+g; bg; ge;
+2: 8fb-; fc; bd; be;;;
+
+	VS "sor-row or sigh-ing can";
+bar
+//14
+1: 8fd;; db-; 4.fd;
+2: 8bb-;; fb-; 4.bb-;
+
+	VS "dark-en the day.";
+bar
+newscore
+//15
+1: 8fd; bf; c+f; 4.d+f;
+2 1: 8bb-; bd; bf; 4.b;
+2 2: 8s;;; 4.b;
+
+	VS "There is my home,";
+bar
+//16
+1: 8c+e; be; ge; 4.;
+2: 8ge;; be; 4.;
+
+	VS "there is my home;";
+bar
+//17
+1: 8fd;;; ge; fd; ec;
+2 1:8bf;;; af; bf; f;
+2 2: 8s;;;;; f;
+
+	VS "There with my Sav-ior for-";
+bar
+//18
+1: 4.db-; fd;
+2: 4.fb-; bb-;
+
+	VS "ev-er,";
+bar
+//19
+1: 8fd; bf; c+f; 4.d+f;
+2 1: 8bb-; bd; af; 4.b;
+2 2: 8s;;; 4.b;
+
+	VS "There is my home,";
+bar
+//20
+1: 8c+e; ge; ae; 4bd; 8s;
+2 1: 8ge; be; f; 4fb-; 8s;
+2 2: 8s;; f; 4s; 8;
+ital (13) above 1: 1 "Rit.";
+
+SFERM (4)
+BFERM (4)
+
+	VS "there is my home.";
+endbar

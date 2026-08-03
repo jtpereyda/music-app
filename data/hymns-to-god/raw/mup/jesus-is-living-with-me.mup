@@ -1,0 +1,220 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Gospel Pilot Hymnal
+//		A Collection of New and Standard Hymns
+//		for Sunday Schools, Young Peoples' Societies,
+//		Gospel and Social Meetings
+//		Edited By D. B. Towner and French E. Oliver
+//		Published by: Towner and Oliver
+//		80 Institute Place, Chicago
+//		Copyright 1899
+//		Hymn No.: 26
+//		
+// Transcribed by: Ted Gatza, Jr. 12/06/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Jesus Is Living With Me" ""
+   title (2)""
+   title (11) "A \(flat) - 2 - SOL" "\s(17)\f(TI)\:...that\ Christ\ may\ dwell\ in\ your\ hearts\ through\ faith;\ -\ Eph.\ 3:17 \(space)" ""   
+   title (13) "W. G. Moyer" "" "I. H. Meredith, 1895"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 8ec; 4.s; 4;
+2: 8aa-; 4.s; 4;
+
+			VERSE "<1. >-1|Tho'";
+			VERSE "<2. >-1|The";
+			VERSE "<3. >-1|Tho'";
+			VERSE "<4. >-1|Some";
+bar
+//2
+1: 8c+e; bndn; c+e; d+e; c+e; b&d&;
+2: 8aa-;;; be;; ge;
+
+			VERSE "ma-ny my bur-dens and";
+			VERSE "joys of my life may all";
+			VERSE "all of life's work be un-";
+			VERSE "day my frail tent shall be";
+bar
+//3
+1: 4.ac; 4ec; 8ac;
+2: 4.aa-; 4; 8ea-;
+
+			VERSE "sor-rows, And";
+			VERSE "fail me, And";
+			VERSE "no-ticed, And";
+			VERSE "fold-ed, Mine";
+bar
+//4
+1 1: 8be;;;; e; d+e;
+1 2: 8s;;;; e; s;
+2: 8ge;;;; ge; be;
+
+			VERSE "ma-ny the tri-als I";
+			VERSE "friend-ship and for-tune may";
+			VERSE "tho' I for-got-ten should";
+			VERSE "eyes to earth's glo-ries grow";
+bar
+//5
+1 1: 4.c+e tie; 4; 8e;
+1 2: 4.s; 4; 8e;
+2 1: 4.a tie; 4; 8aa-;
+2 2: 4.a tie; 4; 8s;
+
+			VERSE "see, My";
+			VERSE "flee, But";
+			VERSE "be, I";
+			VERSE "dim; I";
+bar
+//6
+1: 8ac;;; ae; be; c+e;
+2 1: 8ea-;;; ac; ge; a;
+2 2: 8s;;;;; a;
+
+			VERSE "heart is o'er-flow-ing with";
+			VERSE "these have no pow-er to";
+			VERSE "can-not be wea-ry or";
+			VERSE "then shall a-wake in His";
+bar
+newscore
+//7
+1: 4.d+f; 4c+e; 8;
+2: 4.ad; 4aa-; 8;
+
+			VERSE "glad-ness, For";
+			VERSE "move me, When";
+			VERSE "lone-ly Since";
+			VERSE "like-ness, And";
+bar
+//8
+1: 8be; ge; bg; af; ge; fdn;
+2: 8gb-; bb-;;;; ab-;
+
+			VERSE "Je-sus is liv-ing with";
+			VERSE "Je-sus is liv-ing with";
+			VERSE "Je-sus is liv-ing with";
+			VERSE "ev-er be liv-ing with";
+bar
+//9
+1 1: 4.e tie; 4; 8r;
+1 2: 4.e tie; 4; 8s;
+2: 4.ge tie; 4; 8r;
+
+			VERSE "me.";
+			VERSE "me.";
+			VERSE "me.";
+			VERSE "Him.";
+dblbar
+//10
+1: 4.c+e tie; 8; d+f; c+e;
+2: 8aa-;;; 4; 8;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Liv-ing with";
+			VERSE 8; 8; 8; 4; 8; "Liv-ing with me, yes,";
+bar
+//11
+1: 4.be tie; 4; 8r;
+2: 8ge;;; 4; 8r;
+
+			VERSE "me,_";
+			VERSE 8; 8; 8; 4; 8s; "liv-ing with me,";
+bar
+//12
+1: [up]4.d+g tie; [up]8; e+e; d+e;
+2: 8be;;; 4; 8ge;
+
+			VERSE "liv-ing with";
+			VERSE 8; 8; 8; 4; 8; "Liv-ing with me, yes,";
+bar
+//13
+1: 4.c+e tie; 4; 8r;
+2 1: 8a;;; 4; 8r;
+2 2: 8a;;; 4; 8s;
+
+			VERSE "me,_";
+			VERSE 8; 8; 8; 4; 8s; "liv-ing with me,";
+bar
+//14
+1: 4.e+a tie; 8; d+b; c+a;
+2: 8c+a;;;; e+g; e+a;
+
+			VERSE "Je-sus, my";
+			VERSE 8; 8; 8; 8; 8; 8; "Je-sus, my Sav-ior, is";
+bar
+//15
+1: 4.bf; 4d+f; 8;
+2: 8d+d;;; 4bd; 8;
+
+			VERSE "Sav-ior, Is";
+			VERSE 8; 8; 8; 4; 8; "liv-ing with me, Is";
+bar
+//16
+1: 4.ge; 4c+e; 8bd;
+2: 8be;;; 4ae; 8ge;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "liv-ing with";
+			VERSE 8; 8; 8; 4; 8; "liv-ing with me, yes,";
+bar
+//17
+1 1: 4.a tie; 4; 8s;
+1 2: 8c;; d; 4c; 8s;
+2 1: 8a; e; f; 4e; 8s;
+2 2: 4.a- tie; 4; 8s;
+ital (13) above 1: 1 "Rit.";
+
+			VERSE "me._";
+			VERSE 8; 8; 8; 4; 8s; "liv-ing with me.";
+endbar
+//18

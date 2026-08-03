@@ -1,0 +1,370 @@
+// !Mup vs.7.0 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+// 
+
+// Hymn Source:
+//	Glory Songs
+//	Compiled by Mr. and Mrs. John T. Benson
+//	Published by 
+//	Pentecostal Mission Publishing Co.
+//	Nashville Tennessee
+//	Copyright 1916?
+//	Hymn No. 66
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 01/05/2023
+
+// Revisions:
+
+//Note concerning verse 1 lyrics:
+//	Part of the lyrics in verse one appeared to be incorrect. I have altered the lyrics as follows:
+//	"Where in all the long forever" was changed to "Where we all shall live forever"	
+//	A word change was made in verse 1. "Friends" was changed to "saints".
+	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "A Land Of Beauty" ""
+   title (2)""
+   title (11)"" "\f(TI)In my Father's house are many mansions: if it were not so, I would" ""
+   title (11)"" "\f(TI)have told you. I go to prepare a place for you.-Jn. 14:2" ""
+   title (11) "E\(flat) - 4 - DO" "" ""
+   title (13) "Elisha A. Hoffman, arr." "" "W. S. Tidwell, 1914"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scorepad=0
+	scale=.91
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==============================
+
+staffs=2
+	time=4/4	
+	key=e&
+
+
+staff 2
+	key=e&
+	clef=bass
+
+//==========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+   //Chorus - Refrain
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+      //Trebble Cleff
+        define FST(COUNT)
+        mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+        mussym (10) below 1: COUNT "uferm"; @
+ 
+      //Bass Cleff
+        define FBT(COUNT)
+        mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+        mussym (10) below 2: COUNT "uferm"; @
+
+//========================
+
+music
+
+//========================
+
+// set midi
+	midi all: 0 "temp=95";
+
+//=========================
+
+//Verse 1
+
+//1
+1 1: 8e; f; 2.s;
+1 2: 4r; 2.s;
+2: 4r; 2.s;
+
+	VS1 "<1. >-1|There's a";
+	VS1 "<2. >-1|There's a";
+	VS1 "<3. >-1|There's a";
+	VS1 "<4. >-1|There's a";
+bar
+
+//2
+1 1: 2g tie; 8; eb; ec+; eb;
+1 2: 4e; ; 8;  4.s;
+2: 4eb; ; 8; eg; ea; eg;
+
+	VS1 "land_ of fade-less";
+	VS1 "land_ of change-less";
+	VS1 "land_ of cloud-less";
+	VS1 "land,_ we call it";
+	VS 4; 4; 8; 4.s; "<1. >-1|There's a land";
+bar
+
+//3
+1 1: 8eg; b tie; 2; 4s;
+1 2: 8s; e; d; f; e; ; 4s;
+2: 8eb; eg; b-f; b-a; eg; ; 4s;
+
+	VS21 "beau-ty, (fade-less beau-ty,)";
+	VS21 "glo-ry, (change-less glo-ry,";
+	VS21 "splen-dor, (cloud-less splen-dor,)";
+	VS21 "heav-en (call it heav-en,)";
+invisbar
+
+1 1: 2.s; 8g; f;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS1 "Where the";
+	VS1 "Where my";
+	VS1 "Where is";
+	VS1 "Where the";
+bar
+
+//4
+1 1: 2e tie; 8; ce; ec+; ;
+1 2: 4c; ; 8; 4.s;
+2: 4cg; ; 8fan; ; ; ;
+
+	VS1 "saved_ I loved have";
+	VS1 "Sav-iour has His";
+	VS1 "heard_ no moan or";
+	VS1 "wear-y find sweet";
+	VS 4; 4; 8; 4.s; "<1. >-1|Where the saved";	
+bar
+
+//5
+1 1: 2.b; 4s;
+1 2: 8d; ; ; ; 4;  4s;
+2 1: 2.b; 4s;
+2 2: 8b-; ; d; f; 4b-; 4s;
+
+	VS12 "gone, (I loved have gone,)";
+	VS12 "throne; (His glor-ious throne;)";
+	VS12 "sigh; (no moan or sigh)";
+	VS12 "rest, (a per-fect rest,)";
+invisbar
+
+1 1: 2.s; {8b bm; c+ ebm; 8d+;}3;
+1 2: 2.s; 4r;
+2 1: 2.s; 4s;
+2 2: 2.s; 4r;
+
+	VS 2.s; {4; 8;}3; "Where we";
+	VS 2.s; {4; 8;}3; "Where in";
+	VS 2.s; {4; 8;}3; "Joy and";
+	VS 2.s; {4; 8;}3; "Where I'll";
+bar
+//6
+1: 2e+ tie; 8; eb; ec+; eb;
+1 2:4g; ; 8; s; ; ;
+2: 4eb; ; 8; eg; ea; eg;
+
+	VS1 "all_ shall live for-";
+	VS1 "all_ the fu-ture";
+	VS1 "glad-ness dwell for-";
+	VS1 "spend_ the years e-";
+	VS 4; 4; 8; 4.s; "<1. >-1|Where we all";
+bar
+//7
+1 1: 8ec+; g tie; 2; 4s;
+1 2: 8s; 8e; d; ; e; ; 4s;
+2: 8cg; cc+; gbn; ; cc+; ; 4s;
+
+	VS21 "ev-er (live for-ev-er)";
+	VS21 "a-ges, (fu-ture a-ges,)";
+	VS21 "ev-er (dwell for-ev-er,)";
+	VS21 "ter-nal, (years e-ter-nal,)";
+invisbar
+
+1 1: 2.s; 8e; f;
+1 2: 2.s; 8e; ;
+2: 2.s; 8g-b&; a-c+;
+
+	VS1 "We shall";
+	VS1 "I will";
+	VS1 "In God's";
+	VS1 "With the";
+bar
+
+//8
+1 1: 2eg tie; 8; e; df; ;
+1 2: 2s; 8; e; s; ; 
+2: 2b-b tie; 8; b-g; b-a; ;
+
+	VS1 "know as we are";
+	VS1 "make his good-ness";
+	VS1 "pal-a-ces on";
+	VS1 "pu-ri-fied and";
+bar
+
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.eg; 4s;
+
+	VS1 "known.";
+	VS1 "known.";
+	VS1 "high.";
+	VS1 "blest.";
+dblbar
+
+//10
+REFRAIN
+1 1: 2.s; {8b bm; c+ ebm; d+;}3;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+	VS12 "";
+	VS 2.s; {4; 8;}3; "Land of";
+bar
+
+//11
+1 1: 2e+ tie; 8; 8bd+; ac+; ae+;
+1 2: 4g; a; 8b; 4.s;
+2: 4eb; fb; 8gb; ge+; ae+; ac+;
+
+	VS 1; "<>";
+	VS1 "light_ and land of";
+	VS21 "Land of light and love and";
+bar
+
+//12
+1 1: 8ac+; b tie; 2; 4s;
+1 2: 8s; g; f; a; g; g; 4s;
+2: 8ee+; ; b-d+; b-f+; ee+; ; 4s;
+
+	VS1 "beau-ty_";
+	VS21 "land of fade-less beau-ty";
+invisbar
+
+1 1: 2.s; 8b; bn;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS1" How I";
+bar
+
+//13
+1 1: 2c+ tie; 8; fc+; fd+; fe+;
+1 2: 4e; ; 8f; 4.s;
+2: 4cg; ; 8fan; ; fb; fc+;
+
+	VS1 "long_ thy courts to";
+	VS21 "How I long thy courts to";
+	BVS21 "How I long thy fair and";
+bar
+
+//14
+1: 2.fd+; 4s;
+2 1: 2.b; 4s;
+2 2: 8b-; ; d; f; 4b-; 4s;
+
+	VS1 "see!";
+	VS1 "see!";
+	BVS22 "gold-en courts to see!";
+invisbar
+
+//15
+1 1: 2.s; 8c+; b;
+1 2: 2.s; 4r;
+2: 2.s; 4r;
+
+	VS1 "By and";
+bar
+
+//16
+1 1: 2e+ tie; 8; eb; ec+; eb;
+1 2: 4g; ; 8; 4.s;
+2: 4eb; ; 8; eg; ea; eg;
+
+	VS1 "by_ I'll cross thy";
+	VS21 "By and by I'll cross thy";
+bar
+
+//17
+
+1 1: 8ec+; 8g tie; 2; 4s;
+1 2: 8s; e; d; ; e; ; 4s;
+2: 8cg; cc+; gbn; ; cc+; ; 4s;
+
+ 	VS1 "por-tals_";
+	VS21 "bright and shin-ing por-tals,";
+invisbar
+
+//18
+1 1: 8e; f; 2.s;
+1 2: 8e; ; 2.s;
+2: 8g-b&; a-c+; 2.s;
+
+	VS1 "Ev-er-";
+	VS1 "Ev-er-";
+	BVS21 "Ev-er-";
+bar
+
+//19
+1 1: 2eg tie; 8; e; df; ; 
+1 2: 2s; 8; e; s; ;
+2 1: 2b tie; 8; 4.s;
+2 2: 4b-; ; 8;b-g; b-a; ;
+
+	VS1 "more_ at home to";
+	VS1 "more_ at home to";
+	BVS22 "more in heav'n at home to";
+bar
+
+//20
+1 1: 2.e; 4s;
+1 2: 8e; b-; c; ; 4b-; 4s;
+2 1: 8g; ; a; ; 4g; 4s;
+2 2: 2.e; 4s;
+
+	VS1 "be.";
+	VS12 "be, at home to be.";
+	BVS22 "be.";
+endbar

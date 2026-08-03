@@ -1,0 +1,226 @@
+// !Mup vs. 6.9 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Church and Sunday School hymnal
+//		Compiled and published under the direction of a
+//		committee appointed by Mennonite conferences
+//		J.D.Brunk, Music Editor
+//		Mennonite Publishing House
+//		ScottDale Penn
+//		Copyright 1902
+//		Hymn No. 90
+
+
+// Transcribed by: Ted Gatza, Jr. 12/21/2009; Rev. 05/26/2022
+// HymnsToGod.org
+
+// ****************************************************************************************
+
+top
+
+   title bold (19) "" "Walk In The Light" ""
+   title (2)""
+   title (11) "D - 4 - SOL" "\s(18)\f(TI)\:but\ if\ we\ walk\ in\ the\ ligh\|t,\ as\ he\ is\ in\ the\ light,\ we have\ fellowship\ one\ wi\|th\ another,\ -\ 1\ Jn.\ 1:7"""
+   title (13) "Benard Barton, 1826" " " "J. Henry Showalter"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=2#
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+// ***********************************
+
+staff 2
+	key=2#
+	clef=bass
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 4af; 8.af; 16bg; 4af; 4fd;
+2: 4d+d; 8.d+d; 16d+d; 4d+d; 4ad; 
+
+			lyrics 1: "<1. >-1|Walk in the light, so";
+			lyrics 1: "<2. >-1|Walk in the light, and";
+			lyrics 1: "<3. >-1|Walk in the light, thy";
+bar
+//2
+1 1: 4fd; 4ec; 4d; 4d;
+1 2: 4s; 4s; 4d; 4d;
+2: 4aa-; 4ga-; 4fd; 4fd;
+
+			lyrics 1: "shalt thou know The";
+			lyrics 1: "thou shalt find Thy";
+			lyrics 1: "path shall be Peace-";
+bar
+//3
+1: 4ec; 4ec; 4ac; 4ec;
+2: 4aa-; 4aa-; 4aa-; 4aa-;
+
+			lyrics 1: "fel-low-ship of";
+			lyrics 1: "heart made tru-ly";
+			lyrics 1: "ful, se-rene and";
+bar
+//4
+1 1: 2.fd; 8s; 8s;
+1 2: 2.s; 4s;
+2 1: 2.ad; 8s; 8s;
+2 2: 2.s; 4s;
+
+			lyrics 1: "love;";
+			lyrics 1: "his;";
+			lyrics 1: "bright,";
+
+invisbar
+newscore
+
+1 1: 2.s; 8d bm; 8f ebm;
+1 2: 2.s; 4d;
+2 1: 2.s; 8f bm; 8a ebm;
+2 2: 2.s; 4d;
+
+			lyrics 1: 2.s; 4; "His";
+			lyrics 1: 2.s; 4; "Who";
+			lyrics 1: 2.s; 4; "For";
+
+
+bar
+//5
+1: 4af; 4bg; 4af; 4fd;
+2: 4d+d; 4d+d; 4d+d; 4ad;
+
+			lyrics 1: "Spir-it on-ly";
+			lyrics 1: "dwells in cloud-less";
+			lyrics 1: "God by grace shall";
+bar
+//6
+1 1: 4fd; 4ec; 4d; 4d;
+1 2: 4s; 4s; 4d; 4d;
+2: 4aa-; 4ga-; 4fb-; 4fb-;
+
+			lyrics 1: "can be-stow, Who";
+			lyrics 1: "light en-shrin'd, In";
+			lyrics 1: "dwell in thee, And";
+bar
+//7
+1 1: 4eb-; 4e; 4fd; 4ec;
+1 2: 4s; 4d; 4s; 4s;
+2: 4gg-; 4bg-; 4aa-; 4ga-;
+
+			lyrics 1: "reigns in light a-";
+			lyrics 1: "whom no dark-ness";
+			lyrics 1: "God him-self is";
+bar
+//8
+1: 1d;
+2: 1fd;
+
+			lyrics 1: "bove.";
+			lyrics 1: "is.";
+			lyrics 1: "light.";
+
+dblbar hidechanges
+score time=6/8 
+music
+
+//9
+1: 4.af tie; 8af; 8fd; 8d+f;
+2 1: 8d+d; 8d+d; 8d+d; 8d+ bm; 8a ebm; 8ad;
+2 2: 8s; 8s; 8s; 4d; 8s;
+
+boldital (13) above 1: 1 "Refrain";
+
+			lyrics 1: "Walk_ in the";
+			lyrics 1: 8; 8; 8; 4; 8; "Walk in the light, yes,";
+bar
+//10
+1: 4.c+e tie; 4c+e; 8r;
+2 1: 8a; 8a; 8a; 4a; 8r;
+2 2: 8a; 8a; 8a; 4a; 8s;
+
+			lyrics 1: "light,_";
+			lyrics 1: 8; 8; 8; 4; 8s;"walk in the light,";
+bar
+//11
+1: 4.ge tie; 8ge; 8ec; 8s;
+2: 8aa-; 8aa-; 8aa-; 4aa-; 8s;
+
+			lyrics 1: "walk_ in";
+			lyrics 1: 8; 8; 8; 4; 8s; "Walk in the light,";
+
+invisbar
+newscore
+
+1: 4.s; 8s; 8s; 8bg;
+2: 8s; 8s; 8s; 4s; 8c+a-;
+
+			lyrics 1: 4.s; 8s; 8s; 8; "the";
+			lyrics 1: 8s; 8s; 8s; 4s; 8; "yes,";
+
+
+bar
+//12
+1: 4.af tie; 4af; 8r;
+2: 8d+d; 8d+d; 8d+d; 4d+d; 8r;
+
+			lyrics 1: "light,_";
+			lyrics 1: 8; 8; 8; 4; 8s; "walk in the light,";
+bar
+//13
+1: 4.af tie; 8af; 8fd; 8d+f;
+2 1: 8d+d; 8d+d; 8d+d; 8d+ bm; 8a ebm; 8ad;
+2 2: 8s; 8s; 8s; 4d; 8s;
+
+			lyrics 1: "Walk_ in the";
+			lyrics 1: 8; 8; 8; 4; 8; "Walk in the light, yes,";
+
+bar
+newscore
+//14
+1: 4.c+e tie; 4c+e; 8bg;
+2 1: 8a; 8a; 8a; 4a; 8a;
+2 2: 8a; 8a; 8a; 4a; 8a;
+
+			lyrics 1: "light,_ The";
+			lyrics 1: 8; 8; 8; 4; 8; "walk in the light, The";
+bar
+//15
+1: 8af; 8af; 8af; 4bg; 8c+g;
+2: 8aa-; 8aa-; 8aa-; 4aa-; 8aa-;
+
+			lyrics 1: "beau-ti-ful light of";
+			lyrics 1: "beau-ti-ful light of";
+bar
+//16
+1: 4.d+f tie; 4d+f; 8r;
+2: 4.ad tie; 4ad; 8r;
+
+			lyrics 1: "God.";
+			lyrics 1: "God.";
+endbar

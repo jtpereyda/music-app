@@ -1,0 +1,447 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Praise For The Lord (Expanded Edition)
+//		Date: 1997
+//		Page scan from Hymnary.org (https://hymnary.org/text/it_wont_be_very_long_till_this_short_lif)
+//		Hymn No. 346
+
+// Transcribed by: Ted Gatza, Jr. 07/10/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=.95
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+
+staffs=2
+	time=4/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "It Won't Be Very Long" ""
+   title (2) ""
+   title (9) "" "\f(TI)Watch therefore: for ye know not on what day your Lord cometh...." ""
+   title (9) "" "\f(TI)Therefore be ye also ready; - Matt. 24:42; 44" ""
+   title (11) "" 
+   title (11) "B\(flat) - 4 - SOL" "" ""
+   title (13) "Morgan Williams, 1928" "" "E. M. Bartlett, 1928"
+ 
+footer
+
+   title (9) ""
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=90";
+
+//=========================
+
+// Verse
+
+//1
+1: 2s; 4.s; 8df;
+2: 2s; 4.s; 8b-b;
+
+	VS "<1. >-1|It";
+	VS "<2. >-1|It";
+//	VS "<3. >-1|It";
+	VS "<3. >-1|It";
+bar
+
+//2a
+1: 8df; ; ; ;  4.; 8s;
+2: 8b-b; ; ; ; 4.; 8s;
+
+	VS "won't be ver-y long";
+	VS "won't be ver-y long";
+//	VS "won't be ver-y long";
+	VS "won't be ver-y long";
+invisbar
+
+//2b
+1: 8df; 2s; 4.s;
+2: 8b-b; 2s; 4.;
+
+	VS "till";
+	VS "till";
+//	VS "till";
+	VS "till";
+bar
+
+//3a
+1: 8eg; gb; ; eg; 4.df; 8s;
+2: 8eb; ee+; ; eb; 4.b-b; 8s;
+
+	VS "this short life shall end,";
+	VS "here we cease to roam,";
+//	VS "bur-dens we lay down,";
+	VS "earth shall passs a-way,";
+invisbar
+
+//3b
+1: 2s; 4.s; 8df;
+2: 2s; 4.s; 8b-b;
+
+	VS "It";
+	VS "It";
+//	VS "It";
+	VS "It";
+bar
+
+//4a
+1: 8df; ; ; db; 4.db; 8s;
+2: 8b-b; ; ; ; 4.gb; 8s;
+
+	VS "won't be ver-y long";
+	VS "won't be ver-y long";
+//	VS "won't be ver-y long";
+	VS "won't be ver-y long";
+invisbar
+
+//4b
+1: 2s; 4.s; 8gd+;
+2: 2s; 4.s; 8gb;
+
+	VS "till";
+	VS "till";
+//	VS "till";
+	VS "till";
+bar
+
+//5a
+1: 8end+; ec+; ; ed+; 4. fc+; 8s;
+2: 8cb; ; cg; cb; 4.fa; 8s;
+
+	VS "Je-sus shall de-scend;";
+	VS "all the saints get home;";
+//	VS "we'll re-ceive a crown;";
+	VS "works of men de-cay;";
+invisbar
+
+//5b
+1: 2s; 4.s; 8db;
+2: 2s; 4.s; 8b-b;
+
+	VS "And";
+	VS "And";
+//	VS "And";
+	VS "But";
+bar
+
+//6a
+1: 8fd+; ; ; ec+; 4.db; 8s;
+2: 8b-b; ; ; ; 4.b-f; 8s;
+
+	VS "then the dead in Christ";
+	VS "then with smil-ing face";
+//	VS "then we'll shout and sing";
+	VS "Je-sus has pre-pared";
+invisbar
+
+//6b
+1: 2s; 4.; 8df;
+2: 2s; 4.s; 8b-b;
+
+	VS "from";
+	VS "we'll";
+//	VS "with";
+	VS "a";
+bar
+
+//7a
+1: 8eg; gb; ; eg; 4.df; 8s;
+2: 8eb; ee+; ; eb; 4.b-b; 8s;
+
+	VS "beds of clay shall rise";
+	VS "walk the streets of gold,";
+//	VS "an-gels round the throne,";
+	VS "hap-py dwell-ing place,";
+invisbar
+
+//7b
+1: 2s; 4.s; 8df;
+2: 2s; 4.s; 8b-b;
+
+	VS "To";
+	VS "And";
+//	VS "And";
+	VS "For";
+bar
+
+//8a
+1: 8db; ; fb; fc+; 4.fd+; 8s;
+2 1: 8b-f; ; db; fa; 4.b; 8s;
+2 2: 8s; ; ; ; 4.b; 8s;
+
+	VS "meet the Lord and King";
+	VS "sing the Sav-ior's praise";
+//	VS "when we meet up there,";
+	VS "all who look a-bove";
+invisbar
+
+//8b
+1: 2s; 4.s; 8db;
+2 1: 2s; 4.s; 8b;
+2 2: 2s; 4.s; 8b;
+
+	VS "up";
+	VS "where";
+//	VS "we'll";
+	VS "and";
+
+bar
+
+//9
+1: 8fd+; ; ; ec+; 4.db; 8s;
+2: 8fb; ; ; fa; 4.b-fb; 8s;
+
+	VS "yon-der in the skies.";
+	VS "saints are ne-ver old.";
+//	VS "know as we are known.";
+	VS "trust His match-less grace.";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 2s; 4.s; 8df;
+2: 2s; 4.s; 8b-b;
+
+	VS "It";
+	VS "It";
+bar
+
+//11a
+1 1: 8f; ; ; ; 4f tie; 8; s;
+1 2: 4d; ; 8; ; ; s;
+2: 4b-b; ; 8; ; ; s;
+
+	VS "won't be ver-y long";
+	VS21 "won't be ver-y long,";
+invisbar
+
+//11b
+1: 2s; 4.s; 8df;
+2: 2s; 4.s; 8b-b;
+
+	VS "It";
+	VS "It";
+bar
+
+//12a
+1 1: 8g; b; ; g; 4f tie; 8; 8s;
+1 2: 8e bm; g ebm; 8g bm; e ebm; 4f tie; 8; 8s;
+2: 4eb; ; 8b-b; ; ; 8s;
+
+	VS "won't be ver-y long";
+	VS21 "won't be ver-y long,";
+invisbar
+newscore
+
+//12b
+1: 2s; 4.s; 8df;
+2: 2s; 4.s; 8b-b;
+
+	VS "Till";
+	VS "Till";
+bar
+
+//13a
+1 1: 8b; ; ; ; 4b tie; 8; 8s;
+1 2: 4d; ; 8; ; ; s;
+2: 4b-f; ; 8; ; ; s;
+
+	VS "Je-sus shall ap-pear,";
+	VS12 "Je-sus shall ap-pear,";
+invisbar
+
+//13b
+1: 2s; 4.; 8fd+;
+2: 2s; 4.; 8b-b;
+
+	VS "That";
+	VS "That";
+bar
+
+//14a
+1 1: 8d+; c+; ; d+; 4c+ tie; 8; s;
+1 2: 4en; ; 8f; g; a; s;
+2 1: 8b bm; g ebm; g bm; b ebm; 8s; ; ; ;
+2 2: 4c; ; 8fa; fb; fc+; s;
+
+	VS "day is draw-ing near;";
+	VS12 "day is draw-ing near;";
+invisbar
+newscore
+
+//14b
+1: 2s; 4.s; 8fd+;
+2: 2s; 4.s; 8fa;
+
+	VS "Will";
+	VS "Will";
+bar
+
+//15a
+1 1: 8d+; ; ; c+; 4b tie; 8; s;
+1 2: 4f; 8f bm; e ebm; d; ; ; s;
+2: 4b-b; ; 8b-f; ; ; s;
+
+	VS "you be read-y then";
+	VS21 "you be read-y then";
+invisbar
+
+//15b
+1: 2s; 4.; 8df;
+2: 2s; 4.; 8b-b;
+
+	VS "To";
+	VS "To";
+bar
+
+//16a
+1 1: 8g; b; ; g; 4f tie; 8; s;
+1 2: 8e bm; g ebm; g bm; e ebm; d; ; ; s;
+2: 4eb; ; 8b-b; ; ; s;
+
+	VS "meet the ran-somed throng?";
+	VS21 "meet the ran-somed throng?";
+invisbar
+
+//16b
+1: 2s; 4.; 8df;
+2: 2s; 4.; 8b-b;
+
+	VS "Get";
+	VS "Get";
+bar
+
+//17a
+1 1: 8b; ; ; c+; 4d+ tie; 8; s;
+1 2: 4d; 8d bm; e ebm; f; ; ; s;
+2 1: 4b-f; b-b; 8b; ; ; s;
+2 2: 4s; ; 8b; ; ; s;
+
+	VS " read-y for that day,";
+	VS21 "read-y for that day,";
+invisbar
+
+//17b
+1: 2s; 4.; 8db;
+2 1: 2s; 4.; 8b;
+2 2: 2s; 4.; 8b;
+
+	VS "It";
+	VS "It";
+bar
+
+//18
+1 1: 8d+; ; ; c+; 4b tie; 8; s;
+1 2: 4f; 8f bm; e ebm; d; e; d; s;
+2 1: 4fb; 8b bm; a ebm; b; g; f; s;
+2 2: 4s; f; b- tie; 8; s;
+
+	VS "won't be ver-y long.";
+	VS21 "won't be <> ver-y long.";
+endbar

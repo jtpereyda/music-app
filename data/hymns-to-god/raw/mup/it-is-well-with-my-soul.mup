@@ -1,0 +1,299 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Great Awakening
+//		A choice collections of new and
+//		standard Gospel songs.
+//		Edited by Sam P. Jones
+//		Publisher: John Church Co.
+//		Chicago: Root & Sons Music Co. 200 Wabash Ave.
+//		New York: The J. Church Co. 55 E. 13th St.
+//		Copyright: 1886
+//		Hymn No. 75
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 05/12/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "It Is Well With My Soul" ""
+   title (2)""
+   title (11) "D \(flat) - 4 - SOL" "\s(17)\f(TI)\:He\ hath\ delivered\ my\ soul\ in\ peace.\ -\ Ps.\ 55:18 \(space)" ""   
+   title (13) "H. G. Spafford" "" "P. P. Bliss"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+// Define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+// Set midi
+	midi all: 0 "tempo=90";
+
+// Enter music
+
+//1
+1: 4af; 2.s;
+2: 4ad; 2.s;
+
+	VERSE 4; 2.s; "<1. >-1|When";
+	VERSE 4; 2.s; "<2. >-1|Tho'";
+	VERSE 4; 2.s; "<3. >-1|My";
+	VERSE 4; 2.s; "<4. >-1|And";
+bar
+//2
+1: 2af; 4ge; fd;
+2 1: 2ad; 4; a;
+2 2: 2s; 4; 8d bm; f ebm;
+
+	VERSE "peace, like a";
+	VERSE "Sa-tan should";
+	VERSE "sin\(emdash) oh, the";
+	VERSE "Lord, haste the";
+bar
+//3
+1: 2fd; 4ec; fd;
+2 1: 2a; 4; af;
+2 2: 2a; 4g; s;
+
+	VERSE "riv-er, at-";
+	VERSE "buf-fet, tho'";
+	VERSE "bliss of this";
+	VERSE "day when the";
+bar
+//4
+1 1: 4g slur; b; 4ac; s;
+1 2: 2c; 4s;;
+2: 2ae; 4aa-; s;
+
+	VERSE "tend-eth";
+	VERSE "tri-als";
+	VERSE "glo-ri-";
+	VERSE "faith shall";
+invisbar
+newscore
+
+//4
+1 1: 4s; s; s; ge;
+1 2: 2s; 4s;;
+2: 2s; 4s; c+a-;
+
+	VERSE "my";
+	VERSE "should";
+	VERSE "ous";
+	VERSE "be";
+
+bar
+//5
+1: 2.fd; 4af;
+2: 2.d+d; 4ad;
+
+	VERSE "way, When";
+	VERSE "come, Let";
+	VERSE "thought\(emdash) My";
+	VERSE "sight, The";
+bar
+//6
+1: 2d+f; 4c+e; bd;
+2: 2bb-; 4anc; bd;
+
+	VERSE "sor-rows, like";
+	VERSE "this blest as-";
+	VERSE "sin\(emdash) not in";
+	VERSE "clouds be rolled";
+bar
+//7
+1: 2bf; 4ae; gne;
+2: 2d+d; 4c+e; be;
+
+	VERSE "sea-bil-lows";
+	VERSE "sur-ance con-";
+	VERSE "part but in";
+	VERSE "back as a";
+bar
+//8
+1 1: 2.ae; 4a;
+1 2: 2.s; 4g;
+2: 2.c+a-; 4c+a;
+
+	VERSE "roll; What-";
+	VERSE "trol, That";
+	VERSE "whole, Is";
+	VERSE "scroll, The";
+bar
+//9
+1: 2d+f; 4; c+a;
+2: 2d+d; 4; d+f;
+
+	VERSE "ev-er my";
+	VERSE "Christ hath re-";
+	VERSE "nailed to His";
+	VERSE "trumph shall re-";
+bar
+//10
+1 1: 2bg; 4b;;
+1 2: 2s; 4b; a;
+2: 2d+g;4; d+nf;
+
+	VERSE "lot, Thou hast";
+	VERSE "gard-ed my";
+	VERSE "cross and I";
+	VERSE "sound, and the";
+bar
+//11
+1: 2e+g; 4; d+gn;
+2: 2e+e; 4;;
+
+	VERSE "taught me to";
+	VERSE "help-less es-";
+	VERSE "bear it no";
+	VERSE "Lord shall des-";
+bar
+//12
+1 1: 2c+a; 4b; a;
+1 2: 2s; 4a;;
+2 1: 2e+a; 4d+a; c+;
+2 2: 2s; 4; 8a bm; a ebm;
+
+	VERSE "say, It is";
+	VERSE "tate, And hath";
+	VERSE "more, Praise the";
+	VERSE "cend, \"E-ven";
+bar
+//13
+1: 2d+a; 4d+d;;
+2: 2d+f; 4af; bg;
+
+	VERSE "well, it is";
+	VERSE "shed His own";
+	VERSE "Lord, praise the";
+	VERSE "so\"\(emdash) it is";
+bar
+//14
+1: 2d+f; 4.c+e; 8d+f;
+2 1: 2a; 4.aa-; 8;
+2 2: 2a; 4.s; 8;
+
+	VERSE "well with my";
+	VERSE "blood for my";
+	VERSE "Lord, oh, my";
+	VERSE "well with my";
+bar
+//15
+1: 2d+f; s;
+2: 2ad; s;
+mussym (9) above 1: 1 "ferm";
+mussym (9) below 2: 1 "uferm";
+
+	VERSE "soul.";
+	VERSE "soul.";
+	VERSE "soul.";
+	VERSE "soul.";
+dblbar
+//16
+1 1: 4a;; 2s;
+1 2: 2r; 2s;
+2: 2r; s;
+ital (13) above 1: 1 "Chorus";
+
+	VERSE 4; 4; 2s;"It is";
+bar
+//17
+1 1: 1a tie;
+1 2: 2r; 4f;;
+2: 2r; 4ad; d+f;
+
+	VERSE "well_";
+	VERSE 2s; 4; 4; "It is";
+bar
+//18
+1 1: 2ae; 4a;;
+1 2: 2s; [dist -6] 2r;
+2: 2c+a; 2r;
+
+	VERSE 2s; 4; 4; "with my";
+	VERSE 2; 2s; "well";
+bar
+//19
+1 1: 1a tie;
+1 2: 2r; 4e; g;
+2: 2r; 4c+a-; e+a-;
+
+	VERSE "soul_";
+	VERSE 2s; 4; 4; "with my";
+bar
+//20
+1: 2af; 4fd; af;
+2: 2d+d; 4ad; d+d;
+
+	VERSE 2s; 4; 4; "It is";
+	VERSE 2; 4s; 4s; "soul,";
+bar
+//21
+1: 2bg; 4; d+g;
+2: 2d+g; 4; bg;
+
+	VERSE "well, it is";
+bar
+//22
+1: 2d+f; 4.c+e; 8d+f;
+2 1: 2a; 4.aa-; 8;
+2 2: 2a; 4.s; 8;
+
+	VERSE "well with my";
+bar
+//23
+1: 2.d+f; 4s;
+2: 2.ad; 4s;
+
+	VERSE "soul.";
+endbar

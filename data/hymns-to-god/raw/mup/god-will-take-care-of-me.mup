@@ -1,0 +1,212 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Praises
+//		For use in Gospel Meetings
+//		Young Peoples Societies
+//		Sunday Schools
+//		Edited by William J. Kirkpatrick, H.L. Gilmour,
+//		J. Lincoln Hall
+//		Publisher: Hall Mack Co.
+//		1020 Arch Street, Philadelphia
+//		Copyright: 1899
+//		Hymn No.: 150
+//		
+// Transcribed by: Ted Gatza, Jr. 02/10/2014
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+
+   title bold (19) "" "God Will Take Care Of Me" ""
+   title (2)""
+   title (11) "D - 3 - MI" "\s(17)\f(TI)\:casting\ all\ your\ anxiety\ upon\ him,\ because\ he\ careth\ for\ you.\ -\ 1\ Pet.\ 5:7 \(space)" ""   
+   title (13) "E. E. Hewitt" "" "William J. Kirkpatrick, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=3/4	
+	key=2#
+
+
+staff 2
+	key=2#
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+midi all: 0 "tempo=85";
+
+//1
+1: 4fd;; ge;
+2: 4ad;;;
+
+	VERSE "<1. >-1|God will take";
+	VERSE "<2. >-1|God will take";
+	VERSE "<3. >-1|God will take";
+bar
+//2
+1: 8.bg; 16af; 2;
+2: 8.d+d; 16; 2;
+
+	VERSE "care of me;";
+	VERSE "care of me,";
+	VERSE "care of me,";
+bar
+//3
+1 1: 4d;; ec;
+1 2: 4d;; s;
+2: 4fb-;; aa-;
+
+	VERSE "Here will I";
+	VERSE "Hush-ing my";
+	VERSE "Hold-ing the";
+bar
+//4
+1: 2.fd;
+2: 2.ad;
+
+	VERSE "rest,";
+	VERSE "fear;";
+	VERSE "helm;";
+bar
+//5
+1: 4fd;; g#d;
+2: 4ad;; bd;
+
+	VERSE "Trust-ing his";
+	VERSE "When dan-gers";
+	VERSE "Storms that may";
+bar
+//6
+1: 8.ae; 16be; 2c+e;
+2: 8.ac; 16g#b-; 2aa-;
+
+	VERSE "prom-ise true,";
+	VERSE "'round I see,";
+	VERSE "sweep the sea";
+bar
+//7
+1 1: 8c+ bm; b ebm; 4af; g#e;
+1 2: 4e#; s;;
+2: 4g#c; c+c;;
+
+	VERSE 4; 4; 4; "Safe on his";
+	VERSE 4; 4; 4; "His voice I";
+	VERSE 4; 4; 4; "Will not o'er-";
+bar
+//8
+1: 2.af;
+2: 2.c+f;
+
+	VERSE "breast.";
+	VERSE "hear;";
+	VERSE "whelm.";
+bar
+//9
+1 1: 4a; c+g; bg;
+1 2: 4g; s;;
+2: 4c+a; e+a; d+a;
+
+	VERSE "Change-ful may";
+	VERSE "Then let my";
+	VERSE "Soon, ev-'ry";
+bar
+//10
+1: 8.bf; 16af; 2;
+2: 8.d+d; 16; 2;
+
+	VERSE "be my lot,";
+	VERSE "soul be brave,";
+	VERSE "bil-low passeed,";
+bar
+//11
+1: 4af; d+f; [up]c+a;
+2: 4d+d; ad; d+f;
+
+	VERSE "His mer-cy";
+	VERSE "High tho' the";
+	VERSE "I shall my";
+bar
+//12
+1: [up]8.c+a; 16bg; 2;
+2: 8.d+g; 16; 2;
+
+	VERSE "chang-eth not;";
+	VERSE "wind and wave,";
+	VERSE "an-chor cast,";
+bar
+//13
+1: 4bg; e+g; be#;
+2: 4d+g; bg; d+g#;
+
+	VERSE "No child of";
+	VERSE "Great-er his";
+	VERSE "Safe, safe at";
+bar
+//14
+1: 8.af; 16d+f; 2;
+2 1: 8.d+a; 16a; 2;
+2 2: 8.s; 16a; 2;
+
+	VERSE "his for-got,";
+	VERSE "pow'r to save,";
+	VERSE "home at last,";
+bar
+//15
+1: 4ec; fd; ge;
+2: 4aa-;;;
+
+	VERSE "In Je-sus,";
+	VERSE "Ten-der-ly";
+	VERSE "In joy's bright";
+bar
+//16
+1: 2.fd;
+2: 2.ad;
+
+	VERSE "blest.";
+	VERSE "near.";
+	VERSE "realm.";
+endbar

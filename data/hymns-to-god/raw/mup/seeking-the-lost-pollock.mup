@@ -1,0 +1,215 @@
+// Mup vs. 6.1 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be 
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Lasting Hymns
+//		A collection of songs Specially Designed
+//		For Evey Department of Worship
+//		Suitable for all services of the Churches
+//		Editor: John A. Lee
+//		Publisher John A. Lee
+//		419-421 Elm St. Cincinnati, O. 
+//		7921 St Charles Ave., New Orleans
+//		Glencoe, KY
+//		Copyright 1901
+//		Hymn no. 279
+
+// Transcribed by: Ted Gatza, Jr. 04/29/2013
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Seeking The Lost" ""
+   title (2)""
+   title (11) "E - 2 - MI" "\s(17)\f(TI)\:For\ the\ Son\ of\ man\ i\^s\ come\ to\ seek\ and\ to save\ that\ which\ wa\|s\ lost.\ -\ Lk.\ 19:10" ""
+   title (13) "John A. Lee" " " "Chas. Edw. Pollock, 1902"	
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.4
+	packfact = 1.0
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=70";
+
+
+//1
+1: 8.c+e; 16bndn; 8c+e; 4ac; 16ae tie;;
+2: 8.aa-; 16; 8; 4; 16ac tie;;
+ital (13) above 1: 1 "Tenderly";
+
+			VERSE 8.; 16; 8; 4; 16; 16; "<1. >-1|Seek-ing the lost, He is";
+			VERSE "<2. >-1|Dy-ing for you, yes,";	
+			VERSE 8.; 16; 8; 4; 16; 16; "<3. >-1|Pray-ing, my broth-er, yes,";
+
+bar
+//2
+1: 8bd; ad; fd; 4.ec;
+2: 8fd;; ad; 4.aa-;
+
+			VERSE "seek-ing to-day,";
+			VERSE "dy-ing for me,";
+			VERSE "pray-ing for you,";
+bar
+//3
+1: 8ec; ae; c+e; 4e+a; 16c+e;;
+2 1: 8a; c+a;; 4; 16a;;
+2 2: 8a; s;; 4; 16a;;
+
+			VERSE "Want-ing those back who have";
+			VERSE "See, yes, be-hold Him just";
+			VERSE "Al-ways He's seek-ing so";
+bar
+//4
+1: 8c+e; be; adn; 4.be;
+2 1: 8a; bg; bf; 4.ge;
+2 2: 8s; s;; 4.;
+
+			VERSE "wan-dered a-way;";
+			VERSE "now on the tree!";
+			VERSE "ear-nest and true;";
+bar
+//5
+1: 8.c+e; 16bndn; 8c+e; 4ac; 16ae;;
+2: 8.aa-; 16; 8; 4; 16ac;;
+
+			VERSE "Wand-er-ing ones who are";
+			VERSE "Filled with an an-guish no";
+			VERSE "Plead-ing, His spir-it is";
+bar
+//6
+1: 8bd; ad; fd; 4.ec;
+2: 8fd;; ad; 4.aa-;
+
+			VERSE "out in the cold,";
+			VERSE "tongue can e'er tell,";
+			VERSE "plead-ing just now,";
+bar
+//7
+1: 8ec; ac; c+e; 4e+a; 16c+e; ac;
+2 1: 8aa-;;; 4c+a; 16a;;
+2 2: 8s;;; 4; 16a;;
+
+			VERSE "When will you come to the";
+			VERSE "All this to save a lost";
+			VERSE "Come to the cross, yes, come";
+bar
+//8
+1: 8bd; c+e; bd; 4.ac;
+2: 8ge;;; 4.aa-;
+
+			VERSE "dear shep-herd's fold?";
+			VERSE "world from dark hell.";
+			VERSE "hum-bly and bow.";
+dblbar hidechanges
+score time=9/8
+music
+//9
+1 1: 8.c+; 16bn; 8c+; 4.s;;
+1 2: 4.r; s;;
+2: 4.r; s;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Seek-ing the";
+bar
+//10
+1 1: 4.a tie; 4; 16ae;; 8bf; af; fd;
+1 2: 8e;;; 4; 16s;; 8;;;
+2: 8c+a-; c+c; c+e; 4c+a; 16ac;; 8fd;; ad;
+
+			VERSE "lost,_ He is seek-ing to-";
+			VERSE 8; 8; 8; 4; 16s; 16s; 8s; 8s; 8s; "Seek-ing the lost,";
+bar
+//11
+1 1: 4.ec tie;; 8e; a; c+;
+1 2: 4.s;; [dist -11] 4.r;
+2: 4.aa- tie;; 4.r;
+
+			VERSE "day, Seek-ing His";
+bar
+//12
+1 1: 4.e+ tie; 4; 16c+e;; 8c+ bm; b ebm; 8adn;
+1 2: 8a;;; 4; 16s;; 4e; 8s;
+2 1: 8c+a-; c+c; c+e; 4c+a; 16a;; 8a bm; b ebm; 8bf;
+2 2: 8s;;; 4; 16a;; 8a bm; g ebm; 8s;
+
+			VERSE 4.; 4s; 16; 16; 8; 8s; 8; "sheep_ that have gone a-";
+			VERSE 8; 8; 8; 4; 16s; 16s; 8s; 8s; 8s; "Seek-ing His sheep,";
+bar
+//13
+1 1: 4.be tie; 4.; 8.c+; 16bn; 8c+;
+1 2: 4.s; 4.; [dist -6]4.r;
+2: 4.ge tie; 4.; 4.r;
+
+			VERSE "stray; Up in His";
+bar
+//14
+1 1: 4.a tie; 4; 8ae; bf; af; fd;
+1 2: 8e;;; 4; 8s;;;;
+2: 8c+a-; c+c; c+e; 4c+a; 8ac; fd; ad;;
+
+			VERSE "arms,_ and safe from the";
+			VERSE 8; 8; 8; 4; 8s; 8s; 8s; 8s; "Up in His arms,";
+bar
+//15
+1 1: 4.ec tie; 4; 8c; e; a; c+e;
+1 2: 4.s; 4; 4.r; 8s;
+2: 4.aa- tie; 4; 4.r; 8aa-;
+
+			VERSE "cold, He ten-der-ly";
+			VERSE 4.s; 4s; 4.s; 8;" ten-";
+bar
+//16
+1 1: 4.e+; c+; 8ac; c+e; bd;
+1 2: 8a;;; 4e tie; 8; s;;;
+2 1: 8c+a-; c+c; c+e; 4a tie; 8; ge;;;
+2 2: 8s;;; 4a tie; 8; s;;;
+
+			VERSE "bears them back to the";
+			VERSE 8; 8; 8; 4s; 8s; 8s; 8s; 8s; "der-ly bears";
+bar
+//17
+1: 4.ac tie;; 8s;;;
+2: 4.aa- tie;; 8s;;;
+
+			VERSE "fold.";
+endbar

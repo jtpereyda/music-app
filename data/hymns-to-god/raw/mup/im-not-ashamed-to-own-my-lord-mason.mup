@@ -1,0 +1,274 @@
+// Mup vs. 7.1 arkkra.com
+
+// The hymn produced by this Mup file is believed to be 
+// in the Public Domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+// Hymn Source: 
+//	Great Songs of the Cchurch
+//	A Comprehensive Collection of Psalms, Hymn, 
+//	and Spiritual Songs of first rank. Suitable 
+//	for all Services of the Church.
+//	Compiled by E. L. Jorgenson
+//	Word and Work, Louisville, KY  	
+//	Copyright 1921
+//	Hymn No.: 126	
+
+// Transcribed by:
+//	Ted Gatza, Jr. 02/19/2024
+
+//	Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/2
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "I'm Not Ashamed To Own My Lord" ""
+   title (2)""
+   title (11) "" "\f(TI)For which cause I suffer also these things: yet I am not ashamed;" ""
+   title (11) "" "\f(TI)for I know him whom I have believed, and I am persuaded that he is able" ""
+   title (11) "" "\f(TI)to guard that which I have committed unto him against that day. - 2 Tim. 1:12" ""
+   title (10) "A\(flat) - 3 - SOL" "" ""
+   title "Isaac Watts" "" "Carl Glaser, 1828"
+   title "" 	    "" "arr. Lowell Mason"
+ 
+footer
+
+   title "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS1 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+
+//=========================
+
+// set midi
+	midi all: 0 "tempo=140";
+
+//=========================
+
+//Verse
+
+//1
+1 1: 2s; ; 2e;
+1 2: 2s; ; 2e;
+2 1: 2s; ; 2e;
+2 2: 2s; ; 2e;
+
+	VS "<1. >-1|I'm";
+	VS "<2. >-1|Je-";
+	VS "<3. >-1|Firm";
+	VS "<4. >-1|Then";
+bar
+
+//2
+1: 4ea; ca; 2eb; ;
+2: 4ce; a-a; 2eg; ;
+
+	VS "not a-shamed to";
+	VS "sus, my Lord, I";
+	VS "as His throne His";
+	VS "will He own my";
+bar
+
+//3
+1: 4ec+; db; 2ca; s;
+2 1: 4a; eg; 2fa; s;
+2 2: 4a; s; 2s; ; 
+
+	VS "own my Lord,";
+	VS "know His name,";
+	VS "prom-ise stands,";
+	VS "worth-less name";
+invisbar
+
+1: 4s; ; 2; eb;
+2: 4s; ; 2; eg;
+
+	VS "Nor";
+	VS "His";
+	VS "And";
+	VS "Be-";
+bar
+
+//4
+1: 4ec+; ; 2ed+; 2ec+;
+2 1: 4a; ; 2gb; a;
+2 2: 4a; ; 2s; a;
+
+	VS "to de-fend His";
+	VS "name is all my";
+	VS "He can well se-";
+	VS "fore His Fa-ther's";
+bar
+
+//5
+1: 1eb; 2s;
+2: 1eg; 2s;
+
+	VS "cause;";
+	VS "trust;";
+	VS "cure";
+	VS "face,";
+invisbar
+
+1: 1s; 2ge+;
+2: 1s; 2eb;
+
+	VS "Main-";
+	VS "Nor";
+	VS "What";
+	VS "And";
+bar
+
+//6
+1: 4ae+; ec+; 2; ea;
+2 1: 4ac+; a; 2; ca;
+2 2: 4s; a; 2; s;
+
+	VS "tain the hon-ors";
+	VS "will He put my";
+	VS "I've com-mit-ted";
+	VS "in the new Jer-";
+bar
+
+//7
+1: 4fa; df; 2; s;
+2: 4da; ; 2; s;
+
+	VS "of His word,";
+	VS "soul to shame,";
+	VS "to His hands,";
+	VS "ru-sa-lem";
+invisbar
+
+//8
+1: 4s; ; 2; 4fa slur; df;
+2: 4s; ; 2; da;
+
+	VS "The";
+	VS "Nor";
+	VS "Till";
+	VS "Ap-";
+bar
+
+//9
+1: 4ce; ca; 2; db;
+2: 4ea; ; 2; eg;
+
+	VS "glo-ry of His";
+	VS "let my hope be";
+	VS "the de-ci-sive";
+	VS "point for me a";
+bar
+
+//10
+1: 1ca; 2s;
+2: 1a-a; 2s;
+
+	VS "cross.";
+	VS "lost.";
+	VS "hour.";
+	VS "place.";
+endbar	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

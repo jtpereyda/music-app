@@ -1,0 +1,227 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Hosannas
+//		For Church And Sabbath School
+//		Young People's Services And
+//		Evangelistic Meetings
+//		Compiled and Edited by: C. B. Strouse, 
+//		Milford H. Lyon, C. G. Jordan,
+//		W. E. Biederwolf, Henry M Stough,
+//		John S. Milton, R. Sam Kirkland
+//		Published by The Glad Tidings Publishing Co.
+//		Lakeside Bldg. Chicago
+//		Copyright: 1911
+//		Hymn No.: 79
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 08/06/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I've Found The Way" ""
+   title (2)""
+   title (11) "F - 4 - SOL" "\s(17)\f(TI)\:Jesus\ saith\ unto\ him,\ I\ am\ the\ w\|ay,\ and\ the\ truth,\ and\ the\ life: no\ one\ cometh\ unto\ the\ Fat\|her,\ but\ by\ me.\ -\ Jn.\ 14:6" ""
+   title (13) "Thoro Harris" " " "Thoro Harris, 1911" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,40
+	scorepad=0
+	scale = .729
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=100";
+
+//1
+1: 8c+a bm; bg ebm; 2.s;
+2: 4c+f; 2.s;
+
+			VERSE 4; 2.s; "<1. >-1|I've";
+			VERSE 4; 2.s; "<2. >-1|I've";
+			VERSE 4; 2.s; "<3. >-1|I've";
+			VERSE 4; 2.s; "<4. >-1|Ho-";
+bar
+//2
+1: 4af;;; 8bg bm; af ebm;
+2 1: 4c+f;;; c+;
+2 2: 4s;;; 8e bm; f ebm;
+
+			VERSE 4; 4; 4; 4; "found the way to";
+			VERSE 4; 4; 4; 4; "found the truth, 'tis";
+			VERSE 4; 4; 4; 4; "found the life, the";
+			VERSE 4; 4; 4; 4; "san-nas be, dear";
+bar
+//3
+1 1: 4ge;;; 8a bm; g ebm;
+1 2: 4s;;; e;
+2 1: 4c+c;;; 8c+ bm; b ebm;
+2 2: 4s;;; c;
+
+			VERSE 4; 4; 4; 4; "per-fect rest, My";
+			VERSE 4; 4; 4; 4; "Christ a-lone, True";
+			VERSE 4; 4; 4; 4; "on-ly life, That";
+			VERSE 4; 4; 4; 4; "Lord to thee, Let";
+bar
+//4
+1 1: 4f;; ge;;
+1 2: 4f;; s;;
+2: 4ad;; c+c;;
+
+			VERSE "heart doth o-ver";
+			VERSE "knowl-edge can im-";
+			VERSE "shall im-mor-tal";
+			VERSE "all Thy grace pro-";
+bar
+//5
+1 1: 2a slur; 4c+; 8c+a bm; bg ebm;
+1 2: 2.f; 4s;
+2 1: 2c+ slur; 4a; 4c+f;
+2 2: 2.f; 4s;
+
+			VERSE 2; 4s; 4; "flow; Since";
+			VERSE 2; 4s; 4; "part; The";
+			VERSE 2; 4s; 4; "bloom; Be-";
+			VERSE 2; 4s; 4; "claim; For-";
+
+bar
+//6
+1: 4af;;; 8bg bm; af ebm;
+2 1: 4c+f;;; c+;
+2 2: 4s;;; 8e bm; f ebm;
+
+			VERSE 4; 4; 4; 4; "Christ is my a-";
+			VERSE 4; 4; 4; 4; "Lord om-nis-cient";
+			VERSE 4; 4; 4; 4; "yond this vale of";
+			VERSE 4; 4; 4; 4; "ev-er-more let";
+bar
+//7
+1 1: 4ge;;; 8a bm; g ebm;
+1 2: 4s;;; e;
+2 1: 4c+c;;; 8c+ bm; b ebm;
+2 2: 4s;;; c;
+
+			VERSE 4; 4; 4; 4; "bid-ing guest, No";
+			VERSE 4; 4; 4; 4; "hath His throne Es-";
+			VERSE 4; 4; 4; 4; "sin and strife, The";
+			VERSE 4; 4; 4; 4; "all a-dore Thy";
+bar
+//8
+1 1: 8f bm; g ebm; a bm; b ebm; 4af; gc;
+1 2: 8f bm; e ebm; 4f; s;;
+2: 8ad bm; c+c ebm; c+f bm; d+b- ebm; 4c+c; bc;
+
+			VERSE 4; 4; 4; 4; "want my soul shall";
+			VERSE 4; 4; 4; 4; "tab-lished in my";
+			VERSE 4; 4; 4; 4; "port-als of the";
+			VERSE 4; 4; 4; 4; "high and ho-ly";
+bar
+//9
+1: 2.fc; 4s;
+2: 2.af; 4s;
+
+			VERSE "know.";
+			VERSE "heart.";
+			VERSE "tomb.";
+			VERSE "name!";
+dblbar
+//10
+1: 8c+a bm; d+b ebm; 2.s;
+2: 4c+f; 2.s;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE 4; 2.s; [c]"He";
+bar
+//11
+1: 4c+a; bg; ge; 8d+b bm; e+c+ ebm;
+2: 4c+c;;; e+c;
+
+			VERSE 4; 4; 4; 4; "ran-somed me, He";
+bar
+//12
+1: 4d+b; c+a; af; 8c+a bm; d+b ebm;
+2: 4f+f;; c+f;;
+
+			VERSE 4; 4; 4; 4; "set me free, His";
+bar
+//13
+1: 4c+a; bg; ge; e+b;
+2: 4c+c;;; e+c;
+
+			VERSE "won-drous life I";
+bar
+//14
+1: 2d+b slur; 4c+a; 8c+a bm; d+b ebm;
+2: 2.f+f; 4c+f;
+
+			VERSE 2; 4s; 4; "sing, All";
+bar
+//15
+1: 4c+a; bg; ge; 8d+b bm; e+c+ ebm;
+2: 4c+c;;; e+c;
+
+			VERSE 4; 4; 4; 4; "glo-ry be, O";
+bar
+//16
+1: 4d+b; c+a; f+a; 4f+f;
+2: 4f+f; c+f; d+d; c+a-;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "Christ to Thee! Ho-";
+bar
+//17
+1: 8e+f bm; d+b ebm; 8c+a bm; bg ebm; 4af; ge;
+2: 4d+b-;; c+c; bc;
+
+			VERSE 4; 4; 4; 4; "san-na to the";
+bar
+//18
+1: 2.fc; 4s;
+2: 2.aff-; 4s;
+
+			VERSE "King!";
+endbar

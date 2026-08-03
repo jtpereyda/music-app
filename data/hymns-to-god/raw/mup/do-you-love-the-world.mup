@@ -1,0 +1,224 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// This source code and the hymn produced by this source code is 
+// licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. 
+// To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ 
+// or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA. 
+// in the United States of America.
+
+// The lyrics to this song are in the the Public Domain of the United States of America.
+
+// 
+
+// Lyric Source: Songs Of The Evening Light
+//		 For Sunday Schools, Missionary and
+//		 Revival Meetings and Gospel Work
+//		 In General 
+//		 Edited by Barney E. Warren and 
+//		 Andrew L. Byerws
+//		 Gospel Trumpet Company
+//		 Anderson, Indiana, U.S.A.
+//		 Copyright 1897
+//		 Hymn No.: 17
+//
+//		 Lyrics from http://library.timelesstruths.org/music/Do_You_Love_the_World/
+//		 Copyright 1911
+//		
+// Transcribed by: Ted Gatza, Jr. 07/19/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Do You Love The World?" ""
+   title (2)""
+   title (11) "F - 4 - DO" "\s(17)\f(TI)\:For\ all\ that\ is\ in\ the\ world,\ the\ l\|ust\ of\ the\ flesh\ and\ the\ lust\ of\ the eyes\ and\ the\ vain\ glory\ of\ life,\|\ is\ not\ of\ the\ Father\ -\ 2\ Jn.\ 2:16" ""
+   title (13) "Clarence E. Hunter, 1911" "" "Barney E. Warren, 1897"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1: 2.s; 8fc; 8gc;
+2: 2.s; 8af; 8bf;
+
+
+			VERSE "<1. >-1|Do you";
+			VERSE "<2. >-1|Do you";
+			VERSE "<3. >-1|Do you";
+			VERSE "<4. >-1|Do you";
+
+bar
+//2
+1 1: 4af; 4af; 4af; 8f; 8af;
+1 2: 4s; 4s; 4s; 8f; 8s;
+2 : 4c+f; 4c+f; 4c+f; 8af; 8c+f;
+
+			VERSE "love the world, in its";
+			VERSE "love the world, it's ap-";
+			VERSE "love the world? Is it";
+			VERSE "love the world more than";
+bar
+//3
+1 1: 4c+f; 4c+f; 4af; 8f; 8g;
+1 2: 4s; 4s; 4s; 8f; 8f;
+2: 4af; 4af; 4c+f; 8af; 8bf;
+
+			VERSE "pomp and show? In its";
+			VERSE "plause and fame? Soon 'twill";
+			VERSE "dear to thee? Can it";
+			VERSE "Christ who died? How the";
+bar
+//4
+1: 4af; 4af; 4c+f; 8bg; 8af;
+2: 4c+f; 4c+f; 4af; 8c+e; 8c+f;
+
+			VERSE "course of sin will you";
+			VERSE "end in sor-row, re-";
+			VERSE "help thy soul in e-";
+			VERSE "blood flowed free from His";
+bar
+//5
+1: 4af; 4ge; 4ge; 8fc; 8gc;
+2:4c+c; 4c+c; 4c+c; 8af; 8bf;
+
+			VERSE "on-ward go? Is the";
+			VERSE "morse, and shame; Je-sus";
+			VERSE "ter-ni-ty? Will you";
+			VERSE "pierc-ed side? When it";
+bar
+//6
+1 1: 4af; 4af; 4af; 8f; 8af;
+1 2: 4s; 4s; 4s; 8f; 8s;
+2: 4c+f; 4c+f; 4c+f; 8af; 8c+f;
+
+			VERSE "pride of life more than";
+			VERSE "bids you come and re-";
+			VERSE "choose its way more than";
+			VERSE "cost His life to pre-";
+bar
+//7
+1: 4c+f; 4c+f; 4af; 8c+f; 8c+f;
+2: 4af; 4af; 4c+f; 8af; 8bf;
+
+			VERSE "heav'n a-bove? Will you";
+			VERSE "deem your soul From its";
+			VERSE "god-ly fear, Seal-ing";
+			VERSE "pare that place, Will you";
+bar
+//8
+1 1: 4c+f; 4af; 4c+f; 8f; 8g;
+1 2: 4s; 4s; 4s; 8f; 8f;
+2: 4af; 4c+f; 4af; 8ad; 8d+b-;
+
+			VERSE "lose your soul for the";
+			VERSE "aw-ful doom, ere the";
+			VERSE "thus your doom, when the";
+			VERSE "die in sin, and re-";
+bar
+//9
+1: 4af; 4ge; 4fc; 4s;
+2: 4c+c; 4bc; 4af; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "sin you love?";
+			VERSE "judg-ments roll.";
+			VERSE "Lord is near?";
+			VERSE "fuse His grace?";
+dblbar
+newscore
+//10
+1: 8c+f; 8c+f; 4s; 4s; 4s; 
+2: 8af; 8af; 4s; 4s; 4s; 
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Do you";
+bar
+//11
+1: 4d+f; 4d+f; 4bf; 8d+f; 8d+f;
+2: 4bb-; 4bb-; 4bd; 8bb-; 8bb-;
+
+			VERSE [c]"love the world? Will you";
+bar
+//12
+1: 4c+f; 4c+f; 4af; [up]8c+a; [up]8c+a;
+2: 4af; 4af; 4c+f; 8c+f; 8c+f;
+
+			VERSE [c]"self-ish be, When the";
+bar
+//13
+1: 4bg; 4bg; 4be; 8af; 8bg;
+2: 4c+c; 4c+c; 4c+c; 8c+c; 8c+c;
+
+			VERSE [c]"Lord pro-vides ev'-ry-";
+bar
+//14
+1: 4c+f; 4c+f; 4af; 8c+f; 8c+f;
+2: 4af; 4af; 4c+f; 8af; 8af;
+
+			VERSE [c]"thing for thee? Can you";
+bar
+//15
+1: 4d+f; 4d+f; 4bf; 8d+f; 8d+f;
+2: 4bb-; 4bb-; 4bd; 8bb-; 8bb-;
+
+			VERSE [c]"still re-fuse? Will you";
+bar
+//16
+1: 4c+f; 4c+f; 4af; 8fc; 8ge;
+2 1: 4af; 4af; 4c+f; 8a; 8bg;
+2 2: 4s; 4s; 4s; 8a; 8s;
+
+			VERSE [c]"come and bow? Give your";
+bar
+//17
+1: 4af; 4c+f; 4c+f; 8af; 8bf;
+2: 4c+f; 4af; 4af; 8c+f; 8d+b-;
+
+			VERSE [c]"heart and life to his";
+bar
+//18
+1: 4af; 4ge; 4fc; 4s;
+2: 4c+c; 4bc; 4aff-; 4s;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE [c]"ser-vice now?";
+endbar

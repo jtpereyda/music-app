@@ -1,0 +1,237 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Fair as the Morning.
+//		Hymns and Tunes For Praise
+//		In the Sunday-School
+//		By J. H. Kurzenknabe and
+//		W. W. Bentley.
+//		With A Full Arrangement for the
+//		Sunday School Orchestra.
+//		By Harry J. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright 1891
+//		Hymn No.: 126
+//		
+// Transcribed by: Ted Gatza, Jr. 01/24/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Wondrous Story" ""
+   title (2)""
+   title (11) "F - 3 - DO" "\s(17)\f(TI)\:who\ gave\ himself\ for\ us,\ that\ he\ mi\|ght\ redeem\ us\ from\ all\ iniquity,\ and purify\ unto\ himself\ a\ people\ for\|\ his\ own\ possession,\ -\ Titus\ 2:14" ""   
+   title (13) "D. H. Koch" "" "Charles Edw. Pollock, 1891"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=80";
+
+//1
+1 1: 8f; g; 2s;
+1 2: 8f;; 2s;
+2: 8af; bf; 2s;
+
+			VERSE "<1. >-1|I Will";
+			VERSE "<2. >-1|Heav'n-ly";
+			VERSE "<3. >-1|I will";
+			VERSE "<4. >-1|I will";
+			
+bar
+//2
+1: 4.af; 8; bg; af;
+2: 4.c+f; 8; c+e; c+f;
+
+			VERSE "sing the won-drous";
+			VERSE "sto-ry of sal-";
+			VERSE "sing this bless-ed";
+			VERSE "sing the sto-ry";
+bar
+//3
+1: 4af; ge; 8ec; fd;
+2: 4c+c;; 8gc;;
+
+			VERSE "sto-ry Of sal-";
+			VERSE "va-tion! How the";
+			VERSE "sto-ry, Glad-ly";
+			VERSE "sweet-ly, And when";
+bar
+//4
+1: 4.ge; 8bg; s; s;
+2: 4.c+c; 8;s; s;
+
+			VERSE "va-tion";
+			VERSE "Son of";
+			VERSE "sing it";
+			VERSE "life is";
+invisbar
+newscore
+
+1: 4.s; 8s; af; ge;
+2: 4.s; 8;c+c; bc;
+
+			VERSE "full and";
+			VERSE "God on";
+			VERSE "eve-ry-";
+			VERSE "sink-ing";
+
+bar
+//5
+1 1: 2f; 8; g;
+1 2: 2f; 8;;
+2: 2af; 8; bf;
+
+			VERSE "free, How my";
+			VERSE "high Came to";
+			VERSE "where, Of the";
+			VERSE "low, I will";
+bar
+//6
+1: 4.af; 8af; bg; af;
+2: 4.c+f; 8; c+e; c+f;
+
+			VERSE "Sa-viour left His";
+			VERSE "earth in rich com-";
+			VERSE "Sav-iour's match-less";
+			VERSE "trust Him then com-";
+bar
+//7
+1: 4af; ge; 8s; s;
+2: 4c+c;; 8s;;
+
+			VERSE "glo-ry";
+			VERSE "pas-sion,";
+			VERSE "glo-ry,";
+			VERSE "plete-ly,";
+invisbar
+newscore
+
+1: 4s;; 8ec; fd;
+2: 4s;; 8gc;;
+
+			VERSE "To re-";
+			VERSE "Gave Him-";
+			VERSE "And the";
+			VERSE "For my";
+
+bar
+//8
+1:4.ge; 8bg; af; ge;
+2: 4. c+c; 8;; bc;
+
+			VERSE "deem and ran-som";
+			VERSE "self for us to";
+			VERSE "love His chil-dren";
+			VERSE "Sa-viour loves me";
+bar
+//9
+1 1: 2f; 4s;
+1 2: 2f; 4s;
+2: 2af; 4s;
+
+			VERSE "me.";
+			VERSE "die.";
+			VERSE "share.";
+			VERSE "so.";
+dblbar
+//10
+1: 8c+f;; 2s;
+2: 8af;; 2s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"I will";
+bar
+//11
+1: 4.d+f; 8; bf; d+f;
+2: 4.bb-; 8; d+b-; bb-;
+
+			VERSE [c]"sing the won-drous";
+bar
+//12
+1: 4d+f; c+f; 8af; bf;
+2 1: 4bf; af; 8f; g;
+2 2: 4s;; 8f;;
+
+			VERSE "sto-ry, Though but";
+bar
+//13
+1: 4.c+f; 8d+f; c+f; af;
+2: 4.af; 8bf; af; c+f;
+
+			VERSE "young in years I";
+bar
+//14
+1 1: 2ge; 8f; g;
+1 2: 2s; 8f;;
+2: 2c+c; 8af; bf;
+
+			VERSE "be; Je-sus";
+bar
+//15
+1: 4.af; 8; bg; af;
+2: 4.c+f; 8; c+e; c+f;
+
+			VERSE "came from realms of";
+bar
+//16
+1: 4af; ge; 8ec; fd;
+2: 4c+c;; 8gc;;
+
+			VERSE "glo-ry To re-";
+bar
+//17
+1: 4.ge; 8bg; af; ge;
+2: 4.c+c; 8;; bc;
+
+			VERSE "deem and ran-som";
+bar
+//18
+1 1: 2f; 4s;
+1 2: 2f; 4s;
+2: 2af; 4s;
+
+			VERSE "me.";
+endbar

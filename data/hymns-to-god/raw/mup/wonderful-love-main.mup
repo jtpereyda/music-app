@@ -1,0 +1,209 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Melodies New and Old
+//		For use In the Universalist Church
+//		Chester Gore Miller, Editor
+//		Boston, Universalist Publishing House
+//		Copyright: 1904
+//		Hymn No.: 42
+//		
+// Transcribed by: Ted Gatza, Jr. 03/19/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Wonderful Love!" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:Even\ as\ the\ Father\ hat\|h\ loved\ me,\ I\ also\ have loved\ you:\ abide\ ye\ \^in\ my\ love.\ -\ Jn.\ 15:9" ""   
+   title (13) "Grace J. Frances" "" "Hubert P. Main, 1890"     // Grace J. Frances is a pseudonym for Fanny J. Crosby.
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=120";
+
+//1
+1: 4fd; 2.s; 2;
+2: 4bb-; 2.s; 2;
+
+			VERSE "<1. >-1|O";
+			VERSE "<2. >-1|I";
+			VERSE "<3. >-1|To";
+			VERSE "<4. >-1|I";
+bar
+//2
+1: 2fd; 4bd; 2; 4;
+2: 2bb-; 4fb-; 2; 4; 
+
+			VERSE "Lord, my soul re-";
+			VERSE "came to Thee o'er-";
+			VERSE "Thee, my hope and";
+			VERSE "look be-yond this";
+bar
+//3
+1: 4.c+e; 8d+f; 4c+e; 2bd; 4;
+2 1: 4.af; 8; 4; 2bb-; 4b;
+2 2: 4.s; 8; 4s; 2; 4b;
+
+			VERSE "joic-eth in Thee, My";
+			VERSE "bur-dened with care, My";
+			VERSE "ref-uge di-vine, My";
+			VERSE "val-ley of tears, Where";
+bar
+//4
+1: 2e+g; 4; 4.d+f; 8c+f; 4bf;
+2 1: 2b; 4; 4.bb-; 8ac; 4bd;
+2 2: 2b; 4; 4.s; 8; 4;
+
+			VERSE "tongue The mer-cy is";
+			VERSE "guilt with sor-row con-";
+			VERSE "faith is fer-vent-ly";
+			VERSE "Thou, a man-sion pre-";
+bar
+//5
+1 1: 2.d+f; 2c+f; 4f;
+1 2: 2.s; 2; 4e;
+2: 2.bf; 2af; 4;
+
+			VERSE "tell-ing; I've";
+			VERSE "fess-ing; 'Twas";
+			VERSE "cling-ing; And";
+			VERSE "par-ing, Wilt";
+bar
+//6
+1: 2fd; 4bd; 2; 4;
+2: 2bb-; 4fb-; 2; 4bb-;
+
+			VERSE "found Thy love so";
+			VERSE "love, Thy love, that";
+			VERSE "ev-'ry hour some";
+			VERSE "call me home for-";
+bar
+//7
+1: 4.ben; 8c+e; 4bg; 2af; 4c+f;
+2: 4.gc; 8; 4c+c; 2c+f; 4af;
+
+			VERSE "pre-cious to me, My";
+			VERSE "ban-ish'd my fear, And";
+			VERSE "to-ken of love New";
+			VERSE "ev-er with Thee, The";
+bar
+//8
+1 1: 4.c+f; 8bf; 4af; 4.af; 8gen; 4f;
+1 2: 4.s; 8; 4; 4.; 8; 4f;
+2: 4.af; 8d+f; 4c+f; 4.c+c; 8bc; 4ac;
+
+			VERSE "heart with its rap-ture is";
+			VERSE "gave me for sad-ness a";
+			VERSE "joy to my spir-it is";
+			VERSE "bliss of the glo-ri-fied";
+bar
+//9
+1 1: 2.gen; 2f; 4r;
+1 2: 2.s; 2f; 4s;
+2: 2.bc; 2af; 4r;
+
+			VERSE "swell-ing.";
+			VERSE "bless-ing.";
+			VERSE "bring-ing.";
+			VERSE "shar-ing.";
+dblbar
+//10
+1 1: 4.c+e; 8d+f; 4c+e; 2bd; 4f;
+1 2: 4.s; 8; 4; 2; 4f;
+2: 4.af; 8; 4; 2bb-; 4bd;
+ital (13) above 1: 1 "Refrain";
+
+			VERSE [c]"Won-der-ful love! O";
+bar
+//11
+1: 4.e+a; 8f+a; 4e+f; 2d+f; 4;
+2 1: 4.c+f; 8; 4c+a; 2b; 4d+b;
+2 2: 4.s; 8; 4; 2b; 4s;
+
+			VERSE [c]"won-der-ful love! I'll";
+bar
+//12
+1: 4.d+b; 8c+f; 4bf; 4.f+f; 8e+f; 4d+f;
+2: 4.f+b; 8e+b; 4d+b; 4.bd; 8ac; 4bb-;
+
+			VERSE "sing of its ful-ness for-";
+bar
+//13
+1 1: 2.d+f; 2c+f; 4f;
+1 2: 2.s; 2; 4e;
+2: 2.bf; 2af; 4;
+
+			VERSE "ev-er; I've";
+bar
+//14
+1: 2fd; 4bd; 2; 4;
+2: 2bb-; 4fb-; 2; 4bb-;
+
+			VERSE "found the way that";
+bar
+//15
+1: 4.c+e; 8d+f; 4c+e; 2bd; 4e+g;
+2: 4.af; 8; 4; 2bg; 4be;
+
+			VERSE "lead-eth a-bove, The";
+bar
+//16
+1: 4.d+f; 8c+e; 4bd; 4bf; 4ae; 4bd;
+2 1: 4.bf; 8f; 4; d+f; c+f; 4bf;
+2 2: 4.s; 8f; 4; s;;;
+
+			VERSE "way to the life giv-ing";
+bar
+//17
+1: 2.c+e; 2bd; 4s;
+2: 2.af; 2bb-; 4s;
+
+			VERSE "riv-er.";
+endbar

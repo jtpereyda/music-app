@@ -1,0 +1,284 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 94
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 11/04/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Why Do You Wait?" ""
+   title (2)""
+   title (11)"" "\f(TI)Arise, he calleth thee. - Mk. 10:49" ""
+   title (11) "A - 2 - SOL" "" ""
+   title (13) "George F. Root" "" "George F. Root"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+//==========================
+staffs=2
+	time=6/8	
+	key=3#
+
+
+staff 2
+	key=3#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+
+  //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+//Verse 1
+
+//1
+1: 8ce; ; ; 4df; 8ce;
+2: 8a-a; ; ; 4; 8;
+
+	VS1 "<1. >-1|Why do you wait, dear";
+	VS1 "<2. >-1|What do you hope, dear";
+	VS1 "<3. >-1|Do you not feel, dear";
+	VS1 "<4. >-1|Why do you wait, dear";
+bar
+
+//2
+1: 8s; 8ce; 4ca tie; ;
+2: 8s; 8a-a; 4 tie; ;
+
+	VS1 "broth-er,";
+	VS1 "broth-er,";
+	VS1 "broth-er,";
+	VS1 "broth-er,";
+invisbar
+
+1: 8ca; 4.s; 4;
+2: 8a-a; 4.s; 4;
+
+	VS1 "Oh,";
+	VS1 "To";
+	VS1 "His";
+	VS1 "The";
+bar
+
+//3
+1: 8eb; ; ; ea; ; eb;
+2 1: 8s; ; ; f; ; s;
+2 2: 8eg; ; ; e; e; eg;
+
+	VS1 "why do you tar-ry so";
+	VS1 "gain by a fur-ther de-";
+	VS1 "Spir-it now striv-ing with-";
+	VS1 "har-vest is pass-ing a-";
+bar
+
+//4
+1: 8s; 4.ec+ tie; 4;
+2: 8s; 4.a-a tie; 4;
+
+	VS1 "long?";
+	VS1 "lay?";
+	VS1 "in?";
+	VS1 "way?";
+invisbar
+
+1: 8ce; 4.s; 4; 
+2: 8a-a; 4.s; 4; 
+
+	VS1 "Your";
+	VS1 "There's";
+	VS1 "Oh,";
+	VS1 "Your";
+bar
+
+//5
+1 1: 8ce; ; ; dg; df; e;
+1 2: 4.s; 4s; 8d;
+2: 8a-a; ; ; ; ; ;
+
+	VS1 "Sav-ior is wait-ing to";
+	VS1 "no one to save you but";
+	VS1 "why not ac-cept His sal-";
+	VS1 "Sav-ior is long-ing to";
+bar
+
+//6
+1: 8s; ce; 4ca tie; ;
+2: 8s; 8a-a; 4 tie; ;
+
+	VS1 "give you,";
+	VS1 "Je-sus,";
+	VS1 "va-tion,";
+	VS1 "bless you,";
+invisbar
+newscore
+1: 8db; 4.s; 4;
+2: 8a-a; 4.s; 4;
+
+	VS1 "A";
+	VS1 "There's";
+	VS1 "And";
+	VS1 "There's";
+bar
+
+//7
+1: 8ec+; fd+; ec+; db; df; dg;
+2 1: 8a; ; ; 4.s;
+2 2: 8a; ; ; dg; db; ;
+
+	VS1 "place in His sanc-ti-fied";
+	VS1 "no oth-er way but His";
+	VS1 "throw off thy bur-den of";
+	VS1 "dan-ger and death in de-";
+bar
+
+//8
+1: 4.ca tie; 4; 8r;
+2: 4.a-a tie; 4; 8r;
+
+	VS1 "throng.";
+	VS1 "way.";
+	VS1 "sin.";
+	VS1 "lay.";
+dblbar
+newscore
+
+//9
+CHORUS
+1: 4.ec+; 4ca; 8r;
+2: 4.a-a; 4; 8r;
+
+	VS1" Why not?";
+bar
+
+//10
+1: 4.fa; 4df; 8r;
+2: 4.da; 4; 8r;
+
+	VS1 "why not?";
+bar
+
+//11
+1 1: 4e; 8; dg; df; e;
+1 2: 4d; 8; 4s; 8d;
+2: 4dg; 8; db; ; ; 
+
+	VS1 "Why not come to Him";
+bar
+
+//12
+1 1: 4.e slur; a;
+1 2: 2.c;
+2: 2.a-a;
+
+	VS1 " now?";
+bar
+
+//13
+1: 4.ec+; 4ca; 8r;
+2: 4.a-a; 4; 8r;
+
+	VS1" Why not?";
+bar
+
+//14
+1: 4.fa; 4df; 8r;
+2: 4.da; 4; 8r;
+
+	VS1 "why not?";
+bar
+
+//15
+1 1: 4e; 8; dg; df; e;
+1 2: 4d; 8; 4s; 8d;
+2: 4dg; 8; db; ; ; 
+
+	VS1 "Why not come to Him";
+bar
+
+//16
+1: 4.ca tie; 4; 8r;
+2: 4.a-a tie; 4; 8r;
+
+	VS1 "now?";
+endbar
+
+
+
+
+

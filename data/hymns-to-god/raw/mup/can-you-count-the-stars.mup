@@ -1,0 +1,328 @@
+//!Mup Vs.7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	
+//	Elmhurst Hymnal And Orders Of Worship
+//	For The Sunday School
+//	Young People's Meetings
+//	And Church Services
+//	Eden Publishing House
+//	St. Louis, Chicago
+//	Copyright 1921
+//	Hymn No. 57
+		
+// Transcribed by: 
+//	Ted Gatza, Jr. 8/16/2021
+
+// Revisions:
+//	09/07/2022
+//	12/24/2023 [1] Updated Mup code
+
+// www.HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/4	
+	key=f
+
+staff 2
+	key=f
+	clef=bass
+
+//=========================
+
+top
+
+   	title bold (19) "" "Can You Count The Stars?" ""
+   	title (2) ""
+   	title (11)"" "\f(TI)He counteth the number of the stars;" ""
+   	title (11)"" "\f(TI)He calleth them all by their names. - Ps. 147:4" ""
+   	title (11)"F - 3 - DO" "" ""  
+   	title (13) "Johann Hey, 1837" "" "German Folk Tune, 1550"
+   	title (13) "Tr. Anonymous" "" ""
+
+footer
+
+   	title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFT(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define SFB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define BFT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define BFB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+   //Time Signature - Use on projection hymns only
+      define P1 [pad 5; =t]@
+      define P2 [=s]@
+      define TIME
+    print (t.w - 2, t.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, t.y - 4) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y) "\f(newcentury bold)\s(16)4";
+	 print (t.w - 2, s.y - 4) "\f(newcentury bold)\s(16)4";
+	 @
+
+
+// Set midi
+       midi all: 0 "tempo=90";
+
+//=========================
+
+//1
+1: 2s; 8cf; eg;
+2: 2s; 8fa; cc+;
+
+	VS 2s; 8; 8; "<1. >-1|Can you";
+	VS 2s; 8; 8; "<2. >-1|Can you";
+	VS 2s; 8; 8; "<3. >-1|Do you";
+bar
+
+//2
+1 1: 4fa;; 8gb; g;
+1 2: 4s;; 8; g;
+2: 4fc+;; 8ec+; eb;
+
+	VS "count the stars that";
+	VS "count the song-birds";
+	VS "know how man-y";
+bar
+
+//3
+1 1: 8d+ bm; c+ ebm; 4fc+; 8fa; ac+;
+1 2: 4f; s; 8;;
+2: 4fa;; 8fc+; fa;
+
+	VS 4; 4; 8; 8; "night-ly Twin-kle";
+	VS 4; 4; 8; 8;  "play-ing In the";
+	VS 4; 4; 8; 8; "chil-dren Rise each";
+bar
+
+//4
+1 1: 8c+ bm; b ebm; 4gb; 8ec+; gb;
+1 2: 4g; s; 8;;
+2: 4ec+;; 8cc+; ec+;
+
+	VS 4; 4; 8; 8; "in the mid-night";
+	VS 4; 4; 8; 8; "sun-shine's gold-en";
+	VS 4; 4; 8; 8; "morn-ing, bright and";
+bar
+
+//5
+1: 2fa; 4s;
+2: 2fc+; 4s;
+
+	VS "sky?";
+	VS "light?";
+	VS "gay?";
+dblbar
+
+//6
+1: 2s; 8cf; eg;
+2: 2s; 8fa; cc+;
+
+	VS 2s; 8; 8; "Can you";
+	VS 2s; 8; 8; "Can you";
+	VS 2s; 8; 8; "Can you";
+bar
+
+//7
+1 1: 4fa;; 8gb; g;
+1 2: 4s;; 8; g;
+2: 4fc+;; 8ec+; eb;
+
+	VS "count the clouds so";
+	VS "count the fish-es";
+	VS "count the lit-tle";
+bar
+
+//8
+1 1: 8d+ bm; c+ ebm; 4fc+; 8fa; ac+;
+1 2: 4f; s; 8;;
+2: 4fa;; 8fc+; fa;
+
+	VS 4; 4; 8; 8; "light-ly O'er the";
+	VS 4; 4; 8; 8; "stray-ing In the";
+	VS 4; 4; 8; 8; "voi-ces Sing-ing";
+bar
+
+//9
+1 1: 8c+ bm; b ebm; 4gb; 8ec+; gb;
+1 2: 4g; s; 8;;
+2: 4ec+;; 8cc+; ec+;
+
+	VS 4; 4; 8; 8; "mead-ows float-ing";
+	VS 4; 4; 8; 8; "spark-ling wa-ters";
+	VS 4; 4; 8; 8; "sweet-ly day by";
+bar
+
+//10
+1: 2fa; 4s;
+2: 2fc+; 4s;
+
+	VS "by?";
+	VS "bright?";
+	VS "day?";
+dblbar
+
+//11
+1: 2s; 8ac+; fa;
+2: 2s; 8fc+;;
+
+	VS "God the";
+	VS "God the";
+	VS "God hears";
+bar
+
+//12
+1: 8fa bm; eg ebm; 4eg; 8bd+; gb;
+2: 4cc+;; 8; ec+;
+
+	VS 4; 4; 8; 8; "Lord doth mark their";
+	VS 4; 4; 8; 8; "Lord a name hath";
+	VS 4; 4; 8; 8; "all the lit-tle";
+bar
+
+//13
+1: 8gb bm; fa ebm; 4; 8s; s;
+2: 4fc+;; 8s;s;
+
+	VS 4; 4; 8s; 8s; "num-ber";
+	VS 4; 4; 8s; 8s; "giv-en";
+	VS 4; 4; 8s; 8s; "voi-ces,";
+dblbar
+1: 8s; s; 4s; 8ac+; fa;
+2: 4s; ; 8fc+; ;
+
+	VS 4s; 4s; 8; 8; "With His";
+	VS 4s; 4s; 8; 8; "To all";
+	VS 4s; 4s; 8; 8; "In their";
+bar
+
+//14
+1: 8fa bm; eg ebm; 4s; 8s; s;
+2: 4cc+; s; 8s; s;
+
+	VS 4; 4s; 8s; 8s; "eyes";
+	VS 4; 4s; 8s; 8s; "crea-";
+	VS 4; 4s; 8s; 8s; "pret-";
+invisbar
+newscore
+
+1: 8s; s; 4eg; 8bd+; gb;
+2: 4s; cc+; 8cc+; ec+;
+
+	VS 4s; 4; 8; 8; "that nev-er";
+	VS 4s; 4; 8; 8; "tures un-der";
+	VS 4s; 4; 8; 8; "ty songs re-";
+bar
+
+//15
+1: 8gb bm; fa ebm; 4; 4s;
+2: 4fc+;; 4s;
+
+	VS 4; 4; 4s; "slum-ber;";
+	VS 4; 4; 4s; "heav-en";
+	VS 4; 4; 4s; "joi-ces;";
+dblbar
+
+//16
+1: 2s; 8cf; eg;
+2: 2s; 8fa; cc+;
+
+	VS 2s; 8; 8; "He hath";
+	VS 2s; 8; 8; "When He";
+	VS 2s; 8; 8; "He doth";
+bar
+
+//17
+1: 4fa;; 8gb; eg;
+2: 4fc+;; 8cc+; cb;
+
+	VS "made them, ev-'ry";
+	VS "called them, ev-'ry";
+	VS "love them, ev-'ry";
+bar
+newscore
+
+//18
+1 1:4 d+ slur; c+; 8s; s;
+1 2: 2f; 8s;;
+2: 2fa; 8s; s;
+
+	VS "one,";
+	VS "one,";
+	VS "one,";
+dblbar
+
+1 1:4s; s; 8fa; ac+;
+1 2: 2s; 8s;;
+2: 2s; 8fc+; fa;
+
+	VS "He hath";
+	VS "When He";
+	VS "He doth";
+bar
+
+//19
+1: 8ac+ bm; gb ebm; 4gb; 8ec+; gb;
+2: 4cc+;; 8;;
+
+	VS 4; 4; 8; 8; "made them, ev-'ry";
+	VS 4; 4; 8; 8; "called them, ev-'ry";
+	VS 4; 4; 8; 8; "love them, ev-'ry";
+bar
+
+//20
+1: 2fa; 4s;
+2: 2fc+; 4s;
+
+	VS "one.";
+	VS "one.";
+	VS "one.";
+endbar

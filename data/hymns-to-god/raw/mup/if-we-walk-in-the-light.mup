@@ -1,0 +1,225 @@
+// Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+//
+// This source code is donated to the public domain.
+// 
+// Hymn Source:	Sunday School And Revival
+//		With Y.M.C.A Supplement
+//		Editor: Charlie Davis Tillman
+//		Atlanta, GA and Kansas City, MO. 
+//		Date: 1907
+//		Hymn No. 150
+		
+		
+// Transcribed by: Ted Gatza, Jr. 09/21/2020
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "If We Walk In The Light" ""
+   title (2) ""
+   title (11)"" "\f(TI)but if we walk in the light, as he is in the light, we have" ""
+   title (11)"" "\f(TI)fellowship one with another, and the blood of Jesus his" ""
+   title (11)"" "\f(TI)Son cleanseth us from all sin. - 1 John 1:7" ""
+
+   title (11)"E\(flat) - 4 - DO" "" ""  
+   title (13) "Kittie Deason" "" "Dan Ward Milam, 1907"
+
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+
+staffs=2
+	time=4/4	
+	key=e&
+
+
+staff 2
+	key=e&
+	clef=bass
+
+// ****************************************
+
+
+music
+
+//define macros
+
+   //Lyrics
+       define VERSE lyrics between 1&2: @
+       define DSVERSE lyrics below 2: @
+
+  //Chorus
+      define CHORUS ital (13) above 1: 1 "Chorus"; @	
+      define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+
+// Set midi
+	midi all: 0 "tempo=95";
+
+// Enter music
+
+//1
+1 1: 2.s; 8.e; 16f;
+1 2: 2.s; 8.e; 16e;
+2: 2.s; 8.eg; 16ea;
+
+	
+	VERSE 2.s; 8.; 16; "<1. >-1|Je-sus";
+	VERSE 2.s; 8.; 16;  "<2. >-1|If we";
+	VERSE 2.s; 8.; 16;  "<3. >-1|Shine up-";
+bar
+//2
+1 1: 4eg;; 8; f; e; eg;
+1 2: 4s;; 8; e;; s;
+2: 4eb;; 8; ea; eg; eb;
+
+	VERSE "is the light that's shin-ing";
+	VERSE "walk in dark-ness we will";
+	VERSE "on our path-way, so that";
+bar
+//3
+1: 4eb; ec+; eb; 8fa; eg;
+2: 4eg; ea; eg; 8db; eb;
+
+	VERSE "on our way; If we";
+	VERSE "oft-en fall; Christ will";
+	VERSE "we may see; As we";
+bar
+//4
+1: 4df; eg; fa; da;
+2: 4b-b;; db; b-b;
+
+	VERSE "fol-low Je-sus,";
+	VERSE "give us light, and";
+	VERSE "jour-ney on-ward";
+bar
+//5
+1 1: 8ea; eg;; f#; 4eg; 8.e; 16fn;
+1 2: 8s;;; e; 4s; 8.e; 16;
+2: 8ec+; eb;; ean; 4eb; 8.eg; 16ea&;
+
+	VERSE "bright will be the day; In that";
+	VERSE "guide us one and all; Come and";
+	VERSE "may we fol-low Thee; In the";
+bar
+//6
+1 1: 4eg;; 8; f; e; eg;
+1 2: 4s;; 8; e;; s;
+2: 4eb;; 8; ea; eg; eb;
+
+	VERSE "pre-cious light, oh, let us";
+	VERSE "walk with Je-sus, heed the";
+	VERSE "heav'n-ly light, oh, let us";
+bar
+//7
+1: 4eb; ec+; eb; 8.ec+; 16;
+2: 4eg; ea; eg; 8.a-a; 16;
+
+	VERSE "ev-er stay; Walk-ing";
+	VERSE "Spir-it's call; Walk-ing";
+	VERSE "ev-er be; Walk-ing";
+bar
+//8
+1 1: 4eb; 8g bm; a ebm; 4dg; df;
+1 2: 4s; e; s;;
+2 1: 4b-g; 8b bm; c+ ebm; 4b-b; b-a;
+2 2: 4s; b-; s;;
+
+	VERSE 4; 4; 4; 4; "in the light of";
+	VERSE 4; 4; 4; 4; "in the light of";
+	VERSE 4; 4; 4; 4; "in the light of";
+bar
+//9
+1 1: 2.e; 4s;
+1 2: 2.e; 4s;
+2: 2.eg; 4s;
+
+	VERSE "God.";
+	VERSE "God.";
+	VERSE "God.";
+dblbar
+//10
+1: 8.eb; 16; 2.s;
+2: 8.eg; 16; 2.s;
+REFRAIN
+
+	VERSE 8.; 16; 2.s; [c]"If we";
+bar
+//11
+1: 4ge+; 8.; 16; 4; gb;
+2: 4eb; 8.; 16; 4; ee+;
+
+	VERSE [c]"walk in the light as";
+bar
+newscore
+//12
+1: 8.ac+; 16c+e+; 8.bd+; 16ac+; 4gb; 8.eg; 16;
+2: 8.ae+; 16; 8.; 16; 4ee+; 8.eb; 16;
+
+	VERSE "He is in the light, we have";
+bar
+//13
+1: 4da; df; 4.fd+; 8dc+;
+2: 4fb; b-b; 4.b-a; 8b-a;
+
+	VERSE "fel-low-ship one";
+bar
+newscore
+//14
+1 1: 4eb; ea; 8eg; f; e; f;
+1 2: 4s;; 8; e;;;
+2: 4eg; ec+; 8eb; ea; eg; ea;
+
+	VERSE "with an-oth-er; And the";
+bar
+//15
+1: 4eg; da; 4.eb; 8;
+2: 4eb; fb; 4.gb; 8eg;
+
+	VERSE "blood of Je-sus";
+bar
+//16
+1: 4ec+; ee+; eb; 8.ec+; 16;
+2: 4a-a; ca; eg; 8.a-a; 16;
+
+	VERSE "Christ, His Son, cleans-es";
+bar//17
+1: 2eb; 4eg; df;
+2: 2b-g; 4b-b; b-a;
+
+	VERSE "us from all";
+bar
+//18
+1 1: 2.e; 4s;
+1 2: 2.s; 4s;
+2: 2.eg; 4s;
+
+	VERSE "sin.";
+endbar

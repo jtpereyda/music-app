@@ -1,0 +1,244 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Music - http://www.ccel.org/cceh/0005/x000580.htm
+//		Lyrics - http://www.cyberhymnal.org/htm/i/s/isingthe.htm
+
+// Transcribed by: Ted Gatza, Jr. 01/08/2010
+// HymnsToGod.org
+
+// ********************************
+
+top
+
+   title bold (19) "" "I Sing the Mighty Power of God" ""
+   title (2)""
+title (11) "B \(flat) - 4 - SOL" "\s(18)\f(TI)\:He\ hath\ made\ the\ earth\ by\ hi\|s\ power,\ he\ hath\ established the\ world\ by\ his\ w\|isdom,\ -\ Jer.\ 10:12"""
+   title (13) "Isaac Watts, 1715" " " "Gesangbuch der Herzogl, 1784"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=.975
+	scoresep=6,6
+	scorepad=-2
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=115";
+
+//1
+1 1: 2.s; 4f;
+1 2: 2.s; 4f;
+2 1: 2.s; 4f;
+2 2: 2.s; 4f;
+
+			lyrics 1: "<1. >-1|I";
+			lyrics 1: "<2. >-1|I";
+			lyrics 1: "<3. >-1|There's";
+bar
+//2
+1 1: 4b; 8a slur; 8g; 4f; 4bf;
+1 2: 4b; 8a slur; 8g; 4f; 4s;
+2 1: 4b; 8a slur; 8g; 4f; 4bd;
+2 2: 4b; 8a slur; 8g; 4f; 4s;
+
+			lyrics 1: "sing the might-y";
+			lyrics 1: "sing the good-ness";
+			lyrics 1: "not a plant or";
+bar
+//3
+1 1: 4d; 4e; 4fc; 4fd;
+1 2: 4d; 8c<b-> bm; 8b- ebm; 4s; 4s;
+2: 4bg; 4bg; 4af; 4bb-;
+
+			lyrics 1: "pow'r of God, that";
+			lyrics 1: "of the Lord, who";
+			lyrics 1: "flow'r be-low, but";
+bar
+//4
+1 1: 8g<a> bm; 8a ebm; 4bf; 4s; 4s;
+1 2: 4e; 4s; 4s; 4s;
+2: 4be; 4bd; 4s; 4s;
+
+			lyrics 1: "made the";
+			lyrics 1: "filled the";
+			lyrics 1: "makes Thy";
+
+invisbar
+newscore
+
+1 1: 8s; 8s; 4s; 4c+g; 4c+f;
+1 2: 4s; 4s; 4s; 4s;
+2: 4s; 4s; 4be; 4af;
+
+			lyrics 1: "moun-tains";
+			lyrics 1: "earth with";
+			lyrics 1: "glo-ries";
+
+bar
+//5
+1 1: 2.d+f; 4f;
+1 2: 2.s; 4f;
+2 1: 2.bb-; 4f;
+2 2: 2.s; 4f;
+
+			lyrics 1: "rise, That";
+			lyrics 1: "food, Who";
+			lyrics 1: "known, And";
+bar
+//6
+1 1: 4b; 8a slur; 8g; 4f; 4bf;
+1 2: 4b; 8a slur; 8g; 4f; 4s;
+2 1: 4b; 8a slur; 8g; 4f; 4bd;
+2 2: 4b; 8a slur; 8g; 4f; 4s;
+
+			lyrics 1: "spread the flow-ing";
+			lyrics 1: "formed the crea-tures";
+			lyrics 1: "clouds a-rise, and";
+bar
+//7
+1 1: 4d; 4e; 4fc; 4fd;
+1 2: 4d; 8c<b-> bm; 8b- ebm; 4s; 4s;
+2: 4bg; 4bg; 4af; 4bb-;
+
+			lyrics 1: "seas a-broad, and";
+			lyrics 1: "through the Word, and";
+			lyrics 1: "tem-pests blow, by";
+bar
+//8	
+1 1: 8g<a> bm; 8a ebm; 4b; 4bf; 4af;
+1 2: 4e; 8d<e> bm; 8e ebm; 4s; 4s;
+2: 4be; 4bg; 4bf; 4c+f;
+
+			lyrics 1: "built the loft-y";
+			lyrics 1: "then pro-nounced them";
+			lyrics 1: "or-der from Thy";
+bar
+//9
+1: 2.bf; 8b<c+>d<e> bm; 8c+e ebm;
+2: 2.d+b-; 4bb-;
+
+			lyrics 1: 2.; 4; "skies. I";
+			lyrics 1: 2.; 4; "good. Lord,";
+			lyrics 1: 2.; 4; "throne; While";
+bar
+//10
+1: 4d+f; 4c+f; 4d+f; e+g;
+2 1: 4b; 4c+a; 4b; 4be;
+2 2: 4b; 4s; 4b; 4s;
+
+			lyrics 1: "sing the wis-dom";
+			lyrics 1: "how Thy won-ders";
+			lyrics 1: "all that bor-rows";
+bar
+newscore
+//11
+1 1: 4c+f; 8a<b> bm; 8b ebm; 4c+f; 8bd slur; 8c+f;
+1 2: 4s; 4f; 4s; 8s; 8s;
+2 1: 4af; 8f slur; 8g; 4af; 8d+<c+>g<a> bm; 8c+a ebm; 
+2 2: 4s; 8f slur; 8g; 4s; 8s; 8s;
+
+			lyrics 1: "that or-dained the";
+			lyrics 1: "are dis-played, wher-";
+			lyrics 1: "life from Thee is";
+bar
+//12
+1: 4d+f; 4c+f; 4d+f; e+g;
+2 1: 4b; 4c+a; 4b; 4be;
+2 2: 4b; 4s; 4b; 4s;
+
+			lyrics 1: "sun to rule the";
+			lyrics 1: "e'er I turn my";
+			lyrics 1: "ev-er in Thy";
+bar
+//13
+1 1: 2.c+f; 4f;
+1 2: 2.s; 4f;
+2 1: 2.af; 4f;
+2 2: 2.s; 4f;
+
+			lyrics 1: "day; The";
+			lyrics 1: "eye, If";
+			lyrics 1: "care; And";
+bar
+//14
+1 1: 4b; 8a slur; 8g; 4s; 4s;
+1 2: 4b; 8a slur; 8g; 4s; 4s;
+2 1: 4b; 8a slur; 8g; 4s; 4s;
+2 2: 4b; 8a slur; 8g; 4s; 4s;
+
+			lyrics 1: "moon shines";
+			lyrics 1: "I sur-";
+			lyrics 1: "ev-'ry-";
+
+invisbar
+newscore
+
+1 1: 4s; 8s; 8s; 4f; 4bf;
+1 2: 4s; 8s; 8s; 4f; 4s;
+2 1: 4s; 8s; 8s; 4f; 4bd;
+2 2: 4s; 8s; 8s; 4f; 4s;
+
+			lyrics 1: "full at";
+			lyrics 1: "vey the";
+			lyrics 1: "where that";
+
+
+bar
+//15
+1 1: 4d; 4e; 4fc; 4fd;
+1 2: 4d; 8c<b-> bm; 8b- ebm; 4s; 4s;
+2: 4bg; 4bg; 4af; 4bb-;
+
+			lyrics 1: "God's com-mand, and";
+			lyrics 1: "ground I tread, or";
+			lyrics 1: "we can be, Thou,";
+bar
+//16
+1 1: 8g<a> bm; 8a ebm; 4b; 4bf; 4af;
+1 2: 4e; 8d<e> bm; 8e ebm; 4s; 4s;
+2: 4be; 4bg; 4c+f; 4c+f;
+
+			lyrics 1: "all the stars o-";
+			lyrics 1: "gaze up-on the";
+			lyrics 1: "God art pres-ent";
+bar
+//17
+1: 2.bf; 4s;
+2: 2.d+b-; 4s;
+
+			lyrics 1: "bey.";
+			lyrics 1: "sky.";
+			lyrics 1: "there.";
+endbar

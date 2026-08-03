@@ -1,0 +1,276 @@
+// !Mup vs.6.7 http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No. 23
+//		
+// Transcribed by: Ted Gatza, Jr. 01/31/2022
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I'm Thine, Forever Thine" ""
+   title (2)""
+   title (11)"" "\f(TI)My beloved is mine, and I am his - Song, 2:16" ""
+   title (11) "A\(flat) - 4 - MI" "" ""
+   title (13) "William Warren Bentley" "" "William Warren Bentley, 1886"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffsep = 23
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .710 //.750
+	lyricssize=13
+	lyricsdist = 1
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=4&
+
+
+staff 2
+	key=4&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=95";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1 1: 8c+ bm; b ebm; 2.s;
+1 2: 4e; 2.s;
+2 1: 8a bm; b ebm; 2.s;
+2 2: 4a; 2.s;
+
+	VS 4; 2.s; "<1. >-1|No";
+	VS 4; 2.s; "<2. >-1|I";
+	VS 4; 2.s; "<3. >-1|I";
+	VS 4; 2.s; "<4. >-1|Out-";
+bar
+//2
+1: 4.ea; 8eb; 4ea; 4df;
+2 1: 4.ac+; 8; 4; 4a;
+2 2: 4.s; 8s; 4s; 4a;
+
+	VS "more my own, Lord";
+	VS "give the life thou";
+	VS "give the love, the";
+	VS "side the camp to";
+bar
+//3
+1 1: 4ce; 2ea; 8a bm; 8b ebm;
+1 2: 4s; 2s; 4e;
+2 1: 4a; 2ac+; 8c+ bm; 8d+ ebm;
+2 2: 4a; 2s; 4a;
+
+	VS 4; 2; 4; "Je-sus, Bought";
+	VS 4; 2; 4; "gav-est, My";
+	VS 4; 2; 4; "sweet-est Thy";
+	VS 4; 2; 4; "suf-fer, With-";
+bar
+//4
+1: 4.ac+; 8; 4gb; fa;
+2: 4.ae+; 8; 4ed+; 4fc+;
+
+	VS "with thy pre-cious";
+	VS "pres-ent, fut-ure,";
+	VS "good-ness grants to";
+	VS "in the vale to";
+bar
+//5a
+1 1: 2.gb; 4s;
+1 2: 2.s; 4s;
+2 1: 2.ee+; 4s;
+2 2: 2.s; 4s;
+
+	VS 2.; 4s; "blood;";
+	VS 2.; 4s; "past,";
+	VS 2.; 4s; "me;";
+	VS 2.; 4s; "meet,";
+bar
+newscore
+//5b
+1 1: 8c+ bm; b ebm ;2.s;
+1 2: 4e; 2.s;
+2 1: 8e+ bm; 8d+ebm; 2.s;
+2 2: 4e; 2.s;
+
+	VS 4; 2.s; "I";
+	VS 4; 2.s; "My";
+	VS 4; 2.s; "Oh,";
+	VS 4; 2.s; "And";
+bar
+//6
+1: 4.ea; 8eb; 4ea; 4df;
+2 1: 4.ac+; 8ad+; 4ac+; 4a;
+2 2: 4.s; 8s; 4s; 4a;
+
+	VS "give thee but thine";
+	VS "joys, my fears, my";
+	VS "take and make it";
+	VS "hear the soft-est";
+bar
+//7
+1 1: 4ce; 2ea; 8a bm; 8b ebm;
+1 2: 4s; 2s; 4e;
+2 1: 4a; 2ac+; 8c+ bm; 8b ebm;
+2 2: 4a; 2s; 4a;
+
+	VS 4; 2; 4; "own Lord, That";
+	VS 4; 2; 4; "sor-rows, My";
+	VS 4; 2; 4; "meet, Lord, For";
+	VS 4; 2; 4; "whis-per, From";
+bar
+//8
+1: 4.ec+; 8fd+; 4ec+; 4db;
+2 1: 4.a; 8da; 4ea; 4eg;
+2 2: 4.a; 8s; 4s; 4s;
+
+	VS "long thy love with-";
+	VS "first hope and my";
+	VS "of-fer-ing to";
+	VS "out the mer-cy-";
+bar
+//9
+1: 2.ca; 4s;
+2: 2.a-a; 4s;
+
+	VS "stood.";
+	VS "last.";
+	VS "thee.";
+	VS "seat.";
+dblbar
+newscore
+//10
+1: 8b-g bm; ca ebm; 2.s;
+2 1: 8b bm; a ebm; 2.s;
+2 2: 4e; 2.s;
+CHORUS
+
+	VS 4; 2.s; "Now";
+bar
+//11
+1: 4.eb; 8; 4ea; 4eb;
+2: 4.eg; 8; 4ca; eg;
+
+	VS "fash-ion, form, and";
+bar
+//12
+1: 4ec+; 2ee+; 4af+;
+2 1: 4a; 2ac+; 4ad+;
+2 2: 4a; 2s; 4;
+
+	VS "fill me With";
+bar
+//13
+1 1: 4ae+; ac+; a; ac+;
+1 2: 4s; 4; a; s;
+2: 4ac+; ae+; c+e+; ae+;
+
+	VS "light and love di-";
+bar
+//14a
+1: 2.gb; 4s;
+2 1: 2.ee+; 4s;
+
+	VS 2.; 4s; "vine;";
+bar
+newscore
+//14b
+1 1: 8c+ bm; d+ ebm; 2.s;
+1 2: 4a; 2.s;
+2 1: 8e+ bm; d+ ebm; 2.s;
+2 2: 4a; 2.s;
+
+	VS 4; 2.s; "So,";
+bar
+
+
+
+//15
+1: 4.ae+; 8ac+; 4eb; ea;
+2 1: 4.ac+; 8a; 4b-g; ca;
+2 2: 4.s; 8a; 4s; ;
+
+	VS "one with thee, Lord";
+bar
+//16
+1: 4fa; 2df; 8ea bm; fb ebm;
+2 1: 4da; 2; 4a;
+2 2: 4s; 2s; 8c bm; d ebm;
+
+		VS 4; 2; 4; "Je-sus, I'm";
+bar
+//17
+1: 4.ec+; 8ed+; 4ec+; db;
+2: 4.ea; 8eb; 4ea; 4eg;
+
+	VS "thine, for-ev-er";
+bar
+//18
+1: 2.ca; 4s;
+2: 2.a-a; 4s;
+
+	VS "thine.";
+endbar
+
+
+
+
+
+
+

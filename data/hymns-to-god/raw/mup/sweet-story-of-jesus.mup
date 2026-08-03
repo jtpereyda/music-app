@@ -1,0 +1,190 @@
+// Mup vs. 6.2 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Wells of Salvation: Songs for the Sun­day School, 
+//		by John R. Sweney and William J. Kirkpatrick
+//		Philadelphia, Pennsylvania: John J. Hood, 
+//		Copyright 1881
+//		Cyberhymnal : http://www.hymntime.com/tch/htm/s/w/sweetstj.htm
+
+// Transcribed by: Ted Gatza, Jr. 04/30/2010; rev. 08/07/14
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "Sweet Story Of Jesus " ""
+   title (2)""
+title (11) "F - 2 - SOL" "\s(18)\f(TI)\:The\ Son\ of\ Man\ is\ come\ to\ seek\ and\ to\ save\ that\ which\ was\ lost.\ -\ Lk.\ 19:10 \(space)"""
+   title (13) "Fanny Crosby, 1881" " " "John R. Sweney"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 2
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=2 //1
+	scorepad=0
+	scale = .725
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=f
+	
+
+staff 2
+	key=1&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=70";
+
+//1
+1: 2s; 8s; 8c+f;
+2: 2s; 8s; 8af;
+
+
+			lyrics 1: "<1. >-1|Oh";
+			lyrics 1: "<2. >-1|How";
+			lyrics 1: "<3. >-1|But";
+			lyrics 1: "<4. >-1|But";
+bar
+//2
+1 1: 8.c+f; 16c+f; 8d+f; 8c+f; 8af; 8f;
+1 2: 8.s; 16s; 8s; 8s; 8s; 8f;
+2: 8.af; 16af; 8bf; 8af; 8c+f; 8c+a-;
+
+			lyrics 1: "beau-ti-ful sto-ry of";
+			lyrics 1: "full of com-pas-sion was";
+			lyrics 1: "when in that sto-ry we";
+			lyrics 1: "now He has tri-umphed o'er";
+bar
+//3
+1: 8ge; 8fd; 8ge; 4af; 8af;
+2: 8c+c; 8c+c; 8c+c; 4c+f; 8c+e&;
+
+			lyrics 1: "Je-sus our Lord, That";
+			lyrics 1: "Je-sus our Lord, The";
+			lyrics 1: "read how He prayed, A-";
+			lyrics 1: "death and the grave, He";
+bar
+//4
+1: 8bf; 8c+f; 8d+f; 8d+f; 8c+f; 8af;
+2: 8bd; 8ac; 8bb-; 8bf; 8af; 8c+f;
+
+			lyrics 1: "bright-ens and hal-lows each";
+			lyrics 1: "sick and af-flict-ed to";
+			lyrics 1: "lone in the gar-den, be-";
+			lyrics 1: "lives our Re-deem-er, and";
+bar
+//5
+1 1: 8fd; 8e; 8fd; 4ge; 8c+e;
+1 2: 8s; 8d; 8s; 4s; 8s;
+2: 8bng; 8bg; 8bg; 4c+c; 8b&c;
+mussym (10) above 1: 6 "sign";
+
+			lyrics 1: "page of His Word, It";
+			lyrics 1: "health He re-stored, The";
+			lyrics 1: "neath its dark shade, How,";
+			lyrics 1: "might-y to save; To";
+			lyrics 2: 8s; 8s; 8s; 4s; 8; "<\f(TX)D.C.\f(TR) - >-1|Sweet";
+bar
+//6
+1 1: 8.c+f; 16c+f; 8d+f; 8c+f; 8af; 8f;
+1 2: 8.s; 16s; 8s; 8s; 8s; 8f;
+2: 8.af; 16af; 8bf; 8af; 8c+f; 8c+a-;
+
+			lyrics 1: "tells us how hum-ble and";
+			lyrics 1: "poor He re-mem-bered, the";
+			lyrics 1: "scorned and in-sult-ed, He";
+			lyrics 1: "Him who ex-alt-ed for-";
+			lyrics 2: "sto-ry of Je-sus! though";
+bar
+//7
+1: 8ge; 8fd; 8ge; 4af; 8af;
+2: 8c+c; 8c+c; 8c+c; 4c+f; 8c+e&;
+
+			lyrics 1: "low-ly His birth, How";
+			lyrics 1: "hun-gry He fed, And";
+			lyrics 1: "died for our sake, Our";
+			lyrics 1: "ev-er shall live, All";
+			lyrics 2: "oft it is told, We";
+bar
+//8
+1: 8bf; 8c+f; 8d+f; 8d+f; 8c+f; 8af;
+2: 8bd; 8ac; 8bb-; 8bf; 8af; 8c+f;
+
+			lyrics 1: "man-y His tri-als and";
+			lyrics 1: "gave to the weep-ing their";
+			lyrics 1: "hearts at his an-guish are";
+			lyrics 1: "hon-or, do-min-ion, and";
+			lyrics 2: "love it, we love it, it";
+bar
+//9
+1: 8ge; 8.af; 16gc; 4fc; 8s;
+2: 8c+c; 8.c+c; 16bc; 4af; 8s;
+ital (13) above 1: 4 "Fine";
+
+			lyrics 1: "sor-rows on earth.";
+			lyrics 1: "friends from the dead.";
+			lyrics 1: "read-y to break.";
+			lyrics 1: "glo-ry we give.";
+			lyrics 2: "nev-er grows old.";
+dblbar
+//10
+1 1: 2s; 8s; 8f;
+1 2: 2s; 8s; 8e&;
+2: 2s; 8s; 8af;
+ital (13) above 1: 6 "Refrain";
+
+			lyrics 1: [c]"Sweet";
+bar
+//10
+1: 8.fd; 16bd; 8bd; 8bf; 8c+f; 8d+f;
+2: 8.bb-; 16fb-; 8fb-; 8bd; 8ac; 8bb-;
+
+			lyrics 1: "sto-ry of Je-sus, the";
+bar
+//11
+1: 8d+f; 8c+f; 8c+f; 4c+f; 8af;
+2: 8bf; 8af; 8af; 4af; 8c+f;
+
+			lyrics 1: "ten-der and meek, Who";
+bar
+newscore
+//11
+1 1: 8.g; 16g; 8g; 8bnf; 8d+f; 8e+f;
+1 2: 8.f; 16f; 8f; 8s; 8s; 8s;
+2: 8.bng; 16bg; 8bg; 8d+g; 8bg; 8bg;
+
+			lyrics 1: "came in His mer-cy lost";
+bar
+//12
+1: 8d+e; 8c+e; 8c+e; 4c+e; 8s;
+2: 8c+c; 8gc; 8gc; 4gc; 8s;
+ital (13) above 1: 4 "D.S.";
+
+			lyrics 1: "sin-ners to seek,";
+endbar

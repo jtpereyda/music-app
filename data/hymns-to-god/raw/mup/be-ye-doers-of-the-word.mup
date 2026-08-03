@@ -1,0 +1,219 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Zion's Glad Songs
+//		For All Christian Gatherings
+//		By M. L. McPhail
+//		Published by M. L. McPhail
+//		806 W. 67th Street Chicago, Ill.
+//		Copyright 1895
+//		Hymn No.: 227
+//		
+// Transcribed by: Ted Gatza, Jr. 10/24/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Be Ye Doers Of The Word" ""
+   title (2)""
+   title (11) "B \(flat) - 2 - SOL" "\s(17)\f(TI)\:But\ be\ ye\ doers\ of\ the\ word,\ and\ not\ hearers\ only\ -\ Jms.\ 1:22 \(space)" ""   
+   title (13) "Gertrude W. Seibert" "" "M. L. McPhail, 1907"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/4	
+	key=2&
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=120";
+
+//1
+1: 4fd; s; 2s;;
+2: 4bb-; s; 2s;;
+
+
+			VERSE "<1. >-1|'Tis";
+			VERSE "<2. >-1|For";
+			VERSE "<3. >-1|Lord";
+bar
+//2
+1: 2bd; 4; d+f slur; c+e; bd;
+2 1: 2fb-; 4fb-; b slur; f; bb-;
+2 2: 2s; 4; 2b-; 4s;
+
+			VERSE 2; 4; 2; 4; "not the hear-er";
+			VERSE 2; 4; 2; 4; "he that hears and";
+			VERSE 2; 4; 2; 4; "we would build with";
+bar
+//3
+1: 4bg slur; af; ge; 2fd; 4;
+2: 2be; 4; 2bb-; 4;
+
+			VERSE 2; 4; 2; 4; "of the Word, But";
+			VERSE 2; 4; 2; 4; "do-eth not, Is";
+			VERSE 2; 4; 2; 4; "pa-tient zeal A";
+bar
+//4
+1: 4fd slur; ge; fd; 2ec; 4ec;
+2: 2af; 4; 2; 4;
+
+			VERSE 2; 4; 2; 4; "he that do-eth,";
+			VERSE 2; 4; 2; 4; "like a man who";	
+			VERSE 2; 4; 2; 4; "house of faith up-";
+bar
+//5
+1: 4ec slur; fd; ec; 2db-; 4fd;
+2 1: 2af; 4f; 2fb-; 4bb-;
+2 2: 2s; 4ff-?; 2s; 4;
+
+
+			VERSE 2; 4; 2; 4; "who is blest, Not";
+			VERSE 2; 4; 2; 4; "builds on sand, When";
+			VERSE 2; 4; 2; 4; "on the rock, So";
+bar
+//6
+1: 2bd; 4; d+f slur; c+e; bf;
+2: 2fb-; 4; bb- slur; ac; bd;
+//mussym (9) above 1: 1 "sign";
+
+			VERSE 2; 4; 2; 4; "he that know-eth";
+			VERSE 2; 4; 2; 4; "storms and tem-pest";
+			VERSE 2; 4; 2; 4; "safe, so strong, it";
+bar
+//7
+1: 4bg slur; af; ge; 2fd; 4;
+2: 2be; 4; 2bb-; 4; 
+
+			VERSE 2; 4; 2; 4; "all the law, But";
+			VERSE 2; 4; 2; 4; "fierce a-rise, The";
+			VERSE 2; 4; 2; 4; "shall with-stand The";
+bar
+//8
+1 1: 4ge slur; af; ge; f slur; b; d+f;
+1 2: 4s;;; 2d; 4s;
+2 1: 2be; 4; b slur; f; bf;
+2 2: 2s; 4; 2f; 4s;
+
+			VERSE 2; 4; 2; 4; "he that heeds the";
+			VERSE 2; 4; 2; 4; "house, thus built. will";
+			VERSE 2; 4; 2; 4; "strain of storm and";
+bar
+//9
+1: 2d+f; 4c+e; 2bd; 4s;
+2: 2bf; 4af; 2bb-; 4s;
+
+			VERSE 2; 4; 2; 4s; "law's be-hest.";
+			VERSE 2; 4; 2; 4s; "nev-er stand.";
+			VERSE 2; 4; 2; 4s; "tem-pest shock.";
+dblbar
+//10
+1: 4c+e; s; 2s;;
+2: 4af; s; 2s;;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Dear";
+bar
+//11
+1: 4c+e slur; bnd; c+e; 2e+a; 4c+e;
+2 1: 4a slur; g#; af; 2c+f; 4af;
+2 2: 2f; 4s; 2s; 4s;
+
+			VERSE 2; 4; 2; 4; [c]"Lord, then help us";
+bar
+//12
+1: 4c+e slur; bd; c+f; 2d+f; 4bg;
+2: 4af slur; bg; af; 2bb-; 4d+g;
+
+			VERSE 2; 4; 2; 4; "do Thy will, That";
+bar
+//13
+1: 4bg slur; af#; bg; 2d+g; 4bg;
+2 1: 2d+; 4d+g; 2bg; 4d+g;
+2 2: 4g slur; 4d; s; 2; 4;
+
+			VERSE 2; 4; 2; 4; "we may be for-";
+bar
+//14
+1 1: 2af; 4gen; 2f; 4;
+1 2: 2s; 4s; 2f; 4e&;
+2 1: 2c+; 4bc; 2af; 4;
+2 2: 2c+; 4s; 2; 4; 
+
+			VERSE 2; 4; 2; 4; "ev-er blest; And";
+bar
+//15
+1: 2bd; 4; s; ; ;
+2: 2fb-; 4; s; ; ;
+
+			VERSE 2; 4; 2s; 4s; "when we";
+invisbar
+newscore
+
+1: 2s; 4s; d+f slur; c+e; bf;
+2: 2s; 4; bb- slur; ac; bd;
+
+			VERSE 2s; 4s; 2; 4; "reach our";
+
+			
+bar
+//7
+1: 4bg slur; af; ge; 2fd; 4;
+2: 2be; 4; 2bb-; 4; 
+
+			VERSE 2; 4; 2; 4; "jour-ney's end, May";
+			
+bar
+//8
+1 1: 4ge slur; af; ge; f slur; b; d+f;
+1 2: 4s;;; 2d; 4s;
+2 1: 2be; 4; b slur; f; bf;
+2 2: 2s; 4; 2f; 4s;
+
+			VERSE 2; 4; 2; 4; "en-ter in-to ";
+			
+bar
+//9
+1: 2d+f; 4c+e; 2bd; 4s;
+2: 2bf; 4af; 2bb-; 4s;
+//ital (13) above 1: 5 "fine";
+
+			VERSE 2; 4; 2; 4s; "heav'n-ly rest.";
+endbar

@@ -1,0 +1,289 @@
+// !Mup vs.6.9 arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source:
+//	Bright Jewels
+//	A collecton of Sunday Schrool Songs
+//	Written Expressly For This Work, Many
+//	Of Which Are The Latest Compositions of
+//	William B Bradbury And Have Never Been Published
+//	Editor: Robert Lowry Assisted by Wm. F Sherwin and
+//	Chester G. Allen
+// 	New York
+//	Published by Biglow & Main, 425 Broome Street
+//	Copyright 1869
+//	Hymn No. 16
+//		
+// Transcribed by:
+//	 Ted Gatza, Jr. 09/29/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "How Can I Keep From Singing?" ""
+   title (2)""
+   title (11)"" "\f(TI)And the ransomed of Jehovah shall return, and come with singing unto" ""
+   title (11)"" "\f(TI)Zion; and everlasting joy shall be upon their heads: they shall obtain" ""
+   title (11)"" "\f(TI)gladness and joy; and sorrow and sighing shall flee away. - Is. 51:11" ""
+   title (11) "A\(flat) - 4 - MI" "" ""
+   title (13) "F. J. Hartley" "" "Robert Lowry, 1869"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.8
+	pad = 0
+	vscheme = 2f
+	staffsep = 23
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .700//.750
+	lyricssize=13
+	lyricsdist = 1
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=3/2	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define DSVS lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+   //Fermatas
+       define SFERM(COUNT)
+       mussym (9) above 1: COUNT "ferm";
+       @
+       define BFERM(COUNT)
+       mussym (9) below 2: COUNT "uferm";
+       @
+
+// set midi
+	midi all: 0 "temp=110";
+
+//Enter music	
+//=========================
+//Verse 1
+
+//1
+1 1: 2.s; 2s; 4d;
+1 2: 2.s; 2s; 4d;
+2 1: 2.s; 2s; 4d;
+2 2: 2.s; 2s; 4d;
+
+
+	VS 2.s; 2s; 4; "<1. >-1|My";
+	VS 2.s; 2s; 4; "<2. >-1|What";
+	VS 2.s; 2s; 4; "<3. >-1|I";
+bar
+
+//2
+1: 4dg; da; 2.gb; 4dg;
+2: 4gb; gc+; 2.gd+; 4gb;
+
+	VS "life flows on in";
+	VS "tho' my joys and";
+	VS "lift my eyes; the";
+bar
+
+//3
+1 1: 4ea; eg; 2.ce; 4d;
+1 2: 4s; ; 2.; 4d;
+2:   4cc+; ;  2.cg; 4gb;
+
+	VS "end-less song, A-";
+	VS "com-fort die? The";
+	VS "cloud grows thin; I";
+bar
+
+//4
+1: 4dg; gb; 2.gd+; 4gb;
+2: 4gb; gd+; 2.gb; 4gd+;
+
+	VS "bove Earth's la-men-";
+	VS "Lord my Sav-iour";
+	VS "see the blue a-";
+bar
+
+//5
+1 1: 4gb; 2.fa; 4r; 4d;
+1 2: 4s; 2.s; 4s; 4d;
+2: 4dd+; 2.; 4r; 4db;
+
+	VS "ta-tion, I";
+	VS "liv-eth; What";
+	VS "bove it; And";
+bar
+
+//6
+1: 4dg; fa; 2.gb; 4dg;
+2: 4b-d+; dd+; 2.gd+; 4gb;
+
+	VS "catch the sweet, tho'";
+	VS "tho' the dark-ness";
+	VS "day by day this";
+bar
+
+//7
+1: 4ea; eg; 2.ce; 4ce;
+2: 4cc+; ; 2.cg; 4;
+
+	VS "far-off hymn That";
+	VS "gath-er round? Songs";
+	VS "path-way smooths, Since";
+bar
+
+//8
+1 1: 4d; dg; 2.gb; 4da;
+1 2: 4d; s; 2.; 4;
+2: 4b-g; g-b; 2.dd+; 4dc+;
+
+	VS "hails a new cre-";
+	VS "in the night He";
+	VS "first I learned to";
+bar
+
+//9
+1: 4da; 2.dg; 4r; 4s;
+2: 4g-c+; 2.g-b; 4r; 4s;
+
+	VS "a-tion;";
+	VS "giv-eth;";
+	VS "love it;";
+dblbar
+
+//10
+1: 4s; 2.s; 4s; 4gb;
+2 1: 4s; 2.s; 4s; 4g;
+2 2: 4s; 2.s; 4s; 4g;
+
+	VS "Through";
+	VS "No";
+	VS "The";
+bar
+
+//11
+1: 4.bd+; 8; 2.; 4gb;
+2 1: 4.g; 8; 2.; 4gd+;
+2 2: 4.g; 8; 2.; 4s;
+
+	VS "all the tu-mult";
+	VS "storm can shake my";
+	VS "peace of Christ makes";
+bar
+
+//12	
+1 1: 4fa; fb; 2.g; 4fa;
+1 2: 4s; ; 2.g; 4s;
+2: 4dd+; ; 2.g-b; 4dd+;
+
+	VS "and the strife, I";
+	VS "in-most calm, While";
+	VS "fresh my heart, A";
+bar
+
+//13
+1: 4.gb; 8; 2.; 4fa;
+2: 4.gd+; 8; 2.; 4dd+;
+
+	VS "hear the mu-sic";
+	VS "to that re-fuge";
+	VS "foun-tain ev-er";
+bar
+
+//14
+1: 4gb; 2.bd+; 4r; 4gb;
+2: 4gd+; 2.; 4r; 4gd+;
+
+	VS "ring-ing, It";
+	VS "cling-ing; Since";
+	VS "spring-ing; All";
+bar
+
+//15
+1: 4.gd+; 8; 2.; 4gb;
+2: 4.gb; 8; 2.; 4g-d+;
+
+	VS "finds an e-cho";
+	VS "Christ is Lord of";
+	VS "things are mine since";
+bar
+
+//16
+1 1: 4eg; ce; 2.b-d; 4d;
+1 2: 4s; ; 2.s; 4d;
+2 1: 4cc+; eg; 2.g; 4gb;
+2 2:4s; ; 2.g; 4s;
+
+	VS "in my soul\(emdash) How";
+	VS "heav'n and earth, How";
+	VS "I am His\(emdash) How";
+bar
+
+//17
+1: 4dg; fa; 2.gb; 4fa;
+2: 4b-d+; dd+; 2.gd+; 4dc+;
+
+	VS "can I keep from";
+	VS "can I keep from";
+	VS "can I keep from";
+bar
+
+//18
+1 1: 4fa; 1g; 4s;
+1 2: 4s; 1g; 4s;
+2: 4dc+; 1g-b; 4s;
+
+	VS "sing-ing?";
+	VS "sing-ing?";
+	VS "sing-ing?";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+

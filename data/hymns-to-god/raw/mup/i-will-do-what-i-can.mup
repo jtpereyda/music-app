@@ -1,0 +1,210 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom of Song
+//		A Collection of Songs
+//		For Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited By T. M. Bowdish
+//		Copyrigh by the W. W. Whitney Co.
+//		Entered at stationer's Hall, London, England
+//		Copyright 1900
+//		Hymn No.: 49
+//		
+// Transcribed by: Ted Gatza, Jr. 11/16/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "I Will Do What I Can" ""
+   title (2)""
+   title (11) "C - 2 - MI" "\s(17)\f(TI)\:We\ must\ work\ the\ works\ of\ him\ \|that\ sent\ me,\ while\ it\ is\ day: the\ night\ cometh,\ when\ no\^\ man\ can\ work.\ -\ Jn.\ 9:4" ""   
+   title (13) "Mary Irene McLean" "" "A. F. Myers"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=c major
+
+
+staff 2
+	key=c major
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=75";
+
+//1
+1: 16ec; fd; 4.s; 4;
+2: 16gc;; 4.s; 4;
+ital (13) above 1: 1 "Moderato";
+
+			VERSE "<1. >-1|I will";
+			VERSE "<2. >-1|I will";
+			VERSE "<3. >-1|I will";
+bar
+//2
+1: 8ge; f#d#; ge; c+e; bg; afn;
+2: 8c+c;;; gc;; c+c;
+
+			VERSE "do what I can bless-ed";
+			VERSE "do what I can, tho' but";
+			VERSE "do what I can, in my";
+bar
+//3
+1: 8.ge; 16f#d#; 8afn; 4ge; 16ec; fd;
+2: 8.c+c; 16; 8; 4; 16gc;;
+
+			VERSE "Je-sus, for thee, tho' my";
+			VERSE "fee-ble my light, I must";
+			VERSE "life-work, to prove There is";
+bar
+//4
+1: 8.ge; 16f#d#; 8ge; 4c+e; 16c+g;;
+2: 8.c+c; 16; 8; 4gc; 16c+e;;
+
+			VERSE "ef-forts are but as a";
+			VERSE "keep my lamp burn-ing for";
+			VERSE "joy in the ser-vice, and";
+bar
+//5
+1: 8c+f#; bf; c+f; 4d+fn; 16ec; fd;
+2: 8ad; d+d; c+d; 4bg; 16gc;;
+
+			VERSE "drop in the sea; For I";
+			VERSE "dark is the night; If I";
+			VERSE "rest in thy love, So that";
+bar
+//6
+1: 8.ge; 16f#d#; 8ge; 4c+e; 16ge;;
+2: 8.c+c; 16; 8; 4gc; 16c+c;;
+
+			VERSE "love thee, and while for thy";
+			VERSE "hold it a-loft, some poor";
+			VERSE "oth-ers may long thy sal-";
+bar
+//7
+1: 8af; c+a; af; 4ge; 16c+e; d+f;
+2: 8c+f;;; 4c+c; 16gc;;
+
+			VERSE "bless-ings I pray, I will";
+			VERSE "soul that is lost, May be";
+			VERSE "va-tion to see; it is";
+bar
+//8
+1: 8.e+g; 16d+g; 8c+g; 16af; 8.c+a; 8af;
+2: 8.c+c; 16bd; 8c+a; 16c+f; 8.; 8;
+
+			VERSE "trust in thy guid-ance and";
+			VERSE "led by its glim-mer to";
+			VERSE "thus that the weak-est may";
+bar
+//9
+1 1: 8g; af; bf; 4c+e; 8s;
+1 2: 8g; s;; 4; 8s;
+2: 8bg; c+g; d+g; 4c+c; 8s;
+
+			VERSE "strength for each day.";
+			VERSE "Cal-va-ry's cross.";
+			VERSE "glo-ri-fy thee.";
+dblbar
+newscore
+//10
+1: 16ec; fd; 4.s; 4;
+2: 16gc;; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "I will";
+bar
+//11
+1: 4.ge tie; 8; af; f#d#;
+2: 8c+c;;;;;;
+
+			VERSE "do_ what I";
+			VERSE 8;;;;;;"do what I can, bless-ed";
+bar
+//12
+1: 4.ge tie; 4; 16ge; c+e;
+2: 4c+c; 8; 4; 8r;
+
+			VERSE "can_ I will";
+			VERSE 4; 8; 4; 8s; "Lord, for thee,";
+bar
+//13
+1: 4.bf tie; 8; 8af; bf;
+2: 8d+g;;; 4; 8r;
+
+			VERSE "do_ what I";
+			VERSE 8;;; 4; 8s; "do what I can";
+
+bar
+//14
+1: 4.c+e tie; 4; 16ge;;
+2: 8c+c;;; 4gc; 16c+c;;
+
+			VERSE "can,_ I will";
+			VERSE 8;;; 4; 16;;"do what I can, I will";
+bar
+newscore
+//15
+1: 4.af tie; 8; c+a; af;
+2: 8c+f;;;;;;
+
+			VERSE "do_ what I";
+			VERSE 8;;;;;; "do what I can, bless-ed";
+bar
+//16
+1: 4.ge tie; 4; 16c+e; d+f;
+2: 4c+c; 8; 4; 16gc;;
+
+			VERSE "can,_ I will";
+			VERSE 4; 8; 4; 16;; "Lord for thee, I will";
+bar
+//17
+1: 4.e+g; 4d+f; 8d+f;
+2: 8c+c;;; bg;;;
+
+			VERSE "do what I";
+			VERSE 8;;;;;; "do what I can, bless-ed";
+bar
+//18
+1 1: 4.c+ tie; 4; 8s;
+1 2: 4e; 8f; 4e; 8s;
+2: 4c+c; 8ac; 4gc; 8s;
+
+			VERSE "can._";
+			VERSE 4; 8; 4; 8s; "Lord, for thee.";
+endbar

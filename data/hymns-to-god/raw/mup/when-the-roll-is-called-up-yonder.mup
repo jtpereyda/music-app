@@ -1,0 +1,345 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	Songs Of Victory
+//		A Collection Of Hymns For Evangelistic Meetings, Christian Worship,
+// 		Conferences, And The Home Circle, Along With A Selection Of Choruses.
+// 		Compiled By Andrew W. Bell
+// 		Glasgow  & London
+//		Date: Unkown Pre 1893
+//		Hymn No. 473
+
+
+// Transcribed by: Ted Gatza, Jr. 09/26/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+///==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=4&
+
+staff 2
+	key=4&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "When The Roll Is Called Up Yonder" ""
+   title (2) ""
+   title (11) "" "\f(TI)in a moment, in the twinkling of an eye, at the last trump: for the trumpet shall sound, " "" 
+   title (11) "" "\f(TI)and the dead shall be raised incorruptible, and we shall be changed. - 1 Cor. 15:22" "" 
+   title (11) "" 
+   title (11) "A\(flat) - 4 - DO" "" ""
+   title (13) "James M. Black" "" "James M. Black 1893"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define SLOWLY ital (15) above 1: 1 "Slowly"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=105";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 8.ca; 16db;
+2: 2.s; 8.a-a; 16;
+
+	VS "<1. >-1|When the";
+	VS "<2. >-1|On that";
+	VS "<3. >-1|Let us";
+
+bar
+//2
+1: 8.ec+; 16; 8.; 16; 8.; 16eb; 8.ea; 16;
+2: 8.a-a; 16; 8.; 16; 8.; 16b-g; 8.ca; 16;
+
+	VS "trum-pet of the Lord shall sound, and";
+	VS "bright and cloud-less morn-ing when the";
+	VS "la-bour for the Mas-ter from the";
+bar
+
+//3a
+1: 8.db; 16da; 8.; 16df; 4ce; 8.s; 16;
+2: 8.df; 16; 8.; 16da; 4a-a; 8.s; 16;
+
+	VS "time shall be no more,";
+	VS "dead in Christ shall rise,";
+	VS "dawn till set-ting sun,";
+invisbar
+
+//3b
+1: 2.s; 8.ca; 16db;
+2: 2.s; 8.a-a; 16;
+
+	VS "And the";
+	VS "And the";
+	VS "Let us";
+bar
+
+//4
+1: 8.ec+; 16; 8.; 16; 8.; 16; 8.eb; 16dna;
+2 1: 8.a-a; 16; 8.; 16; 8.a; 16; 8.gb; 16fb;
+2 2: 8.s; 16; 8.; 16; 8.a; 16; 8.s; 16;
+
+	VS "morn-ing breaks, e-ter-nal, bright and";
+	VS "glo-ry of His res-sur-rec-tion";
+	VS "tell of all His won-drous love and";
+bar
+
+//5a
+1: 2.eb; 8.s; 16;
+2: 2.eg; 8.s; 16;
+
+	VS "fair;";
+	VS "share;";
+	VS "care;";
+invisbar
+
+//5b
+1: 2.s; 8.ca; 16db;
+2: 2.s; 8.a-a; 16;
+
+	VS "When the";
+	VS "When the";
+	VS "Then when";
+bar
+
+//6
+1: 8.ec+; 16; 8.; 16; 8.; 16eb; 8.ea; 16;
+2: 8.a-a; 16; 8.; 16; 8.; 16b-g; 8.ca; 16;
+
+	VS "saved of earth shall ga-ther o-ver";
+	VS "chos-en ones shall ga-ther to their";
+	VS "all of life is o-ver, and our";
+bar
+
+//7a
+1: 8.db; 16da; 8.; 16df; 4ce; 8.s; 16;
+2: 8.df; 16; 8.; 16da; 4a-a; 8.s; 16;
+
+	VS "on the o-ther shore,";
+	VS "home be-yond the skies,";
+	VS "work of earth is done,";
+invisbar
+
+//7b
+1: 2.s; 8.ca; 16db;
+2: 2.s; 8.a-a; 16;
+
+	VS "And the";
+//	VS "And the";
+//	VS "And the";
+bar
+
+//8
+1: 8.ec+; 16; 8.; 16ca; 8.db; 16db; 8.; 16dg;
+2: 8.ea; 16; 8.; 16; 8.eg; 16; 8.; 16eb;
+
+	VS "roll is called up yon-der, I'll be";
+//	VS "roll is called up yon-der, I'll be";
+//	VS "roll is called up yon-der, I'll be";
+bar
+
+//9
+1: 2.ca; 4s;
+2: 2.a-a; 4s;
+
+	VS "there.";
+//	VS "there.";
+//	VS "there.";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 2.s; 8.ac+; 16bd+;
+2: 2.s; 4r;
+
+	VS "When the";
+bar
+
+//11
+1: 2c+e+ tie; 8.; 16bd+; 8.ac+; 16bd+;
+2: 4r; 8.ae+; 16; 8.; 16; 8.; 16;
+
+	VS "roll_ is called up";
+	VS21 "When the roll is called up";
+bar
+
+//12a
+
+1: 2c+e+; 4ac+; 8.s; 16;
+2: 8.ae+; 16; 8.; 16; 4; s;
+
+	VS "yon-der,";
+	VS21 "yon-der I'll be there";
+invisbar
+
+//12b
+1: 2.s; 8.ac+; 16;
+2: 2.s; 4r;
+
+	VS "When the";
+bar
+
+//13
+1: 2bd+ tie; 8.; 16ac+; 8.gb; 16ac+;
+2: 4r; 8.ee+; 16; 8.; 16; 8.; 16;
+
+	VS "roll_ is called up";
+	VS21 "When the roll is called up";
+bar
+
+//14a
+1: 2bd+; 4gb; 4s;
+2: 8.ee+; 16; 8.; 16; 4; 4s;
+
+	VS "yon-der;";
+	VS21 "yon-der, I'll be there,";
+invisbar
+
+//14b
+1: 2.s; 8.ac+; 16bd+;
+2: 2.s; 4r;
+
+	VS "When the";
+bar
+
+//15
+1: 2c+e+ tie; 8.; 16ac+; 8.eb; 16ea;
+2: 4r; 8.ae+; 16; 8.; 16; 8.ad+; 16ac+;
+
+	VS "roll_ is called up";
+	VS21 "When the roll is called up";
+bar
+
+//16a
+1: 2fa; 4fd+; 8.s; 16;
+2: 2dd+; 4da; 8.s; 16;
+
+	VS "yon-der,";
+invisbar
+
+//16b
+1: 2.s; 8.fd+; 16fb;
+2: 2.s; 8.da; 16;
+
+	VS "When the";
+bar
+
+//17
+1: 8.ec+; 16; 8.; 16ca; 8.db; 16; 8.; 16dg;
+2: 8.ea; 16; 8.; 16; 8.eg; 16; 8.; 16eb;
+
+	VS "roll is called up yon-der, I'll be";
+bar
+
+//18
+1: 2.ca; 4s;
+2: 2.a-a; 4s;
+
+	VS "there.";
+endbar
+

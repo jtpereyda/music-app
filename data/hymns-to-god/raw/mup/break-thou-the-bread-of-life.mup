@@ -1,0 +1,356 @@
+// !Mup 7.1 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: 
+//	Hymns of Praise
+//	For the Church and Sunday School
+//	Compiled by F. G. Kingsbury
+//	Hope Publishing Company - Chicago
+//	Date: 1922?
+//	Hymn No.: 243
+
+// Transcribed by: Ted Gatza, Jr. 010/201/2024
+
+// Revisions:
+
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	extendlyrics=y
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=3&
+
+staff 2
+	key=3&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Break Thou The Bread Of Life" ""
+   title (2) ""
+   title (11) "" "\f(TI)For the bread of God is that which cometh down out of" ""
+   title (11) "" "\f(TI)heaven, and giveth life unto the world. - Jn. 6:33" ""
+   title (11) "E \(flat) - 2 - MI" "" ""
+   title (13) "Mary Ann Lathbury, 1877" "" "William F. Sherwin, 1877"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit."@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine"@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse
+
+//1
+1: 2eg; 4b-e; eg;
+2: 2eb; 4eg; eb;
+
+	VS "<1. >-1|Break Thou the";
+	VS "<2. >-1|Bless Thou the";
+	VS "<3. >-1|Thou art the";
+//	VS "<4. >-1|O send Thy";
+bar
+
+//2
+1: 4gb; ac+; 2gb;
+2: 4ee+; ; 2;
+
+	VS "bread of life,";
+	VS "truth, dear Lord,";
+	VS "bread of life,";
+//	VS "Spir-it, Lord,";
+bar
+
+//3
+1: 2eg; 4b-e; eg;
+2: 2eb; 4eg; eb;
+
+	VS "Dear Lord, to";
+	VS "To me\(emdash) to";
+	VS "O Lord, to";
+//	VS "Now un-to";
+bar
+
+//4
+1: 1df;
+2: 1b-b;
+
+	VS "me,";	
+	VS "me\(emdash)";
+	VS "me,";
+//	VS "me,";
+bar
+
+//5
+1: 2eg; 4b-e; eg;
+2: 2eb; 4eg; eb;
+
+	VS "As Thou didst";
+	VS "As Thou didst";
+	VS "Thy ho-ly";
+//	VS "That He may";
+bar
+
+//6
+1: 4gb; ac+; gb; s;
+2: 4ee+; ; ; s;
+
+	VS "break the loaves";
+	VS "bless the bread";
+	VS "Word the truth";
+//	VS "touch my eyes,";
+
+invisbar
+
+//6
+1: 4s; ; ; gc+;
+2: 4s; ; ; eb;
+
+	VS "Be-";
+	VS "By";
+	VS "That";
+//	VS "And";
+bar
+
+//7
+1: 2fd+; ec+;
+2: 2fb; fan;
+
+	VS "side the";
+	VS "Gal-i-";
+	VS "sav-eth";
+//	VS "make me";
+bar
+
+//8
+1: 1db;
+2: 1b-b;
+
+	VS "sea;";
+	VS "lee;";
+	VS "me";
+//	VS "see;";
+bar
+
+//9
+1: 2df; 4eg; fa;
+2: 2b-b; 4; b-d+;
+
+	VS "With-in the";	//"Be-yond the"; //Original lyrics
+	VS "Then shall all";
+	VS "Give me to";
+//	VS "Show me the";
+bar
+
+//10
+1: 4ac+; gb; 2eg;
+2: 4ee+; ; 2eb;
+
+	VS "sa-cred page";
+	VS "bond-age cease,";
+	VS "eat and live";
+//	VS truth con-cealed";
+bar
+
+//11
+1: 2fb; 4fc+; ; 
+2: 2db; 4can; ;
+
+	VS "I seek Thee,";
+	VS "All fet-ters";
+	VS "With Thee a-";
+//	VS "With-in Thy";
+bar
+
+//12
+1 1: 1d+;
+1 2: 2f slur; a&;
+2: 1b-b;
+
+	VS "Lord;";
+	VS "fall;";
+	VS "bove;";
+//	VS "Word,";
+bar
+
+//13
+1: 2ge+; 4gb; eg;
+2: 2eb; 4ee+; eb;
+
+	VS "My spir-it";
+	VS "And I shall";
+	VS "Teach me to";
+//	VS "And in Thy";
+bar
+
+//14
+1 1: 4f; ea; ec+; s;
+1 2: 4e; s; ; ;
+2: 4a-c+; ; ; s;
+
+	VS "pants for Thee,";
+	VS "find my peace,";
+	VS "love Thy truth,";
+//	VS "book re-vealed";
+
+invisbar
+
+//14
+1: 4s; ; ; ea;
+2: 4s; ; ; a-c+;
+
+	VS "O";
+	VS "My";
+	VS "For";
+//	VS "I";
+bar
+
+//15
+1 1: 2f; db;
+1 2: 2e; s;
+2: 2b-b; b-a;
+
+	VS "liv-ing";
+	VS "all in";
+	VS "Thou art";
+//	VS "see the";
+bar
+
+//16
+1 1: 1e;
+1 2: 1e;
+2: 1eg;
+
+	VS "Word.";
+	VS "all.";
+	VS "love.";
+//	VS Lord.";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

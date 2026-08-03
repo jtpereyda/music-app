@@ -1,0 +1,297 @@
+// Mup vs. 7.1 arkkra.com
+
+
+// The hymn produced by this Mup file is believed to be in the public 
+// domain in the United States of America.
+
+// This Mup file is donated to the public domain.
+
+//	Hymn Source: Hymns of Praise
+//	For the Church and Sunday School
+//	Compiled by F. G. Kingsbury
+//	Hope Publishing Co., Chicago
+//	Copyright 1922
+//	Hymn no. 236
+
+// Transcribed by: 
+//	Ted Gatza, Jr. 05/03/2024
+//
+// 	Revisions:
+//		
+//
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE====================
+
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	staffscale=1.0
+	scoresep=6
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+staffs=2
+	time=3/4
+	key=2&
+
+staff 2
+	key=2&
+	clef=bass
+
+//=========================
+
+top
+
+   title bold (19) "" "Let The Lower Lights Be Burning" ""
+   title (2)""
+   title (11) "" "\f(TI)Even so let your light shine before men; that they may see your good"""
+   title (11) "" "\f(TI)works and glorify your Father who is in heaven. - Matt. 5:16"""
+   title (11) "B\(flat) - 4 - SOL" "" ""
+   title (11) "Philip P. Bliss" " " "Philip P. Bliss, 1871"	
+ 
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+//Define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS11 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (13) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (13) above 1: 1 "Refrain"; @
+         define RALL ital (13) above 1: 1 "Rall."; @
+	define EFFECT ital (13) above 1: 1 "Effectively"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+         define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (13) above 1: COUNT "rit."; @
+        define FINE(COUNT)
+           ital (13) above 1: COUNT "fine"; @
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign"; @
+        define DS(COUNT)
+	  ital (13) above 1: COUNT "D. S."; @
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=85";
+
+//=========================
+
+//Verse
+
+//1
+1: 2s; 8.df; 16eg;
+2: 2s; 8.b-b; 16;
+
+	VS "<1. >-1|Bright-ly";
+	VS "<2. >-1|Dark the";
+	VS "<3. >-1|Trim your";
+bar
+
+//2
+1: 4.df; 8fd+; ec+; db;
+2: 4.b-b; 8; ; ;
+
+	VS "beams our Fa-ther's";
+	VS "night of sin has";
+	VS "fee-ble lamp, My";
+bar
+
+//3
+1: 8fa; 4.eg; 8.s; 16;
+2: 8eb; 4.; 8.s; 16;
+
+	VS "mer-cy";
+	VS "set-tled,";
+	VS "broth-er;";
+invisbar
+
+//3
+1: 8s; 4.; 8.eg; 16;
+2: 8s; 4.s; 8.eb; 16eg;
+
+	VS "From His";
+	VS "Loud the";
+	VS "Some poor";
+bar
+newscore
+//4
+1: 4.en c+; 8eb; ea; eb;
+2: 4.cg; 8cc+; ; cb;
+
+	VS "light-house ev-er-";
+	VS "an-gry bil-lows";
+	VS "sail-or tem-pest";
+bar
+
+//5
+1 1: 2c+; 8.s; 16;
+1 2: 4f slur; e&; 8.s; 16;
+2: 2fa; 8.s; 16;
+
+	VS "more,";
+	VS "roar;";
+	VS "tossed,";
+invisbar
+
+//5
+SIGN(3)
+1: 2s; 8.df; 16eg;
+2: 2s; 8.b-b; 16;
+
+	VS "But to";
+	VS "Ea-ger";
+	VS "Try-ing";
+	BVS "<\f(TX)D. S. \f(PV)- >-4|Some poor";
+bar
+
+//6
+1: 4.df; 8db; ec+; fd+;
+2: 4.b-b; 8; ; ;
+
+	VS "us He gives the";
+	VS "eyes are watch-ing,";
+	VS "now to make the";
+	BVS "faint-ing, strug-gling";
+bar
+
+//7
+1: 8ge+; 4.eg; 8.s; 16;
+2: 8eb; 4.; 8.s; 16;
+
+	VS "keep-ing,";
+	VS "long-ing,";
+	VS "har-bor,";
+	BVS "sea-man";
+invisbar
+
+//7
+1: 8s; 4.; 8.gb; 16gc+;
+2: 8s; 4.s; 8.eb; 16;
+
+	VS "Of the";
+	VS "For the";
+	VS "In the";
+	BVS "You may";
+bar
+
+//8
+1: 8fd+; db; 4.ec+; 8ca;
+2 1: 8fb; 8f; 4.fa; 8fc+;
+2 2: 8s; f; 4.s; 8;
+
+	VS "lights a-long the";
+	VS "lights a-long the";
+	VS "dark-ness may be";
+	BVS11 "res-cue, you may";
+bar
+
+//9
+FINE(3)
+1: 2db; 4s;
+2: 2b-b; 4s;
+
+	VS "shore.";
+	VS  "shore.";
+	VS "lost.";
+	BVS "save.";
+dblbar
+newscore
+
+//10
+CHORUS
+1: 2s; 8.db; 16;
+2 1: 2s; 8.b; 16;
+2 2: 2s; 8.b; 16;
+
+	VS "Let the";
+bar
+
+//11
+1: 4.ge+; 8; 8.; 16;
+2: 4.eb; 8; 8.; 16;
+
+	VS "low-er lights be";
+bar
+
+//12
+1: 8ge+; 4.fd+; 8.s; 16;
+2: 8b-b; 4.; 8.s; 16;
+
+	VS "burn-ing!";
+invisbar
+
+//13
+1: 8s; 4.; 8.fd+; 16;
+2 1: 8s; 4.; 8.b; 16;
+2 2: 8s; 4.; 8.b; 16;
+	
+	VS "Send a";
+bar
+
+//14
+1: 4.end+; 8ec+; 8.eg; 16ec+;
+2: 4.gc+; 8; 8.; 16gb;
+
+	VS "gleam a-cross the";
+bar
+
+//15
+DS(2)
+1 1: 2c+; 4s;
+1 2: 4f slur; e&; s;
+2: 2fa; 4s;
+
+	VS "wave!";
+
+endbar

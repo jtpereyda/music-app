@@ -1,0 +1,215 @@
+// Coded with Mup vs. 5.7 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:	Kingdom of Song
+//		A Collection of Songs for
+//		Sunday Schools,
+//		Young People's Societies
+//		And all Religious Services
+//		Edited by T.M. Bowdish
+//		Published by the W. W. Whitney Co.
+//		Entered at Stationers' Hall/ London, England
+//		Copyright 1900
+//		Hymn no.: 19
+
+// Transcribed by: Ted Gatza, Jr. 05/11/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "The Holy Bible" ""
+   title (2)""
+title (11) "B \(flat) - 4 - MI" "\s(18)\f(TI)\:Thy\ word\ is\ a\ lamp\ unto\ my\ feet,\ and\ a\ light\ unto\ my\ path.\ -\ Ps.\ 119:105 \(space)"""
+   title (13) "Adaline H. Beery" " " "T. M. Bowdish"	
+bottom
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=100";
+
+//1
+1: 2.s; 8.db-; 16ec;
+2: 2.s; 8.fb-; 16fb-;
+
+
+			lyrics 1: "<1. >-1|O thou";
+			lyrics 1: "<2. >-1|'Tis the";
+			lyrics 1: "<3. >-1|May we";
+bar
+//2
+1: 4fd; 4fd; 4fd; 8.bd; 16fd;
+2: 4bb-; 4bb-; 4bb-; 8.fb-; 16bb-;
+
+			lyrics 1: "sa-cred Book May thy";
+			lyrics 1: "her-ald of our sal-";
+			lyrics 1: "ev-er all thy com-";
+bar
+//3
+1: 4af; 4ge; 4ge; 8.bg; 16ge;
+2: 4be; 4be; 4be; 8.be; 16be;
+
+			lyrics 1: "light di-vine With its";
+			lyrics 1: "va-tion dear, For it";
+			lyrics 1: "mand-ments keep, Fill-ing";
+bar
+//4
+1: 4fd; 4fd; 4bf; 8.c+f; 16d+f;
+2 1: 4bb-; 4bb-; 4bd; 8.af; 16b;
+2 2: 4s; 4s; 4s; 8.s; 16b;
+
+			lyrics 1: "heal-ing balm 'round the";
+			lyrics 1: "bring-eth God's lov-ing";
+			lyrics 1: "all our hears like a";
+bar
+//5
+1: 4e+f; 4d+f; 4c+f; 8.db-; 16ec;
+2 1: 4c+a; 4b; 4af; 8.fd; 16fc;
+2 2: 4s; 4b; 4s; 8.s; 16s;
+
+			lyrics 1: "wide world shine! May thy";
+			lyrics 1: "kind-ness near; In his";
+			lyrics 1: "foun-tain deep, Flow-ing";
+bar
+//6
+1: 4fd; 4fd; 4fd; 8.s; 16s;
+2: 4bb-; 4bb-; 4bb-; 8.s; 16s;
+
+			lyrics 1: "words of truth";
+			lyrics 1: "grace we trust,";
+			lyrics 1: "forth in-to";
+invisbar
+newscore
+
+1: 4s; 4s; 4s; 8.bd; 16fd;
+2: 4s; 4s; 4s; 8.fb-; 16bb-;
+
+			lyrics 1: "and thy";
+			lyrics 1: "in his";
+			lyrics 1: "ev-er-";
+
+bar
+//7
+1: 4af; 4ge; 4ge; 8.bg; 16ge;
+2: 4be; 4be; 4be; 8.be; 16be;
+
+			lyrics 1: "ten-der grace Be our";
+			lyrics 1: "love we live, And our";
+			lyrics 1: "last-ing peace, Where the";
+bar
+//8
+1 1: 4fd; 8.fd; 16fd; 4bd; 4a;
+1 2: 4s; 8.s; 16s; 4; 8c bm; 8e ebm;
+2 1: 4bf; 8.bf; 16bf; 4f; 4f;
+2 2: 4s; 8.s; 16s; 4f; 4f; 
+
+			lyrics 1: "com-fort in ev-'ry";
+			lyrics 1: "wand'-rings he doth for-";
+			lyrics 1: "woes of the world shall";
+bar
+//9
+1: 2.bd; 4s;
+2: 2.fb-; 4s;
+
+			lyrics 1: "place.";
+			lyrics 1: "give.";
+			lyrics 1: "cease.";
+dblbar
+newscore
+//10
+1: 8.d+f; 16c+e; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			lyrics 1: "Word of";
+bar
+//11
+1: 2.bd; 8.af; 16ge;
+2: 4r; 8.fb-; 16fb-; 4fb-; 4r;
+
+			lyrics 1: "God! Word of";
+			lyrics 1: 4s; 8.; 16; 4; 8.s; 16s; "Word of God!";
+bar
+//12
+1: 2.fd; 8.bf; 16c+f;
+2: 4r; 8.bb-; 16bb-; 4bb-; 8.bd; 16af;
+
+			lyrics 1: "life! As a";
+			lyrics 1: 4s; 8.; 16; 4; 8.s; 16s; "Word of life!";
+bar
+newscore
+//13
+1: 4d+f; 4bf; 4af; 4bf;
+2 1: 4b; 4bd; 4c+c; 4d+b-;
+2 2: 4b; 4s; 4s; 4s; 
+
+			lyrics 1: "rock thy truth shall";
+bar
+//14
+1: 2.c+f; 8.bf; 16c+f;
+2: 2.af; 8.bd; 16ac;
+
+			lyrics 1: "stand; Thro' the";
+bar
+//15
+1: 4d+f; 4bd; 4fd; 8.bd; 16fd;
+2: 4bb-; 4fb-; 4bb-; 8.fb-; 16bb-;
+
+			lyrics 1: "storm and calm thou wilt";
+bar
+//16
+1: 4af; 4ge; 4ge; 8.bg; 16ge;
+2: 4be; 4be; 4be; 8.be; 16be;
+
+			lyrics 1: "keep us true, And wilt";
+bar
+//17
+1 1: 4fd; 8.fd; 16fd; 4bd; 4a;
+1 2: 4s; 8.s; 16s; 4s; 8c bm; 8e ebm;
+2 1: 4bf; 8.bf; 16bf; 4f; 4f;
+2 2: 4s; 8.s; 16s; 4f; 4f;
+
+			lyrics 1: "lead us to God's right";
+bar
+//18
+1: 2.bd; 4s;
+2: 2.fb-; 4s;
+
+			lyrics 1: "hand.";
+endbar

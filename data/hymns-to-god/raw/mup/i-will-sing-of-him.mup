@@ -1,0 +1,201 @@
+// Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Lyric Source: Best Endeavor Hymns
+//		 Edited and Compiled by
+//		 I. Allen Sankey and John R. Clements
+//		 Especially for Use In
+//		 Christian Endeavor Societies Young People's
+//		 Meetings, Sunday Schools, and General Church Work
+//		 Published by The Biglow and Main Co.
+//		 Lakeside Building, Chicago
+//		 135 Fifth Avenue, New York
+//		 Copyright 1907
+//		 Hymn No.: 65
+//		
+// Transcribed by: Ted Gatza, Jr. 09/17/2011 Updated 10/30/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "I Will Praise Thee" ""
+   title (2)""
+   title (11) "D \(flat) - 4 - MI" "\s(17)\f(TI)\:I\ will\ praise\ thee,\ O\ Lord\ \|my\ God,\ with\ my\ whole\ heart; And\ I\ will\ glorify\ thy\ na\^me\ for\ evermore.\ -\ Ps.\ 86:12" ""
+   title (13) "Fanny J. Crosby" "" "I. Allan Sankey, 1905"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=5&
+
+
+staff 2
+	key=5&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=105";
+
+//1
+1: 4.fd; 8fd; 4ben; 4c+e;
+2: 4.ad; 8ad; 4gnd; 4gd;
+
+			VERSE "<1. >-1|Thou didst love me,";
+			VERSE "<2. >-1|I be-seech Thee,";
+			VERSE "<3. >-1|I will praise Thee,";
+			VERSE "<4. >-1|I will praise Thee,";
+
+bar
+//2
+1: 4.bg; 8fc; 4af; 4ge;
+2: 4.c+a-; 8aa-; 4c+a-; 4ac;
+
+			VERSE "O my Sav-iour,";
+			VERSE "O my Sav-iour,";
+			VERSE "O my Sav-iour,";
+			VERSE "O my Sav-iour,";
+bar
+//3
+1: 4fd; 4gc; 4ad; 4d+f;
+2: 4ad; 4ae; 4af; 4ad;
+
+			VERSE "When my heart was";
+			VERSE "\"That my earth-ly";
+			VERSE "For the mes-sage";
+			VERSE "For Thy ten-der,";
+bar
+//4
+1: 4.c+en; 8be; 2af;
+2: 4.gnd; 8gd; 2ad;
+
+			VERSE "far from Thee,";
+			VERSE "life may be,";
+			VERSE "I have heard,";
+			VERSE "pa-tient care,";
+bar
+//5
+1 1: 4.a; 8a; 4a; 4c+g;
+1 2: 4.g; 8g; 4g; 4s;
+2: 4.c+a?a-; 8d+b?b-; 4e+c+?c; 4aa-;
+
+			VERSE "Thou didst give Thy-";
+			VERSE "But a shad-ow";
+			VERSE "And the les-sons";
+			VERSE "And the prom-ise";
+bar
+//6
+1: 4d+f; 4fdn; 4ad; 4ge;
+2: 4ad; 4ab-;4c+&f-; 4bg-;
+
+			VERSE "self a ran-som";
+			VERSE "to that glo-ry,";
+			VERSE "Thou hast taught me,";
+			VERSE "that as-sures me,";
+bar
+//7
+1 1: 4.fd; 8fd; 4e; 4e;
+1 2: 4.s; 8s; 4d; 4d;
+2: 4.aa-; 8aa-; 4gnb-; 4g&b-&&;
+
+			VERSE "To a-tone for";
+			VERSE "Of my hid-den";
+			VERSE "By the Spir-it";
+			VERSE "Thou wilt hear and";
+bar
+//8
+1 1: 4.gc; 8fc; 2d;
+1 2: 4.s; 8s; 2d;
+2: 4.ba-; 8aa-; 2fd;
+
+			VERSE "one like me.";
+			VERSE "life in Thee.\"";
+			VERSE "thro' Thy word.";
+			VERSE "an-swer pray'r.";
+dblbar
+//9
+1: 4.bd; 8bd; 4gd; 4bd;
+2 1: 4.gg-; 8gg-; 4bg; 4g;
+2 2: 4.s; 8s; 4s; 4g;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"I will praise Thee,";
+bar
+//10
+1: 4.d+d; 8d+f; 4af; 4d+a;
+2: 4.af; 8ad; 4d+d; 4d+f;
+
+			VERSE "I will bless Thee,";
+bar
+//11
+1: 4e+gn; 4d+g; 4c+g; 4bg;
+2: 4d+e; 4be; 4e+e; 4d+e;
+
+			VERSE "For the peace Thy";
+bar
+//12
+1 1: 4.bg&; 8a; 2e+g;
+1 2: 4.s; 8g; 2s;
+2: 4.c+a?a-; 8c+a?a-; 2c+a?a-;
+
+			VERSE "love be-stows,";
+bar
+//13
+1: 4.d+f; 8d+g; 4d+a; 4f+a;
+2: 4.ad; 8ae; 4d+f; 4c&+d;
+
+			VERSE "And the fount-ain";
+bar
+//14
+1: 4e+g; 4d+g; 4c+en; 4be;
+2: 4bg; 4bg; 4c+gn; 4d+g;
+
+			VERSE "Thou hast o-pened,";
+bar
+//15
+1 1: 4.af; 8d; 4g; 4fd;
+1 2: 4.s; 8d; 8d bm; 8c ebm; 4s;
+2: 4.d+a; 8af; 4be; 8af bm; 8bgn ebm;
+
+			VERSE "That to all so";
+bar
+//16
+1 1: 4e; 4ec; 2d;
+1 2: 4d; 4s; 2d;
+2 1: 4a; 4g&a-; 2fd;
+2 2: 4a; 4s; 2s; 
+
+			VERSE "free-ly flows.";
+endbar

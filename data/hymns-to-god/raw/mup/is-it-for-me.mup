@@ -1,0 +1,389 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this mup code is believed to be  
+// in the public domain in the United States of America.
+
+// This mup code is donated to the public domain.
+// 
+
+// Hymn Source: Redeemer's Praise
+//		For The Sunday School, Church, And Family
+//		By T. C. O'Kane
+//		Cincinnati: Cranston and Stowe
+//		New York: Phillips & Hunt
+//		Copyrigght 1881
+//		Hymn No.: 10
+			
+// Transcribed by: Ted Gatza, Jr. 04/09/2026
+
+//Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE=====
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=3/4	
+	key=1&
+
+staff 2
+	key=1&
+	clef=bass
+
+//=========================
+
+header
+
+   title (19) "" "Is It For Me?" ""
+   title (11) "" "\f(times boldital)...ye rejoice greatly with joy unspeakable and full of glory: receiving" ""
+   title (11) "" "\f(times boldital)the end of  your faith, even the salvation of your'souls. 1 Pet. 1:8" ""
+   title (2) ""
+   title (12) "F - 3 - DO" "" ""
+   title (15) "Francis R. Havergal" " " "T. C. O'Kane, 1881" 
+
+footer
+
+   title (13) "" "Public Domain" "HymnsToGod.org"
+
+//=========================
+
+music
+
+
+//=========================
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS boldital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN boldital (15) above 1: 1 "Refrain"; @
+         define SLOWLY boldital (15) above 1: 1 "Slowly"; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+           mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+            ital (15) above 1: COUNT "D. S."; @
+
+     //Misc. Texts
+        define RIT(COUNT)
+          boldital (15) above 1: COUNT "rit.";@
+        define ATEMPO(COUNT)
+          boldital (15) above 1: COUNT "a tempo";@
+ 
+
+//=========================
+
+// set midi
+
+	midi all: 0 "tempo=100";
+
+//=========================
+
+// Verse 
+
+//1
+1 1: 2s; 4f;
+1 2: 2s; 4f;
+2: 2s; 4fa;
+
+	VS "<1. >-1|Is";
+	VS "<2. >-1|Is";
+	VS "<3. >-1|O";
+	VS "<4. >-1|I'll";
+bar	
+
+//2
+1: 8.fa; 16eg; 4fa; fc+;
+2: 8.fc+; 16; 4; fa;
+
+	VS "it for me dear";
+	VS "it for me thy";
+	VS "Sav-ior, pre-cious";
+	VS "be with thee for-";
+bar
+
+//3a
+1: 4ec+; eb; s;
+2 1: 4g; ; s;
+2 2: 4g; ; s;
+
+	VS "Sav-ior,";
+	VS "wel-come,";
+	VS "Sav-ior,";
+	VS "ev-er,";
+invisbar
+
+//3b
+1: 4s; ; ea;
+2: 4s; ; cc+;
+
+	VS "Thy";
+	VS "Thy";
+	VS "My";
+	VS "And";
+bar
+
+//4
+1: 8.eg; 16d#f#; 4eg; gb;
+2: 8.cc+; 16; 4; ;
+
+	VS "glo-ry and thy";
+	VS "gra-cious \"En-ter";
+	VS "heart is at thy";
+	VS "nev-er grieve thee";
+bar
+
+//5a
+1 1: 4b slur; a; s;
+1 2: 2f; 4s;
+2 1: 4d+ slur; c+; s;
+2 2: 2f; 4s;
+
+	VS "rest?";
+	VS "in?\"";
+	VS "feet!";
+	VS "more;";
+invisbar
+
+1: 4s; ; 4cf;
+2: 4s; ; 4fa;
+
+	VS "For";
+	VS "For";
+	VS "I";
+	VS "Dear";
+bar
+
+//6
+1: 8.fa; 16eg; 4fa; fc+;
+2: 8.fc+; 16; 4; a-e+&;
+
+	VS "me, so weak and";
+	VS "me thy \"Come, ye";
+	VS "bless thee, and I";
+	VS "Sav-ior, I must";
+bar
+
+//7a
+1: 4fc+; fb; s;
+2: 4b-e+&; b-d+; s;
+
+	VS "sin-ful?";
+	VS "bless-ed?\"";
+	VS "love thee,";
+	VS "praise thee,";
+invisbar
+
+//7b
+1: 4s; ; fa;
+2: 4s; ; cc+;
+
+	VS "Oh,";
+	VS "For";
+	VS "And";
+	VS "And";
+bar
+
+//8
+1: 8.cg; 16cf#; 4cg; ea;
+2: 8.cb; 16ca; 4cb; cc+;
+
+	VS "shall I be so";
+	VS "me, so full of";
+	VS "thee I long to";
+	VS "love thee ev-er-";
+bar
+
+//9
+1 1: 2f; 4s;
+1 2: 2f; 4s;
+2: 2fa; 4s;
+
+	VS "blest?";
+	VS "sin?";
+	VS "meet.";
+	VS "more.";
+dblbar
+newscore
+
+CHORUS
+
+//10
+1: 2s; 4ec+;
+2: 2s; 4cg;
+
+	VS "O";
+
+bar
+
+//11
+
+1 1: 8.c+ bm; 16g ebm; 4s; 8; ;
+1 2: 4e; eg; 8; ec+;
+2 1: 8.g bm; 16c+ ebm; 4s; 8; ;
+2 2: 4c; cc+; 8cb; cg;
+
+	VS12 "Sav-ior, my Re-";
+bar
+
+//12a
+1 1: 8.c+ bm; 16a ebm; 4s; ;
+1 2: 4f; fa; s;
+2 1: 8.a bm; 16c+ ebm; 4s; ;
+2 2: 4f; fc+; s;
+
+	VS12 "deem-er!";
+invisbar
+
+//12b
+1: 4s; ; fa;
+2: 4s; ; fc+;
+	VS "What";
+bar
+
+//13
+1: 8.eg; 16fa; 4gb; ec+;
+2: 8.cc+; 16; 4; ;
+
+	VS "can I but a-";
+bar
+
+//14a
+1: 2fa; 4s;
+2: 2fc+; 4s;
+
+	VS "dore?";
+invisbar
+
+//14b
+1: 2s; 4fc+;
+2: 2s; 4fa;
+
+	VS "And";
+bar
+
+//15
+1: 8.fd+; 16ec+#; 4fd+; fb;
+2 1: 8.s; 16; 4b; ;
+2 2: 8.b-b; 16; 8b- bm; c ebm; d bm; e ebm;
+
+	VS "mag-ni-fy and";
+bar
+
+//16a
+1 1: 8.d+ bm; 16c+ ebm; 4s; ;
+1 2: 4f; fc+; s;
+2 1: 8.b bm; 16a ebm; 4s; ;
+2 2: 4f; fa; s;
+
+	VS12 "praise thee,";
+invisbar
+
+//16b 
+1: 2s; 4fa;
+2: 2s; 4fc+;
+
+	VS "And";
+bar
+
+//17
+1: 8.cg; 16cf#; 4eg; ea;
+2: 8.cb; 16ca; 4cb; cc+;
+
+	VS "love thee ev-er-";
+bar
+
+//18
+1: 2cf; 4s;
+2: 2fa; 4s;
+
+	VS "more?";
+endbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

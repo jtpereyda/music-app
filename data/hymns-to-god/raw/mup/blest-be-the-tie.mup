@@ -1,0 +1,301 @@
+// !Mup vs.7.0 arkkra.com
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source:
+//	The Great Awakening
+//	A Choice Collection Of New And Standard	Gospel Songs
+//	Prepared Under The Personal Supersision Of Sam. P. Jones
+//	For Use In All Gospel Meetings
+//	Published by The John Church Co.
+//	74 W. Fourth St. Cincinnati
+//	Root & Sons Music Co. 
+//	200 Wabash Ave. Chicago
+//	The J. Church Co.
+//	55 E. 13th St. New York
+//	Copyright 1886
+//	Hymn No. 20
+		
+// Transcribed by:
+//	 Ted Gatza, Jr. 11/08/2022
+
+// Revisions:
+//	
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Blest Be The Tie" ""
+   title (2)""
+   title (11)"" "\f(TI)We have fellowship one with another - 1 Jn.1:7" ""
+   title (11) " F - 3 - MI" "" ""
+   title (13) "John Fawcett, 1772" "" "Hans George Nageli"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+//==== FOR LETTER SIZE==========
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=1
+	staffscale=1.0
+	scoresep=6,10
+	staffpad=0
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	withfontfamily=palatino
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//==========================
+staffs=2
+	time=3/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+
+//define macros
+
+   //Lyrics
+       define VS lyrics between 1&2: @
+       define VS1 lyrics between 1&2 using 1: @
+       define VS12 lyrics between 1&2 using 1 2: @
+       define VS21 lyrics between 1&2 using 2 1:@
+       define VS22 lyrics between 1&2 using 2 2:@     
+       define DSV lyrics below 2: @
+
+   //Chorus
+       define CHORUS ital (13) above 1: 1 "Chorus"; @	
+       define REFRAIN ital (13) above 1: 1 "Refrain"; @
+
+  //Other
+       define RIT ital (13) above 1: 1 "Rit."; @
+
+  //Fermatas
+       define FST(COUNT)
+       mussym (10) above 1: COUNT "ferm"; @
+
+       define FSB(COUNT)
+       mussym (10) below 1: COUNT "uferm"; @
+ 
+       define FBT(COUNT)
+       mussym (10) above 2: COUNT "ferm"; @
+
+      define FBB(COUNT)
+       mussym (10) below 2: COUNT "uferm"; @
+
+// set midi
+	midi all: 0 "temp=90";
+
+//=========================
+//Verse 1
+
+//1
+1: 2s; 4fa;
+2: 2s; 4fc+;
+
+	VS1 "<1. >-1|Blest";
+	VS1 "<2. >-1|Be-";
+	VS1 "<3. >-1|We";
+	VS1 "<4. >-1|When";
+bar
+
+//2
+1: 4fa slur; cf; fa;
+2 1: 4c+ slur; a; fc+;
+2 2: 2f; 4s;
+
+	VS1 "be the";
+	VS1 "fore our";
+	VS1 "share our";
+	VS1 "we a-";
+bar
+
+//3
+1: 4eg slur; ce; cg;
+2 1: 4c+ slur; g; cb;
+2 2: 2c; 4s;
+
+	VS1 "tie that";
+	VS1 "Fa-ther's";
+	VS1 "mu-tual";
+	VS1 "sun-der";
+bar
+
+//4
+1: 4s; 2cf;
+2: 4s; 2fa;
+
+	VS1 "binds";
+	VS1 "throne,";
+	VS1 "woes;";
+	VS1 "part,";
+invisbar
+
+1 1: 4f; 2s;
+1 2: e&; 2s;
+2: 4fa; 2s;
+
+	VS1 "Our";
+	VS1 "We";
+	VS1 "Our";
+	VS1 "It";
+bar
+
+//5
+1: 4df slur; db-; df;
+2 1: 4b slur; f; b-b;
+2 2: 2b-; 4s;
+
+	VS1 "hearts in";
+	VS1 "pour our";
+	VS1 "mu-tual";
+	VS1 "gives us";
+bar
+
+//6
+1: 4cf slur; a-c; cf;
+2 1: 4a slur; f; fa;
+2 2: 2f; 4s;
+
+	VS1 "Chris-tian";
+	VS1 "ar-dent";
+	VS1 "bur-dens";
+	VS1 "in-ward";
+bar
+
+//7
+1: 4s; 2ce;
+2: 4s; 2cg;
+
+	VS1 "love;";
+	VS1 "prayers;";
+	VS1 "bear;";
+	VS1 "pain;";
+invisbar
+
+1: 4eg; 2s;
+2: 4cc+; 2s;
+
+	VS1 "The";
+	VS1 "Our";
+	VS1 "And";
+	VS1 "But";
+bar
+
+//8
+1: 4eg slur; ce; cg;
+2 1: 4c+ slur; g; cb;
+2 2: 2c; 4s;
+
+	VS1 "fel-low-";
+	VS1 "fears, our";
+	VS1 "Oft-en";
+	VS1 "we shall";
+bar
+
+//9
+1: 4cf slur; fa; fc+;
+2 1: 4a slur; c+; fa;
+2 2: 2f; 4s;
+
+	VS1 "ship of";
+	VS1 "hopes, our";
+	VS1 "for each";
+	VS1 "still be";
+bar
+
+//10
+1 1: 4c+ slur; g; gb;
+1 2: 2e; 4s;
+2 1: 4g slur; c+; cc+;
+2 2: 2c; 4s;
+
+	VS1 "kin-dred";
+	VS1 "aims are";
+	VS1 "oth-er";
+	VS1 "joined in";
+bar
+
+//11
+1 1: 4s; a slur; c+;
+1 2: 4s; 2f;
+2 1: 4s; 4c+ slur; a;
+2 2: 4s; 2f;
+
+	VS1 "minds";
+	VS1 "one,\(emdash)";
+	VS1 "flows";
+	VS1 "heart,";
+invisbar
+
+1: 4fd+; 2s;
+2: 4fb; 2s;
+
+	VS1 "Is";
+	VS1 "Our";
+	VS1 "The";
+	VS1 "And";
+bar
+
+//12
+1 1: 4c+ slur; a; fb;
+1 2: 2f; 4s;
+2 1: 4a slur; c+; b-d+;
+2 2: 2f; 4s;
+
+	VS1 "like to";
+	VS1 "com-forts";
+	VS1 "sym-pa-";
+	VS1 "hope to";
+bar
+
+//13
+1: 4fa slur; cf; cg;
+2 1: 4c+ slur; a; cb;
+2 2: 2c; 4s;
+
+	VS1 "that a-";
+	VS1 "and our";
+	VS1 "thiz-ing";
+	VS1 "meet a-";
+bar
+
+//14
+1: 2cf; 4s;
+2: 2f-fa; 4s;
+
+	VS1 "bove.";
+	VS1 "cares.";
+	VS1 "tear.";
+	VS1 "gain.";
+endbar
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,192 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		Hymns and Tunes For Praise
+//		A new Collection of Hymns
+//		And Music For Praise In The
+//		Sunday School,
+//		By J. H. Kurzenknabe
+//		Harrisburg, PA.:
+//		J. H. Kurzenknabe & Sons
+//		Copyright: 1896
+//		Hymn No.: 76
+//		
+// Transcribed by: Ted Gatza, Jr. 02/13/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "We Are Weak, But Christ Is Strong" ""
+   title (2)""
+   title (11) "F - 4 - SOL" "\s(17)\f(TI)\:Wherefore\ I\ take\ pleasure\ in\ weak\|nesses,\ in\ injuries,\ in\ necessities,\ in persecutions,\ in\ distresses,\ for\ \^Christ's\ sake:\ for\ when\ I\ am\ weak, then\ am\ I\ stron\|g.\ -\ 2\ Cor.\ 12:10" ""   
+   title (13) "Ida L. Reed" "" "Fred A. Fillmore, 1896"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=95";
+
+//1
+1 1: 4c;; fc;;
+1 2: 4c;; s;;
+2: 4af;;;;
+
+			VERSE "<1. >-1|What tho' cares and";
+			VERSE "<2. >-1|What tho' wea-ry";
+			VERSE "<3. >-1|Tho' dark clouds a-";
+			
+bar
+//2
+1 1: 4ge;; af; f;
+1 2: 4s;;; f;
+2: 4c+c;; c+f; af;
+
+			VERSE "tri-als meet us,";
+			VERSE "bur-dens press us,";
+			VERSE "bove us gath-er,";
+bar
+//3
+1: 4af;; be; af;
+2: 4c+f;; c+g; c+f;
+
+			VERSE "All life's change-ful";
+			VERSE "Sor-rows all life's";
+			VERSE "This shall be our";
+bar
+//4
+1: 4gc; fd; 2ge;
+2: 4c+e; bnd; 2c+c;
+
+			VERSE "path a-long,";
+			VERSE "path-way throng,";
+			VERSE "joy and song,";
+bar
+//5
+1 1: 4c;; fc;;
+1 2: 4c;; s;;
+2: 4af;;;;
+
+			VERSE "There's a hope that";
+			VERSE "Yet, 'mid tri-als";
+			VERSE "Theme of sweet un-";
+bar
+//6
+1 1: 4ge;; af; f;
+1 2: 4s;;; f;
+2: 4c+c;; c+f; af;
+
+			VERSE "still will greet us,\(emdash)";
+			VERSE "we'll re-mem-ber,";
+			VERSE "fail-ing com-fort;";
+bar
+//7
+1: 4af;; bf; gd;
+2: 4c+f;; d+b-; bb-;
+
+			VERSE "We are weak, but";
+			VERSE "We are weak, but";
+			VERSE "We are weak, but";
+bar
+//8
+1: 4fc; ec; 2fc;
+2: 4ac; gc; 2aff-;
+
+			VERSE "Christ is strong.";
+			VERSE "Christ is strong.";
+			VERSE "Christ is strong.";
+dblbar
+//9
+1: 4c+f;;d+f;c+f;
+2: 4af;; bf; af;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"We are weak, but";
+bar
+//10
+1: 4bg; af; 2ge;
+2 1: 4c+e; c+f; 2c+;
+2 2: 4s;; 2c+;
+
+			VERSE [c]"Christ is strong,";
+bar
+//11
+1: 4c+f;;d+f;c+f;
+2: 4af;; bf; af;
+
+			VERSE "We are weak, but";
+bar
+//12
+1: 4c+e; bnf; 2c+e;
+2 1: 4g; gg-; g slur; b;
+2 2: 4g; s; 2c;
+
+			VERSE "Christ is strong;";
+bar
+//13
+1 1: 4c;; fc;;
+1 2: 4c;; s;;
+2: 4af;;;;
+
+			VERSE "There's a hope that";
+bar
+//14
+1 1: 4ge;; af; f;
+1 2: 4s;;; f;
+2: 4c+c;; c+f; af;
+
+			VERSE "ne'er will fail us,";
+bar
+//15
+1: 4af;; bf; gd;
+2: 4c+f;; d+b-; bb-;
+
+			VERSE "We are weak, but";
+bar
+//16
+1: 4fc; ec; 2fc;
+2: 4ac; gc; 2aff-;
+
+			VERSE "Christ is strong.";
+endbar

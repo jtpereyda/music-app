@@ -1,0 +1,224 @@
+// Coded with Mup vs. 6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kindly Light
+//		 A New Collection of Hymns and Music 
+//		 for praise in the Sunday School
+//		 By J. H. Kurzenknabe,
+//		 Publishers: J. H. Kurzenknabe & Sons
+//		 Harrisburg, PA
+//		 Copyright 1896
+//		 Hymn No.: 119
+//		
+// Transcribed by: Ted Gatza, Jr. 09/05/2012
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Thou Knowest" ""
+   title (2)""
+   title (11) "G - 2 - SOL" "\s(17)\f(TI)\:Now\ know\ we\ that\ thou\ knowest\ all\ things...\ -\ Jn.\ 16:30 \(space)" ""
+   title (13) "John H. Kurzenknabe" "" "John H. Kurzenknabe, 1896"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,40
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+//1
+1 1: 8d; 4.s; 4;
+1 2: 8d; 4.s; 4;
+2: 8bg; 4.s; 4;
+
+
+			VERSE "<1. >-1|Thou,";
+			VERSE "<2. >-1|I";
+			VERSE "<3. >-1|Thy";
+
+bar
+//2
+1: 8bd; ad; gd; ae; ge; ec;
+2: 8d+g; c+g; bg; c+c;; gc;
+
+			VERSE "Lord, know-est them that are";
+			VERSE "stand where the path-ways di-";
+			VERSE "coun-sel, so pre-cious, so";
+bar
+//3
+1: 4.db- tie; 4; 8gd;
+2 1: 4.g tie; 4; 8bg;
+2 2: 4.g tie; 4; 8s;
+
+			VERSE "Thine, Their";
+			VERSE "vide, And";
+			VERSE "sweet, Shall";
+bar
+//4
+1 1: 8bg; a; bg; s; s; s;
+1 2: 8s; g; s;;;;
+2: 8d+g;;; s; s; s;
+
+			VERSE "thoughts are re-";
+			VERSE "know not the ";
+			VERSE "point me the ";
+
+invisbar
+newscore
+
+1 1: 8s; s; s; d+g; c+f; bg;
+1 2: 8s; s; s;;;;
+2: 8s;;; d+b; d+a; d+g;
+
+			VERSE "vealed to Thine";
+			VERSE "race I must";
+			VERSE "way I must";
+
+bar
+//5
+1: 4.af tie; 4; 8c+f;
+2: 4.d+d tie; 4; 8;
+
+			VERSE "ear; Our";
+			VERSE "run; I";
+			VERSE "take; What-";
+bar
+//6
+1: 8bg; d+g; bg; ae; ge; ec;
+2: d+g; bg; d+g; c+c;; gc;
+
+			VERSE "hearts, how they grieve and re-";
+			VERSE "trem-ble which way to de-";
+			VERSE "ev-er ob-struc-tions I";
+bar
+//7
+1: 4.db- tie; 4; 8gd;
+2 1: 4.g tie; 4; 8bg;
+2 2: 4.g tie; 4; 8s;
+
+			VERSE "pine, Thou";
+			VERSE "cide, And";
+			VERSE "meet, Thy";
+bar
+//8
+1: 8bg; c+g; bg; ae; gd; fd;
+2: 8d+g; e+g; d+g; c+c; bd; ad;
+
+			VERSE "know-est our tri-als and";
+			VERSE "feel my-self lost and un-";
+			VERSE "pres-ence will nev-er for-";
+bar
+//9
+1: 4.gd tie; 4; 8s;
+2: 4.bg tie; 4; 8s;
+
+			VERSE "fear.";
+			VERSE "done.";
+			VERSE "sake.";
+dblbar
+//10
+1: 8bg; 4.s; 4;
+2: 8d+g; 4.s; 4;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Thou";
+bar
+//11
+1: 8d+g; bg; d+g;; bg; d+g;
+2: 8bg; d+g; bg;; d+g; bg;
+
+			VERSE [c]"know-est from whence,\(emdash) and the";
+bar
+//12
+1: 4.e+g tie; 4; 8c+a;
+2: 4.c+c tie; 4; 8d+f;
+
+			VERSE [c]"way; And";
+bar
+//13
+1: 8bg; d+b;; s; s; s;
+2: 8d+g;;;s; s; s;
+
+			VERSE "trust-ing my";
+invisbar
+newscore
+
+1: 8s; s;;d+b; c+a; bg;
+2: 8s;;;d+g; d+f; d+g;
+
+			VERSE "Sav-iour and";
+
+bar
+//14
+1: 4.af tie; 4; 8c+f;
+2: 4.d+d tie; 4; 8;
+
+			VERSE "Guide, I";
+bar
+//15
+1: 8bg; d+g; bg; ae; ge; ec;
+2: 8d+g; bg; d+g; c+c;; gc;
+
+			VERSE "shall reach the por-tals of";
+bar
+//16
+1: 4.db- tie; 4; 8gd;
+2 1: 4.g tie; 4; 8bg;
+2 2: 4.g tie; 4; 8s;
+
+			VERSE "day, And";
+bar
+//17
+1: 8bg; c+g; bg; ae; gd; fd;
+2: 8d+g; e+g; d+g; c+c; bd; ad;
+
+			VERSE "with Thee, dear Sav-iour, a";
+bar
+//18
+1: 4.gd tie; 4; 8s;
+2: 4.bg tie; 4; 8s;
+
+			VERSE "bide.";
+endbar

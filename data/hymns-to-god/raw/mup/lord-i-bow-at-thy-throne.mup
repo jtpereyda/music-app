@@ -1,0 +1,164 @@
+// Coded with Mup vs. 5.6 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This source code is donated to the public domain.
+
+// Hymn Source: Christian Endeavor Hymns
+//		by Ira D. Sankey
+//		Pub. by The United Christian Society of Christian Endeavor
+//		646 Washington St, Boston, Mass., The Biglow and Main Co.
+//		76 East 9th St., New York, 
+//		Copyright,1894
+//		Hymn 49
+
+// Transcribed by: Ted Gatza, Jr. 02/05/2010
+// HymnsToGod.org
+
+// ************************************
+
+top
+
+   title bold (19) "" "Lord I Bow At Thy Throne" ""
+   title (2)""
+   title (11) "b \(flat) - 4 - MI" "\s(18)\f(TI)\:For\ godly\ sorrow\ worketh\ r\|epentance\ unto\ salvation,\ a repentance\ which\ bringet\|h\ no\ regret:\ -\ 2\ Cor.\ 7:10"""
+   title (13) "William Stevenson" " " "Robert Lowry, 1886"
+	
+bottom
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	staffs=2
+	time=4/4	
+	key=2&
+	packexp = 0.0
+	packfact = 0.0
+	pad = 0
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+
+
+staff 2
+	key=2&
+	clef=bass
+
+// ***********************************
+
+music
+
+midi all: 0 "tempo=70";
+
+//1
+1: 2.s; 8db-; 8ec;
+2: 2.s; 8fb-; fb-;
+
+			lyrics 1: "<1. >-1|Lord I";
+			lyrics 1: "<2. >-1|If my";
+			lyrics 1: "<3. >-1|Lord, my";
+bar
+//2
+1: 4fd; 8ge; 8fd; 4db-; 8db-; 8fd;
+2: 4bb-; 8bb-; 8bb-; 4fb-; 8fb-; 8bb-;
+
+			lyrics 1: "bow at Thy throne, My un-";
+			lyrics 1: "sins I con-fess, Thou wilt";
+			lyrics 1: "guilt I la-ment, And in";
+bar
+//3
+1: 4bd; 8c+f; 8bf; 4ge; 8bg; 8ge;
+2: 4bb-; 8bd; 8bd; 4be; 8be; 8be;
+
+			lyrics 1: "wor-thi-ness own, To Thy";
+			lyrics 1: "heark-en and bless, For Thy";
+			lyrics 1: "sor-row re-pent; Red like";
+bar
+//4
+1: 4fd; 8s; 8s; 4s; 8s; 8s;
+2: 4bb-; 8s; 8s; 4s; 8s; 8s;
+
+			lyrics 1: "cross";
+			lyrics 1: "mer-";
+			lyrics 1: "crim-";
+invisbar
+newscore
+
+1: 4s; 8db-; 8fd; 4bf; 8ae; 8bd;
+2: 4s; 8fb-; 8bb-; 4bd; 8fc; 8fb;
+
+			lyrics 1: "and Thy prom-ise I";
+			lyrics 1: "cy is bound-less and";
+			lyrics 1: "son my sins are, I";
+
+bar
+//5
+1 1: 2.c+; 8bd; 8c+e;
+1 2: 2f slur; 4e; 8s; 8s;
+2: 2.af; 8bb-; 8bb-;
+
+			lyrics 1: "cling; O how";
+			lyrics 1: "free; All Thy";
+			lyrics 1: "know; Naught can";
+bar
+//6
+1: 4d+f; 8bd; 8ge; 4fd; 8db-; 8s;
+2: bb-; 8bb-; 8bb-; 4bb-; 8fb-; 8s;
+
+			lyrics 1: "bless-ed the tho't, Thou";
+			lyrics 1: "good-ness may share, None";
+			lyrics 1: "save but Thy blood; Cleanse";
+
+invisbar
+newscore
+
+1: 4s; 8s; 8s; 4s; 8s; 8fd;
+2: 4s; 8s; 8s; 4s; 8s; 8bb-;
+
+			lyrics 1: "my";
+			lyrics 1: "need";
+			lyrics 1: "me";
+
+
+bar
+//7
+1: 4ge; 8c+en; 8bg; 4af; 8bf; 8c+f;
+2 1: 4be; 8c+c; 8c+c; 4c+; 8bd; 8ac;
+2 2: 4s; 8s; 8s; 8f bm; 8e& ebm; 8s; 8s;
+
+			lyrics 1: "par-don hast bought, And no";
+			lyrics 1: "ev-er de-spair, But re-";
+			lyrics 1: "now in that flood, And my";
+bar
+//8
+1: 4d+f; 8c+f; 8bf; 4ge; 8bd; 8c+e;
+2 1: 4bb-; 8ac; 8bd; 4be; 8f; 8f;
+2 2: 4s; 8s; 8s; 4s; 8f; 8f;
+
+			lyrics 1: "mon-ey or price need I";
+			lyrics 1: "joice Thy sal-va-tion to";
+			lyrics 1: "soul shall be whit-er than";
+bar
+//9
+1: 2.bd; 4s;
+2: 2.fb-; 4s;
+
+			lyrics 1: "bring.";
+			lyrics 1: "see.";
+			lyrics 1: "snow.";
+endbar
+
+title (11) ""
+title (11) "" "Public Domain" "HymnsToGod.org"

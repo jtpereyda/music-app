@@ -1,0 +1,312 @@
+// Mup 7.2 arkkra.com
+
+// The hymn produced by this source code is believed to be in the public 
+// domain in the United States of America.
+
+// This mup code is donated to the public domain.
+
+// Hymn Source:	World Wide Revival Songs Number Two
+//		nday School and
+//		Evangelistic Campaigns.
+//		James G.;Garth, Compiler
+//		Albert C. Fisher, Editor
+//		Publisher: Federation Publishing Company
+//		Siloam Springs, Arkansas
+//		Copyright: 1921
+//		Hymn No.: 191
+
+// Transcribed by: Ted Gatza, Jr. 08/04/2025
+
+// Revisions:
+
+// HymnsToGod.org
+
+//==== FOR LETTER SIZE======
+
+score
+	label=""
+	packexp=0.0
+	packfact=0.9
+	pad=2
+	vscheme=2f
+	scale=.95
+	staffscale=1.0
+	staffpad=0
+	scoresep=6
+	scorepad=0
+	leftmargin=.750
+	rightmargin=.750
+	lyricssize=14
+	lyricsfontfamily=times
+	noteheads="isostri semicirc diam righttri norm rect pie"
+
+//=========================
+
+staffs=2
+	time=4/4
+	key=5&
+
+staff 2
+	key=5&
+	clef=bass
+
+//=========================
+
+header
+
+   title bold (19) "" "Near To The Heart Of God" ""
+   title (2) ""
+   title (11) "" "\f(TI)But it is good for me to draw near unto God: I have made the Lord" ""
+   title (11) "" "\f(TI)Jehovah my refuge, That I may tell of all thy works. - Ps. 73:28" ""
+   title (11) "" 
+   title (11) "D\(flat) - 4 - MI" "" ""
+   title (13) "Cleland Boyd McAfee" "" "Cleland Boyd McAfee, 1903"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+
+//=========================
+
+music
+
+//=========================
+
+
+//define macros
+
+   //Lyrics
+     //Lyrics Between Staffs
+         define VS lyrics between 1&2: @
+         define VS1 lyrics between 1&2 using 1: @
+         define VS12 lyrics between 1&2 using 1 2: @
+         define VS21 lyrics between 1&2 using 2 1:@
+         define VS22 lyrics between 1&2 using 2 2:@ 
+
+     //Lyrics Below Bass Staff    
+         define BVS lyrics below 2: @
+         define BVS11 lyrics below 2 using 1: @
+         define BVS12 lyrics below 2 using 1 2: @
+         define BVS21 lyrics below 2 using 2 1:@
+         define BVS22 lyrics below 2 using 2 2:@ 
+
+     //Text - Above Staff
+         define CHORUS ital (15) above 1: 1 "Chorus"; @	
+         define REFRAIN ital (15) above 1: 1 "Refrain"; @
+         define RALL ital (15) above 1: 1 "Rall."; @
+
+     //Fermatas
+         define FST(COUNT)
+           mussym (10) above 1: COUNT "ferm"; @
+
+        define FSB(COUNT)
+          mussym (10) below 1: COUNT "uferm"; @
+ 
+        define FBT(COUNT)
+          mussym (10) above 2: COUNT "ferm"; @
+
+        define FBB(COUNT)
+          mussym (10) below 2: COUNT "uferm"; @
+
+     //Note Accents
+        define AST(COUNT)
+          mussym (10) above 1: COUNT "acc_gt"; @
+
+        define ASB(COUNT)
+          mussym (10) below 1: COUNT "acc_gt"; @
+ 
+        define ABT(COUNT)
+          mussym (10) above 2: COUNT "acc_gt"; @
+
+        define ABB(COUNT)
+          mussym (10) below 2: COUNT "acc_gt"; @
+
+     //Repeats
+        define RIT(COUNT)
+           ital (15) above 1: COUNT "rit.";@
+        define FINE(COUNT)
+           ital (15) above 1: COUNT "fine";@
+        define SIGN(COUNT)
+	   mussym (10) above 1: COUNT "sign";@
+        define DS(COUNT)
+	  ital (15) above 1: COUNT "D. S."; @
+ 
+
+//=========================
+
+//set midi
+	midi all: 0 "tempo=95";
+
+//=========================
+
+// Verse
+
+//1
+1: 2.s; 4df;
+2: 2.s; 4da;
+
+	VS "<1. >-1|There";
+	VS "<2. >-1|There";
+	VS "<3. >-1|There";
+
+bar
+
+//2
+1: 4.df; 8cen; 4df; b-nf;
+2: 4.da; 8a-a; 4da; dna;
+
+	VS "is a place of";
+	VS "is a place of";
+	VS "is a place of";
+bar
+
+//3
+1: 4.cg; 8b-nf; 2cg;
+2: 4.ea; 8dna; 2ea;
+
+	VS "qui-et rest,";
+	VS "com-fort sweet,";
+	VS "full re-lease,";
+bar
+
+//4
+1: 4ce; 8; ; 4ca; eg;
+2: 4a-a; 8; ; 4a-e; a-a;
+
+	VS "Near to the heart of";
+	VS "Near to the heart of";	
+	VS "Near to the heart of";
+bar
+
+//5a
+1: 2.df; 4s;
+2: 2.da; 4s;
+
+	VS "God,";
+	VS "God,";
+	VS "God,";
+invisbar
+
+//5b
+1: 2.s; 4df;
+2: 2.s; 4da;
+
+	VS "A";
+	VS "A";
+	VS "A";
+bar
+
+//6
+1: 4.df; 8cen; 4df; b-nf;
+2: 4.da; 8a-a; 4da; dna;
+
+	VS "place where sin can-";
+	VS "place where we our";
+	VS "place where all is";
+bar
+
+//7
+1: 4.cg; 8b-nf; 2cg;
+2: 4.ea; 8dna; 2ea;
+
+	VS "not mo-lest,";
+	VS "Sav-iour meet,";
+	VS "joy and peace,";
+bar
+
+//8
+1: 4ce; 8ca; cg; 4df; ce;
+2: 4a-a; 8; ; 4; ;
+
+	VS "Near to the heart of";
+	VS "Near to the heart of";
+	VS "Near to the heart of";
+bar
+
+//9
+1: 2.df; 4s;
+2: 2.da; 4s;
+
+	VS "God.";
+	VS "God.";
+	VS "God.";
+dblbar
+newscore
+
+//10
+1 1: 2.s; 4d;
+1 2: 2.s; 4d;
+2: 2.s; 4df;
+
+	VS "O";
+bar
+
+//11
+1 1: 4.db; 8; 4dg; b;
+1 2: 4.s; 8; 4; 8d bm; g ebm;
+2: 4.g-g; 8; 4gb; gd+;
+
+	VS "Je-sus, blest Re-";
+bar
+
+//12
+1: 2gb; fa;
+2: 2dd+; ;
+
+	VS "deem-er,";
+bar
+
+//13
+1: 4fa; 8eg; df; 4cg; ca;
+2: 4a-c+; 8; a-a; 4; ; 
+
+	VS "Sent from the heart of";
+bar
+
+//14
+1: 2.df; 4s;
+2: 2.da; 4s;
+
+	VS "God;";
+bar
+
+//15
+1 1: 2.s; 4d;
+1 2: 2.s; 4d;
+2: 2.s; 4df;
+
+	VS "Hold";
+bar
+
+//16
+1: 4.db; 8; 4dc+; db;
+2 1: 4.g; 8; 4a; g;
+2 2: 4.g; 8; 4; ;
+
+	VS "us, who wait be-";
+bar
+
+//17
+1: 2da; df;
+2: 2df; da;
+
+	VS "fore Thee,";
+bar
+
+//18
+1 1: 4ce; 8cf; cg; 4cf; 4e;
+1 2: 4s; 8; 8; 4; 8c bm; a- ebm;
+2: 4a-a; 8a-f; a-e; 4a-a; a-g;
+
+	VS "Near to the heart of";
+bar
+
+//19
+1: 2.da-; 4s;
+2: 2.df; 4s;
+
+
+	VS "God.";
+endbar
+

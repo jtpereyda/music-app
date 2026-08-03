@@ -1,0 +1,229 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Celestial Songs For Religious Worship
+//		By B. B. Funk
+//		Published by B. B. Funk
+//		Athens, Mich.
+//		Copyright 1890
+//		Hymn No.: 4
+//		
+// Transcribed by: Ted Gatza, Jr. 10/30/2011
+// HymnsToGod.org
+
+// ****************************************
+
+top
+
+   title bold (19) "" "Saved Through The Blood" ""
+   title (2)""
+   title (11) "G - 4 - SOL" "\s(17)\f(TI)\:for\ this\ is\ my\ blood\ of\ th\^e\ covenant,\ which\ is\ poured out\ for\ many\ unto\ remi\^ssion\ of\ sins.\ -\ Mat.\ 26:28" ""   
+   title (13) "W. C. Muffitt" "" "B. B. Funk"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.5
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=-1
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1#
+
+
+staff 2
+	key=1#
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=100";
+
+//1
+1 1: 4d; 2.s;
+1 2: 4d; 2.s;
+2 1: 4d; 2.s;
+2 2: 4d; 2.s;
+
+
+			VERSE "<1. >-1|The";
+			VERSE "<2. >-1|The";
+			VERSE "<3. >-1|The";
+			VERSE "<4. >-1|Then";
+bar
+//2
+1: 4.gd; 8; 4bd;;
+2: 4.bg-; 8; 4gg-;;
+
+			VERSE "Sav-iour died on";
+			VERSE "pre-cious blood, how";
+			VERSE "pre-cious blood, so";
+			VERSE "come to-night, and";
+bar
+//3
+1: 4d+d;; 2gd;
+2: 4bg;; 2;
+
+			VERSE "Cal-va-ry;";
+			VERSE "great the cost!";
+			VERSE "free-ly given!";
+			VERSE "trust its power;";
+bar
+//4
+1: 4bd; 8gd; bd; 4d+d; 8c+a; bg;
+2 1: 4g; 8bg; g; 4bg; 8d+f; d+g;
+2 2: 4g; 8s;; 4; 8;;
+
+			VERSE "Saved through the blood of the";
+			VERSE "Saved through the blood of the";
+			VERSE "Saved through the blood of the";
+			VERSE "Saved through the blood of the";
+bar
+//5
+1 1: 2.af; 8d~; 8d;
+1 2: 2.s; 8d~; 8d;
+2 1: 2.d+d; 8d~; 8d;
+2 2: 2.s; 8d~; 8d;
+
+			VERSE "Lamb; He";
+			VERSE "Lamb; With-";
+			VERSE 2.; 8; 8; "Lamb; 'Tis the";
+			VERSE "Lamb; You";
+bar
+//7
+1: 4.gd; 8; 4bd;;
+2: 4.bg-; 8; 4gg-;;
+
+			VERSE "gave his life for";
+			VERSE "out it you'r for-";
+			VERSE "prom-ised way from";
+			VERSE "may be saved this";
+bar
+//8
+1: 4d+d;; 2gd;
+2: 4bg;; 2;
+
+			VERSE "you and me;";
+			VERSE "ev-er lost;";
+			VERSE "earth to heaven;";
+			VERSE "ver-y hour;";
+bar
+//9
+1: 4bd; 8gd; bd; 4s; 8s; s;
+2 1: 4g; 8bg; g; 4s; 8s; s;
+2 2: 4g; 8s; g; 4s; 8;;
+
+			VERSE "Saved through the";
+			VERSE "Saved through the";
+			VERSE "Saved through the";
+			VERSE "Saved through the";
+invisbar
+newscore
+
+1: 4s; 8s; s; 4d+d; 8af; bf;
+2 1: 4s; 8s; s; 4bd; 8c+d; d+d;
+2 2: 4s; 8s; s; 4s; 8;;
+
+			VERSE "blood of the";
+			VERSE "blood of the";
+			VERSE "blood of the";
+			VERSE "blood of the";
+
+bar
+//10
+1 1: 2.g; 4r;
+1 2: 2.g; 4s;
+2: 2.bg-; 4r;
+
+			VERSE "Lamb.";
+			VERSE "Lamb.";
+			VERSE "Lamb.";
+			VERSE "Lamb.";
+dblbar
+//11
+1: 8d+g; s; 2.s; 
+2: 8bg-; s; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE [c]"Sal-";
+bar
+//12
+1: 4e+g;; 4.; 8;
+2: 4c+c;; 4.; 8;
+
+			VERSE [c]"va-tion free for";
+bar
+//13
+1: 4e+g; d+g; 2;
+2: 4c+g; 4bg; 2;
+
+			VERSE [c]"you and me;";
+bar
+newscore
+//14
+1: 4bd; 8gd; 8bd; 4d+d; 8c+a; 8bg;
+2 1: 4g; 8bg; g; 4bg; 8d+f; d+g;
+2 2: 4g; 8s;; 4; 8;;
+
+			VERSE "Saved through the blood of the";
+bar
+//15
+1 1: 2.af; 4d;
+1 2: 2.s; 4d;
+2 1: 2.d+d; 4d;
+2 2: 2.s; 4d;
+
+			VERSE "Lamb; His";
+bar
+//16
+1: 4.gd; 8; 4bd;;
+2: 4.bg-; 8; 4gg-;;
+
+			VERSE "child for-ev-er";
+bar
+//17
+1: 4d+d;; 2gd;
+2: 4bg;; 2;
+
+			VERSE "I will be;";
+bar
+//18
+1: 4bd; 8gd; bd; 4d+d; 8af; bf;
+2 1: 4g; 8bg; g; 4bd; 8c+d; d+d;
+2 2: 4g; 8s; g; 4s; 8;;
+
+			VERSE "Saved through the blood of the";
+bar
+//19
+1 1: 2.g; 4s;
+1 2: 2.g; 4s;
+2: 2.bg-; 4s;
+
+			VERSE "Lamb.";
+endbar
+			

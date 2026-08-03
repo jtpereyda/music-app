@@ -1,0 +1,179 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Kingdom of Song
+//		A Collection of Songs
+//		For Sunday Schools, Young people's Societies
+//		And All Religious Services
+//		Edited By T. M. Bowdish
+//		Copyrigh by the W. W. Whitney Co.
+//		Entered at stationer's Hall, London, England
+//		Copyright 1900
+//		Hymn No.: 45
+//		
+// Transcribed by: Ted Gatza, Jr. 11/15/2011
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Nearer The Cross" ""
+   title (2)""
+   title (11) "F - 4 - MI" "\s(17)\f(TI)\:The\ cross\ of\ our\ Lord\ Jesus\ Christ.\ -\ Gal.\ 6:14 \(space)" ""   
+   title (13) "Charlotte Abbey" "" "J. H. Hall"
+ 
+//footer
+
+//   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.7
+	pad = 0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,20
+	scorepad=0
+	scale = .73
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	midi all: 0 "tempo=85";
+
+//1
+1: 4af; 8.bf; 16af; 4; 8fc bm; ca- ebm;
+2 1: 4c+f; 8.d+f; 16c+f; 4; 8a bm; f ebm;
+2 2: 4s; 8.; 16; 4; 4f;
+
+			VERSE 4; 8.; 16; 4; 4; "<1. >-1|Near-er the cross of";
+			VERSE 4; 8.; 16; 4; 4; "<2. >-1|Near-er the cross of";
+			VERSE 4; 8.; 16; 4; 4; "<3. >-1|Near-er the cross of";
+bar
+//2
+1: 2db-; 4fd; r;
+2: 2fb-; 4bb-; r;
+
+			VERSE "Je-sus";
+			VERSE "Je-sus";
+			VERSE "Je-sus";
+bar
+//3
+1: 4ca-; fc; af; c+f;
+2 1: 4f; af; c+f; c+a-;
+2 2: 4f; s;;;
+
+			VERSE "Ev-er let me";
+			VERSE "There I would a-";
+			VERSE "Let me live and";
+bar
+//4
+1: 2.ge; 4r;
+2: 2.c+c; 4r;
+			VERSE "be.";
+			VERSE "bide.";
+			VERSE "die;";
+bar
+newscore
+//5
+1: 4af; 8.bf; 16af; 4af; 8fc bm; 8ca- ebm;
+2 1: 4c+f; 8.d+f; 16c+f; 4; 8a bm; f ebm;
+2 2: 4s; 8.; 16; 4; f;
+mussym (10) above 1: 1 "sign";
+
+			VERSE 4; 8.; 16; 4; 4; "Near-er the flow-ing";
+			VERSE 4; 8.; 16; 4; 4; "There let me rest fo-";
+			VERSE 4; 8.; 16; 4; 4; "There I will find sweet";
+			lyrics below 2: 4; 8.; 16; 4; 4; "<\f(TX)D.S. -\f(PV) >-4|Near-er the flow-ing";
+bar
+//6 
+1: 2db-; 4fd; 4r;
+2: 2fb-; 4bb-; 4r;
+
+			VERSE "foun-tain,";
+			VERSE "ev-er,";
+			VERSE "ref-uge,";
+			lyrics below 2: "foun-tain,";
+bar
+//7
+1: 4ca- slur; fc; ; gc;
+2 1: 4f slur; a; ac; bc;
+2 2: 2c; 4s;;
+
+			VERSE "That cleans-eth";
+			VERSE "Near Je-sus'";
+			VERSE "And safe-ty";
+			lyrics below 2: 2; 4;;"That cleans-eth";
+bar
+//8
+1: 2.fc; 4r;
+2: 2.aff-; 4r;
+ital (13) above 1: 4 "Fine";
+
+			VERSE "me.";
+			VERSE "side.";
+			VERSE "nigh.";
+			lyrics below 2: "me.";
+dblbar
+newscore
+//9
+1 1: 4c+f; 8.d+f; 16c+f; 4c+ slur; a;
+1 2: 4s; 8.s; 16s; 2f;
+2 1: 4af; 8.bf; 16af; 4a slur; f;
+2 2: 4s; 8.s; 16s; 2f;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Near-er the cross,";
+bar
+//10
+1: 4af; 8.bf; 16af; 4af slur; fc;
+2 1: 4c+f; 8.d+f; 16c+f; 4c+ slur; a;
+2 2: 4s; 8.s; 16s; 2f;
+
+			VERSE "Near-er the cross,";
+bar
+//11
+1 1: 4c+f; 8.d+f; 16c+f; 8c+ bm; a ebm; g bm; f ebm;
+1 2: 4s; 8.; 16; 4f; 4f;
+2 1: 4af; 8.bf; 16af; 8a bm; c+ ebm; 8b bm; a ebm;
+2 2: 4s; 8.; 16; 4f; 4f;
+
+			VERSE 4; 8.; 16; 4; 4; "Near-er the cross of";
+
+bar
+//12
+1: 2af; 4ge; 4r;
+2: 2c+c; 4; r;
+ital (13) above 1: 4 "D.S.";
+
+			VERSE " Je-sus.";
+endbar
+
+title (15) "";
+   title (11) "" "Public Domain" "HymnsToGod.org"

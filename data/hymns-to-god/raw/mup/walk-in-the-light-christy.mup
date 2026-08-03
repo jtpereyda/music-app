@@ -1,0 +1,211 @@
+// Coded with Mup vs. 5.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Christian Sunday School Hymnal
+//		A Compliation of Choice Hymns and
+//		Tunes for Sunday Schools
+//		Christian Publishing Company
+//		913 Pine Street
+//		St. Louis, MO
+//		Copyright: 1883
+//		Hymn No.: 79
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/09/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "Walk In The Light" ""
+   title (2)""
+   title (11) "F - 2 - SOL" "\s(17)\f(TI)\:but\ if\ we\ walk\ in\ the\ light,\ as\ he\ is\ i\|n\ the\ light,\ we\ have\ fellowship\ one\ with another,\ and\ the\ blood\ of\ Jesus\ his\ S\|on\ cleanseth\ us\ from\ all\ sin.\ -\ 1\ John\ 1:7" ""
+   title (13) "Wilbur A. Christy" " " "Wilbur A. Christy" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=6/8
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=80";
+
+//1
+1 1: 8c; fc; gc; af;;;
+1 2: 8c; s;;;;;
+2: 8af;; bf; c+f;;;
+
+			VERSE "<1. >-1|List to the voice that is";
+			VERSE "<2. >-1|Walk in the light; it is";
+			VERSE "<3. >-1|Walk in the light; 'tis the";
+bar
+//2
+1 1: 8af; g; af; 4.c+f;
+1 2: 8s; f; s; 4.;
+2: 8c+f; bf; af; 4.;
+
+			VERSE "speak-ing in love,";
+			VERSE "Je-sus who pleads,";
+			VERSE "Sav-ior's com-mand,";
+bar
+//3
+1 1: 8d+f;;; c+f; f; g;
+1 2: 8s;;;; f;;
+2 1: 8b;;; af;; d+b-;
+2 2: 8b;;; s;;;
+
+			VERSE "Call-ing to those that are";
+			VERSE "Ear-nest-ly seek-ing to";
+			VERSE "These are the words he has";
+bar
+//4
+1: 4.af; 4ge; 8r;
+2: 4.c+c; 4; 8r;
+
+			VERSE "stray-ing;";
+			VERSE "guide you,";
+			VERSE "giv-en,";
+bar
+//5
+1 1: 8c; fc; gc; af;;;
+1 2: 8c; s;;;;;
+2: 8af;; bf; c+f;;;
+
+			VERSE "Mes-sage of mer-cy that";
+			VERSE "Wan-der-ing blind-ly in";
+			VERSE "Lead-ing us on to the";
+bar
+//6
+1 1: 8af; g; af; 4.c+f;
+1 2: 8s; f; s; 4.;
+2: 8c+f; bf; af; 4.;
+
+			VERSE "comes from a-bove,";
+			VERSE "night's gloom and shades,";
+			VERSE "long prom-ised land,";
+bar
+//7
+1 1: 8d+f;;; c+f; f; g;
+1 2: 8s;;;; f;;
+2 1: 8bb-;; bd; af;; d+b-;
+
+			VERSE "Hear what the Sav-ior is";
+			VERSE "Heed-less of dan-gers be-";
+			VERSE "Lead-ing from earth up to";
+bar
+//7
+1 1: 4af slur; 8ge; 4f; 8r;
+1 2: 4s; 8s; 4f; 8s;
+2 1: 4c+ slur; 8b; 4af; 8r;
+2 2: 4.c; 4s; 8s;
+
+			VERSE 4; 8s; 4; 8s;"say-ing.";
+			VERSE 4; 8s; 4; 8s;"side you.";
+			VERSE 4; 8s; 4; 8s;"heav-en.";
+dblbar
+//8
+1: 4.c+f tie; 8; af; bg;
+2: 8af;; bg; c+a; r; c+f;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Walk_ in the";
+			VERSE 8; 8; 8; 8; 8s; 8; "Walk in the light, O";
+bar
+//9
+1: 4.c+a tie; 4; 8r;
+2: 8af;; bg; 4c+a; 8r;
+
+			VERSE "light,_";
+			VERSE 8; 8; 8; 4; 8s; "walk in the light,";
+
+bar
+//10
+1 1: 8d+f;;; c+f; f; g;
+1 2: 8s;;;; f;;
+2 1: 8b;;; af;; d+b-;
+2 2: 8b;;; s;;;
+
+			VERSE "Fol-low the steps of the";
+bar
+//11
+1: 4.af; 4ge; 8r;
+2: 4.c+c; 4; 8r;
+
+			VERSE "Sav-ior;";
+bar
+//12
+1: 4.c+f tie; 8; af; bf;
+2: 8af;; bg; c+a; 8r; c+f;
+
+			VERSE "Walk_ in the";
+			VERSE 8; 8; 8; 8; 8s; 8; "Walk in the light, O";
+bar
+//13
+1: 4.f~c+ slur; 4fd+; 8r;
+2 1: 8af; bg; c+a; 4b; 8r;
+2 2: 8s;;; 4b; 8s;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "light,_";
+			VERSE 8; 8; 8; 4; 8s; "walk in the light,";
+bar
+//14
+1 1:8f+f; e+f; d+f; c+ bm; f ebm; g;
+1 2: 8s;;; 4f; 8;
+2: 8d+b-; c+c; bd; 4af; 8d+b-;
+
+			VERSE 8; 8; 8; 4; 8; "Walk in the light for-";
+bar
+//15
+1 1: 4a slur; 8g; 4f; 8r;
+1 2: 4.e; 4f; 8s;
+2 1: 4c+ slur; 8b; 4aff-; 8r;
+2 2: 4.c; 4s; 8;
+mussym (9) above 1: 4 "ferm";
+mussym (9) below 2: 4 "uferm";
+
+			VERSE "ev-er.";
+endbar

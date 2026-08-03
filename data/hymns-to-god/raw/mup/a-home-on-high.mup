@@ -1,0 +1,217 @@
+// !Mup vs. 6.8 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: Gospel Jewels
+//		By R. E. Hudson
+//		Cleveland.
+//		Publishing House of the 
+//		Evangelical Association	
+//		Copyright: 1890
+//		Hymn No.: 85
+
+//		
+//		
+// Transcribed by: Ted Gatza, Jr. 07/05/2012; Rev. 10/16/2021
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "A Home On High" ""
+   title (2)""
+   title (11) "F - 4 - DO" "\s(17)\f(TI)\:In\ my\ Father's\ house\ are\ many\ ma\|nsions;\ if\ it\ were\ not\ so,\ I\ would have\ told\ you;\ for\ I\ go\ to\ prepa\|re\ a\ place\ for\ you.\ -\ Jn.\ 14:2" ""
+   title (13) "Tom C. Neal, arr." " " "Tom C. Neal, 1885" 
+
+
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 3f
+	staffscale=1.0
+	scoresep=6
+	scorepad=0
+	scale = .7
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4
+	key=1&
+
+
+staff 2
+	key=1&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=110";
+
+//1
+1 1: 8f bm; g ebm; 2.s;
+1 2: 4f; 2.s;
+2 1: 8a bm; b ebm; 2.s;
+2 2: 4f; 2.s;
+
+			VERSE 4; 2.s;"<1. >-1|There";
+			VERSE 4; 2.s;"<2. >-1|Our";
+			VERSE 4; 2.s;"<3. >-1|Oh,";
+bar
+//2
+1 1: 4af;;; 8a bm; b ebm;
+1 2: 4s;;; f;
+2: c+f;;;;
+
+			VERSE 4; 4; 4; 4; "is a glo-rious";
+			VERSE 4; 4; 4; 4; "pre-cious Je-sus";
+			VERSE 4; 4; 4; 4; "come o-bey our";
+//			VERSE 4; 4; 4; 4; "come and join our"; // Original lyrics
+bar
+//3
+1: 4c+f;; af; c+f;
+2: 4af;; c+f; af;
+
+			VERSE "home on high, Where";
+			VERSE "leads us on, And";
+			VERSE "Lord to-day, The";
+//			VERSE "Ranks to-day, The"; //Original lyrics
+bar
+//4
+1: 4bg; 8af bm; ge ebm; 4af; ge;
+2: 4c+c;;; bc;
+
+			VERSE 4; 4; 4; 4; "all is bright and";
+			VERSE 4; 4; 4; 4; "he doth us de-";
+			VERSE 4; 4; 4; 4; "cross for Je-sus";
+bar
+//5
+1 1: 2.f; 8f bm; g ebm;
+1 2: 2.f; 4f;
+2 1: 2.af; 8a bm; 8b ebm;
+2 2: 2.s; 4f;
+
+			VERSE 2.; 4; "fair; And";
+			VERSE 2.; 4; "fend, He's";
+			VERSE 2.; 4; "bear; And";
+bar
+//6
+1 1: 4af;;; 8a bm; b ebm;
+1 2: 4s;;; 4f;
+2: 4c+f;;;;
+
+			VERSE 4; 4; 4; 4; "they who serve the";
+			VERSE 4; 4; 4; 4; "prom-ised (bless-ed";
+			VERSE 4; 4; 4; 4; "then a bright, un-";
+bar
+//7
+1: 4c+f;; af; c+f;
+2: 4af;; c+f; af;
+
+			VERSE "bless-ed Lord Shall";
+			VERSE "be His name!) To";
+			VERSE "fad-ing crown In";
+bar
+//8
+1: 4bg; 8af bm; ge ebm; 4af; ge;
+2: 4c+c;;; bc;
+
+			VERSE 4; 4; 4; 4; "dwell for-ev-er";
+			VERSE 4; 4; 4; 4; "keep us to the";
+			VERSE 4; 4; 4; 4; "heav-en thou shalt";
+bar
+//9
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			VERSE "there.";
+			VERSE "end!";
+			VERSE "wear!";
+dblbar
+newscore
+repeatstart
+//10
+1: 4c+f; 2.s;
+2: 4af; 2.s;
+ital (13) above 1: 1 "Chorus"; 
+ital (13) dyn above 1: 1 "f";
+
+
+			VERSE 4; 2.s; "To";
+bar
+//11
+1: 4d+f;;;;
+2 1: 4bb-;; b;;
+2 2: 4s;; 8b- bm; c ebm; d bm; e ebm;
+
+
+			VERSE "that bright home in";
+bar
+//12
+1: 2c+f; 4af; c+f;
+2: 2af; 4c+f; af;
+
+			VERSE "glo-ry The";
+bar
+//13
+1: 4bg; 8af bm; ge ebm; 4af; ge;
+2: 4c+c;;;;
+
+			VERSE 4; 4; 4; 4; "Sav-iour bids us";
+bar
+//14
+1: 2.af; 4c+f;
+2: 2.c+f; 4af;
+
+			VERSE "come; And";
+bar
+//15
+1: 4d+f;;;;
+2 1: 4bb-;; b;;
+2 2: 4s;; 8b- bm; c ebm; d bm; e ebm;
+
+			VERSE "we, that call o-";
+bar
+//16
+1: 2c+f; 4af; c+f;
+2: 2af; 4c+f; af;
+
+			VERSE "bey-ing, Art";
+bar
+//17
+1: 4bg; 8af; ge; 4af; ge;
+2: 4c+c; 8;; 4; bc;
+
+			VERSE "bound for that hap-py";
+bar
+//18
+1 1: 2.f; 4s;
+1 2: 2.f; 4s;
+2: 2.af; 4s;
+
+			VERSE "home!";
+repeatend

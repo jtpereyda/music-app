@@ -1,0 +1,219 @@
+// Mup vs.6.0 - http://www.arkkra.com
+
+
+// The hymn produced by this source code is believed to be  
+// in the public domain in the United States of America.
+
+// This source code is donated to the public domain.
+// 
+
+
+// Hymn Source: The Voice Of Melody
+//		A Collection Of Sacred Songs For The
+//		Sunday-School and Young people's and
+//		Other Devotional Meetings
+//		Edited by E. S. Lorenz
+//		United Brethren Publishing House
+//		Dayton, OH
+//		Copyright: 1899
+//		Hymn No.: 158
+//		
+// Transcribed by: Ted Gatza, Jr. 10/31/2012
+// HymnsToGod.org
+
+// ******************************************
+
+top
+
+   title bold (19) "" "The Gospel Call" ""
+   title (2)""
+   title (11) "E \(flat) - 4 - DO" "\s(17)\f(TI)\:But\ he\ said,\ Yea\ rathe\|r,\ blessed\ are\ they\ that\ hear the\ word\ of\ God,\ \|and\ keep\ it.\ -\ Lk.\ 11:28" ""   
+   title (13) "William A. Ogden" "" "Frank J. Robertson, 1899"
+ 
+footer
+
+   title (11) "" "Public Domain" "HymnsToGod.org"
+
+score
+	label=""
+	packexp = 0.0
+	packfact = 0.9
+	pad =0
+	vscheme = 2f
+	staffscale=1.0
+	scoresep=6,6
+	scorepad=0
+	scale = .72
+	lyricssize = 13
+	pageheight=9.0
+	pagewidth=6.0
+	topmargin=.200
+	bottommargin=.200
+	withfontfamily=palatino
+	noteheads = "isostri semicirc diam righttri norm rect pie"
+
+staffs=2
+	time=4/4	
+	key=3&
+
+
+staff 2
+	key=3&
+	clef=bass
+
+// ****************************************
+
+music
+	define VERSE lyrics between 1&2: @
+	define DSVERSE lyrics below 2: @
+
+	midi all: 0 "tempo=90";
+
+//1
+1 1: 8.e; 16f; 2.s;
+1 2: 8.e; 16; 2.s;
+2: 8.ge; 16ae; 2.s;
+
+			VERSE "<1. >-1|There's a";
+			VERSE "<2. >-1|'Tis a";
+			VERSE "<3. >-1|Will you";
+			
+bar
+//2
+1 1: 8.ge; 16; 8.; 16; 8.; 16fd; 8.e; 16ge;
+1 2: 8.s; 16; 8.; 16; 8.; 16; 8.e; 16s;
+2: 8.be; 16; 8.; 16; 8.; 16ae; 8.ge; 16be;
+
+			
+			VERSE "ten-der voice that whis-pers to the";
+			VERSE "mes-sage full of mean-ing to the";
+			VERSE "heed the voice of Je-sus, oh, my";
+bar
+//3
+1: 8.be; 16; 8.c+e; 16; 4be; 8.af; 16ge;
+2: 8.ge; 16; 8.aa-; 16; 4ge; 8.bd; 16; 
+
+			VERSE "soul with care oppr-est, Say-ing";
+			VERSE "sin-ner you have heard: Who will";
+			VERSE "broth-er, sis-ter, dear? Lo, he";
+bar
+//4
+1: 8.fd; 16; 8.; 16ge; 8.af; 16; 8.ge; 16fd;
+2: 8.bb-; 16; 8.; 16; 8.; 16; 8.; 16;
+
+			VERSE "\"wea-ry, heav-y lad-en, come, oh";
+			VERSE "love the bless-ed Sav-ior and be-";
+			VERSE "stand-eth wait-ing, plead-ing, to your";
+bar
+//5
+1 1 : 8.ge; 16e+g; 8.d+f; 16c+e; 4bd; 8.e; 16f;
+1 2: 8.s; 16; 8.; 16; 4; 8.e; 16;
+2: 8.be; 16; 8.; 16anf; 4bb-; 8.ge; 16ae;
+mussym (9) above 1: 3 "ferm";
+mussym (9) below 2: 3 "uferm";
+
+			VERSE "come to me and rest.\" 'Tis a";
+			VERSE "lieve his ho-ly word. Ev-er-";
+			VERSE "soul he's ver-y near. Come and";
+bar
+//6
+1 1: 8.ge; 16; 8.; 16; 8.c+e; 16be; 8.ge; 16e;
+1 2: 8.s; 16; 8.; 16; 8.; 16; 8.; 16e;
+2: 8.be; 16; 8.; 16; 8.ae; 16ge; 8.be; 16ge;
+
+			VERSE "bless-ed in-vi-ta-tion, of-fered";
+			VERSE "last-ing life is giv-en, free-ly";
+			VERSE "take the prize he of-fers, free-ly";
+bar
+//7
+1: 8.ae; 16be; 8.c+e; 16d+e; 4e+e; 8.d+b; 16c+a;
+2 1: 8.ac; 16ge; 8.a; 16b; 4c+a; 8.e+a; 16;
+2 2: 8.s; 16; 8.a; 16; 4s; 8.s; 16;
+
+			VERSE "free-ly un-to all; Will you";
+			VERSE "giv-en un-to all; Who will";
+			VERSE "of-fers un-to all; Come and";
+bar
+//8
+1 1: 8.bg; 16; 8.; 16c+a; 8.bg; 16ge; 8.e; 16f;
+1 2: 8.s; 16; 8.; 16; 8.; 16; 8.e; 16;
+2: 8.e+e; 16; 8.; 16; 8.; 16be; 8.bg-; 16c+a-;
+
+			VERSE "hear it, oh, my broth-er, and o-";
+			VERSE "hear the in-vi-ta-tion and o-";
+			VERSE "be a child of Je-sus and o-";
+bar
+//9
+1 1: 8.ge; 16af; 8.ge; 16fd; 4e; 4s;
+1 2: 8.s; 16; 8.; 16; 4e; 4s;
+2: 8.bb-; 16; 8.; 16ab-; 4ge; 4s;
+
+			VERSE "bey the Gos-pel call?";
+			VERSE "bey the Gos-pel call?";
+			VERSE "bey the Gos-pel call.";
+dblbar
+//10
+1: 8.ge; 16bg; 2.s;
+2: 4r; 2.s;
+ital (13) above 1: 1 "Chorus";
+
+			VERSE "Come, oh,";
+bar
+//11
+1: 2e+g tie; 8.; 16ge; {8ge bm; af ebm; 8bg;}3;
+2: 8.be; 16; 8.; 16; 4; 4r;
+
+			VERSE 2; 8.s; 16; {4; 8;}3; "come_ the call o-";
+			VERSE 8.; 16; 8.; 16; 4; 4s; "Come, the call o-bey,";
+bar
+//12
+1: 2c+a tie; 4; 8.; 16;
+2 1: 8.a; 16c+a; 8.e+a; 16; 4; 4r;
+2 2: 8.a; 16s; 8.; 16; 4; 4;
+
+			VERSE "bey_ Come, oh,";
+			VERSE  8.; 16; 8.; 16; 4; 4s; "come, the call o-bey.";
+bar
+//13
+1: 2f+an tie; 8.; 16c+a; {[up]8c+a bm; d+b ebm; [up]e+c+;}3;
+2: 8.c+f; 16; 8.; 16; 4; 4r;
+
+			VERSE 2; 8.s; 16; {4; 8;}3; "come,_ to Christ to-";
+			VERSE 8.; 16; 8.; 16; 4; 4s; "come to Christ to-day";
+bar
+//14
+1 1: 2d+b tie; 4; 8.c+a; 16b;
+1 2: 2s; 4; 8.; 16a;
+2 1: 8.bb-; 16; 8.; 16; 4; 8.b; 16;
+2 2: 8.s; 16; 8.; 16; 4; 8.b; 16b;
+
+			VERSE "day!_ Hear his";
+			VERSE  8.; 16; 8.; 16; 4; 8.s; 16s; "come to Christ to-day!";
+bar
+//15
+1: 2e+g tie; 8.; 16ge; {8ge bm; af ebm; bg;}3;
+2: 8.be; 16; 8.; 16; 8.; 16; {4be; 8e+e;}3;
+
+			VERSE 2; 8.s; 16; {4; 8;}3; "voice_ so sweet-ly";
+			VERSE 8.; 16; 8.; 16; 8.; 16; {4; 8;}3; "voice so sweet-ly call-ing, sweet-ly";
+bar
+//16
+1: 4c+a; 2e+a; 8.d+b; 16c+a;
+2: 4e+a; 2c+a; 8.e+a-; 16;
+
+			VERSE "call-ing, Wea-ry,";
+bar
+//17
+1 1: 4.bg; 8e; 4ge; fd;
+1 2: 4.s; 8e; 4s;;
+2: 4.e+b-; 8gb-; 4bb-; ab-;
+
+			VERSE "heav-y la-den";
+bar
+//18
+1 1: 2e; 2s;
+1 2: 2e; 2s;
+2: 2ge; 2s;
+
+			VERSE "come.";
+endbar
