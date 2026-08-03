@@ -1,10 +1,10 @@
 {
-  "$id": "https://hymn-transposer.invalid/schemas/technical-catalog-v1.json",
+  "$id": "https://transposify.invalid/schemas/technical-catalog-v1.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
   "properties": {
     "catalog_id": {
-      "const": "hymn-transposer-technical-preview"
+      "const": "transposify-technical-preview"
     },
     "catalog_revision": {
       "pattern": "^[1-9][0-9]*$",
@@ -35,7 +35,7 @@
     "schema_version",
     "source_collections"
   ],
-  "title": "Hymn Transposer technical-preview catalog",
+  "title": "Transposify technical-preview score catalog",
   "type": "object",
   "$defs": {
     "generator": {
@@ -44,7 +44,8 @@
         "name": {
           "enum": [
             "abc2xml",
-            "hymns-to-god-mup-satb"
+            "hymns-to-god-mup-satb",
+            "openscore-lieder-mxl"
           ]
         },
         "version": {
@@ -65,14 +66,29 @@
       "additionalProperties": false,
       "properties": {
         "available_lines": {
-          "const": [
-            "SATB",
-            "S",
-            "A",
-            "T",
-            "B"
+          "oneOf": [
+            {
+              "const": [
+                "SATB",
+                "S",
+                "A",
+                "T",
+                "B"
+              ]
+            },
+            {
+              "const": [
+                "SCORE"
+              ]
+            }
           ],
           "type": "array"
+        },
+        "content_type": {
+          "enum": [
+            "art_song",
+            "hymn"
+          ]
         },
         "display": {
           "$ref": "#/$defs/display"
@@ -103,6 +119,7 @@
       },
       "required": [
         "available_lines",
+        "content_type",
         "display",
         "id",
         "lyrics",
@@ -128,6 +145,22 @@
         "tune_name": {
           "minLength": 1,
           "type": "string"
+        },
+        "collection": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "composer": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "ensemble": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "lyricist": {
+          "minLength": 1,
+          "type": "string"
         }
       },
       "required": [
@@ -141,17 +174,20 @@
       "additionalProperties": false,
       "properties": {
         "available": {
-          "const": true
+          "type": "boolean"
         },
         "scope": {
-          "const": "soprano_only"
+          "enum": [
+            "none",
+            "soprano_only",
+            "vocal_parts"
+          ]
         },
         "verse_ids": {
           "items": {
-            "pattern": "^[1-9][0-9]*$",
+            "minLength": 1,
             "type": "string"
           },
-          "minItems": 1,
           "type": "array",
           "uniqueItems": true
         }
@@ -206,7 +242,7 @@
           "type": "array"
         },
         "source_declaration": {
-          "pattern": "^(copyright: public domain\\.|Copyright: Public Domain - USA)",
+          "pattern": "^(copyright: public domain\\.|Copyright: Public Domain - USA|Creative Commons Zero \\(CC0\\) 1.0 Universal$)",
           "type": "string"
         },
         "source_music_reference": {
@@ -235,13 +271,16 @@
           "$ref": "#/$defs/generator"
         },
         "media_type": {
-          "const": "application/vnd.recordare.musicxml+xml"
+          "enum": [
+            "application/vnd.recordare.musicxml",
+            "application/vnd.recordare.musicxml+xml"
+          ]
         },
         "normalization": {
           "$ref": "#/$defs/scoreNormalization"
         },
         "path": {
-          "pattern": "^scores/[a-z0-9]+(?:-[a-z0-9]+)*\\.musicxml$",
+          "pattern": "^scores/[a-z0-9]+(?:-[a-z0-9]+)*\\.(musicxml|mxl)$",
           "type": "string"
         },
         "sha256": {
@@ -341,6 +380,27 @@
           "then": {
             "required": [
               "arrangement_id",
+              "record_reference",
+              "record_url",
+              "work_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "collection_id": {
+                "const": "openscore-lieder-cc0"
+              }
+            },
+            "required": [
+              "collection_id"
+            ]
+          },
+          "then": {
+            "required": [
+              "arrangement_id",
+              "entry_path",
               "record_reference",
               "record_url",
               "work_id"

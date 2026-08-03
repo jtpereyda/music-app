@@ -1,9 +1,9 @@
 # Transposify web MVP
 
 A Next.js 16 App Router frontend for Transposify. The generic music homepage is
-served at `/`; the free hymn transposition flow is served at
-`/uses/hymn-transposer`. The catalog is intentionally local and static by
-default for the MVP.
+served at `/`; the score catalog and transposition flow is served at the legacy
+SEO path `/uses/hymn-transposer`. It includes hymns and OpenScore Lieder art
+songs. The catalog is intentionally local and static by default for the MVP.
 
 ## Run locally
 
@@ -60,16 +60,17 @@ private service binding in hosted deployments; set it manually only when
 running the two services separately.
 
 ```text
-GET /v1/hymns/o-for-a-thousand-tongues/preview.svg
+GET /v1/scores/o-for-a-thousand-tongues/preview.svg
     ?key=d-major&line=bass&clef=bass&octave=auto&page_size=letter
 
-GET /v1/hymns/o-for-a-thousand-tongues/score.pdf
+GET /v1/scores/o-for-a-thousand-tongues/score.pdf
     ?key=d-major&line=bass&clef=bass&octave=auto&page_size=letter
 ```
 
-The generated frontend catalog contains the same 869 stable IDs exposed by the
-render service. Without the environment variable, the configurator falls back to a
-clearly labeled static layout mock and explains how to connect downloads.
+The generated frontend catalog contains the same 2,225 stable IDs exposed by
+the render service: 869 hymns and 1,356 art songs. Without the environment
+variable, the configurator falls back to a clearly labeled static layout mock
+and explains how to connect downloads.
 
 ## Neon catalog metadata
 

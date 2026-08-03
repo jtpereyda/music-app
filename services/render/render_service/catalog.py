@@ -17,6 +17,7 @@ class CatalogEntry:
     hymn_id: str
     title: str
     source_path: str
+    content_type: str = "hymn"
     score_sha256: str | None = None
     original_key: str | None = None
     available_lines: tuple[str, ...] = ("SATB", "S", "A", "T", "B")
@@ -75,6 +76,7 @@ def _load_entries(catalog_path: Path) -> tuple[CatalogEntry, ...]:
                 hymn_id=item["id"],
                 title=item["title"],
                 source_path=item["score"]["path"],
+                content_type=item["content_type"],
                 score_sha256=item["score"]["sha256"],
                 original_key=item["original_key"]["name"],
                 available_lines=tuple(item["available_lines"]),
@@ -105,9 +107,9 @@ class HymnCatalog:
             entry.hymn_id: entry for entry in entries
         }
         if len(self._entries) != len(entries):
-            raise CatalogConfigurationError("Catalog hymn ids must be unique.")
+            raise CatalogConfigurationError("Catalog score IDs must be unique.")
         if any(not HYMN_ID_RE.fullmatch(entry.hymn_id) for entry in entries):
-            raise CatalogConfigurationError("Catalog hymn ids must be stable slugs.")
+            raise CatalogConfigurationError("Catalog score IDs must be stable slugs.")
 
     def entries(self) -> tuple[CatalogEntry, ...]:
         return tuple(self._entries.values())

@@ -58,14 +58,34 @@ class CatalogTests(unittest.TestCase):
     def test_expanded_catalog_and_safety_status(self) -> None:
         ids = {item["id"] for item in self.catalog["items"]}
         self.assertTrue(LANDMARK_IDS <= ids)
-        self.assertEqual(self.catalog["catalog_revision"], "6")
-        self.assertEqual(len(self.catalog["items"]), 869)
-        for item in self.catalog["items"]:
+        self.assertEqual(self.catalog["catalog_id"], "transposify-technical-preview")
+        self.assertEqual(self.catalog["catalog_revision"], "7")
+        self.assertEqual(len(self.catalog["items"]), 2225)
+        hymns = [
+            item for item in self.catalog["items"] if item["content_type"] == "hymn"
+        ]
+        art_songs = [
+            item
+            for item in self.catalog["items"]
+            if item["content_type"] == "art_song"
+        ]
+        self.assertEqual(len(hymns), 869)
+        self.assertEqual(len(art_songs), 1356)
+        for item in hymns:
             self.assertEqual(item["rights"]["status"], RIGHTS_STATUS)
             self.assertEqual(item["lyrics"]["scope"], "soprano_only")
             self.assertEqual(item["available_lines"], ["SATB", "S", "A", "T", "B"])
             self.assertTrue(item["display"]["text_author"])
             self.assertTrue(item["display"]["tune_name"])
+        for item in art_songs:
+            self.assertEqual(item["rights"]["status"], RIGHTS_STATUS)
+            self.assertEqual(
+                item["rights"]["source_declaration"],
+                "Creative Commons Zero (CC0) 1.0 Universal",
+            )
+            self.assertIn(item["lyrics"]["scope"], {"vocal_parts", "none"})
+            self.assertEqual(item["available_lines"], ["SCORE"])
+            self.assertTrue(item["display"]["composer"])
 
     def test_import_report_accounts_for_every_source_record(self) -> None:
         report = json.loads(
@@ -74,12 +94,13 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["summary"],
             {
-                "catalog_items": 869,
-                "exact_public_domain_candidates": 875,
+                "catalog_items": 2225,
+                "exact_public_domain_candidates": 2231,
                 "hymns_to_god_items": 592,
+                "openscore_lieder_items": 1356,
                 "rights_holds": 20,
                 "source_holds": 0,
-                "source_records": 895,
+                "source_records": 2251,
                 "structure_holds": 6,
                 "supplement_items": 8,
             },
@@ -106,6 +127,49 @@ class CatalogTests(unittest.TestCase):
                 "structure_holds": 0,
             },
         )
+        self.assertEqual(
+            report["source_breakdown"]["openscore_lieder"],
+            {
+                "catalog_items": 1356,
+                "exact_public_domain_candidates": 1356,
+                "indexed_records": 1356,
+                "source_records": 1356,
+                "structure_holds": 0,
+                "unindexed_mxl_files": 106,
+            },
+        )
+
+    def test_openscore_lieder_pin_and_landmark_keys(self) -> None:
+        manifest = json.loads(
+            (CATALOG_ROOT.parent / "data" / "openscore-lieder" / "manifest.json")
+            .read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            manifest["pinned_commit"],
+            "6b2dc542ce2e8aa4b78c8ee62103b210efc07015",
+        )
+        self.assertEqual(
+            manifest["archive_sha256"],
+            "e925dd89f9dc2ac16f2aff49470d2c1f2dec9977bb4059172cbcbc7a4b98958c",
+        )
+        self.assertEqual(manifest["summary"]["indexed_records"], 1356)
+        self.assertEqual(manifest["summary"]["promoted_records"], 1356)
+        self.assertEqual(manifest["summary"]["unindexed_mxl_files"], 106)
+
+        by_id = {item["id"]: item for item in self.catalog["items"]}
+        expected = {
+            "lieder-5701612": ("Wiegenlied", "E-flat major"),
+            "lieder-6810863": ("Après un rêve", "C minor"),
+            "lieder-7111114": ("Gretchen am Spinnrade, D.118", "D minor"),
+            "lieder-5016466": ("Der Lindenbaum", "E major"),
+        }
+        for item_id, (title, key_name) in expected.items():
+            item = by_id[item_id]
+            self.assertEqual(item["title"], title)
+            self.assertEqual(item["original_key"]["name"], key_name)
+            self.assertEqual(item["source"]["work_id"], item_id)
+            self.assertEqual(item["source"]["arrangement_id"], item_id)
+            self.assertTrue(item["source"]["entry_path"].endswith(f"lc{item_id.removeprefix('lieder-')}.mxl"))
 
     def test_hymns_to_god_work_and_arrangement_identity_is_preserved(self) -> None:
         hymns_to_god = [

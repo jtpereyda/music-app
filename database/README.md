@@ -5,8 +5,8 @@ under `catalog/scores`.
 
 The initial schema contains:
 
-- a mirror of catalog identities, score hashes, source metadata, and current
-  publication state;
+- a mirror of catalog identities, hymn/art-song content types, score hashes,
+  source metadata, and current publication state;
 - separate text, translation, tune, and setting rights reviews;
 - reproducible render-QA records;
 - provider-neutral access grants for future Stripe/manual entitlements; and
@@ -26,6 +26,10 @@ psql "$DATABASE_URL" -v ON_ERROR_STOP=1 \
   -f database/migrations/0001_initial.sql
 psql "$DATABASE_URL" -v ON_ERROR_STOP=1 \
   -f database/migrations/0002_octave_placement.sql
+psql "$DATABASE_URL" -v ON_ERROR_STOP=1 \
+  -f database/migrations/0003_seo_tracking.sql
+psql "$DATABASE_URL" -v ON_ERROR_STOP=1 \
+  -f database/migrations/0004_general_score_catalog.sql
 
 python database/scripts/catalog_seed.py \
   | psql "$DATABASE_URL" -v ON_ERROR_STOP=1

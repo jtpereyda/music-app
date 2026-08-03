@@ -11,7 +11,7 @@ export default function NotFound() {
           That page missed its entrance.
         </h1>
         <p className="mx-auto mt-4 max-w-md text-sm leading-6 text-ink/55">
-          Return to Transposify, or open the live hymn tool and make an
+          Return to Transposify, or open the live score tool and make an
           edition.
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
@@ -25,7 +25,7 @@ export default function NotFound() {
             href="/uses/hymn-transposer"
             className="inline-flex rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-cream transition hover:-translate-y-px hover:bg-ink/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2"
           >
-            Open hymn transposer
+            Open score transposer
           </Link>
         </div>
       </div>

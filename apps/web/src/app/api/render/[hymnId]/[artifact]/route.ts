@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
-import { hymns } from "@/lib/catalog";
+import { catalogItems } from "@/lib/catalog";
 import { recordDownloadEvent } from "@/lib/download-events.server";
 
 const renderApiUrl = (
   process.env.RENDER_API_URL ?? process.env.NEXT_PUBLIC_RENDER_API_URL
 )?.replace(/\/$/, "");
-const hymnIds = new Set(hymns.map((hymn) => hymn.id));
+const scoreIds = new Set(catalogItems.map((item) => item.id));
 const artifacts = new Set(["preview.svg", "score.pdf"]);
 const forwardedParameters = new Set([
   "key",
@@ -27,7 +27,7 @@ export async function GET(request: NextRequest, context: RouteContext) {
   const startedAt = performance.now();
   const requestId = crypto.randomUUID();
   const { hymnId, artifact } = await context.params;
-  if (!hymnIds.has(hymnId) || !artifacts.has(artifact)) {
+  if (!scoreIds.has(hymnId) || !artifacts.has(artifact)) {
     return NextResponse.json({ detail: "Render artifact not found." }, { status: 404 });
   }
   if (!renderApiUrl) {
@@ -38,7 +38,7 @@ export async function GET(request: NextRequest, context: RouteContext) {
   }
 
   const upstreamUrl = new URL(
-    `/v1/hymns/${encodeURIComponent(hymnId)}/${artifact}`,
+    `/v1/scores/${encodeURIComponent(hymnId)}/${artifact}`,
     `${renderApiUrl}/`,
   );
   for (const [name, value] of request.nextUrl.searchParams) {
@@ -54,6 +54,7 @@ export async function GET(request: NextRequest, context: RouteContext) {
       "content-type",
       "content-disposition",
       "etag",
+      "x-score-id",
       "x-hymn-id",
       "x-page-count",
       "x-octave-algorithm",

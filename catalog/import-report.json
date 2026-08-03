@@ -1,5 +1,5 @@
 {
-  "catalog_revision": "6",
+  "catalog_revision": "7",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
@@ -12,6 +12,15 @@
         "version": "2"
       },
       "mup_version": "7.2"
+    },
+    "openscore_lieder": {
+      "canonical_format": "compressed MusicXML",
+      "generator": {
+        "name": "openscore-lieder-mxl",
+        "version": "1"
+      },
+      "mode_inference": "relative-key-profile-v1",
+      "pinned_commit": "6b2dc542ce2e8aa4b78c8ee62103b210efc07015"
     },
     "satb_normalizations": {
       "name": "open-hymnal-satb-normalizer",
@@ -225,6 +234,14 @@
       "source_records": 594,
       "structure_holds": 0
     },
+    "openscore_lieder": {
+      "catalog_items": 1356,
+      "exact_public_domain_candidates": 1356,
+      "indexed_records": 1356,
+      "source_records": 1356,
+      "structure_holds": 0,
+      "unindexed_mxl_files": 106
+    },
     "split_zip": {
       "archive_exact_public_domain_candidates": 285,
       "archive_records": 306,
@@ -232,12 +249,13 @@
     }
   },
   "summary": {
-    "catalog_items": 869,
-    "exact_public_domain_candidates": 875,
+    "catalog_items": 2225,
+    "exact_public_domain_candidates": 2231,
     "hymns_to_god_items": 592,
+    "openscore_lieder_items": 1356,
     "rights_holds": 20,
     "source_holds": 0,
-    "source_records": 895,
+    "source_records": 2251,
     "structure_holds": 6,
     "supplement_items": 8
   }

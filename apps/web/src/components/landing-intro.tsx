@@ -10,14 +10,14 @@ export function LandingIntro() {
             Transposify flagship · free beta
           </div>
           <h1 className="max-w-4xl text-balance text-[clamp(2.8rem,7vw,6.7rem)] font-medium leading-[0.92] tracking-[-0.065em] text-ink">
-            The hymn you need,{" "}
+            The score you need,{" "}
             <span className="text-coral">in the key you need.</span>
           </h1>
           <p className="mt-7 max-w-2xl text-pretty text-base leading-7 text-ink/62 sm:text-lg sm:leading-8">
-            Choose a traditional hymn from the fixed catalog, transpose it,
-            select any SATB line and clef, then download a clean edition built
-            for the musicians in front of you. Arbitrary score uploads are not
-            supported yet.
+            Choose a hymn or classical art song from the fixed catalog,
+            transpose the complete score, and download a clean edition built
+            for the musicians in front of you. Hymns also offer individual
+            SATB lines and selectable clefs. Arbitrary uploads are not supported yet.
           </p>
         </div>
         <div className="hidden pb-2 lg:block" aria-hidden="true">

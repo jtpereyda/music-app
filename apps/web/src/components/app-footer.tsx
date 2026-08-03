@@ -11,6 +11,12 @@ export function AppFooter() {
           </Link>
           <Link
             className="transition-colors hover:text-ink"
+            href="/uses/hymn-transposer#make-an-edition"
+          >
+            Score catalog
+          </Link>
+          <Link
+            className="transition-colors hover:text-ink"
             href="/hymns"
           >
             Hymns
@@ -25,7 +31,7 @@ export function AppFooter() {
             className="transition-colors hover:text-ink"
             href="/uses/hymn-transposer"
           >
-            Transposer
+            Score transposer
           </Link>
           <span className="font-mono text-[10px] uppercase tracking-[0.15em]">
             Technical preview

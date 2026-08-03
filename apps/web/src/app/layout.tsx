@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: siteTitleTemplate,
   },
   description:
-    "Turn structured scores into practical editions. Try Transposify’s live hymn tool to choose a key, SATB line, clef, and print-ready page size.",
+    "Turn structured hymns and classical art songs into practical editions in the key and page size your musicians need.",
   applicationName: siteName,
   category: "music",
   keywords: [
@@ -28,6 +28,8 @@ export const metadata: Metadata = {
     "sheet music transposer",
     "hymn sheet music",
     "hymn transposer",
+    "art song transposer",
+    "lieder sheet music",
     "SATB",
     "bass clef hymn",
   ],
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
     siteName,
     title: defaultSiteTitle,
     description:
-      "Printable hymn sheet music in the key, voice, and clef your musician needs.",
+      "Printable hymns and classical art songs in the key your musician needs.",
     url: "/",
   },
 };

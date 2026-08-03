@@ -9,6 +9,8 @@ CREATE TABLE IF NOT EXISTS app.catalog_hymns (
         CHECK (catalog_revision > 0),
     title text NOT NULL
         CHECK (length(btrim(title)) > 0),
+    content_type text NOT NULL DEFAULT 'hymn'
+        CHECK (content_type IN ('hymn', 'art_song')),
     score_path text NOT NULL UNIQUE,
     score_sha256 text NOT NULL UNIQUE
         CHECK (score_sha256 ~ '^[0-9a-f]{64}$'),
@@ -21,10 +23,10 @@ CREATE TABLE IF NOT EXISTS app.catalog_hymns (
     available_lines text[] NOT NULL
         CHECK (
             cardinality(available_lines) > 0
-            AND available_lines <@ ARRAY['SATB', 'S', 'A', 'T', 'B']::text[]
+            AND available_lines <@ ARRAY['SCORE', 'SATB', 'S', 'A', 'T', 'B']::text[]
         ),
     lyrics_scope text NOT NULL
-        CHECK (lyrics_scope IN ('soprano_only', 'all_lines', 'none')),
+        CHECK (lyrics_scope IN ('soprano_only', 'vocal_parts', 'all_lines', 'none')),
     source_rights_status text NOT NULL,
     publication_status text NOT NULL DEFAULT 'technical_preview'
         CHECK (
@@ -88,7 +90,7 @@ CREATE TABLE IF NOT EXISTS app.render_qa_reviews (
         CHECK (score_sha256 ~ '^[0-9a-f]{64}$'),
     renderer_version text NOT NULL,
     line text NOT NULL
-        CHECK (line IN ('satb', 'soprano', 'alto', 'tenor', 'bass')),
+        CHECK (line IN ('score', 'satb', 'soprano', 'alto', 'tenor', 'bass')),
     target_key text NOT NULL,
     clef text NOT NULL
         CHECK (clef IN ('original', 'treble', 'bass', 'alto', 'tenor', 'treble-8vb')),
@@ -142,7 +144,7 @@ CREATE TABLE IF NOT EXISTS app.download_events (
         REFERENCES app.catalog_hymns(id),
     target_key text NOT NULL,
     line text NOT NULL
-        CHECK (line IN ('satb', 'soprano', 'alto', 'tenor', 'bass')),
+        CHECK (line IN ('score', 'satb', 'soprano', 'alto', 'tenor', 'bass')),
     clef text NOT NULL
         CHECK (clef IN ('original', 'treble', 'bass', 'alto', 'tenor', 'treble-8vb')),
     page_size text NOT NULL

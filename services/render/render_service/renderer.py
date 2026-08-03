@@ -37,6 +37,7 @@ class PipelineRenderer:
                 source,
                 output_dir,
                 line_name=parameters.line.value,
+                source_key_name=parameters.source_key_name,
                 target_key_name=KEY_TO_MUSIC21[parameters.key],
                 clef_name=parameters.clef.value,
                 octave_placement=parameters.octave.value,

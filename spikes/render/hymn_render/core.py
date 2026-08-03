@@ -28,7 +28,7 @@ import verovio
 from hymn_render import __version__
 
 
-LINE_NAMES = ("satb", "soprano", "alto", "tenor", "bass")
+LINE_NAMES = ("score", "satb", "soprano", "alto", "tenor", "bass")
 PART_INDEX = {"soprano": 0, "alto": 1, "tenor": 2, "bass": 3}
 OCTAVE_PLACEMENTS = ("auto", "original", "up", "down")
 OCTAVE_ALGORITHM_VERSION = "staff-position-majority-v1"
@@ -143,6 +143,18 @@ def _target_key(value: str, source: key.Key) -> key.Key:
     return destination
 
 
+def _named_key(value: str) -> key.Key:
+    normalized = value.strip()
+    try:
+        tonic_name, mode = normalized.rsplit(maxsplit=1)
+    except ValueError as exc:
+        raise RenderError(f"Invalid catalog source key {value!r}.") from exc
+    if mode.lower() not in {"major", "minor"}:
+        raise RenderError(f"Invalid catalog source key mode {mode!r}.")
+    music21_tonic = tonic_name.replace("-flat", "-").replace("-sharp", "#")
+    return key.Key(music21_tonic, mode.lower())
+
+
 def _nearest_transposition(source: key.Key, destination: key.Key) -> interval.Interval:
     """Choose the enharmonically correct target tonic in the nearest octave."""
     source_tonic = copy.deepcopy(source.tonic)
@@ -248,7 +260,7 @@ def _resolve_octave_shift(
             f"Unknown octave placement {octave_placement!r}; choose from "
             f"{OCTAVE_PLACEMENTS}."
         )
-    if line_name == "satb":
+    if line_name in {"score", "satb"}:
         if octave_placement in {"up", "down"}:
             raise RenderError(
                 "Explicit octave shifts are available only for individual lines."
@@ -291,7 +303,8 @@ def _prepare_engraving(score: stream.Score, line_name: str) -> None:
     # The source's generic MIDI-piano instrument leaks into one staff label.
     # Tempo glyphs render through an embedded SMuFL webfont that CairoSVG does
     # not consume reliably, so the print view intentionally omits them.
-    _remove_elements(score, instrument.Instrument)
+    if line_name != "score":
+        _remove_elements(score, instrument.Instrument)
     _remove_elements(score, tempo.MetronomeMark)
     if score.metadata is not None and score.metadata.title:
         # music21 otherwise writes the input filename as movement-title, which
@@ -301,14 +314,14 @@ def _prepare_engraving(score: stream.Score, line_name: str) -> None:
         for part in score.parts:
             part.partName = ""
             part.partAbbreviation = ""
-    else:
+    elif line_name != "score":
         part = score.parts[0]
         part.partName = line_name.title()
         part.partAbbreviation = line_name[0].upper()
 
 
 def _select_line(score: stream.Score, line_name: str) -> stream.Score:
-    if line_name == "satb":
+    if line_name in {"score", "satb"}:
         return copy.deepcopy(score)
     voiced = score.voicesToParts()
     if len(voiced.parts) < 4:
@@ -345,6 +358,7 @@ def transform_musicxml(
     input_path: Path,
     *,
     line_name: str = "satb",
+    source_key_name: str | None = None,
     target_key_name: str | None = None,
     clef_name: str = "original",
     octave_placement: str = "original",
@@ -361,12 +375,18 @@ def transform_musicxml(
             f"Unknown octave placement {octave_placement!r}; choose from "
             f"{OCTAVE_PLACEMENTS}."
         )
+    if line_name == "score" and clef_name != "original":
+        raise RenderError("Full scores preserve their original clefs.")
 
     parsed = converter.parse(str(input_path))
     if not isinstance(parsed, stream.Score):
         raise RenderError("MusicXML input did not parse as a score.")
 
-    source_key = _first_key(parsed)
+    source_key = (
+        _named_key(source_key_name)
+        if source_key_name is not None
+        else _first_key(parsed)
+    )
     all_pitches = pitch_fingerprint(parsed)
     selected = _select_line(parsed, line_name)
     selected_pitches = pitch_fingerprint(selected)
@@ -553,6 +573,7 @@ def run_pipeline(
     output_dir: Path,
     *,
     line_name: str = "satb",
+    source_key_name: str | None = None,
     target_key_name: str | None = None,
     clef_name: str = "original",
     octave_placement: str = "original",
@@ -565,6 +586,7 @@ def run_pipeline(
     result = transform_musicxml(
         input_path,
         line_name=line_name,
+        source_key_name=source_key_name,
         target_key_name=target_key_name,
         clef_name=clef_name,
         octave_placement=octave_placement,

@@ -4,12 +4,12 @@ const capabilities = [
   {
     number: "01",
     label: "Find",
-    copy: "Choose from the curated technical-preview hymn catalog.",
+    copy: "Choose a hymn or classical art song from the structured catalog.",
   },
   {
     number: "02",
     label: "Fit",
-    copy: "Set the key, full SATB or a single line, clef, pitch register, and page size.",
+    copy: "Set the key and page size; hymn scores also support individual lines and clefs.",
   },
   {
     number: "03",
@@ -29,21 +29,21 @@ export function FlagshipUseCase() {
               Live flagship use case
             </div>
             <h2 className="mt-4 max-w-lg text-balance text-4xl font-medium leading-[1] tracking-[-0.05em] text-ink sm:text-6xl">
-              Hymn editions that meet the moment.
+              Score editions that meet the moment.
             </h2>
           </div>
           <div className="max-w-2xl lg:justify-self-end">
             <p className="text-base leading-7 text-ink/58">
               A rehearsal should not stall because the available score is in
               the wrong key or the useful line is buried in a full arrangement.
-              The Transposify hymn tool rebuilds the edition from structured
+              Transposify rebuilds each edition from structured
               music data instead of stretching or relabeling a scan.
             </p>
             <Link
               href="/uses/hymn-transposer"
               className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue underline decoration-blue/25 underline-offset-4 transition hover:decoration-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4"
             >
-              Open the live hymn transposer
+              Open the live sheet-music transposer
               <span aria-hidden="true">→</span>
             </Link>
           </div>

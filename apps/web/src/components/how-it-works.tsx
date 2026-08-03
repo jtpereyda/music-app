@@ -1,13 +1,13 @@
 const steps = [
   {
     number: "01",
-    title: "Find the hymn",
-    copy: "Search the curated technical-preview catalog, not a folder of scanned PDFs.",
+    title: "Find the score",
+    copy: "Search hymns and classical art songs in the structured catalog, not a folder of scanned PDFs.",
   },
   {
     number: "02",
     title: "Shape the edition",
-    copy: "Choose the key, SATB line, clef, pitch register, and paper size that suit the player or singer.",
+    copy: "Choose the key and paper size. Hymns also offer individual SATB lines, clefs, and pitch registers.",
   },
   {
     number: "03",
@@ -23,7 +23,7 @@ export function HowItWorks() {
         <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-coral">
-              How the hymn tool works
+              How the transposer works
             </p>
             <h2 className="mt-4 max-w-md text-4xl font-medium leading-[1.02] tracking-[-0.045em] sm:text-5xl">
               New notation, not a stretched scan.

@@ -1,100 +1,58 @@
 # Catalog expansion
 
-## Catalog revision 5
+## Catalog revision 7
 
-The implemented catalog contains 290 score records:
+The implemented catalog contains 2,225 scores:
 
-- 269 compatible records from the pinned combined ABC source; and
-- eight compatible, non-duplicate records from the pinned split ZIP; and
-- 13 records from the first HymnsToGod public-domain tranche.
+- 869 public-domain hymn arrangements from the pinned Open Hymnal and
+  HymnsToGod sources; and
+- 1,356 CC0 classical art-song scores from the indexed OpenScore Lieder corpus.
 
-The Open Hymnal portion recovers seven of the former structural holds with an audited,
-versioned SATB normalizer. It splits combined dyad notation into two aligned
-voice timelines for six records, removes one empty converter-created part, and
-repairs one skipped lower-staff measure number by aligning the existing measure
-sequence.
-The six remaining holds are genuinely non-SATB arrangements with 3, 5, 6, or 7
-voices. Supporting those would require generalized part selection rather than
-guessing which musical lines to discard. Two remaining split-ZIP additions
-also need generalized part handling.
+All existing hymn IDs and hymn-specific landing pages remain stable. The
+catalog, edition builder, search UI, render routes, and database constraints
+now distinguish generic scores from hymns. Hymns retain SATB and individual
+voice options. Art songs expose the complete encoded score so voice and piano
+transpose together.
 
-## HymnsToGod source policy
+## OpenScore Lieder result
 
-For this project, an item in the HymnsToGod public-domain collection whose
-individual page says `Public Domain - USA` is eligible for catalog ingestion.
-CC0 is not required. The importer must still preserve the evidence behind that
-decision:
+The import pins repository commit
+`6b2dc542ce2e8aa4b78c8ee62103b210efc07015` and verifies the downloaded archive
+against SHA-256
+`e925dd89f9dc2ac16f2aff49470d2c1f2dec9977bb4059172cbcbc7a4b98958c`.
+The repository contains 1,462 MXL files, but the ingest boundary is the 1,356
+rows in its score metadata table. All 1,356 indexed rows promote; the 106
+unindexed files are reported and excluded.
 
-- the individual hymn page and source-file URLs;
-- the displayed public-domain declaration;
-- retrieval time and raw source hash;
-- credited lyricist, composer, arranger, and tune name; and
-- every transformation hash through canonical MusicXML.
-
-Creative Commons and conditional-copyright sections remain separate inputs and
-must not enter through the public-domain path.
-
-The source list is:
-<https://hymnstogod.org/Hymns-PD/ZZ-CompletePDHymnList.html>
-
-## First HymnsToGod tranche result
-
-The first audit covered 17 high-recognition titles from the source's
-public-domain index.
-
-Thirteen passed both the rights and SATB structure gates:
-
-1. Are You Washed in the Blood?
-2. At Calvary
-3. Count Your Blessings
-4. Great Is Thy Faithfulness
-5. Have Thine Own Way, Lord
-6. Higher Ground
-7. More About Jesus
-8. Near the Cross
-9. Praise Him! Praise Him!
-10. Rejoice, the Lord Is King
-11. 'Tis So Sweet to Trust in Jesus
-12. When We All Get to Heaven
-13. Wonderful Words of Life
-
-`I Surrender All` is a rights hold: it appears in the complete public-domain
-index, but its individual page says `Copyright: Unknown - USA`. `Softly and
-Tenderly`, `Stand Up, Stand Up for Jesus!`, and `There Is Power in the Blood`
-are structure holds because their arrangements contain more than four
-principal musical lines.
-
-The importer uses the editable Mup source. Official Mup 7.2 expands macros, and
-the versioned parser reads notation directly from the expanded statements.
-MIDI was used as an independent pitch-sequence check, not as an interchange
-format, because ordinary Mup spaces are collapsed in MIDI. Every imported
-source-track pitch sequence matched the Mup-generated MIDI. All 13 imported
-scores also rendered successfully as SATB PDFs.
-
-## Ingest acceptance checks
-
-Each candidate passes:
-
-1. source-page classification as `Public Domain - USA`;
-2. deterministic MUP download and raw hash capture;
-3. conversion to parseable, untransposed MusicXML;
-4. explicit part, staff, voice, key, and lyric inventory;
-5. render checks for the full score and every advertised extracted line; and
-6. a rendered-page visual check.
+The MXL artifacts are copied byte-for-byte. Each item records its MuseScore
+score ID, actual path at the pinned commit, source URL, work and arrangement
+identity, source hash, composer, lyricist, collection, ensemble, lyrics scope,
+and original key. Stable filename IDs safely reconcile several upstream folder
+renames without treating folder text as musical identity.
 
 ## Mode-preserving transposition
 
-The transposition pipeline now supports major and minor source scores using the
-same operation. Tonic-only destinations inherit the source mode. The API and
-web app expose 15 conventional destinations for each mode, filter the selector
-to the score's mode, and reject explicit major-to-minor or minor-to-major
-requests. No mode-conversion feature is implied.
+Major and minor scores use the same transposition operation. The UI offers only
+destination keys with the source mode, and the shared renderer rejects explicit
+major-to-minor or minor-to-major requests. OpenScore MusicXML does not always
+declare whether a signature represents the relative major or minor. The import
+therefore records explicit upstream modes when present and otherwise applies a
+versioned pitch-profile inference. That catalog key is passed to the renderer
+as the source-key authority.
 
-## Non-hymn sequence
+## Arrangement identity
 
-After generalized score metadata and arbitrary output parts are available:
+The schema retains separate `work_id` and `arrangement_id` fields. This already
+supports multiple HymnsToGod settings of one hymn and allows later OpenScore
+sources to add another edition without overwriting an existing catalog route.
+The present Lieder snapshot has one promoted arrangement for each indexed
+MuseScore score ID.
 
-1. pilot 20–30 CC0 OpenScore Orchestra melody scores as `Classical Themes`;
-2. pilot voice-and-piano transposition with OpenScore Lieder; and
-3. curate corrected Bach chorales rather than bulk-importing the known
-   accidental-conversion errors.
+## Next expansion candidates
+
+The next useful tranche is non-vocal classical material with similarly strong
+machine-readable licensing and source identity. A focused pilot from CC0
+OpenScore Orchestra would test orchestral or melody-only score shapes without
+weakening the current fail-closed ingest boundary. Bach chorales remain a
+curation project rather than a bulk import because known conversions require
+musical correction.

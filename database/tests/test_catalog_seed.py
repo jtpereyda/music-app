@@ -15,6 +15,8 @@ def test_seed_contains_every_catalog_id() -> None:
         assert f"'{item['id']}'" in sql
     assert "'hymns-to-god-public-domain-usa'" in sql
     assert "'great-is-thy-faithfulness'" in sql
+    assert "'lieder-6810863'" in sql
+    assert "'art_song'" in sql
 
 
 def test_seed_is_idempotent_and_does_not_override_publication_status() -> None:

@@ -1,4 +1,4 @@
-import { generatedHymns } from "@/lib/catalog.generated";
+import { generatedCatalogItems } from "@/lib/catalog.generated";
 
 export const keys = [
   { value: "c-flat-major", label: "C♭ major" },
@@ -34,6 +34,7 @@ export const keys = [
 ] as const;
 
 export const outputOptions = [
+  { value: "score", label: "Full score", shortLabel: "Score" },
   { value: "satb", label: "Full SATB", shortLabel: "SATB" },
   { value: "soprano", label: "Soprano line", shortLabel: "S" },
   { value: "alto", label: "Alto line", shortLabel: "A" },
@@ -68,6 +69,7 @@ export type OutputPart = (typeof outputOptions)[number]["value"];
 export type Clef = (typeof clefOptions)[number]["value"];
 export type OctavePlacement = (typeof octavePlacementOptions)[number]["value"];
 export type PageSize = (typeof pageSizes)[number]["value"];
+export type ContentType = "hymn" | "art_song";
 
 export interface EditionConfig {
   targetKey: TargetKey;
@@ -77,9 +79,10 @@ export interface EditionConfig {
   pageSize: PageSize;
 }
 
-export interface Hymn {
+export interface CatalogItem {
   id: string;
   slug: string;
+  contentType: ContentType;
   workId: string;
   arrangementId: string;
   arrangementLabel: string;
@@ -87,6 +90,10 @@ export interface Hymn {
   textAuthor: string;
   tuneName: string;
   meter: string;
+  composer: string;
+  lyricist: string;
+  collectionTitle: string;
+  ensemble: string;
   originalKey: TargetKey;
   sourceLabel: string;
   availableLines: readonly OutputPart[];
@@ -97,29 +104,42 @@ export interface Hymn {
   publicationStatus: string;
 }
 
-const satbLines: readonly OutputPart[] = [
-  "satb",
-  "soprano",
-  "alto",
-  "tenor",
-  "bass",
-];
+// Backward-compatible type name for hymn-specific landing-page modules.
+export type Hymn = CatalogItem;
 
-const sopranoLyrics: readonly OutputPart[] = ["satb", "soprano"];
+export const catalogItems: readonly CatalogItem[] = generatedCatalogItems
+  .map((item) => ({
+    ...item,
+    contentType: item.contentType as ContentType,
+    originalKey: item.originalKey as TargetKey,
+    availableLines: item.availableLines as readonly OutputPart[],
+    lyricsAvailableFor: item.lyricsAvailableFor as readonly OutputPart[],
+  }))
+  .sort(
+    (left, right) =>
+      left.title.localeCompare(right.title) ||
+      left.composer.localeCompare(right.composer) ||
+      left.id.localeCompare(right.id),
+  );
 
-export const hymns: readonly Hymn[] = generatedHymns.map((hymn) => ({
-  ...hymn,
-  originalKey: hymn.originalKey as TargetKey,
-  sourceLabel: hymn.sourceLabel,
-  availableLines: satbLines,
-  lyricsAvailableFor: sopranoLyrics,
-  catalogRevision: 6,
-  rightsStatus: "technical_candidate_not_production_approved",
-  publicationStatus: "technical_preview",
-}));
+export const hymns: readonly Hymn[] = catalogItems.filter(
+  (item) => item.contentType === "hymn",
+);
+
+export const artSongs: readonly CatalogItem[] = catalogItems.filter(
+  (item) => item.contentType === "art_song",
+);
 
 export function getHymnBySlug(slug: string): Hymn | undefined {
   return hymns.find((hymn) => hymn.slug === slug);
+}
+
+export function getDefaultOutput(item: CatalogItem): OutputPart {
+  return item.availableLines.includes("score") ? "score" : "satb";
+}
+
+export function getContentTypeLabel(contentType: ContentType): string {
+  return contentType === "art_song" ? "Art song" : "Hymn";
 }
 
 export function getKeyLabel(value: TargetKey): string {

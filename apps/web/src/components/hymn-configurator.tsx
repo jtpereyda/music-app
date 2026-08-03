@@ -11,6 +11,7 @@ import {
 } from "@/components/preview-sheet";
 import {
   clefOptions,
+  getDefaultOutput,
   getKeyLabel,
   getKeyMode,
   getKeysForMode,
@@ -87,7 +88,7 @@ export function HymnConfigurator({
     initialEdition?.targetKey ?? initialHymn.originalKey,
   );
   const [outputPart, setOutputPart] = useState<OutputPart>(
-    initialEdition?.outputPart ?? "satb",
+    initialEdition?.outputPart ?? getDefaultOutput(initialHymn),
   );
   const [clef, setClef] = useState<Clef>(
     initialEdition?.clef ?? "original",
@@ -108,8 +109,8 @@ export function HymnConfigurator({
       ? "Your edition is ready to configure."
       : "Preview mode is ready. Connect the render API to download.",
   });
-  const isSatb = outputPart === "satb";
-  const effectiveOctavePlacement: OctavePlacement = isSatb
+  const isFullScore = outputPart === "satb" || outputPart === "score";
+  const effectiveOctavePlacement: OctavePlacement = isFullScore
     ? "original"
     : singleLineOctavePlacement;
   const targetKeys = getKeysForMode(getKeyMode(selectedHymn.originalKey));
@@ -152,13 +153,17 @@ export function HymnConfigurator({
   ]);
 
   function selectHymn(hymn: Hymn) {
-    if (navigateOnHymnSelect && hymn.id !== selectedHymn.id) {
+    if (
+      navigateOnHymnSelect &&
+      hymn.contentType === "hymn" &&
+      hymn.id !== selectedHymn.id
+    ) {
       router.push(`/hymns/${hymn.slug}#make-an-edition`);
       return;
     }
     setSelectedHymn(hymn);
     setTargetKey(hymn.originalKey);
-    setOutputPart("satb");
+    setOutputPart(getDefaultOutput(hymn));
     setClef("original");
     setSingleLineOctavePlacement("auto");
     setStatus({
@@ -273,7 +278,9 @@ export function HymnConfigurator({
             <div className="flex items-center justify-between border-b border-ink/10 pb-4">
               <div>
                 <p className="text-sm font-semibold text-ink">Configure PDF</p>
-                <p className="mt-0.5 text-xs text-ink/50">Six choices, one clean part.</p>
+                <p className="mt-0.5 text-xs text-ink/50">
+                  Choose the score, key, layout, and page.
+                </p>
               </div>
               <span className="grid size-8 place-items-center rounded-full border border-ink/10 bg-white font-mono text-[10px] text-ink/50">
                 01
@@ -290,9 +297,13 @@ export function HymnConfigurator({
               <div className="rounded-xl border border-ink/10 bg-white/65 px-3.5 py-3">
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <p className="text-xs text-ink/45">Tune</p>
+                    <p className="text-xs text-ink/45">
+                      {selectedHymn.contentType === "art_song" ? "Composer" : "Tune"}
+                    </p>
                     <p className="mt-0.5 text-sm font-medium text-ink">
-                      {selectedHymn.tuneName}
+                      {selectedHymn.contentType === "art_song"
+                        ? selectedHymn.composer
+                        : selectedHymn.tuneName}
                     </p>
                   </div>
                   <div className="text-right">
@@ -302,7 +313,7 @@ export function HymnConfigurator({
                     </p>
                   </div>
                 </div>
-                {showCatalogLink ? (
+                {showCatalogLink && selectedHymn.contentType === "hymn" ? (
                   <Link
                     href={`/hymns/${selectedHymn.slug}`}
                     className="mt-3 inline-flex text-xs font-medium text-blue underline decoration-blue/25 underline-offset-4 transition hover:decoration-blue"
@@ -347,9 +358,15 @@ export function HymnConfigurator({
 
               <fieldset>
                 <legend className="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-ink/55">
-                  Music line
+                  Score layout
                 </legend>
-                <div className="grid grid-cols-5 gap-1 rounded-xl border border-ink/10 bg-ink/[0.045] p-1">
+                <div
+                  className={`grid gap-1 rounded-xl border border-ink/10 bg-ink/[0.045] p-1 ${
+                    selectedHymn.availableLines.length === 1
+                      ? "grid-cols-1"
+                      : "grid-cols-5"
+                  }`}
+                >
                   {outputOptions
                     .filter((option) =>
                       selectedHymn.availableLines.includes(option.value),
@@ -380,10 +397,15 @@ export function HymnConfigurator({
                 <p className="mt-2 text-xs text-ink/45">
                   {outputLabel} will be included in the PDF.
                 </p>
-                {!selectedHymn.lyricsAvailableFor.includes(outputPart) ? (
+                {!selectedHymn.lyricsAvailableFor.includes(outputPart) &&
+                selectedHymn.lyricsAvailableFor.length > 0 ? (
                   <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-[11px] leading-4 text-amber-900">
                     This isolated voice is note-only in the source. Lyrics remain
                     available on the soprano line and full SATB score.
+                  </p>
+                ) : selectedHymn.lyricsAvailableFor.length === 0 ? (
+                  <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-[11px] leading-4 text-amber-900">
+                    This source encoding does not include lyrics.
                   </p>
                 ) : null}
               </fieldset>
@@ -399,14 +421,19 @@ export function HymnConfigurator({
                   <select
                     id="clef"
                     value={clef}
+                    disabled={outputPart === "score"}
                     onChange={(event) => setClef(event.target.value as Clef)}
                     className="h-12 w-full appearance-none rounded-xl border border-ink/15 bg-white px-3.5 pr-10 text-sm font-medium text-ink shadow-sm outline-none transition focus:border-blue/60 focus:ring-4 focus:ring-blue/10"
                   >
-                    {clefOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
+                    {clefOptions
+                      .filter(
+                        (option) => outputPart !== "score" || option.value === "original",
+                      )
+                      .map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
                   </select>
                   <svg
                     viewBox="0 0 20 20"
@@ -418,23 +445,25 @@ export function HymnConfigurator({
                   </svg>
                 </div>
                 <p className="mt-2 text-xs leading-5 text-ink/45">
-                  Clef changes notation only. Pitches stay exactly where they belong.
+                  {outputPart === "score"
+                    ? "The full score retains each staff’s original clef."
+                    : "Clef changes notation only. Pitches stay exactly where they belong."}
                 </p>
               </div>
 
               <fieldset
-                disabled={isSatb}
+                disabled={isFullScore}
                 aria-describedby="pitch-register-help"
-                className={isSatb ? "opacity-65" : undefined}
+                className={isFullScore ? "opacity-65" : undefined}
               >
                 <legend className="mb-2 w-full">
                   <span className="flex items-center justify-between gap-3">
                     <span className="text-xs font-medium uppercase tracking-[0.12em] text-ink/55">
                       Pitch register
                     </span>
-                    {isSatb ? (
+                    {isFullScore ? (
                       <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-ink/45">
-                        SATB · Original
+                        Full score · Original
                       </span>
                     ) : null}
                   </span>
@@ -444,7 +473,7 @@ export function HymnConfigurator({
                     <label
                       key={option.value}
                       className={`rounded-xl border px-3.5 py-3 outline-none transition ${
-                        isSatb
+                        isFullScore
                           ? "cursor-not-allowed border-ink/10 bg-white/55"
                           : "cursor-pointer focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2"
                       } ${
@@ -476,8 +505,8 @@ export function HymnConfigurator({
                   id="pitch-register-help"
                   className="mt-2 text-xs leading-5 text-ink/45"
                 >
-                  {isSatb
-                    ? "Full SATB retains its original register and voicing. Your single-line choice is saved."
+                  {isFullScore
+                    ? "A full score retains its original registers and voicing. Your single-line choice is saved."
                     : "Register changes sounding pitch by octaves. Clef—including treble 8vb—only changes notation."}
                 </p>
               </fieldset>

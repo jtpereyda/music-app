@@ -57,6 +57,96 @@ def test_line_selection_maps_satb_order(tmp_path: Path) -> None:
         assert result.pitches_after_transform == expected
 
 
+def test_full_score_transposes_all_parts_together(tmp_path: Path) -> None:
+    source = tmp_path / "source.musicxml"
+    write_satb_fixture(source)
+
+    result = transform_musicxml(
+        source,
+        line_name="score",
+        target_key_name="D major",
+    )
+
+    assert len(result.score.parts) == 2
+    assert result.pitches_after_transform == (
+        "D5",
+        "E5",
+        "B4",
+        "C#5",
+        "F#4",
+        "G4",
+        "D3",
+        "E3",
+    )
+    assert result.octave_resolved == 0
+
+
+def test_catalog_source_key_preserves_minor_mode_when_xml_mode_is_ambiguous(
+    tmp_path: Path,
+) -> None:
+    source = tmp_path / "source.musicxml"
+    write_satb_fixture(source, mode="major")
+
+    result = transform_musicxml(
+        source,
+        line_name="score",
+        source_key_name="C minor",
+        target_key_name="D minor",
+    )
+
+    assert result.source_key == "C minor"
+    assert result.target_key == "D minor"
+    assert result.interval_name == "M2"
+
+
+def test_full_score_preserves_clefs_and_register(tmp_path: Path) -> None:
+    source = tmp_path / "source.musicxml"
+    write_satb_fixture(source)
+
+    with pytest.raises(RenderError, match="original clefs"):
+        transform_musicxml(source, line_name="score", clef_name="bass")
+    with pytest.raises(RenderError, match="individual lines"):
+        transform_musicxml(source, line_name="score", octave_placement="up")
+
+
+def test_catalog_art_song_mxl_transposes_as_one_minor_key_score() -> None:
+    repository_root = Path(__file__).resolve().parents[3]
+    source = repository_root / "catalog" / "scores" / "lieder-6810863.mxl"
+
+    result = transform_musicxml(
+        source,
+        line_name="score",
+        source_key_name="C minor",
+        target_key_name="D minor",
+    )
+
+    assert result.source_key == "C minor"
+    assert result.target_key == "D minor"
+    assert result.interval_name == "M2"
+    assert len(result.score.parts) >= 2
+    assert len(result.pitches_after_selection) == len(result.pitches_after_transform)
+
+
+def test_catalog_art_song_pipeline_renders_pdf_and_svg(tmp_path: Path) -> None:
+    repository_root = Path(__file__).resolve().parents[3]
+    source = repository_root / "catalog" / "scores" / "lieder-6810863.mxl"
+
+    manifest = run_pipeline(
+        source,
+        tmp_path / "output",
+        line_name="score",
+        source_key_name="C minor",
+        target_key_name="D minor",
+    )
+
+    assert manifest["transform"]["line"] == "score"
+    assert manifest["transform"]["source_key"] == "C minor"
+    assert manifest["transform"]["target_key"] == "D minor"
+    assert manifest["render"]["page_count"] >= 1
+    assert (tmp_path / "output" / "score.pdf").is_file()
+    assert list((tmp_path / "output").glob("page-*.svg"))
+
+
 def test_clef_change_is_pitch_invariant(tmp_path: Path) -> None:
     source = tmp_path / "source.musicxml"
     write_satb_fixture(source)

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from enum import StrEnum
+from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -9,6 +10,7 @@ HYMN_ID_PATTERN = r"^[a-z0-9]+(?:-[a-z0-9]+)*$"
 
 
 class RenderLine(StrEnum):
+    SCORE = "score"
     SATB = "satb"
     SOPRANO = "soprano"
     ALTO = "alto"
@@ -112,6 +114,7 @@ class HymnRecord(BaseModel):
     model_config = ConfigDict(use_enum_values=True)
 
     id: str = Field(pattern=HYMN_ID_PATTERN)
+    content_type: Literal["hymn", "art_song"] = "hymn"
     title: str
     available: bool
     original_key: str | None = None
@@ -129,6 +132,7 @@ class RenderChoices(BaseModel):
 
 
 class CatalogResponse(BaseModel):
+    scores: list[HymnRecord]
     hymns: list[HymnRecord]
     render_choices: RenderChoices
 
@@ -141,6 +145,7 @@ class HealthResponse(BaseModel):
 
 class RenderParameters(BaseModel):
     hymn_id: str = Field(pattern=HYMN_ID_PATTERN)
+    source_key_name: str | None = None
     key: KeyChoice
     line: RenderLine
     clef: ClefChoice

@@ -1,8 +1,8 @@
 "use client";
 
 import type {
+  CatalogItem,
   Clef,
-  Hymn,
   OctavePlacement,
   OutputPart,
   PageSize,
@@ -19,7 +19,7 @@ import {
 export type PreviewState = "static" | "loading" | "ready" | "error";
 
 interface PreviewSheetProps {
-  hymn: Hymn;
+  hymn: CatalogItem;
   targetKey: TargetKey;
   outputPart: OutputPart;
   clef: Clef;
@@ -57,6 +57,12 @@ export function PreviewSheet({
   const octavePlacementLabel = getOctavePlacementLabel(octavePlacement);
   const pageSizeLabel =
     pageSizes.find((option) => option.value === pageSize)?.label ?? pageSize;
+  const scoreCredit =
+    hymn.contentType === "art_song"
+      ? [hymn.composer, hymn.collectionTitle].filter(Boolean).join(" · ")
+      : [hymn.tuneName, hymn.meter].filter(Boolean).join(" · ");
+  const creatorCredit =
+    hymn.contentType === "art_song" ? hymn.lyricist : hymn.textAuthor;
 
   return (
     <section
@@ -145,7 +151,7 @@ export function PreviewSheet({
           ) : null}
           <div className="absolute left-0 top-0 h-1 w-full bg-coral" />
           <p className="text-center font-mono text-[7px] uppercase tracking-[0.2em] text-ink/40 sm:text-[9px]">
-            {hymn.tuneName} · {hymn.meter}
+            {scoreCredit}
           </p>
           <h2 className="mx-auto mt-2 max-w-[90%] text-center text-[clamp(1rem,3vw,1.7rem)] font-medium tracking-[-0.035em] text-ink">
             {hymn.title}
@@ -226,15 +232,15 @@ export function PreviewSheet({
                   opacity="0.42"
                 >
                   {systemIndex === 0
-                    ? "O  for  a  song  prepared  in  just  the  right  key"
-                    : "A  clear  part  to  place  before  every  singer"}
+                    ? "A  score  prepared  in  just  the  right  key"
+                    : "Clear  notation  for  practice  and  performance"}
                 </text>
               </g>
             ))}
           </svg>
 
           <div className="absolute bottom-[3.5%] left-[7%] right-[7%] flex items-center justify-between border-t border-ink/10 pt-2 font-mono text-[6px] uppercase tracking-[0.12em] text-ink/35 sm:text-[8px]">
-            <span>{hymn.textAuthor}</span>
+            <span>{creatorCredit}</span>
             <span>Preview · not final engraving</span>
           </div>
         </div>

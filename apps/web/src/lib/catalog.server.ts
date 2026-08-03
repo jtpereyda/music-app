@@ -3,9 +3,9 @@ import "server-only";
 import { neon } from "@neondatabase/serverless";
 import { cache } from "react";
 import {
-  hymns as staticHymns,
+  catalogItems as staticCatalogItems,
   keys,
-  type Hymn,
+  type CatalogItem,
   type OutputPart,
   type TargetKey,
 } from "@/lib/catalog";
@@ -13,6 +13,7 @@ import {
 interface CatalogRow {
   id: string;
   catalog_revision: number;
+  content_type: string;
   score_sha256: string;
   original_key_name: string;
   available_lines: string[];
@@ -22,11 +23,13 @@ interface CatalogRow {
 }
 
 export interface CatalogSnapshot {
-  hymns: readonly Hymn[];
+  items: readonly CatalogItem[];
+  hymns: readonly CatalogItem[];
   source: "neon" | "static";
 }
 
 const lineMap: Readonly<Record<string, OutputPart>> = {
+  SCORE: "score",
   SATB: "satb",
   S: "soprano",
   A: "alto",
@@ -51,21 +54,24 @@ function lines(values: string[]): readonly OutputPart[] {
   return mapped;
 }
 
-export function mergeCatalogRows(rows: CatalogRow[]): readonly Hymn[] {
-  if (rows.length !== staticHymns.length) {
+export function mergeCatalogRows(rows: CatalogRow[]): readonly CatalogItem[] {
+  if (rows.length !== staticCatalogItems.length) {
     throw new Error("Database catalog is incomplete.");
   }
   const rowById = new Map(rows.map((row) => [row.id, row]));
   if (rowById.size !== rows.length) {
-    throw new Error("Database catalog contains duplicate hymn ids.");
+    throw new Error("Database catalog contains duplicate score ids.");
   }
 
-  return staticHymns.map((hymn) => {
-    const row = rowById.get(hymn.id);
-    if (!row || row.score_sha256 !== hymn.scoreSha256) {
+  return staticCatalogItems.map((item) => {
+    const row = rowById.get(item.id);
+    if (!row || row.score_sha256 !== item.scoreSha256) {
       throw new Error("Database catalog does not match canonical score hashes.");
     }
-    if (row.catalog_revision < hymn.catalogRevision) {
+    if (row.content_type !== item.contentType) {
+      throw new Error("Database catalog does not match canonical content types.");
+    }
+    if (row.catalog_revision < item.catalogRevision) {
       throw new Error("Database catalog revision is older than the application.");
     }
 
@@ -73,12 +79,14 @@ export function mergeCatalogRows(rows: CatalogRow[]): readonly Hymn[] {
     const lyricsAvailableFor: readonly OutputPart[] =
       row.lyrics_scope === "soprano_only"
         ? ["satb", "soprano"]
-        : row.lyrics_scope === "all_lines"
-          ? availableLines
-          : [];
+        : row.lyrics_scope === "vocal_parts"
+          ? ["score"]
+          : row.lyrics_scope === "all_lines"
+            ? availableLines
+            : [];
 
     return {
-      ...hymn,
+      ...item,
       originalKey: keySlug(row.original_key_name),
       availableLines,
       lyricsAvailableFor,
@@ -91,13 +99,21 @@ export function mergeCatalogRows(rows: CatalogRow[]): readonly Hymn[] {
 
 export const getCatalogSnapshot = cache(async (): Promise<CatalogSnapshot> => {
   if (process.env.CATALOG_SOURCE !== "neon") {
-    return { hymns: staticHymns, source: "static" };
+    return {
+      items: staticCatalogItems,
+      hymns: staticCatalogItems.filter((item) => item.contentType === "hymn"),
+      source: "static",
+    };
   }
 
   const databaseUrl = process.env.DATABASE_URL;
   if (!databaseUrl) {
     console.warn("[catalog] DATABASE_URL is unavailable; using static catalog.");
-    return { hymns: staticHymns, source: "static" };
+    return {
+      items: staticCatalogItems,
+      hymns: staticCatalogItems.filter((item) => item.contentType === "hymn"),
+      source: "static",
+    };
   }
 
   try {
@@ -106,6 +122,7 @@ export const getCatalogSnapshot = cache(async (): Promise<CatalogSnapshot> => {
       SELECT
         id,
         catalog_revision,
+        content_type,
         score_sha256,
         original_key_name,
         available_lines,
@@ -115,14 +132,20 @@ export const getCatalogSnapshot = cache(async (): Promise<CatalogSnapshot> => {
       FROM app.catalog_hymns
       ORDER BY id
     `;
+    const items = mergeCatalogRows(result as unknown as CatalogRow[]);
     return {
-      hymns: mergeCatalogRows(result as unknown as CatalogRow[]),
+      items,
+      hymns: items.filter((item) => item.contentType === "hymn"),
       source: "neon",
     };
   } catch (error) {
     const kind = error instanceof Error ? error.name : "UnknownError";
     console.warn(`[catalog] Neon read failed (${kind}); using static catalog.`);
-    return { hymns: staticHymns, source: "static" };
+    return {
+      items: staticCatalogItems,
+      hymns: staticCatalogItems.filter((item) => item.contentType === "hymn"),
+      source: "static",
+    };
   }
 });
 

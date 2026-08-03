@@ -1,10 +1,12 @@
 # Transposify
 
 Technical-preview web app for producing practical editions from structured
-music data. Its first live use case is a hymn transposer: a user chooses one of
-869 catalog hymn scores, a target key, full SATB or an individual S/A/T/B line, a
-display clef, automatic or manual octave placement, and US Letter or A4 output.
-The app then engraves a live SVG preview and a print-sized PDF.
+music data. The fixed catalog contains 2,225 scores: 869 hymns and 1,356
+classical art songs from OpenScore Lieder. A user chooses a score, a compatible
+target key, and US Letter or A4 output. Hymns also offer full SATB or an
+individual S/A/T/B line, display-clef selection, and octave placement. Art
+songs transpose the complete voice-and-piano score together. The app engraves
+a live SVG preview and a print-sized PDF.
 
 ## What is canonical
 
@@ -14,19 +16,19 @@ semantics. SVG and PDF are derived output only: they are not parsed back into
 notes. A PDF-only input would require optical music recognition plus human
 correction.
 
-All 869 records are explicitly marked
+All 2,225 records are explicitly marked
 `technical_candidate_not_production_approved`. The source and conversion are
 appropriate for product development, but production publication still requires
 independent rights evidence for each text, translation, tune, and setting.
 
 ## Architecture
 
-- `catalog/`: generated 869-score hymn catalog and canonical MusicXML
+- `catalog/`: generated 2,225-score catalog and canonical MusicXML/MXL
 - `spikes/ingest/`: reproducible ABC inventory and MusicXML conversion
 - `spikes/render/`: MusicXML line selection, transposition, clef
   representation, SVG engraving, and PDF generation
 - `services/render/`: FastAPI catalog and render endpoints
-- `apps/web/`: Transposify homepage, hymn use-case pages, live preview, and
+- `apps/web/`: Transposify homepage, score catalog, hymn use-case pages, live preview, and
   checked download proxy
 - `output/pdf/`: visually verified sample editions
 - `docs/phase-0-report.md`: spike results and launch recommendation

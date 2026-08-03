@@ -40,8 +40,14 @@ export function AppHeader() {
             Hymns
           </Link>
           <Link
-            href="/hymns/sheet-music-for-instrumentalists"
+            href="/uses/hymn-transposer#make-an-edition"
             className="hidden rounded-full px-4 py-2 text-ink/65 transition-colors hover:bg-white/65 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral lg:block"
+          >
+            Score catalog
+          </Link>
+          <Link
+            href="/hymns/sheet-music-for-instrumentalists"
+            className="hidden rounded-full px-4 py-2 text-ink/65 transition-colors hover:bg-white/65 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral xl:block"
           >
             For instrumentalists
           </Link>

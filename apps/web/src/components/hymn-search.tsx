@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import type { Hymn } from "@/lib/catalog";
+import { getContentTypeLabel, type CatalogItem } from "@/lib/catalog";
 
 interface HymnSearchProps {
-  catalog: readonly Hymn[];
-  selectedHymn: Hymn;
-  onSelect: (hymn: Hymn) => void;
+  catalog: readonly CatalogItem[];
+  selectedHymn: CatalogItem;
+  onSelect: (hymn: CatalogItem) => void;
 }
 
 export function HymnSearch({
@@ -21,17 +21,23 @@ export function HymnSearch({
   const [showAll, setShowAll] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const normalizedQuery = query.trim().toLocaleLowerCase();
-  const matches = showAll
+  const allMatches = showAll
     ? catalog
     : catalog.filter((hymn) => {
         if (!normalizedQuery) {
           return true;
         }
 
-        return [hymn.title, hymn.textAuthor, hymn.tuneName].some((value) =>
-          value.toLocaleLowerCase().includes(normalizedQuery),
-        );
+        return [
+          hymn.title,
+          hymn.composer,
+          hymn.lyricist,
+          hymn.collectionTitle,
+          hymn.textAuthor,
+          hymn.tuneName,
+        ].some((value) => value.toLocaleLowerCase().includes(normalizedQuery));
       });
+  const matches = allMatches.slice(0, 150);
 
   useEffect(() => {
     if (!isOpen) {
@@ -48,12 +54,12 @@ export function HymnSearch({
     const selectedIndex = catalog.findIndex(
       (hymn) => hymn.id === selectedHymn.id,
     );
-    setActiveIndex(Math.max(selectedIndex, 0));
+    setActiveIndex(selectedIndex >= 0 && selectedIndex < 150 ? selectedIndex : 0);
     setShowAll(true);
     setIsOpen(true);
   }
 
-  function chooseHymn(hymn: Hymn) {
+  function chooseHymn(hymn: CatalogItem) {
     setQuery(hymn.title);
     setIsOpen(false);
     setShowAll(false);
@@ -73,7 +79,7 @@ export function HymnSearch({
         htmlFor={`${listId}-search`}
         className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-ink/55"
       >
-        Hymn
+        Score
       </label>
       <div className="relative">
         <svg
@@ -142,7 +148,7 @@ export function HymnSearch({
             }
           }}
           className="h-12 w-full rounded-xl border border-ink/15 bg-white px-10 pr-4 text-sm text-ink shadow-sm outline-none transition placeholder:text-ink/35 focus:border-blue/60 focus:ring-4 focus:ring-blue/10"
-          placeholder="Search title, author, or tune"
+          placeholder="Search title, composer, poet, or collection"
         />
       </div>
 
@@ -153,10 +159,14 @@ export function HymnSearch({
           <div className="flex items-center justify-between border-b border-ink/8 px-3.5 py-2 font-mono text-[9px] uppercase tracking-[0.12em] text-ink/40">
             <span>
               {showAll || !normalizedQuery
-                ? `${catalog.length} hymns`
-                : `${matches.length} ${matches.length === 1 ? "match" : "matches"}`}
+                ? `${catalog.length} scores`
+                : `${allMatches.length} ${allMatches.length === 1 ? "match" : "matches"}`}
             </span>
-            {matches.length > 6 ? <span>Scroll to browse</span> : null}
+            {allMatches.length > matches.length ? (
+              <span>Showing first {matches.length} · refine search</span>
+            ) : matches.length > 6 ? (
+              <span>Scroll to browse</span>
+            ) : null}
           </div>
           <div
             id={listId}
@@ -186,17 +196,19 @@ export function HymnSearch({
                       {hymn.title}
                     </span>
                     <span className="mt-0.5 block text-xs text-ink/50">
-                      {hymn.textAuthor} · {hymn.tuneName}
+                      {hymn.composer}
+                      {hymn.lyricist !== "Unknown" ? ` · ${hymn.lyricist}` : ""}
+                      {hymn.collectionTitle ? ` · ${hymn.collectionTitle}` : ""}
                     </span>
                   </span>
                   <span className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.12em] text-ink/35">
-                    {hymn.meter}
+                    {getContentTypeLabel(hymn.contentType)}
                   </span>
                 </button>
               ))
             ) : (
               <p className="px-3 py-6 text-center text-sm text-ink/50">
-                No hymns match “{query}”.
+                No scores match “{query}”.
               </p>
             )}
           </div>

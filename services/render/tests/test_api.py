@@ -67,9 +67,10 @@ def test_health_and_catalog_report_injected_source(tmp_path: Path) -> None:
     catalog = client.get("/v1/catalog")
     assert catalog.status_code == 200
     payload = catalog.json()
-    assert payload["hymns"] == [
+    expected_scores = [
         {
             "id": "amazing-grace",
+            "content_type": "hymn",
             "title": "Amazing Grace",
             "available": True,
             "original_key": None,
@@ -78,7 +79,10 @@ def test_health_and_catalog_report_injected_source(tmp_path: Path) -> None:
             "rights_status": None,
         }
     ]
+    assert payload["scores"] == expected_scores
+    assert payload["hymns"] == expected_scores
     assert payload["render_choices"]["lines"] == [
+        "score",
         "satb",
         "soprano",
         "alto",
@@ -122,6 +126,7 @@ def test_svg_preview_passes_validated_options_and_page(tmp_path: Path) -> None:
     assert source.name == "amazing.musicxml"
     assert parameters.model_dump(mode="json") == {
         "hymn_id": "amazing-grace",
+        "source_key_name": None,
         "key": "d-major",
         "line": "alto",
         "clef": "bass",
@@ -140,6 +145,79 @@ def test_minor_key_choice_is_accepted(tmp_path: Path) -> None:
 
     assert response.status_code == 200
     assert renderer.calls[0][1].key.value == "d-minor"
+
+
+def test_art_song_full_score_uses_generic_route_and_catalog_source_key(
+    tmp_path: Path,
+) -> None:
+    source = tmp_path / "art-song.mxl"
+    source.write_bytes(b"compressed-score")
+    catalog = HymnCatalog(
+        root=tmp_path,
+        entries=(
+            CatalogEntry(
+                hymn_id="lieder-6810863",
+                title="Après un rêve",
+                source_path=source.name,
+                content_type="art_song",
+                original_key="C minor",
+                available_lines=("SCORE",),
+                lyrics_scope="vocal_parts",
+            ),
+        ),
+    )
+    renderer = FakeRenderer()
+    client = TestClient(create_app(catalog=catalog, renderer=renderer))
+
+    response = client.get(
+        "/v1/scores/lieder-6810863/preview.svg",
+        params={"line": "score", "key": "d-minor"},
+    )
+
+    assert response.status_code == 200
+    assert response.headers["x-score-id"] == "lieder-6810863"
+    parameters = renderer.calls[0][1]
+    assert parameters.source_key_name == "C minor"
+    assert parameters.line.value == "score"
+    assert parameters.key.value == "d-minor"
+
+
+def test_full_score_rejects_part_only_controls(tmp_path: Path) -> None:
+    source = tmp_path / "art-song.mxl"
+    source.write_bytes(b"compressed-score")
+    catalog = HymnCatalog(
+        root=tmp_path,
+        entries=(
+            CatalogEntry(
+                hymn_id="lieder-6810863",
+                title="Après un rêve",
+                source_path=source.name,
+                content_type="art_song",
+                original_key="C minor",
+                available_lines=("SCORE",),
+            ),
+        ),
+    )
+    renderer = FakeRenderer()
+    client = TestClient(create_app(catalog=catalog, renderer=renderer))
+
+    wrong_line = client.get(
+        "/v1/scores/lieder-6810863/preview.svg",
+        params={"line": "soprano"},
+    )
+    changed_clef = client.get(
+        "/v1/scores/lieder-6810863/preview.svg",
+        params={"line": "score", "clef": "bass"},
+    )
+    shifted_octave = client.get(
+        "/v1/scores/lieder-6810863/preview.svg",
+        params={"line": "score", "octave": "up"},
+    )
+
+    assert wrong_line.status_code == 422
+    assert changed_clef.status_code == 422
+    assert shifted_octave.status_code == 422
+    assert renderer.calls == []
 
 
 def test_pdf_is_downloadable(tmp_path: Path) -> None:
@@ -247,6 +325,8 @@ def test_catalog_paths_cannot_escape_root(tmp_path: Path) -> None:
 def test_default_catalog_loads_all_catalog_additions() -> None:
     catalog = HymnCatalog()
 
-    assert len(catalog.entries()) == 869
+    assert len(catalog.entries()) == 2225
     assert catalog.entry("rescue-the-perishing").title == "Rescue the Perishing"
     assert catalog.source_available("rescue-the-perishing")
+    assert catalog.entry("lieder-6810863").title == "Après un rêve"
+    assert catalog.source_available("lieder-6810863")

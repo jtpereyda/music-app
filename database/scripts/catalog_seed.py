@@ -47,6 +47,7 @@ def render_seed(catalog_path: Path = DEFAULT_CATALOG) -> str:
             _literal(item["id"]),
             str(revision),
             _literal(item["title"]),
+            _literal(item["content_type"]),
             _literal(score["path"]),
             _literal(score["sha256"]),
             _literal(score["media_type"]),
@@ -70,6 +71,7 @@ INSERT INTO app.catalog_hymns (
     id,
     catalog_revision,
     title,
+    content_type,
     score_path,
     score_sha256,
     score_media_type,
@@ -93,6 +95,7 @@ VALUES (
 ON CONFLICT (id) DO UPDATE SET
     catalog_revision = EXCLUDED.catalog_revision,
     title = EXCLUDED.title,
+    content_type = EXCLUDED.content_type,
     score_path = EXCLUDED.score_path,
     score_sha256 = EXCLUDED.score_sha256,
     score_media_type = EXCLUDED.score_media_type,

@@ -9,6 +9,7 @@ import re
 import sys
 from typing import Any
 import xml.etree.ElementTree as ET
+from zipfile import BadZipFile, ZipFile
 
 
 CATALOG_ROOT = Path(__file__).resolve().parents[1]
@@ -16,7 +17,8 @@ CATALOG_PATH = CATALOG_ROOT / "catalog.json"
 SCHEMA_PATH = CATALOG_ROOT / "catalog.schema.json"
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
-EXPECTED_LINES = ["SATB", "S", "A", "T", "B"]
+HYMN_LINES = ["SATB", "S", "A", "T", "B"]
+SCORE_LINES = ["SCORE"]
 RIGHTS_STATUS = "technical_candidate_not_production_approved"
 KEY_NAMES_BY_MODE = {
     "major": (
@@ -83,6 +85,31 @@ def _error(errors: list[str], item_id: str, message: str) -> None:
     errors.append(f"{item_id}: {message}")
 
 
+def _musicxml_root(score_path: Path) -> ET.Element:
+    if score_path.suffix != ".mxl":
+        return ET.parse(score_path).getroot()
+    try:
+        with ZipFile(score_path) as archive:
+            names = set(archive.namelist())
+            root_name = "score.xml"
+            if root_name not in names:
+                container = ET.fromstring(archive.read("META-INF/container.xml"))
+                root_name = next(
+                    (
+                        element.get("full-path", "")
+                        for element in container.iter()
+                        if _local_name(element.tag) == "rootfile"
+                        and element.get("full-path")
+                    ),
+                    "",
+                )
+            if not root_name or root_name not in names:
+                raise ET.ParseError("MXL container names an absent score root")
+            return ET.fromstring(archive.read(root_name))
+    except (BadZipFile, KeyError) as exc:
+        raise ET.ParseError(f"invalid MXL container: {exc}") from exc
+
+
 def _validate_score(
     item: Mapping[str, Any],
     *,
@@ -115,21 +142,27 @@ def _validate_score(
             f"score SHA-256 mismatch: expected {score.get('sha256')}, got {actual_sha256}",
         )
     try:
-        root = ET.parse(score_path).getroot()
+        root = _musicxml_root(score_path)
     except ET.ParseError as exc:
         _error(errors, item_id, f"invalid MusicXML: {exc}")
         return
     if _local_name(root.tag) != "score-partwise":
         _error(errors, item_id, f"expected score-partwise, found {_local_name(root.tag)}")
         return
+    content_type = item.get("content_type")
     work_title = _first_descendant_text(root, "work-title")
-    if work_title != item.get("title"):
+    movement_title = _first_descendant_text(root, "movement-title")
+    if content_type == "hymn" and work_title != item.get("title"):
         _error(errors, item_id, f"work-title {work_title!r} does not match catalog title")
+    if content_type == "art_song" and not (work_title or movement_title):
+        _error(errors, item_id, "art song MusicXML has no work or movement title")
 
     key = item.get("original_key", {})
     fifths = _first_descendant_text(root, "fifths")
     mode = _first_descendant_text(root, "mode")
-    if fifths != str(key.get("fifths")) or mode != key.get("mode"):
+    if fifths != str(key.get("fifths")) or (
+        mode in {"major", "minor"} and mode != key.get("mode")
+    ):
         _error(
             errors,
             item_id,
@@ -156,7 +189,7 @@ def _validate_score(
     parts = _direct_children(root, "part")
     voice_locations: set[tuple[int, str]] = set()
     lyric_locations: set[tuple[int, str]] = set()
-    soprano_verse_ids: set[str] = set()
+    declared_verse_ids: set[str] = set()
     for part_index, part in enumerate(parts):
         for note in (child for child in part.iter() if _local_name(child.tag) == "note"):
             voice = _first_descendant_text(note, "voice")
@@ -166,27 +199,30 @@ def _validate_score(
             if lyrics:
                 lyric_locations.add((part_index, voice))
             for lyric in lyrics:
-                verse_id = lyric.get("number")
-                if verse_id and (part_index, voice) == (0, "1"):
-                    soprano_verse_ids.add(verse_id)
-    if len(parts) != 2 or len(voice_locations) != 4:
-        _error(
-            errors,
-            item_id,
-            f"expected two parts/four voices, found {len(parts)} parts/{len(voice_locations)} voices",
-        )
-    if (0, "1") not in lyric_locations:
-        _error(
-            errors,
-            item_id,
-            f"expected lyrics on first-part voice 1, found {sorted(lyric_locations)}",
-        )
+                verse_id = lyric.get("number") or "1"
+                if content_type == "art_song" or (part_index, voice) == (0, "1"):
+                    declared_verse_ids.add(verse_id)
+    if content_type == "hymn":
+        if len(parts) != 2 or len(voice_locations) != 4:
+            _error(
+                errors,
+                item_id,
+                f"expected two parts/four voices, found {len(parts)} parts/{len(voice_locations)} voices",
+            )
+        if (0, "1") not in lyric_locations:
+            _error(
+                errors,
+                item_id,
+                f"expected lyrics on first-part voice 1, found {sorted(lyric_locations)}",
+            )
+    elif content_type == "art_song" and not parts:
+        _error(errors, item_id, "art song score has no parts")
     declared_verses = set(item.get("lyrics", {}).get("verse_ids", []))
-    if soprano_verse_ids != declared_verses:
+    if declared_verse_ids != declared_verses:
         _error(
             errors,
             item_id,
-            f"soprano verse IDs {sorted(soprano_verse_ids)} "
+            f"score verse IDs {sorted(declared_verse_ids)} "
             f"do not match {sorted(declared_verses)}",
         )
     encoders = [
@@ -203,6 +239,9 @@ def _validate_score(
     ) in {"1", "2"}:
         if not any(value.startswith("music21 v.") for value in encoders):
             _error(errors, item_id, "HymnsToGod score does not declare music21")
+    elif generator == {"name": "openscore-lieder-mxl", "version": "1"}:
+        if not any(value.startswith("MuseScore") for value in encoders):
+            _error(errors, item_id, "OpenScore Lieder score does not declare MuseScore")
     else:
         _error(errors, item_id, f"unsupported score generator {generator!r}")
 
@@ -213,7 +252,7 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
         return ["catalog: root must be an object"]
     if data.get("schema_version") != 1:
         errors.append("catalog: schema_version must be 1")
-    if data.get("catalog_id") != "hymn-transposer-technical-preview":
+    if data.get("catalog_id") != "transposify-technical-preview":
         errors.append("catalog: unexpected catalog_id")
 
     collections = data.get("source_collections")
@@ -274,8 +313,12 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
             seen_ids.add(item_id)
         if not isinstance(item.get("title"), str) or not item["title"].strip():
             _error(errors, display_id, "title must be a non-empty string")
-        if item.get("available_lines") != EXPECTED_LINES:
-            _error(errors, display_id, f"available_lines must be {EXPECTED_LINES}")
+        content_type = item.get("content_type")
+        expected_lines = HYMN_LINES if content_type == "hymn" else SCORE_LINES
+        if content_type not in {"hymn", "art_song"}:
+            _error(errors, display_id, "content_type must be hymn or art_song")
+        if item.get("available_lines") != expected_lines:
+            _error(errors, display_id, f"available_lines must be {expected_lines}")
 
         display = item.get("display")
         if not isinstance(display, Mapping):
@@ -289,8 +332,16 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
         lyrics = item.get("lyrics")
         if not isinstance(lyrics, Mapping):
             _error(errors, display_id, "lyrics must be an object")
-        elif lyrics.get("available") is not True or lyrics.get("scope") != "soprano_only":
-            _error(errors, display_id, "lyrics must be available with soprano_only scope")
+        elif content_type == "hymn" and (
+            lyrics.get("available") is not True
+            or lyrics.get("scope") != "soprano_only"
+        ):
+            _error(errors, display_id, "hymn lyrics must use soprano_only scope")
+        elif content_type == "art_song" and lyrics.get("scope") not in {
+            "vocal_parts",
+            "none",
+        }:
+            _error(errors, display_id, "art-song lyrics scope must be vocal_parts or none")
 
         rights = item.get("rights")
         if not isinstance(rights, Mapping):
@@ -302,6 +353,7 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
             valid_declaration = isinstance(declaration, str) and (
                 declaration.startswith("copyright: public domain.")
                 or declaration == "Copyright: Public Domain - USA"
+                or declaration == "Creative Commons Zero (CC0) 1.0 Universal"
             )
             if not valid_declaration:
                 _error(errors, display_id, "missing exact public-domain source declaration")
@@ -349,6 +401,13 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
                         display_id,
                         "split-ZIP records must declare their ABC entry_path",
                     )
+            elif collection_id == "openscore-lieder-cc0":
+                if not isinstance(entry_path, str) or not entry_path.endswith(".mxl"):
+                    _error(
+                        errors,
+                        display_id,
+                        "OpenScore Lieder records must declare their MXL entry_path",
+                    )
             elif entry_path is not None:
                 _error(
                     errors,
@@ -371,6 +430,11 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
                         display_id,
                         "HymnsToGod record_reference must equal arrangement_id",
                     )
+            if collection_id == "openscore-lieder-cc0":
+                for field in ("arrangement_id", "work_id"):
+                    value = source.get(field)
+                    if not isinstance(value, str) or not ID_RE.fullmatch(value):
+                        _error(errors, display_id, f"invalid OpenScore {field}")
             if isinstance(ordinal, int) and (
                 isinstance(x_reference, str)
                 or isinstance(record_reference, str)

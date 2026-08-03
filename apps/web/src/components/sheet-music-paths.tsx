@@ -2,6 +2,14 @@ import Link from "next/link";
 
 const paths = [
   {
+    eyebrow: "Art songs",
+    title: "Transpose voice-and-piano repertoire together.",
+    copy: "Search more than 1,300 CC0 songs by title, composer, poet, or collection, then move the complete vocal and piano score to a new key.",
+    href: "/uses/hymn-transposer#make-an-edition",
+    link: "Browse classical art songs",
+    tone: "blue",
+  },
+  {
     eyebrow: "Hymns",
     title: "Find a hymn, then make the edition fit.",
     copy: "Browse traditional hymn sheet music by title and tune. Every page opens the complete tool with SATB parts, key changes, clef choices, and a printable PDF.",
@@ -28,10 +36,10 @@ export function SheetMusicPaths() {
             Browse sheet music
           </p>
           <h2 className="mt-4 text-balance text-4xl font-medium leading-[1] tracking-[-0.05em] text-ink sm:text-6xl">
-            Two ways into the same flexible score.
+            Three ways into the same flexible score.
           </h2>
         </div>
-        <div className="mt-10 grid gap-4 lg:grid-cols-2">
+        <div className="mt-10 grid gap-4 lg:grid-cols-3">
           {paths.map((path, index) => (
             <Link
               key={path.href}

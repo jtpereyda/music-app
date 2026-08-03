@@ -1,110 +1,107 @@
 # Technical-preview catalog
 
-This directory contains 869 untransposed canonical MusicXML scores selected for
-technical pipeline work from three pinned source collections. The Open Hymnal
-2014.06 combined ABC contributes 269 records, its disagreeing split ZIP
-contributes eight compatible records absent from the combined file, and
-HymnsToGod contributes 592 public-domain arrangements.
-Every included record has:
+This directory contains 2,225 untransposed canonical scores selected for
+technical pipeline work from four pinned source collections:
 
-- source-specific public-domain evidence: either an exact Open Hymnal
-  declaration beginning `copyright: public domain.` or a HymnsToGod
-  public-domain index/page classification, with explicit contradictory page
-  declarations held out;
-- structurally valid converter output;
-- two MusicXML parts and four voice locations; and
-- lyrics on first-part voice 1.
+- 269 hymns from the Open Hymnal 2014.06 combined ABC;
+- eight compatible, non-duplicate hymns from its split ZIP;
+- 592 public-domain HymnsToGod arrangements; and
+- 1,356 CC0 voice-and-piano scores indexed by OpenScore Lieder.
 
-The combined source has 293 records. Eighteen are held by the existing rights
-gate, and six otherwise eligible records are held because they are genuinely
-3-, 5-, 6-, or 7-voice arrangements rather than the four SATB lines expected by
-the current selector. Seven compatible SATB records are admitted through a
-versioned deterministic normalization: six split source dyads into independent
-voice timelines, one drops a converter-created empty part, and one of the dyad
-scores also aligns a converter-skipped lower-staff measure number by sequence.
-The split ZIP
-has 306 records and 285 exact-public-domain candidates; this revision selects
-only the eight non-duplicate additions already compatible with the current
-renderer. `import-report.json` separates the combined-source accounting from
-the supplemental ZIP selection. The complete HymnsToGod audit found 593 index
-pages representing 575 works and 594 musical arrangements. It promotes 592
-arrangements. `I Surrender All` is held because its page says `Copyright:
-Unknown - USA`; the `Amazing Grace` King David R setting is held because its
-page substitutes a Choral Public Domain Library license for the index's normal
-public-domain declaration.
+The first three collections provide 869 hymns. OpenScore Lieder provides 1,356
+classical art songs. The catalog preserves each source record, canonical score
+hash, display metadata, rights declaration, original key and mode, work ID, and
+arrangement ID.
 
-The Open Hymnal scores were converted with pinned `abc2xml.py` version 268. The
-HymnsToGod scores use the versioned `hymns-to-god-mup-satb` importer, with Mup
-7.2 for macro expansion and a fail-closed notation parser for the expanded Mup
-statements. `catalog.json` records the relevant source hashes and references,
-work and arrangement identities, the exact MusicXML hash, and search/display
-metadata. Converter-generated
-encoding dates are normalized to the catalog revision date so rebuilding the
-same pinned inputs is byte-stable.
+## Source and eligibility boundaries
 
-The Open Hymnal converter report flags 274 included records for visual cleanup, primarily
-because `sintro`/`eintro` decorations are not represented in MusicXML. This is
-compatible with the catalog's technical-preview purpose, but it is not a claim
-that the scores have completed engraving QA.
+Open Hymnal records must carry an exact declaration beginning `copyright:
+public domain.` HymnsToGod records are eligible when the individual page says
+`Public Domain - USA`; CC0 is not required for that collection. Contradictory
+individual-page declarations remain held out.
+
+The OpenScore Lieder import is pinned to commit
+`6b2dc542ce2e8aa4b78c8ee62103b210efc07015` and archive SHA-256
+`e925dd89f9dc2ac16f2aff49470d2c1f2dec9977bb4059172cbcbc7a4b98958c`.
+Its repository-wide license is Creative Commons Zero 1.0 Universal. The import
+promotes all 1,356 rows in `data/scores.tsv`; 106 additional MXL files are
+reported but deliberately excluded because they lack an indexed metadata row.
+Stable MuseScore IDs reconcile metadata paths with upstream folder renames.
+
+The complete HymnsToGod audit found 593 index pages representing 575 works and
+594 arrangements. It promotes 592 arrangements. `I Surrender All` is held
+because its page says `Copyright: Unknown - USA`; the `Amazing Grace` King
+David R setting is held because its page substitutes a Choral Public Domain
+Library license for the index's normal public-domain declaration.
+
+The Open Hymnal combined source has 293 records. Eighteen are rights holds and
+six are structural holds because they contain 3, 5, 6, or 7 voices instead of
+the four lines expected by the hymn part selector. Seven compatible SATB
+records use an audited, versioned deterministic normalization. The converter
+report flags 274 included records for visual cleanup, chiefly because
+`sintro`/`eintro` decorations are not represented in MusicXML.
 
 ## Rights boundary
 
-Every record preserves its source-specific public-domain declaration and raw
-source hashes. All records currently share the catalog-wide technical status:
+Every record preserves its source-specific rights declaration and source
+hashes. All records currently share the catalog-wide technical status:
 
 ```text
 technical_candidate_not_production_approved
 ```
 
-The HymnsToGod `Public Domain - USA` page declaration is sufficient for this
-project's ingest gate; CC0 is not required. The uniform status remains in place
-because the catalog also includes the separately qualified Open Hymnal records.
+This is a technical ingest and rendering gate, not a claim that every score
+has completed independent production rights and engraving review.
 
 ## Musical shape
 
-Every catalog score contains two parts and four semantic voice locations
-corresponding to SATB. Divisi passages remain chords inside the relevant
-semantic part, so no printed harmony is discarded. The
-catalog advertises full SATB plus individually extractable S, A, T, and B
-lines. Catalog-supported lyric extraction is intentionally limited to the
-soprano voice. The canonical “It Is Well With My Soul” source also contains six
-verse-1 syllables on a bass entrance; those incidental source elements are
-preserved in MusicXML but are not advertised as general bass-line lyric
-availability.
+Hymns contain two parts and four semantic voice locations corresponding to
+SATB. The catalog advertises full SATB plus individually extractable S, A, T,
+and B lines. Catalog-supported lyric extraction is limited to the soprano
+voice. Divisi notes remain chords inside the relevant semantic part.
 
-The MusicXML files are canonical, untransposed converter output. Do not
-overwrite them with derived keys, clefs, preview layout, or PDF metadata.
-Derived artifacts should reference the catalog item ID and canonical score
-hash.
+OpenScore Lieder entries advertise one `SCORE` output. The renderer keeps the
+voice, piano, and any other encoded parts together, preserving original clefs
+and registers while transposing every part by the same interval. A score in a
+minor key therefore remains minor after transposition; mode conversion is not
+part of the feature. When upstream MusicXML omits its mode, the import records a
+deterministic relative-major/minor pitch-profile inference, which the renderer
+uses as the source-key authority.
+
+The `.musicxml` and `.mxl` files are canonical, untransposed source artifacts.
+Do not overwrite them with derived keys, clefs, preview layout, or PDF
+metadata. Derived artifacts should reference the catalog item ID and canonical
+score hash.
 
 ## Validate
 
-The validator uses only the Python standard library:
+The standard-library validator checks catalog invariants, stable IDs, rights
+status, source linkage, score hashes, compressed and uncompressed MusicXML,
+titles, keys and modes, advertised output shape, lyric scope, verse IDs, and
+converter identity:
 
 ```bash
-python3 scripts/validate_catalog.py
-python3 -m unittest discover -s tests -v
+python3 catalog/scripts/validate_catalog.py
 ```
 
-It checks catalog invariants, stable IDs, rights status, source linkage, score
-hashes, XML parseability, titles, original keys, four-voice shape, lyric scope,
-verse IDs, and converter identity.
+The full tests also exercise the converters and require the notation
+dependencies installed from `spikes/render`:
 
-## Rebuild from the pinned source
+```bash
+python3 -m unittest discover -s catalog/tests -v
+```
 
-Run the existing inventory and conversion stages described in
-`spikes/ingest/README.md`. Prepare the pinned split-ZIP additions with the same
-converter:
+## Rebuild from the pinned sources
+
+Run the Open Hymnal inventory and conversion stages described in
+`spikes/ingest/README.md`, prepare the split-ZIP additions, convert the
+HymnsToGod sources, and build the 869-hymn base catalog:
 
 ```bash
 python3 catalog/scripts/prepare_open_hymnal_supplement.py \
   --converter /path/to/abc2xml.py \
   --output-root /path/to/build/supplement
-```
 
-Then promote the compatible audited candidates:
-
-```bash
 python3 catalog/scripts/convert_hymns_to_god_mup.py \
   --manifest data/hymns-to-god/manifest.json \
   --source-dir data/hymns-to-god/raw \
@@ -123,7 +120,22 @@ python3 catalog/scripts/build_open_hymnal_catalog.py \
   --hymns-to-god-conversion /path/to/build/hymns-to-god/conversion.json
 ```
 
-The promotion step regenerates `catalog.json`, `import-report.json`, canonical
-scores, and `apps/web/src/lib/catalog.generated.ts`. It fails closed if pinned
-source counts, hashes, rights counts, ZIP entry identities, or the expected
-869-item result drift.
+Then extract the pinned OpenScore Lieder archive and apply the deterministic
+second-stage import:
+
+```bash
+curl -fL \
+  https://github.com/OpenScore/Lieder/archive/6b2dc542ce2e8aa4b78c8ee62103b210efc07015.zip \
+  --output /tmp/OpenScore-Lieder-6b2dc542.zip
+
+bsdtar -xf /tmp/OpenScore-Lieder-6b2dc542.zip -C /tmp
+
+python3 catalog/scripts/import_openscore_lieder.py \
+  --source-root /tmp/Lieder-6b2dc542ce2e8aa4b78c8ee62103b210efc07015
+```
+
+The two promotion stages regenerate `catalog.json`, `import-report.json`,
+canonical scores, the Lieder manifest, and
+`apps/web/src/lib/catalog.generated.ts`. They fail closed if pinned source
+counts, hashes, rights gates, record identities, or the expected 869-hymn,
+1,356-art-song, and 2,225-total results drift.
