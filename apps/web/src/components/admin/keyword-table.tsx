@@ -34,6 +34,7 @@ type SortKey =
   | "impressions28d"
   | "clicks28d"
   | "organicSessions28d"
+  | "bounceRate28d"
   | "keyEvents28d"
   | "volume"
   | "difficulty"
@@ -76,6 +77,7 @@ const keywordTableColumns: Array<{
     key: "organicSessions28d",
     label: "Organic sessions",
   },
+  { align: "right", key: "bounceRate28d", label: "Bounce 28d" },
   { align: "right", key: "keyEvents28d", label: "Key events" },
   { align: "right", key: "difficulty", label: "KD" },
   {
@@ -87,6 +89,10 @@ const keywordTableColumns: Array<{
 ];
 
 const numberFormatter = new Intl.NumberFormat("en-US");
+const percentFormatter = new Intl.NumberFormat("en-US", {
+  style: "percent",
+  maximumFractionDigits: 1,
+});
 
 const pageTypeLabels: Record<string, string> = {
   brand_homepage: "Brand homepage",
@@ -126,6 +132,7 @@ const defaultSortDirections: Record<SortKey, SortDirection> = {
   impressions28d: "desc",
   clicks28d: "desc",
   organicSessions28d: "desc",
+  bounceRate28d: "desc",
   keyEvents28d: "desc",
   volume: "desc",
   difficulty: "desc",
@@ -543,6 +550,12 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
         comparison =
           (left.progress?.organicSessions28d ?? 0) -
           (right.progress?.organicSessions28d ?? 0);
+      } else if (sort.key === "bounceRate28d") {
+        comparison = compareNullableNumbers(
+          left.progress?.bounceRate28d ?? null,
+          right.progress?.bounceRate28d ?? null,
+          sort.direction,
+        );
       } else if (sort.key === "keyEvents28d") {
         comparison =
           (left.progress?.keyEvents28d ?? 0) -
@@ -578,6 +591,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
           "trafficPotential",
           "position",
           "change7d",
+          "bounceRate28d",
         ].includes(sort.key)
       ) {
         return comparison * directionMultiplier;
@@ -690,7 +704,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
               }}
             >
               <table
-                className="min-w-[2380px] border-collapse text-left"
+                className="min-w-[2500px] border-collapse text-left"
                 style={{
                   tableLayout: "fixed",
                   transform: `translateX(-${stickyHeader.scrollLeft}px)`,
@@ -857,7 +871,7 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
       <div ref={tableViewportRef} className="overflow-x-auto">
         <table
           ref={tableRef}
-          className="w-full min-w-[2380px] border-collapse text-left"
+          className="w-full min-w-[2500px] border-collapse text-left"
         >
           <KeywordTableHead
             onSort={handleSort}
@@ -1045,6 +1059,12 @@ export function KeywordTable({ rows, targetOrigin }: KeywordTableProps) {
                       {numberFormatter.format(
                         progress?.organicSessions28d ?? 0,
                       )}
+                    </td>
+                    <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
+                      {progress?.bounceRate28d === null ||
+                      progress?.bounceRate28d === undefined
+                        ? "—"
+                        : percentFormatter.format(progress.bounceRate28d)}
                     </td>
                     <td className="px-4 py-3 text-right align-middle font-mono text-xs tabular-nums text-white/70">
                       {numberFormatter.format(progress?.keyEvents28d ?? 0)}

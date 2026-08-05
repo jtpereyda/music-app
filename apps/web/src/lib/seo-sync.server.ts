@@ -522,7 +522,9 @@ async function runGoogleAnalytics(
       metrics: [
         { name: "sessions" },
         { name: "activeUsers" },
+        { name: "engagedSessions" },
         { name: "keyEvents" },
+        { name: "userEngagementDuration" },
       ],
       dimensionFilter: {
         andGroup: {
@@ -547,7 +549,13 @@ async function runGoogleAnalytics(
   );
   const metrics = new Map<
     string,
-    { sessions: number; users: number; keyEvents: number }
+    {
+      sessions: number;
+      users: number;
+      engagedSessions: number;
+      keyEvents: number;
+      engagementDurationSeconds: number;
+    }
   >();
   for (const row of report.rows ?? []) {
     const rawDate = row.dimensionValues?.[0]?.value;
@@ -563,7 +571,11 @@ async function runGoogleAnalytics(
     metrics.set(`${date}\u0000${pathname}`, {
       sessions: Number(row.metricValues?.[0]?.value ?? 0),
       users: Number(row.metricValues?.[1]?.value ?? 0),
-      keyEvents: Number(row.metricValues?.[2]?.value ?? 0),
+      engagedSessions: Number(row.metricValues?.[2]?.value ?? 0),
+      keyEvents: Number(row.metricValues?.[3]?.value ?? 0),
+      engagementDurationSeconds: Number(
+        row.metricValues?.[4]?.value ?? 0,
+      ),
     });
   }
 
@@ -573,7 +585,9 @@ async function runGoogleAnalytics(
       const value = metrics.get(`${date}\u0000${targetPath}`) ?? {
         sessions: 0,
         users: 0,
+        engagedSessions: 0,
         keyEvents: 0,
+        engagementDurationSeconds: 0,
       };
       writes.push(sql`
         INSERT INTO app.seo_page_snapshots (
@@ -582,7 +596,9 @@ async function runGoogleAnalytics(
           source,
           organic_sessions,
           organic_users,
+          engaged_sessions,
           key_events,
+          engagement_duration_seconds,
           metadata,
           collected_at
         )
@@ -592,14 +608,18 @@ async function runGoogleAnalytics(
           'google_analytics',
           ${value.sessions},
           ${value.users},
+          ${value.engagedSessions},
           ${value.keyEvents},
+          ${value.engagementDurationSeconds},
           ${JSON.stringify({ propertyId })}::jsonb,
           now()
         )
         ON CONFLICT (snapshot_date, target_path, source) DO UPDATE SET
           organic_sessions = excluded.organic_sessions,
           organic_users = excluded.organic_users,
+          engaged_sessions = excluded.engaged_sessions,
           key_events = excluded.key_events,
+          engagement_duration_seconds = excluded.engagement_duration_seconds,
           metadata = excluded.metadata,
           collected_at = now()
       `);
@@ -684,17 +704,23 @@ export async function runSeoSnapshot(
 
   if (accessToken && process.env.GOOGLE_ANALYTICS_PROPERTY_ID) {
     try {
-        recordsWritten += await runGoogleAnalytics(
-          sql,
-          accessToken,
-          targetPaths,
-        );
-        completed.push("Google Analytics");
+      recordsWritten += await runGoogleAnalytics(
+        sql,
+        accessToken,
+        targetPaths,
+      );
+      completed.push("Google Analytics");
     } catch (error) {
       failures.push(
         `Google Analytics: ${error instanceof Error ? error.message : "unknown error"}`,
       );
     }
+  } else if (!process.env.GOOGLE_ANALYTICS_PROPERTY_ID) {
+    failures.push("Google Analytics: property is not configured");
+  }
+
+  if (!process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID) {
+    failures.push("Google Analytics: measurement ID is not configured");
   }
 
   const status =

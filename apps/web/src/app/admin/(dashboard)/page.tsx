@@ -12,6 +12,11 @@ const compactNumberFormatter = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 1,
 });
 
+const percentFormatter = new Intl.NumberFormat("en-US", {
+  style: "percent",
+  maximumFractionDigits: 1,
+});
+
 const progressStages = [
   {
     key: "planned",
@@ -115,6 +120,18 @@ export default async function AdminDashboardPage() {
       detail: `${compactNumberFormatter.format(tracking.summary.keyEvents28d)} GA4 key events`,
       accent: "text-white",
     },
+    {
+      label: "Organic bounce · 28d",
+      value:
+        tracking.summary.bounceRate28d === null
+          ? "—"
+          : percentFormatter.format(tracking.summary.bounceRate28d),
+      detail:
+        tracking.summary.bounceRate28d === null
+          ? "Awaiting GA4 organic sessions"
+          : `${compactNumberFormatter.format(tracking.summary.engagedSessions28d)} of ${compactNumberFormatter.format(tracking.summary.engagementMeasuredSessions28d)} sessions engaged · quick-return proxy`,
+      accent: "text-amber-200",
+    },
   ];
 
   return (
@@ -164,7 +181,7 @@ export default async function AdminDashboardPage() {
         </div>
 
         <section
-          className="mt-10 grid gap-px overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10 sm:grid-cols-2 xl:grid-cols-4"
+          className="mt-10 grid gap-px overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10 sm:grid-cols-2 xl:grid-cols-5"
           aria-label="Keyword overview"
         >
           {cards.map((card) => (

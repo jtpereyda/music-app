@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import { AppFooter } from "@/components/app-footer";
@@ -52,11 +53,30 @@ export const viewport: Viewport = {
   themeColor: "#f6f1e7",
 };
 
+const GA_MEASUREMENT_ID_PATTERN = /^G-[A-Z0-9]+$/;
+
+function googleAnalyticsMeasurementId(): string | null {
+  const measurementId =
+    process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID?.trim();
+
+  if (!measurementId) return null;
+
+  if (!GA_MEASUREMENT_ID_PATTERN.test(measurementId)) {
+    throw new Error(
+      "NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID must be a GA4 measurement ID such as G-XXXXXXXXXX.",
+    );
+  }
+
+  return measurementId;
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const measurementId = googleAnalyticsMeasurementId();
+
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="min-h-screen antialiased">
@@ -65,6 +85,7 @@ export default function RootLayout({
         <AppFooter />
         <MicrosoftClarity />
       </body>
+      {measurementId ? <GoogleAnalytics gaId={measurementId} /> : null}
     </html>
   );
 }

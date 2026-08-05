@@ -11,6 +11,11 @@ const numberFormatter = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 1,
 });
 
+const percentFormatter = new Intl.NumberFormat("en-US", {
+  style: "percent",
+  maximumFractionDigits: 1,
+});
+
 function MetricTrend({
   color,
   label,
@@ -60,6 +65,56 @@ function MetricTrend({
   );
 }
 
+function BounceRateTrend({ points }: { points: SeoTrendPoint[] }) {
+  const sessions = points.reduce(
+    (total, point) => total + point.engagementMeasuredSessions,
+    0,
+  );
+  const engagedSessions = points.reduce(
+    (total, point) => total + point.engagedSessions,
+    0,
+  );
+  const bounceRate =
+    sessions > 0
+      ? Math.max(0, Math.min(1, 1 - engagedSessions / sessions))
+      : null;
+
+  return (
+    <article className="rounded-2xl border border-white/[0.07] bg-black/10 p-4">
+      <div className="flex items-baseline justify-between gap-3">
+        <p className="text-xs font-medium text-white/50">Organic bounce</p>
+        <p className="font-mono text-sm tabular-nums text-white/75">
+          {bounceRate === null ? "—" : percentFormatter.format(bounceRate)}
+        </p>
+      </div>
+      <div
+        role="img"
+        aria-label="Organic bounce rate by week for the last 12 weeks"
+        className="mt-5 flex h-20 items-end gap-1"
+      >
+        {points.map((point) => {
+          const height =
+            point.bounceRate === null
+              ? 2
+              : Math.max(7, point.bounceRate * 100);
+          return (
+            <div
+              key={point.startDate}
+              className="min-w-0 flex-1 rounded-t-sm bg-amber-300/70"
+              style={{ height: `${height}%` }}
+              title={`${point.label}: ${point.bounceRate === null ? "No sessions" : percentFormatter.format(point.bounceRate)}`}
+            />
+          );
+        })}
+      </div>
+      <div className="mt-2 flex justify-between font-mono text-[8px] uppercase tracking-[0.08em] text-white/20">
+        <span>{points[0]?.label}</span>
+        <span>{points.at(-1)?.label}</span>
+      </div>
+    </article>
+  );
+}
+
 export function SeoTrendChart({ points }: { points: SeoTrendPoint[] }) {
   return (
     <section className="mt-8 rounded-[1.75rem] border border-white/10 bg-white/[0.035] p-5 sm:p-6">
@@ -71,7 +126,7 @@ export function SeoTrendChart({ points }: { points: SeoTrendPoint[] }) {
           Visibility to outcome
         </h2>
       </div>
-      <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
         <MetricTrend
           label="Impressions"
           metric="impressions"
@@ -96,6 +151,7 @@ export function SeoTrendChart({ points }: { points: SeoTrendPoint[] }) {
           points={points}
           color="bg-emerald-300/70"
         />
+        <BounceRateTrend points={points} />
       </div>
     </section>
   );

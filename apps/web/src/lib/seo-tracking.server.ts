@@ -38,6 +38,8 @@ type PageSnapshotRow = {
   google_canonical: string | null;
   last_crawl_time: string | Date | null;
   organic_sessions: string | number | null;
+  engaged_sessions: string | number | null;
+  engagement_duration_seconds: string | number | null;
   key_events: string | number | null;
   metadata: unknown;
   collected_at: string | Date;
@@ -63,6 +65,9 @@ export type SeoTrendPoint = {
   impressions: number;
   clicks: number;
   organicSessions: number;
+  engagementMeasuredSessions: number;
+  engagedSessions: number;
+  bounceRate: number | null;
   keyEvents: number;
   downloads: number;
 };
@@ -73,6 +78,11 @@ export type SeoTrackingSummary = {
   clicks28d: number;
   impressions28d: number;
   organicSessions28d: number;
+  engagementMeasuredSessions28d: number;
+  engagedSessions28d: number;
+  engagementRate28d: number | null;
+  bounceRate28d: number | null;
+  averageEngagementSeconds28d: number | null;
   keyEvents28d: number;
   trackedKeywords: number;
   lastSyncedAt: string | null;
@@ -193,6 +203,9 @@ function buildTrend(
       impressions: 0,
       clicks: 0,
       organicSessions: 0,
+      engagementMeasuredSessions: 0,
+      engagedSessions: 0,
+      bounceRate: null,
       keyEvents: 0,
       downloads: 0,
     });
@@ -227,14 +240,32 @@ function buildTrend(
     if (snapshot.source !== "google_analytics") continue;
     const week = points.get(mondayFor(snapshot.snapshot_date));
     if (!week) continue;
-    week.organicSessions += numeric(snapshot.organic_sessions) ?? 0;
+    const sessions = numeric(snapshot.organic_sessions) ?? 0;
+    week.organicSessions += sessions;
+    if (snapshot.engaged_sessions !== null) {
+      week.engagementMeasuredSessions += sessions;
+      week.engagedSessions += numeric(snapshot.engaged_sessions) ?? 0;
+    }
     week.keyEvents += numeric(snapshot.key_events) ?? 0;
   }
   for (const row of downloadRows) {
     const week = points.get(mondayFor(row.event_date));
     if (week) week.downloads += numeric(row.downloads) ?? 0;
   }
-  return [...points.values()];
+  return [...points.values()].map((point) => ({
+    ...point,
+    bounceRate:
+      point.engagementMeasuredSessions > 0
+        ? Math.max(
+            0,
+            Math.min(
+              1,
+              1 -
+                point.engagedSessions / point.engagementMeasuredSessions,
+            ),
+          )
+        : null,
+  }));
 }
 
 function targetMatchesRankingUrl(
@@ -318,6 +349,11 @@ function emptyProgress(): KeywordProgress {
     clicks28d: 0,
     ctr28d: null,
     organicSessions28d: 0,
+    engagementMeasuredSessions28d: 0,
+    engagedSessions28d: 0,
+    engagementRate28d: null,
+    bounceRate28d: null,
+    averageEngagementSeconds28d: null,
     keyEvents28d: 0,
     rankingUrl: null,
     rankingUrlMatchesTarget: null,
@@ -393,6 +429,32 @@ function progressForRow(
     (total, snapshot) => total + (numeric(snapshot.organic_sessions) ?? 0),
     0,
   );
+  const analyticsWithEngagement28d = analytics28d.filter(
+    (snapshot) => snapshot.engaged_sessions !== null,
+  );
+  const engagementMeasuredSessions28d = analyticsWithEngagement28d.reduce(
+    (total, snapshot) => total + (numeric(snapshot.organic_sessions) ?? 0),
+    0,
+  );
+  const engagedSessions28d = analyticsWithEngagement28d.reduce(
+    (total, snapshot) => total + (numeric(snapshot.engaged_sessions) ?? 0),
+    0,
+  );
+  const engagementDurationSeconds28d = analyticsWithEngagement28d.reduce(
+    (total, snapshot) =>
+      total + (numeric(snapshot.engagement_duration_seconds) ?? 0),
+    0,
+  );
+  const engagementRate28d =
+    engagementMeasuredSessions28d > 0
+      ? Math.max(
+          0,
+          Math.min(
+            1,
+            engagedSessions28d / engagementMeasuredSessions28d,
+          ),
+        )
+      : null;
   const keyEvents28d = analytics28d.reduce(
     (total, snapshot) => total + (numeric(snapshot.key_events) ?? 0),
     0,
@@ -423,6 +485,15 @@ function progressForRow(
     clicks28d,
     ctr28d: impressions28d > 0 ? clicks28d / impressions28d : null,
     organicSessions28d,
+    engagementMeasuredSessions28d,
+    engagedSessions28d,
+    engagementRate28d,
+    bounceRate28d:
+      engagementRate28d === null ? null : 1 - engagementRate28d,
+    averageEngagementSeconds28d:
+      engagementMeasuredSessions28d > 0
+        ? engagementDurationSeconds28d / engagementMeasuredSessions28d
+        : null,
     keyEvents28d,
     rankingUrl: latest.rankingUrl,
     rankingUrlMatchesTarget: targetMatchesRankingUrl(
@@ -502,6 +573,11 @@ export async function getTrackedKeywordDashboard(
     clicks28d: 0,
     impressions28d: 0,
     organicSessions28d: 0,
+    engagementMeasuredSessions28d: 0,
+    engagedSessions28d: 0,
+    engagementRate28d: null,
+    bounceRate28d: null,
+    averageEngagementSeconds28d: null,
     keyEvents28d: 0,
     trackedKeywords: 0,
     lastSyncedAt: null,
@@ -549,6 +625,8 @@ export async function getTrackedKeywordDashboard(
             google_canonical,
             last_crawl_time,
             organic_sessions,
+            engaged_sessions,
+            engagement_duration_seconds,
             key_events,
             metadata,
             collected_at
@@ -643,16 +721,55 @@ export async function getTrackedKeywordDashboard(
     }
     const analyticsTotals = new Map<
       string,
-      { keyEvents: number; sessions: number }
+      {
+        engagedSessions: number;
+        engagementMeasuredSessions: number;
+        engagementDurationSeconds: number;
+        keyEvents: number;
+        sessions: number;
+      }
     >();
     for (const row of enrichedRows) {
       if (!analyticsTotals.has(row.targetPath)) {
         analyticsTotals.set(row.targetPath, {
+          engagedSessions: row.progress.engagedSessions28d,
+          engagementMeasuredSessions:
+            row.progress.engagementMeasuredSessions28d,
+          engagementDurationSeconds:
+            (row.progress.averageEngagementSeconds28d ?? 0) *
+            row.progress.engagementMeasuredSessions28d,
           keyEvents: row.progress.keyEvents28d,
           sessions: row.progress.organicSessions28d,
         });
       }
     }
+    const analyticsValues = [...analyticsTotals.values()];
+    const organicSessions28d = analyticsValues.reduce(
+      (total, value) => total + value.sessions,
+      0,
+    );
+    const engagedSessions28d = analyticsValues.reduce(
+      (total, value) => total + value.engagedSessions,
+      0,
+    );
+    const engagementMeasuredSessions28d = analyticsValues.reduce(
+      (total, value) => total + value.engagementMeasuredSessions,
+      0,
+    );
+    const engagementDurationSeconds28d = analyticsValues.reduce(
+      (total, value) => total + value.engagementDurationSeconds,
+      0,
+    );
+    const engagementRate28d =
+      engagementMeasuredSessions28d > 0
+        ? Math.max(
+            0,
+            Math.min(
+              1,
+              engagedSessions28d / engagementMeasuredSessions28d,
+            ),
+          )
+        : null;
 
     return {
       rows: enrichedRows,
@@ -667,11 +784,18 @@ export async function getTrackedKeywordDashboard(
           (total, value) => total + value.impressions,
           0,
         ),
-        organicSessions28d: [...analyticsTotals.values()].reduce(
-          (total, value) => total + value.sessions,
-          0,
-        ),
-        keyEvents28d: [...analyticsTotals.values()].reduce(
+        organicSessions28d,
+        engagementMeasuredSessions28d,
+        engagedSessions28d,
+        engagementRate28d,
+        bounceRate28d:
+          engagementRate28d === null ? null : 1 - engagementRate28d,
+        averageEngagementSeconds28d:
+          engagementMeasuredSessions28d > 0
+            ? engagementDurationSeconds28d /
+              engagementMeasuredSessions28d
+            : null,
+        keyEvents28d: analyticsValues.reduce(
           (total, value) => total + value.keyEvents,
           0,
         ),
@@ -744,6 +868,8 @@ export async function getTrackedKeywordDetails(
           google_canonical,
           last_crawl_time,
           organic_sessions,
+          engaged_sessions,
+          engagement_duration_seconds,
           key_events,
           metadata,
           collected_at

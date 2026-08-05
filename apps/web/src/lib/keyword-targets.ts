@@ -46,6 +46,11 @@ export type KeywordProgress = {
   clicks28d: number;
   ctr28d: number | null;
   organicSessions28d: number;
+  engagementMeasuredSessions28d: number;
+  engagedSessions28d: number;
+  engagementRate28d: number | null;
+  bounceRate28d: number | null;
+  averageEngagementSeconds28d: number | null;
   keyEvents28d: number;
   rankingUrl: string | null;
   rankingUrlMatchesTarget: boolean | null;
