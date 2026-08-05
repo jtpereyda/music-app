@@ -22,6 +22,11 @@ type KeywordSnapshotRow = {
   collected_at: string | Date;
 };
 
+type KeywordDetailSnapshotRow = KeywordSnapshotRow & {
+  country: string;
+  device: string;
+};
+
 type PageSnapshotRow = {
   snapshot_date: string | Date;
   target_path: string;
@@ -80,6 +85,27 @@ export type TrackedKeywordDashboard = {
   rows: KeywordTargetRow[];
   summary: SeoTrackingSummary;
   trend: SeoTrendPoint[];
+};
+
+export type KeywordHistoryPoint = {
+  snapshotDate: string;
+  source: KeywordSnapshotRow["source"];
+  country: string;
+  device: string;
+  position: number | null;
+  rank: number | null;
+  averagePosition: number | null;
+  impressions: number;
+  clicks: number;
+  ctr: number | null;
+  rankingUrl: string | null;
+  collectedAt: string;
+};
+
+export type TrackedKeywordDetails = {
+  connected: boolean;
+  row: KeywordTargetRow;
+  history: KeywordHistoryPoint[];
 };
 
 const stages: KeywordProgressStage[] = [
@@ -669,6 +695,101 @@ export async function getTrackedKeywordDashboard(
       summary: emptySummary,
       trend: buildTrend([], [], []),
     };
+  }
+}
+
+export async function getTrackedKeywordDetails(
+  row: KeywordTargetRow,
+): Promise<TrackedKeywordDetails> {
+  const fallback: TrackedKeywordDetails = {
+    connected: false,
+    row: { ...row, progress: emptyProgress() },
+    history: [],
+  };
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) return fallback;
+
+  try {
+    const sql = neon(databaseUrl);
+    const [keywordResult, pageResult] = await Promise.all([
+      sql`
+        SELECT
+          snapshot_date,
+          keyword,
+          target_path,
+          source,
+          country,
+          device,
+          ranking_url,
+          rank,
+          clicks,
+          impressions,
+          average_position,
+          collected_at
+        FROM app.seo_keyword_snapshots
+        WHERE keyword = ${row.keyword}
+          AND target_path = ${row.targetPath}
+          AND snapshot_date >= current_date - 120
+        ORDER BY snapshot_date, source, country, device
+      `,
+      sql`
+        SELECT
+          snapshot_date,
+          target_path,
+          source,
+          is_live,
+          index_verdict,
+          robots_verdict,
+          user_canonical,
+          google_canonical,
+          last_crawl_time,
+          organic_sessions,
+          key_events,
+          metadata,
+          collected_at
+        FROM app.seo_page_snapshots
+        WHERE target_path = ${row.targetPath}
+          AND snapshot_date >= current_date - 120
+      `,
+    ]);
+    const keywordSnapshots =
+      keywordResult as unknown as KeywordDetailSnapshotRow[];
+    const pageSnapshots = pageResult as unknown as PageSnapshotRow[];
+
+    return {
+      connected: true,
+      row: {
+        ...row,
+        progress: progressForRow(row, keywordSnapshots, pageSnapshots),
+        seo: seoForRow(row, pageSnapshots),
+        indexing: indexingForRow(row, pageSnapshots),
+      },
+      history: keywordSnapshots.map((snapshot) => {
+        const clicks = numeric(snapshot.clicks) ?? 0;
+        const impressions = numeric(snapshot.impressions) ?? 0;
+        return {
+          snapshotDate: isoDate(snapshot.snapshot_date),
+          source: snapshot.source,
+          country: snapshot.country,
+          device: snapshot.device,
+          position:
+            numeric(snapshot.rank) ?? numeric(snapshot.average_position),
+          rank: numeric(snapshot.rank),
+          averagePosition: numeric(snapshot.average_position),
+          impressions,
+          clicks,
+          ctr: impressions > 0 ? clicks / impressions : null,
+          rankingUrl: snapshot.ranking_url,
+          collectedAt: isoTimestamp(snapshot.collected_at),
+        };
+      }),
+    };
+  } catch (error) {
+    const kind = error instanceof Error ? error.name : "UnknownError";
+    console.warn(
+      `[seo] Keyword detail read failed (${kind}); using empty history.`,
+    );
+    return fallback;
   }
 }
 
