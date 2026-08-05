@@ -57,6 +57,21 @@ function detailsHref(row: KeywordTargetRow) {
   };
 }
 
+function rowsForKeyword(
+  rows: KeywordTargetRow[],
+  routeKeyword: string,
+): KeywordTargetRow[] {
+  const exactMatches = rows.filter((row) => row.keyword === routeKeyword);
+  if (exactMatches.length > 0) return exactMatches;
+
+  try {
+    const decodedKeyword = decodeURIComponent(routeKeyword);
+    return rows.filter((row) => row.keyword === decodedKeyword);
+  } catch {
+    return [];
+  }
+}
+
 function googleSearchUrl(keyword: string): string {
   return `https://www.google.com/search?q=${encodeURIComponent(keyword)}`;
 }
@@ -155,7 +170,7 @@ export default async function KeywordDetailsPage({
     ? query.target[0]
     : query.target;
   const dashboard = getKeywordDashboard();
-  const candidates = dashboard.rows.filter((row) => row.keyword === keyword);
+  const candidates = rowsForKeyword(dashboard.rows, keyword);
   const selectedRow =
     candidates.find((row) => row.targetPath === requestedTarget) ??
     candidates[0];
