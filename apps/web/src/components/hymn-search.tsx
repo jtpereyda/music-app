@@ -35,6 +35,7 @@ export function HymnSearch({
           hymn.collectionTitle,
           hymn.textAuthor,
           hymn.tuneName,
+          ...hymn.searchTerms,
         ].some((value) => value.toLocaleLowerCase().includes(normalizedQuery));
       });
   const matches = allMatches.slice(0, 150);

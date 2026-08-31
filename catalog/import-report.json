@@ -1,5 +1,5 @@
 {
-  "catalog_revision": "7",
+  "catalog_revision": "8",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
@@ -32,7 +32,22 @@
       "version": "1"
     },
     "selected_cleanup_required": 274,
-    "supplement_cleanup_required": 7
+    "supplement_cleanup_required": 7,
+    "timeless_truths": {
+      "generator": {
+        "name": "timeless-truths-sibelius-satb",
+        "version": "1"
+      },
+      "normalization": {
+        "name": "timeless-truths-satb-normalizer",
+        "operations": [
+          "normalize_sibelius_lyric_rows",
+          "split_sibelius_satb_dyads",
+          "strip_source_page_credits"
+        ],
+        "version": "1"
+      }
+    }
   },
   "excluded": {
     "rights_holds": [
@@ -246,17 +261,24 @@
       "archive_exact_public_domain_candidates": 285,
       "archive_records": 306,
       "selected_compatible_additions": 8
+    },
+    "timeless_truths": {
+      "catalog_items": 1,
+      "exact_public_domain_candidates": 1,
+      "source_records": 1,
+      "structure_holds": 0
     }
   },
   "summary": {
-    "catalog_items": 2225,
-    "exact_public_domain_candidates": 2231,
+    "catalog_items": 2226,
+    "exact_public_domain_candidates": 2232,
     "hymns_to_god_items": 592,
     "openscore_lieder_items": 1356,
     "rights_holds": 20,
     "source_holds": 0,
-    "source_records": 2251,
+    "source_records": 2252,
     "structure_holds": 6,
-    "supplement_items": 8
+    "supplement_items": 8,
+    "timeless_truths_items": 1
   }
 }

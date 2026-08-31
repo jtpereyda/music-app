@@ -1,6 +1,6 @@
 {
   "catalog_id": "transposify-technical-preview",
-  "catalog_revision": "7",
+  "catalog_revision": "8",
   "items": [
     {
       "_arrangement_id": "passeth-understanding",
@@ -135302,6 +135302,85 @@
         "work_id": "lieder-6164142"
       },
       "title": "Lied in der Ferne"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Charles A. Tindley",
+        "ensemble": "SATB choir",
+        "lyricist": "Charles A. Tindley",
+        "meter": "10.9.10.9 with refrain",
+        "search_terms": [
+          "Nothing Between My Soul and the Savior",
+          "Nothing Between My Soul and the Saviour"
+        ],
+        "text_author": "Charles A. Tindley",
+        "tune_name": "NOTHING BETWEEN"
+      },
+      "id": "nothing-between",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "G",
+        "fifths": 1,
+        "mode": "major",
+        "name": "G major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Words and music: Charles A. Tindley, 1905.",
+          "Arrangement: F. A. Clark.",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/N/Nothing_Between/Nothing_Between.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_satb_dyads",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/nothing-between.musicxml",
+        "sha256": "9dbd5977d1f4a2110b9af90b466b00746e0d509047a4a1fb2f3c6fe459a8d99a"
+      },
+      "source": {
+        "arrangement_id": "nothing-between-clark",
+        "arrangement_label": "F. A. Clark",
+        "artifact_sha256": "785cce66fb51ee98f3b89ab6d04e7053c9cdb05a72cc4a18d3e9d3dbe9885ec7",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1,
+        "record_reference": "nothing-between",
+        "record_url": "https://library.timelesstruths.org/music/Nothing_Between/",
+        "work_id": "nothing-between"
+      },
+      "title": "Nothing Between"
     }
   ],
   "schema_version": 1,
@@ -135331,6 +135410,12 @@
       "id": "openscore-lieder-cc0",
       "manifest_sha256": "1ff7fc949568cbeaf147368cbfef8d696d3f784993fd40775744beebec64e879",
       "source_url": "https://github.com/OpenScore/Lieder/archive/6b2dc542ce2e8aa4b78c8ee62103b210efc07015.zip"
+    },
+    {
+      "encoding": "utf-8",
+      "id": "timeless-truths-public-domain",
+      "manifest_sha256": "4d5b5746c885c7016e493a29d267752d6e0f10d0ff89d031a8c6c113cd3c4fd6",
+      "source_url": "https://library.timelesstruths.org/music/Nothing_Between/"
     }
   ]
 }

@@ -1,11 +1,11 @@
 # Catalog expansion
 
-## Catalog revision 7
+## Catalog revision 8
 
-The implemented catalog contains 2,225 scores:
+The implemented catalog contains 2,226 scores:
 
-- 869 public-domain hymn arrangements from the pinned Open Hymnal and
-  HymnsToGod sources; and
+- 870 public-domain hymn arrangements from the pinned Open Hymnal,
+  HymnsToGod, and Timeless Truths sources; and
 - 1,356 CC0 classical art-song scores from the indexed OpenScore Lieder corpus.
 
 All existing hymn IDs and hymn-specific landing pages remain stable. The
@@ -13,6 +13,12 @@ catalog, edition builder, search UI, render routes, and database constraints
 now distinguish generic scores from hymns. Hymns retain SATB and individual
 voice options. Art songs expose the complete encoded score so voice and piano
 transpose together.
+
+Revision 8 adds `Nothing Between` from Timeless Truths. The source page marks
+the edition public domain and exposes MusicXML directly. A pinned, versioned
+normalizer converts the Sibelius two-staff dyads into four semantic SATB voices,
+maps the four positional lyric rows to stable verse IDs, and retains both the
+American and British first-line spellings as search aliases.
 
 ## OpenScore Lieder result
 

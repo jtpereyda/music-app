@@ -367,6 +367,7 @@ def _write_web_catalog(
         source_label = {
             HYMNS_TO_GOD_COLLECTION_ID: "HymnsToGod",
             "openscore-lieder-cc0": "OpenScore Lieder",
+            "timeless-truths-public-domain": "Timeless Truths",
         }.get(collection_id, "Open Hymnal")
         content_type = item.get("content_type", "hymn")
         composer = display.get("composer") or display["tune_name"]
@@ -407,6 +408,7 @@ def _write_web_catalog(
                 f"    lyricist: {json.dumps(lyricist, ensure_ascii=False)},",
                 f"    collectionTitle: {json.dumps(collection_title, ensure_ascii=False)},",
                 f"    ensemble: {json.dumps(ensemble, ensure_ascii=False)},",
+                f"    searchTerms: {json.dumps(display.get('search_terms', []), ensure_ascii=False)},",
                 f"    originalKey: {json.dumps(_slug(key_name), ensure_ascii=False)},",
                 f"    sourceLabel: {json.dumps(source_label)},",
                 f"    availableLines: {json.dumps(available_lines, ensure_ascii=False)},",
