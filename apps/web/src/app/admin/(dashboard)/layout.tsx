@@ -19,7 +19,7 @@ export default async function AdminDashboardLayout({
   }
 
   return (
-    <div className="min-h-[calc(100vh-8rem)] bg-[#10171d] text-[#eef0eb]">
+    <div className="min-h-screen bg-[#10171d] text-[#eef0eb]">
       <header className="border-b border-white/10 bg-[#10171d]/95 px-5 backdrop-blur-xl sm:px-8 lg:px-10">
         <div className="mx-auto flex min-h-16 w-full max-w-[1440px] items-center justify-between gap-5 py-3">
           <div className="flex min-w-0 items-center gap-3">
