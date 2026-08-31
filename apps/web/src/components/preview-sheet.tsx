@@ -1,5 +1,6 @@
 "use client";
 
+import { ShareButton } from "@/components/share-button";
 import type {
   CatalogItem,
   Clef,
@@ -28,6 +29,7 @@ interface PreviewSheetProps {
   isRendering: boolean;
   previewUrl?: string;
   previewState: PreviewState;
+  shareEnabled: boolean;
   onDownload: () => void;
   onPreviewReady: (url: string) => void;
   onPreviewError: (url: string) => void;
@@ -46,6 +48,7 @@ export function PreviewSheet({
   isRendering,
   previewUrl,
   previewState,
+  shareEnabled,
   onDownload,
   onPreviewReady,
   onPreviewError,
@@ -113,6 +116,12 @@ export function PreviewSheet({
             )}
             {isRendering ? "Rendering…" : "Download PDF"}
           </button>
+          {shareEnabled ? (
+            <ShareButton
+              title={`${hymn.title} sheet music`}
+              text={`View ${hymn.title} sheet music on Transposify.`}
+            />
+          ) : null}
           <span className="hidden text-xs text-ink/40 sm:inline">
             {previewState === "ready"
               ? " · generated from canonical MusicXML"

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { HymnConfigurator } from "@/components/hymn-configurator";
-import { ShareButton } from "@/components/share-button";
 import {
   getKeyLabel,
   outputOptions,
@@ -134,10 +133,6 @@ export function HymnLandingPage({
                 >
                   Configure and download
                 </Link>
-                <ShareButton
-                  title={`${hymn.title} sheet music`}
-                  text={`View ${hymn.title} sheet music on Transposify.`}
-                />
               </div>
             </div>
 

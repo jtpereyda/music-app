@@ -598,6 +598,9 @@ export function HymnConfigurator({
             isRendering={isRendering}
             previewUrl={previewUrl}
             previewState={previewState}
+            shareEnabled={Boolean(
+              urlBaseEdition && selectedHymn.id === initialHymn.id,
+            )}
             onDownload={downloadPdf}
             onPreviewReady={(url) =>
               setPreviewResult({ url, state: "ready" })
