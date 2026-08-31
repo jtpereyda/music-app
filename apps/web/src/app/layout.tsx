@@ -2,9 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
-import { AppFooter } from "@/components/app-footer";
-import { AppHeader } from "@/components/app-header";
-import { MicrosoftClarity } from "@/components/microsoft-clarity";
 import {
   defaultSiteTitle,
   getSiteUrl,
@@ -79,12 +76,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className="min-h-screen antialiased">
-        <AppHeader />
-        <main>{children}</main>
-        <AppFooter />
-        <MicrosoftClarity />
-      </body>
+      <body className="min-h-screen antialiased">{children}</body>
       {measurementId ? <GoogleAnalytics gaId={measurementId} /> : null}
     </html>
   );

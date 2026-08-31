@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { auth, signIn } from "@/auth";
-import {
-  AUTHORIZED_ADMIN_EMAIL,
-  isAuthorizedAdmin,
-} from "@/lib/admin-auth";
+import { isAuthorizedAdmin } from "@/lib/admin-auth";
 
 export const metadata: Metadata = {
   title: "Admin sign in",
@@ -35,44 +32,17 @@ export default async function AdminSignInPage({
   const hasError = Boolean(params.error);
 
   return (
-    <section className="relative grid min-h-[calc(100vh-8rem)] place-items-center overflow-hidden bg-[#10171d] px-5 py-16 text-[#eef0eb]">
-      <div className="pointer-events-none absolute -left-28 top-12 size-80 rounded-full bg-blue/20 blur-3xl" />
-      <div className="pointer-events-none absolute -right-20 bottom-6 size-72 rounded-full bg-coral/15 blur-3xl" />
-
-      <div className="relative w-full max-w-md rounded-[2rem] border border-white/10 bg-white/[0.045] p-7 shadow-[0_30px_100px_rgba(0,0,0,0.32)] backdrop-blur-xl sm:p-9">
-        <div className="grid size-11 place-items-center rounded-2xl bg-coral text-white shadow-[0_8px_28px_rgba(231,104,77,0.28)]">
-          <svg
-            viewBox="0 0 24 24"
-            className="size-5"
-            fill="none"
-            aria-hidden="true"
-          >
-            <path
-              d="M5 18.5V13m7 5.5V5m7 13.5V9"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-          </svg>
-        </div>
-
-        <p className="mt-8 font-mono text-[9px] uppercase tracking-[0.18em] text-coral">
-          Private workspace
-        </p>
-        <h1 className="mt-3 text-4xl font-medium tracking-[-0.055em]">
-          Search control room
-        </h1>
-        <p className="mt-4 text-sm leading-6 text-white/50">
-          Sign in to review Transposify’s target keywords, research coverage,
-          and Ahrefs shortcuts.
-        </p>
+    <main className="grid min-h-screen place-items-center bg-[#10171d] px-5 py-16 text-[#eef0eb]">
+      <div className="w-full max-w-xs">
+        <h1 className="text-xl font-medium tracking-[-0.03em]">Admin</h1>
+        <p className="mt-2 text-sm text-white/45">Sign in to continue.</p>
 
         {hasError ? (
           <div
             role="alert"
-            className="mt-6 rounded-2xl border border-coral/25 bg-coral/10 px-4 py-3 text-sm leading-5 text-[#ffc9bd]"
+            className="mt-6 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm leading-5 text-white/70"
           >
-            That Google account is not authorized for this dashboard.
+            That account is not authorized.
           </div>
         ) : null}
 
@@ -85,7 +55,7 @@ export default async function AdminSignInPage({
         >
           <button
             type="submit"
-            className="flex w-full items-center justify-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#182127] shadow-sm transition hover:-translate-y-0.5 hover:bg-[#f7f7f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4 focus-visible:ring-offset-[#10171d]"
+            className="flex w-full items-center justify-center gap-3 rounded-lg bg-white px-5 py-3 text-sm font-medium text-[#182127] transition hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-4 focus-visible:ring-offset-[#10171d]"
           >
             <svg viewBox="0 0 24 24" className="size-4" aria-hidden="true">
               <path
@@ -105,14 +75,10 @@ export default async function AdminSignInPage({
                 d="M12 6.01c1.47 0 2.79.5 3.83 1.5L18.7 4.64A9.64 9.64 0 0 0 12 2a10 10 0 0 0-8.96 5.52l3.35 2.62C7.18 7.77 9.39 6.01 12 6.01Z"
               />
             </svg>
-            Continue with Google
+            Sign in with Google
           </button>
         </form>
-
-        <p className="mt-5 text-center font-mono text-[9px] leading-4 text-white/30">
-          Access restricted to {AUTHORIZED_ADMIN_EMAIL}
-        </p>
       </div>
-    </section>
+    </main>
   );
 }
