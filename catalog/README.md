@@ -1,14 +1,15 @@
 # Technical-preview catalog
 
-This directory contains 2,225 untransposed canonical scores selected for
-technical pipeline work from four pinned source collections:
+This directory contains 2,226 untransposed canonical scores selected for
+technical pipeline work from five pinned source collections:
 
 - 269 hymns from the Open Hymnal 2014.06 combined ABC;
 - eight compatible, non-duplicate hymns from its split ZIP;
-- 592 public-domain HymnsToGod arrangements; and
+- 592 public-domain HymnsToGod arrangements;
+- one Public Domain Mark edition from Timeless Truths; and
 - 1,356 CC0 voice-and-piano scores indexed by OpenScore Lieder.
 
-The first three collections provide 869 hymns. OpenScore Lieder provides 1,356
+The first four collections provide 870 hymns. OpenScore Lieder provides 1,356
 classical art songs. The catalog preserves each source record, canonical score
 hash, display metadata, rights declaration, original key and mode, work ID, and
 arrangement ID.
@@ -33,6 +34,13 @@ The complete HymnsToGod audit found 593 index pages representing 575 works and
 because its page says `Copyright: Unknown - USA`; the `Amazing Grace` King
 David R setting is held because its page substitutes a Choral Public Domain
 Library license for the index's normal public-domain declaration.
+
+The Timeless Truths addition is `Nothing Between`, an SATB arrangement credited
+to F. A. Clark. Its record page and MusicXML identify the score as public
+domain, and the page links the Creative Commons Public Domain Mark 1.0. The
+pinned Sibelius MusicXML uses a deterministic normalization to split two-staff
+dyads into four semantic voices, repair positional lyric-row identifiers, and
+remove source-page credits that do not fit the product renderer.
 
 The Open Hymnal combined source has 293 records. Eighteen are rights holds and
 six are structural holds because they contain 3, 5, 6, or 7 voices instead of
@@ -132,10 +140,12 @@ bsdtar -xf /tmp/OpenScore-Lieder-6b2dc542.zip -C /tmp
 
 python3 catalog/scripts/import_openscore_lieder.py \
   --source-root /tmp/Lieder-6b2dc542ce2e8aa4b78c8ee62103b210efc07015
+
+python3 catalog/scripts/import_timeless_truths.py
 ```
 
-The two promotion stages regenerate `catalog.json`, `import-report.json`,
-canonical scores, the Lieder manifest, and
+The promotion stages regenerate `catalog.json`, `import-report.json`,
+canonical scores, the source manifests, and
 `apps/web/src/lib/catalog.generated.ts`. They fail closed if pinned source
-counts, hashes, rights gates, record identities, or the expected 869-hymn,
-1,356-art-song, and 2,225-total results drift.
+counts, hashes, rights gates, record identities, or the expected 870-hymn,
+1,356-art-song, and 2,226-total results drift.

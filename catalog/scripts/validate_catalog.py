@@ -242,6 +242,16 @@ def _validate_score(
     elif generator == {"name": "openscore-lieder-mxl", "version": "1"}:
         if not any(value.startswith("MuseScore") for value in encoders):
             _error(errors, item_id, "OpenScore Lieder score does not declare MuseScore")
+    elif generator == {
+        "name": "timeless-truths-sibelius-satb",
+        "version": "1",
+    }:
+        if "Transposify Timeless Truths normalizer v1" not in encoders:
+            _error(
+                errors,
+                item_id,
+                "Timeless Truths score does not declare its normalizer",
+            )
     else:
         _error(errors, item_id, f"unsupported score generator {generator!r}")
 
@@ -328,6 +338,16 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
                 value = display.get(field)
                 if not isinstance(value, str) or not value.strip():
                     _error(errors, display_id, f"display.{field} must be non-empty")
+            search_terms = display.get("search_terms", [])
+            if not isinstance(search_terms, list) or any(
+                not isinstance(value, str) or not value.strip()
+                for value in search_terms
+            ):
+                _error(
+                    errors,
+                    display_id,
+                    "display.search_terms must contain non-empty strings",
+                )
 
         lyrics = item.get("lyrics")
         if not isinstance(lyrics, Mapping):
@@ -354,6 +374,7 @@ def validate_catalog_data(data: Any, *, catalog_root: Path = CATALOG_ROOT) -> li
                 declaration.startswith("copyright: public domain.")
                 or declaration == "Copyright: Public Domain - USA"
                 or declaration == "Creative Commons Zero (CC0) 1.0 Universal"
+                or declaration == "Public Domain Mark 1.0"
             )
             if not valid_declaration:
                 _error(errors, display_id, "missing exact public-domain source declaration")

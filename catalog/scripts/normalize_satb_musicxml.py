@@ -10,9 +10,13 @@ import xml.etree.ElementTree as ET
 
 NORMALIZER_NAME = "open-hymnal-satb-normalizer"
 NORMALIZER_VERSION = "1"
+TIMELESS_TRUTHS_NORMALIZER_NAME = "timeless-truths-satb-normalizer"
 SPLIT_COMBINED_CHORD_VOICES = "split_combined_chord_voices"
 DROP_EMPTY_PARTS = "drop_empty_parts"
 ALIGN_MEASURE_NUMBERS = "align_measure_numbers"
+NORMALIZE_SIBELIUS_LYRIC_ROWS = "normalize_sibelius_lyric_rows"
+SPLIT_SIBELIUS_SATB_DYADS = "split_sibelius_satb_dyads"
+STRIP_SOURCE_PAGE_CREDITS = "strip_source_page_credits"
 
 _DOCTYPE = (
     '<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" '
@@ -150,7 +154,32 @@ def _pitch_value(note: ET.Element) -> tuple[int, int]:
 def _set_voice(note: ET.Element, value: str) -> None:
     voice = _direct_child(note, "voice")
     if voice is None:
-        raise SatbNormalizationError("Expected every note to declare a voice.")
+        namespace = ""
+        if "}" in note.tag:
+            namespace = note.tag.split("}", 1)[0] + "}"
+        voice = ET.Element(f"{namespace}voice")
+        followers = {
+            "accidental",
+            "beam",
+            "dot",
+            "lyric",
+            "notations",
+            "notehead",
+            "play",
+            "staff",
+            "stem",
+            "time-modification",
+            "type",
+        }
+        insertion_index = next(
+            (
+                index
+                for index, child in enumerate(note)
+                if _local_name(child.tag) in followers
+            ),
+            len(note),
+        )
+        note.insert(insertion_index, voice)
     voice.text = value
 
 
@@ -327,6 +356,260 @@ def _split_combined_chord_voices(root: ET.Element) -> int:
     return normalized_parts
 
 
+_SIBELIUS_LYRIC_ROW_TO_VERSE = {
+    "-95": "1",
+    "-120": "2",
+    "-145": "3",
+    "-170": "4",
+    # The refrain is printed as a single shared lyric row.
+    "-100": "1",
+}
+
+
+def _normalize_sibelius_lyric_rows(root: ET.Element) -> int:
+    lyrics = [
+        element
+        for element in root.iter()
+        if _local_name(element.tag) == "lyric"
+    ]
+    if not lyrics:
+        raise SatbNormalizationError("Score contains no lyrics to normalize.")
+    seen_verses: set[str] = set()
+    for lyric in lyrics:
+        row = lyric.get("default-y")
+        if row not in _SIBELIUS_LYRIC_ROW_TO_VERSE:
+            raise SatbNormalizationError(
+                f"Unexpected Sibelius lyric row {row!r}."
+            )
+        verse = _SIBELIUS_LYRIC_ROW_TO_VERSE[row]
+        lyric.set("number", verse)
+        seen_verses.add(verse)
+    if seen_verses != {"1", "2", "3", "4"}:
+        raise SatbNormalizationError(
+            f"Expected four Sibelius lyric rows, found {sorted(seen_verses)}."
+        )
+    return len(lyrics)
+
+
+def _hidden_rest(source: ET.Element, *, voice: str, duration: int) -> ET.Element:
+    namespace = ""
+    if "}" in source.tag:
+        namespace = source.tag.split("}", 1)[0] + "}"
+    note = ET.Element(f"{namespace}note", {"print-object": "no"})
+    ET.SubElement(note, f"{namespace}rest")
+    duration_element = ET.SubElement(note, f"{namespace}duration")
+    duration_element.text = str(duration)
+    voice_element = ET.SubElement(note, f"{namespace}voice")
+    voice_element.text = voice
+    staff = _direct_child(source, "staff")
+    if staff is not None:
+        note.append(copy.deepcopy(staff))
+    return note
+
+
+def _filled_voice_events(
+    events: list[tuple[int, ET.Element]],
+    *,
+    extent: int,
+    voice: str,
+) -> list[ET.Element]:
+    result: list[ET.Element] = []
+    cursor = 0
+    for onset, note in events:
+        if onset < cursor:
+            raise SatbNormalizationError(
+                f"Sibelius voice {voice} contains overlapping notes."
+            )
+        if onset > cursor:
+            result.append(
+                _hidden_rest(note, voice=voice, duration=onset - cursor)
+            )
+        result.append(note)
+        cursor = onset + _required_int(note, "duration")
+    if not result:
+        raise SatbNormalizationError(f"Sibelius voice {voice} is empty.")
+    if cursor > extent:
+        raise SatbNormalizationError(
+            f"Sibelius voice {voice} exceeds its measure."
+        )
+    if cursor < extent:
+        result.append(
+            _hidden_rest(result[-1], voice=voice, duration=extent - cursor)
+        )
+    return result
+
+
+def _remove_slurs(note: ET.Element) -> None:
+    for notations in _direct_children(note, "notations"):
+        for child in list(notations):
+            if _local_name(child.tag) == "slur":
+                notations.remove(child)
+        if not list(notations):
+            note.remove(notations)
+
+
+def _append_slur(note: ET.Element, slur: ET.Element) -> None:
+    notations = _direct_child(note, "notations")
+    if notations is None:
+        namespace = ""
+        if "}" in note.tag:
+            namespace = note.tag.split("}", 1)[0] + "}"
+        notations = ET.Element(f"{namespace}notations")
+        insertion_index = next(
+            (
+                index
+                for index, child in enumerate(note)
+                if _local_name(child.tag) in {"lyric", "play"}
+            ),
+            len(note),
+        )
+        note.insert(insertion_index, notations)
+    notations.append(copy.deepcopy(slur))
+
+
+def _split_sibelius_measure(measure: ET.Element) -> None:
+    timed_notes, extent = _timed_notes(measure)
+    by_onset: dict[int, list[_TimedNote]] = {}
+    for timed in timed_notes:
+        by_onset.setdefault(timed.onset, []).append(timed)
+    if not by_onset or min(by_onset) != 0:
+        raise SatbNormalizationError(
+            "Sibelius SATB dyads must begin at the start of each measure."
+        )
+
+    upper_events: list[tuple[int, ET.Element]] = []
+    lower_events: list[tuple[int, ET.Element]] = []
+    for onset in sorted(by_onset):
+        group = by_onset[onset]
+        pitched = [
+            timed
+            for timed in group
+            if _direct_child(timed.note, "pitch") is not None
+        ]
+        if len(pitched) != 2:
+            raise SatbNormalizationError(
+                "Each Sibelius SATB onset must contain exactly two pitches."
+            )
+        ordered = sorted(pitched, key=lambda timed: _pitch_value(timed.note))
+        lower_source = ordered[0].note
+        upper_source = ordered[-1].note
+        lyrics = [
+            lyric
+            for timed in group
+            for lyric in _direct_children(timed.note, "lyric")
+        ]
+        slurs = [
+            slur
+            for timed in group
+            for notations in _direct_children(timed.note, "notations")
+            for slur in _direct_children(notations, "slur")
+        ]
+        upper_note = _prepare_note(upper_source, voice="1", lyrics=lyrics)
+        lower_note = _prepare_note(lower_source, voice="2", lyrics=[])
+        _remove_slurs(upper_note)
+        _remove_slurs(lower_note)
+        for slur in slurs:
+            orientation = slur.get("orientation")
+            if orientation == "over":
+                _append_slur(upper_note, slur)
+            elif orientation == "under":
+                _append_slur(lower_note, slur)
+            else:
+                raise SatbNormalizationError(
+                    "Sibelius slur is missing an over/under orientation."
+                )
+        upper_events.append(
+            (
+                onset,
+                upper_note,
+            )
+        )
+        lower_events.append(
+            (
+                onset,
+                lower_note,
+            )
+        )
+
+    upper = _filled_voice_events(upper_events, extent=extent, voice="1")
+    lower = _filled_voice_events(lower_events, extent=extent, voice="2")
+    stream_names = {"backup", "forward", "note"}
+    stream_indices = [
+        index
+        for index, child in enumerate(measure)
+        if _local_name(child.tag) in stream_names
+    ]
+    if not stream_indices:
+        raise SatbNormalizationError("Sibelius measure contains no note stream.")
+    first, last = min(stream_indices), max(stream_indices)
+    intervening = [
+        child
+        for child in list(measure)[first : last + 1]
+        if _local_name(child.tag) not in stream_names
+    ]
+    if intervening:
+        raise SatbNormalizationError(
+            "Sibelius measure interleaves unsupported notation with its voices."
+        )
+
+    namespace = ""
+    if "}" in measure.tag:
+        namespace = measure.tag.split("}", 1)[0] + "}"
+    backup = ET.Element(f"{namespace}backup")
+    backup_duration = ET.SubElement(backup, f"{namespace}duration")
+    backup_duration.text = str(extent)
+    children = list(measure)
+    measure[:] = [
+        *children[:first],
+        *upper,
+        backup,
+        *lower,
+        *children[last + 1 :],
+    ]
+
+
+def _split_sibelius_satb_dyads(root: ET.Element) -> int:
+    parts = _direct_children(root, "part")
+    if len(parts) != 2:
+        raise SatbNormalizationError(
+            f"Expected two Sibelius SATB parts, found {len(parts)}."
+        )
+    for part in parts:
+        measures = _direct_children(part, "measure")
+        if not measures:
+            raise SatbNormalizationError("Sibelius SATB part has no measures.")
+        for measure in measures:
+            _split_sibelius_measure(measure)
+    return len(parts)
+
+
+def _append_timeless_truths_encoder(root: ET.Element) -> None:
+    encoding = next(
+        (
+            element
+            for element in root.iter()
+            if _local_name(element.tag) == "encoding"
+        ),
+        None,
+    )
+    if encoding is None:
+        raise SatbNormalizationError("Score has no encoding metadata.")
+    namespace = ""
+    if "}" in encoding.tag:
+        namespace = encoding.tag.split("}", 1)[0] + "}"
+    software = ET.SubElement(encoding, f"{namespace}software")
+    software.text = "Transposify Timeless Truths normalizer v1"
+
+
+def _strip_source_page_credits(root: ET.Element) -> int:
+    credits = _direct_children(root, "credit")
+    if not credits:
+        raise SatbNormalizationError("Score has no source page credits to strip.")
+    for credit in credits:
+        root.remove(credit)
+    return len(credits)
+
+
 def _drop_empty_parts(root: ET.Element) -> int:
     empty_parts = [
         part
@@ -398,6 +681,25 @@ def normalize_satb_musicxml(data: bytes, operation: str) -> NormalizationResult:
     else:
         raise SatbNormalizationError(f"Unknown SATB normalization {operation!r}.")
     operations = [operation]
+    if _align_measure_numbers(root):
+        operations.append(ALIGN_MEASURE_NUMBERS)
+    return NormalizationResult(data=_serialize(root), operations=tuple(operations))
+
+
+def normalize_timeless_truths_musicxml(data: bytes) -> NormalizationResult:
+    """Normalize the audited Timeless Truths Sibelius SATB export."""
+    root = ET.fromstring(data)
+    if _local_name(root.tag) != "score-partwise":
+        raise SatbNormalizationError("Expected score-partwise MusicXML.")
+    _normalize_sibelius_lyric_rows(root)
+    _split_sibelius_satb_dyads(root)
+    _strip_source_page_credits(root)
+    _append_timeless_truths_encoder(root)
+    operations = [
+        NORMALIZE_SIBELIUS_LYRIC_ROWS,
+        SPLIT_SIBELIUS_SATB_DYADS,
+        STRIP_SOURCE_PAGE_CREDITS,
+    ]
     if _align_measure_numbers(root):
         operations.append(ALIGN_MEASURE_NUMBERS)
     return NormalizationResult(data=_serialize(root), operations=tuple(operations))

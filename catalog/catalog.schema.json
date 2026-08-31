@@ -45,7 +45,8 @@
           "enum": [
             "abc2xml",
             "hymns-to-god-mup-satb",
-            "openscore-lieder-mxl"
+            "openscore-lieder-mxl",
+            "timeless-truths-sibelius-satb"
           ]
         },
         "version": {
@@ -161,6 +162,14 @@
         "lyricist": {
           "minLength": 1,
           "type": "string"
+        },
+        "search_terms": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
         }
       },
       "required": [
@@ -300,14 +309,20 @@
       "additionalProperties": false,
       "properties": {
         "name": {
-          "const": "open-hymnal-satb-normalizer"
+          "enum": [
+            "open-hymnal-satb-normalizer",
+            "timeless-truths-satb-normalizer"
+          ]
         },
         "operations": {
           "items": {
             "enum": [
               "align_measure_numbers",
               "drop_empty_parts",
-              "split_combined_chord_voices"
+              "normalize_sibelius_lyric_rows",
+              "split_combined_chord_voices",
+              "split_sibelius_satb_dyads",
+              "strip_source_page_credits"
             ]
           },
           "minItems": 1,

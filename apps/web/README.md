@@ -67,8 +67,8 @@ GET /v1/scores/o-for-a-thousand-tongues/score.pdf
     ?key=d-major&line=bass&clef=bass&octave=auto&page_size=letter
 ```
 
-The generated frontend catalog contains the same 2,225 stable IDs exposed by
-the render service: 869 hymns and 1,356 art songs. Without the environment
+The generated frontend catalog contains the same 2,226 stable IDs exposed by
+the render service: 870 hymns and 1,356 art songs. Without the environment
 variable, the configurator falls back to a clearly labeled static layout mock
 and explains how to connect downloads.
 

@@ -27,6 +27,7 @@ LANDMARK_IDS = {
     "it-is-well-with-my-soul",
     "jesus-loves-me",
     "now-thank-we-all-our-god",
+    "nothing-between",
     "o-for-a-thousand-tongues",
     "praise-my-soul-the-king-of-heaven",
     "rescue-the-perishing",
@@ -38,6 +39,7 @@ NORMALIZED_IDS = {
     "did-you-think-to-pray",
     "jesus-loves-me",
     "now-thank-we-all-our-god",
+    "nothing-between",
     "praise-my-soul-the-king-of-heaven",
     "the-law-of-god-is-good-and-wise",
     "you-parents-hear-what-jesus-taught",
@@ -59,8 +61,8 @@ class CatalogTests(unittest.TestCase):
         ids = {item["id"] for item in self.catalog["items"]}
         self.assertTrue(LANDMARK_IDS <= ids)
         self.assertEqual(self.catalog["catalog_id"], "transposify-technical-preview")
-        self.assertEqual(self.catalog["catalog_revision"], "7")
-        self.assertEqual(len(self.catalog["items"]), 2225)
+        self.assertEqual(self.catalog["catalog_revision"], "8")
+        self.assertEqual(len(self.catalog["items"]), 2226)
         hymns = [
             item for item in self.catalog["items"] if item["content_type"] == "hymn"
         ]
@@ -69,7 +71,7 @@ class CatalogTests(unittest.TestCase):
             for item in self.catalog["items"]
             if item["content_type"] == "art_song"
         ]
-        self.assertEqual(len(hymns), 869)
+        self.assertEqual(len(hymns), 870)
         self.assertEqual(len(art_songs), 1356)
         for item in hymns:
             self.assertEqual(item["rights"]["status"], RIGHTS_STATUS)
@@ -94,15 +96,16 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["summary"],
             {
-                "catalog_items": 2225,
-                "exact_public_domain_candidates": 2231,
+                "catalog_items": 2226,
+                "exact_public_domain_candidates": 2232,
                 "hymns_to_god_items": 592,
                 "openscore_lieder_items": 1356,
                 "rights_holds": 20,
                 "source_holds": 0,
-                "source_records": 2251,
+                "source_records": 2252,
                 "structure_holds": 6,
                 "supplement_items": 8,
+                "timeless_truths_items": 1,
             },
         )
         self.assertEqual(
@@ -136,6 +139,15 @@ class CatalogTests(unittest.TestCase):
                 "source_records": 1356,
                 "structure_holds": 0,
                 "unindexed_mxl_files": 106,
+            },
+        )
+        self.assertEqual(
+            report["source_breakdown"]["timeless_truths"],
+            {
+                "catalog_items": 1,
+                "exact_public_domain_candidates": 1,
+                "source_records": 1,
+                "structure_holds": 0,
             },
         )
 
@@ -219,7 +231,9 @@ class CatalogTests(unittest.TestCase):
             if "normalization" in item["score"]
         }
         self.assertEqual(set(normalized), NORMALIZED_IDS)
-        for metadata in normalized.values():
+        for item_id, metadata in normalized.items():
+            if item_id == "nothing-between":
+                continue
             self.assertEqual(metadata["name"], "open-hymnal-satb-normalizer")
             self.assertEqual(metadata["version"], "1")
         self.assertEqual(
@@ -227,8 +241,35 @@ class CatalogTests(unittest.TestCase):
             ["split_combined_chord_voices", "align_measure_numbers"],
         )
         for item_id, metadata in normalized.items():
-            if item_id != "now-thank-we-all-our-god":
+            if item_id not in {"now-thank-we-all-our-god", "nothing-between"}:
                 self.assertEqual(len(metadata["operations"]), 1)
+        self.assertEqual(
+            normalized["nothing-between"],
+            {
+                "name": "timeless-truths-satb-normalizer",
+                "operations": [
+                    "normalize_sibelius_lyric_rows",
+                    "split_sibelius_satb_dyads",
+                    "strip_source_page_credits",
+                ],
+                "version": "1",
+            },
+        )
+
+    def test_nothing_between_preserves_source_and_search_identity(self) -> None:
+        item = next(
+            item for item in self.catalog["items"] if item["id"] == "nothing-between"
+        )
+        self.assertEqual(item["source"]["collection_id"], "timeless-truths-public-domain")
+        self.assertEqual(item["source"]["arrangement_id"], "nothing-between-clark")
+        self.assertEqual(item["original_key"]["name"], "G major")
+        self.assertEqual(
+            item["display"]["search_terms"],
+            [
+                "Nothing Between My Soul and the Savior",
+                "Nothing Between My Soul and the Saviour",
+            ],
+        )
 
     def test_schema_pins_non_production_rights_status(self) -> None:
         status = self.schema["$defs"]["rights"]["properties"]["status"]["const"]

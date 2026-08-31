@@ -94,6 +94,7 @@ export interface CatalogItem {
   lyricist: string;
   collectionTitle: string;
   ensemble: string;
+  searchTerms: readonly string[];
   originalKey: TargetKey;
   sourceLabel: string;
   availableLines: readonly OutputPart[];

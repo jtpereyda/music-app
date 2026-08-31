@@ -1,7 +1,7 @@
 # Transposify
 
 Technical-preview web app for producing practical editions from structured
-music data. The fixed catalog contains 2,225 scores: 869 hymns and 1,356
+music data. The fixed catalog contains 2,226 scores: 870 hymns and 1,356
 classical art songs from OpenScore Lieder. A user chooses a score, a compatible
 target key, and US Letter or A4 output. Hymns also offer full SATB or an
 individual S/A/T/B line, display-clef selection, and octave placement. Art
@@ -16,14 +16,14 @@ semantics. SVG and PDF are derived output only: they are not parsed back into
 notes. A PDF-only input would require optical music recognition plus human
 correction.
 
-All 2,225 records are explicitly marked
+All 2,226 records are explicitly marked
 `technical_candidate_not_production_approved`. The source and conversion are
 appropriate for product development, but production publication still requires
 independent rights evidence for each text, translation, tune, and setting.
 
 ## Architecture
 
-- `catalog/`: generated 2,225-score catalog and canonical MusicXML/MXL
+- `catalog/`: generated 2,226-score catalog and canonical MusicXML/MXL
 - `spikes/ingest/`: reproducible ABC inventory and MusicXML conversion
 - `spikes/render/`: MusicXML line selection, transposition, clef
   representation, SVG engraving, and PDF generation
