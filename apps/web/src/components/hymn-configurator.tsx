@@ -550,7 +550,10 @@ export function HymnConfigurator({
             </div>
 
             <div className="mt-6 border-t border-ink/10 pt-5">
-              <div className="flex items-center gap-2">
+              <div
+                id="edition-primary-actions"
+                className="flex items-center gap-2"
+              >
                 <button
                   type="button"
                   onClick={downloadPdf}

@@ -9,12 +9,15 @@ interface MobilePreviewStatusProps {
 }
 
 const previewTargetId = "edition-preview";
+const primaryActionsTargetId = "edition-primary-actions";
 
 export function MobilePreviewStatus({
   enabled,
   state,
 }: MobilePreviewStatusProps) {
   const [isPreviewVisible, setIsPreviewVisible] = useState(false);
+  const [arePrimaryActionsVisible, setArePrimaryActionsVisible] =
+    useState(false);
 
   useEffect(() => {
     const preview = document.getElementById(previewTargetId);
@@ -22,16 +25,30 @@ export function MobilePreviewStatus({
       return;
     }
 
-    const observer = new IntersectionObserver(
+    const previewObserver = new IntersectionObserver(
       ([entry]) => setIsPreviewVisible(entry.isIntersecting),
       {
         rootMargin: "-10% 0px -20% 0px",
         threshold: 0.1,
       },
     );
-    observer.observe(preview);
+    previewObserver.observe(preview);
 
-    return () => observer.disconnect();
+    const primaryActions = document.getElementById(primaryActionsTargetId);
+    const primaryActionsObserver = primaryActions
+      ? new IntersectionObserver(
+          ([entry]) => setArePrimaryActionsVisible(entry.isIntersecting),
+          { threshold: 0 },
+        )
+      : null;
+    if (primaryActions && primaryActionsObserver) {
+      primaryActionsObserver.observe(primaryActions);
+    }
+
+    return () => {
+      previewObserver.disconnect();
+      primaryActionsObserver?.disconnect();
+    };
   }, []);
 
   function showPreview() {
@@ -48,6 +65,7 @@ export function MobilePreviewStatus({
   if (
     !enabled ||
     isPreviewVisible ||
+    arePrimaryActionsVisible ||
     (state !== "loading" && state !== "ready")
   ) {
     return null;
