@@ -16,6 +16,9 @@ export function MobilePreviewStatus({
   state,
 }: MobilePreviewStatusProps) {
   const [isPreviewVisible, setIsPreviewVisible] = useState(false);
+  const [previewDirection, setPreviewDirection] = useState<"up" | "down">(
+    "down",
+  );
   const [arePrimaryActionsVisible, setArePrimaryActionsVisible] =
     useState(false);
 
@@ -26,7 +29,10 @@ export function MobilePreviewStatus({
     }
 
     const previewObserver = new IntersectionObserver(
-      ([entry]) => setIsPreviewVisible(entry.isIntersecting),
+      ([entry]) => {
+        setIsPreviewVisible(entry.isIntersecting);
+        setPreviewDirection(entry.boundingClientRect.top < 0 ? "up" : "down");
+      },
       {
         rootMargin: "-10% 0px -20% 0px",
         threshold: 0.1,
@@ -92,6 +98,7 @@ export function MobilePreviewStatus({
       type="button"
       onClick={showPreview}
       aria-controls={previewTargetId}
+      aria-label={`Scroll ${previewDirection} to preview`}
       className="group fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 z-50 flex items-center gap-2.5 rounded-full bg-coral px-4 py-3 text-sm font-semibold text-white shadow-[0_12px_35px_rgba(231,104,77,0.34)] outline-none transition hover:-translate-y-0.5 hover:bg-[#d95f45] focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4 xl:hidden"
     >
       <span className="relative flex size-2" aria-hidden="true">
@@ -99,20 +106,24 @@ export function MobilePreviewStatus({
         <span className="relative inline-flex size-2 rounded-full bg-white" />
       </span>
       Preview ready
-      <svg
-        viewBox="0 0 20 20"
-        fill="none"
-        className="size-4 transition-transform group-hover:translate-y-0.5"
+      <span
+        className={`transition-transform ${
+          previewDirection === "up"
+            ? "rotate-180 group-hover:-translate-y-0.5"
+            : "group-hover:translate-y-0.5"
+        }`}
         aria-hidden="true"
       >
-        <path
-          d="M10 4v11m0 0 4-4m-4 4-4-4"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+        <svg viewBox="0 0 20 20" fill="none" className="size-4">
+          <path
+            d="M10 4v11m0 0 4-4m-4 4-4-4"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </span>
     </button>
   );
 }
