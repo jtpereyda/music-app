@@ -20,6 +20,7 @@ from import_timeless_truths import (  # noqa: E402
 )
 from normalize_satb_musicxml import (  # noqa: E402
     NORMALIZE_SIBELIUS_LYRIC_ROWS,
+    SPLIT_SIBELIUS_MIXED_VOICES,
     SPLIT_SIBELIUS_SATB_DYADS,
     STRIP_SOURCE_PAGE_CREDITS,
     normalize_timeless_truths_musicxml,
@@ -66,6 +67,50 @@ class TimelessTruthsImportTests(unittest.TestCase):
             ),
         )
 
+    def test_mixed_voice_profile_produces_semantic_satb(self) -> None:
+        source = (
+            REPOSITORY_ROOT
+            / "data/timeless-truths/raw/xml/abide-with-me.xml"
+        ).read_bytes()
+        result = normalize_timeless_truths_musicxml(
+            source,
+            work_title="Abide with Me",
+        )
+        facts = _score_facts(result.data)
+
+        self.assertEqual(
+            result.profile,
+            "split_primary_dyads_with_secondary_voice",
+        )
+        self.assertIn(SPLIT_SIBELIUS_MIXED_VOICES, result.operations)
+        self.assertEqual(result.duplicated_unison_events, 0)
+        self.assertEqual(facts["chord_notes"], 0)
+        self.assertEqual(
+            facts["voice_locations"],
+            [(0, "1"), (0, "2"), (1, "1"), (1, "2")],
+        )
+
+    def test_shared_printed_unisons_are_explicitly_counted(self) -> None:
+        source = (
+            REPOSITORY_ROOT
+            / "data/timeless-truths/raw/xml/drifting-away-from-jesus.xml"
+        ).read_bytes()
+        result = normalize_timeless_truths_musicxml(
+            source,
+            work_title="Drifting Away from Jesus",
+        )
+        source_root = ET.fromstring(source)
+        normalized_root = ET.fromstring(result.data)
+        source_pitches = sum(
+            element.tag.endswith("pitch") for element in source_root.iter()
+        )
+        normalized_pitches = sum(
+            element.tag.endswith("pitch") for element in normalized_root.iter()
+        )
+
+        self.assertEqual(result.duplicated_unison_events, 60)
+        self.assertEqual(normalized_pitches, source_pitches + 60)
+
     def test_bulk_inventory_and_manifest_account_for_the_source(self) -> None:
         source_root = REPOSITORY_ROOT / "data/timeless-truths"
         inventory = json.loads((source_root / "inventory.json").read_text())
@@ -75,21 +120,29 @@ class TimelessTruthsImportTests(unittest.TestCase):
         self.assertEqual(
             inventory["summary"],
             {
-                "normalization_candidate": 1710,
+                "normalization_candidate": 1375,
                 "rights_hold": 26,
                 "score_settings": 1895,
-                "straightforward_candidate": 148,
+                "straightforward_candidate": 483,
                 "strict_public_domain_musicxml": 1869,
                 "structure_hold": 11,
             },
         )
-        self.assertEqual(manifest["summary"]["promoted_records"], 148)
-        self.assertEqual(manifest["summary"]["net_new_titles"], 126)
-        self.assertEqual(manifest["summary"]["distinct_arrangements"], 22)
-        self.assertEqual(len(manifest["records"]), 148)
+        self.assertEqual(manifest["summary"]["promoted_records"], 483)
+        self.assertEqual(manifest["summary"]["net_new_titles"], 413)
+        self.assertEqual(manifest["summary"]["distinct_arrangements"], 70)
+        self.assertEqual(manifest["summary"]["shared_unison_events"], 270)
+        self.assertEqual(
+            manifest["summary"]["normalization_profile_counts"],
+            {
+                "split_aligned_satb_dyads": 148,
+                "split_primary_dyads_with_secondary_voice": 335,
+            },
+        )
+        self.assertEqual(len(manifest["records"]), 483)
         self.assertEqual(
             Counter(record["promotion_reason"] for record in manifest["records"]),
-            {"distinct_arrangement": 22, "net_new_title": 126},
+            {"distinct_arrangement": 70, "net_new_title": 413},
         )
         self.assertTrue(
             all(
@@ -99,7 +152,7 @@ class TimelessTruthsImportTests(unittest.TestCase):
         )
         self.assertEqual(
             len(list((source_root / "raw/xml").glob("*.xml"))),
-            148,
+            483,
         )
 
 

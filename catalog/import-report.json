@@ -1,5 +1,5 @@
 {
-  "catalog_revision": "9",
+  "catalog_revision": "10",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
@@ -40,7 +40,10 @@
       },
       "normalization": {
         "name": "timeless-truths-satb-normalizer",
-        "profile": "split_aligned_satb_dyads",
+        "profiles": [
+          "split_aligned_satb_dyads",
+          "split_primary_dyads_with_secondary_voice"
+        ],
         "version": "1"
       }
     }
@@ -48,8 +51,8 @@
   "excluded": {
     "normalization_backlog": {
       "collection_id": "timeless-truths-public-domain",
-      "reason": "requires a lossless normalization profile beyond aligned SATB dyads",
-      "records": 1710
+      "reason": "requires a lossless normalization profile beyond the supported aligned and mixed-voice SATB shapes",
+      "records": 1375
     },
     "rights_holds": [
       {
@@ -523,18 +526,23 @@
       "selected_compatible_additions": 8
     },
     "timeless_truths": {
-      "catalog_items": 148,
-      "distinct_arrangements": 22,
-      "net_new_titles": 126,
-      "normalization_backlog": 1710,
+      "catalog_items": 483,
+      "distinct_arrangements": 70,
+      "net_new_titles": 413,
+      "normalization_backlog": 1375,
+      "normalization_profile_counts": {
+        "split_aligned_satb_dyads": 148,
+        "split_primary_dyads_with_secondary_voice": 335
+      },
       "rights_holds": 26,
+      "shared_unison_events": 270,
       "source_records": 1895,
       "strict_public_domain_musicxml": 1869,
       "structure_holds": 11
     }
   },
   "summary": {
-    "catalog_items": 2373,
+    "catalog_items": 2708,
     "exact_public_domain_candidates": 4100,
     "hymns_to_god_items": 592,
     "openscore_lieder_items": 1356,
@@ -543,6 +551,6 @@
     "source_records": 4146,
     "structure_holds": 17,
     "supplement_items": 8,
-    "timeless_truths_items": 148
+    "timeless_truths_items": 483
   }
 }
