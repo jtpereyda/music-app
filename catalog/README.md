@@ -1,15 +1,15 @@
 # Technical-preview catalog
 
-This directory contains 3,393 untransposed canonical scores selected for
+This directory contains 3,992 untransposed canonical scores selected for
 technical pipeline work from five pinned source collections:
 
 - 269 hymns from the Open Hymnal 2014.06 combined ABC;
 - eight compatible, non-duplicate hymns from its split ZIP;
 - 592 public-domain HymnsToGod arrangements;
-- 1,168 Public Domain Mark editions from Timeless Truths; and
+- 1,767 Public Domain Mark editions from Timeless Truths; and
 - 1,356 CC0 voice-and-piano scores indexed by OpenScore Lieder.
 
-The first four collections provide 2,037 hymns. OpenScore Lieder provides 1,356
+The first four collections provide 2,636 hymns. OpenScore Lieder provides 1,356
 classical art songs. The catalog preserves each source record, canonical score
 hash, display metadata, rights declaration, original key and mode, work ID, and
 arrangement ID.
@@ -37,9 +37,9 @@ Library license for the index's normal public-domain declaration.
 
 The Timeless Truths inventory pins 1,895 score settings across 1,857 work pages.
 The text and score declarations are checked independently: 1,869 settings pass
-both public-domain gates and 26 remain rights holds. The first three normalization
-profiles promote 1,168 losslessly normalizable SATB settings: 1,016 net-new titles
-and 152 additional arrangements of titles already available earlier in source
+both public-domain gates and 26 remain rights holds. Five normalization profiles
+promote 1,767 losslessly normalizable SATB settings: 1,552 net-new titles and
+215 additional arrangements of titles already available earlier in source
 order. This includes the
 original `Nothing Between` addition and preserves its stable item and
 arrangement identities.
@@ -48,12 +48,16 @@ The Timeless Truths Sibelius exports encode two printed notes per staff as
 aligned dyads or explicit secondary voices combined with primary-stem dyads.
 Some exports also serialize directions and barlines between voice events; the
 third profile restores all 1,493 such elements at the same voice cursor.
+The fourth profile retains source divisi pitches as chords within the relevant
+semantic voice. The fifth shares rests across both semantic lines only in
+completely silent source measures. Across all profiles, 2,421 interleaved
+directions and barlines are preserved at their original voice cursor.
 The deterministic normalizer splits the accepted cohort into four semantic
 voices, repairs lyric-row identifiers, drops duplicated lyrics from the lower
 staff, aligns measure numbers where needed, and removes source page credits
 that do not fit the product renderer. Pitched-event and measure-extent checks
 prove that source notes are preserved; shared printed unisons are duplicated
-only to make both semantic lines extractable. Another 691 public-domain
+only to make both semantic lines extractable. Another 92 public-domain
 settings are retained in the pinned normalization backlog, while 10 unusual
 structures remain explicit structural holds. They are not silently treated as
 import failures.
@@ -161,7 +165,7 @@ python3 catalog/scripts/inventory_timeless_truths.py \
   --output-root /path/to/build/timeless-truths \
   --audit-date 2026-09-02
 
-# Copy the pinned inventory and its 1,168 supported raw XML payloads into
+# Copy the pinned inventory and its 1,767 supported raw XML payloads into
 # data/timeless-truths, then rebuild the promoted cohort:
 python3 catalog/scripts/import_timeless_truths.py
 ```
@@ -169,5 +173,5 @@ python3 catalog/scripts/import_timeless_truths.py
 The promotion stages regenerate `catalog.json`, `import-report.json`,
 canonical scores, the source manifests, and
 `apps/web/src/lib/catalog.generated.ts`. They fail closed if pinned source
-counts, hashes, rights gates, record identities, or the expected 2,037-hymn,
-1,356-art-song, and 3,393-total results drift.
+counts, hashes, rights gates, record identities, or the expected 2,636-hymn,
+1,356-art-song, and 3,992-total results drift.

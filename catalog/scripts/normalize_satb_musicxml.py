@@ -22,9 +22,16 @@ SPLIT_SIBELIUS_MIXED_VOICES = "split_sibelius_mixed_voices"
 SPLIT_SIBELIUS_MIXED_VOICES_WITH_CONTEXT = (
     "split_sibelius_mixed_voices_with_context"
 )
+SPLIT_SIBELIUS_DIVISI_VOICES_WITH_CONTEXT = (
+    "split_sibelius_divisi_voices_with_context"
+)
+SPLIT_SIBELIUS_SHARED_RESTS_WITH_CONTEXT = (
+    "split_sibelius_shared_rests_with_context"
+)
 STRIP_SOURCE_PAGE_CREDITS = "strip_source_page_credits"
 DROP_NON_SOPRANO_LYRICS = "drop_non_soprano_lyrics"
 SET_WORK_TITLE = "set_work_title"
+SET_MODE_FROM_SOURCE_KEY_LABEL = "set_mode_from_source_key_label"
 
 _DOCTYPE = (
     '<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" '
@@ -443,6 +450,26 @@ def _set_work_title(root: ET.Element, work_title: str) -> bool:
     return True
 
 
+def _set_mode_from_source_key_label(root: ET.Element, key_label: str) -> bool:
+    mode = next(
+        (element for element in root.iter() if _local_name(element.tag) == "mode"),
+        None,
+    )
+    if mode is None:
+        raise SatbNormalizationError("Score has no key mode element.")
+    current = (mode.text or "").strip().casefold()
+    if current in {"major", "minor"}:
+        return False
+    if current not in {"", "none"}:
+        raise SatbNormalizationError(f"Unsupported source key mode {current!r}.")
+    if not re.fullmatch(r"[A-G](?:♭|♯)?m?", key_label):
+        raise SatbNormalizationError(
+            f"Unsupported Timeless Truths key label {key_label!r}."
+        )
+    mode.text = "minor" if key_label.endswith("m") else "major"
+    return True
+
+
 def _hidden_rest(source: ET.Element, *, voice: str, duration: int) -> ET.Element:
     namespace = ""
     if "}" in source.tag:
@@ -714,6 +741,33 @@ def _append_oriented_slurs(
             )
 
 
+def _mark_chord_follower(note: ET.Element) -> None:
+    namespace = ""
+    if "}" in note.tag:
+        namespace = note.tag.split("}", 1)[0] + "}"
+    chord = ET.Element(f"{namespace}chord")
+    insertion_index = next(
+        (
+            index
+            for index, child in enumerate(note)
+            if _local_name(child.tag) in {"pitch", "unpitched", "rest"}
+        ),
+        0,
+    )
+    note.insert(insertion_index, chord)
+
+
+def _expand_chord_followers(
+    notes: list[ET.Element],
+    followers: dict[int, list[ET.Element]],
+) -> list[ET.Element]:
+    result: list[ET.Element] = []
+    for note in notes:
+        result.append(note)
+        result.extend(followers.get(id(note), []))
+    return result
+
+
 def _assert_non_overlapping_events(
     events: list[tuple[int, ET.Element]],
     *,
@@ -794,7 +848,11 @@ def _merge_stream_context(
         ):
             result.append(context[context_index][1])
             context_index += 1
-        duration = _required_int(note, "duration")
+        duration = (
+            0
+            if _direct_child(note, "chord") is not None
+            else _required_int(note, "duration")
+        )
         if (
             context_index < len(context)
             and cursor < context[context_index][0] < cursor + duration
@@ -822,6 +880,8 @@ def _merge_stream_context(
 def _split_sibelius_mixed_measure(
     measure: ET.Element,
     *,
+    allow_divisi: bool = False,
+    allow_shared_rests: bool = False,
     preserve_context: bool = False,
 ) -> None:
     groups, extent = _timed_note_groups(measure)
@@ -830,6 +890,8 @@ def _split_sibelius_mixed_measure(
 
     upper_events: list[tuple[int, ET.Element]] = []
     lower_events: list[tuple[int, ET.Element]] = []
+    upper_followers: dict[int, list[ET.Element]] = {}
+    lower_followers: dict[int, list[ET.Element]] = {}
     upper_rests: list[tuple[int, ET.Element]] = []
     lower_rests: list[tuple[int, ET.Element]] = []
     pending_unisons: list[
@@ -860,6 +922,17 @@ def _split_sibelius_mixed_measure(
             _append_oriented_slurs(sources=sources, upper=upper, lower=lower)
             upper_events.append((pitched[0].onset, upper))
             lower_events.append((pitched[0].onset, lower))
+        elif allow_divisi and voice == "1" and len(pitched) == 3:
+            ordered = sorted(pitched, key=lambda timed: _pitch_value(timed.note))
+            lower = _prepare_note(ordered[0].note, voice="2", lyrics=[])
+            upper = _prepare_note(ordered[1].note, voice="1", lyrics=lyrics)
+            follower = _prepare_note(ordered[2].note, voice="1", lyrics=[])
+            _remove_slurs(follower)
+            _mark_chord_follower(follower)
+            _append_oriented_slurs(sources=sources, upper=upper, lower=lower)
+            upper_events.append((pitched[0].onset, upper))
+            lower_events.append((pitched[0].onset, lower))
+            upper_followers[id(upper)] = [follower]
         elif voice == "1" and len(pitched) == 1:
             source = pitched[0]
             upper = _prepare_note(source.note, voice="1", lyrics=lyrics)
@@ -868,13 +941,29 @@ def _split_sibelius_mixed_measure(
         elif voice == "1" and not pitched and rests:
             source = rests[0]
             upper = _prepare_note(source.note, voice="1", lyrics=lyrics)
-            _append_oriented_slurs(sources=sources, upper=upper, lower=None)
+            lower = (
+                _prepare_note(source.note, voice="2", lyrics=[])
+                if allow_shared_rests
+                else None
+            )
+            _append_oriented_slurs(sources=sources, upper=upper, lower=lower)
             upper_rests.append((source.onset, upper))
+            if lower is not None:
+                lower_rests.append((source.onset, lower))
         elif voice == "2" and len(pitched) == 1:
             source = pitched[0]
             lower = _prepare_note(source.note, voice="2", lyrics=[])
             _append_oriented_slurs(sources=sources, upper=None, lower=lower)
             lower_events.append((source.onset, lower))
+        elif allow_divisi and voice == "2" and len(pitched) == 2:
+            ordered = sorted(pitched, key=lambda timed: _pitch_value(timed.note))
+            lower = _prepare_note(ordered[0].note, voice="2", lyrics=[])
+            follower = _prepare_note(ordered[1].note, voice="2", lyrics=[])
+            _remove_slurs(follower)
+            _mark_chord_follower(follower)
+            _append_oriented_slurs(sources=sources, upper=None, lower=lower)
+            lower_events.append((pitched[0].onset, lower))
+            lower_followers[id(lower)] = [follower]
         elif voice == "2" and not pitched and rests:
             source = rests[0]
             lower = _prepare_note(source.note, voice="2", lyrics=[])
@@ -910,6 +999,8 @@ def _split_sibelius_mixed_measure(
     _assert_non_overlapping_events(lower_events, voice="2")
     upper = _filled_voice_events(upper_events, extent=extent, voice="1")
     lower = _filled_voice_events(lower_events, extent=extent, voice="2")
+    upper = _expand_chord_followers(upper, upper_followers)
+    lower = _expand_chord_followers(lower, lower_followers)
 
     first, last, upper_context, lower_context = _interleaved_stream_context(
         measure,
@@ -964,6 +1055,45 @@ def _split_sibelius_mixed_voices_with_context(root: ET.Element) -> int:
             raise SatbNormalizationError("Sibelius SATB part has no measures.")
         for measure in measures:
             _split_sibelius_mixed_measure(measure, preserve_context=True)
+    return len(parts)
+
+
+def _split_sibelius_divisi_voices_with_context(root: ET.Element) -> int:
+    parts = _direct_children(root, "part")
+    if len(parts) != 2:
+        raise SatbNormalizationError(
+            f"Expected two Sibelius SATB parts, found {len(parts)}."
+        )
+    for part in parts:
+        measures = _direct_children(part, "measure")
+        if not measures:
+            raise SatbNormalizationError("Sibelius SATB part has no measures.")
+        for measure in measures:
+            _split_sibelius_mixed_measure(
+                measure,
+                allow_divisi=True,
+                preserve_context=True,
+            )
+    return len(parts)
+
+
+def _split_sibelius_shared_rests_with_context(root: ET.Element) -> int:
+    parts = _direct_children(root, "part")
+    if len(parts) != 2:
+        raise SatbNormalizationError(
+            f"Expected two Sibelius SATB parts, found {len(parts)}."
+        )
+    for part in parts:
+        measures = _direct_children(part, "measure")
+        if not measures:
+            raise SatbNormalizationError("Sibelius SATB part has no measures.")
+        for measure in measures:
+            _split_sibelius_mixed_measure(
+                measure,
+                allow_divisi=True,
+                allow_shared_rests=True,
+                preserve_context=True,
+            )
     return len(parts)
 
 
@@ -1185,6 +1315,7 @@ def normalize_satb_musicxml(data: bytes, operation: str) -> NormalizationResult:
 def normalize_timeless_truths_musicxml(
     data: bytes,
     *,
+    source_key_label: str | None = None,
     work_title: str | None = None,
 ) -> NormalizationResult:
     """Normalize the audited Timeless Truths Sibelius SATB export."""
@@ -1203,6 +1334,16 @@ def normalize_timeless_truths_musicxml(
             "split_mixed_voices_with_interleaved_notation",
             SPLIT_SIBELIUS_MIXED_VOICES_WITH_CONTEXT,
             _split_sibelius_mixed_voices_with_context,
+        ),
+        (
+            "split_divisi_voices_with_interleaved_notation",
+            SPLIT_SIBELIUS_DIVISI_VOICES_WITH_CONTEXT,
+            _split_sibelius_divisi_voices_with_context,
+        ),
+        (
+            "split_shared_rests_with_interleaved_notation",
+            SPLIT_SIBELIUS_SHARED_RESTS_WITH_CONTEXT,
+            _split_sibelius_shared_rests_with_context,
         ),
     ]
     errors: list[str] = []
@@ -1224,6 +1365,11 @@ def normalize_timeless_truths_musicxml(
             ]
             if dropped_lyrics:
                 operations.insert(1, DROP_NON_SOPRANO_LYRICS)
+            if (
+                source_key_label is not None
+                and _set_mode_from_source_key_label(root, source_key_label)
+            ):
+                operations.append(SET_MODE_FROM_SOURCE_KEY_LABEL)
             if work_title is not None and _set_work_title(root, work_title):
                 operations.append(SET_WORK_TITLE)
             if _align_measure_numbers(root):

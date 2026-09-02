@@ -35,7 +35,7 @@ DEFAULT_REPORT = CATALOG_ROOT / "import-report.json"
 DEFAULT_MANIFEST = REPOSITORY_ROOT / "data/timeless-truths/manifest.json"
 DEFAULT_WEB_CATALOG = REPOSITORY_ROOT / "apps/web/src/lib/catalog.generated.ts"
 
-CATALOG_REVISION = "11"
+CATALOG_REVISION = "12"
 COLLECTION_ID = DATASET_ID
 GENERATOR_NAME = "timeless-truths-sibelius-satb"
 GENERATOR_VERSION = "1"
@@ -52,9 +52,9 @@ EXPECTED_NORMALIZED_SHA256 = (
     "9dbd5977d1f4a2110b9af90b466b00746e0d509047a4a1fb2f3c6fe459a8d99a"
 )
 EXPECTED_BASE_ITEMS = 2225
-EXPECTED_PROMOTED_ITEMS = 1168
-EXPECTED_NET_NEW_TITLES = 1016
-EXPECTED_DISTINCT_ARRANGEMENTS = 152
+EXPECTED_PROMOTED_ITEMS = 1767
+EXPECTED_NET_NEW_TITLES = 1552
+EXPECTED_DISTINCT_ARRANGEMENTS = 215
 LEGACY_ARRANGEMENT_IDS = {"nothing-between": "nothing-between-clark"}
 SEARCH_ALIASES = {
     "nothing-between": [
@@ -149,9 +149,14 @@ def _score_facts(data: bytes) -> dict[str, object]:
     }
 
 
-def _validate_facts(facts: dict[str, object], title: str = "Nothing Between") -> None:
+def _validate_facts(
+    facts: dict[str, object],
+    title: str = "Nothing Between",
+    *,
+    expected_chord_notes: int = 0,
+) -> None:
     expected = {
-        "chord_notes": 0,
+        "chord_notes": expected_chord_notes,
         "lyric_locations": [(0, "1")],
         "parts": 2,
         "title": title,
@@ -336,7 +341,7 @@ def import_score(
 
     dispositions = Counter(str(record["disposition"]) for record in records)
     expected_dispositions = {
-        "normalization_candidate": 691,
+        "normalization_candidate": 92,
         "rights_hold": 26,
         "straightforward_candidate": EXPECTED_PROMOTED_ITEMS,
         "structure_hold": 10,
@@ -351,10 +356,11 @@ def import_score(
         "8",
         "9",
         "10",
+        "11",
         CATALOG_REVISION,
     }:
         raise TimelessTruthsImportError(
-            "base catalog must be revision 8, 9, 10, or idempotent revision 11"
+            "base catalog must be revision 8, 9, 10, 11, or idempotent revision 12"
         )
     existing_collection_items = [
         item
@@ -427,6 +433,7 @@ def import_score(
             )
         normalized = normalize_timeless_truths_musicxml(
             source_data,
+            source_key_label=str(record["key_label"]),
             work_title=str(record["title"]),
         )
         normalized_sha256 = _sha256_bytes(normalized.data)
@@ -444,7 +451,13 @@ def import_score(
                 f"normalization drifted for {record['arrangement_id']!r}"
             )
         facts = _score_facts(normalized.data)
-        _validate_facts(facts, str(record["title"]))
+        _validate_facts(
+            facts,
+            str(record["title"]),
+            expected_chord_notes=int(
+                expected_normalized["structure"]["chord_note_count"]
+            ),
+        )
 
         title_key = _slug(str(record["title"]))
         fingerprint = str(
@@ -660,7 +673,8 @@ def import_score(
         "records": dispositions["normalization_candidate"],
         "reason": (
             "requires a lossless normalization profile beyond the supported "
-            "aligned, mixed-voice, and interleaved-notation SATB shapes"
+            "aligned, mixed-voice, interleaved-notation, divisi, and "
+            "shared-rest SATB shapes"
         ),
     }
     report["summary"].update(

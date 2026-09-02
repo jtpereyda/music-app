@@ -20,9 +20,12 @@ from import_timeless_truths import (  # noqa: E402
 )
 from normalize_satb_musicxml import (  # noqa: E402
     NORMALIZE_SIBELIUS_LYRIC_ROWS,
+    SET_MODE_FROM_SOURCE_KEY_LABEL,
+    SPLIT_SIBELIUS_DIVISI_VOICES_WITH_CONTEXT,
     SPLIT_SIBELIUS_MIXED_VOICES,
     SPLIT_SIBELIUS_MIXED_VOICES_WITH_CONTEXT,
     SPLIT_SIBELIUS_SATB_DYADS,
+    SPLIT_SIBELIUS_SHARED_RESTS_WITH_CONTEXT,
     STRIP_SOURCE_PAGE_CREDITS,
     normalize_timeless_truths_musicxml,
 )
@@ -139,6 +142,73 @@ class TimelessTruthsImportTests(unittest.TestCase):
                 sum(element.tag.endswith(name) for element in normalized_root.iter()),
             )
 
+    def test_divisi_pitches_remain_chords_in_the_semantic_upper_voice(self) -> None:
+        source = (
+            REPOSITORY_ROOT
+            / "data/timeless-truths/raw/xml/a-better-way.xml"
+        ).read_bytes()
+        result = normalize_timeless_truths_musicxml(
+            source,
+            source_key_label="B♭",
+            work_title="A Better Way",
+        )
+        facts = _score_facts(result.data)
+        source_root = ET.fromstring(source)
+        normalized_root = ET.fromstring(result.data)
+
+        self.assertEqual(
+            result.profile,
+            "split_divisi_voices_with_interleaved_notation",
+        )
+        self.assertIn(
+            SPLIT_SIBELIUS_DIVISI_VOICES_WITH_CONTEXT,
+            result.operations,
+        )
+        self.assertGreater(facts["chord_notes"], 0)
+        self.assertEqual(
+            sum(element.tag.endswith("pitch") for element in source_root.iter()),
+            sum(
+                element.tag.endswith("pitch")
+                for element in normalized_root.iter()
+            ),
+        )
+
+    def test_silent_measures_share_rests_without_adding_pitches(self) -> None:
+        source = (
+            REPOSITORY_ROOT
+            / "data/timeless-truths/raw/xml/a-beautiful-life.xml"
+        ).read_bytes()
+        result = normalize_timeless_truths_musicxml(
+            source,
+            source_key_label="C",
+            work_title="A Beautiful Life",
+        )
+
+        self.assertEqual(
+            result.profile,
+            "split_shared_rests_with_interleaved_notation",
+        )
+        self.assertIn(
+            SPLIT_SIBELIUS_SHARED_RESTS_WITH_CONTEXT,
+            result.operations,
+        )
+        self.assertEqual(result.duplicated_unison_events, 0)
+        self.assertEqual(result.preserved_context_events, 5)
+
+    def test_missing_mode_is_pinned_from_the_source_key_label(self) -> None:
+        source = (
+            REPOSITORY_ROOT
+            / "data/timeless-truths/raw/xml/sing-of-salvation.xml"
+        ).read_bytes()
+        result = normalize_timeless_truths_musicxml(
+            source,
+            source_key_label="C",
+            work_title="Sing of Salvation",
+        )
+
+        self.assertIn(SET_MODE_FROM_SOURCE_KEY_LABEL, result.operations)
+        self.assertEqual(_score_facts(result.data)["mode"], "major")
+
     def test_bulk_inventory_and_manifest_account_for_the_source(self) -> None:
         source_root = REPOSITORY_ROOT / "data/timeless-truths"
         inventory = json.loads((source_root / "inventory.json").read_text())
@@ -150,31 +220,33 @@ class TimelessTruthsImportTests(unittest.TestCase):
         self.assertEqual(
             inventory["summary"],
             {
-                "normalization_candidate": 691,
+                "normalization_candidate": 92,
                 "rights_hold": 26,
                 "score_settings": 1895,
-                "straightforward_candidate": 1168,
+                "straightforward_candidate": 1767,
                 "strict_public_domain_musicxml": 1869,
                 "structure_hold": 10,
             },
         )
-        self.assertEqual(manifest["summary"]["promoted_records"], 1168)
-        self.assertEqual(manifest["summary"]["net_new_titles"], 1016)
-        self.assertEqual(manifest["summary"]["distinct_arrangements"], 152)
-        self.assertEqual(manifest["summary"]["shared_unison_events"], 661)
-        self.assertEqual(manifest["summary"]["preserved_context_events"], 1493)
+        self.assertEqual(manifest["summary"]["promoted_records"], 1767)
+        self.assertEqual(manifest["summary"]["net_new_titles"], 1552)
+        self.assertEqual(manifest["summary"]["distinct_arrangements"], 215)
+        self.assertEqual(manifest["summary"]["shared_unison_events"], 737)
+        self.assertEqual(manifest["summary"]["preserved_context_events"], 2421)
         self.assertEqual(
             manifest["summary"]["normalization_profile_counts"],
             {
                 "split_aligned_satb_dyads": 148,
+                "split_divisi_voices_with_interleaved_notation": 360,
                 "split_mixed_voices_with_interleaved_notation": 685,
                 "split_primary_dyads_with_secondary_voice": 335,
+                "split_shared_rests_with_interleaved_notation": 239,
             },
         )
-        self.assertEqual(len(manifest["records"]), 1168)
+        self.assertEqual(len(manifest["records"]), 1767)
         self.assertEqual(
             Counter(record["promotion_reason"] for record in manifest["records"]),
-            {"distinct_arrangement": 152, "net_new_title": 1016},
+            {"distinct_arrangement": 215, "net_new_title": 1552},
         )
         self.assertTrue(
             all(
@@ -184,7 +256,7 @@ class TimelessTruthsImportTests(unittest.TestCase):
         )
         self.assertEqual(
             len(list((source_root / "raw/xml").glob("*.xml"))),
-            1168,
+            1767,
         )
 
 
