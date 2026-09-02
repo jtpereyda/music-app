@@ -1,5 +1,5 @@
 {
-  "catalog_revision": "12",
+  "catalog_revision": "13",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
@@ -43,9 +43,13 @@
         "profiles": [
           "split_aligned_satb_dyads",
           "split_divisi_voices_with_interleaved_notation",
+          "split_extra_stem_directed_voices_with_interleaved_notation",
+          "split_hidden_duplicates_with_interleaved_notation",
           "split_mixed_voices_with_interleaved_notation",
           "split_primary_dyads_with_secondary_voice",
-          "split_shared_rests_with_interleaved_notation"
+          "split_shared_rests_with_interleaved_notation",
+          "split_simultaneous_overlaps_with_interleaved_notation",
+          "split_voice2_pair_fallback_with_interleaved_notation"
         ],
         "version": "1"
       }
@@ -54,9 +58,483 @@
   "excluded": {
     "normalization_backlog": {
       "collection_id": "timeless-truths-public-domain",
-      "reason": "requires a lossless normalization profile beyond the supported aligned, mixed-voice, interleaved-notation, divisi, and shared-rest SATB shapes",
-      "records": 92
+      "reason": "held because the source contains grace-note timing, an overfull measure, or overlapping semantic voices that cannot be assigned losslessly without editorial interpretation",
+      "records": 59
     },
+    "normalization_holds": [
+      {
+        "arrangement_id": "a-little-farther",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Combined-voice normalization does not support grace notes.",
+        "record_ordinal": 25,
+        "source_url": "https://library.timelesstruths.org/library/music/A/A_Little_Farther/A_Little_Farther.xml",
+        "title": "A Little Farther"
+      },
+      {
+        "arrangement_id": "angels-gathering-the-elect",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 66,
+        "source_url": "https://library.timelesstruths.org/library/music/A/Angels_Gathering_the_Elect/Angels_Gathering_the_Elect.xml",
+        "title": "Angels Gathering the Elect"
+      },
+      {
+        "arrangement_id": "angry-words-oh-let-them-never",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 68,
+        "source_url": "https://library.timelesstruths.org/library/music/A/Angry_Words_Oh_Let_Them_Never/Angry_Words_Oh_Let_Them_Never.xml",
+        "title": "Angry Words, Oh, Let Them Never"
+      },
+      {
+        "arrangement_id": "arise-he-calleth-thee",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 87,
+        "source_url": "https://library.timelesstruths.org/library/music/A/Arise_He_Calleth_Thee/Arise_He_Calleth_Thee.xml",
+        "title": "Arise, He Calleth Thee"
+      },
+      {
+        "arrangement_id": "awake-to-righteousness",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 112,
+        "source_url": "https://library.timelesstruths.org/library/music/A/Awake_to_Righteousness/Awake_to_Righteousness.xml",
+        "title": "Awake to Righteousness"
+      },
+      {
+        "arrangement_id": "buried-with-him-in-immersion",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 174,
+        "source_url": "https://library.timelesstruths.org/library/music/B/Buried_with_Him_in_Immersion/Buried_with_Him_in_Immersion.xml",
+        "title": "Buried with Him in Immersion"
+      },
+      {
+        "arrangement_id": "called-unto-holiness",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 181,
+        "source_url": "https://library.timelesstruths.org/library/music/C/Called_unto_Holiness/Called_unto_Holiness.xml",
+        "title": "Called unto Holiness"
+      },
+      {
+        "arrangement_id": "christ-is-conqueror-hallelujah",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 200,
+        "source_url": "https://library.timelesstruths.org/library/music/C/Christ_Is_Conqueror_Hallelujah/Christ_Is_Conqueror_Hallelujah.xml",
+        "title": "Christ Is Conqueror, Hallelujah!"
+      },
+      {
+        "arrangement_id": "come-and-be-saved",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 217,
+        "source_url": "https://library.timelesstruths.org/library/music/C/Come_and_Be_Saved/Come_and_Be_Saved.xml",
+        "title": "Come and Be Saved"
+      },
+      {
+        "arrangement_id": "confidence",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 251,
+        "source_url": "https://library.timelesstruths.org/library/music/C/Confidence/Confidence.xml",
+        "title": "Confidence"
+      },
+      {
+        "arrangement_id": "crucified-with-christ-my-savior",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 268,
+        "source_url": "https://library.timelesstruths.org/library/music/C/Crucified_with_Christ_My_Savior/Crucified_with_Christ_My_Savior.xml",
+        "title": "Crucified with Christ My Savior"
+      },
+      {
+        "arrangement_id": "defeat-the-devil",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Combined-voice normalization does not support grace notes.",
+        "record_ordinal": 278,
+        "source_url": "https://library.timelesstruths.org/library/music/D/Defeat_the_Devil/Defeat_the_Devil.xml",
+        "title": "Defeat the Devil"
+      },
+      {
+        "arrangement_id": "enter-by-the-door",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 2 contains overlapping notes.",
+        "record_ordinal": 300,
+        "source_url": "https://library.timelesstruths.org/library/music/E/Enter_by_the_Door/Enter_by_the_Door.xml",
+        "title": "Enter by the Door"
+      },
+      {
+        "arrangement_id": "eternity",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 302,
+        "source_url": "https://library.timelesstruths.org/library/music/E/Eternity/Eternity.xml",
+        "title": "Eternity"
+      },
+      {
+        "arrangement_id": "everlasting-joy",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 307,
+        "source_url": "https://library.timelesstruths.org/library/music/E/Everlasting_Joy/Everlasting_Joy.xml",
+        "title": "Everlasting Joy"
+      },
+      {
+        "arrangement_id": "i-hear-my-savior-saying",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 617,
+        "source_url": "https://library.timelesstruths.org/library/music/I/I_Hear_My_Savior_Saying/I_Hear_My_Savior_Saying.xml",
+        "title": "I Hear My Savior Saying"
+      },
+      {
+        "arrangement_id": "i-love-him",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 2 contains overlapping notes.",
+        "record_ordinal": 645,
+        "source_url": "https://library.timelesstruths.org/library/music/I/I_Love_Him/I_Love_Him.xml",
+        "title": "I Love Him"
+      },
+      {
+        "arrangement_id": "im-a-soldier-bound-for-glory",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 653,
+        "source_url": "https://library.timelesstruths.org/library/music/I/Im_a_Soldier_Bound_for_Glory/Im_a_Soldier_Bound_for_Glory.xml",
+        "title": "I’m a Soldier Bound for Glory"
+      },
+      {
+        "arrangement_id": "in-the-sunlight-of-his-love",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 688,
+        "source_url": "https://library.timelesstruths.org/library/music/I/In_the_Sunlight_of_His_Love/In_the_Sunlight_of_His_Love.xml",
+        "title": "In the Sunlight of His Love"
+      },
+      {
+        "arrangement_id": "i-will-sing-the-wondrous-story",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 745,
+        "source_url": "https://library.timelesstruths.org/library/music/I/I_Will_Sing_the_Wondrous_Story/I_Will_Sing_the_Wondrous_Story.xml",
+        "title": "I Will Sing the Wondrous Story"
+      },
+      {
+        "arrangement_id": "i-will-tell-the-wondrous-story",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 746,
+        "source_url": "https://library.timelesstruths.org/library/music/I/I_Will_Tell_the_Wondrous_Story/I_Will_Tell_the_Wondrous_Story.xml",
+        "title": "I Will Tell the Wondrous Story"
+      },
+      {
+        "arrangement_id": "jesus-lover-of-my-soul-2",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 783,
+        "source_url": "https://library.timelesstruths.org/library/music/J/Jesus_Lover_of_My_Soul/Jesus_Lover_of_My_Soul_2.xml",
+        "title": "Jesus, Lover of My Soul"
+      },
+      {
+        "arrangement_id": "jesus-savior-pilot-me",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 798,
+        "source_url": "https://library.timelesstruths.org/library/music/J/Jesus_Savior_Pilot_Me/Jesus_Savior_Pilot_Me.xml",
+        "title": "Jesus, Savior, Pilot Me"
+      },
+      {
+        "arrangement_id": "keep-on-shining",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 829,
+        "source_url": "https://library.timelesstruths.org/library/music/K/Keep_on_Shining/Keep_on_Shining.xml",
+        "title": "Keep on Shining"
+      },
+      {
+        "arrangement_id": "knock-and-it-shall-be-opened",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 838,
+        "source_url": "https://library.timelesstruths.org/library/music/K/Knock_and_It_Shall_Be_Opened/Knock_and_It_Shall_Be_Opened.xml",
+        "title": "Knock and It Shall Be Opened"
+      },
+      {
+        "arrangement_id": "let-all-the-people-praise-thee",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 858,
+        "source_url": "https://library.timelesstruths.org/library/music/L/Let_All_the_People_Praise_Thee/Let_All_the_People_Praise_Thee.xml",
+        "title": "Let All the People Praise Thee"
+      },
+      {
+        "arrangement_id": "little-is-much-when-god-is-in-it",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 893,
+        "source_url": "https://library.timelesstruths.org/library/music/L/Little_Is_Much_When_God_Is_in_It/Little_Is_Much_When_God_Is_in_It.xml",
+        "title": "Little Is Much When God Is in It"
+      },
+      {
+        "arrangement_id": "little-reapers",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 896,
+        "source_url": "https://library.timelesstruths.org/library/music/L/Little_Reapers/Little_Reapers.xml",
+        "title": "Little Reapers"
+      },
+      {
+        "arrangement_id": "lord-teach-us-to-pray",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 922,
+        "source_url": "https://library.timelesstruths.org/library/music/L/Lord_Teach_Us_to_Pray/Lord_Teach_Us_to_Pray.xml",
+        "title": "Lord, Teach Us to Pray"
+      },
+      {
+        "arrangement_id": "nor-silver-nor-gold",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1021,
+        "source_url": "https://library.timelesstruths.org/library/music/N/Nor_Silver_nor_Gold/Nor_Silver_nor_Gold.xml",
+        "title": "Nor Silver nor Gold"
+      },
+      {
+        "arrangement_id": "numberless-as-the-sands",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1032,
+        "source_url": "https://library.timelesstruths.org/library/music/N/Numberless_as_the_Sands/Numberless_as_the_Sands.xml",
+        "title": "Numberless as the Sands"
+      },
+      {
+        "arrangement_id": "oh-holy-night",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1056,
+        "source_url": "https://library.timelesstruths.org/library/music/O/Oh_Holy_Night/Oh_Holy_Night.xml",
+        "title": "Oh, Holy Night"
+      },
+      {
+        "arrangement_id": "o-the-deep-deep-love-of-jesus",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1134,
+        "source_url": "https://library.timelesstruths.org/library/music/O/O_the_Deep_Deep_Love_of_Jesus/O_the_Deep_Deep_Love_of_Jesus.xml",
+        "title": "O the Deep, Deep Love of Jesus"
+      },
+      {
+        "arrangement_id": "our-motto",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 2 contains overlapping notes.",
+        "record_ordinal": 1146,
+        "source_url": "https://library.timelesstruths.org/library/music/O/Our_Motto/Our_Motto.xml",
+        "title": "Our Motto"
+      },
+      {
+        "arrangement_id": "pull-from-the-shore",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1197,
+        "source_url": "https://library.timelesstruths.org/library/music/P/Pull_from_the_Shore/Pull_from_the_Shore.xml",
+        "title": "Pull from the Shore"
+      },
+      {
+        "arrangement_id": "rays-of-hope",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1199,
+        "source_url": "https://library.timelesstruths.org/library/music/R/Rays_of_Hope/Rays_of_Hope.xml",
+        "title": "Rays of Hope"
+      },
+      {
+        "arrangement_id": "redeemed-through-the-blood",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1201,
+        "source_url": "https://library.timelesstruths.org/library/music/R/Redeemed_Through_the_Blood/Redeemed_Through_the_Blood.xml",
+        "title": "Redeemed Through the Blood"
+      },
+      {
+        "arrangement_id": "rose-rose-rose",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 2 contains overlapping notes.",
+        "record_ordinal": 1222,
+        "source_url": "https://library.timelesstruths.org/library/music/R/Rose_Rose_Rose/Rose_Rose_Rose.xml",
+        "title": "Rose, Rose, Rose"
+      },
+      {
+        "arrangement_id": "sinner-see-the-love-of-god",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1291,
+        "source_url": "https://library.timelesstruths.org/library/music/S/Sinner_See_the_Love_of_God/Sinner_See_the_Love_of_God.xml",
+        "title": "Sinner, See the Love of God"
+      },
+      {
+        "arrangement_id": "steadily-marching-on",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1325,
+        "source_url": "https://library.timelesstruths.org/library/music/S/Steadily_Marching_On/Steadily_Marching_On.xml",
+        "title": "Steadily Marching On"
+      },
+      {
+        "arrangement_id": "sunshine-and-rain",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1338,
+        "source_url": "https://library.timelesstruths.org/library/music/S/Sunshine_and_Rain/Sunshine_and_Rain.xml",
+        "title": "Sunshine and Rain"
+      },
+      {
+        "arrangement_id": "sunshine-in-my-soul",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1339,
+        "source_url": "https://library.timelesstruths.org/library/music/S/Sunshine_in_My_Soul/Sunshine_in_My_Soul.xml",
+        "title": "Sunshine in My Soul"
+      },
+      {
+        "arrangement_id": "tangles",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1354,
+        "source_url": "https://library.timelesstruths.org/library/music/T/Tangles/Tangles.xml",
+        "title": "Tangles"
+      },
+      {
+        "arrangement_id": "the-beautiful-light",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1384,
+        "source_url": "https://library.timelesstruths.org/library/music/T/The_Beautiful_Light/The_Beautiful_Light.xml",
+        "title": "The Beautiful Light"
+      },
+      {
+        "arrangement_id": "the-church-of-christ",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1401,
+        "source_url": "https://library.timelesstruths.org/library/music/T/The_Church_of_Christ/The_Church_of_Christ.xml",
+        "title": "The Church of Christ"
+      },
+      {
+        "arrangement_id": "the-dear-old-bible",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1421,
+        "source_url": "https://library.timelesstruths.org/library/music/T/The_Dear_Old_Bible/The_Dear_Old_Bible.xml",
+        "title": "The Dear Old Bible"
+      },
+      {
+        "arrangement_id": "the-evening-light",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 2 contains overlapping notes.",
+        "record_ordinal": 1426,
+        "source_url": "https://library.timelesstruths.org/library/music/T/The_Evening_Light/The_Evening_Light.xml",
+        "title": "The Evening Light"
+      },
+      {
+        "arrangement_id": "the-great-sacrifice",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 1447,
+        "source_url": "https://library.timelesstruths.org/library/music/T/The_Great_Sacrifice/The_Great_Sacrifice.xml",
+        "title": "The Great Sacrifice"
+      },
+      {
+        "arrangement_id": "the-old-account-was-settled",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1504,
+        "source_url": "https://library.timelesstruths.org/library/music/T/The_Old_Account_Was_Settled/The_Old_Account_Was_Settled.xml",
+        "title": "The Old Account Was Settled"
+      },
+      {
+        "arrangement_id": "there-is-sunlight-on-the-hilltop",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1532,
+        "source_url": "https://library.timelesstruths.org/library/music/T/There_Is_Sunlight_on_the_Hilltop/There_Is_Sunlight_on_the_Hilltop.xml",
+        "title": "There Is Sunlight on the Hilltop"
+      },
+      {
+        "arrangement_id": "the-valley-of-judgment",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1581,
+        "source_url": "https://library.timelesstruths.org/library/music/T/The_Valley_of_Judgment/The_Valley_of_Judgment.xml",
+        "title": "The Valley of Judgment"
+      },
+      {
+        "arrangement_id": "this-is-why-i-love-my-savior",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1605,
+        "source_url": "https://library.timelesstruths.org/library/music/T/This_Is_Why_I_Love_My_Savior/This_Is_Why_I_Love_My_Savior.xml",
+        "title": "This Is Why I Love My Savior"
+      },
+      {
+        "arrangement_id": "though-the-fig-tree-shall-not-blossom",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1609,
+        "source_url": "https://library.timelesstruths.org/library/music/T/Though_the_Fig_Tree_Shall_Not_Blossom/Though_the_Fig_Tree_Shall_Not_Blossom.xml",
+        "title": "Though the Fig Tree Shall Not Blossom"
+      },
+      {
+        "arrangement_id": "though-your-sins-be-as-scarlet",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1610,
+        "source_url": "https://library.timelesstruths.org/library/music/T/Though_Your_Sins_Be_as_Scarlet/Though_Your_Sins_Be_as_Scarlet.xml",
+        "title": "Though Your Sins Be as Scarlet"
+      },
+      {
+        "arrangement_id": "thy-will-be-done-brooks",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Combined-voice normalization does not support grace notes.",
+        "record_ordinal": 1619,
+        "source_url": "https://library.timelesstruths.org/library/music/T/Thy_Will_Be_Done_Brooks/Thy_Will_Be_Done_Brooks.xml",
+        "title": "Thy Will Be Done (Brooks)"
+      },
+      {
+        "arrangement_id": "walking-in-the-light",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1678,
+        "source_url": "https://library.timelesstruths.org/library/music/W/Walking_in_the_Light/Walking_in_the_Light.xml",
+        "title": "Walking in the Light"
+      },
+      {
+        "arrangement_id": "watch-and-pray",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius semantic voice 1 contains overlapping notes.",
+        "record_ordinal": 1685,
+        "source_url": "https://library.timelesstruths.org/library/music/W/Watch_and_Pray/Watch_and_Pray.xml",
+        "title": "Watch and Pray"
+      },
+      {
+        "arrangement_id": "well-be-heroes",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 1704,
+        "source_url": "https://library.timelesstruths.org/library/music/W/Well_Be_Heroes/Well_Be_Heroes.xml",
+        "title": "We’ll Be Heroes"
+      },
+      {
+        "arrangement_id": "working-and-waiting",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "Sibelius voice 1 exceeds its measure.",
+        "record_ordinal": 1837,
+        "source_url": "https://library.timelesstruths.org/library/music/W/Working_and_Waiting/Working_and_Waiting.xml",
+        "title": "Working and Waiting"
+      }
+    ],
     "rights_holds": [
       {
         "ordinal": 17,
@@ -522,27 +1000,38 @@
       "selected_compatible_additions": 8
     },
     "timeless_truths": {
-      "catalog_items": 1767,
-      "distinct_arrangements": 215,
-      "net_new_titles": 1552,
-      "normalization_backlog": 92,
+      "catalog_items": 1800,
+      "distinct_arrangements": 225,
+      "net_new_titles": 1575,
+      "normalization_backlog": 59,
+      "normalization_hold_reason_counts": {
+        "Combined-voice normalization does not support grace notes.": 3,
+        "Sibelius semantic voice 1 contains overlapping notes.": 38,
+        "Sibelius semantic voice 2 contains overlapping notes.": 5,
+        "Sibelius voice 1 exceeds its measure.": 13
+      },
+      "normalization_holds": 59,
       "normalization_profile_counts": {
         "split_aligned_satb_dyads": 148,
         "split_divisi_voices_with_interleaved_notation": 360,
+        "split_extra_stem_directed_voices_with_interleaved_notation": 11,
+        "split_hidden_duplicates_with_interleaved_notation": 16,
         "split_mixed_voices_with_interleaved_notation": 685,
         "split_primary_dyads_with_secondary_voice": 335,
-        "split_shared_rests_with_interleaved_notation": 239
+        "split_shared_rests_with_interleaved_notation": 241,
+        "split_simultaneous_overlaps_with_interleaved_notation": 3,
+        "split_voice2_pair_fallback_with_interleaved_notation": 1
       },
-      "preserved_context_events": 2421,
+      "preserved_context_events": 2498,
       "rights_holds": 26,
-      "shared_unison_events": 737,
+      "shared_unison_events": 747,
       "source_records": 1895,
       "strict_public_domain_musicxml": 1869,
       "structure_holds": 10
     }
   },
   "summary": {
-    "catalog_items": 3992,
+    "catalog_items": 4025,
     "exact_public_domain_candidates": 4100,
     "hymns_to_god_items": 592,
     "openscore_lieder_items": 1356,
@@ -551,6 +1040,6 @@
     "source_records": 4146,
     "structure_holds": 16,
     "supplement_items": 8,
-    "timeless_truths_items": 1767
+    "timeless_truths_items": 1800
   }
 }

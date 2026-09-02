@@ -22,10 +22,14 @@ from normalize_satb_musicxml import (  # noqa: E402
     NORMALIZE_SIBELIUS_LYRIC_ROWS,
     SET_MODE_FROM_SOURCE_KEY_LABEL,
     SPLIT_SIBELIUS_DIVISI_VOICES_WITH_CONTEXT,
+    SPLIT_SIBELIUS_EXTRA_VOICES_WITH_CONTEXT,
+    SPLIT_SIBELIUS_HIDDEN_DUPLICATES_WITH_CONTEXT,
     SPLIT_SIBELIUS_MIXED_VOICES,
     SPLIT_SIBELIUS_MIXED_VOICES_WITH_CONTEXT,
     SPLIT_SIBELIUS_SATB_DYADS,
     SPLIT_SIBELIUS_SHARED_RESTS_WITH_CONTEXT,
+    SPLIT_SIBELIUS_SIMULTANEOUS_OVERLAPS_WITH_CONTEXT,
+    SPLIT_SIBELIUS_VOICE2_PAIR_FALLBACK_WITH_CONTEXT,
     STRIP_SOURCE_PAGE_CREDITS,
     normalize_timeless_truths_musicxml,
 )
@@ -209,6 +213,68 @@ class TimelessTruthsImportTests(unittest.TestCase):
         self.assertIn(SET_MODE_FROM_SOURCE_KEY_LABEL, result.operations)
         self.assertEqual(_score_facts(result.data)["mode"], "major")
 
+    def test_final_profiles_preserve_every_source_pitch(self) -> None:
+        fixtures = {
+            "all-your-anxiety": (
+                "split_hidden_duplicates_with_interleaved_notation",
+                SPLIT_SIBELIUS_HIDDEN_DUPLICATES_WITH_CONTEXT,
+            ),
+            "softly-and-tenderly": (
+                "split_simultaneous_overlaps_with_interleaved_notation",
+                SPLIT_SIBELIUS_SIMULTANEOUS_OVERLAPS_WITH_CONTEXT,
+            ),
+            "we-reap-as-we-sow": (
+                "split_voice2_pair_fallback_with_interleaved_notation",
+                SPLIT_SIBELIUS_VOICE2_PAIR_FALLBACK_WITH_CONTEXT,
+            ),
+            "a-song-of-praise": (
+                "split_extra_stem_directed_voices_with_interleaved_notation",
+                SPLIT_SIBELIUS_EXTRA_VOICES_WITH_CONTEXT,
+            ),
+        }
+        for arrangement_id, (profile, operation) in fixtures.items():
+            with self.subTest(arrangement_id=arrangement_id):
+                source = (
+                    REPOSITORY_ROOT
+                    / f"data/timeless-truths/raw/xml/{arrangement_id}.xml"
+                ).read_bytes()
+                result = normalize_timeless_truths_musicxml(source)
+                source_pitch_count = sum(
+                    element.tag.endswith("pitch")
+                    for element in ET.fromstring(source).iter()
+                )
+                normalized_pitch_count = sum(
+                    element.tag.endswith("pitch")
+                    for element in ET.fromstring(result.data).iter()
+                )
+
+                self.assertEqual(result.profile, profile)
+                self.assertIn(operation, result.operations)
+                self.assertEqual(source_pitch_count, normalized_pitch_count)
+
+    def test_measure_end_barline_is_preserved_as_measure_context(self) -> None:
+        source = (
+            REPOSITORY_ROOT
+            / "data/timeless-truths/raw/xml/dwelling-in-the-land.xml"
+        ).read_bytes()
+        result = normalize_timeless_truths_musicxml(source)
+
+        self.assertEqual(
+            result.profile,
+            "split_shared_rests_with_interleaved_notation",
+        )
+        self.assertEqual(result.preserved_context_events, 3)
+        self.assertEqual(
+            sum(
+                element.tag.endswith("barline")
+                for element in ET.fromstring(source).iter()
+            ),
+            sum(
+                element.tag.endswith("barline")
+                for element in ET.fromstring(result.data).iter()
+            ),
+        )
+
     def test_bulk_inventory_and_manifest_account_for_the_source(self) -> None:
         source_root = REPOSITORY_ROOT / "data/timeless-truths"
         inventory = json.loads((source_root / "inventory.json").read_text())
@@ -220,33 +286,47 @@ class TimelessTruthsImportTests(unittest.TestCase):
         self.assertEqual(
             inventory["summary"],
             {
-                "normalization_candidate": 92,
+                "normalization_candidate": 59,
                 "rights_hold": 26,
                 "score_settings": 1895,
-                "straightforward_candidate": 1767,
+                "straightforward_candidate": 1800,
                 "strict_public_domain_musicxml": 1869,
                 "structure_hold": 10,
             },
         )
-        self.assertEqual(manifest["summary"]["promoted_records"], 1767)
-        self.assertEqual(manifest["summary"]["net_new_titles"], 1552)
-        self.assertEqual(manifest["summary"]["distinct_arrangements"], 215)
-        self.assertEqual(manifest["summary"]["shared_unison_events"], 737)
-        self.assertEqual(manifest["summary"]["preserved_context_events"], 2421)
+        self.assertEqual(manifest["summary"]["promoted_records"], 1800)
+        self.assertEqual(manifest["summary"]["net_new_titles"], 1575)
+        self.assertEqual(manifest["summary"]["distinct_arrangements"], 225)
+        self.assertEqual(manifest["summary"]["shared_unison_events"], 747)
+        self.assertEqual(manifest["summary"]["preserved_context_events"], 2498)
+        self.assertEqual(manifest["summary"]["normalization_holds"], 59)
+        self.assertEqual(
+            manifest["summary"]["normalization_hold_reason_counts"],
+            {
+                "Combined-voice normalization does not support grace notes.": 3,
+                "Sibelius semantic voice 1 contains overlapping notes.": 38,
+                "Sibelius semantic voice 2 contains overlapping notes.": 5,
+                "Sibelius voice 1 exceeds its measure.": 13,
+            },
+        )
         self.assertEqual(
             manifest["summary"]["normalization_profile_counts"],
             {
                 "split_aligned_satb_dyads": 148,
                 "split_divisi_voices_with_interleaved_notation": 360,
+                "split_extra_stem_directed_voices_with_interleaved_notation": 11,
+                "split_hidden_duplicates_with_interleaved_notation": 16,
                 "split_mixed_voices_with_interleaved_notation": 685,
                 "split_primary_dyads_with_secondary_voice": 335,
-                "split_shared_rests_with_interleaved_notation": 239,
+                "split_shared_rests_with_interleaved_notation": 241,
+                "split_simultaneous_overlaps_with_interleaved_notation": 3,
+                "split_voice2_pair_fallback_with_interleaved_notation": 1,
             },
         )
-        self.assertEqual(len(manifest["records"]), 1767)
+        self.assertEqual(len(manifest["records"]), 1800)
         self.assertEqual(
             Counter(record["promotion_reason"] for record in manifest["records"]),
-            {"distinct_arrangement": 215, "net_new_title": 1552},
+            {"distinct_arrangement": 225, "net_new_title": 1575},
         )
         self.assertTrue(
             all(
@@ -256,7 +336,7 @@ class TimelessTruthsImportTests(unittest.TestCase):
         )
         self.assertEqual(
             len(list((source_root / "raw/xml").glob("*.xml"))),
-            1767,
+            1800,
         )
 
 

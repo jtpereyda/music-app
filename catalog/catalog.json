@@ -1,6 +1,6 @@
 {
   "catalog_id": "transposify-technical-preview",
-  "catalog_revision": "12",
+  "catalog_revision": "13",
   "items": [
     {
       "_arrangement_id": "passeth-understanding",
@@ -138931,6 +138931,80 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Edward H. Joy",
+        "ensemble": "SATB choir",
+        "lyricist": "Edward H. Joy",
+        "meter": "9.9.9.9.9.9.9.7",
+        "text_author": "Edward H. Joy",
+        "tune_name": "All Your Anxiety"
+      },
+      "id": "all-your-anxiety",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "original_key": {
+        "abc": "Eb",
+        "fifths": -3,
+        "mode": "major",
+        "name": "E-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Edward H. Joy, 1920 alt..",
+          "Tune/setting: Edward H. Joy, 1920 (All Your Anxiety).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/A/All_Your_Anxiety/All_Your_Anxiety.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/all-your-anxiety.musicxml",
+        "sha256": "700478fdaac13421650519bb0881a8f5a164ce944858ecc671f667aed4fecb62"
+      },
+      "source": {
+        "arrangement_id": "all-your-anxiety",
+        "arrangement_label": "All Your Anxiety",
+        "artifact_sha256": "23e482b93e57fe8f1f513f73209f8310636817d7b0030203733eca81e3ac2524",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 43,
+        "record_reference": "All_Your_Anxiety",
+        "record_url": "https://library.timelesstruths.org/music/All_Your_Anxiety/",
+        "work_id": "all-your-anxiety"
+      },
+      "title": "All Your Anxiety"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Barney E. Warren",
         "ensemble": "SATB choir",
         "lyricist": "Barney E. Warren",
@@ -139691,6 +139765,84 @@
         "work_id": "am-i-a-soldier-of-the-cross"
       },
       "title": "Am I a Soldier of the Cross?"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Martin Luther",
+        "ensemble": "SATB choir",
+        "lyricist": "Martin Luther",
+        "meter": "15.15.12.12.7",
+        "search_terms": [
+          "Ein' Feste Burg"
+        ],
+        "text_author": "Martin Luther",
+        "tune_name": "Ein' Feste Burg"
+      },
+      "id": "a-mighty-fortress-is-our-god",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Martin Luther, ca.1529 tr. by Frederick H. Hedge, 1853.",
+          "Tune/setting: Martin Luther, ca.1529 (Ein' Feste Burg).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/A/A_Mighty_Fortress_Is_Our_God/A_Mighty_Fortress_Is_Our_God.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/a-mighty-fortress-is-our-god.musicxml",
+        "sha256": "4259f12270f0852dc0a458071947bcdf907b1a48aff2cb58ec1512c1e08ffd72"
+      },
+      "source": {
+        "arrangement_id": "a-mighty-fortress-is-our-god",
+        "arrangement_label": "Ein' Feste Burg",
+        "artifact_sha256": "b05d00e34de0f8b45028e284936c3c0eba3b06f19af758ba01cee573234fcffc",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 55,
+        "record_reference": "A_Mighty_Fortress_Is_Our_God",
+        "record_url": "https://library.timelesstruths.org/music/A_Mighty_Fortress_Is_Our_God/",
+        "work_id": "a-mighty-fortress-is-our-god"
+      },
+      "title": "A Mighty Fortress Is Our God"
     },
     {
       "available_lines": [
@@ -141309,6 +141461,85 @@
       "display": {
         "composer": "Barney E. Warren",
         "ensemble": "SATB choir",
+        "lyricist": "Barney E. Warren",
+        "meter": "10.9.10.9.7.7.7.6",
+        "search_terms": [
+          "Are You Building on the Rock"
+        ],
+        "text_author": "Barney E. Warren",
+        "tune_name": "Are You Building on the Rock?"
+      },
+      "id": "are-you-building-on-the-rock",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Barney E. Warren, 1897.",
+          "Tune/setting: Barney E. Warren, 1897 (Are You Building on the Rock?).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/A/Are_You_Building_on_the_Rock/Are_You_Building_on_the_Rock.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/are-you-building-on-the-rock.musicxml",
+        "sha256": "2e8e1f590f71cdc777b25a5f392e37d5719d8597e23bc8a3bb056aa1968a27d3"
+      },
+      "source": {
+        "arrangement_id": "are-you-building-on-the-rock",
+        "arrangement_label": "Are You Building on the Rock?",
+        "artifact_sha256": "da358c427b82f866f62fefc992dc40507661ae45a7ee4f952422547ab5014e61",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 79,
+        "record_reference": "Are_You_Building_on_the_Rock",
+        "record_url": "https://library.timelesstruths.org/music/Are_You_Building_on_the_Rock/",
+        "work_id": "are-you-building-on-the-rock"
+      },
+      "title": "Are You Building on the Rock?"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Barney E. Warren",
+        "ensemble": "SATB choir",
         "lyricist": "Daniel S. Warner",
         "meter": "7.7.8.8.8.7.8.7",
         "search_terms": [
@@ -142626,6 +142857,83 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "William J. Henry",
+        "ensemble": "SATB choir",
+        "lyricist": "Della Fry",
+        "meter": "8.7.8.7 D",
+        "text_author": "Della Fry",
+        "tune_name": "A Song of Praise"
+      },
+      "id": "a-song-of-praise",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "original_key": {
+        "abc": "Eb",
+        "fifths": -3,
+        "mode": "major",
+        "name": "E-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Della Fry, pub.1897.",
+          "Tune/setting: William J. Henry, pub.1897 har., pub.1897 (A Song of Praise).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/A/A_Song_of_Praise/A_Song_of_Praise.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/a-song-of-praise.musicxml",
+        "sha256": "f0589b2c006a5fecc60840daf9fcc2190ab29eeaf7c89c518c34387ddba63f34"
+      },
+      "source": {
+        "arrangement_id": "a-song-of-praise",
+        "arrangement_label": "A Song of Praise",
+        "artifact_sha256": "2583042b6a8e55969c9a9d9fbeeb4c76f057d766c6c20b5ccd6512118af21c23",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 98,
+        "record_reference": "A_Song_of_Praise",
+        "record_url": "https://library.timelesstruths.org/music/A_Song_of_Praise/",
+        "work_id": "a-song-of-praise"
+      },
+      "title": "A Song of Praise"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Daniel O. Teasley",
         "ensemble": "SATB choir",
         "lyricist": "Daniel O. Teasley",
@@ -143460,6 +143768,80 @@
         "work_id": "awake-my-soul-stretch-every-nerve"
       },
       "title": "Awake, My Soul, Stretch Every Nerve"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Charles H. Gabriel",
+        "ensemble": "SATB choir",
+        "lyricist": "Charles H. Gabriel",
+        "meter": "11.12.11.10.13.10 R",
+        "text_author": "Charles H. Gabriel",
+        "tune_name": "Awakening Chorus"
+      },
+      "id": "awakening-chorus",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Charles H. Gabriel, 1905.",
+          "Tune/setting: Charles H. Gabriel, 1905 (Awakening Chorus).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/A/Awakening_Chorus/Awakening_Chorus.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_shared_rests_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/awakening-chorus.musicxml",
+        "sha256": "58f332c840fc1c3eedbd9a575eb026a83ff9858db3f3739d0707a93e2a13f6aa"
+      },
+      "source": {
+        "arrangement_id": "awakening-chorus",
+        "arrangement_label": "Awakening Chorus",
+        "artifact_sha256": "290bb24ae83cc06ddfdccda1cf955004630a802f52b698efb6eba2d8e787c03a",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 110,
+        "record_reference": "Awakening_Chorus",
+        "record_url": "https://library.timelesstruths.org/music/Awakening_Chorus/",
+        "work_id": "awakening-chorus"
+      },
+      "title": "Awakening Chorus"
     },
     {
       "available_lines": [
@@ -149743,6 +150125,81 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Robert Lowry",
+        "ensemble": "SATB choir",
+        "lyricist": "Robert Lowry",
+        "meter": "6.5.6.5.7.9.11.11.6.7",
+        "text_author": "Robert Lowry",
+        "tune_name": "Christ Arose"
+      },
+      "id": "christ-arose-lowry",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Robert Lowry, 1874.",
+          "Tune/setting: Robert Lowry, 1874 (Christ Arose).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/C/Christ_Arose/Christ_Arose.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/christ-arose-lowry.musicxml",
+        "sha256": "b14d238479ec39e88e4dd628cb065d7bad89e787115af1bd5ca93d6cbbe9e276"
+      },
+      "source": {
+        "arrangement_id": "christ-arose",
+        "arrangement_label": "Christ Arose",
+        "artifact_sha256": "824ed6f8d885468f36f8ff43fad6f01ab3093cb4a12e0ff1ce94f10d0a408cdd",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 196,
+        "record_reference": "Christ_Arose",
+        "record_url": "https://library.timelesstruths.org/music/Christ_Arose/",
+        "work_id": "christ-arose"
+      },
+      "title": "Christ Arose"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "John Wainright",
         "ensemble": "SATB choir",
         "lyricist": "John Byrom",
@@ -150754,6 +151211,84 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Anonymous/Unknown",
+        "ensemble": "SATB choir",
+        "lyricist": "Charles Wesley",
+        "meter": "7.4.7.4.7.4",
+        "search_terms": [
+          "Easter Hymn"
+        ],
+        "text_author": "Charles Wesley",
+        "tune_name": "Easter Hymn"
+      },
+      "id": "christ-the-lord-is-risen-today",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Charles Wesley, 1739.",
+          "Tune/setting: Anonymous/Unknown, pub.1708 (Easter Hymn).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/C/Christ_the_Lord_Is_Risen_Today/Christ_the_Lord_Is_Risen_Today.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/christ-the-lord-is-risen-today.musicxml",
+        "sha256": "8f6942087bbcb4519e237104a689d38f3d9e542730e24c7d648f6ca625563134"
+      },
+      "source": {
+        "arrangement_id": "christ-the-lord-is-risen-today",
+        "arrangement_label": "Easter Hymn",
+        "artifact_sha256": "1708bb7477f46c02378e07c008921319f08b641e1367581bb40e5947d898f762",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 211,
+        "record_reference": "Christ_the_Lord_Is_Risen_Today",
+        "record_url": "https://library.timelesstruths.org/music/Christ_the_Lord_Is_Risen_Today/",
+        "work_id": "christ-the-lord-is-risen-today"
+      },
+      "title": "Christ the Lord Is Risen Today"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Harry E. Rogers",
         "ensemble": "SATB choir",
         "lyricist": "Frances R. Havergal Daniel S. Warner",
@@ -150894,6 +151429,81 @@
         "work_id": "church-of-the-living-god"
       },
       "title": "Church of the Living God"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Emma M. Booth-Tucker",
+        "ensemble": "SATB choir",
+        "lyricist": "Emma M. Booth-Tucker",
+        "meter": "12.11.12.11.12.12.7.7.11.12.12.7.7.9",
+        "text_author": "Emma M. Booth-Tucker",
+        "tune_name": "Climbing Up the Golden Stair"
+      },
+      "id": "climbing-up-the-golden-stair",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Emma M. Booth-Tucker, pub.1893.",
+          "Tune/setting: Emma M. Booth-Tucker, pub.1893 (Climbing Up the Golden Stair).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/C/Climbing_Up_the_Golden_Stair/Climbing_Up_the_Golden_Stair.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/climbing-up-the-golden-stair.musicxml",
+        "sha256": "78884b9321d64d65e2f5461950dfc2358f79d174f6ff008bdbfbc478694ebf18"
+      },
+      "source": {
+        "arrangement_id": "climbing-up-the-golden-stair",
+        "arrangement_label": "Climbing Up the Golden Stair",
+        "artifact_sha256": "d735d46ded9065b3e14cc601d60d6f24b5728a599c894933d4217daf1325348f",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 214,
+        "record_reference": "Climbing_Up_the_Golden_Stair",
+        "record_url": "https://library.timelesstruths.org/music/Climbing_Up_the_Golden_Stair/",
+        "work_id": "climbing-up-the-golden-stair"
+      },
+      "title": "Climbing Up the Golden Stair"
     },
     {
       "available_lines": [
@@ -156861,6 +157471,83 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Joel A. Erickson",
+        "ensemble": "SATB choir",
+        "lyricist": "Joel A. Erickson",
+        "meter": "7.7.7.7.3.5.5.9.5.5.9",
+        "text_author": "Joel A. Erickson",
+        "tune_name": "Dwelling in the Land"
+      },
+      "id": "dwelling-in-the-land",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "original_key": {
+        "abc": "Db",
+        "fifths": -5,
+        "mode": "major",
+        "name": "D-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Joel A. Erickson, 2005.",
+          "Tune/setting: Joel A. Erickson, 2005 (Dwelling in the Land).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/D/Dwelling_in_the_Land/Dwelling_in_the_Land.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_shared_rests_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/dwelling-in-the-land.musicxml",
+        "sha256": "045d7dd0eddd850ba55aa252802800b68cde896dcc4d6b27c74a93bf71573059"
+      },
+      "source": {
+        "arrangement_id": "dwelling-in-the-land",
+        "arrangement_label": "Dwelling in the Land",
+        "artifact_sha256": "9ecf57a6b266ad011d23fc7cbaded4ca7c8e0d82c68a0fd0ecd35a6f3a62c930",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 296,
+        "record_reference": "Dwelling_in_the_Land",
+        "record_url": "https://library.timelesstruths.org/music/Dwelling_in_the_Land/",
+        "work_id": "dwelling-in-the-land"
+      },
+      "title": "Dwelling in the Land"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Barney E. Warren",
         "ensemble": "SATB choir",
         "lyricist": "Barney E. Warren",
@@ -159301,6 +159988,82 @@
         "work_id": "fill-thou-me"
       },
       "title": "Fill Thou Me"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Daniel S. Warner",
+        "ensemble": "SATB choir",
+        "lyricist": "Daniel S. Warner",
+        "meter": "9.7.9.7 R",
+        "text_author": "Daniel S. Warner",
+        "tune_name": "Fire in the Soul"
+      },
+      "id": "fire-in-the-soul-warner",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Daniel S. Warner, 1887.",
+          "Tune/setting: Daniel S. Warner, 1887 har. by Barney E. Warren, pub.1893 (Fire in the Soul).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/F/Fire_in_the_Soul/Fire_in_the_Soul.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/fire-in-the-soul-warner.musicxml",
+        "sha256": "b5692d92f0b42d5f94895ca4a00506a693f678054ec6b1ef06c9a68845f2fd0f"
+      },
+      "source": {
+        "arrangement_id": "fire-in-the-soul",
+        "arrangement_label": "Fire in the Soul",
+        "artifact_sha256": "3231389a7f7933f54db169afff19a139a2aaad04541935c7a37dc6284dac9a7d",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 333,
+        "record_reference": "Fire_in_the_Soul",
+        "record_url": "https://library.timelesstruths.org/music/Fire_in_the_Soul/",
+        "work_id": "fire-in-the-soul"
+      },
+      "title": "Fire in the Soul"
     },
     {
       "available_lines": [
@@ -163205,6 +163968,85 @@
         "work_id": "god-answered-prayer-for-me"
       },
       "title": "God Answered Prayer for Me"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "William G. Tomer",
+        "ensemble": "SATB choir",
+        "lyricist": "Jeremiah E. Rankin",
+        "meter": "9.8.8.9 R",
+        "search_terms": [
+          "God Be with You"
+        ],
+        "text_author": "Jeremiah E. Rankin",
+        "tune_name": "God Be with You"
+      },
+      "id": "god-be-with-you-till-we-meet-again-god-be-with-you",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Jeremiah E. Rankin, pub.1880.",
+          "Tune/setting: William G. Tomer, 1882 (God Be with You).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/G/God_Be_with_You_till_We_Meet_Again/God_Be_with_You_till_We_Meet_Again.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/god-be-with-you-till-we-meet-again-god-be-with-you.musicxml",
+        "sha256": "e56ad4efe9bee95c7cb3888b0c47bd57996e86b1526c7ea645d738d4c04b2bd9"
+      },
+      "source": {
+        "arrangement_id": "god-be-with-you-till-we-meet-again",
+        "arrangement_label": "God Be with You",
+        "artifact_sha256": "b7beb6d00a884e4db3369f2b806608f885eed0273839f59dadeeb708be7760f3",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 386,
+        "record_reference": "God_Be_with_You_till_We_Meet_Again",
+        "record_url": "https://library.timelesstruths.org/music/God_Be_with_You_till_We_Meet_Again/",
+        "work_id": "god-be-with-you-till-we-meet-again"
+      },
+      "title": "God Be with You till We Meet Again"
     },
     {
       "available_lines": [
@@ -170317,6 +171159,82 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Andrew L. Byers",
+        "ensemble": "SATB choir",
+        "lyricist": "Jacob W. Byers",
+        "meter": "8.7.8.7 D 7.7.7.7.7",
+        "text_author": "Jacob W. Byers",
+        "tune_name": "He Is Just the Same Today"
+      },
+      "id": "he-is-just-the-same-today",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "D",
+        "fifths": 2,
+        "mode": "major",
+        "name": "D major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Jacob W. Byers, 1897.",
+          "Tune/setting: Andrew L. Byers, 1897 (He Is Just the Same Today).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/H/He_Is_Just_the_Same_Today/He_Is_Just_the_Same_Today.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/he-is-just-the-same-today.musicxml",
+        "sha256": "731389d96e92a722c54c5e80c6ef1be7059e365b9ecbee9c9547b9292b522efd"
+      },
+      "source": {
+        "arrangement_id": "he-is-just-the-same-today",
+        "arrangement_label": "He Is Just the Same Today",
+        "artifact_sha256": "d3f5fe89a7946d392fcf0f00477646145bf7a73e6477a86f397dd51faa3bbff0",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 481,
+        "record_reference": "He_Is_Just_the_Same_Today",
+        "record_url": "https://library.timelesstruths.org/music/He_Is_Just_the_Same_Today/",
+        "work_id": "he-is-just-the-same-today"
+      },
+      "title": "He Is Just the Same Today"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Charles H. Gabriel",
         "ensemble": "SATB choir",
         "lyricist": "Charles H. Gabriel",
@@ -171088,6 +172006,82 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Charles H. Gabriel",
+        "ensemble": "SATB choir",
+        "lyricist": "Charles H. Gabriel",
+        "meter": "8.8.8.6.8.8.8.8",
+        "text_author": "Charles H. Gabriel",
+        "tune_name": "He Lifted Me"
+      },
+      "id": "he-lifted-me",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "G",
+        "fifths": 1,
+        "mode": "major",
+        "name": "G major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Charles H. Gabriel, pub.1905.",
+          "Tune/setting: Charles H. Gabriel, pub.1905 (He Lifted Me).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/H/He_Lifted_Me/He_Lifted_Me.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/he-lifted-me.musicxml",
+        "sha256": "7a919c427ee316c94273c7e15b187abd88e2fca5c7c9a1f3ee409588708f54d6"
+      },
+      "source": {
+        "arrangement_id": "he-lifted-me",
+        "arrangement_label": "He Lifted Me",
+        "artifact_sha256": "9e7adcff4adc88c90e98e69c490f63b14ec6af2a5a9ccdfd939ab6cc5047a64c",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 492,
+        "record_reference": "He_Lifted_Me",
+        "record_url": "https://library.timelesstruths.org/music/He_Lifted_Me/",
+        "work_id": "he-lifted-me"
+      },
+      "title": "He Lifted Me"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Queen Liliuokalani",
         "ensemble": "SATB choir",
         "lyricist": "Baylus B. McKinney",
@@ -171542,6 +172536,82 @@
         "work_id": "heralds-of-truth"
       },
       "title": "Heralds of Truth"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "J. W. Henderson",
+        "ensemble": "SATB choir",
+        "lyricist": "Julia H. Johnston",
+        "meter": "8.8.11.8.8.9 D",
+        "text_author": "Julia H. Johnston",
+        "tune_name": "He Ransomed Me"
+      },
+      "id": "he-ransomed-me",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Julia H. Johnston, 1916.",
+          "Tune/setting: J. W. Henderson, 1916 (He Ransomed Me).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/H/He_Ransomed_Me/He_Ransomed_Me.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/he-ransomed-me.musicxml",
+        "sha256": "3d2a8a002976a98b14ea37b52002614b47eae98e92c9a977bc487a2615d81b12"
+      },
+      "source": {
+        "arrangement_id": "he-ransomed-me",
+        "arrangement_label": "He Ransomed Me",
+        "artifact_sha256": "2f6bea5fdb6d4da022b0b11d84bec7f504b11cd80c599fe517e6d01b02904160",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 500,
+        "record_reference": "He_Ransomed_Me",
+        "record_url": "https://library.timelesstruths.org/music/He_Ransomed_Me/",
+        "work_id": "he-ransomed-me"
+      },
+      "title": "He Ransomed Me"
     },
     {
       "available_lines": [
@@ -175389,6 +176459,82 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Andy P. Bland",
+        "ensemble": "SATB choir",
+        "lyricist": "Mrs. A. S. Bridgewater",
+        "meter": "9.8.9.8.8.8.9.8",
+        "text_author": "Mrs. A. S. Bridgewater",
+        "tune_name": "How Beautiful Heaven Must Be"
+      },
+      "id": "how-beautiful-heaven-must-be",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "G",
+        "fifths": 1,
+        "mode": "major",
+        "name": "G major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Mrs. A. S. Bridgewater, pub.ca.1920.",
+          "Tune/setting: Andy P. Bland, pub.ca.1920 (How Beautiful Heaven Must Be).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/H/How_Beautiful_Heaven_Must_Be/How_Beautiful_Heaven_Must_Be.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/how-beautiful-heaven-must-be.musicxml",
+        "sha256": "f7f7b8113a17d8cb331cebe5db87e234d5bef42f3e8d39f8355779099e19c80e"
+      },
+      "source": {
+        "arrangement_id": "how-beautiful-heaven-must-be",
+        "arrangement_label": "How Beautiful Heaven Must Be",
+        "artifact_sha256": "e8f3bd0ec883ee957a1559b5583bbd4f214627954751ce3540ca741dfd74fd66",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 552,
+        "record_reference": "How_Beautiful_Heaven_Must_Be",
+        "record_url": "https://library.timelesstruths.org/music/How_Beautiful_Heaven_Must_Be/",
+        "work_id": "how-beautiful-heaven-must-be"
+      },
+      "title": "How Beautiful Heaven Must Be"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Clarence E. Hunter",
         "ensemble": "SATB choir",
         "lyricist": "Barney E. Warren",
@@ -178707,6 +179853,81 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Uriah E. Hallman",
+        "ensemble": "SATB choir",
+        "lyricist": "Barney E. Warren",
+        "meter": "8.7.8.7",
+        "text_author": "Barney E. Warren",
+        "tune_name": "I Come to Thee"
+      },
+      "id": "i-come-to-thee",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "Eb",
+        "fifths": -3,
+        "mode": "major",
+        "name": "E-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Barney E. Warren, pub.1907.",
+          "Tune/setting: Uriah E. Hallman, pub.1907 (I Come to Thee).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/I/I_Come_to_Thee/I_Come_to_Thee.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/i-come-to-thee.musicxml",
+        "sha256": "6862228d43bfa142f6c35370d08940d8cf9b19a3934db8eecf2fe83d5d5ebc20"
+      },
+      "source": {
+        "arrangement_id": "i-come-to-thee",
+        "arrangement_label": "I Come to Thee",
+        "artifact_sha256": "d27d21a701dfe1ec09ca7d5bbbd6713647da353ebb245d45620c493effd5c8cc",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 595,
+        "record_reference": "I_Come_to_Thee",
+        "record_url": "https://library.timelesstruths.org/music/I_Come_to_Thee/",
+        "work_id": "i-come-to-thee"
+      },
+      "title": "I Come to Thee"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Alexander Ewing",
         "ensemble": "SATB choir",
         "lyricist": "Frances R. Havergal",
@@ -178928,6 +180149,82 @@
         "work_id": "i-feel-like-traveling-on"
       },
       "title": "I Feel Like Traveling On"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "John W. Vaughan",
+        "ensemble": "SATB choir",
+        "lyricist": "James Rowe",
+        "meter": "12.10.12.10 R",
+        "text_author": "James Rowe",
+        "tune_name": "If I Could Hear My Mother Pray Again"
+      },
+      "id": "if-i-could-hear-my-mother-pray-again",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "Bb",
+        "fifths": -2,
+        "mode": "major",
+        "name": "B-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: James Rowe, pub.1922.",
+          "Tune/setting: John W. Vaughan (If I Could Hear My Mother Pray Again).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/I/If_I_Could_Hear_My_Mother_Pray_Again/If_I_Could_Hear_My_Mother_Pray_Again.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/if-i-could-hear-my-mother-pray-again.musicxml",
+        "sha256": "0cb6971d547e24c0c58515cc464ee0866236f9c6bdd13164b23c51a6b6644af5"
+      },
+      "source": {
+        "arrangement_id": "if-i-could-hear-my-mother-pray-again",
+        "arrangement_label": "If I Could Hear My Mother Pray Again",
+        "artifact_sha256": "7c87365a224c3a9f1d7496ad98fc0f9254fefda959518178dd4fe8e3ab9cc47b",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 599,
+        "record_reference": "If_I_Could_Hear_My_Mother_Pray_Again",
+        "record_url": "https://library.timelesstruths.org/music/If_I_Could_Hear_My_Mother_Pray_Again/",
+        "work_id": "if-i-could-hear-my-mother-pray-again"
+      },
+      "title": "If I Could Hear My Mother Pray Again"
     },
     {
       "available_lines": [
@@ -185208,6 +186505,82 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Joshua A. Knight",
+        "ensemble": "SATB choir",
+        "lyricist": "Daniel S. Warner",
+        "meter": "8.8.8.7 R",
+        "text_author": "Daniel S. Warner",
+        "tune_name": "In the Light of God"
+      },
+      "id": "in-the-light-of-god",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "E",
+        "fifths": 4,
+        "mode": "major",
+        "name": "E major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Daniel S. Warner, 1887.",
+          "Tune/setting: Joshua A. Knight, 1907 (In the Light of God).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/I/In_the_Light_of_God/In_the_Light_of_God.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/in-the-light-of-god.musicxml",
+        "sha256": "ff87281c50b9edc3a30b169bb5d941c33f77c4b01b69e1fa9e91d9d0c45f7c7c"
+      },
+      "source": {
+        "arrangement_id": "in-the-light-of-god",
+        "arrangement_label": "In the Light of God",
+        "artifact_sha256": "a66862de75c7bd8677f6d544208763a3edae4f45747e1cfc051349f87424949d",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 684,
+        "record_reference": "In_the_Light_of_God",
+        "record_url": "https://library.timelesstruths.org/music/In_the_Light_of_God/",
+        "work_id": "in-the-light-of-god"
+      },
+      "title": "In the Light of God"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Bentley D. Ackley",
         "ensemble": "SATB choir",
         "lyricist": "Alfred H. Ackley",
@@ -186193,6 +187566,84 @@
         "work_id": "i-sing-the-mighty-power-of-god"
       },
       "title": "I Sing the Mighty Power of God"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Charles H. Marsh",
+        "ensemble": "SATB choir",
+        "lyricist": "Henry Ostrom",
+        "meter": "6.4.6.7.7.4.6.9.8.4.6",
+        "search_terms": [
+          "Is It the Crowning Day"
+        ],
+        "text_author": "Henry Ostrom",
+        "tune_name": "Is It the Crowning Day?"
+      },
+      "id": "is-it-the-crowning-day",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "C",
+        "fifths": 0,
+        "mode": "major",
+        "name": "C major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Henry Ostrom, 1910.",
+          "Tune/setting: Charles H. Marsh (Is It the Crowning Day?).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/I/Is_It_the_Crowning_Day/Is_It_the_Crowning_Day.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/is-it-the-crowning-day.musicxml",
+        "sha256": "d29ac689a8675fdb27aef5bed65a3bebe54b3ca380fc10bcf0d07a1dcbce6bd0"
+      },
+      "source": {
+        "arrangement_id": "is-it-the-crowning-day",
+        "arrangement_label": "Is It the Crowning Day?",
+        "artifact_sha256": "1c9c32d903f2367f059f7cbf2bde3fbd35b928dcb1158d9f221f81071d6c1217",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 699,
+        "record_reference": "Is_It_the_Crowning_Day",
+        "record_url": "https://library.timelesstruths.org/music/Is_It_the_Crowning_Day/",
+        "work_id": "is-it-the-crowning-day"
+      },
+      "title": "Is It the Crowning Day?"
     },
     {
       "available_lines": [
@@ -191383,6 +192834,87 @@
         "work_id": "jesus-i-come"
       },
       "title": "Jesus, I Come"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "attr. to Wolfgang A. Mozart",
+        "ensemble": "SATB choir",
+        "lyricist": "Henry F. Lyte",
+        "meter": "15.15.15.15",
+        "search_terms": [
+          "Ellesdie",
+          "Jesus I My Cross Have Taken"
+        ],
+        "text_author": "Henry F. Lyte",
+        "tune_name": "Ellesdie"
+      },
+      "id": "jesus-i-my-cross-have-taken",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      "original_key": {
+        "abc": "Ab",
+        "fifths": -4,
+        "mode": "major",
+        "name": "A-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Henry F. Lyte, 1833.",
+          "Tune/setting: attr. to Wolfgang A. Mozart, pub.1831 arr. by Hubert P. Main, 1872 (Ellesdie).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/J/Jesus_I_My_Cross_Have_Taken/Jesus_I_My_Cross_Have_Taken.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/jesus-i-my-cross-have-taken.musicxml",
+        "sha256": "2d5e5004805fff702a4e3e0a26b5041077b4716cd437941dd23f718477505714"
+      },
+      "source": {
+        "arrangement_id": "jesus-i-my-cross-have-taken",
+        "arrangement_label": "Ellesdie",
+        "artifact_sha256": "2c825568bb497cb078c5fcbea977aae93a82a6b9a321ad7e7a9ba3ed518e13ac",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 767,
+        "record_reference": "Jesus_I_My_Cross_Have_Taken",
+        "record_url": "https://library.timelesstruths.org/music/Jesus_I_My_Cross_Have_Taken/",
+        "work_id": "jesus-i-my-cross-have-taken"
+      },
+      "title": "Jesus, I My Cross Have Taken"
     },
     {
       "available_lines": [
@@ -216252,6 +217784,86 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Robert S. Ambrose",
+        "ensemble": "SATB choir",
+        "lyricist": "Phoebe Cary",
+        "meter": "6.6.8.6",
+        "search_terms": [
+          "Dulce Domum"
+        ],
+        "text_author": "Phoebe Cary",
+        "tune_name": "Dulce Domum"
+      },
+      "id": "one-sweetly-solemn-thought-dulce-domum",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      "original_key": {
+        "abc": "G",
+        "fifths": 1,
+        "mode": "major",
+        "name": "G major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Phoebe Cary, 1852.",
+          "Tune/setting: Robert S. Ambrose, 1876 (Dulce Domum).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/O/One_Sweetly_Solemn_Thought/One_Sweetly_Solemn_Thought.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/one-sweetly-solemn-thought-dulce-domum.musicxml",
+        "sha256": "5804af793401928acd8c5b7cddaa591c3fd842a93c85d0d5d68553c41b94b9d1"
+      },
+      "source": {
+        "arrangement_id": "one-sweetly-solemn-thought",
+        "arrangement_label": "Dulce Domum",
+        "artifact_sha256": "1de01bfdfd486ae0332161e26f82e4e448a93e6535832aa5534496318a8eb052",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1098,
+        "record_reference": "One_Sweetly_Solemn_Thought",
+        "record_url": "https://library.timelesstruths.org/music/One_Sweetly_Solemn_Thought/",
+        "work_id": "one-sweetly-solemn-thought"
+      },
+      "title": "One Sweetly Solemn Thought"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Anonymous/Unknown",
         "ensemble": "SATB choir",
         "lyricist": "John Newton",
@@ -226344,6 +227956,85 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Jack P. Scholfield",
+        "ensemble": "SATB choir",
+        "lyricist": "Jack P. Scholfield",
+        "meter": "9.6.9.8.6.7.10.5",
+        "search_terms": [
+          "Rapture (Scholfield)",
+          "Saved Saved"
+        ],
+        "text_author": "Jack P. Scholfield",
+        "tune_name": "Rapture (Scholfield)"
+      },
+      "id": "saved-saved",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "original_key": {
+        "abc": "Bb",
+        "fifths": -2,
+        "mode": "major",
+        "name": "B-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Jack P. Scholfield, 1911 arr..",
+          "Tune/setting: Jack P. Scholfield, 1911 (Rapture (Scholfield)).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/S/Saved_Saved/Saved_Saved.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/saved-saved.musicxml",
+        "sha256": "e902d0db723c4fb2e17d16d02818f6a9c6d6bdcb74744550b6f81a8d89c02e26"
+      },
+      "source": {
+        "arrangement_id": "saved-saved",
+        "arrangement_label": "Rapture (Scholfield)",
+        "artifact_sha256": "812b63c54204fe5b66a66944d63b747fd90139de1d5bf35a28fe280543bd12a6",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1237,
+        "record_reference": "Saved_Saved",
+        "record_url": "https://library.timelesstruths.org/music/Saved_Saved/",
+        "work_id": "saved-saved"
+      },
+      "title": "Saved, Saved"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "S. S. Plank",
         "ensemble": "SATB choir",
         "lyricist": "C. H. Dewey",
@@ -230581,6 +232272,81 @@
         "work_id": "sleep-not-soldier"
       },
       "title": "Sleep Not, Soldier"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Will L. Thompson",
+        "ensemble": "SATB choir",
+        "lyricist": "Will L. Thompson",
+        "meter": "11.7.11.7.4.7.11.7",
+        "text_author": "Will L. Thompson",
+        "tune_name": "Softly and Tenderly"
+      },
+      "id": "softly-and-tenderly-thompson",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "Ab",
+        "fifths": -4,
+        "mode": "major",
+        "name": "A-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Will L. Thompson, pub.1880.",
+          "Tune/setting: Will L. Thompson, pub.1880 (Softly and Tenderly).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/S/Softly_and_Tenderly/Softly_and_Tenderly.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_simultaneous_overlaps_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/softly-and-tenderly-thompson.musicxml",
+        "sha256": "51a0c3936c04664590ad07a5f04bdb3644f1958ef56afdfa238a76fab7096cc6"
+      },
+      "source": {
+        "arrangement_id": "softly-and-tenderly",
+        "arrangement_label": "Softly and Tenderly",
+        "artifact_sha256": "f82908358282992d0ac6491be12ce8bdd01d0a152fc600c0fab304d8984938cd",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1296,
+        "record_reference": "Softly_and_Tenderly",
+        "record_url": "https://library.timelesstruths.org/music/Softly_and_Tenderly/",
+        "work_id": "softly-and-tenderly"
+      },
+      "title": "Softly and Tenderly"
     },
     {
       "available_lines": [
@@ -236124,6 +237890,81 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Daniel O. Teasley",
+        "ensemble": "SATB choir",
+        "lyricist": "Jennie Mast",
+        "meter": "7.7.7.7 D R",
+        "text_author": "Jennie Mast",
+        "tune_name": "That Verdant Summer Land"
+      },
+      "id": "that-verdant-summer-land",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "original_key": {
+        "abc": "A",
+        "fifths": 3,
+        "mode": "major",
+        "name": "A major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Jennie Mast, pub.1907.",
+          "Tune/setting: Daniel O. Teasley, pub.1907 (That Verdant Summer Land).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/T/That_Verdant_Summer_Land/That_Verdant_Summer_Land.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_simultaneous_overlaps_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/that-verdant-summer-land.musicxml",
+        "sha256": "0cbd9e7f0c91c635d8df831326ef57f9aa4a78c16b773eed572b28b037f1bca5"
+      },
+      "source": {
+        "arrangement_id": "that-verdant-summer-land",
+        "arrangement_label": "That Verdant Summer Land",
+        "artifact_sha256": "e6994a05386e0d6723082f13e07c743d645925985d48574111525ba8d940ef8e",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1374,
+        "record_reference": "That_Verdant_Summer_Land",
+        "record_url": "https://library.timelesstruths.org/music/That_Verdant_Summer_Land/",
+        "work_id": "that-verdant-summer-land"
+      },
+      "title": "That Verdant Summer Land"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Charles W. Naylor",
         "ensemble": "SATB choir",
         "lyricist": "Charles W. Naylor",
@@ -240092,6 +241933,83 @@
         "work_id": "the-fight-of-faith"
       },
       "title": "The Fight of Faith"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "English melody",
+        "ensemble": "SATB choir",
+        "lyricist": "Anonymous/Unknown",
+        "meter": "13.12.13.12 R",
+        "text_author": "Anonymous/Unknown",
+        "tune_name": "The First Noel"
+      },
+      "id": "the-first-noel-melody",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "original_key": {
+        "abc": "D",
+        "fifths": 2,
+        "mode": "major",
+        "name": "D major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Anonymous/Unknown, bef.1833.",
+          "Tune/setting: English melody, bef.1833 (The First Noel).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/T/The_First_Noel/The_First_Noel.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits",
+            "set_work_title"
+          ],
+          "version": "1"
+        },
+        "path": "scores/the-first-noel-melody.musicxml",
+        "sha256": "249c5873931d3616986fc7431fd92ef876f024c0779f2901585376f2e5cb7183"
+      },
+      "source": {
+        "arrangement_id": "the-first-noel",
+        "arrangement_label": "The First Noel",
+        "artifact_sha256": "871bd58ea64571950b6cede53cb1009418098f33d54f9617da664c2804d04e3c",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1430,
+        "record_reference": "The_First_Noel",
+        "record_url": "https://library.timelesstruths.org/music/The_First_Noel/",
+        "work_id": "the-first-noel"
+      },
+      "title": "The First Noel"
     },
     {
       "available_lines": [
@@ -245662,6 +247580,83 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Barney E. Warren",
+        "ensemble": "SATB choir",
+        "lyricist": "Daniel S. Warner",
+        "meter": "10.7.10.7.6.7.7.7.7",
+        "text_author": "Daniel S. Warner",
+        "tune_name": "The Old Campground"
+      },
+      "id": "the-old-campground",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "original_key": {
+        "abc": "Ab",
+        "fifths": -4,
+        "mode": "major",
+        "name": "A-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Daniel S. Warner, pub.1893 alt..",
+          "Tune/setting: Barney E. Warren, pub.1893 (The Old Campground).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/T/The_Old_Campground/The_Old_Campground.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/the-old-campground.musicxml",
+        "sha256": "d0474988174981fe15f11471ec04e059523c9e9562aec786e226025991b5750e"
+      },
+      "source": {
+        "arrangement_id": "the-old-campground",
+        "arrangement_label": "The Old Campground",
+        "artifact_sha256": "28f116ed7afa3612f1fb29154ea72e694f9831d627d433602887feb8184ea5c1",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1505,
+        "record_reference": "The_Old_Campground",
+        "record_url": "https://library.timelesstruths.org/music/The_Old_Campground/",
+        "work_id": "the-old-campground"
+      },
+      "title": "The Old Campground"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "George Bennard",
         "ensemble": "SATB choir",
         "lyricist": "George Bennard",
@@ -248444,6 +250439,82 @@
         "work_id": "theres-music-in-my-soul"
       },
       "title": "There’s Music in My Soul"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Barney E. Warren",
+        "ensemble": "SATB choir",
+        "lyricist": "Clara M. Brooks",
+        "meter": "8.7.8.7 D 8.7.8.7",
+        "text_author": "Clara M. Brooks",
+        "tune_name": "The Resurrection"
+      },
+      "id": "the-resurrection",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "original_key": {
+        "abc": "Eb",
+        "fifths": -3,
+        "mode": "major",
+        "name": "E-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Clara M. Brooks, pub.1907.",
+          "Tune/setting: Barney E. Warren, pub.1907 (The Resurrection).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/T/The_Resurrection/The_Resurrection.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/the-resurrection.musicxml",
+        "sha256": "a5a95999083e23cf0562b104bf4a3de877a336480c68d7184103c8f3955b284b"
+      },
+      "source": {
+        "arrangement_id": "the-resurrection",
+        "arrangement_label": "The Resurrection",
+        "artifact_sha256": "25a32000c5c08e3800cfe4f1ede19c23bf1ec17260fcee4b0371fd0311a9804b",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1542,
+        "record_reference": "The_Resurrection",
+        "record_url": "https://library.timelesstruths.org/music/The_Resurrection/",
+        "work_id": "the-resurrection"
+      },
+      "title": "The Resurrection"
     },
     {
       "available_lines": [
@@ -251739,6 +253810,84 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Charles H. Gabriel",
+        "ensemble": "SATB choir",
+        "lyricist": "Jessie B. Pounds",
+        "meter": "11.7.10.8 R",
+        "search_terms": [
+          "Way of the Cross"
+        ],
+        "text_author": "Jessie B. Pounds",
+        "tune_name": "Way of the Cross"
+      },
+      "id": "the-way-of-the-cross-leads-home-way-of-the-cross",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "original_key": {
+        "abc": "Ab",
+        "fifths": -4,
+        "mode": "major",
+        "name": "A-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Jessie B. Pounds, 1906.",
+          "Tune/setting: Charles H. Gabriel, 1906 (Way of the Cross).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/T/The_Way_of_the_Cross_Leads_Home/The_Way_of_the_Cross_Leads_Home.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/the-way-of-the-cross-leads-home-way-of-the-cross.musicxml",
+        "sha256": "6d7de637aee19a7810b871026665d3c3aa3ae0ad92474b7fd0fb989cce94f34a"
+      },
+      "source": {
+        "arrangement_id": "the-way-of-the-cross-leads-home",
+        "arrangement_label": "Way of the Cross",
+        "artifact_sha256": "7ed34f92345d0d2435a9d0735a11a6f734b3fb0846310214cf95ed9e7a1b2e9c",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1589,
+        "record_reference": "The_Way_of_the_Cross_Leads_Home",
+        "record_url": "https://library.timelesstruths.org/music/The_Way_of_the_Cross_Leads_Home/",
+        "work_id": "the-way-of-the-cross-leads-home"
+      },
+      "title": "The Way of the Cross Leads Home"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "H. R. Jeffrey",
         "ensemble": "SATB choir",
         "lyricist": "Daniel S. Warner",
@@ -254669,6 +256818,87 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Andrew L. Byers",
+        "ensemble": "SATB choir",
+        "lyricist": "William J. Henry",
+        "meter": "8.6.8.6 D",
+        "search_terms": [
+          "'Tis Well with Me",
+          "Tis Well with Me"
+        ],
+        "text_author": "William J. Henry",
+        "tune_name": "'Tis Well with Me"
+      },
+      "id": "tis-well-with-me",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "original_key": {
+        "abc": "Eb",
+        "fifths": -3,
+        "mode": "major",
+        "name": "E-flat major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: William J. Henry, pub.1907.",
+          "Tune/setting: Andrew L. Byers, pub.1907 ('Tis Well with Me).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/T/Tis_Well_with_Me/Tis_Well_with_Me.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_extra_voices_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/tis-well-with-me.musicxml",
+        "sha256": "a662e55f77ee6d2834f1f809e9916377a340dc8e20b38f976ed068d210f3365f"
+      },
+      "source": {
+        "arrangement_id": "tis-well-with-me",
+        "arrangement_label": "'Tis Well with Me",
+        "artifact_sha256": "81890b36f8656f6d79052a76c46e94afac761768cc3787f4b25993efc9074e9d",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1632,
+        "record_reference": "Tis_Well_with_Me",
+        "record_url": "https://library.timelesstruths.org/music/Tis_Well_with_Me/",
+        "work_id": "tis-well-with-me"
+      },
+      "title": "’Tis Well with Me"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "L. R. Ooton",
         "ensemble": "SATB choir",
         "lyricist": "Anonymous/Unknown",
@@ -255885,6 +258115,81 @@
         "work_id": "truehearted-wholehearted"
       },
       "title": "Truehearted, Wholehearted"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Joel A. Erickson",
+        "ensemble": "SATB choir",
+        "lyricist": "Rebecca N. Taylor",
+        "meter": "11.9.11.9.11.9.11.4",
+        "text_author": "Rebecca N. Taylor",
+        "tune_name": "Trust"
+      },
+      "id": "trust",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "D",
+        "fifths": 2,
+        "mode": "major",
+        "name": "D major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Rebecca N. Taylor, bef.1883 v. 4 by Rebecca N. Taylor, pub.1915 alt..",
+          "Tune/setting: Joel A. Erickson, 2004 (Trust).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/T/Trust/Trust.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/trust.musicxml",
+        "sha256": "c0748779968c7213c87b0e7c42b8e1d064b73feed3e994e1d929ee2c1491bb70"
+      },
+      "source": {
+        "arrangement_id": "trust",
+        "arrangement_label": "Trust",
+        "artifact_sha256": "63fe47901d961232be36581d38eda54b0d84951b92c10dd005e200be6b271503",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1651,
+        "record_reference": "Trust",
+        "record_url": "https://library.timelesstruths.org/music/Trust/",
+        "work_id": "trust"
+      },
+      "title": "Trust"
     },
     {
       "available_lines": [
@@ -260425,6 +262730,82 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Andrew L. Byers",
+        "ensemble": "SATB choir",
+        "lyricist": "Charles W. Naylor",
+        "meter": "10.9.10.9 D",
+        "text_author": "Charles W. Naylor",
+        "tune_name": "We Reap as We Sow"
+      },
+      "id": "we-reap-as-we-sow",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "E",
+        "fifths": 4,
+        "mode": "major",
+        "name": "E major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Charles W. Naylor, 1907.",
+          "Tune/setting: Andrew L. Byers, 1907 (We Reap as We Sow).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/W/We_Reap_as_We_Sow/We_Reap_as_We_Sow.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "drop_non_soprano_lyrics",
+            "split_sibelius_voice2_pair_fallback_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/we-reap-as-we-sow.musicxml",
+        "sha256": "58cd5d13e52512c31f96955cbb0c70bac9fdca2b36e1148f58a76a4df27d947b"
+      },
+      "source": {
+        "arrangement_id": "we-reap-as-we-sow",
+        "arrangement_label": "We Reap as We Sow",
+        "artifact_sha256": "055a02c9d0fb08a9527d38803e57cb850ba24937cb561d6d496ec1c54553deb6",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1714,
+        "record_reference": "We_Reap_as_We_Sow",
+        "record_url": "https://library.timelesstruths.org/music/We_Reap_as_We_Sow/",
+        "work_id": "we-reap-as-we-sow"
+      },
+      "title": "We Reap as We Sow"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Robert Lowry",
         "ensemble": "SATB choir",
         "lyricist": "Isaac Watts",
@@ -263992,6 +266373,84 @@
         "work_id": "when-i-see-the-blood"
       },
       "title": "When I See the Blood"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
+        "composer": "Lowell Mason",
+        "ensemble": "SATB choir",
+        "lyricist": "Isaac Watts",
+        "meter": "8.8.8.8",
+        "search_terms": [
+          "Hamburg"
+        ],
+        "text_author": "Isaac Watts",
+        "tune_name": "Hamburg"
+      },
+      "id": "when-i-survey-the-wondrous-cross-timeless-truths",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "original_key": {
+        "abc": "F",
+        "fifths": -1,
+        "mode": "major",
+        "name": "F major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Isaac Watts, pub.1707.",
+          "Tune/setting: Lowell Mason, 1824 (Hamburg).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/W/When_I_Survey_the_Wondrous_Cross/When_I_Survey_the_Wondrous_Cross.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_simultaneous_overlaps_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/when-i-survey-the-wondrous-cross-timeless-truths.musicxml",
+        "sha256": "8f0b6ac95719fbb337e2a519572a854102733e80d63b5df87e8e8920fbb5fbb4"
+      },
+      "source": {
+        "arrangement_id": "when-i-survey-the-wondrous-cross",
+        "arrangement_label": "Hamburg",
+        "artifact_sha256": "e13b9248549cf8a5726b81e98e96208626f3cd99c7d339e6bbd219fcfff78f02",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1761,
+        "record_reference": "When_I_Survey_the_Wondrous_Cross",
+        "record_url": "https://library.timelesstruths.org/music/When_I_Survey_the_Wondrous_Cross/",
+        "work_id": "when-i-survey-the-wondrous-cross"
+      },
+      "title": "When I Survey the Wondrous Cross"
     },
     {
       "available_lines": [
@@ -269738,6 +272197,83 @@
       ],
       "content_type": "hymn",
       "display": {
+        "composer": "Philip P. Bliss",
+        "ensemble": "SATB choir",
+        "lyricist": "Philip P. Bliss",
+        "meter": "8.6.8.6.6.6 R",
+        "search_terms": [
+          "Words of Life"
+        ],
+        "text_author": "Philip P. Bliss",
+        "tune_name": "Words of Life"
+      },
+      "id": "wonderful-words-of-life-words-of-life",
+      "lyrics": {
+        "available": true,
+        "scope": "soprano_only",
+        "verse_ids": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "original_key": {
+        "abc": "F",
+        "fifths": -1,
+        "mode": "major",
+        "name": "F major"
+      },
+      "rights": {
+        "source_attribution": [
+          "Text: Philip P. Bliss, 1874.",
+          "Tune/setting: Philip P. Bliss, 1874 (Words of Life).",
+          "MusicXML published by Timeless Truths."
+        ],
+        "source_declaration": "Public Domain Mark 1.0",
+        "source_music_reference": "https://library.timelesstruths.org/library/music/W/Wonderful_Words_of_Life/Wonderful_Words_of_Life.xml",
+        "status": "technical_candidate_not_production_approved"
+      },
+      "score": {
+        "canonical_state": "untransposed",
+        "generator": {
+          "name": "timeless-truths-sibelius-satb",
+          "version": "1"
+        },
+        "media_type": "application/vnd.recordare.musicxml+xml",
+        "normalization": {
+          "name": "timeless-truths-satb-normalizer",
+          "operations": [
+            "normalize_sibelius_lyric_rows",
+            "split_sibelius_hidden_duplicates_with_context",
+            "strip_source_page_credits"
+          ],
+          "version": "1"
+        },
+        "path": "scores/wonderful-words-of-life-words-of-life.musicxml",
+        "sha256": "5ce2a476cced10018e55a4ca397dae2f29d4c4f100122c5b2b6b4d7e23916aa4"
+      },
+      "source": {
+        "arrangement_id": "wonderful-words-of-life",
+        "arrangement_label": "Words of Life",
+        "artifact_sha256": "df0021ceca950a82b71751b4381c4428dec1ac4516ad3c196bc984fd4877e0da",
+        "collection_id": "timeless-truths-public-domain",
+        "record_ordinal": 1835,
+        "record_reference": "Wonderful_Words_of_Life",
+        "record_url": "https://library.timelesstruths.org/music/Wonderful_Words_of_Life/",
+        "work_id": "wonderful-words-of-life"
+      },
+      "title": "Wonderful Words of Life"
+    },
+    {
+      "available_lines": [
+        "SATB",
+        "S",
+        "A",
+        "T",
+        "B"
+      ],
+      "content_type": "hymn",
+      "display": {
         "composer": "Lowell Mason",
         "ensemble": "SATB choir",
         "lyricist": "Anna L. Coghill",
@@ -271458,7 +273994,7 @@
     {
       "encoding": "utf-8",
       "id": "timeless-truths-public-domain",
-      "manifest_sha256": "d1c2608114a03b02bf7563bb1018f9361777f621278c3ef4eab287cf88e86554",
+      "manifest_sha256": "01b3f45e616c901170268233081df476126a36106ce7655edb69a866591ccd00",
       "source_url": "https://library.timelesstruths.org/music/_/?section=_&sortby=title"
     }
   ]
