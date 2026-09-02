@@ -16,6 +16,8 @@ const percentFormatter = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 1,
 });
 
+const wholeNumberFormatter = new Intl.NumberFormat("en-US");
+
 function MetricTrend({
   color,
   label,
@@ -82,32 +84,92 @@ function BounceRateTrend({ points }: { points: SeoTrendPoint[] }) {
   return (
     <article className="rounded-2xl border border-white/[0.07] bg-black/10 p-4">
       <div className="flex items-baseline justify-between gap-3">
-        <p className="text-xs font-medium text-white/50">Organic bounce</p>
+        <p className="text-xs font-medium text-white/50">
+          Organic bounce rate
+        </p>
         <p className="font-mono text-sm tabular-nums text-white/75">
           {bounceRate === null ? "—" : percentFormatter.format(bounceRate)}
         </p>
       </div>
-      <div
-        role="img"
-        aria-label="Organic bounce rate by week for the last 12 weeks"
-        className="mt-5 flex h-20 items-end gap-1"
-      >
-        {points.map((point) => {
-          const height =
-            point.bounceRate === null
-              ? 2
-              : Math.max(7, point.bounceRate * 100);
-          return (
-            <div
-              key={point.startDate}
-              className="min-w-0 flex-1 rounded-t-sm bg-amber-300/70"
-              style={{ height: `${height}%` }}
-              title={`${point.label}: ${point.bounceRate === null ? "No sessions" : percentFormatter.format(point.bounceRate)}`}
-            />
-          );
-        })}
+      <div className="mt-5 flex h-20 gap-2">
+        <div
+          aria-hidden="true"
+          className="flex w-7 shrink-0 flex-col justify-between font-mono text-[8px] tabular-nums text-white/25"
+        >
+          <span>100%</span>
+          <span>50%</span>
+          <span>0%</span>
+        </div>
+        <div
+          role="group"
+          aria-label="Organic bounce-rate percentages by week for the last 12 weeks"
+          className="relative flex min-w-0 flex-1 items-end gap-1 border-y border-white/[0.06]"
+        >
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 top-1/2 border-t border-white/[0.04]"
+          />
+          {points.map((point, index) => {
+            const height =
+              point.bounceRate === null
+                ? 2
+                : Math.max(7, point.bounceRate * 100);
+            const measuredSessions = point.engagementMeasuredSessions;
+            const bouncedSessions = Math.max(
+              0,
+              measuredSessions - point.engagedSessions,
+            );
+            const rateLabel =
+              point.bounceRate === null
+                ? "No measured sessions"
+                : `${percentFormatter.format(point.bounceRate)} bounce rate`;
+            const sessionLabel =
+              measuredSessions === 0
+                ? "No measured sessions"
+                : `${wholeNumberFormatter.format(bouncedSessions)} of ${wholeNumberFormatter.format(measuredSessions)} sessions bounced`;
+            const tooltipPosition =
+              index === 0
+                ? "left-0"
+                : index === points.length - 1
+                  ? "right-0"
+                  : "left-1/2 -translate-x-1/2";
+
+            return (
+              <div
+                key={point.startDate}
+                role="img"
+                tabIndex={0}
+                aria-label={`${point.label}: ${rateLabel}. ${sessionLabel}.`}
+                className="group relative flex h-full min-w-0 flex-1 items-end outline-none"
+              >
+                <div
+                  aria-hidden="true"
+                  className="w-full rounded-t-sm bg-amber-300/70 transition group-hover:bg-amber-200 group-focus-visible:bg-amber-200 group-focus-visible:ring-2 group-focus-visible:ring-amber-100/80"
+                  style={{ height: `${height}%` }}
+                />
+                <div
+                  aria-hidden="true"
+                  className={`pointer-events-none absolute z-20 w-max max-w-48 rounded-lg border border-white/10 bg-[#20282e] px-2.5 py-2 text-left opacity-0 shadow-xl transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100 ${tooltipPosition}`}
+                  style={{ bottom: `calc(${height}% + 0.5rem)` }}
+                >
+                  <p className="font-mono text-[8px] uppercase tracking-[0.1em] text-white/40">
+                    Week of {point.label}
+                  </p>
+                  <p className="mt-1 text-xs font-semibold text-amber-100">
+                    {rateLabel}
+                  </p>
+                  {measuredSessions > 0 ? (
+                    <p className="mt-0.5 text-[10px] text-white/55">
+                      {sessionLabel}
+                    </p>
+                  ) : null}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
-      <div className="mt-2 flex justify-between font-mono text-[8px] uppercase tracking-[0.08em] text-white/20">
+      <div className="mt-2 flex justify-between pl-9 font-mono text-[8px] uppercase tracking-[0.08em] text-white/20">
         <span>{points[0]?.label}</span>
         <span>{points.at(-1)?.label}</span>
       </div>
