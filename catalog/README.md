@@ -38,7 +38,7 @@ Library license for the index's normal public-domain declaration.
 The Timeless Truths inventory pins 1,895 score settings across 1,857 work pages.
 The text and score declarations are checked independently: 1,869 settings pass
 both public-domain gates and 26 remain rights holds. The first promotion cohort
-contains 148 losslessly normalizable SATB settings: 127 net-new titles and 21
+contains 148 losslessly normalizable SATB settings: 126 net-new titles and 22
 additional arrangements of titles already in the catalog. This includes the
 original `Nothing Between` addition and preserves its stable item and
 arrangement identities.

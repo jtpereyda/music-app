@@ -84,12 +84,12 @@ class TimelessTruthsImportTests(unittest.TestCase):
             },
         )
         self.assertEqual(manifest["summary"]["promoted_records"], 148)
-        self.assertEqual(manifest["summary"]["net_new_titles"], 127)
-        self.assertEqual(manifest["summary"]["distinct_arrangements"], 21)
+        self.assertEqual(manifest["summary"]["net_new_titles"], 126)
+        self.assertEqual(manifest["summary"]["distinct_arrangements"], 22)
         self.assertEqual(len(manifest["records"]), 148)
         self.assertEqual(
             Counter(record["promotion_reason"] for record in manifest["records"]),
-            {"distinct_arrangement": 21, "net_new_title": 127},
+            {"distinct_arrangement": 22, "net_new_title": 126},
         )
         self.assertTrue(
             all(

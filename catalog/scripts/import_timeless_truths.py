@@ -53,8 +53,8 @@ EXPECTED_NORMALIZED_SHA256 = (
 )
 EXPECTED_BASE_ITEMS = 2225
 EXPECTED_PROMOTED_ITEMS = 148
-EXPECTED_NET_NEW_TITLES = 127
-EXPECTED_DISTINCT_ARRANGEMENTS = 21
+EXPECTED_NET_NEW_TITLES = 126
+EXPECTED_DISTINCT_ARRANGEMENTS = 22
 LEGACY_ARRANGEMENT_IDS = {"nothing-between": "nothing-between-clark"}
 SEARCH_ALIASES = {
     "nothing-between": [
@@ -349,7 +349,7 @@ def import_score(
         )
 
     taken_ids = {str(item["id"]) for item in base_items}
-    base_hymn_titles = {
+    known_title_keys = {
         _slug(str(item["title"]))
         for item in base_items
         if item["content_type"] == "hymn"
@@ -410,11 +410,12 @@ def import_score(
                 "exact musical duplicate reached promotion: "
                 f"{record['arrangement_id']!r}"
             )
-        is_net_new = title_key not in base_hymn_titles
+        is_net_new = title_key not in known_title_keys
         promotion_reason = (
             "net_new_title" if is_net_new else "distinct_arrangement"
         )
         known_fingerprints.setdefault(title_key, set()).add(fingerprint)
+        known_title_keys.add(title_key)
 
         item_id = _unique_item_id(record, taken=taken_ids)
         taken_ids.add(item_id)
