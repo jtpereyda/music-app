@@ -35,7 +35,7 @@ DEFAULT_REPORT = CATALOG_ROOT / "import-report.json"
 DEFAULT_MANIFEST = REPOSITORY_ROOT / "data/timeless-truths/manifest.json"
 DEFAULT_WEB_CATALOG = REPOSITORY_ROOT / "apps/web/src/lib/catalog.generated.ts"
 
-CATALOG_REVISION = "10"
+CATALOG_REVISION = "11"
 COLLECTION_ID = DATASET_ID
 GENERATOR_NAME = "timeless-truths-sibelius-satb"
 GENERATOR_VERSION = "1"
@@ -52,9 +52,9 @@ EXPECTED_NORMALIZED_SHA256 = (
     "9dbd5977d1f4a2110b9af90b466b00746e0d509047a4a1fb2f3c6fe459a8d99a"
 )
 EXPECTED_BASE_ITEMS = 2225
-EXPECTED_PROMOTED_ITEMS = 483
-EXPECTED_NET_NEW_TITLES = 413
-EXPECTED_DISTINCT_ARRANGEMENTS = 70
+EXPECTED_PROMOTED_ITEMS = 1168
+EXPECTED_NET_NEW_TITLES = 1016
+EXPECTED_DISTINCT_ARRANGEMENTS = 152
 LEGACY_ARRANGEMENT_IDS = {"nothing-between": "nothing-between-clark"}
 SEARCH_ALIASES = {
     "nothing-between": [
@@ -326,7 +326,7 @@ def import_score(
     records = inventory.get("records", [])
     summary = inventory.get("summary", {})
     if (
-        inventory.get("schema_version") != 1
+        inventory.get("schema_version") != 2
         or inventory.get("dataset_id") != COLLECTION_ID
         or len(records) != EXPECTED_SCORE_COUNT
         or summary.get("strict_public_domain_musicxml")
@@ -336,10 +336,10 @@ def import_score(
 
     dispositions = Counter(str(record["disposition"]) for record in records)
     expected_dispositions = {
-        "normalization_candidate": 1375,
+        "normalization_candidate": 691,
         "rights_hold": 26,
         "straightforward_candidate": EXPECTED_PROMOTED_ITEMS,
-        "structure_hold": 11,
+        "structure_hold": 10,
     }
     if dict(sorted(dispositions.items())) != expected_dispositions:
         raise TimelessTruthsImportError(
@@ -350,10 +350,11 @@ def import_score(
     if str(catalog.get("catalog_revision")) not in {
         "8",
         "9",
+        "10",
         CATALOG_REVISION,
     }:
         raise TimelessTruthsImportError(
-            "base catalog must be revision 8, 9, or idempotent revision 10"
+            "base catalog must be revision 8, 9, 10, or idempotent revision 11"
         )
     existing_collection_items = [
         item
@@ -436,6 +437,8 @@ def import_score(
             or normalized.profile != expected_normalized["profile"]
             or normalized.duplicated_unison_events
             != expected_normalized["duplicated_unison_events"]
+            or normalized.preserved_context_events
+            != expected_normalized["preserved_context_events"]
         ):
             raise TimelessTruthsImportError(
                 f"normalization drifted for {record['arrangement_id']!r}"
@@ -500,6 +503,9 @@ def import_score(
                 "promotion_reason": promotion_reason,
                 "raw_sha256": source_sha256,
                 "shared_unison_events": normalized.duplicated_unison_events,
+                "preserved_context_events": (
+                    normalized.preserved_context_events
+                ),
                 "source_musicxml_url": record["source_url"],
                 "source_page_url": record["page_url"],
                 "title": record["title"],
@@ -535,7 +541,7 @@ def import_score(
         },
         "public_domain_mark_url": PUBLIC_DOMAIN_MARK_URL,
         "records": manifest_records,
-        "schema_version": 2,
+        "schema_version": 3,
         "source_index_url": SOURCE_INDEX_URL,
         "summary": {
             "distinct_arrangements": distinct_arrangements,
@@ -552,6 +558,11 @@ def import_score(
                 )
             ),
             "promoted_records": len(imported_items),
+            "preserved_context_events": sum(
+                int(record["normalization"]["preserved_context_events"])
+                for record in records
+                if record["disposition"] == "straightforward_candidate"
+            ),
             "rights_holds": dispositions["rights_hold"],
             "source_records": len(records),
             "strict_public_domain_musicxml": EXPECTED_STRICT_PUBLIC_DOMAIN_COUNT,
@@ -619,6 +630,11 @@ def import_score(
                 ).items()
             )
         ),
+        "preserved_context_events": sum(
+            int(record["normalization"]["preserved_context_events"])
+            for record in records
+            if record["disposition"] == "straightforward_candidate"
+        ),
         "rights_holds": dispositions["rights_hold"],
         "source_records": EXPECTED_SCORE_COUNT,
         "strict_public_domain_musicxml": EXPECTED_STRICT_PUBLIC_DOMAIN_COUNT,
@@ -642,7 +658,10 @@ def import_score(
     report["excluded"]["normalization_backlog"] = {
         "collection_id": COLLECTION_ID,
         "records": dispositions["normalization_candidate"],
-        "reason": "requires a lossless normalization profile beyond the supported aligned and mixed-voice SATB shapes",
+        "reason": (
+            "requires a lossless normalization profile beyond the supported "
+            "aligned, mixed-voice, and interleaved-notation SATB shapes"
+        ),
     }
     report["summary"].update(
         {
@@ -650,7 +669,7 @@ def import_score(
             "exact_public_domain_candidates": 4100,
             "rights_holds": 46,
             "source_records": 4146,
-            "structure_holds": 17,
+            "structure_holds": 16,
             "timeless_truths_items": EXPECTED_PROMOTED_ITEMS,
         }
     )

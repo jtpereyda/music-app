@@ -19,6 +19,9 @@ ALIGN_MEASURE_NUMBERS = "align_measure_numbers"
 NORMALIZE_SIBELIUS_LYRIC_ROWS = "normalize_sibelius_lyric_rows"
 SPLIT_SIBELIUS_SATB_DYADS = "split_sibelius_satb_dyads"
 SPLIT_SIBELIUS_MIXED_VOICES = "split_sibelius_mixed_voices"
+SPLIT_SIBELIUS_MIXED_VOICES_WITH_CONTEXT = (
+    "split_sibelius_mixed_voices_with_context"
+)
 STRIP_SOURCE_PAGE_CREDITS = "strip_source_page_credits"
 DROP_NON_SOPRANO_LYRICS = "drop_non_soprano_lyrics"
 SET_WORK_TITLE = "set_work_title"
@@ -48,6 +51,7 @@ class NormalizationResult:
     operations: tuple[str, ...]
     profile: str = ""
     duplicated_unison_events: int = 0
+    preserved_context_events: int = 0
 
 
 @dataclass(frozen=True)
@@ -724,7 +728,102 @@ def _assert_non_overlapping_events(
         cursor = onset + _required_int(note, "duration")
 
 
-def _split_sibelius_mixed_measure(measure: ET.Element) -> None:
+def _interleaved_stream_context(
+    measure: ET.Element,
+    *,
+    extent: int,
+) -> tuple[
+    int,
+    int,
+    list[tuple[int, ET.Element]],
+    list[tuple[int, ET.Element]],
+]:
+    """Locate supported notation embedded in the two serialized note streams."""
+    stream_names = {"backup", "forward", "note"}
+    stream_indices = [
+        index
+        for index, child in enumerate(measure)
+        if _local_name(child.tag) in stream_names
+    ]
+    if not stream_indices:
+        raise SatbNormalizationError("Sibelius measure contains no note stream.")
+    first, last = min(stream_indices), max(stream_indices)
+    cursor = 0
+    in_primary_stream = True
+    upper_context: list[tuple[int, ET.Element]] = []
+    lower_context: list[tuple[int, ET.Element]] = []
+    for child in list(measure)[first : last + 1]:
+        name = _local_name(child.tag)
+        if name == "backup":
+            cursor -= _required_int(child, "duration")
+            in_primary_stream = False
+        elif name == "forward":
+            cursor += _required_int(child, "duration")
+        elif name == "note":
+            if _direct_child(child, "chord") is None:
+                cursor += _required_int(child, "duration")
+        else:
+            if name not in {"barline", "direction"}:
+                raise SatbNormalizationError(
+                    "Sibelius measure interleaves unsupported "
+                    f"{name!r} notation with its voices."
+                )
+            if not 0 <= cursor <= extent:
+                raise SatbNormalizationError(
+                    "Sibelius interleaved notation falls outside its measure."
+                )
+            target = upper_context if in_primary_stream else lower_context
+            target.append((cursor, child))
+    return first, last, upper_context, lower_context
+
+
+def _merge_stream_context(
+    notes: list[ET.Element],
+    context: list[tuple[int, ET.Element]],
+    *,
+    extent: int,
+) -> list[ET.Element]:
+    """Reinsert notation at the same serialized voice cursor."""
+    result: list[ET.Element] = []
+    context_index = 0
+    cursor = 0
+    for note in notes:
+        while (
+            context_index < len(context)
+            and context[context_index][0] == cursor
+        ):
+            result.append(context[context_index][1])
+            context_index += 1
+        duration = _required_int(note, "duration")
+        if (
+            context_index < len(context)
+            and cursor < context[context_index][0] < cursor + duration
+        ):
+            raise SatbNormalizationError(
+                "Sibelius interleaved notation does not align with a "
+                "normalized voice boundary."
+            )
+        result.append(note)
+        cursor += duration
+    if cursor != extent:
+        raise SatbNormalizationError(
+            "Sibelius normalized voice does not match its measure extent."
+        )
+    while context_index < len(context) and context[context_index][0] == extent:
+        result.append(context[context_index][1])
+        context_index += 1
+    if context_index != len(context):
+        raise SatbNormalizationError(
+            "Sibelius interleaved notation could not be restored losslessly."
+        )
+    return result
+
+
+def _split_sibelius_mixed_measure(
+    measure: ET.Element,
+    *,
+    preserve_context: bool = False,
+) -> None:
     groups, extent = _timed_note_groups(measure)
     if not groups:
         raise SatbNormalizationError("Sibelius measure contains no note groups.")
@@ -812,22 +911,17 @@ def _split_sibelius_mixed_measure(measure: ET.Element) -> None:
     upper = _filled_voice_events(upper_events, extent=extent, voice="1")
     lower = _filled_voice_events(lower_events, extent=extent, voice="2")
 
-    stream_names = {"backup", "forward", "note"}
-    stream_indices = [
-        index
-        for index, child in enumerate(measure)
-        if _local_name(child.tag) in stream_names
-    ]
-    if not stream_indices:
-        raise SatbNormalizationError("Sibelius measure contains no note stream.")
-    first, last = min(stream_indices), max(stream_indices)
-    if any(
-        _local_name(child.tag) not in stream_names
-        for child in list(measure)[first : last + 1]
-    ):
+    first, last, upper_context, lower_context = _interleaved_stream_context(
+        measure,
+        extent=extent,
+    )
+    if not preserve_context and (upper_context or lower_context):
         raise SatbNormalizationError(
             "Sibelius measure interleaves notation with its mixed voices."
         )
+    if preserve_context:
+        upper = _merge_stream_context(upper, upper_context, extent=extent)
+        lower = _merge_stream_context(lower, lower_context, extent=extent)
     namespace = ""
     if "}" in measure.tag:
         namespace = measure.tag.split("}", 1)[0] + "}"
@@ -856,6 +950,66 @@ def _split_sibelius_mixed_voices(root: ET.Element) -> int:
         for measure in measures:
             _split_sibelius_mixed_measure(measure)
     return len(parts)
+
+
+def _split_sibelius_mixed_voices_with_context(root: ET.Element) -> int:
+    parts = _direct_children(root, "part")
+    if len(parts) != 2:
+        raise SatbNormalizationError(
+            f"Expected two Sibelius SATB parts, found {len(parts)}."
+        )
+    for part in parts:
+        measures = _direct_children(part, "measure")
+        if not measures:
+            raise SatbNormalizationError("Sibelius SATB part has no measures.")
+        for measure in measures:
+            _split_sibelius_mixed_measure(measure, preserve_context=True)
+    return len(parts)
+
+
+def _element_signature(element: ET.Element) -> tuple[object, ...]:
+    return (
+        _local_name(element.tag),
+        tuple(sorted(element.attrib.items())),
+        element.text or "",
+        tuple(_element_signature(child) for child in element),
+    )
+
+
+def _contextual_notation_events(
+    root: ET.Element,
+) -> list[list[Counter[tuple[str, int, tuple[object, ...]]]]]:
+    result: list[list[Counter[tuple[str, int, tuple[object, ...]]]]] = []
+    for part in _direct_children(root, "part"):
+        part_events: list[Counter[tuple[str, int, tuple[object, ...]]]] = []
+        for measure in _direct_children(part, "measure"):
+            _, extent = _timed_notes(measure)
+            _, _, upper, lower = _interleaved_stream_context(
+                measure,
+                extent=extent,
+            )
+            part_events.append(
+                Counter(
+                    (voice, onset, _element_signature(element))
+                    for voice, events in (("1", upper), ("2", lower))
+                    for onset, element in events
+                )
+            )
+        result.append(part_events)
+    return result
+
+
+def _verify_contextual_notation_preservation(
+    source_root: ET.Element,
+    normalized_root: ET.Element,
+) -> int:
+    source = _contextual_notation_events(source_root)
+    normalized = _contextual_notation_events(normalized_root)
+    if source != normalized:
+        raise SatbNormalizationError(
+            "Timeless Truths normalization changed interleaved notation."
+        )
+    return sum(sum(measure.values()) for part in source for measure in part)
 
 
 def _pitched_measure_events(
@@ -1045,6 +1199,11 @@ def normalize_timeless_truths_musicxml(
             SPLIT_SIBELIUS_MIXED_VOICES,
             _split_sibelius_mixed_voices,
         ),
+        (
+            "split_mixed_voices_with_interleaved_notation",
+            SPLIT_SIBELIUS_MIXED_VOICES_WITH_CONTEXT,
+            _split_sibelius_mixed_voices_with_context,
+        ),
     ]
     errors: list[str] = []
     for profile, split_operation, splitter in profiles:
@@ -1073,11 +1232,16 @@ def normalize_timeless_truths_musicxml(
                 source_root,
                 root,
             )
+            preserved_context_events = _verify_contextual_notation_preservation(
+                source_root,
+                root,
+            )
             return NormalizationResult(
                 data=_serialize(root),
                 operations=tuple(operations),
                 profile=profile,
                 duplicated_unison_events=duplicated_unisons,
+                preserved_context_events=preserved_context_events,
             )
         except SatbNormalizationError as exc:
             errors.append(f"{profile}: {exc}")
