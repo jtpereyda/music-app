@@ -1,5 +1,6 @@
 "use client";
 
+import { ShareButton } from "@/components/share-button";
 import type {
   CatalogItem,
   Clef,
@@ -28,6 +29,7 @@ interface PreviewSheetProps {
   isRendering: boolean;
   previewUrl?: string;
   previewState: PreviewState;
+  shareEnabled: boolean;
   onDownload: () => void;
   onPreviewReady: (url: string) => void;
   onPreviewError: (url: string) => void;
@@ -46,6 +48,7 @@ export function PreviewSheet({
   isRendering,
   previewUrl,
   previewState,
+  shareEnabled,
   onDownload,
   onPreviewReady,
   onPreviewError,
@@ -69,18 +72,18 @@ export function PreviewSheet({
       id="edition-preview"
       className="relative flex min-h-[560px] scroll-mt-4 flex-1 flex-col overflow-hidden rounded-[28px] border border-ink/10 bg-[#dfe4e4] shadow-[0_24px_65px_rgba(29,39,50,0.12)] lg:min-h-[720px]"
     >
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink/10 bg-white/70 px-4 py-3 backdrop-blur sm:px-5">
-        <div className="flex flex-wrap items-center gap-2.5">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink/10 bg-white/90 px-4 py-3 sm:px-5">
+        <div className="flex w-full min-w-0 items-center gap-2 sm:gap-2.5 md:w-auto">
           <span
-            className={`size-2 rounded-full ${
+            className={`size-2 shrink-0 rounded-full ${
               isRendering ? "animate-pulse bg-coral" : "bg-[#4f8e6b]"
             }`}
           />
-          <span className="text-xs font-medium text-ink">
+          <span className="min-w-0 flex-1 truncate text-xs font-medium text-ink md:flex-none">
             {isRendering
               ? "Preparing your PDF…"
               : previewState === "ready"
-                ? "Live engraved preview"
+                ? "Live preview"
                 : previewState === "loading"
                   ? "Engraving live preview…"
                   : previewState === "error"
@@ -91,7 +94,7 @@ export function PreviewSheet({
             type="button"
             onClick={onDownload}
             disabled={isRendering}
-            className="group inline-flex h-8 items-center gap-1.5 rounded-full bg-coral px-3 text-[11px] font-semibold text-white shadow-[0_5px_14px_rgba(231,104,77,0.24)] outline-none transition hover:-translate-y-px hover:bg-[#d95f45] focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-65 disabled:hover:translate-y-0"
+            className="group inline-flex h-8 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-coral px-3 text-[11px] font-semibold text-white shadow-[0_5px_14px_rgba(231,104,77,0.24)] outline-none transition hover:-translate-y-px hover:bg-[#d95f45] focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-65 disabled:hover:translate-y-0"
           >
             {isRendering ? (
               <span className="size-3.5 animate-spin rounded-full border-2 border-white/35 border-t-white" />
@@ -113,7 +116,13 @@ export function PreviewSheet({
             )}
             {isRendering ? "Rendering…" : "Download PDF"}
           </button>
-          <span className="hidden text-xs text-ink/40 sm:inline">
+          {shareEnabled ? (
+            <ShareButton
+              title={`${hymn.title} sheet music`}
+              text={`View ${hymn.title} sheet music on Transposify.`}
+            />
+          ) : null}
+          <span className="hidden text-xs text-ink/40 lg:inline">
             {previewState === "ready"
               ? " · generated from canonical MusicXML"
               : previewState === "error"

@@ -9,6 +9,7 @@ import {
   PreviewSheet,
   type PreviewState,
 } from "@/components/preview-sheet";
+import { ShareButton } from "@/components/share-button";
 import {
   clefOptions,
   getDefaultOutput,
@@ -114,6 +115,9 @@ export function HymnConfigurator({
     ? "original"
     : singleLineOctavePlacement;
   const targetKeys = getKeysForMode(getKeyMode(selectedHymn.originalKey));
+  const shareEnabled = Boolean(
+    urlBaseEdition && selectedHymn.id === initialHymn.id,
+  );
 
   useEffect(() => {
     if (!urlBaseEdition || selectedHymn.id !== initialHymn.id) {
@@ -546,32 +550,44 @@ export function HymnConfigurator({
             </div>
 
             <div className="mt-6 border-t border-ink/10 pt-5">
-              <button
-                type="button"
-                onClick={downloadPdf}
-                disabled={isRendering}
-                className="group flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-coral px-5 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(231,104,77,0.28)] outline-none transition hover:-translate-y-px hover:bg-[#d95f45] focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4 disabled:cursor-wait disabled:opacity-65 disabled:hover:translate-y-0"
+              <div
+                id="edition-primary-actions"
+                className="flex items-center gap-2"
               >
-                {isRendering ? (
-                  <span className="size-4 animate-spin rounded-full border-2 border-white/35 border-t-white" />
-                ) : (
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="size-4 transition-transform group-hover:translate-y-0.5"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                )}
-                {isRendering ? "Rendering PDF…" : "Download PDF"}
-              </button>
+                <button
+                  type="button"
+                  onClick={downloadPdf}
+                  disabled={isRendering}
+                  className="group flex h-12 min-w-0 flex-1 items-center justify-center gap-2 rounded-xl bg-coral px-5 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(231,104,77,0.28)] outline-none transition hover:-translate-y-px hover:bg-[#d95f45] focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-4 disabled:cursor-wait disabled:opacity-65 disabled:hover:translate-y-0"
+                >
+                  {isRendering ? (
+                    <span className="size-4 animate-spin rounded-full border-2 border-white/35 border-t-white" />
+                  ) : (
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="size-4 transition-transform group-hover:translate-y-0.5"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  )}
+                  {isRendering ? "Rendering PDF…" : "Download PDF"}
+                </button>
+                {shareEnabled ? (
+                  <ShareButton
+                    title={`${selectedHymn.title} sheet music`}
+                    text={`View ${selectedHymn.title} sheet music on Transposify.`}
+                    variant="primary"
+                  />
+                ) : null}
+              </div>
               <p
                 className={`mt-3 min-h-8 text-center text-xs leading-5 ${
                   status.tone === "error"
@@ -598,6 +614,7 @@ export function HymnConfigurator({
             isRendering={isRendering}
             previewUrl={previewUrl}
             previewState={previewState}
+            shareEnabled={shareEnabled}
             onDownload={downloadPdf}
             onPreviewReady={(url) =>
               setPreviewResult({ url, state: "ready" })
