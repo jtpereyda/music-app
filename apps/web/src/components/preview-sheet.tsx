@@ -72,14 +72,14 @@ export function PreviewSheet({
       id="edition-preview"
       className="relative flex min-h-[560px] scroll-mt-4 flex-1 flex-col overflow-hidden rounded-[28px] border border-ink/10 bg-[#dfe4e4] shadow-[0_24px_65px_rgba(29,39,50,0.12)] lg:min-h-[720px]"
     >
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink/10 bg-white/70 px-4 py-3 backdrop-blur sm:px-5">
-        <div className="flex min-w-0 items-center gap-2 sm:gap-2.5">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink/10 bg-white/90 px-4 py-3 sm:px-5">
+        <div className="flex w-full min-w-0 items-center gap-2 sm:gap-2.5 md:w-auto">
           <span
-            className={`size-2 rounded-full ${
+            className={`size-2 shrink-0 rounded-full ${
               isRendering ? "animate-pulse bg-coral" : "bg-[#4f8e6b]"
             }`}
           />
-          <span className="shrink-0 whitespace-nowrap text-xs font-medium text-ink">
+          <span className="min-w-0 flex-1 truncate text-xs font-medium text-ink md:flex-none">
             {isRendering
               ? "Preparing your PDF…"
               : previewState === "ready"
@@ -122,7 +122,7 @@ export function PreviewSheet({
               text={`View ${hymn.title} sheet music on Transposify.`}
             />
           ) : null}
-          <span className="hidden text-xs text-ink/40 sm:inline">
+          <span className="hidden text-xs text-ink/40 lg:inline">
             {previewState === "ready"
               ? " · generated from canonical MusicXML"
               : previewState === "error"
