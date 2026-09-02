@@ -1,15 +1,15 @@
 # Technical-preview catalog
 
-This directory contains 2,226 untransposed canonical scores selected for
+This directory contains 2,373 untransposed canonical scores selected for
 technical pipeline work from five pinned source collections:
 
 - 269 hymns from the Open Hymnal 2014.06 combined ABC;
 - eight compatible, non-duplicate hymns from its split ZIP;
 - 592 public-domain HymnsToGod arrangements;
-- one Public Domain Mark edition from Timeless Truths; and
+- 148 Public Domain Mark editions from Timeless Truths; and
 - 1,356 CC0 voice-and-piano scores indexed by OpenScore Lieder.
 
-The first four collections provide 870 hymns. OpenScore Lieder provides 1,356
+The first four collections provide 1,017 hymns. OpenScore Lieder provides 1,356
 classical art songs. The catalog preserves each source record, canonical score
 hash, display metadata, rights declaration, original key and mode, work ID, and
 arrangement ID.
@@ -35,12 +35,22 @@ because its page says `Copyright: Unknown - USA`; the `Amazing Grace` King
 David R setting is held because its page substitutes a Choral Public Domain
 Library license for the index's normal public-domain declaration.
 
-The Timeless Truths addition is `Nothing Between`, an SATB arrangement credited
-to F. A. Clark. Its record page and MusicXML identify the score as public
-domain, and the page links the Creative Commons Public Domain Mark 1.0. The
-pinned Sibelius MusicXML uses a deterministic normalization to split two-staff
-dyads into four semantic voices, repair positional lyric-row identifiers, and
-remove source-page credits that do not fit the product renderer.
+The Timeless Truths inventory pins 1,895 score settings across 1,857 work pages.
+The text and score declarations are checked independently: 1,869 settings pass
+both public-domain gates and 26 remain rights holds. The first promotion cohort
+contains 148 losslessly normalizable SATB settings: 127 net-new titles and 21
+additional arrangements of titles already in the catalog. This includes the
+original `Nothing Between` addition and preserves its stable item and
+arrangement identities.
+
+The Timeless Truths Sibelius exports encode two printed notes per staff as
+aligned dyads. The deterministic normalizer splits the accepted cohort into
+four semantic voices, repairs lyric-row identifiers, drops duplicated lyrics
+from the lower staff, aligns measure numbers where needed, and removes source
+page credits that do not fit the product renderer. Another 1,710 public-domain
+settings are retained in the pinned normalization backlog, while 11 unusual
+structures remain explicit structural holds. They are not silently treated as
+import failures.
 
 The Open Hymnal combined source has 293 records. Eighteen are rights holds and
 six are structural holds because they contain 3, 5, 6, or 7 voices instead of
@@ -141,11 +151,17 @@ bsdtar -xf /tmp/OpenScore-Lieder-6b2dc542.zip -C /tmp
 python3 catalog/scripts/import_openscore_lieder.py \
   --source-root /tmp/Lieder-6b2dc542ce2e8aa4b78c8ee62103b210efc07015
 
+python3 catalog/scripts/inventory_timeless_truths.py \
+  --output-root /path/to/build/timeless-truths \
+  --audit-date 2026-09-02
+
+# Copy the pinned inventory and its 148 straightforward raw XML payloads into
+# data/timeless-truths, then rebuild the promoted cohort:
 python3 catalog/scripts/import_timeless_truths.py
 ```
 
 The promotion stages regenerate `catalog.json`, `import-report.json`,
 canonical scores, the source manifests, and
 `apps/web/src/lib/catalog.generated.ts`. They fail closed if pinned source
-counts, hashes, rights gates, record identities, or the expected 870-hymn,
-1,356-art-song, and 2,226-total results drift.
+counts, hashes, rights gates, record identities, or the expected 1,017-hymn,
+1,356-art-song, and 2,373-total results drift.

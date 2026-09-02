@@ -251,7 +251,7 @@
           "type": "array"
         },
         "source_declaration": {
-          "pattern": "^(copyright: public domain\\.|Copyright: Public Domain - USA|Creative Commons Zero \\(CC0\\) 1.0 Universal$)",
+          "pattern": "^(copyright: public domain\\.|Copyright: Public Domain - USA|Creative Commons Zero \\(CC0\\) 1.0 Universal|Public Domain Mark 1.0$)",
           "type": "string"
         },
         "source_music_reference": {
@@ -318,8 +318,10 @@
           "items": {
             "enum": [
               "align_measure_numbers",
+              "drop_non_soprano_lyrics",
               "drop_empty_parts",
               "normalize_sibelius_lyric_rows",
+              "set_work_title",
               "split_combined_chord_voices",
               "split_sibelius_satb_dyads",
               "strip_source_page_credits"

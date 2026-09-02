@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import hashlib
+import json
+from collections import Counter
 from pathlib import Path
 import sys
 import unittest
@@ -62,6 +64,42 @@ class TimelessTruthsImportTests(unittest.TestCase):
                 SPLIT_SIBELIUS_SATB_DYADS,
                 STRIP_SOURCE_PAGE_CREDITS,
             ),
+        )
+
+    def test_bulk_inventory_and_manifest_account_for_the_source(self) -> None:
+        source_root = REPOSITORY_ROOT / "data/timeless-truths"
+        inventory = json.loads((source_root / "inventory.json").read_text())
+        manifest = json.loads((source_root / "manifest.json").read_text())
+
+        self.assertEqual(len(inventory["records"]), 1895)
+        self.assertEqual(
+            inventory["summary"],
+            {
+                "normalization_candidate": 1710,
+                "rights_hold": 26,
+                "score_settings": 1895,
+                "straightforward_candidate": 148,
+                "strict_public_domain_musicxml": 1869,
+                "structure_hold": 11,
+            },
+        )
+        self.assertEqual(manifest["summary"]["promoted_records"], 148)
+        self.assertEqual(manifest["summary"]["net_new_titles"], 127)
+        self.assertEqual(manifest["summary"]["distinct_arrangements"], 21)
+        self.assertEqual(len(manifest["records"]), 148)
+        self.assertEqual(
+            Counter(record["promotion_reason"] for record in manifest["records"]),
+            {"distinct_arrangement": 21, "net_new_title": 127},
+        )
+        self.assertTrue(
+            all(
+                len(record["music_fingerprint_sha256"]) == 64
+                for record in manifest["records"]
+            )
+        )
+        self.assertEqual(
+            len(list((source_root / "raw/xml").glob("*.xml"))),
+            148,
         )
 
 

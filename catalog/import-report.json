@@ -1,5 +1,5 @@
 {
-  "catalog_revision": "8",
+  "catalog_revision": "9",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
@@ -40,16 +40,17 @@
       },
       "normalization": {
         "name": "timeless-truths-satb-normalizer",
-        "operations": [
-          "normalize_sibelius_lyric_rows",
-          "split_sibelius_satb_dyads",
-          "strip_source_page_credits"
-        ],
+        "profile": "split_aligned_satb_dyads",
         "version": "1"
       }
     }
   },
   "excluded": {
+    "normalization_backlog": {
+      "collection_id": "timeless-truths-public-domain",
+      "reason": "requires a lossless normalization profile beyond aligned SATB dyads",
+      "records": 1710
+    },
     "rights_holds": [
       {
         "ordinal": 17,
@@ -172,6 +173,188 @@
         "reason": "Individual page contradicts or replaces the public-domain index classification.",
         "record_ordinal": 223,
         "title": "I Surrender All"
+      },
+      {
+        "arrangement_id": "alpha-and-omega",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=for_gods_glory; score=public_domain",
+        "record_ordinal": 51,
+        "title": "Alpha and Omega"
+      },
+      {
+        "arrangement_id": "come-o-thou-god-of-grace",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=for_gods_glory; score=public_domain",
+        "record_ordinal": 230,
+        "title": "Come, O Thou God of Grace"
+      },
+      {
+        "arrangement_id": "example-of-humility",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=cc_license; score=cc_license",
+        "record_ordinal": 312,
+        "title": "Example of Humility"
+      },
+      {
+        "arrangement_id": "fathers-praying-ground",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 326,
+        "title": "Father’s Praying Ground"
+      },
+      {
+        "arrangement_id": "for-sacrifice-or-service",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 346,
+        "title": "For Sacrifice or Service"
+      },
+      {
+        "arrangement_id": "give-said-the-little-stream",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=public_domain",
+        "record_ordinal": 372,
+        "title": "“Give,” Said the Little Stream"
+      },
+      {
+        "arrangement_id": "healing-in-jesus",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 464,
+        "title": "Healing in Jesus"
+      },
+      {
+        "arrangement_id": "he-is-everything-to-me",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 480,
+        "title": "He Is Everything to Me"
+      },
+      {
+        "arrangement_id": "help-me-find-my-way",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=public_domain",
+        "record_ordinal": 497,
+        "title": "Help Me Find My Way"
+      },
+      {
+        "arrangement_id": "jesus-opened-up-the-way",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 792,
+        "title": "Jesus Opened Up the Way"
+      },
+      {
+        "arrangement_id": "keep-on-the-firing-line",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 830,
+        "title": "Keep on the Firing Line"
+      },
+      {
+        "arrangement_id": "o-god-receive-my-undivided-heart",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=cc_license; score=cc_license",
+        "record_ordinal": 1043,
+        "title": "O God, Receive My Undivided Heart"
+      },
+      {
+        "arrangement_id": "oh-golden-hours",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1053,
+        "title": "Oh, Golden Hours"
+      },
+      {
+        "arrangement_id": "oh-the-glory",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1069,
+        "title": "Oh, the Glory!"
+      },
+      {
+        "arrangement_id": "pray-the-clouds-away",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1182,
+        "title": "Pray the Clouds Away"
+      },
+      {
+        "arrangement_id": "press-on-my-soul-to-glory",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1192,
+        "title": "Press on, My Soul, to Glory"
+      },
+      {
+        "arrangement_id": "reunion-in-the-sky",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1212,
+        "title": "Reunion in the Sky"
+      },
+      {
+        "arrangement_id": "shine-in-me",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1267,
+        "title": "Shine in Me"
+      },
+      {
+        "arrangement_id": "sing-for-joy",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=cc_license; score=cc_license",
+        "record_ordinal": 1282,
+        "title": "Sing for Joy!"
+      },
+      {
+        "arrangement_id": "suffer-little-children-to-come-unto-me",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=public_domain",
+        "record_ordinal": 1335,
+        "title": "Suffer Little Children to Come unto Me"
+      },
+      {
+        "arrangement_id": "the-great-judgment-morning-2",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=public_domain; score=uncertain",
+        "record_ordinal": 1444,
+        "title": "The Great Judgment Morning"
+      },
+      {
+        "arrangement_id": "the-sun-has-now-risen-in-heavenly-glory",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=public_domain",
+        "record_ordinal": 1569,
+        "title": "The Sun Has Now Risen in Heavenly Glory"
+      },
+      {
+        "arrangement_id": "to-glorify-thee",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1636,
+        "title": "To Glorify Thee"
+      },
+      {
+        "arrangement_id": "tomorrow",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=public_domain; score=cc_license",
+        "record_ordinal": 1641,
+        "title": "Tomorrow"
+      },
+      {
+        "arrangement_id": "when-you-have-done-your-best",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=uncertain; score=uncertain",
+        "record_ordinal": 1781,
+        "title": "When You Have Done Your Best"
+      },
+      {
+        "arrangement_id": "you-are-who-you-are-for-a-reason",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "work=personal_use; score=uncertain",
+        "record_ordinal": 1849,
+        "title": "You Are Who You Are for a Reason"
       }
     ],
     "source_holds": [],
@@ -229,6 +412,83 @@
         "soprano_lyrics": true,
         "title": "O Trinity of Blessed Light",
         "voices": 5
+      },
+      {
+        "arrangement_id": "be-careful",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 129,
+        "title": "Be Careful"
+      },
+      {
+        "arrangement_id": "count-your-blessings-chorus",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 261,
+        "title": "Count Your Blessings (Chorus)"
+      },
+      {
+        "arrangement_id": "god-will-take-care-of-you-martin",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 414,
+        "title": "God Will Take Care of You (Martin)"
+      },
+      {
+        "arrangement_id": "his-eye-is-on-the-sparrow",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 524,
+        "title": "His Eye Is on the Sparrow"
+      },
+      {
+        "arrangement_id": "ill-be-obedient-watch-and-see",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 632,
+        "title": "I’ll Be Obedient, Watch and See"
+      },
+      {
+        "arrangement_id": "look-and-live",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 906,
+        "title": "Look and Live"
+      },
+      {
+        "arrangement_id": "open-my-eyes-that-i-may-see",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 1126,
+        "title": "Open My Eyes, That I May See"
+      },
+      {
+        "arrangement_id": "open-the-door-for-the-children",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 1128,
+        "title": "Open the Door for the Children"
+      },
+      {
+        "arrangement_id": "the-sacrificial-lamb",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 1551,
+        "title": "The Sacrificial Lamb"
+      },
+      {
+        "arrangement_id": "the-wise-man-and-the-foolish-man",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 1591,
+        "title": "The Wise Man and the Foolish Man"
+      },
+      {
+        "arrangement_id": "what-a-friend-we-have-in-jesus-2",
+        "collection_id": "timeless-truths-public-domain",
+        "reason": "unsupported structure profile other",
+        "record_ordinal": 1730,
+        "title": "What a Friend We Have in Jesus"
       }
     ]
   },
@@ -263,22 +523,26 @@
       "selected_compatible_additions": 8
     },
     "timeless_truths": {
-      "catalog_items": 1,
-      "exact_public_domain_candidates": 1,
-      "source_records": 1,
-      "structure_holds": 0
+      "catalog_items": 148,
+      "distinct_arrangements": 21,
+      "net_new_titles": 127,
+      "normalization_backlog": 1710,
+      "rights_holds": 26,
+      "source_records": 1895,
+      "strict_public_domain_musicxml": 1869,
+      "structure_holds": 11
     }
   },
   "summary": {
-    "catalog_items": 2226,
-    "exact_public_domain_candidates": 2232,
+    "catalog_items": 2373,
+    "exact_public_domain_candidates": 4100,
     "hymns_to_god_items": 592,
     "openscore_lieder_items": 1356,
-    "rights_holds": 20,
+    "rights_holds": 46,
     "source_holds": 0,
-    "source_records": 2252,
-    "structure_holds": 6,
+    "source_records": 4146,
+    "structure_holds": 17,
     "supplement_items": 8,
-    "timeless_truths_items": 1
+    "timeless_truths_items": 148
   }
 }
