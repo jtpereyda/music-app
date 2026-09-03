@@ -701,6 +701,9 @@ def inventory_collection(
                     "duplicated_unison_events": (
                         normalized.duplicated_unison_events
                     ),
+                    "preserved_context_events": (
+                        normalized.preserved_context_events
+                    ),
                     "normalized_sha256": _sha256(normalized.data),
                     "operations": list(normalized.operations),
                     "profile": normalized.profile,
@@ -790,7 +793,7 @@ def inventory_collection(
         },
         "public_domain_mark_url": PUBLIC_DOMAIN_MARK_URL,
         "records": records,
-        "schema_version": 1,
+        "schema_version": 2,
         "summary": {
             "score_settings": len(records),
             "strict_public_domain_musicxml": strict_pd_count,

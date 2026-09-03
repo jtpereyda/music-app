@@ -1,5 +1,5 @@
 {
-  "catalog_revision": "10",
+  "catalog_revision": "11",
   "conversion": {
     "canonical_encoding_date": "2026-07-21",
     "converter": {
@@ -42,6 +42,7 @@
         "name": "timeless-truths-satb-normalizer",
         "profiles": [
           "split_aligned_satb_dyads",
+          "split_mixed_voices_with_interleaved_notation",
           "split_primary_dyads_with_secondary_voice"
         ],
         "version": "1"
@@ -51,8 +52,8 @@
   "excluded": {
     "normalization_backlog": {
       "collection_id": "timeless-truths-public-domain",
-      "reason": "requires a lossless normalization profile beyond the supported aligned and mixed-voice SATB shapes",
-      "records": 1375
+      "reason": "requires a lossless normalization profile beyond the supported aligned, mixed-voice, and interleaved-notation SATB shapes",
+      "records": 691
     },
     "rights_holds": [
       {
@@ -466,13 +467,6 @@
         "title": "Open My Eyes, That I May See"
       },
       {
-        "arrangement_id": "open-the-door-for-the-children",
-        "collection_id": "timeless-truths-public-domain",
-        "reason": "unsupported structure profile other",
-        "record_ordinal": 1128,
-        "title": "Open the Door for the Children"
-      },
-      {
         "arrangement_id": "the-sacrificial-lamb",
         "collection_id": "timeless-truths-public-domain",
         "reason": "unsupported structure profile other",
@@ -526,31 +520,33 @@
       "selected_compatible_additions": 8
     },
     "timeless_truths": {
-      "catalog_items": 483,
-      "distinct_arrangements": 70,
-      "net_new_titles": 413,
-      "normalization_backlog": 1375,
+      "catalog_items": 1168,
+      "distinct_arrangements": 152,
+      "net_new_titles": 1016,
+      "normalization_backlog": 691,
       "normalization_profile_counts": {
         "split_aligned_satb_dyads": 148,
+        "split_mixed_voices_with_interleaved_notation": 685,
         "split_primary_dyads_with_secondary_voice": 335
       },
+      "preserved_context_events": 1493,
       "rights_holds": 26,
-      "shared_unison_events": 270,
+      "shared_unison_events": 661,
       "source_records": 1895,
       "strict_public_domain_musicxml": 1869,
-      "structure_holds": 11
+      "structure_holds": 10
     }
   },
   "summary": {
-    "catalog_items": 2708,
+    "catalog_items": 3393,
     "exact_public_domain_candidates": 4100,
     "hymns_to_god_items": 592,
     "openscore_lieder_items": 1356,
     "rights_holds": 46,
     "source_holds": 0,
     "source_records": 4146,
-    "structure_holds": 17,
+    "structure_holds": 16,
     "supplement_items": 8,
-    "timeless_truths_items": 483
+    "timeless_truths_items": 1168
   }
 }
