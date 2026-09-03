@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";
+import { CrispSupportChat } from "@/components/crisp-support-chat";
 import { FirstPartyPageView } from "@/components/first-party-page-view";
 import { MicrosoftClarity } from "@/components/microsoft-clarity";
 
@@ -18,6 +19,7 @@ export default function SiteLayout({
         <FirstPartyPageView />
       </Suspense>
       <MicrosoftClarity />
+      <CrispSupportChat />
     </>
   );
 }

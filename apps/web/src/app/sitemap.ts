@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/hymns",
     "/hymns/sheet-music-for-instrumentalists",
+    "/privacy",
     "/uses/hymn-transposer",
   ];
   const hymnPaths = priorityHymnSlugs.map((slug) => `/hymns/${slug}`);
