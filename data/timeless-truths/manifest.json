@@ -1,15 +1,19 @@
 {
   "audit_date": "2026-09-02",
   "collection_id": "timeless-truths-public-domain",
-  "inventory_sha256": "b35ee1ea07c3f852bbc1c3f8f4080548c768405fe9b9acb130e5a56dbe8af6da",
+  "inventory_sha256": "10b4287ba0dbd78f205234cee7dcc0d459a45440e4e06a99bfe3979fd403b1c0",
   "normalization": {
     "name": "timeless-truths-satb-normalizer",
     "profiles": [
       "split_aligned_satb_dyads",
       "split_divisi_voices_with_interleaved_notation",
+      "split_extra_stem_directed_voices_with_interleaved_notation",
+      "split_hidden_duplicates_with_interleaved_notation",
       "split_mixed_voices_with_interleaved_notation",
       "split_primary_dyads_with_secondary_voice",
-      "split_shared_rests_with_interleaved_notation"
+      "split_shared_rests_with_interleaved_notation",
+      "split_simultaneous_overlaps_with_interleaved_notation",
+      "split_voice2_pair_fallback_with_interleaved_notation"
     ],
     "version": "1"
   },
@@ -768,6 +772,22 @@
       "work_id": "all-will-be-well"
     },
     {
+      "arrangement_id": "all-your-anxiety",
+      "catalog_item_id": "all-your-anxiety",
+      "inventory_arrangement_id": "all-your-anxiety",
+      "music_fingerprint_sha256": "41fe4ddb2fdf370bdb5bdb5419399be64da8413b8df869b60f2f9d99c7e97934",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "700478fdaac13421650519bb0881a8f5a164ce944858ecc671f667aed4fecb62",
+      "preserved_context_events": 1,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "23e482b93e57fe8f1f513f73209f8310636817d7b0030203733eca81e3ac2524",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/A/All_Your_Anxiety/All_Your_Anxiety.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/All_Your_Anxiety/",
+      "title": "All Your Anxiety",
+      "work_id": "all-your-anxiety"
+    },
+    {
       "arrangement_id": "almost-decided",
       "catalog_item_id": "almost-decided",
       "inventory_arrangement_id": "almost-decided",
@@ -926,6 +946,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Am_I_a_Soldier_of_the_Cross/",
       "title": "Am I a Soldier of the Cross?",
       "work_id": "am-i-a-soldier-of-the-cross"
+    },
+    {
+      "arrangement_id": "a-mighty-fortress-is-our-god",
+      "catalog_item_id": "a-mighty-fortress-is-our-god",
+      "inventory_arrangement_id": "a-mighty-fortress-is-our-god",
+      "music_fingerprint_sha256": "a55e8ad853bfd3aa9a1dfbff6f38a7e50bf48ae457d48f268622900deefd3596",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "4259f12270f0852dc0a458071947bcdf907b1a48aff2cb58ec1512c1e08ffd72",
+      "preserved_context_events": 5,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "b05d00e34de0f8b45028e284936c3c0eba3b06f19af758ba01cee573234fcffc",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/A/A_Mighty_Fortress_Is_Our_God/A_Mighty_Fortress_Is_Our_God.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/A_Mighty_Fortress_Is_Our_God/",
+      "title": "A Mighty Fortress Is Our God",
+      "work_id": "a-mighty-fortress-is-our-god"
     },
     {
       "arrangement_id": "a-miracle-of-saving-grace",
@@ -1264,6 +1300,22 @@
       "work_id": "are-you-adorning-the-doctrine"
     },
     {
+      "arrangement_id": "are-you-building-on-the-rock",
+      "catalog_item_id": "are-you-building-on-the-rock",
+      "inventory_arrangement_id": "are-you-building-on-the-rock",
+      "music_fingerprint_sha256": "2d7614869e4e78b2b6b6e10a79392c9f7fd8dc6a5f79a8de980fb79b1dc533b2",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "2e8e1f590f71cdc777b25a5f392e37d5719d8597e23bc8a3bb056aa1968a27d3",
+      "preserved_context_events": 0,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "da358c427b82f866f62fefc992dc40507661ae45a7ee4f952422547ab5014e61",
+      "shared_unison_events": 1,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/A/Are_You_Building_on_the_Rock/Are_You_Building_on_the_Rock.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Are_You_Building_on_the_Rock/",
+      "title": "Are You Building on the Rock?",
+      "work_id": "are-you-building-on-the-rock"
+    },
+    {
       "arrangement_id": "are-you-coming-home-tonight",
       "catalog_item_id": "are-you-coming-home-tonight",
       "inventory_arrangement_id": "are-you-coming-home-tonight",
@@ -1536,6 +1588,22 @@
       "work_id": "a-song-of-joy"
     },
     {
+      "arrangement_id": "a-song-of-praise",
+      "catalog_item_id": "a-song-of-praise",
+      "inventory_arrangement_id": "a-song-of-praise",
+      "music_fingerprint_sha256": "ec72056f527e8e3c5130454571b0dd0414f3de620fe963a16e460515d659fad4",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "f0589b2c006a5fecc60840daf9fcc2190ab29eeaf7c89c518c34387ddba63f34",
+      "preserved_context_events": 2,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "2583042b6a8e55969c9a9d9fbeeb4c76f057d766c6c20b5ccd6512118af21c23",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/A/A_Song_of_Praise/A_Song_of_Praise.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/A_Song_of_Praise/",
+      "title": "A Song of Praise",
+      "work_id": "a-song-of-praise"
+    },
+    {
       "arrangement_id": "assurance-in-christ",
       "catalog_item_id": "assurance-in-christ",
       "inventory_arrangement_id": "assurance-in-christ",
@@ -1710,6 +1778,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Awake_My_Soul_Stretch_Every_Nerve/",
       "title": "Awake, My Soul, Stretch Every Nerve",
       "work_id": "awake-my-soul-stretch-every-nerve"
+    },
+    {
+      "arrangement_id": "awakening-chorus",
+      "catalog_item_id": "awakening-chorus",
+      "inventory_arrangement_id": "awakening-chorus",
+      "music_fingerprint_sha256": "5483a1a8cc47a9a593b2a7ae9a105a7b5e19b66dc77cbdd0d266017cc74f335c",
+      "normalization_profile": "split_shared_rests_with_interleaved_notation",
+      "normalized_sha256": "58f332c840fc1c3eedbd9a575eb026a83ff9858db3f3739d0707a93e2a13f6aa",
+      "preserved_context_events": 6,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "290bb24ae83cc06ddfdccda1cf955004630a802f52b698efb6eba2d8e787c03a",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/A/Awakening_Chorus/Awakening_Chorus.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Awakening_Chorus/",
+      "title": "Awakening Chorus",
+      "work_id": "awakening-chorus"
     },
     {
       "arrangement_id": "awake-o-sinner",
@@ -3024,6 +3108,22 @@
       "work_id": "childs-consecration"
     },
     {
+      "arrangement_id": "christ-arose",
+      "catalog_item_id": "christ-arose-lowry",
+      "inventory_arrangement_id": "christ-arose",
+      "music_fingerprint_sha256": "4268aedf3c4823e17056fd9d337f2c107bb28747b08855c633390d3c06fd3cc9",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "b14d238479ec39e88e4dd628cb065d7bad89e787115af1bd5ca93d6cbbe9e276",
+      "preserved_context_events": 4,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "824ed6f8d885468f36f8ff43fad6f01ab3093cb4a12e0ff1ce94f10d0a408cdd",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/C/Christ_Arose/Christ_Arose.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Christ_Arose/",
+      "title": "Christ Arose",
+      "work_id": "christ-arose"
+    },
+    {
       "arrangement_id": "christians-awake",
       "catalog_item_id": "christians-awake",
       "inventory_arrangement_id": "christians-awake",
@@ -3232,6 +3332,22 @@
       "work_id": "christ-the-great-physician"
     },
     {
+      "arrangement_id": "christ-the-lord-is-risen-today",
+      "catalog_item_id": "christ-the-lord-is-risen-today",
+      "inventory_arrangement_id": "christ-the-lord-is-risen-today",
+      "music_fingerprint_sha256": "856781b90efe73e7dff1e5e5d3354b00cb9af8390910a5b223aba6d0f78ad93d",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "8f6942087bbcb4519e237104a689d38f3d9e542730e24c7d648f6ca625563134",
+      "preserved_context_events": 2,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "1708bb7477f46c02378e07c008921319f08b641e1367581bb40e5947d898f762",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/C/Christ_the_Lord_Is_Risen_Today/Christ_the_Lord_Is_Risen_Today.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Christ_the_Lord_Is_Risen_Today/",
+      "title": "Christ the Lord Is Risen Today",
+      "work_id": "christ-the-lord-is-risen-today"
+    },
+    {
       "arrangement_id": "church-of-god",
       "catalog_item_id": "church-of-god",
       "inventory_arrangement_id": "church-of-god",
@@ -3262,6 +3378,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Church_of_the_Living_God/",
       "title": "Church of the Living God",
       "work_id": "church-of-the-living-god"
+    },
+    {
+      "arrangement_id": "climbing-up-the-golden-stair",
+      "catalog_item_id": "climbing-up-the-golden-stair",
+      "inventory_arrangement_id": "climbing-up-the-golden-stair",
+      "music_fingerprint_sha256": "2ab3ce9d7fdf4fb1ad077c6ab7866021456a36f97492f73149c779f4ad5c8181",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "78884b9321d64d65e2f5461950dfc2358f79d174f6ff008bdbfbc478694ebf18",
+      "preserved_context_events": 3,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "d735d46ded9065b3e14cc601d60d6f24b5728a599c894933d4217daf1325348f",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/C/Climbing_Up_the_Golden_Stair/Climbing_Up_the_Golden_Stair.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Climbing_Up_the_Golden_Stair/",
+      "title": "Climbing Up the Golden Stair",
+      "work_id": "climbing-up-the-golden-stair"
     },
     {
       "arrangement_id": "close-to-thee",
@@ -4496,6 +4628,22 @@
       "work_id": "dwelling-in-beulah-land"
     },
     {
+      "arrangement_id": "dwelling-in-the-land",
+      "catalog_item_id": "dwelling-in-the-land",
+      "inventory_arrangement_id": "dwelling-in-the-land",
+      "music_fingerprint_sha256": "ef166f0444b86f77ab5284cdd7630375c1c54428b96d4ceac1daba3c04048377",
+      "normalization_profile": "split_shared_rests_with_interleaved_notation",
+      "normalized_sha256": "045d7dd0eddd850ba55aa252802800b68cde896dcc4d6b27c74a93bf71573059",
+      "preserved_context_events": 3,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "9ecf57a6b266ad011d23fc7cbaded4ca7c8e0d82c68a0fd0ecd35a6f3a62c930",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/D/Dwelling_in_the_Land/Dwelling_in_the_Land.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Dwelling_in_the_Land/",
+      "title": "Dwelling in the Land",
+      "work_id": "dwelling-in-the-land"
+    },
+    {
       "arrangement_id": "echoes-from-heaven",
       "catalog_item_id": "echoes-from-heaven",
       "inventory_arrangement_id": "echoes-from-heaven",
@@ -5008,6 +5156,22 @@
       "work_id": "fill-thou-me"
     },
     {
+      "arrangement_id": "fire-in-the-soul",
+      "catalog_item_id": "fire-in-the-soul-warner",
+      "inventory_arrangement_id": "fire-in-the-soul",
+      "music_fingerprint_sha256": "12d3605ff10235750885747fcf6d3eccabd0d192ac2faceb9ca2279355e11c88",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "b5692d92f0b42d5f94895ca4a00506a693f678054ec6b1ef06c9a68845f2fd0f",
+      "preserved_context_events": 2,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "3231389a7f7933f54db169afff19a139a2aaad04541935c7a37dc6284dac9a7d",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/F/Fire_in_the_Soul/Fire_in_the_Soul.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Fire_in_the_Soul/",
+      "title": "Fire in the Soul",
+      "work_id": "fire-in-the-soul"
+    },
+    {
       "arrangement_id": "fire-in-the-soul-2",
       "catalog_item_id": "fire-in-the-soul",
       "inventory_arrangement_id": "fire-in-the-soul-2",
@@ -5015,7 +5179,7 @@
       "normalization_profile": "split_mixed_voices_with_interleaved_notation",
       "normalized_sha256": "8cb7bdb917fcbc4783e9ad7c1919afd3632feeadf6dcfccc10ac9541b22cdf2e",
       "preserved_context_events": 2,
-      "promotion_reason": "net_new_title",
+      "promotion_reason": "distinct_arrangement",
       "raw_sha256": "70ac52faafc476753b8e1174be3365596f44ab41b868351ea6c303876d566dae",
       "shared_unison_events": 0,
       "source_musicxml_url": "https://library.timelesstruths.org/library/music/F/Fire_in_the_Soul/Fire_in_the_Soul_2.xml",
@@ -5822,6 +5986,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/God_Answered_Prayer_for_Me/",
       "title": "God Answered Prayer for Me",
       "work_id": "god-answered-prayer-for-me"
+    },
+    {
+      "arrangement_id": "god-be-with-you-till-we-meet-again",
+      "catalog_item_id": "god-be-with-you-till-we-meet-again-god-be-with-you",
+      "inventory_arrangement_id": "god-be-with-you-till-we-meet-again",
+      "music_fingerprint_sha256": "c7b99139f71f14ca3a2d2dac6616f35636d7fdbfa91da62e9ddbbe6e384d4629",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "e56ad4efe9bee95c7cb3888b0c47bd57996e86b1526c7ea645d738d4c04b2bd9",
+      "preserved_context_events": 2,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "b7beb6d00a884e4db3369f2b806608f885eed0273839f59dadeeb708be7760f3",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/G/God_Be_with_You_till_We_Meet_Again/God_Be_with_You_till_We_Meet_Again.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/God_Be_with_You_till_We_Meet_Again/",
+      "title": "God Be with You till We Meet Again",
+      "work_id": "god-be-with-you-till-we-meet-again"
     },
     {
       "arrangement_id": "god-give-us-christian-homes",
@@ -7296,6 +7476,22 @@
       "work_id": "he-is-able-to-deliver-thee"
     },
     {
+      "arrangement_id": "he-is-just-the-same-today",
+      "catalog_item_id": "he-is-just-the-same-today",
+      "inventory_arrangement_id": "he-is-just-the-same-today",
+      "music_fingerprint_sha256": "9f6281a57d304ba62e967f1b0bd400519ecf2a7d7322f54c7cd29a803bfd8d86",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "731389d96e92a722c54c5e80c6ef1be7059e365b9ecbee9c9547b9292b522efd",
+      "preserved_context_events": 5,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "d3f5fe89a7946d392fcf0f00477646145bf7a73e6477a86f397dd51faa3bbff0",
+      "shared_unison_events": 1,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/H/He_Is_Just_the_Same_Today/He_Is_Just_the_Same_Today.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/He_Is_Just_the_Same_Today/",
+      "title": "He Is Just the Same Today",
+      "work_id": "he-is-just-the-same-today"
+    },
+    {
       "arrangement_id": "he-is-so-precious-to-me",
       "catalog_item_id": "he-is-so-precious-to-me-precious-to-me",
       "inventory_arrangement_id": "he-is-so-precious-to-me",
@@ -7456,6 +7652,22 @@
       "work_id": "he-leadeth-me"
     },
     {
+      "arrangement_id": "he-lifted-me",
+      "catalog_item_id": "he-lifted-me",
+      "inventory_arrangement_id": "he-lifted-me",
+      "music_fingerprint_sha256": "913c327a5e1c8ec64c73b4f22d3dfc9df8b5ed153f97900cfcf813b676d4cbb2",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "7a919c427ee316c94273c7e15b187abd88e2fca5c7c9a1f3ee409588708f54d6",
+      "preserved_context_events": 4,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "9e7adcff4adc88c90e98e69c490f63b14ec6af2a5a9ccdfd939ab6cc5047a64c",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/H/He_Lifted_Me/He_Lifted_Me.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/He_Lifted_Me/",
+      "title": "He Lifted Me",
+      "work_id": "he-lifted-me"
+    },
+    {
       "arrangement_id": "he-lives-on-high",
       "catalog_item_id": "he-lives-on-high",
       "inventory_arrangement_id": "he-lives-on-high",
@@ -7550,6 +7762,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Heralds_of_Truth/",
       "title": "Heralds of Truth",
       "work_id": "heralds-of-truth"
+    },
+    {
+      "arrangement_id": "he-ransomed-me",
+      "catalog_item_id": "he-ransomed-me",
+      "inventory_arrangement_id": "he-ransomed-me",
+      "music_fingerprint_sha256": "ea7d80956a86fcc2e67cb36da124cea42a76b6e8ad76a72057a5212f46f3caf2",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "3d2a8a002976a98b14ea37b52002614b47eae98e92c9a977bc487a2615d81b12",
+      "preserved_context_events": 3,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "2f6bea5fdb6d4da022b0b11d84bec7f504b11cd80c599fe517e6d01b02904160",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/H/He_Ransomed_Me/He_Ransomed_Me.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/He_Ransomed_Me/",
+      "title": "He Ransomed Me",
+      "work_id": "he-ransomed-me"
     },
     {
       "arrangement_id": "here-am-i",
@@ -8352,6 +8580,22 @@
       "work_id": "hosanna-to-the-living-lord"
     },
     {
+      "arrangement_id": "how-beautiful-heaven-must-be",
+      "catalog_item_id": "how-beautiful-heaven-must-be",
+      "inventory_arrangement_id": "how-beautiful-heaven-must-be",
+      "music_fingerprint_sha256": "0ccd3a0ede600531441f4e6badbad8542673ac2d8f7a7b84909611c919a58d1f",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "f7f7b8113a17d8cb331cebe5db87e234d5bef42f3e8d39f8355779099e19c80e",
+      "preserved_context_events": 0,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "e8f3bd0ec883ee957a1559b5583bbd4f214627954751ce3540ca741dfd74fd66",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/H/How_Beautiful_Heaven_Must_Be/How_Beautiful_Heaven_Must_Be.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/How_Beautiful_Heaven_Must_Be/",
+      "title": "How Beautiful Heaven Must Be",
+      "work_id": "how-beautiful-heaven-must-be"
+    },
+    {
       "arrangement_id": "how-can-i-fall",
       "catalog_item_id": "how-can-i-fall",
       "inventory_arrangement_id": "how-can-i-fall",
@@ -9040,6 +9284,22 @@
       "work_id": "i-cannot-breathe-enough-of-thee"
     },
     {
+      "arrangement_id": "i-come-to-thee",
+      "catalog_item_id": "i-come-to-thee",
+      "inventory_arrangement_id": "i-come-to-thee",
+      "music_fingerprint_sha256": "3abf368fbe0e214f8a48e0a9e82a96bf94573fb12ddb8274aa0de21bf548c36d",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "6862228d43bfa142f6c35370d08940d8cf9b19a3934db8eecf2fe83d5d5ebc20",
+      "preserved_context_events": 0,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "d27d21a701dfe1ec09ca7d5bbbd6713647da353ebb245d45620c493effd5c8cc",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/I/I_Come_to_Thee/I_Come_to_Thee.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/I_Come_to_Thee/",
+      "title": "I Come to Thee",
+      "work_id": "i-come-to-thee"
+    },
+    {
       "arrangement_id": "i-could-not-do-without-thee",
       "catalog_item_id": "i-could-not-do-without-thee",
       "inventory_arrangement_id": "i-could-not-do-without-thee",
@@ -9086,6 +9346,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/I_Feel_Like_Traveling_On/",
       "title": "I Feel Like Traveling On",
       "work_id": "i-feel-like-traveling-on"
+    },
+    {
+      "arrangement_id": "if-i-could-hear-my-mother-pray-again",
+      "catalog_item_id": "if-i-could-hear-my-mother-pray-again",
+      "inventory_arrangement_id": "if-i-could-hear-my-mother-pray-again",
+      "music_fingerprint_sha256": "f1f8c7af4a97f3ee815bc40a8ec803f52581ec71b2ab18986cc477ff1ab04c32",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "0cb6971d547e24c0c58515cc464ee0866236f9c6bdd13164b23c51a6b6644af5",
+      "preserved_context_events": 4,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "7c87365a224c3a9f1d7496ad98fc0f9254fefda959518178dd4fe8e3ab9cc47b",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/I/If_I_Could_Hear_My_Mother_Pray_Again/If_I_Could_Hear_My_Mother_Pray_Again.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/If_I_Could_Hear_My_Mother_Pray_Again/",
+      "title": "If I Could Hear My Mother Pray Again",
+      "work_id": "if-i-could-hear-my-mother-pray-again"
     },
     {
       "arrangement_id": "if-jesus-goes-with-me",
@@ -10384,6 +10660,22 @@
       "work_id": "in-the-holy-land"
     },
     {
+      "arrangement_id": "in-the-light-of-god",
+      "catalog_item_id": "in-the-light-of-god",
+      "inventory_arrangement_id": "in-the-light-of-god",
+      "music_fingerprint_sha256": "4553bdfe5ef8ada39ee5063d8cba23829566459b15d27ce4a861498f2860936d",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "ff87281c50b9edc3a30b169bb5d941c33f77c4b01b69e1fa9e91d9d0c45f7c7c",
+      "preserved_context_events": 1,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "a66862de75c7bd8677f6d544208763a3edae4f45747e1cfc051349f87424949d",
+      "shared_unison_events": 8,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/I/In_the_Light_of_God/In_the_Light_of_God.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/In_the_Light_of_God/",
+      "title": "In the Light of God",
+      "work_id": "in-the-light-of-god"
+    },
+    {
       "arrangement_id": "in-the-service-of-the-king",
       "catalog_item_id": "in-the-service-of-the-king",
       "inventory_arrangement_id": "in-the-service-of-the-king",
@@ -10590,6 +10882,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/I_Sing_the_Mighty_Power_of_God/",
       "title": "I Sing the Mighty Power of God",
       "work_id": "i-sing-the-mighty-power-of-god"
+    },
+    {
+      "arrangement_id": "is-it-the-crowning-day",
+      "catalog_item_id": "is-it-the-crowning-day",
+      "inventory_arrangement_id": "is-it-the-crowning-day",
+      "music_fingerprint_sha256": "8df7b8d7815bfca500c798ac35604bd88c78e35ffd16f4c5d63030a46ef41716",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "d29ac689a8675fdb27aef5bed65a3bebe54b3ca380fc10bcf0d07a1dcbce6bd0",
+      "preserved_context_events": 3,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "1c9c32d903f2367f059f7cbf2bde3fbd35b928dcb1158d9f221f81071d6c1217",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/I/Is_It_the_Crowning_Day/Is_It_the_Crowning_Day.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Is_It_the_Crowning_Day/",
+      "title": "Is It the Crowning Day?",
+      "work_id": "is-it-the-crowning-day"
     },
     {
       "arrangement_id": "is-not-this-the-land-of-beulah",
@@ -11662,6 +11970,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Jesus_I_Come/",
       "title": "Jesus, I Come",
       "work_id": "jesus-i-come"
+    },
+    {
+      "arrangement_id": "jesus-i-my-cross-have-taken",
+      "catalog_item_id": "jesus-i-my-cross-have-taken",
+      "inventory_arrangement_id": "jesus-i-my-cross-have-taken",
+      "music_fingerprint_sha256": "16f7278f64009df93139ea38fd2ef54592b4d05a337869499b11f0cea1846cd3",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "2d5e5004805fff702a4e3e0a26b5041077b4716cd437941dd23f718477505714",
+      "preserved_context_events": 0,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "2c825568bb497cb078c5fcbea977aae93a82a6b9a321ad7e7a9ba3ed518e13ac",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/J/Jesus_I_My_Cross_Have_Taken/Jesus_I_My_Cross_Have_Taken.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Jesus_I_My_Cross_Have_Taken/",
+      "title": "Jesus, I My Cross Have Taken",
+      "work_id": "jesus-i-my-cross-have-taken"
     },
     {
       "arrangement_id": "jesus-in-mercy-is-calling",
@@ -16816,6 +17140,22 @@
       "work_id": "one-step-into-canaan"
     },
     {
+      "arrangement_id": "one-sweetly-solemn-thought",
+      "catalog_item_id": "one-sweetly-solemn-thought-dulce-domum",
+      "inventory_arrangement_id": "one-sweetly-solemn-thought",
+      "music_fingerprint_sha256": "1aae9ecc3f29929c96fce1b8702fcfe3a113ce325c764fffaebe80f60850c929",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "5804af793401928acd8c5b7cddaa591c3fd842a93c85d0d5d68553c41b94b9d1",
+      "preserved_context_events": 0,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "1de01bfdfd486ae0332161e26f82e4e448a93e6535832aa5534496318a8eb052",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/O/One_Sweetly_Solemn_Thought/One_Sweetly_Solemn_Thought.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/One_Sweetly_Solemn_Thought/",
+      "title": "One Sweetly Solemn Thought",
+      "work_id": "one-sweetly-solemn-thought"
+    },
+    {
       "arrangement_id": "one-there-is-above-all-others",
       "catalog_item_id": "one-there-is-above-all-others",
       "inventory_arrangement_id": "one-there-is-above-all-others",
@@ -18912,6 +19252,22 @@
       "work_id": "saved-by-the-blood"
     },
     {
+      "arrangement_id": "saved-saved",
+      "catalog_item_id": "saved-saved",
+      "inventory_arrangement_id": "saved-saved",
+      "music_fingerprint_sha256": "364b122a19729a7779f3e8f538e0472f5b34f48751ca19a4fec969f6ae0e9fa5",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "e902d0db723c4fb2e17d16d02818f6a9c6d6bdcb74744550b6f81a8d89c02e26",
+      "preserved_context_events": 2,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "812b63c54204fe5b66a66944d63b747fd90139de1d5bf35a28fe280543bd12a6",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/S/Saved_Saved/Saved_Saved.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Saved_Saved/",
+      "title": "Saved, Saved",
+      "work_id": "saved-saved"
+    },
+    {
       "arrangement_id": "saved-tonight",
       "catalog_item_id": "saved-tonight",
       "inventory_arrangement_id": "saved-tonight",
@@ -19790,6 +20146,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Sleep_Not_Soldier/",
       "title": "Sleep Not, Soldier",
       "work_id": "sleep-not-soldier"
+    },
+    {
+      "arrangement_id": "softly-and-tenderly",
+      "catalog_item_id": "softly-and-tenderly-thompson",
+      "inventory_arrangement_id": "softly-and-tenderly",
+      "music_fingerprint_sha256": "1af9390548ef7710f41112d86f7655982511491aed956ca3c7bee67b1cbfab98",
+      "normalization_profile": "split_simultaneous_overlaps_with_interleaved_notation",
+      "normalized_sha256": "51a0c3936c04664590ad07a5f04bdb3644f1958ef56afdfa238a76fab7096cc6",
+      "preserved_context_events": 5,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "f82908358282992d0ac6491be12ce8bdd01d0a152fc600c0fab304d8984938cd",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/S/Softly_and_Tenderly/Softly_and_Tenderly.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Softly_and_Tenderly/",
+      "title": "Softly and Tenderly",
+      "work_id": "softly-and-tenderly"
     },
     {
       "arrangement_id": "softly-whisper",
@@ -20944,6 +21316,22 @@
       "work_id": "thats-enough-for-me-warner"
     },
     {
+      "arrangement_id": "that-verdant-summer-land",
+      "catalog_item_id": "that-verdant-summer-land",
+      "inventory_arrangement_id": "that-verdant-summer-land",
+      "music_fingerprint_sha256": "b19ed19864fa2b08728dbdb5826369bf174e2da4f5454c8392253bb6f5dc887a",
+      "normalization_profile": "split_simultaneous_overlaps_with_interleaved_notation",
+      "normalized_sha256": "0cbd9e7f0c91c635d8df831326ef57f9aa4a78c16b773eed572b28b037f1bca5",
+      "preserved_context_events": 3,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "e6994a05386e0d6723082f13e07c743d645925985d48574111525ba8d940ef8e",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/T/That_Verdant_Summer_Land/That_Verdant_Summer_Land.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/That_Verdant_Summer_Land/",
+      "title": "That Verdant Summer Land",
+      "work_id": "that-verdant-summer-land"
+    },
+    {
       "arrangement_id": "that-wicked-one-toucheth-him-not",
       "catalog_item_id": "that-wicked-one-toucheth-him-not",
       "inventory_arrangement_id": "that-wicked-one-toucheth-him-not",
@@ -21774,6 +22162,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/The_Fight_of_Faith/",
       "title": "The Fight of Faith",
       "work_id": "the-fight-of-faith"
+    },
+    {
+      "arrangement_id": "the-first-noel",
+      "catalog_item_id": "the-first-noel-melody",
+      "inventory_arrangement_id": "the-first-noel",
+      "music_fingerprint_sha256": "dd8b36b8f200b8b948938a65730d84778235f08ec0930a9dbae930b78a4a1330",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "249c5873931d3616986fc7431fd92ef876f024c0779f2901585376f2e5cb7183",
+      "preserved_context_events": 0,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "871bd58ea64571950b6cede53cb1009418098f33d54f9617da664c2804d04e3c",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/T/The_First_Noel/The_First_Noel.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/The_First_Noel/",
+      "title": "The First Noel",
+      "work_id": "the-first-noel"
     },
     {
       "arrangement_id": "the-fountain-of-cleansing",
@@ -22944,6 +23348,22 @@
       "work_id": "the-ninety-nine"
     },
     {
+      "arrangement_id": "the-old-campground",
+      "catalog_item_id": "the-old-campground",
+      "inventory_arrangement_id": "the-old-campground",
+      "music_fingerprint_sha256": "82468d03542640ae164be7f1d9ccac386012ef7a6b2e9ea974931a19fdf23db2",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "d0474988174981fe15f11471ec04e059523c9e9562aec786e226025991b5750e",
+      "preserved_context_events": 4,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "28f116ed7afa3612f1fb29154ea72e694f9831d627d433602887feb8184ea5c1",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/T/The_Old_Campground/The_Old_Campground.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/The_Old_Campground/",
+      "title": "The Old Campground",
+      "work_id": "the-old-campground"
+    },
+    {
       "arrangement_id": "the-old-rugged-cross",
       "catalog_item_id": "the-old-rugged-cross-bennard",
       "inventory_arrangement_id": "the-old-rugged-cross",
@@ -23518,6 +23938,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Theres_Music_in_My_Soul/",
       "title": "There’s Music in My Soul",
       "work_id": "theres-music-in-my-soul"
+    },
+    {
+      "arrangement_id": "the-resurrection",
+      "catalog_item_id": "the-resurrection",
+      "inventory_arrangement_id": "the-resurrection",
+      "music_fingerprint_sha256": "29e59e1cecf87b93a1a4db46fdc1b3b4aa5aabbb2c0cf2fc8b10724f786e97a0",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "a5a95999083e23cf0562b104bf4a3de877a336480c68d7184103c8f3955b284b",
+      "preserved_context_events": 3,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "25a32000c5c08e3800cfe4f1ede19c23bf1ec17260fcee4b0371fd0311a9804b",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/T/The_Resurrection/The_Resurrection.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/The_Resurrection/",
+      "title": "The Resurrection",
+      "work_id": "the-resurrection"
     },
     {
       "arrangement_id": "the-resurrection-morn",
@@ -24208,6 +24644,22 @@
       "work_id": "the-voice-of-thanksgiving"
     },
     {
+      "arrangement_id": "the-way-of-the-cross-leads-home",
+      "catalog_item_id": "the-way-of-the-cross-leads-home-way-of-the-cross",
+      "inventory_arrangement_id": "the-way-of-the-cross-leads-home",
+      "music_fingerprint_sha256": "2037158088fe15adf8c562ef7808efba3a0ace6f9c1d3c1b8cd9df3a0b7aecc0",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "6d7de637aee19a7810b871026665d3c3aa3ae0ad92474b7fd0fb989cce94f34a",
+      "preserved_context_events": 3,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "7ed34f92345d0d2435a9d0735a11a6f734b3fb0846310214cf95ed9e7a1b2e9c",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/T/The_Way_of_the_Cross_Leads_Home/The_Way_of_the_Cross_Leads_Home.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/The_Way_of_the_Cross_Leads_Home/",
+      "title": "The Way of the Cross Leads Home",
+      "work_id": "the-way-of-the-cross-leads-home"
+    },
+    {
       "arrangement_id": "the-white-horse-cavalry",
       "catalog_item_id": "the-white-horse-cavalry",
       "inventory_arrangement_id": "the-white-horse-cavalry",
@@ -24816,6 +25268,22 @@
       "work_id": "tis-the-sweetest-name"
     },
     {
+      "arrangement_id": "tis-well-with-me",
+      "catalog_item_id": "tis-well-with-me",
+      "inventory_arrangement_id": "tis-well-with-me",
+      "music_fingerprint_sha256": "43e5b07d28b9ccad935574408ee91f59fcb1875f5f3a5294384d92c6e5216cdc",
+      "normalization_profile": "split_extra_stem_directed_voices_with_interleaved_notation",
+      "normalized_sha256": "a662e55f77ee6d2834f1f809e9916377a340dc8e20b38f976ed068d210f3365f",
+      "preserved_context_events": 3,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "81890b36f8656f6d79052a76c46e94afac761768cc3787f4b25993efc9074e9d",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/T/Tis_Well_with_Me/Tis_Well_with_Me.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Tis_Well_with_Me/",
+      "title": "’Tis Well with Me",
+      "work_id": "tis-well-with-me"
+    },
+    {
       "arrangement_id": "to-be-like-jesus",
       "catalog_item_id": "to-be-like-jesus",
       "inventory_arrangement_id": "to-be-like-jesus",
@@ -25070,6 +25538,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/Truehearted_Wholehearted/",
       "title": "Truehearted, Wholehearted",
       "work_id": "truehearted-wholehearted"
+    },
+    {
+      "arrangement_id": "trust",
+      "catalog_item_id": "trust",
+      "inventory_arrangement_id": "trust",
+      "music_fingerprint_sha256": "f2371773886fe0cfe0d9ceeade60e3320d681c0a005ddf7d195a3131182332f5",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "c0748779968c7213c87b0e7c42b8e1d064b73feed3e994e1d929ee2c1491bb70",
+      "preserved_context_events": 1,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "63fe47901d961232be36581d38eda54b0d84951b92c10dd005e200be6b271503",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/T/Trust/Trust.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Trust/",
+      "title": "Trust",
+      "work_id": "trust"
     },
     {
       "arrangement_id": "trust-and-obey",
@@ -26016,6 +26500,22 @@
       "work_id": "we-praise-you-o-god"
     },
     {
+      "arrangement_id": "we-reap-as-we-sow",
+      "catalog_item_id": "we-reap-as-we-sow",
+      "inventory_arrangement_id": "we-reap-as-we-sow",
+      "music_fingerprint_sha256": "851930dc51f587203f08b21a13a358f139a5cd1a9fb670f7967f93cc6e1be371",
+      "normalization_profile": "split_voice2_pair_fallback_with_interleaved_notation",
+      "normalized_sha256": "58cd5d13e52512c31f96955cbb0c70bac9fdca2b36e1148f58a76a4df27d947b",
+      "preserved_context_events": 2,
+      "promotion_reason": "net_new_title",
+      "raw_sha256": "055a02c9d0fb08a9527d38803e57cb850ba24937cb561d6d496ec1c54553deb6",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/W/We_Reap_as_We_Sow/We_Reap_as_We_Sow.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/We_Reap_as_We_Sow/",
+      "title": "We Reap as We Sow",
+      "work_id": "we-reap-as-we-sow"
+    },
+    {
       "arrangement_id": "were-marching-to-zion",
       "catalog_item_id": "were-marching-to-zion-marching-to-zion",
       "inventory_arrangement_id": "were-marching-to-zion",
@@ -26750,6 +27250,22 @@
       "source_page_url": "https://library.timelesstruths.org/music/When_I_See_the_Blood/",
       "title": "When I See the Blood",
       "work_id": "when-i-see-the-blood"
+    },
+    {
+      "arrangement_id": "when-i-survey-the-wondrous-cross",
+      "catalog_item_id": "when-i-survey-the-wondrous-cross-timeless-truths",
+      "inventory_arrangement_id": "when-i-survey-the-wondrous-cross",
+      "music_fingerprint_sha256": "06928a23539ca24aba28cc7c949145ad66847f1de553b20bbd5bcc62f6acd00a",
+      "normalization_profile": "split_simultaneous_overlaps_with_interleaved_notation",
+      "normalized_sha256": "8f0b6ac95719fbb337e2a519572a854102733e80d63b5df87e8e8920fbb5fbb4",
+      "preserved_context_events": 0,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "e13b9248549cf8a5726b81e98e96208626f3cd99c7d339e6bbd219fcfff78f02",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/W/When_I_Survey_the_Wondrous_Cross/When_I_Survey_the_Wondrous_Cross.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/When_I_Survey_the_Wondrous_Cross/",
+      "title": "When I Survey the Wondrous Cross",
+      "work_id": "when-i-survey-the-wondrous-cross"
     },
     {
       "arrangement_id": "when-i-survey-the-wondrous-cross-2",
@@ -27936,6 +28452,22 @@
       "work_id": "wonderful-story-of-love"
     },
     {
+      "arrangement_id": "wonderful-words-of-life",
+      "catalog_item_id": "wonderful-words-of-life-words-of-life",
+      "inventory_arrangement_id": "wonderful-words-of-life",
+      "music_fingerprint_sha256": "93aa2cf73c44a6a8efd06a6f34abd30d49ad942d98f25cd976d071f26ac34f29",
+      "normalization_profile": "split_hidden_duplicates_with_interleaved_notation",
+      "normalized_sha256": "5ce2a476cced10018e55a4ca397dae2f29d4c4f100122c5b2b6b4d7e23916aa4",
+      "preserved_context_events": 1,
+      "promotion_reason": "distinct_arrangement",
+      "raw_sha256": "df0021ceca950a82b71751b4381c4428dec1ac4516ad3c196bc984fd4877e0da",
+      "shared_unison_events": 0,
+      "source_musicxml_url": "https://library.timelesstruths.org/library/music/W/Wonderful_Words_of_Life/Wonderful_Words_of_Life.xml",
+      "source_page_url": "https://library.timelesstruths.org/music/Wonderful_Words_of_Life/",
+      "title": "Wonderful Words of Life",
+      "work_id": "wonderful-words-of-life"
+    },
+    {
       "arrangement_id": "work-for-the-night-is-coming",
       "catalog_item_id": "work-for-the-night-is-coming",
       "inventory_arrangement_id": "work-for-the-night-is-coming",
@@ -28291,20 +28823,31 @@
   "schema_version": 3,
   "source_index_url": "https://library.timelesstruths.org/music/_/?section=_&sortby=title",
   "summary": {
-    "distinct_arrangements": 215,
-    "net_new_titles": 1552,
-    "normalization_backlog": 92,
+    "distinct_arrangements": 225,
+    "net_new_titles": 1575,
+    "normalization_backlog": 59,
+    "normalization_hold_reason_counts": {
+      "Combined-voice normalization does not support grace notes.": 3,
+      "Sibelius semantic voice 1 contains overlapping notes.": 38,
+      "Sibelius semantic voice 2 contains overlapping notes.": 5,
+      "Sibelius voice 1 exceeds its measure.": 13
+    },
+    "normalization_holds": 59,
     "normalization_profile_counts": {
       "split_aligned_satb_dyads": 148,
       "split_divisi_voices_with_interleaved_notation": 360,
+      "split_extra_stem_directed_voices_with_interleaved_notation": 11,
+      "split_hidden_duplicates_with_interleaved_notation": 16,
       "split_mixed_voices_with_interleaved_notation": 685,
       "split_primary_dyads_with_secondary_voice": 335,
-      "split_shared_rests_with_interleaved_notation": 239
+      "split_shared_rests_with_interleaved_notation": 241,
+      "split_simultaneous_overlaps_with_interleaved_notation": 3,
+      "split_voice2_pair_fallback_with_interleaved_notation": 1
     },
-    "preserved_context_events": 2421,
-    "promoted_records": 1767,
+    "preserved_context_events": 2498,
+    "promoted_records": 1800,
     "rights_holds": 26,
-    "shared_unison_events": 737,
+    "shared_unison_events": 747,
     "source_records": 1895,
     "strict_public_domain_musicxml": 1869,
     "structure_holds": 10

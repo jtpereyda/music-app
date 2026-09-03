@@ -14,9 +14,13 @@ from validate_catalog import RIGHTS_STATUS, validate_catalog_data  # noqa: E402
 from build_open_hymnal_catalog import _abc_key, _assign_ids, _key_name  # noqa: E402
 from normalize_satb_musicxml import (  # noqa: E402
     SPLIT_SIBELIUS_DIVISI_VOICES_WITH_CONTEXT,
+    SPLIT_SIBELIUS_EXTRA_VOICES_WITH_CONTEXT,
+    SPLIT_SIBELIUS_HIDDEN_DUPLICATES_WITH_CONTEXT,
     SPLIT_SIBELIUS_MIXED_VOICES,
     SPLIT_SIBELIUS_MIXED_VOICES_WITH_CONTEXT,
     SPLIT_SIBELIUS_SHARED_RESTS_WITH_CONTEXT,
+    SPLIT_SIBELIUS_SIMULTANEOUS_OVERLAPS_WITH_CONTEXT,
+    SPLIT_SIBELIUS_VOICE2_PAIR_FALLBACK_WITH_CONTEXT,
 )
 
 
@@ -66,8 +70,8 @@ class CatalogTests(unittest.TestCase):
         ids = {item["id"] for item in self.catalog["items"]}
         self.assertTrue(LANDMARK_IDS <= ids)
         self.assertEqual(self.catalog["catalog_id"], "transposify-technical-preview")
-        self.assertEqual(self.catalog["catalog_revision"], "12")
-        self.assertEqual(len(self.catalog["items"]), 3992)
+        self.assertEqual(self.catalog["catalog_revision"], "13")
+        self.assertEqual(len(self.catalog["items"]), 4025)
         hymns = [
             item for item in self.catalog["items"] if item["content_type"] == "hymn"
         ]
@@ -76,7 +80,7 @@ class CatalogTests(unittest.TestCase):
             for item in self.catalog["items"]
             if item["content_type"] == "art_song"
         ]
-        self.assertEqual(len(hymns), 2636)
+        self.assertEqual(len(hymns), 2669)
         self.assertEqual(len(art_songs), 1356)
         for item in hymns:
             self.assertEqual(item["rights"]["status"], RIGHTS_STATUS)
@@ -101,7 +105,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["summary"],
             {
-                "catalog_items": 3992,
+                "catalog_items": 4025,
                 "exact_public_domain_candidates": 4100,
                 "hymns_to_god_items": 592,
                 "openscore_lieder_items": 1356,
@@ -110,7 +114,7 @@ class CatalogTests(unittest.TestCase):
                 "source_records": 4146,
                 "structure_holds": 16,
                 "supplement_items": 8,
-                "timeless_truths_items": 1767,
+                "timeless_truths_items": 1800,
             },
         )
         self.assertEqual(
@@ -149,20 +153,31 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["source_breakdown"]["timeless_truths"],
             {
-                "catalog_items": 1767,
-                "distinct_arrangements": 215,
-                "net_new_titles": 1552,
-                "normalization_backlog": 92,
+                "catalog_items": 1800,
+                "distinct_arrangements": 225,
+                "net_new_titles": 1575,
+                "normalization_backlog": 59,
+                "normalization_hold_reason_counts": {
+                    "Combined-voice normalization does not support grace notes.": 3,
+                    "Sibelius semantic voice 1 contains overlapping notes.": 38,
+                    "Sibelius semantic voice 2 contains overlapping notes.": 5,
+                    "Sibelius voice 1 exceeds its measure.": 13,
+                },
+                "normalization_holds": 59,
                 "normalization_profile_counts": {
                     "split_aligned_satb_dyads": 148,
                     "split_divisi_voices_with_interleaved_notation": 360,
+                    "split_extra_stem_directed_voices_with_interleaved_notation": 11,
+                    "split_hidden_duplicates_with_interleaved_notation": 16,
                     "split_mixed_voices_with_interleaved_notation": 685,
                     "split_primary_dyads_with_secondary_voice": 335,
-                    "split_shared_rests_with_interleaved_notation": 239,
+                    "split_shared_rests_with_interleaved_notation": 241,
+                    "split_simultaneous_overlaps_with_interleaved_notation": 3,
+                    "split_voice2_pair_fallback_with_interleaved_notation": 1,
                 },
-                "preserved_context_events": 2421,
+                "preserved_context_events": 2498,
                 "rights_holds": 26,
-                "shared_unison_events": 737,
+                "shared_unison_events": 747,
                 "source_records": 1895,
                 "strict_public_domain_musicxml": 1869,
                 "structure_holds": 10,
@@ -259,7 +274,7 @@ class CatalogTests(unittest.TestCase):
             if metadata["name"] == "timeless-truths-satb-normalizer"
         }
         self.assertEqual(set(open_hymnal), OPEN_HYMNAL_NORMALIZED_IDS)
-        self.assertEqual(len(timeless_truths), 1767)
+        self.assertEqual(len(timeless_truths), 1800)
         self.assertEqual(
             sum(
                 SPLIT_SIBELIUS_MIXED_VOICES
@@ -290,7 +305,39 @@ class CatalogTests(unittest.TestCase):
                 in metadata["operations"]
                 for metadata in timeless_truths.values()
             ),
-            239,
+            241,
+        )
+        self.assertEqual(
+            sum(
+                SPLIT_SIBELIUS_HIDDEN_DUPLICATES_WITH_CONTEXT
+                in metadata["operations"]
+                for metadata in timeless_truths.values()
+            ),
+            16,
+        )
+        self.assertEqual(
+            sum(
+                SPLIT_SIBELIUS_SIMULTANEOUS_OVERLAPS_WITH_CONTEXT
+                in metadata["operations"]
+                for metadata in timeless_truths.values()
+            ),
+            3,
+        )
+        self.assertEqual(
+            sum(
+                SPLIT_SIBELIUS_VOICE2_PAIR_FALLBACK_WITH_CONTEXT
+                in metadata["operations"]
+                for metadata in timeless_truths.values()
+            ),
+            1,
+        )
+        self.assertEqual(
+            sum(
+                SPLIT_SIBELIUS_EXTRA_VOICES_WITH_CONTEXT
+                in metadata["operations"]
+                for metadata in timeless_truths.values()
+            ),
+            11,
         )
         for metadata in open_hymnal.values():
             self.assertEqual(metadata["name"], "open-hymnal-satb-normalizer")

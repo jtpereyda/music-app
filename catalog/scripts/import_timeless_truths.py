@@ -35,7 +35,7 @@ DEFAULT_REPORT = CATALOG_ROOT / "import-report.json"
 DEFAULT_MANIFEST = REPOSITORY_ROOT / "data/timeless-truths/manifest.json"
 DEFAULT_WEB_CATALOG = REPOSITORY_ROOT / "apps/web/src/lib/catalog.generated.ts"
 
-CATALOG_REVISION = "12"
+CATALOG_REVISION = "13"
 COLLECTION_ID = DATASET_ID
 GENERATOR_NAME = "timeless-truths-sibelius-satb"
 GENERATOR_VERSION = "1"
@@ -52,9 +52,9 @@ EXPECTED_NORMALIZED_SHA256 = (
     "9dbd5977d1f4a2110b9af90b466b00746e0d509047a4a1fb2f3c6fe459a8d99a"
 )
 EXPECTED_BASE_ITEMS = 2225
-EXPECTED_PROMOTED_ITEMS = 1767
-EXPECTED_NET_NEW_TITLES = 1552
-EXPECTED_DISTINCT_ARRANGEMENTS = 215
+EXPECTED_PROMOTED_ITEMS = 1800
+EXPECTED_NET_NEW_TITLES = 1575
+EXPECTED_DISTINCT_ARRANGEMENTS = 225
 LEGACY_ARRANGEMENT_IDS = {"nothing-between": "nothing-between-clark"}
 SEARCH_ALIASES = {
     "nothing-between": [
@@ -301,6 +301,26 @@ def _hold(record: dict[str, object]) -> dict[str, object]:
     }
 
 
+def _normalization_hold_reason(record: dict[str, object]) -> str:
+    normalization = record.get("normalization")
+    if not isinstance(normalization, dict):
+        return "normalization metadata is missing"
+    error = str(normalization.get("error", "unsupported normalization shape"))
+    final_error = error.rsplit("; ", maxsplit=1)[-1]
+    return final_error.split(": ", maxsplit=1)[-1]
+
+
+def _normalization_hold(record: dict[str, object]) -> dict[str, object]:
+    return {
+        "arrangement_id": record["arrangement_id"],
+        "collection_id": COLLECTION_ID,
+        "reason": _normalization_hold_reason(record),
+        "record_ordinal": record["page_ordinal"],
+        "source_url": record["source_url"],
+        "title": record["title"],
+    }
+
+
 def import_score(
     *,
     inventory_path: Path = DEFAULT_INVENTORY,
@@ -341,7 +361,7 @@ def import_score(
 
     dispositions = Counter(str(record["disposition"]) for record in records)
     expected_dispositions = {
-        "normalization_candidate": 92,
+        "normalization_candidate": 59,
         "rights_hold": 26,
         "straightforward_candidate": EXPECTED_PROMOTED_ITEMS,
         "structure_hold": 10,
@@ -357,10 +377,11 @@ def import_score(
         "9",
         "10",
         "11",
+        "12",
         CATALOG_REVISION,
     }:
         raise TimelessTruthsImportError(
-            "base catalog must be revision 8, 9, 10, 11, or idempotent revision 12"
+            "base catalog must be revision 8 through 12, or idempotent revision 13"
         )
     existing_collection_items = [
         item
@@ -560,6 +581,16 @@ def import_score(
             "distinct_arrangements": distinct_arrangements,
             "net_new_titles": net_new_titles,
             "normalization_backlog": dispositions["normalization_candidate"],
+            "normalization_hold_reason_counts": dict(
+                sorted(
+                    Counter(
+                        _normalization_hold_reason(record)
+                        for record in records
+                        if record["disposition"] == "normalization_candidate"
+                    ).items()
+                )
+            ),
+            "normalization_holds": dispositions["normalization_candidate"],
             "normalization_profile_counts": dict(
                 sorted(
                     Counter(
@@ -634,6 +665,16 @@ def import_score(
         "distinct_arrangements": EXPECTED_DISTINCT_ARRANGEMENTS,
         "net_new_titles": EXPECTED_NET_NEW_TITLES,
         "normalization_backlog": dispositions["normalization_candidate"],
+        "normalization_hold_reason_counts": dict(
+            sorted(
+                Counter(
+                    _normalization_hold_reason(record)
+                    for record in records
+                    if record["disposition"] == "normalization_candidate"
+                ).items()
+            )
+        ),
+        "normalization_holds": dispositions["normalization_candidate"],
         "normalization_profile_counts": dict(
             sorted(
                 Counter(
@@ -672,11 +713,16 @@ def import_score(
         "collection_id": COLLECTION_ID,
         "records": dispositions["normalization_candidate"],
         "reason": (
-            "requires a lossless normalization profile beyond the supported "
-            "aligned, mixed-voice, interleaved-notation, divisi, and "
-            "shared-rest SATB shapes"
+            "held because the source contains grace-note timing, an overfull "
+            "measure, or overlapping semantic voices that cannot be assigned "
+            "losslessly without editorial interpretation"
         ),
     }
+    report["excluded"]["normalization_holds"] = [
+        _normalization_hold(record)
+        for record in records
+        if record["disposition"] == "normalization_candidate"
+    ]
     report["summary"].update(
         {
             "catalog_items": EXPECTED_BASE_ITEMS + EXPECTED_PROMOTED_ITEMS,
