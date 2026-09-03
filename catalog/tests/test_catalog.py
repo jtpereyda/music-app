@@ -12,6 +12,7 @@ sys.path.insert(0, str(CATALOG_ROOT / "scripts"))
 
 from validate_catalog import RIGHTS_STATUS, validate_catalog_data  # noqa: E402
 from build_open_hymnal_catalog import _abc_key, _assign_ids, _key_name  # noqa: E402
+from normalize_satb_musicxml import SPLIT_SIBELIUS_MIXED_VOICES  # noqa: E402
 
 
 LANDMARK_IDS = {
@@ -60,8 +61,8 @@ class CatalogTests(unittest.TestCase):
         ids = {item["id"] for item in self.catalog["items"]}
         self.assertTrue(LANDMARK_IDS <= ids)
         self.assertEqual(self.catalog["catalog_id"], "transposify-technical-preview")
-        self.assertEqual(self.catalog["catalog_revision"], "9")
-        self.assertEqual(len(self.catalog["items"]), 2373)
+        self.assertEqual(self.catalog["catalog_revision"], "10")
+        self.assertEqual(len(self.catalog["items"]), 2708)
         hymns = [
             item for item in self.catalog["items"] if item["content_type"] == "hymn"
         ]
@@ -70,7 +71,7 @@ class CatalogTests(unittest.TestCase):
             for item in self.catalog["items"]
             if item["content_type"] == "art_song"
         ]
-        self.assertEqual(len(hymns), 1017)
+        self.assertEqual(len(hymns), 1352)
         self.assertEqual(len(art_songs), 1356)
         for item in hymns:
             self.assertEqual(item["rights"]["status"], RIGHTS_STATUS)
@@ -95,7 +96,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["summary"],
             {
-                "catalog_items": 2373,
+                "catalog_items": 2708,
                 "exact_public_domain_candidates": 4100,
                 "hymns_to_god_items": 592,
                 "openscore_lieder_items": 1356,
@@ -104,7 +105,7 @@ class CatalogTests(unittest.TestCase):
                 "source_records": 4146,
                 "structure_holds": 17,
                 "supplement_items": 8,
-                "timeless_truths_items": 148,
+                "timeless_truths_items": 483,
             },
         )
         self.assertEqual(
@@ -143,11 +144,16 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["source_breakdown"]["timeless_truths"],
             {
-                "catalog_items": 148,
-                "distinct_arrangements": 22,
-                "net_new_titles": 126,
-                "normalization_backlog": 1710,
+                "catalog_items": 483,
+                "distinct_arrangements": 70,
+                "net_new_titles": 413,
+                "normalization_backlog": 1375,
+                "normalization_profile_counts": {
+                    "split_aligned_satb_dyads": 148,
+                    "split_primary_dyads_with_secondary_voice": 335,
+                },
                 "rights_holds": 26,
+                "shared_unison_events": 270,
                 "source_records": 1895,
                 "strict_public_domain_musicxml": 1869,
                 "structure_holds": 11,
@@ -244,7 +250,15 @@ class CatalogTests(unittest.TestCase):
             if metadata["name"] == "timeless-truths-satb-normalizer"
         }
         self.assertEqual(set(open_hymnal), OPEN_HYMNAL_NORMALIZED_IDS)
-        self.assertEqual(len(timeless_truths), 148)
+        self.assertEqual(len(timeless_truths), 483)
+        self.assertEqual(
+            sum(
+                SPLIT_SIBELIUS_MIXED_VOICES
+                in metadata["operations"]
+                for metadata in timeless_truths.values()
+            ),
+            335,
+        )
         for metadata in open_hymnal.values():
             self.assertEqual(metadata["name"], "open-hymnal-satb-normalizer")
             self.assertEqual(metadata["version"], "1")

@@ -698,9 +698,12 @@ def inventory_collection(
                     )
                 normalization: dict[str, object] = {
                     "name": TIMELESS_TRUTHS_NORMALIZER_NAME,
+                    "duplicated_unison_events": (
+                        normalized.duplicated_unison_events
+                    ),
                     "normalized_sha256": _sha256(normalized.data),
                     "operations": list(normalized.operations),
-                    "profile": "split_aligned_satb_dyads",
+                    "profile": normalized.profile,
                     "status": "eligible",
                     "structure": normalized_structure,
                     "version": "1",
