@@ -34,12 +34,11 @@ LANDMARK_IDS = {
     "the-law-of-god-is-good-and-wise",
     "you-parents-hear-what-jesus-taught",
 }
-NORMALIZED_IDS = {
+OPEN_HYMNAL_NORMALIZED_IDS = {
     "away-in-a-manger",
     "did-you-think-to-pray",
     "jesus-loves-me",
     "now-thank-we-all-our-god",
-    "nothing-between",
     "praise-my-soul-the-king-of-heaven",
     "the-law-of-god-is-good-and-wise",
     "you-parents-hear-what-jesus-taught",
@@ -61,8 +60,8 @@ class CatalogTests(unittest.TestCase):
         ids = {item["id"] for item in self.catalog["items"]}
         self.assertTrue(LANDMARK_IDS <= ids)
         self.assertEqual(self.catalog["catalog_id"], "transposify-technical-preview")
-        self.assertEqual(self.catalog["catalog_revision"], "8")
-        self.assertEqual(len(self.catalog["items"]), 2226)
+        self.assertEqual(self.catalog["catalog_revision"], "9")
+        self.assertEqual(len(self.catalog["items"]), 2373)
         hymns = [
             item for item in self.catalog["items"] if item["content_type"] == "hymn"
         ]
@@ -71,7 +70,7 @@ class CatalogTests(unittest.TestCase):
             for item in self.catalog["items"]
             if item["content_type"] == "art_song"
         ]
-        self.assertEqual(len(hymns), 870)
+        self.assertEqual(len(hymns), 1017)
         self.assertEqual(len(art_songs), 1356)
         for item in hymns:
             self.assertEqual(item["rights"]["status"], RIGHTS_STATUS)
@@ -96,16 +95,16 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["summary"],
             {
-                "catalog_items": 2226,
-                "exact_public_domain_candidates": 2232,
+                "catalog_items": 2373,
+                "exact_public_domain_candidates": 4100,
                 "hymns_to_god_items": 592,
                 "openscore_lieder_items": 1356,
-                "rights_holds": 20,
+                "rights_holds": 46,
                 "source_holds": 0,
-                "source_records": 2252,
-                "structure_holds": 6,
+                "source_records": 4146,
+                "structure_holds": 17,
                 "supplement_items": 8,
-                "timeless_truths_items": 1,
+                "timeless_truths_items": 148,
             },
         )
         self.assertEqual(
@@ -144,10 +143,14 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(
             report["source_breakdown"]["timeless_truths"],
             {
-                "catalog_items": 1,
-                "exact_public_domain_candidates": 1,
-                "source_records": 1,
-                "structure_holds": 0,
+                "catalog_items": 148,
+                "distinct_arrangements": 22,
+                "net_new_titles": 126,
+                "normalization_backlog": 1710,
+                "rights_holds": 26,
+                "source_records": 1895,
+                "strict_public_domain_musicxml": 1869,
+                "structure_holds": 11,
             },
         )
 
@@ -230,18 +233,27 @@ class CatalogTests(unittest.TestCase):
             for item in self.catalog["items"]
             if "normalization" in item["score"]
         }
-        self.assertEqual(set(normalized), NORMALIZED_IDS)
-        for item_id, metadata in normalized.items():
-            if item_id == "nothing-between":
-                continue
+        open_hymnal = {
+            item_id: metadata
+            for item_id, metadata in normalized.items()
+            if metadata["name"] == "open-hymnal-satb-normalizer"
+        }
+        timeless_truths = {
+            item_id: metadata
+            for item_id, metadata in normalized.items()
+            if metadata["name"] == "timeless-truths-satb-normalizer"
+        }
+        self.assertEqual(set(open_hymnal), OPEN_HYMNAL_NORMALIZED_IDS)
+        self.assertEqual(len(timeless_truths), 148)
+        for metadata in open_hymnal.values():
             self.assertEqual(metadata["name"], "open-hymnal-satb-normalizer")
             self.assertEqual(metadata["version"], "1")
         self.assertEqual(
             normalized["now-thank-we-all-our-god"]["operations"],
             ["split_combined_chord_voices", "align_measure_numbers"],
         )
-        for item_id, metadata in normalized.items():
-            if item_id not in {"now-thank-we-all-our-god", "nothing-between"}:
+        for item_id, metadata in open_hymnal.items():
+            if item_id != "now-thank-we-all-our-god":
                 self.assertEqual(len(metadata["operations"]), 1)
         self.assertEqual(
             normalized["nothing-between"],

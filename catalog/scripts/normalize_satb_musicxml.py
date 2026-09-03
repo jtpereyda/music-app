@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import copy
 from dataclasses import dataclass
+import re
 import xml.etree.ElementTree as ET
 
 
@@ -17,6 +18,8 @@ ALIGN_MEASURE_NUMBERS = "align_measure_numbers"
 NORMALIZE_SIBELIUS_LYRIC_ROWS = "normalize_sibelius_lyric_rows"
 SPLIT_SIBELIUS_SATB_DYADS = "split_sibelius_satb_dyads"
 STRIP_SOURCE_PAGE_CREDITS = "strip_source_page_credits"
+DROP_NON_SOPRANO_LYRICS = "drop_non_soprano_lyrics"
+SET_WORK_TITLE = "set_work_title"
 
 _DOCTYPE = (
     '<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" '
@@ -376,19 +379,60 @@ def _normalize_sibelius_lyric_rows(root: ET.Element) -> int:
         raise SatbNormalizationError("Score contains no lyrics to normalize.")
     seen_verses: set[str] = set()
     for lyric in lyrics:
+        source_number = lyric.get("number", "")
         row = lyric.get("default-y")
-        if row not in _SIBELIUS_LYRIC_ROW_TO_VERSE:
+        verse = _SIBELIUS_LYRIC_ROW_TO_VERSE.get(row, "")
+        match = re.fullmatch(r"part\d+verse(\d+)", source_number)
+        if not verse and match:
+            source_verse = int(match.group(1))
+            verse = str(max(1, source_verse))
+        if not verse:
             raise SatbNormalizationError(
-                f"Unexpected Sibelius lyric row {row!r}."
+                "Unexpected Sibelius lyric identifier "
+                f"{source_number!r} at row {lyric.get('default-y')!r}."
             )
-        verse = _SIBELIUS_LYRIC_ROW_TO_VERSE[row]
         lyric.set("number", verse)
         seen_verses.add(verse)
-    if seen_verses != {"1", "2", "3", "4"}:
+    if "1" not in seen_verses:
         raise SatbNormalizationError(
-            f"Expected four Sibelius lyric rows, found {sorted(seen_verses)}."
+            f"Expected a first Sibelius lyric row, found {sorted(seen_verses)}."
         )
     return len(lyrics)
+
+
+def _drop_non_soprano_lyrics(root: ET.Element) -> int:
+    parts = _direct_children(root, "part")
+    removed = 0
+    for part in parts[1:]:
+        for note in (
+            element
+            for element in part.iter()
+            if _local_name(element.tag) == "note"
+        ):
+            for lyric in _direct_children(note, "lyric"):
+                note.remove(lyric)
+                removed += 1
+    return removed
+
+
+def _set_work_title(root: ET.Element, work_title: str) -> bool:
+    work = _direct_child(root, "work")
+    if work is None:
+        namespace = ""
+        if "}" in root.tag:
+            namespace = root.tag.split("}", 1)[0] + "}"
+        work = ET.Element(f"{namespace}work")
+        root.insert(0, work)
+    title = _direct_child(work, "work-title")
+    if title is None:
+        namespace = ""
+        if "}" in work.tag:
+            namespace = work.tag.split("}", 1)[0] + "}"
+        title = ET.SubElement(work, f"{namespace}work-title")
+    if (title.text or "") == work_title:
+        return False
+    title.text = work_title
+    return True
 
 
 def _hidden_rest(source: ET.Element, *, voice: str, duration: int) -> ET.Element:
@@ -686,12 +730,17 @@ def normalize_satb_musicxml(data: bytes, operation: str) -> NormalizationResult:
     return NormalizationResult(data=_serialize(root), operations=tuple(operations))
 
 
-def normalize_timeless_truths_musicxml(data: bytes) -> NormalizationResult:
+def normalize_timeless_truths_musicxml(
+    data: bytes,
+    *,
+    work_title: str | None = None,
+) -> NormalizationResult:
     """Normalize the audited Timeless Truths Sibelius SATB export."""
     root = ET.fromstring(data)
     if _local_name(root.tag) != "score-partwise":
         raise SatbNormalizationError("Expected score-partwise MusicXML.")
     _normalize_sibelius_lyric_rows(root)
+    dropped_lyrics = _drop_non_soprano_lyrics(root)
     _split_sibelius_satb_dyads(root)
     _strip_source_page_credits(root)
     _append_timeless_truths_encoder(root)
@@ -700,6 +749,10 @@ def normalize_timeless_truths_musicxml(data: bytes) -> NormalizationResult:
         SPLIT_SIBELIUS_SATB_DYADS,
         STRIP_SOURCE_PAGE_CREDITS,
     ]
+    if dropped_lyrics:
+        operations.insert(1, DROP_NON_SOPRANO_LYRICS)
+    if work_title is not None and _set_work_title(root, work_title):
+        operations.append(SET_WORK_TITLE)
     if _align_measure_numbers(root):
         operations.append(ALIGN_MEASURE_NUMBERS)
     return NormalizationResult(data=_serialize(root), operations=tuple(operations))
