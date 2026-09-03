@@ -108,6 +108,13 @@ The collector records:
   engagement time, and key events; and
 - successful PDF downloads recorded directly by the render proxy.
 
+Public pages also send privacy-light first-party page views to Neon. Apply
+`database/migrations/0006_first_party_analytics.sql` to enable the collector and
+the 28-day session/page summary in `/admin`. Anonymous sessions expire after 30
+minutes of inactivity. The app stores pathnames and entry referrer hostnames,
+but not query strings, IP addresses, or user-agent strings, and it honors DNT
+and Global Privacy Control signals.
+
 Configure `CRON_SECRET`, `GOOGLE_SEARCH_CONSOLE_SITE_URL`, and either
 `GOOGLE_SEO_SERVICE_ACCOUNT_JSON` or `GOOGLE_SEO_REFRESH_TOKEN`. Add
 `GOOGLE_ANALYTICS_PROPERTY_ID` to sync GA4 and
