@@ -45,10 +45,10 @@ build and retain a new 100+ MB renderer image:
 - the web project receives the renderer's stable production URL through the
   server-only `RENDER_API_URL` environment variable.
 
-Keep **Skip deployment** enabled for both projects. Vercel then skips web-only
-commits for the renderer; the renderer's explicit ignored-build command also
-limits image-producing builds to changes under `catalog`, `services/render`,
-`spikes/render`, or its deployment files. Preview deployments remain enabled.
+Keep **Skip deployment** enabled for both projects. The renderer project's
+**Ignored Build Step** is a custom Git diff over `catalog`, `services/render`,
+`spikes/render`, and its deployment files, so other commits are canceled before
+an image is built. Preview deployments remain enabled.
 
 ## Run locally
 
