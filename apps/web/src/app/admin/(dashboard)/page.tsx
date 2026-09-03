@@ -5,6 +5,7 @@ import {
   getKeywordDashboard,
   type KeywordProgressStage,
 } from "@/lib/keyword-targets";
+import { getFirstPartyAnalyticsSummary } from "@/lib/first-party-analytics.server";
 import { getTrackedKeywordDashboard } from "@/lib/seo-tracking.server";
 
 const compactNumberFormatter = new Intl.NumberFormat("en-US", {
@@ -74,7 +75,10 @@ function getTargetOrigin(): string {
 
 export default async function AdminDashboardPage() {
   const dashboard = getKeywordDashboard();
-  const tracking = await getTrackedKeywordDashboard(dashboard.rows);
+  const [tracking, firstPartyAnalytics] = await Promise.all([
+    getTrackedKeywordDashboard(dashboard.rows),
+    getFirstPartyAnalyticsSummary(),
+  ]);
   const { summary } = dashboard;
   const targetOrigin = getTargetOrigin();
   const researchDate = new Intl.DateTimeFormat("en-US", {
@@ -197,6 +201,112 @@ export default async function AdminDashboardPage() {
               <p className="mt-2 text-xs text-white/35">{card.detail}</p>
             </article>
           ))}
+        </section>
+
+        <section
+          className="mt-4 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035]"
+          aria-labelledby="first-party-analytics-heading"
+        >
+          <div className="flex flex-col gap-3 border-b border-white/10 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-mono text-[8px] uppercase tracking-[0.15em] text-emerald-200/65">
+                First-party analytics · 28d
+              </p>
+              <h2
+                id="first-party-analytics-heading"
+                className="mt-1 text-lg font-medium tracking-[-0.025em] text-white/80"
+              >
+                Sessions and page traffic
+              </h2>
+            </div>
+            <span
+              className={`w-fit rounded-full border px-3 py-1 font-mono text-[8px] uppercase tracking-[0.13em] ${
+                firstPartyAnalytics.connected
+                  ? "border-emerald-200/15 bg-emerald-200/[0.06] text-emerald-200/70"
+                  : "border-amber-200/15 bg-amber-200/[0.06] text-amber-200/70"
+              }`}
+            >
+              {firstPartyAnalytics.connected
+                ? "Collecting"
+                : "Migration needed"}
+            </span>
+          </div>
+
+          <div className="grid lg:grid-cols-[0.72fr_1.28fr]">
+            <div className="grid gap-px bg-white/10 sm:grid-cols-3 lg:grid-cols-1">
+              {[
+                {
+                  label: "Anonymous sessions",
+                  value: firstPartyAnalytics.connected
+                    ? compactNumberFormatter.format(
+                        firstPartyAnalytics.sessions28d,
+                      )
+                    : "—",
+                },
+                {
+                  label: "Page views",
+                  value: firstPartyAnalytics.connected
+                    ? compactNumberFormatter.format(
+                        firstPartyAnalytics.pageViews28d,
+                      )
+                    : "—",
+                },
+                {
+                  label: "Views per session",
+                  value:
+                    firstPartyAnalytics.connected &&
+                    firstPartyAnalytics.viewsPerSession28d !== null
+                      ? firstPartyAnalytics.viewsPerSession28d.toFixed(1)
+                      : "—",
+                },
+              ].map((metric) => (
+                <article key={metric.label} className="bg-[#151d23] px-6 py-5">
+                  <p className="font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
+                    {metric.label}
+                  </p>
+                  <p className="mt-2 font-mono text-3xl tracking-[-0.05em] text-white/80 tabular-nums">
+                    {metric.value}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <div className="p-6">
+              <div className="flex items-center justify-between gap-4">
+                <p className="text-sm font-medium text-white/65">Top pages</p>
+                <p className="font-mono text-[8px] uppercase tracking-[0.12em] text-white/25">
+                  Path only · no query data
+                </p>
+              </div>
+
+              {firstPartyAnalytics.topPages28d.length > 0 ? (
+                <ol className="mt-4 divide-y divide-white/[0.07]">
+                  {firstPartyAnalytics.topPages28d.map((page) => (
+                    <li
+                      key={page.path}
+                      className="grid grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-5 py-3 text-xs"
+                    >
+                      <span className="truncate font-mono text-white/55">
+                        {page.path}
+                      </span>
+                      <span className="text-right text-white/35">
+                        {compactNumberFormatter.format(page.sessions)} sessions
+                      </span>
+                      <span className="min-w-14 text-right font-mono text-white/70 tabular-nums">
+                        {compactNumberFormatter.format(page.pageViews)} views
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              ) : (
+                <p className="mt-5 text-xs leading-5 text-white/35">
+                  {firstPartyAnalytics.connected
+                    ? "No public page views have been recorded in this window yet."
+                    : "Apply database/migrations/0006_first_party_analytics.sql to begin collecting first-party traffic."}
+                </p>
+              )}
+            </div>
+          </div>
         </section>
 
         <section className="mt-4 grid gap-4 lg:grid-cols-[1.35fr_0.65fr]">
