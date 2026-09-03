@@ -46,9 +46,11 @@ build and retain a new 100+ MB renderer image:
   server-only `RENDER_API_URL` environment variable.
 
 Keep **Skip deployment** enabled for both projects. The renderer project's
-**Ignored Build Step** is a custom Git diff over `catalog`, `services/render`,
-`spikes/render`, and its deployment files, so other commits are canceled before
-an image is built. Preview deployments remain enabled.
+committed `ignoreCommand` is a custom Git diff over `catalog`,
+`services/render`, `spikes/render`, and its deployment files, so other commits
+are canceled before an image is built. It falls back to `HEAD^` when a branch
+does not have a previous successful deployment. Preview deployments remain
+enabled.
 
 ## Run locally
 

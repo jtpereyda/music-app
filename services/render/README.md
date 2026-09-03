@@ -71,9 +71,11 @@ pytest -q
 The renderer is the standalone `hymn-transposer-renderer` Vercel project,
 rooted at the repository root. `Dockerfile.vercel` packages this service, the
 shared rendering pipeline, and the canonical catalog. The root `vercel.json`
-declares just this service and routes all project traffic to it. The Vercel
-project's custom **Ignored Build Step** skips deployments when none of those
-inputs changed, so web-only preview commits do not create container images.
+declares just this service, routes all project traffic to it, and contains the
+guarded **Ignored Build Step**. It skips deployments when none of those inputs
+changed and falls back to the commit's parent when a preview branch has no
+previous successful deployment, so web-only commits do not create container
+images or fail the Vercel check.
 
 The separate web project is rooted at `apps/web` and receives this project's
 stable production URL as the server-only `RENDER_API_URL`. Browser requests
