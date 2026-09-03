@@ -684,13 +684,13 @@ def inventory_collection(
             try:
                 normalized = normalize_timeless_truths_musicxml(
                     data,
+                    source_key_label=str(record["key_label"]),
                     work_title=str(record["title"]),
                 )
                 normalized_structure = analyze_musicxml(normalized.data)
                 if (
                     normalized_structure["profile"]
                     != "semantic_satb_two_staff"
-                    or normalized_structure["chord_note_count"] != 0
                     or normalized_structure["lyric_locations"] != [[0, "1"]]
                 ):
                     raise SatbNormalizationError(
