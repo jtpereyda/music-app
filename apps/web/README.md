@@ -55,9 +55,9 @@ uses a same-origin Next.js proxy so preview failures are handled cleanly and
 PDF responses are checked before a download is reported as successful. The
 proxy calls the fixed-catalog endpoints:
 
-The root Vercel Services configuration supplies `RENDER_API_URL` through a
-private service binding in hosted deployments; set it manually only when
-running the two services separately.
+The web Vercel project supplies `RENDER_API_URL` as a server-only configuration
+variable pointing to the standalone renderer project's stable production URL.
+For local development, set it to the local FastAPI server instead.
 
 ```text
 GET /v1/scores/o-for-a-thousand-tongues/preview.svg

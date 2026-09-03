@@ -33,6 +33,23 @@ independent rights evidence for each text, translation, tune, and setting.
 - `output/pdf/`: visually verified sample editions
 - `docs/phase-0-report.md`: spike results and launch recommendation
 
+## Deploy to Vercel
+
+The repository maps to two Vercel projects so ordinary web previews do not
+build and retain a new 100+ MB renderer image:
+
+- the existing web project uses `apps/web` as its Root Directory and reads
+  `apps/web/vercel.json`;
+- the renderer project uses the repository root, where `Dockerfile.vercel`
+  and the renderer-only `vercel.json` live; and
+- the web project receives the renderer's stable production URL through the
+  server-only `RENDER_API_URL` environment variable.
+
+Keep **Skip deployment** enabled for both projects. The renderer project's
+**Ignored Build Step** is a custom Git diff over `catalog`, `services/render`,
+`spikes/render`, and its deployment files, so other commits are canceled before
+an image is built. Preview deployments remain enabled.
+
 ## Run locally
 
 Python 3.12+ and Node.js 20.9+ are required.

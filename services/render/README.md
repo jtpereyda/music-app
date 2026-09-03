@@ -68,10 +68,16 @@ pytest -q
 
 ## Vercel
 
-The root `vercel.json` deploys the Next.js web app and containerized renderer as
-Vercel Services. A private service binding supplies the renderer URL to the
-web app as server-only `RENDER_API_URL`; browser requests stay same-origin
-through the checked Next.js proxy.
+The renderer is the standalone `hymn-transposer-renderer` Vercel project,
+rooted at the repository root. `Dockerfile.vercel` packages this service, the
+shared rendering pipeline, and the canonical catalog. The root `vercel.json`
+declares just this service and routes all project traffic to it. The Vercel
+project's custom **Ignored Build Step** skips deployments when none of those
+inputs changed, so web-only preview commits do not create container images.
+
+The separate web project is rooted at `apps/web` and receives this project's
+stable production URL as the server-only `RENDER_API_URL`. Browser requests
+stay same-origin through the checked Next.js proxy.
 
 The canonical records remain technical candidates, not a production rights
 allowlist. The full notation stack (`music21`, Verovio, CairoSVG, and pypdf)
