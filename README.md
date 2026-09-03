@@ -48,9 +48,9 @@ build and retain a new 100+ MB renderer image:
 Keep **Skip deployment** enabled for both projects. The renderer project's
 committed `ignoreCommand` is a custom Git diff over `catalog`,
 `services/render`, `spikes/render`, and its deployment files, so other commits
-are canceled before an image is built. It falls back to `HEAD^` when a branch
-does not have a previous successful deployment. Preview deployments remain
-enabled.
+are canceled before an image is built. When Vercel does not provide a previous
+commit SHA, the command safely requests a full renderer build instead of
+attempting an invalid diff. Preview deployments remain enabled.
 
 ## Run locally
 
