@@ -33,6 +33,12 @@ export function AppFooter() {
           >
             Score transposer
           </Link>
+          <Link
+            className="transition-colors hover:text-ink"
+            href="/privacy"
+          >
+            Privacy
+          </Link>
           <span className="font-mono text-[10px] uppercase tracking-[0.15em]">
             Technical preview
           </span>
