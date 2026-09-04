@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { KeywordTable } from "@/components/admin/keyword-table";
 import { SeoSyncButton } from "@/components/admin/seo-sync-button";
 import { SeoTrendChart } from "@/components/admin/seo-trend-chart";
@@ -204,6 +205,7 @@ export default async function AdminDashboardPage() {
         </section>
 
         <section
+          id="first-party-analytics"
           className="mt-4 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035]"
           aria-labelledby="first-party-analytics-heading"
         >
@@ -219,23 +221,38 @@ export default async function AdminDashboardPage() {
                 Sessions and page traffic
               </h2>
             </div>
-            <span
-              className={`w-fit rounded-full border px-3 py-1 font-mono text-[8px] uppercase tracking-[0.13em] ${
-                firstPartyAnalytics.connected
-                  ? "border-emerald-200/15 bg-emerald-200/[0.06] text-emerald-200/70"
-                  : "border-amber-200/15 bg-amber-200/[0.06] text-amber-200/70"
-              }`}
-            >
-              {firstPartyAnalytics.connected
-                ? "Collecting"
-                : "Migration needed"}
-            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              <span
+                className={`w-fit rounded-full border px-3 py-1 font-mono text-[8px] uppercase tracking-[0.13em] ${
+                  firstPartyAnalytics.connected
+                    ? "border-emerald-200/15 bg-emerald-200/[0.06] text-emerald-200/70"
+                    : "border-amber-200/15 bg-amber-200/[0.06] text-amber-200/70"
+                }`}
+              >
+                {firstPartyAnalytics.connected
+                  ? "Collecting"
+                  : "Migration needed"}
+              </span>
+              <Link
+                href="/admin/analytics/sessions"
+                className="rounded-full border border-white/10 px-3 py-1 text-[10px] font-medium text-white/45 transition hover:border-white/20 hover:bg-white/[0.05] hover:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+              >
+                Sessions →
+              </Link>
+              <Link
+                href="/admin/analytics/pages"
+                className="rounded-full border border-white/10 px-3 py-1 text-[10px] font-medium text-white/45 transition hover:border-white/20 hover:bg-white/[0.05] hover:text-white/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+              >
+                Pages →
+              </Link>
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-[0.72fr_1.28fr]">
             <div className="grid gap-px bg-white/10 sm:grid-cols-3 lg:grid-cols-1">
               {[
                 {
+                  href: "/admin/analytics/sessions",
                   label: "Anonymous sessions",
                   value: firstPartyAnalytics.connected
                     ? compactNumberFormatter.format(
@@ -244,6 +261,7 @@ export default async function AdminDashboardPage() {
                     : "—",
                 },
                 {
+                  href: "/admin/analytics/pages",
                   label: "Page views",
                   value: firstPartyAnalytics.connected
                     ? compactNumberFormatter.format(
@@ -252,6 +270,7 @@ export default async function AdminDashboardPage() {
                     : "—",
                 },
                 {
+                  href: "/admin/analytics/sessions",
                   label: "Views per session",
                   value:
                     firstPartyAnalytics.connected &&
@@ -260,14 +279,26 @@ export default async function AdminDashboardPage() {
                       : "—",
                 },
               ].map((metric) => (
-                <article key={metric.label} className="bg-[#151d23] px-6 py-5">
+                <Link
+                  key={metric.label}
+                  href={metric.href}
+                  className="group bg-[#151d23] px-6 py-5 transition hover:bg-white/[0.045] focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-coral"
+                >
                   <p className="font-mono text-[8px] uppercase tracking-[0.14em] text-white/30">
                     {metric.label}
                   </p>
-                  <p className="mt-2 font-mono text-3xl tracking-[-0.05em] text-white/80 tabular-nums">
-                    {metric.value}
-                  </p>
-                </article>
+                  <div className="mt-2 flex items-end justify-between gap-3">
+                    <p className="font-mono text-3xl tracking-[-0.05em] text-white/80 tabular-nums">
+                      {metric.value}
+                    </p>
+                    <span
+                      aria-hidden="true"
+                      className="pb-1 text-sm text-white/20 transition group-hover:translate-x-0.5 group-hover:text-white/55"
+                    >
+                      →
+                    </span>
+                  </div>
+                </Link>
               ))}
             </div>
 
@@ -286,15 +317,33 @@ export default async function AdminDashboardPage() {
                       key={page.path}
                       className="grid grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-5 py-3 text-xs"
                     >
-                      <span className="truncate font-mono text-white/55">
+                      <Link
+                        href={{
+                          pathname: "/admin/analytics/pages",
+                          query: { path: page.path },
+                        }}
+                        className="truncate font-mono text-white/55 transition hover:text-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                      >
                         {page.path}
-                      </span>
-                      <span className="text-right text-white/35">
+                      </Link>
+                      <Link
+                        href={{
+                          pathname: "/admin/analytics/sessions",
+                          query: { path: page.path },
+                        }}
+                        className="text-right text-white/35 underline decoration-white/10 underline-offset-4 transition hover:text-white/65 hover:decoration-white/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+                      >
                         {compactNumberFormatter.format(page.sessions)} sessions
-                      </span>
-                      <span className="min-w-14 text-right font-mono text-white/70 tabular-nums">
+                      </Link>
+                      <Link
+                        href={{
+                          pathname: "/admin/analytics/pages",
+                          query: { path: page.path },
+                        }}
+                        className="min-w-14 text-right font-mono text-white/70 underline decoration-white/10 underline-offset-4 transition hover:text-white hover:decoration-white/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral tabular-nums"
+                      >
                         {compactNumberFormatter.format(page.pageViews)} views
-                      </span>
+                      </Link>
                     </li>
                   ))}
                 </ol>
