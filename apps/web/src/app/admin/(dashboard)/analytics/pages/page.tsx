@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AnalyticsNavigation } from "@/components/admin/analytics-navigation";
+import { AnalyticsPathLink } from "@/components/admin/analytics-path-link";
 import { AnalyticsPagination } from "@/components/admin/analytics-pagination";
 import { getFirstPartyAnalyticsPages } from "@/lib/first-party-analytics.server";
 
@@ -196,14 +197,7 @@ export default async function AnalyticsPagesPage({
                       className="transition hover:bg-white/[0.025]"
                     >
                       <td className="max-w-xl px-6 py-4">
-                        <a
-                          href={pageRow.path}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="block truncate font-mono text-blue-200/70 underline decoration-blue-200/20 underline-offset-4 transition hover:text-blue-100 hover:decoration-blue-100/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-100/70"
-                        >
-                          {pageRow.path}
-                        </a>
+                        <AnalyticsPathLink path={pageRow.path} />
                       </td>
                       <td className="px-4 py-4 text-right font-mono text-white/75 tabular-nums">
                         {numberFormatter.format(pageRow.pageViews)}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AnalyticsNavigation } from "@/components/admin/analytics-navigation";
+import { AnalyticsPathLink } from "@/components/admin/analytics-path-link";
 import { AnalyticsPagination } from "@/components/admin/analytics-pagination";
 import { getFirstPartyAnalyticsSessions } from "@/lib/first-party-analytics.server";
 
@@ -175,14 +176,7 @@ export default async function AnalyticsSessionsPage({
                         </code>
                       </td>
                       <td className="max-w-72 px-4 py-4">
-                        <a
-                          href={session.landingPath}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="block truncate font-mono text-blue-200/70 underline decoration-blue-200/20 underline-offset-4 transition hover:text-blue-100 hover:decoration-blue-100/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-100/70"
-                        >
-                          {session.landingPath}
-                        </a>
+                        <AnalyticsPathLink path={session.landingPath} />
                       </td>
                       <td className="max-w-52 px-4 py-4">
                         <span className="block truncate text-white/40">

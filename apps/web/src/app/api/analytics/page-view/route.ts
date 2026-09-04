@@ -1,5 +1,6 @@
 import { after, NextRequest, NextResponse } from "next/server";
 import { recordFirstPartyPageView } from "@/lib/first-party-analytics.server";
+import { normalizeInternalPath } from "@/lib/internal-path";
 
 const SESSION_COOKIE = "transposify_analytics_session";
 const SESSION_MAX_AGE_SECONDS = 30 * 60;
@@ -12,26 +13,6 @@ function noContent() {
     status: 204,
     headers: { "cache-control": "no-store" },
   });
-}
-
-function normalizePath(value: unknown): string | null {
-  if (
-    typeof value !== "string" ||
-    !value.startsWith("/") ||
-    value.startsWith("//") ||
-    value.length > 2048 ||
-    value.includes("?") ||
-    value.includes("#")
-  ) {
-    return null;
-  }
-
-  try {
-    const parsed = new URL(value, "https://analytics.invalid");
-    return parsed.origin === "https://analytics.invalid" ? parsed.pathname : null;
-  } catch {
-    return null;
-  }
 }
 
 function normalizeReferrerHost(value: unknown): string | null {
@@ -86,7 +67,7 @@ export async function POST(request: NextRequest) {
   }
 
   const body = payload as { path?: unknown; referrer?: unknown };
-  const path = normalizePath(body.path);
+  const path = normalizeInternalPath(body.path);
   if (!path) {
     return NextResponse.json({ detail: "Invalid page path." }, { status: 400 });
   }
